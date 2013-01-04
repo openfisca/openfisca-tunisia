@@ -21,6 +21,7 @@ This file is part of openFisca.
     along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+
 from src.qt.QtGui import (QDockWidget, QDialog, QLabel, QDateEdit, QComboBox, QSpinBox,  QDoubleSpinBox, 
                          QPushButton, QApplication, QFileDialog, QMessageBox, QDialogButtonBox)
 from src.qt.QtCore import QObject, SIGNAL, SLOT, QDate, Qt, QVariant
@@ -30,6 +31,7 @@ from src.widgets.InfoComp import InfoComp
 from datetime import date
 import pickle
 from src.core.utils import of_import
+
 
 import os
 
