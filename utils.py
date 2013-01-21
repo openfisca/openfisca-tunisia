@@ -22,13 +22,11 @@ This file is part of openFisca.
 """
 
 from __future__ import division
-from Config import CONF, VERSION
+from src import __version__ as VERSION
 import pickle
 from datetime import datetime
 
-INDEX = ['men', 'foy']
-currency = u"DT"
-
+from src.countries.tunisia import ENTITIES_INDEX
 
 class Scenario(object):
     def __init__(self):
@@ -47,11 +45,21 @@ class Scenario(object):
         # on ajoute un individu, déclarant et chef de famille
         self.addIndiv(0, datetime(1975,1,1).date(), 'vous', 'chef')
     
+        self.nmen = None
+        self.xaxis = None
+        self.maxrev = None
+        self.same_rev_couple = None
+        self.year = None
+    
+    def copy(self):
+        from copy import deepcopy
+        return deepcopy(self)
+
+    
     def check_consistency(self):
         '''
         Vérifie que le ménage entré est valide
         '''
-
         for noi, vals in self.indiv.iteritems():
             age = self.year - vals['birth'].year
             if age < 0:
@@ -235,22 +243,24 @@ class Scenario(object):
         self.indiv = S['indiv']
         self.declar = S['declar']
         self.menage = S['menage']
-        
-        
-        
-    def populate_datatable(self, datatable, xaxis = None, nmen = None, maxrev = None):
-        
+
+
+    def populate_datatable(self, datatable):
+        '''
+        Popualte a datatable from a given scenario
+        '''
         from pandas import DataFrame, concat
         import numpy as np
-        
         scenario = self
-        if nmen is None:
-            nmen = CONF.get('simulation', 'nmen')
         
-        datatable.NMEN = nmen    
+        if self.nmen is None:
+            raise Exception('france.scenario: self.nmen should be not None')
+        
+        nmen = self.nmen 
+        same_rev_couple = self.same_rev_couple
+        datatable.NMEN = nmen
         datatable._nrows = datatable.NMEN*len(scenario.indiv)
         datesim = datatable.datesim
-    
         datatable.table = DataFrame()
     
         idmen = np.arange(60001, 60001 + nmen)
@@ -274,8 +284,7 @@ class Scenario(object):
                 
             datatable.table = concat([datatable.table, DataFrame(dct)], ignore_index = True)
     
-        INDEX = ['men', 'foy']
-        datatable.gen_index(INDEX)
+        datatable.gen_index(ENTITIES_INDEX)
     
         for name in datatable.col_names:
             if not name in datatable.table:
@@ -288,7 +297,8 @@ class Scenario(object):
                 if var in ('birth', 'noipref', 'noidec', 'noichef', 'quifoy', 'quimen', 'quifam'): continue
                 if not index[noi] is None:
                     datatable.set_value(var, np.ones(nb)*val, index, noi)
-    
+            del var, val
+            
         index = datatable.index['foy']
         nb = index['nb']
         for noi, dct in scenario.declar.iteritems():
@@ -302,72 +312,91 @@ class Scenario(object):
             for var, val in dct.iteritems():
                 if not index[noi] is None:
                     datatable.set_value(var, np.ones(nb)*val, index, noi)
-        
-        if maxrev is None:   
-            maxrev = CONF.get('simulation', 'maxrev')
-        datatable.MAXREV = maxrev
-        if xaxis is None:
-            xaxis = CONF.get('simulation', 'xaxis')    
-        
-        axes = build_axes()
+            del var, val
+    
+
         if nmen>1:
+            if self.maxrev is None:
+                raise Exception('tunisia.utils.Scenario: self.maxrev should not be None')
+            maxrev = self.maxrev      
+            datatable.MAXREV = maxrev
+            
+            if self.xaxis is None:
+                raise Exception('tunisia.utils.Scenario: self.xaxis should not be None')
+            
+            xaxis = self.xaxis    
+            axes = build_axes('tunisia')
+            var = None
+            
             for axe in axes:
                 if axe.name == xaxis:
-                    datatable.XAXIS = axe.col_name 
-                    vls = np.linspace(0, maxrev, nmen)
+                    datatable.XAXIS = axe.col_name
                     var = axe.col_name
-                    datatable.set_value(var, vls, {0:{'idxIndi': index[0]['idxIndi'], 'idxUnit': index[0]['idxIndi']}})
-    
-        datatable._isPopulated = True
+                    
+            if var is None:
+                datatable.XAXIS = xaxis 
+                var = xaxis
+                        
+            vls = np.linspace(0, maxrev, nmen)
+            if same_rev_couple is True:
+                index_men = datatable.index['men']
+                datatable.set_value(var, 0.5*vls, index_men, opt = 0)
+                datatable.set_value(var, 0.5*vls, index_men, opt = 1)
+            else:
+                datatable.set_value(var, vls, {0:{'idxIndi': index[0]['idxIndi'], 'idxUnit': index[0]['idxIndi']}})
+                
+            datatable._isPopulated = True
+        
+
+XAXIS_PROPERTIES = { 'sali': {
+                              'name' : 'sal',
+                              'typ_tot' : {'salsuperbrut' : 'Salaire super brut',
+                                           'salbrut': 'Salaire brut',
+                                           'sal':  'Salaire imposable',
+                                           'salnet': 'Salaire net'},
+                              'typ_tot_default' : 'sal'},
+                             }
 
 
 class Xaxis(object):
-    def __init__(self, col_name = None):
+    def __init__(self, col_name = None, country = None):
         super(Xaxis, self).__init__()
         
         self.col_name = col_name
         if self.col_name is not None:
             self.set(col_name)
-            self.set_label()
+            self.set_label(country)
         else:
             self.typ_tot = None
             self.typ_tot_default = None
                  
-    def set_label(self):
-        from core.utils import of_import
-        from core.datatable import Description
-        InputTable = of_import('model.data', 'InputTable')
+    def set_label(self, country):
+        from src.core.utils_old import of_import
+        from src.core.datatable import Description
+        InputTable = of_import('model.data', 'InputTable', country)
         description = Description(InputTable().columns)
         label2var, var2label, var2enum = description.builds_dicts()
-        if self.col_name in var2label:
-            self.label = var2label[self.col_name]
-        else:
-            self.label =  self.col_name
-#        self.typ_tot_labels = {}
-#        for var in self.typ_tot:
-#            self.typ_tot_labels[var] = var2label[var]
+        self.label = var2label[self.col_name]
         
-    def set(self, col_name):
-        '''
-        Sets xaxis
-        '''
-        if col_name == 'sali':
-            self.name = 'sal'
-            self.col_name = 'sali' 
-            self.typ_tot = {'salsuperbrut' : 'Salaire super brut',
-                            'salbrut': 'Salaire brut',
-                            'sal':  'Salaire imposable'}
-            self.typ_tot_default = 'sal'
-            
-            
+
+    def set(self, col_name, name = None, typ_tot = None, typt_tot_default = None):
+        """
+        Set Xaxis attributes
+        """
+        self.name = XAXIS_PROPERTIES[col_name]['name']
+        self.typ_tot = XAXIS_PROPERTIES[col_name]['typ_tot']
+        self.typ_tot_default = XAXIS_PROPERTIES[col_name]['typ_tot_default'] 
+        
 
 
-def build_axes():
-    from core.utils import of_import
-    Xaxis = of_import('utils','Xaxis')
+
+def build_axes(country):
+    # TODO: should be in __init__.py of tunisia
+    from src.core.utils_old import of_import
+    Xaxis = of_import('utils','Xaxis', country)
     axes = []
-    for col_name in ['sali']:
-        axe = Xaxis(col_name)
+    for col_name in XAXIS_PROPERTIES: #['sali', 'choi', 'rsti', 'f2da', 'f2ee', 'f2dc', 'f2tr' ]:
+        axe = Xaxis(col_name, country)
         axes.append(axe)
     del axe
     return axes

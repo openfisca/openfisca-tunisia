@@ -23,7 +23,7 @@ This file is part of openFisca.
 
 from __future__ import division
 from numpy import (floor, arange)
-from tunisia.model.data import  QUIMEN
+from src.countries.tunisia.model.data import  QUIMEN
 
 ALL = [x[1] for x in QUIMEN]
 
@@ -116,7 +116,7 @@ def _impo(irpp):
     '''Impôts directs'''
     return irpp
 
-from core.utils import mark_weighted_percentiles
+from src.core.utils_old import mark_weighted_percentiles
 
 def _decile(nivvie, wprm):
     '''

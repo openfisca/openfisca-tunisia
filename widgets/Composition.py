@@ -1,44 +1,37 @@
 # -*- coding:utf-8 -*-
+#
+# This file is part of OpenFisca.
+# OpenFisca is a socio-fiscal microsimulation software
 # Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
-
-"""
-openFisca, Logiciel libre de simulation du système socio-fiscal français
-Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
-
-This file is part of openFisca.
-
-    openFisca is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    openFisca is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
-"""
+# Licensed under the terms of the GVPLv3 or later license
+# (see openfisca/__init__.py for details)
 
 
-from src.qt.QtGui import (QDockWidget, QDialog, QLabel, QDateEdit, QComboBox, QSpinBox,  QDoubleSpinBox, 
-                         QPushButton, QApplication, QFileDialog, QMessageBox, QDialogButtonBox)
-from src.qt.QtCore import QObject, SIGNAL, SLOT, QDate, Qt, QVariant
+
+from datetime import date
+import pickle
+import os
+
+from src.qt.QtGui import (QDialog, QLabel, QDateEdit, QComboBox, QSpinBox, 
+                          QDoubleSpinBox, QPushButton, QApplication, QFileDialog, QMessageBox, 
+                          QDialogButtonBox, QDockWidget)
+
+from src.qt.QtCore import QObject, SIGNAL, SLOT, QDate, Qt, Signal
+from src.qt.compat import to_qvariant
+
 from src.countries.tunisia.views.ui_composition import Ui_Menage
 from src.views.ui_logement import Ui_Logement
 from src.widgets.InfoComp import InfoComp
-from datetime import date
-import pickle
-from src.core.utils import of_import
+from src.widgets.Declaration import Declaration
 
+from src.core.utils.qthelpers import create_action
+from src.core.config import CONF, get_icon
+from src.plugins import OpenfiscaPluginWidget
+from src.core.utils_old import of_import
+from src.core.baseconfig import get_translation
+_ = get_translation('src')
 
-import os
-
-
-Scenario = of_import('utils', 'Scenario')
-InputTable = of_import('model.data', 'InputTable')
-
+from src.countries.tunisia import CURRENCY
 
 class S:
     name = 0
@@ -49,39 +42,55 @@ class S:
     famnum = 5
     fampos = 6
 
-class ScenarioWidget(QDockWidget, Ui_Menage):
-    def __init__(self, scenario, parent = None):
-        super(ScenarioWidget, self).__init__(parent)
+from src.plugins.scenario import CompositionConfigPage
+
+class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):    
+    """
+    Scenario Graph Widget
+    """
+    CONF_SECTION = 'composition'
+    CONFIGWIDGET_CLASS = CompositionConfigPage
+    FEATURES = QDockWidget.DockWidgetClosable | \
+               QDockWidget.DockWidgetFloatable | \
+               QDockWidget.DockWidgetMovable
+    DISABLE_ACTIONS_WHEN_HIDDEN = False
+    sig_option_changed = Signal(str, object)
+
+
+    def __init__(self, simulation_scenario = None, parent = None):
+        super(CompositionWidget, self).__init__(parent)
         self.setupUi(self)
-        
-        
-        self.parent = parent
-        self.scenario = scenario
+        if parent is not None:
+            self.parent = parent
+        if simulation_scenario is not None:
+            self.set_scenario(simulation_scenario)
 
-
+        self.setLayout(self.verticalLayout)
         # Initialize xaxes
+        country = 'tunisia'
+        build_axes = of_import('utils','build_axes', country)
+        axes = build_axes(country)
+        xaxis = self.get_option('xaxis')
         
-        build_axes = of_import('utils','build_axes')
-        axes = build_axes()
-        
-        xaxis = CONF.get('simulation', 'xaxis')
         axes_names = []
         for axe in axes:
-            self.xaxis_box.addItem(axe.label, QVariant(axe.name))
+            self.xaxis_box.addItem(axe.label, to_qvariant(axe.name))
             axes_names.append(axe.name)
                         
         self.xaxis_box.setCurrentIndex(axes_names.index(xaxis))            
         
-        # Initialize maxrev # mae it xountry dependant  
+        # Initialize maxrev # make it country dependant  
         self.maxrev_box.setMinimum(0)
         self.maxrev_box.setMaximum(1000000)
         self.maxrev_box.setSingleStep(50)
-        self.maxrev_box.setSuffix(u" DT")
-        maxrev = CONF.get('simulation', 'maxrev')
+        self.maxrev_box.setSuffix(CURRENCY)
+        maxrev = self.get_option('maxrev')
         self.maxrev_box.setValue(maxrev)
+
+        self.initialize_plugin()
         
-        self.connect(self.open_btn, SIGNAL('clicked()'), self.openScenario)
-        self.connect(self.save_btn, SIGNAL('clicked()'), self.saveScenario)
+        self.connect(self.open_btn, SIGNAL('clicked()'), self.load)
+        self.connect(self.save_btn, SIGNAL('clicked()'), self.save)
         self.connect(self.add_btn, SIGNAL('clicked()'), self.addPerson)
         self.connect(self.rmv_btn, SIGNAL('clicked()'), self.rmvPerson)
 #        self.connect(self.lgt_btn, SIGNAL('clicked()'), self.openLogement)
@@ -89,15 +98,31 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
         self.connect(self.reset_btn, SIGNAL('clicked()'), self.resetScenario)
         self.connect(self.xaxis_box, SIGNAL('currentIndexChanged(int)'), self.set_xaxis)
         self.connect(self.maxrev_box, SIGNAL('valueChanged(int)'), self.set_maxrev)
-
         self.connect(self, SIGNAL('compoChanged()'), self.changed)
-
-
         self._listPerson = []
         self.addPref()
         self.rmv_btn.setEnabled(False)
         self.emit(SIGNAL("ok()"))
 
+        
+    #------ Public API ---------------------------------------------    
+
+    def set_scenario(self, simulation):
+        """
+        Set scenario_simualtion
+        """
+        xaxis = self.get_option('xaxis')
+        maxrev = self.get_option('maxrev')
+        nmen = self.get_option('nmen')
+        self.nmen = nmen
+        country = CONF.get('parameters', 'country')
+        datesim = CONF.get('parameters', 'datesim')
+        year = datesim.year
+        self.simulation = simulation
+        self.simulation.set_config(year = year, country = country, xaxis = xaxis, 
+                                            nmen = self.nmen, maxrev = maxrev, reforme = False, mode ='bareme')
+        self.simulation.set_param()
+        self.scenario = self.simulation.scenario
 
     def set_xaxis(self):
         '''
@@ -105,9 +130,10 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
         '''
         widget = self.xaxis_box
         if isinstance(widget, QComboBox):
-            data = widget.itemData(widget.currentIndex())
-            xaxis = unicode(data.toString())
-            CONF.set('simulation', 'xaxis', xaxis) 
+            data  = widget.itemData(widget.currentIndex())
+            xaxis = unicode(data)
+            self.scenario.xaxis = xaxis
+            self.set_option('xaxis', xaxis)
         self.emit(SIGNAL('compoChanged()'))
     
     def set_maxrev(self):
@@ -116,14 +142,16 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
         '''
         widget = self.maxrev_box
         if isinstance(widget, QSpinBox) or isinstance(widget, QDoubleSpinBox):
-            CONF.set('simulation', 'maxrev', widget.value())
+            maxrev = widget.value()
+            self.scenario.maxrev = maxrev
+            self.set_option('maxrev', maxrev) 
         self.emit(SIGNAL('compoChanged()'))
-
 
     def changed(self):
         self.disconnectAll()
         self.scenario.genNbEnf()
         self.populate()
+        self.action_compute.setEnabled(True)
         self.emit(SIGNAL('changed()'))
         self.connectAll()
         
@@ -282,7 +310,8 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
             self.add_btn.setEnabled(False)
 
     def rmvPerson(self, noi = None):
-        if noi == None: noi = self.nbRow() - 1
+        if noi == None: 
+            noi = self.nbRow() - 1
         self.scenario.rmvIndiv(noi)
         self.rmvRow()
         self.add_btn.setEnabled(True)
@@ -305,11 +334,8 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
         '''
         while self.nbRow() > 1:
             self.rmvPerson()
-            
-        self.scenario = Scenario()
+        self.simulation.reset_scenario
         self.emit(SIGNAL('compoChanged()'))
-        
-        
         
     def openDeclaration(self):
         pass
@@ -355,10 +381,10 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
             QObject.connect(person[S.famnum], SIGNAL('currentIndexChanged(int)'), self.familleChanged)
             QObject.connect(person[S.decbtn], SIGNAL('clicked()'), self.openDeclaration)
 
-    def openScenario(self):
-        cas_type_dir = CONF.get('paths', 'cas_type_dir')
+    def load(self):
+        cas_type_dir = self.get_option('import_dir')
         fileName = QFileDialog.getOpenFileName(self,
-                                               u"Ouvrir un cas type", 
+                                               _("Open a test case"), 
                                                cas_type_dir, 
                                                u"Cas type OpenFisca (*.ofct)")
         if not fileName == '':
@@ -375,66 +401,196 @@ class ScenarioWidget(QDockWidget, Ui_Menage):
                 self.emit(SIGNAL("ok()"))
             except Exception, e:
                 QMessageBox.critical(
-                    self, "Erreur", u"Erreur lors de l'ouverture du fichier : le fichier n'est pas reconnu",
+                    self, "Erreur", u"Erreur lors de l'ouverture du fichier : le fichier n'est pas reconnu : \n " + e,
                     QMessageBox.Ok, QMessageBox.NoButton)
 
         
-    def saveScenario(self):
-        cas_type_dir = CONF.get('paths', 'cas_type_dir')
+    def save(self):
+        cas_type_dir = self.get_option('export_dir')
         default_fileName = os.path.join(cas_type_dir, 'sans-titre')
         fileName = QFileDialog.getSaveFileName(self,
-                                               u"Sauver un cas type", 
+                                               _("Save a test case"), 
                                                default_fileName, 
                                                u"Cas type OpenFisca (*.ofct)")
         if not fileName == '':
             self.scenario.saveFile(fileName)
 
-class Logement(QDialog, Ui_Logement):
-    def __init__(self, scenario, parent = None):
-        super(Logement, self).__init__(parent)
-        self.setupUi(self)
-        self.parent = parent
-        self.scenario = scenario
-        self.spinCP.setValue(scenario.menage[0]['code_postal'])
-        self.spinLoyer.setValue(scenario.menage[0]['loyer'])
-        self.comboSo.setCurrentIndex(scenario.menage[0]['so']-1)
-                        
-        code_file = open('data/code_apl', 'r')
-        code_dict = pickle.load(code_file)
-        code_file.close()
 
-        def update_ville(code):        
-            if str(code) in code_dict:
-                commune = code_dict[str(code)]
-                self.bbox.button(QDialogButtonBox.Ok).setEnabled(True)
-            else:
-                commune = ("Ce code postal n'est pas reconnu", '2')
-                self.bbox.button(QDialogButtonBox.Ok).setEnabled(False)
-                
-            self.commune.setText(commune[0])
-            self.spinZone.setValue(int(commune[1]))
-
-        update_ville(self.spinCP.value())
-
-        self.connect(self.spinCP, SIGNAL('valueChanged(int)'), update_ville)
+    def compute(self):
+        """
+        Computing the test case
+        """
+        self.starting_long_process(_("Computing test case ..."))
+        # Consistency check on scenario
+        msg = self.simulation.scenario.check_consistency()
+        if msg:
+            QMessageBox.critical(self, u"Ménage non valide",
+                                 msg, 
+                                 QMessageBox.Ok, QMessageBox.NoButton)
+            return False
+        # If it is consistent starts the computation
+ 
+        self.action_compute.setEnabled(False)
+        P, P_default = self.main.parameters.getParam(), self.main.parameters.getParam(defaut = True)
+        self.simulation.set_param(P, P_default)
+        self.simulation.compute()
+        self.main.refresh_test_case_plugins()
+        self.ending_long_process( _("Test case results are updated"))
         
-        def so_changed(value):
-            if value in (0,1):
-                self.spinLoyer.setValue(0)
-                self.spinLoyer.setEnabled(False)
-            else:
-                self.spinLoyer.setValue(500)
-                self.spinLoyer.setEnabled(True)
-                
-        self.connect(self.comboSo, SIGNAL('currentIndexChanged(int)'), so_changed)
-        self.connect(self.bbox, SIGNAL("accepted()"), SLOT("accept()"))
-        self.connect(self.bbox, SIGNAL("rejected()"), SLOT("reject()"))
+
+    def set_reform(self, reform):
+        '''
+        Toggle reform mode for test case
+        '''
+        self.simulation.set_config(reforme = reform)
+        self.set_option('reform', reform)
+        self.action_compute.setEnabled(True)
+    
+    def set_single(self, is_single = True):
+        if is_single:
+            self.simulation.set_config(nmen = 1, mode = 'castype') # TODO: this might be removed ??            
+            self.action_compute.setEnabled(True)
+            self.action_set_bareme.setChecked(False)
+        else:
+            self.action_set_bareme.setChecked(True)
+            self.set_bareme()
+        self.action_compute.setEnabled(True)
         
-    def accept(self):
-        self.scenario.menage[0].update({'loyer': int(self.spinLoyer.value()),
-                                        'so': int(self.comboSo.currentIndex()+1),
-                                        'zone_apl': int(self.spinZone.value()),
-                                        'code_postal': int(self.spinCP.value())})
-        QDialog.accept(self)
+    def set_bareme(self, is_bareme = True):
+        if is_bareme:
+            nmen = self.get_option('nmen')
+            self.simulation.set_config(nmen = nmen, mode = 'bareme') # # TODO: this might be removed ??
+            self.action_compute.setEnabled(True)
+            self.action_set_single.setChecked(False)
+        else:
+            self.action_set_single.setChecked(True)
+            self.set_single()
+        self.action_compute.setEnabled(True)
+        
+    
+    #------ OpenfiscaPluginMixin API ---------------------------------------------
+
+    def apply_plugin_settings(self, options):
+        """
+        Apply configuration file's plugin settings
+        """
+        if 'maxrev' in options:
+            maxrev = self.get_option('maxrev')
+            self.maxrev_box.setValue(maxrev)
+        if 'xaxis' in options:
+            country = CONF.get('parameters','country')
+            build_axes = of_import('utils','build_axes', country)        
+            axes = build_axes(country)
+            xaxis = self.get_option('xaxis')
+            axes_names = []
+            for axe in axes:
+                axes_names.append(axe.name)        
+            self.xaxis_box.setCurrentIndex(axes_names.index(xaxis))
+
+        if 'reform' in options:
+            self.action_set_reform.setChecked(self.get_option('reform'))
+            
+    
+    #------ OpenfiscaPluginWidget API ---------------------------------------------
+    def get_plugin_title(self):
+        """
+        Return plugin title
+        Note: after some thinking, it appears that using a method
+        is more flexible here than using a class attribute
+        """
+        return _("Composer")
+
+    
+    def get_plugin_icon(self):
+        """
+        Return plugin icon (QIcon instance)
+        Note: this is required for plugins creating a main window
+              (see SpyderPluginMixin.create_mainwindow)
+              and for configuration dialog widgets creation
+        """
+        return get_icon('OpenFisca22.png')
+            
+    def get_plugin_actions(self):
+        """
+        Return a list of actions related to plugin
+        Note: these actions will be enabled when plugin's dockwidget is visible
+              and they will be disabled when it's hidden
+        """
+        print 'get_plugin actions compo'
+        # File menu actions and shortcuts
+        self.open_action = create_action(self, _("&Open..."),
+                icon='fileopen.png', tip=_("Open composition file"),
+                triggered=self.load)
+        self.register_shortcut(self.open_action, context="Composer",
+                               name=_("Open composition file"), default="Ctrl+O")
+        self.save_action = create_action(self, _("&Save"),
+                icon='filesave.png', tip=_("Save current composition"),
+                triggered=self.save)
+        self.register_shortcut(self.save_action, context="Composer",
+                               name=_("Save current composition"), default="Ctrl+S")
+
+        self.file_menu_actions = [self.open_action, self.save_action,]
+        self.main.file_menu_actions += self.file_menu_actions
+        
+        self.action_compute = create_action(self, _('Compute test case'),
+                                                      shortcut = 'F9',
+                                                      icon = 'calculator_green.png', 
+                                                      triggered = self.compute)
+        self.register_shortcut(self.action_compute, 
+                               context = 'Composer',
+                                name = _('Compute test case'), default = 'F9')
+
+        self.action_set_bareme = create_action(self, _('Varying revenues'), 
+                                      icon = 'bareme22.png', 
+                                      toggled = self.set_bareme)
+        self.action_set_single = create_action(self, _('Single test case'), 
+                                        icon = 'castype22.png', 
+                                        toggled = self.set_single)
+        
+        self.action_set_reform = create_action(self, _('Reform mode'), 
+                                                     icon = 'comparison22.png', 
+                                                     toggled = self.set_reform, 
+                                                     tip = u"Différence entre la situation simulée et la situation actuelle")
+
+        self.run_menu_actions = [self.action_compute, self.action_set_bareme, 
+                                 self.action_set_single, self.action_set_reform,
+                                 None]
+        
+        self.main.run_menu_actions += self.run_menu_actions     
+        self.main.test_case_toolbar_actions += self.run_menu_actions 
+        
+        return self.file_menu_actions + self.run_menu_actions
+    
+    def register_plugin(self):
+        """
+        Register plugin in OpenFisca's main window
+        """
+        self.main.add_dockwidget(self)
+        self.action_set_bareme.trigger()
+
+    def refresh_plugin(self):
+        '''
+        Update Scenario Table
+        '''
+        pass
+        
+    
+    def closing_plugin(self, cancelable=False):
+        """
+        Perform actions before parent main window is closed
+        Return True or False whether the plugin may be closed immediately or not
+        Note: returned value is ignored if *cancelable* is False
+        """
+        return True
+
+#
+#        SpyderPluginWidget.visibility_changed(self, enable)
+#        if self.dockwidget.isWindow():
+#            self.dock_toolbar.show()
+#        else:
+#            self.dock_toolbar.hide()
+#        if enable:
+#            self.refresh_plugin()
+
 
 

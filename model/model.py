@@ -22,13 +22,12 @@ This file is part of openFiscaTn.
 """
 
 from datetime import date
-from core.description import ModelDescription
-from core.columns import Prestation, BoolPresta
-import tunisia.model.cotsoc as cs
-import tunisia.model.irpp as ir
-import tunisia.model.common as cm
-import tunisia.model.pfam as pf
-
+from src.core.description import ModelDescription
+from src.core.columns import Prestation, BoolPresta
+import src.countries.tunisia.model.cotsoc as cs
+import src.countries.tunisia.model.irpp as ir
+import src.countries.tunisia.model.common as cm
+import src.countries.tunisia.model.pfam as pf
 
 class ModelSF(ModelDescription):
     

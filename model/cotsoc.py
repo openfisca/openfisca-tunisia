@@ -23,12 +23,12 @@ This file is part of openFisca.
 
 from __future__ import division
 
-from numpy import  zeros, logical_not as not_
-from core.utils import scaleBaremes, combineBaremes
-from core.utils import  scaleBaremes, combineBaremes, BaremeDict
+from numpy import  zeros
+from src.core.utils_old import scaleBaremes, combineBaremes, BaremeDict
 
 
-from tunisia.model.data import CAT
+from src.countries.tunisia.model.data import CAT
+
 class Object(object):
     def __init__(self):
         object.__init__(self)
