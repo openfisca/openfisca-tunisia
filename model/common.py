@@ -116,7 +116,7 @@ def _impo(irpp):
     '''Impôts directs'''
     return irpp
 
-from src.core.utils_old import mark_weighted_percentiles
+from src.lib.utils import mark_weighted_percentiles
 
 def _decile(nivvie, wprm):
     '''

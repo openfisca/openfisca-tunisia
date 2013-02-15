@@ -22,8 +22,8 @@ This file is part of openFiscaTn.
 """
 
 from datetime import date
-from src.core.description import ModelDescription
-from src.core.columns import Prestation, BoolPresta
+from src.lib.description import ModelDescription
+from src.lib.columns import Prestation, BoolPresta
 import src.countries.tunisia.model.cotsoc as cs
 import src.countries.tunisia.model.irpp as ir
 import src.countries.tunisia.model.common as cm
