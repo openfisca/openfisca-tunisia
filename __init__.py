@@ -10,5 +10,8 @@
 # Some variables needed bu the test case
 
 ENTITIES_INDEX = ['men', 'foy']
+
 CURRENCY = u"DT"
 
+
+# REVENUES_CATEGORIES 
