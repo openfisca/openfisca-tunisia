@@ -32,6 +32,7 @@ from src.gui.baseconfig import get_translation
 _ = get_translation('src')
 
 from src.countries.tunisia import CURRENCY
+from datetime import datetime
 
 class S:
     name = 0
@@ -116,7 +117,9 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         nmen = self.get_option('nmen')
         self.nmen = nmen
         country = CONF.get('parameters', 'country')
-        datesim = CONF.get('parameters', 'datesim')
+        value = CONF.get('parameters', 'datesim')
+        datesim = datetime.strptime(value ,"%Y-%m-%d").date()
+        
         year = datesim.year
         self.simulation = simulation
         self.simulation.set_config(year = year, country = country, xaxis = xaxis, 
@@ -505,7 +508,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         """
         Return plugin icon (QIcon instance)
         Note: this is required for plugins creating a main window
-              (see SpyderPluginMixin.create_mainwindow)
+              (see OpenfiscaPluginMixin.create_mainwindow)
               and for configuration dialog widgets creation
         """
         return get_icon('OpenFisca22.png')
