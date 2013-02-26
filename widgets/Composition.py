@@ -24,6 +24,7 @@ from src.gui.views.ui_logement import Ui_Logement
 from src.widgets.InfoComp import InfoComp
 from src.widgets.Declaration import Declaration
 
+
 from src.gui.utils.qthelpers import create_action
 from src.gui.config import CONF, get_icon
 from src.plugins import OpenfiscaPluginWidget
@@ -357,9 +358,10 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
 #        self.emit(SIGNAL('compoChanged()'))
 
     def openLogement(self):
-        self._logement = Logement(self.scenario, self)
-        self._logement.exec_()
-        self.emit(SIGNAL('compoChanged()'))
+        pass
+#        self._logement = Logement(self.scenario, self)
+#        self._logement.exec_()
+#        self.emit(SIGNAL('compoChanged()'))
 
     def openInfoComp(self):
         self._infocomp = InfoComp(self.scenario, self)
