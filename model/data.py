@@ -58,10 +58,10 @@ class InputTable(ModelDescription):
     age = AgesCol(label = u"âge")
     agem = AgesCol(label = u"âge (en mois)")
     
-    loyer = IntCol(unit='men') # Loyer mensuel
+    loyer = IntCol(entity='men') # Loyer mensuel
     activite = IntCol()
     boursier = BoolCol()
-    code_postal = IntCol(unit='men')
+    code_postal = IntCol(entity='men')
     so = IntCol()
     
     statmarit = IntCol(default = 2)
