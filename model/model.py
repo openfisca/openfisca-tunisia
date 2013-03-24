@@ -30,7 +30,9 @@ import src.countries.tunisia.model.common as cm
 import src.countries.tunisia.model.pfam as pf
 
 class ModelSF(ModelDescription):
-    
+    """
+    Model description
+    """
 
     ############################################################
     # Cotisations sociales

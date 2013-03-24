@@ -521,7 +521,14 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         Note: these actions will be enabled when plugin's dockwidget is visible
               and they will be disabled when it's hidden
         """
+        # Remove conflicting shortcuts
+        for index, (qobject, context, name, default) in enumerate(self.main.shortcut_data):
+            if context == "Composer":
+                self.main.shortcut_data.pop(index)
+                qobject.deleteLater() 
+        
         # File menu actions and shortcuts
+        
         self.open_action = create_action(self, _("&Open..."),
                 icon='fileopen.png', tip=_("Open composition file"),
                 triggered=self.load)
@@ -537,11 +544,10 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self.main.file_menu_actions += self.file_menu_actions
         
         self.action_compute = create_action(self, _('Compute test case'),
-                                                      shortcut = 'F9',
                                                       icon = 'calculator_green.png', 
                                                       triggered = self.compute)
         self.register_shortcut(self.action_compute, 
-                               context = 'Composer',
+                               context = "Composer",
                                 name = _('Compute test case'), default = 'F9')
 
         self.action_set_bareme = create_action(self, _('Varying revenues'), 
@@ -569,6 +575,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         """
         Register plugin in OpenFisca's main window
         """
+                
         self.main.add_dockwidget(self)
         self.action_set_bareme.trigger()
 
@@ -588,13 +595,6 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         return True
 
 #
-#        SpyderPluginWidget.visibility_changed(self, enable)
-#        if self.dockwidget.isWindow():
-#            self.dock_toolbar.show()
-#        else:
-#            self.dock_toolbar.hide()
-#        if enable:
-#            self.refresh_plugin()
 
 
 
