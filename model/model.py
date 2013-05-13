@@ -2,10 +2,10 @@
 # Copyright © 2012 Clément Schaff, Mahdi Ben Jelloul
 
 """
-openFiscaTn, Logiciel libre de simulation du système socio-fiscal tunisien
+OpenFiscaTn, Logiciel libre de simulation du système socio-fiscal tunisien
 Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
 
-This file is part of openFiscaTn.
+This file is part of openFisca.
 
     openFisca is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
