@@ -29,7 +29,7 @@ import src.countries.tunisia.model.irpp as ir
 import src.countries.tunisia.model.common as cm
 import src.countries.tunisia.model.pfam as pf
 
-class ModelSF(ModelDescription):
+class OutputDescription(ModelDescription):
     """
     Model description
     """

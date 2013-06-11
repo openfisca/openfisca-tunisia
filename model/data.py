@@ -31,7 +31,7 @@ QUIMEN = Enum(['pref', 'cref', 'enf1','enf2','enf3','enf4','enf5','enf6','enf7',
 CAT    = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_sal', 'cnrps_pen'])
 
 
-class InputTable(ModelDescription):
+class InputDescription(ModelDescription):
     '''
     Socio-economic data
     Donnée d'entrée de la simulation à fournir à partir d'une enquète ou 
