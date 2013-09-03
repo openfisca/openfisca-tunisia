@@ -930,6 +930,20 @@
 		</BAREME>
       </NODE>
     </NODE>
+    <NODE description="Bénéfices des professions non commerciales" code="bnc" >
+      <NODE description="Assiette forfaitaire" code="forf">
+        <CODE description="Part des recettes brutes TTC imposées" code="part_forf" format="percent">
+          <VALUE valeur="0.7" deb="2007-01-01" fin="2012-12-31" />
+        </CODE>
+      </NODE>
+    </NODE>
+    <NODE description="Revenus fonciers" code="fon" >
+      <NODE description="Immeubles bâtis" code="bati">
+        <CODE description="Déduction pour frais, charges et amortissments" code="deduc_frais" format="percent">
+          <VALUE valeur="0.3" deb="2007-01-01" fin="2012-12-31" />
+        </CODE>
+      </NODE>
+    </NODE>
     <NODE description="Déductions" code="deduc" >
       <NODE description="Déductions pour charge de famille" code="fam" >
         <CODE description="Chef de famille" code="chef" format="integer" type="monetary">

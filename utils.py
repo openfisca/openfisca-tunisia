@@ -25,6 +25,10 @@ from __future__ import division
 from src import __version__ as VERSION
 import pickle
 from datetime import datetime
+from src.lib.utils import of_import
+import numpy as np
+from numpy import logical_not as not_
+from src.lib.columns import EnumCol, IntCol, BoolCol, AgesCol, FloatCol, DateCol, Prestation, BoolPresta, IntPresta, EnumPresta
 
 from src.countries.tunisia import ENTITIES_INDEX
 
@@ -290,28 +294,29 @@ class Scenario(object):
             if not name in datatable.table:
                 datatable.table[name] = datatable.description.get_col(name)._default
             
-        index = datatable.index['men']
-        nb = index['nb']
+        entity = 'men'
+        nb = datatable.index[entity]['nb']
         for noi, dct in scenario.indiv.iteritems():
             for var, val in dct.iteritems():
-                if var in ('birth', 'noipref', 'noidec', 'noichef', 'quifoy', 'quimen', 'quifam'): continue
-                if not index[noi] is None:
-                    datatable.set_value(var, np.ones(nb)*val, index, noi)
+                if var in ('birth', 'noipref', 'noidec', 'noichef', 'quifoy', 'quimen', 'quifam'): 
+                    continue
+                if not datatable.index[entity] is None:
+                    datatable.set_value(var, np.ones(nb)*val, entity, noi)
             del var, val
             
-        index = datatable.index['foy']
-        nb = index['nb']
+        entity = 'foy'
+        nb = datatable.index[entity]['nb']
         for noi, dct in scenario.declar.iteritems():
             for var, val in dct.iteritems():
-                if not index[noi] is None:
-                    datatable.set_value(var, np.ones(nb)*val, index, noi)
+                if not datatable.index[entity][noi] is None:
+                    datatable.set_value(var, np.ones(nb)*val, entity, noi)
     
         index = datatable.index['men']
         nb = index['nb']
         for noi, dct in scenario.menage.iteritems():
             for var, val in dct.iteritems():
                 if not index[noi] is None:
-                    datatable.set_value(var, np.ones(nb)*val, index, noi)
+                    datatable.set_value(var, np.ones(nb)*val, entity, noi)
             del var, val
     
 
@@ -339,23 +344,17 @@ class Scenario(object):
                         
             vls = np.linspace(0, maxrev, nmen)
             if same_rev_couple is True:
-                index_men = datatable.index['men']
-                datatable.set_value(var, 0.5*vls, index_men, opt = 0)
-                datatable.set_value(var, 0.5*vls, index_men, opt = 1)
+                entity = 'men'
+                datatable.set_value(var, 0.5*vls, entity, opt = 0)
+                datatable.set_value(var, 0.5*vls, entity, opt = 1)
             else:
-                datatable.set_value(var, vls, {0:{'idxIndi': index[0]['idxIndi'], 'idxUnit': index[0]['idxIndi']}})
+                datatable.set_value(var, vls, entity, opt = 0)
                 
             datatable._isPopulated = True
         
 
-XAXIS_PROPERTIES = { 'sali': {
-                              'name' : 'sal',
-                              'typ_tot' : {'salsuperbrut' : 'Salaire super brut',
-                                           'salbrut': 'Salaire brut',
-                                           'sal':  'Salaire imposable',
-                                           'salnet': 'Salaire net'},
-                              'typ_tot_default' : 'sal'},
-                             }
+country = "tunisia"
+XAXIS_PROPERTIES =  of_import('','XAXIS_PROPERTIES', country)
 
 
 class Xaxis(object):
@@ -376,6 +375,7 @@ class Xaxis(object):
         InputDescription = of_import('model.data', 'InputDescription', country)
         description = Description(InputDescription().columns)
         label2var, var2label, var2enum = description.builds_dicts()
+        print self.col_name
         self.label = var2label[self.col_name]
         
 
@@ -395,7 +395,7 @@ def build_axes(country):
     from src.lib.utils import of_import
     Xaxis = of_import('utils','Xaxis', country)
     axes = []
-    for col_name in XAXIS_PROPERTIES: #['sali', 'choi', 'rsti', 'f2da', 'f2ee', 'f2dc', 'f2tr' ]:
+    for col_name in XAXIS_PROPERTIES: 
         axe = Xaxis(col_name, country)
         axes.append(axe)
     del axe

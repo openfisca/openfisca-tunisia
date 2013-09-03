@@ -53,55 +53,66 @@ class OutputDescription(ModelDescription):
     ############################################################
     
     smig75   = BoolPresta(pf._smig75, label="Indicatrice de salaire supérieur à 75% du smig" ) 
-    af_nbenf = Prestation(pf._af_nbenf, 'foy', label="Nombre d'enfants au sens des allocations familiales")
-    af  = Prestation(pf._af, 'foy', label="Allocations familiales")
-    sal_uniq = BoolPresta(pf._sal_uniq, 'foy', label="Indicatrice de salaire unique")
-    maj_sal_uniq = Prestation(pf._maj_sal_uniq, 'foy', label="Majoration du salaire unique")
-    contr_creche = Prestation(pf._contr_creche, 'foy', label="Contribution aux frais de crêche")
-    pfam = Prestation(pf._pfam, 'foy', label="Prestations familales")
+    af_nbenf = Prestation(pf._af_nbenf, entity='foy', label="Nombre d'enfants au sens des allocations familiales")
+    af  = Prestation(pf._af, entity='foy', label="Allocations familiales")
+    sal_uniq = BoolPresta(pf._sal_uniq, entity='foy', label="Indicatrice de salaire unique")
+    maj_sal_uniq = Prestation(pf._maj_sal_uniq, entity='foy', label="Majoration du salaire unique")
+    contr_creche = Prestation(pf._contr_creche, entity='foy', label="Contribution aux frais de crêche")
+    pfam = Prestation(pf._pfam, entity='foy', label="Prestations familales")
     
     ############################################################
     # Impôt sur le revenu
     ############################################################
 
-    marie = BoolPresta(ir._marie, 'foy')
-    celdiv = BoolPresta(ir._celib, 'foy')
-    divor = BoolPresta(ir._divor, 'foy')
-    veuf = BoolPresta(ir._veuf, 'foy')
+    marie = BoolPresta(ir._marie, entity='foy')
+    celdiv = BoolPresta(ir._celib, entity='foy')
+    divor = BoolPresta(ir._divor, entity='foy')
+    veuf = BoolPresta(ir._veuf, entity='foy')
     
-    nb_enf = Prestation(ir._nb_enf, 'foy')
-    nb_enf_sup = Prestation(ir._nb_enf_sup, 'foy')
-    nb_par     = Prestation(ir._nb_par, 'foy')
-    nb_infirme = Prestation(ir._nb_infirme, 'foy')
+    nb_enf = Prestation(ir._nb_enf, entity='foy')
+    nb_enf_sup = Prestation(ir._nb_enf_sup, entity='foy')
+    nb_par     = Prestation(ir._nb_par, entity='foy')
+    nb_infirme = Prestation(ir._nb_infirme, entity='foy')
     
-#    rbg = Prestation(ir._rbg, 'foy', label = u"Revenu brut global")
+#    rbg = Prestation(ir._rbg, entity='foy', label = u"Revenu brut global")
     
-    bic = Prestation(ir._bic, 'foy')
-    bnc = Prestation(ir._bnc, 'foy')
-    beap = Prestation(ir._beap, 'foy')
-    rvcm = Prestation(ir._rvcm, 'foy')
-    fon_forf_bati = Prestation(ir._fon_forf_bati, 'foy')
-    fon_forf_nbat = Prestation(ir._fon_forf_nbat, 'foy')
-    rfon = Prestation(ir._rfon, 'foy')
+    
+    # Bénéfices industriels et commerciaux
+    bic = Prestation(ir._bic, entity='foy')
+ 
+    bic_ca_global = Prestation(ir._bic_ca_global, label="Chiffre d’affaires global (BIC, cession de fond de commerce")
+    bic_res_cession = Prestation(ir._bic_res_cession, label="Résultat (BIC, cession de fond de commerce)")
+    bic_benef_fiscal_cession = Prestation(ir._bic_benef_fiscal_cession, label= "Bénéfice fiscal (BIC, cession de fond de commerce)")   
+    
+    bnc = Prestation(ir._bnc, entity='foy')
+    
+    bnc_forf_benef_fiscal = Prestation(ir._bnc_forf_benef_fiscal, label="Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)")
+    
+    
+    beap = Prestation(ir._beap, entity='foy')
+    rvcm = Prestation(ir._rvcm, entity='foy')
+    fon_forf_bati = Prestation(ir._fon_forf_bati, entity='foy')
+    fon_forf_nbat = Prestation(ir._fon_forf_nbat, entity='foy')
+    rfon = Prestation(ir._rfon, entity='foy')
 
-    sal = Prestation(ir._sal, 'foy', "Salaires y compris salaires en nature")
-    sal_net = Prestation(ir._sal_net, 'foy', "Salaires nets")
-    pen_net = Prestation(ir._pen_net, 'foy')                               
-    tspr    = Prestation(ir._tspr, 'foy')
-    retr    = Prestation(ir._retr, 'foy')
-    rng = Prestation(ir._rng, 'foy', label = u"Revenu net global")
+    sal = Prestation(ir._sal, entity='foy', label="Salaires y compris salaires en nature")
+    sal_net = Prestation(ir._sal_net, entity='foy', label="Salaires nets")
+    pen_net = Prestation(ir._pen_net, entity='foy')                               
+    tspr    = Prestation(ir._tspr, entity='foy')
+    retr    = Prestation(ir._retr, entity='foy')
+    rng = Prestation(ir._rng, entity='foy', label=u"Revenu net global")
     
     # Déductions
     
-    deduc_fam = Prestation(ir._deduc_fam, 'foy', label = u"Déductions pour situation et charges de famille")
-    deduc_rente     = Prestation(ir._deduc_rente, 'foy', label = u"Arrérages et rentes payées à titre obligatoire et gratuit")
-    ass_vie   = Prestation(ir._ass_vie, 'foy', label = u"Primes afférentes aux contrats d'assurance-vie")
+    deduc_fam = Prestation(ir._deduc_fam, entity='foy', label = u"Déductions pour situation et charges de famille")
+    deduc_rente     = Prestation(ir._deduc_rente, entity='foy', label = u"Arrérages et rentes payées à titre obligatoire et gratuit")
+    ass_vie   = Prestation(ir._ass_vie, entity='foy', label = u"Primes afférentes aux contrats d'assurance-vie")
     # réductions d'impots
     
-    deduc_smig = Prestation(ir._deduc_smig, 'foy', label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG")
-    rni = Prestation(ir._rni, 'foy', label = u"Revenu net imposable")
-    ir_brut = Prestation(ir._ir_brut, 'foy', label = u"Impôt avant non-imposabilité")
-    irpp = Prestation(ir._irpp, 'foy', label = u"Impôt sur le revenu des personnes physiques")
+    deduc_smig = Prestation(ir._deduc_smig, entity='foy', label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG")
+    rni = Prestation(ir._rni, entity='foy', label = u"Revenu net imposable")
+    ir_brut = Prestation(ir._ir_brut, entity='foy', label = u"Impôt avant non-imposabilité")
+    irpp = Prestation(ir._irpp, entity='foy', label = u"Impôt sur le revenu des personnes physiques")
 
     ############################################################
     # Unité de consommation du ménage

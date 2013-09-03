@@ -115,12 +115,13 @@ def _nb_par(agem):
 ###############################################################################
 
 
+# 1. Bénéfices industriels et commerciaux
 def _bic(agem):
     '''
-    Bénéfices industriels et commerciaux TODO
+    Bénéfices industriels et commerciaux TODO:
     'foy'
     ''' 
-#    return bic_reel + bic_simpl + bic_forf TODO
+#    return bic_reel + bic_simpl + bic_forf TODO:
     return 0*agem
 
 # régime réel
@@ -128,36 +129,69 @@ def _bic(agem):
 # régime forfaitaire
 
 
-def _bnc(agem):   
-    '''
-    Bénéfices des professions non commerciales TODO
-    'foy'
-    '''
-    return 0*agem
-     
-def _beap(agem):
-    '''
-    Bénéfices de l'exploitation agricole et de pêche TODO
-    'foy'
-    '''
-    return 0*agem
+def _bic_ca_global(bic_ca_revente, bic_ca_autre):
+    """
+    Chiffre d’affaires global
+    des personnes soumises au régime forfaitaire ayant cédé le fond de commerce
+    """
+    return bic_ca_revente + bic_ca_autre
 
-    
-def _rvcm(capm_banq, capm_cent, capm_caut, capm_part, capm_oblig, capm_caisse, capm_plfcc, capm_epinv, capm_aut):
+def _bic_res_cession(bic_ca_global, bic_depenses):
+    return max_(bic_ca_global - bic_depenses, 0)
+
+def _bic_benef_fiscal_cession(bic_res_cession, bic_pv_cession):
+    """
+    Bénéfice fiscal
+    """
+    return bic_res_cession + bic_pv_cession
+
+def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
+    """
+    Résultat net BIC TODO: il manque le régime réel
+    """
+    return bic_benef_fiscal_cession +  bic_part_benef_sp
+
+
+# 2. Bénéfices des professions non commerciales
+def _bnc(bnc_reel_res_fiscal, bnc_forf_benef_fiscal, bnc_part_benef_sp):   
     '''
-    Revenus de valeurs mobilières et de capitaux mobiliers
+    Bénéfices des professions non commerciales TODO:
     'foy'
     '''
-    return capm_banq + capm_cent + capm_caut + capm_part + capm_oblig + capm_caisse + capm_plfcc + capm_epinv + capm_aut
-    
+    return bnc_reel_res_fiscal + bnc_forf_benef_fiscal + bnc_part_benef_sp
+
+
+def _bnc_forf_benef_fiscal(bnc_forf_rec_brut, _P):
+    """
+    Bénéfice fiscal (régime forfaitaire, 70% des recettes brutes TTC)
+    """
+    part = _P.ir.bnc.forf.part_forf
+    return bnc_forf_rec_brut*part
+
+     
+# 3. Bénéfices de l'exploitation agricole et de pêche
+def _beap(beap_reel_res_fiscal, beap_reliq_benef_fiscal, beap_monogr, beap_part_benef_sp):
+    """
+    Bénéfices de l'exploitation agricole et de pêche TODO:
+    'foy'
+    """
+    return beap_reel_res_fiscal + beap_reliq_benef_fiscal + beap_monogr + beap_part_benef_sp
+
+
+# 4. Revenus fonciers
+def _rfon(fon_reel_fisc, fon_forf_bati, fon_forf_nbat, fon_sp):
+    """
+    Revenus fonciers
+    'foy'
+    """    
+    return fon_reel_fisc + fon_forf_bati + fon_forf_nbat + fon_sp    
     
 def _fon_forf_bati(fon_forf_bati_rec, fon_forf_bati_rel, fon_forf_bati_fra, fon_forf_bati_tax, _P):
     '''
-    Revenus fonciers net des immeubles bâtis #TODO
+    Revenus fonciers net des immeubles bâtis
     'foy'
     '''
-    P = 0
-    #P = _P.ir.fon.abat_bat
+    P = _P.ir.fon.bati.deduc_frais
     return max_(0, fon_forf_bati_rec*(1-P) + fon_forf_bati_rel - fon_forf_bati_fra - fon_forf_bati_tax)
 
 def _fon_forf_nbat(fon_forf_nbat_rec, fon_forf_nbat_dep, fon_forf_nbat_tax, _P):
@@ -168,12 +202,13 @@ def _fon_forf_nbat(fon_forf_nbat_rec, fon_forf_nbat_dep, fon_forf_nbat_tax, _P):
     return max_(0, fon_forf_nbat_rec - fon_forf_nbat_dep - fon_forf_nbat_tax)
 
 
-def _rfon(fon_reel_fisc, fon_forf_bati, fon_forf_nbat, fon_sp):
+# 5. Traitements, salaires, indemnités, pensions et rentes viagères 
+def _tspr(sal_net, pen_net):
     '''
-    Revenus fonciers
+    Traitements, salaires, indemnités, pensions et rentes viagères
     'foy'
-    '''    
-    return fon_reel_fisc + fon_forf_bati + fon_forf_nbat + fon_sp
+    '''
+    return sal_net + pen_net
 
 def _sal(sali, sal_nat):
     '''
@@ -204,13 +239,16 @@ def _pen_net(pen, pen_nat, _P):
     P = _P.ir.tspr
     return (pen + pen_nat)*(1-P.abat_pen) 
 
-def _tspr(sal_net, pen_net):
+# 6. Revenus de valeurs mobilières et de capitaux mobiliers
+def _rvcm(capm_banq, capm_cent, capm_caut, capm_part, capm_oblig, capm_caisse, capm_plfcc, capm_epinv, capm_aut):
     '''
-    Traitemens salaires pensions 
+    Revenus de valeurs mobilières et de capitaux mobiliers
     'foy'
     '''
-    return sal_net + pen_net
-        
+    return capm_banq + capm_cent + capm_caut + capm_part + capm_oblig + capm_caisse + capm_plfcc + capm_epinv + capm_aut
+
+
+# 7. revenus de source étrangère        
 def _retr(etr_sal, etr_pen, etr_trans, etr_aut, _P):
     '''
     Autres revenus ie revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine
@@ -218,7 +256,6 @@ def _retr(etr_sal, etr_pen, etr_trans, etr_aut, _P):
     '''
     P = _P.ir.tspr
     return etr_sal*(1-P.abat_sal) + etr_pen*(1-P.abat_pen) + etr_trans*(1-P.abat_pen_etr) + etr_aut
-
 
 
 ###############################################################################
@@ -279,7 +316,7 @@ def _deduc_rente(rente):
     Déductions des arrérages et rentes payées à titre obligatoire et gratuit
     'foy'
     '''
-    return rente # TODO
+    return rente # TODO:
     
 def _ass_vie(prime_ass_vie, statmarit, nb_enf, _P):
     '''    
@@ -287,7 +324,7 @@ def _ass_vie(prime_ass_vie, statmarit, nb_enf, _P):
     'foy'
     '''
     P = _P.ir.deduc.ass_vie
-    marie = statmarit # TODO
+    marie = statmarit # TODO:
     deduc = min_(prime_ass_vie, P.plaf + marie*P.conj_plaf + nb_enf*P.enf_plaf) 
     return deduc
 
@@ -328,7 +365,7 @@ def _deduc_smig(chef):
     Déduction supplémentaire pour les salariés payés au « SMIG » et « SMAG »
     'foy'
     '''
-    return 0*chef # TODO voir avec tspr
+    return 0*chef # TODO: voir avec tspr
 
 def _rni(rng, deduc_fam, rente, ass_vie):
     '''
@@ -348,7 +385,7 @@ def _ir_brut(rni, _P):
 
 def _irpp(ir_brut, _P):
     '''
-    Impot sur le revenu payé TODO
+    Impot sur le revenu payé TODO:
     'foy'
     '''
     irpp = ir_brut

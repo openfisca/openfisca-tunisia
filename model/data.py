@@ -67,7 +67,7 @@ class InputDescription(ModelDescription):
     statmarit = IntCol(default = 2)
     chef      = BoolCol()
 
-    # bic Bénéfices industriels et commerciaux
+    # BIC Bénéfices industriels et commerciaux
     # régime réel
     bic_reel  = EnumCol()
     # 0: Néant 1: commerçant – 2: industriel – 3: prestataire de services - 4: artisan – 5: plus qu'une activité. Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt annuel sur le revenu au titre des bénéfices industriels et commerciaux sur la base de la différence entre les recettes et les dépenses .
@@ -75,7 +75,7 @@ class InputDescription(ModelDescription):
     bic_sp = BoolCol()
 
     cadre_legal = EnumCol()
-    # Code : 1: exportation totale dans le cadre du CII- 2 : développement régional - 3: développement agricole – 4: parcs des activités économiques – 5 : exportation dans le cadre du droit commun– 99: autre cadre ( à préciser).
+    # (1) Code : 1: exportation totale dans le cadre du CII- 2 : développement régional - 3: développement agricole – 4: parcs des activités économiques – 5 : exportation dans le cadre du droit commun– 99: autre cadre ( à préciser).
 
     bic_reel_res = IntCol()
     bic_forf_res = IntCol()
@@ -84,16 +84,82 @@ class InputDescription(ModelDescription):
     decl_inves = EnumCol()
     # (2) Code : 1:API- 2: APIA –3: commissariat régional du développement agricole –4: ONT –5:autre structure ( à préciser)
 
+    # A/ Régime réel
+    # Valeur du stock au début de l’exercice
+    # Valeur du stock à la fin de l’exercice
+    # Valeur des achats au cours de l’exercice
+    # Chiffre d’affaires local HT.
+    # Chiffre d’affaires à l’exportation
+    # Chiffre d’affaires global TTC.
+    # Chiffre d’affaires provenant des activités de services.
+    # Montant des primes (5) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
+    # Résultat comptable
+    # Résultat fiscal (6) Joindre à la déclaration l’état de détermination du résultat fiscal.
+    bic_res_fiscal = IntCol(label = "Résultat fiscal (BIC)")
 
-    # bnc Bénéfices des professions non commerciales
-    bnc_reel = BoolCol()
-    bnc_forf = BoolCol()
+    # Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
+    bic_ca_revente = IntCol(label="Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation")
+    bic_ca_autre = IntCol(label="Chiffre d’affaires global au titre d’autres activités")
+    bic_depenses = IntCol(label="Total des dépenses (BIC cession de fond de commerce)")    
+    bic_pv_cession = IntCol(label="Plue-value de cession du fond de commerce")
+
+    
+    
+    # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial
+    bic_part_benef_sp = IntCol(label="Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial")
+
+    # BNC Bénéfices des professions non commerciales
+    # A/ Régime réel
+    # - Chiffre d’affaires local HT. 
+    # - Chiffre d’affaires à l’exportation 
+    # - Chiffre d’affaires global TTC. 
+    # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
+    # - Résultat comptable 
+    # - Résultat fiscal (2) Joindre à la déclaration l'état de détermination du résultat fiscal    
+    bnc_reel_res_fiscal = IntCol(label = "Résultat fiscal (BNC)")
+    
+    # B/ Détermination du bénéfice sur la base d’une assiette forfaitaire
+    # - Recettes au titre des services locaux
+    # - Recettes au titre des services exportés (3) Pour les entreprises totalement exportatrices dans le cadre du CII ou exerçant dans les parcs d’activités économiques.
+    # - Recettes globales brutes TTC 
+    bnc_forf_rec_brut = IntCol(label = "Recettes globales brutes TTC (BNC)") 
+    # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
+
+    # C/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux
+    bnc_part_benef_sp = IntCol(label="Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux")
     
     # beap Bénéfices de l'exploitation agricole et de pêche
-    beap_reel = BoolCol()
-    beap_rd   = BoolCol()
-    beap_ms   = BoolCol()
-    beap_sp   = BoolCol()
+    # A/ Régime réel
+    # - Chiffre d’affaires local
+    # - Chiffre d’affaires à l’exportation
+    # - Chiffre d’affaires global
+    # - Montant des primes  Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
+    # - Résultat comptable B= bénéfice P = perte 
+    # - Résultat fiscal  B= bénéfice P = perte 
+    beap_reel_res_fiscal = IntCol(label="Résultat fiscal (BEAP, régime réel)")
+    
+    # B/ Détermination du bénéfice sur la base du reliquat positif entre les
+    # recettes et les dépenses
+    # - Recettes brutes …………………………..
+    # - Stocks …………………………..
+    beap_reliq_rec = IntCol(label="Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses") 
+    beap_reliq_stock = IntCol(label="Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")
+    
+    # TOTAL …………………………..
+    # - Déduction des dépenses d’exploitation justifiées …………………………..
+    beap_reliq_dep_ex = IntCol(label="Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")
+    # - Montant des primes (1) …………………………..
+    # - Résultat B= bénéfice P = perte …………………………..
+    # - Bénéfice fiscal (4) …………………………..
+    beap_reliq_benef_fiscal = IntCol(label="Bénéfice fiscal (BEAP)" ) # TODO:
+    # C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
+    # - Bénéfice fiscal …………………………..
+    beap_monogr = IntCol(label="Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")
+    
+    # D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
+    # assimilées exerçant dans le secteur agricole et de pêche
+    beap_part_benef_sp = IntCol(label="Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche")
+    
     
     # rfon Revenus fonciers 
     #  régime réel

@@ -53,7 +53,6 @@ def age_min(age, minimal_age = None):
     ages = ages + (ages < minimal_age)*9999
     return amin(ages, axis = 1)
 
-
 def age_max(age):
     '''
     Returns minimal age higher than or equal to a
@@ -70,7 +69,7 @@ def ages_first_kids(age,  nb = None):
     ages = (ages.T + .00001*arange(ages.shape[0])).T # To deal with twins
     
     if nb is None:
-        nb = 3  # TODO 4e enfant qui en bénéficiait en 1989
+        nb = 3  # TODO: 4e enfant qui en bénéficiait en 1989
     i = 0
     age_list = []
     
@@ -136,7 +135,7 @@ def _af_nbenf(age, smig75, activite, inv, _P, _option={'age': ENFS, 'smig75': EN
 #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération supérieure à 75 % du SMIG.
 #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire, supérieur, 
 #      technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
-#    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO
+#    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO: code this
 #    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie incurable et se trouvant, 
 #    de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail lucratif, et pour les handicapés titulaires d'une carte d'handicapé 
 #    qui ne sont pas pris en charge intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités locales.
@@ -159,7 +158,7 @@ def _af(af_nbenf, sal, _P, _option = {'sal' : [CHEF, PART]} ):
     'foy'
     '''
     # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
-    # TODO ajouter éligibilité des parents aux allocations familiales 
+    # TODO: ajouter éligibilité des parents aux allocations familiales 
     P = _P.pfam 
     bm =  min_( max_(sal[CHEF],sal[PART])/4,  P.af.plaf_trim) # base trimestrielle    
     # prestations familliales  # Règle d'arrondi ?
@@ -167,7 +166,6 @@ def _af(af_nbenf, sal, _P, _option = {'sal' : [CHEF, PART]} ):
     af_2enf = round(bm * P.af.taux.enf2, 2)
     af_3enf = round(bm * P.af.taux.enf3, 2)
     af_base = (af_nbenf >= 1)*af_1enf + (af_nbenf >= 2)*af_2enf + (af_nbenf >=3 )*af_3enf
-
     return 4 * af_base  # annualisé
 
 
@@ -219,8 +217,6 @@ def _contr_creche(sal, agem, _P, _option={'agem': ENFS, 'sal': [CHEF, PART]}):
     return P.montant*elig_age*elig_sal*min_(P.duree, 12 - age_m_benj)
 
 
-
-
 def _pfam(af, maj_sal_uniq, contr_creche):  # , _af_cong_naiss, af_cong_jeun_trav
     '''
     Prestations familiales
@@ -245,7 +241,7 @@ def _as_mal(age, sal, _P, _option={'age': ENFS}):
 
 def _as_maternite(age, sal, _P, _option={'age': ENFS}):
     '''
-    Assurance sociale - maternité  TODO
+    Assurance sociale - maternité  TODO:
     'fam' 
     '''
     # P = _P.as.mat 
@@ -255,7 +251,7 @@ def _as_maternite(age, sal, _P, _option={'age': ENFS}):
 
 def _as_deces(sal, _P, _option={'age': ENFS}):
     '''
-    Assurance sociale - décès   # TODO
+    Assurance sociale - décès   # TODO:
     'fam'
     '''
     # P = _P.as.dec
