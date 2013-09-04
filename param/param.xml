@@ -694,7 +694,8 @@
     	    <VALUE valeur="0" deb="2002-03-12" fin="2011-12-31"/>
 	      </SEUIL>
     	  <TAUX>
-	        <VALUE valeur=".0275" deb="1985-01-01" fin="2011-12-31"/>
+	        <VALUE valeur=".04" deb="2007-07-01" fin="2011-12-31"/>
+	        <VALUE valeur="0" deb="1985-01-01" fin="2007-06-30"/>
     	  </TAUX>
 	    </TRANCHE>
 	  </BAREME>
