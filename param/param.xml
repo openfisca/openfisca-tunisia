@@ -1021,5 +1021,15 @@
         </CODE>
       </NODE>
     </NODE>
-  </NODE>
+    <NODE description="Variables pour scénario de réforme" code="reforme" >
+      <NODE description="Exemption du paiement de l'impôt sur le revenu" code="exemption" >
+        <CODE description="Activation de l'exemption" code="active" format="bool" >
+          <VALUE valeur="0" deb="2011-01-01" fin="2012-12-31" />
+        </CODE>
+        <CODE description="Revenu imposable maximal exempté" code="max" format="integer" type="monetary">
+          <VALUE valeur="5000" deb="2011-01-01" fin="2012-12-31" />
+        </CODE>
+      </NODE>
+    </NODE>
+  </NODE>  
 </NODE>

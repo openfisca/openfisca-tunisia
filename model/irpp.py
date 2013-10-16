@@ -380,8 +380,11 @@ def _ir_brut(rni, _P):
     'foy'
     '''
     bar = _P.ir.bareme
+    exemption = _P.ir.reforme.exemption
     bar.t_x()
-    return - bar.calc(rni)
+    rni_apres_exemption = rni*(exemption.active==0) + rni*(exemption.active==1)*(rni>exemption.max)
+    ir_brut = - bar.calc(rni_apres_exemption)   
+    return ir_brut
 
 def _irpp(ir_brut, _P):
     '''
