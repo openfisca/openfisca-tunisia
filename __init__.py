@@ -14,7 +14,10 @@ CURRENCY = u"DT"
 
 
 # Some variables needed by the test case graph widget
-# REVENUES_CATEGORIES 
+
+
+REVENUES_CATEGORIES = {'imposable' : ['sal',]}
+
 
 XAXIS_PROPERTIES = { 'sali': {
                               'name' : 'sal',
