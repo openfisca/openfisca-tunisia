@@ -77,7 +77,7 @@ def _salbrut(sali, type_sal, _defaultP):
     Calcule le salaire brut à partir du salaire net
     '''
     
-    smig = _defaultP.cotsoc.gen.smig_40h
+    smig = _defaultP.cotsoc.gen.smig
     cotsoc = BaremeDict('cotsoc', _defaultP.cotsoc)
     
     plaf_ss = 12*smig
@@ -109,7 +109,7 @@ def _cotpat(salbrut, type_sal, _P):
     # TODO traiter les différents régimes séparément ?
 
 
-    smig = _P.cotsoc.gen.smig_40h
+    smig = _P.cotsoc.gen.smig
     cotsoc = BaremeDict('cotsoc', _P.cotsoc)
     
     plaf_ss = 12*smig
@@ -134,7 +134,7 @@ def _cotsal(salbrut, type_sal, _P):
     '''
     # TODO traiter les différents régimes
     
-    smig = _P.cotsoc.gen.smig_40h
+    smig = _P.cotsoc.gen.smig
     cotsoc = BaremeDict('cotsoc', _P.cotsoc)    
     plaf_ss = 12*smig
 

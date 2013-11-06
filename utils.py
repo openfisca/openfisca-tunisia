@@ -26,9 +26,6 @@ from src import __version__ as VERSION
 import pickle
 from datetime import datetime
 from src.lib.utils import of_import
-import numpy as np
-from numpy import logical_not as not_
-from src.lib.columns import EnumCol, IntCol, BoolCol, AgesCol, FloatCol, DateCol, Prestation, BoolPresta, IntPresta, EnumPresta
 
 from src.countries.tunisia import ENTITIES_INDEX
 
@@ -313,13 +310,14 @@ class Scenario(object):
     
         index = datatable.index['men']
         nb = index['nb']
+        entity = "men"
         for noi, dct in scenario.menage.iteritems():
             for var, val in dct.iteritems():
                 if not index[noi] is None:
                     datatable.set_value(var, np.ones(nb)*val, entity, noi)
+
             del var, val
     
-
         if nmen>1:
             if self.maxrev is None:
                 raise Exception('tunisia.utils.Scenario: self.maxrev should not be None')
@@ -386,8 +384,6 @@ class Xaxis(object):
         self.name = XAXIS_PROPERTIES[col_name]['name']
         self.typ_tot = XAXIS_PROPERTIES[col_name]['typ_tot']
         self.typ_tot_default = XAXIS_PROPERTIES[col_name]['typ_tot_default'] 
-        
-
 
 
 def build_axes(country):

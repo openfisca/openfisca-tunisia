@@ -21,8 +21,7 @@ This file is part of openFisca.
     along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
 """
 from __future__ import division
-from numpy import ( maximum as max_, minimum as min_, logical_xor as xor_, zeros, 
-                     logical_not as not_, round) 
+from numpy import maximum as max_, minimum as min_, logical_or as or_ 
 
 from src.countries.tunisia.model.data import QUIFOY
 #from tunisia.data import QUIFAM
@@ -217,6 +216,14 @@ def _sal(sali, sal_nat):
     '''
     return (sali + sal_nat)
 #    return sali
+
+def _smig(sal, smig_dec, _P):
+    '''
+    Indicatrice de salariée payé au smig
+    'foy'
+    '''
+    smig = or_(smig_dec, sal <= 12*_P.cotsoc.gen.smig)
+    return smig
 
 def _sal_net(sal, smig, _P):
     '''

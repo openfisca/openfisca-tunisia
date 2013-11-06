@@ -53,12 +53,12 @@ class OutputDescription(ModelDescription):
     ############################################################
     
     smig75   = BoolPresta(pf._smig75, label="Indicatrice de salaire supérieur à 75% du smig" ) 
-    af_nbenf = Prestation(pf._af_nbenf, entity='foy', label="Nombre d'enfants au sens des allocations familiales")
-    af  = Prestation(pf._af, entity='foy', label="Allocations familiales")
-    sal_uniq = BoolPresta(pf._sal_uniq, entity='foy', label="Indicatrice de salaire unique")
-    maj_sal_uniq = Prestation(pf._maj_sal_uniq, entity='foy', label="Majoration du salaire unique")
-    contr_creche = Prestation(pf._contr_creche, entity='foy', label="Contribution aux frais de crêche")
-    pfam = Prestation(pf._pfam, entity='foy', label="Prestations familales")
+    af_nbenf = Prestation(pf._af_nbenf, entity='men', label="Nombre d'enfants au sens des allocations familiales")
+    af  = Prestation(pf._af, entity='men', label="Allocations familiales")
+    sal_uniq = BoolPresta(pf._sal_uniq, entity='men', label="Indicatrice de salaire unique")
+    maj_sal_uniq = Prestation(pf._maj_sal_uniq, entity='men', label="Majoration du salaire unique")
+    contr_creche = Prestation(pf._contr_creche, entity='men', label="Contribution aux frais de crêche")
+    pfam = Prestation(pf._pfam, entity='men', label="Prestations familales")
     
     ############################################################
     # Impôt sur le revenu
@@ -107,9 +107,14 @@ class OutputDescription(ModelDescription):
     deduc_fam = Prestation(ir._deduc_fam, entity='foy', label = u"Déductions pour situation et charges de famille")
     deduc_rente     = Prestation(ir._deduc_rente, entity='foy', label = u"Arrérages et rentes payées à titre obligatoire et gratuit")
     ass_vie   = Prestation(ir._ass_vie, entity='foy', label = u"Primes afférentes aux contrats d'assurance-vie")
-    # réductions d'impots
+   
+    smig = Prestation(ir._smig, entity='foy', label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires")
     
     deduc_smig = Prestation(ir._deduc_smig, entity='foy', label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG")
+   
+    # Réductions d'impots
+   
+    
     rni = Prestation(ir._rni, entity='foy', label = u"Revenu net imposable")
     ir_brut = Prestation(ir._ir_brut, entity='foy', label = u"Impôt avant non-imposabilité")
     irpp = Prestation(ir._irpp, entity='foy', label = u"Impôt sur le revenu des personnes physiques")

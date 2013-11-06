@@ -26,12 +26,12 @@ from numpy import (round, zeros, maximum as max_, minimum as min_,
                    logical_xor as xor_, logical_or as or_, logical_not as not_,
                    asanyarray, amin, amax, arange)
 
-from src.countries.tunisia.model.data import QUIFOY
-CHEF = QUIFOY['vous']
-PART = QUIFOY['conj']
+from src.countries.tunisia.model.data import QUIFOY, QUIMEN
+CHEF = QUIMEN['pref']
+PART = QUIMEN['cref']
 
-PACS = [ QUIFOY[ 'pac' + str(i)] for i in range(1,10) ]
-ENFS = [ QUIFOY[ 'pac' + str(i)] for i in range(1,10) ]
+PACS = [ QUIMEN[ 'enf' + str(i)] for i in range(1,10) ]
+ENFS = [ QUIMEN[ 'enf' + str(i)] for i in range(1,10) ]
 
 def age_en_mois_benjamin(agems):
     '''
@@ -111,13 +111,16 @@ def _smig75(sal, _P):
     '''
     Indicatrice de rémunération inférieur à 55% du smic
     '''
-    return sal < _P.cotsoc.gen.smig_40h
+    return sal < _P.cotsoc.gen.smig
 
 def _sal_uniq(sal, _P, _option = {'sal' : [CHEF, PART]}):
     '''
-    Indicatrice de salaire uniue
+    Indicatrice de salaire unique
     '''
+    print sal[CHEF]>0
+    print sal[PART]>0
     uniq = xor_(sal[CHEF]>0, sal[PART]>0)
+    print uniq
     return uniq
 
 ############################################################################
@@ -209,7 +212,7 @@ def _contr_creche(sal, agem, _P, _option={'agem': ENFS, 'sal': [CHEF, PART]}):
     # versée pour les enfants ouvrant droit aux prestations familiales et 
     # dont l'âge est compris entre 2 et 36 mois. Elle s'élève à 15 dinars par 
     # enfant et par mois pendant 11 mois.
-    smig48 = _P.cotsoc.gen.smig_48h
+    smig48 = _P.cotsoc.gen.smig # TODO: smig 48H
     P = _P.pfam.creche
     age_m_benj = age_en_mois_benjamin(agem)
     elig_age = (age_m_benj <= P.age_max)*(age_m_benj >= P.age_min) 
