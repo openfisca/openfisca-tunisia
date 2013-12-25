@@ -23,8 +23,8 @@ This file is part of openFisca.
 from __future__ import division
 from numpy import maximum as max_, minimum as min_, logical_or as or_ 
 
-from src.countries.tunisia.model.data import QUIFOY
-#from tunisia.data import QUIFAM
+from .data import QUIFOY
+#from .data import QUIFAM
 
 VOUS = QUIFOY['vous']
 CONJ = QUIFOY['conj']

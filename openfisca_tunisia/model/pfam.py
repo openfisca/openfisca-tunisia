@@ -26,7 +26,7 @@ from numpy import (round, zeros, maximum as max_, minimum as min_,
                    logical_xor as xor_, logical_or as or_, logical_not as not_,
                    asanyarray, amin, amax, arange)
 
-from src.countries.tunisia.model.data import QUIFOY, QUIMEN
+from .data import QUIFOY, QUIMEN
 CHEF = QUIMEN['pref']
 PART = QUIMEN['cref']
 

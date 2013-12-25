@@ -24,10 +24,10 @@ This file is part of openFisca.
 from datetime import date
 from src.lib.description import ModelDescription
 from src.lib.columns import Prestation, BoolPresta
-import src.countries.tunisia.model.cotsoc as cs
-import src.countries.tunisia.model.irpp as ir
-import src.countries.tunisia.model.common as cm
-import src.countries.tunisia.model.pfam as pf
+import .cotsoc as cs
+import .irpp as ir
+import .common as cm
+import .pfam as pf
 
 class OutputDescription(ModelDescription):
     """

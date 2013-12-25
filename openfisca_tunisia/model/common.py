@@ -23,7 +23,7 @@ This file is part of openFisca.
 
 from __future__ import division
 from numpy import (floor, arange)
-from src.countries.tunisia.model.data import  QUIMEN
+from .data import  QUIMEN
 
 ALL = [x[1] for x in QUIMEN]
 

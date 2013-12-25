@@ -19,7 +19,7 @@ from src.gui.qt.QtGui import (QDialog, QLabel, QDateEdit, QComboBox, QSpinBox,
 from src.gui.qt.QtCore import QObject, SIGNAL, SLOT, QDate, Qt, Signal
 from src.gui.qt.compat import to_qvariant
 
-from src.countries.tunisia.views.ui_composition import Ui_Menage
+from .views.ui_composition import Ui_Menage
 from src.gui.views.ui_logement import Ui_Logement
 from src.widgets.InfoComp import InfoComp
 from src.widgets.Declaration import Declaration
@@ -32,7 +32,7 @@ from src.lib.utils import of_import
 from src.gui.baseconfig import get_translation
 _ = get_translation('src')
 
-from src.countries.tunisia import CURRENCY
+from . import CURRENCY
 from datetime import datetime
 
 class S:

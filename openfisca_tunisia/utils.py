@@ -27,7 +27,7 @@ import pickle
 from datetime import datetime
 from src.lib.utils import of_import
 
-from src.countries.tunisia import ENTITIES_INDEX
+from . import ENTITIES_INDEX
 
 class Scenario(object):
     def __init__(self):

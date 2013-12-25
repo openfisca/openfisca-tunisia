@@ -27,7 +27,7 @@ from numpy import  zeros
 from src.lib.utils import scaleBaremes, combineBaremes, BaremeDict
 
 
-from src.countries.tunisia.model.data import CAT
+from .data import CAT
 
 class Object(object):
     def __init__(self):
