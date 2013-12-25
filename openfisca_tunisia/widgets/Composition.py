@@ -28,11 +28,11 @@ from src.widgets.Declaration import Declaration
 from src.gui.utils.qthelpers import create_action
 from src.gui.config import CONF, get_icon
 from src.plugins import OpenfiscaPluginWidget
-from src.lib.utils import of_import
 from src.gui.baseconfig import get_translation
 _ = get_translation('src')
 
-from . import CURRENCY
+from .. import CURRENCY
+from ..utils import build_axes
 from datetime import datetime
 
 class S:
@@ -70,7 +70,6 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self.setLayout(self.verticalLayout)
         # Initialize xaxes
         country = 'tunisia'
-        build_axes = of_import('utils','build_axes', country)
         axes = build_axes(country)
         xaxis = self.get_option('xaxis')
         
@@ -483,7 +482,6 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             self.maxrev_box.setValue(maxrev)
         if 'xaxis' in options:
             country = CONF.get('parameters','country')
-            build_axes = of_import('utils','build_axes', country)        
             axes = build_axes(country)
             xaxis = self.get_option('xaxis')
             axes_names = []
