@@ -9,6 +9,11 @@
 # Model parameters
 ENTITIES_INDEX = ['men', 'foy']
 
+# Data
+#WEIGHT = "wprm"
+#WEIGHT_INI = "wprm_init"
+
+
 # Some variables needed by the test case plugins
 CURRENCY = u"DT"
 

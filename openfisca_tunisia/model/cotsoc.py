@@ -24,7 +24,7 @@ This file is part of openFisca.
 from __future__ import division
 
 from numpy import  zeros
-from src.lib.utils import scaleBaremes, combineBaremes, BaremeDict
+from openfisca_core.utils import scaleBaremes, combineBaremes, BaremeDict
 
 
 from .data import CAT

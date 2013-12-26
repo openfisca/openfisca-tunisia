@@ -21,13 +21,17 @@ This file is part of openFisca.
     along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+
 from datetime import date
-from src.lib.description import ModelDescription
-from src.lib.columns import Prestation, BoolPresta
-import .cotsoc as cs
-import .irpp as ir
-import .common as cm
-import .pfam as pf
+
+from openfisca_core.columns import Prestation, BoolPresta
+from openfisca_core.descriptions import ModelDescription
+
+from . import common as cm
+from . import cotsoc as cs
+from . import irpp as ir
+from . import pfam as pf
+
 
 class OutputDescription(ModelDescription):
     """

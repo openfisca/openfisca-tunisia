@@ -116,7 +116,7 @@ def _impo(irpp):
     '''Impôts directs'''
     return irpp
 
-from src.lib.utils import mark_weighted_percentiles
+from openfisca_core.utils import mark_weighted_percentiles
 
 def _decile(nivvie, wprm):
     '''

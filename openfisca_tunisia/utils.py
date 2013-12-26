@@ -22,9 +22,11 @@ This file is part of openFisca.
 """
 
 from __future__ import division
-from src import __version__ as VERSION
+from openfisca_core import __version__ as VERSION
 import pickle
 from datetime import datetime
+
+from openfisca_core import axestools
 
 from . import ENTITIES_INDEX, XAXIS_PROPERTIES
 
@@ -328,7 +330,7 @@ class Scenario(object):
                 raise Exception('tunisia.utils.Scenario: self.xaxis should not be None')
             
             xaxis = self.xaxis    
-            axes = build_axes('tunisia')
+            axes = axestools.build_axes()
             var = None
             
             for axe in axes:
@@ -349,45 +351,6 @@ class Scenario(object):
                 datatable.set_value(var, vls, entity, opt = 0)
                 
             datatable._isPopulated = True
-
-
-class Xaxis(object):
-    def __init__(self, col_name = None, country = None):
-        super(Xaxis, self).__init__()
-        
-        self.col_name = col_name
-        if self.col_name is not None:
-            self.set(col_name)
-            self.set_label(country)
-        else:
-            self.typ_tot = None
-            self.typ_tot_default = None
-                 
-    def set_label(self, country):
-        from src.lib.datatable import Description
-        from .model.data import InputDescription
-        description = Description(InputDescription().columns)
-        label2var, var2label, var2enum = description.builds_dicts()
-        print self.col_name
-        self.label = var2label[self.col_name]
-        
-
-    def set(self, col_name, name = None, typ_tot = None, typt_tot_default = None):
-        """
-        Set Xaxis attributes
-        """
-        self.name = XAXIS_PROPERTIES[col_name]['name']
-        self.typ_tot = XAXIS_PROPERTIES[col_name]['typ_tot']
-        self.typ_tot_default = XAXIS_PROPERTIES[col_name]['typ_tot_default'] 
-
-
-def build_axes(country):
-    axes = []
-    for col_name in XAXIS_PROPERTIES:
-        axe = Xaxis(col_name, country)
-        axes.append(axe)
-    del axe
-    return axes
 
 
 REV_TYPE = {'superbrut' : ['salsuperbrut'],
