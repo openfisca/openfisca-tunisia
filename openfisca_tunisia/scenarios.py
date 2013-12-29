@@ -23,6 +23,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 from __future__ import division
 
 import datetime
@@ -30,6 +31,8 @@ import pickle
 
 from openfisca_core import __version__ as VERSION
 from openfisca_core import model
+
+from openfisca_core import axestools
 
 from . import ENTITIES_INDEX
 
@@ -342,5 +345,4 @@ class Scenario(object):
                 datatable.set_value(var, 0.5*vls, entity, opt = 1)
             else:
                 datatable.set_value(var, vls, entity, opt = 0)
-
             datatable._isPopulated = True
