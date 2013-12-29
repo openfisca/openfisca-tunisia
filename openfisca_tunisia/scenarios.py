@@ -25,7 +25,7 @@
 
 from __future__ import division
 
-from datetime import datetime
+import datetime
 import pickle
 
 from openfisca_core import __version__ as VERSION
@@ -46,10 +46,10 @@ class Scenario(object):
         self.declar = {}
 
         # menage est un dict de dict la clé est la pref
-        self.menage = {0:{'loyer':500,'so':3, 'code_postal':69001}}
+        self.menage = {0:{'loyer':500,'so':3, 'code_postal':001}}
 
         # on ajoute un individu, déclarant et chef de famille
-        self.addIndiv(0, datetime(1975,1,1).date(), 'vous', 'chef')
+        self.addIndiv(0, datetime.date(1975, 1, 1), 'vous', 'chef')
 
         self.nmen = None
         self.xaxis = None
@@ -256,7 +256,7 @@ class Scenario(object):
         scenario = self
 
         if self.nmen is None:
-            raise Exception('tunisia.Scenario: self.nmen should be not None')
+            raise Exception('france.scenario: self.nmen should be not None')
 
         nmen = self.nmen
         same_rev_couple = self.same_rev_couple
@@ -315,16 +315,17 @@ class Scenario(object):
             for var, val in dct.iteritems():
                 if not index[noi] is None:
                     datatable.set_value(var, np.ones(nb)*val, entity, noi)
+
             del var, val
 
         if nmen>1:
             if self.maxrev is None:
-                raise Exception('tunisia.Scenario: self.maxrev should not be None')
+                raise Exception('tunisia.utils.Scenario: self.maxrev should not be None')
             maxrev = self.maxrev
             datatable.MAXREV = maxrev
 
             if self.xaxis is None:
-                raise Exception('tunisia.Scenario: self.xaxis should not be None')
+                raise Exception('tunisia.utils.Scenario: self.xaxis should not be None')
 
             xaxis = self.xaxis
             axes = axestools.build_axes()
@@ -346,5 +347,5 @@ class Scenario(object):
                 datatable.set_value(var, 0.5*vls, entity, opt = 1)
             else:
                 datatable.set_value(var, vls, entity, opt = 0)
-            datatable._isPopulated = True
 
+            datatable._isPopulated = True

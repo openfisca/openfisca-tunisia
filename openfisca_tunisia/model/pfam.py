@@ -117,10 +117,10 @@ def _sal_uniq(sal, _P, _option = {'sal' : [CHEF, PART]}):
     '''
     Indicatrice de salaire unique
     '''
-    print sal[CHEF]>0
-    print sal[PART]>0
+#    print sal[CHEF]>0
+#    print sal[PART]>0
     uniq = xor_(sal[CHEF]>0, sal[PART]>0)
-    print uniq
+#    print uniq
     return uniq
 
 ############################################################################
