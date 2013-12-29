@@ -5,4 +5,7 @@ dist/
 *.pyc
 *.pyo
 *~
+.project
+.pydevproject
+.settings/
 

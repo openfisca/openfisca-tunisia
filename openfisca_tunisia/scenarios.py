@@ -1,34 +1,36 @@
-# -*- coding:utf-8 -*-
-# Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
+# -*- coding: utf-8 -*-
 
-"""
-openFisca, Logiciel libre de simulation de système socio-fiscal
-Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
 
-This file is part of openFisca.
-
-    openFisca is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    openFisca is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
-"""
+# OpenFisca -- A versatile microsimulation software
+# By: OpenFisca Team <contact@openfisca.fr>
+#
+# Copyright (C) 2011, 2012, 2013 OpenFisca Team
+# https://github.com/openfisca
+#
+# This file is part of OpenFisca.
+#
+# OpenFisca is free software; you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# OpenFisca is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import division
-from openfisca_core import __version__ as VERSION
-import pickle
-from datetime import datetime
 
+import datetime
+import pickle
+
+from openfisca_core import __version__ as VERSION
 from openfisca_core import axestools
 
-from . import ENTITIES_INDEX, XAXIS_PROPERTIES
+from . import ENTITIES_INDEX
 
 
 class Scenario(object):
@@ -43,10 +45,10 @@ class Scenario(object):
         self.declar = {}
         
         # menage est un dict de dict la clé est la pref
-        self.menage = {0:{'loyer':500,'so':3, 'code_postal':69001}}
+        self.menage = {0:{'loyer':500,'so':3, 'code_postal':001}}
 
         # on ajoute un individu, déclarant et chef de famille
-        self.addIndiv(0, datetime(1975,1,1).date(), 'vous', 'chef')
+        self.addIndiv(0, datetime.date(1975, 1, 1), 'vous', 'chef')
     
         self.nmen = None
         self.xaxis = None
@@ -351,9 +353,3 @@ class Scenario(object):
                 datatable.set_value(var, vls, entity, opt = 0)
                 
             datatable._isPopulated = True
-
-
-REV_TYPE = {'superbrut' : ['salsuperbrut'],
-             'brut': ['salbrut'],
-             'imposable'      : ['sal']}        
-
