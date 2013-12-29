@@ -256,7 +256,7 @@ class Scenario(object):
         scenario = self
 
         if self.nmen is None:
-            raise Exception('france.scenario: self.nmen should be not None')
+            raise Exception('tunisia.Scenario: self.nmen should be not None')
 
         nmen = self.nmen
         same_rev_couple = self.same_rev_couple
@@ -315,17 +315,16 @@ class Scenario(object):
             for var, val in dct.iteritems():
                 if not index[noi] is None:
                     datatable.set_value(var, np.ones(nb)*val, entity, noi)
-
             del var, val
 
         if nmen>1:
             if self.maxrev is None:
-                raise Exception('tunisia.utils.Scenario: self.maxrev should not be None')
+                raise Exception('tunisia.Scenario: self.maxrev should not be None')
             maxrev = self.maxrev
             datatable.MAXREV = maxrev
 
             if self.xaxis is None:
-                raise Exception('tunisia.utils.Scenario: self.xaxis should not be None')
+                raise Exception('tunisia.Scenario: self.xaxis should not be None')
 
             xaxis = self.xaxis
             axes = axestools.build_axes()
@@ -347,6 +346,5 @@ class Scenario(object):
                 datatable.set_value(var, 0.5*vls, entity, opt = 1)
             else:
                 datatable.set_value(var, vls, entity, opt = 0)
-
             datatable._isPopulated = True
 
