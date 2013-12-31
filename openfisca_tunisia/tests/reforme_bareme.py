@@ -46,11 +46,9 @@ class ApplicationWindow(QMainWindow):
 def run_simulation(apply_reform=False, reforme=False,
                     conj = False, kids = 0, sal_conj=False, year=2011):
 
-    country = 'tunisia'
     simulation = ScenarioSimulation()        
-    simulation.set_config(year = year, country = country, nmen = 1001, 
-                    xaxis = 'sali', maxrev = 10000, reforme = reforme,
-                    mode ='bareme', same_rev_couple = False)
+    simulation.set_config(year = year, nmen = 1001, xaxis = 'sali', maxrev = 10000, reforme = reforme, mode ='bareme',
+        same_rev_couple = False)
     simulation.set_param()
         
     if sal_conj:
@@ -133,11 +131,8 @@ def do_graphs():
 
 
 def test_case(year):
-    
-    country = 'tunisia'
     simulation = ScenarioSimulation()
-    simulation.set_config(year = year, country = country, reforme=False,
-                    nmen = 11, maxrev = 12000, xaxis = 'sali')
+    simulation.set_config(year = year, reforme=False, nmen = 11, maxrev = 12000, xaxis = 'sali')
     # Adding a husband/wife on the same tax sheet (foyer)
     simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'conj', 'part') 
     simulation.scenario.addIndiv(2, datetime.date(2000,1,1), 'pac', 'enf') 
