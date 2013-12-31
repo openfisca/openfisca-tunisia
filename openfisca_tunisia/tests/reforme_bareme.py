@@ -32,6 +32,7 @@ import datetime
 import sys
 import os
 from openfisca_qt.gui.qt.QtGui import QMainWindow, QApplication
+from openfisca_qt.plugins.scenario.graph import draw_simulation_bareme, draw_simulation_taux
 from openfisca_qt.widgets.matplotlibwidget import MatplotlibWidget
 
 
@@ -87,10 +88,10 @@ def produce_graph(name="test", apply_reform=False, reforme=False, conj = False,
                                 kids=kids)
 
     if bareme:
-        simulation.draw_bareme(ax, legend = True, position = 4)
+        draw_simulation_bareme(simulation, ax, legend = True, position = 4)
 
     if tax_rates:
-        simulation.draw_taux(ax, legend=True)
+        draw_simulation_taux(simulation, ax, legend=True)
 
     win.resize(1400,700)
     win.mplwidget.draw()
