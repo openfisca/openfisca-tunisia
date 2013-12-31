@@ -39,7 +39,7 @@ REVENUES_CATEGORIES = {
     }
 WEIGHT = "wprm"
 WEIGHT_INI = "wprm_init"
-XAXIS_PROPERTIES = { 
+X_AXES_PROPERTIES = {
     'sali': {
         'name': 'sal',
         'typ_tot': {
@@ -58,6 +58,7 @@ def init_country(qt = False):
     from openfisca_core import model as core_model
     from openfisca_core import datatables as core_datatables
     from openfisca_core import simulations as core_simulations
+    from openfisca_core.xaxes import XAxis
     if qt:
         from openfisca_qt import widgets as qt_widgets
 
@@ -86,7 +87,10 @@ def init_country(qt = False):
     core_model.Scenario = scenarios.Scenario
     core_model.WEIGHT = WEIGHT
     core_model.WEIGHT_INI = WEIGHT_INI
-    core_model.XAXIS_PROPERTIES = XAXIS_PROPERTIES
+    core_model.x_axes = dict(
+        (col_name, XAxis(col_name = col_name, label = InputDescription.column_by_name[col_name].label, **properties))
+        for col_name, properties in X_AXES_PROPERTIES.iteritems()
+        )
 
     if qt:
         qt_widgets.CompositionWidget = CompositionWidget

@@ -29,7 +29,7 @@ import datetime
 import pickle
 
 from openfisca_core import __version__ as VERSION
-from openfisca_core import axestools
+from openfisca_core import model
 
 from . import ENTITIES_INDEX
 
@@ -324,18 +324,13 @@ class Scenario(object):
             maxrev = self.maxrev
             datatable.MAXREV = maxrev
 
-            if self.xaxis is None:
-                raise Exception('tunisia.utils.Scenario: self.xaxis should not be None')
-
             xaxis = self.xaxis
-            axes = axestools.build_axes()
+            if xaxis is None:
+                raise Exception('tunisia.utils.Scenario: self.xaxis should not be None')
             var = None
-
-            for axe in axes:
+            for axe in model.x_axes.itervalues():
                 if axe.name == xaxis:
-                    datatable.XAXIS = axe.col_name
-                    var = axe.col_name
-
+                    datatable.XAXIS = var = axe.col_name
             if var is None:
                 datatable.XAXIS = xaxis
                 var = xaxis
