@@ -33,7 +33,7 @@ from openfisca_core.simulations import ScenarioSimulation
 
 def test_case(year):
     simulation = ScenarioSimulation()
-    simulation.set_config(year = year, reforme=False, nmen = 3, maxrev = 12*400, xaxis = 'sali')
+    simulation.set_config(year = year, reforme=False, nmen = 3, maxrev = 12*400, x_axis = 'sali')
     # Adding a husband/wife on the same tax sheet (foyer)
     simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'conj', 'part')
 
