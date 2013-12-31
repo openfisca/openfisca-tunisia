@@ -42,26 +42,26 @@ class ApplicationWindow(QMainWindow):
         self.mplwidget.setFocus()
         self.setCentralWidget(self.mplwidget)
 
-        
+
 def run_simulation(apply_reform=False, reforme=False,
                     conj = False, kids = 0, sal_conj=False, year=2011):
 
-    simulation = ScenarioSimulation()        
+    simulation = ScenarioSimulation()
     simulation.set_config(year = year, nmen = 1001, x_axis = 'sali', maxrev = 10000, reforme = reforme, mode ='bareme',
         same_rev_couple = False)
     simulation.set_param()
-        
+
     if sal_conj:
         conj = True
-    
+
     if conj:
         simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'vous', 'part')
         if sal_conj:
             simulation.scenario.indiv[1].update({'sali': simulation.P.cotsoc.gen.smig})
-    
-        if kids > 0:    
-            for n in range(1,kids+1): 
-                simulation.scenario.addIndiv(n+1, datetime.date(2000,1,1), 'pac', 'enf') 
+
+        if kids > 0:
+            for n in range(1,kids+1):
+                simulation.scenario.addIndiv(n+1, datetime.date(2000,1,1), 'pac', 'enf')
 
     print simulation.scenario
     if apply_reform:
@@ -72,26 +72,26 @@ def run_simulation(apply_reform=False, reforme=False,
     return simulation
 
 
-def produce_graph(name="test", apply_reform=False, reforme=False, conj = False, 
+def produce_graph(name="test", apply_reform=False, reforme=False, conj = False,
                   sal_conj=False, kids = 0, save_figure = False, destination_dir = None,
                   bareme=True, tax_rates=False, year=2011):
-    
+
     app = QApplication(sys.argv)
-    win = ApplicationWindow()    
+    win = ApplicationWindow()
     ax = win.mplwidget.axes
-    simulation = run_simulation(year=year, 
-                                apply_reform=apply_reform, 
+    simulation = run_simulation(year=year,
+                                apply_reform=apply_reform,
                                 reforme=reforme,
-                                conj = conj, 
+                                conj = conj,
                                 sal_conj=sal_conj,
                                 kids=kids)
-    
+
     if bareme:
-        simulation.draw_bareme(ax, legend = True, position = 4) 
-    
+        simulation.draw_bareme(ax, legend = True, position = 4)
+
     if tax_rates:
         simulation.draw_taux(ax, legend=True)
-    
+
     win.resize(1400,700)
     win.mplwidget.draw()
     win.show()
@@ -102,10 +102,10 @@ def produce_graph(name="test", apply_reform=False, reforme=False, conj = False,
     if save_figure and destination_dir is not None:
         win.mplwidget.print_figure(os.path.join(destination_dir, name + '.png'))
 
-    del ax, simulation 
+    del ax, simulation
 
 def do_graphs():
-    destination_dir = u"c:/users/utilisateur/Desktop/Tunisie/Réforme barème" 
+    destination_dir = u"c:/users/utilisateur/Desktop/Tunisie/Réforme barème"
     for conj in [False, True]:
         name = "simulation_adulte_reforme"
         if conj:
@@ -114,16 +114,16 @@ def do_graphs():
                     name = name + "_marié_%i_enf" %kids
                     if sal_conj:
                         name = name + "_conj_smig"
-                    produce_graph(name=name, 
-                                  conj = conj, 
-                                  sal_conj=sal_conj, kids=kids, 
-                                  save_figure=True, 
+                    produce_graph(name=name,
+                                  conj = conj,
+                                  sal_conj=sal_conj, kids=kids,
+                                  save_figure=True,
                                   destination_dir = destination_dir,
                                   apply_reform=True,
                                   reforme=True)
                     name="simulation_adulte_reforme"
         else:
-            produce_graph(name=name, kids=0, save_figure=True, 
+            produce_graph(name=name, kids=0, save_figure=True,
                           destination_dir = destination_dir)
 
 
@@ -134,20 +134,20 @@ def test_case(year):
     simulation = ScenarioSimulation()
     simulation.set_config(year = year, reforme=False, nmen = 11, maxrev = 12000, x_axis = 'sali')
     # Adding a husband/wife on the same tax sheet (foyer)
-    simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'conj', 'part') 
-    simulation.scenario.addIndiv(2, datetime.date(2000,1,1), 'pac', 'enf') 
+    simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'conj', 'part')
+    simulation.scenario.addIndiv(2, datetime.date(2000,1,1), 'pac', 'enf')
     simulation.scenario.addIndiv(3, datetime.date(2000,1,1), 'pac', 'enf')
-        
+
     simulation.set_param()
     simulation.P.ir.reforme.exemption.active = 1
-    
+
     df = simulation.get_results_dataframe()
     print df.to_string()
 
 
 def justify_decote():
-    destination_dir = u"c:/users/utilisateur/Desktop/Tunisie/Réforme barème" 
-    produce_graph(name="test2", apply_reform=True, reforme=False, conj = False, 
+    destination_dir = u"c:/users/utilisateur/Desktop/Tunisie/Réforme barème"
+    produce_graph(name="test2", apply_reform=True, reforme=False, conj = False,
                   sal_conj=False, kids = 0, save_figure = True, destination_dir = destination_dir,
                   bareme=True, tax_rates=False, year=2011)
 

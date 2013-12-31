@@ -42,7 +42,7 @@ class S:
     fampos = 6
 
 
-class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):    
+class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
     """
     Scenario Graph Widget
     """
@@ -72,7 +72,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             axes_names.append(axe.name)
         self.x_axis_box.setCurrentIndex(axes_names.index(x_axis))
 
-        # Initialize maxrev # make it country dependant  
+        # Initialize maxrev # make it country dependant
         self.maxrev_box.setMinimum(0)
         self.maxrev_box.setMaximum(1000000)
         self.maxrev_box.setSingleStep(50)
@@ -81,7 +81,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self.maxrev_box.setValue(maxrev)
 
         self.initialize_plugin()
-        
+
         self.connect(self.open_btn, SIGNAL('clicked()'), self.load)
         self.connect(self.save_btn, SIGNAL('clicked()'), self.save)
         self.connect(self.add_btn, SIGNAL('clicked()'), self.addPerson)
@@ -97,8 +97,8 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self.rmv_btn.setEnabled(False)
         self.emit(SIGNAL("ok()"))
 
-        
-    #------ Public API ---------------------------------------------    
+
+    #------ Public API ---------------------------------------------
 
     def set_simulation(self, simulation):
         """
@@ -110,7 +110,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self.nmen = nmen
         value = CONF.get('parameters', 'datesim')
         datesim = datetime.strptime(value ,"%Y-%m-%d").date()
-        
+
         year = datesim.year
         self.simulation = simulation
         self.simulation.set_config(year = year, x_axis = x_axis, nmen = self.nmen, maxrev = maxrev, reforme = False,
@@ -129,7 +129,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             self.scenario.x_axis = x_axis
             self.set_option('x_axis', x_axis)
         self.emit(SIGNAL('compoChanged()'))
-    
+
     def set_maxrev(self):
         '''
         Sets the varying variable of the scenario
@@ -138,7 +138,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         if isinstance(widget, QSpinBox) or isinstance(widget, QDoubleSpinBox):
             maxrev = widget.value()
             self.scenario.maxrev = maxrev
-            self.set_option('maxrev', maxrev) 
+            self.set_option('maxrev', maxrev)
         self.emit(SIGNAL('compoChanged()'))
 
     def changed(self):
@@ -148,7 +148,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self.action_compute.setEnabled(True)
         self.emit(SIGNAL('changed()'))
         self.connectAll()
-        
+
     def nbRow(self):
         return self.scenario.nbIndiv()
 
@@ -161,7 +161,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         for noi, vals in self.scenario.indiv.iteritems():
             birth = QDate(vals['birth'])
             self._listPerson[noi][S.birth].setDate(birth)
-        
+
     def populateFoyerCombo(self):
         declarKeys = self.scenario.declar.keys()
         for noi, vals in self.scenario.indiv.iteritems():
@@ -220,7 +220,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         senderNoi = int(self.sender().objectName()[3])
         self.scenario.modifyFam(senderNoi, newQuifam = qui)
         self.emit(SIGNAL('compoChanged()'))
-        
+
 
     def addPref(self):
         noi = 0
@@ -245,7 +245,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         temp[S.decnum].setObjectName('Foy%d' % noi)
         temp[S.decnum].setEnabled(False)
 
-        temp[S.fampos].addItems(['parent 1'])            
+        temp[S.fampos].addItems(['parent 1'])
         temp[S.fampos].setObjectName('Fam%d' % noi)
         temp[S.fampos].setEnabled(False)
 
@@ -259,14 +259,14 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             self.gridLayout.setAlignment(temp[i], Qt.AlignCenter)
 
         self.emit(SIGNAL('compoChanged()'))
-                
+
     def addPerson(self):
         noi = self.nbRow()
         self.addRow()
         if noi == 1: self.scenario.addIndiv(noi, birth = date(1975,1,1), quifoy = 'conj', quifam = 'part')
         else:        self.scenario.addIndiv(noi, birth = date(2000,1,1), quifoy = 'pac' , quifam = 'enf')
         self.emit(SIGNAL('compoChanged()'))
-            
+
     def addRow(self):
         noi = len(self._listPerson)
         self._listPerson.append([QLabel('%d' % (noi+1), self),
@@ -293,7 +293,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         temp[S.famnum].setObjectName('Fam%d' % noi)
 
         temp[S.decbtn].setObjectName('But%d' % noi)
-        
+
         for i in xrange(7):
             self.gridLayout.addWidget(temp[i], noi +2, i)
             self.gridLayout.setAlignment(temp[i], Qt.AlignCenter)
@@ -304,7 +304,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             self.add_btn.setEnabled(False)
 
     def rmvPerson(self, noi = None):
-        if noi == None: 
+        if noi == None:
             noi = self.nbRow() - 1
         self.scenario.rmvIndiv(noi)
         self.rmvRow()
@@ -330,17 +330,17 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             self.rmvPerson()
         self.simulation.reset_scenario
         self.emit(SIGNAL('compoChanged()'))
-        
+
     def openDeclaration(self):
         pass
-        
+
 
 #        noi = int(self.sender().objectName()[3])
 #        self.scenario.genNbEnf()
 #        msg = self.scenario.check_consistency()
 #        if msg:
 #            QMessageBox.critical(self, u"Ménage non valide",
-#                                 msg, 
+#                                 msg,
 #                                 QMessageBox.Ok, QMessageBox.NoButton)
 #            return False
 #        self._declaration = Declaration(self, noi)
@@ -357,7 +357,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         self._infocomp = InfoComp(self.scenario, self)
         self._infocomp.exec_()
         self.emit(SIGNAL('compoChanged()'))
-        
+
     def disconnectAll(self):
         for person in self._listPerson:
             QObject.disconnect(person[S.birth],  SIGNAL('dateChanged(QDate)'), self.birthChanged)
@@ -366,7 +366,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             QObject.disconnect(person[S.fampos], SIGNAL('currentIndexChanged(QString)'), self.quifamChanged)
             QObject.disconnect(person[S.famnum], SIGNAL('currentIndexChanged(int)'), self.familleChanged)
             QObject.disconnect(person[S.decbtn], SIGNAL('clicked()'), self.openDeclaration)
-            
+
     def connectAll(self):
         for person in self._listPerson:
             QObject.connect(person[S.birth],  SIGNAL('dateChanged(QDate)'), self.birthChanged)
@@ -379,8 +379,8 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
     def load(self):
         cas_type_dir = self.get_option('import_dir')
         fileName = QFileDialog.getOpenFileName(self,
-                                               _("Open a test case"), 
-                                               cas_type_dir, 
+                                               _("Open a test case"),
+                                               cas_type_dir,
                                                u"Cas type OpenFisca (*.ofct)")
         if not fileName == '':
             n = len(self.scenario.indiv)
@@ -389,7 +389,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
                 while n < self.nbRow():
                     self.addRow()
                     n += 1
-                while n > self.nbRow(): 
+                while n > self.nbRow():
                     self.rmvRow()
                     n -= 1
                 self.emit(SIGNAL('compoChanged()'))
@@ -399,13 +399,13 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
                     self, "Erreur", u"Erreur lors de l'ouverture du fichier : le fichier n'est pas reconnu : \n " + e,
                     QMessageBox.Ok, QMessageBox.NoButton)
 
-        
+
     def save(self):
         cas_type_dir = self.get_option('export_dir')
         default_fileName = os.path.join(cas_type_dir, 'sans-titre')
         fileName = QFileDialog.getSaveFileName(self,
-                                               _("Save a test case"), 
-                                               default_fileName, 
+                                               _("Save a test case"),
+                                               default_fileName,
                                                u"Cas type OpenFisca (*.ofct)")
         if not fileName == '':
             self.scenario.saveFile(fileName)
@@ -420,18 +420,18 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         msg = self.simulation.scenario.check_consistency()
         if msg:
             QMessageBox.critical(self, u"Ménage non valide",
-                                 msg, 
+                                 msg,
                                  QMessageBox.Ok, QMessageBox.NoButton)
             return False
         # If it is consistent starts the computation
- 
+
         self.action_compute.setEnabled(False)
         P, P_default = self.main.parameters.getParam(), self.main.parameters.getParam(defaut = True)
         self.simulation.set_param(P, P_default)
         self.simulation.compute()
         self.main.refresh_test_case_plugins()
         self.ending_long_process( _("Test case results are updated"))
-        
+
 
     def set_reform(self, reform):
         '''
@@ -439,17 +439,17 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         '''
         self.simulation.set_config(reforme = reform)
         self.action_compute.setEnabled(True)
-    
+
     def set_single(self, is_single = True):
         if is_single:
-            self.simulation.set_config(nmen = 1, mode = 'castype') # TODO: this might be removed ??            
+            self.simulation.set_config(nmen = 1, mode = 'castype') # TODO: this might be removed ??
             self.action_compute.setEnabled(True)
             self.action_set_bareme.setChecked(False)
         else:
             self.action_set_bareme.setChecked(True)
             self.set_bareme()
         self.action_compute.setEnabled(True)
-        
+
     def set_bareme(self, is_bareme = True):
         if is_bareme:
             nmen = self.get_option('nmen')
@@ -460,8 +460,8 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             self.action_set_single.setChecked(True)
             self.set_single()
         self.action_compute.setEnabled(True)
-        
-    
+
+
     #------ OpenfiscaPluginMixin API ---------------------------------------------
 
     def apply_plugin_settings(self, options):
@@ -488,7 +488,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         """
         return _("Composer")
 
-    
+
     def get_plugin_icon(self):
         """
         Return plugin icon (QIcon instance)
@@ -497,7 +497,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
               and for configuration dialog widgets creation
         """
         return get_icon('OpenFisca22.png')
-            
+
     def get_plugin_actions(self):
         """
         Return a list of actions related to plugin
@@ -508,10 +508,10 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         for index, (qobject, context, name, default) in enumerate(self.main.shortcut_data):
             if context == "Composer":
                 self.main.shortcut_data.pop(index)
-                qobject.deleteLater() 
-        
+                qobject.deleteLater()
+
         # File menu actions and shortcuts
-        
+
         self.open_action = create_action(self, _("&Open..."),
                 icon='fileopen.png', tip=_("Open composition file"),
                 triggered=self.load)
@@ -525,40 +525,40 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
 
         self.file_menu_actions = [self.open_action, self.save_action,]
         self.main.file_menu_actions += self.file_menu_actions
-        
+
         self.action_compute = create_action(self, _('Compute test case'),
-                                                      icon = 'calculator_green.png', 
+                                                      icon = 'calculator_green.png',
                                                       triggered = self.compute)
-        self.register_shortcut(self.action_compute, 
+        self.register_shortcut(self.action_compute,
                                context = "Composer",
                                 name = _('Compute test case'), default = 'F9')
 
-        self.action_set_bareme = create_action(self, _('Varying revenues'), 
-                                      icon = 'bareme22.png', 
+        self.action_set_bareme = create_action(self, _('Varying revenues'),
+                                      icon = 'bareme22.png',
                                       toggled = self.set_bareme)
-        self.action_set_single = create_action(self, _('Single test case'), 
-                                        icon = 'castype22.png', 
+        self.action_set_single = create_action(self, _('Single test case'),
+                                        icon = 'castype22.png',
                                         toggled = self.set_single)
-        
-        self.action_set_reform = create_action(self, _('Reform mode'), 
-                                                     icon = 'comparison22.png', 
-                                                     toggled = self.set_reform, 
+
+        self.action_set_reform = create_action(self, _('Reform mode'),
+                                                     icon = 'comparison22.png',
+                                                     toggled = self.set_reform,
                                                      tip = u"Différence entre la situation simulée et la situation actuelle")
 
-        self.run_menu_actions = [self.action_compute, self.action_set_bareme, 
+        self.run_menu_actions = [self.action_compute, self.action_set_bareme,
                                  self.action_set_single, self.action_set_reform,
                                  None]
-        
-        self.main.run_menu_actions += self.run_menu_actions     
-        self.main.test_case_toolbar_actions += self.run_menu_actions 
-        
+
+        self.main.run_menu_actions += self.run_menu_actions
+        self.main.test_case_toolbar_actions += self.run_menu_actions
+
         return self.file_menu_actions + self.run_menu_actions
-    
+
     def register_plugin(self):
         """
         Register plugin in OpenFisca's main window
         """
-                
+
         self.main.add_dockwidget(self)
         self.action_set_bareme.trigger()
 
@@ -567,8 +567,8 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         Update Scenario Table
         '''
         pass
-        
-    
+
+
     def closing_plugin(self, cancelable=False):
         """
         Perform actions before parent main window is closed

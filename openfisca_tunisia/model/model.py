@@ -41,29 +41,29 @@ class OutputDescription(ModelDescription):
     ############################################################
     # Cotisations sociales
     ############################################################
-    
+
     # Salaires
     salbrut = Prestation(cs._salbrut, label="Salaires bruts")
     cotpat  = Prestation(cs._cotpat)
     cotsal  = Prestation(cs._cotsal)
     salsuperbrut = Prestation(cs._salsuperbrut, label="Salaires super bruts")
-#    sal = Prestation(cs._sal)        
-    
+#    sal = Prestation(cs._sal)
+
 
     # Pension
-    
+
     ############################################################
     # Prestation familiales
     ############################################################
-    
-    smig75   = BoolPresta(pf._smig75, label="Indicatrice de salaire supérieur à 75% du smig" ) 
+
+    smig75   = BoolPresta(pf._smig75, label="Indicatrice de salaire supérieur à 75% du smig" )
     af_nbenf = Prestation(pf._af_nbenf, entity='men', label="Nombre d'enfants au sens des allocations familiales")
     af  = Prestation(pf._af, entity='men', label="Allocations familiales")
     sal_uniq = BoolPresta(pf._sal_uniq, entity='men', label="Indicatrice de salaire unique")
     maj_sal_uniq = Prestation(pf._maj_sal_uniq, entity='men', label="Majoration du salaire unique")
     contr_creche = Prestation(pf._contr_creche, entity='men', label="Contribution aux frais de crêche")
     pfam = Prestation(pf._pfam, entity='men', label="Prestations familales")
-    
+
     ############################################################
     # Impôt sur le revenu
     ############################################################
@@ -72,27 +72,27 @@ class OutputDescription(ModelDescription):
     celdiv = BoolPresta(ir._celib, entity='foy')
     divor = BoolPresta(ir._divor, entity='foy')
     veuf = BoolPresta(ir._veuf, entity='foy')
-    
+
     nb_enf = Prestation(ir._nb_enf, entity='foy')
     nb_enf_sup = Prestation(ir._nb_enf_sup, entity='foy')
     nb_par     = Prestation(ir._nb_par, entity='foy')
     nb_infirme = Prestation(ir._nb_infirme, entity='foy')
-    
+
 #    rbg = Prestation(ir._rbg, entity='foy', label = u"Revenu brut global")
-    
-    
+
+
     # Bénéfices industriels et commerciaux
     bic = Prestation(ir._bic, entity='foy')
- 
+
     bic_ca_global = Prestation(ir._bic_ca_global, label="Chiffre d’affaires global (BIC, cession de fond de commerce")
     bic_res_cession = Prestation(ir._bic_res_cession, label="Résultat (BIC, cession de fond de commerce)")
-    bic_benef_fiscal_cession = Prestation(ir._bic_benef_fiscal_cession, label= "Bénéfice fiscal (BIC, cession de fond de commerce)")   
-    
+    bic_benef_fiscal_cession = Prestation(ir._bic_benef_fiscal_cession, label= "Bénéfice fiscal (BIC, cession de fond de commerce)")
+
     bnc = Prestation(ir._bnc, entity='foy')
-    
+
     bnc_forf_benef_fiscal = Prestation(ir._bnc_forf_benef_fiscal, label="Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)")
-    
-    
+
+
     beap = Prestation(ir._beap, entity='foy')
     rvcm = Prestation(ir._rvcm, entity='foy')
     fon_forf_bati = Prestation(ir._fon_forf_bati, entity='foy')
@@ -101,24 +101,24 @@ class OutputDescription(ModelDescription):
 
     sal = Prestation(ir._sal, entity='foy', label="Salaires y compris salaires en nature")
     sal_net = Prestation(ir._sal_net, entity='foy', label="Salaires nets")
-    pen_net = Prestation(ir._pen_net, entity='foy')                               
+    pen_net = Prestation(ir._pen_net, entity='foy')
     tspr    = Prestation(ir._tspr, entity='foy')
     retr    = Prestation(ir._retr, entity='foy')
     rng = Prestation(ir._rng, entity='foy', label=u"Revenu net global")
-    
+
     # Déductions
-    
+
     deduc_fam = Prestation(ir._deduc_fam, entity='foy', label = u"Déductions pour situation et charges de famille")
     deduc_rente     = Prestation(ir._deduc_rente, entity='foy', label = u"Arrérages et rentes payées à titre obligatoire et gratuit")
     ass_vie   = Prestation(ir._ass_vie, entity='foy', label = u"Primes afférentes aux contrats d'assurance-vie")
-   
+
     smig = Prestation(ir._smig, entity='foy', label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires")
-    
+
     deduc_smig = Prestation(ir._deduc_smig, entity='foy', label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG")
-   
+
     # Réductions d'impots
-   
-    
+
+
     rni = Prestation(ir._rni, entity='foy', label = u"Revenu net imposable")
     ir_brut = Prestation(ir._ir_brut, entity='foy', label = u"Impôt avant non-imposabilité")
     irpp = Prestation(ir._irpp, entity='foy', label = u"Impôt sur le revenu des personnes physiques")
@@ -131,7 +131,7 @@ class OutputDescription(ModelDescription):
 #    ############################################################
 #    # Catégories
 #    ############################################################
-#    
+#
 #    typ_men = IntPresta(cm._typ_men, 'men', label = u"Type de ménage")
 #    nb_ageq0 = IntPresta(cl._nb_ageq0, 'men', label = u"Effectifs des tranches d'âge quiquennal")
 #    nbinde2 = IntPresta(cl._nbinde2, 'men', label = u"Nombre d'individus dans le ménage")
@@ -145,10 +145,10 @@ class OutputDescription(ModelDescription):
     nivvie = Prestation(cm._nivvie, 'men', label = u"Niveau de vie du ménage")
     rev_trav = Prestation(cm._rev_trav)
 #    pen = Prestation(cm._pen)
-#    
+#
 #    rstnet = Prestation(cm._rstnet)
     rev_cap = Prestation(cm._rev_cap)
-#    
-    
+#
+
     impo = Prestation(cm._impo)
 

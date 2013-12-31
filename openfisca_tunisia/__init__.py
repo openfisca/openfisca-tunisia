@@ -33,7 +33,7 @@ REV_TYP = {
     'brut': ['salbrut'],
     'imposable': ['sal'],
     'superbrut': ['salsuperbrut'],
-    }        
+    }
 REVENUES_CATEGORIES = {
     'imposable': ['sal'],
     }
@@ -82,7 +82,7 @@ def init_country(qt = False):
     core_model.OutputDescription = OutputDescription
     core_model.PARAM_FILE = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
     core_model.REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
-    core_model.REV_TYP = REV_TYP  
+    core_model.REV_TYP = REV_TYP
     core_model.REVENUES_CATEGORIES = REVENUES_CATEGORIES
     core_model.Scenario = scenarios.Scenario
     core_model.WEIGHT = WEIGHT

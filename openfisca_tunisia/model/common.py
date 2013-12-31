@@ -52,7 +52,7 @@ def _uc(agem, _option = {'agem': ALL}):
 #    _1_kid = af_nbenf == 1
 #    _2_kid = af_nbenf == 2
 #    _3_kid = af_nbenf >= 3
-#    
+#
 #    return (0*(isol & _0_kid) + # Célibataire
 #            1*(not_(isol) & _0_kid) + # Couple sans enfants
 #            2*(not_(isol) & _1_kid) + # Couple un enfant
@@ -61,8 +61,8 @@ def _uc(agem, _option = {'agem': ALL}):
 #            5*(isol & _1_kid) + # Famille monoparentale un enfant
 #            6*(isol & _2_kid) + # Famille monoparentale deux enfants
 #            7*(isol & _3_kid) ) # Famille monoparentale trois enfants et plus
-            
-    
+
+
 def _revdisp_i(rev_trav, pen, rev_cap, psoc, impo):
     '''
     Revenu disponible
@@ -97,12 +97,12 @@ def _rev_trav(sali):
 #
 #def _rstnet(pen):
 #    '''Retraites nettes'''
-#    return pen 
+#    return pen
 
 def _rev_cap(rfon):
     '''Revenus du patrimoine'''  # TODO
     return rfon
- 
+
 #def _psoc(pfam):
 #    '''Prestations sociales'''
 #    return pfam
