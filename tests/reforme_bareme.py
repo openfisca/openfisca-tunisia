@@ -49,7 +49,7 @@ def run_simulation(apply_reform=False, reforme=False,
     country = 'tunisia'
     simulation = ScenarioSimulation()        
     simulation.set_config(year = year, country = country, nmen = 1001, 
-                    xaxis = 'sali', maxrev = 10000, reforme = reforme,
+                    x_axis = 'sali', maxrev = 10000, reforme = reforme,
                     mode ='bareme', same_rev_couple = False)
     simulation.set_param()
         
@@ -133,7 +133,7 @@ def test_case(year):
     country = 'tunisia'
     simulation = ScenarioSimulation()
     simulation.set_config(year = year, country = country, reforme=False,
-                    nmen = 11, maxrev = 12000, xaxis = 'sali')
+                    nmen = 11, maxrev = 12000, x_axis = 'sali')
     # Adding a husband/wife on the same tax sheet (foyer)
     simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'conj', 'part') 
     simulation.scenario.addIndiv(2, datetime.date(2000,1,1), 'pac', 'enf') 
