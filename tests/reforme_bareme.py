@@ -129,11 +129,7 @@ def do_graphs():
                           destination_dir = destination_dir)
 
 
-
-
-
-def test_case(year):
-    
+def test_case(year):    
     country = 'tunisia'
     simulation = ScenarioSimulation()
     simulation.set_config(year = year, country = country, reforme=False,
@@ -155,6 +151,7 @@ def justify_decote():
     produce_graph(name="test2", apply_reform=True, reforme=False, conj = False, 
                   sal_conj=False, kids = 0, save_figure = True, destination_dir = destination_dir,
                   bareme=True, tax_rates=False, year=2011)
+
 
 if __name__ == '__main__':
     test_case(2011)
