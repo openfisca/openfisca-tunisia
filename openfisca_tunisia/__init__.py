@@ -55,9 +55,11 @@ X_AXES_PROPERTIES = {
 def init_country(qt = False):
     """Add country-specific content to OpenFisca-Core package."""
     from openfisca_core import model as core_model
+
     from openfisca_core import simulations as core_simulations
     from openfisca_core import taxbenefitsystems as core_taxbenefitsystems
     from openfisca_core.xaxes import XAxis
+
     if qt:
         from openfisca_qt import widgets as qt_widgets
 
@@ -81,11 +83,13 @@ def init_country(qt = False):
     core_model.OutputDescription = OutputDescription
     core_model.PARAM_FILE = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
     core_model.REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
-    core_model.REV_TYP = REV_TYP
+
+    core_model.REV_TYP = REV_TYP  
     core_model.REVENUES_CATEGORIES = REVENUES_CATEGORIES
     core_model.Scenario = scenarios.Scenario
     core_model.WEIGHT = WEIGHT
     core_model.WEIGHT_INI = WEIGHT_INI
+
     core_model.x_axes = dict(
         (col_name, XAxis(col_name = col_name, label = InputDescription.column_by_name[col_name].label, **properties))
         for col_name, properties in X_AXES_PROPERTIES.iteritems()
@@ -93,3 +97,4 @@ def init_country(qt = False):
 
     if qt:
         qt_widgets.CompositionWidget = CompositionWidget
+
