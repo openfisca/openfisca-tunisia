@@ -32,8 +32,6 @@ import pickle
 from openfisca_core import __version__ as VERSION
 from openfisca_core import model
 
-from openfisca_core import axestools
-
 from . import ENTITIES_INDEX
 
 
