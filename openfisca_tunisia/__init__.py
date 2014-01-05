@@ -72,6 +72,7 @@ def init_country(qt = False):
     core_taxbenefitsystems.preproc_inputs = None
 
     core_model.AGGREGATES_DEFAULT_VARS = None # AGGREGATES_DEFAULT_VARS
+    core_model.column_by_name = column_by_name
     core_model.CURRENCY = CURRENCY
     core_model.DATA_DIR = None
     core_model.DATA_SOURCES_DIR = os.path.join(COUNTRY_DIR, 'data', 'sources')
@@ -79,7 +80,6 @@ def init_country(qt = False):
     core_model.DEFAULT_DECOMP_FILE = decompositions.DEFAULT_DECOMP_FILE
     core_model.ENTITIES_INDEX = ENTITIES_INDEX
     core_model.FILTERING_VARS = None # FILTERING_VARS
-    core_model.column_by_name = column_by_name
     core_model.prestation_by_name = prestation_by_name
     core_model.PARAM_FILE = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
     core_model.REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
@@ -97,4 +97,3 @@ def init_country(qt = False):
 
     if qt:
         qt_widgets.CompositionWidget = CompositionWidget
-
