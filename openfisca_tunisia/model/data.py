@@ -1,86 +1,85 @@
-# -*- coding:utf-8 -*-
-# Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
+# -*- coding: utf-8 -*-
 
-"""
-openFisca, Logiciel libre de simulation du système socio-fiscal français
-Copyright © 2011 Clément Schaff, Mahdi Ben Jelloul
 
-This file is part of openFisca.
+# OpenFisca -- A versatile microsimulation software
+# By: OpenFisca Team <contact@openfisca.fr>
+#
+# Copyright (C) 2011, 2012, 2013, 2014 OpenFisca Team
+# https://github.com/openfisca
+#
+# This file is part of OpenFisca.
+#
+# OpenFisca is free software; you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# OpenFisca is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-    openFisca is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
 
-    openFisca is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+import collections
 
-    You should have received a copy of the GNU General Public License
-    along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
-"""
-
-from openfisca_core.descriptions import ModelDescription
 from openfisca_core.columns import IntCol, EnumCol, BoolCol, AgesCol
 from openfisca_core.utils import Enum
+
 
 QUIFOY = Enum(['vous', 'conj', 'pac1','pac2','pac3','pac4','pac5','pac6','pac7','pac8','pac9'])
 QUIFAM = Enum(['chef', 'part', 'enf1','enf2','enf3','enf4','enf5','enf6','enf7','enf8','enf9'])
 QUIMEN = Enum(['pref', 'cref', 'enf1','enf2','enf3','enf4','enf5','enf6','enf7','enf8','enf9'])
-CAT    = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_sal', 'cnrps_pen'])
+CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_sal', 'cnrps_pen'])
 
 
-class InputDescription(ModelDescription):
-    '''
-    Socio-economic data
-    Donnée d'entrée de la simulation à fournir à partir d'une enquète ou 
-    à générer avec un générateur de cas type
-    '''
-    
-    noi = IntCol()
-    idmen   = IntCol() # 600001, 600002,
-    idfoy   = IntCol() # idmen + noi du déclarant
-    # idfam   = IntCol() # idmen + noi du chef de famille
+# Socio-economic data
+# Donnée d'entrée de la simulation à fournir à partir d'une enquète ou
+# à générer avec un générateur de cas type
+column_by_name = collections.OrderedDict((
+    ('noi', IntCol()),
+    ('idmen', IntCol()), # 600001, 600002,
+    ('idfoy', IntCol()), # idmen + noi du déclarant
+    # ('idfam', IntCol()), # idmen + noi du chef de famille
 
-    quimen  = EnumCol(QUIMEN)
-    quifoy  = EnumCol(QUIFOY)
-    # quifam  = EnumCol(QUIFAM)
-    
-    type_sal = EnumCol(CAT, default=0)
-    
-    inv = BoolCol(label = u'invalide')
-    
-    
+    ('quimen', EnumCol(QUIMEN)),
+    ('quifoy', EnumCol(QUIFOY)),
+    # ('quifam', EnumCol(QUIFAM)),
 
-    jour_xyz = IntCol(default = 360)
-    age = AgesCol(label = u"âge")
-    agem = AgesCol(label = u"âge (en mois)")
-    
-    loyer = IntCol(entity='men') # Loyer mensuel
-    activite = IntCol()
-    boursier = BoolCol()
-    code_postal = IntCol(entity='men')
-    so = IntCol()
-    
-    statmarit = IntCol(default = 2)
-    chef      = BoolCol()
+    ('type_sal', EnumCol(CAT, default = 0)),
+
+    ('inv', BoolCol(label = u'invalide')),
+
+    ('jour_xyz', IntCol(default = 360)),
+    ('age', AgesCol(label = u"âge")),
+    ('agem', AgesCol(label = u"âge (en mois)")),
+
+    ('loyer', IntCol(entity = 'men')), # Loyer mensuel
+    ('activite', IntCol()),
+    ('boursier', BoolCol()),
+    ('code_postal', IntCol(entity = 'men')),
+    ('so', IntCol()),
+
+    ('statmarit', IntCol(default = 2)),
+    ('chef', BoolCol()),
 
     # BIC Bénéfices industriels et commerciaux
     # régime réel
-    bic_reel  = EnumCol()
+    ('bic_reel', EnumCol()),
     # 0: Néant 1: commerçant – 2: industriel – 3: prestataire de services - 4: artisan – 5: plus qu'une activité. Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt annuel sur le revenu au titre des bénéfices industriels et commerciaux sur la base de la différence entre les recettes et les dépenses .
     # régime des sociétés de personnes
-    bic_sp = BoolCol()
+    ('bic_sp', BoolCol()),
 
-    cadre_legal = EnumCol()
+    ('cadre_legal', EnumCol()),
     # (1) Code : 1: exportation totale dans le cadre du CII- 2 : développement régional - 3: développement agricole – 4: parcs des activités économiques – 5 : exportation dans le cadre du droit commun– 99: autre cadre ( à préciser).
 
-    bic_reel_res = IntCol()
-    bic_forf_res = IntCol()
-    bic_sp_res   = IntCol()
+    ('bic_reel_res', IntCol()),
+    ('bic_forf_res', IntCol()),
+    ('bic_sp_res', IntCol()),
 
-    decl_inves = EnumCol()
+    ('decl_inves', EnumCol()),
     # (2) Code : 1:API- 2: APIA –3: commissariat régional du développement agricole –4: ONT –5:autre structure ( à préciser)
 
     # A/ Régime réel
@@ -94,132 +93,132 @@ class InputDescription(ModelDescription):
     # Montant des primes (5) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
     # Résultat comptable
     # Résultat fiscal (6) Joindre à la déclaration l’état de détermination du résultat fiscal.
-    bic_res_fiscal = IntCol(label = "Résultat fiscal (BIC)")
+    ('bic_res_fiscal', IntCol(label = "Résultat fiscal (BIC)")),
 
     # Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
-    bic_ca_revente = IntCol(label="Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation")
-    bic_ca_autre = IntCol(label="Chiffre d’affaires global au titre d’autres activités")
-    bic_depenses = IntCol(label="Total des dépenses (BIC cession de fond de commerce)")    
-    bic_pv_cession = IntCol(label="Plue-value de cession du fond de commerce")
+    ('bic_ca_revente', IntCol(label = "Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation")),
+    ('bic_ca_autre', IntCol(label = "Chiffre d’affaires global au titre d’autres activités")),
+    ('bic_depenses', IntCol(label = "Total des dépenses (BIC cession de fond de commerce)")),
+    ('bic_pv_cession', IntCol(label = "Plue-value de cession du fond de commerce")),
 
-    
-    
+
+
     # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial
-    bic_part_benef_sp = IntCol(label="Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial")
+    ('bic_part_benef_sp', IntCol(label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial")),
 
     # BNC Bénéfices des professions non commerciales
     # A/ Régime réel
-    # - Chiffre d’affaires local HT. 
-    # - Chiffre d’affaires à l’exportation 
-    # - Chiffre d’affaires global TTC. 
+    # - Chiffre d’affaires local HT.
+    # - Chiffre d’affaires à l’exportation
+    # - Chiffre d’affaires global TTC.
     # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
-    # - Résultat comptable 
-    # - Résultat fiscal (2) Joindre à la déclaration l'état de détermination du résultat fiscal    
-    bnc_reel_res_fiscal = IntCol(label = "Résultat fiscal (BNC)")
-    
+    # - Résultat comptable
+    # - Résultat fiscal (2) Joindre à la déclaration l'état de détermination du résultat fiscal
+    ('bnc_reel_res_fiscal', IntCol(label = "Résultat fiscal (BNC)")),
+
     # B/ Détermination du bénéfice sur la base d’une assiette forfaitaire
     # - Recettes au titre des services locaux
     # - Recettes au titre des services exportés (3) Pour les entreprises totalement exportatrices dans le cadre du CII ou exerçant dans les parcs d’activités économiques.
-    # - Recettes globales brutes TTC 
-    bnc_forf_rec_brut = IntCol(label = "Recettes globales brutes TTC (BNC)") 
+    # - Recettes globales brutes TTC
+    ('bnc_forf_rec_brut', IntCol(label = "Recettes globales brutes TTC (BNC)")),
     # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
 
     # C/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux
-    bnc_part_benef_sp = IntCol(label="Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux")
-    
+    ('bnc_part_benef_sp', IntCol(label = "Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux")),
+
     # beap Bénéfices de l'exploitation agricole et de pêche
     # A/ Régime réel
     # - Chiffre d’affaires local
     # - Chiffre d’affaires à l’exportation
     # - Chiffre d’affaires global
     # - Montant des primes  Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
-    # - Résultat comptable B= bénéfice P = perte 
-    # - Résultat fiscal  B= bénéfice P = perte 
-    beap_reel_res_fiscal = IntCol(label="Résultat fiscal (BEAP, régime réel)")
-    
+    # - Résultat comptable B = bénéfice P = perte
+    # - Résultat fiscal  B = bénéfice P = perte
+    ('beap_reel_res_fiscal', IntCol(label = "Résultat fiscal (BEAP, régime réel)")),
+
     # B/ Détermination du bénéfice sur la base du reliquat positif entre les
     # recettes et les dépenses
     # - Recettes brutes …………………………..
     # - Stocks …………………………..
-    beap_reliq_rec = IntCol(label="Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses") 
-    beap_reliq_stock = IntCol(label="Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")
-    
+    ('beap_reliq_rec', IntCol(label = "Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")),
+    ('beap_reliq_stock', IntCol(label = "Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
+
     # TOTAL …………………………..
     # - Déduction des dépenses d’exploitation justifiées …………………………..
-    beap_reliq_dep_ex = IntCol(label="Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")
+    ('beap_reliq_dep_ex', IntCol(label = "Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
     # - Montant des primes (1) …………………………..
-    # - Résultat B= bénéfice P = perte …………………………..
+    # - Résultat B = bénéfice P = perte …………………………..
     # - Bénéfice fiscal (4) …………………………..
-    beap_reliq_benef_fiscal = IntCol(label="Bénéfice fiscal (BEAP)" ) # TODO:
+    ('beap_reliq_benef_fiscal', IntCol(label = "Bénéfice fiscal (BEAP)" )),
     # C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
     # - Bénéfice fiscal …………………………..
-    beap_monogr = IntCol(label="Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")
-    
+    ('beap_monogr', IntCol(label = "Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")),
+
     # D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
     # assimilées exerçant dans le secteur agricole et de pêche
-    beap_part_benef_sp = IntCol(label="Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche")
-    
-    
-    # rfon Revenus fonciers 
+    ('beap_part_benef_sp', IntCol(label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche")),
+
+
+    # rfon Revenus fonciers
     #  régime réel
-    fon_reel_fisc = IntCol()
-    
-    #  régime fofaitaire bâti
-    fon_forf_bati_rec = IntCol()
-    fon_forf_bati_rel = IntCol()
-    fon_forf_bati_fra = IntCol()
-    fon_forf_bati_tax = IntCol()
+    ('fon_reel_fisc', IntCol()),
+
+    #  régime forfaitaire bâti
+    ('fon_forf_bati_rec', IntCol()),
+    ('fon_forf_bati_rel', IntCol()),
+    ('fon_forf_bati_fra', IntCol()),
+    ('fon_forf_bati_tax', IntCol()),
 
     # régime forfaitaire non bâti
-    fon_forf_nbat_rec = IntCol()
-    fon_forf_nbat_dep = IntCol()
-    fon_forf_nbat_tax = IntCol()
-    
+    ('fon_forf_nbat_rec', IntCol()),
+    ('fon_forf_nbat_dep', IntCol()),
+    ('fon_forf_nbat_tax', IntCol()),
+
     #  part dans les bénéfices ou els pertes de sociétés de personnes et assimilées qui réalisent des revenus fonciers
-    fon_sp   = IntCol()
+    ('fon_sp', IntCol()),
 
     # Salaires et pensions
-    
-    sali = IntCol( label="Salaires imposables", default=0)
-    sal_nat = IntCol( label="Avantages en nature assimilables à des salaires", default=0 )
-    smig_dec = BoolCol( label="Salarié déclarant percevoir le SMIG ou le SMAG")
-    pen = IntCol(label="Pensions et rentes viagères")
-    pen_nat = IntCol( label="Avantages en nature assimilables à des pensions")
-    
-    
+
+    ('sali', IntCol( label = "Salaires imposables", default = 0)),
+    ('sal_nat', IntCol( label = "Avantages en nature assimilables à des salaires", default = 0 )),
+    ('smig_dec', BoolCol( label = "Salarié déclarant percevoir le SMIG ou le SMAG")),
+    ('pen', IntCol(label = "Pensions et rentes viagères")),
+    ('pen_nat', IntCol( label = "Avantages en nature assimilables à des pensions")),
+
+
 # rvcm Revenus de valeurs mobilières et de capitaux mobiliers
 # A Revenus des valeurs mobilières et de capitaux mobiliers
-    valm_nreg = IntCol( label="Revenus des valeurs mobilières autres que ceux régulièrement distribués")
-    valm_jpres     = IntCol( label="Jetons de présence")
-    valm_aut  = IntCol( label="Autres rémunérations assimilées")
+    ('valm_nreg', IntCol( label = "Revenus des valeurs mobilières autres que ceux régulièrement distribués")),
+    ('valm_jpres', IntCol( label = "Jetons de présence")),
+    ('valm_aut', IntCol( label = "Autres rémunérations assimilées")),
 
 # B Revenus de capitaux mobiliers
-    capm_banq   = IntCol( label="Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques")
-    capm_cent   = IntCol( label="Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT")
-    capm_caut   = IntCol( label="Intérêts des créances et intérêts et rémunérations des cautionnements")
-    capm_part   = IntCol( label="Intérêts des titres de participation")
-    capm_oblig  = IntCol( label="Intérêts des emprunts obligataires")
-    capm_caisse = IntCol( label="Intérêts des bons de caisse")
-    capm_plfcc  = IntCol( label="Revenus des parts et de liquidation du fonds commun des créances")
-    capm_epinv  = IntCol( label="Intérêts des comptes épargne pour l'investissement")
-    capm_aut    = IntCol( label="Autres intérêts")
+    ('capm_banq', IntCol( label = "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques")),
+    ('capm_cent', IntCol( label = "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT")),
+    ('capm_caut', IntCol( label = "Intérêts des créances et intérêts et rémunérations des cautionnements")),
+    ('capm_part', IntCol( label = "Intérêts des titres de participation")),
+    ('capm_oblig', IntCol( label = "Intérêts des emprunts obligataires")),
+    ('capm_caisse', IntCol( label = "Intérêts des bons de caisse")),
+    ('capm_plfcc', IntCol( label = "Revenus des parts et de liquidation du fonds commun des créances")),
+    ('capm_epinv', IntCol( label = "Intérêts des comptes épargne pour l'investissement")),
+    ('capm_aut', IntCol( label = "Autres intérêts")),
 
 
 # AUtres revenus
-    etr_sal     = IntCol( label="Salaires perçus à l'étranger") 
-    etr_pen     = IntCol( label="Pensions perçues à l'étranger (non transférées)")
-    etr_trans   = IntCol( label="Pensions perçues à l'étranger (transférées en Tunisie)")
-    etr_aut     = IntCol( label="Autres revenus perçus à l'étranger")
+    ('etr_sal', IntCol( label = "Salaires perçus à l'étranger")),
+    ('etr_pen', IntCol( label = "Pensions perçues à l'étranger (non transférées)")),
+    ('etr_trans', IntCol( label = "Pensions perçues à l'étranger (transférées en Tunisie)")),
+    ('etr_aut', IntCol( label = "Autres revenus perçus à l'étranger")),
 # Revnus exonérés
-# Revenus non imposables        
-    
+# Revenus non imposables
+
 # deficit antérieurs non déduits
-    def_ante    = IntCol( label="Déficits des années antérieures non déduits")   
-    
-# déductions 
+    ('def_ante', IntCol( label = "Déficits des années antérieures non déduits")),
+
+# déductions
 
 # 1/ Au titre de l'activité
-#    
+#
 #    Droit commun
 #- Déduction de la plus value provenant de l’apport d’actions et de parts sociales au capital de la société mère ou de la société holding 6811
 #- Déduction de la plus value provenant de la cession des entreprises en difficultés économiques dans le cadre de la transmission des entreprises 6881
@@ -248,18 +247,18 @@ class InputDescription(ModelDescription):
 #1522
 
 #     2/ Autres déductions
-    
-    deduc_banq  = IntCol( label="Intérêts des comptes spéciaux d’épargne ouverts auprès des banques")
-    deduc_cent  = IntCol( label="Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite")
-    deduc_obli  = IntCol( label="Intérêts des emprunts obligataires")
-    deduc_epinv = IntCol( label="Intérêts des comptes épargne pour l'investissement")
-    rente       = IntCol( label="Rentes payées obligatoirement et à titre gratuit")
-    prime_ass_vie     = IntCol( label="Prime d’assurance-vie")
-    dons        = IntCol( label="Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21")
-    pret_univ   = IntCol( label="Remboursement des prêts universitaires en principal et intérêts")
-    cotis_nonaf = IntCol( label="Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale")
-    deduc_logt  = IntCol( label="Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social")
-    
+
+    ('deduc_banq', IntCol( label = "Intérêts des comptes spéciaux d’épargne ouverts auprès des banques")),
+    ('deduc_cent', IntCol( label = "Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite")),
+    ('deduc_obli', IntCol( label = "Intérêts des emprunts obligataires")),
+    ('deduc_epinv', IntCol( label = "Intérêts des comptes épargne pour l'investissement")),
+    ('rente', IntCol( label = "Rentes payées obligatoirement et à titre gratuit")),
+    ('prime_ass_vie', IntCol( label = "Prime d’assurance-vie")),
+    ('dons', IntCol( label = "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21")),
+    ('pret_univ', IntCol( label = "Remboursement des prêts universitaires en principal et intérêts")),
+    ('cotis_nonaf', IntCol( label = "Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale")),
+    ('deduc_logt', IntCol( label = "Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social")),
+
 
 #Code d’incitation aux investissements
 #Incitations Communes 3::3
@@ -286,14 +285,21 @@ class InputDescription(ModelDescription):
 #Sociétés implantées dans les parcs des activités économiques
 #4262 4263
 #Bénéfices et revenus réinvestis dans le cadre de la mise à niveau des entreprises publiques.
-#    
-    
+#
+
 
     # TODO Remove Me
-    rstbrut  = IntCol()
-    alr = IntCol()
-    alv = IntCol()
-    rto = IntCol()
-    psoc = IntCol()
-    af = IntCol()
-    uc = IntCol()
+    ('rstbrut', IntCol()),
+    ('alr', IntCol()),
+    ('alv', IntCol()),
+    ('rto', IntCol()),
+    ('psoc', IntCol()),
+    ('af', IntCol()),
+    ('uc', IntCol()),
+    ))
+
+for name, column in column_by_name.iteritems():
+    if column.label is None:
+        column.label = name
+    assert column.name is None
+    column.name = name

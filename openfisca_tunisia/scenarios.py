@@ -272,9 +272,9 @@ class Scenario(object):
             age = datesim.year- birth.year
             agem = 12*(datesim.year- birth.year) + datesim.month - birth.month
             noidec = dct['noidec']
-            quifoy = datatable.description.get_col('quifoy').enum[dct['quifoy']]
+            quifoy = datatable.column_by_name.get('quifoy').enum[dct['quifoy']]
 
-            quimen = datatable.description.get_col('quimen').enum[dct['quimen']]
+            quimen = datatable.column_by_name.get('quimen').enum[dct['quimen']]
             dct = {'noi': noi*np.ones(nmen),
                    'age': age*np.ones(nmen),
                    'agem': agem*np.ones(nmen),
@@ -287,9 +287,9 @@ class Scenario(object):
 
         datatable.gen_index(ENTITIES_INDEX)
 
-        for name in datatable.col_names:
-            if not name in datatable.table:
-                datatable.table[name] = datatable.description.get_col(name)._default
+        for name, column in datatable.column_by_name.iteritems():
+            if name not in datatable.table:
+                datatable.table[name] = column._default
 
         entity = 'men'
         nb = datatable.index[entity]['nb']
