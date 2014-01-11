@@ -794,8 +794,8 @@
         <VALUE valeur="23.475" deb="1960-01-01" fin="2011-12-31"/>
       </CODE>
     </NODE>
-    <NODE description="Allocation pour congé de naissance" code="naiss"> # TODO
-    </NODE>
+    <!--NODE description="Allocation pour congé de naissance" code="naiss"> # TODO
+    </NODE-->
     <NODE description="Contribution au frais de crêche" code="creche">
       <CODE description="Plafond de ressources (en SMIG 48h)" code="plaf" format="percent">
         <VALUE valeur="2.5" deb="1960-01-01" fin="2011-12-31"/>
