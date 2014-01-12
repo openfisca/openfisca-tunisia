@@ -21,13 +21,14 @@ This file is part of openFisca.
     along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+
 from __future__ import division
 
 from numpy import  zeros
-from openfisca_core.utils import scaleBaremes, combineBaremes, BaremeDict
-
+from openfisca_core.baremes import BaremeDict, combineBaremes, scaleBaremes
 
 from .data import CAT
+
 
 class Object(object):
     def __init__(self):
