@@ -21,9 +21,14 @@ This file is part of openFisca.
     along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+
 from __future__ import division
-from numpy import (floor, arange)
+
+from numpy import arange, floor
+from openfisca_core.statshelpers import mark_weighted_percentiles
+
 from .data import  QUIMEN
+
 
 ALL = [x[1] for x in QUIMEN]
 
@@ -115,8 +120,6 @@ def _rev_cap(rfon):
 def _impo(irpp):
     '''Impôts directs'''
     return irpp
-
-from openfisca_core.utils import mark_weighted_percentiles
 
 def _decile(nivvie, wprm):
     '''
