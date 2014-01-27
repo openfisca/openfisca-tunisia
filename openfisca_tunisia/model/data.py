@@ -93,18 +93,18 @@ column_by_name = collections.OrderedDict((
     # Montant des primes (5) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
     # Résultat comptable
     # Résultat fiscal (6) Joindre à la déclaration l’état de détermination du résultat fiscal.
-    ('bic_res_fiscal', IntCol(label = "Résultat fiscal (BIC)")),
+    ('bic_res_fiscal', IntCol(label = u"Résultat fiscal (BIC)")),
 
     # Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
-    ('bic_ca_revente', IntCol(label = "Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation")),
-    ('bic_ca_autre', IntCol(label = "Chiffre d’affaires global au titre d’autres activités")),
-    ('bic_depenses', IntCol(label = "Total des dépenses (BIC cession de fond de commerce)")),
-    ('bic_pv_cession', IntCol(label = "Plue-value de cession du fond de commerce")),
+    ('bic_ca_revente', IntCol(label = u"Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation")),
+    ('bic_ca_autre', IntCol(label = u"Chiffre d’affaires global au titre d’autres activités")),
+    ('bic_depenses', IntCol(label = u"Total des dépenses (BIC cession de fond de commerce)")),
+    ('bic_pv_cession', IntCol(label = u"Plue-value de cession du fond de commerce")),
 
 
 
     # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial
-    ('bic_part_benef_sp', IntCol(label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial")),
+    ('bic_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial")),
 
     # BNC Bénéfices des professions non commerciales
     # A/ Régime réel
@@ -114,17 +114,17 @@ column_by_name = collections.OrderedDict((
     # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
     # - Résultat comptable
     # - Résultat fiscal (2) Joindre à la déclaration l'état de détermination du résultat fiscal
-    ('bnc_reel_res_fiscal', IntCol(label = "Résultat fiscal (BNC)")),
+    ('bnc_reel_res_fiscal', IntCol(label = u"Résultat fiscal (BNC)")),
 
     # B/ Détermination du bénéfice sur la base d’une assiette forfaitaire
     # - Recettes au titre des services locaux
     # - Recettes au titre des services exportés (3) Pour les entreprises totalement exportatrices dans le cadre du CII ou exerçant dans les parcs d’activités économiques.
     # - Recettes globales brutes TTC
-    ('bnc_forf_rec_brut', IntCol(label = "Recettes globales brutes TTC (BNC)")),
+    ('bnc_forf_rec_brut', IntCol(label = u"Recettes globales brutes TTC (BNC)")),
     # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
 
     # C/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux
-    ('bnc_part_benef_sp', IntCol(label = "Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux")),
+    ('bnc_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux")),
 
     # beap Bénéfices de l'exploitation agricole et de pêche
     # A/ Régime réel
@@ -134,29 +134,29 @@ column_by_name = collections.OrderedDict((
     # - Montant des primes  Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
     # - Résultat comptable B = bénéfice P = perte
     # - Résultat fiscal  B = bénéfice P = perte
-    ('beap_reel_res_fiscal', IntCol(label = "Résultat fiscal (BEAP, régime réel)")),
+    ('beap_reel_res_fiscal', IntCol(label = u"Résultat fiscal (BEAP, régime réel)")),
 
     # B/ Détermination du bénéfice sur la base du reliquat positif entre les
     # recettes et les dépenses
     # - Recettes brutes …………………………..
     # - Stocks …………………………..
-    ('beap_reliq_rec', IntCol(label = "Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")),
-    ('beap_reliq_stock', IntCol(label = "Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
+    ('beap_reliq_rec', IntCol(label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")),
+    ('beap_reliq_stock', IntCol(label = u"Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
 
     # TOTAL …………………………..
     # - Déduction des dépenses d’exploitation justifiées …………………………..
-    ('beap_reliq_dep_ex', IntCol(label = "Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
+    ('beap_reliq_dep_ex', IntCol(label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
     # - Montant des primes (1) …………………………..
     # - Résultat B = bénéfice P = perte …………………………..
     # - Bénéfice fiscal (4) …………………………..
-    ('beap_reliq_benef_fiscal', IntCol(label = "Bénéfice fiscal (BEAP)" )),
+    ('beap_reliq_benef_fiscal', IntCol(label = u"Bénéfice fiscal (BEAP)" )),
     # C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
     # - Bénéfice fiscal …………………………..
-    ('beap_monogr', IntCol(label = "Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")),
+    ('beap_monogr', IntCol(label = u"Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")),
 
     # D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
     # assimilées exerçant dans le secteur agricole et de pêche
-    ('beap_part_benef_sp', IntCol(label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche")),
+    ('beap_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche")),
 
 
     # rfon Revenus fonciers
@@ -179,41 +179,41 @@ column_by_name = collections.OrderedDict((
 
     # Salaires et pensions
 
-    ('sali', IntCol( label = "Salaires imposables", default = 0)),
-    ('sal_nat', IntCol( label = "Avantages en nature assimilables à des salaires", default = 0 )),
-    ('smig_dec', BoolCol( label = "Salarié déclarant percevoir le SMIG ou le SMAG")),
-    ('pen', IntCol(label = "Pensions et rentes viagères")),
-    ('pen_nat', IntCol( label = "Avantages en nature assimilables à des pensions")),
+    ('sali', IntCol( label = u"Salaires imposables", default = 0)),
+    ('sal_nat', IntCol( label = u"Avantages en nature assimilables à des salaires", default = 0 )),
+    ('smig_dec', BoolCol( label = u"Salarié déclarant percevoir le SMIG ou le SMAG")),
+    ('pen', IntCol(label = u"Pensions et rentes viagères")),
+    ('pen_nat', IntCol( label = u"Avantages en nature assimilables à des pensions")),
 
 
 # rvcm Revenus de valeurs mobilières et de capitaux mobiliers
 # A Revenus des valeurs mobilières et de capitaux mobiliers
-    ('valm_nreg', IntCol( label = "Revenus des valeurs mobilières autres que ceux régulièrement distribués")),
-    ('valm_jpres', IntCol( label = "Jetons de présence")),
-    ('valm_aut', IntCol( label = "Autres rémunérations assimilées")),
+    ('valm_nreg', IntCol( label = u"Revenus des valeurs mobilières autres que ceux régulièrement distribués")),
+    ('valm_jpres', IntCol( label = u"Jetons de présence")),
+    ('valm_aut', IntCol( label = u"Autres rémunérations assimilées")),
 
 # B Revenus de capitaux mobiliers
-    ('capm_banq', IntCol( label = "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques")),
-    ('capm_cent', IntCol( label = "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT")),
-    ('capm_caut', IntCol( label = "Intérêts des créances et intérêts et rémunérations des cautionnements")),
-    ('capm_part', IntCol( label = "Intérêts des titres de participation")),
-    ('capm_oblig', IntCol( label = "Intérêts des emprunts obligataires")),
-    ('capm_caisse', IntCol( label = "Intérêts des bons de caisse")),
-    ('capm_plfcc', IntCol( label = "Revenus des parts et de liquidation du fonds commun des créances")),
-    ('capm_epinv', IntCol( label = "Intérêts des comptes épargne pour l'investissement")),
-    ('capm_aut', IntCol( label = "Autres intérêts")),
+    ('capm_banq', IntCol( label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques")),
+    ('capm_cent', IntCol( label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT")),
+    ('capm_caut', IntCol( label = u"Intérêts des créances et intérêts et rémunérations des cautionnements")),
+    ('capm_part', IntCol( label = u"Intérêts des titres de participation")),
+    ('capm_oblig', IntCol( label = u"Intérêts des emprunts obligataires")),
+    ('capm_caisse', IntCol( label = u"Intérêts des bons de caisse")),
+    ('capm_plfcc', IntCol( label = u"Revenus des parts et de liquidation du fonds commun des créances")),
+    ('capm_epinv', IntCol( label = u"Intérêts des comptes épargne pour l'investissement")),
+    ('capm_aut', IntCol( label = u"Autres intérêts")),
 
 
 # AUtres revenus
-    ('etr_sal', IntCol( label = "Salaires perçus à l'étranger")),
-    ('etr_pen', IntCol( label = "Pensions perçues à l'étranger (non transférées)")),
-    ('etr_trans', IntCol( label = "Pensions perçues à l'étranger (transférées en Tunisie)")),
-    ('etr_aut', IntCol( label = "Autres revenus perçus à l'étranger")),
+    ('etr_sal', IntCol( label = u"Salaires perçus à l'étranger")),
+    ('etr_pen', IntCol( label = u"Pensions perçues à l'étranger (non transférées)")),
+    ('etr_trans', IntCol( label = u"Pensions perçues à l'étranger (transférées en Tunisie)")),
+    ('etr_aut', IntCol( label = u"Autres revenus perçus à l'étranger")),
 # Revnus exonérés
 # Revenus non imposables
 
 # deficit antérieurs non déduits
-    ('def_ante', IntCol( label = "Déficits des années antérieures non déduits")),
+    ('def_ante', IntCol( label = u"Déficits des années antérieures non déduits")),
 
 # déductions
 
@@ -248,16 +248,16 @@ column_by_name = collections.OrderedDict((
 
 #     2/ Autres déductions
 
-    ('deduc_banq', IntCol( label = "Intérêts des comptes spéciaux d’épargne ouverts auprès des banques")),
-    ('deduc_cent', IntCol( label = "Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite")),
-    ('deduc_obli', IntCol( label = "Intérêts des emprunts obligataires")),
-    ('deduc_epinv', IntCol( label = "Intérêts des comptes épargne pour l'investissement")),
-    ('rente', IntCol( label = "Rentes payées obligatoirement et à titre gratuit")),
-    ('prime_ass_vie', IntCol( label = "Prime d’assurance-vie")),
-    ('dons', IntCol( label = "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21")),
-    ('pret_univ', IntCol( label = "Remboursement des prêts universitaires en principal et intérêts")),
-    ('cotis_nonaf', IntCol( label = "Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale")),
-    ('deduc_logt', IntCol( label = "Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social")),
+    ('deduc_banq', IntCol( label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques")),
+    ('deduc_cent', IntCol( label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite")),
+    ('deduc_obli', IntCol( label = u"Intérêts des emprunts obligataires")),
+    ('deduc_epinv', IntCol( label = u"Intérêts des comptes épargne pour l'investissement")),
+    ('rente', IntCol( label = u"Rentes payées obligatoirement et à titre gratuit")),
+    ('prime_ass_vie', IntCol( label = u"Prime d’assurance-vie")),
+    ('dons', IntCol( label = u"Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21")),
+    ('pret_univ', IntCol( label = u"Remboursement des prêts universitaires en principal et intérêts")),
+    ('cotis_nonaf', IntCol( label = u"Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale")),
+    ('deduc_logt', IntCol( label = u"Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social")),
 
 
 #Code d’incitation aux investissements

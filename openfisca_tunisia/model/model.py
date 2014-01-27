@@ -40,10 +40,10 @@ prestation_by_name = collections.OrderedDict((
     ############################################################
 
     # Salaires
-    ('salbrut', Prestation(cs._salbrut, label = "Salaires bruts")),
+    ('salbrut', Prestation(cs._salbrut, label = u"Salaires bruts")),
     ('cotpat', Prestation(cs._cotpat)),
     ('cotsal', Prestation(cs._cotsal)),
-    ('salsuperbrut', Prestation(cs._salsuperbrut, label = "Salaires super bruts")),
+    ('salsuperbrut', Prestation(cs._salsuperbrut, label = u"Salaires super bruts")),
 #    ('sal', Prestation(cs._sal)),
 
 
@@ -53,14 +53,14 @@ prestation_by_name = collections.OrderedDict((
     # Prestation familiales
     ############################################################
 
-    ('smig75', BoolPresta(pf._smig75, label = "Indicatrice de salaire supérieur à 75% du smig")),
+    ('smig75', BoolPresta(pf._smig75, label = u"Indicatrice de salaire supérieur à 75% du smig")),
     ('af_nbenf', Prestation(pf._af_nbenf, entity = 'men',
-        label = "Nombre d'enfants au sens des allocations familiales")),
-    ('af', Prestation(pf._af, entity = 'men', label = "Allocations familiales")),
-    ('sal_uniq', BoolPresta(pf._sal_uniq, entity = 'men', label = "Indicatrice de salaire unique")),
-    ('maj_sal_uniq', Prestation(pf._maj_sal_uniq, entity = 'men', label = "Majoration du salaire unique")),
-    ('contr_creche', Prestation(pf._contr_creche, entity = 'men', label = "Contribution aux frais de crêche")),
-    ('pfam', Prestation(pf._pfam, entity = 'men', label = "Prestations familales")),
+        label = u"Nombre d'enfants au sens des allocations familiales")),
+    ('af', Prestation(pf._af, entity = 'men', label = u"Allocations familiales")),
+    ('sal_uniq', BoolPresta(pf._sal_uniq, entity = 'men', label = u"Indicatrice de salaire unique")),
+    ('maj_sal_uniq', Prestation(pf._maj_sal_uniq, entity = 'men', label = u"Majoration du salaire unique")),
+    ('contr_creche', Prestation(pf._contr_creche, entity = 'men', label = u"Contribution aux frais de crêche")),
+    ('pfam', Prestation(pf._pfam, entity = 'men', label = u"Prestations familales")),
 
     ############################################################
     # Impôt sur le revenu
@@ -82,15 +82,15 @@ prestation_by_name = collections.OrderedDict((
     ('bic', Prestation(ir._bic, entity = 'foy')),
 
     ('bic_ca_global', Prestation(ir._bic_ca_global,
-        label = "Chiffre d’affaires global (BIC, cession de fond de commerce")),
-    ('bic_res_cession', Prestation(ir._bic_res_cession, label = "Résultat (BIC, cession de fond de commerce)")),
+        label = u"Chiffre d’affaires global (BIC, cession de fond de commerce")),
+    ('bic_res_cession', Prestation(ir._bic_res_cession, label = u"Résultat (BIC, cession de fond de commerce)")),
     ('bic_benef_fiscal_cession', Prestation(ir._bic_benef_fiscal_cession,
-        label = "Bénéfice fiscal (BIC, cession de fond de commerce)")),
+        label = u"Bénéfice fiscal (BIC, cession de fond de commerce)")),
 
     ('bnc', Prestation(ir._bnc, entity = 'foy')),
 
     ('bnc_forf_benef_fiscal', Prestation(ir._bnc_forf_benef_fiscal, 
-        label = "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)")),
+        label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)")),
 
     ('beap', Prestation(ir._beap, entity = 'foy')),
     ('rvcm', Prestation(ir._rvcm, entity = 'foy')),
@@ -98,8 +98,8 @@ prestation_by_name = collections.OrderedDict((
     ('fon_forf_nbat', Prestation(ir._fon_forf_nbat, entity = 'foy')),
     ('rfon', Prestation(ir._rfon, entity = 'foy')),
 
-    ('sal', Prestation(ir._sal, entity = 'foy', label = "Salaires y compris salaires en nature")),
-    ('sal_net', Prestation(ir._sal_net, entity = 'foy', label = "Salaires nets")),
+    ('sal', Prestation(ir._sal, entity = 'foy', label = u"Salaires y compris salaires en nature")),
+    ('sal_net', Prestation(ir._sal_net, entity = 'foy', label = u"Salaires nets")),
     ('pen_net', Prestation(ir._pen_net, entity = 'foy')),
     ('tspr', Prestation(ir._tspr, entity = 'foy')),
     ('retr', Prestation(ir._retr, entity = 'foy')),
