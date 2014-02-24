@@ -1,4 +1,4 @@
-<NODE code="root">
+<NODE code="root" deb="2012-01-01" fin="2013-12-31">
   <NODE description="Cotisations sociales" code="cotsoc">
     <NODE description="Paramètres généraux" code="gen">
       <CODE description="Plafond de la sécurité sociale (en SMIG)" code="plaf_ss" format="integer">
