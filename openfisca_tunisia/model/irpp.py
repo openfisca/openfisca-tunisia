@@ -21,10 +21,10 @@ This file is part of openFisca.
     along with openFisca.  If not, see <http://www.gnu.org/licenses/>.
 """
 from __future__ import division
-from numpy import maximum as max_, minimum as min_, logical_or as or_
+
+from numpy import (datetime64, logical_or as or_, maximum as max_, minimum as min_)
 
 from .data import QUIFOY
-#from .data import QUIFAM
 
 VOUS = QUIFOY['vous']
 CONJ = QUIFOY['conj']
@@ -32,16 +32,25 @@ PAC1 = QUIFOY['pac1']
 PAC2 = QUIFOY['pac2']
 PAC3 = QUIFOY['pac3']
 ALL = [x[1] for x in QUIFOY]
-PACS = [ QUIFOY[ 'pac' + str(i)] for i in range(1,10) ]
-#ENFS = [ QUIFAM['enf1'], QUIFAM['enf2'], QUIFAM['enf3'], QUIFAM['enf4'], QUIFAM['enf5'],
+PACS = [ QUIFOY[ 'pac' + str(i)] for i in range(1, 10) ]
+# ENFS = [ QUIFAM['enf1'], QUIFAM['enf2'], QUIFAM['enf3'], QUIFAM['enf4'], QUIFAM['enf5'],
 #         QUIFAM['enf6'], QUIFAM['enf7'], QUIFAM['enf8'], QUIFAM['enf9']]
 
 ###############################################################################
-## Initialisation de quelques variables utiles pour la suite
+# # Initialisation de quelques variables utiles pour la suite
 ###############################################################################
 
+def _age(birth, _P):
+    return (datetime64(_P.datesim) - birth).astype('timedelta64[Y]')
+
+
+def _agem(birth, _P):
+    return (datetime64(_P.datesim) - birth).astype('timedelta64[M]')
+
+
 def _nb_adult(marie, celdiv, veuf):
-    return 2*marie + 1*(celdiv | veuf)
+    return 2 * marie + 1 * (celdiv | veuf)
+
 
 def _marie(statmarit):
     '''
@@ -72,10 +81,12 @@ def _veuf(statmarit):
     return statmarit == 4
 
 
-def _nb_enf(age, _P, _option={'age': PACS}):
+def _nb_enf(self, age_holder, _P):
     '''
     Nombre d'enfants TODO
     '''
+    age = self.split_by_roles(age_holder, roles = PACS)
+
     P = _P.ir.deduc.fam
 #    res = None
 #    i = 1
@@ -87,30 +98,30 @@ def _nb_enf(age, _P, _option={'age': PACS}):
     res = 0
     for ag in age.itervalues():
 
-        res +=  1*(ag < P.age)*(ag>=0)
+        res += 1 * (ag < P.age) * (ag >= 0)
     return res
 
 def _nb_enf_sup(agem, boursier):
     '''
     Nombre d'enfants étudiant du supérieur non boursiers TODO
     '''
-    return 0*agem
+    return 0 * agem
 
 def _nb_infirme(agem, inv):
     '''
     Nombre d'enfants infirmes TODO
     '''
-    return 0*agem
+    return 0 * agem
 
 def _nb_par(agem):
     '''
     Nombre de parents TODO
     '''
-    return 0*agem
+    return 0 * agem
 
 
 ###############################################################################
-## Revenus catégoriels
+# # Revenus catégoriels
 ###############################################################################
 
 
@@ -121,7 +132,7 @@ def _bic(agem):
     'foy'
     '''
 #    return bic_reel + bic_simpl + bic_forf TODO:
-    return 0*agem
+    return 0 * agem
 
 # régime réel
 # régime réel simplifié
@@ -148,7 +159,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
     """
     Résultat net BIC TODO: il manque le régime réel
     """
-    return bic_benef_fiscal_cession +  bic_part_benef_sp
+    return bic_benef_fiscal_cession + bic_part_benef_sp
 
 
 # 2. Bénéfices des professions non commerciales
@@ -165,7 +176,7 @@ def _bnc_forf_benef_fiscal(bnc_forf_rec_brut, _P):
     Bénéfice fiscal (régime forfaitaire, 70% des recettes brutes TTC)
     """
     part = _P.ir.bnc.forf.part_forf
-    return bnc_forf_rec_brut*part
+    return bnc_forf_rec_brut * part
 
 
 # 3. Bénéfices de l'exploitation agricole et de pêche
@@ -191,7 +202,7 @@ def _fon_forf_bati(fon_forf_bati_rec, fon_forf_bati_rel, fon_forf_bati_fra, fon_
     'foy'
     '''
     P = _P.ir.fon.bati.deduc_frais
-    return max_(0, fon_forf_bati_rec*(1-P) + fon_forf_bati_rel - fon_forf_bati_fra - fon_forf_bati_tax)
+    return max_(0, fon_forf_bati_rec * (1 - P) + fon_forf_bati_rel - fon_forf_bati_fra - fon_forf_bati_tax)
 
 def _fon_forf_nbat(fon_forf_nbat_rec, fon_forf_nbat_dep, fon_forf_nbat_tax, _P):
     '''
@@ -222,7 +233,7 @@ def _smig(sal, smig_dec, _P):
     Indicatrice de salariée payé au smig
     'foy'
     '''
-    smig = or_(smig_dec, sal <= 12*_P.cotsoc.gen.smig)
+    smig = or_(smig_dec, sal <= 12 * _P.cotsoc.gen.smig)
     return smig
 
 def _sal_net(sal, smig, _P):
@@ -232,9 +243,9 @@ def _sal_net(sal, smig, _P):
     '''
     P = _P.ir.tspr
     if _P.datesim.year >= 2011:
-        res = max_(sal*(1 - P.abat_sal) - max_(smig*P.smig, (sal <= P.smig_ext)*P.smig), 0)
+        res = max_(sal * (1 - P.abat_sal) - max_(smig * P.smig, (sal <= P.smig_ext) * P.smig), 0)
     else:
-        res = max_(sal*(1 - P.abat_sal) - smig*P.smig,0)
+        res = max_(sal * (1 - P.abat_sal) - smig * P.smig, 0)
     return res
 
 
@@ -244,7 +255,7 @@ def _pen_net(pen, pen_nat, _P):
     'foy'
     '''
     P = _P.ir.tspr
-    return (pen + pen_nat)*(1-P.abat_pen)
+    return (pen + pen_nat) * (1 - P.abat_pen)
 
 # 6. Revenus de valeurs mobilières et de capitaux mobiliers
 def _rvcm(capm_banq, capm_cent, capm_caut, capm_part, capm_oblig, capm_caisse, capm_plfcc, capm_epinv, capm_aut):
@@ -262,11 +273,11 @@ def _retr(etr_sal, etr_pen, etr_trans, etr_aut, _P):
     'foy'
     '''
     P = _P.ir.tspr
-    return etr_sal*(1-P.abat_sal) + etr_pen*(1-P.abat_pen) + etr_trans*(1-P.abat_pen_etr) + etr_aut
+    return etr_sal * (1 - P.abat_sal) + etr_pen * (1 - P.abat_pen) + etr_trans * (1 - P.abat_pen_etr) + etr_aut
 
 
 ###############################################################################
-## Déroulé du calcul de l'irpp
+# # Déroulé du calcul de l'irpp
 ###############################################################################
 
 
@@ -275,20 +286,20 @@ def _rng(tspr, rfon, retr, rvcm):
     Revenu net global  soumis à l'impôt après déduction des abattements
     'foy'
     '''
-    return tspr + rfon + + rvcm + retr
+    return tspr + rfon + +rvcm + retr
 
 #############################
 #    Déductions
 #############################
 
-## 1/ Au titre des revenus et bénéfices provenant de l’activité
+# # 1/ Au titre des revenus et bénéfices provenant de l’activité
 
-## 2/ Autres déductions
+# # 2/ Autres déductions
 
 
 def _deduc_int(capm_banq, capm_cent, capm_oblig, _P):
     P = _P.deduc
-    return  max_( max_( max_(capm_banq, P.banq.plaf) + max_(capm_cent, P.cent.plaf), P.banq.plaf ) +
+    return  max_(max_(max_(capm_banq, P.banq.plaf) + max_(capm_cent, P.cent.plaf), P.banq.plaf) +
                  max_(capm_oblig, P.oblig.plaf), P.oblig.plaf)
 
 def _deduc_fam(rng, chef, nb_enf, nb_par, _P):
@@ -297,8 +308,8 @@ def _deduc_fam(rng, chef, nb_enf, nb_par, _P):
     'foy'
     '''
     P = _P.ir.deduc.fam
-    # chef de famille
-    chef = P.chef*(nb_enf>0) # TODO
+    #  chef de famille
+    chef = P.chef * (nb_enf > 0)  # TODO
 
 #    from scipy.stats import rankdata
 #
@@ -309,7 +320,7 @@ def _deduc_fam(rng, chef, nb_enf, nb_par, _P):
 #    rk = round(rk + -.01*range(len(rk))) # to properly rank twins
 #
 #
-    enf =  (nb_enf >= 1)*P.enf1 + (nb_enf >= 2)*P.enf2 + (nb_enf >= 3)*P.enf3 + (nb_enf >= 4)*P.enf4
+    enf = (nb_enf >= 1) * P.enf1 + (nb_enf >= 2) * P.enf2 + (nb_enf >= 3) * P.enf3 + (nb_enf >= 4) * P.enf4
 #    sup = P.enf_sup*nb_enf_sup
 #    infirme =  P.infirme*nb_infirme
 #    parent = min_(P.parent_taux*rng, P.parent_max)
@@ -323,7 +334,7 @@ def _deduc_rente(rente):
     Déductions des arrérages et rentes payées à titre obligatoire et gratuit
     'foy'
     '''
-    return rente # TODO:
+    return rente  # TODO:
 
 def _ass_vie(prime_ass_vie, statmarit, nb_enf, _P):
     '''
@@ -331,8 +342,8 @@ def _ass_vie(prime_ass_vie, statmarit, nb_enf, _P):
     'foy'
     '''
     P = _P.ir.deduc.ass_vie
-    marie = statmarit # TODO:
-    deduc = min_(prime_ass_vie, P.plaf + marie*P.conj_plaf + nb_enf*P.enf_plaf)
+    marie = statmarit  # TODO:
+    deduc = min_(prime_ass_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
     return deduc
 
 
@@ -372,7 +383,7 @@ def _deduc_smig(chef):
     Déduction supplémentaire pour les salariés payés au « SMIG » et « SMAG »
     'foy'
     '''
-    return 0*chef # TODO: voir avec tspr
+    return 0 * chef  # TODO: voir avec tspr
 
 def _rni(rng, deduc_fam, rente, ass_vie):
     '''
@@ -389,8 +400,8 @@ def _ir_brut(rni, _P):
     bar = _P.ir.bareme
     exemption = _P.ir.reforme.exemption
     bar.t_x()
-    rni_apres_exemption = rni*(exemption.active==0) + rni*(exemption.active==1)*(rni>exemption.max)
-    ir_brut = - bar.calc(rni_apres_exemption)
+    rni_apres_exemption = rni * (exemption.active == 0) + rni * (exemption.active == 1) * (rni > exemption.max)
+    ir_brut = -bar.calc(rni_apres_exemption)
     return ir_brut
 
 def _irpp(ir_brut, _P):

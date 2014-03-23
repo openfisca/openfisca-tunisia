@@ -32,22 +32,8 @@ from .data import  QUIMEN
 
 ALL = [x[1] for x in QUIMEN]
 
-def _uc(agem, _option = {'agem': ALL}):
-    '''
-    Calcule le nombre d'unités de consommation du ménage avec l'échelle de l'insee
-    'men'
-    '''
-    uc_adt = 0.5
-    uc_enf = 0.3
-    uc = 0.5
-    for agm in agem.itervalues():
-        age = floor(agm/12)
-        adt = (15 <= age) & (age <= 150)
-        enf = (0  <= age) & (age <= 14)
-        uc += adt*uc_adt + enf*uc_enf
-    return uc
 
-#def _typ_men(isol, af_nbenf):
+# def _typ_men(isol, af_nbenf):
 #    '''
 #    type de menage
 #    'men'
@@ -75,32 +61,23 @@ def _revdisp_i(rev_trav, pen, rev_cap, psoc, impo):
     '''
     return rev_trav + pen + rev_cap + psoc + impo
 
-def _revdisp(revdisp_i, _option = {'revdisp_i': ALL}):
+def _revdisp(self, revdisp_i):
     '''
     Revenu disponible - ménage
     'men'
     '''
-    r = 0
-    for rev in revdisp_i.itervalues():
-        r += rev
-    return r
+    return self.sum_by_entity(revdisp_i)
 
-def _nivvie(revdisp, uc):
-    '''
-    Niveau de vie du ménage
-    'men'
-    '''
-    return revdisp/uc
 
 def _rev_trav(sali):
     '''Revenu du travail'''
-    return sali #+ beap + bic + bnc  TODO
+    return sali  # + beap + bic + bnc  TODO
 
-#def _pen(rstnet, alr, alv, rto):
+# def _pen(rstnet, alr, alv, rto):
 #    '''Pensions'''
 #    return rstnet #+ alr + alv + rto TODO
 #
-#def _rstnet(pen):
+# def _rstnet(pen):
 #    '''Retraites nettes'''
 #    return pen
 
@@ -108,11 +85,11 @@ def _rev_cap(rfon):
     '''Revenus du patrimoine'''  # TODO
     return rfon
 
-#def _psoc(pfam):
+# def _psoc(pfam):
 #    '''Prestations sociales'''
 #    return pfam
 #
-#def _pfam(af,s):
+# def _pfam(af,s):
 #    ''' Prestations familiales '''
 #    return af
 
@@ -126,7 +103,7 @@ def _decile(nivvie, wprm):
     Décile de niveau de vie
     'men'
     '''
-    labels = arange(1,11)
+    labels = arange(1, 11)
     method = 2
-    decile = mark_weighted_percentiles(nivvie, labels, wprm, method, return_quantiles=False)
+    decile = mark_weighted_percentiles(nivvie, labels, wprm, method, return_quantiles = False)
     return decile
