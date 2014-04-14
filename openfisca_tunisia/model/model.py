@@ -30,31 +30,32 @@ from openfisca_core.columns import AgeCol, BoolCol, EnumCol, FloatCol, IntCol
 from openfisca_core.enumerations import Enum
 from openfisca_core.formulas import SimpleFormula
 
-from .. import entities
-from . import common as cm
-from . import cotsoc as cs
-from . import irpp as ir
-from . import pfam as pf
+from openfisca_tunisia import entities
+from openfisca_tunisia.model import common as cm
+from openfisca_tunisia.model import cotsoc as cs
+from openfisca_tunisia.model import irpp as ir
+from openfisca_tunisia.model import pfam as pf
 
 
-def build_simple_formula_couple(name, prestation):
+def build_simple_formula_couple(name, column):
     assert isinstance(name, basestring), name
     name = unicode(name)
-    prestation.formula_constructor = formula_class = type(name.encode('utf-8'), (SimpleFormula,), dict(
-        calculate = staticmethod(prestation._func),
+
+    column.formula_constructor = formula_class = type(name.encode('utf-8'), (SimpleFormula,), dict(
+        function = staticmethod(column.function),
         ))
     formula_class.extract_parameters()
-    del prestation._func
-    if prestation.label is None:
-        prestation.label = name
-    assert prestation.name is None
-    prestation.name = name
+    del column.function
+    if column.label is None:
+        column.label = name
+    assert column.name is None
+    column.name = name
 
-    entity_column_by_name = entities.entity_class_by_symbol[prestation.entity].column_by_name
+    entity_column_by_name = entities.entity_class_by_symbol[column.entity].column_by_name
     assert name not in entity_column_by_name, name
-    entity_column_by_name[name] = prestation
+    entity_column_by_name[name] = column
 
-    return (name, prestation)
+    return (name, column)
 
 
 prestation_by_name = collections.OrderedDict((

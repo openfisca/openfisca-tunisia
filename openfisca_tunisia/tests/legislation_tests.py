@@ -26,10 +26,12 @@
 import json
 import xml.etree.ElementTree
 
+from openfisca_core import conv, legislations, legislationsxml
 import openfisca_tunisia
-openfisca_tunisia.init_country()
 
-from openfisca_core import conv, legislations, legislationsxml, model
+
+TaxBenefitSystem = openfisca_tunisia.init_country()
+tax_benefit_system = TaxBenefitSystem()
 
 
 def test_legislation_xml_file():
