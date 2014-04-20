@@ -25,7 +25,7 @@ This file is part of openFisca.
 from __future__ import division
 
 from numpy import arange, floor
-from openfisca_core.statshelpers import mark_weighted_percentiles
+# from openfisca_core.statshelpers import mark_weighted_percentiles
 
 from .data import  QUIMEN
 
@@ -98,12 +98,12 @@ def _impo(irpp):
     '''Impôts directs'''
     return irpp
 
-def _decile(nivvie, wprm):
-    '''
-    Décile de niveau de vie
-    'men'
-    '''
-    labels = arange(1, 11)
-    method = 2
-    decile = mark_weighted_percentiles(nivvie, labels, wprm, method, return_quantiles = False)
-    return decile
+## def _decile(nivvie, wprm):
+##     '''
+##     Décile de niveau de vie
+##     'men'
+##     '''
+##     labels = arange(1, 11)
+##     method = 2
+##     decile = mark_weighted_percentiles(nivvie, labels, wprm, method, return_quantiles = False)
+##     return decile
