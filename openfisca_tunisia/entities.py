@@ -55,4 +55,3 @@ entity_class_by_symbol = dict(
     ind = Individus,
     men = Menages,
     )
-
