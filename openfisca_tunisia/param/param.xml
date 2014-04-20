@@ -1,14 +1,13 @@
-<NODE code="root" deb="2012-01-01" fin="2013-12-31">
+<NODE code="root" deb="1956-01-01" fin="2014-12-31">
   <NODE description="Cotisations sociales" code="cotsoc">
     <NODE description="Paramètres généraux" code="gen">
       <CODE description="Plafond de la sécurité sociale (en SMIG)" code="plaf_ss" format="integer">
         <VALUE valeur="6" deb="1960-01-01" fin="2012-12-31"/>
       </CODE>
       <CODE description="SMIG" code="smig" format="float" type="monetary">
-        <VALUE valeur="290.2" deb="2012-07-01" fin="2999-01-01"/>
+        <VALUE valeur="290.2" deb="2012-07-01" fin="2014-12-31"/>
         <VALUE valeur="275" deb="2011-05-01" fin="2012-06-30"/>
         <VALUE valeur="262" deb="2010-07-01" fin="2011-04-30"/>
-        <VALUE valeur="290.2" deb="2012-07-01" fin="2999-01-01"/>
         <VALUE valeur="250.6" deb="2009-08-01" fin="2010-06-30"/>
         <VALUE valeur="242.2" deb="2008-06-01" fin="2009-07-31"/>
         <VALUE valeur="230.6" deb="2007-07-01" fin="2008-05-31"/>
@@ -54,7 +53,7 @@
         <VALUE valeur="15.2" deb="1961-04-01" fin="1965-12-31"/>
       </CODE>
       <CODE description="SMAG" code="smag" format="float" type="monetary">
-        <VALUE valeur="290.2" deb="2012-12-01" fin="2999-01-01"/>
+        <VALUE valeur="290.2" deb="2012-12-01" fin="2014-12-31"/>
         <VALUE valeur="265.2" deb="2012-07-01" fin="2012-11-30"/>
         <VALUE valeur="225" deb="2011-05-01" fin="2012-06-30"/>
         <VALUE valeur="209.5" deb="2010-07-01" fin="2011-04-30"/>
