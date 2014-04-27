@@ -52,7 +52,7 @@ def check_1_parent(year = 2013):
 
 
 def test_1_parent():
-    for year in range(2006, 2015):
+    for year in range(2009, 2011):
         yield check_1_parent, year
 
 
