@@ -26,7 +26,7 @@
 from __future__ import division
 
 from numpy import  zeros
-from openfisca_core.taxscales import TaxScaleDict, combineTaxScales, scaleTaxScales
+from openfisca_core.taxscales import TaxScaleDict, combine_tax_scales, scale_tax_scales
 
 from .data import CAT
 
@@ -55,8 +55,8 @@ def _salbrut(sali, type_sal, _defaultP):
         iscat = (type_sal == categ[1])
         if 'sal' in  cotsoc[categ[0]]:
             sal = cotsoc[categ[0]]['sal']
-            baremes = scaleTaxScales(sal, plaf_ss)
-            bar = combineTaxScales(baremes)
+            baremes = scale_tax_scales(sal, plaf_ss)
+            bar = combine_tax_scales(baremes)
             invbar = bar.inverse()
             temp =  iscat*(invbar.calc(sali))
             salbrut += temp
@@ -88,8 +88,8 @@ def _cotpat(salbrut, type_sal, _P):
         iscat = (type_sal == categ[1])
         if 'pat' in  cotsoc[categ[0]]:
             pat = cotsoc[categ[0]]['pat']
-            baremes = scaleTaxScales(pat, plaf_ss)
-            bar = combineTaxScales(baremes)
+            baremes = scale_tax_scales(pat, plaf_ss)
+            bar = combine_tax_scales(baremes)
             temp = - (iscat*bar.calc(salbrut))
             cotpat += temp
     return cotpat
@@ -112,8 +112,8 @@ def _cotsal(salbrut, type_sal, _P):
         iscat = (type_sal == categ[1])
         if 'sal' in  cotsoc[categ[0]]:
             pat = cotsoc[categ[0]]['sal']
-            baremes = scaleTaxScales(pat, plaf_ss)
-            bar = combineTaxScales(baremes)
+            baremes = scale_tax_scales(pat, plaf_ss)
+            bar = combine_tax_scales(baremes)
             temp = - (iscat*bar.calc(salbrut))
             cotsal += temp
 
