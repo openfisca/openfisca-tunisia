@@ -24,8 +24,9 @@
 
 
 import collections
+from functools import partial
 
-from openfisca_core.columns import BoolCol, DateCol, EnumCol, FloatCol, IntCol, StrCol
+from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, build_column_couple
 from openfisca_core.enumerations import Enum
 
 
@@ -37,20 +38,7 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 
 from .. import entities
 
-
-def build_column_couple(name, column):
-    assert isinstance(name, basestring), name
-    name = unicode(name)
-    if column.label is None:
-        column.label = name
-    assert column.name is None
-    column.name = name
-
-    entity_column_by_name = entities.entity_class_by_symbol[column.entity].column_by_name
-    assert name not in entity_column_by_name, name
-    entity_column_by_name[name] = column
-
-    return (name, column)
+build_column_couple = partial(build_column_couple, entities = entities)
 
 
 # Socio-economic data
@@ -71,10 +59,8 @@ column_by_name = collections.OrderedDict((
     build_column_couple('jour_xyz', IntCol(default = 360)),
 
     build_column_couple('birth', DateCol(label = u"Année de naissance")),
-
 #     build_column_couple('age', AgesCol(label = u"âge")),
 #     build_column_couple('agem', AgesCol(label = u"âge (en mois)")),
-
     build_column_couple('loyer', IntCol(entity = 'men')),  # Loyer mensuel
     build_column_couple('activite', IntCol()),
     build_column_couple('boursier', BoolCol()),
@@ -86,20 +72,61 @@ column_by_name = collections.OrderedDict((
 
     # BIC Bénéfices industriels et commerciaux
     # régime réel
-    build_column_couple('bic_reel', EnumCol()),
-    # 0: Néant 1: commerçant – 2: industriel – 3: prestataire de services - 4: artisan – 5: plus qu'une activité. Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt annuel sur le revenu au titre des bénéfices industriels et commerciaux sur la base de la différence entre les recettes et les dépenses .
+    build_column_couple(
+        'bic_reel',
+        EnumCol(
+            enum = Enum(
+                [
+                    u"Néant",
+                    u"Commerçant",
+                    u"Industriel",
+                    u"Prestataire de services",
+                    u"Artisan",
+                    u"Plus d'une activité",
+                    ]
+                )
+            )
+        ),
+# Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt
+# annuel sur le revenu au titre des bénéfices industriels et commerciaux
+# sur la base de la différence entre les recettes et les dépenses .
     # régime des sociétés de personnes
     build_column_couple('bic_sp', BoolCol()),
 
-    build_column_couple('cadre_legal', EnumCol()),
-    # (1) Code : 1: exportation totale dans le cadre du CII- 2 : développement régional - 3: développement agricole – 4: parcs des activités économiques – 5 : exportation dans le cadre du droit commun– 99: autre cadre ( à préciser).
-
+    build_column_couple(
+        'cadre_legal',
+        EnumCol(
+            enum = Enum(
+                [
+                    u"Exportation totale dans le cadre du CII",
+                    u"Développement régional",
+                    u"Développement agricole",
+                    u"Parcs des activités économiques",
+                    u"Exportation dans le cadre du droit commun",
+                    u"Autres (à préciser)",
+                    ],
+                start = 1)
+            )
+        ),
     build_column_couple('bic_reel_res', IntCol()),
     build_column_couple('bic_forf_res', IntCol()),
     build_column_couple('bic_sp_res', IntCol()),
 
-    build_column_couple('decl_inves', EnumCol()),
-    # (2) Code : 1:API- 2: APIA –3: commissariat régional du développement agricole –4: ONT –5:autre structure ( à préciser)
+    build_column_couple(
+        'decl_inves',
+        EnumCol(
+            enum = Enum(
+                [
+                    u"API",
+                    u"APIA",
+                    u"Commissariat régional du développement agricole",
+                    u"ONT",
+                    u"Autre structure ( à préciser)"
+                    ],
+                start = 1,
+                )
+            )
+        ),
 
     # A/ Régime réel
     # Valeur du stock au début de l’exercice
