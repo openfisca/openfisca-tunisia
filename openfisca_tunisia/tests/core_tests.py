@@ -43,8 +43,8 @@ def check_1_parent(year = 2013):
                 min = 0,
                 ),
             ],
+        date = datetime.date(year , 1, 1),
         parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
-        year = year,
         ).new_simulation(debug = True)
     simulation.calculate('revdisp')
     sali = simulation.get_holder('sali').new_test_case_array()
@@ -54,8 +54,6 @@ def check_1_parent(year = 2013):
 def test_1_parent():
     for year in range(2009, 2011):
         yield check_1_parent, year
-
-
 
 
 if __name__ == '__main__':
