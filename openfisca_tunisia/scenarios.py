@@ -34,10 +34,12 @@ import time
 import urllib2
 import uuid
 
-import numpy as np
-from openfisca_core import legislations, simulations
 
-from . import conv, entities
+import numpy as np
+from openfisca_core import conv, legislations, simulations
+from openfisca_core.scenarios import AbstractScenario
+
+from . import entities
 
 
 log = logging.getLogger(__name__)
@@ -45,7 +47,7 @@ N_ = lambda message: message
 year_or_month_or_day_re = re.compile(ur'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]\d|3[0-1]))?)?$')
 
 
-class Scenario(object):
+class Scenario(AbstractScenario):
     axes = None
     compact_legislation = None
     date = None
@@ -72,7 +74,7 @@ class Scenario(object):
                 individu = individu.copy()
                 individu['id'] = id = 'ind{}'.format(index)
             individus.append(individu)
-            if index <= 1 :
+            if index <= 1:
                 foyer_fiscal.setdefault('declarants', []).append(id)
                 if index == 0:
                     menage['personne_de_reference'] = id

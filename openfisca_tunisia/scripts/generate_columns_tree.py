@@ -39,9 +39,9 @@ import os
 import pprint
 import sys
 
-from openfisca_france.model import data
+from openfisca_tunisia.model import data
 try:
-    from openfisca_france.model.datatrees import columns_name_tree_by_entity
+    from openfisca_tunisia.model.datatrees import columns_name_tree_by_entity
 except ImportError:
     columns_name_tree_by_entity = collections.OrderedDict()
 
@@ -134,7 +134,7 @@ def main():
             entity_children.append(last_entity_child)
         last_entity_child.setdefault('children', []).append(name)
 
-    datatrees_module_path = os.path.join(os.path.dirname(data.__file__), 'datatrees.py') 
+    datatrees_module_path = os.path.join(os.path.dirname(data.__file__), 'datatrees.py')
     with open(datatrees_module_path, 'w') as datatree_file:
         datatree_file.write('''\
 # -*- coding: utf-8 -*-
@@ -167,7 +167,7 @@ import collections
 
 columns_name_tree_by_entity = collections.OrderedDict([
 ''')
-        for entity in ('ind', 'fam', 'foy', 'men'):
+        for entity in ('ind', 'men'):  # 'foy' is not present in data.py
             datatree_file.write('    ({}, '.format(pretty_printer.pformat(entity)))
             write_tree(datatree_file, columns_name_tree_by_entity[entity])
             datatree_file.write('),\n')
