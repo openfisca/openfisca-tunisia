@@ -26,7 +26,7 @@
 import collections
 from functools import partial
 
-from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, build_column_couple
+from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, StrCol, build_column_couple
 from openfisca_core.enumerations import Enum
 
 
@@ -51,6 +51,12 @@ column_by_name = collections.OrderedDict((
 
     build_column_couple('quimen', EnumCol(QUIMEN)),
     build_column_couple('quifoy', EnumCol(QUIFOY)),
+
+    build_column_couple('nom_foyer_fiscal', StrCol(entity = 'foy', label = u"Nom")),
+    build_column_couple('nom_individu', StrCol(label = u"Prénom")),
+    build_column_couple('nom_menage', StrCol(entity = 'men', label = u"Nom")),
+
+
 
     build_column_couple('type_sal', EnumCol(CAT, default = 0)),
 
@@ -142,15 +148,24 @@ column_by_name = collections.OrderedDict((
     build_column_couple('bic_res_fiscal', IntCol(label = u"Résultat fiscal (BIC)")),
 
     # Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
-    build_column_couple('bic_ca_revente', IntCol(label = u"Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation")),
+    build_column_couple(
+        'bic_ca_revente',
+        IntCol(
+            label = u"Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation"
+            )
+        ),
     build_column_couple('bic_ca_autre', IntCol(label = u"Chiffre d’affaires global au titre d’autres activités")),
     build_column_couple('bic_depenses', IntCol(label = u"Total des dépenses (BIC cession de fond de commerce)")),
     build_column_couple('bic_pv_cession', IntCol(label = u"Plue-value de cession du fond de commerce")),
 
-
-
-    # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial
-    build_column_couple('bic_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial")),
+    # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes
+    # et assimilées exerçant dans le secteur industriel et commercial
+    build_column_couple(
+        'bic_part_benef_sp',
+        IntCol(
+            label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial"
+            )
+        ),
 
     # BNC Bénéfices des professions non commerciales
     # A/ Régime réel
@@ -170,7 +185,12 @@ column_by_name = collections.OrderedDict((
     # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
 
     # C/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux
-    build_column_couple('bnc_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux")),
+    build_column_couple(
+        'bnc_part_benef_sp',
+        IntCol(
+            label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux"
+            )
+        ),
 
     # beap Bénéfices de l'exploitation agricole et de pêche
     # A/ Régime réel
@@ -186,16 +206,26 @@ column_by_name = collections.OrderedDict((
     # recettes et les dépenses
     # - Recettes brutes …………………………..
     # - Stocks …………………………..
-    build_column_couple('beap_reliq_rec', IntCol(label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")),
-    build_column_couple('beap_reliq_stock', IntCol(label = u"Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
-
+    build_column_couple(
+        'beap_reliq_rec',
+        IntCol(label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")
+        ),
+    build_column_couple(
+        'beap_reliq_stock',
+        IntCol(label = u"Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")
+        ),
     # TOTAL …………………………..
     # - Déduction des dépenses d’exploitation justifiées …………………………..
-    build_column_couple('beap_reliq_dep_ex', IntCol(label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
+    build_column_couple(
+        'beap_reliq_dep_ex',
+        IntCol(label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
     # - Montant des primes (1) …………………………..
     # - Résultat B = bénéfice P = perte …………………………..
     # - Bénéfice fiscal (4) …………………………..
-    build_column_couple('beap_reliq_benef_fiscal', IntCol(label = u"Bénéfice fiscal (BEAP)")),
+    build_column_couple(
+        'beap_reliq_benef_fiscal',
+        IntCol(label = u"Bénéfice fiscal (BEAP)")
+        ),
     # C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
     # - Bénéfice fiscal …………………………..
     build_column_couple('beap_monogr', IntCol(label = u"Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")),

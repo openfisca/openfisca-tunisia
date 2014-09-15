@@ -27,8 +27,8 @@ from numpy import (round, zeros, maximum as max_, minimum as min_,
                    asanyarray, amin, amax, arange)
 
 from .data import QUIFOY, QUIMEN
-CHEF = QUIMEN['pref']
-PART = QUIMEN['cref']
+CHEF = QUIFOY['vous']
+PART = QUIFOY['conj']
 
 PACS = [ QUIMEN[ 'enf' + str(i)] for i in range(1, 10) ]
 ENFS = [ QUIMEN[ 'enf' + str(i)] for i in range(1, 10) ]
@@ -114,12 +114,12 @@ def _smig75(sal, _P):
     '''
     return sal < _P.cotsoc.gen.smig
 
-def _sal_uniq(self, sal_holder, _P):
+def _sal_uniq(self, sali_holder, _P):
     '''
     Indicatrice de salaire unique
     '''
-    sal = self.split_by_roles(sal_holder, roles = [CHEF, PART])
-    uniq = xor_(sal[CHEF] > 0, sal[PART] > 0)
+    sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
+    uniq = xor_(sali[CHEF] > 0, sali[PART] > 0)
     return uniq
 
 ############################################################################
@@ -159,7 +159,7 @@ def _af_nbenf(self, age_holder, smig75_holder, activite, inv_holder, _P):
     return res
 
 
-def _af(self, af_nbenf, sal_holder, _P):
+def _af(self, af_nbenf, sali_holder, _P):
     '''
     Allocations familiales
     'foy'
@@ -167,9 +167,11 @@ def _af(self, af_nbenf, sal_holder, _P):
     # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
     # TODO: ajouter éligibilité des parents aux allocations familiales
 
-    sal = self.split_by_roles(sal_holder, roles = [CHEF, PART])
+    print 'sal'
+    print sali_holder
+    sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
     P = _P.pfam
-    bm = min_(max_(sal[CHEF], sal[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
+    bm = min_(max_(sali[CHEF], sali[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
     # prestations familliales  # Règle d'arrondi ?
     af_1enf = round(bm * P.af.taux.enf1, 2)
     af_2enf = round(bm * P.af.taux.enf2, 2)
@@ -209,7 +211,7 @@ def _af_cong_jeun_trav(age, _P):
     return 0
 
 
-def _contr_creche(self, sal_holder, agem_holder, _P):
+def _contr_creche(self, sali_holder, agem_holder, _P):
     '''
     Contribution aux frais de crêche
     'fam'
@@ -223,13 +225,13 @@ def _contr_creche(self, sal_holder, agem_holder, _P):
 
     # , _option = {'agem': ENFS, 'sal': [CHEF, PART]}
 
-    sal = self.split_by_roles(sal_holder, roles = PART)
-    agem = self.split_by_roles(sal_holder, roles = ENFS)
+    sali = self.split_by_roles(sali_holder, roles = [PART])
+    agem = self.split_by_roles(agem_holder, roles = ENFS)
     smig48 = _P.cotsoc.gen.smig  # TODO: smig 48H
     P = _P.pfam.creche
     age_m_benj = age_en_mois_benjamin(agem)
     elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
-    elig_sal = sal < P.plaf * smig48
+    elig_sal = sali < P.plaf * smig48
     return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 

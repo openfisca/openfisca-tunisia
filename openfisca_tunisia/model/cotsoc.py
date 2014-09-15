@@ -51,8 +51,14 @@ def _salbrut(sali, type_sal, _defaultP):
 
     n = len(sali)
     salbrut = zeros(n)
+    # TODO améliorer tout cela !!
     for categ in CAT:
         iscat = (type_sal == categ[1])
+        if categ[0] == 're':
+            return sali  # on retounre le sali pour les étudiants
+        else:
+            continue
+
         if 'sal' in  cotsoc[categ[0]]:
             sal = cotsoc[categ[0]]['sal']
             baremes = scale_tax_scales(sal, plaf_ss)
@@ -80,12 +86,15 @@ def _cotpat(salbrut, type_sal, _P):
     cotsoc = TaxScaleDict('cotsoc', _P.cotsoc)
 
     plaf_ss = 12*smig
-
-
+    # TODO: clean all this
     n = len(salbrut)
     cotpat = zeros(n)
     for categ in CAT:
         iscat = (type_sal == categ[1])
+        if categ[0] == 're':
+            return salbrut  # on retounre le salbrut pour les étudiants
+        else:
+            continue
         if 'pat' in  cotsoc[categ[0]]:
             pat = cotsoc[categ[0]]['pat']
             baremes = scale_tax_scales(pat, plaf_ss)
@@ -110,6 +119,12 @@ def _cotsal(salbrut, type_sal, _P):
 
     for categ in CAT:
         iscat = (type_sal == categ[1])
+
+        if categ[0] == 're':
+            return 0 * salbrut  # TODO: doit retounrer la bonne valeur les étudiants
+        else:
+            continue
+
         if 'sal' in  cotsoc[categ[0]]:
             pat = cotsoc[categ[0]]['sal']
             baremes = scale_tax_scales(pat, plaf_ss)
