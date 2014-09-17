@@ -108,11 +108,11 @@ def _etu(activite):
     '''
     return activite == 2
 
-def _smig75(sal, _P):
+def _smig75(sali, sal_nat, _P):
     '''
-    Indicatrice de rémunération inférieur à 55% du smic
+    Indicatrice de rémunération inférieur à 75% du smic
     '''
-    return sal < _P.cotsoc.gen.smig
+    return (sali + sal_nat) < _P.cotsoc.gen.smig
 
 def _sal_uniq(self, sali_holder, _P):
     '''
