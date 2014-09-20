@@ -43,7 +43,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.2dev',
+    version = '0.3dev',
 
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.fr',
@@ -54,11 +54,26 @@ setup(
     long_description = '\n'.join(doc_lines[2:]),
     url = 'https://github.com/openfisca/openfisca-tunisia',
 
-    data_files = [],
-    install_requires = [
-        "numpy",
-        "pandas",
+    data_files = [
+        ('share/locale/ar/LC_MESSAGES', ['openfisca_tunisia/i18n/fr/LC_MESSAGES/openfisca-tunisia.mo']),
+        ('share/locale/fr/LC_MESSAGES', ['openfisca_tunisia/i18n/fr/LC_MESSAGES/openfisca-tunisia.mo']),
         ],
+    extras_require = dict(
+        tests = [
+            'pandas >= 0.13',
+            ],
+        ),
+    install_requires = [
+        'Babel >= 0.9.4',
+        'Biryani1[datetimeconv] >= 0.9dev',
+        'jsonpatch >= 1.3',
+        'numpy',
+        'OpenFisca-Core >= 0.3dev',
+        'scipy >= 0.12',
+        ],
+    message_extractors = {'openfisca_france': [
+        ('**.py', 'python', None),
+        ]},
     packages = find_packages(),
     zip_safe = False,
     )
