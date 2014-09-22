@@ -26,7 +26,7 @@
 from __future__ import division
 
 from numpy import  zeros
-from openfisca_core.taxscales import TaxScaleDict, combine_tax_scales, scale_tax_scales
+from openfisca_core.taxscales import TaxScalesTree, combine_tax_scales, scale_tax_scales
 
 from .data import CAT
 
@@ -45,7 +45,7 @@ def _salbrut(sali, type_sal, _defaultP):
     '''
 
     smig = _defaultP.cotsoc.gen.smig
-    cotsoc = TaxScaleDict('cotsoc', _defaultP.cotsoc)
+    cotsoc = TaxScalesTree('cotsoc', _defaultP.cotsoc)
 
     plaf_ss = 12*smig
 
@@ -83,7 +83,7 @@ def _cotpat(salbrut, type_sal, _P):
 
 
     smig = _P.cotsoc.gen.smig
-    cotsoc = TaxScaleDict('cotsoc', _P.cotsoc)
+    cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
 
     plaf_ss = 12*smig
     # TODO: clean all this
@@ -111,7 +111,7 @@ def _cotsal(salbrut, type_sal, _P):
     # TODO traiter les différents régimes
 
     smig = _P.cotsoc.gen.smig
-    cotsoc = TaxScaleDict('cotsoc', _P.cotsoc)
+    cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
     plaf_ss = 12*smig
 
     n = len(salbrut)
