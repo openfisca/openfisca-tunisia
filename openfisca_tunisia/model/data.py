@@ -52,9 +52,9 @@ column_by_name = collections.OrderedDict((
     build_column_couple('quimen', EnumCol(QUIMEN)),
     build_column_couple('quifoy', EnumCol(QUIFOY)),
 
-    build_column_couple('nom_foyer_fiscal', StrCol(entity = 'foy', label = u"Nom")),
-    build_column_couple('nom_individu', StrCol(label = u"Prénom")),
-    build_column_couple('nom_menage', StrCol(entity = 'men', label = u"Nom")),
+    build_column_couple(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', label = u"Nom")),
+    build_column_couple(entities.Individus.name_key, StrCol(label = u"Prénom")),
+    build_column_couple(entities.Menages.name_key, StrCol(entity = 'men', label = u"Nom")),
 
 
 
@@ -373,4 +373,3 @@ column_by_name = collections.OrderedDict((
     build_column_couple('af', IntCol()),
     build_column_couple('uc', IntCol()),
     ))
-
