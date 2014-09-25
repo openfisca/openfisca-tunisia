@@ -52,9 +52,22 @@ from openfisca_tunisia.model import pfam as pf
 
 
 prestation_by_name = collections.OrderedDict((
-
-    build_simple_formula_couple('age', AgeCol(function = ir._age, label = u"Âge" , val_type = "age")),
-    build_simple_formula_couple('agem', AgeCol(function = ir._agem, label = u"Âge (en mois)", val_type = "months")),
+    build_alternative_formula_couple(
+        'age',
+        [
+            ir._age_from_birth,
+            ir._age_from_agem,
+            ],
+        AgeCol(label = u"Âge (en années)", val_type = "age"),
+        ),
+    build_alternative_formula_couple(
+        'agem',
+        [
+            ir._agem_from_birth,
+            ir._agem_from_age,
+            ],
+        AgeCol(label = u"Âge (en mois)", val_type = "months"),
+        ),
 
     ############################################################
     # Cotisations sociales
