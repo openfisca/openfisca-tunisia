@@ -32,6 +32,14 @@ class FoyersFiscaux(entities.AbstractEntity):
     column_by_name = collections.OrderedDict()
     key_plural = 'foyers_fiscaux'
     key_singular = 'foyer_fiscal'
+    label = u'Déclaration d\'impôt'
+    max_cardinality_by_role_key = {'declarants': 2}
+    name_key = 'nom_foyer_fiscal'
+    roles_key = ['declarants', 'personnes_a_charge']
+    label_by_role_key = {
+        'declarants': u'Déclarants',
+        'personnes_a_charge': u'Personnes à charge',
+        }
     symbol = 'foy'
 
 
@@ -40,6 +48,8 @@ class Individus(entities.AbstractEntity):
     is_persons_entity = True
     key_plural = 'individus'
     key_singular = 'individu'
+    label = u'Personne'
+    name_key = 'nom_individu'
     symbol = 'ind'
 
 
@@ -47,6 +57,16 @@ class Menages(entities.AbstractEntity):
     column_by_name = collections.OrderedDict()
     key_plural = 'menages'
     key_singular = 'menage'
+    label = u'Logement principal'
+    max_cardinality_by_role_key = {'conjoint': 1, 'personne_de_reference': 1}
+    name_key = 'nom_menage'
+    roles_key = ['personne_de_reference', 'conjoint', 'enfants', 'autres']
+    label_by_role_key = {
+        'autres': u'Autres',
+        'conjoint': u'Conjoint',
+        'enfants': u'Enfants',
+        'personne_de_reference': u'Personne de référence',
+        }
     symbol = 'men'
 
 
