@@ -45,7 +45,7 @@ def _age_from_agem(agem):
 
 
 def _age_from_birth(birth, _P):
-    return (datetime64(_P.datesim) - birth).astype('timedelta64[Y]')
+    return (datetime64(_P.date) - birth).astype('timedelta64[Y]')
 
 
 def _agem_from_age(age):
@@ -53,7 +53,7 @@ def _agem_from_age(age):
 
 
 def _agem_from_birth(birth, _P):
-    return (datetime64(_P.datesim) - birth).astype('timedelta64[M]')
+    return (datetime64(_P.date) - birth).astype('timedelta64[M]')
 
 
 def _nb_adult(marie, celdiv, veuf):
@@ -279,7 +279,7 @@ def _sal_net(sal, smig, _P):
     'foy'
     '''
     P = _P.ir.tspr
-    if _P.datesim.year >= 2011:
+    if _P.date.year >= 2011:
         res = max_(sal * (1 - P.abat_sal) - max_(smig * P.smig, (sal <= P.smig_ext) * P.smig), 0)
     else:
         res = max_(sal * (1 - P.abat_sal) - smig * P.smig, 0)

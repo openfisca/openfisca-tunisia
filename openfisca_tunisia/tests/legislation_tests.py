@@ -27,7 +27,7 @@ import datetime
 import json
 import xml.etree.ElementTree
 
-from openfisca_core import conv, legislations, legislationsxml
+from openfisca_core import conv, legislations, legislationsxml, periods
 import openfisca_tunisia
 
 
@@ -63,7 +63,8 @@ def check_legislation_xml_file(year):
             unicode(json.dumps(legislation_json, ensure_ascii = False, indent = 2)),
             ).encode('utf-8'))
 
-    dated_legislation_json = legislations.generate_dated_legislation_json(legislation_json, datetime.date(year, 1, 1))
+    dated_legislation_json = legislations.generate_dated_legislation_json(legislation_json,
+        periods.period_from_anything('year', year))
     dated_legislation_json, errors = legislations.validate_dated_legislation_json(dated_legislation_json,
         state = conv.default_state)
     if errors is not None:
