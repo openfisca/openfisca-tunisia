@@ -48,18 +48,21 @@ build_column_couple = partial(
 # Donnée d'entrée de la simulation à fournir à partir d'une enquète ou
 # à générer avec un générateur de cas type
 column_by_name = collections.OrderedDict((
-    build_column_couple('noi', IntCol()),
-    build_column_couple('idmen', IntCol()),  # 600001, 600002,
-    build_column_couple('idfoy', IntCol()),  # idmen + noi du déclarant
+    build_column_couple('noi', IntCol(is_period_invariant = True)),
+    build_column_couple('idmen', IntCol(is_period_invariant = True)),  # 600001, 600002,
+    build_column_couple('idfoy', IntCol(is_period_invariant = True)),  # idmen + noi du déclarant
 
-    build_column_couple('quimen', EnumCol(QUIMEN)),
-    build_column_couple('quifoy', EnumCol(QUIFOY)),
+    build_column_couple('quimen', EnumCol(QUIMEN, is_period_invariant = True)),
+    build_column_couple('quifoy', EnumCol(QUIFOY, is_period_invariant = True)),
 
-    build_column_couple(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', label = u"Nom")),
-    build_column_couple(entities.Individus.name_key, StrCol(label = u"Prénom")),
-    build_column_couple(entities.Menages.name_key, StrCol(entity = 'men', label = u"Nom")),
+    build_column_couple(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', is_period_invariant = True,
+        label = u"Nom")),
+    build_column_couple(entities.Individus.name_key, StrCol(is_period_invariant = True, label = u"Prénom")),
+    build_column_couple(entities.Menages.name_key, StrCol(entity = 'men', is_period_invariant = True, label = u"Nom")),
 
-
+    build_column_couple('birth', DateCol(is_period_invariant = True, label = u"Année de naissance")),
+    # build_column_couple('age', AgesCol(label = u"âge")),
+    # build_column_couple('agem', AgesCol(label = u"âge (en mois)")),
 
     build_column_couple('type_sal', EnumCol(CAT, default = 0)),
 
@@ -67,9 +70,6 @@ column_by_name = collections.OrderedDict((
 
     build_column_couple('jour_xyz', IntCol(default = 360)),
 
-    build_column_couple('birth', DateCol(label = u"Année de naissance")),
-#     build_column_couple('age', AgesCol(label = u"âge")),
-#     build_column_couple('agem', AgesCol(label = u"âge (en mois)")),
     build_column_couple('loyer', IntCol(entity = 'men')),  # Loyer mensuel
     build_column_couple('activite', IntCol()),
     build_column_couple('boursier', BoolCol()),

@@ -25,6 +25,7 @@
 
 import datetime
 
+from openfisca_core import periods
 import openfisca_tunisia
 
 
@@ -35,7 +36,7 @@ tax_benefit_system = TaxBenefitSystem()
 def test_simple():
     year = 2011
     simulation = tax_benefit_system.new_scenario().init_single_entity(
-        date = datetime.date(year, 1, 1),
+        period = periods.period('year', year),
         parent1 = dict(agem = 40 * 12 + 6),
         ).new_simulation(debug = True)
     assert simulation.calculate('revdisp') == 0
@@ -63,4 +64,3 @@ def test_simple():
 
 if __name__ == '__main__':
     test_simple()
-

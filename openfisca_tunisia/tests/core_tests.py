@@ -26,6 +26,7 @@
 import datetime
 
 import numpy as np
+from openfisca_core import periods
 import openfisca_tunisia
 
 
@@ -43,11 +44,11 @@ def check_1_parent(year = 2013):
                 min = 0,
                 ),
             ],
-        date = datetime.date(year , 1, 1),
+        period = periods.period('year', year),
         parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
         ).new_simulation(debug = True)
     simulation.calculate('revdisp')
-    sali = simulation.get_holder('sali').new_test_case_array()
+    sali = simulation.get_holder('sali').new_test_case_array(simulation.period)
     assert (sali - np.linspace(0, 100000, 3)).all() == 0, sali
 
 
