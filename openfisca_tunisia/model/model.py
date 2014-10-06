@@ -28,7 +28,7 @@ from functools import partial
 
 
 from openfisca_core.columns import AgeCol, BoolCol, FloatCol
-from openfisca_core.formulas import SimpleFormula
+
 
 from openfisca_core.formulas import (
     build_alternative_formula_couple,

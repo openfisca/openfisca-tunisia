@@ -38,7 +38,10 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 
 from .. import entities
 
-build_column_couple = partial(build_column_couple, entities = entities)
+build_column_couple = partial(
+    build_column_couple,
+    entity_class_by_symbol = entities.entity_class_by_symbol,
+    )
 
 
 # Socio-economic data
