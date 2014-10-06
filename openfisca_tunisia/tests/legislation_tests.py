@@ -23,7 +23,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import datetime
 import json
 import xml.etree.ElementTree
 
@@ -64,7 +63,7 @@ def check_legislation_xml_file(year):
             ).encode('utf-8'))
 
     dated_legislation_json = legislations.generate_dated_legislation_json(legislation_json,
-        periods.period_from_anything('year', year))
+        periods.period('year', year))
     dated_legislation_json, errors = legislations.validate_dated_legislation_json(dated_legislation_json,
         state = conv.default_state)
     if errors is not None:
@@ -90,6 +89,6 @@ def test_legislation_xml_file():
 
 
 if __name__ == '__main__':
-#    test_legislation_xml_file()
+    # test_legislation_xml_file()
     import nose
     nose.core.runmodule(argv = [__file__, '-v', 'legislations_tests:test_legislation_xml_file'])
