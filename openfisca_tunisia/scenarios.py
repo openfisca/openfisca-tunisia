@@ -185,10 +185,8 @@ class Scenario(scenarios.AbstractScenario):
             if errors:
                 return data, errors
 
-            if data['legislation_url'] is None:
-                compact_legislation = None
-            else:
-                legislation_json = None
+            legislation_json = None
+            if data['legislation_url'] is not None:
                 if cache_dir is not None:
                     legislation_uuid_hex = uuid.uuid5(uuid.NAMESPACE_URL, data['legislation_url'].encode('utf-8')).hex
                     legislation_dir = os.path.join(cache_dir, 'legislations', legislation_uuid_hex[:2])
@@ -205,7 +203,7 @@ class Scenario(scenarios.AbstractScenario):
                                     legislation_file_path))
                 if legislation_json is None:
                     request = urllib2.Request(data['legislation_url'], headers = {
-                        'User-Agent': 'OpenFisca-Web-API',
+                        'User-Agent': 'OpenFisca',
                         })
                     try:
                         response = urllib2.urlopen(request)
@@ -226,18 +224,9 @@ class Scenario(scenarios.AbstractScenario):
                         with open(legislation_file_path, 'w') as legislation_file:
                             legislation_file.write(unicode(json.dumps(legislation_json, encoding = 'utf-8',
                                 ensure_ascii = False, indent = 2)).encode('utf-8'))
-                if legislation_json.get('start') is None:
-                    dated_legislation_json = legislations.generate_dated_legislation_json(legislation_json,
-                        data['period'])
-                else:
-                    dated_legislation_json = legislation_json
-                    legislation_json = None
-                compact_legislation = legislations.compact_dated_node_json(dated_legislation_json)
-                if self.tax_benefit_system.preprocess_legislation_parameters is not None:
-                    self.tax_benefit_system.preprocess_legislation_parameters(compact_legislation)
 
             self.axes = data['axes']
-            self.compact_legislation = compact_legislation
+            self.legislation_json = legislation_json
             self.legislation_url = data['legislation_url']
             self.period = data['period']
             self.test_case = data['test_case']
@@ -387,8 +376,8 @@ class Scenario(scenarios.AbstractScenario):
                                                         ),
                                                     conv.default([]),
                                                     ),
+                                                # conjoint de la personne de référence
                                                 conjoint = conv.test_isinstance((basestring, int)),
-                                                    # conjoint de la personne de référence
                                                 enfants = conv.pipe(
                                                     # enfants de la personne de référence ou de son conjoint
                                                     conv.test_isinstance(list),
@@ -602,25 +591,28 @@ class Scenario(scenarios.AbstractScenario):
                                     declarants = conv.pipe(
                                         conv.empty_to_none,
                                         conv.not_none,
-                                        conv.test(lambda declarants: len(declarants) <= 2,
-                                            error = N_(u'A "foyer_fiscal" must have at most 2 "declarants"',
-                                            )),
+                                        conv.test(
+                                            lambda declarants: len(declarants) <= 2,
+                                            error = N_(u'A "foyer_fiscal" must have at most 2 "declarants"'),
+                                            ),
                                         conv.uniform_sequence(
-                                            conv.test(lambda individu_id:
-                                                find_age(individu_by_id[individu_id], periods.start_date(period),
-                                                    default = 100) >= 18,
+                                            conv.test(
+                                                lambda individu_id:
+                                                    find_age(individu_by_id[individu_id], periods.start_date(period),
+                                                        default = 100) >= 18,
                                                 error = u"Un déclarant d'un foyer fiscal doit être agé d'au moins 18"
-                                                    u" ans",
+                                                        u" ans",
                                                 ),
                                             ),
                                         ),
                                     personnes_a_charge = conv.uniform_sequence(
                                         conv.test(
-                                            lambda individu_id: individu_by_id[individu_id].get('inv', False)
+                                            lambda individu_id:
+                                                individu_by_id[individu_id].get('inv', False)
                                                 or find_age(individu_by_id[individu_id], periods.start_date(period),
                                                     default = 0) < 25,
                                             error = u"Une personne à charge d'un foyer fiscal doit avoir moins de"
-                                                u" 25 ans ou être invalide",
+                                                    u" 25 ans ou être invalide",
                                             ),
                                         ),
                                     ),
@@ -678,9 +670,9 @@ class Scenario(scenarios.AbstractScenario):
 
     def new_simulation(self, debug = False, debug_all = False, trace = False):
         simulation = simulations.Simulation(
-            compact_legislation = self.compact_legislation,
             debug = debug,
             debug_all = debug_all,
+            legislation_json = self.legislation_json,
             period = self.period,
             tax_benefit_system = self.tax_benefit_system,
             trace = trace,
@@ -741,12 +733,13 @@ class Scenario(scenarios.AbstractScenario):
         menages_roles_count = 0
         for menage_index, menage in enumerate(test_case[u'menages'].itervalues()):
             personne_de_reference_id = menage.pop(u'personne_de_reference')
-            conjoint_id = menage.pop(u'conjoint')
+            # conjoint_id = menage.pop(u'conjoint')
             enfants_id = menage.pop(u'enfants')
             autres_id = menage.pop(u'autres')
             for step_index in range(steps_count):
                 individu_index = individu_index_by_id[personne_de_reference_id]
-                idmen_array[step_index * individus_step_size + individu_index] = step_index * menages_step_size + menage_index
+                idmen_array[step_index * individus_step_size + individu_index] = step_index * menages_step_size \
+                    + menage_index
                 quimen_array[step_index * individus_step_size + individu_index] = 0  # pref
                 menage_roles_count = 2
                 for enfant_index, enfant_id in enumerate(itertools.chain(enfants_id, autres_id)):
@@ -761,9 +754,9 @@ class Scenario(scenarios.AbstractScenario):
         #
         individus.get_or_new_holder('noi').array = np.arange(steps_count * individus_step_size,
             dtype = column_by_name['noi'].dtype)
-#        individus.get_or_new_holder(entities.Individus.name_key).array = np.array(
-#            [individu[entities.Individus.name_key] for individu in test_case[u'individus'].itervalues()],
-#            dtype = object)
+        # individus.get_or_new_holder(entities.Individus.name_key).array = np.array(
+        #     [individu[entities.Individus.name_key] for individu in test_case[u'individus'].itervalues()],
+        #     dtype = object)
         used_columns_name = set(
             key
             for individu in test_case[u'individus'].itervalues()
@@ -786,7 +779,7 @@ class Scenario(scenarios.AbstractScenario):
                 holder = individus.get_or_new_holder(column_name)
                 holder.array = array
 
-#        foyers_fiscaux.get_or_new_holder('id').array = np.array(test_case[u'foyers_fiscaux'].keys(), dtype = object)
+        # foyers_fiscaux.get_or_new_holder('id').array = np.array(test_case[u'foyers_fiscaux'].keys(), dtype = object)
         used_columns_name = set(
             key
             for foyer_fiscal in test_case[u'foyers_fiscaux'].itervalues()
@@ -798,7 +791,7 @@ class Scenario(scenarios.AbstractScenario):
                 cells_iter = (
                     cell if cell is not None else column.default
                     for cell in (
-                       foyer_fiscal.get(column_name)
+                        foyer_fiscal.get(column_name)
                         for step_index in range(steps_count)
                         for foyer_fiscal in test_case[u'foyers_fiscaux'].itervalues()
                         )
@@ -808,7 +801,7 @@ class Scenario(scenarios.AbstractScenario):
                 holder = foyers_fiscaux.get_or_new_holder(column_name)
                 holder.array = array
 
-#        menages.get_or_new_holder('id').array = np.array(test_case[u'menages'].keys(), dtype = object)
+        # menages.get_or_new_holder('id').array = np.array(test_case[u'menages'].keys(), dtype = object)
         used_columns_name = set(
             key
             for menage in test_case[u'menages'].itervalues()
@@ -868,7 +861,10 @@ class Scenario(scenarios.AbstractScenario):
         for individu_id, individu in test_case['individus'].iteritems():
             if individu.get('age') is None and individu.get('agem') is None and individu.get('birth') is None:
                 # Add missing birth date to person (a parent is 40 years old and a child is 10 years old.
-                is_declarant = any(individu_id in foyer_fiscal['declarants'] for foyer_fiscal in test_case['foyers_fiscaux'].itervalues())
+                is_declarant = any(
+                    individu_id in foyer_fiscal['declarants']
+                    for foyer_fiscal in test_case['foyers_fiscaux'].itervalues()
+                    )
                 birth_year = self.date.year - 40 if is_declarant else self.date.year - 10
                 birth = datetime.date(birth_year, 1, 1)
                 individu['birth'] = birth
@@ -889,7 +885,6 @@ class Scenario(scenarios.AbstractScenario):
         if test_case is not None:
             column_by_name = self.tax_benefit_system.column_by_name
             test_case_json = collections.OrderedDict()
-
 
             foyers_fiscaux_json = collections.OrderedDict()
             for foyer_fiscal_id, foyer_fiscal in (test_case.get('foyers_fiscaux') or {}).iteritems():

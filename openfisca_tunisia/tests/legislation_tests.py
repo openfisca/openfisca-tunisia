@@ -79,8 +79,8 @@ def check_legislation_xml_file(year):
     compact_legislation = legislations.compact_dated_node_json(dated_legislation_json)
     # Create tax_benefit system only now, to be able to debug XML validation errors in above code.
     tax_benefit_system = TaxBenefitSystem()
-    if tax_benefit_system.preprocess_legislation_parameters is not None:
-        tax_benefit_system.preprocess_legislation_parameters(compact_legislation)
+    if tax_benefit_system.preprocess_compact_legislation is not None:
+        tax_benefit_system.preprocess_compact_legislation(compact_legislation)
 
 
 def test_legislation_xml_file():

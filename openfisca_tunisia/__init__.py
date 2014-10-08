@@ -89,7 +89,7 @@ def init_country(qt = False):
         # column_by_name = column_by_name  # Done below to avoid "name is not defined" exception
         # columns_name_tree_by_entity = columns_name_tree_by_entity  # Done below to avoid "name is not defined" exception
         PARAM_FILE = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
-        # preprocess_legislation_parameters = preprocess_legislation_parameters  # Done below to avoid "name is not defined" exception
+        # preprocess_compact_legislation = preprocess_compact_legislation  # Done below to avoid "name is not defined" exception
         # prestation_by_name = prestation_by_name  # Done below to avoid "name is not defined" exception
         REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
         REV_TYP = REV_TYP
@@ -120,8 +120,7 @@ def init_country(qt = False):
         (entity_class.key_plural, entity_class)
         for entity_class in entities.entity_class_by_symbol.itervalues()
         )
-    TaxBenefitSystem.preprocess_legislation_parameters = None  # staticmethod(preprocess_legislation_parameters)
+    TaxBenefitSystem.preprocess_compact_legislation = None  # staticmethod(preprocess_compact_legislation)
 
     TaxBenefitSystem.prestation_by_name = prestation_by_name
     return TaxBenefitSystem
-

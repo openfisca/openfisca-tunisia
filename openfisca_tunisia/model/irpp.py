@@ -23,6 +23,8 @@ This file is part of openFisca.
 from __future__ import division
 
 from numpy import (datetime64, logical_or as or_, maximum as max_, minimum as min_)
+from openfisca_core import periods
+from openfisca_core.accessors import law
 
 from .data import QUIFOY
 
@@ -40,20 +42,21 @@ PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 # # Initialisation de quelques variables utiles pour la suite
 ###############################################################################
 
+
 def _age_from_agem(agem):
     return agem // 12
 
 
-def _age_from_birth(birth, _P):
-    return (datetime64(_P.date) - birth).astype('timedelta64[Y]')
+def _age_from_birth(birth, period):
+    return (datetime64(periods.date(period)) - birth).astype('timedelta64[Y]')
 
 
 def _agem_from_age(age):
     return age * 12
 
 
-def _agem_from_birth(birth, _P):
-    return (datetime64(_P.date) - birth).astype('timedelta64[M]')
+def _agem_from_birth(birth, period):
+    return (datetime64(periods.date(period)) - birth).astype('timedelta64[M]')
 
 
 def _nb_adult(marie, celdiv, veuf):
@@ -273,16 +276,15 @@ def _smig(self, sal, smig_dec_holder, _P):
     return smig
 
 
-def _sal_net(sal, smig, _P):
+def _sal_net(period, sal, smig, tspr = law.ir.tspr):
     '''
     Revenu imposé comme des salaires net des abatements
     'foy'
     '''
-    P = _P.ir.tspr
-    if _P.date.year >= 2011:
-        res = max_(sal * (1 - P.abat_sal) - max_(smig * P.smig, (sal <= P.smig_ext) * P.smig), 0)
+    if periods.date(period).year >= 2011:
+        res = max_(sal * (1 - tspr.abat_sal) - max_(smig * tspr.smig, (sal <= tspr.smig_ext) * tspr.smig), 0)
     else:
-        res = max_(sal * (1 - P.abat_sal) - smig * P.smig, 0)
+        res = max_(sal * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
     return res
 
 
