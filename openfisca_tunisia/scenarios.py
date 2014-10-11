@@ -879,6 +879,8 @@ class Scenario(scenarios.AbstractScenario):
             self_json['axes'] = self.axes
         if self.legislation_url is not None:
             self_json['legislation_url'] = self.legislation_url
+        if self.period is not None:
+            self_json['period'] = periods.json_str(self.period)
 
         test_case = self.test_case
 
