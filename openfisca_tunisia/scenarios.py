@@ -131,71 +131,11 @@ class Scenario(scenarios.AbstractScenario):
         # individus.get_or_new_holder(entities.Individus.name_key).array = np.array(
         #     [individu[entities.Individus.name_key] for individu in test_case[u'individus'].itervalues()],
         #     dtype = object)
-        used_columns_name = set(
-            key
-            for individu in test_case[u'individus'].itervalues()
-            for key, value in individu.iteritems()
-            if value is not None
-            )
-        for column_name, column in column_by_name.iteritems():
-            if column.entity == 'ind' and column_name in used_columns_name \
-                    and column_name not in ('idfoy', 'idmen', 'quifoy', 'quimen'):
-                cells_iter = (
-                    cell if cell is not None else column.default
-                    for cell in (
-                        individu.get(column_name)
-                        for step_index in range(steps_count)
-                        for individu in test_case[u'individus'].itervalues()
-                        )
-                    )
-                array = np.fromiter(cells_iter, dtype = column.dtype) \
-                    if column.dtype is not object else np.array(list(cells_iter), dtype = column.dtype)
-                holder = individus.get_or_new_holder(column_name)
-                holder.array = array
-
+        # familles.get_or_new_holder('id').array = np.array(test_case[u'familles'].keys(), dtype = object)
         # foyers_fiscaux.get_or_new_holder('id').array = np.array(test_case[u'foyers_fiscaux'].keys(), dtype = object)
-        used_columns_name = set(
-            key
-            for foyer_fiscal in test_case[u'foyers_fiscaux'].itervalues()
-            for key, value in foyer_fiscal.iteritems()
-            if value is not None
-            )
-        for column_name, column in column_by_name.iteritems():
-            if column.entity == 'foy' and column_name in used_columns_name:
-                cells_iter = (
-                    cell if cell is not None else column.default
-                    for cell in (
-                        foyer_fiscal.get(column_name)
-                        for step_index in range(steps_count)
-                        for foyer_fiscal in test_case[u'foyers_fiscaux'].itervalues()
-                        )
-                    )
-                array = np.fromiter(cells_iter, dtype = column.dtype) \
-                    if column.dtype is not object else np.array(list(cells_iter), dtype = column.dtype)
-                holder = foyers_fiscaux.get_or_new_holder(column_name)
-                holder.array = array
-
         # menages.get_or_new_holder('id').array = np.array(test_case[u'menages'].keys(), dtype = object)
-        used_columns_name = set(
-            key
-            for menage in test_case[u'menages'].itervalues()
-            for key, value in menage.iteritems()
-            if value is not None
-            )
-        for column_name, column in column_by_name.iteritems():
-            if column.entity == 'men' and column_name in used_columns_name:
-                cells_iter = (
-                    cell if cell is not None else column.default
-                    for cell in (
-                        menage.get(column_name)
-                        for step_index in range(steps_count)
-                        for menage in test_case[u'menages'].itervalues()
-                        )
-                    )
-                array = np.fromiter(cells_iter, dtype = column.dtype) \
-                    if column.dtype is not object else np.array(list(cells_iter), dtype = column.dtype)
-                holder = menages.get_or_new_holder(column_name)
-                holder.array = array
+
+        self.set_simulation_variables(simulation, variables_name_to_skip = ('idfoy', 'idmen', 'quifoy', 'quimen'))
 
     def init_single_entity(self, axes = None, enfants = None, famille = None, foyer_fiscal = None, menage = None,
             parent1 = None, parent2 = None, period = None):
