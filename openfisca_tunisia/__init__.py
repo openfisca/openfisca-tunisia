@@ -120,6 +120,7 @@ def init_country(qt = False):
         (entity_class.key_plural, entity_class)
         for entity_class in entities.entity_class_by_symbol.itervalues()
         )
+    TaxBenefitSystem.entity_class_by_symbol = entities.entity_class_by_symbol
     TaxBenefitSystem.preprocess_compact_legislation = None  # staticmethod(preprocess_compact_legislation)
 
     TaxBenefitSystem.prestation_by_name = prestation_by_name
