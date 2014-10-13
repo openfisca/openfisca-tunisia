@@ -25,15 +25,16 @@
 
 from __future__ import division
 
-from numpy import  zeros
+from numpy import zeros
 from openfisca_core.taxscales import TaxScalesTree, combine_tax_scales, scale_tax_scales
 
 from .data import CAT
 
 
-class Object(object):
-    def __init__(self):
-        object.__init__(self)
+# class Object(object):
+#     def __init__(self):
+#         object.__init__(self)
+
 
 ############################################################################
 ## Salaires

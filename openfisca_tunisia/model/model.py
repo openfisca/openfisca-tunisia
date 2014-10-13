@@ -26,17 +26,22 @@
 import collections
 from functools import partial
 
-
 from openfisca_core.columns import AgeCol, BoolCol, FloatCol
-
-
 from openfisca_core.formulas import (
     build_alternative_formula_couple,
     build_dated_formula_couple,
     build_select_formula_couple,
     build_simple_formula_couple,
     )
-from openfisca_tunisia import entities
+
+from .. import entities
+from .base import prestation_by_name  # Must be defined before importing other modules from model package.
+
+# Import model modules.
+from . import common as cm
+from . import cotsoc as cs
+from . import irpp as ir
+from . import pfam as pf
 
 
 build_alternative_formula_couple = partial(
@@ -57,13 +62,7 @@ build_simple_formula_couple = partial(
     )
 
 
-from openfisca_tunisia.model import common as cm
-from openfisca_tunisia.model import cotsoc as cs
-from openfisca_tunisia.model import irpp as ir
-from openfisca_tunisia.model import pfam as pf
-
-
-prestation_by_name = collections.OrderedDict((
+prestation_by_name.update(collections.OrderedDict((
     build_alternative_formula_couple(
         'age',
         [
@@ -198,4 +197,4 @@ prestation_by_name = collections.OrderedDict((
     build_simple_formula_couple('rev_cap', FloatCol(function = cm._rev_cap)),
 
     build_simple_formula_couple('impo', FloatCol(function = cm._impo)),
-    ))
+    )))

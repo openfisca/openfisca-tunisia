@@ -24,29 +24,21 @@
 
 
 import collections
-from functools import partial
 
-from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, StrCol, build_column_couple
+from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, StrCol
 from openfisca_core.enumerations import Enum
 
-from .base import QUIFOY, QUIMEN
+from .. import entities
+from .base import build_column_couple, column_by_name, QUIFOY, QUIMEN
 
 
 CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_sal', 'cnrps_pen'])
 
 
-from .. import entities
-
-build_column_couple = partial(
-    build_column_couple,
-    entity_class_by_symbol = entities.entity_class_by_symbol,
-    )
-
-
 # Socio-economic data
 # Donnée d'entrée de la simulation à fournir à partir d'une enquète ou
 # à générer avec un générateur de cas type
-column_by_name = collections.OrderedDict((
+column_by_name.update(collections.OrderedDict((
     build_column_couple('noi', IntCol(is_period_invariant = True)),
     build_column_couple('idmen', IntCol(is_period_invariant = True)),  # 600001, 600002,
     build_column_couple('idfoy', IntCol(is_period_invariant = True)),  # idmen + noi du déclarant
@@ -374,4 +366,4 @@ column_by_name = collections.OrderedDict((
     build_column_couple('psoc', IntCol()),
     build_column_couple('af', IntCol()),
     build_column_couple('uc', IntCol()),
-    ))
+    )))
