@@ -98,7 +98,7 @@ class Menages(entities.AbstractEntity):
         yield role, personne_de_reference_id
         role += 1
 
-        conjoint_id = member('conjoint')
+        conjoint_id = member.get('conjoint')
         if conjoint_id is not None:
             yield role, conjoint_id
         role += 1
