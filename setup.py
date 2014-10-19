@@ -58,15 +58,9 @@ setup(
         ('share/locale/ar/LC_MESSAGES', ['openfisca_tunisia/i18n/fr/LC_MESSAGES/openfisca-tunisia.mo']),
         ('share/locale/fr/LC_MESSAGES', ['openfisca_tunisia/i18n/fr/LC_MESSAGES/openfisca-tunisia.mo']),
         ],
-    extras_require = dict(
-        tests = [
-            'pandas >= 0.13',
-            ],
-        ),
     install_requires = [
         'Babel >= 0.9.4',
         'Biryani1[datetimeconv] >= 0.9dev',
-        'jsonpatch >= 1.3',
         'numpy',
         'OpenFisca-Core >= 0.3dev',
         'scipy >= 0.12',
