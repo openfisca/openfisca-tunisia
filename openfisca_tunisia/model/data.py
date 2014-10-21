@@ -39,7 +39,6 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 # Donnée d'entrée de la simulation à fournir à partir d'une enquète ou
 # à générer avec un générateur de cas type
 column_by_name.update(collections.OrderedDict((
-    build_column_couple('noi', IntCol(is_period_invariant = True)),
     build_column_couple('idmen', IntCol(is_period_invariant = True)),  # 600001, 600002,
     build_column_couple('idfoy', IntCol(is_period_invariant = True)),  # idmen + noi du déclarant
 
