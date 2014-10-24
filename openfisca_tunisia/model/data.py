@@ -25,7 +25,7 @@
 
 import collections
 
-from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, StrCol
+from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, PeriodSizeIndependentIntCol, StrCol
 from openfisca_core.enumerations import Enum
 
 from .. import entities
@@ -39,18 +39,18 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 # Donnée d'entrée de la simulation à fournir à partir d'une enquète ou
 # à générer avec un générateur de cas type
 column_by_name.update(collections.OrderedDict((
-    build_column_couple('idmen', IntCol(is_period_invariant = True)),  # 600001, 600002,
-    build_column_couple('idfoy', IntCol(is_period_invariant = True)),  # idmen + noi du déclarant
+    build_column_couple('idmen', IntCol(is_permanent = True)),  # 600001, 600002,
+    build_column_couple('idfoy', IntCol(is_permanent = True)),  # idmen + noi du déclarant
 
-    build_column_couple('quimen', EnumCol(QUIMEN, is_period_invariant = True)),
-    build_column_couple('quifoy', EnumCol(QUIFOY, is_period_invariant = True)),
+    build_column_couple('quimen', EnumCol(QUIMEN, is_permanent = True)),
+    build_column_couple('quifoy', EnumCol(QUIFOY, is_permanent = True)),
 
-    build_column_couple(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', is_period_invariant = True,
+    build_column_couple(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', is_permanent = True,
         label = u"Nom")),
-    build_column_couple(entities.Individus.name_key, StrCol(is_period_invariant = True, label = u"Prénom")),
-    build_column_couple(entities.Menages.name_key, StrCol(entity = 'men', is_period_invariant = True, label = u"Nom")),
+    build_column_couple(entities.Individus.name_key, StrCol(is_permanent = True, label = u"Prénom")),
+    build_column_couple(entities.Menages.name_key, StrCol(entity = 'men', is_permanent = True, label = u"Nom")),
 
-    build_column_couple('birth', DateCol(is_period_invariant = True, label = u"Année de naissance")),
+    build_column_couple('birth', DateCol(is_permanent = True, label = u"Année de naissance")),
     # build_column_couple('age', AgesCol(label = u"âge")),
     # build_column_couple('agem', AgesCol(label = u"âge (en mois)")),
 
@@ -58,15 +58,15 @@ column_by_name.update(collections.OrderedDict((
 
     build_column_couple('inv', BoolCol(label = u'invalide')),
 
-    build_column_couple('jour_xyz', IntCol(default = 360)),
+    build_column_couple('jour_xyz', PeriodSizeIndependentIntCol(default = 360)),
 
     build_column_couple('loyer', IntCol(entity = 'men')),  # Loyer mensuel
-    build_column_couple('activite', IntCol()),
+    build_column_couple('activite', PeriodSizeIndependentIntCol()),
     build_column_couple('boursier', BoolCol()),
-    build_column_couple('code_postal', IntCol(entity = 'men')),
-    build_column_couple('so', IntCol()),
+    build_column_couple('code_postal', PeriodSizeIndependentIntCol(entity = 'men')),
+    build_column_couple('so', PeriodSizeIndependentIntCol()),
 
-    build_column_couple('statmarit', IntCol(default = 2)),
+    build_column_couple('statmarit', PeriodSizeIndependentIntCol(default = 2)),
     build_column_couple('chef', BoolCol()),
 
     # BIC Bénéfices industriels et commerciaux
