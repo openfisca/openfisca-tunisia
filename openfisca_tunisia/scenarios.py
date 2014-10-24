@@ -30,7 +30,7 @@ import logging
 import re
 import uuid
 
-from openfisca_core import conv, periods, scenarios
+from openfisca_core import conv, scenarios
 
 
 log = logging.getLogger(__name__)
@@ -335,7 +335,7 @@ class Scenario(scenarios.AbstractScenario):
                     if individu_id in foyers_fiscaux_individus_id:
                         # L'individu n'est toujours pas affecté à un foyer fiscal.
                         individu = test_case['individus'][individu_id]
-                        age = find_age(individu, periods.start_date(period))
+                        age = find_age(individu, period.start.date)
                         if len(new_foyer_fiscal[u'declarants']) < 2 and (age is None or age >= 18):
                             new_foyer_fiscal[u'declarants'].append(individu_id)
                         else:
@@ -439,7 +439,7 @@ class Scenario(scenarios.AbstractScenario):
                                         conv.uniform_sequence(
                                             conv.test(
                                                 lambda individu_id:
-                                                    find_age(individu_by_id[individu_id], periods.start_date(period),
+                                                    find_age(individu_by_id[individu_id], period.start.date,
                                                         default = 100) >= 18,
                                                 error = u"Un déclarant d'un foyer fiscal doit être agé d'au moins 18"
                                                         u" ans",
@@ -450,7 +450,7 @@ class Scenario(scenarios.AbstractScenario):
                                         conv.test(
                                             lambda individu_id:
                                                 individu_by_id[individu_id].get('inv', False)
-                                                or find_age(individu_by_id[individu_id], periods.start_date(period),
+                                                or find_age(individu_by_id[individu_id], period.start.date,
                                                     default = 0) < 25,
                                             error = u"Une personne à charge d'un foyer fiscal doit avoir moins de"
                                                     u" 25 ans ou être invalide",
@@ -468,7 +468,7 @@ class Scenario(scenarios.AbstractScenario):
                         conv.struct(
                             dict(
                                 birth = conv.test(
-                                    lambda birth: periods.start_date(period) - birth >= datetime.timedelta(0),
+                                    lambda birth: period.start.date - birth >= datetime.timedelta(0),
                                     error = u"L'individu doit être né au plus tard le jour de la simulation",
                                     ),
                                 ),
@@ -523,7 +523,7 @@ class Scenario(scenarios.AbstractScenario):
         if self.legislation_url is not None:
             self_json['legislation_url'] = self.legislation_url
         if self.period is not None:
-            self_json['period'] = periods.json_str(self.period)
+            self_json['period'] = str(self.period)
 
         test_case = self.test_case
 

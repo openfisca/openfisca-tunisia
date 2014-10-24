@@ -26,7 +26,6 @@
 from __future__ import division
 
 from numpy import datetime64, logical_or as or_, maximum as max_, minimum as min_
-from openfisca_core import periods
 from openfisca_core.accessors import law
 
 from .base import QUIFOY
@@ -53,7 +52,7 @@ def _age_from_agem(agem):
 
 
 def _age_from_birth(birth, period):
-    return (datetime64(periods.date(period)) - birth).astype('timedelta64[Y]')
+    return (datetime64(period.date) - birth).astype('timedelta64[Y]')
 
 
 def _agem_from_age(age):
@@ -61,7 +60,7 @@ def _agem_from_age(age):
 
 
 def _agem_from_birth(birth, period):
-    return (datetime64(periods.date(period)) - birth).astype('timedelta64[M]')
+    return (datetime64(period.date) - birth).astype('timedelta64[M]')
 
 
 def _nb_adult(marie, celdiv, veuf):
@@ -286,7 +285,7 @@ def _sal_net(period, sal, smig, tspr = law.ir.tspr):
     Revenu imposé comme des salaires net des abatements
     'foy'
     '''
-    if periods.date(period).year >= 2011:
+    if period.start.year >= 2011:
         res = max_(sal * (1 - tspr.abat_sal) - max_(smig * tspr.smig, (sal <= tspr.smig_ext) * tspr.smig), 0)
     else:
         res = max_(sal * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
@@ -412,7 +411,7 @@ def _ass_vie(self, prime_ass_vie_holder, statmarit_holder, nb_enf, _P):
     'foy'
     '''
     P = _P.ir.deduc.ass_vie
-    marie = self.filter_role(statmarit_holder, role = VOUS) # TODO:
+    marie = self.filter_role(statmarit_holder, role = VOUS)  # TODO
     prime_ass_vie = self.sum_by_entity(prime_ass_vie_holder)
     deduc = min_(prime_ass_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
     return deduc
