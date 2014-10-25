@@ -23,13 +23,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import collections
-
 from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, PeriodSizeIndependentIntCol, StrCol
 from openfisca_core.enumerations import Enum
 
 from .. import entities
-from .base import build_column_couple, column_by_name, QUIFOY, QUIMEN
+from .base import build_column, QUIFOY, QUIMEN
 
 
 CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_sal', 'cnrps_pen'])
@@ -38,251 +36,250 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 # Socio-economic data
 # Donnée d'entrée de la simulation à fournir à partir d'une enquète ou
 # à générer avec un générateur de cas type
-column_by_name.update(collections.OrderedDict((
-    build_column_couple('idmen', IntCol(is_permanent = True)),  # 600001, 600002,
-    build_column_couple('idfoy', IntCol(is_permanent = True)),  # idmen + noi du déclarant
+build_column('idmen', IntCol(is_permanent = True))  # 600001, 600002,
+build_column('idfoy', IntCol(is_permanent = True))  # idmen + noi du déclarant
 
-    build_column_couple('quimen', EnumCol(QUIMEN, is_permanent = True)),
-    build_column_couple('quifoy', EnumCol(QUIFOY, is_permanent = True)),
+build_column('quimen', EnumCol(QUIMEN, is_permanent = True))
+build_column('quifoy', EnumCol(QUIFOY, is_permanent = True))
 
-    build_column_couple(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', is_permanent = True,
-        label = u"Nom")),
-    build_column_couple(entities.Individus.name_key, StrCol(is_permanent = True, label = u"Prénom")),
-    build_column_couple(entities.Menages.name_key, StrCol(entity = 'men', is_permanent = True, label = u"Nom")),
+build_column(entities.FoyersFiscaux.name_key, StrCol(entity = 'foy', is_permanent = True,
+    label = u"Nom"))
+build_column(entities.Individus.name_key, StrCol(is_permanent = True, label = u"Prénom"))
+build_column(entities.Menages.name_key, StrCol(entity = 'men', is_permanent = True, label = u"Nom"))
 
-    build_column_couple('birth', DateCol(is_permanent = True, label = u"Année de naissance")),
-    # build_column_couple('age', AgesCol(label = u"âge")),
-    # build_column_couple('agem', AgesCol(label = u"âge (en mois)")),
+build_column('birth', DateCol(is_permanent = True, label = u"Année de naissance"))
+# build_column('age', AgesCol(label = u"âge"))
+# build_column('agem', AgesCol(label = u"âge (en mois)"))
 
-    build_column_couple('type_sal', EnumCol(CAT, default = 0)),
+build_column('type_sal', EnumCol(CAT, default = 0))
 
-    build_column_couple('inv', BoolCol(label = u'invalide')),
+build_column('inv', BoolCol(label = u'invalide'))
 
-    build_column_couple('jour_xyz', PeriodSizeIndependentIntCol(default = 360)),
+build_column('jour_xyz', PeriodSizeIndependentIntCol(default = 360))
 
-    build_column_couple('loyer', IntCol(entity = 'men')),  # Loyer mensuel
-    build_column_couple('activite', PeriodSizeIndependentIntCol()),
-    build_column_couple('boursier', BoolCol()),
-    build_column_couple('code_postal', PeriodSizeIndependentIntCol(entity = 'men')),
-    build_column_couple('so', PeriodSizeIndependentIntCol()),
+build_column('loyer', IntCol(entity = 'men'))  # Loyer mensuel
+build_column('activite', PeriodSizeIndependentIntCol())
+build_column('boursier', BoolCol())
+build_column('code_postal', PeriodSizeIndependentIntCol(entity = 'men'))
+build_column('so', PeriodSizeIndependentIntCol())
 
-    build_column_couple('statmarit', PeriodSizeIndependentIntCol(default = 2)),
-    build_column_couple('chef', BoolCol()),
+build_column('statmarit', PeriodSizeIndependentIntCol(default = 2))
+build_column('chef', BoolCol())
 
-    # BIC Bénéfices industriels et commerciaux
-    # régime réel
-    build_column_couple(
-        'bic_reel',
-        EnumCol(
-            enum = Enum(
-                [
-                    u"Néant",
-                    u"Commerçant",
-                    u"Industriel",
-                    u"Prestataire de services",
-                    u"Artisan",
-                    u"Plus d'une activité",
-                    ]
-                )
+# BIC Bénéfices industriels et commerciaux
+# régime réel
+build_column(
+    'bic_reel',
+    EnumCol(
+        enum = Enum(
+            [
+                u"Néant",
+                u"Commerçant",
+                u"Industriel",
+                u"Prestataire de services",
+                u"Artisan",
+                u"Plus d'une activité",
+                ]
             )
-        ),
+        )
+    ),
 # Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt
 # annuel sur le revenu au titre des bénéfices industriels et commerciaux
 # sur la base de la différence entre les recettes et les dépenses .
-    # régime des sociétés de personnes
-    build_column_couple('bic_sp', BoolCol()),
+# régime des sociétés de personnes
+build_column('bic_sp', BoolCol())
 
-    build_column_couple(
-        'cadre_legal',
-        EnumCol(
-            enum = Enum(
-                [
-                    u"Exportation totale dans le cadre du CII",
-                    u"Développement régional",
-                    u"Développement agricole",
-                    u"Parcs des activités économiques",
-                    u"Exportation dans le cadre du droit commun",
-                    u"Autres (à préciser)",
-                    ],
-                start = 1)
+build_column(
+    'cadre_legal',
+    EnumCol(
+        enum = Enum(
+            [
+                u"Exportation totale dans le cadre du CII",
+                u"Développement régional",
+                u"Développement agricole",
+                u"Parcs des activités économiques",
+                u"Exportation dans le cadre du droit commun",
+                u"Autres (à préciser)",
+                ],
+            start = 1)
+        )
+    ),
+build_column('bic_reel_res', IntCol())
+build_column('bic_forf_res', IntCol())
+build_column('bic_sp_res', IntCol())
+
+build_column(
+    'decl_inves',
+    EnumCol(
+        enum = Enum(
+            [
+                u"API",
+                u"APIA",
+                u"Commissariat régional du développement agricole",
+                u"ONT",
+                u"Autre structure ( à préciser)"
+                ],
+            start = 1,
             )
-        ),
-    build_column_couple('bic_reel_res', IntCol()),
-    build_column_couple('bic_forf_res', IntCol()),
-    build_column_couple('bic_sp_res', IntCol()),
+        )
+    ),
 
-    build_column_couple(
-        'decl_inves',
-        EnumCol(
-            enum = Enum(
-                [
-                    u"API",
-                    u"APIA",
-                    u"Commissariat régional du développement agricole",
-                    u"ONT",
-                    u"Autre structure ( à préciser)"
-                    ],
-                start = 1,
-                )
-            )
-        ),
+# A/ Régime réel
+# Valeur du stock au début de l’exercice
+# Valeur du stock à la fin de l’exercice
+# Valeur des achats au cours de l’exercice
+# Chiffre d’affaires local HT.
+# Chiffre d’affaires à l’exportation
+# Chiffre d’affaires global TTC.
+# Chiffre d’affaires provenant des activités de services.
+# Montant des primes (5) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
+# Résultat comptable
+# Résultat fiscal (6) Joindre à la déclaration l’état de détermination du résultat fiscal.
+build_column('bic_res_fiscal', IntCol(label = u"Résultat fiscal (BIC)"))
 
-    # A/ Régime réel
-    # Valeur du stock au début de l’exercice
-    # Valeur du stock à la fin de l’exercice
-    # Valeur des achats au cours de l’exercice
-    # Chiffre d’affaires local HT.
-    # Chiffre d’affaires à l’exportation
-    # Chiffre d’affaires global TTC.
-    # Chiffre d’affaires provenant des activités de services.
-    # Montant des primes (5) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
-    # Résultat comptable
-    # Résultat fiscal (6) Joindre à la déclaration l’état de détermination du résultat fiscal.
-    build_column_couple('bic_res_fiscal', IntCol(label = u"Résultat fiscal (BIC)")),
+# Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
+build_column(
+    'bic_ca_revente',
+    IntCol(
+        label = u"Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation"
+        )
+    ),
+build_column('bic_ca_autre', IntCol(label = u"Chiffre d’affaires global au titre d’autres activités"))
+build_column('bic_depenses', IntCol(label = u"Total des dépenses (BIC cession de fond de commerce)"))
+build_column('bic_pv_cession', IntCol(label = u"Plue-value de cession du fond de commerce"))
 
-    # Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
-    build_column_couple(
-        'bic_ca_revente',
-        IntCol(
-            label = u"Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation"
-            )
-        ),
-    build_column_couple('bic_ca_autre', IntCol(label = u"Chiffre d’affaires global au titre d’autres activités")),
-    build_column_couple('bic_depenses', IntCol(label = u"Total des dépenses (BIC cession de fond de commerce)")),
-    build_column_couple('bic_pv_cession', IntCol(label = u"Plue-value de cession du fond de commerce")),
+# B/ Part dans le bénéfice ou dans la perte des sociétés de personnes
+# et assimilées exerçant dans le secteur industriel et commercial
+build_column(
+    'bic_part_benef_sp',
+    IntCol(
+        label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial"
+        )
+    ),
 
-    # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes
-    # et assimilées exerçant dans le secteur industriel et commercial
-    build_column_couple(
-        'bic_part_benef_sp',
-        IntCol(
-            label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial"
-            )
-        ),
+# BNC Bénéfices des professions non commerciales
+# A/ Régime réel
+# - Chiffre d’affaires local HT.
+# - Chiffre d’affaires à l’exportation
+# - Chiffre d’affaires global TTC.
+# - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
+# - Résultat comptable
+# - Résultat fiscal (2) Joindre à la déclaration l'état de détermination du résultat fiscal
+build_column('bnc_reel_res_fiscal', IntCol(label = u"Résultat fiscal (BNC)"))
 
-    # BNC Bénéfices des professions non commerciales
-    # A/ Régime réel
-    # - Chiffre d’affaires local HT.
-    # - Chiffre d’affaires à l’exportation
-    # - Chiffre d’affaires global TTC.
-    # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
-    # - Résultat comptable
-    # - Résultat fiscal (2) Joindre à la déclaration l'état de détermination du résultat fiscal
-    build_column_couple('bnc_reel_res_fiscal', IntCol(label = u"Résultat fiscal (BNC)")),
+# B/ Détermination du bénéfice sur la base d’une assiette forfaitaire
+# - Recettes au titre des services locaux
+# - Recettes au titre des services exportés (3) Pour les entreprises totalement exportatrices dans le cadre du CII ou exerçant dans les parcs d’activités économiques.
+# - Recettes globales brutes TTC
+build_column('bnc_forf_rec_brut', IntCol(label = u"Recettes globales brutes TTC (BNC)"))
+# - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
 
-    # B/ Détermination du bénéfice sur la base d’une assiette forfaitaire
-    # - Recettes au titre des services locaux
-    # - Recettes au titre des services exportés (3) Pour les entreprises totalement exportatrices dans le cadre du CII ou exerçant dans les parcs d’activités économiques.
-    # - Recettes globales brutes TTC
-    build_column_couple('bnc_forf_rec_brut', IntCol(label = u"Recettes globales brutes TTC (BNC)")),
-    # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi
+# C/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux
+build_column(
+    'bnc_part_benef_sp',
+    IntCol(
+        label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux"
+        )
+    ),
 
-    # C/ Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux
-    build_column_couple(
-        'bnc_part_benef_sp',
-        IntCol(
-            label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes qui réalisent des bénéfices non commerciaux"
-            )
-        ),
+# beap Bénéfices de l'exploitation agricole et de pêche
+# A/ Régime réel
+# - Chiffre d’affaires local
+# - Chiffre d’affaires à l’exportation
+# - Chiffre d’affaires global
+# - Montant des primes  Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
+# - Résultat comptable B = bénéfice P = perte
+# - Résultat fiscal  B = bénéfice P = perte
+build_column('beap_reel_res_fiscal', IntCol(label = u"Résultat fiscal (BEAP, régime réel)"))
 
-    # beap Bénéfices de l'exploitation agricole et de pêche
-    # A/ Régime réel
-    # - Chiffre d’affaires local
-    # - Chiffre d’affaires à l’exportation
-    # - Chiffre d’affaires global
-    # - Montant des primes  Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation ou dans le cadre d'un programme de mise à niveau approuvé ou dans le cadre des interventions du fonds national de l’emploi.
-    # - Résultat comptable B = bénéfice P = perte
-    # - Résultat fiscal  B = bénéfice P = perte
-    build_column_couple('beap_reel_res_fiscal', IntCol(label = u"Résultat fiscal (BEAP, régime réel)")),
+# B/ Détermination du bénéfice sur la base du reliquat positif entre les
+# recettes et les dépenses
+# - Recettes brutes …………………………..
+# - Stocks …………………………..
+build_column(
+    'beap_reliq_rec',
+    IntCol(label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")
+    ),
+build_column(
+    'beap_reliq_stock',
+    IntCol(label = u"Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")
+    ),
+# TOTAL …………………………..
+# - Déduction des dépenses d’exploitation justifiées …………………………..
+build_column(
+    'beap_reliq_dep_ex',
+    IntCol(label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)"))
+# - Montant des primes (1) …………………………..
+# - Résultat B = bénéfice P = perte …………………………..
+# - Bénéfice fiscal (4) …………………………..
+build_column(
+    'beap_reliq_benef_fiscal',
+    IntCol(label = u"Bénéfice fiscal (BEAP)")
+    ),
+# C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
+# - Bénéfice fiscal …………………………..
+build_column('beap_monogr', IntCol(label = u"Détermination du bénéfice sur la base de monographies sectorielles (BEAP)"))
 
-    # B/ Détermination du bénéfice sur la base du reliquat positif entre les
-    # recettes et les dépenses
-    # - Recettes brutes …………………………..
-    # - Stocks …………………………..
-    build_column_couple(
-        'beap_reliq_rec',
-        IntCol(label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses")
-        ),
-    build_column_couple(
-        'beap_reliq_stock',
-        IntCol(label = u"Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)")
-        ),
-    # TOTAL …………………………..
-    # - Déduction des dépenses d’exploitation justifiées …………………………..
-    build_column_couple(
-        'beap_reliq_dep_ex',
-        IntCol(label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)")),
-    # - Montant des primes (1) …………………………..
-    # - Résultat B = bénéfice P = perte …………………………..
-    # - Bénéfice fiscal (4) …………………………..
-    build_column_couple(
-        'beap_reliq_benef_fiscal',
-        IntCol(label = u"Bénéfice fiscal (BEAP)")
-        ),
-    # C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
-    # - Bénéfice fiscal …………………………..
-    build_column_couple('beap_monogr', IntCol(label = u"Détermination du bénéfice sur la base de monographies sectorielles (BEAP)")),
-
-    # D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
-    # assimilées exerçant dans le secteur agricole et de pêche
-    build_column_couple('beap_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche")),
+# D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
+# assimilées exerçant dans le secteur agricole et de pêche
+build_column('beap_part_benef_sp', IntCol(label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche"))
 
 
-    # rfon Revenus fonciers
-    #  régime réel
-    build_column_couple('fon_reel_fisc', IntCol()),
+# rfon Revenus fonciers
+#  régime réel
+build_column('fon_reel_fisc', IntCol())
 
-    #  régime forfaitaire bâti
-    build_column_couple('fon_forf_bati_rec', IntCol()),
-    build_column_couple('fon_forf_bati_rel', IntCol()),
-    build_column_couple('fon_forf_bati_fra', IntCol()),
-    build_column_couple('fon_forf_bati_tax', IntCol()),
+#  régime forfaitaire bâti
+build_column('fon_forf_bati_rec', IntCol())
+build_column('fon_forf_bati_rel', IntCol())
+build_column('fon_forf_bati_fra', IntCol())
+build_column('fon_forf_bati_tax', IntCol())
 
-    # régime forfaitaire non bâti
-    build_column_couple('fon_forf_nbat_rec', IntCol()),
-    build_column_couple('fon_forf_nbat_dep', IntCol()),
-    build_column_couple('fon_forf_nbat_tax', IntCol()),
+# régime forfaitaire non bâti
+build_column('fon_forf_nbat_rec', IntCol())
+build_column('fon_forf_nbat_dep', IntCol())
+build_column('fon_forf_nbat_tax', IntCol())
 
-    #  part dans les bénéfices ou els pertes de sociétés de personnes et assimilées qui réalisent des revenus fonciers
-    build_column_couple('fon_sp', IntCol()),
+#  part dans les bénéfices ou els pertes de sociétés de personnes et assimilées qui réalisent des revenus fonciers
+build_column('fon_sp', IntCol())
 
-    # Salaires et pensions
+# Salaires et pensions
 
-    build_column_couple('sali', IntCol(label = u"Salaires imposables", default = 0)),
-    build_column_couple('sal_nat', IntCol(label = u"Avantages en nature assimilables à des salaires", default = 0)),
-    build_column_couple('smig_dec', BoolCol(label = u"Salarié déclarant percevoir le SMIG ou le SMAG")),
-    build_column_couple('pen', IntCol(label = u"Pensions et rentes viagères")),
-    build_column_couple('pen_nat', IntCol(label = u"Avantages en nature assimilables à des pensions")),
+build_column('sali', IntCol(label = u"Salaires imposables", default = 0))
+build_column('sal_nat', IntCol(label = u"Avantages en nature assimilables à des salaires", default = 0))
+build_column('smig_dec', BoolCol(label = u"Salarié déclarant percevoir le SMIG ou le SMAG"))
+build_column('pen', IntCol(label = u"Pensions et rentes viagères"))
+build_column('pen_nat', IntCol(label = u"Avantages en nature assimilables à des pensions"))
 
 
 # rvcm Revenus de valeurs mobilières et de capitaux mobiliers
 # A Revenus des valeurs mobilières et de capitaux mobiliers
-    build_column_couple('valm_nreg', IntCol(label = u"Revenus des valeurs mobilières autres que ceux régulièrement distribués")),
-    build_column_couple('valm_jpres', IntCol(label = u"Jetons de présence")),
-    build_column_couple('valm_aut', IntCol(label = u"Autres rémunérations assimilées")),
+build_column('valm_nreg', IntCol(label = u"Revenus des valeurs mobilières autres que ceux régulièrement distribués"))
+build_column('valm_jpres', IntCol(label = u"Jetons de présence"))
+build_column('valm_aut', IntCol(label = u"Autres rémunérations assimilées"))
 
 # B Revenus de capitaux mobiliers
-    build_column_couple('capm_banq', IntCol(label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques")),
-    build_column_couple('capm_cent', IntCol(label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT")),
-    build_column_couple('capm_caut', IntCol(label = u"Intérêts des créances et intérêts et rémunérations des cautionnements")),
-    build_column_couple('capm_part', IntCol(label = u"Intérêts des titres de participation")),
-    build_column_couple('capm_oblig', IntCol(label = u"Intérêts des emprunts obligataires")),
-    build_column_couple('capm_caisse', IntCol(label = u"Intérêts des bons de caisse")),
-    build_column_couple('capm_plfcc', IntCol(label = u"Revenus des parts et de liquidation du fonds commun des créances")),
-    build_column_couple('capm_epinv', IntCol(label = u"Intérêts des comptes épargne pour l'investissement")),
-    build_column_couple('capm_aut', IntCol(label = u"Autres intérêts")),
+build_column('capm_banq', IntCol(label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques"))
+build_column('capm_cent', IntCol(label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT"))
+build_column('capm_caut', IntCol(label = u"Intérêts des créances et intérêts et rémunérations des cautionnements"))
+build_column('capm_part', IntCol(label = u"Intérêts des titres de participation"))
+build_column('capm_oblig', IntCol(label = u"Intérêts des emprunts obligataires"))
+build_column('capm_caisse', IntCol(label = u"Intérêts des bons de caisse"))
+build_column('capm_plfcc', IntCol(label = u"Revenus des parts et de liquidation du fonds commun des créances"))
+build_column('capm_epinv', IntCol(label = u"Intérêts des comptes épargne pour l'investissement"))
+build_column('capm_aut', IntCol(label = u"Autres intérêts"))
 
 
 # AUtres revenus
-    build_column_couple('etr_sal', IntCol(label = u"Salaires perçus à l'étranger")),
-    build_column_couple('etr_pen', IntCol(label = u"Pensions perçues à l'étranger (non transférées)")),
-    build_column_couple('etr_trans', IntCol(label = u"Pensions perçues à l'étranger (transférées en Tunisie)")),
-    build_column_couple('etr_aut', IntCol(label = u"Autres revenus perçus à l'étranger")),
+build_column('etr_sal', IntCol(label = u"Salaires perçus à l'étranger"))
+build_column('etr_pen', IntCol(label = u"Pensions perçues à l'étranger (non transférées)"))
+build_column('etr_trans', IntCol(label = u"Pensions perçues à l'étranger (transférées en Tunisie)"))
+build_column('etr_aut', IntCol(label = u"Autres revenus perçus à l'étranger"))
 # Revnus exonérés
 # Revenus non imposables
 
 # deficit antérieurs non déduits
-    build_column_couple('def_ante', IntCol(label = u"Déficits des années antérieures non déduits")),
+build_column('def_ante', IntCol(label = u"Déficits des années antérieures non déduits"))
 
 # déductions
 
@@ -317,16 +314,16 @@ column_by_name.update(collections.OrderedDict((
 
 #     2/ Autres déductions
 
-    build_column_couple('deduc_banq', IntCol(label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques")),
-    build_column_couple('deduc_cent', IntCol(label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite")),
-    build_column_couple('deduc_obli', IntCol(label = u"Intérêts des emprunts obligataires")),
-    build_column_couple('deduc_epinv', IntCol(label = u"Intérêts des comptes épargne pour l'investissement")),
-    build_column_couple('rente', IntCol(label = u"Rentes payées obligatoirement et à titre gratuit")),
-    build_column_couple('prime_ass_vie', IntCol(label = u"Prime d’assurance-vie")),
-    build_column_couple('dons', IntCol(label = u"Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21")),
-    build_column_couple('pret_univ', IntCol(label = u"Remboursement des prêts universitaires en principal et intérêts")),
-    build_column_couple('cotis_nonaf', IntCol(label = u"Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale")),
-    build_column_couple('deduc_logt', IntCol(label = u"Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social")),
+build_column('deduc_banq', IntCol(label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques"))
+build_column('deduc_cent', IntCol(label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite"))
+build_column('deduc_obli', IntCol(label = u"Intérêts des emprunts obligataires"))
+build_column('deduc_epinv', IntCol(label = u"Intérêts des comptes épargne pour l'investissement"))
+build_column('rente', IntCol(label = u"Rentes payées obligatoirement et à titre gratuit"))
+build_column('prime_ass_vie', IntCol(label = u"Prime d’assurance-vie"))
+build_column('dons', IntCol(label = u"Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"))
+build_column('pret_univ', IntCol(label = u"Remboursement des prêts universitaires en principal et intérêts"))
+build_column('cotis_nonaf', IntCol(label = u"Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale"))
+build_column('deduc_logt', IntCol(label = u"Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"))
 
 
 # Code d’incitation aux investissements
@@ -357,12 +354,11 @@ column_by_name.update(collections.OrderedDict((
 #
 
 
-    # TODO Remove Me
-    build_column_couple('rstbrut', IntCol()),
-    build_column_couple('alr', IntCol()),
-    build_column_couple('alv', IntCol()),
-    build_column_couple('rto', IntCol()),
-    build_column_couple('psoc', IntCol()),
-    build_column_couple('af', IntCol()),
-    build_column_couple('uc', IntCol()),
-    )))
+# TODO Remove Me
+build_column('rstbrut', IntCol())
+build_column('alr', IntCol())
+build_column('alv', IntCol())
+build_column('rto', IntCol())
+build_column('psoc', IntCol())
+build_column('af', IntCol())
+build_column('uc', IntCol())

@@ -27,7 +27,6 @@ import os
 
 COUNTRY_DIR = os.path.dirname(os.path.abspath(__file__))
 CURRENCY = u"DT"
-ENTITIES_INDEX = ['men', 'foy']
 REV_TYP = {
     'brut': ['salbrut'],
     'imposable': ['sal'],
@@ -42,55 +41,46 @@ X_AXES_PROPERTIES = {
     'sali': {
         'name': 'sal',
         'typ_tot': {
-            'sal':  'Salaire imposable',
+            'sal': 'Salaire imposable',
             'salbrut': 'Salaire brut',
             'salnet': 'Salaire net',
             'salsuperbrut': 'Salaire super brut',
             },
-        'typ_tot_default' : 'sal',
+        'typ_tot_default': 'sal',
         },
     }
 
 
 def init_country(qt = False):
     """Create a country-specific TaxBenefitSystem."""
-    from openfisca_core.columns import FloatCol
-    from openfisca_core import taxbenefitsystems as core_taxbenefitsystems
-    if qt:
-        from openfisca_qt import widgets as qt_widgets
+    from openfisca_core.taxbenefitsystems import LegacyTaxBenefitSystem
 
     from . import decompositions, entities, scenarios
-    from .model.data import column_by_name
-    from .model.datatrees import columns_name_tree_by_entity
-    from .model.model import prestation_by_name
-    if qt:
-        from .widgets.Composition import CompositionWidget
+    from .model import datatrees
+    from .model import data  # Load input variables into entities. # noqa
+    from .model import model  # Load output variables into entities. # noqa
 
-    core_taxbenefitsystems.preproc_inputs = None
-
-
-    class TaxBenefitSystem(core_taxbenefitsystems.AbstractTaxBenefitSystem):
+    class TaxBenefitSystem(LegacyTaxBenefitSystem):
         """Tunisian tax benefit system"""
         # AGGREGATES_DEFAULT_VARS = AGGREGATES_DEFAULT_VARS
         check_consistency = None  # staticmethod(utils.check_consistency)
+        columns_name_tree_by_entity = datatrees.columns_name_tree_by_entity
         CURRENCY = CURRENCY
         # DATA_DIR = DATA_DIR
         # DATA_SOURCES_DIR = os.path.join(COUNTRY_DIR, 'data', 'sources')
         DECOMP_DIR = os.path.dirname(os.path.abspath(decompositions.__file__))
         DEFAULT_DECOMP_FILE = decompositions.DEFAULT_DECOMP_FILE
-        entities = [
-            'foyers_fiscaux',
-            'individus',
-            'menages',
-            ]
-        ENTITIES_INDEX = ENTITIES_INDEX
-        # entity_class_by_key_plural = entity_class_by_key_plural  # Done below to avoid "name is not defined" exception
+        entity_class_by_key_plural = dict(
+            (entity_class.key_plural, entity_class)
+            for entity_class in entities.entity_class_by_symbol.itervalues()
+            )
         # FILTERING_VARS = FILTERING_VARS
         # column_by_name = column_by_name  # Done below to avoid "name is not defined" exception
-        # columns_name_tree_by_entity = columns_name_tree_by_entity  # Done below to avoid "name is not defined" exception
-        PARAM_FILE = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
-        # preprocess_compact_legislation = preprocess_compact_legislation  # Done below to avoid "name is not defined" exception
-        # prestation_by_name = prestation_by_name  # Done below to avoid "name is not defined" exception
+        # columns_name_tree_by_entity = columns_name_tree_by_entity  # Done below to avoid "name is not defined"
+        # exception
+        legislation_xml_file_path = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
+        # preprocess_compact_legislation = preprocess_compact_legislation  # Done below to avoid "name is not defined"
+        # exception
         REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
         REV_TYP = REV_TYP
         REVENUES_CATEGORIES = REVENUES_CATEGORIES
@@ -114,14 +104,4 @@ def init_country(qt = False):
             except:
                 pass
 
-    TaxBenefitSystem.column_by_name = column_by_name
-    TaxBenefitSystem.columns_name_tree_by_entity = columns_name_tree_by_entity
-    TaxBenefitSystem.entity_class_by_key_plural = dict(
-        (entity_class.key_plural, entity_class)
-        for entity_class in entities.entity_class_by_symbol.itervalues()
-        )
-    TaxBenefitSystem.entity_class_by_symbol = entities.entity_class_by_symbol
-    TaxBenefitSystem.preprocess_compact_legislation = None  # staticmethod(preprocess_compact_legislation)
-
-    TaxBenefitSystem.prestation_by_name = prestation_by_name
     return TaxBenefitSystem
