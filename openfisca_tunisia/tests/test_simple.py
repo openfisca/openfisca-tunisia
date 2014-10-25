@@ -23,7 +23,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from openfisca_core import periods
 import openfisca_tunisia
 
 
@@ -34,7 +33,7 @@ tax_benefit_system = TaxBenefitSystem()
 def test_simple():
     year = 2011
     simulation = tax_benefit_system.new_scenario().init_single_entity(
-        period = periods.period('year', year),
+        period = year,
         parent1 = dict(agem = 40 * 12 + 6),
         ).new_simulation(debug = True)
     assert simulation.calculate('revdisp') == 0
