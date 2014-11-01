@@ -498,6 +498,7 @@ class Scenario(scenarios.AbstractScenario):
         return json_or_python_to_test_case
 
     def suggest(self):
+        period_start_year = self.period.start.year
         test_case = self.test_case
         suggestions = dict()
 
@@ -508,7 +509,7 @@ class Scenario(scenarios.AbstractScenario):
                     individu_id in foyer_fiscal['declarants']
                     for foyer_fiscal in test_case['foyers_fiscaux'].itervalues()
                     )
-                birth_year = self.date.year - 40 if is_declarant else self.date.year - 10
+                birth_year = period_start_year - 40 if is_declarant else period_start_year - 10
                 birth = datetime.date(birth_year, 1, 1)
                 individu['birth'] = birth
                 suggestions.setdefault('test_case', {}).setdefault('individus', {}).setdefault(individu_id, {})[
@@ -526,7 +527,6 @@ class Scenario(scenarios.AbstractScenario):
             self_json['period'] = str(self.period)
 
         test_case = self.test_case
-
         if test_case is not None:
             column_by_name = self.tax_benefit_system.column_by_name
             test_case_json = collections.OrderedDict()
@@ -589,8 +589,10 @@ class Scenario(scenarios.AbstractScenario):
                 test_case_json['menages'] = menages_json
 
             self_json['test_case'] = test_case_json
-
         return self_json
+
+
+# Finders
 
 
 def find_famille_and_role(test_case, individu_id):
