@@ -204,6 +204,6 @@ build_simple_formula('rev_trav', FloatCol(function = cm._rev_trav))
 #    build_simple_formula('pen', FloatCol(function = cm._pen))
 
 #    build_simple_formula('rstnet', FloatCol(function = cm._rstnet))
-build_simple_formula('rev_cap', FloatCol(function = cm._rev_cap))
+build_simple_formula('rev_cap', FloatCol(function = cm._rev_cap, entity = 'men'))
 
-build_simple_formula('impo', FloatCol(function = cm._impo))
+build_simple_formula('impo', FloatCol(function = cm._impo, entity = 'men'))
