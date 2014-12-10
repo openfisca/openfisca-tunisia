@@ -23,17 +23,65 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+from datetime import date
 import functools
 
-from openfisca_core.columns import build_column
+from openfisca_core.accessors import law
+from openfisca_core.columns import (AgeCol, BoolCol, build_column, EnumCol, FloatCol, PeriodSizeIndependentIntCol,
+    reference_input_variable)
 from openfisca_core.enumerations import Enum
-from openfisca_core.formulas import make_reference_formula_decorator
+from openfisca_core.formulas import (alternative_function, AlternativeFormulaColumn, dated_function, DatedFormulaColumn,
+    EntityToPersonColumn, make_reference_formula_decorator, PersonToEntityColumn, select_function, SelectFormulaColumn,
+    SimpleFormulaColumn)
 
-from .. import entities
+from ..entities import entity_class_by_symbol, FoyersFiscaux, Individus, Menages
 
+
+__all__ = [
+    'AgeCol',
+    'alternative_function',
+    'AlternativeFormulaColumn',
+    'build_column',
+    'BoolCol',
+    'CONJ',
+    'CREF',
+    'date',
+    'dated_function',
+    'DatedFormulaColumn',
+    'EntityToPersonColumn',
+    'Enum',
+    'EnumCol',
+    'FloatCol',
+    'FoyersFiscaux',
+    'Individus',
+    'law',
+    'Menages',
+    'PAC1',
+    'PAC2',
+    'PAC3',
+    'PeriodSizeIndependentIntCol',
+    'PersonToEntityColumn',
+    'PREF',
+    'QUIFOY',
+    'QUIMEN',
+    'reference_formula',
+    'reference_input_variable',
+    'SelectFormulaColumn',
+    'select_function',
+    'SimpleFormulaColumn',
+    'VOUS',
+    ]
 
 QUIFOY = Enum(['vous', 'conj', 'pac1', 'pac2', 'pac3', 'pac4', 'pac5', 'pac6', 'pac7', 'pac8', 'pac9'])
 QUIMEN = Enum(['pref', 'cref', 'enf1', 'enf2', 'enf3', 'enf4', 'enf5', 'enf6', 'enf7', 'enf8', 'enf9'])
+
+CONJ = QUIFOY['conj']
+CREF = QUIMEN['cref']
+PAC1 = QUIFOY['pac1']
+PAC2 = QUIFOY['pac2']
+PAC3 = QUIFOY['pac3']
+PREF = QUIMEN['pref']
+VOUS = QUIFOY['vous']
 
 
 # Functions and decorators
@@ -41,8 +89,8 @@ QUIMEN = Enum(['pref', 'cref', 'enf1', 'enf2', 'enf3', 'enf4', 'enf5', 'enf6', '
 
 build_column = functools.partial(
     build_column,
-    entity_class_by_symbol = entities.entity_class_by_symbol,
+    entity_class_by_symbol = entity_class_by_symbol,
     )
 
 
-reference_formula = make_reference_formula_decorator(entity_class_by_symbol = entities.entity_class_by_symbol)
+reference_formula = make_reference_formula_decorator(entity_class_by_symbol = entity_class_by_symbol)

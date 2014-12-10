@@ -27,7 +27,7 @@ from __future__ import division
 
 # from openfisca_core.statshelpers import mark_weighted_percentiles
 
-from .base import QUIMEN
+from .base import *
 
 
 ALL = [x[1] for x in QUIMEN]
@@ -54,24 +54,54 @@ ALL = [x[1] for x in QUIMEN]
 #            7*(isol & _3_kid) ) # Famille monoparentale trois enfants et plus
 
 
-def _revdisp_i(rev_trav, pen, rev_cap, psoc, impo):
-    '''
-    Revenu disponible
-    'ind'
-    '''
-    return rev_trav + pen + rev_cap + psoc + impo
+@reference_formula
+class revdisp_i(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Individus
+    label = u"Revenu disponible individuel"
 
-def _revdisp(self, revdisp_i):
-    '''
-    Revenu disponible - ménage
-    'men'
-    '''
-    return self.sum_by_entity(revdisp_i)
+    def function(self, rev_trav, pen, rev_cap, psoc, impo):
+        '''
+        Revenu disponible
+        'ind'
+        '''
+        return rev_trav + pen + rev_cap + psoc + impo
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
 
 
-def _rev_trav(sali):
-    '''Revenu du travail'''
-    return sali  # + beap + bic + bnc  TODO
+@reference_formula
+class revdisp(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"Revenu disponible du ménage"
+
+    def function(self, revdisp_i):
+        '''
+        Revenu disponible - ménage
+        'men'
+        '''
+        return self.sum_by_entity(revdisp_i)
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
+
+
+@reference_formula
+class rev_trav(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Individus
+    label = u"rev_trav"
+
+    def function(self, sali):
+        '''Revenu du travail'''
+        return sali  # + beap + bic + bnc  TODO
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
 
 # def _pen(rstnet, alr, alv, rto):
 #    '''Pensions'''
@@ -81,9 +111,19 @@ def _rev_trav(sali):
 #    '''Retraites nettes'''
 #    return pen
 
-def _rev_cap(rfon):
-    '''Revenus du patrimoine'''  # TODO
-    return rfon
+@reference_formula
+class rev_cap(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"rev_cap"
+
+    def function(self, rfon):
+        '''Revenus du patrimoine'''  # TODO
+        return rfon
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
 
 # def _psoc(pfam):
 #    '''Prestations sociales'''
@@ -94,9 +134,19 @@ def _rev_cap(rfon):
 #    return af
 
 
-def _impo(irpp):
-    '''Impôts directs'''
-    return irpp
+@reference_formula
+class impo(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"impo"
+
+    def function(self, irpp):
+        '''Impôts directs'''
+        return irpp
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
 
 ## def _decile(nivvie, wprm):
 ##     '''

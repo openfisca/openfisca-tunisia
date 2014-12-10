@@ -28,6 +28,7 @@ from __future__ import division
 from numpy import zeros
 from openfisca_core.taxscales import TaxScalesTree, combine_tax_scales, scale_tax_scales
 
+from .base import *
 from .data import CAT
 
 
@@ -40,97 +41,136 @@ from .data import CAT
 ## Salaires
 ############################################################################
 
-def _salbrut(sali, type_sal, _defaultP):
-    '''
-    Calcule le salaire brut à partir du salaire net
-    '''
+@reference_formula
+class salbrut(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Individus
+    label = u"Salaires bruts"
 
-    smig = _defaultP.cotsoc.gen.smig
-    cotsoc = TaxScalesTree('cotsoc', _defaultP.cotsoc)
+    def function(self, sali, type_sal, _defaultP):
+        '''
+        Calcule le salaire brut à partir du salaire net
+        '''
 
-    plaf_ss = 12*smig
+        smig = _defaultP.cotsoc.gen.smig
+        cotsoc = TaxScalesTree('cotsoc', _defaultP.cotsoc)
 
-    n = len(sali)
-    salbrut = zeros(n)
-    # TODO améliorer tout cela !!
-    for categ in CAT:
-        iscat = (type_sal == categ[1])
-        if categ[0] == 're':
-            return sali  # on retounre le sali pour les étudiants
-        else:
-            continue
+        plaf_ss = 12*smig
 
-        if 'sal' in  cotsoc[categ[0]]:
-            sal = cotsoc[categ[0]]['sal']
-            baremes = scale_tax_scales(sal, plaf_ss)
-            bar = combine_tax_scales(baremes)
-            invbar = bar.inverse()
-            temp =  iscat*(invbar.calc(sali))
-            salbrut += temp
-    return salbrut
+        n = len(sali)
+        salbrut = zeros(n)
+        # TODO améliorer tout cela !!
+        for categ in CAT:
+            iscat = (type_sal == categ[1])
+            if categ[0] == 're':
+                return sali  # on retounre le sali pour les étudiants
+            else:
+                continue
 
+            if 'sal' in  cotsoc[categ[0]]:
+                sal = cotsoc[categ[0]]['sal']
+                baremes = scale_tax_scales(sal, plaf_ss)
+                bar = combine_tax_scales(baremes)
+                invbar = bar.inverse()
+                temp =  iscat*(invbar.calc(sali))
+                salbrut += temp
+        return salbrut
 
-def _salsuperbrut(salbrut, cotpat):
-    '''
-    Salaire superbrut
-    '''
-    return salbrut - cotpat
-
-def _cotpat(salbrut, type_sal, _P):
-    '''
-    Cotisation sociales patronales
-    '''
-    # TODO traiter les différents régimes séparément ?
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
 
 
-    smig = _P.cotsoc.gen.smig
-    cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
 
-    plaf_ss = 12*smig
-    # TODO: clean all this
-    n = len(salbrut)
-    cotpat = zeros(n)
-    for categ in CAT:
-        iscat = (type_sal == categ[1])
-        if categ[0] == 're':
-            return salbrut  # on retounre le salbrut pour les étudiants
-        else:
-            continue
-        if 'pat' in  cotsoc[categ[0]]:
-            pat = cotsoc[categ[0]]['pat']
-            baremes = scale_tax_scales(pat, plaf_ss)
-            bar = combine_tax_scales(baremes)
-            temp = - (iscat*bar.calc(salbrut))
-            cotpat += temp
-    return cotpat
+@reference_formula
+class salsuperbrut(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Individus
+    label = u"Salaires super bruts"
+
+    def function(self, salbrut, cotpat):
+        '''
+        Salaire superbrut
+        '''
+        return salbrut - cotpat
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
 
 
-def _cotsal(salbrut, type_sal, _P):
-    '''
-    Cotisations sociales salariales
-    '''
-    # TODO traiter les différents régimes
+@reference_formula
+class cotpat(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Individus
+    label = u"cotpat"
 
-    smig = _P.cotsoc.gen.smig
-    cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
-    plaf_ss = 12*smig
+    def function(self, salbrut, type_sal, _P):
+        '''
+        Cotisation sociales patronales
+        '''
+        # TODO traiter les différents régimes séparément ?
 
-    n = len(salbrut)
-    cotsal = zeros(n)
 
-    for categ in CAT:
-        iscat = (type_sal == categ[1])
+        smig = _P.cotsoc.gen.smig
+        cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
 
-        if categ[0] == 're':
-            return 0 * salbrut  # TODO: doit retounrer la bonne valeur les étudiants
-        else:
-            continue
+        plaf_ss = 12*smig
+        # TODO: clean all this
+        n = len(salbrut)
+        cotpat = zeros(n)
+        for categ in CAT:
+            iscat = (type_sal == categ[1])
+            if categ[0] == 're':
+                return salbrut  # on retounre le salbrut pour les étudiants
+            else:
+                continue
+            if 'pat' in  cotsoc[categ[0]]:
+                pat = cotsoc[categ[0]]['pat']
+                baremes = scale_tax_scales(pat, plaf_ss)
+                bar = combine_tax_scales(baremes)
+                temp = - (iscat*bar.calc(salbrut))
+                cotpat += temp
+        return cotpat
 
-        if 'sal' in  cotsoc[categ[0]]:
-            pat = cotsoc[categ[0]]['sal']
-            baremes = scale_tax_scales(pat, plaf_ss)
-            bar = combine_tax_scales(baremes)
-            temp = - (iscat*bar.calc(salbrut))
-            cotsal += temp
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
 
-    return cotsal
+
+
+@reference_formula
+class cotsal(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Individus
+    label = u"cotsal"
+
+    def function(self, salbrut, type_sal, _P):
+        '''
+        Cotisations sociales salariales
+        '''
+        # TODO traiter les différents régimes
+
+        smig = _P.cotsoc.gen.smig
+        cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
+        plaf_ss = 12*smig
+
+        n = len(salbrut)
+        cotsal = zeros(n)
+
+        for categ in CAT:
+            iscat = (type_sal == categ[1])
+
+            if categ[0] == 're':
+                return 0 * salbrut  # TODO: doit retounrer la bonne valeur les étudiants
+            else:
+                continue
+
+            if 'sal' in  cotsoc[categ[0]]:
+                pat = cotsoc[categ[0]]['sal']
+                baremes = scale_tax_scales(pat, plaf_ss)
+                bar = combine_tax_scales(baremes)
+                temp = - (iscat*bar.calc(salbrut))
+                cotsal += temp
+
+        return cotsal
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')

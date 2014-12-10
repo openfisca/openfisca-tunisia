@@ -28,7 +28,7 @@ from __future__ import division
 from numpy import (round, zeros, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
     asanyarray, amin, amax, arange)
 
-from .base import QUIFOY, QUIMEN
+from .base import *
 
 
 CHEF = QUIFOY['vous']
@@ -113,90 +113,140 @@ def _etu(activite):
     '''
     return activite == 2
 
-def _smig75(sali, sal_nat, _P):
-    '''
-    Indicatrice de rémunération inférieur à 75% du smic
-    '''
-    return (sali + sal_nat) < _P.cotsoc.gen.smig
+@reference_formula
+class smig75(SimpleFormulaColumn):
+    column = BoolCol(default = False)
+    entity_class = Individus
+    label = u"Indicatrice de salaire supérieur à 75% du smig"
 
-def _sal_uniq(self, sali_holder, _P):
-    '''
-    Indicatrice de salaire unique
-    '''
-    sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
-    uniq = xor_(sali[CHEF] > 0, sali[PART] > 0)
-    return uniq
+    def function(self, sali, sal_nat, _P):
+        '''
+        Indicatrice de rémunération inférieur à 75% du smic
+        '''
+        return (sali + sal_nat) < _P.cotsoc.gen.smig
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
+
+@reference_formula
+class sal_uniq(SimpleFormulaColumn):
+    column = BoolCol(default = False)
+    entity_class = Menages
+    label = u"Indicatrice de salaire unique"
+
+    def function(self, sali_holder, _P):
+        '''
+        Indicatrice de salaire unique
+        '''
+        sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
+        uniq = xor_(sali[CHEF] > 0, sali[PART] > 0)
+        return uniq
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
 
 ############################################################################
 # Allocations familiales
 ############################################################################
 
 
-def _af_nbenf(self, age_holder, smig75_holder, activite, inv_holder, _P):
-    '''
-    Nombre d'enfants au titre des allocations familiales
-    'foy'
-    '''
-#    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
-#    Jusqu'à l'âge de 16 ans sans conditions.
-#    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération supérieure à 75 % du SMIG.
-#    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire, supérieur,
-#      technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
-#    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO: code this
-#    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie incurable et se trouvant,
-#    de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail lucratif, et pour les handicapés titulaires d'une carte d'handicapé
-#    qui ne sont pas pris en charge intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités locales.
+@reference_formula
+class af_nbenf(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"Nombre d'enfants au sens des allocations familiales"
+
+    def function(self, age_holder, smig75_holder, activite, inv_holder, _P):
+        '''
+        Nombre d'enfants au titre des allocations familiales
+        'foy'
+        '''
+    #    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
+    #    Jusqu'à l'âge de 16 ans sans conditions.
+    #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération supérieure à 75 % du SMIG.
+    #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire, supérieur,
+    #      technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
+    #    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO: code this
+    #    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie incurable et se trouvant,
+    #    de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail lucratif, et pour les handicapés titulaires d'une carte d'handicapé
+    #    qui ne sont pas pris en charge intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités locales.
 
 
-    age = self.split_by_roles(age_holder, roles = ENFS)
-    smig75 = self.split_by_roles(smig75_holder, roles = ENFS)
-    inv = self.split_by_roles(inv_holder, roles = ENFS)
+        age = self.split_by_roles(age_holder, roles = ENFS)
+        smig75 = self.split_by_roles(smig75_holder, roles = ENFS)
+        inv = self.split_by_roles(inv_holder, roles = ENFS)
 
-    ages = ages_first_kids(age, nb = 3)
-    res = zeros(ages[0].shape)
+        ages = ages_first_kids(age, nb = 3)
+        res = zeros(ages[0].shape)
 
-    for ag in ages:
-        res += (ag >= 0) * ((1 * (ag < 16) + 1 * (ag < 18) + 1 * (ag < 21)) >= 1)
-#                 (ag < 18) + # *smig75[key]*(activite[key] =='aprenti')  + # TODO apprenti
-#                 (ag < 21) # *(or_(activite[key]=='eleve', activite[key]=='etudiant'))
-#                 )  > 1
+        for ag in ages:
+            res += (ag >= 0) * ((1 * (ag < 16) + 1 * (ag < 18) + 1 * (ag < 21)) >= 1)
+    #                 (ag < 18) + # *smig75[key]*(activite[key] =='aprenti')  + # TODO apprenti
+    #                 (ag < 21) # *(or_(activite[key]=='eleve', activite[key]=='etudiant'))
+    #                 )  > 1
 
-    return res
+        return res
 
-
-def _af(self, af_nbenf, sali_holder, _P):
-    '''
-    Allocations familiales
-    'foy'
-    '''
-    # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
-    # TODO: ajouter éligibilité des parents aux allocations familiales
-
-    print 'sal'
-    print sali_holder
-    sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
-    P = _P.pfam
-    bm = min_(max_(sali[CHEF], sali[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
-    # prestations familliales  # Règle d'arrondi ?
-    af_1enf = round(bm * P.af.taux.enf1, 2)
-    af_2enf = round(bm * P.af.taux.enf2, 2)
-    af_3enf = round(bm * P.af.taux.enf3, 2)
-    af_base = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
-    return 4 * af_base  # annualisé
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
 
 
 
-def _maj_sal_uniq(sal_uniq, af_nbenf, _P):
-    '''
-    Majoration salaire unique
-    'fam'
-    '''
-    P = _P.pfam
-    af_1enf = round(P.sal_uniq.enf1, 3)
-    af_2enf = round(P.sal_uniq.enf2, 3)
-    af_3enf = round(P.sal_uniq.enf3, 3)
-    af = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
-    return 4 * af  # annualisé
+@reference_formula
+class af(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"Allocations familiales"
+
+    def function(self, af_nbenf, sali_holder, _P):
+        '''
+        Allocations familiales
+        'foy'
+        '''
+        # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
+        # TODO: ajouter éligibilité des parents aux allocations familiales
+
+        print 'sal'
+        print sali_holder
+        sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
+        P = _P.pfam
+        bm = min_(max_(sali[CHEF], sali[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
+        # prestations familliales  # Règle d'arrondi ?
+        af_1enf = round(bm * P.af.taux.enf1, 2)
+        af_2enf = round(bm * P.af.taux.enf2, 2)
+        af_3enf = round(bm * P.af.taux.enf3, 2)
+        af_base = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
+        return 4 * af_base  # annualisé
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
+
+
+
+@reference_formula
+class maj_sal_uniq(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"Majoration du salaire unique"
+
+    def function(self, sal_uniq, af_nbenf, _P):
+        '''
+        Majoration salaire unique
+        'fam'
+        '''
+        P = _P.pfam
+        af_1enf = round(P.sal_uniq.enf1, 3)
+        af_2enf = round(P.sal_uniq.enf2, 3)
+        af_3enf = round(P.sal_uniq.enf3, 3)
+        af = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
+        return 4 * af  # annualisé
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
 
 
 def _af_cong_naiss(age, _P):
@@ -216,36 +266,57 @@ def _af_cong_jeun_trav(age, _P):
     return 0
 
 
-def _contr_creche(self, sali_holder, agem_holder, _P):
-    '''
-    Contribution aux frais de crêche
-    'fam'
-    '''
-    # Une prise en charge peut être accordée à la mère exerçant une
-    # activité salariée et dont le salaire ne dépasse pas deux fois et demie
-    # le SMIG pour 48 heures de travail par semaine. Cette contribution est
-    # versée pour les enfants ouvrant droit aux prestations familiales et
-    # dont l'âge est compris entre 2 et 36 mois. Elle s'élève à 15 dinars par
-    # enfant et par mois pendant 11 mois.
+@reference_formula
+class contr_creche(SimpleFormulaColumn):
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"Contribution aux frais de crêche"
 
-    # , _option = {'agem': ENFS, 'sal': [CHEF, PART]}
+    def function(self, sali_holder, agem_holder, _P):
+        '''
+        Contribution aux frais de crêche
+        'fam'
+        '''
+        # Une prise en charge peut être accordée à la mère exerçant une
+        # activité salariée et dont le salaire ne dépasse pas deux fois et demie
+        # le SMIG pour 48 heures de travail par semaine. Cette contribution est
+        # versée pour les enfants ouvrant droit aux prestations familiales et
+        # dont l'âge est compris entre 2 et 36 mois. Elle s'élève à 15 dinars par
+        # enfant et par mois pendant 11 mois.
 
-    sali = self.split_by_roles(sali_holder, roles = [PART])
-    agem = self.split_by_roles(agem_holder, roles = ENFS)
-    smig48 = _P.cotsoc.gen.smig  # TODO: smig 48H
-    P = _P.pfam.creche
-    age_m_benj = age_en_mois_benjamin(agem)
-    elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
-    elig_sal = sali < P.plaf * smig48
-    return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
+        # , _option = {'agem': ENFS, 'sal': [CHEF, PART]}
+
+        sali = self.split_by_roles(sali_holder, roles = [PART])
+        agem = self.split_by_roles(agem_holder, roles = ENFS)
+        smig48 = _P.cotsoc.gen.smig  # TODO: smig 48H
+        P = _P.pfam.creche
+        age_m_benj = age_en_mois_benjamin(agem)
+        elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
+        elig_sal = sali < P.plaf * smig48
+        return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
 
 
-def _pfam(af, maj_sal_uniq, contr_creche):  # , _af_cong_naiss, af_cong_jeun_trav
-    '''
-    Prestations familiales
-    'fam'
-    '''
-    return af + maj_sal_uniq + contr_creche
+
+@reference_formula
+class pfam(SimpleFormulaColumn):  # , _af_cong_naiss, af_cong_jeun_trav
+    column = FloatCol(default = 0)
+    entity_class = Menages
+    label = u"Prestations familales"
+
+    def function(self, af, maj_sal_uniq, contr_creche):
+        # , _af_cong_naiss, af_cong_jeun_trav
+        '''
+        Prestations familiales
+        'fam'
+        '''
+        return af + maj_sal_uniq + contr_creche
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'month').period('year')
+
 
 ############################################################################
 # Assurances sociales   Maladie
