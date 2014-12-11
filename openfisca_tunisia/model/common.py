@@ -88,7 +88,6 @@ class revdisp(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class rev_trav(SimpleFormulaColumn):
     column = FloatCol(default = 0)

@@ -580,4 +580,3 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
 #
 
 
-

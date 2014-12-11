@@ -72,13 +72,12 @@ class salbrut(SimpleFormulaColumn):
                 baremes = scale_tax_scales(sal, plaf_ss)
                 bar = combine_tax_scales(baremes)
                 invbar = bar.inverse()
-                temp =  iscat*(invbar.calc(sali))
+                temp = iscat*(invbar.calc(sali))
                 salbrut += temp
         return salbrut
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -133,7 +132,6 @@ class cotpat(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula

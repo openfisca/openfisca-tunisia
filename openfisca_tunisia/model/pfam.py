@@ -193,7 +193,6 @@ class af_nbenf(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class af(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -224,8 +223,6 @@ class af(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
-
 @reference_formula
 class maj_sal_uniq(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -246,7 +243,6 @@ class maj_sal_uniq(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 def _af_cong_naiss(age, _P):
@@ -297,7 +293,6 @@ class contr_creche(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula

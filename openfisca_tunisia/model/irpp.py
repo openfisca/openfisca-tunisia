@@ -76,7 +76,6 @@ class marie(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class celdiv(SimpleFormulaColumn):
     column = BoolCol(default = False)
@@ -92,7 +91,6 @@ class celdiv(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -112,7 +110,6 @@ class divor(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class veuf(SimpleFormulaColumn):
     column = BoolCol(default = False)
@@ -128,7 +125,6 @@ class veuf(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -161,7 +157,6 @@ class nb_enf(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class nb_enf_sup(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -176,7 +171,6 @@ class nb_enf_sup(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -195,7 +189,6 @@ class nb_infirme(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class nb_par(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -212,7 +205,6 @@ class nb_par(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 ###############################################################################
@@ -261,7 +253,6 @@ class bic_ca_global(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class bic_res_cession(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -273,7 +264,6 @@ class bic_res_cession(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -290,7 +280,6 @@ class bic_benef_fiscal_cession(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
@@ -318,7 +307,6 @@ class bnc(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class bnc_forf_benef_fiscal(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -334,7 +322,6 @@ class bnc_forf_benef_fiscal(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 # 3. Bénéfices de l'exploitation agricole et de pêche
@@ -355,7 +342,6 @@ class beap(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 # 4. Revenus fonciers
 @reference_formula
 class rfon(SimpleFormulaColumn):
@@ -374,7 +360,6 @@ class rfon(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -399,7 +384,6 @@ class fon_forf_bati(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class fon_forf_nbat(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -420,7 +404,6 @@ class fon_forf_nbat(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
 @reference_formula
 class tspr(SimpleFormulaColumn):
@@ -437,7 +420,6 @@ class tspr(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -457,7 +439,6 @@ class sal(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -480,14 +461,13 @@ class smig(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class sal_net(SimpleFormulaColumn):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Salaires nets"
 
-    def function(self, period, sal, smig, tspr =  law.ir.tspr):
+    def function(self, period, sal, smig, tspr = law.ir.tspr):
         '''
         Revenu imposé comme des salaires net des abatements
         'foy'
@@ -500,7 +480,6 @@ class sal_net(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -521,7 +500,6 @@ class pen_net(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 # 6. Revenus de valeurs mobilières et de capitaux mobiliers
@@ -552,7 +530,6 @@ class rvcm(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 # 7. revenus de source étrangère
 @reference_formula
 class retr(SimpleFormulaColumn):
@@ -574,7 +551,6 @@ class retr(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 ###############################################################################
@@ -645,7 +621,7 @@ class deduc_fam(SimpleFormulaColumn):
     #
         enf = (nb_enf >= 1) * P.enf1 + (nb_enf >= 2) * P.enf2 + (nb_enf >= 3) * P.enf3 + (nb_enf >= 4) * P.enf4
     #    sup = P.enf_sup*nb_enf_sup
-    #    infirme =  P.infirme*nb_infirme
+    #    infirme = P.infirme*nb_infirme
     #    parent = min_(P.parent_taux*rng, P.parent_max)
 
     #    return chef + enf + sup + infirme + parent
@@ -654,7 +630,6 @@ class deduc_fam(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -672,7 +647,6 @@ class deduc_rente(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -694,7 +668,6 @@ class ass_vie(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 #     - Les remboursements des prêts universitaires en principal et en intérêts
@@ -745,7 +718,6 @@ class deduc_smig(SimpleFormulaColumn):
         return period.start.offset('first-of', 'month').period('year')
 
 
-
 @reference_formula
 class rni(SimpleFormulaColumn):
     column = FloatCol(default = 0)
@@ -763,7 +735,6 @@ class rni(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula
@@ -785,7 +756,6 @@ class ir_brut(SimpleFormulaColumn):
 
     def get_output_period(self, period):
         return period.start.offset('first-of', 'month').period('year')
-
 
 
 @reference_formula

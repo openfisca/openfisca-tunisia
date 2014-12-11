@@ -128,9 +128,6 @@ def do_graphs():
                           destination_dir = destination_dir)
 
 
-
-
-
 def test_case(year):
     simulation = ScenarioSimulation()
     simulation.set_config(year = year, reforme=False, nmen = 11, maxrev = 12000, x_axis = 'sali')
