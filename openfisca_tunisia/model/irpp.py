@@ -39,20 +39,40 @@ PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 ###############################################################################
 
 
-def _age_from_agem(agem):
-    return agem // 12
+@reference_formula
+class age(AlternativeFormulaColumn):
+    column = AgeCol(val_type = "age")
+    entity_class = Individus
+    label = u"Âge (en années)"
+
+    @alternative_function()
+    def age_from_birth(self, birth, period):
+        return (datetime64(period.date) - birth).astype('timedelta64[Y]')
+
+    @alternative_function()
+    def age_from_agem(self, agem):
+        return agem // 12
+
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'year').period('year')
 
 
-def _age_from_birth(birth, period):
-    return (datetime64(period.date) - birth).astype('timedelta64[Y]')
+@reference_formula
+class agem(AlternativeFormulaColumn):
+    column = AgeCol(val_type = "months")
+    entity_class = Individus
+    label = u"Âge (en mois)"
 
+    @alternative_function()
+    def agem_from_birth(self, birth, period):
+        return (datetime64(period.date) - birth).astype('timedelta64[M]')
 
-def _agem_from_age(age):
-    return age * 12
+    @alternative_function()
+    def agem_from_age(self, age):
+        return age * 12
 
-
-def _agem_from_birth(birth, period):
-    return (datetime64(period.date) - birth).astype('timedelta64[M]')
+    def get_output_period(self, period):
+        return period.start.offset('first-of', 'year').period('year')
 
 
 def _nb_adult(marie, celdiv, veuf):
