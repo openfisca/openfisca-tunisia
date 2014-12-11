@@ -23,7 +23,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from . import (
+from . import (  # noqa
     common,
     cotsoc,
     irpp,
