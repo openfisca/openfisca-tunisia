@@ -27,7 +27,7 @@ from __future__ import division
 
 # from openfisca_core.statshelpers import mark_weighted_percentiles
 
-from .base import *
+from .base import *  # noqa
 
 
 ALL = [x[1] for x in QUIMEN]
@@ -44,7 +44,7 @@ ALL = [x[1] for x in QUIMEN]
 #    _2_kid = af_nbenf == 2
 #    _3_kid = af_nbenf >= 3
 #
-#    return (0*(isol & _0_kid) + # Célibataire
+#    return period, (0*(isol & _0_kid) + # Célibataire
 #            1*(not_(isol) & _0_kid) + # Couple sans enfants
 #            2*(not_(isol) & _1_kid) + # Couple un enfant
 #            3*(not_(isol) & _2_kid) + # Couple deux enfants
@@ -60,15 +60,19 @@ class revdisp_i(SimpleFormulaColumn):
     entity_class = Individus
     label = u"Revenu disponible individuel"
 
-    def function(self, rev_trav, pen, rev_cap, psoc, impo):
+    def function(self, simulation, period):
         '''
         Revenu disponible
         'ind'
         '''
-        return rev_trav + pen + rev_cap + psoc + impo
+        period = period.start.offset('first-of', 'month').period('year')
+        rev_trav = simulation.calculate('rev_trav', period = period)
+        pen = simulation.calculate('pen', period = period)
+        rev_cap = simulation.calculate('rev_cap', period = period)
+        psoc = simulation.calculate('psoc', period = period)
+        impo = simulation.calculate('impo', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, rev_trav + pen + rev_cap + psoc + impo
 
 
 @reference_formula
@@ -77,15 +81,15 @@ class revdisp(SimpleFormulaColumn):
     entity_class = Menages
     label = u"Revenu disponible du ménage"
 
-    def function(self, revdisp_i):
+    def function(self, simulation, period):
         '''
         Revenu disponible - ménage
         'men'
         '''
-        return self.sum_by_entity(revdisp_i)
+        period = period.start.offset('first-of', 'month').period('year')
+        revdisp_i = simulation.calculate('revdisp_i', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, self.sum_by_entity(revdisp_i)
 
 
 @reference_formula
@@ -94,21 +98,21 @@ class rev_trav(SimpleFormulaColumn):
     entity_class = Individus
     label = u"rev_trav"
 
-    def function(self, sali):
+    def function(self, simulation, period):
         '''Revenu du travail'''
-        return sali  # + beap + bic + bnc  TODO
+        period = period.start.offset('first-of', 'month').period('year')
+        sali = simulation.calculate('sali', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, sali  # + beap + bic + bnc  TODO
 
 
 # def _pen(rstnet, alr, alv, rto):
 #    '''Pensions'''
-#    return rstnet #+ alr + alv + rto TODO
+#    return period, rstnet #+ alr + alv + rto TODO
 #
 # def _rstnet(pen):
 #    '''Retraites nettes'''
-#    return pen
+#    return period, pen
 
 @reference_formula
 class rev_cap(SimpleFormulaColumn):
@@ -116,21 +120,21 @@ class rev_cap(SimpleFormulaColumn):
     entity_class = Menages
     label = u"rev_cap"
 
-    def function(self, rfon):
+    def function(self, simulation, period):
         '''Revenus du patrimoine'''  # TODO
-        return rfon
+        period = period.start.offset('first-of', 'month').period('year')
+        rfon = simulation.calculate('rfon', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, rfon
 
 
 # def _psoc(pfam):
 #    '''Prestations sociales'''
-#    return pfam
+#    return period, pfam
 #
 # def _pfam(af,s):
 #    ''' Prestations familiales '''
-#    return af
+#    return period, af
 
 
 @reference_formula
@@ -139,12 +143,12 @@ class impo(SimpleFormulaColumn):
     entity_class = Menages
     label = u"impo"
 
-    def function(self, irpp):
+    def function(self, simulation, period):
         '''Impôts directs'''
-        return irpp
+        period = period.start.offset('first-of', 'month').period('year')
+        irpp = simulation.calculate('irpp', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, irpp
 
 
 ## def _decile(nivvie, wprm):
@@ -155,4 +159,4 @@ class impo(SimpleFormulaColumn):
 ##     labels = arange(1, 11)
 ##     method = 2
 ##     decile = mark_weighted_percentiles(nivvie, labels, wprm, method, return_quantiles = False)
-##     return decile
+##     return period, decile

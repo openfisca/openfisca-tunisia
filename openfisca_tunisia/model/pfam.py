@@ -28,7 +28,7 @@ from __future__ import division
 from numpy import (round, zeros, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
     asanyarray, amin, amax, arange)
 
-from .base import *
+from .base import *  # noqa
 
 
 CHEF = QUIFOY['vous']
@@ -92,26 +92,26 @@ def _nb_par(self, quifoy_holder):
     'fam'
     '''
     quifoy = self.split_by_roles(quifoy_holder, roles = PART)
-    return 1 + 1 * (quifoy[PART] == 1)
+    return period, 1 + 1 * (quifoy[PART] == 1)
 
 def _maries(statmarit):
     '''
     couple = 1 si couple marié sinon 0 TODO: faire un choix avec couple ?
     '''
-    return statmarit == 1
+    return period, statmarit == 1
 
 
 def _isol(nb_par):
     '''
     Parent (s'il y a lieu) isolé
     '''
-    return nb_par == 1
+    return period, nb_par == 1
 
 def _etu(activite):
     '''
     Indicatrice individuelle etudiant
     '''
-    return activite == 2
+    return period, activite == 2
 
 @reference_formula
 class smig75(SimpleFormulaColumn):
@@ -119,14 +119,16 @@ class smig75(SimpleFormulaColumn):
     entity_class = Individus
     label = u"Indicatrice de salaire supérieur à 75% du smig"
 
-    def function(self, sali, sal_nat, _P):
+    def function(self, simulation, period):
         '''
         Indicatrice de rémunération inférieur à 75% du smic
         '''
-        return (sali + sal_nat) < _P.cotsoc.gen.smig
+        period = period.start.offset('first-of', 'month').period('year')
+        sali = simulation.calculate('sali', period = period)
+        sal_nat = simulation.calculate('sal_nat', period = period)
+        _P = simulation.legislation_at(period.start)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, (sali + sal_nat) < _P.cotsoc.gen.smig
 
 
 @reference_formula
@@ -135,16 +137,17 @@ class sal_uniq(SimpleFormulaColumn):
     entity_class = Menages
     label = u"Indicatrice de salaire unique"
 
-    def function(self, sali_holder, _P):
+    def function(self, simulation, period):
         '''
         Indicatrice de salaire unique
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        sali_holder = simulation.compute('sali', period = period)
+        _P = simulation.legislation_at(period.start)
+
         sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
         uniq = xor_(sali[CHEF] > 0, sali[PART] > 0)
-        return uniq
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, uniq
 
 
 ############################################################################
@@ -158,12 +161,19 @@ class af_nbenf(SimpleFormulaColumn):
     entity_class = Menages
     label = u"Nombre d'enfants au sens des allocations familiales"
 
-    def function(self, age_holder, smig75_holder, activite, inv_holder, _P):
+    def function(self, simulation, period):
         '''
         Nombre d'enfants au titre des allocations familiales
         'foy'
         '''
-    #    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
+        period = period.start.offset('first-of', 'month').period('year')
+        age_holder = simulation.compute('age', period = period)
+        smig75_holder = simulation.compute('smig75', period = period)
+        activite = simulation.calculate('activite', period = period)
+        inv_holder = simulation.compute('inv', period = period)
+        _P = simulation.legislation_at(period.start)
+
+        #    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
     #    Jusqu'à l'âge de 16 ans sans conditions.
     #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération supérieure à 75 % du SMIG.
     #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire, supérieur,
@@ -187,10 +197,7 @@ class af_nbenf(SimpleFormulaColumn):
     #                 (ag < 21) # *(or_(activite[key]=='eleve', activite[key]=='etudiant'))
     #                 )  > 1
 
-        return res
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, res
 
 
 @reference_formula
@@ -199,11 +206,16 @@ class af(SimpleFormulaColumn):
     entity_class = Menages
     label = u"Allocations familiales"
 
-    def function(self, af_nbenf, sali_holder, _P):
+    def function(self, simulation, period):
         '''
         Allocations familiales
         'foy'
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        af_nbenf = simulation.calculate('af_nbenf', period = period)
+        sali_holder = simulation.compute('sali', period = period)
+        _P = simulation.legislation_at(period.start)
+
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
 
@@ -217,10 +229,7 @@ class af(SimpleFormulaColumn):
         af_2enf = round(bm * P.af.taux.enf2, 2)
         af_3enf = round(bm * P.af.taux.enf3, 2)
         af_base = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
-        return 4 * af_base  # annualisé
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, 4 * af_base  # annualisé
 
 
 @reference_formula
@@ -229,25 +238,27 @@ class maj_sal_uniq(SimpleFormulaColumn):
     entity_class = Menages
     label = u"Majoration du salaire unique"
 
-    def function(self, sal_uniq, af_nbenf, _P):
+    def function(self, simulation, period):
         '''
         Majoration salaire unique
         'fam'
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        sal_uniq = simulation.calculate('sal_uniq', period = period)
+        af_nbenf = simulation.calculate('af_nbenf', period = period)
+        _P = simulation.legislation_at(period.start)
+
         P = _P.pfam
         af_1enf = round(P.sal_uniq.enf1, 3)
         af_2enf = round(P.sal_uniq.enf2, 3)
         af_3enf = round(P.sal_uniq.enf3, 3)
         af = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
-        return 4 * af  # annualisé
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, 4 * af  # annualisé
 
 
 def _af_cong_naiss(age, _P):
     # _option={'age': ENFS}
-    return 0
+    return period, 0
 
 def _af_cong_jeun_trav(age, _P):
 #    Les salariés de moins de 18 ans du régime non agricole bénéficient de
@@ -259,7 +270,7 @@ def _af_cong_jeun_trav(age, _P):
 #    de Sécurité Sociale de l'avance faite en exécution de l'article 113
 #    alinéa 2 du Code du Travail.
     # , _option = {'age': ENFS}
-    return 0
+    return period, 0
 
 
 @reference_formula
@@ -268,11 +279,16 @@ class contr_creche(SimpleFormulaColumn):
     entity_class = Menages
     label = u"Contribution aux frais de crêche"
 
-    def function(self, sali_holder, agem_holder, _P):
+    def function(self, simulation, period):
         '''
         Contribution aux frais de crêche
         'fam'
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        sali_holder = simulation.compute('sali', period = period)
+        agem_holder = simulation.compute('agem', period = period)
+        _P = simulation.legislation_at(period.start)
+
         # Une prise en charge peut être accordée à la mère exerçant une
         # activité salariée et dont le salaire ne dépasse pas deux fois et demie
         # le SMIG pour 48 heures de travail par semaine. Cette contribution est
@@ -289,10 +305,7 @@ class contr_creche(SimpleFormulaColumn):
         age_m_benj = age_en_mois_benjamin(agem)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
         elig_sal = sali < P.plaf * smig48
-        return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 
 @reference_formula
@@ -301,16 +314,17 @@ class pfam(SimpleFormulaColumn):  # , _af_cong_naiss, af_cong_jeun_trav
     entity_class = Menages
     label = u"Prestations familales"
 
-    def function(self, af, maj_sal_uniq, contr_creche):
-        # , _af_cong_naiss, af_cong_jeun_trav
+    def function(self, simulation, period):
         '''
         Prestations familiales
         'fam'
         '''
-        return af + maj_sal_uniq + contr_creche
+        period = period.start.offset('first-of', 'month').period('year')
+        af = simulation.calculate('af', period = period)
+        maj_sal_uniq = simulation.calculate('maj_sal_uniq', period = period)
+        contr_creche = simulation.calculate('contr_creche', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, af + maj_sal_uniq + contr_creche
 
 
 ############################################################################
@@ -326,7 +340,7 @@ def _as_mal(age, sal, _P):
     P = 0
     mal = 0
     smig = _P.gen.smig
-    return mal * P.part * max(P.plaf_mult * smig, sal) * P.duree
+    return period, mal * P.part * max(P.plaf_mult * smig, sal) * P.duree
 
 
 def _as_maternite(age, sal, _P):
@@ -335,12 +349,12 @@ def _as_maternite(age, sal, _P):
     '''
     # P = _P.as.mat
     smig = _P.gen.smig
-    # return P.part*max(P.plaf_mult*smig,sal)*P.duree
-    return 0
+    # return period, P.part*max(P.plaf_mult*smig,sal)*P.duree
+    return period, 0
 
 def _as_deces(sal, _P):
     '''
     Assurance sociale - décès   # TODO: à compléter
     '''
     # P = _P.as.dec
-    return 0
+    return period, 0

@@ -30,17 +30,14 @@ from openfisca_core.accessors import law
 from openfisca_core.columns import (AgeCol, BoolCol, build_column, EnumCol, FloatCol, PeriodSizeIndependentIntCol,
     reference_input_variable)
 from openfisca_core.enumerations import Enum
-from openfisca_core.formulas import (alternative_function, AlternativeFormulaColumn, dated_function, DatedFormulaColumn,
-    EntityToPersonColumn, make_reference_formula_decorator, PersonToEntityColumn, select_function, SelectFormulaColumn,
-    SimpleFormulaColumn)
+from openfisca_core.formulas import (dated_function, DatedFormulaColumn, EntityToPersonColumn,
+    make_reference_formula_decorator, PersonToEntityColumn, SimpleFormulaColumn)
 
 from ..entities import entity_class_by_symbol, FoyersFiscaux, Individus, Menages
 
 
 __all__ = [
     'AgeCol',
-    'alternative_function',
-    'AlternativeFormulaColumn',
     'build_column',
     'BoolCol',
     'CONJ',
@@ -66,8 +63,6 @@ __all__ = [
     'QUIMEN',
     'reference_formula',
     'reference_input_variable',
-    'SelectFormulaColumn',
-    'select_function',
     'SimpleFormulaColumn',
     'VOUS',
     ]

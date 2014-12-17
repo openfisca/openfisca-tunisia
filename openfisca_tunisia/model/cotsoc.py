@@ -28,7 +28,7 @@ from __future__ import division
 from numpy import zeros
 from openfisca_core.taxscales import TaxScalesTree, combine_tax_scales, scale_tax_scales
 
-from .base import *
+from .base import *  # noqa
 from .data import CAT
 
 
@@ -47,10 +47,14 @@ class salbrut(SimpleFormulaColumn):
     entity_class = Individus
     label = u"Salaires bruts"
 
-    def function(self, sali, type_sal, _defaultP):
+    def function(self, simulation, period):
         '''
         Calcule le salaire brut à partir du salaire net
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        sali = simulation.calculate('sali', period = period)
+        type_sal = simulation.calculate('type_sal', period = period)
+        _defaultP = simulation.legislation_at(period.start, reference = True)
 
         smig = _defaultP.cotsoc.gen.smig
         cotsoc = TaxScalesTree('cotsoc', _defaultP.cotsoc)
@@ -63,7 +67,7 @@ class salbrut(SimpleFormulaColumn):
         for categ in CAT:
             iscat = (type_sal == categ[1])
             if categ[0] == 're':
-                return sali  # on retounre le sali pour les étudiants
+                return period, sali  # on retourne le sali pour les étudiants
             else:
                 continue
 
@@ -74,10 +78,7 @@ class salbrut(SimpleFormulaColumn):
                 invbar = bar.inverse()
                 temp = iscat*(invbar.calc(sali))
                 salbrut += temp
-        return salbrut
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, salbrut
 
 
 @reference_formula
@@ -86,14 +87,15 @@ class salsuperbrut(SimpleFormulaColumn):
     entity_class = Individus
     label = u"Salaires super bruts"
 
-    def function(self, salbrut, cotpat):
+    def function(self, simulation, period):
         '''
         Salaire superbrut
         '''
-        return salbrut - cotpat
+        period = period.start.offset('first-of', 'month').period('year')
+        salbrut = simulation.calculate('salbrut', period = period)
+        cotpat = simulation.calculate('cotpat', period = period)
 
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, salbrut - cotpat
 
 
 @reference_formula
@@ -102,10 +104,15 @@ class cotpat(SimpleFormulaColumn):
     entity_class = Individus
     label = u"cotpat"
 
-    def function(self, salbrut, type_sal, _P):
+    def function(self, simulation, period):
         '''
         Cotisation sociales patronales
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        salbrut = simulation.calculate('salbrut', period = period)
+        type_sal = simulation.calculate('type_sal', period = period)
+        _P = simulation.legislation_at(period.start)
+
         # TODO traiter les différents régimes séparément ?
 
 
@@ -119,7 +126,7 @@ class cotpat(SimpleFormulaColumn):
         for categ in CAT:
             iscat = (type_sal == categ[1])
             if categ[0] == 're':
-                return salbrut  # on retounre le salbrut pour les étudiants
+                return period, salbrut  # on retounre le salbrut pour les étudiants
             else:
                 continue
             if 'pat' in  cotsoc[categ[0]]:
@@ -128,10 +135,7 @@ class cotpat(SimpleFormulaColumn):
                 bar = combine_tax_scales(baremes)
                 temp = - (iscat*bar.calc(salbrut))
                 cotpat += temp
-        return cotpat
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, cotpat
 
 
 @reference_formula
@@ -140,10 +144,15 @@ class cotsal(SimpleFormulaColumn):
     entity_class = Individus
     label = u"cotsal"
 
-    def function(self, salbrut, type_sal, _P):
+    def function(self, simulation, period):
         '''
         Cotisations sociales salariales
         '''
+        period = period.start.offset('first-of', 'month').period('year')
+        salbrut = simulation.calculate('salbrut', period = period)
+        type_sal = simulation.calculate('type_sal', period = period)
+        _P = simulation.legislation_at(period.start)
+
         # TODO traiter les différents régimes
 
         smig = _P.cotsoc.gen.smig
@@ -157,7 +166,7 @@ class cotsal(SimpleFormulaColumn):
             iscat = (type_sal == categ[1])
 
             if categ[0] == 're':
-                return 0 * salbrut  # TODO: doit retounrer la bonne valeur les étudiants
+                return period, 0 * salbrut  # TODO: doit retounrer la bonne valeur les étudiants
             else:
                 continue
 
@@ -168,7 +177,4 @@ class cotsal(SimpleFormulaColumn):
                 temp = - (iscat*bar.calc(salbrut))
                 cotsal += temp
 
-        return cotsal
-
-    def get_output_period(self, period):
-        return period.start.offset('first-of', 'month').period('year')
+        return period, cotsal
