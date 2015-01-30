@@ -28,17 +28,12 @@ from __future__ import division
 from numpy import zeros
 from openfisca_core.taxscales import TaxScalesTree, combine_tax_scales, scale_tax_scales
 
-from .base import *  # noqa
+from .base import *  # noqa analysis:ignore
 from .data import CAT
 
 
-# class Object(object):
-#     def __init__(self):
-#         object.__init__(self)
-
-
 ############################################################################
-## Salaires
+# Salaires
 ############################################################################
 
 @reference_formula
@@ -59,7 +54,7 @@ class salbrut(SimpleFormulaColumn):
         smig = _defaultP.cotsoc.gen.smig
         cotsoc = TaxScalesTree('cotsoc', _defaultP.cotsoc)
 
-        plaf_ss = 12*smig
+        plaf_ss = 12 * smig
 
         n = len(sali)
         salbrut = zeros(n)
@@ -71,12 +66,12 @@ class salbrut(SimpleFormulaColumn):
             else:
                 continue
 
-            if 'sal' in  cotsoc[categ[0]]:
+            if 'sal' in cotsoc[categ[0]]:
                 sal = cotsoc[categ[0]]['sal']
                 baremes = scale_tax_scales(sal, plaf_ss)
                 bar = combine_tax_scales(baremes)
                 invbar = bar.inverse()
-                temp = iscat*(invbar.calc(sali))
+                temp = iscat * invbar.calc(sali)
                 salbrut += temp
         return period, salbrut
 
@@ -115,11 +110,10 @@ class cotpat(SimpleFormulaColumn):
 
         # TODO traiter les différents régimes séparément ?
 
-
         smig = _P.cotsoc.gen.smig
         cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
 
-        plaf_ss = 12*smig
+        plaf_ss = 12 * smig
         # TODO: clean all this
         n = len(salbrut)
         cotpat = zeros(n)
@@ -129,11 +123,11 @@ class cotpat(SimpleFormulaColumn):
                 return period, salbrut  # on retounre le salbrut pour les étudiants
             else:
                 continue
-            if 'pat' in  cotsoc[categ[0]]:
+            if 'pat' in cotsoc[categ[0]]:
                 pat = cotsoc[categ[0]]['pat']
                 baremes = scale_tax_scales(pat, plaf_ss)
                 bar = combine_tax_scales(baremes)
-                temp = - (iscat*bar.calc(salbrut))
+                temp = - iscat * bar.calc(salbrut)
                 cotpat += temp
         return period, cotpat
 
@@ -157,7 +151,7 @@ class cotsal(SimpleFormulaColumn):
 
         smig = _P.cotsoc.gen.smig
         cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
-        plaf_ss = 12*smig
+        plaf_ss = 12 * smig
 
         n = len(salbrut)
         cotsal = zeros(n)
@@ -170,11 +164,11 @@ class cotsal(SimpleFormulaColumn):
             else:
                 continue
 
-            if 'sal' in  cotsoc[categ[0]]:
+            if 'sal' in cotsoc[categ[0]]:
                 pat = cotsoc[categ[0]]['sal']
                 baremes = scale_tax_scales(pat, plaf_ss)
                 bar = combine_tax_scales(baremes)
-                temp = - (iscat*bar.calc(salbrut))
+                temp = - iscat * bar.calc(salbrut)
                 cotsal += temp
 
         return period, cotsal

@@ -28,7 +28,7 @@ from __future__ import division
 from numpy import (round, zeros, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
     asanyarray, amin, amax, arange)
 
-from .base import *  # noqa
+from .base import *  # noqa analysis:ignore
 
 
 CHEF = QUIFOY['vous']
@@ -48,6 +48,7 @@ def age_en_mois_benjamin(agems):
         agem_benjamin = isbenjamin * agem + not_(isbenjamin) * agem_benjamin
     return agem_benjamin
 
+
 def age_min(age, minimal_age = None):
     '''
     Returns minimal age higher than or equal to a
@@ -58,12 +59,14 @@ def age_min(age, minimal_age = None):
     ages = ages + (ages < minimal_age) * 9999
     return amin(ages, axis = 1)
 
+
 def age_max(age):
     '''
     Returns minimal age higher than or equal to a
     '''
     ages = asanyarray(age)
     return amax(ages, axis = 1)
+
 
 def ages_first_kids(age, nb = None):
     '''
@@ -86,6 +89,7 @@ def ages_first_kids(age, nb = None):
         i += 1
     return age_list
 
+
 def _nb_par(self, quifoy_holder):
     '''
     Nombre d'adultes (parents) dans la famille
@@ -93,6 +97,7 @@ def _nb_par(self, quifoy_holder):
     '''
     quifoy = self.split_by_roles(quifoy_holder, roles = PART)
     return period, 1 + 1 * (quifoy[PART] == 1)
+
 
 def _maries(statmarit):
     '''
@@ -107,11 +112,13 @@ def _isol(nb_par):
     '''
     return period, nb_par == 1
 
+
 def _etu(activite):
     '''
     Indicatrice individuelle etudiant
     '''
     return period, activite == 2
+
 
 @reference_formula
 class smig75(SimpleFormulaColumn):
@@ -183,7 +190,6 @@ class af_nbenf(SimpleFormulaColumn):
     #    de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail lucratif, et pour les handicapés titulaires d'une carte d'handicapé
     #    qui ne sont pas pris en charge intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités locales.
 
-
         age = self.split_by_roles(age_holder, roles = ENFS)
         smig75 = self.split_by_roles(smig75_holder, roles = ENFS)
         inv = self.split_by_roles(inv_holder, roles = ENFS)
@@ -218,7 +224,6 @@ class af(SimpleFormulaColumn):
 
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
-
         print 'sal'
         print sali_holder
         sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
@@ -260,15 +265,16 @@ def _af_cong_naiss(age, _P):
     # _option={'age': ENFS}
     return period, 0
 
+
 def _af_cong_jeun_trav(age, _P):
-#    Les salariés de moins de 18 ans du régime non agricole bénéficient de
-#    2 jours de congés par mois et au maximum 24 jours ouvrables,
-#    l'employeur se fera rembourser par la CNSS 12 jours de congés. Les
-#    salariés âgés de 18 à 20 ans bénéficient de 18 jours de congés
-#    ouvrables par an soit 6 jours remboursés à l'employeur par la CNSS.
-#    Le remboursement à l'employeur est effectué par la Caisse Nationale
-#    de Sécurité Sociale de l'avance faite en exécution de l'article 113
-#    alinéa 2 du Code du Travail.
+    #    Les salariés de moins de 18 ans du régime non agricole bénéficient de
+    #    2 jours de congés par mois et au maximum 24 jours ouvrables,
+    #    l'employeur se fera rembourser par la CNSS 12 jours de congés. Les
+    #    salariés âgés de 18 à 20 ans bénéficient de 18 jours de congés
+    #    ouvrables par an soit 6 jours remboursés à l'employeur par la CNSS.
+    #    Le remboursement à l'employeur est effectué par la Caisse Nationale
+    #    de Sécurité Sociale de l'avance faite en exécution de l'article 113
+    #    alinéa 2 du Code du Travail.
     # , _option = {'age': ENFS}
     return period, 0
 
@@ -351,6 +357,7 @@ def _as_maternite(age, sal, _P):
     smig = _P.gen.smig
     # return period, P.part*max(P.plaf_mult*smig,sal)*P.duree
     return period, 0
+
 
 def _as_deces(sal, _P):
     '''

@@ -27,7 +27,7 @@ from __future__ import division
 
 # from openfisca_core.statshelpers import mark_weighted_percentiles
 
-from .base import *  # noqa
+from .base import *  # noqa analysis:ignore
 
 
 ALL = [x[1] for x in QUIMEN]
