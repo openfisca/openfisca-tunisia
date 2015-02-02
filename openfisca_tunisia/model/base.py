@@ -27,8 +27,8 @@ from datetime import date
 import functools
 
 from openfisca_core.accessors import law
-from openfisca_core.columns import (AgeCol, BoolCol, build_column, EnumCol, FloatCol, PeriodSizeIndependentIntCol,
-    reference_input_variable)
+from openfisca_core.columns import (AgeCol, BoolCol, build_column, DateCol, EnumCol, FloatCol, IntCol, PeriodSizeIndependentIntCol,
+                                    reference_input_variable, StrCol)
 from openfisca_core.enumerations import Enum
 from openfisca_core.formulas import (dated_function, DatedFormulaColumn, EntityToPersonColumn,
     make_reference_formula_decorator, PersonToEntityColumn, SimpleFormulaColumn)
@@ -43,6 +43,7 @@ __all__ = [
     'CONJ',
     'CREF',
     'date',
+    'DateCol',
     'dated_function',
     'DatedFormulaColumn',
     'EntityToPersonColumn',
@@ -51,6 +52,7 @@ __all__ = [
     'FloatCol',
     'FoyersFiscaux',
     'Individus',
+    'IntCol',
     'law',
     'Menages',
     'PAC1',
@@ -64,6 +66,7 @@ __all__ = [
     'reference_formula',
     'reference_input_variable',
     'SimpleFormulaColumn',
+    'StrCol',
     'VOUS',
     ]
 

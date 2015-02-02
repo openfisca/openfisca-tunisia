@@ -27,14 +27,11 @@ import json
 import xml.etree.ElementTree
 
 from openfisca_core import conv, legislations, legislationsxml
-import openfisca_tunisia
-
-
-TaxBenefitSystem = openfisca_tunisia.init_country()
+from . import base
 
 
 def check_legislation_xml_file(year):
-    legislation_tree = xml.etree.ElementTree.parse(TaxBenefitSystem.legislation_xml_file_path)
+    legislation_tree = xml.etree.ElementTree.parse(base.TaxBenefitSystem.legislation_xml_file_path)
     legislation_xml_json = conv.check(legislationsxml.xml_legislation_to_json)(legislation_tree.getroot(),
         state = conv.default_state)
 
@@ -62,24 +59,24 @@ def check_legislation_xml_file(year):
             unicode(json.dumps(legislation_json, ensure_ascii = False, indent = 2)),
             ).encode('utf-8'))
 
-    dated_legislation_json = legislations.generate_dated_legislation_json(legislation_json, year)
-    dated_legislation_json, errors = legislations.validate_dated_legislation_json(dated_legislation_json,
+    # Create tax_benefit system only now, to be able to debug XML validation errors in above code.
+    if base.tax_benefit_system.preprocess_legislation is not None:
+        base.tax_benefit_system.preprocess_legislation(legislation_json)
+
+    legislation_json = legislations.generate_dated_legislation_json(legislation_json, year)
+    legislation_json, errors = legislations.validate_dated_legislation_json(legislation_json,
         state = conv.default_state)
     if errors is not None:
-        errors = conv.embed_error(dated_legislation_json, 'errors', errors)
+        errors = conv.embed_error(legislation_json, 'errors', errors)
         if errors is None:
-            raise ValueError(unicode(json.dumps(dated_legislation_json, ensure_ascii = False, indent = 2)).encode(
+            raise ValueError(unicode(json.dumps(legislation_json, ensure_ascii = False, indent = 2)).encode(
                 'utf-8'))
         raise ValueError(u'{0} for: {1}'.format(
             unicode(json.dumps(errors, ensure_ascii = False, indent = 2, sort_keys = True)),
-            unicode(json.dumps(dated_legislation_json, ensure_ascii = False, indent = 2)),
+            unicode(json.dumps(legislation_json, ensure_ascii = False, indent = 2)),
             ).encode('utf-8'))
 
-    compact_legislation = legislations.compact_dated_node_json(dated_legislation_json)
-    # Create tax_benefit system only now, to be able to debug XML validation errors in above code.
-    tax_benefit_system = TaxBenefitSystem()
-    if tax_benefit_system.preprocess_compact_legislation is not None:
-        tax_benefit_system.preprocess_compact_legislation(compact_legislation)
+    compact_legislation = legislations.compact_dated_node_json(legislation_json)
 
 
 def test_legislation_xml_file():
@@ -88,6 +85,6 @@ def test_legislation_xml_file():
 
 
 if __name__ == '__main__':
-    # test_legislation_xml_file()
+    test_legislation_xml_file()
     import nose
     nose.core.runmodule(argv = [__file__, '-v', 'legislations_tests:test_legislation_xml_file'])

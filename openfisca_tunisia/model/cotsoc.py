@@ -26,7 +26,7 @@
 from __future__ import division
 
 from numpy import zeros
-from openfisca_core.taxscales import TaxScalesTree, combine_tax_scales, scale_tax_scales
+from openfisca_core.taxscales import MarginalRateTaxScale
 
 from .base import *  # noqa analysis:ignore
 from .data import CAT
@@ -52,7 +52,7 @@ class salbrut(SimpleFormulaColumn):
         _defaultP = simulation.legislation_at(period.start, reference = True)
 
         smig = _defaultP.cotsoc.gen.smig
-        cotsoc = TaxScalesTree('cotsoc', _defaultP.cotsoc)
+        cotsoc = MarginalRateTaxScale('cotsoc', _defaultP.cotsoc)
 
         plaf_ss = 12 * smig
 
@@ -68,8 +68,8 @@ class salbrut(SimpleFormulaColumn):
 
             if 'sal' in cotsoc[categ[0]]:
                 sal = cotsoc[categ[0]]['sal']
-                baremes = scale_tax_scales(sal, plaf_ss)
-                bar = combine_tax_scales(baremes)
+                baremes = sal.scale_tax_scales(plaf_ss)
+                bar = combine_bracket(baremes)
                 invbar = bar.inverse()
                 temp = iscat * invbar.calc(sali)
                 salbrut += temp
@@ -111,7 +111,7 @@ class cotpat(SimpleFormulaColumn):
         # TODO traiter les différents régimes séparément ?
 
         smig = _P.cotsoc.gen.smig
-        cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
+        cotsoc = MarginalRateTaxScale('cotsoc', _P.cotsoc)
 
         plaf_ss = 12 * smig
         # TODO: clean all this
@@ -150,7 +150,7 @@ class cotsal(SimpleFormulaColumn):
         # TODO traiter les différents régimes
 
         smig = _P.cotsoc.gen.smig
-        cotsoc = TaxScalesTree('cotsoc', _P.cotsoc)
+        cotsoc = MarginalRateTaxScale('cotsoc', _P.cotsoc)
         plaf_ss = 12 * smig
 
         n = len(salbrut)

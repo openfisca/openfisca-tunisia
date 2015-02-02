@@ -27,7 +27,7 @@ from __future__ import division
 
 from numpy import datetime64, logical_or as or_, maximum as max_, minimum as min_
 
-from .base import *  # noqa
+from .base import *  # noqa analysis:ignore
 
 
 ALL = [x[1] for x in QUIFOY]
@@ -113,13 +113,9 @@ class celdiv(SimpleFormulaColumn):
 class divor(SimpleFormulaColumn):
     column = BoolCol(default = False)
     entity_class = FoyersFiscaux
-    label = u"divor"
+    label = u"divorcé"
 
     def function(self, simulation, period):
-        '''
-        Divorcé (3)
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         statmarit = simulation.calculate('statmarit', period = period)
 
@@ -133,10 +129,6 @@ class veuf(SimpleFormulaColumn):
     label = u"veuf"
 
     def function(self, simulation, period):
-        '''
-        Veuf (4)
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         statmarit = simulation.calculate('statmarit', period = period)
 
@@ -151,7 +143,7 @@ class nb_enf(SimpleFormulaColumn):
 
     def function(self, simulation, period):
         '''
-        Nombre d'enfants TODO
+        TODO: Nombre d'enfants
         '''
         period = period.start.offset('first-of', 'month').period('year')
         age_holder = simulation.compute('age', period = period)
@@ -182,13 +174,13 @@ class nb_enf_sup(SimpleFormulaColumn):
 
     def function(self, simulation, period):
         '''
-        Nombre d'enfants étudiant du supérieur non boursiers TODO
+        TODO: Nombre d'enfants étudiant du supérieur non boursiers
         '''
         period = period.start.offset('first-of', 'month').period('year')
         agem = simulation.calculate('agem', period = period)
         boursier = simulation.calculate('boursier', period = period)
 
-        return period, 0 * agem
+        return period, 0 * agem * not_(boursier)
 
 
 @reference_formula
@@ -199,13 +191,13 @@ class nb_infirme(SimpleFormulaColumn):
 
     def function(self, simulation, period):
         '''
-        Nombre d'enfants infirmes TODO
+        TODO: Nombre d'enfants infirmes
         '''
         period = period.start.offset('first-of', 'month').period('year')
         agem = simulation.calculate('agem', period = period)
         inv = simulation.calculate('inv', period = period)
 
-        return period, 0 * agem
+        return period, 0 * agem * inv
 
 
 @reference_formula
@@ -216,7 +208,7 @@ class nb_par(SimpleFormulaColumn):
 
     def function(self, simulation, period):
         '''
-        Nombre de parents TODO
+        TODO: Nombre de parents
         '''
         period = period.start.offset('first-of', 'month').period('year')
         agem_holder = simulation.compute('agem', period = period)
@@ -239,14 +231,10 @@ class bic(SimpleFormulaColumn):
     label = u"bic"
 
     def function(self, simulation, period):
-        '''
-        Bénéfices industriels et commerciaux TODO:
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         bic_reel_res = simulation.calculate('bic_reel_res', period = period)
-
-        #    return period, bic_reel + bic_simpl + bic_forf TODO:
+        # TODO:
+        #    return period, bic_reel + bic_simpl + bic_forf
         return period, bic_reel_res
 
 
@@ -434,7 +422,7 @@ class fon_forf_nbat(SimpleFormulaColumn):
         fon_forf_nbat_rec_holder = simulation.compute('fon_forf_nbat_rec', period = period)
         fon_forf_nbat_dep_holder = simulation.compute('fon_forf_nbat_dep', period = period)
         fon_forf_nbat_tax_holder = simulation.compute('fon_forf_nbat_tax', period = period)
-        _P = simulation.legislation_at(period.start)
+        # _P = simulation.legislation_at(period.start)
 
         fon_forf_nbat_rec = self.filter_role(fon_forf_nbat_rec_holder, role = VOUS)
         fon_forf_nbat_dep = self.filter_role(fon_forf_nbat_dep_holder, role = VOUS)
@@ -581,7 +569,10 @@ class rvcm(SimpleFormulaColumn):
         capm_epinv = self.filter_role(capm_epinv_holder, role = VOUS)
         capm_aut = self.filter_role(capm_aut_holder, role = VOUS)
 
-        return period, capm_banq + capm_cent + capm_caut + capm_part + capm_oblig + capm_caisse + capm_plfcc + capm_epinv + capm_aut
+        return period, (
+            capm_banq + capm_cent + capm_caut + capm_part + capm_oblig + capm_caisse +
+            capm_plfcc + capm_epinv + capm_aut
+            )
 
 
 # 7. revenus de source étrangère
@@ -608,7 +599,12 @@ class retr(SimpleFormulaColumn):
         etr_pen = self.filter_role(etr_pen_holder, role = VOUS)
         etr_trans = self.filter_role(etr_trans_holder, role = VOUS)
         etr_aut = self.filter_role(etr_aut_holder, role = VOUS)
-        return period, etr_sal * (1 - P.abat_sal) + etr_pen * (1 - P.abat_pen) + etr_trans * (1 - P.abat_pen_etr) + etr_aut
+        return period, (
+            etr_sal * (1 - P.abat_sal) +
+            etr_pen * (1 - P.abat_pen) +
+            etr_trans * (1 - P.abat_pen_etr) +
+            etr_aut
+            )
 
 
 ###############################################################################
@@ -663,15 +659,11 @@ class deduc_fam(SimpleFormulaColumn):
     label = u"Déductions pour situation et charges de famille"
 
     def function(self, simulation, period):
-        '''
-        Déductions pour situation et charges de famille
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        rng = simulation.calculate('rng', period = period)
+        # rng = simulation.calculate('rng', period = period)
         chef = simulation.calculate('chef', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
-        nb_par = simulation.calculate('nb_par', period = period)
+        # nb_par = simulation.calculate('nb_par', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.ir.deduc.fam
@@ -704,10 +696,6 @@ class deduc_rente(SimpleFormulaColumn):
     label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
 
     def function(self, simulation, period):
-        '''
-        Déductions des arrérages et rentes payées à titre obligatoire et gratuit
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         rente = simulation.calculate('rente', period = period)
 
@@ -837,13 +825,9 @@ class irpp(SimpleFormulaColumn):
     label = u"Impôt sur le revenu des personnes physiques"
 
     def function(self, simulation, period):
-        '''
-        Impot sur le revenu payé TODO:
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         ir_brut = simulation.calculate('ir_brut', period = period)
-        _P = simulation.legislation_at(period.start)
+        # _P = simulation.legislation_at(period.start)
 
         irpp = ir_brut
         return period, irpp
