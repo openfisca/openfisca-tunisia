@@ -76,8 +76,6 @@ def check_legislation_xml_file(year):
             unicode(json.dumps(legislation_json, ensure_ascii = False, indent = 2)),
             ).encode('utf-8'))
 
-    compact_legislation = legislations.compact_dated_node_json(legislation_json)
-
 
 def test_legislation_xml_file():
     for year in range(2006, 2011):
