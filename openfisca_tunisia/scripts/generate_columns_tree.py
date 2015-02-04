@@ -32,14 +32,12 @@ When tree already exists, don't change location of columns that have already bee
 
 import argparse
 import collections
-import itertools
-import json
 import logging
 import os
 import pprint
 import sys
 
-from openfisca_tunisia.model import data
+from openfisca_tunisia import entities, init_country, model
 try:
     from openfisca_tunisia.model.datatrees import columns_name_tree_by_entity
 except ImportError:
@@ -48,6 +46,8 @@ except ImportError:
 
 app_name = os.path.splitext(os.path.basename(__file__))[0]
 log = logging.getLogger(app_name)
+TaxBenefitSystem = init_country()
+tax_benefit_system = TaxBenefitSystem()
 
 
 class PrettyPrinter(pprint.PrettyPrinter):
@@ -65,8 +65,8 @@ def cleanup_tree(entity, tree):
     for child in (tree.get('children') or []):
         if isinstance(child, basestring):
             # Child is a column name.
-            column = data.column_by_name.get(child)
-            if column is not None and column.entity == entity and is_valid_column(column):
+            column = tax_benefit_system.column_by_name.get(child)
+            if column is not None and column.entity == entity and is_valid_input_column(column):
                 children.append(child)
         else:
             assert isinstance(child, dict), child
@@ -81,9 +81,9 @@ def cleanup_tree(entity, tree):
     return tree
 
 
-def is_valid_column(column):
+def is_valid_input_column(column):
     return column.name not in ('age', 'agem', 'idfam', 'idfoy', 'idmen', 'quifam', 'quifoy', 'quimen') \
-        and not column.survey_only
+        and column.formula_class is None and not column.survey_only
 
 
 def iter_placed_tree(tree):
@@ -119,8 +119,8 @@ def main():
         for column_name in iter_placed_tree(columns_name_tree)
         )
 
-    for name, column in data.column_by_name.iteritems():
-        if not is_valid_column(column):
+    for name, column in tax_benefit_system.column_by_name.iteritems():
+        if not is_valid_input_column(column):
             continue
         if name in placed_columns_name:
             continue
@@ -134,7 +134,7 @@ def main():
             entity_children.append(last_entity_child)
         last_entity_child.setdefault('children', []).append(name)
 
-    datatrees_module_path = os.path.join(os.path.dirname(data.__file__), 'datatrees.py')
+    datatrees_module_path = os.path.join(os.path.dirname(model.__file__), 'datatrees.py')
     with open(datatrees_module_path, 'w') as datatree_file:
         datatree_file.write('''\
 # -*- coding: utf-8 -*-
@@ -190,7 +190,7 @@ def write_tree(tree_file, tree, level = 1):
                 if isinstance(child, basestring):
                     tree_file.write(pretty_printer.pformat(child))
                     tree_file.write(',')
-                    column = data.column_by_name[child]
+                    column = tax_benefit_system.column_by_name[child]
                     label = column.label
                     if label is not None:
                         label = label.strip() or None
