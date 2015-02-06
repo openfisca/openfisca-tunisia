@@ -1,5 +1,5 @@
-TESTS_DIR="openfisca_tunisia/tests"
 IGNORE_OPT=
+TESTS_DIR=openfisca_tunisia/tests
 
 check-tests-syntax:
 	pyflakes $(TESTS_DIR)
