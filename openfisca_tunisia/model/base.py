@@ -28,10 +28,10 @@ import functools
 
 from openfisca_core.accessors import law
 from openfisca_core.columns import (AgeCol, BoolCol, build_column, DateCol, EnumCol, FloatCol, IntCol, PeriodSizeIndependentIntCol,
-                                    reference_input_variable, StrCol)
+    StrCol)
 from openfisca_core.enumerations import Enum
 from openfisca_core.formulas import (dated_function, DatedFormulaColumn, EntityToPersonColumn,
-    make_reference_formula_decorator, PersonToEntityColumn, SimpleFormulaColumn)
+                                     make_reference_formula_decorator, PersonToEntityColumn, reference_input_variable, SimpleFormulaColumn)
 
 from ..entities import entity_class_by_symbol, FoyersFiscaux, Individus, Menages
 

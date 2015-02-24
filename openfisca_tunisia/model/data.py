@@ -23,10 +23,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# from openfisca_core.columns import BoolCol, DateCol, EnumCol, IntCol, PeriodSizeIndependentIntCol, StrCol
-# from openfisca_core.enumerations import Enum
-
-# from .. import entities
 from .base import *  # reference_input_variable, QUIFOY, QUIMEN
 
 
