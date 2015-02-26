@@ -1,4 +1,4 @@
-IGNORE_OPT=--ignore-files='()'
+# IGNORE_OPT=--ignore-files=''
 TESTS_DIR=openfisca_tunisia/tests
 
 all: flake8 test
@@ -25,4 +25,4 @@ test-ci: check-syntax-errors
 	nosetests $(TESTS_DIR) $(IGNORE_OPT) --with-doctest
 
 test-with-coverage:
-	nosetests $(TESTS_DIR) $(IGNORE_OPT) --stop --with-coverage --cover-package=openfisca_france --cover-erase --cover-branches --cover-html
+	nosetests $(TESTS_DIR) $(IGNORE_OPT) --stop --with-coverage --cover-package=openfisca_tunisia --cover-erase --cover-branches --cover-html
