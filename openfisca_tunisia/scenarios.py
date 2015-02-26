@@ -92,156 +92,134 @@ class Scenario(scenarios.AbstractScenario):
                 conv.struct(
                     dict(
                         foyers_fiscaux = conv.pipe(
-                            conv.condition(
-                                conv.test_isinstance(list),
-                                conv.pipe(
-                                    conv.uniform_sequence(
-                                        conv.test_isinstance(dict),
-                                        drop_none_items = True,
-                                        ),
-                                    conv.function(lambda values: collections.OrderedDict(
-                                        (value.pop('id', index), value)
-                                        for index, value in enumerate(values)
-                                        )),
-                                    ),
+                            conv.make_item_to_singleton(),
+                            conv.test_isinstance(list),
+                            conv.uniform_sequence(
+                                conv.test_isinstance(dict),
+                                drop_none_items = True,
                                 ),
-                            conv.test_isinstance(dict),
-                            conv.uniform_mapping(
-                                conv.pipe(
-                                    conv.test_isinstance((basestring, int)),
-                                    conv.not_none,
-                                    ),
-                                conv.pipe(
-                                    conv.test_isinstance(dict),
-                                    conv.struct(
-                                        dict(itertools.chain(
-                                            dict(
-                                                declarants = conv.pipe(
-                                                    conv.test_isinstance(list),
-                                                    conv.uniform_sequence(
-                                                        conv.test_isinstance((basestring, int)),
-                                                        drop_none_items = True,
-                                                        ),
-                                                    conv.default([]),
+                            conv.function(scenarios.set_entities_json_id),
+                            conv.uniform_sequence(
+                                conv.struct(
+                                    dict(itertools.chain(
+                                        dict(
+                                            enfants = conv.pipe(
+                                                conv.make_item_to_singleton(),
+                                                conv.test_isinstance(list),
+                                                conv.uniform_sequence(
+                                                    conv.test_isinstance((basestring, int)),
+                                                    drop_none_items = True,
                                                     ),
-                                                personnes_a_charge = conv.pipe(
-                                                    conv.test_isinstance(list),
-                                                    conv.uniform_sequence(
-                                                        conv.test_isinstance((basestring, int)),
-                                                        drop_none_items = True,
-                                                        ),
-                                                    conv.default([]),
-                                                    ),
-                                                ).iteritems(),
-                                            (
-                                                (column.name, column.json_to_python)
-                                                for column in column_by_name.itervalues()
-                                                if column.entity == 'foy'
+                                                conv.default([]),
                                                 ),
-                                            )),
-                                        drop_none_values = True,
-                                        ),
+                                            id = conv.pipe(
+                                                conv.test_isinstance((basestring, int)),
+                                                conv.not_none,
+                                                ),
+                                            parents = conv.pipe(
+                                                conv.make_item_to_singleton(),
+                                                conv.test_isinstance(list),
+                                                conv.uniform_sequence(
+                                                    conv.test_isinstance((basestring, int)),
+                                                    drop_none_items = True,
+                                                    ),
+                                                conv.default([]),
+                                                ),
+                                            ).iteritems(),
+                                        (
+                                            (column.name, column.json_to_python)
+                                            for column in column_by_name.itervalues()
+                                            if column.entity == 'fam'
+                                            ),
+                                        )),
+                                    drop_none_values = True,
                                     ),
-                                drop_none_values = True,
+                                drop_none_items = True,
                                 ),
-                            conv.default({}),
+                            conv.default([]),
                             ),
                         individus = conv.pipe(
-                            conv.condition(
-                                conv.test_isinstance(list),
-                                conv.pipe(
-                                    conv.uniform_sequence(
-                                        conv.test_isinstance(dict),
-                                        drop_none_items = True,
-                                        ),
-                                    conv.function(lambda values: collections.OrderedDict(
-                                        (value.pop('id', index), value)
-                                        for index, value in enumerate(values)
-                                        )),
-                                    ),
+                            conv.make_item_to_singleton(),
+                            conv.test_isinstance(list),
+                            conv.uniform_sequence(
+                                conv.test_isinstance(dict),
+                                drop_none_items = True,
                                 ),
-                            conv.test_isinstance(dict),
-                            conv.uniform_mapping(
-                                conv.pipe(
-                                    conv.test_isinstance((basestring, int)),
-                                    conv.not_none,
-                                    ),
-                                conv.pipe(
-                                    conv.test_isinstance(dict),
-                                    conv.struct(
+                            conv.function(scenarios.set_entities_json_id),
+                            conv.uniform_sequence(
+                                conv.struct(
+                                    dict(itertools.chain(
                                         dict(
+                                            id = conv.pipe(
+                                                conv.test_isinstance((basestring, int)),
+                                                conv.not_none,
+                                                ),
+                                            ).iteritems(),
+                                        (
                                             (column.name, column.json_to_python)
                                             for column in column_by_name.itervalues()
                                             if column.entity == 'ind' and column.name not in (
-                                                'idfoy', 'idmen', 'quifoy', 'quimen')
+                                                'idfam', 'idfoy', 'idmen', 'quifam', 'quifoy', 'quimen')
                                             ),
-                                        drop_none_values = True,
-                                        ),
+                                        )),
+                                    drop_none_values = True,
                                     ),
-                                drop_none_values = True,
+                                drop_none_items = True,
                                 ),
                             conv.empty_to_none,
                             conv.not_none,
                             ),
                         menages = conv.pipe(
-                            conv.condition(
-                                conv.test_isinstance(list),
-                                conv.pipe(
-                                    conv.uniform_sequence(
-                                        conv.test_isinstance(dict),
-                                        drop_none_items = True,
-                                        ),
-                                    conv.function(lambda values: collections.OrderedDict(
-                                        (value.pop('id', index), value)
-                                        for index, value in enumerate(values)
-                                        )),
-                                    ),
+                            conv.make_item_to_singleton(),
+                            conv.test_isinstance(list),
+                            conv.uniform_sequence(
+                                conv.test_isinstance(dict),
+                                drop_none_items = True,
                                 ),
-                            conv.test_isinstance(dict),
-                            conv.uniform_mapping(
-                                conv.pipe(
-                                    conv.test_isinstance((basestring, int)),
-                                    conv.not_none,
-                                    ),
-                                conv.pipe(
-                                    conv.test_isinstance(dict),
-                                    conv.struct(
-                                        dict(itertools.chain(
-                                            dict(
-                                                autres = conv.pipe(
-                                                    # personnes ayant un lien autre avec la personne de référence
-                                                    conv.test_isinstance(list),
-                                                    conv.uniform_sequence(
-                                                        conv.test_isinstance((basestring, int)),
-                                                        drop_none_items = True,
-                                                        ),
-                                                    conv.default([]),
+                            conv.function(scenarios.set_entities_json_id),
+                            conv.uniform_sequence(
+                                conv.struct(
+                                    dict(itertools.chain(
+                                        dict(
+                                            autres = conv.pipe(
+                                                # personnes ayant un lien autre avec la personne de référence
+                                                conv.make_item_to_singleton(),
+                                                conv.test_isinstance(list),
+                                                conv.uniform_sequence(
+                                                    conv.test_isinstance((basestring, int)),
+                                                    drop_none_items = True,
                                                     ),
-                                                # conjoint de la personne de référence
-                                                conjoint = conv.test_isinstance((basestring, int)),
-                                                enfants = conv.pipe(
-                                                    # enfants de la personne de référence ou de son conjoint
-                                                    conv.test_isinstance(list),
-                                                    conv.uniform_sequence(
-                                                        conv.test_isinstance((basestring, int)),
-                                                        drop_none_items = True,
-                                                        ),
-                                                    conv.default([]),
-                                                    ),
-                                                personne_de_reference = conv.test_isinstance((basestring, int)),
-                                                ).iteritems(),
-                                            (
-                                                (column.name, column.json_to_python)
-                                                for column in column_by_name.itervalues()
-                                                if column.entity == 'men'
+                                                conv.default([]),
                                                 ),
-                                            )),
-                                        drop_none_values = True,
-                                        ),
+                                            # conjoint de la personne de référence
+                                            conjoint = conv.test_isinstance((basestring, int)),
+                                            enfants = conv.pipe(
+                                                # enfants de la personne de référence ou de son conjoint
+                                                conv.make_item_to_singleton(),
+                                                conv.test_isinstance(list),
+                                                conv.uniform_sequence(
+                                                    conv.test_isinstance((basestring, int)),
+                                                    drop_none_items = True,
+                                                    ),
+                                                conv.default([]),
+                                                ),
+                                            id = conv.pipe(
+                                                conv.test_isinstance((basestring, int)),
+                                                conv.not_none,
+                                                ),
+                                            personne_de_reference = conv.test_isinstance((basestring, int)),
+                                            ).iteritems(),
+                                        (
+                                            (column.name, column.json_to_python)
+                                            for column in column_by_name.itervalues()
+                                            if column.entity == 'men'
+                                            ),
+                                        )),
+                                    drop_none_values = True,
                                     ),
-                                drop_none_values = True,
+                                drop_none_items = True,
                                 ),
-                            conv.default({}),
+                            conv.default([]),
                             ),
                         ),
                     ),
@@ -250,12 +228,11 @@ class Scenario(scenarios.AbstractScenario):
                 return test_case, error
 
             # Second validation step
-            foyers_fiscaux_individus_id = list(test_case['individus'].iterkeys())
-            menages_individus_id = list(test_case['individus'].iterkeys())
+            foyers_fiscaux_individus_id = [individu['id'] for individu in test_case['individus']]
+            menages_individus_id = [individu['id'] for individu in test_case['individus']]
             test_case, error = conv.struct(
                 dict(
-                    foyers_fiscaux = conv.uniform_mapping(
-                        conv.noop,
+                    foyers_fiscaux = conv.uniform_sequence(
                         conv.struct(
                             dict(
                                 declarants = conv.uniform_sequence(conv.test_in_pop(foyers_fiscaux_individus_id)),
@@ -265,8 +242,7 @@ class Scenario(scenarios.AbstractScenario):
                             default = conv.noop,
                             ),
                         ),
-                    menages = conv.uniform_mapping(
-                        conv.noop,
+                    menages = conv.uniform_sequence(
                         conv.struct(
                             dict(
                                 autres = conv.uniform_sequence(conv.test_in_pop(menages_individus_id)),
@@ -281,6 +257,11 @@ class Scenario(scenarios.AbstractScenario):
                 default = conv.noop,
                 )(test_case, state = state)
 
+            individu_by_id = {
+                individu['id']: individu
+                for individu in test_case['individus']
+                }
+
             if repair:
                 # Affecte à un foyer fiscal chaque individu qui n'appartient à aucun d'entre eux.
                 new_foyer_fiscal = dict(
@@ -291,12 +272,11 @@ class Scenario(scenarios.AbstractScenario):
                 for individu_id in foyers_fiscaux_individus_id[:]:
 
                     # Tente d'affecter l'individu à un foyer fiscal d'après son ménage.
-                    menage_id, menage, menage_role = find_menage_and_role(test_case, individu_id)
+                    menage, menage_role = find_menage_and_role(test_case, individu_id)
                     if menage_role == u'personne_de_reference':
                         conjoint_id = menage[u'conjoint']
                         if conjoint_id is not None:
-                            foyer_fiscal_id, foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case,
-                                conjoint_id)
+                            foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, conjoint_id)
                             if other_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 1:
                                 # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est personne de
                                 # référence dans un ménage, qu'il y a un conjoint dans ce ménage et que ce
@@ -307,8 +287,7 @@ class Scenario(scenarios.AbstractScenario):
                     elif menage_role == u'conjoint':
                         personne_de_reference_id = menage[u'personne_de_reference']
                         if personne_de_reference_id is not None:
-                            foyer_fiscal_id, foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case,
-                                personne_de_reference_id)
+                            foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, personne_de_reference_id)
                             if other_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 1:
                                 # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est conjoint
                                 # dans un ménage, qu'il y a une personne de référence dans ce ménage et que
@@ -321,8 +300,7 @@ class Scenario(scenarios.AbstractScenario):
                         for other_id in (menage['personne_de_reference'], menage[u'conjoint']):
                             if other_id is None:
                                 continue
-                            foyer_fiscal_id, foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case,
-                                other_id)
+                            foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, other_id)
                             if other_role == u'declarants':
                                 # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est enfant dans
                                 # un ménage, qu'il y a une personne à charge ou un conjoint dans ce ménage et que
@@ -334,15 +312,15 @@ class Scenario(scenarios.AbstractScenario):
 
                     if individu_id in foyers_fiscaux_individus_id:
                         # L'individu n'est toujours pas affecté à un foyer fiscal.
-                        individu = test_case['individus'][individu_id]
+                        individu = individu_by_id[individu_id]
                         age = find_age(individu, period.start.date)
                         if len(new_foyer_fiscal[u'declarants']) < 2 and (age is None or age >= 18):
                             new_foyer_fiscal[u'declarants'].append(individu_id)
                         else:
                             new_foyer_fiscal[u'personnes_a_charge'].append(individu_id)
                         if new_foyer_fiscal_id is None:
-                            new_foyer_fiscal_id = unicode(uuid.uuid4())
-                            test_case[u'foyers_fiscaux'][new_foyer_fiscal_id] = new_foyer_fiscal
+                            new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = unicode(uuid.uuid4())
+                            test_case[u'foyers_fiscaux'].append(new_foyer_fiscal)
                         foyers_fiscaux_individus_id.remove(individu_id)
 
                 # Affecte à un ménage chaque individu qui n'appartient à aucun d'entre eux.
@@ -355,12 +333,11 @@ class Scenario(scenarios.AbstractScenario):
                 new_menage_id = None
                 for individu_id in menages_individus_id[:]:
                     # Tente d'affecter l'individu à un ménage d'après son foyer fiscal.
-                    foyer_fiscal_id, foyer_fiscal, foyer_fiscal_role = find_foyer_fiscal_and_role(test_case,
-                        individu_id)
+                    foyer_fiscal, foyer_fiscal_role = find_foyer_fiscal_and_role(test_case, individu_id)
                     if foyer_fiscal_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 2:
                         for declarant_id in foyer_fiscal[u'declarants']:
                             if declarant_id != individu_id:
-                                menage_id, menage, other_role = find_menage_and_role(test_case, declarant_id)
+                                menage, other_role = find_menage_and_role(test_case, declarant_id)
                                 if other_role == u'personne_de_reference' and menage[u'conjoint'] is None:
                                     # Quand l'individu n'est pas encore dans un ménage, mais qu'il est déclarant
                                     # dans un foyer fiscal, qu'il y a un autre déclarant dans ce foyer fiscal et que
@@ -380,7 +357,7 @@ class Scenario(scenarios.AbstractScenario):
                                 break
                     elif foyer_fiscal_role == u'personnes_a_charge' and foyer_fiscal[u'declarants']:
                         for declarant_id in foyer_fiscal[u'declarants']:
-                            menage_id, menage, other_role = find_menage_and_role(test_case, declarant_id)
+                            menage, other_role = find_menage_and_role(test_case, declarant_id)
                             if other_role in (u'personne_de_reference', u'conjoint'):
                                 # Quand l'individu n'est pas encore dans un ménage, mais qu'il est personne à charge
                                 # dans un foyer fiscal, qu'il y a un déclarant dans ce foyer fiscal et que ce
@@ -399,24 +376,29 @@ class Scenario(scenarios.AbstractScenario):
                         else:
                             new_menage[u'enfants'].append(individu_id)
                         if new_menage_id is None:
-                            new_menage_id = unicode(uuid.uuid4())
-                            test_case[u'menages'][new_menage_id] = new_menage
+                            new_menage[u'id'] = new_menage_id = unicode(uuid.uuid4())
+                            test_case[u'menages'].append(new_menage)
                         menages_individus_id.remove(individu_id)
 
             remaining_individus_id = set(foyers_fiscaux_individus_id).union(menages_individus_id)
             if remaining_individus_id:
+                individu_index_by_id = {
+                    individu[u'id']: individu_index
+                    for individu_index, individu in enumerate(test_case[u'individus'])
+                    }
                 if error is None:
                     error = {}
                 for individu_id in remaining_individus_id:
-                    error.setdefault('individus', {})[individu_id] = state._(u"Individual is missing from {}").format(
-                        state._(u' & ').join(
-                            word
-                            for word in [
-                                u'foyers_fiscaux' if individu_id in foyers_fiscaux_individus_id else None,
-                                u'menages' if individu_id in menages_individus_id else None,
-                                ]
-                            if word is not None
-                            ))
+                    error.setdefault('individus', {})[individu_index_by_id[individu_id]] = state._(
+                        u"Individual is missing from {}").format(
+                            state._(u' & ').join(
+                                word
+                                for word in [
+                                    u'foyers_fiscaux' if individu_id in foyers_fiscaux_individus_id else None,
+                                    u'menages' if individu_id in menages_individus_id else None,
+                                    ]
+                                if word is not None
+                                ))
             if error is not None:
                 return test_case, error
 
@@ -425,8 +407,7 @@ class Scenario(scenarios.AbstractScenario):
             test_case, error = conv.struct(
                 dict(
                     foyers_fiscaux = conv.pipe(
-                        conv.uniform_mapping(
-                            conv.noop,
+                        conv.uniform_sequence(
                             conv.struct(
                                 dict(
                                     declarants = conv.pipe(
@@ -436,15 +417,19 @@ class Scenario(scenarios.AbstractScenario):
                                             lambda declarants: len(declarants) <= 2,
                                             error = N_(u'A "foyer_fiscal" must have at most 2 "declarants"'),
                                             ),
-                                        conv.uniform_sequence(
-                                            conv.test(
-                                                lambda individu_id:
-                                                    find_age(individu_by_id[individu_id], period.start.date,
-                                                        default = 100) >= 18,
-                                                error = u"Un déclarant d'un foyer fiscal doit être agé d'au moins 18"
-                                                        u" ans",
-                                                ),
-                                            ),
+#                                        conv.uniform_sequence(conv.pipe(
+#                                            # conv.test(lambda individu_id:
+#                                            #     find_age(individu_by_id[individu_id], period.start.date,
+#                                            #         default = 100) >= 18,
+#                                            #     error = u"Un déclarant d'un foyer fiscal doit être agé d'au moins 18"
+#                                            #         u" ans",
+#                                            #     ),
+#                                            conv.test(
+#                                                lambda individu_id: individu_id in parents_id,
+#                                                error = u"Un déclarant ou un conjoint sur la déclaration d'impôt, doit"
+#                                                        u" être un parent dans sa famille",
+#                                                ),
+#                                            )),
                                         ),
                                     personnes_a_charge = conv.uniform_sequence(
                                         conv.test(
@@ -463,22 +448,20 @@ class Scenario(scenarios.AbstractScenario):
                         conv.empty_to_none,
                         conv.not_none,
                         ),
-                    individus = conv.uniform_mapping(
-                        conv.noop,
-                        conv.struct(
-                            dict(
-                                birth = conv.test(
-                                    lambda birth: period.start.date - birth >= datetime.timedelta(0),
-                                    error = u"L'individu doit être né au plus tard le jour de la simulation",
-                                    ),
-                                ),
-                            default = conv.noop,
-                            drop_none_values = 'missing',
-                            ),
-                        ),
+                    # individus = conv.uniform_sequence(
+                    #     conv.struct(
+                    #         dict(
+                    #             birth = conv.test(
+                    #                 lambda birth: period.start.date - birth >= datetime.timedelta(0),
+                    #                 error = u"L'individu doit être né au plus tard le jour de la simulation",
+                    #                 ),
+                    #             ),
+                    #         default = conv.noop,
+                    #         drop_none_values = 'missing',
+                    #         ),
+                    #     ),
                     menages = conv.pipe(
-                        conv.uniform_mapping(
-                            conv.noop,
+                        conv.uniform_sequence(
                             conv.struct(
                                 dict(
                                     personne_de_reference = conv.not_none,
@@ -502,12 +485,13 @@ class Scenario(scenarios.AbstractScenario):
         test_case = self.test_case
         suggestions = dict()
 
-        for individu_id, individu in test_case['individus'].iteritems():
+        for individu in test_case['individus']:
+            individu_id = individu['id']
             if individu.get('age') is None and individu.get('agem') is None and individu.get('birth') is None:
                 # Add missing birth date to person (a parent is 40 years old and a child is 10 years old.
                 is_declarant = any(
                     individu_id in foyer_fiscal['declarants']
-                    for foyer_fiscal in test_case['foyers_fiscaux'].itervalues()
+                    for foyer_fiscal in test_case['foyers_fiscaux']
                     )
                 birth_year = period_start_year - 40 if is_declarant else period_start_year - 10
                 birth = datetime.date(birth_year, 1, 1)
@@ -529,9 +513,10 @@ class Scenario(scenarios.AbstractScenario):
             column_by_name = self.tax_benefit_system.column_by_name
             test_case_json = collections.OrderedDict()
 
-            foyers_fiscaux_json = collections.OrderedDict()
-            for foyer_fiscal_id, foyer_fiscal in (test_case.get('foyers_fiscaux') or {}).iteritems():
+            foyers_fiscaux_json = []
+            for foyer_fiscal in (test_case.get('foyers_fiscaux') or []):
                 foyer_fiscal_json = collections.OrderedDict()
+                foyer_fiscal_json['id'] = foyer_fiscal['id']
                 declarants = foyer_fiscal.get('declarants')
                 if declarants:
                     foyer_fiscal_json['declarants'] = declarants
@@ -544,12 +529,12 @@ class Scenario(scenarios.AbstractScenario):
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
                             foyer_fiscal_json[column_name] = variable_value_json
-                foyers_fiscaux_json[foyer_fiscal_id] = foyer_fiscal_json
+                foyers_fiscaux_json.append(foyer_fiscal_json)
             if foyers_fiscaux_json:
                 test_case_json['foyers_fiscaux'] = foyers_fiscaux_json
 
-            individus_json = collections.OrderedDict()
-            for individu_id, individu in (test_case.get('individus') or {}).iteritems():
+            individus_json = []
+            for individu in (test_case.get('individus') or []):
                 individu_json = collections.OrderedDict()
                 for column_name, variable_value in individu.iteritems():
                     column = column_by_name.get(column_name)
@@ -557,13 +542,14 @@ class Scenario(scenarios.AbstractScenario):
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
                             individu_json[column_name] = variable_value_json
-                individus_json[individu_id] = individu_json
+                individus_json.append(individu_json)
             if individus_json:
                 test_case_json['individus'] = individus_json
 
-            menages_json = collections.OrderedDict()
-            for menage_id, menage in (test_case.get('menages') or {}).iteritems():
+            menages_json = []
+            for menage in (test_case.get('menages') or []):
                 menage_json = collections.OrderedDict()
+                menage_json['id'] = menage['id']
                 personne_de_reference = menage.get('personne_de_reference')
                 if personne_de_reference is not None:
                     menage_json['personne_de_reference'] = personne_de_reference
@@ -582,7 +568,7 @@ class Scenario(scenarios.AbstractScenario):
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
                             menage_json[column_name] = variable_value_json
-                menages_json[menage_id] = menage_json
+                menages_json.append(menage_json)
             if menages_json:
                 test_case_json['menages'] = menages_json
 
@@ -594,30 +580,30 @@ class Scenario(scenarios.AbstractScenario):
 
 
 def find_famille_and_role(test_case, individu_id):
-    for famille_id, famille in test_case['familles'].iteritems():
+    for famille in test_case['familles']:
         for role in (u'parents', u'enfants'):
             if individu_id in famille[role]:
-                return famille_id, famille, role
-    return None, None, None
+                return famille, role
+    return None, None
 
 
 def find_foyer_fiscal_and_role(test_case, individu_id):
-    for foyer_fiscal_id, foyer_fiscal in test_case['foyers_fiscaux'].iteritems():
+    for foyer_fiscal in test_case['foyers_fiscaux']:
         for role in (u'declarants', u'personnes_a_charge'):
             if individu_id in foyer_fiscal[role]:
-                return foyer_fiscal_id, foyer_fiscal, role
-    return None, None, None
+                return foyer_fiscal, role
+    return None, None
 
 
 def find_menage_and_role(test_case, individu_id):
-    for menage_id, menage in test_case['menages'].iteritems():
+    for menage in test_case['menages']:
         for role in (u'personne_de_reference', u'conjoint'):
             if menage[role] == individu_id:
-                return menage_id, menage, role
+                return menage, role
         for role in (u'enfants', u'autres'):
             if individu_id in menage[role]:
-                return menage_id, menage, role
-    return None, None, None
+                return menage, role
+    return None, None
 
 
 def find_age(individu, date, default = None):

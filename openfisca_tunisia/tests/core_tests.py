@@ -34,20 +34,23 @@ TaxBenefitSystem = openfisca_tunisia.init_country()
 tax_benefit_system = TaxBenefitSystem()
 
 
-def check_1_parent(year = 2013):
-    simulation = tax_benefit_system.new_scenario().init_single_entity(
-        axes = [
-            dict(
-                count = 3,
-                name = 'sali',
-                max = 100000,
-                min = 0,
-                ),
-            ],
+def check_1_parent(year = 2011):
+    scenario = tax_benefit_system.new_scenario().init_single_entity(
+#        axes = [
+#            dict(
+#                count = 3,
+#                name = 'sali',
+#                max = 100000,
+#                min = 0,
+#                ),
+#            ],
         period = year,
         parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
-        ).new_simulation(debug = True)
-    simulation.calculate('revdisp')
+        )
+    print 'coucou'
+    print scenario
+    print scenario.test_case
+    simulation = scenario.calculate('revdisp')
     sali = simulation.get_holder('sali').new_test_case_array(simulation.period)
     assert (sali == np.linspace(0, 100000, 3)).all(), sali
 
