@@ -36,7 +36,6 @@ class FoyersFiscaux(entities.AbstractEntity):
     key_singular = 'foyer_fiscal'
     label = u'Déclaration d\'impôt'
     max_cardinality_by_role_key = {'declarants': 2}
-    name_key = 'nom_foyer_fiscal'
     role_for_person_variable_name = 'quifoy'
     roles_key = ['declarants', 'personnes_a_charge']
     label_by_role_key = {
@@ -68,7 +67,6 @@ class Individus(entities.AbstractEntity):
     key_plural = 'individus'
     key_singular = 'individu'
     label = u'Personne'
-    name_key = 'nom_individu'
     symbol = 'ind'
 
 
@@ -79,7 +77,6 @@ class Menages(entities.AbstractEntity):
     key_singular = 'menage'
     label = u'Logement principal'
     max_cardinality_by_role_key = {'conjoint': 1, 'personne_de_reference': 1}
-    name_key = 'nom_menage'
     role_for_person_variable_name = 'quimen'
     roles_key = ['personne_de_reference', 'conjoint', 'enfants', 'autres']
     label_by_role_key = {

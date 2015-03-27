@@ -53,22 +53,6 @@ reference_input_variable(
     entity_class = Individus,
     )
 reference_input_variable(
-    name = FoyersFiscaux.name_key,
-    column = StrCol(is_permanent = True),
-    entity_class = FoyersFiscaux,
-    label = u"Nom",
-    )
-reference_input_variable(
-    name = Individus.name_key,
-    column = StrCol(is_permanent = True, label = u"Prénom"),
-    entity_class = Individus,
-    )
-reference_input_variable(
-    name = Menages.name_key,
-    column = StrCol(is_permanent = True, label = u"Nom"),
-    entity_class = Menages,
-    )
-reference_input_variable(
     name = 'birth',
     column = DateCol(is_permanent = True),
     entity_class = Individus,
