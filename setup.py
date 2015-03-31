@@ -43,7 +43,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.5dev',
+    version = '0.5.dev0',
 
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.fr',
