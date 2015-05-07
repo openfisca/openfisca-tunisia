@@ -43,7 +43,7 @@ X_AXES_PROPERTIES = {
         'typ_tot': {
             'sal': 'Salaire imposable',
             'salbrut': 'Salaire brut',
-            'salnet': 'Salaire net',
+            'salaire_net': 'Salaire net',
             'salsuperbrut': 'Salaire super brut',
             },
         'typ_tot_default': 'sal',
