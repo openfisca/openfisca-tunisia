@@ -36,21 +36,20 @@ tax_benefit_system = TaxBenefitSystem()
 
 def check_1_parent(year = 2011):
     scenario = tax_benefit_system.new_scenario().init_single_entity(
-#        axes = [
-#            dict(
-#                count = 3,
-#                name = 'sali',
-#                max = 100000,
-#                min = 0,
-#                ),
-#            ],
+        axes = [dict(
+            count = 3,
+            name = 'sali',
+            max = 100000,
+            min = 0,
+            )],
         period = year,
         parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
         )
     print 'coucou'
     print scenario
     print scenario.test_case
-    simulation = scenario.calculate('revdisp')
+    simulation = scenario.new_simulation()
+    revdisp = simulation.calculate('revdisp')
     sali = simulation.get_holder('sali').new_test_case_array(simulation.period)
     assert (sali == np.linspace(0, 100000, 3)).all(), sali
 

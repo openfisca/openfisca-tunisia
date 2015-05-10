@@ -103,7 +103,7 @@ class Scenario(scenarios.AbstractScenario):
                                 conv.struct(
                                     dict(itertools.chain(
                                         dict(
-                                            enfants = conv.pipe(
+                                            declarants = conv.pipe(
                                                 conv.make_item_to_singleton(),
                                                 conv.test_isinstance(list),
                                                 conv.uniform_sequence(
@@ -116,7 +116,7 @@ class Scenario(scenarios.AbstractScenario):
                                                 conv.test_isinstance((basestring, int)),
                                                 conv.not_none,
                                                 ),
-                                            parents = conv.pipe(
+                                            personnes_a_charge = conv.pipe(
                                                 conv.make_item_to_singleton(),
                                                 conv.test_isinstance(list),
                                                 conv.uniform_sequence(
@@ -306,7 +306,7 @@ class Scenario(scenarios.AbstractScenario):
                                 # un ménage, qu'il y a une personne à charge ou un conjoint dans ce ménage et que
                                 # celui-ci est déclarant dans un foyer fiscal, alors ajoute l'individu comme
                                 # personne à charge de ce foyer fiscal.
-                                foyer_fiscal[u'declarants'].append(individu_id)
+                                foyer_fiscal[u'personnes_a_charge'].append(individu_id)
                                 foyers_fiscaux_individus_id.remove(individu_id)
                                 break
 

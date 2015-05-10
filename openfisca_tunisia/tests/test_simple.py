@@ -39,24 +39,5 @@ def test_simple():
     assert simulation.calculate('revdisp') == 0
 
 
-# def test_case(year):
-#     simulation = ScenarioSimulation()
-#     simulation.set_config(year = year, reforme=False, nmen = 3, maxrev = 12*400, x_axis = 'sali')
-#     # Adding a husband/wife on the same tax sheet (foyer)
-#     simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'conj', 'part')
-
-#     simulation.scenario.addIndiv(2, datetime.date(2000,1,1), 'pac', 'enf')
-#     simulation.scenario.addIndiv(3, datetime.date(2000,1,1), 'pac', 'enf')
-
-#     simulation.set_param()
-#     df = simulation.get_results_dataframe()
-#     print df.to_string()
-
-#     # Save example to excel
-#     # destination_dir = "c:/users/utilisateur/documents/"
-#     # fname = "Example_%s.%s" %(str(yr), "xls")
-#     # df.to_excel(destination_dir = destination_dir + fname)
-
-
 if __name__ == '__main__':
     test_simple()
