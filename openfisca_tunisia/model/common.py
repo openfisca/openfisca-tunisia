@@ -54,8 +54,7 @@ ALL = [x[1] for x in QUIMEN]
 #            7*(isol & _3_kid) ) # Famille monoparentale trois enfants et plus
 
 
-@reference_formula
-class revdisp_i(SimpleFormulaColumn):
+class revdisp_i(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Revenu disponible individuel"
@@ -75,8 +74,7 @@ class revdisp_i(SimpleFormulaColumn):
         return period, rev_trav + pen + rev_cap + psoc + impo
 
 
-@reference_formula
-class revdisp(SimpleFormulaColumn):
+class revdisp(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"Revenu disponible du ménage"
@@ -92,8 +90,7 @@ class revdisp(SimpleFormulaColumn):
         return period, self.sum_by_entity(revdisp_i)
 
 
-@reference_formula
-class rev_trav(SimpleFormulaColumn):
+class rev_trav(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"rev_trav"
@@ -114,8 +111,8 @@ class rev_trav(SimpleFormulaColumn):
 #    '''Retraites nettes'''
 #    return period, pen
 
-@reference_formula
-class rev_cap(SimpleFormulaColumn):
+
+class rev_cap(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"rev_cap"
@@ -137,8 +134,7 @@ class rev_cap(SimpleFormulaColumn):
 #    return period, af
 
 
-@reference_formula
-class impo(SimpleFormulaColumn):
+class impo(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"impo"

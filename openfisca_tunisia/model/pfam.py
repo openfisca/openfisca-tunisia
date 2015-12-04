@@ -120,8 +120,7 @@ def _etu(activite):
     return period, activite == 2
 
 
-@reference_formula
-class smig75(SimpleFormulaColumn):
+class smig75(Variable):
     column = BoolCol(default = False)
     entity_class = Individus
     label = u"Indicatrice de salaire supérieur à 75% du smig"
@@ -138,8 +137,7 @@ class smig75(SimpleFormulaColumn):
         return period, (sali + sal_nat) < _P.cotsoc.gen.smig
 
 
-@reference_formula
-class sal_uniq(SimpleFormulaColumn):
+class sal_uniq(Variable):
     column = BoolCol(default = False)
     entity_class = Menages
     label = u"Indicatrice de salaire unique"
@@ -162,8 +160,7 @@ class sal_uniq(SimpleFormulaColumn):
 ############################################################################
 
 
-@reference_formula
-class af_nbenf(SimpleFormulaColumn):
+class af_nbenf(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"Nombre d'enfants au sens des allocations familiales"
@@ -206,8 +203,7 @@ class af_nbenf(SimpleFormulaColumn):
         return period, res
 
 
-@reference_formula
-class af(SimpleFormulaColumn):
+class af(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"Allocations familiales"
@@ -237,8 +233,7 @@ class af(SimpleFormulaColumn):
         return period, 4 * af_base  # annualisé
 
 
-@reference_formula
-class maj_sal_uniq(SimpleFormulaColumn):
+class maj_sal_uniq(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"Majoration du salaire unique"
@@ -279,8 +274,7 @@ def _af_cong_jeun_trav(age, _P):
     return period, 0
 
 
-@reference_formula
-class contr_creche(SimpleFormulaColumn):
+class contr_creche(Variable):
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"Contribution aux frais de crêche"
@@ -314,8 +308,7 @@ class contr_creche(SimpleFormulaColumn):
         return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 
-@reference_formula
-class pfam(SimpleFormulaColumn):  # , _af_cong_naiss, af_cong_jeun_trav
+class pfam(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
     column = FloatCol(default = 0)
     entity_class = Menages
     label = u"Prestations familales"

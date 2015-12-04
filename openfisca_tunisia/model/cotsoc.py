@@ -36,8 +36,7 @@ from .data import CAT
 # Salaires
 ############################################################################
 
-@reference_formula
-class salbrut(SimpleFormulaColumn):
+class salbrut(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Salaires bruts"
@@ -76,8 +75,7 @@ class salbrut(SimpleFormulaColumn):
         return period, salbrut
 
 
-@reference_formula
-class salsuperbrut(SimpleFormulaColumn):
+class salsuperbrut(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Salaires super bruts"
@@ -93,8 +91,7 @@ class salsuperbrut(SimpleFormulaColumn):
         return period, salbrut - cotpat
 
 
-@reference_formula
-class cotpat(SimpleFormulaColumn):
+class cotpat(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"cotpat"
@@ -132,8 +129,7 @@ class cotpat(SimpleFormulaColumn):
         return period, cotpat
 
 
-@reference_formula
-class cotsal(SimpleFormulaColumn):
+class cotsal(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"cotsal"

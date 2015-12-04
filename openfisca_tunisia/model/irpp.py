@@ -39,8 +39,7 @@ PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 ###############################################################################
 
 
-@reference_formula
-class age(SimpleFormulaColumn):
+class age(Variable):
     column = AgeCol(val_type = "age")
     entity_class = Individus
     label = u"Âge (en années)"
@@ -55,8 +54,7 @@ class age(SimpleFormulaColumn):
         return period, (datetime64(period.date) - birth).astype('timedelta64[Y]')
 
 
-@reference_formula
-class agem(SimpleFormulaColumn):
+class agem(Variable):
     column = AgeCol(val_type = "months")
     entity_class = Individus
     label = u"Âge (en mois)"
@@ -75,8 +73,7 @@ def _nb_adult(marie, celdiv, veuf):
     return period, 2 * marie + 1 * (celdiv | veuf)
 
 
-@reference_formula
-class marie(SimpleFormulaColumn):
+class marie(Variable):
     column = BoolCol(default = False)
     entity_class = FoyersFiscaux
     label = u"marie"
@@ -92,8 +89,7 @@ class marie(SimpleFormulaColumn):
         return period, (statmarit == 1)
 
 
-@reference_formula
-class celdiv(SimpleFormulaColumn):
+class celdiv(Variable):
     column = BoolCol(default = False)
     entity_class = FoyersFiscaux
     label = u"celdiv"
@@ -109,8 +105,7 @@ class celdiv(SimpleFormulaColumn):
         return period, (statmarit == 2)
 
 
-@reference_formula
-class divor(SimpleFormulaColumn):
+class divor(Variable):
     column = BoolCol(default = False)
     entity_class = FoyersFiscaux
     label = u"divorcé"
@@ -122,8 +117,7 @@ class divor(SimpleFormulaColumn):
         return period, (statmarit == 3)
 
 
-@reference_formula
-class veuf(SimpleFormulaColumn):
+class veuf(Variable):
     column = BoolCol(default = False)
     entity_class = FoyersFiscaux
     label = u"veuf"
@@ -135,8 +129,7 @@ class veuf(SimpleFormulaColumn):
         return period, statmarit == 4
 
 
-@reference_formula
-class nb_enf(SimpleFormulaColumn):
+class nb_enf(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"nb_enf"
@@ -166,8 +159,7 @@ class nb_enf(SimpleFormulaColumn):
         return period, res
 
 
-@reference_formula
-class nb_enf_sup(SimpleFormulaColumn):
+class nb_enf_sup(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"nb_enf_sup"
@@ -183,8 +175,7 @@ class nb_enf_sup(SimpleFormulaColumn):
         return period, 0 * agem * not_(boursier)
 
 
-@reference_formula
-class nb_infirme(SimpleFormulaColumn):
+class nb_infirme(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"nb_infirme"
@@ -200,8 +191,7 @@ class nb_infirme(SimpleFormulaColumn):
         return period, 0 * agem * inv
 
 
-@reference_formula
-class nb_par(SimpleFormulaColumn):
+class nb_par(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"nb_par"
@@ -224,8 +214,7 @@ class nb_par(SimpleFormulaColumn):
 
 
 # 1. Bénéfices industriels et commerciaux
-@reference_formula
-class bic(SimpleFormulaColumn):
+class bic(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"bic"
@@ -243,8 +232,7 @@ class bic(SimpleFormulaColumn):
 # régime forfaitaire
 
 
-@reference_formula
-class bic_ca_global(SimpleFormulaColumn):
+class bic_ca_global(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Chiffre d’affaires global (BIC, cession de fond de commerce"
@@ -261,8 +249,7 @@ class bic_ca_global(SimpleFormulaColumn):
         return period, bic_ca_revente + bic_ca_autre
 
 
-@reference_formula
-class bic_res_cession(SimpleFormulaColumn):
+class bic_res_cession(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Résultat (BIC, cession de fond de commerce)"
@@ -275,8 +262,7 @@ class bic_res_cession(SimpleFormulaColumn):
         return period, max_(bic_ca_global - bic_depenses, 0)
 
 
-@reference_formula
-class bic_benef_fiscal_cession(SimpleFormulaColumn):
+class bic_benef_fiscal_cession(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Bénéfice fiscal (BIC, cession de fond de commerce)"
@@ -300,8 +286,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 
 
 # 2. Bénéfices des professions non commerciales
-@reference_formula
-class bnc(SimpleFormulaColumn):
+class bnc(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"bnc"
@@ -319,8 +304,7 @@ class bnc(SimpleFormulaColumn):
         return period, bnc_reel_res_fiscal + bnc_forf_benef_fiscal + bnc_part_benef_sp
 
 
-@reference_formula
-class bnc_forf_benef_fiscal(SimpleFormulaColumn):
+class bnc_forf_benef_fiscal(Variable):
     column = FloatCol(default = 0)
     entity_class = Individus
     label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
@@ -338,8 +322,7 @@ class bnc_forf_benef_fiscal(SimpleFormulaColumn):
 
 
 # 3. Bénéfices de l'exploitation agricole et de pêche
-@reference_formula
-class beap(SimpleFormulaColumn):
+class beap(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"beap"
@@ -359,8 +342,7 @@ class beap(SimpleFormulaColumn):
 
 
 # 4. Revenus fonciers
-@reference_formula
-class rfon(SimpleFormulaColumn):
+class rfon(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"rfon"
@@ -381,8 +363,7 @@ class rfon(SimpleFormulaColumn):
         return period, fon_reel_fisc + fon_forf_bati + fon_forf_nbat + fon_sp
 
 
-@reference_formula
-class fon_forf_bati(SimpleFormulaColumn):
+class fon_forf_bati(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"fon_forf_bati"
@@ -407,8 +388,7 @@ class fon_forf_bati(SimpleFormulaColumn):
         return period, max_(0, fon_forf_bati_rec * (1 - P) + fon_forf_bati_rel - fon_forf_bati_fra - fon_forf_bati_tax)
 
 
-@reference_formula
-class fon_forf_nbat(SimpleFormulaColumn):
+class fon_forf_nbat(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"fon_forf_nbat"
@@ -431,8 +411,8 @@ class fon_forf_nbat(SimpleFormulaColumn):
 
 
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
-@reference_formula
-class tspr(SimpleFormulaColumn):
+
+class tspr(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"tspr"
@@ -449,8 +429,7 @@ class tspr(SimpleFormulaColumn):
         return period, sal_net + pen_net
 
 
-@reference_formula
-class sal(SimpleFormulaColumn):
+class sal(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Salaires y compris salaires en nature"
@@ -469,8 +448,7 @@ class sal(SimpleFormulaColumn):
         return period, (sali + sal_nat)
 
 
-@reference_formula
-class smig(SimpleFormulaColumn):
+class smig(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
@@ -491,8 +469,7 @@ class smig(SimpleFormulaColumn):
         return period, smig
 
 
-@reference_formula
-class sal_net(SimpleFormulaColumn):
+class sal_net(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Salaires nets"
@@ -514,8 +491,7 @@ class sal_net(SimpleFormulaColumn):
         return period, res
 
 
-@reference_formula
-class pen_net(SimpleFormulaColumn):
+class pen_net(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"pen_net"
@@ -537,8 +513,8 @@ class pen_net(SimpleFormulaColumn):
 
 
 # 6. Revenus de valeurs mobilières et de capitaux mobiliers
-@reference_formula
-class rvcm(SimpleFormulaColumn):
+
+class rvcm(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"rvcm"
@@ -576,8 +552,8 @@ class rvcm(SimpleFormulaColumn):
 
 
 # 7. revenus de source étrangère
-@reference_formula
-class retr(SimpleFormulaColumn):
+
+class retr(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"retr"
@@ -612,8 +588,7 @@ class retr(SimpleFormulaColumn):
 ###############################################################################
 
 
-@reference_formula
-class rng(SimpleFormulaColumn):
+class rng(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Revenu net global"
@@ -652,8 +627,7 @@ def _deduc_int(capm_banq, capm_cent, capm_oblig, _P):
         )
 
 
-@reference_formula
-class deduc_fam(SimpleFormulaColumn):
+class deduc_fam(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Déductions pour situation et charges de famille"
@@ -689,8 +663,7 @@ class deduc_fam(SimpleFormulaColumn):
         return period, res
 
 
-@reference_formula
-class deduc_rente(SimpleFormulaColumn):
+class deduc_rente(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
@@ -702,8 +675,7 @@ class deduc_rente(SimpleFormulaColumn):
         return period, rente  # TODO:
 
 
-@reference_formula
-class ass_vie(SimpleFormulaColumn):
+class ass_vie(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Primes afférentes aux contrats d'assurance-vie"
@@ -757,8 +729,7 @@ class ass_vie(SimpleFormulaColumn):
 #    pour une période minimale de trois ans.
 
 
-@reference_formula
-class deduc_smig(SimpleFormulaColumn):
+class deduc_smig(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
@@ -774,8 +745,7 @@ class deduc_smig(SimpleFormulaColumn):
         return period, 0 * chef  # TODO: voir avec tspr
 
 
-@reference_formula
-class rni(SimpleFormulaColumn):
+class rni(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Revenu net imposable"
@@ -796,8 +766,7 @@ class rni(SimpleFormulaColumn):
         return period, rng - (deduc_fam + rente + ass_vie)
 
 
-@reference_formula
-class ir_brut(SimpleFormulaColumn):
+class ir_brut(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Impôt avant non-imposabilité"
@@ -818,8 +787,7 @@ class ir_brut(SimpleFormulaColumn):
         return period, ir_brut
 
 
-@reference_formula
-class irpp(SimpleFormulaColumn):
+class irpp(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"Impôt sur le revenu des personnes physiques"
