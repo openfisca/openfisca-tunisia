@@ -26,7 +26,6 @@
 from datetime import date
 import functools
 
-from openfisca_core.accessors import law
 from openfisca_core.columns import (AgeCol, BoolCol, build_column, DateCol, EnumCol, FloatCol, IntCol, PeriodSizeIndependentIntCol,
     StrCol)
 from openfisca_core.enumerations import Enum
@@ -53,7 +52,6 @@ __all__ = [
     'FoyersFiscaux',
     'Individus',
     'IntCol',
-    'law',
     'Menages',
     'PAC1',
     'PAC2',
