@@ -26,11 +26,11 @@
 from datetime import date
 import functools
 
-from openfisca_core.columns import (AgeCol, BoolCol, build_column, DateCol, EnumCol, FloatCol, IntCol, PeriodSizeIndependentIntCol,
-    StrCol)
+from openfisca_core.columns import (AgeCol, BoolCol, build_column, DateCol, EnumCol, FloatCol, IntCol,
+    PeriodSizeIndependentIntCol, StrCol)
 from openfisca_core.enumerations import Enum
-from openfisca_core.formulas import (dated_function, DatedVariable, EntityToPersonColumn,
-                                     PersonToEntityColumn, reference_input_variable, Variable)
+from openfisca_core.formulas import (dated_function, DatedVariable, EntityToPersonColumn, PersonToEntityColumn,
+    Variable)
 
 from ..entities import entity_class_by_symbol, FoyersFiscaux, Individus, Menages
 
@@ -61,9 +61,8 @@ __all__ = [
     'PREF',
     'QUIFOY',
     'QUIMEN',
-    'reference_input_variable',
-    'Variable',
     'StrCol',
+    'Variable',
     'VOUS',
     ]
 
