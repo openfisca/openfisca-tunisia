@@ -53,14 +53,14 @@ X_AXES_PROPERTIES = {
 
 def init_country(qt = False):
     """Create a country-specific TaxBenefitSystem."""
-    from openfisca_core.taxbenefitsystems import LegacyTaxBenefitSystem
+    from openfisca_core.taxbenefitsystems import XmlBasedTaxBenefitSystem
 
     from . import decompositions, entities, scenarios
     from .model import datatrees
     from .model import data  # Load input variables into entities. # noqa
     from .model import model  # Load output variables into entities. # noqa
 
-    class TaxBenefitSystem(LegacyTaxBenefitSystem):
+    class TaxBenefitSystem(XmlBasedTaxBenefitSystem):
         """Tunisian tax benefit system"""
         # AGGREGATES_DEFAULT_VARS = AGGREGATES_DEFAULT_VARS
         check_consistency = None  # staticmethod(utils.check_consistency)
