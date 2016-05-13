@@ -26,7 +26,7 @@
 from datetime import date
 import functools
 
-from openfisca_core.columns import (AgeCol, BoolCol, build_column, DateCol, EnumCol, FloatCol, IntCol,
+from openfisca_core.columns import (AgeCol, BoolCol, DateCol, EnumCol, FloatCol, IntCol,
     PeriodSizeIndependentIntCol, StrCol)
 from openfisca_core.enumerations import Enum
 from openfisca_core.formulas import (dated_function, DatedVariable, EntityToPersonColumn, PersonToEntityColumn,
@@ -37,7 +37,6 @@ from ..entities import entity_class_by_symbol, FoyersFiscaux, Individus, Menages
 
 __all__ = [
     'AgeCol',
-    'build_column',
     'BoolCol',
     'CONJ',
     'CREF',
@@ -76,12 +75,3 @@ PAC2 = QUIFOY['pac2']
 PAC3 = QUIFOY['pac3']
 PREF = QUIMEN['pref']
 VOUS = QUIFOY['vous']
-
-
-# Functions and decorators
-
-
-build_column = functools.partial(
-    build_column,
-    entity_class_by_symbol = entity_class_by_symbol,
-    )
