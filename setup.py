@@ -66,7 +66,7 @@ setup(
     install_requires = [
         'Babel >= 0.9.4',
         'numpy',
-        'OpenFisca-Core >= 0.5dev',
+        'OpenFisca-Core ~= 0.5dev',
         'scipy >= 0.12',
         ],
     message_extractors = {'openfisca_france': [
