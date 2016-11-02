@@ -4,7 +4,7 @@
 import datetime
 
 
-from openfisca_tunisia.model.base import tax_benefit_system
+from openfisca_tunisia.tests.base import tax_benefit_system
 
 
 def test_age_from_agem():
