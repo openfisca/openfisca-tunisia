@@ -2,7 +2,6 @@
 
 
 import datetime
-
 import numpy as np
 
 import openfisca_tunisia
@@ -23,9 +22,6 @@ def check_1_parent(year = 2011):
         period = year,
         parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
         )
-    print 'coucou'
-    print scenario
-    print scenario.test_case
     simulation = scenario.new_simulation()
     revdisp = simulation.calculate('revdisp')
     sali = simulation.get_holder('sali').new_test_case_array(simulation.period)
