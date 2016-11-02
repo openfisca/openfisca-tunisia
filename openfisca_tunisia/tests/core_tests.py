@@ -4,11 +4,7 @@
 import datetime
 import numpy as np
 
-import openfisca_tunisia
-
-
-TaxBenefitSystem = openfisca_tunisia.init_country()
-tax_benefit_system = TaxBenefitSystem()
+from openfisca_tunisia.tests.base import tax_benefit_system
 
 
 def check_1_parent(year = 2011):
