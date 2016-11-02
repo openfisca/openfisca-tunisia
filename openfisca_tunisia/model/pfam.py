@@ -156,14 +156,14 @@ class af_nbenf(Variable):
         _P = simulation.legislation_at(period.start)
 
         #    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
-    #    Jusqu'à l'âge de 16 ans sans conditions.
-    #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération supérieure à 75 % du SMIG.
-    #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire, supérieur,
-    #      technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
-    #    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO: code this
-    #    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie incurable et se trouvant,
-    #    de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail lucratif, et pour les handicapés titulaires d'une carte d'handicapé
-    #    qui ne sont pas pris en charge intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités locales.
+        #    Jusqu'à l'âge de 16 ans sans conditions.
+        #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération supérieure à 75 % du SMIG.
+        #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire, supérieur,
+        #      technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
+        #    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO: code this
+        #    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie incurable et se trouvant,
+        #    de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail lucratif, et pour les handicapés titulaires d'une carte d'handicapé
+        #    qui ne sont pas pris en charge intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités locales.
 
         age = self.split_by_roles(age_holder, roles = ENFS)
         smig75 = self.split_by_roles(smig75_holder, roles = ENFS)
@@ -198,8 +198,8 @@ class af(Variable):
 
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
-        print 'sal'
-        print sali_holder
+        print('sal')
+        print('sali_holder')
         sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
         P = _P.pfam
         bm = min_(max_(sali[CHEF], sali[PART]) / 4, P.af.plaf_trim)  # base trimestrielle

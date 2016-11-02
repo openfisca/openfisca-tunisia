@@ -2,7 +2,6 @@
 
 
 from datetime import date
-import functools
 
 from openfisca_core.columns import (AgeCol, BoolCol, DateCol, EnumCol, FloatCol, IntCol,
     PeriodSizeIndependentIntCol, StrCol)
