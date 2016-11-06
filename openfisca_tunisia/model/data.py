@@ -411,7 +411,7 @@ class fon_sp(Variable):
 # Salaires et pensions
 
 
-class sali(Variable):
+class salaire_imposable(Variable):
     column = IntCol
     label = u"Salaires imposables"
     entity_class = Individus

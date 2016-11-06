@@ -44,9 +44,9 @@ class revenus_du_travail(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        sali = simulation.calculate('sali', period = period)
+        salaire_imposable = simulation.calculate('salaire_imposable', period = period)
 
-        return period, sali  # + beap + bic + bnc  TODO
+        return period, salaire_imposable  # + beap + bic + bnc  TODO
 
 
 class revenus_du_capital(Variable):

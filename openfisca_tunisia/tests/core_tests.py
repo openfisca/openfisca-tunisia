@@ -11,7 +11,7 @@ def check_1_parent(year = 2011):
     scenario = tax_benefit_system.new_scenario().init_single_entity(
         axes = [dict(
             count = 3,
-            name = 'sali',
+            name = 'salaire_imposable',
             max = 100000,
             min = 0,
             )],
@@ -20,8 +20,8 @@ def check_1_parent(year = 2011):
         )
     simulation = scenario.new_simulation()
     revenu_disponible = simulation.calculate('revenu_disponible')
-    sali = simulation.get_holder('sali').new_test_case_array(simulation.period)
-    assert (sali == np.linspace(0, 100000, 3)).all(), sali
+    salaire_imposable = simulation.get_holder('salaire_imposable').new_test_case_array(simulation.period)
+    assert (salaire_imposable == np.linspace(0, 100000, 3)).all(), salaire_imposable
 
 
 def test_1_parent():

@@ -404,12 +404,12 @@ class sal(Variable):
         'foy'
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        sali_holder = simulation.compute('sali', period = period)
+        salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         sal_nat_holder = simulation.compute('sal_nat', period = period)
 
-        sali = self.sum_by_entity(sali_holder, roles = [VOUS, CONJ])
+        salaire_imposable = self.sum_by_entity(salaire_imposable_holder, roles = [VOUS, CONJ])
         sal_nat = self.sum_by_entity(sal_nat_holder, roles = [VOUS, CONJ])
-        return period, (sali + sal_nat)
+        return period, (salaire_imposable + sal_nat)
 
 
 class smig(Variable):

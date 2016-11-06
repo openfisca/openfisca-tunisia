@@ -34,7 +34,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                 ('children', [
                     'birth',  # Année de naissance
                     'statut_marital',
-                    'sali',
+                    'salaire_imposable',
                     ]),
                 ]),
             collections.OrderedDict([

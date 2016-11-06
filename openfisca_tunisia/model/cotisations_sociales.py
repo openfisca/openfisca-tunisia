@@ -24,7 +24,7 @@ class salaire_brut(Variable):
         Calcule le salaire brut à partir du salaire net
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        sali = simulation.calculate('sali', period = period)
+        salaire_imposable = simulation.calculate('salaire_imposable', period = period)
         type_sal = simulation.calculate('type_sal', period = period)
         _defaultP = simulation.legislation_at(period.start, reference = True)
 
@@ -33,13 +33,13 @@ class salaire_brut(Variable):
 
         plaf_ss = 12 * smig
 
-        n = len(sali)
+        n = len(salaire_imposable)
         salaire_brut = zeros(n)
         # TODO améliorer tout cela !!
         for categ in CAT:
             iscat = (type_sal == categ[1])
             if categ[0] == 're':
-                return period, sali  # on retourne le sali pour les étudiants
+                return period, salaire_imposable  # on retourne le salaire_imposable pour les étudiants
             else:
                 continue
 
@@ -48,7 +48,7 @@ class salaire_brut(Variable):
                 baremes = sal.scale_tax_scales(plaf_ss)
                 bar = combine_bracket(baremes)
                 invbar = bar.inverse()
-                temp = iscat * invbar.calc(sali)
+                temp = iscat * invbar.calc(salaire_imposable)
                 salaire_brut += temp
         return period, salaire_brut
 

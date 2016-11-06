@@ -104,11 +104,11 @@ class smig75(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        sali = simulation.calculate('sali', period = period)
+        salaire_imposable = simulation.calculate('salaire_imposable', period = period)
         sal_nat = simulation.calculate('sal_nat', period = period)
         _P = simulation.legislation_at(period.start)
 
-        return period, (sali + sal_nat) < _P.cotisations_sociales.gen.smig
+        return period, (salaire_imposable + sal_nat) < _P.cotisations_sociales.gen.smig
 
 
 class salaire_unique(Variable):
@@ -118,11 +118,11 @@ class salaire_unique(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        sali_holder = simulation.compute('sali', period = period)
+        salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         _P = simulation.legislation_at(period.start)
 
-        sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
-        uniq = xor_(sali[CHEF] > 0, sali[PART] > 0)
+        salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [CHEF, PART])
+        uniq = xor_(salaire_imposable[CHEF] > 0, salaire_imposable[PART] > 0)
         return period, uniq
 
 
@@ -178,16 +178,16 @@ class af(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         af_nbenf = simulation.calculate('af_nbenf', period = period)
-        sali_holder = simulation.compute('sali', period = period)
+        salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         _P = simulation.legislation_at(period.start)
 
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
         print('sal')
-        print('sali_holder')
-        sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
+        print('salaire_imposable_holder')
+        salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [CHEF, PART])
         P = _P.presations_familiales
-        bm = min_(max_(sali[CHEF], sali[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
+        bm = min_(max_(salaire_imposable[CHEF], salaire_imposable[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
         # prestations familliales  # Règle d'arrondi ?
         af_1enf = round(bm * P.af.taux.enf1, 2)
         af_2enf = round(bm * P.af.taux.enf2, 2)
@@ -244,7 +244,7 @@ class contr_creche(Variable):
         'fam'
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        sali_holder = simulation.compute('sali', period = period)
+        salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         agem_holder = simulation.compute('agem', period = period)
         _P = simulation.legislation_at(period.start)
 
@@ -257,13 +257,13 @@ class contr_creche(Variable):
 
         # , _option = {'agem': ENFS, 'sal': [CHEF, PART]}
 
-        sali = self.split_by_roles(sali_holder, roles = [PART])
+        salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [PART])
         agem = self.split_by_roles(agem_holder, roles = ENFS)
         smig48 = _P.cotisations_sociales.gen.smig  # TODO: smig 48H
         P = _P.presations_familiales.creche
         age_m_benj = age_en_mois_benjamin(agem)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
-        elig_sal = sali < P.plaf * smig48
+        elig_sal = salaire_imposable < P.plaf * smig48
         return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 
