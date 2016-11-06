@@ -72,7 +72,7 @@ class revenus_du_capital(Variable):
         return period, rfon
 
 
-class impots_directsVariable):
+class impots_directs(Variable):
     column = FloatCol()
     entity_class = Menages
     label = u"Impôts directs"
