@@ -53,7 +53,7 @@ class salbrut(Variable):
         return period, salbrut
 
 
-class salsuperbrut(Variable):
+class salaire_super_brut(Variable):
     column = FloatCol
     entity_class = Individus
     label = u"Salaires super bruts"
