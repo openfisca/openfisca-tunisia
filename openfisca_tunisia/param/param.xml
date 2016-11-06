@@ -1,5 +1,5 @@
 <NODE code="root" >
-  <NODE code="cotsoc" description="Cotisations sociales">
+  <NODE code="cotisations_sociales" description="Cotisations sociales">
     <NODE code="gen" description="Paramètres généraux">
       <CODE code="plaf_ss" description="Plafond de la sécurité sociale (en SMIG)" format="integer">
         <VALUE deb="1960-01-01" fin="2012-12-31" valeur="6" />

@@ -429,7 +429,7 @@ class smig(Variable):
 
         # TODO: should be better implemented
         smig_dec = self.filter_role(smig_dec_holder, role = VOUS)
-        smig = or_(smig_dec, sal <= 12 * _P.cotsoc.gen.smig)
+        smig = or_(smig_dec, sal <= 12 * _P.cotisations_sociales.gen.smig)
         return period, smig
 
 

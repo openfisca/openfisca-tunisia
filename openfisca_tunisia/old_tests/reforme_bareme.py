@@ -58,7 +58,7 @@ def run_simulation(apply_reform=False, reforme=False,
     if conj:
         simulation.scenario.addIndiv(1, datetime.date(1975,1,1), 'vous', 'part')
         if sal_conj:
-            simulation.scenario.indiv[1].update({'sali': simulation.P.cotsoc.gen.smig})
+            simulation.scenario.indiv[1].update({'sali': simulation.P.cotisations_sociales.gen.smig})
 
         if kids > 0:
             for n in range(1,kids+1):
@@ -67,8 +67,8 @@ def run_simulation(apply_reform=False, reforme=False,
     print simulation.scenario
     if apply_reform:
         simulation.P.ir.reforme.exemption.active = 1
-        simulation.P.cotsoc.gen.smig = 320
-        simulation.P_default.cotsoc.gen.smig = 320
+        simulation.P.cotisations_sociales.gen.smig = 320
+        simulation.P_default.cotisations_sociales.gen.smig = 320
 
     return simulation
 

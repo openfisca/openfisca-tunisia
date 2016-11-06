@@ -112,7 +112,7 @@ class smig75(Variable):
         sal_nat = simulation.calculate('sal_nat', period = period)
         _P = simulation.legislation_at(period.start)
 
-        return period, (sali + sal_nat) < _P.cotsoc.gen.smig
+        return period, (sali + sal_nat) < _P.cotisations_sociales.gen.smig
 
 
 class sal_uniq(Variable):
@@ -278,7 +278,7 @@ class contr_creche(Variable):
 
         sali = self.split_by_roles(sali_holder, roles = [PART])
         agem = self.split_by_roles(agem_holder, roles = ENFS)
-        smig48 = _P.cotsoc.gen.smig  # TODO: smig 48H
+        smig48 = _P.cotisations_sociales.gen.smig  # TODO: smig 48H
         P = _P.pfam.creche
         age_m_benj = age_en_mois_benjamin(agem)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)

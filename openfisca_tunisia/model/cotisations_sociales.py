@@ -28,8 +28,8 @@ class salbrut(Variable):
         type_sal = simulation.calculate('type_sal', period = period)
         _defaultP = simulation.legislation_at(period.start, reference = True)
 
-        smig = _defaultP.cotsoc.gen.smig
-        cotsoc = MarginalRateTaxScale('cotsoc', _defaultP.cotsoc)
+        smig = _defaultP.cotisations_sociales.gen.smig
+        cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _defaultP.cotisations_sociales)
 
         plaf_ss = 12 * smig
 
@@ -43,8 +43,8 @@ class salbrut(Variable):
             else:
                 continue
 
-            if 'sal' in cotsoc[categ[0]]:
-                sal = cotsoc[categ[0]]['sal']
+            if 'sal' in cotisations_sociales[categ[0]]:
+                sal = cotisations_sociales[categ[0]]['sal']
                 baremes = sal.scale_tax_scales(plaf_ss)
                 bar = combine_bracket(baremes)
                 invbar = bar.inverse()
@@ -85,8 +85,8 @@ class cotpat(Variable):
 
         # TODO traiter les différents régimes séparément ?
 
-        smig = _P.cotsoc.gen.smig
-        cotsoc = MarginalRateTaxScale('cotsoc', _P.cotsoc)
+        smig = _P.cotisations_sociales.gen.smig
+        cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
 
         plaf_ss = 12 * smig
         # TODO: clean all this
@@ -98,8 +98,8 @@ class cotpat(Variable):
                 return period, salbrut  # on retounre le salbrut pour les étudiants
             else:
                 continue
-            if 'pat' in cotsoc[categ[0]]:
-                pat = cotsoc[categ[0]]['pat']
+            if 'pat' in cotisations_sociales[categ[0]]:
+                pat = cotisations_sociales[categ[0]]['pat']
                 baremes = scale_tax_scales(pat, plaf_ss)
                 bar = combine_tax_scales(baremes)
                 temp = - iscat * bar.calc(salbrut)
@@ -123,8 +123,8 @@ class cotsal(Variable):
 
         # TODO traiter les différents régimes
 
-        smig = _P.cotsoc.gen.smig
-        cotsoc = MarginalRateTaxScale('cotsoc', _P.cotsoc)
+        smig = _P.cotisations_sociales.gen.smig
+        cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
         plaf_ss = 12 * smig
 
         n = len(salbrut)
@@ -138,8 +138,8 @@ class cotsal(Variable):
             else:
                 continue
 
-            if 'sal' in cotsoc[categ[0]]:
-                pat = cotsoc[categ[0]]['sal']
+            if 'sal' in cotisations_sociales[categ[0]]:
+                pat = cotisations_sociales[categ[0]]['sal']
                 baremes = scale_tax_scales(pat, plaf_ss)
                 bar = combine_tax_scales(baremes)
                 temp = - iscat * bar.calc(salbrut)

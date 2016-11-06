@@ -1,5 +1,5 @@
 <NODE code = 'root' deb="2012-01-01" fin="2013-12-31">
-  <NODE description="Cotisations sociales" code="cotsoc" >
+  <NODE description="Cotisations sociales" code="cotisations_sociales" >
     <NODE description="Paramètres généraux" code="gen" >
       <CODE description="Plafond de la sécurité sociale (en SMIG)" code="plaf_ss" format="integer">
         <VALUE valeur="6" deb="1960-01-01" fin="2012-12-31" />
