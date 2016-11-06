@@ -10,7 +10,7 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 ALL = [x[1] for x in QUIMEN]
 
 
-class revdisp_i(Variable):
+class revenu_disponible_individuel(Variable):
     column = FloatCol()
     entity_class = Individus
     label = u"Revenu disponible individuel"
@@ -21,16 +21,16 @@ class revdisp_i(Variable):
         'ind'
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        rev_trav = simulation.calculate('rev_trav', period = period)
+        revenus_du_travail = simulation.calculate('revenus_du_travail', period = period)
         pen = simulation.calculate('pen', period = period)
         rev_cap = simulation.calculate('rev_cap', period = period)
         psoc = simulation.calculate('psoc', period = period)
         impo = simulation.calculate('impo', period = period)
 
-        return period, rev_trav + pen + rev_cap + psoc + impo
+        return period, revenus_du_travail + pen + rev_cap + psoc + impo
 
 
-class revdisp(Variable):
+class revenu_disponible(Variable):
     column = FloatCol()
     entity_class = Menages
     label = u"Revenu disponible du ménage"
@@ -41,15 +41,15 @@ class revdisp(Variable):
         'men'
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        revdisp_i = simulation.calculate('revdisp_i', period = period)
+        revenu_disponible_individuel = simulation.calculate('revenu_disponible_individuel', period = period)
 
-        return period, self.sum_by_entity(revdisp_i)
+        return period, self.sum_by_entity(revenu_disponible_individuel)
 
 
-class rev_trav(Variable):
+class revenus_du_travail(Variable):
     column = FloatCol()
     entity_class = Individus
-    label = u"rev_trav"
+    label = u"revenus_du_travail"
 
     def function(self, simulation, period):
         '''Revenu du travail'''

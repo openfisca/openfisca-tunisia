@@ -1,5 +1,5 @@
-<NODE code="revdisp" color="0,0,255" desc="Revenu disponible" shortname="Rev. disp." typevar="2">
-  <NODE code="rev_trav" color="0,155,204" desc="Revenu du travail" shortname="Rev. travail">
+<NODE code="revenu_disponible" color="0,0,255" desc="Revenu disponible" shortname="Rev. disp." typevar="2">
+  <NODE code="revenus_du_travail" color="0,155,204" desc="Revenu du travail" shortname="Rev. travail">
     <NODE code="sal" color="0,138,201" desc="Salaires nets" shortname="Sal. nets">
       <NODE code="salbrut" color="0,99,143" desc="Salaires bruts" shortname="Sal. bruts">
         <NODE code="salsuperbrut" color="0,66,92" desc="Salaires super bruts" shortname="Coût travail" />

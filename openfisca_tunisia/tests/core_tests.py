@@ -19,7 +19,7 @@ def check_1_parent(year = 2011):
         parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
         )
     simulation = scenario.new_simulation()
-    revdisp = simulation.calculate('revdisp')
+    revenu_disponible = simulation.calculate('revenu_disponible')
     sali = simulation.get_holder('sali').new_test_case_array(simulation.period)
     assert (sali == np.linspace(0, 100000, 3)).all(), sali
 
