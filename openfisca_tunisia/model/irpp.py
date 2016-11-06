@@ -96,11 +96,11 @@ class veuf(Variable):
 class nb_enf(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"nb_enf"
+    label = u"Nombre d'enfants"
 
     def function(self, simulation, period):
         '''
-        TODO: Nombre d'enfants
+        TODO: fixme
         '''
         period = period.start.offset('first-of', 'month').period('year')
         age_holder = simulation.compute('age', period = period)
@@ -126,7 +126,7 @@ class nb_enf(Variable):
 class nb_enf_sup(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"nb_enf_sup"
+    label = u"Nombre d'enfants étudiant du supérieur non boursiers"
 
     def function(self, simulation, period):
         '''
@@ -142,7 +142,7 @@ class nb_enf_sup(Variable):
 class nb_infirme(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"nb_infirme"
+    label = u"Nombre d'enfants infirmes"
 
     def function(self, simulation, period):
         '''
@@ -158,7 +158,7 @@ class nb_infirme(Variable):
 class nb_par(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"nb_par"
+    label = u"Nombre de parents"
 
     def function(self, simulation, period):
         '''
@@ -181,7 +181,7 @@ class nb_par(Variable):
 class bic(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"bic"
+    label = u"Bénéfices industriels et commerciaux"
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
@@ -232,9 +232,6 @@ class bic_benef_fiscal_cession(Variable):
     label = u"Bénéfice fiscal (BIC, cession de fond de commerce)"
 
     def function(self, simulation, period):
-        """
-        Bénéfice fiscal
-        """
         period = period.start.offset('first-of', 'month').period('year')
         bic_res_cession = simulation.calculate('bic_res_cession', period = period)
         bic_pv_cession = simulation.calculate('bic_pv_cession', period = period)
@@ -253,13 +250,9 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 class bnc(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"bnc"
+    label = u"Bénéfices des professions non commerciales"
 
     def function(self, simulation, period):
-        '''
-        Bénéfices des professions non commerciales TODO:
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         bnc_reel_res_fiscal = simulation.calculate('bnc_reel_res_fiscal', period = period)
         bnc_forf_benef_fiscal = simulation.calculate('bnc_forf_benef_fiscal', period = period)
@@ -289,13 +282,9 @@ class bnc_forf_benef_fiscal(Variable):
 class beap(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"beap"
+    label = u"Bénéfices de l'exploitation agricole et de pêche"
 
     def function(self, simulation, period):
-        """
-        Bénéfices de l'exploitation agricole et de pêche TODO:
-        'foy'
-        """
         period = period.start.offset('first-of', 'month').period('year')
         beap_reel_res_fiscal = simulation.calculate('beap_reel_res_fiscal', period = period)
         beap_reliq_benef_fiscal = simulation.calculate('beap_reliq_benef_fiscal', period = period)
@@ -309,13 +298,9 @@ class beap(Variable):
 class revenus_fonciers(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"rfon"
+    label = u"Revenus fonciers"
 
     def function(self, simulation, period):
-        """
-        Revenus fonciers
-        'foy'
-        """
         period = period.start.offset('first-of', 'month').period('year')
         fon_reel_fisc_holder = simulation.compute('fon_reel_fisc', period = period)
         fon_forf_bati = simulation.calculate('fon_forf_bati', period = period)
@@ -330,13 +315,9 @@ class revenus_fonciers(Variable):
 class fon_forf_bati(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"fon_forf_bati"
+    label = u"Revenus fonciers net des immeubles bâtis"
 
     def function(self, simulation, period):
-        '''
-        Revenus fonciers net des immeubles bâtis
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         fon_forf_bati_rec_holder = simulation.compute('fon_forf_bati_rec', period = period)
         fon_forf_bati_rel_holder = simulation.compute('fon_forf_bati_rel', period = period)
@@ -355,13 +336,9 @@ class fon_forf_bati(Variable):
 class fon_forf_nbat(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"fon_forf_nbat"
+    label = u"Revenus fonciers net des terrains non bâtis"
 
     def function(self, simulation, period):
-        '''
-        Revenus fonciers net des terrains non bâtis
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         fon_forf_nbat_rec_holder = simulation.compute('fon_forf_nbat_rec', period = period)
         fon_forf_nbat_dep_holder = simulation.compute('fon_forf_nbat_dep', period = period)
@@ -379,30 +356,22 @@ class fon_forf_nbat(Variable):
 class tspr(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"tspr"
+    label = u"Traitements, salaires, indemnités, pensions et rentes viagères"
 
     def function(self, simulation, period):
-        '''
-        Traitements, salaires, indemnités, pensions et rentes viagères
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        sal_net = simulation.calculate('sal_net', period = period)
-        pen_net = simulation.calculate('pen_net', period = period)
+        revenu_assimile_salaire_apres_abattements = simulation.calculate('revenu_assimile_salaire_apres_abattements', period = period)
+        revenu_assimile_pension_apres_abattements = simulation.calculate('revenu_assimile_pension_apres_abattements', period = period)
 
-        return period, sal_net + pen_net
+        return period, revenu_assimile_salaire_apres_abattements + revenu_assimile_pension_apres_abattements
 
 
-class sal(Variable):
+class revenu_assimile_salaire(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"Salaires y compris salaires en nature"
+    label = u"Revenu assimilé à des salaires"
 
     def function(self, simulation, period):
-        '''
-        Salaires y compris salaires en nature
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         sal_nat_holder = simulation.compute('sal_nat', period = period)
@@ -418,10 +387,6 @@ class smig(Variable):
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
 
     def function(self, simulation, period):
-        '''
-        Indicatrice de salariée payé au smig
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         sal = simulation.calculate('sal', period = period)
         smig_dec_holder = simulation.compute('smig_dec', period = period)
@@ -433,38 +398,32 @@ class smig(Variable):
         return period, smig
 
 
-class sal_net(Variable):
+class revenu_assimile_salaire_apres_abattements(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"Salaires nets"
+    label = u"Revenu imposé comme des salaires net des abatements"
 
     def function(self, simulation, period):
-        '''
-        Revenu imposé comme des salaires net des abatements
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        sal = simulation.calculate('sal', period = period)
+        revenu_assimile_salaire = simulation.calculate('revenu_assimile_salaire', period = period)
         smig = simulation.calculate('smig', period = period)
         tspr = simulation.legislation_at(period.start).ir.tspr
 
         if period.start.year >= 2011:
-            res = max_(sal * (1 - tspr.abat_sal) - max_(smig * tspr.smig, (sal <= tspr.smig_ext) * tspr.smig), 0)
+            res = max_(
+                revenu_assimile_salaire * (1 - tspr.abat_sal) - max_(smig * tspr.smig,
+                 (revenu_assimile_salaire <= tspr.smig_ext) * tspr.smig), 0)
         else:
-            res = max_(sal * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
+            res = max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
         return period, res
 
 
-class pen_net(Variable):
+class revenu_assimile_pension_apres_abattements(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"pen_net"
+    label = u"Revenu assimilé à des pensions après abattements"
 
     def function(self, simulation, period):
-        '''
-        Pensions et rentes viagères après abattements
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         pen_holder = simulation.compute('pen', period = period)
         pen_nat_holder = simulation.compute('pen_nat', period = period)
@@ -481,13 +440,9 @@ class pen_net(Variable):
 class rvcm(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"rvcm"
+    label = u"Revenus de valeurs mobilières et de capitaux mobiliers"
 
     def function(self, simulation, period):
-        '''
-        Revenus de valeurs mobilières et de capitaux mobiliers
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         capm_banq_holder = simulation.compute('capm_banq', period = period)
         capm_cent_holder = simulation.compute('capm_cent', period = period)
@@ -520,13 +475,9 @@ class rvcm(Variable):
 class retr(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
-    label = u"retr"
+    label = u"Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
 
     def function(self, simulation, period):
-        '''
-        Autres revenus ie revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         etr_sal_holder = simulation.compute('etr_sal', period = period)
         etr_pen_holder = simulation.compute('etr_pen', period = period)
@@ -558,10 +509,6 @@ class rng(Variable):
     label = u"Revenu net global"
 
     def function(self, simulation, period):
-        '''
-        Revenu net global  soumis à l'impôt après déduction des abattements
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         tspr = simulation.calculate('tspr', period = period)
         revenus_fonciers = simulation.calculate('revenus_fonciers', period = period)
@@ -647,7 +594,6 @@ class ass_vie(Variable):
     def function(self, simulation, period):
         '''
         Primes afférentes aux contrats d'assurance-vie collectifs ou individuels
-        'foy'
         '''
         period = period.start.offset('first-of', 'month').period('year')
         prime_ass_vie_holder = simulation.compute('prime_ass_vie', period = period)
@@ -699,10 +645,6 @@ class deduc_smig(Variable):
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
 
     def function(self, simulation, period):
-        '''
-        Déduction supplémentaire pour les salariés payés au « SMIG » et « SMAG »
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         chef = simulation.calculate('chef', period = period)
 
@@ -716,9 +658,9 @@ class rni(Variable):
 
     def function(self, simulation, period):
         '''
-        Revenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses et charges professionnelles
+        Revenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses 
+        et charges professionnelles
         et des revenus non soumis à l'impôt
-        'foy'
         '''
         period = period.start.offset('first-of', 'month').period('year')
         rng = simulation.calculate('rng', period = period)
@@ -736,10 +678,6 @@ class ir_brut(Variable):
     label = u"Impôt avant non-imposabilité"
 
     def function(self, simulation, period):
-        '''
-        Impot sur le revenu avant non imposabilité
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         rni = simulation.calculate('rni', period = period)
         _P = simulation.legislation_at(period.start)

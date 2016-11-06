@@ -429,13 +429,13 @@ class smig_dec(Variable):
     entity_class = Individus
 
 
-class pen(Variable):
+class revenu_assimile_pension(Variable):
     column = IntCol
-    label = u"Pensions et rentes viagères"
+    label = u"Reenu assimilé à des pensions (pensions et rentes viagères)"
     entity_class = Individus
 
 
-class pen_nat(Variable):
+class avantages_nature_assimile_pension(Variable):
     column = IntCol
     label = u"Avantages en nature assimilables à des pensions"
     entity_class = Individus
