@@ -33,7 +33,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                 ('label', u"""Principal"""),
                 ('children', [
                     'birth',  # Année de naissance
-                    'statmarit',
+                    'statut_marital',
                     'sali',
                     ]),
                 ]),

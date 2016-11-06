@@ -77,11 +77,11 @@ def _nb_par(self, quifoy_holder):
     return period, 1 + 1 * (quifoy[PART] == 1)
 
 
-def _maries(statmarit):
+def _maries(statut_marital):
     '''
     couple = 1 si couple marié sinon 0 TODO: faire un choix avec couple ?
     '''
-    return period, statmarit == 1
+    return period, statut_marital == 1
 
 
 def _isol(nb_par):

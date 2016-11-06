@@ -82,7 +82,7 @@ class so(Variable):
     entity_class = Menages
 
 
-class statmarit(Variable):
+class statut_marital(Variable):
     column = PeriodSizeIndependentIntCol(default = 2)
     entity_class = Individus
 

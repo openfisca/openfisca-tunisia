@@ -49,57 +49,48 @@ def _nb_adult(marie, celdiv, veuf):
 class marie(Variable):
     column = BoolCol
     entity_class = FoyersFiscaux
-    label = u"marie"
+    label = u"Marié"
 
     def function(self, simulation, period):
-        '''
-        Marié (1)
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        statmarit = simulation.calculate('statmarit', period = period)
+        statut_marital = simulation.calculate('statut_marital', period = period)
 
-        return period, (statmarit == 1)
+        return period, (statut_marital == 1)
 
 
 class celdiv(Variable):
     column = BoolCol
     entity_class = FoyersFiscaux
-    label = u"celdiv"
+    label = u"Célibataire"
 
     def function(self, simulation, period):
-        '''
-        Célibataire
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        statmarit = simulation.calculate('statmarit', period = period)
+        statut_marital = simulation.calculate('statut_marital', period = period)
 
-        return period, (statmarit == 2)
+        return period, (statut_marital == 2)
 
 
-class divor(Variable):
+class divorce(Variable):
     column = BoolCol
     entity_class = FoyersFiscaux
-    label = u"divorcé"
+    label = u"Divorcé"
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        statmarit = simulation.calculate('statmarit', period = period)
-
-        return period, (statmarit == 3)
+        statut_marital = simulation.calculate('statut_marital', period = period)
+        return period, (statut_marital == 3)
 
 
 class veuf(Variable):
     column = BoolCol
     entity_class = FoyersFiscaux
-    label = u"veuf"
+    label = u"Veuf"
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        statmarit = simulation.calculate('statmarit', period = period)
+        statut_marital = simulation.calculate('statut_marital', period = period)
 
-        return period, statmarit == 4
+        return period, statut_marital == 4
 
 
 class nb_enf(Variable):
@@ -660,12 +651,12 @@ class ass_vie(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         prime_ass_vie_holder = simulation.compute('prime_ass_vie', period = period)
-        statmarit_holder = simulation.compute('statmarit', period = period)
+        statut_marital_holder = simulation.compute('statut_marital', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.ir.deduc.ass_vie
-        marie = self.filter_role(statmarit_holder, role = VOUS)  # TODO
+        marie = self.filter_role(statut_marital_holder, role = VOUS)  # TODO
         prime_ass_vie = self.sum_by_entity(prime_ass_vie_holder)
         deduc = min_(prime_ass_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
         return period, deduc
