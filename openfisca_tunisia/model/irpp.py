@@ -425,12 +425,12 @@ class revenu_assimile_pension_apres_abattements(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        pen_holder = simulation.compute('pen', period = period)
+        revenu_assimile_pension_holder = simulation.compute('revenu_assimile_pension', period = period)
         pen_nat_holder = simulation.compute('pen_nat', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.ir.tspr
-        pen = self.filter_role(pen_holder, role = VOUS)
+        pen = self.filter_role(revenu_assimile_pension_holder, role = VOUS)
         pen_nat = self.filter_role(pen_nat_holder, role = VOUS)
         return period, (pen + pen_nat) * (1 - P.abat_pen)
 

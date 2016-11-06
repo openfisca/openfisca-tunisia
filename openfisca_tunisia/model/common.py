@@ -18,12 +18,12 @@ class revenu_disponible_individuel(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         revenus_du_travail = simulation.calculate('revenus_du_travail', period = period)
-        pen = simulation.calculate('pen', period = period)
+        revenu_assimile_pension = simulation.calculate('revenu_assimile_pension', period = period)
         revenus_du_capital = simulation.calculate('revenus_du_capital', period = period)
         psoc = simulation.calculate('psoc', period = period)
         impots_directs = simulation.calculate('impots_directs', period = period)
 
-        return period, revenus_du_travail + pen + revenus_du_capital + psoc + impots_directs
+        return period, revenus_du_travail + revenu_assimile_pension + revenus_du_capital + psoc + impots_directs
 
 
 class revenu_disponible(Variable):
