@@ -765,7 +765,7 @@
       </BAREME>
     </NODE>
   </NODE>
-  <NODE code="pfam" description="Prestations familiales">
+  <NODE code="presations_familiales" description="Prestations familiales">
     <NODE code="af" description="Allocations familiales">
       <CODE code="plaf_trim" description="Plafond de revenus trimestriels" format="integer" type="monetary">
         <VALUE deb="1960-01-01" fin="2011-12-31" valeur="122" />
@@ -782,7 +782,7 @@
         </CODE>
       </NODE>
     </NODE>
-    <NODE code="sal_uniq" description="Majoration trimestrielle pour salaire unique">
+    <NODE code="salaire_unique" description="Majoration trimestrielle pour salaire unique">
       <CODE code="enf1" description="Premier enfant à charge" format="float" type="monetary">
         <VALUE deb="1960-01-01" fin="2011-12-31" valeur="9.375" />
       </CODE>

@@ -186,7 +186,7 @@ class af(Variable):
         print('sal')
         print('sali_holder')
         sali = self.split_by_roles(sali_holder, roles = [CHEF, PART])
-        P = _P.pfam
+        P = _P.presations_familiales
         bm = min_(max_(sali[CHEF], sali[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
         # prestations familliales  # Règle d'arrondi ?
         af_1enf = round(bm * P.af.taux.enf1, 2)
@@ -207,7 +207,7 @@ class majoration_salaire_unique(Variable):
         af_nbenf = simulation.calculate('af_nbenf', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.pfam
+        P = _P.presations_familiales
         af_1enf = round(P.salaire_unique.enf1, 3)
         af_2enf = round(P.salaire_unique.enf2, 3)
         af_3enf = round(P.salaire_unique.enf3, 3)
@@ -260,14 +260,14 @@ class contr_creche(Variable):
         sali = self.split_by_roles(sali_holder, roles = [PART])
         agem = self.split_by_roles(agem_holder, roles = ENFS)
         smig48 = _P.cotisations_sociales.gen.smig  # TODO: smig 48H
-        P = _P.pfam.creche
+        P = _P.presations_familiales.creche
         age_m_benj = age_en_mois_benjamin(agem)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
         elig_sal = sali < P.plaf * smig48
         return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 
-class pfam(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
+class presations_familiales(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
     column = FloatCol
     entity_class = Menages
     label = u"Prestations familales"
