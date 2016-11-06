@@ -23,11 +23,11 @@ class revenu_disponible_individuel(Variable):
         period = period.start.offset('first-of', 'month').period('year')
         revenus_du_travail = simulation.calculate('revenus_du_travail', period = period)
         pen = simulation.calculate('pen', period = period)
-        rev_cap = simulation.calculate('rev_cap', period = period)
+        revenus_du_capital = simulation.calculate('revenus_du_capital', period = period)
         psoc = simulation.calculate('psoc', period = period)
-        impo = simulation.calculate('impo', period = period)
+        impo = simulation.calculate('impots_directs', period = period)
 
-        return period, revenus_du_travail + pen + rev_cap + psoc + impo
+        return period, revenus_du_travail + pen + revenus_du_capital + psoc + impo
 
 
 class revenu_disponible(Variable):
@@ -59,10 +59,10 @@ class revenus_du_travail(Variable):
         return period, sali  # + beap + bic + bnc  TODO
 
 
-class rev_cap(Variable):
+class revenus_du_capital(Variable):
     column = FloatCol()
     entity_class = Menages
-    label = u"rev_cap"
+    label = u"revenus_du_capital"
 
     def function(self, simulation, period):
         '''Revenus du patrimoine'''  # TODO
@@ -72,13 +72,12 @@ class rev_cap(Variable):
         return period, rfon
 
 
-class impo(Variable):
+class impots_directsVariable):
     column = FloatCol()
     entity_class = Menages
-    label = u"impo"
+    label = u"Impôts directs"
 
     def function(self, simulation, period):
-        '''Impôts directs'''
         period = period.start.offset('first-of', 'month').period('year')
         irpp = simulation.calculate('irpp', period = period)
 

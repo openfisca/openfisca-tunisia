@@ -13,7 +13,7 @@
     <NODE code="maj_sal_uniq" color="125,185,86" desc="Majoration salaire unique" shortname="Maj. sal. unique" />
     <NODE code="contr_creche" color="91,172,38" desc="Contribution aux frais de creche" shortname="Contr. frais creche" />
   </NODE>
-  <NODE code="impo" color="232,79,95" desc="Impôts directs" shortname="Impôts directs">
+  <NODE code="impots_diretcs" color="232,79,95" desc="Impôts directs" shortname="Impôts directs">
     <NODE code="irpp" color="232,79,95" desc="Impôt sur le revenu" shortname="IRPP" />
   </NODE>
 </NODE>
