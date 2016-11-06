@@ -47,7 +47,7 @@ def _nb_adult(marie, celdiv, veuf):
 
 
 class marie(Variable):
-    column = BoolCol(default = False)
+    column = BoolCol
     entity_class = FoyersFiscaux
     label = u"marie"
 
@@ -63,7 +63,7 @@ class marie(Variable):
 
 
 class celdiv(Variable):
-    column = BoolCol(default = False)
+    column = BoolCol
     entity_class = FoyersFiscaux
     label = u"celdiv"
 
@@ -79,7 +79,7 @@ class celdiv(Variable):
 
 
 class divor(Variable):
-    column = BoolCol(default = False)
+    column = BoolCol
     entity_class = FoyersFiscaux
     label = u"divorcé"
 
@@ -91,7 +91,7 @@ class divor(Variable):
 
 
 class veuf(Variable):
-    column = BoolCol(default = False)
+    column = BoolCol
     entity_class = FoyersFiscaux
     label = u"veuf"
 
@@ -103,7 +103,7 @@ class veuf(Variable):
 
 
 class nb_enf(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"nb_enf"
 
@@ -133,7 +133,7 @@ class nb_enf(Variable):
 
 
 class nb_enf_sup(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"nb_enf_sup"
 
@@ -149,7 +149,7 @@ class nb_enf_sup(Variable):
 
 
 class nb_infirme(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"nb_infirme"
 
@@ -165,7 +165,7 @@ class nb_infirme(Variable):
 
 
 class nb_par(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"nb_par"
 
@@ -188,7 +188,7 @@ class nb_par(Variable):
 
 # 1. Bénéfices industriels et commerciaux
 class bic(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"bic"
 
@@ -206,7 +206,7 @@ class bic(Variable):
 
 
 class bic_ca_global(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"Chiffre d’affaires global (BIC, cession de fond de commerce"
 
@@ -223,7 +223,7 @@ class bic_ca_global(Variable):
 
 
 class bic_res_cession(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"Résultat (BIC, cession de fond de commerce)"
 
@@ -236,7 +236,7 @@ class bic_res_cession(Variable):
 
 
 class bic_benef_fiscal_cession(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"Bénéfice fiscal (BIC, cession de fond de commerce)"
 
@@ -260,7 +260,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 
 # 2. Bénéfices des professions non commerciales
 class bnc(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"bnc"
 
@@ -278,7 +278,7 @@ class bnc(Variable):
 
 
 class bnc_forf_benef_fiscal(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
 
@@ -296,7 +296,7 @@ class bnc_forf_benef_fiscal(Variable):
 
 # 3. Bénéfices de l'exploitation agricole et de pêche
 class beap(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"beap"
 
@@ -316,7 +316,7 @@ class beap(Variable):
 
 # 4. Revenus fonciers
 class revenus_fonciers(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"rfon"
 
@@ -337,7 +337,7 @@ class revenus_fonciers(Variable):
 
 
 class fon_forf_bati(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"fon_forf_bati"
 
@@ -362,7 +362,7 @@ class fon_forf_bati(Variable):
 
 
 class fon_forf_nbat(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"fon_forf_nbat"
 
@@ -386,7 +386,7 @@ class fon_forf_nbat(Variable):
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
 
 class tspr(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"tspr"
 
@@ -403,7 +403,7 @@ class tspr(Variable):
 
 
 class sal(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Salaires y compris salaires en nature"
 
@@ -422,7 +422,7 @@ class sal(Variable):
 
 
 class smig(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
 
@@ -443,7 +443,7 @@ class smig(Variable):
 
 
 class sal_net(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Salaires nets"
 
@@ -465,7 +465,7 @@ class sal_net(Variable):
 
 
 class pen_net(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"pen_net"
 
@@ -488,7 +488,7 @@ class pen_net(Variable):
 # 6. Revenus de valeurs mobilières et de capitaux mobiliers
 
 class rvcm(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"rvcm"
 
@@ -527,7 +527,7 @@ class rvcm(Variable):
 # 7. revenus de source étrangère
 
 class retr(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"retr"
 
@@ -562,7 +562,7 @@ class retr(Variable):
 
 
 class rng(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Revenu net global"
 
@@ -601,7 +601,7 @@ def _deduc_int(capm_banq, capm_cent, capm_oblig, _P):
 
 
 class deduc_fam(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Déductions pour situation et charges de famille"
 
@@ -637,7 +637,7 @@ class deduc_fam(Variable):
 
 
 class deduc_rente(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
 
@@ -649,7 +649,7 @@ class deduc_rente(Variable):
 
 
 class ass_vie(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Primes afférentes aux contrats d'assurance-vie"
 
@@ -703,7 +703,7 @@ class ass_vie(Variable):
 
 
 class deduc_smig(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
 
@@ -719,7 +719,7 @@ class deduc_smig(Variable):
 
 
 class rni(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Revenu net imposable"
 
@@ -740,7 +740,7 @@ class rni(Variable):
 
 
 class ir_brut(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Impôt avant non-imposabilité"
 
@@ -761,7 +761,7 @@ class ir_brut(Variable):
 
 
 class irpp(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Impôt sur le revenu des personnes physiques"
 

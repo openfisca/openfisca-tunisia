@@ -15,7 +15,7 @@ from openfisca_tunisia.model.data import CAT
 ############################################################################
 
 class salbrut(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"Salaires bruts"
 
@@ -54,7 +54,7 @@ class salbrut(Variable):
 
 
 class salsuperbrut(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"Salaires super bruts"
 
@@ -70,7 +70,7 @@ class salsuperbrut(Variable):
 
 
 class cotpat(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"cotpat"
 
@@ -108,7 +108,7 @@ class cotpat(Variable):
 
 
 class cotsal(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Individus
     label = u"cotsal"
 

@@ -99,7 +99,7 @@ def _etu(activite):
 
 
 class smig75(Variable):
-    column = BoolCol(default = False)
+    column = BoolCol
     entity_class = Individus
     label = u"Indicatrice de salaire supérieur à 75% du smig"
 
@@ -116,7 +116,7 @@ class smig75(Variable):
 
 
 class sal_uniq(Variable):
-    column = BoolCol(default = False)
+    column = BoolCol
     entity_class = Menages
     label = u"Indicatrice de salaire unique"
 
@@ -139,7 +139,7 @@ class sal_uniq(Variable):
 
 
 class af_nbenf(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Menages
     label = u"Nombre d'enfants au sens des allocations familiales"
 
@@ -182,7 +182,7 @@ class af_nbenf(Variable):
 
 
 class af(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Menages
     label = u"Allocations familiales"
 
@@ -212,7 +212,7 @@ class af(Variable):
 
 
 class maj_sal_uniq(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Menages
     label = u"Majoration du salaire unique"
 
@@ -253,7 +253,7 @@ def _af_cong_jeun_trav(age, _P):
 
 
 class contr_creche(Variable):
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Menages
     label = u"Contribution aux frais de crêche"
 
@@ -287,7 +287,7 @@ class contr_creche(Variable):
 
 
 class pfam(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
-    column = FloatCol(default = 0)
+    column = FloatCol
     entity_class = Menages
     label = u"Prestations familales"
 

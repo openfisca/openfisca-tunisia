@@ -412,13 +412,13 @@ class fon_sp(Variable):
 
 
 class sali(Variable):
-    column = IntCol(default = 0)
+    column = IntCol
     label = u"Salaires imposables"
     entity_class = Individus
 
 
 class sal_nat(Variable):
-    column = IntCol(default = 0)
+    column = IntCol
     label = u"Avantages en nature assimilables à des salaires"
     entity_class = Individus
 
