@@ -12,11 +12,6 @@ ALL = [x[1] for x in QUIFOY]
 PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 
 
-###############################################################################
-# # Initialisation de quelques variables utiles pour la suite
-###############################################################################
-
-
 class age(Variable):
     column = AgeCol(val_type = "age")
     entity_class = Individus
@@ -320,7 +315,7 @@ class beap(Variable):
 
 
 # 4. Revenus fonciers
-class rfon(Variable):
+class revenus_fonciers(Variable):
     column = FloatCol(default = 0)
     entity_class = FoyersFiscaux
     label = u"rfon"
@@ -578,11 +573,11 @@ class rng(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         tspr = simulation.calculate('tspr', period = period)
-        rfon = simulation.calculate('rfon', period = period)
+        revenus_fonciers = simulation.calculate('revenus_fonciers', period = period)
         retr = simulation.calculate('retr', period = period)
         rvcm = simulation.calculate('rvcm', period = period)
 
-        return period, tspr + rfon + +rvcm + retr
+        return period, tspr + revenus_fonciers + +rvcm + retr
 
 
 #############################

@@ -353,7 +353,7 @@ class beap_part_benef_sp(Variable):
     entity_class = Individus
 
 
-# rfon Revenus fonciers
+# revenus_fonciers Revenus fonciers
 #  régime réel
 
 

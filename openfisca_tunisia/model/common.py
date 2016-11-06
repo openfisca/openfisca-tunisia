@@ -16,18 +16,14 @@ class revenu_disponible_individuel(Variable):
     label = u"Revenu disponible individuel"
 
     def function(self, simulation, period):
-        '''
-        Revenu disponible
-        'ind'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         revenus_du_travail = simulation.calculate('revenus_du_travail', period = period)
         pen = simulation.calculate('pen', period = period)
         revenus_du_capital = simulation.calculate('revenus_du_capital', period = period)
         psoc = simulation.calculate('psoc', period = period)
-        impo = simulation.calculate('impots_directs', period = period)
+        impots_directs = simulation.calculate('impots_directs', period = period)
 
-        return period, revenus_du_travail + pen + revenus_du_capital + psoc + impo
+        return period, revenus_du_travail + pen + revenus_du_capital + psoc + impots_directs
 
 
 class revenu_disponible(Variable):
@@ -36,23 +32,17 @@ class revenu_disponible(Variable):
     label = u"Revenu disponible du ménage"
 
     def function(self, simulation, period):
-        '''
-        Revenu disponible - ménage
-        'men'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         revenu_disponible_individuel = simulation.calculate('revenu_disponible_individuel', period = period)
-
         return period, self.sum_by_entity(revenu_disponible_individuel)
 
 
 class revenus_du_travail(Variable):
     column = FloatCol()
     entity_class = Individus
-    label = u"revenus_du_travail"
+    label = u"Revenu du travail"
 
     def function(self, simulation, period):
-        '''Revenu du travail'''
         period = period.start.offset('first-of', 'month').period('year')
         sali = simulation.calculate('sali', period = period)
 
@@ -62,14 +52,13 @@ class revenus_du_travail(Variable):
 class revenus_du_capital(Variable):
     column = FloatCol()
     entity_class = Menages
-    label = u"revenus_du_capital"
+    label = u"Revenus du patrimoine"
 
     def function(self, simulation, period):
-        '''Revenus du patrimoine'''  # TODO
         period = period.start.offset('first-of', 'month').period('year')
-        rfon = simulation.calculate('rfon', period = period)
+        revenus_fonciers = simulation.calculate('revenus_fonciers', period = period)
 
-        return period, rfon
+        return period, revenus_fonciers
 
 
 class impots_directs(Variable):
