@@ -183,8 +183,6 @@ class af(Variable):
 
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
-        print('sal')
-        print('salaire_imposable_holder')
         salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [CHEF, PART])
         P = _P.presations_familiales
         bm = min_(max_(salaire_imposable[CHEF], salaire_imposable[PART]) / 4, P.af.plaf_trim)  # base trimestrielle

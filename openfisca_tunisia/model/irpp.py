@@ -388,13 +388,13 @@ class smig(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        sal = simulation.calculate('sal', period = period)
+        revenu_assimile_salaire = simulation.calculate('revenu_assimile_salaire', period = period)
         smig_dec_holder = simulation.compute('smig_dec', period = period)
         _P = simulation.legislation_at(period.start)
 
         # TODO: should be better implemented
         smig_dec = self.filter_role(smig_dec_holder, role = VOUS)
-        smig = or_(smig_dec, sal <= 12 * _P.cotisations_sociales.gen.smig)
+        smig = or_(smig_dec, revenu_assimile_salaire <= 12 * _P.cotisations_sociales.gen.smig)
         return period, smig
 
 
@@ -430,9 +430,9 @@ class revenu_assimile_pension_apres_abattements(Variable):
         _P = simulation.legislation_at(period.start)
 
         P = _P.ir.tspr
-        pen = self.filter_role(revenu_assimile_pension_holder, role = VOUS)
+        revenu_assimile_pension = self.filter_role(revenu_assimile_pension_holder, role = VOUS)
         pen_nat = self.filter_role(pen_nat_holder, role = VOUS)
-        return period, (pen + pen_nat) * (1 - P.abat_pen)
+        return period, (revenu_assimile_pension + pen_nat) * (1 - P.abat_pen)
 
 
 # 6. Revenus de valeurs mobilières et de capitaux mobiliers
