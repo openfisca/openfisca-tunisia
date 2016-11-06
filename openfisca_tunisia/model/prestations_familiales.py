@@ -71,7 +71,6 @@ def ages_first_kids(age, nb = None):
 def _nb_par(self, quifoy_holder):
     '''
     Nombre d'adultes (parents) dans la famille
-    'fam'
     '''
     quifoy = self.split_by_roles(quifoy_holder, roles = PART)
     return period, 1 + 1 * (quifoy[PART] == 1)
@@ -104,9 +103,6 @@ class smig75(Variable):
     label = u"Indicatrice de salaire supérieur à 75% du smig"
 
     def function(self, simulation, period):
-        '''
-        Indicatrice de rémunération inférieur à 75% du smic
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         sali = simulation.calculate('sali', period = period)
         sal_nat = simulation.calculate('sal_nat', period = period)
@@ -115,15 +111,12 @@ class smig75(Variable):
         return period, (sali + sal_nat) < _P.cotisations_sociales.gen.smig
 
 
-class sal_uniq(Variable):
+class salaire_unique(Variable):
     column = BoolCol
     entity_class = Menages
     label = u"Indicatrice de salaire unique"
 
     def function(self, simulation, period):
-        '''
-        Indicatrice de salaire unique
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         sali_holder = simulation.compute('sali', period = period)
         _P = simulation.legislation_at(period.start)
@@ -144,10 +137,6 @@ class af_nbenf(Variable):
     label = u"Nombre d'enfants au sens des allocations familiales"
 
     def function(self, simulation, period):
-        '''
-        Nombre d'enfants au titre des allocations familiales
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         age_holder = simulation.compute('age', period = period)
         smig75_holder = simulation.compute('smig75', period = period)
@@ -187,10 +176,6 @@ class af(Variable):
     label = u"Allocations familiales"
 
     def function(self, simulation, period):
-        '''
-        Allocations familiales
-        'foy'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         af_nbenf = simulation.calculate('af_nbenf', period = period)
         sali_holder = simulation.compute('sali', period = period)
@@ -211,25 +196,21 @@ class af(Variable):
         return period, 4 * af_base  # annualisé
 
 
-class maj_sal_uniq(Variable):
+class majoration_salaire_unique(Variable):
     column = FloatCol
     entity_class = Menages
     label = u"Majoration du salaire unique"
 
     def function(self, simulation, period):
-        '''
-        Majoration salaire unique
-        'fam'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        sal_uniq = simulation.calculate('sal_uniq', period = period)
+        salaire_unique = simulation.calculate('salaire_unique', period = period)
         af_nbenf = simulation.calculate('af_nbenf', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.pfam
-        af_1enf = round(P.sal_uniq.enf1, 3)
-        af_2enf = round(P.sal_uniq.enf2, 3)
-        af_3enf = round(P.sal_uniq.enf3, 3)
+        af_1enf = round(P.salaire_unique.enf1, 3)
+        af_2enf = round(P.salaire_unique.enf2, 3)
+        af_3enf = round(P.salaire_unique.enf3, 3)
         af = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
         return period, 4 * af  # annualisé
 
@@ -298,10 +279,10 @@ class pfam(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
         '''
         period = period.start.offset('first-of', 'month').period('year')
         af = simulation.calculate('af', period = period)
-        maj_sal_uniq = simulation.calculate('maj_sal_uniq', period = period)
+        majoration_salaire_unique = simulation.calculate('majoration_salaire_unique', period = period)
         contr_creche = simulation.calculate('contr_creche', period = period)
 
-        return period, af + maj_sal_uniq + contr_creche
+        return period, af + majoration_salaire_unique + contr_creche
 
 
 ############################################################################
