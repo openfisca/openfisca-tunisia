@@ -14,7 +14,7 @@ from openfisca_tunisia.model.data import CAT
 # Salaires
 ############################################################################
 
-class salbrut(Variable):
+class salaire_brut(Variable):
     column = FloatCol
     entity_class = Individus
     label = u"Salaires bruts"
@@ -34,7 +34,7 @@ class salbrut(Variable):
         plaf_ss = 12 * smig
 
         n = len(sali)
-        salbrut = zeros(n)
+        salaire_brut = zeros(n)
         # TODO améliorer tout cela !!
         for categ in CAT:
             iscat = (type_sal == categ[1])
@@ -49,8 +49,8 @@ class salbrut(Variable):
                 bar = combine_bracket(baremes)
                 invbar = bar.inverse()
                 temp = iscat * invbar.calc(sali)
-                salbrut += temp
-        return period, salbrut
+                salaire_brut += temp
+        return period, salaire_brut
 
 
 class salaire_super_brut(Variable):
@@ -59,14 +59,11 @@ class salaire_super_brut(Variable):
     label = u"Salaires super bruts"
 
     def function(self, simulation, period):
-        '''
-        Salaire superbrut
-        '''
         period = period.start.offset('first-of', 'month').period('year')
-        salbrut = simulation.calculate('salbrut', period = period)
+        salaire_brut = simulation.calculate('salaire_brut', period = period)
         cotpat = simulation.calculate('cotpat', period = period)
 
-        return period, salbrut - cotpat
+        return period, salaire_brut - cotpat
 
 
 class cotpat(Variable):
@@ -79,7 +76,7 @@ class cotpat(Variable):
         Cotisation sociales patronales
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        salbrut = simulation.calculate('salbrut', period = period)
+        salaire_brut = simulation.calculate('salaire_brut', period = period)
         type_sal = simulation.calculate('type_sal', period = period)
         _P = simulation.legislation_at(period.start)
 
@@ -90,19 +87,19 @@ class cotpat(Variable):
 
         plaf_ss = 12 * smig
         # TODO: clean all this
-        n = len(salbrut)
+        n = len(salaire_brut)
         cotpat = zeros(n)
         for categ in CAT:
             iscat = (type_sal == categ[1])
             if categ[0] == 're':
-                return period, salbrut  # on retounre le salbrut pour les étudiants
+                return period, salaire_brut  # on retounre le salaire_brut pour les étudiants
             else:
                 continue
             if 'pat' in cotisations_sociales[categ[0]]:
                 pat = cotisations_sociales[categ[0]]['pat']
                 baremes = scale_tax_scales(pat, plaf_ss)
                 bar = combine_tax_scales(baremes)
-                temp = - iscat * bar.calc(salbrut)
+                temp = - iscat * bar.calc(salaire_brut)
                 cotpat += temp
         return period, cotpat
 
@@ -117,7 +114,7 @@ class cotsal(Variable):
         Cotisations sociales salariales
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        salbrut = simulation.calculate('salbrut', period = period)
+        salaire_brut = simulation.calculate('salaire_brut', period = period)
         type_sal = simulation.calculate('type_sal', period = period)
         _P = simulation.legislation_at(period.start)
 
@@ -127,14 +124,14 @@ class cotsal(Variable):
         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
         plaf_ss = 12 * smig
 
-        n = len(salbrut)
+        n = len(salaire_brut)
         cotsal = zeros(n)
 
         for categ in CAT:
             iscat = (type_sal == categ[1])
 
             if categ[0] == 're':
-                return period, 0 * salbrut  # TODO: doit retounrer la bonne valeur les étudiants
+                return period, 0 * salaire_brut  # TODO: doit retounrer la bonne valeur les étudiants
             else:
                 continue
 
@@ -142,7 +139,7 @@ class cotsal(Variable):
                 pat = cotisations_sociales[categ[0]]['sal']
                 baremes = scale_tax_scales(pat, plaf_ss)
                 bar = combine_tax_scales(baremes)
-                temp = - iscat * bar.calc(salbrut)
+                temp = - iscat * bar.calc(salaire_brut)
                 cotsal += temp
 
         return period, cotsal
