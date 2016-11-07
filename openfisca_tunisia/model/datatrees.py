@@ -88,7 +88,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                     u"""sal_nat""",
                     u"""smig_dec""",
                     u"""pen""",
-                    u"""pen_nat""",
+                    u"""avantages_nature_assimile_pension""",
                     u"""valm_nreg""",
                     u"""valm_jpres""",
                     u"""valm_aut""",

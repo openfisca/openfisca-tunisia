@@ -65,13 +65,12 @@ setup(
         ),
     install_requires = [
         'Babel >= 0.9.4',
-        'numpy',
-        'OpenFisca-Core ~= 1.0',
+        'numpy >= 1.11',
+        'OpenFisca-Core >= 3.0.0, < 4.0',
         'scipy >= 0.12',
         ],
-    message_extractors = {'openfisca_france': [
+    message_extractors = {'openfisca_tunisia': [
         ('**.py', 'python', None),
         ]},
-    packages = find_packages(),
-    zip_safe = False,
+    packages = find_packages(exclude=['openfisca_tunisia.tests*']),
     )

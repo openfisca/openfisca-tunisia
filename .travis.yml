@@ -1,13 +1,8 @@
 language: python
 python: "2.7"
-virtualenv:
-  system_site_packages: true
-before_install:
-#  - sudo add-apt-repository ppa:pythonxy/pythonxy-devel -y  # For Pandas
-  - sudo add-apt-repository ppa:pylab/stable -y  # For SciPY
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq python-scipy python-yaml
+cache: pip
 install:
-  - pip install flake8  # Not yet available in Debian stable
+  - pip install --upgrade pip wheel  # pip >= 8.0 needed to be compatible with "manylinux" wheels, used by numpy >= 1.11
+  - pip install flake8
   - pip install -r requirements.txt
-script: make test-ci
+script: make test
