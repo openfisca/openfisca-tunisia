@@ -60,13 +60,14 @@ setup(
         ],
     extras_require = dict(
         tests = [
-            'Biryani >= 0.10.1',
+            'nose',
             ],
         ),
     install_requires = [
         'Babel >= 0.9.4',
-        'numpy >= 1.11',
+        'Biryani[datetimeconv] >= 0.10.4',
         'OpenFisca-Core >= 3.0.0, < 4.0',
+        'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
     message_extractors = {'openfisca_tunisia': [
