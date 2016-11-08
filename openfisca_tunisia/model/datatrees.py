@@ -32,7 +32,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
             collections.OrderedDict([
                 ('label', u"""Principal"""),
                 ('children', [
-                    'birth',  # Année de naissance
+                    'date_naissance',  # Année de naissance
                     'statut_marital',
                     'salaire_imposable',
                     ]),
@@ -48,7 +48,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                 ('label', u"""Autres"""),
                 ('children', [
                     u"""nom_individu""",
-                    u"""type_sal""",
+                    u"""categorie_salarie""",
                     u"""inv""",
                     u"""jour_xyz""",
                     u"""boursier""",

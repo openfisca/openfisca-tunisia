@@ -34,13 +34,13 @@ class quifoy(Variable):
     entity_class = Individus
 
 
-class birth(Variable):
+class date_naissance(Variable):
     column = DateCol(is_permanent = True)
     entity_class = Individus
     label = u"Année de naissance"
 
 
-class type_sal(Variable):
+class categorie_salarie(Variable):
     column = EnumCol(CAT, default = 0)
     entity_class = Individus
 

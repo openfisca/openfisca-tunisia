@@ -8,7 +8,7 @@ def test_simple():
     year = 2011
     simulation = tax_benefit_system.new_scenario().init_single_entity(
         period = year,
-        parent1 = dict(agem = 40 * 12 + 6),
+        parent1 = dict(age_en_mois = 40 * 12 + 6),
         ).new_simulation(debug = True)
     assert simulation.calculate('revenu_disponible') == 0
 

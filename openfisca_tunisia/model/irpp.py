@@ -18,28 +18,28 @@ class age(Variable):
     label = u"Âge (en années)"
 
     def function(self, simulation, period):
-        birth = simulation.get_array('birth', period)
-        if birth is None:
-            agem = simulation.get_array('agem', period)
-            if agem is not None:
-                return period, agem // 12
-            birth = simulation.calculate('birth', period)
-        return period, (datetime64(period.date) - birth).astype('timedelta64[Y]')
+        date_naissance = simulation.get_array('date_naissance', period)
+        if date_naissance is None:
+            age_en_mois = simulation.get_array('age_en_mois', period)
+            if age_en_mois is not None:
+                return period, age_en_mois // 12
+            date_naissance = simulation.calculate('date_naissance', period)
+        return period, (datetime64(period.date) - date_naissance).astype('timedelta64[Y]')
 
 
-class agem(Variable):
+class age_en_mois(Variable):
     column = AgeCol(val_type = "months")
     entity_class = Individus
     label = u"Âge (en mois)"
 
     def function(self, simulation, period):
-        birth = simulation.get_array('birth', period)
-        if birth is None:
+        date_naissance = simulation.get_array('date_naissance', period)
+        if date_naissance is None:
             age = simulation.get_array('age', period)
             if age is not None:
                 return period, age * 12
-            birth = simulation.calculate('birth', period)
-        return period, (datetime64(period.date) - birth).astype('timedelta64[M]')
+            date_naissance = simulation.calculate('date_naissance', period)
+        return period, (datetime64(period.date) - date_naissance).astype('timedelta64[M]')
 
 
 def _nb_adult(marie, celdiv, veuf):
@@ -133,10 +133,10 @@ class nb_enf_sup(Variable):
         TODO: Nombre d'enfants étudiant du supérieur non boursiers
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        agem = simulation.calculate('agem', period = period)
+        age_en_mois = simulation.calculate('age_en_mois', period = period)
         boursier = simulation.calculate('boursier', period = period)
 
-        return period, 0 * agem * not_(boursier)
+        return period, 0 * age_en_mois * not_(boursier)
 
 
 class nb_infirme(Variable):
@@ -149,10 +149,10 @@ class nb_infirme(Variable):
         TODO: Nombre d'enfants infirmes
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        agem = simulation.calculate('agem', period = period)
+        age_en_mois = simulation.calculate('age_en_mois', period = period)
         inv = simulation.calculate('inv', period = period)
 
-        return period, 0 * agem * inv
+        return period, 0 * age_en_mois * inv
 
 
 class nb_par(Variable):
@@ -165,11 +165,11 @@ class nb_par(Variable):
         TODO: Nombre de parents
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        agem_holder = simulation.compute('agem', period = period)
+        age_en_mois_holder = simulation.compute('age_en_mois', period = period)
 
-        agem_vous = self.filter_role(agem_holder, role = VOUS)
-        agem_conj = self.filter_role(agem_holder, role = CONJ)
-        return period, (agem_vous > 10 * 12) + (agem_conj > 10 * 12)
+        age_en_mois_vous = self.filter_role(age_en_mois_holder, role = VOUS)
+        age_en_mois_conj = self.filter_role(age_en_mois_holder, role = CONJ)
+        return period, (age_en_mois_vous > 10 * 12) + (age_en_mois_conj > 10 * 12)
 
 
 ###############################################################################

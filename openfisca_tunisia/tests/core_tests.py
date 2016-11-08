@@ -16,7 +16,7 @@ def check_1_parent(year = 2011):
             min = 0,
             )],
         period = year,
-        parent1 = dict(birth = datetime.date(year - 40, 1, 1)),
+        parent1 = dict(date_naissance = datetime.date(year - 40, 1, 1)),
         )
     simulation = scenario.new_simulation()
     revenu_disponible = simulation.calculate('revenu_disponible')

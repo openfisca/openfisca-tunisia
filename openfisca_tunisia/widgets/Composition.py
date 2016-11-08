@@ -34,7 +34,7 @@ _ = get_translation('openfisca_qt')
 
 class S:
     name = 0
-    birth = 1
+    date_naissance = 1
     decnum = 2
     decpos = 3
     decbtn = 4
@@ -153,14 +153,14 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
         return self.scenario.nbIndiv()
 
     def populate(self):
-        self.populateBirth()
+        self.populatedate_naissance()
         self.populateQuifoyCombo()
         self.populateFoyerCombo()
 
-    def populateBirth(self):
+    def populatedate_naissance(self):
         for noi, vals in self.scenario.indiv.iteritems():
-            birth = QDate(vals['birth'])
-            self._listPerson[noi][S.birth].setDate(birth)
+            date_naissance = QDate(vals['date_naissance'])
+            self._listPerson[noi][S.date_naissance].setDate(date_naissance)
 
     def populateFoyerCombo(self):
         declarKeys = self.scenario.declar.keys()
@@ -189,9 +189,9 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
             elif quifoy[:3] == 'pac': box.setCurrentIndex(2)
 
 
-    def birthChanged(self, date):
+    def date_naissanceChanged(self, date):
         senderNoi = int(self.sender().objectName()[3])
-        self.scenario.indiv[senderNoi].update({'birth': date.toPyDate()})
+        self.scenario.indiv[senderNoi].update({'date_naissance': date.toPyDate()})
         self.emit(SIGNAL('compoChanged()'))
 
     def foyerChanged(self):
@@ -234,9 +234,9 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
 
         temp = self._listPerson[0]
 
-        temp[S.birth].setDisplayFormat(QApplication.translate("Page01", "dd MMM yyyy", None, QApplication.UnicodeUTF8))
-        temp[S.birth].setObjectName('Bir%d' % noi)
-        temp[S.birth].setCurrentSection(QDateEdit.YearSection)
+        temp[S.date_naissance].setDisplayFormat(QApplication.translate("Page01", "dd MMM yyyy", None, QApplication.UnicodeUTF8))
+        temp[S.date_naissance].setObjectName('Bir%d' % noi)
+        temp[S.date_naissance].setCurrentSection(QDateEdit.YearSection)
 
         temp[S.decpos].setObjectName('Dec%d' % noi)
         temp[S.decpos].addItems(['vous'])
@@ -263,8 +263,8 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
     def addPerson(self):
         noi = self.nbRow()
         self.addRow()
-        if noi == 1: self.scenario.addIndiv(noi, birth = date(1975,1,1), quifoy = 'conj', quifam = 'part')
-        else:        self.scenario.addIndiv(noi, birth = date(2000,1,1), quifoy = 'pac' , quifam = 'enf')
+        if noi == 1: self.scenario.addIndiv(noi, date_naissance = date(1975,1,1), quifoy = 'conj', quifam = 'part')
+        else:        self.scenario.addIndiv(noi, date_naissance = date(2000,1,1), quifoy = 'pac' , quifam = 'enf')
         self.emit(SIGNAL('compoChanged()'))
 
     def addRow(self):
@@ -278,9 +278,9 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
                                  QComboBox(self)])
         temp = self._listPerson[-1]
 
-        temp[S.birth].setDisplayFormat(QApplication.translate("Page01", "dd MMM yyyy", None, QApplication.UnicodeUTF8))
-        temp[S.birth].setObjectName('Bir%d' % noi)
-        temp[S.birth].setCurrentSection(QDateEdit.YearSection)
+        temp[S.date_naissance].setDisplayFormat(QApplication.translate("Page01", "dd MMM yyyy", None, QApplication.UnicodeUTF8))
+        temp[S.date_naissance].setObjectName('Bir%d' % noi)
+        temp[S.date_naissance].setCurrentSection(QDateEdit.YearSection)
 
         temp[S.decpos].setObjectName('Dec%d' % noi)
         temp[S.decpos].addItems(['vous', 'conj', 'pac'])
@@ -360,7 +360,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
 
     def disconnectAll(self):
         for person in self._listPerson:
-            QObject.disconnect(person[S.birth],  SIGNAL('dateChanged(QDate)'), self.birthChanged)
+            QObject.disconnect(person[S.date_naissance],  SIGNAL('dateChanged(QDate)'), self.date_naissanceChanged)
             QObject.disconnect(person[S.decpos], SIGNAL('currentIndexChanged(QString)'), self.quifoyChanged)
             QObject.disconnect(person[S.decnum], SIGNAL('currentIndexChanged(int)'), self.foyerChanged)
             QObject.disconnect(person[S.fampos], SIGNAL('currentIndexChanged(QString)'), self.quifamChanged)
@@ -369,7 +369,7 @@ class CompositionWidget(OpenfiscaPluginWidget, Ui_Menage):
 
     def connectAll(self):
         for person in self._listPerson:
-            QObject.connect(person[S.birth],  SIGNAL('dateChanged(QDate)'), self.birthChanged)
+            QObject.connect(person[S.date_naissance],  SIGNAL('dateChanged(QDate)'), self.date_naissanceChanged)
             QObject.connect(person[S.decpos], SIGNAL('currentIndexChanged(QString)'), self.quifoyChanged)
             QObject.connect(person[S.decnum], SIGNAL('currentIndexChanged(int)'), self.foyerChanged)
             QObject.connect(person[S.fampos], SIGNAL('currentIndexChanged(QString)'), self.quifamChanged)

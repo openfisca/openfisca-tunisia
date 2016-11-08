@@ -16,15 +16,15 @@ PACS = [QUIMEN['enf' + str(i)] for i in range(1, 10)]
 ENFS = [QUIMEN['enf' + str(i)] for i in range(1, 10)]
 
 
-def age_en_mois_benjamin(agems):
+def age_en_mois_benjamin(age_en_moiss):
     '''
     Renvoi un vecteur (une entree pour chaque famille) avec l'age du benjamin.
     '''
-    agem_benjamin = 12 * 9999
-    for agem in agems.itervalues():
-        isbenjamin = (agem < agem_benjamin) * (agem >= 0)
-        agem_benjamin = isbenjamin * agem + not_(isbenjamin) * agem_benjamin
-    return agem_benjamin
+    age_en_mois_benjamin = 12 * 9999
+    for age_en_mois in age_en_moiss.itervalues():
+        isbenjamin = (age_en_mois < age_en_mois_benjamin) * (age_en_mois >= 0)
+        age_en_mois_benjamin = isbenjamin * age_en_mois + not_(isbenjamin) * age_en_mois_benjamin
+    return age_en_mois_benjamin
 
 
 def age_min(age, minimal_age = None):
@@ -243,7 +243,7 @@ class contr_creche(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
-        agem_holder = simulation.compute('agem', period = period)
+        age_en_mois_holder = simulation.compute('age_en_mois', period = period)
         _P = simulation.legislation_at(period.start)
 
         # Une prise en charge peut être accordée à la mère exerçant une
@@ -253,13 +253,13 @@ class contr_creche(Variable):
         # dont l'âge est compris entre 2 et 36 mois. Elle s'élève à 15 dinars par
         # enfant et par mois pendant 11 mois.
 
-        # , _option = {'agem': ENFS, 'sal': [CHEF, PART]}
+        # , _option = {'age_en_mois': ENFS, 'sal': [CHEF, PART]}
 
         salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [PART])
-        agem = self.split_by_roles(agem_holder, roles = ENFS)
+        age_en_mois = self.split_by_roles(age_en_mois_holder, roles = ENFS)
         smig48 = _P.cotisations_sociales.gen.smig  # TODO: smig 48H
         P = _P.presations_familiales.creche
-        age_m_benj = age_en_mois_benjamin(agem)
+        age_m_benj = age_en_mois_benjamin(age_en_mois)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
         elig_sal = salaire_imposable < P.plaf * smig48
         return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)

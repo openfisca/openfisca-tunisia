@@ -25,7 +25,7 @@ class salaire_brut(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         salaire_imposable = simulation.calculate('salaire_imposable', period = period)
-        type_sal = simulation.calculate('type_sal', period = period)
+        categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _defaultP = simulation.legislation_at(period.start, reference = True)
 
         smig = _defaultP.cotisations_sociales.gen.smig
@@ -37,7 +37,7 @@ class salaire_brut(Variable):
         salaire_brut = zeros(n)
         # TODO améliorer tout cela !!
         for categ in CAT:
-            iscat = (type_sal == categ[1])
+            iscat = (categorie_salarie == categ[1])
             if categ[0] == 're':
                 return period, salaire_imposable  # on retourne le salaire_imposable pour les étudiants
             else:
@@ -77,7 +77,7 @@ class cotpat(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         salaire_brut = simulation.calculate('salaire_brut', period = period)
-        type_sal = simulation.calculate('type_sal', period = period)
+        categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _P = simulation.legislation_at(period.start)
 
         # TODO traiter les différents régimes séparément ?
@@ -90,7 +90,7 @@ class cotpat(Variable):
         n = len(salaire_brut)
         cotpat = zeros(n)
         for categ in CAT:
-            iscat = (type_sal == categ[1])
+            iscat = (categorie_salarie == categ[1])
             if categ[0] == 're':
                 return period, salaire_brut  # on retounre le salaire_brut pour les étudiants
             else:
@@ -115,7 +115,7 @@ class cotsal(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         salaire_brut = simulation.calculate('salaire_brut', period = period)
-        type_sal = simulation.calculate('type_sal', period = period)
+        categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _P = simulation.legislation_at(period.start)
 
         # TODO traiter les différents régimes
@@ -128,7 +128,7 @@ class cotsal(Variable):
         cotsal = zeros(n)
 
         for categ in CAT:
-            iscat = (type_sal == categ[1])
+            iscat = (categorie_salarie == categ[1])
 
             if categ[0] == 're':
                 return period, 0 * salaire_brut  # TODO: doit retounrer la bonne valeur les étudiants
