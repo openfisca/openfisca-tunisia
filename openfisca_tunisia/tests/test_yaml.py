@@ -278,6 +278,7 @@ def run_test(force = False, name_filter = None, options_by_path = None):
                 yield checker, yaml_path, test.get('name') or filename_core, unicode(test['scenario'].period), test, \
                     force
 
+
 def main():
     import argparse
     import logging
