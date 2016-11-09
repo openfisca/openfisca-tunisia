@@ -12,34 +12,6 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 # à générer avec un générateur de cas type
 
 
-class idmen(Variable):
-    column = IntCol(is_permanent = True)
-    entity_class = Individus
-    # 600001, 600002,
-
-
-class idfoy(Variable):
-    column = IntCol(is_permanent = True)
-    entity_class = Individus
-    # idmen + noi du déclarant
-
-
-class quimen(Variable):
-    column = EnumCol(QUIMEN, is_permanent = True)
-    entity_class = Individus
-
-
-class quifoy(Variable):
-    column = EnumCol(QUIFOY, is_permanent = True)
-    entity_class = Individus
-
-
-class date_naissance(Variable):
-    column = DateCol(is_permanent = True)
-    entity_class = Individus
-    label = u"Année de naissance"
-
-
 class categorie_salarie(Variable):
     column = EnumCol(CAT, default = 0)
     entity_class = Individus
@@ -51,17 +23,6 @@ class inv(Variable):
     entity_class = Individus
 
 
-class jour_xyz(Variable):
-    column = PeriodSizeIndependentIntCol(default = 360)
-    entity_class = Individus
-
-
-class loyer(Variable):
-    column = IntCol
-    entity_class = Menages
-    # Loyer mensuel
-
-
 class activite(Variable):
     column = PeriodSizeIndependentIntCol
     entity_class = Individus
@@ -71,25 +32,6 @@ class boursier(Variable):
     column = BoolCol()
     entity_class = Individus
 
-
-class code_postal(Variable):
-    column = PeriodSizeIndependentIntCol
-    entity_class = Menages
-
-
-class so(Variable):
-    column = PeriodSizeIndependentIntCol
-    entity_class = Menages
-
-
-class statut_marital(Variable):
-    column = PeriodSizeIndependentIntCol(default = 2)
-    entity_class = Individus
-
-
-class chef(Variable):
-    column = BoolCol()
-    entity_class = Individus
 
 # BIC Bénéfices industriels et commerciaux
 # régime réel
@@ -677,36 +619,9 @@ class deduc_logt(Variable):
 # 4262 4263
 # Bénéfices et revenus réinvestis dans le cadre de la mise à niveau des entreprises publiques.
 #
-
-
 # TODO Remove Me
 
 
-class rstbrut(Variable):
-    column = IntCol
-    entity_class = Individus
-
-
-class alr(Variable):
-    column = IntCol
-    entity_class = Individus
-
-
-class alv(Variable):
-    column = IntCol
-    entity_class = Individus
-
-
-class rto(Variable):
-    column = IntCol
-    entity_class = Individus
-
-
-class psoc(Variable):
-    column = IntCol
-    entity_class = Individus
-
-
-class uc(Variable):
+class prestations_sociales(Variable):
     column = IntCol
     entity_class = Individus

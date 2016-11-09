@@ -119,7 +119,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                     u"""rstbrut""",
                     u"""alv""",
                     u"""rto""",
-                    u"""psoc""",
+                    u"""prestations_sociales""",
                     u"""uc""",
                     ]),
                 ]),
