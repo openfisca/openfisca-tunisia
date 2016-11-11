@@ -1,0 +1,17 @@
+- name: "Salarié 12000 DT"
+  period: 2011
+  input_variables:
+    revenu_assimile_pension: 12000
+  output_variables:
+    revenu_assimile_pension: 12000
+    revenu_assimile_pension_apres_abattements: 12000 * (1 - .25)
+
+
+- name: "Salarié 12000 DT + 500 DT en nature"
+  period: 2011
+  input_variables:
+    revenu_assimile_pension: 12000
+    avantages_nature_assimile_pension: 500
+  output_variables:
+    revenu_assimile_pension: 12000
+    revenu_assimile_pension_apres_abattements: 12500 * (1 - .25)
