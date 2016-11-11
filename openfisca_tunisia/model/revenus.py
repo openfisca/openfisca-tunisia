@@ -330,7 +330,7 @@ class salaire_imposable(Variable):
     entity_class = Individus
 
 
-class sal_nat(Variable):
+class salaire_en_nature(Variable):
     column = IntCol
     label = u"Avantages en nature assimilables à des salaires"
     entity_class = Individus

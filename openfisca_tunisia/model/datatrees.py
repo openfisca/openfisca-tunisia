@@ -85,7 +85,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                     u"""fon_forf_nbat_dep""",
                     u"""fon_forf_nbat_tax""",
                     u"""fon_sp""",
-                    u"""sal_nat""",
+                    u"""salaire_en_nature""",
                     u"""smig_dec""",
                     u"""pen""",
                     u"""avantages_nature_assimile_pension""",

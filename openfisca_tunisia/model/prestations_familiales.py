@@ -105,10 +105,10 @@ class smig75(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         salaire_imposable = simulation.calculate('salaire_imposable', period = period)
-        sal_nat = simulation.calculate('sal_nat', period = period)
+        salaire_en_nature = simulation.calculate('salaire_en_nature', period = period)
         _P = simulation.legislation_at(period.start)
 
-        return period, (salaire_imposable + sal_nat) < _P.cotisations_sociales.gen.smig
+        return period, (salaire_imposable + salaire_en_nature) < _P.cotisations_sociales.gen.smig
 
 
 class salaire_unique(Variable):

@@ -12,8 +12,6 @@ ALL = [x[1] for x in QUIFOY]
 PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 
 
-
-
 def _nb_adult(marie, celdiv, veuf):
     return period, 2 * marie + 1 * (celdiv | veuf)
 
@@ -61,7 +59,6 @@ class veuf(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         statut_marital = simulation.calculate('statut_marital', period = period)
-
         return period, statut_marital == 4
 
 
@@ -346,11 +343,11 @@ class revenu_assimile_salaire(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
-        sal_nat_holder = simulation.compute('sal_nat', period = period)
+        salaire_en_nature_holder = simulation.compute('salaire_en_nature', period = period)
 
         salaire_imposable = self.sum_by_entity(salaire_imposable_holder, roles = [VOUS, CONJ])
-        sal_nat = self.sum_by_entity(sal_nat_holder, roles = [VOUS, CONJ])
-        return period, (salaire_imposable + sal_nat)
+        salaire_en_nature = self.sum_by_entity(salaire_en_nature_holder, roles = [VOUS, CONJ])
+        return period, (salaire_imposable + salaire_en_nature)
 
 
 class smig(Variable):
