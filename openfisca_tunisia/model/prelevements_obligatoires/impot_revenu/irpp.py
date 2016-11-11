@@ -479,22 +479,22 @@ class retr(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        etr_sal_holder = simulation.compute('etr_sal', period = period)
-        etr_pen_holder = simulation.compute('etr_pen', period = period)
-        etr_trans_holder = simulation.compute('etr_trans', period = period)
-        etr_aut_holder = simulation.compute('etr_aut', period = period)
+        salaire_etranger_holder = simulation.compute('salaire_etranger', period = period)
+        pension_etranger_non_transferee_holder = simulation.compute('pension_etranger_non_transferee', period = period)
+        pension_etranger_transferee_holder = simulation.compute('pension_etranger_transferee', period = period)
+        autres_revenus_etranger_holder = simulation.compute('autres_revenus_etranger', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.ir.tspr
-        etr_sal = self.filter_role(etr_sal_holder, role = VOUS)
-        etr_pen = self.filter_role(etr_pen_holder, role = VOUS)
-        etr_trans = self.filter_role(etr_trans_holder, role = VOUS)
-        etr_aut = self.filter_role(etr_aut_holder, role = VOUS)
+        salaire_etranger = self.filter_role(salaire_etranger_holder, role = VOUS)
+        pension_etranger_non_transferee = self.filter_role(pension_etranger_non_transferee_holder, role = VOUS)
+        pension_etranger_transferee = self.filter_role(pension_etranger_transferee_holder, role = VOUS)
+        autres_revenus_etranger = self.filter_role(autres_revenus_etranger_holder, role = VOUS)
         return period, (
-            etr_sal * (1 - P.abat_sal) +
-            etr_pen * (1 - P.abat_pen) +
-            etr_trans * (1 - P.abat_pen_etr) +
-            etr_aut
+            salaire_etranger * (1 - P.abat_sal) +
+            pension_etranger_non_transferee * (1 - P.abat_pen) +
+            pension_etranger_transferee * (1 - P.abat_pen_etr) +
+            autres_revenus_etranger
             )
 
 
