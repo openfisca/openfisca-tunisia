@@ -811,7 +811,7 @@
       </CODE>
     </NODE>
   </NODE>
-  <NODE code="ir" description="Impôt sur le revenu">
+  <NODE code="impot_revenu" description="Impôt sur le revenu">
     <BAREME code="bareme" description="Tranches de l'IR">
       <TRANCHE code="tranche0">
         <SEUIL>
