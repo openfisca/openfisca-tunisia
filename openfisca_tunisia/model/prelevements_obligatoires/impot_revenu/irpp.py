@@ -264,6 +264,7 @@ class beap(Variable):
 
 
 # 4. Revenus fonciers
+
 class revenus_fonciers(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
@@ -312,8 +313,6 @@ class fon_forf_nbat(Variable):
         fon_forf_nbat_rec_holder = simulation.compute('fon_forf_nbat_rec', period = period)
         fon_forf_nbat_dep_holder = simulation.compute('fon_forf_nbat_dep', period = period)
         fon_forf_nbat_tax_holder = simulation.compute('fon_forf_nbat_tax', period = period)
-        # _P = simulation.legislation_at(period.start)
-
         fon_forf_nbat_rec = self.filter_role(fon_forf_nbat_rec_holder, role = VOUS)
         fon_forf_nbat_dep = self.filter_role(fon_forf_nbat_dep_holder, role = VOUS)
         fon_forf_nbat_tax = self.filter_role(fon_forf_nbat_tax_holder, role = VOUS)

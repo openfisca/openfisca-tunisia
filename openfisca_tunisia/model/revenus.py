@@ -314,7 +314,7 @@ class fon_forf_nbat_tax(Variable):
     column = IntCol
     entity_class = Individus
 
-#  part dans les bénéfices ou els pertes de sociétés de personnes et assimilées qui réalisent des revenus fonciers
+#  part dans les bénéfices ou les pertes de sociétés de personnes et assimilées qui réalisent des revenus fonciers
 
 
 class fon_sp(Variable):
