@@ -840,7 +840,7 @@
         </SEUIL>
         <TAUX>
           <VALUE deb="2017-01-01" fuzzy="true" valeur=".20" />
-          <VALUE deb="1990-01-01" fin="201--12-31" valeur=".20" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur=".20" />
         </TAUX>
       </TRANCHE>
       <TRANCHE code="tranche3">
