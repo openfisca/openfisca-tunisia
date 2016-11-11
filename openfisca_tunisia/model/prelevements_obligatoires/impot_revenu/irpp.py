@@ -77,7 +77,7 @@ class nb_enf(Variable):
 
         age = self.split_by_roles(age_holder, roles = PACS)
 
-        P = _P.ir.deduc.fam
+        P = _P.impot_revenu.deduc.fam
     #    res = None
     #    i = 1
     #    if res is None: res = zeros(len(age))
@@ -243,7 +243,7 @@ class bnc_forf_benef_fiscal(Variable):
         bnc_forf_rec_brut = simulation.calculate('bnc_forf_rec_brut', period = period)
         _P = simulation.legislation_at(period.start)
 
-        part = _P.ir.bnc.forf.part_forf
+        part = _P.impot_revenu.bnc.forf.part_forf
         return period, bnc_forf_rec_brut * part
 
 
@@ -295,7 +295,7 @@ class fon_forf_bati(Variable):
         fon_forf_bati_tax_holder = simulation.compute('fon_forf_bati_tax', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.ir.fon.bati.deduc_frais
+        P = _P.impot_revenu.fon.bati.deduc_frais
         fon_forf_bati_rec = self.filter_role(fon_forf_bati_rec_holder, role = VOUS)
         fon_forf_bati_rel = self.filter_role(fon_forf_bati_rel_holder, role = VOUS)
         fon_forf_bati_fra = self.filter_role(fon_forf_bati_fra_holder, role = VOUS)
@@ -375,7 +375,7 @@ class revenu_assimile_salaire_apres_abattements(Variable):
         period = period.start.offset('first-of', 'month').period('year')
         revenu_assimile_salaire = simulation.calculate('revenu_assimile_salaire', period = period)
         smig = simulation.calculate('smig', period = period)
-        tspr = simulation.legislation_at(period.start).ir.tspr
+        tspr = simulation.legislation_at(period.start).impot_revenu.tspr
 
         if period.start.year >= 2011:
             res = max_(
@@ -397,7 +397,7 @@ class revenu_assimile_pension_apres_abattements(Variable):
         avantages_nature_assimile_pension_holder = simulation.compute('avantages_nature_assimile_pension', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.ir.tspr
+        P = _P.impot_revenu.tspr
         revenu_assimile_pension = self.filter_role(revenu_assimile_pension_holder, role = VOUS)
         avantages_nature_assimile_pension = self.filter_role(avantages_nature_assimile_pension_holder, role = VOUS)
         return period, (revenu_assimile_pension + avantages_nature_assimile_pension) * (1 - P.abat_pen)
@@ -453,7 +453,7 @@ class retr(Variable):
         autres_revenus_etranger_holder = simulation.compute('autres_revenus_etranger', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.ir.tspr
+        P = _P.impot_revenu.tspr
         salaire_etranger = self.filter_role(salaire_etranger_holder, role = VOUS)
         pension_etranger_non_transferee = self.filter_role(pension_etranger_non_transferee_holder, role = VOUS)
         pension_etranger_transferee = self.filter_role(pension_etranger_transferee_holder, role = VOUS)
@@ -519,7 +519,7 @@ class deduc_fam(Variable):
         # nb_par = simulation.calculate('nb_par', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.ir.deduc.fam
+        P = _P.impot_revenu.deduc.fam
         #  chef de famille
         chef = P.chef * (nb_enf > 0)  # TODO
 
@@ -569,7 +569,7 @@ class ass_vie(Variable):
         nb_enf = simulation.calculate('nb_enf', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.ir.deduc.ass_vie
+        P = _P.impot_revenu.deduc.ass_vie
         marie = self.filter_role(statut_marital_holder, role = VOUS)  # TODO
         prime_ass_vie = self.sum_by_entity(prime_ass_vie_holder)
         deduc = min_(prime_ass_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
@@ -650,8 +650,8 @@ class ir_brut(Variable):
         rni = simulation.calculate('rni', period = period)
         _P = simulation.legislation_at(period.start)
 
-        bar = _P.ir.bareme
-        exemption = _P.ir.reforme.exemption
+        bar = _P.impot_revenu.bareme
+        exemption = _P.impot_revenu.reforme.exemption
         rni_apres_exemption = rni * (exemption.active == 0) + rni * (exemption.active == 1) * (rni > exemption.max)
         ir_brut = -bar.calc(rni_apres_exemption)
         return period, ir_brut

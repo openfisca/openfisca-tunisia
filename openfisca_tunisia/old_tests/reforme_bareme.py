@@ -44,7 +44,7 @@ def run_simulation(apply_reform=False, reforme=False,
 
     print simulation.scenario
     if apply_reform:
-        simulation.P.ir.reforme.exemption.active = 1
+        simulation.P.impot_revenu.reforme.exemption.active = 1
         simulation.P.cotisations_sociales.gen.smig = 320
         simulation.P_default.cotisations_sociales.gen.smig = 320
 
@@ -115,7 +115,7 @@ def test_case(year):
     simulation.scenario.addIndiv(3, datetime.date(2000,1,1), 'pac', 'enf')
 
     simulation.set_param()
-    simulation.P.ir.reforme.exemption.active = 1
+    simulation.P.impot_revenu.reforme.exemption.active = 1
 
     df = simulation.get_results_dataframe()
     print df.to_string()
