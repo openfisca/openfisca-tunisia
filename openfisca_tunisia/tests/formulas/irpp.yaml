@@ -1,0 +1,9 @@
+- name: "Célibataire salarié 12000 DT"
+  period: 2011
+  absolute_error_margin: 0.5
+  input_variables:
+    salaire_imposable: 17710
+  output_variables:
+    revenu_assimile_salaire: 17710
+    revenu_assimile_salaire_apres_abattements: 17710 * (1 - .1)
+    irpp: -3010
