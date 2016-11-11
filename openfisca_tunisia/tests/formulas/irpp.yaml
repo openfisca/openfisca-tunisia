@@ -7,3 +7,4 @@
     revenu_assimile_salaire: 17710
     revenu_assimile_salaire_apres_abattements: 17710 * (1 - .1)
     irpp: -3010
+

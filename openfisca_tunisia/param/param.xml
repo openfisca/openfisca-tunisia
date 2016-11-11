@@ -815,50 +815,62 @@
     <BAREME code="bareme" description="Tranches de l'IR">
       <TRANCHE code="tranche0">
         <SEUIL>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="0" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="0" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="0" />
         </SEUIL>
         <TAUX>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="0" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="0" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="0" />
         </TAUX>
       </TRANCHE>
       <TRANCHE code="tranche1">
         <SEUIL>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="1500" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="1500" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="1500" />
         </SEUIL>
         <TAUX>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur=".15" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur=".15" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur=".15" />
         </TAUX>
       </TRANCHE>
       <TRANCHE code="tranche2">
         <SEUIL>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="5000" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="5000" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="5000" />
         </SEUIL>
         <TAUX>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur=".20" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur=".20" />
+          <VALUE deb="1990-01-01" fin="201--12-31" valeur=".20" />
         </TAUX>
       </TRANCHE>
       <TRANCHE code="tranche3">
         <SEUIL>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="10000" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="10000" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="10000" />
         </SEUIL>
         <TAUX>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur=".25" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur=".25" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur=".25" />
         </TAUX>
       </TRANCHE>
       <TRANCHE code="tranche4">
         <SEUIL>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="20000" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="20000" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="20000" />
         </SEUIL>
         <TAUX>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur=".30" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur=".30" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur=".30" />
         </TAUX>
       </TRANCHE>
       <TRANCHE code="tranche5">
         <SEUIL>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur="50000" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur="50000" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur="50000" />
         </SEUIL>
         <TAUX>
-          <VALUE deb="1990-01-01" fin="2011-12-31" valeur=".35" />
+          <VALUE deb="2017-01-01" fuzzy="true" valeur=".35" />
+          <VALUE deb="1990-01-01" fin="2016-12-31" valeur=".35" />
         </TAUX>
       </TRANCHE>
     </BAREME>
