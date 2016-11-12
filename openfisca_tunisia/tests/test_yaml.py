@@ -23,22 +23,6 @@ log = logging.getLogger(__name__)
 
 options_by_dir = collections.OrderedDict((
     (
-        os.path.abspath(os.path.join(os.path.dirname(__file__), 'calculateur_impots')),
-        dict(
-            calculate_output = False,
-            default_absolute_error_margin = 0.5,
-            ignore = True,  # TODO: Remove
-            reforms = ['inversion_revenus'],
-            ),
-        ),
-    (
-        os.path.abspath(os.path.join(os.path.dirname(__file__), 'fiches_de_paie')),
-        dict(
-            calculate_output = False,
-            default_absolute_error_margin = 0.005,
-            ),
-        ),
-    (
         os.path.abspath(os.path.join(os.path.dirname(__file__), 'formulas')),
         dict(
             calculate_output = False,
