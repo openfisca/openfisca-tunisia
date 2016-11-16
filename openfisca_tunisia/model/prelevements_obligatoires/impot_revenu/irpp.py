@@ -328,8 +328,10 @@ class tspr(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        revenu_assimile_salaire_apres_abattements = simulation.calculate('revenu_assimile_salaire_apres_abattements', period = period)
-        revenu_assimile_pension_apres_abattements = simulation.calculate('revenu_assimile_pension_apres_abattements', period = period)
+        revenu_assimile_salaire_apres_abattements = simulation.calculate(
+            'revenu_assimile_salaire_apres_abattements', period = period)
+        revenu_assimile_pension_apres_abattements = simulation.calculate(
+            'revenu_assimile_pension_apres_abattements', period = period)
 
         return period, revenu_assimile_salaire_apres_abattements + revenu_assimile_pension_apres_abattements
 
@@ -394,7 +396,8 @@ class revenu_assimile_pension_apres_abattements(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         revenu_assimile_pension_holder = simulation.compute('revenu_assimile_pension', period = period)
-        avantages_nature_assimile_pension_holder = simulation.compute('avantages_nature_assimile_pension', period = period)
+        avantages_nature_assimile_pension_holder = simulation.compute(
+            'avantages_nature_assimile_pension', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.impot_revenu.tspr
