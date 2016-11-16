@@ -514,31 +514,23 @@ class deduc_fam(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         # rng = simulation.calculate('rng', period = period)
-        chef = simulation.calculate('chef_de_famille', period = period)
+        chef_de_famille = simulation.calculate('chef_de_famille', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
         # nb_par = simulation.calculate('nb_par', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.impot_revenu.deduc.fam
         #  chef de famille
-        chef = P.chef_de_famille * (nb_enf > 0)  # TODO
+        chef_de_famille = P.chef_de_famille * chef_de_famille
 
-    #    from scipy.stats import rankdata
-    #
-    #    ages = [a in age.values() if a >= 0 ]
-    #    rk = rankdata(age.values())
-    #    TODO
-    #    rk = rk[-4:]
-    #    rk = round(rk + -.01*range(len(rk))) # to properly rank twins
-    #
-    #
         enf = (nb_enf >= 1) * P.enf1 + (nb_enf >= 2) * P.enf2 + (nb_enf >= 3) * P.enf3 + (nb_enf >= 4) * P.enf4
-    #    sup = P.enf_sup*nb_enf_sup
-    #    infirme = P.infirme*nb_infirme
-    #    parent = min_(P.parent_taux*rng, P.parent_max)
 
-    #    return period, chef + enf + sup + infirme + parent
-        res = chef + enf
+        #    sup = P.enf_sup * nb_enf_sup
+        #    infirme = P.infirme * nb_infirme
+        #    parent = min_(P.parent_taux * rng, P.parent_max)
+
+        #    return period, chef_de_famille + enf + sup + infirme + parent
+        res = chef_de_famille + enf
         return period, res
 
 
