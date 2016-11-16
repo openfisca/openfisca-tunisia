@@ -514,14 +514,14 @@ class deduc_fam(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         # rng = simulation.calculate('rng', period = period)
-        chef = simulation.calculate('chef', period = period)
+        chef = simulation.calculate('chef_de_famille', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
         # nb_par = simulation.calculate('nb_par', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.impot_revenu.deduc.fam
         #  chef de famille
-        chef = P.chef * (nb_enf > 0)  # TODO
+        chef = P.chef_de_famille * (nb_enf > 0)  # TODO
 
     #    from scipy.stats import rankdata
     #
@@ -614,7 +614,7 @@ class deduc_smig(Variable):
 
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
-        chef = simulation.calculate('chef', period = period)
+        chef = simulation.calculate('chef_de_famille', period = period)
 
         return period, 0 * chef  # TODO: voir avec tspr
 

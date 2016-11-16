@@ -52,7 +52,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                     u"""inv""",
                     u"""jour_xyz""",
                     u"""boursier""",
-                    u"""chef""",
+                    u"""chef_de_famille""",
                     u"""bic_reel""",
                     u"""bic_sp""",
                     u"""cadre_legal""",
