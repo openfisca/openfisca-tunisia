@@ -64,6 +64,54 @@ class date_naissance(Variable):
     label = u"Année de naissance"
 
 
+
+
+class marie(Variable):
+    column = BoolCol
+    entity_class = FoyersFiscaux
+    label = u"Marié"
+
+    def function(self, simulation, period):
+        period = period.start.offset('first-of', 'month').period('year')
+        statut_marital = simulation.calculate('statut_marital', period = period)
+
+        return period, (statut_marital == 1)
+
+
+class celibataire(Variable):
+    column = BoolCol
+    entity_class = FoyersFiscaux
+    label = u"Célibataire"
+
+    def function(self, simulation, period):
+        period = period.start.offset('first-of', 'month').period('year')
+        statut_marital = simulation.calculate('statut_marital', period = period)
+
+        return period, (statut_marital == 2)
+
+
+class divorce(Variable):
+    column = BoolCol
+    entity_class = FoyersFiscaux
+    label = u"Divorcé"
+
+    def function(self, simulation, period):
+        period = period.start.offset('first-of', 'month').period('year')
+        statut_marital = simulation.calculate('statut_marital', period = period)
+        return period, (statut_marital == 3)
+
+
+class veuf(Variable):
+    column = BoolCol
+    entity_class = FoyersFiscaux
+    label = u"Veuf"
+
+    def function(self, simulation, period):
+        period = period.start.offset('first-of', 'month').period('year')
+        statut_marital = simulation.calculate('statut_marital', period = period)
+        return period, statut_marital == 4
+
+
 class statut_marital(Variable):
     column = PeriodSizeIndependentIntCol(default = 2)
     entity_class = Individus
@@ -86,5 +134,4 @@ class chef_de_famille(Variable):
     # - Le célibataire ou la célibataire ;
     # - Le divorcé ou la divorcée qui n’a pas la garde des enfants ;
     # - La femme durant le mariage (sauf si elle dispose d’un revenu alors que son mari ne dispose d’aucun revenu) ;
-    # - L’époux qui ne dispose pas d’une source de revenu. Dans ce cas, l’épouse acquiert la qualité de chef de famille
-    #   au cas où elle réalise des revenus.
+    # - L’époux qui ne dispose pas d’une source de revenu. Dans ce cas, l’épouse acquiert la qualité de chef de famille au cas où elle réalise des revenus.

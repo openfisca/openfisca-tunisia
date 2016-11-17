@@ -12,54 +12,8 @@ ALL = [x[1] for x in QUIFOY]
 PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 
 
-def _nb_adult(marie, celdiv, veuf):
-    return period, 2 * marie + 1 * (celdiv | veuf)
-
-
-class marie(Variable):
-    column = BoolCol
-    entity_class = FoyersFiscaux
-    label = u"Marié"
-
-    def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
-        statut_marital = simulation.calculate('statut_marital', period = period)
-
-        return period, (statut_marital == 1)
-
-
-class celdiv(Variable):
-    column = BoolCol
-    entity_class = FoyersFiscaux
-    label = u"Célibataire"
-
-    def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
-        statut_marital = simulation.calculate('statut_marital', period = period)
-
-        return period, (statut_marital == 2)
-
-
-class divorce(Variable):
-    column = BoolCol
-    entity_class = FoyersFiscaux
-    label = u"Divorcé"
-
-    def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
-        statut_marital = simulation.calculate('statut_marital', period = period)
-        return period, (statut_marital == 3)
-
-
-class veuf(Variable):
-    column = BoolCol
-    entity_class = FoyersFiscaux
-    label = u"Veuf"
-
-    def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
-        statut_marital = simulation.calculate('statut_marital', period = period)
-        return period, statut_marital == 4
+def _nb_adult(marie, celibataire, veuf):
+    return period, 2 * marie + 1 * (celibataire | veuf)
 
 
 class nb_enf(Variable):
