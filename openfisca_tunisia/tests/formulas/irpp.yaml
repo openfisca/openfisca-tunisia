@@ -13,8 +13,9 @@
   period: 2011
   absolute_error_margin: 0.5
   input_variables:
+    male: True
+    marie: True
     salaire_imposable: 17710
-    chef_de_famille: 1
   output_variables:
     revenu_assimile_salaire: 17710
     revenu_assimile_salaire_apres_abattements: 17710 * (1 - .1)

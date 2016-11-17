@@ -3,7 +3,7 @@
 
 from __future__ import division
 
-from numpy import datetime64, logical_or as or_, maximum as max_, minimum as min_
+from numpy import logical_or as or_, maximum as max_, minimum as min_
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
