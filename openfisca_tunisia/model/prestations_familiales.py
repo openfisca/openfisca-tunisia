@@ -68,35 +68,6 @@ def ages_first_kids(age, nb = None):
     return age_list
 
 
-def _nb_parents(self, quifoy_holder):
-    '''
-    Nombre d'adultes (parents) dans la famille
-    '''
-    quifoy = self.split_by_roles(quifoy_holder, roles = PART)
-    return period, 1 + 1 * (quifoy[PART] == 1)
-
-
-def _maries(statut_marital):
-    '''
-    couple = 1 si couple marié sinon 0 TODO: faire un choix avec couple ?
-    '''
-    return period, statut_marital == 1
-
-
-def _isol(nb_parents):
-    '''
-    Parent (s'il y a lieu) isolé
-    '''
-    return period, nb_parents == 1
-
-
-def _etu(activite):
-    '''
-    Indicatrice individuelle etudiant
-    '''
-    return period, activite == 2
-
-
 class smig75(Variable):
     column = BoolCol
     entity_class = Individus
@@ -119,11 +90,8 @@ class salaire_unique(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
-        _P = simulation.legislation_at(period.start)
-
         salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [CHEF, PART])
-        uniq = xor_(salaire_imposable[CHEF] > 0, salaire_imposable[PART] > 0)
-        return period, uniq
+        return period, xor_(salaire_imposable[CHEF] > 0, salaire_imposable[PART] > 0)
 
 
 ############################################################################
@@ -231,7 +199,7 @@ def _af_cong_jeun_trav(age, _P):
     return period, 0
 
 
-class contr_creche(Variable):
+class contribution_frais_creche(Variable):
     column = FloatCol
     entity_class = Menages
     label = u"Contribution aux frais de crêche"
@@ -271,16 +239,12 @@ class presations_familiales(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
     label = u"Prestations familales"
 
     def function(self, simulation, period):
-        '''
-        Prestations familiales
-        'fam'
-        '''
         period = period.start.offset('first-of', 'month').period('year')
         af = simulation.calculate('af', period = period)
         majoration_salaire_unique = simulation.calculate('majoration_salaire_unique', period = period)
-        contr_creche = simulation.calculate('contr_creche', period = period)
+        contribution_frais_creche = simulation.calculate('contribution_frais_creche', period = period)
 
-        return period, af + majoration_salaire_unique + contr_creche
+        return period, af + majoration_salaire_unique + contribution_frais_creche
 
 
 ############################################################################
