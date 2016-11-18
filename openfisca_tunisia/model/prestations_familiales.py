@@ -68,7 +68,7 @@ def ages_first_kids(age, nb = None):
     return age_list
 
 
-def _nb_par(self, quifoy_holder):
+def _nb_parents(self, quifoy_holder):
     '''
     Nombre d'adultes (parents) dans la famille
     '''
@@ -83,11 +83,11 @@ def _maries(statut_marital):
     return period, statut_marital == 1
 
 
-def _isol(nb_par):
+def _isol(nb_parents):
     '''
     Parent (s'il y a lieu) isolé
     '''
-    return period, nb_par == 1
+    return period, nb_parents == 1
 
 
 def _etu(activite):

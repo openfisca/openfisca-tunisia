@@ -30,7 +30,6 @@ class nb_enf(Variable):
         _P = simulation.legislation_at(period.start)
 
         age = self.split_by_roles(age_holder, roles = PACS)
-
         P = _P.impot_revenu.deduc.fam
     #    res = None
     #    i = 1
@@ -41,7 +40,6 @@ class nb_enf(Variable):
     #                 (ag < 25)*not_(boursier)*() )
         res = 0
         for ag in age.itervalues():
-
             res += 1 * (ag < P.age) * (ag >= 0)
         return period, res
 
@@ -78,7 +76,7 @@ class nb_infirme(Variable):
         return period, 0 * age_en_mois * inv
 
 
-class nb_par(Variable):
+class nb_parents(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Nombre de parents"
@@ -475,7 +473,7 @@ class deduc_fam(Variable):
             simulation.calculate('chef_de_famille', period = period)
             )
         nb_enf = simulation.calculate('nb_enf', period = period)
-        # nb_par = simulation.calculate('nb_par', period = period)
+        # nb_parents = simulation.calculate('nb_parents', period = period)
         _P = simulation.legislation_at(period.start)
 
         P = _P.impot_revenu.deduc.fam
