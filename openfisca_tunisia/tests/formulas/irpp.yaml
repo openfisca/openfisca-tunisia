@@ -33,18 +33,18 @@
     revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
     irpp: 0
 
-#- name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 0 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    male: false
-#    marie: true
-#    salaire_imposable: 0
-#  output_variables:
-#    revenu_assimile_salaire: 0
-#    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
-#    irpp: 0
-#
+- name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 0 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    male: false
+    marie: true
+    salaire_imposable: 0
+  output_variables:
+    revenu_assimile_salaire: 0
+    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
+    irpp: 0
+
 #- name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 0 TND"
 #  period: 2016
 #  absolute_error_margin: 0.5
