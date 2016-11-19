@@ -21,6 +21,7 @@ def modify_legislation_json(reference_legislation_json_copy):
 
 class plf_2017(Reform):
     name = u'Projet de Loi de Finances 2017 appliquée aux revenus 2016'
+    key = 'plf_2017'
 
     def apply(self):
         self.modify_legislation_json(modifier_function = modify_legislation_json)

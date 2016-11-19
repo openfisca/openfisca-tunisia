@@ -29,6 +29,14 @@ options_by_dir = collections.OrderedDict((
             default_absolute_error_margin = 0.005,
             ),
         ),
+    (
+        os.path.abspath(os.path.join(os.path.dirname(__file__), 'reforms', 'plf_2017')),
+        dict(
+            calculate_output = False,
+            default_absolute_error_margin = 0.5,
+            reforms = ['plf_2017'],
+            ),
+        ),
     ))
 
 
@@ -295,6 +303,7 @@ def main():
         sys.exit(1)
 
     sys.exit(0)
+
 
 if __name__ == "__main__":
     main()
