@@ -12,10 +12,6 @@ ALL = [x[1] for x in QUIFOY]
 PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 
 
-def _nb_adult(marie, celibataire, veuf):
-    return period, 2 * marie + 1 * (celibataire | veuf)
-
-
 class nb_enf(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
