@@ -81,7 +81,7 @@ class rente(Variable):
     entity_class = Individus
 
 
-class prime_ass_vie(Variable):
+class prime_assurance_vie(Variable):
     column = IntCol
     label = u"Prime d’assurance-vie"
     entity_class = Individus

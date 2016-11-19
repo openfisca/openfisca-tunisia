@@ -499,7 +499,7 @@ class deduc_rente(Variable):
         return period, rente  # TODO:
 
 
-class ass_vie(Variable):
+class assurance_vie(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Primes afférentes aux contrats d'assurance-vie"
@@ -509,15 +509,15 @@ class ass_vie(Variable):
         Primes afférentes aux contrats d'assurance-vie collectifs ou individuels
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        prime_ass_vie_holder = simulation.compute('prime_ass_vie', period = period)
+        prime_assurance_vie_holder = simulation.compute('prime_assurance_vie', period = period)
         statut_marital_holder = simulation.compute('statut_marital', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.impot_revenu.deduc.ass_vie
+        P = _P.impot_revenu.deduc.assurance_vie
         marie = self.filter_role(statut_marital_holder, role = VOUS)  # TODO
-        prime_ass_vie = self.sum_by_entity(prime_ass_vie_holder)
-        deduc = min_(prime_ass_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
+        prime_assurance_vie = self.sum_by_entity(prime_assurance_vie_holder)
+        deduc = min_(prime_assurance_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
         return period, deduc
 
 
@@ -579,10 +579,10 @@ class rni(Variable):
         rng = simulation.calculate('rng', period = period)
         deduc_fam = simulation.calculate('deduc_fam', period = period)
         rente_holder = simulation.compute('rente', period = period)
-        ass_vie = simulation.calculate('ass_vie', period = period)
+        assurance_vie = simulation.calculate('assurance_vie', period = period)
 
         rente = self.filter_role(rente_holder, role = VOUS)
-        return period, rng - (deduc_fam + rente + ass_vie)
+        return period, rng - (deduc_fam + rente + assurance_vie)
 
 
 class ir_brut(Variable):
@@ -596,8 +596,9 @@ class ir_brut(Variable):
         _P = simulation.legislation_at(period.start)
 
         bar = _P.impot_revenu.bareme
-        exemption = _P.impot_revenu.reforme.exemption
-        rni_apres_exemption = rni * (exemption.active == 0) + rni * (exemption.active == 1) * (rni > exemption.max)
+        # exemption = _P.impot_revenu.reforme.exemption
+        # rni_apres_exemption = rni * (exemption.active == 0) + rni * (exemption.active == 1) * (rni > exemption.max)
+        rni_apres_exemption = rni
         ir_brut = -bar.calc(rni_apres_exemption)
         return period, ir_brut
 

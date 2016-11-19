@@ -111,7 +111,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                     u"""deduc_obli""",
                     u"""deduc_epinv""",
                     u"""rente""",
-                    u"""prime_ass_vie""",
+                    u"""prime_assurance_vie""",
                     u"""dons""",
                     u"""pret_univ""",
                     u"""cotis_nonaf""",
