@@ -880,7 +880,8 @@
         <VALUE deb="1990-01-01" fuzzy="true" valeur=".10" />
       </CODE>
       <CODE code="smig" description="Abattement pour salaire minimum" format="integer" type="monetary">
-        <VALUE deb="2010-01-01" fuzzy="true" valeur="1000" />
+        <VALUE deb="2016-01-01" fuzzy="2016-12-31" valeur="0" />
+        <VALUE deb="2010-01-01" fuzzy="2015-12-31" valeur="1000" />
         <VALUE deb="2005-01-01" fin="2009-12-31" valeur="500" />
       </CODE>
       <CODE code="smig_ext" description="Extension de l'abattement précédent aux bas salaires" format="integer">
