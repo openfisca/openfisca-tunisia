@@ -1,5 +1,5 @@
 - name: "Célibataire salarié 12000 DT"
-  period: 2017
+  period: 2016
   absolute_error_margin: 0.5
   input_variables:
     salaire_imposable: 17710
