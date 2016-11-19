@@ -13,8 +13,8 @@
   period: 2011
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: True
+    male: true
+    marie: true
     salaire_imposable: 17710
   output_variables:
     revenu_assimile_salaire: 17710
@@ -25,8 +25,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 0
   output_variables:
     revenu_assimile_salaire: 0
@@ -37,8 +37,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 0
   output_variables:
     revenu_assimile_salaire: 0
@@ -49,8 +49,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 0
   output_variables:
@@ -62,8 +62,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 0
   output_variables:
@@ -75,8 +75,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 0
   output_variables:
@@ -88,8 +88,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 0
   output_variables:
@@ -101,8 +101,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 0
   output_variables:
@@ -115,8 +115,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5500
   output_variables:
     revenu_assimile_salaire: 5500
@@ -127,8 +127,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5500
   output_variables:
     revenu_assimile_salaire: 5500
@@ -139,8 +139,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5500
   output_variables:
@@ -152,8 +152,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5500
   output_variables:
@@ -165,8 +165,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5500
   output_variables:
@@ -178,8 +178,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5500
   output_variables:
@@ -191,8 +191,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5500
   output_variables:
@@ -205,8 +205,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5600
   output_variables:
     revenu_assimile_salaire: 5600
@@ -217,8 +217,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5600
   output_variables:
     revenu_assimile_salaire: 5600
@@ -229,8 +229,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5600
   output_variables:
@@ -242,8 +242,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5600
   output_variables:
@@ -255,8 +255,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5600
   output_variables:
@@ -268,8 +268,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5600
   output_variables:
@@ -281,8 +281,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5600
   output_variables:
@@ -295,8 +295,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5700
   output_variables:
     revenu_assimile_salaire: 5700
@@ -307,8 +307,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5700
   output_variables:
     revenu_assimile_salaire: 5700
@@ -319,8 +319,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5700
   output_variables:
@@ -332,8 +332,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5700
   output_variables:
@@ -345,8 +345,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5700
   output_variables:
@@ -358,8 +358,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5700
   output_variables:
@@ -371,8 +371,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5700
   output_variables:
@@ -385,8 +385,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5900
   output_variables:
     revenu_assimile_salaire: 5900
@@ -397,8 +397,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5900
   output_variables:
     revenu_assimile_salaire: 5900
@@ -409,8 +409,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5900
   output_variables:
@@ -422,8 +422,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5900
   output_variables:
@@ -435,8 +435,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5900
   output_variables:
@@ -448,8 +448,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5900
   output_variables:
@@ -461,8 +461,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5900
   output_variables:
@@ -475,8 +475,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 6000
   output_variables:
     revenu_assimile_salaire: 6000
@@ -487,8 +487,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 6000
   output_variables:
     revenu_assimile_salaire: 6000
@@ -499,8 +499,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 6000
   output_variables:
@@ -512,8 +512,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 6000
   output_variables:
@@ -525,8 +525,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 6000
   output_variables:
@@ -538,8 +538,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 6000
   output_variables:
@@ -551,8 +551,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 6000
   output_variables:
@@ -565,8 +565,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 6100
   output_variables:
     revenu_assimile_salaire: 6100
@@ -577,8 +577,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 6100
   output_variables:
     revenu_assimile_salaire: 6100
@@ -589,8 +589,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 6100
   output_variables:
@@ -602,8 +602,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 6100
   output_variables:
@@ -615,8 +615,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 6100
   output_variables:
@@ -628,8 +628,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 6100
   output_variables:
@@ -641,8 +641,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 6100
   output_variables:
@@ -655,8 +655,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 27700
   output_variables:
     revenu_assimile_salaire: 27700
@@ -667,8 +667,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 27700
   output_variables:
     revenu_assimile_salaire: 27700
@@ -679,8 +679,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 27700
   output_variables:
@@ -692,8 +692,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 27700
   output_variables:
@@ -705,8 +705,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 27700
   output_variables:
@@ -718,8 +718,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 27700
   output_variables:
@@ -731,8 +731,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 27700
   output_variables:
@@ -745,8 +745,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 27800
   output_variables:
     revenu_assimile_salaire: 27800
@@ -757,8 +757,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 27800
   output_variables:
     revenu_assimile_salaire: 27800
@@ -769,8 +769,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 27800
   output_variables:
@@ -782,8 +782,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 27800
   output_variables:
@@ -795,8 +795,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 27800
   output_variables:
@@ -808,8 +808,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 27800
   output_variables:
@@ -821,8 +821,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 27800
   output_variables:
@@ -835,8 +835,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 27900
   output_variables:
     revenu_assimile_salaire: 27900
@@ -847,8 +847,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 27900
   output_variables:
     revenu_assimile_salaire: 27900
@@ -859,8 +859,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 27900
   output_variables:
@@ -872,8 +872,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 27900
   output_variables:
@@ -885,8 +885,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 27900
   output_variables:
@@ -898,8 +898,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 27900
   output_variables:
@@ -911,8 +911,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 27900
   output_variables:
@@ -925,8 +925,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28000
   output_variables:
     revenu_assimile_salaire: 28000
@@ -937,8 +937,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28000
   output_variables:
     revenu_assimile_salaire: 28000
@@ -949,8 +949,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28000
   output_variables:
@@ -962,8 +962,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28000
   output_variables:
@@ -975,8 +975,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28000
   output_variables:
@@ -988,8 +988,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28000
   output_variables:
@@ -1001,8 +1001,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28000
   output_variables:
@@ -1015,8 +1015,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28100
   output_variables:
     revenu_assimile_salaire: 28100
@@ -1027,8 +1027,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28100
   output_variables:
     revenu_assimile_salaire: 28100
@@ -1039,8 +1039,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28100
   output_variables:
@@ -1052,8 +1052,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28100
   output_variables:
@@ -1065,8 +1065,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28100
   output_variables:
@@ -1078,8 +1078,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28100
   output_variables:
@@ -1091,8 +1091,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28100
   output_variables:
@@ -1105,8 +1105,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28200
   output_variables:
     revenu_assimile_salaire: 28200
@@ -1117,8 +1117,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28200
   output_variables:
     revenu_assimile_salaire: 28200
@@ -1129,8 +1129,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28200
   output_variables:
@@ -1142,8 +1142,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28200
   output_variables:
@@ -1155,8 +1155,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28200
   output_variables:
@@ -1168,8 +1168,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28200
   output_variables:
@@ -1181,8 +1181,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28200
   output_variables:
@@ -1195,8 +1195,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28300
   output_variables:
     revenu_assimile_salaire: 28300
@@ -1207,8 +1207,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28300
   output_variables:
     revenu_assimile_salaire: 28300
@@ -1219,8 +1219,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28300
   output_variables:
@@ -1232,8 +1232,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28300
   output_variables:
@@ -1245,8 +1245,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28300
   output_variables:
@@ -1258,8 +1258,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28300
   output_variables:
@@ -1271,8 +1271,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28300
   output_variables:
@@ -1285,8 +1285,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55500
   output_variables:
     revenu_assimile_salaire: 55500
@@ -1297,8 +1297,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55500
   output_variables:
     revenu_assimile_salaire: 55500
@@ -1309,8 +1309,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55500
   output_variables:
@@ -1322,8 +1322,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55500
   output_variables:
@@ -1335,8 +1335,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55500
   output_variables:
@@ -1348,8 +1348,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55500
   output_variables:
@@ -1361,8 +1361,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55500
   output_variables:
@@ -1375,8 +1375,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55600
   output_variables:
     revenu_assimile_salaire: 55600
@@ -1387,8 +1387,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55600
   output_variables:
     revenu_assimile_salaire: 55600
@@ -1399,8 +1399,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55600
   output_variables:
@@ -1412,8 +1412,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55600
   output_variables:
@@ -1425,8 +1425,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55600
   output_variables:
@@ -1438,8 +1438,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55600
   output_variables:
@@ -1451,8 +1451,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55600
   output_variables:
@@ -1465,8 +1465,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55700
   output_variables:
     revenu_assimile_salaire: 55700
@@ -1477,8 +1477,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55700
   output_variables:
     revenu_assimile_salaire: 55700
@@ -1489,8 +1489,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55700
   output_variables:
@@ -1502,8 +1502,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55700
   output_variables:
@@ -1515,8 +1515,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55700
   output_variables:
@@ -1528,8 +1528,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55700
   output_variables:
@@ -1541,8 +1541,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55700
   output_variables:
@@ -1555,8 +1555,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55800
   output_variables:
     revenu_assimile_salaire: 55800
@@ -1567,8 +1567,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55800
   output_variables:
     revenu_assimile_salaire: 55800
@@ -1579,8 +1579,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55800
   output_variables:
@@ -1592,8 +1592,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55800
   output_variables:
@@ -1605,8 +1605,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55800
   output_variables:
@@ -1618,8 +1618,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55800
   output_variables:
@@ -1631,8 +1631,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55800
   output_variables:
@@ -1645,8 +1645,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55900
   output_variables:
     revenu_assimile_salaire: 55900
@@ -1657,8 +1657,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55900
   output_variables:
     revenu_assimile_salaire: 55900
@@ -1669,8 +1669,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55900
   output_variables:
@@ -1682,8 +1682,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55900
   output_variables:
@@ -1695,8 +1695,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55900
   output_variables:
@@ -1708,8 +1708,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55900
   output_variables:
@@ -1721,8 +1721,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55900
   output_variables:
@@ -1735,8 +1735,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 56000
   output_variables:
     revenu_assimile_salaire: 56000
@@ -1747,8 +1747,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 56000
   output_variables:
     revenu_assimile_salaire: 56000
@@ -1759,8 +1759,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 56000
   output_variables:
@@ -1772,8 +1772,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 56000
   output_variables:
@@ -1785,8 +1785,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 56000
   output_variables:
@@ -1798,8 +1798,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 56000
   output_variables:
@@ -1811,8 +1811,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 56000
   output_variables:
@@ -1825,8 +1825,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 56100
   output_variables:
     revenu_assimile_salaire: 56100
@@ -1837,8 +1837,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 56100
   output_variables:
     revenu_assimile_salaire: 56100
@@ -1849,8 +1849,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 56100
   output_variables:
@@ -1862,8 +1862,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 56100
   output_variables:
@@ -1875,8 +1875,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 56100
   output_variables:
@@ -1888,8 +1888,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 56100
   output_variables:
@@ -1901,8 +1901,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 56100
   output_variables:
@@ -1916,8 +1916,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 0
   output_variables:
     revenu_assimile_salaire: 0
@@ -1928,8 +1928,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 0
   output_variables:
     revenu_assimile_salaire: 0
@@ -1940,8 +1940,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 0
   output_variables:
@@ -1953,8 +1953,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 0
   output_variables:
@@ -1966,8 +1966,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 0
   output_variables:
@@ -1977,10 +1977,11 @@
 
 - name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 0 TND"
   period: 2016
+
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 0
   output_variables:
@@ -1992,8 +1993,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 0
   output_variables:
@@ -2003,51 +2004,55 @@
 
 
 - name: "Célibataire - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5500
   output_variables:
     revenu_assimile_salaire: 5500
     revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-    chef_famille: False
+    chef_famille: false
     irpp: -0
 
 - name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
+  ignore: true
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5500
   output_variables:
     revenu_assimile_salaire: 5500
     revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-    chef_famille: False
+    chef_famille: false
     irpp: -0
 
 - name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
+  ignore: true
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: True
+    male: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5500
   output_variables:
     revenu_assimile_salaire: 5500
     revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-    chef_de_famille: True
+    chef_de_famille: true
     irpp: -0
 
 - name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
+  ignore: true
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5500
   output_variables:
@@ -2057,10 +2062,11 @@
 
 - name: "Chef de famille + 2 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
+  ignore: true
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5500
   output_variables:
@@ -2070,10 +2076,11 @@
 
 - name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
+  ignore: true
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5500
   output_variables:
@@ -2083,10 +2090,11 @@
 
 - name: "Chef de famille + 4 enfants ou plus - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
+  ignore: true
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5500
   output_variables:
@@ -2099,8 +2107,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5600
   output_variables:
     revenu_assimile_salaire: 5600
@@ -2111,8 +2119,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5600
   output_variables:
     revenu_assimile_salaire: 5600
@@ -2123,8 +2131,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5600
   output_variables:
@@ -2136,8 +2144,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5600
   output_variables:
@@ -2149,8 +2157,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5600
   output_variables:
@@ -2162,8 +2170,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5600
   output_variables:
@@ -2175,8 +2183,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5600
   output_variables:
@@ -2189,8 +2197,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5700
   output_variables:
     revenu_assimile_salaire: 5700
@@ -2201,8 +2209,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5700
   output_variables:
     revenu_assimile_salaire: 5700
@@ -2213,8 +2221,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5700
   output_variables:
@@ -2226,8 +2234,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5700
   output_variables:
@@ -2239,8 +2247,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5700
   output_variables:
@@ -2252,8 +2260,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5700
   output_variables:
@@ -2265,8 +2273,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5700
   output_variables:
@@ -2279,8 +2287,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 5900
   output_variables:
     revenu_assimile_salaire: 5900
@@ -2291,8 +2299,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 5900
   output_variables:
     revenu_assimile_salaire: 5900
@@ -2303,8 +2311,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 5900
   output_variables:
@@ -2316,8 +2324,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 5900
   output_variables:
@@ -2329,8 +2337,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 5900
   output_variables:
@@ -2342,8 +2350,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 5900
   output_variables:
@@ -2355,8 +2363,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 5900
   output_variables:
@@ -2369,8 +2377,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 6000
   output_variables:
     revenu_assimile_salaire: 6000
@@ -2381,8 +2389,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 6000
   output_variables:
     revenu_assimile_salaire: 6000
@@ -2393,8 +2401,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 6000
   output_variables:
@@ -2406,8 +2414,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 6000
   output_variables:
@@ -2419,8 +2427,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 6000
   output_variables:
@@ -2432,8 +2440,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 6000
   output_variables:
@@ -2445,8 +2453,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 6000
   output_variables:
@@ -2459,8 +2467,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 6100
   output_variables:
     revenu_assimile_salaire: 6100
@@ -2471,8 +2479,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 6100
   output_variables:
     revenu_assimile_salaire: 6100
@@ -2483,8 +2491,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 6100
   output_variables:
@@ -2496,8 +2504,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 6100
   output_variables:
@@ -2509,8 +2517,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 6100
   output_variables:
@@ -2522,8 +2530,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 6100
   output_variables:
@@ -2535,8 +2543,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 6100
   output_variables:
@@ -2549,8 +2557,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 27700
   output_variables:
     revenu_assimile_salaire: 27700
@@ -2561,8 +2569,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 27700
   output_variables:
     revenu_assimile_salaire: 27700
@@ -2573,8 +2581,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 27700
   output_variables:
@@ -2586,8 +2594,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 27700
   output_variables:
@@ -2599,8 +2607,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 27700
   output_variables:
@@ -2612,8 +2620,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 27700
   output_variables:
@@ -2625,8 +2633,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 27700
   output_variables:
@@ -2639,8 +2647,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 27800
   output_variables:
     revenu_assimile_salaire: 27800
@@ -2651,8 +2659,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 27800
   output_variables:
     revenu_assimile_salaire: 27800
@@ -2663,8 +2671,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 27800
   output_variables:
@@ -2676,8 +2684,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 27800
   output_variables:
@@ -2689,8 +2697,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 27800
   output_variables:
@@ -2702,8 +2710,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 27800
   output_variables:
@@ -2715,8 +2723,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 27800
   output_variables:
@@ -2729,8 +2737,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 27900
   output_variables:
     revenu_assimile_salaire: 27900
@@ -2741,8 +2749,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 27900
   output_variables:
     revenu_assimile_salaire: 27900
@@ -2753,8 +2761,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 27900
   output_variables:
@@ -2766,8 +2774,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 27900
   output_variables:
@@ -2779,8 +2787,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 27900
   output_variables:
@@ -2792,8 +2800,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 27900
   output_variables:
@@ -2805,8 +2813,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 27900
   output_variables:
@@ -2819,8 +2827,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28000
   output_variables:
     revenu_assimile_salaire: 28000
@@ -2831,8 +2839,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28000
   output_variables:
     revenu_assimile_salaire: 28000
@@ -2843,8 +2851,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28000
   output_variables:
@@ -2856,8 +2864,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28000
   output_variables:
@@ -2869,8 +2877,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28000
   output_variables:
@@ -2882,8 +2890,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28000
   output_variables:
@@ -2895,8 +2903,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28000
   output_variables:
@@ -2909,8 +2917,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28100
   output_variables:
     revenu_assimile_salaire: 28100
@@ -2921,8 +2929,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28100
   output_variables:
     revenu_assimile_salaire: 28100
@@ -2933,8 +2941,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28100
   output_variables:
@@ -2946,8 +2954,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28100
   output_variables:
@@ -2959,8 +2967,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28100
   output_variables:
@@ -2972,8 +2980,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28100
   output_variables:
@@ -2985,8 +2993,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28100
   output_variables:
@@ -2999,8 +3007,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28200
   output_variables:
     revenu_assimile_salaire: 28200
@@ -3011,8 +3019,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28200
   output_variables:
     revenu_assimile_salaire: 28200
@@ -3023,8 +3031,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28200
   output_variables:
@@ -3036,8 +3044,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28200
   output_variables:
@@ -3049,8 +3057,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28200
   output_variables:
@@ -3062,8 +3070,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28200
   output_variables:
@@ -3075,8 +3083,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28200
   output_variables:
@@ -3089,8 +3097,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 28300
   output_variables:
     revenu_assimile_salaire: 28300
@@ -3101,8 +3109,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 28300
   output_variables:
     revenu_assimile_salaire: 28300
@@ -3113,8 +3121,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 28300
   output_variables:
@@ -3126,8 +3134,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 28300
   output_variables:
@@ -3139,8 +3147,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 28300
   output_variables:
@@ -3152,8 +3160,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 28300
   output_variables:
@@ -3165,8 +3173,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 28300
   output_variables:
@@ -3179,8 +3187,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55500
   output_variables:
     revenu_assimile_salaire: 55500
@@ -3191,8 +3199,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55500
   output_variables:
     revenu_assimile_salaire: 55500
@@ -3203,8 +3211,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55500
   output_variables:
@@ -3216,8 +3224,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55500
   output_variables:
@@ -3229,8 +3237,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55500
   output_variables:
@@ -3242,8 +3250,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55500
   output_variables:
@@ -3255,8 +3263,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55500
   output_variables:
@@ -3269,8 +3277,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55600
   output_variables:
     revenu_assimile_salaire: 55600
@@ -3281,8 +3289,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55600
   output_variables:
     revenu_assimile_salaire: 55600
@@ -3293,8 +3301,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55600
   output_variables:
@@ -3306,8 +3314,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55600
   output_variables:
@@ -3319,8 +3327,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55600
   output_variables:
@@ -3332,8 +3340,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55600
   output_variables:
@@ -3345,8 +3353,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55600
   output_variables:
@@ -3359,8 +3367,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55700
   output_variables:
     revenu_assimile_salaire: 55700
@@ -3371,8 +3379,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55700
   output_variables:
     revenu_assimile_salaire: 55700
@@ -3383,8 +3391,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55700
   output_variables:
@@ -3396,8 +3404,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55700
   output_variables:
@@ -3409,8 +3417,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55700
   output_variables:
@@ -3422,8 +3430,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55700
   output_variables:
@@ -3435,8 +3443,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55700
   output_variables:
@@ -3449,8 +3457,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55800
   output_variables:
     revenu_assimile_salaire: 55800
@@ -3461,8 +3469,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55800
   output_variables:
     revenu_assimile_salaire: 55800
@@ -3473,8 +3481,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55800
   output_variables:
@@ -3486,8 +3494,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55800
   output_variables:
@@ -3499,8 +3507,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55800
   output_variables:
@@ -3512,8 +3520,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55800
   output_variables:
@@ -3525,8 +3533,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55800
   output_variables:
@@ -3539,8 +3547,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 55900
   output_variables:
     revenu_assimile_salaire: 55900
@@ -3551,8 +3559,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 55900
   output_variables:
     revenu_assimile_salaire: 55900
@@ -3563,8 +3571,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 55900
   output_variables:
@@ -3576,8 +3584,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 55900
   output_variables:
@@ -3589,8 +3597,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 55900
   output_variables:
@@ -3602,8 +3610,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 55900
   output_variables:
@@ -3615,8 +3623,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 55900
   output_variables:
@@ -3629,8 +3637,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 56000
   output_variables:
     revenu_assimile_salaire: 56000
@@ -3641,8 +3649,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 56000
   output_variables:
     revenu_assimile_salaire: 56000
@@ -3653,8 +3661,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 56000
   output_variables:
@@ -3666,8 +3674,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 56000
   output_variables:
@@ -3679,8 +3687,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 56000
   output_variables:
@@ -3692,8 +3700,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 56000
   output_variables:
@@ -3705,8 +3713,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 56000
   output_variables:
@@ -3719,8 +3727,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: True
-    marie: False
+    male: true
+    marie: false
     salaire_imposable: 56100
   output_variables:
     revenu_assimile_salaire: 56100
@@ -3731,8 +3739,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    male: False
-    marie: True
+    male: false
+    marie: true
     salaire_imposable: 56100
   output_variables:
     revenu_assimile_salaire: 56100
@@ -3743,8 +3751,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 0
     salaire_imposable: 56100
   output_variables:
@@ -3756,8 +3764,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 1
     salaire_imposable: 56100
   output_variables:
@@ -3769,8 +3777,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 2
     salaire_imposable: 56100
   output_variables:
@@ -3782,8 +3790,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 3
     salaire_imposable: 56100
   output_variables:
@@ -3795,8 +3803,8 @@
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
-    marie: True
+    chef_de_famille: true
+    marie: true
     nb_enf: 4
     salaire_imposable: 56100
   output_variables:
