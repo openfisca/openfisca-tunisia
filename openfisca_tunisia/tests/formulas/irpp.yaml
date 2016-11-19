@@ -1,4 +1,4 @@
-- name: "Célibataire salarié 12000 DT"
+- name: "Célibataire salarié 12000 TND"
   period: 2011
   absolute_error_margin: 0.5
   input_variables:
@@ -9,7 +9,7 @@
     irpp: -3010
 
 
-- name: "Salarié 12000 DT chef de famille"
+- name: "Salarié 12000 TND chef de famille"
   period: 2011
   absolute_error_margin: 0.5
   input_variables:
