@@ -766,7 +766,7 @@
       </BAREME>
     </NODE>
   </NODE>
-  <NODE code="presations_familiales" description="Prestations familiales">
+  <NODE code="prestations_familiales" description="Prestations familiales">
     <NODE code="af" description="Allocations familiales">
       <CODE code="plaf_trim" description="Plafond de revenus trimestriels" format="integer" type="monetary">
         <VALUE deb="1960-01-01" fin="2011-12-31" valeur="122" />

@@ -457,7 +457,7 @@ def _deduc_int(capm_banq, capm_cent, capm_oblig, _P):
         )
 
 
-class deduc_fam(Variable):
+class deduction_famille(Variable):
     column = FloatCol
     entity_class = FoyersFiscaux
     label = u"Déductions pour situation et charges de famille"
@@ -577,12 +577,12 @@ class rni(Variable):
         '''
         period = period.start.offset('first-of', 'month').period('year')
         rng = simulation.calculate('rng', period = period)
-        deduc_fam = simulation.calculate('deduc_fam', period = period)
+        deduction_famille = simulation.calculate('deduction_famille', period = period)
         rente_holder = simulation.compute('rente', period = period)
         assurance_vie = simulation.calculate('assurance_vie', period = period)
 
         rente = self.filter_role(rente_holder, role = VOUS)
-        return period, rng - (deduc_fam + rente + assurance_vie)
+        return period, rng - (deduction_famille + rente + assurance_vie)
 
 
 class ir_brut(Variable):

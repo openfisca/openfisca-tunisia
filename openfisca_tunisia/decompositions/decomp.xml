@@ -8,7 +8,7 @@
       <NODE code="cotsal" color="243,166,171" desc="Cotisations sociales salariées" shortname="Cotsoc sal" />
     </NODE>
   </NODE>
-  <NODE code="presations_familiales" color="83,170,49" desc="Prestations familiales" shortname="Presta. fam.">
+  <NODE code="prestations_familiales" color="83,170,49" desc="Prestations familiales" shortname="Presta. fam.">
     <NODE code="af" color="181,213,154" desc="Allocations familiales" shortname="Alloc. fam." />
     <NODE code="majoration_salaire_unique" color="125,185,86" desc="Majoration salaire unique" shortname="Maj. sal. unique" />
     <NODE code="contribution_frais_creche" color="91,172,38" desc="Contribution aux frais de creche" shortname="Contr. frais creche" />

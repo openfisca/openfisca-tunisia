@@ -152,7 +152,7 @@ class af(Variable):
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
         salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [CHEF, PART])
-        P = _P.presations_familiales
+        P = _P.prestations_familiales
         bm = min_(max_(salaire_imposable[CHEF], salaire_imposable[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
         # prestations familliales  # Règle d'arrondi ?
         af_1enf = round(bm * P.af.taux.enf1, 2)
@@ -173,7 +173,7 @@ class majoration_salaire_unique(Variable):
         af_nbenf = simulation.calculate('af_nbenf', period = period)
         _P = simulation.legislation_at(period.start)
 
-        P = _P.presations_familiales
+        P = _P.prestations_familiales
         af_1enf = round(P.salaire_unique.enf1, 3)
         af_2enf = round(P.salaire_unique.enf2, 3)
         af_3enf = round(P.salaire_unique.enf3, 3)
@@ -226,14 +226,14 @@ class contribution_frais_creche(Variable):
         salaire_imposable = self.split_by_roles(salaire_imposable_holder, roles = [PART])
         age_en_mois = self.split_by_roles(age_en_mois_holder, roles = ENFS)
         smig48 = _P.cotisations_sociales.gen.smig  # TODO: smig 48H
-        P = _P.presations_familiales.creche
+        P = _P.prestations_familiales.creche
         age_m_benj = age_en_mois_benjamin(age_en_mois)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
         elig_sal = salaire_imposable < P.plaf * smig48
         return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 
-class presations_familiales(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
+class prestations_familiales(Variable):  # , _af_cong_naiss, af_cong_jeun_trav
     column = FloatCol
     entity_class = Menages
     label = u"Prestations familales"
