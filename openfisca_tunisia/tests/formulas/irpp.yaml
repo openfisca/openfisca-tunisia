@@ -112,6 +112,7 @@
 
 
 - name: "Célibataire - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
@@ -124,6 +125,7 @@
     irpp: 0
 
 - name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
@@ -136,6 +138,7 @@
     irpp: 0
 
 - name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
@@ -149,6 +152,7 @@
     irpp: 0
 
 - name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
@@ -162,6 +166,7 @@
     irpp: 0
 
 - name: "Chef de famille + 2 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
@@ -175,6 +180,7 @@
     irpp: 0
 
 - name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
@@ -188,6 +194,7 @@
     irpp: 0
 
 - name: "Chef de famille + 4 enfants ou plus - Salaire imposable avant abattement et déduction de 5500 TND"
+  ignore: true
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
