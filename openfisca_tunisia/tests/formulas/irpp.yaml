@@ -45,162 +45,162 @@
     revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
     irpp: 0
 
-#- name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 0 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 0
-#    salaire_imposable: 0
-#  output_variables:
-#    revenu_assimile_salaire: 0
-#    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 0 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 1
-#    salaire_imposable: 0
-#  output_variables:
-#    revenu_assimile_salaire: 0
-#    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 2 enfants - Salaire imposable avant abattement et déduction de 0 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 2
-#    salaire_imposable: 0
-#  output_variables:
-#    revenu_assimile_salaire: 0
-#    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 0 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 3
-#    salaire_imposable: 0
-#  output_variables:
-#    revenu_assimile_salaire: 0
-#    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 4 enfants ou plus - Salaire imposable avant abattement et déduction de 0 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 4
-#    salaire_imposable: 0
-#  output_variables:
-#    revenu_assimile_salaire: 0
-#    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
-#    irpp: 0
-#
-#
-#- name: "Célibataire - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    male: true
-#    marie: false
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    male: false
-#    marie: true
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 0
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 1
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 2 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 2
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 3
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#- name: "Chef de famille + 4 enfants ou plus - Salaire imposable avant abattement et déduction de 5500 TND"
-#  period: 2016
-#  absolute_error_margin: 0.5
-#  input_variables:
-#    chef_de_famille: true
-#    marie: true
-#    nb_enf: 4
-#    salaire_imposable: 5500
-#  output_variables:
-#    revenu_assimile_salaire: 5500
-#    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
-#    irpp: 0
-#
-#
+- name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 0 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 0
+    salaire_imposable: 0
+  output_variables:
+    revenu_assimile_salaire: 0
+    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 0 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 1
+    salaire_imposable: 0
+  output_variables:
+    revenu_assimile_salaire: 0
+    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 2 enfants - Salaire imposable avant abattement et déduction de 0 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 2
+    salaire_imposable: 0
+  output_variables:
+    revenu_assimile_salaire: 0
+    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 0 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 3
+    salaire_imposable: 0
+  output_variables:
+    revenu_assimile_salaire: 0
+    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 4 enfants ou plus - Salaire imposable avant abattement et déduction de 0 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 4
+    salaire_imposable: 0
+  output_variables:
+    revenu_assimile_salaire: 0
+    revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
+    irpp: 0
+
+
+- name: "Célibataire - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    male: true
+    marie: false
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+- name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    male: false
+    marie: true
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 0
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 1
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 2 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 2
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 3 enfants - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 3
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+- name: "Chef de famille + 4 enfants ou plus - Salaire imposable avant abattement et déduction de 5500 TND"
+  period: 2016
+  absolute_error_margin: 0.5
+  input_variables:
+    chef_de_famille: true
+    marie: true
+    nb_enf: 4
+    salaire_imposable: 5500
+  output_variables:
+    revenu_assimile_salaire: 5500
+    revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    irpp: 0
+
+
 #- name: "Célibataire - Salaire imposable avant abattement et déduction de 5600 TND"
 #  period: 2016
 #  absolute_error_margin: 0.5
