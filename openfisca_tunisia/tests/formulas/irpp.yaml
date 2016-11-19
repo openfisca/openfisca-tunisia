@@ -2012,6 +2012,7 @@
   output_variables:
     revenu_assimile_salaire: 5500
     revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    chef_famille: False
     irpp: -0
 
 - name: "Épouse non chef de famille - Salaire imposable avant abattement et déduction de 5500 TND"
@@ -2024,19 +2025,21 @@
   output_variables:
     revenu_assimile_salaire: 5500
     revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    chef_famille: False
     irpp: -0
 
 - name: "Chef de famille sans enfant - Salaire imposable avant abattement et déduction de 5500 TND"
   period: 2016
   absolute_error_margin: 0.5
   input_variables:
-    chef_de_famille: True
+    male: True
     marie: True
     nb_enf: 0
     salaire_imposable: 5500
   output_variables:
     revenu_assimile_salaire: 5500
     revenu_assimile_salaire_apres_abattements: 5500 * (1 - 0.1)
+    chef_de_famille: True
     irpp: -0
 
 - name: "Chef de famille + 1 enfant - Salaire imposable avant abattement et déduction de 5500 TND"
