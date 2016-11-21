@@ -514,9 +514,7 @@ class deduction_famille(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         # rng = simulation.calculate('rng', period = period)
-        chef_de_famille = self.any_by_roles(
-            simulation.calculate('chef_de_famille', period = period)
-            )
+        chef_de_famille = simulation.calculate('chef_de_famille', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
         # nb_parents = simulation.calculate('nb_parents', period = period)
         _P = simulation.legislation_at(period.start)
