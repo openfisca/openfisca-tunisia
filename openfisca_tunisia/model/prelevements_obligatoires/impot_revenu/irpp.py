@@ -89,6 +89,55 @@ class nb_parents(Variable):
         return period, (age_en_mois_vous > 10 * 12) + (age_en_mois_conj > 10 * 12)
 
 
+class chef_de_famille(Variable):
+    column = BoolCol()
+    entity_class = FoyersFiscaux
+    # Du point de vue fiscal, est considéré chef de famille :
+    # - L’époux ;
+    # - Le divorcé ou la divorcée qui a la garde des enfants (divorce & enfnats);
+    # - Le veuf ou la veuve même sans enfants à charge;
+    # - L’adoptant ou l’adoptante (adoptant). TODO
+    # Cependant, l’épouse a la qualité de chef de famille dans les deux cas suivants :
+    # - Lorsqu’elle justifie que le mari ne dispose d’aucune source de revenu durant l’année de réalisation du
+    #   revenu. Tel est le cas d’une femme qui dispose d’un revenu et dont le mari, poursuivant des études, ne dispose
+    #   d’aucun revenu propre. (marie & sexe & revenu_epoux == 0 & revenu_individu > 0) TODO
+    # - Lorsque remariée, elle a la garde d’enfants issus d’un précédent mariage. TODO
+    # Compte tenu de ce qui précède, n’est pas considéré comme chef de famille et ne bénéficie d’aucune déduction :
+    # - Le célibataire ou la célibataire ;
+    # - Le divorcé ou la divorcée qui n’a pas la garde des enfants ;
+    # - La femme durant le mariage (sauf si elle dispose d’un revenu alors que son mari ne dispose d’aucun revenu) ;
+    # - L’époux qui ne dispose pas d’une source de revenu. Dans ce cas, l’épouse acquiert la qualité de chef de famille
+    #   au cas où elle réalise des revenus.
+
+    def function(self, simulation, period):
+        period = period.this_year
+        male = self.filter_role(
+            simulation.calculate('male', period = period),
+            role = VOUS,
+            )
+        marie = self.filter_role(
+            simulation.calculate('marie', period = period),
+            role = VOUS,
+            )
+        divorce = self.filter_role(
+            simulation.calculate('divorce', period = period),
+            role = VOUS,
+            )
+        veuf = self.filter_role(
+            simulation.calculate('veuf', period = period),
+            role = VOUS,
+            )
+        nb_enf = simulation.calculate('nb_enf', period = period)
+        chef_de_famille = (
+            veuf |
+            (marie & male) |
+            (divorce & (nb_enf > 0))  # | 
+            # (marie & (not male)) |
+            )
+
+        return period, chef_de_famille
+
+
 ###############################################################################
 # # Revenus catégoriels
 ###############################################################################
@@ -465,9 +514,7 @@ class deduction_famille(Variable):
     def function(self, simulation, period):
         period = period.start.offset('first-of', 'month').period('year')
         # rng = simulation.calculate('rng', period = period)
-        chef_de_famille = self.any_by_roles(
-            simulation.calculate('chef_de_famille', period = period)
-            )
+        chef_de_famille = simulation.calculate('chef_de_famille', period = period)
         nb_enf = simulation.calculate('nb_enf', period = period)
         # nb_parents = simulation.calculate('nb_parents', period = period)
         _P = simulation.legislation_at(period.start)
