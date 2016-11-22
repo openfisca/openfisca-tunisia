@@ -28,7 +28,7 @@ class salaire_brut(Variable):
         categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _defaultP = simulation.legislation_at(period.start, reference = True)
 
-        smig = _defaultP.cotisations_sociales.gen.smig
+        smig = _defaultP.cotisations_sociales.gen.smig_40h_mensuel
         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _defaultP.cotisations_sociales)
 
         plaf_ss = 12 * smig
@@ -82,7 +82,7 @@ class cotpat(Variable):
 
         # TODO traiter les différents régimes séparément ?
 
-        smig = _P.cotisations_sociales.gen.smig
+        smig = _P.cotisations_sociales.gen.smig_40h_mensuel
         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
 
         plaf_ss = 12 * smig
