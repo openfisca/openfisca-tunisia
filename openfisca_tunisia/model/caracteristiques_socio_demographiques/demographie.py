@@ -34,7 +34,7 @@ class age(Variable):
     label = u"Âge (en années)"
 
     def function(self, simulation, period):
-        date_naissance = simulation.get_array('date_naissance', period)
+        date_naissance = simulation.calculate('date_naissance', period)
         return period, (datetime64(period.date) - date_naissance).astype('timedelta64[Y]')
 
 
