@@ -7,10 +7,9 @@ from openfisca_core.columns import (AgeCol, BoolCol, DateCol, EnumCol, FloatCol,
     PeriodSizeIndependentIntCol, StrCol)
 from openfisca_core.enumerations import Enum
 from openfisca_core.formulas import dated_function
-from openfisca_core.variables import (DatedVariable, EntityToPersonColumn, PersonToEntityColumn,
-    Variable)
+from openfisca_core.variables import (DatedVariable, Variable)
 
-from openfisca_tunisia.entities import FoyersFiscaux, Individus, Menages
+from openfisca_tunisia.entities import FoyerFiscal, Individu, Menage
 
 
 __all__ = [
@@ -22,19 +21,17 @@ __all__ = [
     'DateCol',
     'dated_function',
     'DatedVariable',
-    'EntityToPersonColumn',
     'Enum',
     'EnumCol',
     'FloatCol',
-    'FoyersFiscaux',
-    'Individus',
+    'FoyerFiscal',
+    'Individu',
     'IntCol',
-    'Menages',
+    'Menage',
     'PAC1',
     'PAC2',
     'PAC3',
     'PeriodSizeIndependentIntCol',
-    'PersonToEntityColumn',
     'PREF',
     'QUIFOY',
     'QUIMEN',

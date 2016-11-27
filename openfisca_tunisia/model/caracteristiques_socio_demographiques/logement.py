@@ -6,18 +6,18 @@ from openfisca_tunisia.model.base import *
 
 class code_postal(Variable):
     column = PeriodSizeIndependentIntCol
-    entity_class = Menages
+    entity = Menage
 
 
 class loyer(Variable):
     column = IntCol
-    entity_class = Menages
+    entity = Menage
     label = "loyer du logement"
 
 
 class statut_occupation_logement(Variable):
     column = PeriodSizeIndependentIntCol
-    entity_class = Menages
+    entity = Menage
     label = "Statut d'occupation du logement"
 
 

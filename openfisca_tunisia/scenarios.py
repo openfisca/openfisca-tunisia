@@ -9,6 +9,7 @@ import re
 import uuid
 
 from openfisca_core import conv, scenarios
+from entities import Individu, FoyerFiscal, Menage
 
 
 def N_(message):
@@ -20,6 +21,7 @@ year_or_month_or_day_re = re.compile(ur'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]
 
 
 class Scenario(scenarios.AbstractScenario):
+
     def init_single_entity(self, axes = None, enfants = None, famille = None, foyer_fiscal = None, menage = None,
             parent1 = None, parent2 = None, period = None):
         if enfants is None:
@@ -139,8 +141,7 @@ class Scenario(scenarios.AbstractScenario):
                                         (
                                             (column.name, column.json_to_python)
                                             for column in column_by_name.itervalues()
-                                            if column.entity == 'ind' and column.name not in (
-                                                'idfam', 'idfoy', 'idmen', 'quifam', 'quifoy', 'quimen')
+                                            if column.entity == Individu
                                             ),
                                         )),
                                     drop_none_values = True,
@@ -193,7 +194,7 @@ class Scenario(scenarios.AbstractScenario):
                                         (
                                             (column.name, column.json_to_python)
                                             for column in column_by_name.itervalues()
-                                            if column.entity == 'men'
+                                            if column.entity == Menage
                                             ),
                                         )),
                                     drop_none_values = True,
@@ -475,7 +476,6 @@ class Scenario(scenarios.AbstractScenario):
             individu_id = individu['id']
             if (
                 individu.get('age') is None and
-                individu.get('age_en_mois') is None and
                 individu.get('date_naissance') is None
                     ):
                 # Add missing date_naissance date to person (a parent is 40 years old and a child is 10 years old.
@@ -515,7 +515,7 @@ class Scenario(scenarios.AbstractScenario):
                     foyer_fiscal_json['personnes_a_charge'] = personnes_a_charge
                 for column_name, variable_value in foyer_fiscal.iteritems():
                     column = column_by_name.get(column_name)
-                    if column is not None and column.entity == 'foy':
+                    if column is not None and column.entity == FoyerFiscal:
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
                             foyer_fiscal_json[column_name] = variable_value_json
@@ -528,7 +528,7 @@ class Scenario(scenarios.AbstractScenario):
                 individu_json = collections.OrderedDict()
                 for column_name, variable_value in individu.iteritems():
                     column = column_by_name.get(column_name)
-                    if column is not None and column.entity == 'ind':
+                    if column is not None and column.entity == Individu:
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
                             individu_json[column_name] = variable_value_json
@@ -554,7 +554,7 @@ class Scenario(scenarios.AbstractScenario):
                     menage_json['autres'] = autres
                 for column_name, variable_value in menage.iteritems():
                     column = column_by_name.get(column_name)
-                    if column is not None and column.entity == 'men':
+                    if column is not None and column.entity == Menage:
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
                             menage_json[column_name] = variable_value_json
@@ -567,6 +567,31 @@ class Scenario(scenarios.AbstractScenario):
 
 
 # Finders
+
+
+def find_age(individu, date, default = None):
+    date_naissance = individu.get('date_naissance')
+    if isinstance(date_naissance, dict):
+        date_naissance = date_naissance.values()[0] if date_naissance else None
+    if date_naissance is not None:
+        age = date.year - date_naissance.year
+        if date.month < date_naissance.month or date.month == date_naissance.month and date.day < date_naissance.day:
+            age -= 1
+        return age
+
+    age = individu.get('age')
+    if isinstance(age, dict):
+        age = age.values()[0] if age else None
+    if age is not None:
+        return age
+
+    age_en_mois = individu.get('age_en_mois')
+    if isinstance(age_en_mois, dict):
+        age_en_mois = age_en_mois.values()[0] if age_en_mois else None
+    if age_en_mois is not None:
+        return age_en_mois / 12.0
+
+    return default
 
 
 def find_famille_and_role(test_case, individu_id):
@@ -594,22 +619,3 @@ def find_menage_and_role(test_case, individu_id):
             if individu_id in menage[role]:
                 return menage, role
     return None, None
-
-
-def find_age(individu, date, default = None):
-    date_naissance = individu.get('date_naissance')
-    if date_naissance is not None:
-        age = date.year - date_naissance.year
-        if date.month < date_naissance.month or date.month == date_naissance.month and date.day < date_naissance.day:
-            age -= 1
-        return age
-    age = individu.get('age')
-    if age is not None:
-        return age
-    age = individu.get('age')
-    if age is not None:
-        return age
-    age_en_mois = individu.get('age_en_mois')
-    if age_en_mois is not None:
-        return age_en_mois / 12.0
-    return default

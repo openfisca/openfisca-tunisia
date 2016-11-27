@@ -12,7 +12,7 @@ ALL = [x[1] for x in QUIMEN]
 
 class revenu_disponible_individuel(Variable):
     column = FloatCol()
-    entity_class = Individus
+    entity = Individu
     label = u"Revenu disponible individuel"
 
     def function(self, simulation, period):
@@ -28,7 +28,7 @@ class revenu_disponible_individuel(Variable):
 
 class revenu_disponible(Variable):
     column = FloatCol()
-    entity_class = Menages
+    entity = Menage
     label = u"Revenu disponible du ménage"
 
     def function(self, simulation, period):
@@ -39,7 +39,7 @@ class revenu_disponible(Variable):
 
 class revenus_du_travail(Variable):
     column = FloatCol()
-    entity_class = Individus
+    entity = Individu
     label = u"Revenu du travail"
 
     def function(self, simulation, period):
@@ -51,7 +51,7 @@ class revenus_du_travail(Variable):
 
 class revenus_du_capital(Variable):
     column = FloatCol()
-    entity_class = Menages
+    entity = Menage
     label = u"Revenus du patrimoine"
 
     def function(self, simulation, period):
@@ -63,7 +63,7 @@ class revenus_du_capital(Variable):
 
 class impots_directs(Variable):
     column = FloatCol()
-    entity_class = Menages
+    entity = Menage
     label = u"Impôts directs"
 
     def function(self, simulation, period):

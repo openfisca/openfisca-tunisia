@@ -16,7 +16,7 @@ from openfisca_tunisia.model.data import CAT
 
 class salaire_brut(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"Salaires bruts"
 
     def function(self, simulation, period):
@@ -55,7 +55,7 @@ class salaire_brut(Variable):
 
 class salaire_super_brut(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"Salaires super bruts"
 
     def function(self, simulation, period):
@@ -68,7 +68,7 @@ class salaire_super_brut(Variable):
 
 class cotpat(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"cotpat"
 
     def function(self, simulation, period):
@@ -106,7 +106,7 @@ class cotpat(Variable):
 
 class cotsal(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"cotsal"
 
     def function(self, simulation, period):

@@ -54,62 +54,62 @@ from openfisca_tunisia.model.base import *
 class deduc_banq(Variable):
     column = IntCol
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques"
-    entity_class = Individus
+    entity = Individu
 
 
 class deduc_cent(Variable):
     column = IntCol
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite"
-    entity_class = Individus
+    entity = Individu
 
 
 class deduc_obli(Variable):
     column = IntCol
     label = u"Intérêts des emprunts obligataires"
-    entity_class = Individus
+    entity = Individu
 
 
 class deduc_epinv(Variable):
     column = IntCol
     label = u"Intérêts des comptes épargne pour l'investissement"
-    entity_class = Individus
+    entity = Individu
 
 
 class rente(Variable):
     column = IntCol
     label = u"Rentes payées obligatoirement et à titre gratuit"
-    entity_class = Individus
+    entity = Individu
 
 
 class prime_assurance_vie(Variable):
     column = IntCol
     label = u"Prime d’assurance-vie"
-    entity_class = Individus
+    entity = Individu
 
 
 class dons(Variable):
     column = IntCol
     label = u"Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"
-    entity_class = Individus
+    entity = Individu
 
 
 class pret_univ(Variable):
     column = IntCol
     label = u"Remboursement des prêts universitaires en principal et intérêts"
-    entity_class = Individus
+    entity = Individu
 
 
 class cotis_nonaf(Variable):
     column = IntCol
     label = u"Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
         u"de la sécurité sociale"
-    entity_class = Individus
+    entity = Individu
 
 
 class deduc_logt(Variable):
     column = IntCol
     label = u"Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
-    entity_class = Individus
+    entity = Individu
 
 
 # Code d’incitation aux investissements

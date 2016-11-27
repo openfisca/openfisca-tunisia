@@ -1,24 +1,7 @@
-- name: "Âge (en années) d'après l'âge en mois"
-  period: 2011
-  input_variables:
-    age_en_mois: 40 * 12 + 6
-  output_variables:
-    age: 40
-
-
-- name: "Âge (en mois) d'après l'âge en années"
-  period: 2011
-  input_variables:
-    age: 40
-  output_variables:
-    age_en_mois: 40 * 12
-
-
-- name: "Âge (en années) d'après l'âge en mois"
+- name: "Âge (en années) d'après la date de naissance"
   period: "2011"
   input_variables:
     date_naissance: "1971-01-01"
   output_variables:
     age: 40
-    age_en_mois: 40 * 12
 

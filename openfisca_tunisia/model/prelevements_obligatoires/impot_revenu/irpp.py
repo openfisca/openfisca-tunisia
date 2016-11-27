@@ -14,7 +14,7 @@ PACS = [QUIFOY['pac' + str(i)] for i in range(1, 10)]
 
 class nb_enf(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Nombre d'enfants"
 
     def function(self, simulation, period):
@@ -42,7 +42,7 @@ class nb_enf(Variable):
 
 class nb_enf_sup(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Nombre d'enfants étudiant du supérieur non boursiers"
 
     def function(self, simulation, period):
@@ -50,15 +50,15 @@ class nb_enf_sup(Variable):
         TODO: Nombre d'enfants étudiant du supérieur non boursiers
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        age_en_mois = simulation.calculate('age_en_mois', period = period)
+        age = simulation.calculate('age', period = period)
         boursier = simulation.calculate('boursier', period = period)
 
-        return period, 0 * age_en_mois * not_(boursier)
+        return period, 0 * age * not_(boursier)
 
 
 class nb_infirme(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Nombre d'enfants infirmes"
 
     def function(self, simulation, period):
@@ -66,15 +66,15 @@ class nb_infirme(Variable):
         TODO: Nombre d'enfants infirmes
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        age_en_mois = simulation.calculate('age_en_mois', period = period)
+        age = simulation.calculate('age', period = period)
         inv = simulation.calculate('inv', period = period)
 
-        return period, 0 * age_en_mois * inv
+        return period, 0 * age * inv
 
 
 class nb_parents(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Nombre de parents"
 
     def function(self, simulation, period):
@@ -82,16 +82,16 @@ class nb_parents(Variable):
         TODO: Nombre de parents
         '''
         period = period.start.offset('first-of', 'month').period('year')
-        age_en_mois_holder = simulation.compute('age_en_mois', period = period)
+        age_holder = simulation.compute('age', period = period)
 
-        age_en_mois_vous = self.filter_role(age_en_mois_holder, role = VOUS)
-        age_en_mois_conj = self.filter_role(age_en_mois_holder, role = CONJ)
-        return period, (age_en_mois_vous > 10 * 12) + (age_en_mois_conj > 10 * 12)
+        age_vous = self.filter_role(age_holder, role = VOUS)
+        age_conj = self.filter_role(age_holder, role = CONJ)
+        return period, (age_vous > 20) + (age_conj > 20)
 
 
 class chef_de_famille(Variable):
     column = BoolCol()
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     # Du point de vue fiscal, est considéré chef de famille :
     # - L’époux ;
     # - Le divorcé ou la divorcée qui a la garde des enfants (divorce & enfnats);
@@ -146,7 +146,7 @@ class chef_de_famille(Variable):
 # 1. Bénéfices industriels et commerciaux
 class bic(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Bénéfices industriels et commerciaux"
 
     def function(self, simulation, period):
@@ -164,7 +164,7 @@ class bic(Variable):
 
 class bic_ca_global(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"Chiffre d’affaires global (BIC, cession de fond de commerce"
 
     def function(self, simulation, period):
@@ -181,7 +181,7 @@ class bic_ca_global(Variable):
 
 class bic_res_cession(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"Résultat (BIC, cession de fond de commerce)"
 
     def function(self, simulation, period):
@@ -194,7 +194,7 @@ class bic_res_cession(Variable):
 
 class bic_benef_fiscal_cession(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"Bénéfice fiscal (BIC, cession de fond de commerce)"
 
     def function(self, simulation, period):
@@ -215,7 +215,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 # 2. Bénéfices des professions non commerciales
 class bnc(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Bénéfices des professions non commerciales"
 
     def function(self, simulation, period):
@@ -229,7 +229,7 @@ class bnc(Variable):
 
 class bnc_forf_benef_fiscal(Variable):
     column = FloatCol
-    entity_class = Individus
+    entity = Individu
     label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
 
     def function(self, simulation, period):
@@ -247,7 +247,7 @@ class bnc_forf_benef_fiscal(Variable):
 # 3. Bénéfices de l'exploitation agricole et de pêche
 class beap(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Bénéfices de l'exploitation agricole et de pêche"
 
     def function(self, simulation, period):
@@ -264,7 +264,7 @@ class beap(Variable):
 
 class revenus_fonciers(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenus fonciers"
 
     def function(self, simulation, period):
@@ -281,7 +281,7 @@ class revenus_fonciers(Variable):
 
 class fon_forf_bati(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenus fonciers net des immeubles bâtis"
 
     def function(self, simulation, period):
@@ -302,7 +302,7 @@ class fon_forf_bati(Variable):
 
 class fon_forf_nbat(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenus fonciers net des terrains non bâtis"
 
     def function(self, simulation, period):
@@ -320,7 +320,7 @@ class fon_forf_nbat(Variable):
 
 class tspr(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Traitements, salaires, indemnités, pensions et rentes viagères"
 
     def function(self, simulation, period):
@@ -335,7 +335,7 @@ class tspr(Variable):
 
 class revenu_assimile_salaire(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenu assimilé à des salaires"
 
     def function(self, simulation, period):
@@ -350,7 +350,7 @@ class revenu_assimile_salaire(Variable):
 
 class smig(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
 
     def function(self, simulation, period):
@@ -367,7 +367,7 @@ class smig(Variable):
 
 class revenu_assimile_salaire_apres_abattements(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenu imposé comme des salaires net des abatements"
 
     def function(self, simulation, period):
@@ -387,7 +387,7 @@ class revenu_assimile_salaire_apres_abattements(Variable):
 
 class revenu_assimile_pension_apres_abattements(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenu assimilé à des pensions après abattements"
 
     def function(self, simulation, period):
@@ -407,7 +407,7 @@ class revenu_assimile_pension_apres_abattements(Variable):
 
 class rvcm(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenus de valeurs mobilières et de capitaux mobiliers"
 
     def function(self, simulation, period):
@@ -442,7 +442,7 @@ class rvcm(Variable):
 
 class retr(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
 
     def function(self, simulation, period):
@@ -473,7 +473,7 @@ class retr(Variable):
 
 class rng(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenu net global"
 
     def function(self, simulation, period):
@@ -508,7 +508,7 @@ def _deduc_int(capm_banq, capm_cent, capm_oblig, _P):
 
 class deduction_famille(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Déductions pour situation et charges de famille"
 
     def function(self, simulation, period):
@@ -536,7 +536,7 @@ class deduction_famille(Variable):
 
 class deduc_rente(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
 
     def function(self, simulation, period):
@@ -548,7 +548,7 @@ class deduc_rente(Variable):
 
 class assurance_vie(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Primes afférentes aux contrats d'assurance-vie"
 
     def function(self, simulation, period):
@@ -601,7 +601,7 @@ class assurance_vie(Variable):
 
 class deduc_smig(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
 
     def function(self, simulation, period):
@@ -613,7 +613,7 @@ class deduc_smig(Variable):
 
 class rni(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Revenu net imposable"
 
     def function(self, simulation, period):
@@ -634,7 +634,7 @@ class rni(Variable):
 
 class ir_brut(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Impôt avant non-imposabilité"
 
     def function(self, simulation, period):
@@ -652,7 +652,7 @@ class ir_brut(Variable):
 
 class irpp(Variable):
     column = FloatCol
-    entity_class = FoyersFiscaux
+    entity = FoyerFiscal
     label = u"Impôt sur le revenu des personnes physiques"
 
     def function(self, simulation, period):
