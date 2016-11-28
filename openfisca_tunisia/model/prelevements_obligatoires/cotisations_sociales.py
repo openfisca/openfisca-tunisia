@@ -23,7 +23,7 @@ class salaire_brut(Variable):
         '''
         Calcule le salaire brut à partir du salaire net
         '''
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         salaire_imposable = simulation.calculate('salaire_imposable', period = period)
         categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _defaultP = simulation.legislation_at(period.start, reference = True)
@@ -59,7 +59,7 @@ class salaire_super_brut(Variable):
     label = u"Salaires super bruts"
 
     def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         salaire_brut = simulation.calculate('salaire_brut', period = period)
         cotpat = simulation.calculate('cotpat', period = period)
 
@@ -75,7 +75,7 @@ class cotpat(Variable):
         '''
         Cotisation sociales patronales
         '''
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         salaire_brut = simulation.calculate('salaire_brut', period = period)
         categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _P = simulation.legislation_at(period.start)
@@ -113,7 +113,7 @@ class cotsal(Variable):
         '''
         Cotisations sociales salariales
         '''
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         salaire_brut = simulation.calculate('salaire_brut', period = period)
         categorie_salarie = simulation.calculate('categorie_salarie', period = period)
         _P = simulation.legislation_at(period.start)

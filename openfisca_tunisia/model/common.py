@@ -16,7 +16,7 @@ class revenu_disponible_individuel(Variable):
     label = u"Revenu disponible individuel"
 
     def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         revenus_du_travail = simulation.calculate('revenus_du_travail', period = period)
         revenu_assimile_pension = simulation.calculate('revenu_assimile_pension', period = period)
         revenus_du_capital = simulation.calculate('revenus_du_capital', period = period)
@@ -32,7 +32,7 @@ class revenu_disponible(Variable):
     label = u"Revenu disponible du ménage"
 
     def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         revenu_disponible_individuel = simulation.calculate('revenu_disponible_individuel', period = period)
         return period, self.sum_by_entity(revenu_disponible_individuel)
 
@@ -43,7 +43,7 @@ class revenus_du_travail(Variable):
     label = u"Revenu du travail"
 
     def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         salaire_imposable = simulation.calculate('salaire_imposable', period = period)
 
         return period, salaire_imposable  # + beap + bic + bnc  TODO
@@ -55,7 +55,7 @@ class revenus_du_capital(Variable):
     label = u"Revenus du patrimoine"
 
     def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         revenus_fonciers = simulation.calculate('revenus_fonciers', period = period)
 
         return period, revenus_fonciers
@@ -67,7 +67,7 @@ class impots_directs(Variable):
     label = u"Impôts directs"
 
     def function(self, simulation, period):
-        period = period.start.offset('first-of', 'month').period('year')
+        period = period.this_year
         irpp = simulation.calculate('irpp', period = period)
 
         return period, irpp
