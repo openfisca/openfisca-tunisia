@@ -19,14 +19,14 @@ class salaire_brut(Variable):
     entity = Individu
     label = u"Salaires bruts"
 
-    def function(self, simulation, period):
+    def function(individu, period, legislation):
         '''
         Calcule le salaire brut à partir du salaire net
         '''
         period = period.this_year
-        salaire_imposable = simulation.calculate('salaire_imposable', period = period)
-        categorie_salarie = simulation.calculate('categorie_salarie', period = period)
-        _defaultP = simulation.legislation_at(period.start, reference = True)
+        salaire_imposable = individu('salaire_imposable', period = period)
+        categorie_salarie = individu('categorie_salarie', period = period)
+        _defaultP = legislation(period.start, reference = True)
 
         smig = _defaultP.cotisations_sociales.gen.smig_40h_mensuel
         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _defaultP.cotisations_sociales)
@@ -58,10 +58,10 @@ class salaire_super_brut(Variable):
     entity = Individu
     label = u"Salaires super bruts"
 
-    def function(self, simulation, period):
+    def function(individu, period):
         period = period.this_year
-        salaire_brut = simulation.calculate('salaire_brut', period = period)
-        cotpat = simulation.calculate('cotpat', period = period)
+        salaire_brut = individu('salaire_brut', period = period)
+        cotpat = individu('cotpat', period = period)
 
         return period, salaire_brut - cotpat
 
@@ -71,14 +71,14 @@ class cotpat(Variable):
     entity = Individu
     label = u"cotpat"
 
-    def function(self, simulation, period):
+    def function(individu, period, legislation):
         '''
         Cotisation sociales patronales
         '''
         period = period.this_year
-        salaire_brut = simulation.calculate('salaire_brut', period = period)
-        categorie_salarie = simulation.calculate('categorie_salarie', period = period)
-        _P = simulation.legislation_at(period.start)
+        salaire_brut = individu('salaire_brut', period = period)
+        categorie_salarie = individu('categorie_salarie', period = period)
+        _P = legislation(period.start)
 
         # TODO traiter les différents régimes séparément ?
 
@@ -109,14 +109,14 @@ class cotsal(Variable):
     entity = Individu
     label = u"cotsal"
 
-    def function(self, simulation, period):
+    def function(individu, period, legislation):
         '''
         Cotisations sociales salariales
         '''
         period = period.this_year
-        salaire_brut = simulation.calculate('salaire_brut', period = period)
-        categorie_salarie = simulation.calculate('categorie_salarie', period = period)
-        _P = simulation.legislation_at(period.start)
+        salaire_brut = individu('salaire_brut', period = period)
+        categorie_salarie = individu('categorie_salarie', period = period)
+        _P = legislation(period.start)
 
         # TODO traiter les différents régimes
 
