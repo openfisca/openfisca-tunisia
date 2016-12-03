@@ -233,13 +233,13 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="pst" description="PST">
+        <BAREME code="protection_sociale_tavailleurs" description="Protection sociale des tavailleurs">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".002889" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".002889" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -317,7 +317,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="pst" description="PST">
+        <BAREME code="protection_sociale_tavailleurs" description="Protection sociale des tavailleurs">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
