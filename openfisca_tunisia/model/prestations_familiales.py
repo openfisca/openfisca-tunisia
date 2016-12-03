@@ -259,7 +259,7 @@ def _as_mal(age, sal, _P):
     Assurance sociale - prestation en espèces TODO: à compléter
     '''
     # , _option = {'age': ENFS}
-    #    P = _P.as.mal
+    #    P = _P.as.maladie
     P = 0
     mal = 0
     smig = _P.gen.smig
@@ -270,7 +270,7 @@ def _as_maternite(age, sal, _P):
     '''
     Assurance sociale - maternité  TODO: à compléter
     '''
-    # P = _P.as.mat
+    # P = _P.as.maternite
     smig = _P.gen.smig
     # return period, P.part*max(P.plaf_mult*smig,sal)*P.duree
     return period, 0
@@ -280,5 +280,5 @@ def _as_deces(sal, _P):
     '''
     Assurance sociale - décès   # TODO: à compléter
     '''
-    # P = _P.as.dec
+    # P = _P.as.deces
     return period, 0

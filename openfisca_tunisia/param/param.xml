@@ -1,7 +1,7 @@
 <NODE code="root" >
   <NODE code="cotisations_sociales" description="Cotisations sociales">
     <NODE code="gen" description="Paramètres généraux">
-      <CODE code="plaf_ss" description="Plafond de la sécurité sociale (en SMIG)" format="integer">
+      <CODE code="plafond_securite_sociale" description="Plafond de la sécurité sociale (en SMIG)" format="integer">
         <VALUE deb="1960-01-01" fin="2012-12-31" valeur="6" />
       </CODE>
       <CODE code="smig_48h_horaire" description="SMIG horaire" format="float" type="monetary">
@@ -170,8 +170,8 @@
       </CODE>
     </NODE>
     <NODE code="rsna" description="Régime des salariés non agricoles (régime général)">
-      <NODE code="pat" description="Patronales">
-        <BAREME code="pre_fam" description="Prestations familiales">
+      <NODE code="cotisations_employeur" description="Patronales">
+        <BAREME code="prestations_familiales" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -181,8 +181,8 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <NODE code="ass_soc" description="Assurances sociales">
-          <BAREME code="mat" description="Indemnités de maladie et maternité">
+        <NODE code="assurances_sociales" description="Assurances sociales">
+          <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -192,7 +192,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="dec" description="Indemnités de décès et capital décès">
+          <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -202,7 +202,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="mal" description="Assurance Maladie">
+          <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -255,7 +255,7 @@
         </BAREME>
       </NODE>
       <NODE code="sal" description="Salariales">
-        <BAREME code="pre_fam" description="Prestations familiales">
+        <BAREME code="prestations_familiales" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -265,8 +265,8 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <NODE code="ass_soc" description="Assurances sociales">
-          <BAREME code="mat" description="Indemnités de maladie et maternité">
+        <NODE code="assurances_sociales" description="Assurances sociales">
+          <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -276,7 +276,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="dec" description="Indemnités de décès et capital décès">
+          <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -286,7 +286,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="mal" description="Assurance Maladie">
+          <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -330,9 +330,9 @@
       </NODE>
     </NODE>
     <NODE code="rsa" description="Régime des salariés agricoles">
-      <NODE code="pat" description="Patronales">
-        <NODE code="ass_soc" description="Assurances sociales">
-          <BAREME code="mat" description="Indemnités de maladie et maternité">
+      <NODE code="cotisations_employeur" description="Patronales">
+        <NODE code="assurances_sociales" description="Assurances sociales">
+          <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -342,7 +342,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="dec" description="Indemnités de décès et capital décès">
+          <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -352,7 +352,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="mal" description="Assurance Maladie">
+          <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -375,8 +375,8 @@
         </BAREME>
       </NODE>
       <NODE code="sal" description="Salariales">
-        <NODE code="ass_soc" description="Assurances sociales">
-          <BAREME code="mat" description="Indemnités de maladie et maternité">
+        <NODE code="assurances_sociales" description="Assurances sociales">
+          <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -386,7 +386,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="dec" description="Indemnités de décès et capital décès">
+          <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -396,7 +396,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="mal" description="Assurance Maladie">
+          <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -420,8 +420,8 @@
       </NODE>
     </NODE>
     <NODE code="rsaa" description="Régime des salariés agricoles amélioré">
-      <NODE code="pat" description="Patronales">
-        <BAREME code="pre_fam" description="Prestations familiales">
+      <NODE code="cotisations_employeur" description="Patronales">
+        <BAREME code="prestations_familiales" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -431,8 +431,8 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <NODE code="ass_soc" description="Assurances sociales">
-          <BAREME code="mat" description="Indemnités de maladie et maternité">
+        <NODE code="assurances_sociales" description="Assurances sociales">
+          <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -442,7 +442,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="dec" description="Indemnités de décès et capital décès">
+          <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -452,7 +452,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="mal" description="Assurance Maladie">
+          <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -475,7 +475,7 @@
         </BAREME>
       </NODE>
       <NODE code="sal" description="Salariales">
-        <BAREME code="pre_fam" description="Prestations familiales">
+        <BAREME code="prestations_familiales" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -485,8 +485,8 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <NODE code="ass_soc" description="Assurances sociales">
-          <BAREME code="mat" description="Indemnités de maladie et maternité">
+        <NODE code="assurances_sociales" description="Assurances sociales">
+          <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -496,7 +496,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="dec" description="Indemnités de décès et capital décès">
+          <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -506,7 +506,7 @@
               </TAUX>
             </TRANCHE>
           </BAREME>
-          <BAREME code="mal" description="Assurance Maladie">
+          <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
                 <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -530,8 +530,8 @@
       </NODE>
     </NODE>
     <NODE code="rtns" description="Régime des travailleurs non salariés">
-      <NODE code="ass_soc" description="Assurances sociales">
-        <BAREME code="mat" description="Indemnités de maladie et maternité">
+      <NODE code="assurances_sociales" description="Assurances sociales">
+        <BAREME code="maternite" description="Indemnités de maladie et maternité">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -541,7 +541,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="dec" description="Indemnités de décès et capital décès">
+        <BAREME code="deces" description="Indemnités de décès et capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -551,7 +551,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="mal" description="Assurance Maladie">
+        <BAREME code="maladie" description="Assurance Maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -574,8 +574,8 @@
       </BAREME>
     </NODE>
     <NODE code="rtte" description="Régime des travailleurs tunisiens à l'étranger">
-      <NODE code="ass_soc" description="Assurances sociales">
-        <BAREME code="mat" description="Indemnités de maladie et maternité">
+      <NODE code="assurances_sociales" description="Assurances sociales">
+        <BAREME code="maternite" description="Indemnités de maladie et maternité">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -585,7 +585,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="dec" description="Indemnités de décès et capital décès">
+        <BAREME code="deces" description="Indemnités de décès et capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -595,7 +595,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="mal" description="Assurance Maladie">
+        <BAREME code="maladie" description="Assurance Maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -661,7 +661,7 @@
           </TRANCHE>
         </BAREME>
       </NODE>
-      <NODE code="pat" description="Patronales">
+      <NODE code="cotisations_employeur" description="Patronales">
         <BAREME code="soin" description="Soins" option="noncontrib">
           <TRANCHE code="tranche0">
             <SEUIL>
@@ -701,8 +701,8 @@
       </NODE>
     </NODE>
     <NODE code="raic" description="Régime des artistes, intellectuels et créateurs">
-      <NODE code="ass_soc" description="Assurances sociales">
-        <BAREME code="mat" description="Indemnités de maladie et maternité">
+      <NODE code="assurances_sociales" description="Assurances sociales">
+        <BAREME code="maternite" description="Indemnités de maladie et maternité">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -712,7 +712,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="dec" description="Indemnités de décès et capital décès">
+        <BAREME code="deces" description="Indemnités de décès et capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -722,7 +722,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="mal" description="Assurance Maladie">
+        <BAREME code="maladie" description="Assurance Maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -745,7 +745,7 @@
       </BAREME>
     </NODE>
     <NODE code="cnrps_sal" description="Régime général des agents de l'Etat">
-      <NODE code="pat" description="Patronales">
+      <NODE code="cotisations_employeur" description="Patronales">
         <BAREME code="ret" description="Retraite">
           <TRANCHE code="tranche0">
             <SEUIL>
@@ -795,7 +795,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="dec" description="Capital décès">
+        <BAREME code="deces" description="Capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
@@ -819,7 +819,7 @@
           </TAUX>
         </TRANCHE>
       </BAREME>
-      <BAREME code="dec" description="Capital décès">
+      <BAREME code="deces" description="Capital décès">
         <TRANCHE code="tranche0">
           <SEUIL>
             <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
