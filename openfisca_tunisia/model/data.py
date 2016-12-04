@@ -14,23 +14,23 @@ CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_
 
 class categorie_salarie(Variable):
     column = EnumCol(CAT, default = 0)
-    entity_class = Individus
+    entity = Individu
 
 
 class inv(Variable):
     column = BoolCol
     label = u'invalide'
-    entity_class = Individus
+    entity = Individu
 
 
 class activite(Variable):
     column = PeriodSizeIndependentIntCol
-    entity_class = Individus
+    entity = Individu
 
 
 class boursier(Variable):
     column = BoolCol()
-    entity_class = Individus
+    entity = Individu
 
 
 
@@ -41,4 +41,4 @@ class boursier(Variable):
 
 class prestations_sociales(Variable):
     column = IntCol
-    entity_class = Individus
+    entity = Individu

@@ -3,9 +3,9 @@
     <NODE code="sal" color="0,138,201" desc="Salaires nets" shortname="Sal. nets">
       <NODE code="salaire_brut" color="0,99,143" desc="Salaires bruts" shortname="Sal. bruts">
         <NODE code="salaire_super_brut" color="0,66,92" desc="Salaires super bruts" shortname="Coût travail" />
-        <NODE code="cotpat" color="249,208,211" desc="Cotisations sociales patronales" shortname="Cotsoc pat" />
+        <NODE code="cotisations_employeur" color="249,208,211" desc="Cotisations sociales patronales" shortname="Cotsoc pat" />
       </NODE>
-      <NODE code="cotsal" color="243,166,171" desc="Cotisations sociales salariées" shortname="Cotsoc sal" />
+      <NODE code="cotisations_salarie" color="243,166,171" desc="Cotisations sociales salariées" shortname="Cotsoc sal" />
     </NODE>
   </NODE>
   <NODE code="prestations_familiales" color="83,170,49" desc="Prestations familiales" shortname="Presta. fam.">
