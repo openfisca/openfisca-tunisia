@@ -10,6 +10,48 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 from openfisca_tunisia.model.data import CAT
 
 
+def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, legislation = None):
+    assert cotisation_type in ['employeur', 'salarie']
+    assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
+    categorie_salarie = individu('categorie_salarie', period)  # TODO change to regime_salarie
+    baremes_by_regime = legislation(period.start).cotisations_sociales
+    cotisation = zeros(len(assiette_cotisations_sociales))
+    for regime_name, regime_index in CAT:
+        bareme_by_name = baremes_by_regime[regime_name].get(
+            'cotisations_{}'.format(cotisation_type))
+        if bareme_by_name is not None:
+            bareme = bareme_by_name.get(bareme_name)
+            if bareme is not None:
+                cotisation += bareme.calc(
+                    assiette_cotisations_sociales * (categorie_salarie == regime_index),
+                    )
+    return cotisation
+
+
+class assiette_cotisations_sociales(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Assiette des cotisations sociales"
+
+    def function(individu, period):
+        return period, individu('salaire_imposable', period)
+
+
+class cotisation_famille_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation sociale allocations familiales (salarie)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'famille',
+            legislation = legislation
+            )
+
+
 class salaire_brut(Variable):
     column = FloatCol
     entity = Individu

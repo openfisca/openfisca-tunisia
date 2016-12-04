@@ -171,7 +171,7 @@
     </NODE>
     <NODE code="rsna" description="Régime des salariés non agricoles (régime général)">
       <NODE code="cotisations_employeur" description="Patronales">
-        <BAREME code="prestations_familiales" description="Prestations familiales">
+        <BAREME code="famille" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
@@ -233,7 +233,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="protection_sociale_tavailleurs" description="Protection sociale des tavailleurs">
+        <BAREME code="protection_sociale_travailleurs" description="Protection sociale des travailleurs">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
@@ -254,14 +254,14 @@
           </TRANCHE>
         </BAREME>
       </NODE>
-      <NODE code="sal" description="Salariales">
-        <BAREME code="prestations_familiales" description="Prestations familiales">
+      <NODE code="cotisations_salarie" description="Salariales">
+        <BAREME code="famille" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".008889" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".008889" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -317,7 +317,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="protection_sociale_tavailleurs" description="Protection sociale des tavailleurs">
+        <BAREME code="protection_sociale_travailleurs" description="Protection sociale des travailleurs">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -623,7 +623,7 @@
       </CODE>
     </NODE>
     <NODE code="rtfr" description="Régime des travailleurs à faibles revenus">
-      <NODE code="sal" description="Salariales">
+      <NODE code="cotisations_salarie" description="Salariales">
         <BAREME code="soin" description="Soins">
           <TRANCHE code="tranche0">
             <SEUIL>
@@ -771,8 +771,8 @@
           </TRANCHE>
         </BAREME>
       </NODE>
-      <NODE code="sal" description="Salariales">
-        <BAREME code="ret" description="Retraite">
+      <NODE code="cotisations_salarie" description="Salariales">
+        <BAREME code="retraite" description="Retraite">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
@@ -785,7 +785,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="prev_soc" description="Prévoyance sociale">
+        <BAREME code="prevoyance_sociale" description="Prévoyance sociale">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
