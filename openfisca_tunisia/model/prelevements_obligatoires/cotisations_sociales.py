@@ -20,7 +20,13 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
         bareme_by_name = baremes_by_regime[regime_name].get(
             'cotisations_{}'.format(cotisation_type))
         if bareme_by_name is not None:
-            bareme = bareme_by_name.get(bareme_name)
+            if bareme_name in ['maladie', 'maternite', 'deces']:
+                baremes_assurances_sociales = bareme_by_name.get('assurances_sociales')
+                if baremes_assurances_sociales is not None:
+                    bareme = baremes_assurances_sociales.get(bareme_name)
+            else:
+                bareme = bareme_by_name.get(bareme_name)
+
             if bareme is not None:
                 cotisation += bareme.calc(
                     assiette_cotisations_sociales * (categorie_salarie == regime_index),
@@ -37,6 +43,77 @@ class assiette_cotisations_sociales(Variable):
         return period, individu('salaire_imposable', period)
 
 
+class cotisations_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation sociales employeur"
+
+    def function(individu, period):
+        return period, (
+            cotisation_deces_employeur +
+            cotisation_famille_employeur +
+            cotisation_maladie_employeur +
+            cotisation_maternite_employeur
+            )
+
+class cotisations_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation sociales salarie"
+
+    def function(individu, period):
+        return period, (
+            cotisation_deces_salarie +
+            cotisation_famille_salarie +
+            cotisation_maladie_salarie +
+            cotisation_maternite_salarie
+            )
+
+class cotisation_deces_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation assurances sociales: décès (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'deces',
+            legislation = legislation
+            )
+
+
+class cotisation_deces_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation assurances sociales: décès (salarié)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'deces',
+            legislation = legislation
+            )
+
+
+class cotisation_famille_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation sociale allocations familiales (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'famille',
+            legislation = legislation
+            )
+
+
 class cotisation_famille_salarie(Variable):
     column = FloatCol
     entity = Individu
@@ -48,6 +125,66 @@ class cotisation_famille_salarie(Variable):
             period,
             cotisation_type = 'salarie',
             bareme_name = 'famille',
+            legislation = legislation
+            )
+
+
+class cotisation_maladie_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation assurances sociales: maladie (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'maladie',
+            legislation = legislation
+            )
+
+
+class cotisation_maladie_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation assurances sociales: maladie (salarie)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'maladie',
+            legislation = legislation
+            )
+
+
+class cotisation_maternite_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation assurances sociales: maternité (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'maternite',
+            legislation = legislation
+            )
+
+
+class cotisation_maternite_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation assurances sociales: maternité (salarié)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'maternite',
             legislation = legislation
             )
 
@@ -103,72 +240,72 @@ class salaire_super_brut(Variable):
         return period, salaire_brut - cotisations_employeur
 
 
-class cotisations_employeur(Variable):
-    column = FloatCol
-    entity = Individu
-    label = u"Cotisations sociales employeur"
+# class cotisations_employeur(Variable):
+#     column = FloatCol
+#     entity = Individu
+#     label = u"Cotisations sociales employeur"
 
-    def function(individu, period, legislation):
-        period = period.this_year
-        salaire_brut = individu('salaire_brut', period = period)
-        categorie_salarie = individu('categorie_salarie', period = period)
-        _P = legislation(period.start)
+#     def function(individu, period, legislation):
+#         period = period.this_year
+#         salaire_brut = individu('salaire_brut', period = period)
+#         categorie_salarie = individu('categorie_salarie', period = period)
+#         _P = legislation(period.start)
 
-        # TODO traiter les différents régimes séparément ?
+#         # TODO traiter les différents régimes séparément ?
 
-        smig = _P.cotisations_sociales.gen.smig_40h_mensuel
-        cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
+#         smig = _P.cotisations_sociales.gen.smig_40h_mensuel
+#         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
 
-        plafond_securite_sociale = 12 * smig
-        # TODO: clean all this
-        n = len(salaire_brut)
-        cotisations_employeur = zeros(n)
-        for categ in CAT:
-            iscat = (categorie_salarie == categ[1])
-            if categ[0] == 're':
-                return period, salaire_brut  # on retounre le salaire_brut pour les étudiants
-            else:
-                continue
-            if 'cotisations_employeur' in cotisations_sociales[categ[0]]:
-                bareme_employeur = cotisations_sociales[categ[0]]['cotisations_employeur']
-                baremes = scale_tax_scales(bareme_employeur, plafond_securite_sociale)
-                bareme_agrege = combine_tax_scales(baremes)
-                temp = - iscat * bareme_agrege.calc(salaire_brut)
-                cotisations_employeur += temp
-        return period, cotisations_employeur
+#         plafond_securite_sociale = 12 * smig
+#         # TODO: clean all this
+#         n = len(salaire_brut)
+#         cotisations_employeur = zeros(n)
+#         for categ in CAT:
+#             iscat = (categorie_salarie == categ[1])
+#             if categ[0] == 're':
+#                 return period, salaire_brut  # on retounre le salaire_brut pour les étudiants
+#             else:
+#                 continue
+#             if 'cotisations_employeur' in cotisations_sociales[categ[0]]:
+#                 bareme_employeur = cotisations_sociales[categ[0]]['cotisations_employeur']
+#                 baremes = scale_tax_scales(bareme_employeur, plafond_securite_sociale)
+#                 bareme_agrege = combine_tax_scales(baremes)
+#                 temp = - iscat * bareme_agrege.calc(salaire_brut)
+#                 cotisations_employeur += temp
+#         return period, cotisations_employeur
 
 
-class cotisations_salarie(Variable):
-    column = FloatCol
-    entity = Individu
-    label = u"Cotisations sociales salariés"
+# class cotisations_salarie(Variable):
+#     column = FloatCol
+#     entity = Individu
+#     label = u"Cotisations sociales salariés"
 
-    def function(individu, period, legislation):
-        period = period.this_year
-        salaire_brut = individu('salaire_brut', period = period)
-        categorie_salarie = individu('categorie_salarie', period = period)
-        _P = legislation(period.start)
-        # TODO traiter les différents régimes
-        smig = _P.cotisations_sociales.gen.smig
-        cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
-        plafond_securite_sociale = 12 * smig
+#     def function(individu, period, legislation):
+#         period = period.this_year
+#         salaire_brut = individu('salaire_brut', period = period)
+#         categorie_salarie = individu('categorie_salarie', period = period)
+#         _P = legislation(period.start)
+#         # TODO traiter les différents régimes
+#         smig = _P.cotisations_sociales.gen.smig
+#         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
+#         plafond_securite_sociale = 12 * smig
 
-        n = len(salaire_brut)
-        cotisations_salarie = zeros(n)
+#         n = len(salaire_brut)
+#         cotisations_salarie = zeros(n)
 
-        for categ in CAT:
-            iscat = (categorie_salarie == categ[1])
+#         for categ in CAT:
+#             iscat = (categorie_salarie == categ[1])
 
-            if categ[0] == 're':
-                return period, 0 * salaire_brut  # TODO: doit retounrer la bonne valeur les étudiants
-            else:
-                continue
+#             if categ[0] == 're':
+#                 return period, 0 * salaire_brut  # TODO: doit retounrer la bonne valeur les étudiants
+#             else:
+#                 continue
 
-            if 'sal' in cotisations_sociales[categ[0]]:
-                pat = cotisations_sociales[categ[0]]['sal']
-                baremes = scale_tax_scales(pat, plafond_securite_sociale)
-                bar = combine_tax_scales(baremes)
-                temp = - iscat * bar.calc(salaire_brut)
-                cotisations_salarie += temp
+#             if 'sal' in cotisations_sociales[categ[0]]:
+#                 pat = cotisations_sociales[categ[0]]['sal']
+#                 baremes = scale_tax_scales(pat, plafond_securite_sociale)
+#                 bar = combine_tax_scales(baremes)
+#                 temp = - iscat * bar.calc(salaire_brut)
+#                 cotisations_salarie += temp
 
-        return period, cotisations_salarie
+#         return period, cotisations_salarie

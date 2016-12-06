@@ -1,0 +1,9 @@
+- name: "Salarié 12000 DT"
+  period: 2011
+  input_variables:
+    salaire_imposable: 12000
+  output_variables:
+    salaire_imposable: 12000
+    revenu_assimile_salaire: 12000
+    cotisation_maternite_salarie: .002361 * 12000
+    cotisation_maternite_employeur: .006139 * 12000

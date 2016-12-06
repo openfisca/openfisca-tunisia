@@ -6,4 +6,5 @@
     salaire_imposable: 12000
     revenu_assimile_salaire: 12000
     cotisation_famille_salarie: .008889 * 12000
+    cotisation_famille_employeur: .022111 * 12000
 
