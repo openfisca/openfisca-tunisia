@@ -69,6 +69,7 @@ class cotisations_salarie(Variable):
             cotisation_maternite_salarie
             )
 
+
 class cotisation_deces_employeur(Variable):
     column = FloatCol
     entity = Individu
