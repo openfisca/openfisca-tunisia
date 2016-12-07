@@ -1,0 +1,9 @@
+- name: "Salarié 12000 DT protection sociale travailleurs"
+  period: 2011
+  input_variables:
+    salaire_imposable: 12000
+  output_variables:
+    salaire_imposable: 12000
+    revenu_assimile_salaire: 12000
+    cotisations_employeur: .1657 * 12000
+    cotisations_salarie: .0918 * 12000

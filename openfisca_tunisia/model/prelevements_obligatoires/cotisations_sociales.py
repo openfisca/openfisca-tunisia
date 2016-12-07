@@ -50,10 +50,14 @@ class cotisations_employeur(Variable):
 
     def function(individu, period):
         return period, (
+            individu('accident_du_travail_employeur', period) +
             individu('deces_employeur', period) +
+            individu('fonds_special_etat', period) +
             individu('famille_employeur', period) +
             individu('maladie_employeur', period) +
-            individu('maternite_employeur', period)
+            individu('maternite_employeur', period) +
+            individu('protection_sociale_travailleurs_employeur', period) +
+            individu('retraite_employeur', period)
             )
 
 
@@ -64,10 +68,13 @@ class cotisations_salarie(Variable):
 
     def function(individu, period):
         return period, (
+            individu('accident_du_travail_salarie', period) +
             individu('deces_salarie', period) +
             individu('famille_salarie', period) +
             individu('maladie_salarie', period) +
-            individu('maternite_salarie', period)
+            individu('maternite_salarie', period) +
+            individu('protection_sociale_travailleurs_salarie', period) +
+            individu('retraite_salarie', period)
             )
 
 
@@ -293,6 +300,17 @@ class retraite_salarie(Variable):
             cotisation_type = 'salarie',
             bareme_name = 'retraite',
             legislation = legislation
+            )
+
+
+class salaire_net_a_payer(Variable):
+    column = FloatCol
+    entity = Individu
+
+    def function(individu, period):
+        return period, (
+            individu('salaire_imposable', period) +
+            individu.foyer_fiscal('irpp', period)
             )
 
 

@@ -30,6 +30,15 @@ options_by_dir = collections.OrderedDict((
             ),
         ),
     (
+        os.path.abspath(os.path.join(os.path.dirname(__file__), 'scipy')),
+        dict(
+            calculate_output = False,
+            default_absolute_error_margin = 0.005,
+            reforms = ['de_net_a_brut'],
+            requires = 'scipy',
+            ),
+        ),
+    (
         os.path.abspath(os.path.join(os.path.dirname(__file__), 'reforms', 'plf_2017')),
         dict(
             calculate_output = False,

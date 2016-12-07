@@ -26,6 +26,18 @@ reform_list = {
     'plf_2017': plf_2017.plf_2017,
     }
 
+
+# Only use the following reform if scipy can be imported
+try:
+    import scipy
+except ImportError:
+    scipy = None
+
+if scipy is not None:
+    from ..reforms import de_net_a_brut
+    reform_list['de_net_a_brut'] = de_net_a_brut.de_net_a_brut
+
+
 reform_by_full_key = {}
 
 
