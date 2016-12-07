@@ -1,10 +1,10 @@
-- name: "Salarié 12000 DT"
+- name: "Salarié 12000 DT famille"
   period: 2011
   input_variables:
     salaire_imposable: 12000
   output_variables:
     salaire_imposable: 12000
     revenu_assimile_salaire: 12000
-    cotisation_famille_salarie: .008889 * 12000
-    cotisation_famille_employeur: .022111 * 12000
+    famille_salarie: .008889 * 12000
+    famille_employeur: .022111 * 12000
 

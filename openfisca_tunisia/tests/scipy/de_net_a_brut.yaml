@@ -1,0 +1,6 @@
+- period: 2011
+  relative_error_margin: 0.005
+  input_variables:
+    salaire_net_a_payer: 14700
+  output_variables: # Full payroll simulation
+    salaire_imposable: 17710

@@ -50,10 +50,14 @@ class cotisations_employeur(Variable):
 
     def function(individu, period):
         return period, (
-            individu('cotisation_deces_employeur', period) +
-            individu('cotisation_famille_employeur', period) +
-            individu('cotisation_maladie_employeur', period) +
-            individu('cotisation_maternite_employeur', period)
+            individu('accident_du_travail_employeur', period) +
+            individu('deces_employeur', period) +
+            individu('fonds_special_etat', period) +
+            individu('famille_employeur', period) +
+            individu('maladie_employeur', period) +
+            individu('maternite_employeur', period) +
+            individu('protection_sociale_travailleurs_employeur', period) +
+            individu('retraite_employeur', period)
             )
 
 
@@ -64,14 +68,47 @@ class cotisations_salarie(Variable):
 
     def function(individu, period):
         return period, (
-            individu('cotisation_deces_salarie', period) +
-            individu('cotisation_famille_salarie', period) +
-            individu('cotisation_maladie_salarie', period) +
-            individu('cotisation_maternite_salarie', period)
+            individu('accident_du_travail_salarie', period) +
+            individu('deces_salarie', period) +
+            individu('famille_salarie', period) +
+            individu('maladie_salarie', period) +
+            individu('maternite_salarie', period) +
+            individu('protection_sociale_travailleurs_salarie', period) +
+            individu('retraite_salarie', period)
             )
 
 
-class cotisation_deces_employeur(Variable):
+class accident_du_travail_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation accidents du travail et maladies professionnelles (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'accident_du_travail',
+            legislation = legislation
+            )
+
+
+class accident_du_travail_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation accidents du travail et maladies professionnelles (salarié)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'accident_du_travail',
+            legislation = legislation
+            )
+
+
+class deces_employeur(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation assurances sociales: décès (employeur)"
@@ -86,7 +123,7 @@ class cotisation_deces_employeur(Variable):
             )
 
 
-class cotisation_deces_salarie(Variable):
+class deces_salarie(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation assurances sociales: décès (salarié)"
@@ -101,7 +138,7 @@ class cotisation_deces_salarie(Variable):
             )
 
 
-class cotisation_famille_employeur(Variable):
+class famille_employeur(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation sociale allocations familiales (employeur)"
@@ -116,7 +153,7 @@ class cotisation_famille_employeur(Variable):
             )
 
 
-class cotisation_famille_salarie(Variable):
+class famille_salarie(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation sociale allocations familiales (salarie)"
@@ -131,7 +168,22 @@ class cotisation_famille_salarie(Variable):
             )
 
 
-class cotisation_maladie_employeur(Variable):
+class fonds_special_etat(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Fonds spécial de l'Etat"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'fonds_special_etat',
+            legislation = legislation
+            )
+
+
+class maladie_employeur(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation assurances sociales: maladie (employeur)"
@@ -146,7 +198,7 @@ class cotisation_maladie_employeur(Variable):
             )
 
 
-class cotisation_maladie_salarie(Variable):
+class maladie_salarie(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation assurances sociales: maladie (salarie)"
@@ -161,7 +213,7 @@ class cotisation_maladie_salarie(Variable):
             )
 
 
-class cotisation_maternite_employeur(Variable):
+class maternite_employeur(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation assurances sociales: maternité (employeur)"
@@ -176,7 +228,7 @@ class cotisation_maternite_employeur(Variable):
             )
 
 
-class cotisation_maternite_salarie(Variable):
+class maternite_salarie(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation assurances sociales: maternité (salarié)"
@@ -191,7 +243,37 @@ class cotisation_maternite_salarie(Variable):
             )
 
 
-class cotisation_retraite_employeur(Variable):
+class protection_sociale_travailleurs_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation protection sociale des travailleurs (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'protection_sociale_travailleurs',
+            legislation = legislation
+            )
+
+
+class protection_sociale_travailleurs_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation protection sociale des travailleurs (salarié)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'protection_sociale_travailleurs',
+            legislation = legislation
+            )
+
+
+class retraite_employeur(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation pensions de retraite (employeur)"
@@ -206,7 +288,7 @@ class cotisation_retraite_employeur(Variable):
             )
 
 
-class cotisation_retraite_salarie(Variable):
+class retraite_salarie(Variable):
     column = FloatCol
     entity = Individu
     label = u"Cotisation pensions de retraite (salarié)"
@@ -218,6 +300,17 @@ class cotisation_retraite_salarie(Variable):
             cotisation_type = 'salarie',
             bareme_name = 'retraite',
             legislation = legislation
+            )
+
+
+class salaire_net_a_payer(Variable):
+    column = FloatCol
+    entity = Individu
+
+    def function(individu, period):
+        return period, (
+            individu('salaire_imposable', period) +
+            individu.foyer_fiscal('irpp', period)
             )
 
 
