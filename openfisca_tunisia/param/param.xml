@@ -223,7 +223,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="atmp" description="Accidents du travail - Maladies professionelles">
+        <BAREME code="accident_du_travail" description="Accidents du travail - Maladies professionelles">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
@@ -307,7 +307,7 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="atmp" description="Accidents du travail - Maladies professionelles">
+        <BAREME code="accident_du_travail" description="Accidents du travail - Maladies professionelles">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />

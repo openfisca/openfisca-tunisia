@@ -5,5 +5,6 @@
   output_variables:
     salaire_imposable: 12000
     revenu_assimile_salaire: 12000
-    maladie_salarie: .027494 * 12000
-    maladie_employeur: .040006 * 12000
+    accident_du_travail_salarie: .002778 * 12000
+    accident_du_travail_employeur: .007222 * 12000
+

@@ -5,5 +5,5 @@
   output_variables:
     salaire_imposable: 12000
     revenu_assimile_salaire: 12000
-    cotisation_retraite_employeur: .077639 * 12000
-    cotisation_retraite_salarie: .047361 * 12000
+    retraite_employeur: .077639 * 12000
+    retraite_salarie: .047361 * 12000
