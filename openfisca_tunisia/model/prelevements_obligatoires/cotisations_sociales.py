@@ -100,6 +100,7 @@ class accident_du_travail_salarie(Variable):
             legislation = legislation
             )
 
+
 class deces_employeur(Variable):
     column = FloatCol
     entity = Individu
@@ -216,6 +217,36 @@ class maternite_salarie(Variable):
             period,
             cotisation_type = 'salarie',
             bareme_name = 'maternite',
+            legislation = legislation
+            )
+
+
+class protection_sociale_travailleurs_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation protection sociale des travailleurs (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'protection_sociale_travailleurs',
+            legislation = legislation
+            )
+
+
+class protection_sociale_travailleurs_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation protection sociale des travailleurs (salarié)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'protection_sociale_travailleurs',
             legislation = legislation
             )
 
