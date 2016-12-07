@@ -1,4 +1,4 @@
-- name: "Salarié 12000 DT"
+- name: "Salarié 12000 DT maternité"
   period: 2011
   input_variables:
     salaire_imposable: 12000

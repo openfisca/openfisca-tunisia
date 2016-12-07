@@ -1,10 +1,8 @@
-- name: "Salarié 12000 DT ATMP"
+- name: "Salarié 12000 DT fonds special etat"
   period: 2011
   input_variables:
     salaire_imposable: 12000
   output_variables:
     salaire_imposable: 12000
     revenu_assimile_salaire: 12000
-    accident_du_travail_salarie: .002778 * 12000
-    accident_du_travail_employeur: .007222 * 12000
-
+    fonds_special_etat: .005 * 12000

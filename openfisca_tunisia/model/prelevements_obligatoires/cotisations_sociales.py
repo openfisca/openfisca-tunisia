@@ -161,6 +161,21 @@ class famille_salarie(Variable):
             )
 
 
+class fonds_special_etat(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Fonds spécial de l'Etat"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'fonds_special_etat',
+            legislation = legislation
+            )
+
+
 class maladie_employeur(Variable):
     column = FloatCol
     entity = Individu
