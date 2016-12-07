@@ -359,10 +359,10 @@ class salaire_super_brut(Variable):
 
     def function(individu, period):
         period = period.this_year
-        salaire_brut = individu('salaire_brut', period = period)
+        salaire_imposable = individu('salaire_imposable', period = period)
         cotisations_employeur = individu('cotisations_employeur', period = period)
-
-        return period, salaire_brut - cotisations_employeur
+        cotisations_salarie = individu('cotisations_salarie', period = period)
+        return period, salaire_imposable + cotisations_employeur + cotisations_salarie
 
 
 # class cotisations_employeur(Variable):

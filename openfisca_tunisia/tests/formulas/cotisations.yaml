@@ -7,3 +7,4 @@
     revenu_assimile_salaire: 12000
     cotisations_employeur: .1657 * 12000
     cotisations_salarie: .0918 * 12000
+    salaire_super_brut: 12000 * (1 + .2575)
