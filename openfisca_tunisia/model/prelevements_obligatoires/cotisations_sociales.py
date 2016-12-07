@@ -50,10 +50,10 @@ class cotisations_employeur(Variable):
 
     def function(individu, period):
         return period, (
-            cotisation_deces_employeur +
-            cotisation_famille_employeur +
-            cotisation_maladie_employeur +
-            cotisation_maternite_employeur
+            individu('cotisation_deces_employeur', period) +
+            individu('cotisation_famille_employeur', period) +
+            individu('cotisation_maladie_employeur', period) +
+            individu('cotisation_maternite_employeur', period)
             )
 
 
@@ -64,10 +64,10 @@ class cotisations_salarie(Variable):
 
     def function(individu, period):
         return period, (
-            cotisation_deces_salarie +
-            cotisation_famille_salarie +
-            cotisation_maladie_salarie +
-            cotisation_maternite_salarie
+            individu('cotisation_deces_salarie', period) +
+            individu('cotisation_famille_salarie', period) +
+            individu('cotisation_maladie_salarie', period) +
+            individu('cotisation_maternite_salarie', period)
             )
 
 
