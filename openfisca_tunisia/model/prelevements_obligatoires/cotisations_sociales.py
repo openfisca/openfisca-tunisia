@@ -191,6 +191,36 @@ class cotisation_maternite_salarie(Variable):
             )
 
 
+class cotisation_retraite_employeur(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation pensions de retraite (employeur)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'retraite',
+            legislation = legislation
+            )
+
+
+class cotisation_retraite_salarie(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation pensions de retraite (salarié)"
+
+    def function(individu, period, legislation):
+        return period, compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'retraite',
+            legislation = legislation
+            )
+
+
 class salaire_brut(Variable):
     column = FloatCol
     entity = Individu

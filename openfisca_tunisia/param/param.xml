@@ -213,13 +213,13 @@
             </TRANCHE>
           </BAREME>
         </NODE>
-        <BAREME code="pension" description="Pensions">
+        <BAREME code="retraite" description="Pensions de retraite">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".077639" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".077639" />
             </TAUX>
           </TRANCHE>
         </BAREME>
