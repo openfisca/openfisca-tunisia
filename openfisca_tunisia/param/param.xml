@@ -349,20 +349,25 @@
           <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".000375" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".000375" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".040000" />
+                <VALUE deb="2011-07-01" fuzzy="true" valeur=".040025" />
+                <VALUE deb="2010-07-01" fin="2011-06-30" valeur=".033425" />
+                <VALUE deb="2009-07-01" fin="2010-06-30" valeur=".026825" />
+                <VALUE deb="2008-07-01" fin="2009-06-30" valeur=".020225" />
+                <VALUE deb="2007-07-01" fin="2008-06-30" valeur=".013525" />
+                <VALUE deb="1960-01-01" fin="2007-06-30" valeur=".006825" />
               </TAUX>
             </TRANCHE>
           </BAREME>
@@ -370,10 +375,10 @@
         <BAREME code="retraite" description="Pensions">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".035" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".035" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -383,30 +388,34 @@
           <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0006" />
+                <VALUE deb="2011-07-01" fuzzy="true" valeur=".027475" />
+                <VALUE deb="2010-07-01" fin="2011-06-30" valeur=".021175" />
+                <VALUE deb="2009-07-01" fin="2010-06-30" valeur=".014875" />
+                <VALUE deb="2008-07-01" fin="2009-06-30" valeur=".008575" />
+                <VALUE deb="1960-01-01" fin="2007-06-30" valeur=".002275" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".000125" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".000125" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0275" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".0275" />
               </TAUX>
             </TRANCHE>
           </BAREME>
@@ -414,10 +423,10 @@
         <BAREME code="retraite" description="Pensions">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0175" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0175" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -425,13 +434,13 @@
     </NODE>
     <NODE code="rsaa" description="Régime des salariés agricoles amélioré">
       <NODE code="cotisations_employeur" description="Patronales">
-        <BAREME code="prestations_familiales" description="Prestations familiales">
+        <BAREME code="famille" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".03" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".03" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -439,30 +448,34 @@
           <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".004" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".004" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0008" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".0008" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".04" />
+                <VALUE deb="2010-07-01" fuzzy="true" valeur=".0338" />
+                <VALUE deb="2009-07-01" fin="2010-06-30" valeur=".0338" />
+                <VALUE deb="2008-07-01" fin="2009-06-30" valeur=".0276" />
+                <VALUE deb="2007-07-01" fin="2008-06-30" valeur=".0214" />
+                <VALUE deb="1960-01-01" fin="2007-06-30" valeur=".0152" />
               </TAUX>
             </TRANCHE>
           </BAREME>
@@ -470,10 +483,10 @@
         <BAREME code="retraite" description="Pensions">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".05" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".05" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -482,10 +495,10 @@
         <BAREME code="prestations_familiales" description="Prestations familiales">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".015" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".015" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -493,30 +506,33 @@
           <BAREME code="maternite" description="Indemnités de maladie et maternité">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".002" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".002" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="deces" description="Indemnités de décès et capital décès">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0004" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur=".0004" />
               </TAUX>
             </TRANCHE>
           </BAREME>
           <BAREME code="maladie" description="Assurance Maladie">
             <TRANCHE code="tranche0">
               <SEUIL>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+                <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
               </SEUIL>
               <TAUX>
-                <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0275" />
+                <VALUE deb="2010-07-01" fuzzy="true" valeur=".0275" />
+                <VALUE deb="2009-07-01" fin="2010-06-30" valeur=".0209" />
+                <VALUE deb="2008-07-01" fin="2009-06-30" valeur=".0143" />
+                <VALUE deb="1960-01-01" fin="2008-06-30" valeur=".0076" />
               </TAUX>
             </TRANCHE>
           </BAREME>
@@ -524,10 +540,10 @@
         <BAREME code="retraite" description="Pensions">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".025" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".025" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -538,30 +554,34 @@
         <BAREME code="maternite" description="Indemnités de maladie et maternité">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0051" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0051" />
             </TAUX>
           </TRANCHE>
         </BAREME>
         <BAREME code="deces" description="Indemnités de décès et capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0045" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0045" />
             </TAUX>
           </TRANCHE>
         </BAREME>
         <BAREME code="maladie" description="Assurance Maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0675" />
+              <VALUE deb="2010-07-01" fuzzy="true" valeur=".0675" />
+              <VALUE deb="2009-07-01" fin="2010-06-30" valeur=".0583" />
+              <VALUE deb="2008-07-01" fin="2009-06-30" valeur=".049" />
+              <VALUE deb="2007-07-01" fin="2008-06-30" valeur=".0397" />
+              <VALUE deb="1960-01-01" fin="2007-06-30" valeur=".0304" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -569,10 +589,10 @@
       <BAREME code="retraite" description="Pensions">
         <TRANCHE code="tranche0">
           <SEUIL>
-            <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+            <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
           </SEUIL>
           <TAUX>
-            <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".07" />
+            <VALUE deb="1960-01-01" fuzzy="true" valeur=".07" />
           </TAUX>
         </TRANCHE>
       </BAREME>
@@ -582,30 +602,33 @@
         <BAREME code="maternite" description="Indemnités de maladie et maternité">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0074" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0074" />
             </TAUX>
           </TRANCHE>
         </BAREME>
         <BAREME code="deces" description="Indemnités de décès et capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0056" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0056" />
             </TAUX>
           </TRANCHE>
         </BAREME>
         <BAREME code="maladie" description="Assurance Maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0675" />
+              <VALUE deb="2009-07-01" fuzzy="true" valeur=".0675" />
+              <VALUE deb="2008-07-01" fin="2009-06-30" valeur=".0587" />
+              <VALUE deb="2007-07-01" fin="2008-06-30" valeur=".0499" />
+              <VALUE deb="1960-01-01" fin="2007-06-30" valeur=".041" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -613,10 +636,10 @@
       <BAREME code="retraite" description="Pensions">
         <TRANCHE code="tranche0">
           <SEUIL>
-            <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+            <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
           </SEUIL>
           <TAUX>
-            <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0525" />
+            <VALUE deb="1960-01-01" fuzzy="true" valeur=".0525" />
           </TAUX>
         </TRANCHE>
       </BAREME>
@@ -709,20 +732,20 @@
         <BAREME code="maternite" description="Indemnités de maladie et maternité">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0074" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0074" />
             </TAUX>
           </TRANCHE>
         </BAREME>
         <BAREME code="deces" description="Indemnités de décès et capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1960-01-01" fin="2011-12-31" valeur=".0056" />
+              <VALUE deb="1960-01-01" fuzzy="true" valeur=".0056" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -753,10 +776,10 @@
         <BAREME code="ret" description="Retraite">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
+              <VALUE deb="2002-03-12" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="2011-01-01" fin="2011-12-31" valeur=".125" />
+              <VALUE deb="2011-01-01" fuzzy="true" valeur=".125" />
               <VALUE deb="2009-01-01" fin="2010-12-31" valeur=".115" />
               <VALUE deb="2006-01-01" fin="2008-12-31" valeur=".097" />
               <VALUE deb="1995-01-01" fin="2005-12-31" valeur=".082" />
@@ -767,7 +790,7 @@
         <BAREME code="prev_soc" description="Prévoyance sociale">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
+              <VALUE deb="2002-03-12" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
               <VALUE deb="1985-01-01" fin="2011-12-31" valeur=".04" />
@@ -802,10 +825,10 @@
         <BAREME code="deces" description="Capital décès">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
+              <VALUE deb="1985-01-01" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1985-01-01" fin="2011-12-31" valeur=".01" />
+              <VALUE deb="1985-01-01" fuzzy="true" valeur=".01" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -826,10 +849,10 @@
       <BAREME code="deces" description="Capital décès">
         <TRANCHE code="tranche0">
           <SEUIL>
-            <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
+            <VALUE deb="1985-01-01" fuzzy="true" valeur="0" />
           </SEUIL>
           <TAUX>
-            <VALUE deb="1985-01-01" fin="2011-12-31" valeur=".01" />
+            <VALUE deb="1985-01-01" fuzzy="true" valeur=".01" />
           </TAUX>
         </TRANCHE>
       </BAREME>
