@@ -4,7 +4,7 @@
 from openfisca_tunisia.model.base import *
 
 
-CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raic', 'cnrps_sal', 'cnrps_pen'])
+CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
 
 
 # Socio-economic data
