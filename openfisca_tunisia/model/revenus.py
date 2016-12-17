@@ -321,12 +321,18 @@ class fon_sp(Variable):
     column = IntCol
     entity = Individu
 
+
 # Salaires et pensions
 
-
-class salaire_imposable(Variable):
+class salaire_de_base(Variable):
     column = IntCol
-    label = u"Salaires imposables"
+    label = u"Salaire de base"
+    entity = Individu
+
+
+class primes(Variable):
+    column = IntCol
+    label = u"Primes"
     entity = Individu
 
 

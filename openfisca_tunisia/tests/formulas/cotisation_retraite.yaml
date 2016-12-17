@@ -1,9 +1,8 @@
 - name: "Salarié 12000 DT retraite"
   period: 2011
   input_variables:
-    salaire_imposable: 12000
+    salaire_de_base: 12000
   output_variables:
-    salaire_imposable: 12000
-    revenu_assimile_salaire: 12000
+    salaire_de_base: 12000
     retraite_employeur: .077639 * 12000
     retraite_salarie: .047361 * 12000

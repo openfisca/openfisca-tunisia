@@ -40,7 +40,10 @@ class assiette_cotisations_sociales(Variable):
     label = u"Assiette des cotisations sociales"
 
     def function(individu, period):
-        return period, individu('salaire_imposable', period)
+        return period, (
+            individu('salaire_de_base', period) +
+            individu('primes', period)
+            )
 
 
 class cotisations_employeur(Variable):
@@ -303,6 +306,18 @@ class retraite_salarie(Variable):
             )
 
 
+class salaire_imposable(Variable):
+    column = FloatCol
+    entity = Individu
+
+    def function(individu, period):
+        return period, (
+            individu('assiette_cotisations_sociales', period) -
+            individu('cotisations_employeur', period) -
+            individu('cotisations_salarie', period)
+            )
+
+
 class salaire_net_a_payer(Variable):
     column = FloatCol
     entity = Individu
@@ -314,42 +329,42 @@ class salaire_net_a_payer(Variable):
             )
 
 
-class salaire_brut(Variable):
-    column = FloatCol
-    entity = Individu
-    label = u"Salaires bruts"
+# class salaire_brut(Variable):
+#     column = FloatCol
+#     entity = Individu
+#     label = u"Salaires bruts"
 
-    def function(individu, period, legislation):
-        '''
-        Calcule le salaire brut à partir du salaire net
-        '''
-        period = period.this_year
-        salaire_imposable = individu('salaire_imposable', period = period)
-        categorie_salarie = individu('categorie_salarie', period = period)
-        cotisations_sociales = legislation(period.start, reference = True).cotisations_sociales
+#     def function(individu, period, legislation):
+#         '''
+#         Calcule le salaire brut à partir du salaire net
+#         '''
+#         period = period.this_year
+#         salaire_imposable = individu('salaire_imposable', period = period)
+#         categorie_salarie = individu('categorie_salarie', period = period)
+#         cotisations_sociales = legislation(period.start, reference = True).cotisations_sociales
 
-        smig = cotisations_sociales.gen.smig_40h_mensuel
-        cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', cotisations_sociales)
-        plafond_securite_sociale = 12 * smig
+#         smig = cotisations_sociales.gen.smig_40h_mensuel
+#         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', cotisations_sociales)
+#         plafond_securite_sociale = 12 * smig
 
-        n = len(salaire_imposable)
-        salaire_brut = zeros(n)
-        # TODO améliorer tout cela !!
-        for categ in CAT:
-            iscat = (categorie_salarie == categ[1])
-            if categ[0] == 're':
-                return period, salaire_imposable  # on retourne le salaire_imposable pour les étudiants
-            else:
-                continue
+#         n = len(salaire_imposable)
+#         salaire_brut = zeros(n)
+#         # TODO améliorer tout cela !!
+#         for categ in CAT:
+#             iscat = (categorie_salarie == categ[1])
+#             if categ[0] == 're':
+#                 return period, salaire_imposable  # on retourne le salaire_imposable pour les étudiants
+#             else:
+#                 continue
 
-            if 'sal' in cotisations_sociales[categ[0]]:
-                sal = cotisations_sociales[categ[0]]['sal']
-                baremes = sal.scale_tax_scales(plafond_securite_sociale)
-                bar = combine_bracket(baremes)
-                invbar = bar.inverse()
-                temp = iscat * invbar.calc(salaire_imposable)
-                salaire_brut += temp
-        return period, salaire_brut
+#             if 'sal' in cotisations_sociales[categ[0]]:
+#                 sal = cotisations_sociales[categ[0]]['sal']
+#                 baremes = sal.scale_tax_scales(plafond_securite_sociale)
+#                 bar = combine_bracket(baremes)
+#                 invbar = bar.inverse()
+#                 temp = iscat * invbar.calc(salaire_imposable)
+#                 salaire_brut += temp
+#         return period, salaire_brut
 
 
 class salaire_super_brut(Variable):

@@ -1,9 +1,8 @@
 - name: "Salarié 12000 DT maladie"
   period: 2011
   input_variables:
-    salaire_imposable: 12000
+    salaire_de_base: 12000
   output_variables:
-    salaire_imposable: 12000
-    revenu_assimile_salaire: 12000
+    salaire_de_base: 12000
     maladie_salarie: .027494 * 12000
     maladie_employeur: .040006 * 12000
