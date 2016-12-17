@@ -13,7 +13,7 @@ scenarios_arguments = [
         period = year,
         parent1 = dict(
             date_naissance = datetime.date(1972, 1, 1),
-            salaire_brut = 2000,
+            salaire_de_base = 2000,
             categorie_salarie = CAT['rsna'],
             ),
         parent2 = dict(
