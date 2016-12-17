@@ -31,7 +31,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
                 cotisation += bareme.calc(
                     assiette_cotisations_sociales * (categorie_salarie == regime_index),
                     )
-    return cotisation
+    return - cotisation
 
 
 class assiette_cotisations_sociales(Variable):
@@ -43,6 +43,18 @@ class assiette_cotisations_sociales(Variable):
         return period, (
             individu('salaire_de_base', period) +
             individu('primes', period)
+            )
+
+
+class cotisations_sociales(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisations sociales"
+
+    def function(individu, period):
+        return period, (
+            individu('cotisations_employeur', period) +
+            individu('cotisations_salarie', period)
             )
 
 
@@ -312,8 +324,7 @@ class salaire_imposable(Variable):
 
     def function(individu, period):
         return period, (
-            individu('assiette_cotisations_sociales', period) -
-            individu('cotisations_employeur', period) -
+            individu('assiette_cotisations_sociales', period) +
             individu('cotisations_salarie', period)
             )
 
@@ -373,12 +384,11 @@ class salaire_super_brut(Variable):
     label = u"Salaires super bruts"
 
     def function(individu, period):
-        period = period.this_year
-        salaire_imposable = individu('salaire_imposable', period = period)
-        cotisations_employeur = individu('cotisations_employeur', period = period)
-        cotisations_salarie = individu('cotisations_salarie', period = period)
-        return period, salaire_imposable + cotisations_employeur + cotisations_salarie
-
+        return period, (
+            individu('salaire_de_base', period = period) +
+            individu('primes', period = period) -
+            individu('cotisations_employeur', period = period)  # Cotisations employeur sont négatives
+            )
 
 # class cotisations_employeur(Variable):
 #     column = FloatCol

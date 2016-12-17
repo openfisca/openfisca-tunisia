@@ -4,8 +4,8 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    deces_salarie: .001806 * 12000
-    deces_employeur: .004694 * 12000
+    deces_salarie: -.001806 * 12000
+    deces_employeur: -.004694 * 12000
 
 - name: "Salarié 12000 DT décès"
   period: 2011
@@ -13,5 +13,5 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    deces_salarie: .001806 * 12000
-    deces_employeur: .004694 * 12000
+    deces_salarie: -.001806 * 12000
+    deces_employeur: -.004694 * 12000

@@ -4,4 +4,4 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    fonds_special_etat: .005 * 12000
+    fonds_special_etat: -.005 * 12000

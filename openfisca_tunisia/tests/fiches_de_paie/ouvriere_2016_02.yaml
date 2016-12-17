@@ -1,0 +1,11 @@
+- name: "Ouvrière février 2016"
+  period: 2016-02
+  absolute_error_margin: 0.5
+  input_variables:
+    salaire_de_base: 416.624
+    primes: 6.080 + 47.500
+  output_variables:
+    assiette_cotisations_sociales: 470.204
+    cotisations_salarie: -43.164
+    salaire_imposable: 427.040
+    # salaire_net_a_payer: 427.040  Mensualiser l'impôt'

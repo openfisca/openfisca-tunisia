@@ -325,13 +325,13 @@ class fon_sp(Variable):
 # Salaires et pensions
 
 class salaire_de_base(Variable):
-    column = IntCol
+    column = FloatCol
     label = u"Salaire de base"
     entity = Individu
 
 
 class primes(Variable):
-    column = IntCol
+    column = FloatCol
     label = u"Primes"
     entity = Individu
 

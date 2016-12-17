@@ -4,5 +4,5 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    protection_sociale_travailleurs_salarie: .001111 * 12000
-    protection_sociale_travailleurs_employeur: .002889 * 12000
+    protection_sociale_travailleurs_salarie: -.001111 * 12000
+    protection_sociale_travailleurs_employeur: -.002889 * 12000

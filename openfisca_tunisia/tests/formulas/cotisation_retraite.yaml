@@ -4,5 +4,5 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    retraite_employeur: .077639 * 12000
-    retraite_salarie: .047361 * 12000
+    retraite_employeur: -.077639 * 12000
+    retraite_salarie: -.047361 * 12000

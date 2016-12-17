@@ -4,8 +4,8 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    cotisations_employeur: .16 * 12000
-    cotisations_salarie: .0775 * 12000
+    cotisations_employeur: -.16 * 12000
+    cotisations_salarie: -.0775 * 12000
 
 
 - name: "Salarié 12000 DT cotisations sociales"
@@ -14,5 +14,5 @@
     salaire_de_base: 12000
   output_variables:
     salaire_de_base: 12000
-    cotisations_employeur: .1657 * 12000
-    cotisations_salarie: .0918 * 12000
+    cotisations_employeur: -.1657 * 12000
+    cotisations_salarie: -.0918 * 12000
