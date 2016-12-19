@@ -4,7 +4,6 @@
 from __future__ import division
 
 from numpy import zeros
-from openfisca_core.taxscales import MarginalRateTaxScale
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 from openfisca_tunisia.model.data import CAT
@@ -24,6 +23,8 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
                 baremes_assurances_sociales = bareme_by_name.get('assurances_sociales')
                 if baremes_assurances_sociales is not None:
                     bareme = baremes_assurances_sociales.get(bareme_name)
+                else:
+                    bareme = bareme_by_name.get(bareme_name)
             else:
                 bareme = bareme_by_name.get(bareme_name)
 
@@ -89,7 +90,8 @@ class cotisations_salarie(Variable):
             individu('maladie_salarie', period) +
             individu('maternite_salarie', period) +
             individu('protection_sociale_travailleurs_salarie', period) +
-            individu('retraite_salarie', period)
+            individu('retraite_salarie', period) +
+            individu('ugtt', period, options = [ADD])
             )
 
 
@@ -389,6 +391,16 @@ class salaire_super_brut(Variable):
             individu('primes', period = period) -
             individu('cotisations_employeur', period = period)  # Cotisations employeur sont négatives
             )
+
+
+class ugtt(Variable):
+    column = FloatCol
+    entity = Individu
+    label = u"Cotisation syndicale UGTT"
+
+    def function(individu, period):
+        period = period.this_month
+        return period, -3 * (individu('categorie_salarie', period) == 8)
 
 # class cotisations_employeur(Variable):
 #     column = FloatCol

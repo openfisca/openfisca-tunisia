@@ -6,13 +6,14 @@ from datetime import date
 from openfisca_core.columns import (AgeCol, BoolCol, DateCol, EnumCol, FloatCol, IntCol,
     PeriodSizeIndependentIntCol, StrCol)
 from openfisca_core.enumerations import Enum
-from openfisca_core.formulas import dated_function
+from openfisca_core.formulas import (ADD, dated_function)
 from openfisca_core.variables import (DatedVariable, Variable)
 
 from openfisca_tunisia.entities import FoyerFiscal, Individu, Menage
 
 
 __all__ = [
+    'ADD',
     'AgeCol',
     'BoolCol',
     'CONJ',

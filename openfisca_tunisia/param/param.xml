@@ -780,7 +780,7 @@
     </NODE>
     <NODE code="cnrps_sal" description="Régime général des agents de l'Etat">
       <NODE code="cotisations_employeur" description="Patronales">
-        <BAREME code="ret" description="Retraite">
+        <BAREME code="retraite" description="Retraite">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="2002-03-12" fuzzy="true" valeur="0" />
@@ -794,13 +794,13 @@
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="prev_soc" description="Prévoyance sociale">
+        <BAREME code="maladie" description="Assurance maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
               <VALUE deb="2002-03-12" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1985-01-01" fin="2011-12-31" valeur=".04" />
+              <VALUE deb="1985-01-01" fuzzy="true" valeur=".04" />
             </TAUX>
           </TRANCHE>
         </BAREME>
@@ -809,23 +809,23 @@
         <BAREME code="retraite" description="Retraite">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
+              <VALUE deb="2002-03-12" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="2009-01-01" fin="2011-12-31" valeur=".082" />
+              <VALUE deb="2009-01-01" fuzzy="true" valeur=".082" />
               <VALUE deb="2006-01-01" fin="2008-12-31" valeur=".07" />
               <VALUE deb="1995-01-01" fin="2005-12-31" valeur=".06" />
               <VALUE deb="1985-01-01" fin="1994-12-31" valeur=".05" />
             </TAUX>
           </TRANCHE>
         </BAREME>
-        <BAREME code="prevoyance_sociale" description="Prévoyance sociale">
+        <BAREME code="maladie" description="Assurance maladie">
           <TRANCHE code="tranche0">
             <SEUIL>
-              <VALUE deb="2002-03-12" fin="2011-12-31" valeur="0" />
+              <VALUE deb="2002-03-12" fuzzy="true" valeur="0" />
             </SEUIL>
             <TAUX>
-              <VALUE deb="1985-01-01" fin="2011-12-31" valeur=".0275" />
+              <VALUE deb="1985-01-01" fuzzy="true" valeur=".0275" />
             </TAUX>
           </TRANCHE>
         </BAREME>
