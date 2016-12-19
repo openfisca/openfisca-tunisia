@@ -33,9 +33,6 @@ class boursier(Variable):
     entity = Individu
 
 
-
-
-
 # TODO Remove Me
 
 
