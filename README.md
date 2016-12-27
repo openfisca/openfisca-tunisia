@@ -25,3 +25,11 @@ version 3 or later (see COPYING).
 
 Feel free to join the OpenFisca development team on [GitHub](https://github.com/openfisca) or contact us by email at
 contact@openfisca.fr
+
+## Use with the web API
+
+To test with [curl](https://curl.haxx.se/) and [jq](https://stedolan.github.io/jq/):
+
+```sh
+curl "http://localhost:2000/api/1/calculate" -X POST --data @./api/test.json --header "content-type: application/json" | jq .
+```
