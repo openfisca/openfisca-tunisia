@@ -31,5 +31,5 @@ contact@openfisca.fr
 To test with [curl](https://curl.haxx.se/) and [jq](https://stedolan.github.io/jq/):
 
 ```sh
-curl "http://localhost:2000/api/1/calculate" -X POST --data @./api/test.json --header "content-type: application/json" | jq .
+curl "http://localhost:2001/api/1/calculate" -X POST --data @./api/test.json --header "content-type: application/json" | jq .
 ```
