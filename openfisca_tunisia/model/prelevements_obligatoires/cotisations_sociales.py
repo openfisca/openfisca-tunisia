@@ -6,8 +6,8 @@ from __future__ import division
 from numpy import zeros
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
-from openfisca_tunisia.model.data import CAT
 
+CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
 
 def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, legislation = None):
     assert cotisation_type in ['employeur', 'salarie']
@@ -45,6 +45,11 @@ class assiette_cotisations_sociales(Variable):
             individu('salaire_de_base', period) +
             individu('primes', period)
             )
+
+
+class categorie_salarie(Variable):
+    column = EnumCol(CAT, default = 0)
+    entity = Individu
 
 
 class cotisations_sociales(Variable):

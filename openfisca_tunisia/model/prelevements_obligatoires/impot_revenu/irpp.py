@@ -55,9 +55,9 @@ class nb_infirme(Variable):
         '''
         period = period.this_year
         age = foyer_fiscal.members('age', period = period)
-        inv = foyer_fiscal.members('inv', period = period)
+        invalide = foyer_fiscal.members('invalide', period = period)
 
-        return period, 0 * age * inv
+        return period, 0 * age * invalide
 
 
 class nb_parents(Variable):
@@ -438,15 +438,25 @@ class rng(Variable):
 # # 2/ Autres déductions
 
 
-def _deduc_int(capm_banq, capm_cent, capm_oblig, _P):
-    P = _P.deduc
-    return period, max_(
-        max_(
-            max_(capm_banq, P.banq.plaf) + max_(capm_cent, P.cent.plaf),
-            P.banq.plaf
-            ) +
-        max_(capm_oblig, P.oblig.plaf), P.oblig.plaf
-        )
+class deduction_interets(Variable):
+    column = FloatCol
+    entity = FoyerFiscal
+    label = u"Déductions intérets issus de comptes spéciaux ou d'obligations"
+
+    def function(foyer_fiscal, period, legislation):
+        period = period.this_year
+        compte_special_epargne_banque = foyer_fiscal('compte_special_epargne_banque')
+        compte_special_epargne_cent = foyer_fiscal('compte_special_epargne_cent')
+        emprunt_obligataire = foyer_fiscal('emprunt_obligataire')
+        deductions = legislation(period).deduc
+        return period, max_(
+            max_(
+                max_(compte_special_epargne_banque, deductions.banq.plaf) +
+                max_(compte_special_epargne_cent, deductions.cent.plaf),
+                deductions.banq.plaf
+                ) +
+            max_(emprunt_obligataire, deductions.oblig.plaf), deductions.oblig.plaf
+            )
 
 
 class deduction_famille(Variable):
@@ -475,7 +485,7 @@ class deduction_famille(Variable):
         return period, res
 
 
-class deduc_rente(Variable):
+class deduction_rente(Variable):
     column = FloatCol
     entity = FoyerFiscal
     label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
@@ -487,7 +497,7 @@ class deduc_rente(Variable):
         return period, rente  # TODO:
 
 
-class assurance_vie(Variable):
+class deduction_assurance_vie(Variable):
     column = FloatCol
     entity = FoyerFiscal
     label = u"Primes afférentes aux contrats d'assurance-vie"
@@ -563,9 +573,9 @@ class rni(Variable):
         period = period.this_year
         rng = foyer_fiscal('rng', period = period)
         deduction_famille = foyer_fiscal('deduction_famille', period = period)
-        rente = foyer_fiscal.declarant_principal('rente', period = period)
-        assurance_vie = foyer_fiscal('assurance_vie', period = period)
-        return period, rng - (deduction_famille + rente + assurance_vie)
+        deduction_rente = foyer_fiscal.declarant_principal('rente', period = period)
+        deduction_assurance_vie = foyer_fiscal('deduction_assurance_vie', period = period)
+        return period, rng - (deduction_famille + deduction_rente + deduction_assurance_vie)
 
 
 class ir_brut(Variable):

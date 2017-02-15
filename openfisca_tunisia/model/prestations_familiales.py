@@ -94,9 +94,8 @@ class salaire_unique(Variable):
         salaire_imposable_conjoint = menage.conjoint('salaire_imposable', period = period)
         return period, xor_(salaire_imposable_personne_de_reference > 0, salaire_imposable_conjoint > 0)
 
-    #
-    # Allocations familiales
-    #
+
+# Allocations familiales
 
 class af_nbenf(Variable):
     column = FloatCol
@@ -107,7 +106,7 @@ class af_nbenf(Variable):
         period = period.this_year
         age_holder = menage.members('age', period = period)
         smig75_holder = menage.members('smig75', period = period)
-        inv_holder = menage.members('inv', period = period)
+        ivalide_holder = menage.members('invalide', period = period)
 
         #    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
         #    Jusqu'à l'âge de 16 ans sans conditions.
@@ -124,7 +123,7 @@ class af_nbenf(Variable):
 
         age = self.split_by_roles(age_holder, roles=ENFS)
         smig75 = self.split_by_roles(smig75_holder, roles=ENFS)
-        inv = self.split_by_roles(inv_holder, roles=ENFS)
+        invalide = self.split_by_roles(ivalide_holder, roles=ENFS)
 
         ages = ages_first_kids(age, nb=3)
         res = zeros(ages[0].shape)

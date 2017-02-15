@@ -6,26 +6,6 @@ from numpy import datetime64
 from openfisca_tunisia.model.base import *
 
 
-class idmen(Variable):
-    column = IntCol(is_permanent = True)
-    entity = Individu
-
-
-class idfoy(Variable):
-    column = IntCol(is_permanent = True)
-    entity = Individu
-
-
-class quimen(Variable):
-    column = EnumCol(QUIMEN, is_permanent = True)
-    entity = Individu
-
-
-class quifoy(Variable):
-    column = EnumCol(QUIFOY, is_permanent = True)
-    entity = Individu
-
-
 class age(Variable):
     column = AgeCol(val_type = "age")
     entity = Individu
@@ -97,3 +77,21 @@ class veuf(Variable):
 class statut_marital(Variable):
     column = PeriodSizeIndependentIntCol(default = 2)
     entity = Individu
+
+
+class invalide(Variable):
+    column = BoolCol
+    label = u'invalide'
+    entity = Individu
+
+
+class activite(Variable):
+    column = PeriodSizeIndependentIntCol
+    entity = Individu
+
+
+class boursier(Variable):
+    column = BoolCol()
+    entity = Individu
+
+

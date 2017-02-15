@@ -3,7 +3,6 @@
 
 from openfisca_tunisia.model.base import *
 
-
 # déductions
 
 # 1/ Au titre de l'activité
@@ -51,25 +50,25 @@ from openfisca_tunisia.model.base import *
 #     2/ Autres déductions
 
 
-class deduc_banq(Variable):
+class compte_special_epargne_banque(Variable):
     column = IntCol
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques"
     entity = Individu
 
 
-class deduc_cent(Variable):
+class compte_special_epargne_cent(Variable):
     column = IntCol
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite"
     entity = Individu
 
 
-class deduc_obli(Variable):
+class emprunt_obligataire(Variable):
     column = IntCol
     label = u"Intérêts des emprunts obligataires"
     entity = Individu
 
 
-class deduc_epinv(Variable):
+class compte_epargne_investissement(Variable):
     column = IntCol
     label = u"Intérêts des comptes épargne pour l'investissement"
     entity = Individu
@@ -93,20 +92,20 @@ class dons(Variable):
     entity = Individu
 
 
-class pret_univ(Variable):
+class pret_universitaire(Variable):
     column = IntCol
     label = u"Remboursement des prêts universitaires en principal et intérêts"
     entity = Individu
 
 
-class cotis_nonaf(Variable):
+class cotisations_non_affilie(Variable):
     column = IntCol
     label = u"Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
         u"de la sécurité sociale"
     entity = Individu
 
 
-class deduc_logt(Variable):
+class interet_acquisition_logement(Variable):
     column = IntCol
     label = u"Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
     entity = Individu
