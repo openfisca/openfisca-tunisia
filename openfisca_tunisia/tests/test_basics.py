@@ -4,7 +4,7 @@ from __future__ import division
 
 import datetime
 
-from openfisca_tunisia.model.data import CAT
+from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import CAT
 from openfisca_tunisia.tests import base
 
 

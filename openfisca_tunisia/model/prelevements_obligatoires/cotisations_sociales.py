@@ -9,6 +9,7 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
 
+
 def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, legislation = None):
     assert cotisation_type in ['employeur', 'salarie']
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
