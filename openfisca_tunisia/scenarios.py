@@ -22,7 +22,7 @@ year_or_month_or_day_re = re.compile(ur'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]
 
 class Scenario(scenarios.AbstractScenario):
 
-    def init_single_entity(self, axes = None, enfants = None, famille = None, foyer_fiscal = None, menage = None,
+    def init_single_entity(self, axes = None, enfants = None, foyer_fiscal = None, menage = None,
             parent1 = None, parent2 = None, period = None):
         if enfants is None:
             enfants = []
@@ -58,331 +58,338 @@ class Scenario(scenarios.AbstractScenario):
             ))
         return self
 
-    def make_json_or_python_to_test_case(self, period = None, repair = False):
-        assert period is not None
+    def post_process_test_case(self, test_case, period, state):
 
-        def json_or_python_to_test_case(value, state = None):
-            if value is None:
-                return value, None
-            if state is None:
-                state = conv.default_state
+        individu_by_id = {
+            individu['id']: individu
+            for individu in test_case['individus']
+            }
 
-            column_by_name = self.tax_benefit_system.column_by_name
-
-            # First validation and conversion step
-            test_case, error = conv.pipe(
-                conv.test_isinstance(dict),
-                conv.struct(
-                    dict(
-                        foyers_fiscaux = conv.pipe(
-                            conv.make_item_to_singleton(),
-                            conv.test_isinstance(list),
-                            conv.uniform_sequence(
-                                conv.test_isinstance(dict),
-                                drop_none_items = True,
-                                ),
-                            conv.function(scenarios.set_entities_json_id),
-                            conv.uniform_sequence(
-                                conv.struct(
-                                    dict(itertools.chain(
-                                        dict(
-                                            declarants = conv.pipe(
-                                                conv.make_item_to_singleton(),
-                                                conv.test_isinstance(list),
-                                                conv.uniform_sequence(
-                                                    conv.test_isinstance((basestring, int)),
-                                                    drop_none_items = True,
-                                                    ),
-                                                conv.default([]),
-                                                ),
-                                            id = conv.pipe(
-                                                conv.test_isinstance((basestring, int)),
-                                                conv.not_none,
-                                                ),
-                                            personnes_a_charge = conv.pipe(
-                                                conv.make_item_to_singleton(),
-                                                conv.test_isinstance(list),
-                                                conv.uniform_sequence(
-                                                    conv.test_isinstance((basestring, int)),
-                                                    drop_none_items = True,
-                                                    ),
-                                                conv.default([]),
-                                                ),
-                                            ).iteritems(),
-                                        (
-                                            (column.name, column.json_to_python)
-                                            for column in column_by_name.itervalues()
-                                            if column.entity == 'fam'
-                                            ),
-                                        )),
-                                    drop_none_values = True,
+        parents_id = set(
+            parent_id
+            for foyer_fiscal in test_case['foyers_fiscaux']
+            for parent_id in foyer_fiscal['declarants']
+            )
+        test_case, error = conv.struct(
+            dict(
+                # foyers_fiscaux = conv.pipe(
+                #     conv.uniform_sequence(
+                #         conv.struct(
+                #             dict(
+                #                 enfants = conv.uniform_sequence(
+                #                     conv.test(
+                #                         lambda individu_id:
+                #                             individu_by_id[individu_id].get('invalide', False)
+                #                             or find_age(individu_by_id[individu_id], period.start.date,
+                #                                 default = 0) <= 25,
+                #                         error = u"Une personne à charge d'un foyer fiscal doit avoir moins de"
+                #                                 u" 25 ans ou être handicapée",
+                #                         ),
+                #                     ),
+                #                 parents = conv.pipe(
+                #                     conv.empty_to_none,
+                #                     conv.not_none,
+                #                     conv.test(lambda parents: len(parents) <= 2,
+                #                         error = N_(u'A "famille" must have at most 2 "parents"'))
+                #                     ),
+                #                 ),
+                #             default = conv.noop,
+                #             ),
+                #         ),
+                #     conv.empty_to_none,
+                #     conv.not_none,
+                #     ),
+                foyers_fiscaux = conv.pipe(
+                    conv.uniform_sequence(
+                        conv.struct(
+                            dict(
+                                declarants = conv.pipe(
+                                    conv.empty_to_none,
+                                    conv.not_none,
+                                    conv.test(
+                                        lambda declarants: len(declarants) <= 2,
+                                        error = N_(u'A "foyer_fiscal" must have at most 2 "declarants"'),
+                                        ),
                                     ),
-                                drop_none_items = True,
-                                ),
-                            conv.default([]),
-                            ),
-                        individus = conv.pipe(
-                            conv.make_item_to_singleton(),
-                            conv.test_isinstance(list),
-                            conv.uniform_sequence(
-                                conv.test_isinstance(dict),
-                                drop_none_items = True,
-                                ),
-                            conv.function(scenarios.set_entities_json_id),
-                            conv.uniform_sequence(
-                                conv.struct(
-                                    dict(itertools.chain(
-                                        dict(
-                                            id = conv.pipe(
-                                                conv.test_isinstance((basestring, int)),
-                                                conv.not_none,
-                                                ),
-                                            ).iteritems(),
-                                        (
-                                            (column.name, column.json_to_python)
-                                            for column in column_by_name.itervalues()
-                                            if column.entity == Individu
-                                            ),
-                                        )),
-                                    drop_none_values = True,
+                                personnes_a_charge = conv.uniform_sequence(
+                                    conv.test(
+                                        lambda individu_id:
+                                            individu_by_id[individu_id].get('handicap', False)
+                                            or find_age(individu_by_id[individu_id], period.start.date,
+                                                default = 0) <= 25,
+                                        error = u"Une personne à charge d'un foyer fiscal doit avoir moins de"
+                                                u" 25 ans ou être handicapée",
+                                        ),
                                     ),
-                                drop_none_items = True,
                                 ),
-                            conv.empty_to_none,
-                            conv.not_none,
-                            ),
-                        menages = conv.pipe(
-                            conv.make_item_to_singleton(),
-                            conv.test_isinstance(list),
-                            conv.uniform_sequence(
-                                conv.test_isinstance(dict),
-                                drop_none_items = True,
-                                ),
-                            conv.function(scenarios.set_entities_json_id),
-                            conv.uniform_sequence(
-                                conv.struct(
-                                    dict(itertools.chain(
-                                        dict(
-                                            autres = conv.pipe(
-                                                # personnes ayant un lien autre avec la personne de référence
-                                                conv.make_item_to_singleton(),
-                                                conv.test_isinstance(list),
-                                                conv.uniform_sequence(
-                                                    conv.test_isinstance((basestring, int)),
-                                                    drop_none_items = True,
-                                                    ),
-                                                conv.default([]),
-                                                ),
-                                            # conjoint de la personne de référence
-                                            conjoint = conv.test_isinstance((basestring, int)),
-                                            enfants = conv.pipe(
-                                                # enfants de la personne de référence ou de son conjoint
-                                                conv.make_item_to_singleton(),
-                                                conv.test_isinstance(list),
-                                                conv.uniform_sequence(
-                                                    conv.test_isinstance((basestring, int)),
-                                                    drop_none_items = True,
-                                                    ),
-                                                conv.default([]),
-                                                ),
-                                            id = conv.pipe(
-                                                conv.test_isinstance((basestring, int)),
-                                                conv.not_none,
-                                                ),
-                                            personne_de_reference = conv.test_isinstance((basestring, int)),
-                                            ).iteritems(),
-                                        (
-                                            (column.name, column.json_to_python)
-                                            for column in column_by_name.itervalues()
-                                            if column.entity == Menage
-                                            ),
-                                        )),
-                                    drop_none_values = True,
-                                    ),
-                                drop_none_items = True,
-                                ),
-                            conv.default([]),
+                            default = conv.noop,
                             ),
                         ),
+                    conv.empty_to_none,
+                    conv.not_none,
                     ),
-                )(value, state = state)
-            if error is not None:
-                return test_case, error
+                menages = conv.pipe(
+                    conv.uniform_sequence(
+                        conv.struct(
+                            dict(
+                                personne_de_reference = conv.not_none,
+                                ),
+                            default = conv.noop,
+                            ),
+                        ),
+                    conv.empty_to_none,
+                    conv.not_none,
+                    ),
+                ),
+            default = conv.noop,
+            )(test_case, state = state)
 
-            # Second validation step
-            foyers_fiscaux_individus_id = [individu['id'] for individu in test_case['individus']]
-            menages_individus_id = [individu['id'] for individu in test_case['individus']]
-            test_case, error = conv.struct(
+        return test_case, error
+        # First validation and conversion step
+        test_case, error = conv.pipe(
+            conv.test_isinstance(dict),
+            conv.struct(
                 dict(
-                    foyers_fiscaux = conv.uniform_sequence(
-                        conv.struct(
-                            dict(
-                                declarants = conv.uniform_sequence(conv.test_in_pop(foyers_fiscaux_individus_id)),
-                                personnes_a_charge = conv.uniform_sequence(conv.test_in_pop(
-                                    foyers_fiscaux_individus_id)),
-                                ),
-                            default = conv.noop,
+                    foyers_fiscaux = conv.pipe(
+                        conv.make_item_to_singleton(),
+                        conv.test_isinstance(list),
+                        conv.uniform_sequence(
+                            conv.test_isinstance(dict),
+                            drop_none_items = True,
                             ),
+                        conv.uniform_sequence(
+                            conv.struct(
+                                dict(itertools.chain(
+                                    dict(
+                                        declarants = conv.pipe(
+                                            conv.make_item_to_singleton(),
+                                            conv.test_isinstance(list),
+                                            conv.uniform_sequence(
+                                                conv.test_isinstance((basestring, int)),
+                                                drop_none_items = True,
+                                                ),
+                                            conv.default([]),
+                                            ),
+                                        id = conv.pipe(
+                                            conv.test_isinstance((basestring, int)),
+                                            conv.not_none,
+                                            ),
+                                        personnes_a_charge = conv.pipe(
+                                            conv.make_item_to_singleton(),
+                                            conv.test_isinstance(list),
+                                            conv.uniform_sequence(
+                                                conv.test_isinstance((basestring, int)),
+                                                drop_none_items = True,
+                                                ),
+                                            conv.default([]),
+                                            ),
+                                        ).iteritems(),
+                                    )),
+                                drop_none_values = True,
+                                ),
+                            drop_none_items = True,
+                            ),
+                        conv.default([]),
                         ),
-                    menages = conv.uniform_sequence(
-                        conv.struct(
-                            dict(
-                                autres = conv.uniform_sequence(conv.test_in_pop(menages_individus_id)),
-                                conjoint = conv.test_in_pop(menages_individus_id),
-                                enfants = conv.uniform_sequence(conv.test_in_pop(menages_individus_id)),
-                                personne_de_reference = conv.test_in_pop(menages_individus_id),
-                                ),
-                            default = conv.noop,
+                    menages = conv.pipe(
+                        conv.make_item_to_singleton(),
+                        conv.test_isinstance(list),
+                        conv.uniform_sequence(
+                            conv.test_isinstance(dict),
+                            drop_none_items = True,
                             ),
+                        conv.uniform_sequence(
+                            conv.struct(
+                                dict(itertools.chain(
+                                    dict(
+                                        autres = conv.pipe(
+                                            # personnes ayant un lien autre avec la personne de référence
+                                            conv.make_item_to_singleton(),
+                                            conv.test_isinstance(list),
+                                            conv.uniform_sequence(
+                                                conv.test_isinstance((basestring, int)),
+                                                drop_none_items = True,
+                                                ),
+                                            conv.default([]),
+                                            ),
+                                        # conjoint de la personne de référence
+                                        conjoint = conv.test_isinstance((basestring, int)),
+                                        enfants = conv.pipe(
+                                            # enfants de la personne de référence ou de son conjoint
+                                            conv.make_item_to_singleton(),
+                                            conv.test_isinstance(list),
+                                            conv.uniform_sequence(
+                                                conv.test_isinstance((basestring, int)),
+                                                drop_none_items = True,
+                                                ),
+                                            conv.default([]),
+                                            ),
+                                        id = conv.pipe(
+                                            conv.test_isinstance((basestring, int)),
+                                            conv.not_none,
+                                            ),
+                                        personne_de_reference = conv.test_isinstance((basestring, int)),
+                                        ).iteritems(),
+                                    )),
+                                drop_none_values = True,
+                                ),
+                            drop_none_items = True,
+                            ),
+                        conv.default([]),
                         ),
                     ),
-                default = conv.noop,
-                )(test_case, state = state)
+                ),
+            )(test_case, state = state)
 
-            individu_by_id = {
-                individu['id']: individu
-                for individu in test_case['individus']
-                }
 
-            if repair:
-                # Affecte à un foyer fiscal chaque individu qui n'appartient à aucun d'entre eux.
-                new_foyer_fiscal = dict(
-                    declarants = [],
-                    personnes_a_charge = [],
-                    )
-                new_foyer_fiscal_id = None
-                for individu_id in foyers_fiscaux_individus_id[:]:
+        return test_case, error
 
-                    # Tente d'affecter l'individu à un foyer fiscal d'après son ménage.
-                    menage, menage_role = find_menage_and_role(test_case, individu_id)
-                    if menage_role == u'personne_de_reference':
-                        conjoint_id = menage[u'conjoint']
-                        if conjoint_id is not None:
-                            foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, conjoint_id)
-                            if other_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 1:
-                                # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est personne de
-                                # référence dans un ménage, qu'il y a un conjoint dans ce ménage et que ce
-                                # conjoint est seul déclarant dans un foyer fiscal, alors ajoute l'individu comme
-                                # autre déclarant de ce foyer fiscal.
-                                foyer_fiscal[u'declarants'].append(individu_id)
-                                foyers_fiscaux_individus_id.remove(individu_id)
-                    elif menage_role == u'conjoint':
-                        personne_de_reference_id = menage[u'personne_de_reference']
-                        if personne_de_reference_id is not None:
-                            foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, personne_de_reference_id)
-                            if other_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 1:
-                                # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est conjoint
-                                # dans un ménage, qu'il y a une personne de référence dans ce ménage et que
-                                # cette personne est seul déclarant dans un foyer fiscal, alors ajoute l'individu
-                                # comme autre déclarant de ce foyer fiscal.
-                                foyer_fiscal[u'declarants'].append(individu_id)
-                                foyers_fiscaux_individus_id.remove(individu_id)
-                    elif menage_role == u'enfants' and (menage['personne_de_reference'] is not None
-                            or menage[u'conjoint'] is not None):
-                        for other_id in (menage['personne_de_reference'], menage[u'conjoint']):
-                            if other_id is None:
-                                continue
-                            foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, other_id)
-                            if other_role == u'declarants':
-                                # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est enfant dans
-                                # un ménage, qu'il y a une personne à charge ou un conjoint dans ce ménage et que
-                                # celui-ci est déclarant dans un foyer fiscal, alors ajoute l'individu comme
-                                # personne à charge de ce foyer fiscal.
-                                foyer_fiscal[u'personnes_a_charge'].append(individu_id)
-                                foyers_fiscaux_individus_id.remove(individu_id)
-                                break
+    def attribute_groupless_persons_to_entities(self, test_case, period, groupless_individus):
+        individus_without_menage = groupless_individus['menages']
+        individus_without_foyer_fiscal = groupless_individus['foyers_fiscaux']
 
-                    if individu_id in foyers_fiscaux_individus_id:
-                        # L'individu n'est toujours pas affecté à un foyer fiscal.
-                        individu = individu_by_id[individu_id]
-                        age = find_age(individu, period.start.date)
-                        if len(new_foyer_fiscal[u'declarants']) < 2 and (age is None or age >= 18):
-                            new_foyer_fiscal[u'declarants'].append(individu_id)
-                        else:
-                            new_foyer_fiscal[u'personnes_a_charge'].append(individu_id)
-                        if new_foyer_fiscal_id is None:
-                            new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = unicode(uuid.uuid4())
-                            test_case[u'foyers_fiscaux'].append(new_foyer_fiscal)
-                        foyers_fiscaux_individus_id.remove(individu_id)
+        individu_by_id = {
+            individu['id']: individu
+            for individu in test_case['individus']
+            }
 
-                # Affecte à un ménage chaque individu qui n'appartient à aucun d'entre eux.
-                new_menage = dict(
-                    autres = [],
-                    conjoint = None,
-                    enfants = [],
-                    personne_de_reference = None,
-                    )
-                new_menage_id = None
-                for individu_id in menages_individus_id[:]:
-                    # Tente d'affecter l'individu à un ménage d'après son foyer fiscal.
-                    foyer_fiscal, foyer_fiscal_role = find_foyer_fiscal_and_role(test_case, individu_id)
-                    if foyer_fiscal_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 2:
-                        for declarant_id in foyer_fiscal[u'declarants']:
-                            if declarant_id != individu_id:
-                                menage, other_role = find_menage_and_role(test_case, declarant_id)
-                                if other_role == u'personne_de_reference' and menage[u'conjoint'] is None:
-                                    # Quand l'individu n'est pas encore dans un ménage, mais qu'il est déclarant
-                                    # dans un foyer fiscal, qu'il y a un autre déclarant dans ce foyer fiscal et que
-                                    # cet autre déclarant est personne de référence dans un ménage et qu'il n'y a
-                                    # pas de conjoint dans ce ménage, alors ajoute l'individu comme conjoint de ce
-                                    # ménage.
-                                    menage[u'conjoint'] = individu_id
-                                    menages_individus_id.remove(individu_id)
-                                elif other_role == u'conjoint' and menage[u'personne_de_reference'] is None:
-                                    # Quand l'individu n'est pas encore dans un ménage, mais qu'il est déclarant
-                                    # dans une foyer fiscal, qu'il y a un autre déclarant dans ce foyer fiscal et
-                                    # que cet autre déclarant est conjoint dans un ménage et qu'il n'y a pas de
-                                    # personne de référence dans ce ménage, alors ajoute l'individu comme personne
-                                    # de référence de ce ménage.
-                                    menage[u'personne_de_reference'] = individu_id
-                                    menages_individus_id.remove(individu_id)
-                                break
-                    elif foyer_fiscal_role == u'personnes_a_charge' and foyer_fiscal[u'declarants']:
-                        for declarant_id in foyer_fiscal[u'declarants']:
+        # Affecte à un foyer fiscal chaque individu qui n'appartient à aucun d'entre eux.
+        new_foyer_fiscal = dict(
+            declarants = [],
+            personnes_a_charge = [],
+            )
+        new_foyer_fiscal_id = None
+        for individu_id in individus_without_foyer_fiscal[:]:
+            # Tente d'affecter l'individu à un foyer fiscal d'après son ménage.
+            menage, menage_role = find_menage_and_role(test_case, individu_id)
+            if menage_role == u'personne_de_reference':
+                conjoint_id = menage[u'conjoint']
+                if conjoint_id is not None:
+                    foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, conjoint_id)
+                    if other_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 1:
+                        # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est personne de
+                        # référence dans un ménage, qu'il y a un conjoint dans ce ménage et que ce
+                        # conjoint est seul déclarant dans un foyer fiscal, alors ajoute l'individu comme
+                        # autre déclarant de ce foyer fiscal.
+                        foyer_fiscal[u'declarants'].append(individu_id)
+                        individus_without_foyer_fiscal.remove(individu_id)
+            elif menage_role == u'conjoint':
+                personne_de_reference_id = menage[u'personne_de_reference']
+                if personne_de_reference_id is not None:
+                    foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, personne_de_reference_id)
+                    if other_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 1:
+                        # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est conjoint
+                        # dans un ménage, qu'il y a une personne de référence dans ce ménage et que
+                        # cette personne est seul déclarant dans un foyer fiscal, alors ajoute l'individu
+                        # comme autre déclarant de ce foyer fiscal.
+                        foyer_fiscal[u'declarants'].append(individu_id)
+                        individus_without_foyer_fiscal.remove(individu_id)
+            elif menage_role == u'enfants' and (
+                    menage['personne_de_reference'] is not None or menage[u'conjoint'] is not None):
+                for other_id in (menage['personne_de_reference'], menage[u'conjoint']):
+                    if other_id is None:
+                        continue
+                    foyer_fiscal, other_role = find_foyer_fiscal_and_role(test_case, other_id)
+                    if other_role == u'declarants':
+                        # Quand l'individu n'est pas encore dans un foyer fiscal, mais qu'il est enfant dans
+                        # un ménage, qu'il y a une personne à charge ou un conjoint dans ce ménage et que
+                        # celui-ci est déclarant dans un foyer fiscal, alors ajoute l'individu comme
+                        # personne à charge de ce foyer fiscal.
+                        foyer_fiscal[u'personnes_a_charge'].append(individu_id)
+                        individus_without_foyer_fiscal.remove(individu_id)
+                        break
+
+            if individu_id in individus_without_foyer_fiscal:
+                # L'individu n'est toujours pas affecté à un foyer fiscal.
+                individu = individu_by_id[individu_id]
+                age = find_age(individu, period.start.date)
+                if len(new_foyer_fiscal[u'declarants']) < 2 and (age is None or age >= 18):
+                    new_foyer_fiscal[u'declarants'].append(individu_id)
+                else:
+                    new_foyer_fiscal[u'personnes_a_charge'].append(individu_id)
+                if new_foyer_fiscal_id is None:
+                    new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = unicode(uuid.uuid4())
+                    test_case[u'foyers_fiscaux'].append(new_foyer_fiscal)
+                individus_without_foyer_fiscal.remove(individu_id)
+
+            # Affecte à un ménage chaque individu qui n'appartient à aucun d'entre eux.
+            new_menage = dict(
+                autres = [],
+                conjoint = None,
+                enfants = [],
+                personne_de_reference = None,
+                )
+            new_menage_id = None
+            for individu_id in menages_individus_id[:]:
+                # Tente d'affecter l'individu à un ménage d'après son foyer fiscal.
+                foyer_fiscal, foyer_fiscal_role = find_foyer_fiscal_and_role(test_case, individu_id)
+                if foyer_fiscal_role == u'declarants' and len(foyer_fiscal[u'declarants']) == 2:
+                    for declarant_id in foyer_fiscal[u'declarants']:
+                        if declarant_id != individu_id:
                             menage, other_role = find_menage_and_role(test_case, declarant_id)
-                            if other_role in (u'personne_de_reference', u'conjoint'):
-                                # Quand l'individu n'est pas encore dans un ménage, mais qu'il est personne à charge
-                                # dans un foyer fiscal, qu'il y a un déclarant dans ce foyer fiscal et que ce
-                                # déclarant est personne de référence ou conjoint dans un ménage, alors ajoute
-                                # l'individu comme enfant de ce ménage.
-                                menage[u'enfants'].append(individu_id)
+                            if other_role == u'personne_de_reference' and menage[u'conjoint'] is None:
+                                # Quand l'individu n'est pas encore dans un ménage, mais qu'il est déclarant
+                                # dans un foyer fiscal, qu'il y a un autre déclarant dans ce foyer fiscal et que
+                                # cet autre déclarant est personne de référence dans un ménage et qu'il n'y a
+                                # pas de conjoint dans ce ménage, alors ajoute l'individu comme conjoint de ce
+                                # ménage.
+                                menage[u'conjoint'] = individu_id
                                 menages_individus_id.remove(individu_id)
-                                break
+                            elif other_role == u'conjoint' and menage[u'personne_de_reference'] is None:
+                                # Quand l'individu n'est pas encore dans un ménage, mais qu'il est déclarant
+                                # dans une foyer fiscal, qu'il y a un autre déclarant dans ce foyer fiscal et
+                                # que cet autre déclarant est conjoint dans un ménage et qu'il n'y a pas de
+                                # personne de référence dans ce ménage, alors ajoute l'individu comme personne
+                                # de référence de ce ménage.
+                                menage[u'personne_de_reference'] = individu_id
+                                menages_individus_id.remove(individu_id)
+                            break
+                elif foyer_fiscal_role == u'personnes_a_charge' and foyer_fiscal[u'declarants']:
+                    for declarant_id in foyer_fiscal[u'declarants']:
+                        menage, other_role = find_menage_and_role(test_case, declarant_id)
+                        if other_role in (u'personne_de_reference', u'conjoint'):
+                            # Quand l'individu n'est pas encore dans un ménage, mais qu'il est personne à charge
+                            # dans un foyer fiscal, qu'il y a un déclarant dans ce foyer fiscal et que ce
+                            # déclarant est personne de référence ou conjoint dans un ménage, alors ajoute
+                            # l'individu comme enfant de ce ménage.
+                            menage[u'enfants'].append(individu_id)
+                            menages_individus_id.remove(individu_id)
+                            break
 
-                    if individu_id in menages_individus_id:
-                        # L'individu n'est toujours pas affecté à un ménage.
-                        if new_menage[u'personne_de_reference'] is None:
-                            new_menage[u'personne_de_reference'] = individu_id
-                        elif new_menage[u'conjoint'] is None:
-                            new_menage[u'conjoint'] = individu_id
-                        else:
-                            new_menage[u'enfants'].append(individu_id)
-                        if new_menage_id is None:
-                            new_menage[u'id'] = new_menage_id = unicode(uuid.uuid4())
-                            test_case[u'menages'].append(new_menage)
-                        menages_individus_id.remove(individu_id)
+                if individu_id in menages_individus_id:
+                    # L'individu n'est toujours pas affecté à un ménage.
+                    if new_menage[u'personne_de_reference'] is None:
+                        new_menage[u'personne_de_reference'] = individu_id
+                    elif new_menage[u'conjoint'] is None:
+                        new_menage[u'conjoint'] = individu_id
+                    else:
+                        new_menage[u'enfants'].append(individu_id)
+                    if new_menage_id is None:
+                        new_menage[u'id'] = new_menage_id = unicode(uuid.uuid4())
+                        test_case[u'menages'].append(new_menage)
+                    menages_individus_id.remove(individu_id)
 
-            remaining_individus_id = set(foyers_fiscaux_individus_id).union(menages_individus_id)
-            if remaining_individus_id:
-                individu_index_by_id = {
-                    individu[u'id']: individu_index
-                    for individu_index, individu in enumerate(test_case[u'individus'])
-                    }
-                if error is None:
-                    error = {}
-                for individu_id in remaining_individus_id:
-                    error.setdefault('individus', {})[individu_index_by_id[individu_id]] = state._(
-                        u"Individual is missing from {}").format(
-                            state._(u' & ').join(
-                                word
-                                for word in [
-                                    u'foyers_fiscaux' if individu_id in foyers_fiscaux_individus_id else None,
-                                    u'menages' if individu_id in menages_individus_id else None,
-                                    ]
-                                if word is not None
-                                ))
-            if error is not None:
-                return test_case, error
+        remaining_individus_id = set(individus_without_foyer_fiscal).union(menages_individus_id)
+        if remaining_individus_id:
+            individu_index_by_id = {
+                individu[u'id']: individu_index
+                for individu_index, individu in enumerate(test_case[u'individus'])
+                }
+            if error is None:
+                error = {}
+            for individu_id in remaining_individus_id:
+                error.setdefault('individus', {})[individu_index_by_id[individu_id]] = state._(
+                    u"Individual is missing from {}").format(
+                        state._(u' & ').join(
+                            word
+                            for word in [
+                                u'foyers_fiscaux' if individu_id in individus_without_foyer_fiscal else None,
+                                u'menages' if individu_id in menages_individus_id else None,
+                                ]
+                            if word is not None
+                            ))
+        if error is not None:
+            return test_case, error
 
             # Third validation step
             individu_by_id = test_case['individus']
