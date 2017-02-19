@@ -6,7 +6,7 @@ from nose.tools import nottest
 
 from openfisca_core.tools.test_runner import generate_tests
 
-from openfisca_france.tests import base
+from openfisca_tunisia.tests import base
 
 nottest(generate_tests)
 
@@ -16,10 +16,6 @@ options_by_dir = {
         },
     'fiches_de_paie': {},
     'formulas': {},
-    'mes-aides.gouv.fr': {
-        'default_relative_error_margin': 0.02
-        },
-    'ui.openfisca.fr': {},
     'scipy': {
         'reforms': ['de_net_a_brut'],
         'requires': 'scipy'
