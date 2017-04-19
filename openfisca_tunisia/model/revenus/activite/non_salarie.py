@@ -65,14 +65,14 @@ class bic_forfaitaire_resultat(Variable):
     label = u"Résultat (BIC, régime forfaitaire, cession de fond de commerce)"
 
 
-class bic_sp_res(Variable):
+class bic_societes_personnes_resultat(Variable):
     column = IntCol
     entity = Individu
     label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées " \
         u"exerçant dans le secteur industriel et commercial (BIC)"
 
 
-class decl_inves(Variable):
+class structure_declaration_investissement(Variable):
     column = EnumCol(
         enum = Enum(
             [

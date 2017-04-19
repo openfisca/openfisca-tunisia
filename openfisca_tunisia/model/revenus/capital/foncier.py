@@ -8,7 +8,7 @@ from openfisca_tunisia.model.base import *
 
 # Régime réel
 
-class fon_reel_fisc(Variable):
+class foncier_reel_resultat_fiscal(Variable):
     column = IntCol
     entity = Individu
     label = u"Résultat fiscal (revenus fonciers, régime réel)"
@@ -16,26 +16,26 @@ class fon_reel_fisc(Variable):
 
 # Régime forfaitaire bâti
 
-class fon_forf_bati_rec(Variable):
+class foncier_forfaitaire_batis_recettes(Variable):
     column = IntCol
     entity = Individu
     label = u"Recettes brutes réalisées TTC (revenus fonciers, base forfaitaire, immeubles bâtis)"
 
 
-class fon_forf_bati_rel(Variable):
+class foncier_forfaitaire_batis_reliquat(Variable):
     column = IntCol
     entity = Individu
     label = u"Reliquat (revenus fonciers, base forfaitaire, immeubles bâtis)"
 
 
-class fon_forf_bati_fra(Variable):
+class foncier_forfaitaire_batis_frais(Variable):
     column = IntCol
     entity = Individu
     label = u"Frais d’entretien et de réparation justifiés à déduire " \
         u"(revenus fonciers, base forfaitaire, immeubles bâtis)"
 
 
-class fon_forf_bati_tax(Variable):
+class foncier_forfaitaire_batis_taxe(Variable):
     column = IntCol
     entity = Individu
     label = u"Taxe effectivement payée à déduire (revenus fonciers, base forfaitaire, immeubles bâtis)"
@@ -43,24 +43,24 @@ class fon_forf_bati_tax(Variable):
 
 # Régime forfaitaire non bâti
 
-class fon_forf_nbat_rec(Variable):
+class foncier_forfaitaire_non_batis_recettes(Variable):
     column = IntCol
     entity = Individu
     label = u"Recettes brutes réalisées TTC (revenus fonciers, base forfaitaire, terrains non bâtis)"
 
 
-class fon_forf_nbat_dep(Variable):
+class foncier_forfaitaire_non_batis_depenses(Variable):
     column = IntCol
     entity = Individu
     label = u"Dépenses justifiées à déduire (revenus fonciers, base forfaitaire, terrains non bâtis)"
 
 
-class fon_forf_nbat_tax(Variable):
+class foncier_forfaitaire_non_batis_taxe(Variable):
     column = IntCol
     entity = Individu
     label = u"Taxe effectivement payée à déduire (revenus fonciers, base forfaitaire, terrains non bâtis)"
 
-class fon_sp(Variable):
+class foncier_societes_personnes(Variable):
     column = IntCol
     entity = Individu
     label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des revenus fonciers"
