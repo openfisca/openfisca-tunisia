@@ -29,7 +29,7 @@ class bic_reel(Variable):
 # régime des sociétés de personnes
 
 
-class bic_sp(Variable):
+class bic_societes_personnes(Variable):
     column = BoolCol()
     entity = Individu
     label = u"Indicatrice des sociétés de personnes et assimilées (BIC)"
@@ -59,7 +59,7 @@ class bic_reel_res(Variable):
     label = u"Résultat comptable (BIC, régime réel)"
 
 
-class bic_forf_res(Variable):
+class bic_forfaitaire_resultat(Variable):
     column = IntCol
     entity = Individu
     label = u"Résultat (BIC, régime forfaitaire, cession de fond de commerce)"
