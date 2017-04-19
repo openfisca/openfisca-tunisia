@@ -100,14 +100,14 @@ class pret_universitaire(Variable):
 
 class cotisations_non_affilie(Variable):
     column = IntCol
-    label = u"Les cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
+    label = u"Cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
         u"de la sécurité sociale"
     entity = Individu
 
 
 class interet_acquisition_logement(Variable):
     column = IntCol
-    label = u"Les intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
+    label = u"Intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
     entity = Individu
 
 

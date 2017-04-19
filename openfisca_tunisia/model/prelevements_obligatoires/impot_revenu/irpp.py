@@ -31,11 +31,11 @@ class nb_enf(Variable):
 class nb_enf_sup(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Nombre d'enfants étudiant du supérieur non boursiers"
+    label = u"Nombre d'enfants étudiants du supérieur non boursiers"
 
     def function(foyer_fiscal, period):
         '''
-        TODO: Nombre d'enfants étudiant du supérieur non boursiers
+        TODO: Nombre d'enfants étudiants du supérieur non boursiers
         '''
         period = period.this_year
         age = foyer_fiscal.members('age', period = period)
@@ -79,6 +79,7 @@ class nb_parents(Variable):
 class chef_de_famille(Variable):
     column = BoolCol()
     entity = FoyerFiscal
+    label = u"Indicatrice de chef de famille"
     # Du point de vue fiscal, est considéré chef de famille :
     # - L’époux ;
     # - Le divorcé ou la divorcée qui a la garde des enfants (divorce & enfnats);
@@ -122,7 +123,7 @@ class chef_de_famille(Variable):
 class bic(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Bénéfices industriels et commerciaux"
+    label = u"Bénéfices industriels et commerciaux (BIC)"
 
     def function(foyer_fiscal, period):
         period = period.this_year
@@ -191,7 +192,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 class bnc(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Bénéfices des professions non commerciales"
+    label = u"Bénéfices des professions non commerciales (BNC)"
 
     def function(foyer_fiscal, period):
         period = period.this_year
@@ -221,7 +222,7 @@ class bnc_forf_benef_fiscal(Variable):
 class beap(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Bénéfices de l'exploitation agricole et de pêche"
+    label = u"Bénéfices de l'exploitation agricole et de pêche (BEAP)"
 
     def function(foyer_fiscal, period):
         period = period.this_year
@@ -441,7 +442,7 @@ class rng(Variable):
 class deduction_interets(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Déductions intérets issus de comptes spéciaux ou d'obligations"
+    label = u"Déductions intérêts issus de comptes spéciaux ou d'obligations"
 
     def function(foyer_fiscal, period, legislation):
         period = period.this_year
