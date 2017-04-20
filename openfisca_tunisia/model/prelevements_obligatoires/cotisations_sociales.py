@@ -51,6 +51,7 @@ class assiette_cotisations_sociales(Variable):
 class categorie_salarie(Variable):
     column = EnumCol(CAT, default = 0)
     entity = Individu
+    label = u"Catégorie de salarié"
 
 
 class cotisations_sociales(Variable):
@@ -86,7 +87,7 @@ class cotisations_employeur(Variable):
 class cotisations_salarie(Variable):
     column = FloatCol
     entity = Individu
-    label = u"Cotisation sociales salarie"
+    label = u"Cotisation sociales salarié"
 
     def function(individu, period):
         return period, (
@@ -179,7 +180,7 @@ class famille_employeur(Variable):
 class famille_salarie(Variable):
     column = FloatCol
     entity = Individu
-    label = u"Cotisation sociale allocations familiales (salarie)"
+    label = u"Cotisation sociale allocations familiales (salarié)"
 
     def function(individu, period, legislation):
         return period, compute_cotisation(
@@ -224,7 +225,7 @@ class maladie_employeur(Variable):
 class maladie_salarie(Variable):
     column = FloatCol
     entity = Individu
-    label = u"Cotisation assurances sociales: maladie (salarie)"
+    label = u"Cotisation assurances sociales: maladie (salarié)"
 
     def function(individu, period, legislation):
         return period, compute_cotisation(
@@ -239,7 +240,7 @@ class maladie_salarie(Variable):
 class maternite_employeur(Variable):
     column = FloatCol
     entity = Individu
-    label = u"Cotisation assurances sociales: maternité (employeur)"
+    label = u"Cotisation assurances sociales : maternité (employeur)"
 
     def function(individu, period, legislation):
         return period, compute_cotisation(
@@ -254,7 +255,7 @@ class maternite_employeur(Variable):
 class maternite_salarie(Variable):
     column = FloatCol
     entity = Individu
-    label = u"Cotisation assurances sociales: maternité (salarié)"
+    label = u"Cotisation assurances sociales : maternité (salarié)"
 
     def function(individu, period, legislation):
         return period, compute_cotisation(
@@ -329,6 +330,7 @@ class retraite_salarie(Variable):
 class salaire_imposable(Variable):
     column = FloatCol
     entity = Individu
+    label = u"Salaire imposable"
 
     def function(individu, period):
         return period, (
@@ -340,6 +342,7 @@ class salaire_imposable(Variable):
 class salaire_net_a_payer(Variable):
     column = FloatCol
     entity = Individu
+    label = u"Salaire net à payer (fiche de paie)"
 
     def function(individu, period):
         return period, (

@@ -31,11 +31,11 @@ class nb_enf(Variable):
 class nb_enf_sup(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Nombre d'enfants étudiant du supérieur non boursiers"
+    label = u"Nombre d'enfants étudiants du supérieur non boursiers"
 
     def function(foyer_fiscal, period):
         '''
-        TODO: Nombre d'enfants étudiant du supérieur non boursiers
+        TODO: Nombre d'enfants étudiants du supérieur non boursiers
         '''
         period = period.this_year
         age = foyer_fiscal.members('age', period = period)
@@ -79,6 +79,7 @@ class nb_parents(Variable):
 class chef_de_famille(Variable):
     column = BoolCol()
     entity = FoyerFiscal
+    label = u"Indicatrice de chef de famille"
     # Du point de vue fiscal, est considéré chef de famille :
     # - L’époux ;
     # - Le divorcé ou la divorcée qui a la garde des enfants (divorce & enfnats);
@@ -122,7 +123,7 @@ class chef_de_famille(Variable):
 class bic(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Bénéfices industriels et commerciaux"
+    label = u"Bénéfices industriels et commerciaux (BIC)"
 
     def function(foyer_fiscal, period):
         period = period.this_year
@@ -191,7 +192,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 class bnc(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Bénéfices des professions non commerciales"
+    label = u"Bénéfices des professions non commerciales (BNC)"
 
     def function(foyer_fiscal, period):
         period = period.this_year
@@ -221,7 +222,7 @@ class bnc_forf_benef_fiscal(Variable):
 class beap(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Bénéfices de l'exploitation agricole et de pêche"
+    label = u"Bénéfices de l'exploitation agricole et de pêche (BEAP)"
 
     def function(foyer_fiscal, period):
         period = period.this_year
@@ -242,12 +243,12 @@ class revenus_fonciers(Variable):
 
     def function(foyer_fiscal, period):
         period = period.this_year
-        fon_reel_fisc = foyer_fiscal.declarant_principal('fon_reel_fisc', period = period)
+        foncier_reel_resultat_fiscal = foyer_fiscal.declarant_principal('foncier_reel_resultat_fiscal', period = period)
         fon_forf_bati = foyer_fiscal('fon_forf_bati', period = period)
         fon_forf_nbat = foyer_fiscal('fon_forf_nbat', period = period)
-        fon_sp = foyer_fiscal.declarant_principal('fon_sp', period = period)
+        foncier_societes_personnes = foyer_fiscal.declarant_principal('foncier_societes_personnes', period = period)
 
-        return period, fon_reel_fisc + fon_forf_bati + fon_forf_nbat + fon_sp
+        return period, foncier_reel_resultat_fiscal + fon_forf_bati + fon_forf_nbat + foncier_societes_personnes
 
 
 class fon_forf_bati(Variable):
@@ -257,14 +258,14 @@ class fon_forf_bati(Variable):
 
     def function(foyer_fiscal, period, legislation):
         period = period.this_year
-        fon_forf_bati_rec = foyer_fiscal.declarant_principal('fon_forf_bati_rec', period = period)
-        fon_forf_bati_rel = foyer_fiscal.declarant_principal('fon_forf_bati_rel', period = period)
-        fon_forf_bati_fra = foyer_fiscal.declarant_principal('fon_forf_bati_fra', period = period)
-        fon_forf_bati_tax = foyer_fiscal.declarant_principal('fon_forf_bati_tax', period = period)
+        foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_recettes', period = period)
+        foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_reliquat', period = period)
+        foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_frais', period = period)
+        foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_taxe', period = period)
         P = legislation(period.start).impot_revenu.fon.bati.deduc_frais
         return period, max_(
             0,
-            fon_forf_bati_rec * (1 - P) + fon_forf_bati_rel - fon_forf_bati_fra - fon_forf_bati_tax
+            foncier_forfaitaire_batis_recettes * (1 - P) + foncier_forfaitaire_batis_reliquat - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
             )
 
 
@@ -275,10 +276,10 @@ class fon_forf_nbat(Variable):
 
     def function(foyer_fiscal, period):
         period = period.this_year
-        fon_forf_nbat_rec = foyer_fiscal.declarant_principal('fon_forf_nbat_rec', period = period)
-        fon_forf_nbat_dep = foyer_fiscal.declarant_principal('fon_forf_nbat_dep', period = period)
-        fon_forf_nbat_tax = foyer_fiscal.declarant_principal('fon_forf_nbat_tax', period = period)
-        return period, max_(0, fon_forf_nbat_rec - fon_forf_nbat_dep - fon_forf_nbat_tax)
+        foncier_forfaitaire_non_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_recettes', period = period)
+        foncier_forfaitaire_non_batis_depenses = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_depenses', period = period)
+        foncier_forfaitaire_non_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_taxe', period = period)
+        return period, max_(0, foncier_forfaitaire_non_batis_recettes - foncier_forfaitaire_non_batis_depenses - foncier_forfaitaire_non_batis_taxe)
 
 
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
@@ -441,7 +442,7 @@ class rng(Variable):
 class deduction_interets(Variable):
     column = FloatCol
     entity = FoyerFiscal
-    label = u"Déductions intérets issus de comptes spéciaux ou d'obligations"
+    label = u"Déductions intérêts issus de comptes spéciaux ou d'obligations"
 
     def function(foyer_fiscal, period, legislation):
         period = period.this_year

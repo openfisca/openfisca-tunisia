@@ -25,6 +25,7 @@ class impots_directs(Variable):
 class prestations_sociales(Variable):
     column = IntCol
     entity = Individu
+    label = u"Prestations sociales"
 
 
 class revenu_disponible(Variable):
@@ -69,7 +70,7 @@ class revenus_du_capital(Variable):
 class revenus_du_travail(Variable):
     column = FloatCol()
     entity = Individu
-    label = u"Revenu du travail"
+    label = u"Revenus du travail"
 
     def function(individu, period):
         period = period.this_year

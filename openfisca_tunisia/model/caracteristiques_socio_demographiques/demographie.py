@@ -77,21 +77,24 @@ class veuf(Variable):
 class statut_marital(Variable):
     column = PeriodSizeIndependentIntCol(default = 2)
     entity = Individu
+    label = u"Statut marital"
 
 
 class invalide(Variable):
     column = BoolCol
-    label = u'invalide'
+    label = u"Invalide"
     entity = Individu
 
 
 class activite(Variable):
     column = PeriodSizeIndependentIntCol
     entity = Individu
+    label = u"Activité"
 
 
 class boursier(Variable):
     column = BoolCol()
     entity = Individu
+    label = u"Boursier"
 
 

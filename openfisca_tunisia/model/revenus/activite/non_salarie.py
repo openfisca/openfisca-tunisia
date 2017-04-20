@@ -20,6 +20,7 @@ class bic_reel(Variable):
             )
         )
     entity = Individu
+    label = u"Type d’activité (BIC)"
 
 
 # Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt
@@ -28,9 +29,10 @@ class bic_reel(Variable):
 # régime des sociétés de personnes
 
 
-class bic_sp(Variable):
+class bic_societes_personnes(Variable):
     column = BoolCol()
     entity = Individu
+    label = u"Indicatrice des sociétés de personnes et assimilées (BIC)"
 
 
 class cadre_legal(Variable):
@@ -48,24 +50,29 @@ class cadre_legal(Variable):
             )
         )
     entity = Individu
+    label = u"Cadre légal de l’activité de l’entreprise"
 
 
 class bic_reel_res(Variable):
     column = IntCol
     entity = Individu
+    label = u"Résultat comptable (BIC, régime réel)"
 
 
-class bic_forf_res(Variable):
+class bic_forfaitaire_resultat(Variable):
     column = IntCol
     entity = Individu
+    label = u"Résultat (BIC, régime forfaitaire, cession de fond de commerce)"
 
 
-class bic_sp_res(Variable):
+class bic_societes_personnes_resultat(Variable):
     column = IntCol
     entity = Individu
+    label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées " \
+        u"exerçant dans le secteur industriel et commercial (BIC)"
 
 
-class decl_inves(Variable):
+class structure_declaration_investissement(Variable):
     column = EnumCol(
         enum = Enum(
             [
@@ -73,12 +80,13 @@ class decl_inves(Variable):
                 u"APIA",
                 u"Commissariat régional du développement agricole",
                 u"ONT",
-                u"Autre structure ( à préciser)"
+                u"Autre structure (à préciser)"
                 ],
             start = 1,
             )
         )
     entity = Individu
+    label = u"Structure auprès de laquelle la déclaration d’investissement a été déposée"
 
 
 # A/ Régime réel
@@ -120,7 +128,7 @@ class bic_ca_autre(Variable):
 
 class bic_depenses(Variable):
     column = IntCol
-    label = u"Total des dépenses (BIC cession de fond de commerce)"
+    label = u"Total des dépenses (BIC, cession de fond de commerce)"
     entity = Individu
 
 
@@ -201,7 +209,7 @@ class bnc_part_benef_sp(Variable):
 
 class beap_reel_res_fiscal(Variable):
     column = IntCol
-    label = u"Résultat fiscal (BEAP régime réel)"
+    label = u"Résultat fiscal (BEAP, régime réel)"
     entity = Individu
 
 
@@ -213,7 +221,7 @@ class beap_reel_res_fiscal(Variable):
 
 class beap_reliq_rec(Variable):
     column = IntCol
-    label = u"Recettes (BEAP bénéfice comme reliquat entre recette et dépenses"
+    label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses"
     entity = Individu
 
 
@@ -229,7 +237,7 @@ class beap_reliq_stock(Variable):
 
 class beap_reliq_dep_ex(Variable):
     column = IntCol
-    label = u"Dépenses d’exploitation (BEAP bénéfice comme reliquat entre recette et dépenses)"
+    label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)"
     entity = Individu
 
 
