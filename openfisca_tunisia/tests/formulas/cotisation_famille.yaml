@@ -1,9 +1,9 @@
-- name: "Salarié 12000 DT famille"
-  period: 2011
+- name: "Salarié 1000 DT famille"
+  period: 2011-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    famille_salarie: -.008889 * 12000
-    famille_employeur: -.022111 * 12000
+    salaire_de_base: 1000
+    famille_salarie: -.008889 * 1000
+    famille_employeur: -.022111 * 1000
 

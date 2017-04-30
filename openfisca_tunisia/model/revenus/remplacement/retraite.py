@@ -9,10 +9,11 @@ class revenu_assimile_pension(Variable):
     column = IntCol
     label = u"Revenus assimilés à des pensions (pensions et rentes viagères)"
     entity = Individu
+    definition_period = YEAR
 
 
 class avantages_nature_assimile_pension(Variable):
     column = IntCol
     label = u"Avantages en nature assimilables à des pensions"
     entity = Individu
-
+    definition_period = YEAR

@@ -1,8 +1,8 @@
-- name: "Salarié 12000 DT retraite"
-  period: 2011
+- name: "Salarié 1000 DT retraite"
+  period: 2011-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    retraite_employeur: -.077639 * 12000
-    retraite_salarie: -.047361 * 12000
+    salaire_de_base: 1000
+    retraite_employeur: -.077639 * 1000
+    retraite_salarie: -.047361 * 1000

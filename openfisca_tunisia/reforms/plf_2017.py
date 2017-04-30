@@ -8,7 +8,7 @@ from openfisca_core.reforms import Reform, update_legislation
 
 def modify_legislation_json(reference_legislation_json_copy):
     reform_year = 2016
-    reform_period = periods.period('year', reform_year)
+    reform_period = periods.period(reform_year)
 
     reference_legislation_json_copy = update_legislation(
         legislation_json = reference_legislation_json_copy,

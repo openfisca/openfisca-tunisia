@@ -19,9 +19,7 @@ def check_1_parent(year = 2011):
         parent1 = dict(date_naissance = datetime.date(year - 40, 1, 1)),
         )
     simulation = scenario.new_simulation()
-    revenu_disponible = simulation.calculate('revenu_disponible')
-    salaire_imposable = simulation.get_holder('salaire_imposable').new_test_case_array(simulation.period)
-    assert (salaire_imposable == np.linspace(0, 100000, 3)).all(), salaire_imposable
+    revenu_disponible = simulation.calculate('revenu_disponible', period = year)
 
 
 def test_1_parent():

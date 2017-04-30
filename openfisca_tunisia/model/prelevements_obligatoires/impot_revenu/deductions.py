@@ -54,48 +54,56 @@ class compte_special_epargne_banque(Variable):
     column = IntCol
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques"
     entity = Individu
+    definition_period = YEAR
 
 
 class compte_special_epargne_cent(Variable):
     column = IntCol
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite"
     entity = Individu
+    definition_period = YEAR
 
 
 class emprunt_obligataire(Variable):
     column = IntCol
     label = u"Intérêts des emprunts obligataires"
     entity = Individu
+    definition_period = YEAR
 
 
 class compte_epargne_investissement(Variable):
     column = IntCol
     label = u"Intérêts des comptes épargne pour l'investissement"
     entity = Individu
+    definition_period = YEAR
 
 
 class rente(Variable):
     column = IntCol
     label = u"Rentes payées obligatoirement et à titre gratuit"
     entity = Individu
+    definition_period = YEAR
 
 
 class prime_assurance_vie(Variable):
     column = IntCol
     label = u"Prime d’assurance-vie"
     entity = Individu
+    definition_period = YEAR
 
 
 class dons(Variable):
     column = IntCol
     label = u"Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"
     entity = Individu
+    definition_period = YEAR
 
 
 class pret_universitaire(Variable):
     column = IntCol
     label = u"Remboursement des prêts universitaires en principal et intérêts"
     entity = Individu
+    definition_period = YEAR
 
 
 class cotisations_non_affilie(Variable):
@@ -103,12 +111,14 @@ class cotisations_non_affilie(Variable):
     label = u"Cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
         u"de la sécurité sociale"
     entity = Individu
+    definition_period = YEAR
 
 
 class interet_acquisition_logement(Variable):
     column = IntCol
     label = u"Intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
     entity = Individu
+    definition_period = YEAR
 
 
 # Code d’incitation aux investissements

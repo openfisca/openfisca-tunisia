@@ -3,4 +3,6 @@
   input_variables:
     salaire_net_a_payer: 14700
   output_variables: # Full payroll simulation
-    salaire_imposable: 17710
+    salaire_imposable:
+      "2011-01":
+        - 17710 / 12
