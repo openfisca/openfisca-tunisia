@@ -74,25 +74,25 @@ class smig75(Variable):
     column = BoolCol
     entity = Individu
     label = u"Indicatrice de salaire supérieur à 75% du smig"
+    definition_period = YEAR
 
     def function(individu, period, legislation):
-        period = period.this_year
         salaire_imposable = individu('salaire_imposable', period = period)
         salaire_en_nature = individu('salaire_en_nature', period = period)
         smig = simulation.legislation(period.start).cotisations_sociales.gen.smig
-        return period, (salaire_imposable + salaire_en_nature) < smig
+        return (salaire_imposable + salaire_en_nature) < smig
 
 
 class salaire_unique(Variable):
     column = BoolCol
     entity = Menage
     label = u"Indicatrice de salaire unique"
+    definition_period = YEAR
 
     def function(individu, period):
-        period = period.this_year
         salaire_imposable_personne_de_reference = menage.personne_de_reference('salaire_imposable', period = period)
         salaire_imposable_conjoint = menage.conjoint('salaire_imposable', period = period)
-        return period, xor_(salaire_imposable_personne_de_reference > 0, salaire_imposable_conjoint > 0)
+        return xor_(salaire_imposable_personne_de_reference > 0, salaire_imposable_conjoint > 0)
 
 
 # Allocations familiales
@@ -101,9 +101,9 @@ class af_nbenf(Variable):
     column = FloatCol
     entity = Menage
     label = u"Nombre d'enfants au sens des allocations familiales"
+    definition_period = YEAR
 
     def function(individu, period, legislation):
-        period = period.this_year
         age_holder = menage.members('age', period = period)
         smig75_holder = menage.members('smig75', period = period)
         ivalide_holder = menage.members('invalide', period = period)
@@ -135,17 +135,17 @@ class af_nbenf(Variable):
     # (ag < 21) # *(or_(activite[key]=='eleve', activite[key]=='etudiant'))
     #                 )  > 1
 
-        return period, res
+        return res
 
 
 class af(Variable):
     column = FloatCol
     entity = Menage
     label = u"Allocations familiales"
+    definition_period = YEAR
 
     def function(menage, period, legislation):
-        period = period.this_year
-        af_nbenf = simulation.calculate('af_nbenf', period = period)
+        af_nbenf = menage('af_nbenf', period = period)
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         _P = simulation.legislation(period.start)
 
@@ -163,16 +163,16 @@ class af(Variable):
         af_3enf = round(bm * P.af.taux.enf3, 2)
         af_base = (af_nbenf >= 1) * af_1enf + \
             (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
-        return period, 4 * af_base  # annualisé
+        return 4 * af_base  # annualisé
 
 
 class majoration_salaire_unique(Variable):
     column = FloatCol
     entity = Menage
     label = u"Majoration du salaire unique"
+    definition_period = YEAR  # TODO trimestrialiser
 
     def function(menage, period, legislation):
-        period = period.this_year  # TODO trimestrialiser
         salaire_unique = menage('salaire_unique', period = period)
         af_nbenf = menage('af_nbenf', period = period)
         P = legislation(period.start).prestations_familiales
@@ -181,12 +181,12 @@ class majoration_salaire_unique(Variable):
         af_3enf = round(P.salaire_unique.enf3, 3)  # trimestrielle
         af = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * \
             af_2enf + (af_nbenf >= 3) * af_3enf
-        return period, 4 * af * salaire_unique  # annualisé
+        return 4 * af * salaire_unique  # annualisé
 
 
 def _af_cong_naiss(age, _P):
     # _option={'age': ENFS}
-    return period, 0
+    return 0
 
 
 def _af_cong_jeun_trav(age, _P):
@@ -199,20 +199,16 @@ def _af_cong_jeun_trav(age, _P):
     #    de Sécurité Sociale de l'avance faite en exécution de l'article 113
     #    alinéa 2 du Code du Travail.
     # , _option = {'age': ENFS}
-    return period, 0
+    return 0
 
 
 class contribution_frais_creche(Variable):
     column = FloatCol
     entity = Menage
     label = u"Contribution aux frais de crêche"
+    definition_period = YEAR
 
     def function(individu, period, legislation):
-        '''
-        Contribution aux frais de crêche
-        'fam'
-        '''
-        period = period.this_year
         salaire_imposable_holder = menage('salaire_imposable', period = period)
         age_en_mois_holder = menage('age_en_mois', period = period)
         smig48 = legislation(period.start).cotisations_sociales.gen.smig  # TODO: smig 48H
@@ -233,20 +229,20 @@ class contribution_frais_creche(Variable):
         age_m_benj = age_en_mois_benjamin(age_en_mois)
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
         elig_sal = somme_salaire_imposable < P.plaf * smig48
-        return period, P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
+        return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
 
 
 class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun_trav
     column = FloatCol
     entity = Menage
     label = u"Prestations familales"
+    definition_period = YEAR
 
     def function(menage, period):
-        period = period.this_year
         af = menage('af', period = period)
         majoration_salaire_unique = menage('majoration_salaire_unique', period = period)
         contribution_frais_creche = menage('contribution_frais_creche', period = period)
-        return period, af + majoration_salaire_unique + contribution_frais_creche
+        return af + majoration_salaire_unique + contribution_frais_creche
 
 
 #
@@ -262,7 +258,7 @@ def _as_mal(age, sal, _P):
     P = 0
     mal = 0
     smig = _P.gen.smig
-    return period, mal * P.part * max(P.plaf_mult * smig, sal) * P.duree
+    return mal * P.part * max(P.plaf_mult * smig, sal) * P.duree
 
 
 def _as_maternite(age, sal, _P):
@@ -271,8 +267,8 @@ def _as_maternite(age, sal, _P):
     '''
     # P = _P.as.maternite
     smig = _P.gen.smig
-    # return period, P.part*max(P.plaf_mult*smig,sal)*P.duree
-    return period, 0
+    # return P.part*max(P.plaf_mult*smig,sal)*P.duree
+    return 0
 
 
 def _as_deces(sal, _P):
@@ -280,4 +276,4 @@ def _as_deces(sal, _P):
     Assurance sociale - décès   # TODO: à compléter
     '''
     # P = _P.as.deces
-    return period, 0
+    return 0

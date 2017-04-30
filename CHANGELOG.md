@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.8.0
+* Migrate to openfisca-core 10.0.2 syntax
+
 ## 0.7.0 - [#34](https://github.com/openfisca/openfisca-tunisia/pull/34)
 
 * Rename `bic_forf_res` to `bic_forfaitaire_resultat`

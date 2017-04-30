@@ -1,17 +1,17 @@
-- name: "Salarié 12000 DT ATMP"
-  period: 2011
+- name: "Salarié 1000 DT ATMP"
+  period: 2011-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    accident_du_travail_salarie: -.002778 * 12000
-    accident_du_travail_employeur: -.007222 * 12000
+    salaire_de_base: 1000
+    accident_du_travail_salarie: -.002778 * 1000
+    accident_du_travail_employeur: -.007222 * 1000
 
-- name: "Salarié 12000 DT ATMP"
-  period: 2016
+- name: "Salarié 1000 DT ATMP"
+  period: 2016-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    accident_du_travail_salarie: -.002778 * 12000
-    accident_du_travail_employeur: -.007222 * 12000
+    salaire_de_base: 1000
+    accident_du_travail_salarie: -.002778 * 1000
+    accident_du_travail_employeur: -.007222 * 1000

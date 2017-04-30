@@ -10,7 +10,7 @@ def test_simple():
         period = year,
         parent1 = dict(age = 40),
         ).new_simulation(debug = True)
-    assert simulation.calculate('revenu_disponible') == 0
+    assert simulation.calculate('revenu_disponible', period = year) == 0
 
 
 if __name__ == '__main__':

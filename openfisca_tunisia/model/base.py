@@ -3,43 +3,45 @@
 
 from datetime import date
 
-from openfisca_core.columns import (AgeCol, BoolCol, DateCol, EnumCol, FloatCol, IntCol,
-    PeriodSizeIndependentIntCol, StrCol)
-from openfisca_core.enumerations import Enum
-from openfisca_core.formulas import (ADD, dated_function)
-from openfisca_core.variables import (DatedVariable, Variable)
+from openfisca_core.model_api import *
+
+# from openfisca_core.columns import (AgeCol, BoolCol, DateCol, EnumCol, FloatCol, IntCol,
+#     PeriodSizeIndependentIntCol, StrCol)
+# from openfisca_core.enumerations import Enum
+# from openfisca_core.formulas import (ADD, dated_function)
+# from openfisca_core.variables import (DatedVariable, Variable)
 
 from openfisca_tunisia.entities import FoyerFiscal, Individu, Menage
 
 
-__all__ = [
-    'ADD',
-    'AgeCol',
-    'BoolCol',
-    'CONJ',
-    'CREF',
-    'date',
-    'DateCol',
-    'dated_function',
-    'DatedVariable',
-    'Enum',
-    'EnumCol',
-    'FloatCol',
-    'FoyerFiscal',
-    'Individu',
-    'IntCol',
-    'Menage',
-    'PAC1',
-    'PAC2',
-    'PAC3',
-    'PeriodSizeIndependentIntCol',
-    'PREF',
-    'QUIFOY',
-    'QUIMEN',
-    'StrCol',
-    'Variable',
-    'VOUS',
-    ]
+# __all__ = [
+#     'ADD',
+#     'AgeCol',
+#     'BoolCol',
+#     'CONJ',
+#     'CREF',
+#     'date',
+#     'DateCol',
+#     'dated_function',
+#     'DatedVariable',
+#     'Enum',
+#     'EnumCol',
+#     'FloatCol',
+#     'FoyerFiscal',
+#     'Individu',
+#     'IntCol',
+#     'Menage',
+#     'PAC1',
+#     'PAC2',
+#     'PAC3',
+#     'PeriodSizeIndependentIntCol',
+#     'PREF',
+#     'QUIFOY',
+#     'QUIMEN',
+#     'StrCol',
+#     'Variable',
+#     'VOUS',
+#     ]
 
 QUIFOY = Enum(['vous', 'conj', 'pac1', 'pac2', 'pac3', 'pac4', 'pac5', 'pac6', 'pac7', 'pac8', 'pac9'])
 QUIMEN = Enum(['pref', 'cref', 'enf1', 'enf2', 'enf3', 'enf4', 'enf5', 'enf6', 'enf7', 'enf8', 'enf9'])

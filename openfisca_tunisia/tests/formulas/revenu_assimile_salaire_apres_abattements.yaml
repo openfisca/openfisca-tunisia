@@ -3,7 +3,6 @@
   input_variables:
     salaire_imposable: 12000
   output_variables:
-    salaire_imposable: 12000
     revenu_assimile_salaire: 12000
     revenu_assimile_salaire_apres_abattements: 12000 * (1 - .1)
 
@@ -14,6 +13,5 @@
     salaire_imposable: 12000
     salaire_en_nature: 500
   output_variables:
-    salaire_imposable: 12000
     revenu_assimile_salaire: 12500
     revenu_assimile_salaire_apres_abattements: 12500 * (1 - .1)
