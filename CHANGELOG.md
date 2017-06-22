@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.10.0
+* Migrate to openfisca-core 14.0.1 syntax
+
 ## 0.9.0
 * Migrate to openfisca-core 12.1.0 syntax
 
