@@ -42,7 +42,7 @@ setup(
         ),
     install_requires = [
         'Babel >= 0.9.4',
-        'OpenFisca-Core >= 12.1.0, < 13.0',
+        'OpenFisca-Core >= 14.0.1, < 15.0',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
