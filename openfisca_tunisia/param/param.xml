@@ -720,7 +720,7 @@
               <VALUE deb="2002-03-12"  valeur=".008333" />
             </TAUX>
           </TRANCHE>
-          <TRANCHE code="tranche1">o
+          <TRANCHE code="tranche1">
             <SEUIL>
               <VALUE deb="2002-03-12"  valeur=".66" />
             </SEUIL>
