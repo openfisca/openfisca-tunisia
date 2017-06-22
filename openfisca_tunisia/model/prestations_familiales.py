@@ -76,7 +76,7 @@ class smig75(Variable):
     label = u"Indicatrice de salaire supérieur à 75% du smig"
     definition_period = YEAR
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         salaire_imposable = individu('salaire_imposable', period = period)
         salaire_en_nature = individu('salaire_en_nature', period = period)
         smig = simulation.legislation(period.start).cotisations_sociales.gen.smig
@@ -89,7 +89,7 @@ class salaire_unique(Variable):
     label = u"Indicatrice de salaire unique"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         salaire_imposable_personne_de_reference = menage.personne_de_reference('salaire_imposable', period = period)
         salaire_imposable_conjoint = menage.conjoint('salaire_imposable', period = period)
         return xor_(salaire_imposable_personne_de_reference > 0, salaire_imposable_conjoint > 0)
@@ -103,7 +103,7 @@ class af_nbenf(Variable):
     label = u"Nombre d'enfants au sens des allocations familiales"
     definition_period = YEAR
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         age_holder = menage.members('age', period = period)
         smig75_holder = menage.members('smig75', period = period)
         ivalide_holder = menage.members('invalide', period = period)
@@ -144,7 +144,7 @@ class af(Variable):
     label = u"Allocations familiales"
     definition_period = YEAR
 
-    def function(menage, period, legislation):
+    def formula(menage, period, legislation):
         af_nbenf = menage('af_nbenf', period = period)
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
         _P = simulation.legislation(period.start)
@@ -172,7 +172,7 @@ class majoration_salaire_unique(Variable):
     label = u"Majoration du salaire unique"
     definition_period = YEAR  # TODO trimestrialiser
 
-    def function(menage, period, legislation):
+    def formula(menage, period, legislation):
         salaire_unique = menage('salaire_unique', period = period)
         af_nbenf = menage('af_nbenf', period = period)
         P = legislation(period.start).prestations_familiales
@@ -208,7 +208,7 @@ class contribution_frais_creche(Variable):
     label = u"Contribution aux frais de crêche"
     definition_period = YEAR
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         salaire_imposable_holder = menage('salaire_imposable', period = period)
         age_en_mois_holder = menage('age_en_mois', period = period)
         smig48 = legislation(period.start).cotisations_sociales.gen.smig  # TODO: smig 48H
@@ -238,7 +238,7 @@ class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun
     label = u"Prestations familales"
     definition_period = YEAR
 
-    def function(menage, period):
+    def formula(menage, period):
         af = menage('af', period = period)
         majoration_salaire_unique = menage('majoration_salaire_unique', period = period)
         contribution_frais_creche = menage('contribution_frais_creche', period = period)

@@ -12,7 +12,7 @@ class age(Variable):
     label = u"Âge (en années)"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         date_naissance = individu('date_naissance', period)
         return (datetime64(period.date) - date_naissance).astype('timedelta64[Y]')
 
@@ -37,7 +37,7 @@ class marie(Variable):
     label = u"Marié(e)"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         statut_marital = individu('statut_marital', period = period)
         return (statut_marital == 1)
 
@@ -48,7 +48,7 @@ class celibataire(Variable):
     label = u"Célibataire"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         statut_marital = individu('statut_marital', period = period)
         return (statut_marital == 2)
 
@@ -59,7 +59,7 @@ class divorce(Variable):
     label = u"Divorcé(e)"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         statut_marital = individu('statut_marital', period = period)
         return (statut_marital == 3)
 
@@ -70,7 +70,7 @@ class veuf(Variable):
     label = u"Veuf(ve)"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         statut_marital = individu('statut_marital', period = period)
         return statut_marital == 4
 
