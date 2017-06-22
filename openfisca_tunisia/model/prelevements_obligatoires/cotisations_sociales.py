@@ -42,7 +42,7 @@ class assiette_cotisations_sociales(Variable):
     label = u"Assiette des cotisations sociales"
     definition_period = MONTH
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('salaire_de_base', period) +
             individu('primes', period)
@@ -62,7 +62,7 @@ class cotisations_sociales(Variable):
     label = u"Cotisations sociales"
     definition_period = MONTH
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('cotisations_employeur', period) +
             individu('cotisations_salarie', period)
@@ -75,7 +75,7 @@ class cotisations_employeur(Variable):
     label = u"Cotisation sociales employeur"
     definition_period = MONTH
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('accident_du_travail_employeur', period) +
             individu('deces_employeur', period) +
@@ -94,7 +94,7 @@ class cotisations_salarie(Variable):
     label = u"Cotisation sociales salarié"
     definition_period = MONTH
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('accident_du_travail_salarie', period) +
             individu('deces_salarie', period) +
@@ -113,7 +113,7 @@ class accident_du_travail_employeur(Variable):
     label = u"Cotisation accidents du travail et maladies professionnelles (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -129,7 +129,7 @@ class accident_du_travail_salarie(Variable):
     label = u"Cotisation accidents du travail et maladies professionnelles (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -145,7 +145,7 @@ class deces_employeur(Variable):
     label = u"Cotisation assurances sociales: décès (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -161,7 +161,7 @@ class deces_salarie(Variable):
     label = u"Cotisation assurances sociales: décès (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -177,7 +177,7 @@ class famille_employeur(Variable):
     label = u"Cotisation sociale allocations familiales (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -193,7 +193,7 @@ class famille_salarie(Variable):
     label = u"Cotisation sociale allocations familiales (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -209,7 +209,7 @@ class fonds_special_etat(Variable):
     label = u"Fonds spécial de l'Etat"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -225,7 +225,7 @@ class maladie_employeur(Variable):
     label = u"Cotisation assurances sociales: maladie (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -241,7 +241,7 @@ class maladie_salarie(Variable):
     label = u"Cotisation assurances sociales: maladie (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -257,7 +257,7 @@ class maternite_employeur(Variable):
     label = u"Cotisation assurances sociales : maternité (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -273,7 +273,7 @@ class maternite_salarie(Variable):
     label = u"Cotisation assurances sociales : maternité (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -289,7 +289,7 @@ class protection_sociale_travailleurs_employeur(Variable):
     label = u"Cotisation protection sociale des travailleurs (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -305,7 +305,7 @@ class protection_sociale_travailleurs_salarie(Variable):
     label = u"Cotisation protection sociale des travailleurs (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -321,7 +321,7 @@ class retraite_employeur(Variable):
     label = u"Cotisation pensions de retraite (employeur)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -337,7 +337,7 @@ class retraite_salarie(Variable):
     label = u"Cotisation pensions de retraite (salarié)"
     definition_period = MONTH
 
-    def function(individu, period, legislation):
+    def formula(individu, period, legislation):
         return compute_cotisation(
             individu,
             period,
@@ -354,7 +354,7 @@ class salaire_imposable(Variable):
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('assiette_cotisations_sociales', period) +
             individu('cotisations_salarie', period)
@@ -368,7 +368,7 @@ class salaire_net_a_payer(Variable):
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('salaire_imposable', period) +
             individu.foyer_fiscal('irpp', period.this_year) / 12
@@ -380,7 +380,7 @@ class salaire_net_a_payer(Variable):
 #     entity = Individu
 #     label = u"Salaires bruts"
 
-#     def function(individu, period, legislation):
+#     def formula(individu, period, legislation):
 #         '''
 #         Calcule le salaire brut à partir du salaire net
 #         '''
@@ -420,7 +420,7 @@ class salaire_super_brut(Variable):
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
-    def function(individu, period):
+    def formula(individu, period):
         return (
             individu('salaire_de_base', period = period) +
             individu('primes', period = period) -
@@ -434,7 +434,7 @@ class ugtt(Variable):
     label = u"Cotisation syndicale UGTT"
     definition_period = MONTH
 
-    def function(individu, period):
+    def formula(individu, period):
         return -3 * (individu('categorie_salarie', period) == 8)
 
 # class cotisations_employeur(Variable):
@@ -442,7 +442,7 @@ class ugtt(Variable):
 #     entity = Individu
 #     label = u"Cotisations sociales employeur"
 
-#     def function(individu, period, legislation):
+#     def formula(individu, period, legislation):
 
 #         salaire_brut = individu('salaire_brut', period = period)
 #         categorie_salarie = individu('categorie_salarie', period = period)
@@ -477,7 +477,7 @@ class ugtt(Variable):
 #     entity = Individu
 #     label = u"Cotisations sociales salariés"
 
-#     def function(individu, period, legislation):
+#     def formula(individu, period, legislation):
 
 #         salaire_brut = individu('salaire_brut', period = period)
 #         categorie_salarie = individu('categorie_salarie', period = period)

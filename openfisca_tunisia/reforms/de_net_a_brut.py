@@ -40,7 +40,7 @@ class salaire_imposable(Variable):
     label = u"Salaire imposable"
     definition_period = MONTH
 
-    def function(self, simulation, period):
+    def formula(self, simulation, period):
         # Calcule le salaire brut à partir du salaire net par inversion numérique.
         net = simulation.get_array('salaire_net_a_payer', period)
         assert net is not None

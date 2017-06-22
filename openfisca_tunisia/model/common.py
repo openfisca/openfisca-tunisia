@@ -16,7 +16,7 @@ class impots_directs(Variable):
     label = u"Impôts directs"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         irpp = individu.foyer_fiscal('irpp', period = period)
 
         return irpp
@@ -35,7 +35,7 @@ class revenu_disponible(Variable):
     label = u"Revenu disponible du ménage"
     definition_period = YEAR
 
-    def function(menage, period):
+    def formula(menage, period):
         revenu_disponible_individuels = menage.members('revenu_disponible_individuel', period = period)
         return menage.sum(revenu_disponible_individuels)
 
@@ -46,7 +46,7 @@ class revenu_disponible_individuel(Variable):
     label = u"Revenu disponible individuel"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         revenus_du_travail = individu('revenus_du_travail', period = period)
         revenu_assimile_pension = individu('revenu_assimile_pension', period = period)
         revenus_du_capital = individu('revenus_du_capital', period = period)
@@ -62,7 +62,7 @@ class revenus_du_capital(Variable):
     label = u"Revenus du capital"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         revenus_fonciers = individu.foyer_fiscal('revenus_fonciers', period = period)
         return revenus_fonciers
 
@@ -73,6 +73,6 @@ class revenus_du_travail(Variable):
     label = u"Revenus du travail"
     definition_period = YEAR
 
-    def function(individu, period):
+    def formula(individu, period):
         salaire_imposable = individu('salaire_imposable', period = period, options = [ADD])
         return salaire_imposable  # + beap + bic + bnc  TODO
