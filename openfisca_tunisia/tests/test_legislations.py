@@ -11,8 +11,7 @@ tax_benefit_system = TunisiaTaxBenefitSystem()
 
 
 def check_legislation_xml_file(year):
-    compact_legislation = tax_benefit_system.get_legislation(year)
-
+    compact_legislation = tax_benefit_system.get_compact_legislation(year)
     assert compact_legislation is not None
 
 
