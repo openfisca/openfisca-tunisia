@@ -4,20 +4,50 @@
 
 ## Presentation
 
-[OpenFisca](http://www.openfisca.fr/) is a versatile microsimulation free software.
+EN> [OpenFisca](https://www.openfisca.fr/en) is a versatile microsimulation free software.
 This is the source code of the Tunisia module.
 
-Please consult http://www.openfisca.fr/presentation
+FR> [OpenFisca](http://www.openfisca.fr/) est un logiciel libre de micro-simulation.
+Ceci est le code source du module dédié à la Tunisie.
 
 ## Documentation
 
-Please consult http://www.openfisca.fr/documentation
+* Documentation générale du projet OpenFisca (tous pays confondus) : https://doc.openfisca.fr
+* Wiki OpenFisca-Tunisia : https://github.com/openfisca/openfisca-tunisia/wiki
 
 ## Installation
 
-Please consult http://www.openfisca.fr/installation if you want to develop with OpenFisca on your computer.
+### Langage Python & Environnement virtuel
 
-## Contribute
+```
+pip install --upgrade pip
+pip install pew
+```
+
+### Installation minimale
+
+```
+pip install openfisca-tunisia
+```
+
+### Installation du code source
+```
+git clone https://github.com/openfisca/openfisca-tunisia.git
+cd openfisca-tunisia
+pip install -e .
+```
+
+## Test
+
+### Test nose
+### Test yaml
+### Flake8
+
+```
+make test
+```
+
+## Contribution
 
 OpenFisca is a free software project.
 Its source code is distributed under the [GNU Affero General Public Licence](http://www.gnu.org/licenses/agpl.html)
@@ -26,7 +56,7 @@ version 3 or later (see COPYING).
 Feel free to join the OpenFisca development team on [GitHub](https://github.com/openfisca) or contact us by email at
 contact@openfisca.fr
 
-## Use with the web API
+## Web API
 
 To test with [curl](https://curl.haxx.se/) and [jq](https://stedolan.github.io/jq/):
 
