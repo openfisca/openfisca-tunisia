@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.10.1
+* Fix legislation tests
+
 ## 0.10.0
 * Migrate to openfisca-core 14.0.1 syntax
 
