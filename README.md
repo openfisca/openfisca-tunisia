@@ -12,12 +12,17 @@ Ceci est le code source du module dédié à la Tunisie.
 
 ## Contribution & Contact
 
-OpenFisca is a free software project.
+EN> OpenFisca is a free software project.
 Its source code is distributed under the [GNU Affero General Public Licence](http://www.gnu.org/licenses/agpl.html)
-version 3 or later (see COPYING).
+version 3 or later (see [LICENSE](https://github.com/openfisca/openfisca-tunisia/blob/master/LICENSE) file).
 
-Feel free to join the OpenFisca development team on [GitHub](https://github.com/openfisca) or contact us by email at
-contact@openfisca.fr
+Feel free to join the OpenFisca development team. See the [documentation](https://doc.openfisca.fr/contribute/index.html) for more information.
+
+FR> OpenFisca est un projet de logiciel libre.
+Son code source est distribué sous la licence [GNU Affero General Public Licence](http://www.gnu.org/licenses/agpl.html)
+version 3 ou ultérieur (consulter le fichier [LICENSE](https://github.com/openfisca/openfisca-tunisia/blob/master/LICENSE)).
+
+N'hésitez pas à rejoindre l'équipe de développement OpenFisca. Pour en savoir plus, voir la [documentation](https://doc.openfisca.fr/contribute/index.html).
 
 ## Documentation
 
@@ -31,6 +36,7 @@ Par ailleurs, chaque module de la [famille OpenFisca sur GitHub](https://github.
 ## Installation
 
 Sous Unix/macOS/Linux, appliquez les étapes qui suivent dans votre Terminal.
+
 Sous Windows, nous vous conseillons d'installer un émulateur de terminal (tel que [ConEmu](https://conemu.github.io)) avant de poursuivre.
 
 ### Langage Python & Environnement virtuel
@@ -38,22 +44,25 @@ Sous Windows, nous vous conseillons d'installer un émulateur de terminal (tel q
 Ce projet nécessite l'installation du langage [Python 2.7](https://www.python.org/downloads/) et du gestionnaire de paquets [pip](https://pip.pypa.io/en/stable/installing/).
 
 Vérifiez alors que la version de python appelée par défaut débute bien par `2.7` :
+
 ```
 python --version
-``
+```
+
 Et installez les éventuelles mises à jour pour la gestion de paquets python avec :
+
 ```
 pip install --upgrade pip wheel
 ```
 
-Ensuite, afin de créer un environnement de travail propre et pour vous permettre de faire cohabiter plusieurs contextes de travail en python, 
-nous vous conseillons vivement l'utilisation d'environnements virtuels, dits virtualenv. Il vous faut alors installer un gestionnaire de virtualenv python (tel que [pew](https://github.com/berdario/pew).
+Ensuite, afin de créer un environnement de travail propre et pour vous permettre de faire cohabiter plusieurs contextes de travail en python, nous vous conseillons vivement l'utilisation d'environnements virtuels, dits virtualenv. Il vous faut alors installer un gestionnaire de virtualenv python (tel que [pew](https://github.com/berdario/pew).
 
 ```
 pip install pew
 ```
 
 Il vous est désormais possible de créer votre premier environnement dédié à OpenFisca-Tunisia. Nommons-le `openfisca` :
+
 ```
 pew new openfisca --python=python2.7
 # Si demandé, répondez "Y" à la question sur la modification du fichier de configuration de votre shell
@@ -78,6 +87,7 @@ pip install openfisca-tunisia
 Si vous souhaitez modifier ou étendre OpenFisca-Tunisia, il vous faut installer le code source en local sur votre ordinateur.
 
 Nous supposons que vous avez activé votre environnement virtuel et que vous vous situez dans le répertoire où vous souhaitez placer le projet.
+
 Appliquez alors les commandes suivantes pour récupérer les sources d'OpenFisca-Tunisia et configurer le projet :
 
 ```
@@ -100,6 +110,7 @@ Différents formats de tests sont alors à votre disposition : la rédaction de 
 ### Test nose
 
 Un test rédigé en python peut être exécuté avec l'outil `nose`. Celui-ci déroulera les fonctions python dont le nom commence par le mot `test`.
+
 Ainsi, pour exécuter le test python `openfisca_tunisia/tests/test_simple.py`, utilisez la commande suivante :
 
 ```
@@ -107,7 +118,9 @@ nosetests openfisca_tunisia/tests/test_simple.py
 ```
 
 Il vous est également possible de n'exécuter qu'un seul test d'un fichier.
+
 Par exemple, pour ne tester que le test nommé `test_1_parent` du fichier `openfisca_tunisia/tests/core_tests.py`, utilisez :
+
 ```
 nosetests openfisca_tunisia/tests/core_tests.py:test_1_parent
 ```
@@ -115,6 +128,7 @@ nosetests openfisca_tunisia/tests/core_tests.py:test_1_parent
 ### Test yaml
 
 Le format d'un test yaml est décrit dans la [documentation officielle](https://doc.openfisca.fr/coding-the-legislation/writing_yaml_tests.html).
+
 Ainsi, si vous souhaitez exécuter le test yaml `openfisca_tunisia/tests/formulas/irpp.yaml`, utilisez la commande :
 
 ```
