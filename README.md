@@ -70,7 +70,7 @@ Et installez les éventuelles mises à jour pour la gestion de paquets python av
 sudo pip install --upgrade pip wheel
 ```
 
-Ensuite, afin de créer un environnement de travail propre et pour vous permettre de faire cohabiter plusieurs contextes de travail en python, nous vous conseillons vivement l'utilisation d'environnements virtuels, dits virtualenv. Il vous faut alors installer un gestionnaire de virtualenv python (tel que [pew](https://github.com/berdario/pew)).
+Ensuite, afin de créer un environnement de travail propre et pour vous permettre de faire cohabiter plusieurs contextes de travail en python, nous vous conseillons l'utilisation d'environnements virtuels, dits virtualenv. Il vous faut alors installer un gestionnaire de virtualenv python (tel que [pew](https://github.com/berdario/pew)).
 
 ```
 sudo pip install pew
@@ -93,7 +93,7 @@ Afin d'interroger ou de modifier OpenFisca-Tunisia, il vous faut installer le co
 
 Nous supposons que vous avez activé votre environnement virtuel et que vous vous situez dans le répertoire où vous souhaitez placer le projet.
 
-Appliquez alors les commandes suivantes pour récupérer les sources d'OpenFisca-Tunisia et configurer le projet (sans omettre le point en fin de ligne :slightly_smiling_face: ):
+Appliquez alors les commandes suivantes pour récupérer les sources d'OpenFisca-Tunisia et configurer le projet (sans omettre le point en fin de ligne :slightly_smiling_face:) :
 
 ```
 git clone https://github.com/openfisca/openfisca-tunisia.git
@@ -126,9 +126,7 @@ Ainsi, pour exécuter le test python `openfisca_tunisia/tests/test_simple.py`, u
 nosetests openfisca_tunisia/tests/test_simple.py
 ```
 
-Il vous est également possible de n'exécuter qu'un seul test d'un fichier.
-
-Par exemple, pour ne tester que le test nommé `test_1_parent` du fichier `openfisca_tunisia/tests/core_tests.py`, utilisez :
+Il vous est également possible de n'exécuter qu'un seul test d'un fichier. Dans l'exemple suivant, `test_1_parent` sera l'unique test déroulé du fichier `openfisca_tunisia/tests/core_tests.py` :
 
 ```
 nosetests openfisca_tunisia/tests/core_tests.py:test_1_parent
