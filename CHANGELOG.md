@@ -1,7 +1,22 @@
 # Changelog
 
+## 0.7.0 - [#34](https://github.com/openfisca/openfisca-tunisia/pull/34)
+
+* Rename `bic_forf_res` to `bic_forfaitaire_resultat`
+* Rename `bic_sp` to `bic_societes_personnes`
+* Rename `bic_sp_res` to `bic_societes_personnes_resultat`
+* Rename `decl_inves` to `structure_declaration_investissement`
+* Rename `fon_forf_bati_fra` to `foncier_forfaitaire_batis_frais`
+* Rename `fon_forf_bati_rec` to `foncier_forfaitaire_batis_recettes`
+* Rename `fon_forf_bati_rel` to `foncier_forfaitaire_batis_reliquat`
+* Rename `fon_forf_bati_tax` to `foncier_forfaitaire_batis_taxe`
+* Rename `fon_forf_nbat_dep` to `foncier_forfaitaire_non_batis_depenses`
+* Rename `fon_forf_nbat_rec` to `foncier_forfaitaire_non_batis_recettes`
+* Rename `fon_forf_nbat_tax` to `foncier_forfaitaire_non_batis_taxe`
+* Rename `fon_reel_fisc` to `foncier_reel_resultat_fiscal`
+* Rename `fon_sp` to `foncier_societes_personnes`
+
 ## 0.6.1
 
 * Add cotisation `ugtt`
 * Add a couple of payroll tests
-
