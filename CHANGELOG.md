@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.10.1
+## 0.10.1 - [#38](https://github.com/openfisca/openfisca-tunisia/pull/38)
 * Fix legislation tests
 
 ## 0.10.0
