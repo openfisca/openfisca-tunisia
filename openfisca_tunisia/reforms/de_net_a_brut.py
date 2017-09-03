@@ -2,9 +2,7 @@
 
 from __future__ import division
 
-from openfisca_core import columns
-from openfisca_core.reforms import Reform
-from openfisca_core.variables import Variable
+from openfisca_tunisia.model.base import *
 
 try:
     from scipy.optimize import fsolve
@@ -37,11 +35,12 @@ def calculate_net_from(salaire_imposable, simulation, period, requested_variable
 
 
 class salaire_imposable(Variable):
-    column = columns.FloatCol
-    entity = entities.Individu
+    column = FloatCol
+    entity = Individu
     label = u"Salaire imposable"
+    definition_period = MONTH
 
-    def function(self, simulation, period):
+    def formula(self, simulation, period):
         # Calcule le salaire brut à partir du salaire net par inversion numérique.
         net = simulation.get_array('salaire_net_a_payer', period)
         assert net is not None
@@ -70,7 +69,7 @@ class salaire_imposable(Variable):
                 xtol = 1 / 100  # précision
                 )
 
-        return period, brut_calcule
+        return brut_calcule
 
 
 class de_net_a_brut(Reform):

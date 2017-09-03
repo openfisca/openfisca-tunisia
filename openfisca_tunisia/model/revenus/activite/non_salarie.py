@@ -21,6 +21,7 @@ class bic_reel(Variable):
         )
     entity = Individu
     label = u"Type d’activité (BIC)"
+    definition_period = YEAR
 
 
 # Les personnes soumises au régime forfaitaire qui ont cédé le fond de commerce peuvent déclarer l’impôt
@@ -33,6 +34,7 @@ class bic_societes_personnes(Variable):
     column = BoolCol()
     entity = Individu
     label = u"Indicatrice des sociétés de personnes et assimilées (BIC)"
+    definition_period = YEAR
 
 
 class cadre_legal(Variable):
@@ -51,18 +53,21 @@ class cadre_legal(Variable):
         )
     entity = Individu
     label = u"Cadre légal de l’activité de l’entreprise"
+    definition_period = YEAR
 
 
 class bic_reel_res(Variable):
     column = IntCol
     entity = Individu
     label = u"Résultat comptable (BIC, régime réel)"
+    definition_period = YEAR
 
 
 class bic_forfaitaire_resultat(Variable):
     column = IntCol
     entity = Individu
     label = u"Résultat (BIC, régime forfaitaire, cession de fond de commerce)"
+    definition_period = YEAR
 
 
 class bic_societes_personnes_resultat(Variable):
@@ -70,6 +75,7 @@ class bic_societes_personnes_resultat(Variable):
     entity = Individu
     label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées " \
         u"exerçant dans le secteur industriel et commercial (BIC)"
+    definition_period = YEAR
 
 
 class structure_declaration_investissement(Variable):
@@ -87,6 +93,7 @@ class structure_declaration_investissement(Variable):
         )
     entity = Individu
     label = u"Structure auprès de laquelle la déclaration d’investissement a été déposée"
+    definition_period = YEAR
 
 
 # A/ Régime réel
@@ -108,6 +115,7 @@ class bic_res_fiscal(Variable):
     column = IntCol
     entity = Individu
     label = u"Résultat fiscal (BIC)"
+    definition_period = YEAR
 
 
 # Case réserve aux personnes soumises au régime forfaitaire ayant cédé le fond de commerce
@@ -118,24 +126,28 @@ class bic_ca_revente(Variable):
     entity = Individu
     label = u"Chiffre d’affaires global au titre des activités d’achat en vue de la revente " \
         u"et les activités de transformation"
+    definition_period = YEAR
 
 
 class bic_ca_autre(Variable):
     column = IntCol
     entity = Individu
     label = u"Chiffre d’affaires global au titre d’autres activités"
+    definition_period = YEAR
 
 
 class bic_depenses(Variable):
     column = IntCol
     label = u"Total des dépenses (BIC, cession de fond de commerce)"
     entity = Individu
+    definition_period = YEAR
 
 
 class bic_pv_cession(Variable):
     column = IntCol
     entity = Individu
     label = u"Plue-value de cession du fond de commerce"
+    definition_period = YEAR
 
 
 # B/ Part dans le bénéfice ou dans la perte des sociétés de personnes
@@ -147,6 +159,7 @@ class bic_part_benef_sp(Variable):
     label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant " \
         u"dans le secteur industriel et commercial"
     entity = Individu
+    definition_period = YEAR
 
 
 # BNC Bénéfices des professions non commerciales
@@ -165,6 +178,7 @@ class bnc_reel_res_fiscal(Variable):
     column = IntCol
     entity = Individu
     label = u"Résultat fiscal (BNC)"
+    definition_period = YEAR
 
 
 # B/ Détermination du bénéfice sur la base d’une assiette forfaitaire
@@ -178,6 +192,7 @@ class bnc_forf_rec_brut(Variable):
     column = IntCol
     label = u"Recettes globales brutes TTC (BNC)"
     entity = Individu
+    definition_period = YEAR
 
 
 # - Montant des primes (1) Primes octroyées dans le cadre du CII ou dans le cadre d'encouragement de l'exportation
@@ -193,6 +208,7 @@ class bnc_part_benef_sp(Variable):
     entity = Individu
     label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes " \
         u"qui réalisent des bénéfices non commerciaux"
+    definition_period = YEAR
 
 
 # beap Bénéfices de l'exploitation agricole et de pêche
@@ -211,7 +227,7 @@ class beap_reel_res_fiscal(Variable):
     column = IntCol
     label = u"Résultat fiscal (BEAP, régime réel)"
     entity = Individu
-
+    definition_period = YEAR
 
 # B/ Détermination du bénéfice sur la base du reliquat positif entre les
 # recettes et les dépenses
@@ -223,13 +239,13 @@ class beap_reliq_rec(Variable):
     column = IntCol
     label = u"Recettes (BEAP, bénéfice comme reliquat entre recette et dépenses"
     entity = Individu
-
+    definition_period = YEAR
 
 class beap_reliq_stock(Variable):
     column = IntCol
     label = u"Stocks (BEAP, bénéfice comme reliquat entre recette et dépenses)"
     entity = Individu
-
+    definition_period = YEAR
 
 # TOTAL …………………………..
 # - Déduction des dépenses d’exploitation justifiées …………………………..
@@ -239,7 +255,7 @@ class beap_reliq_dep_ex(Variable):
     column = IntCol
     label = u"Dépenses d’exploitation (BEAP, bénéfice comme reliquat entre recette et dépenses)"
     entity = Individu
-
+    definition_period = YEAR
 
 # - Montant des primes (1) …………………………..
 # - Résultat B = bénéfice P = perte …………………………..
@@ -250,7 +266,7 @@ class beap_reliq_benef_fiscal(Variable):
     column = IntCol
     label = u"Bénéfice fiscal (BEAP)"
     entity = Individu
-
+    definition_period = YEAR
 
 # C/ Détermination du bénéfice sur la base de monographies sectorielles (5)
 # - Bénéfice fiscal …………………………..
@@ -260,7 +276,7 @@ class beap_monogr(Variable):
     column = IntCol
     label = u"Détermination du bénéfice sur la base de monographies sectorielles (BEAP)"
     entity = Individu
-
+    definition_period = YEAR
 # D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
 # assimilées exerçant dans le secteur agricole et de pêche
 
@@ -270,3 +286,4 @@ class beap_part_benef_sp(Variable):
     label = u"Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées " \
         u"exerçant dans le secteur agricole et de pêche"
     entity = Individu
+    definition_period = YEAR

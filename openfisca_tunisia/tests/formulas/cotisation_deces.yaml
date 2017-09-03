@@ -1,17 +1,17 @@
-- name: "Salarié 12000 DT décès"
-  period: 2016
+- name: "Salarié 1000 DT décès"
+  period: 2016-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    deces_salarie: -.001806 * 12000
-    deces_employeur: -.004694 * 12000
+    salaire_de_base: 1000
+    deces_salarie: -.001806 * 1000
+    deces_employeur: -.004694 * 1000
 
-- name: "Salarié 12000 DT décès"
-  period: 2011
+- name: "Salarié 1000 DT décès"
+  period: 2011-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    deces_salarie: -.001806 * 12000
-    deces_employeur: -.004694 * 12000
+    salaire_de_base: 1000
+    deces_salarie: -.001806 * 1000
+    deces_employeur: -.004694 * 1000

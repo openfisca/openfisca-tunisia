@@ -1,8 +1,8 @@
-- name: "Salarié 12000 DT protection sociale travailleurs"
-  period: 2011
+- name: "Salarié 1000 DT protection sociale travailleurs"
+  period: 2011-01
   input_variables:
-    salaire_de_base: 12000
+    salaire_de_base: 1000
   output_variables:
-    salaire_de_base: 12000
-    protection_sociale_travailleurs_salarie: -.001111 * 12000
-    protection_sociale_travailleurs_employeur: -.002889 * 12000
+    salaire_de_base: 1000
+    protection_sociale_travailleurs_salarie: -.001111 * 1000
+    protection_sociale_travailleurs_employeur: -.002889 * 1000

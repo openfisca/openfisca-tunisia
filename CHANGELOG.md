@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.10.1 - [#38](https://github.com/openfisca/openfisca-tunisia/pull/38)
+* Fix legislation tests
+
+## 0.10.0
+* Migrate to openfisca-core 14.0.1 syntax
+
+## 0.9.0
+* Migrate to openfisca-core 12.1.0 syntax
+
+## 0.8.0
+* Migrate to openfisca-core 10.0.2 syntax
+
 ## 0.7.0 - [#34](https://github.com/openfisca/openfisca-tunisia/pull/34)
 
 * Rename `bic_forf_res` to `bic_forfaitaire_resultat`
