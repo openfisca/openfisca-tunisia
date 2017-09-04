@@ -94,7 +94,7 @@ pew new openfisca --python=python2.7
 ```
 
 Usage :
-* Vous pouvez sortir du virtualenv en tapant exit (ou Ctrl-D)
+* Vous pouvez sortir du virtualenv en tapant `exit` (ou Ctrl-D)
 * Vous pouvez le réactiver grâce à `pew workon openfisca`
 
 ### Installation du code source
