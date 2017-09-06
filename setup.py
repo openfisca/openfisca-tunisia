@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.10.1',
+    version = '0.10.2',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.fr',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -32,8 +32,6 @@ setup(
     url = 'https://github.com/openfisca/openfisca-tunisia',
 
     data_files = [
-        ('share/locale/ar/LC_MESSAGES', ['openfisca_tunisia/i18n/fr/LC_MESSAGES/openfisca-tunisia.mo']),
-        ('share/locale/fr/LC_MESSAGES', ['openfisca_tunisia/i18n/fr/LC_MESSAGES/openfisca-tunisia.mo']),
         ],
     extras_require = dict(
         tests = [
@@ -41,7 +39,6 @@ setup(
             ],
         ),
     install_requires = [
-        'Babel >= 0.9.4',
         'OpenFisca-Core >= 14.0.1, < 15.0',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
@@ -49,5 +46,5 @@ setup(
     message_extractors = {'openfisca_tunisia': [
         ('**.py', 'python', None),
         ]},
-    packages = find_packages(exclude=['openfisca_tunisia.tests*']),
+    packages = find_packages(exclude=['openfisca_tunisia.tests*', 'openfisca_tunisia.old_tests*']),
     )
