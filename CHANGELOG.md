@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.2
+* Add installation instructions
+* Translate revenus/activite/non_salarie.py labels to arabic
+
 ## 0.10.1
 * Fix legislation tests
 
