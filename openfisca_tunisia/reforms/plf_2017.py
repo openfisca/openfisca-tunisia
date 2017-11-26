@@ -10,7 +10,7 @@ def modify_parameters(parameters):
     reform_year = 2016
     reform_period = periods.period(reform_year)
 
-    parameters.ir.bareme[3].rate.update(
+    parameters.impot_revenu.bareme[3].rate.update(
         period = reform_period,
         value = .27,
         )
