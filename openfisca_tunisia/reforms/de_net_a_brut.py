@@ -39,6 +39,8 @@ class salaire_imposable(Variable):
     entity = Individu
     label = u"Salaire imposable"
     definition_period = MONTH
+    set_input = set_input_divide_by_period
+
 
     def formula(self, simulation, period):
         # Calcule le salaire brut à partir du salaire net par inversion numérique.
