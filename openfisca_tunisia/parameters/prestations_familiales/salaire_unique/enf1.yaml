@@ -1,0 +1,5 @@
+description: Premier enfant à charge
+unit: currency
+values:
+  1960-01-01:
+    value: 9.375

@@ -1,0 +1,5 @@
+description: Chef de famille
+unit: currency
+values:
+  1990-01-01:
+    value: 150.0

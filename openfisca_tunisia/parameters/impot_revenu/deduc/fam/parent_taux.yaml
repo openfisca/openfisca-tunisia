@@ -1,0 +1,5 @@
+description: Parent à charge (en % du revenu)
+unit: /1
+values:
+  1990-01-01:
+    value: 0.05

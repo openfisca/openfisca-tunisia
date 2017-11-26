@@ -1,0 +1,5 @@
+description: Montant
+unit: currency
+values:
+  1960-01-01:
+    value: 15.0

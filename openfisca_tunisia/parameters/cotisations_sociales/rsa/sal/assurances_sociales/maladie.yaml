@@ -1,0 +1,8 @@
+brackets:
+- rate:
+    1960-01-01:
+      value: 0.0275
+  threshold:
+    1960-01-01:
+      value: 0.0
+description: Assurance Maladie

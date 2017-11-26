@@ -1,0 +1,8 @@
+brackets:
+- rate:
+    1960-01-01:
+      value: 0.004
+  threshold:
+    1960-01-01:
+      value: 0.0
+description: Indemnités de maladie et maternité

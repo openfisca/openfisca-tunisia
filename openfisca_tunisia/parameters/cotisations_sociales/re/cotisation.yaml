@@ -1,0 +1,5 @@
+description: Montant de la cotisation
+unit: currency
+values:
+  2003-07-02:
+    value: 5.0

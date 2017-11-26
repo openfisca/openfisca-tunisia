@@ -1,0 +1,5 @@
+description: Enfant non boursier du supérieur
+unit: currency
+values:
+  1990-01-01:
+    value: 300.0

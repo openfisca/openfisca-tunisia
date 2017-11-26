@@ -1,0 +1,7 @@
+description: Abattement pour salaire minimum
+unit: currency
+values:
+  2005-01-01:
+    value: 500.0
+  2010-01-01:
+    value: 1000.0

@@ -1,0 +1,5 @@
+description: Plafond de ressources (en SMIG 48h)
+unit: /1
+values:
+  1960-01-01:
+    value: 2.5
