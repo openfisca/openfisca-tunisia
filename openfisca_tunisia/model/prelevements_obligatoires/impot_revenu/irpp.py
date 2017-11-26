@@ -14,12 +14,12 @@ class nb_enf(Variable):
     label = u"Nombre d'enfants"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         '''
         TODO: fixme
         '''
         age = foyer_fiscal.members('age', period = period)
-        P = legislation(period.start).impot_revenu.deduc.fam
+        P = parameters(period.start).impot_revenu.deduc.fam
         # res =+ (
         #    (ag < 20) +
         #    (ag < 25)*not_(boursier)*()
@@ -210,12 +210,12 @@ class bnc_forf_benef_fiscal(Variable):
     label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         """
         Bénéfice fiscal (régime forfaitaire, 70% des recettes brutes TTC)
         """
         bnc_forf_rec_brut = foyer_fiscal('bnc_forf_rec_brut', period = period)
-        part = legislation(period.start).impot_revenu.bnc.forf.part_forf
+        part = parameters(period.start).impot_revenu.bnc.forf.part_forf
         return bnc_forf_rec_brut * part
 
 
@@ -258,12 +258,12 @@ class fon_forf_bati(Variable):
     label = u"Revenus fonciers net des immeubles bâtis"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_recettes', period = period)
         foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_reliquat', period = period)
         foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_frais', period = period)
         foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_taxe', period = period)
-        P = legislation(period.start).impot_revenu.fon.bati.deduc_frais
+        P = parameters(period.start).impot_revenu.fon.bati.deduc_frais
         return max_(
             0,
             foncier_forfaitaire_batis_recettes * (1 - P) + foncier_forfaitaire_batis_reliquat - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
@@ -318,10 +318,10 @@ class smig(Variable):
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
         smig_dec = foyer_fiscal.declarant_principal('smig_dec', period = period.first_month)
-        smig_40h_mensuel = legislation(period.start).cotisations_sociales.gen.smig_40h_mensuel
+        smig_40h_mensuel = parameters(period.start).cotisations_sociales.gen.smig_40h_mensuel
         smig = or_(smig_dec, revenu_assimile_salaire <= 12 * smig_40h_mensuel)
         return smig
 
@@ -332,10 +332,10 @@ class revenu_assimile_salaire_apres_abattements(Variable):
     label = u"Revenu imposé comme des salaires net des abatements"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
         smig = foyer_fiscal('smig', period = period)
-        tspr = legislation(period.start).impot_revenu.tspr
+        tspr = parameters(period.start).impot_revenu.tspr
 
         if period.start.year >= 2011:
             res = max_(
@@ -352,11 +352,11 @@ class revenu_assimile_pension_apres_abattements(Variable):
     label = u"Revenu assimilé à des pensions après abattements"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         revenu_assimile_pension = foyer_fiscal.declarant_principal('revenu_assimile_pension', period = period)
         avantages_nature_assimile_pension = foyer_fiscal.declarant_principal(
             'avantages_nature_assimile_pension', period = period)
-        tspr = legislation(period.start).impot_revenu.tspr
+        tspr = parameters(period.start).impot_revenu.tspr
         return (revenu_assimile_pension + avantages_nature_assimile_pension) * (1 - tspr.abat_pen)
 
 
@@ -393,7 +393,7 @@ class retr(Variable):
     label = u"Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         salaire_etranger = foyer_fiscal.declarant_principal('salaire_etranger', period = period)
         pension_etranger_transferee = foyer_fiscal.declarant_principal(
             'pension_etranger_transferee', period = period)
@@ -401,7 +401,7 @@ class retr(Variable):
             'pension_etranger_non_transferee', period = period)
         autres_revenus_etranger = foyer_fiscal.declarant_principal(
             'autres_revenus_etranger', period = period)
-        tspr = legislation(period.start).impot_revenu.tspr
+        tspr = parameters(period.start).impot_revenu.tspr
 
         return (
             salaire_etranger * (1 - tspr.abat_sal) +
@@ -446,11 +446,11 @@ class deduction_interets(Variable):
     label = u"Déductions intérêts issus de comptes spéciaux ou d'obligations"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         compte_special_epargne_banque = foyer_fiscal('compte_special_epargne_banque')
         compte_special_epargne_cent = foyer_fiscal('compte_special_epargne_cent')
         emprunt_obligataire = foyer_fiscal('emprunt_obligataire')
-        deductions = legislation(period).deduc
+        deductions = parameters(period).deduc
         return max_(
             max_(
                 max_(compte_special_epargne_banque, deductions.banq.plaf) +
@@ -467,12 +467,12 @@ class deduction_famille(Variable):
     label = u"Déductions pour situation et charges de famille"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         # rng = foyer_fiscal('rng', period = period)
         chef_de_famille = foyer_fiscal('chef_de_famille', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
         # nb_parents = foyer_fiscal('nb_parents', period = period)
-        P = legislation(period.start).impot_revenu.deduc.fam
+        P = parameters(period.start).impot_revenu.deduc.fam
         #  chef de famille
         chef_de_famille = P.chef_de_famille * chef_de_famille
 
@@ -505,12 +505,12 @@ class deduction_assurance_vie(Variable):
     label = u"Primes afférentes aux contrats d'assurance-vie collectifs ou individuels"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         primes_assurance_vie = foyer_fiscal.members('prime_assurance_vie', period = period)
         somme_primes_assurance_vie = foyer_fiscal.sum(primes_assurance_vie)
         marie = foyer_fiscal.declarant_principal('statut_marital', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
-        P = legislation(period.start).impot_revenu.deduc.assurance_vie
+        P = parameters(period.start).impot_revenu.deduc.assurance_vie
         deduction = min_(somme_primes_assurance_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
         return deduction
 
@@ -582,10 +582,10 @@ class ir_brut(Variable):
     label = u"Impôt avant non-imposabilité"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, legislation):
+    def formula(foyer_fiscal, period, parameters):
         rni = foyer_fiscal('rni', period = period)
-        bareme = legislation(period.start).impot_revenu.bareme
-        # exemption = legislation(period.start).impot_revenu.reforme.exemption
+        bareme = parameters(period.start).impot_revenu.bareme
+        # exemption = parameters(period.start).impot_revenu.reforme.exemption
         # rni_apres_exemption = rni * (exemption.active == 0) + rni * (exemption.active == 1) * (rni > exemption.max)
         rni_apres_exemption = rni
         ir_brut = - bareme.calc(rni_apres_exemption)

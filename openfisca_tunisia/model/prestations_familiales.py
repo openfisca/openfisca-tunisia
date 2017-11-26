@@ -76,10 +76,10 @@ class smig75(Variable):
     label = u"Indicatrice de salaire supérieur à 75% du smig"
     definition_period = YEAR
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         salaire_imposable = individu('salaire_imposable', period = period)
         salaire_en_nature = individu('salaire_en_nature', period = period)
-        smig = simulation.legislation(period.start).cotisations_sociales.gen.smig
+        smig = simulation.parameters(period.start).cotisations_sociales.gen.smig
         return (salaire_imposable + salaire_en_nature) < smig
 
 
@@ -103,7 +103,7 @@ class af_nbenf(Variable):
     label = u"Nombre d'enfants au sens des allocations familiales"
     definition_period = YEAR
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         age_holder = menage.members('age', period = period)
         smig75_holder = menage.members('smig75', period = period)
         ivalide_holder = menage.members('invalide', period = period)
@@ -144,10 +144,10 @@ class af(Variable):
     label = u"Allocations familiales"
     definition_period = YEAR
 
-    def formula(menage, period, legislation):
+    def formula(menage, period, parameters):
         af_nbenf = menage('af_nbenf', period = period)
         salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
-        _P = simulation.legislation(period.start)
+        _P = simulation.parameters(period.start)
 
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée
         # à 122 dinars
@@ -172,10 +172,10 @@ class majoration_salaire_unique(Variable):
     label = u"Majoration du salaire unique"
     definition_period = YEAR  # TODO trimestrialiser
 
-    def formula(menage, period, legislation):
+    def formula(menage, period, parameters):
         salaire_unique = menage('salaire_unique', period = period)
         af_nbenf = menage('af_nbenf', period = period)
-        P = legislation(period.start).prestations_familiales
+        P = parameters(period.start).prestations_familiales
         af_1enf = round(P.salaire_unique.enf1, 3)  # trimestrielle
         af_2enf = round(P.salaire_unique.enf2, 3)  # trimestrielle
         af_3enf = round(P.salaire_unique.enf3, 3)  # trimestrielle
@@ -208,10 +208,10 @@ class contribution_frais_creche(Variable):
     label = u"Contribution aux frais de crêche"
     definition_period = YEAR
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         salaire_imposable_holder = menage('salaire_imposable', period = period)
         age_en_mois_holder = menage('age_en_mois', period = period)
-        smig48 = legislation(period.start).cotisations_sociales.gen.smig  # TODO: smig 48H
+        smig48 = parameters(period.start).cotisations_sociales.gen.smig  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
         # activité salariée et dont le salaire ne dépasse pas deux fois et demie

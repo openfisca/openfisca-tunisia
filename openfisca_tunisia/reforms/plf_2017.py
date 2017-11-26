@@ -3,20 +3,18 @@
 from __future__ import division
 
 from openfisca_core import periods
-from openfisca_core.reforms import Reform, update_legislation
+from openfisca_core.reforms import Reform
 
 
-def modify_legislation_json(reference_legislation_json_copy):
+def modify_parameters(parameters):
     reform_year = 2016
     reform_period = periods.period(reform_year)
 
-    reference_legislation_json_copy = update_legislation(
-        legislation_json = reference_legislation_json_copy,
-        path = ('children', 'ir', 'children', 'bareme', 'brackets', 3, 'rate'),
+    parameters.ir.bareme[3].rate.update(
         period = reform_period,
         value = .27,
         )
-    return reference_legislation_json_copy
+    return parameters
 
 
 class plf_2017(Reform):
@@ -24,4 +22,4 @@ class plf_2017(Reform):
     key = 'plf_2017'
 
     def apply(self):
-        self.modify_legislation_json(modifier_function = modify_legislation_json)
+        self.modify_parameters(modifier_function = modify_parameters)

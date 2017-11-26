@@ -7,32 +7,45 @@ from numpy import zeros
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
-CAT = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
+CATEGORIE_SALARIE = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
 
 
-def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, legislation = None):
+def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, parameters = None):
     assert cotisation_type in ['employeur', 'salarie']
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
     categorie_salarie = individu('categorie_salarie', period)  # TODO change to regime_salarie
-    baremes_by_regime = legislation(period.start).cotisations_sociales
+    baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
-    for regime_name, regime_index in CAT:
-        bareme_by_name = baremes_by_regime[regime_name].get(
-            'cotisations_{}'.format(cotisation_type))
-        if bareme_by_name is not None:
-            if bareme_name in ['maladie', 'maternite', 'deces']:
-                baremes_assurances_sociales = bareme_by_name.get('assurances_sociales')
-                if baremes_assurances_sociales is not None:
-                    bareme = baremes_assurances_sociales.get(bareme_name)
-                else:
-                    bareme = bareme_by_name.get(bareme_name)
-            else:
-                bareme = bareme_by_name.get(bareme_name)
+    for regime_name, regime_index in CATEGORIE_SALARIE:
+        if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime_name]:
+            continue
 
-            if bareme is not None:
-                cotisation += bareme.calc(
-                    assiette_cotisations_sociales * (categorie_salarie == regime_index),
-                    )
+        bareme_by_name = getattr(
+            baremes_by_regime[regime_name],
+            'cotisations_{}'.format(cotisation_type),
+            )
+
+        if bareme_name in ['maladie', 'maternite', 'deces']:
+            if 'assurances_sociales' in bareme_by_name._children:
+                baremes_assurances_sociales = getattr(bareme_by_name, 'assurances_sociales')
+                bareme = getattr(baremes_assurances_sociales, bareme_name)
+
+            else:
+                if bareme_name not in bareme_by_name._children:
+                    continue
+
+                bareme = getattr(bareme_by_name, bareme_name)
+
+        else:
+            if bareme_name not in bareme_by_name._children:
+                continue
+            bareme = getattr(bareme_by_name, bareme_name)
+
+        if bareme is not None:
+            cotisation += bareme.calc(
+                assiette_cotisations_sociales * (categorie_salarie == regime_index),
+                )
+
     return - cotisation
 
 
@@ -50,7 +63,7 @@ class assiette_cotisations_sociales(Variable):
 
 
 class categorie_salarie(Variable):
-    column = EnumCol(CAT, default = 0)
+    column = EnumCol(CATEGORIE_SALARIE, default = 0)
     entity = Individu
     label = u"Catégorie de salarié"
     definition_period = ETERNITY
@@ -113,13 +126,13 @@ class accident_du_travail_employeur(Variable):
     label = u"Cotisation accidents du travail et maladies professionnelles (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'accident_du_travail',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -129,13 +142,13 @@ class accident_du_travail_salarie(Variable):
     label = u"Cotisation accidents du travail et maladies professionnelles (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'accident_du_travail',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -145,13 +158,13 @@ class deces_employeur(Variable):
     label = u"Cotisation assurances sociales: décès (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'deces',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -161,13 +174,13 @@ class deces_salarie(Variable):
     label = u"Cotisation assurances sociales: décès (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'deces',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -177,13 +190,13 @@ class famille_employeur(Variable):
     label = u"Cotisation sociale allocations familiales (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'famille',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -193,13 +206,13 @@ class famille_salarie(Variable):
     label = u"Cotisation sociale allocations familiales (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'famille',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -209,13 +222,13 @@ class fonds_special_etat(Variable):
     label = u"Fonds spécial de l'Etat"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'fonds_special_etat',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -225,13 +238,13 @@ class maladie_employeur(Variable):
     label = u"Cotisation assurances sociales: maladie (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'maladie',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -241,13 +254,13 @@ class maladie_salarie(Variable):
     label = u"Cotisation assurances sociales: maladie (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'maladie',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -257,13 +270,13 @@ class maternite_employeur(Variable):
     label = u"Cotisation assurances sociales : maternité (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'maternite',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -273,13 +286,13 @@ class maternite_salarie(Variable):
     label = u"Cotisation assurances sociales : maternité (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'maternite',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -289,13 +302,13 @@ class protection_sociale_travailleurs_employeur(Variable):
     label = u"Cotisation protection sociale des travailleurs (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'protection_sociale_travailleurs',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -305,13 +318,13 @@ class protection_sociale_travailleurs_salarie(Variable):
     label = u"Cotisation protection sociale des travailleurs (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'protection_sociale_travailleurs',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -321,13 +334,13 @@ class retraite_employeur(Variable):
     label = u"Cotisation pensions de retraite (employeur)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'employeur',
             bareme_name = 'retraite',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -337,13 +350,13 @@ class retraite_salarie(Variable):
     label = u"Cotisation pensions de retraite (salarié)"
     definition_period = MONTH
 
-    def formula(individu, period, legislation):
+    def formula(individu, period, parameters):
         return compute_cotisation(
             individu,
             period,
             cotisation_type = 'salarie',
             bareme_name = 'retraite',
-            legislation = legislation
+            parameters = parameters
             )
 
 
@@ -380,14 +393,14 @@ class salaire_net_a_payer(Variable):
 #     entity = Individu
 #     label = u"Salaires bruts"
 
-#     def formula(individu, period, legislation):
+#     def formula(individu, period, parameters):
 #         '''
 #         Calcule le salaire brut à partir du salaire net
 #         '''
 
 #         salaire_imposable = individu('salaire_imposable', period = period)
 #         categorie_salarie = individu('categorie_salarie', period = period)
-#         cotisations_sociales = legislation(period.start, reference = True).cotisations_sociales
+#         cotisations_sociales = parameters(period.start, use_baseline = True).cotisations_sociales
 
 #         smig = cotisations_sociales.gen.smig_40h_mensuel
 #         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', cotisations_sociales)
@@ -396,7 +409,7 @@ class salaire_net_a_payer(Variable):
 #         n = len(salaire_imposable)
 #         salaire_brut = zeros(n)
 #         # TODO améliorer tout cela !!
-#         for categ in CAT:
+#         for categ in CATEGORIE_SALARIE:
 #             iscat = (categorie_salarie == categ[1])
 #             if categ[0] == 're':
 #                 return salaire_imposable  # on retourne le salaire_imposable pour les étudiants
@@ -442,11 +455,11 @@ class ugtt(Variable):
 #     entity = Individu
 #     label = u"Cotisations sociales employeur"
 
-#     def formula(individu, period, legislation):
+#     def formula(individu, period, parameters):
 
 #         salaire_brut = individu('salaire_brut', period = period)
 #         categorie_salarie = individu('categorie_salarie', period = period)
-#         _P = legislation(period.start)
+#         _P = parameters(period.start)
 
 #         # TODO traiter les différents régimes séparément ?
 
@@ -457,7 +470,7 @@ class ugtt(Variable):
 #         # TODO: clean all this
 #         n = len(salaire_brut)
 #         cotisations_employeur = zeros(n)
-#         for categ in CAT:
+#         for categ in CATEGORIE_SALARIE:
 #             iscat = (categorie_salarie == categ[1])
 #             if categ[0] == 're':
 #                 return salaire_brut  # on retounre le salaire_brut pour les étudiants
@@ -477,11 +490,11 @@ class ugtt(Variable):
 #     entity = Individu
 #     label = u"Cotisations sociales salariés"
 
-#     def formula(individu, period, legislation):
+#     def formula(individu, period, parameters):
 
 #         salaire_brut = individu('salaire_brut', period = period)
 #         categorie_salarie = individu('categorie_salarie', period = period)
-#         _P = legislation(period.start)
+#         _P = parameters(period.start)
 #         # TODO traiter les différents régimes
 #         smig = _P.cotisations_sociales.gen.smig
 #         cotisations_sociales = MarginalRateTaxScale('cotisations_sociales', _P.cotisations_sociales)
@@ -490,7 +503,7 @@ class ugtt(Variable):
 #         n = len(salaire_brut)
 #         cotisations_salarie = zeros(n)
 
-#         for categ in CAT:
+#         for categ in CATEGORIE_SALARIE:
 #             iscat = (categorie_salarie == categ[1])
 
 #             if categ[0] == 're':
