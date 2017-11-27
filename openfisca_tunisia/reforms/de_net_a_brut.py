@@ -38,7 +38,7 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
 
 
 class salaire_imposable(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Salaire imposable"
     definition_period = MONTH

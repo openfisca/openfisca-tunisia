@@ -9,7 +9,7 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
 class nb_enf(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Nombre d'enfants"
     definition_period = YEAR
@@ -29,7 +29,7 @@ class nb_enf(Variable):
 
 
 class nb_enf_sup(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Nombre d'enfants étudiants du supérieur non boursiers"
     definition_period = YEAR
@@ -45,7 +45,7 @@ class nb_enf_sup(Variable):
 
 
 class nb_infirme(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Nombre d'enfants infirmes"
     definition_period = YEAR
@@ -61,7 +61,7 @@ class nb_infirme(Variable):
 
 
 class nb_parents(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Nombre de parents"
     definition_period = YEAR
@@ -77,7 +77,7 @@ class nb_parents(Variable):
 
 
 class chef_de_famille(Variable):
-    column = BoolCol()
+    value_type = bool
     entity = FoyerFiscal
     label = u"Indicatrice de chef de famille"
     definition_period = YEAR
@@ -122,7 +122,7 @@ class chef_de_famille(Variable):
 
 # 1. Bénéfices industriels et commerciaux
 class bic(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Bénéfices industriels et commerciaux (BIC)"
     definition_period = YEAR
@@ -140,7 +140,7 @@ class bic(Variable):
 
 
 class bic_ca_global(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Chiffre d’affaires global (BIC, cession de fond de commerce"
     definition_period = YEAR
@@ -157,7 +157,7 @@ class bic_ca_global(Variable):
 
 
 class bic_res_cession(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Résultat (BIC, cession de fond de commerce)"
     definition_period = YEAR
@@ -170,7 +170,7 @@ class bic_res_cession(Variable):
 
 
 class bic_benef_fiscal_cession(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Bénéfice fiscal (BIC, cession de fond de commerce)"
     definition_period = YEAR
@@ -191,7 +191,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 
 # 2. Bénéfices des professions non commerciales
 class bnc(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Bénéfices des professions non commerciales (BNC)"
     definition_period = YEAR
@@ -205,7 +205,7 @@ class bnc(Variable):
 
 
 class bnc_forf_benef_fiscal(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
     definition_period = YEAR
@@ -221,7 +221,7 @@ class bnc_forf_benef_fiscal(Variable):
 
 # 3. Bénéfices de l'exploitation agricole et de pêche
 class beap(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Bénéfices de l'exploitation agricole et de pêche (BEAP)"
     definition_period = YEAR
@@ -238,7 +238,7 @@ class beap(Variable):
 # 4. Revenus fonciers
 
 class revenus_fonciers(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenus fonciers"
     definition_period = YEAR
@@ -253,7 +253,7 @@ class revenus_fonciers(Variable):
 
 
 class fon_forf_bati(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenus fonciers net des immeubles bâtis"
     definition_period = YEAR
@@ -271,7 +271,7 @@ class fon_forf_bati(Variable):
 
 
 class fon_forf_nbat(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenus fonciers net des terrains non bâtis"
     definition_period = YEAR
@@ -286,7 +286,7 @@ class fon_forf_nbat(Variable):
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
 
 class tspr(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Traitements, salaires, indemnités, pensions et rentes viagères"
     definition_period = YEAR
@@ -301,7 +301,7 @@ class tspr(Variable):
 
 
 class revenu_assimile_salaire(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenu assimilé à des salaires"
     definition_period = YEAR
@@ -313,7 +313,7 @@ class revenu_assimile_salaire(Variable):
 
 
 class smig(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
     definition_period = YEAR
@@ -327,7 +327,7 @@ class smig(Variable):
 
 
 class revenu_assimile_salaire_apres_abattements(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenu imposé comme des salaires net des abatements"
     definition_period = YEAR
@@ -347,7 +347,7 @@ class revenu_assimile_salaire_apres_abattements(Variable):
 
 
 class revenu_assimile_pension_apres_abattements(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenu assimilé à des pensions après abattements"
     definition_period = YEAR
@@ -363,7 +363,7 @@ class revenu_assimile_pension_apres_abattements(Variable):
 # 6. Revenus de valeurs mobilières et de capitaux mobiliers
 
 class rvcm(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenus de valeurs mobilières et de capitaux mobiliers"
     definition_period = YEAR
@@ -388,7 +388,7 @@ class rvcm(Variable):
 # 7. revenus de source étrangère
 
 class retr(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
     definition_period = YEAR
@@ -417,7 +417,7 @@ class retr(Variable):
 
 
 class rng(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenu net global"
     definition_period = YEAR
@@ -441,7 +441,7 @@ class rng(Variable):
 
 
 class deduction_interets(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Déductions intérêts issus de comptes spéciaux ou d'obligations"
     definition_period = YEAR
@@ -462,7 +462,7 @@ class deduction_interets(Variable):
 
 
 class deduction_famille(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Déductions pour situation et charges de famille"
     definition_period = YEAR
@@ -488,7 +488,7 @@ class deduction_famille(Variable):
 
 
 class deduction_rente(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
     definition_period = YEAR
@@ -500,7 +500,7 @@ class deduction_rente(Variable):
 
 
 class deduction_assurance_vie(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Primes afférentes aux contrats d'assurance-vie collectifs ou individuels"
     definition_period = YEAR
@@ -547,7 +547,7 @@ class deduction_assurance_vie(Variable):
 
 
 class deduc_smig(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
     definition_period = YEAR
@@ -559,7 +559,7 @@ class deduc_smig(Variable):
 
 
 class rni(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Revenu net imposable"
     definition_period = YEAR
@@ -577,7 +577,7 @@ class rni(Variable):
 
 
 class ir_brut(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Impôt avant non-imposabilité"
     definition_period = YEAR
@@ -593,7 +593,7 @@ class ir_brut(Variable):
 
 
 class irpp(Variable):
-    column = FloatCol
+    value_type = float
     entity = FoyerFiscal
     label = u"Impôt sur le revenu des personnes physiques"
     definition_period = YEAR

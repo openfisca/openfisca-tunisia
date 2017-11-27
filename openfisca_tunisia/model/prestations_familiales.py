@@ -71,7 +71,7 @@ def ages_first_kids(age, nb=None):
 
 
 class smig75(Variable):
-    column = BoolCol
+    value_type = bool
     entity = Individu
     label = u"Indicatrice de salaire supérieur à 75% du smig"
     definition_period = YEAR
@@ -84,7 +84,7 @@ class smig75(Variable):
 
 
 class salaire_unique(Variable):
-    column = BoolCol
+    value_type = bool
     entity = Menage
     label = u"Indicatrice de salaire unique"
     definition_period = YEAR
@@ -98,7 +98,7 @@ class salaire_unique(Variable):
 # Allocations familiales
 
 class af_nbenf(Variable):
-    column = FloatCol
+    value_type = float
     entity = Menage
     label = u"Nombre d'enfants au sens des allocations familiales"
     definition_period = YEAR
@@ -139,7 +139,7 @@ class af_nbenf(Variable):
 
 
 class af(Variable):
-    column = FloatCol
+    value_type = float
     entity = Menage
     label = u"Allocations familiales"
     definition_period = YEAR
@@ -167,7 +167,7 @@ class af(Variable):
 
 
 class majoration_salaire_unique(Variable):
-    column = FloatCol
+    value_type = float
     entity = Menage
     label = u"Majoration du salaire unique"
     definition_period = YEAR  # TODO trimestrialiser
@@ -203,7 +203,7 @@ def _af_cong_jeun_trav(age, _P):
 
 
 class contribution_frais_creche(Variable):
-    column = FloatCol
+    value_type = float
     entity = Menage
     label = u"Contribution aux frais de crêche"
     definition_period = YEAR
@@ -233,7 +233,7 @@ class contribution_frais_creche(Variable):
 
 
 class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun_trav
-    column = FloatCol
+    value_type = float
     entity = Menage
     label = u"Prestations familales"
     definition_period = YEAR

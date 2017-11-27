@@ -50,7 +50,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
 
 class assiette_cotisations_sociales(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Assiette des cotisations sociales"
     definition_period = MONTH
@@ -63,14 +63,15 @@ class assiette_cotisations_sociales(Variable):
 
 
 class categorie_salarie(Variable):
-    column = EnumCol(CATEGORIE_SALARIE, default = 0)
+    value_type = Enum
+    possible_values = CATEGORIE_SALARIE
     entity = Individu
     label = u"Catégorie de salarié"
     definition_period = ETERNITY
 
 
 class cotisations_sociales(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisations sociales"
     definition_period = MONTH
@@ -83,7 +84,7 @@ class cotisations_sociales(Variable):
 
 
 class cotisations_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation sociales employeur"
     definition_period = MONTH
@@ -102,7 +103,7 @@ class cotisations_employeur(Variable):
 
 
 class cotisations_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation sociales salarié"
     definition_period = MONTH
@@ -121,7 +122,7 @@ class cotisations_salarie(Variable):
 
 
 class accident_du_travail_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation accidents du travail et maladies professionnelles (employeur)"
     definition_period = MONTH
@@ -137,7 +138,7 @@ class accident_du_travail_employeur(Variable):
 
 
 class accident_du_travail_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation accidents du travail et maladies professionnelles (salarié)"
     definition_period = MONTH
@@ -153,7 +154,7 @@ class accident_du_travail_salarie(Variable):
 
 
 class deces_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation assurances sociales: décès (employeur)"
     definition_period = MONTH
@@ -169,7 +170,7 @@ class deces_employeur(Variable):
 
 
 class deces_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation assurances sociales: décès (salarié)"
     definition_period = MONTH
@@ -185,7 +186,7 @@ class deces_salarie(Variable):
 
 
 class famille_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation sociale allocations familiales (employeur)"
     definition_period = MONTH
@@ -201,7 +202,7 @@ class famille_employeur(Variable):
 
 
 class famille_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation sociale allocations familiales (salarié)"
     definition_period = MONTH
@@ -217,7 +218,7 @@ class famille_salarie(Variable):
 
 
 class fonds_special_etat(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Fonds spécial de l'Etat"
     definition_period = MONTH
@@ -233,7 +234,7 @@ class fonds_special_etat(Variable):
 
 
 class maladie_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation assurances sociales: maladie (employeur)"
     definition_period = MONTH
@@ -249,7 +250,7 @@ class maladie_employeur(Variable):
 
 
 class maladie_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation assurances sociales: maladie (salarié)"
     definition_period = MONTH
@@ -265,7 +266,7 @@ class maladie_salarie(Variable):
 
 
 class maternite_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation assurances sociales : maternité (employeur)"
     definition_period = MONTH
@@ -281,7 +282,7 @@ class maternite_employeur(Variable):
 
 
 class maternite_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation assurances sociales : maternité (salarié)"
     definition_period = MONTH
@@ -297,7 +298,7 @@ class maternite_salarie(Variable):
 
 
 class protection_sociale_travailleurs_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation protection sociale des travailleurs (employeur)"
     definition_period = MONTH
@@ -313,7 +314,7 @@ class protection_sociale_travailleurs_employeur(Variable):
 
 
 class protection_sociale_travailleurs_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation protection sociale des travailleurs (salarié)"
     definition_period = MONTH
@@ -329,7 +330,7 @@ class protection_sociale_travailleurs_salarie(Variable):
 
 
 class retraite_employeur(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation pensions de retraite (employeur)"
     definition_period = MONTH
@@ -345,7 +346,7 @@ class retraite_employeur(Variable):
 
 
 class retraite_salarie(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation pensions de retraite (salarié)"
     definition_period = MONTH
@@ -361,7 +362,7 @@ class retraite_salarie(Variable):
 
 
 class salaire_imposable(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Salaire imposable"
     definition_period = MONTH
@@ -375,7 +376,7 @@ class salaire_imposable(Variable):
 
 
 class salaire_net_a_payer(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Salaire net à payer (fiche de paie)"
     definition_period = MONTH
@@ -389,7 +390,7 @@ class salaire_net_a_payer(Variable):
 
 
 class salaire_super_brut(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Salaires super bruts"
     definition_period = MONTH
@@ -404,7 +405,7 @@ class salaire_super_brut(Variable):
 
 
 class ugtt(Variable):
-    column = FloatCol
+    value_type = float
     entity = Individu
     label = u"Cotisation syndicale UGTT"
     definition_period = MONTH

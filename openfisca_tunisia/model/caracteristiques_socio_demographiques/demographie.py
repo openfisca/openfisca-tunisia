@@ -7,7 +7,7 @@ from openfisca_tunisia.model.base import *
 
 
 class age(Variable):
-    column = AgeCol(val_type = "age")
+    value_type = int
     entity = Individu
     label = u"Âge (en années)"
     definition_period = YEAR
@@ -18,21 +18,22 @@ class age(Variable):
 
 
 class date_naissance(Variable):
-    column = DateCol(default = date(1970, 1, 1))
+    value_type = date
+    default_value = date(1970, 1, 1)
     entity = Individu
     label = u"Date de naissance"
     definition_period = ETERNITY
 
 
 class male(Variable):
-    column = BoolCol()
+    value_type = bool
     entity = Individu
     label = u"Mâle"
     definition_period = ETERNITY
 
 
 class marie(Variable):
-    column = BoolCol
+    value_type = bool
     entity = Individu
     label = u"Marié(e)"
     definition_period = YEAR
@@ -43,7 +44,7 @@ class marie(Variable):
 
 
 class celibataire(Variable):
-    column = BoolCol
+    value_type = bool
     entity = Individu
     label = u"Célibataire"
     definition_period = YEAR
@@ -54,7 +55,7 @@ class celibataire(Variable):
 
 
 class divorce(Variable):
-    column = BoolCol
+    value_type = bool
     entity = Individu
     label = u"Divorcé(e)"
     definition_period = YEAR
@@ -65,7 +66,7 @@ class divorce(Variable):
 
 
 class veuf(Variable):
-    column = BoolCol
+    value_type = bool
     entity = Individu
     label = u"Veuf(ve)"
     definition_period = YEAR
@@ -76,21 +77,22 @@ class veuf(Variable):
 
 
 class statut_marital(Variable):
-    column = IntCol(default = 2)
+    value_type = int
+    default_value = 2
     entity = Individu
     label = u"Statut marital"
     definition_period = ETERNITY
 
 
 class invalide(Variable):
-    column = BoolCol
+    value_type = bool
     label = u"Invalide"
     entity = Individu
     definition_period = ETERNITY
 
 
 class activite(Variable):
-    column = IntCol
+    value_type = int
     entity = Individu
     label = u"Activité"
     definition_period = ETERNITY
@@ -98,7 +100,7 @@ class activite(Variable):
 
 
 class boursier(Variable):
-    column = BoolCol()
+    value_type = bool
     entity = Individu
     definition_period = ETERNITY
 

@@ -51,63 +51,63 @@ from openfisca_tunisia.model.base import *
 
 
 class compte_special_epargne_banque(Variable):
-    column = IntCol
+    value_type = int
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès des banques"
     entity = Individu
     definition_period = YEAR
 
 
 class compte_special_epargne_cent(Variable):
-    column = IntCol
+    value_type = int
     label = u"Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite"
     entity = Individu
     definition_period = YEAR
 
 
 class emprunt_obligataire(Variable):
-    column = IntCol
+    value_type = int
     label = u"Intérêts des emprunts obligataires"
     entity = Individu
     definition_period = YEAR
 
 
 class compte_epargne_investissement(Variable):
-    column = IntCol
+    value_type = int
     label = u"Intérêts des comptes épargne pour l'investissement"
     entity = Individu
     definition_period = YEAR
 
 
 class rente(Variable):
-    column = IntCol
+    value_type = int
     label = u"Rentes payées obligatoirement et à titre gratuit"
     entity = Individu
     definition_period = YEAR
 
 
 class prime_assurance_vie(Variable):
-    column = IntCol
+    value_type = int
     label = u"Prime d’assurance-vie"
     entity = Individu
     definition_period = YEAR
 
 
 class dons(Variable):
-    column = IntCol
+    value_type = int
     label = u"Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"
     entity = Individu
     definition_period = YEAR
 
 
 class pret_universitaire(Variable):
-    column = IntCol
+    value_type = int
     label = u"Remboursement des prêts universitaires en principal et intérêts"
     entity = Individu
     definition_period = YEAR
 
 
 class cotisations_non_affilie(Variable):
-    column = IntCol
+    value_type = int
     label = u"Cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
         u"de la sécurité sociale"
     entity = Individu
@@ -115,7 +115,7 @@ class cotisations_non_affilie(Variable):
 
 
 class interet_acquisition_logement(Variable):
-    column = IntCol
+    value_type = int
     label = u"Intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
     entity = Individu
     definition_period = YEAR
