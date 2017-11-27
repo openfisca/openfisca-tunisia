@@ -1,8 +1,8 @@
-- period: 2011
-  relative_error_margin: 0.005
+- period: "2011-01"
   reforms: openfisca_tunisia.reforms.de_net_a_brut.de_net_a_brut
+  relative_error_margin: 0.005
   input_variables:
-    salaire_net_a_payer: 14700
+    salaire_net_a_payer: 14700 / 12
   output_variables: # Full payroll simulation
     salaire_imposable:
       "2011-01":

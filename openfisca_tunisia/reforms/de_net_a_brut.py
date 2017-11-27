@@ -3,6 +3,8 @@
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
+from numpy.ma.testutils import assert_not_equal
+from urllib2 import Request
 
 try:
     from scipy.optimize import fsolve
@@ -12,24 +14,25 @@ except ImportError:
 from .. import entities
 
 
-def calculate_net_from(salaire_imposable, simulation, period, requested_variable_names):
+def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
     # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
     # To avoid possible conflicts, remove its function
-    simulation.holder_by_name['salaire_imposable'].formula.function = None
-    simulation.get_or_new_holder('salaire_imposable').array = salaire_imposable
+    holder = individu.get_holder('salaire_imposable')
+    holder.formula.function = None
+    holder.array = salaire_imposable
 
     # Work in isolation
-    temp_simulation = simulation.clone()
+    temp_simulation = individu.simulation.clone()
+    temp_individu = temp_simulation.individu
 
     # Calculated variable holders might contain undesired cache
     # (their entity.simulation points to the original simulation above)
     for name in requested_variable_names:
-        del temp_simulation.holder_by_name[name]
+        temp_individu.get_holder(name).delete_arrays()
 
     # Force recomputing of salaire_net
-    del temp_simulation.holder_by_name['salaire_net_a_payer']
-
-    net = temp_simulation.calculate('salaire_net_a_payer', period)[0]
+    temp_individu.get_holder('salaire_net_a_payer').delete_arrays()
+    net = temp_individu('salaire_net_a_payer', period)[0]
 
     return net
 
@@ -42,12 +45,13 @@ class salaire_imposable(Variable):
     set_input = set_input_divide_by_period
 
 
-    def formula(self, simulation, period):
+    def formula(individu, period):
         # Calcule le salaire brut à partir du salaire net par inversion numérique.
-        net = simulation.get_array('salaire_net_a_payer', period)
-        assert net is not None
-        simulation = self.holder.entity.simulation
+        net = individu.get_holder('salaire_net_a_payer').get_array(period)
+        if net is None:
+            return individu.empty_array()
 
+        simulation = individu.simulation
         # List of variables already calculated. We will need it to remove their holders,
         # that might contain undesired cache
         requested_variable_names = simulation.requested_periods_by_variable_name.keys()
@@ -61,7 +65,7 @@ class salaire_imposable(Variable):
 
         def solve_func(net):
             def innerfunc(essai):
-                return calculate_net_from(essai, simulation, period, requested_variable_names) - net
+                return calculate_net_from(essai, individu, period, requested_variable_names) - net
             return innerfunc
 
         brut_calcule = \
