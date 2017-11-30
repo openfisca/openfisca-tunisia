@@ -612,9 +612,7 @@ class irpp_mensuel_salarie(Variable):
 
     def formula(individu, period, parameters):
         salaire_imposable = individu('salaire_imposable', period = period)
-        print "salaire_imposable: {}".format(salaire_imposable)
         deduction_famille_annuelle = individu.foyer_fiscal('deduction_famille', period = period.this_year)
-        print "deduction_famille_annuelle: {}".format(deduction_famille_annuelle)
 
         return calcule_impot_revenu_brut(
             salaire_imposable, deduction_famille_annuelle, period, parameters,
