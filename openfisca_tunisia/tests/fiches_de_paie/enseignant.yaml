@@ -1,18 +1,19 @@
 - name: "Enseignant 2016-04"
   period: 2016-04
-  absolute_error_margin: 0.5
+  absolute_error_margin: 1
   input_variables:
     categorie_salarie: 8
     salaire_de_base: 657
     primes: 190 + 752 + 57 + 46.666
-    irpp:
-      2016: -12 * 256.090 # On injecte l'impôt alors qu'on devrait le calculer sur le mois
+    # irpp:
+    #   2016: -12 * 256.090 # On injecte l'impôt alors qu'on devrait le calculer sur le mois
   output_variables:
     assiette_cotisations_sociales: 1702.666
     retraite_salarie: -139.618
     deces_salarie: -17.026
     maladie_salarie: -46.823
     ugtt: -3
+    irpp_mensuel_salarie: -256.090
     salaire_net_a_payer: 1240.109
 
 

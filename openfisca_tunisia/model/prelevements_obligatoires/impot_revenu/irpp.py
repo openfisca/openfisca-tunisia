@@ -558,7 +558,7 @@ class deduc_smig(Variable):
         return 0 * chef  # TODO: voir avec tspr
 
 
-class rni(Variable):
+class revenu_net_imposable(Variable):
     value_type = float
     entity = FoyerFiscal
     label = u"Revenu net imposable"
@@ -576,20 +576,20 @@ class rni(Variable):
         return rng - (deduction_famille + deduction_rente + deduction_assurance_vie)
 
 
-class ir_brut(Variable):
+class impot_revenu_brut(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Impôt avant non-imposabilité"
+    label = u"Impôt brut avant non-imposabilité"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        rni = foyer_fiscal('rni', period = period)
+        revenu_net_imposable = foyer_fiscal('revenu_net_imposable', period = period)
         bareme = parameters(period.start).impot_revenu.bareme
         # exemption = parameters(period.start).impot_revenu.reforme.exemption
-        # rni_apres_exemption = rni * (exemption.active == 0) + rni * (exemption.active == 1) * (rni > exemption.max)
-        rni_apres_exemption = rni
-        ir_brut = - bareme.calc(rni_apres_exemption)
-        return ir_brut
+        # revenu_net_imposable_apres_exemption = revenu_net_imposable * (exemption.active == 0) + revenu_net_imposable * (exemption.active == 1) * (revenu_net_imposable > exemption.max)
+        revenu_net_imposable_apres_exemption = revenu_net_imposable
+        impot_revenu_brut = - bareme.calc(revenu_net_imposable_apres_exemption)
+        return impot_revenu_brut
 
 
 class irpp(Variable):
@@ -599,6 +599,44 @@ class irpp(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        ir_brut = foyer_fiscal('ir_brut', period = period)
-        irpp = ir_brut
+        impot_revenu_brut = foyer_fiscal('impot_revenu_brut', period = period)
+        irpp = impot_revenu_brut
         return irpp
+
+
+class irpp_mensuel_salarie(Variable):
+    value_type = float
+    entity = Individu
+    label = u"Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        salaire_imposable = individu('salaire_imposable', period = period)
+        print "salaire_imposable: {}".format(salaire_imposable)
+        deduction_famille_annuelle = individu.foyer_fiscal('deduction_famille', period = period.this_year)
+        print "deduction_famille_annuelle: {}".format(deduction_famille_annuelle)
+
+        return calcule_impot_revenu_brut(
+            salaire_imposable, deduction_famille_annuelle, period, parameters,
+            )
+
+
+# Utils
+
+def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, period, parameters):
+    revenu_assimile_salaire = salaire_mensuel
+    smig_40h_mensuel = parameters(period.start).cotisations_sociales.gen.smig_40h_mensuel
+    smig = revenu_assimile_salaire <= smig_40h_mensuel
+    tspr = parameters(period.start).impot_revenu.tspr
+
+    if period.start.year >= 2011:
+        revenu_assimile_salaire_apres_abattement = max_(
+            revenu_assimile_salaire * (1 - tspr.abat_sal) - max_(smig * tspr.smig,
+                (revenu_assimile_salaire <= tspr.smig_ext) * tspr.smig), 0)
+    else:
+        revenu_assimile_salaire_apres_abattement = max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
+    bareme = parameters(period.start).impot_revenu.bareme
+
+    return - bareme.calc(
+        (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
+        ) / 12

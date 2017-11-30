@@ -385,7 +385,7 @@ class salaire_net_a_payer(Variable):
     def formula(individu, period):
         return (
             individu('salaire_imposable', period) +
-            individu.foyer_fiscal('irpp', period.this_year) / 12
+            individu('irpp_mensuel_salarie', period)
             )
 
 
