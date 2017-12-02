@@ -45,7 +45,7 @@ columns_name_tree_by_entity = collections.OrderedDict([
                     u"""bic_pv_cession""",
                     u"""bic_part_benef_sp""",
                     u"""bnc_reel_res_fiscal""",
-                    u"""bnc_forf_rec_brut""",
+                    u"""bnc_forfaitaire_recettes_brutes""",
                     u"""bnc_part_benef_sp""",
                     u"""beap_reel_res_fiscal""",
                     u"""beap_reliq_rec""",

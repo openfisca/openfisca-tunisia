@@ -15,7 +15,7 @@
   "label__bic_reel_res": "Résultat comptable (BIC, régime réel)",
   "bic_reel_res": "(النتيجة المحاسبية (أرباح صناعية و تجارية، نظام حقيقي ",
 
-  "label__bic_forfaitaire_resultat": "Résultat (BIC, régime forfaitaire, cession de fonds de commerce)", 
+  "label__bic_forfaitaire_resultat": "Résultat (BIC, régime forfaitaire, cession de fonds de commerce)",
   "bic_forfaitaire_resultat": "(تفويت في الأصل التجاري (أرباح صناعية و تجارية، نظام تقديري، النتيجة",
 
   "label__bic_societes_personnes_resultat": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial (BIC)",
@@ -42,11 +42,11 @@
   "label__bic_part_benef_sp": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial",
   "bic_part_benef_sp": "المناب في الربح أو في الخسارة في شركات الأشخاص و ما شابهها الناشطة في قطاع الصناعة و التجارة",
 
-  "label__bnc_reel_res_fiscal": "Résultat fiscal (BNC, régime réel)", 
+  "label__bnc_reel_res_fiscal": "Résultat fiscal (BNC, régime réel)",
   "bnc_reel_res_fiscal": "(النتيجة الجبائية (أرباح مهن غير تجارية، نظام حقيقي",
 
-  "label__bnc_forf_rec_brut": "Recettes globales brutes TTC (BNC, assiette forfaitaire)", 
-  "bnc_forf_rec_brut": "(مجموع المقابيض الخام بما في ذلك الأداءات (أرباح مهن غير تجارية، قاعدة تقديرية ",
+  "label__bnc_forfaitaire_recettes_brutes": "Recettes globales brutes TTC (BNC, assiette forfaitaire)",
+  "bnc_forfaitaire_recettes_brutes": "(مجموع المقابيض الخام بما في ذلك الأداءات (أرباح مهن غير تجارية، قاعدة تقديرية ",
 
   "label__bnc_part_benef_sp": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des bénéfices non commerciaux (BNC)",
   "bnc_part_benef_sp": "(المناب في الربح أو في الخسارة في شركات الأشخاص و ما شابهها التي تحقق أرباح غير تجارية (أرباح مهن غير تجارية",
@@ -62,7 +62,7 @@
 
   "label__beap_reliq_dep_ex": "Dépenses d’exploitation (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
   "beap_reliq_dep_ex": "(مصاريف الإستغلال (أرباح الأنشطة الفلاحية أو الصيد البحري، ربح على أساس الفارق الإيجابي بين المقابيض و المصاريف",
-  
+
   "label__beap_reliq_benef_fiscal": "Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
   "beap_reliq_benef_fiscal": "(الربح الجبائي (أرباح الأنشطة الفلاحية أو الصيد البحري، ربح على أساس الفارق الإيجابي بين المقابيض و المصاريف",
 

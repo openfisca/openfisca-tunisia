@@ -184,7 +184,7 @@ class bnc_reel_res_fiscal(Variable):
 # - Recettes globales brutes TTC
 
 
-class bnc_forf_rec_brut(Variable):
+class bnc_forfaitaire_recettes_brutes(Variable):
     value_type = int
     label = u"Recettes globales brutes TTC (BNC, assiette forfaitaire)"
     entity = Individu

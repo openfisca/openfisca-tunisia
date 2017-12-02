@@ -197,10 +197,15 @@ class bnc(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        bnc_reel_res_fiscal = foyer_fiscal('bnc_reel_res_fiscal', period = period)
-        bnc_forf_benef_fiscal = foyer_fiscal('bnc_forf_benef_fiscal', period = period)
-        bnc_part_benef_sp = foyer_fiscal('bnc_part_benef_sp', period = period)
-
+        bnc_reel_res_fiscal = foyer_fiscal.sum(
+            foyer_fiscal.members('bnc_reel_res_fiscal', period = period)
+            )
+        bnc_forf_benef_fiscal = foyer_fiscal.sum(
+            foyer_fiscal.members('bnc_forf_benef_fiscal', period = period)
+            )
+        bnc_part_benef_sp = foyer_fiscal.sum(
+            foyer_fiscal.members('bnc_part_benef_sp', period = period)
+            )
         return bnc_reel_res_fiscal + bnc_forf_benef_fiscal + bnc_part_benef_sp
 
 
@@ -212,11 +217,11 @@ class bnc_forf_benef_fiscal(Variable):
 
     def formula(foyer_fiscal, period, parameters):
         """
-        Bénéfice fiscal (régime forfaitaire, 70% des recettes brutes TTC)
+        Bénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)
         """
-        bnc_forf_rec_brut = foyer_fiscal('bnc_forf_rec_brut', period = period)
+        bnc_forfaitaire_recettes_brutes = foyer_fiscal('bnc_forfaitaire_recettes_brutes', period = period)
         part = parameters(period.start).impot_revenu.bnc.forf.part_forf
-        return bnc_forf_rec_brut * part
+        return bnc_forfaitaire_recettes_brutes * part
 
 
 # 3. Bénéfices de l'exploitation agricole et de pêche
@@ -266,7 +271,7 @@ class fon_forf_bati(Variable):
         P = parameters(period.start).impot_revenu.fon.bati.deduc_frais
         return max_(
             0,
-            foncier_forfaitaire_batis_recettes * (1 - P) + foncier_forfaitaire_batis_reliquat - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
+            foncier_forfaitaire_batis_recettes * (1 - P) - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
             )
 
 
@@ -423,12 +428,13 @@ class rng(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
+        bnc = foyer_fiscal('bnc', period = period)
         tspr = foyer_fiscal('tspr', period = period)
         revenus_fonciers = foyer_fiscal('revenus_fonciers', period = period)
         retr = foyer_fiscal('retr', period = period)
         rvcm = foyer_fiscal('rvcm', period = period)
 
-        return tspr + revenus_fonciers + +rvcm + retr
+        return bnc + tspr + revenus_fonciers + +rvcm + retr
 
 
 #############################
