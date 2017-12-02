@@ -412,4 +412,3 @@ class ugtt(Variable):
 
     def formula(individu, period):
         return -3 * (individu('categorie_salarie', period) == 8)
-
