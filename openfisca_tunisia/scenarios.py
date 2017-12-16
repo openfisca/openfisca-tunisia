@@ -507,7 +507,7 @@ class Scenario(scenarios.AbstractScenario):
 
         test_case = self.test_case
         if test_case is not None:
-            column_by_name = self.tax_benefit_system.column_by_name
+            variables = self.tax_benefit_system.variables
             test_case_json = collections.OrderedDict()
 
             foyers_fiscaux_json = []
@@ -521,7 +521,7 @@ class Scenario(scenarios.AbstractScenario):
                 if personnes_a_charge:
                     foyer_fiscal_json['personnes_a_charge'] = personnes_a_charge
                 for column_name, variable_value in foyer_fiscal.iteritems():
-                    column = column_by_name.get(column_name)
+                    column = variables.get(column_name)
                     if column is not None and column.entity == FoyerFiscal:
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
@@ -534,7 +534,7 @@ class Scenario(scenarios.AbstractScenario):
             for individu in (test_case.get('individus') or []):
                 individu_json = collections.OrderedDict()
                 for column_name, variable_value in individu.iteritems():
-                    column = column_by_name.get(column_name)
+                    column = variables.get(column_name)
                     if column is not None and column.entity == Individu:
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
@@ -560,7 +560,7 @@ class Scenario(scenarios.AbstractScenario):
                 if autres:
                     menage_json['autres'] = autres
                 for column_name, variable_value in menage.iteritems():
-                    column = column_by_name.get(column_name)
+                    column = variables.get(column_name)
                     if column is not None and column.entity == Menage:
                         variable_value_json = column.transform_value_to_json(variable_value)
                         if variable_value_json is not None:
