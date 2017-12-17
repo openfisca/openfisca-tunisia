@@ -1,5 +1,5 @@
-description: Montant de l'impot forfaitaire dispensant du paiement de accomptes provisionnels
+description: Montant de l'impot forfaitaire dispensant du paiement des accomptes provisionnels
 unit: currency
 values:
   2007-01-01:
-    value: 1500.0
+    value: 1500

@@ -1,8 +1,8 @@
+description: Protection sociale des travailleurs
 brackets:
 - rate:
     1960-01-01:
       value: 0.002889
   threshold:
     1960-01-01:
-      value: 0.0
-description: Protection sociale des travailleurs
+      value: 0

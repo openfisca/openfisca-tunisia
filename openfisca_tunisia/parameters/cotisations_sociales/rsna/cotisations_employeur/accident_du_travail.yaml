@@ -1,8 +1,8 @@
+description: Accidents du travail - Maladies professionelles
 brackets:
 - rate:
     1960-01-01:
       value: 0.007222
   threshold:
     1960-01-01:
-      value: 0.0
-description: Accidents du travail - Maladies professionelles
+      value: 0

@@ -2,6 +2,6 @@ description: Majoration au titre du conjoint
 unit: currency
 values:
   1990-01-01:
-    value: 400.0
+    value: 400
   2007-01-01:
-    value: 600.0
+    value: 600

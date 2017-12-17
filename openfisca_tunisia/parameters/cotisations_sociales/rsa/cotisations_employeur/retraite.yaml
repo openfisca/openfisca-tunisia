@@ -1,8 +1,8 @@
+description: Pensions
 brackets:
 - rate:
     1960-01-01:
       value: 0.035
   threshold:
     1960-01-01:
-      value: 0.0
-description: Pensions
+      value: 0

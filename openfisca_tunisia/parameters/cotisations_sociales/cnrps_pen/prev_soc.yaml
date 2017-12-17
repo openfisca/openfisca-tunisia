@@ -1,3 +1,4 @@
+description: Prévoyance sociale
 brackets:
 - rate:
     1985-01-01:
@@ -6,5 +7,4 @@ brackets:
       value: 0.04
   threshold:
     2002-03-12:
-      value: 0.0
-description: Prévoyance sociale
+      value: 0

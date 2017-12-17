@@ -1,8 +1,8 @@
+description: Fond spécial de l'Etat
 brackets:
 - rate:
     1960-01-01:
       value: 0.005
   threshold:
     1960-01-01:
-      value: 0.0
-description: Fond spécial de l'Etat
+      value: 0

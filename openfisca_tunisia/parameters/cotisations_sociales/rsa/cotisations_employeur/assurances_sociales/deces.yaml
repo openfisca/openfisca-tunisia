@@ -1,8 +1,8 @@
+description: Indemnités de décès et capital décès
 brackets:
 - rate:
     1960-01-01:
       value: 0.000375
   threshold:
     1960-01-01:
-      value: 0.0
-description: Indemnités de décès et capital décès
+      value: 0

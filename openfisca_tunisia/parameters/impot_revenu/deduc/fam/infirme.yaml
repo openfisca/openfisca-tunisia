@@ -1,9 +1,10 @@
-description: Enfant infirme TODO dates
+description: Enfant infirme
+# TODO dates
 unit: currency
 values:
   1990-01-01:
-    value: 500.0
+    value: 500
   2004-01-01:
-    value: 600.0
+    value: 600
   2005-01-01:
-    value: 750.0
+    value: 750

@@ -2,6 +2,6 @@ description: Majoration au titre des enfants
 unit: currency
 values:
   1990-01-01:
-    value: 200.0
+    value: 200
   2007-01-01:
-    value: 300.0
+    value: 300

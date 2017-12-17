@@ -1,62 +1,62 @@
+description: Tranches de l'IR
 brackets:
 - amount:
     1990-01-01:
-      value: 25.0
+      value: 25
   threshold:
     1990-01-01:
-      value: 0.0
+      value: 0
 - amount:
     1990-01-01:
-      value: 45.0
+      value: 45
   threshold:
     1990-01-01:
-      value: 3000.0
+      value: 3000
 - amount:
     1990-01-01:
-      value: 75.0
+      value: 75
   threshold:
     1990-01-01:
-      value: 6000.0
+      value: 6000
 - amount:
     1990-01-01:
-      value: 120.0
+      value: 120
   threshold:
     1990-01-01:
-      value: 9000.0
+      value: 9000
 - amount:
     1990-01-01:
-      value: 180.0
+      value: 180
   threshold:
     1990-01-01:
-      value: 12000.0
+      value: 12000
 - amount:
     1990-01-01:
-      value: 260.0
+      value: 260
   threshold:
     1990-01-01:
-      value: 18000.0
+      value: 18000
 - amount:
     1990-01-01:
-      value: 260.0
+      value: 260
   threshold:
     1990-01-01:
-      value: 18000.0
+      value: 18000
 - amount:
     1990-01-01:
-      value: 360.0
+      value: 360
   threshold:
     1990-01-01:
-      value: 21000.0
+      value: 21000
 - amount:
     1990-01-01:
-      value: 360.0
+      value: 360
   threshold:
     1990-01-01:
-      value: 24000.0
+      value: 24000
 - amount:
     1990-01-01:
-      value: 360.0
+      value: 360
   threshold:
     1990-01-01:
-      value: 27000.0
-description: Tranches de l'IR
+      value: 27000

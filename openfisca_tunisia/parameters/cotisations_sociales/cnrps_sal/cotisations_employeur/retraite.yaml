@@ -1,3 +1,4 @@
+description: Retraite
 brackets:
 - rate:
     1985-01-01:
@@ -12,5 +13,4 @@ brackets:
       value: 0.125
   threshold:
     2002-03-12:
-      value: 0.0
-description: Retraite
+      value: 0

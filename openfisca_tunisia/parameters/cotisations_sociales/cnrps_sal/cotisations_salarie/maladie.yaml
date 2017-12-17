@@ -1,8 +1,8 @@
+description: Assurance maladie
 brackets:
 - rate:
     1985-01-01:
       value: 0.0275
   threshold:
     2002-03-12:
-      value: 0.0
-description: Assurance maladie
+      value: 0

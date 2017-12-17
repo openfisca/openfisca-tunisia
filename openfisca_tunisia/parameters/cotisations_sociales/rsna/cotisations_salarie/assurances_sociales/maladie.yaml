@@ -1,3 +1,4 @@
+description: Assurance Maladie
 brackets:
 - rate:
     1960-01-01:
@@ -8,5 +9,4 @@ brackets:
       value: 0.027494
   threshold:
     1960-01-01:
-      value: 0.0
-description: Assurance Maladie
+      value: 0
