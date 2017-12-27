@@ -11,6 +11,8 @@ class age(Variable):
     entity = Individu
     label = u"Âge (en années)"
     definition_period = YEAR
+    is_period_size_independent = True
+    set_input = set_input_dispatch_by_period
 
     def formula(individu, period):
         date_naissance = individu('date_naissance', period)
