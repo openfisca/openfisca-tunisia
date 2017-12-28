@@ -4,9 +4,8 @@ import glob
 import os
 
 from openfisca_core.taxbenefitsystems import TaxBenefitSystem
-
 from . import decompositions, entities, scenarios
-from .model import datatrees
+
 
 COUNTRY_DIR = os.path.dirname(os.path.abspath(__file__))
 EXTENSIONS_PATH = os.path.join(COUNTRY_DIR, 'extensions')
@@ -20,9 +19,6 @@ class TunisiaTaxBenefitSystem(TaxBenefitSystem):
     DEFAULT_DECOMP_FILE = decompositions.DEFAULT_DECOMP_FILE
     REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
     REV_TYP = None
-
-
-    columns_name_tree_by_entity = datatrees.columns_name_tree_by_entity
 
     def __init__(self):
         # We initialize our tax and benefit system with the general constructor
