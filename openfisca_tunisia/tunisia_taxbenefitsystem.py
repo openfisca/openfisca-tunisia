@@ -20,9 +20,7 @@ class TunisiaTaxBenefitSystem(TaxBenefitSystem):
     DEFAULT_DECOMP_FILE = decompositions.DEFAULT_DECOMP_FILE
     REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
     REV_TYP = None
-    REVENUES_CATEGORIE_SALARIEEGORIES = {
-        'imposable': ['sal'],
-        }
+
 
     columns_name_tree_by_entity = datatrees.columns_name_tree_by_entity
 
