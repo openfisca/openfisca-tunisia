@@ -6,9 +6,8 @@ from openfisca_tunisia.model.base import *
 # BIC Bénéfices industriels et commerciaux
 # régime réel
 
-class bic_reel(Variable):
-    value_type = Enum
-    possible_values = Enum(
+
+TYPE_ACTIVITE = Enum(
         [
             u"Néant",
             u"Commerçant",
@@ -18,6 +17,34 @@ class bic_reel(Variable):
             u"Plus d'une activité",
             ]
         )
+
+
+CADRE_LEGAL_ACTIVITE_ENTREPRISE = Enum(
+        [
+            u"Exportation totale dans le cadre du CII",
+            u"Développement régional",
+            u"Développement agricole",
+            u"Parcs des activités économiques",
+            u"Exportation dans le cadre du droit commun",
+            u"Autres (à préciser)",
+            ]
+        )
+
+
+STRUCTURE_DECLARATION_INVESTISSEMENT = Enum(
+        [
+            u"API",
+            u"APIA",
+            u"Commissariat régional du développement agricole",
+            u"ONT",
+            u"Autre structure (à préciser)"
+            ],
+        )
+
+
+class bic_reel(Variable):
+    value_type = Enum
+    possible_values = TYPE_ACTIVITE
     entity = Individu
     label = u"Type d’activité (BIC)"
     definition_period = YEAR
@@ -38,17 +65,8 @@ class bic_societes_personnes(Variable):
 
 class cadre_legal(Variable):
     value_type = Enum
-    default_value = 1
-    possible_values = Enum(
-        [
-            u"Exportation totale dans le cadre du CII",
-            u"Développement régional",
-            u"Développement agricole",
-            u"Parcs des activités économiques",
-            u"Exportation dans le cadre du droit commun",
-            u"Autres (à préciser)",
-            ],
-        )
+    default_value = 1  # Développement régional
+    possible_values = CADRE_LEGAL_ACTIVITE_ENTREPRISE
     entity = Individu
     label = u"Cadre légal de l’activité de l’entreprise"
     definition_period = YEAR
@@ -78,15 +96,7 @@ class bic_societes_personnes_resultat(Variable):
 
 class structure_declaration_investissement(Variable):
     value_type = Enum
-    possible_values = Enum(
-        [
-            u"API",
-            u"APIA",
-            u"Commissariat régional du développement agricole",
-            u"ONT",
-            u"Autre structure (à préciser)"
-            ],
-        )
+    possible_values = STRUCTURE_DECLARATION_INVESTISSEMENT
     entity = Individu
     label = u"Structure auprès de laquelle la déclaration d’investissement a été déposée"
     definition_period = YEAR

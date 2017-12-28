@@ -12,34 +12,34 @@ CATEGORIE_SALARIE = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', '
 
 def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, parameters = None):
     assert cotisation_type in ['employeur', 'salarie']
+
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
     categorie_salarie = individu('categorie_salarie', period)  # TODO change to regime_salarie
     baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
+
     for regime_name, regime_index in CATEGORIE_SALARIE:
         if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime_name]:
             continue
-
-        bareme_by_name = getattr(
+        baremes_by_name = getattr(
             baremes_by_regime[regime_name],
             'cotisations_{}'.format(cotisation_type),
             )
 
         if bareme_name in ['maladie', 'maternite', 'deces']:
-            if 'assurances_sociales' in bareme_by_name._children:
-                baremes_assurances_sociales = getattr(bareme_by_name, 'assurances_sociales')
+            if 'assurances_sociales' in baremes_by_name._children:
+                baremes_assurances_sociales = getattr(baremes_by_name, 'assurances_sociales')
                 bareme = getattr(baremes_assurances_sociales, bareme_name)
 
             else:
-                if bareme_name not in bareme_by_name._children:
+                if bareme_name not in baremes_by_name._children:
                     continue
-
-                bareme = getattr(bareme_by_name, bareme_name)
+                bareme = getattr(baremes_by_name, bareme_name)
 
         else:
-            if bareme_name not in bareme_by_name._children:
+            if bareme_name not in baremes_by_name._children:
                 continue
-            bareme = getattr(bareme_by_name, bareme_name)
+            bareme = getattr(baremes_by_name, bareme_name)
 
         if bareme is not None:
             cotisation += bareme.calc(
