@@ -1,0 +1,14 @@
+description: Pensions
+brackets:
+- rate:
+    2002-03-12:
+      value: 0.008333
+  threshold:
+    2002-03-12:
+      value: 0.0
+- rate:
+    2002-03-12:
+      value: 0.0
+  threshold:
+    2002-03-12:
+      value: 0.66

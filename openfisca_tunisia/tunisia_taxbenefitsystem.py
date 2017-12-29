@@ -4,9 +4,8 @@ import glob
 import os
 
 from openfisca_core.taxbenefitsystems import TaxBenefitSystem
-
 from . import decompositions, entities, scenarios
-from .model import datatrees
+
 
 COUNTRY_DIR = os.path.dirname(os.path.abspath(__file__))
 EXTENSIONS_PATH = os.path.join(COUNTRY_DIR, 'extensions')
@@ -20,19 +19,15 @@ class TunisiaTaxBenefitSystem(TaxBenefitSystem):
     DEFAULT_DECOMP_FILE = decompositions.DEFAULT_DECOMP_FILE
     REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
     REV_TYP = None
-    REVENUES_CATEGORIES = {
-        'imposable': ['sal'],
-        }
-
-    columns_name_tree_by_entity = datatrees.columns_name_tree_by_entity
 
     def __init__(self):
-        TaxBenefitSystem.__init__(self, entities.entities)
+        # We initialize our tax and benefit system with the general constructor
+        super(TunisiaTaxBenefitSystem, self).__init__(entities.entities)
         self.Scenario = scenarios.Scenario
 
-        legislation_xml_file_path = os.path.join(COUNTRY_DIR, 'param', 'param.xml')
-        self.add_legislation_params(legislation_xml_file_path)
-
+        # We add to our tax and benefit system all the variables
         self.add_variables_from_directory(os.path.join(COUNTRY_DIR, 'model'))
-        for extension_dir in EXTENSIONS_DIRECTORIES:
-            self.load_extension(extension_dir)
+
+        # We add to our tax and benefit system all the legislation parameters defined in the  parameters files
+        param_path = os.path.join(COUNTRY_DIR, 'parameters')
+        self.load_parameters(param_path)

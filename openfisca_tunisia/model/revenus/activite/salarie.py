@@ -7,7 +7,7 @@ from openfisca_tunisia.model.base import *
 
 
 class salaire_de_base(Variable):
-    column = FloatCol
+    value_type = float
     label = u"Salaire de base"
     entity = Individu
     definition_period = MONTH
@@ -15,7 +15,7 @@ class salaire_de_base(Variable):
 
 
 class primes(Variable):
-    column = FloatCol
+    value_type = float
     label = u"Primes"
     entity = Individu
     definition_period = MONTH
@@ -23,7 +23,7 @@ class primes(Variable):
 
 
 class salaire_en_nature(Variable):
-    column = IntCol
+    value_type = int
     label = u"Avantages en nature assimilables à des salaires"
     entity = Individu
     definition_period = MONTH
@@ -31,7 +31,7 @@ class salaire_en_nature(Variable):
 
 
 class smig_dec(Variable):
-    column = BoolCol
+    value_type = bool
     label = u"Salarié déclarant percevoir le SMIG ou le SMAG"
     entity = Individu
     definition_period = MONTH

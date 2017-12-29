@@ -1,0 +1,5 @@
+description: Plafond de la déduction
+unit: currency
+values:
+  1990-01-01:
+    value: 2000

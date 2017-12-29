@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.11.0 - [#44](https://github.com/openfisca/openfisca-tunisia/pull/44)
+* Update to openfisca-core v20 syntax
+* Rename `ir_brut` to `impot_revenu_brut`
+* Rename `rni` to `revenu_net_imposable`
+
+## 0.10.2 - [#39](https://github.com/openfisca/openfisca-tunisia/pull/39)
+* Add installation instructions
+* Translate revenus/activite/non_salarie.py labels to arabic
+
 ## 0.10.2 - [#39](https://github.com/openfisca/openfisca-tunisia/pull/39)
 * Add installation instructions
 * Translate revenus/activite/non_salarie.py labels to arabic

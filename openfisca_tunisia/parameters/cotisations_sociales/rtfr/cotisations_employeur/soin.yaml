@@ -1,0 +1,14 @@
+description: Soins
+brackets:
+- rate:
+    2002-03-12:
+      value: 0.016667
+  threshold:
+    2002-03-12:
+      value: 0.0
+- rate:
+    2002-03-12:
+      value: 0.0
+  threshold:
+    2002-03-12:
+      value: 0.66

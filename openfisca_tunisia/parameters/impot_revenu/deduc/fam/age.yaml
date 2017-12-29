@@ -1,0 +1,5 @@
+description: Age limite (exclu) des enfants à charge
+unit: year
+values:
+  1990-01-01:
+    value: 20

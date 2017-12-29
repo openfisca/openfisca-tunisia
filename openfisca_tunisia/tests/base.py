@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from openfisca_core.reforms import Reform, compose_reforms
+from openfisca_core.reforms import Reform
 from openfisca_core.tools import assert_near
 
 from .. import TunisiaTaxBenefitSystem
 from ..reforms import (
     plf_2017,
-
     )
+
+import logging
+log = logging.getLogger(__name__)
 
 __all__ = [
     'assert_near',
@@ -30,7 +32,8 @@ reform_list = {
 # Only use the following reform if scipy can be imported
 try:
     import scipy
-except ImportError:
+except ImportError as e:
+    log.warn(u'Failed to import "scipy" library. {}'.format(e.error))
     scipy = None
 
 if scipy is not None:
@@ -38,31 +41,13 @@ if scipy is not None:
     reform_list['de_net_a_brut'] = de_net_a_brut.de_net_a_brut
 
 
-reform_by_full_key = {}
-
-
 def get_cached_composed_reform(reform_keys, tax_benefit_system):
-    full_key = '.'.join(
-        [tax_benefit_system.full_key] + reform_keys
-        if isinstance(tax_benefit_system, Reform)
-        else reform_keys
-        )
-    composed_reform = reform_by_full_key.get(full_key)
+    if reform_keys:
+        for reform in reform_keys:
+            reform_path = "openfisca_tunisia.reforms." + reform + "." + reform
+            tax_benefit_system = tax_benefit_system.apply_reform(reform_path)
 
-    if composed_reform is None:
-        reforms = []
-        for reform_key in reform_keys:
-            assert reform_key in reform_list, \
-                'Error loading cached reform "{}" in build_reform_functions'.format(reform_key)
-            reform = reform_list[reform_key]
-            reforms.append(reform)
-        composed_reform = compose_reforms(
-            reforms = reforms,
-            tax_benefit_system = tax_benefit_system,
-            )
-        assert full_key == composed_reform.full_key, (full_key, composed_reform.full_key)
-        reform_by_full_key[full_key] = composed_reform
-    return composed_reform
+    return tax_benefit_system
 
 
 def get_cached_reform(reform_key, tax_benefit_system):

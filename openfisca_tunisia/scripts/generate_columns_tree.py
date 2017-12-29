@@ -65,7 +65,7 @@ def cleanup_tree(entity, tree):
     for child in (tree.get('children') or []):
         if isinstance(child, basestring):
             # Child is a column name.
-            column = tax_benefit_system.column_by_name.get(child)
+            column = tax_benefit_system.variables.get(child)
             if column is not None and column.entity == entity and is_valid_input_column(column):
                 children.append(child)
         else:
@@ -83,7 +83,7 @@ def cleanup_tree(entity, tree):
 
 def is_valid_input_column(column):
     return column.name not in ('age', 'idfam', 'idfoy', 'idmen', 'quifam', 'quifoy', 'quimen') \
-        and column.formula_class is None and not column.survey_only
+        and variable.formula is None and not column.survey_only
 
 
 def iter_placed_tree(tree):
@@ -119,7 +119,7 @@ def main():
         for column_name in iter_placed_tree(columns_name_tree)
         )
 
-    for name, column in tax_benefit_system.column_by_name.iteritems():
+    for name, column in tax_benefit_system.variables.iteritems():
         if not is_valid_input_column(column):
             continue
         if name in placed_columns_name:
@@ -190,7 +190,7 @@ def write_tree(tree_file, tree, level = 1):
                 if isinstance(child, basestring):
                     tree_file.write(pretty_printer.pformat(child))
                     tree_file.write(',')
-                    column = tax_benefit_system.column_by_name[child]
+                    column = tax_benefit_system.variables[child]
                     label = column.label
                     if label is not None:
                         label = label.strip() or None

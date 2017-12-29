@@ -2,9 +2,10 @@
 
 
 import datetime
-import numpy as np
 
-from openfisca_tunisia.tests.base import tax_benefit_system
+from openfisca_tunisia import TunisiaTaxBenefitSystem
+
+tax_benefit_system = TunisiaTaxBenefitSystem()
 
 
 def check_1_parent(year = 2011):

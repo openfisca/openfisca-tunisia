@@ -1,0 +1,16 @@
+description: Assurance Maladie
+brackets:
+- rate:
+    1960-01-01:
+      value: 0.0304
+    2007-07-01:
+      value: 0.0397
+    2008-07-01:
+      value: 0.049
+    2009-07-01:
+      value: 0.0583
+    2010-07-01:
+      value: 0.0675
+  threshold:
+    1960-01-01:
+      value: 0

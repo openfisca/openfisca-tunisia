@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.10.2',
+    version = '0.11.0',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.fr',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -39,7 +39,7 @@ setup(
             ],
         ),
     install_requires = [
-        'OpenFisca-Core >= 14.0.1, < 15.0',
+        'OpenFisca-Core >= 20.0, < 21.0',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],

@@ -1,0 +1,8 @@
+description: Prestations familiales
+brackets:
+- rate:
+    1960-01-01:
+      value: 0.03
+  threshold:
+    1960-01-01:
+      value: 0

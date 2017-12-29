@@ -11,7 +11,7 @@ ALL = [x[1] for x in QUIMEN]
 
 
 class impots_directs(Variable):
-    column = FloatCol()
+    value_type = float
     entity = Individu
     label = u"Impôts directs"
     definition_period = YEAR
@@ -23,14 +23,14 @@ class impots_directs(Variable):
 
 
 class prestations_sociales(Variable):
-    column = IntCol
+    value_type = int
     entity = Individu
     label = u"Prestations sociales"
     definition_period = YEAR
 
 
 class revenu_disponible(Variable):
-    column = FloatCol()
+    value_type = float
     entity = Menage
     label = u"Revenu disponible du ménage"
     definition_period = YEAR
@@ -41,7 +41,7 @@ class revenu_disponible(Variable):
 
 
 class revenu_disponible_individuel(Variable):
-    column = FloatCol()
+    value_type = float
     entity = Individu
     label = u"Revenu disponible individuel"
     definition_period = YEAR
@@ -57,7 +57,7 @@ class revenu_disponible_individuel(Variable):
 
 
 class revenus_du_capital(Variable):
-    column = FloatCol()
+    value_type = float
     entity = Individu
     label = u"Revenus du capital"
     definition_period = YEAR
@@ -68,7 +68,7 @@ class revenus_du_capital(Variable):
 
 
 class revenus_du_travail(Variable):
-    column = FloatCol()
+    value_type = float
     entity = Individu
     label = u"Revenus du travail"
     definition_period = YEAR

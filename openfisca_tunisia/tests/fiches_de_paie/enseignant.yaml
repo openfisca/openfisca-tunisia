@@ -1,6 +1,6 @@
 - name: "Enseignant 2016-04"
   period: 2016-04
-  absolute_error_margin: 0.5
+  absolute_error_margin: 1
   input_variables:
     categorie_salarie: 8
     salaire_de_base: 657
@@ -11,5 +11,17 @@
     deces_salarie: -17.026
     maladie_salarie: -46.823
     ugtt: -3
-    # impot_revenu: 256.090
-    # salaire_net_a_payer: 1240.109
+    irpp_mensuel_salarie: -256.090
+    salaire_net_a_payer: 1240.109
+
+
+- name: "Enseignant 2016-04"
+  period: 2016
+  absolute_error_margin: 12
+  input_variables:
+    categorie_salarie: 8
+    salaire_de_base: 12 * 657
+    primes: 12 * (190 + 752 + 57 + 46.666)
+  output_variables:
+    irpp:
+       2016: -12 * 256.090

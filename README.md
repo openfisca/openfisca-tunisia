@@ -141,11 +141,21 @@ nosetests openfisca_tunisia/tests/core_tests.py:test_1_parent
 
 ### Test yaml
 
-Le format d'un test yaml est décrit dans la [documentation officielle](http://openfisca.org/doc/coding-the-legislation/writing_yaml_tests.html).  
+Le format d'un test yaml est décrit dans la [section YAML tests](http://openfisca.org/doc/coding-the-legislation/writing_yaml_tests.html) de la documentation officielle.  
 Ainsi, si vous souhaitez exécuter le test yaml `openfisca_tunisia/tests/formulas/irpp.yaml`, utilisez la commande :
 
 ```
 openfisca-run-test -c openfisca_tunisia openfisca_tunisia/tests/formulas/irpp.yaml 
+```
+
+Afin de le tester avec un debugger, ajoutez un point d'arrêt dans le code python appelé par le test avec :
+```
+import nose.tools; nose.tools.set_trace(); import ipdb; ipdb.set_trace()
+```
+
+Et exécutez le test yaml avec `nosetests` :
+```
+nosetests openfisca_tunisia/tests/test_yaml.py openfisca_tunisia/tests/formulas/irpp.yaml
 ```
 
 ### Tout tester
@@ -155,6 +165,8 @@ L'ensemble des tests définis dans OpenFisca-Tunisia peut être démarré grâce
 ```
 make test
 ```
+
+Pour en savoir plus, voir [la section Tests](http://openfisca.org/doc/contribute/tests.html) de la documentation officielle.
 
 ## Web API
 

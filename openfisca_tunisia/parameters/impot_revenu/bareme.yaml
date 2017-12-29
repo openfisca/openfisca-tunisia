@@ -1,0 +1,62 @@
+description: Tranches de l'IR
+brackets:
+- rate:
+    1990-01-01:
+      value: 0
+    2017-01-01:
+      value: 0
+  threshold:
+    1990-01-01:
+      value: 0
+    2017-01-01:
+      value: 0
+- rate:
+    1990-01-01:
+      value: 0.15
+    2017-01-01:
+      value: 0.15
+  threshold:
+    1990-01-01:
+      value: 1500
+    2017-01-01:
+      value: 1500
+- rate:
+    1990-01-01:
+      value: 0.2
+    2017-01-01:
+      value: 0.2
+  threshold:
+    1990-01-01:
+      value: 5000
+    2017-01-01:
+      value: 5000
+- rate:
+    1990-01-01:
+      value: 0.25
+    2017-01-01:
+      value: 0.25
+  threshold:
+    1990-01-01:
+      value: 10000
+    2017-01-01:
+      value: 10000
+- rate:
+    1990-01-01:
+      value: 0.3
+    2017-01-01:
+      value: 0.3
+  threshold:
+    1990-01-01:
+      value: 20000
+    2017-01-01:
+      value: 20000
+- rate:
+    1990-01-01:
+      value: 0.35
+    2017-01-01:
+      value: 0.35
+  threshold:
+    1990-01-01:
+      value: 50000
+    2017-01-01:
+      value: 50000
