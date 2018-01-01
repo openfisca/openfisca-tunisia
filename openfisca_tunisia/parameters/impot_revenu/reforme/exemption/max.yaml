@@ -1,5 +1,0 @@
-description: Revenu imposable maximal exempté
-unit: currency
-values:
-  2007-01-01:
-    value: 5000

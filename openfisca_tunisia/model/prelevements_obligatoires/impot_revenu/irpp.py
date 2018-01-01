@@ -3,7 +3,7 @@
 
 from __future__ import division
 
-from numpy import logical_or as or_, maximum as max_, minimum as min_
+from numpy import logical_or as or_
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
@@ -594,6 +594,24 @@ class impot_revenu_brut(Variable):
         impot_revenu_brut = - bareme.calc(revenu_net_imposable)
         return impot_revenu_brut
 
+class exoneration(Variable):
+    value_type = bool
+    entity = FoyerFiscal
+    label = u"Exoneration de l'impôt sur le revenu des personnes physiques"
+    definition_period = YEAR
+    end = '2016-12-31'
+
+    def formula_2014(foyer_fiscal, period, parameters):
+        # Les éligibles ne doivent percevori que des salaires et des pensions
+        rng = foyer_fiscal('rng', period = period)
+        tspr = foyer_fiscal('tspr', period = period)
+        eligble = (rng == tspr)
+        # Condition de revenu
+        deduction_famille = foyer_fiscal('deduction_famille', period = period)
+        condition_de_revenu = (
+            rng - deduction_famille
+            ) <= parameters(period.start).impot_revenu.exoneration.seuil
+        return eligble * condition_de_revenu
 
 class irpp(Variable):
     value_type = float
@@ -603,8 +621,9 @@ class irpp(Variable):
 
     def formula(foyer_fiscal, period):
         impot_revenu_brut = foyer_fiscal('impot_revenu_brut', period = period)
-        irpp = impot_revenu_brut
-        return irpp
+        exoneration = foyer_fiscal('exoneration', period = period)
+        return impot_revenu_brut * not_(exoneration)
+
 
 
 class irpp_mensuel_salarie(Variable):
@@ -620,7 +639,6 @@ class irpp_mensuel_salarie(Variable):
         return calcule_impot_revenu_brut(
             salaire_imposable, deduction_famille_annuelle, period, parameters,
             )
-
 
 # Utils
 
@@ -638,6 +656,11 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
         revenu_assimile_salaire_apres_abattement = max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
     bareme = parameters(period.start).impot_revenu.bareme
 
-    return - bareme.calc(
+    if 2014 <= period.start.year <= 2016:
+        non_exonere = (
+            (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
+            ) > parameters(period.start).impot_revenu.exoneration.seuil
+
+    return - 1.0 * non_exonere * bareme.calc(
         (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
         ) / 12
