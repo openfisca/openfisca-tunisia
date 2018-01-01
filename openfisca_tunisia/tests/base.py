@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from openfisca_core.reforms import Reform
 from openfisca_core.tools import assert_near
 
 from .. import TunisiaTaxBenefitSystem
-from ..reforms import (
-    plf_2017,
-    )
+# from ..reforms import (
+#     )
 
 import logging
 log = logging.getLogger(__name__)
@@ -25,7 +23,6 @@ tax_benefit_system = TunisiaTaxBenefitSystem()
 # Reforms cache, used by long scripts like test_yaml.py
 # The reforms commented haven't been adapted to the new core API yet.
 reform_list = {
-    'plf_2017': plf_2017.plf_2017,
     }
 
 
