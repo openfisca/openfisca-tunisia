@@ -10,6 +10,8 @@ brackets:
       value: 0
     2017-01-01:
       value: 0
+    2018-01-01:
+      value: 0.01
 - rate:
     1990-01-01:
       value: 0.15
@@ -52,7 +54,7 @@ brackets:
     2017-01-01:
       value: 0.35
     2018-01-01:
-      value: 0.35
+      value: 0.36
   threshold:
     1990-01-01:
       value: 20000
