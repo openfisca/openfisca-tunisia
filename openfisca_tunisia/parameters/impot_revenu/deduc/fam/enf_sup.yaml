@@ -3,3 +3,7 @@ unit: currency
 values:
   1990-01-01:
     value: 300
+  2011-01-01:  # TODO à corriger si besoin
+    value: 600
+  1990-01-01:
+    value: 1000

@@ -8,3 +8,7 @@ values:
     value: 600
   2005-01-01:
     value: 750
+  2011-01-01:  # TODO modifier la date si nécessaire
+    value: 1000
+  2014-01-01:
+    value: 1200
