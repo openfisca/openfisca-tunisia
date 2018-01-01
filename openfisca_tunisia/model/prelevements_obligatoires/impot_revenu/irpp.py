@@ -19,7 +19,7 @@ class nb_enf(Variable):
         TODO: fixme
         '''
         age = foyer_fiscal.members('age', period = period)
-        P = parameters(period.start).impot_revenu.deduc.fam
+        P = parameters(period.start).impot_revenu.deductions.fam
         # res =+ (
         #    (ag < 20) +
         #    (ag < 25)*not_(boursier)*()
@@ -268,7 +268,7 @@ class fon_forf_bati(Variable):
         foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_reliquat', period = period)
         foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_frais', period = period)
         foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_taxe', period = period)
-        P = parameters(period.start).impot_revenu.fon.bati.deduc_frais
+        P = parameters(period.start).impot_revenu.foncier.bati.deduction_frais
         return max_(
             0,
             foncier_forfaitaire_batis_recettes * (1 - P) - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
@@ -478,7 +478,7 @@ class deduction_famille(Variable):
         chef_de_famille = foyer_fiscal('chef_de_famille', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
         # nb_parents = foyer_fiscal('nb_parents', period = period)
-        P = parameters(period.start).impot_revenu.deduc.fam
+        P = parameters(period.start).impot_revenu.deductions.fam
         #  chef de famille
         chef_de_famille = P.chef_de_famille * chef_de_famille
 
@@ -516,7 +516,7 @@ class deduction_assurance_vie(Variable):
         somme_primes_assurance_vie = foyer_fiscal.sum(primes_assurance_vie)
         marie = foyer_fiscal.declarant_principal('statut_marital', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
-        P = parameters(period.start).impot_revenu.deduc.assurance_vie
+        P = parameters(period.start).impot_revenu.deductions.assurance_vie
         deduction = min_(somme_primes_assurance_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
         return deduction
 
@@ -552,7 +552,7 @@ class deduction_assurance_vie(Variable):
 #    pour une période minimale de trois ans.
 
 
-class deduc_smig(Variable):
+class deduction_smig(Variable):
     value_type = float
     entity = FoyerFiscal
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
@@ -591,10 +591,7 @@ class impot_revenu_brut(Variable):
     def formula(foyer_fiscal, period, parameters):
         revenu_net_imposable = foyer_fiscal('revenu_net_imposable', period = period)
         bareme = parameters(period.start).impot_revenu.bareme
-        # exemption = parameters(period.start).impot_revenu.reforme.exemption
-        # revenu_net_imposable_apres_exemption = revenu_net_imposable * (exemption.active == 0) + revenu_net_imposable * (exemption.active == 1) * (revenu_net_imposable > exemption.max)
-        revenu_net_imposable_apres_exemption = revenu_net_imposable
-        impot_revenu_brut = - bareme.calc(revenu_net_imposable_apres_exemption)
+        impot_revenu_brut = - bareme.calc(revenu_net_imposable)
         return impot_revenu_brut
 
 
