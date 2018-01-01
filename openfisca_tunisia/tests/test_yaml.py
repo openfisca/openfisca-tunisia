@@ -11,9 +11,9 @@ from openfisca_tunisia.tests import base
 nottest(generate_tests)
 
 options_by_dir = {
-    'reforms/plf_2017': {
-        'reforms': ['plf_2017'],
-        },
+    # 'reforms/plf_2017': {
+    #     'reforms': ['plf_2017'],
+    #     },
     'fiches_de_paie': {},
     'formulas': {},
     'scipy': {
