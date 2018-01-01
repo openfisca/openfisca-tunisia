@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from openfisca_core.reforms import Reform
 from openfisca_core.tools import assert_near
-
 from .. import TunisiaTaxBenefitSystem
 from ..reforms import (
     plf_2017,
