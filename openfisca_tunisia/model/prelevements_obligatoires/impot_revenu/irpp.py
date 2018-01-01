@@ -656,6 +656,7 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
         revenu_assimile_salaire_apres_abattement = max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
     bareme = parameters(period.start).impot_revenu.bareme
 
+    non_exonere = revenu_assimile_salaire_apres_abattement >= 0
     if 2014 <= period.start.year <= 2016:
         non_exonere = (
             (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
