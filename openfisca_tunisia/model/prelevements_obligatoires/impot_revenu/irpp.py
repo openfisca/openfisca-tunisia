@@ -602,7 +602,7 @@ class exoneration(Variable):
     end = '2016-12-31'
 
     def formula_2014(foyer_fiscal, period, parameters):
-        # Les éligibles ne doivent percevori que des salaires et des pensions
+        # Les éligibles ne doivent percevoir que des salaires et des pensions
         rng = foyer_fiscal('rng', period = period)
         tspr = foyer_fiscal('tspr', period = period)
         eligble = (rng == tspr)
