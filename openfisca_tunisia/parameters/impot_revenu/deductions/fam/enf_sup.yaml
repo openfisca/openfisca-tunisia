@@ -3,7 +3,9 @@ unit: currency
 values:
   1990-01-01:
     value: 300
-  2011-01-01:  # TODO à corriger si besoin
+  2010-01-01:
     value: 600
-  1990-01-01:
+    reference: Article 40 de la loi no 2009-71 du 21-12-2004 portant Loi de finances 2010
+  2014-01-01:
     value: 1000
+    reference: Loi de finances 2014
