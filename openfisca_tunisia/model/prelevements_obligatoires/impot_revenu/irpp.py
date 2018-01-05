@@ -264,10 +264,14 @@ class fon_forf_bati(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_recettes', period = period)
-        foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_reliquat', period = period)
-        foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_frais', period = period)
-        foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_taxe', period = period)
+        foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_recettes', period = period)
+        foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_reliquat', period = period)
+        foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_frais', period = period)
+        foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_taxe', period = period)
         P = parameters(period.start).impot_revenu.foncier.bati.deduction_frais
         return max_(
             0,
@@ -282,10 +286,16 @@ class fon_forf_nbat(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        foncier_forfaitaire_non_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_recettes', period = period)
-        foncier_forfaitaire_non_batis_depenses = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_depenses', period = period)
-        foncier_forfaitaire_non_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_taxe', period = period)
-        return max_(0, foncier_forfaitaire_non_batis_recettes - foncier_forfaitaire_non_batis_depenses - foncier_forfaitaire_non_batis_taxe)
+        foncier_forfaitaire_non_batis_recettes = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_non_batis_recettes', period = period)
+        foncier_forfaitaire_non_batis_depenses = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_non_batis_depenses', period = period)
+        foncier_forfaitaire_non_batis_taxe = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_non_batis_taxe', period = period)
+        return max_(
+            foncier_forfaitaire_non_batis_recettes - foncier_forfaitaire_non_batis_depenses - foncier_forfaitaire_non_batis_taxe,
+            0
+            )
 
 
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
@@ -594,6 +604,7 @@ class impot_revenu_brut(Variable):
         impot_revenu_brut = - bareme.calc(revenu_net_imposable)
         return impot_revenu_brut
 
+
 class exoneration(Variable):
     value_type = bool
     entity = FoyerFiscal
@@ -613,6 +624,7 @@ class exoneration(Variable):
             ) <= parameters(period.start).impot_revenu.exoneration.seuil
         return eligble * condition_de_revenu
 
+
 class irpp(Variable):
     value_type = float
     entity = FoyerFiscal
@@ -623,7 +635,6 @@ class irpp(Variable):
         impot_revenu_brut = foyer_fiscal('impot_revenu_brut', period = period)
         exoneration = foyer_fiscal('exoneration', period = period)
         return impot_revenu_brut * not_(exoneration)
-
 
 
 class irpp_mensuel_salarie(Variable):
@@ -640,6 +651,7 @@ class irpp_mensuel_salarie(Variable):
             salaire_imposable, deduction_famille_annuelle, period, parameters,
             )
 
+
 # Utils
 
 def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, period, parameters):
@@ -653,7 +665,8 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
             revenu_assimile_salaire * (1 - tspr.abat_sal) - max_(smig * tspr.smig,
                 (revenu_assimile_salaire <= tspr.smig_ext) * tspr.smig), 0)
     else:
-        revenu_assimile_salaire_apres_abattement = max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
+        revenu_assimile_salaire_apres_abattement = max_(
+            revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
     bareme = parameters(period.start).impot_revenu.bareme
 
     non_exonere = revenu_assimile_salaire_apres_abattement >= 0
