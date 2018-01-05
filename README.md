@@ -17,7 +17,7 @@ This is the source code of the Tunisia module.
 
 A demo is available thanks to the [Binder project](https://mybinder.org/).
 
-To launch the demo, click here: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder) then wait a couple of seconds to be redirected to a Jupyter Notebook home page, displaying a list of files. In this list, click on `demo.ipynb`. Then you'll be in a demo notebook, where you'll be able to play with the openfisca-tunisia.
+To launch the demo, click here: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb) then wait a couple of seconds to be redirected to a Jupyter Notebook. Then you'll be in a demo notebook, where you'll be able to play with the openfisca-tunisia.
 
 
 ## Contribution & Contact - المساهمة والاتصال بنا
