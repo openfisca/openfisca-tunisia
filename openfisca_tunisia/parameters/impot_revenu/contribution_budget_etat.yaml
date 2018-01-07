@@ -1,0 +1,44 @@
+description: Contributions au budget de l'Etat (montant de la contribution en jour de salaire ou pension brut par tranche de revenu annuel net)
+brackets:
+- amount:
+    2014-01-01:
+      value: 0
+  threshold:
+    2014-01-01:
+      value: 0
+- amount:
+    2014-01-01:
+      value: 1
+  threshold:
+    2014-01-01:
+      value: 12000
+- amount:
+    2014-01-01:
+      value: 2
+  threshold:
+    2014-01-01:
+      value: 20000
+- amount:
+    2014-01-01:
+      value: 3
+  threshold:
+    2014-01-01:
+      value: 25000
+- amount:
+    2014-01-01:
+      value: 4
+  threshold:
+    2014-01-01:
+      value: 30000
+- amount:
+    2014-01-01:
+      value: 5
+  threshold:
+    2014-01-01:
+      value: 35000
+- amount:
+    2014-01-01:
+      value: 6
+  threshold:
+    2014-01-01:
+      value: 40000

@@ -3,7 +3,7 @@
 
 from __future__ import division
 
-from numpy import logical_or as or_, maximum as max_, minimum as min_
+from numpy import logical_or as or_
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
@@ -19,7 +19,7 @@ class nb_enf(Variable):
         TODO: fixme
         '''
         age = foyer_fiscal.members('age', period = period)
-        P = parameters(period.start).impot_revenu.deduc.fam
+        P = parameters(period.start).impot_revenu.deductions.fam
         # res =+ (
         #    (ag < 20) +
         #    (ag < 25)*not_(boursier)*()
@@ -264,11 +264,15 @@ class fon_forf_bati(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_recettes', period = period)
-        foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_reliquat', period = period)
-        foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_frais', period = period)
-        foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_batis_taxe', period = period)
-        P = parameters(period.start).impot_revenu.fon.bati.deduc_frais
+        foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_recettes', period = period)
+        foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_reliquat', period = period)
+        foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_frais', period = period)
+        foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_batis_taxe', period = period)
+        P = parameters(period.start).impot_revenu.foncier.bati.deduction_frais
         return max_(
             0,
             foncier_forfaitaire_batis_recettes * (1 - P) - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
@@ -282,10 +286,16 @@ class fon_forf_nbat(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        foncier_forfaitaire_non_batis_recettes = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_recettes', period = period)
-        foncier_forfaitaire_non_batis_depenses = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_depenses', period = period)
-        foncier_forfaitaire_non_batis_taxe = foyer_fiscal.declarant_principal('foncier_forfaitaire_non_batis_taxe', period = period)
-        return max_(0, foncier_forfaitaire_non_batis_recettes - foncier_forfaitaire_non_batis_depenses - foncier_forfaitaire_non_batis_taxe)
+        foncier_forfaitaire_non_batis_recettes = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_non_batis_recettes', period = period)
+        foncier_forfaitaire_non_batis_depenses = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_non_batis_depenses', period = period)
+        foncier_forfaitaire_non_batis_taxe = foyer_fiscal.declarant_principal(
+            'foncier_forfaitaire_non_batis_taxe', period = period)
+        return max_(
+            foncier_forfaitaire_non_batis_recettes - foncier_forfaitaire_non_batis_depenses - foncier_forfaitaire_non_batis_taxe,
+            0
+            )
 
 
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
@@ -478,7 +488,7 @@ class deduction_famille(Variable):
         chef_de_famille = foyer_fiscal('chef_de_famille', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
         # nb_parents = foyer_fiscal('nb_parents', period = period)
-        P = parameters(period.start).impot_revenu.deduc.fam
+        P = parameters(period.start).impot_revenu.deductions.fam
         #  chef de famille
         chef_de_famille = P.chef_de_famille * chef_de_famille
 
@@ -516,7 +526,7 @@ class deduction_assurance_vie(Variable):
         somme_primes_assurance_vie = foyer_fiscal.sum(primes_assurance_vie)
         marie = foyer_fiscal.declarant_principal('statut_marital', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
-        P = parameters(period.start).impot_revenu.deduc.assurance_vie
+        P = parameters(period.start).impot_revenu.deductions.assurance_vie
         deduction = min_(somme_primes_assurance_vie, P.plaf + marie * P.conj_plaf + nb_enf * P.enf_plaf)
         return deduction
 
@@ -552,7 +562,7 @@ class deduction_assurance_vie(Variable):
 #    pour une période minimale de trois ans.
 
 
-class deduc_smig(Variable):
+class deduction_smig(Variable):
     value_type = float
     entity = FoyerFiscal
     label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
@@ -591,11 +601,28 @@ class impot_revenu_brut(Variable):
     def formula(foyer_fiscal, period, parameters):
         revenu_net_imposable = foyer_fiscal('revenu_net_imposable', period = period)
         bareme = parameters(period.start).impot_revenu.bareme
-        # exemption = parameters(period.start).impot_revenu.reforme.exemption
-        # revenu_net_imposable_apres_exemption = revenu_net_imposable * (exemption.active == 0) + revenu_net_imposable * (exemption.active == 1) * (revenu_net_imposable > exemption.max)
-        revenu_net_imposable_apres_exemption = revenu_net_imposable
-        impot_revenu_brut = - bareme.calc(revenu_net_imposable_apres_exemption)
+        impot_revenu_brut = - bareme.calc(revenu_net_imposable)
         return impot_revenu_brut
+
+
+class exoneration(Variable):
+    value_type = bool
+    entity = FoyerFiscal
+    label = u"Exoneration de l'impôt sur le revenu des personnes physiques"
+    definition_period = YEAR
+    end = '2016-12-31'
+
+    def formula_2014(foyer_fiscal, period, parameters):
+        # Les éligibles ne doivent percevoir que des salaires et des pensions
+        rng = foyer_fiscal('rng', period = period)
+        tspr = foyer_fiscal('tspr', period = period)
+        eligble = (rng == tspr)
+        # Condition de revenu
+        deduction_famille = foyer_fiscal('deduction_famille', period = period)
+        condition_de_revenu = (
+            rng - deduction_famille
+            ) <= parameters(period.start).impot_revenu.exoneration.seuil
+        return eligble * condition_de_revenu
 
 
 class irpp(Variable):
@@ -606,8 +633,8 @@ class irpp(Variable):
 
     def formula(foyer_fiscal, period):
         impot_revenu_brut = foyer_fiscal('impot_revenu_brut', period = period)
-        irpp = impot_revenu_brut
-        return irpp
+        exoneration = foyer_fiscal('exoneration', period = period)
+        return impot_revenu_brut * not_(exoneration)
 
 
 class irpp_mensuel_salarie(Variable):
@@ -638,9 +665,16 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
             revenu_assimile_salaire * (1 - tspr.abat_sal) - max_(smig * tspr.smig,
                 (revenu_assimile_salaire <= tspr.smig_ext) * tspr.smig), 0)
     else:
-        revenu_assimile_salaire_apres_abattement = max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
+        revenu_assimile_salaire_apres_abattement = max_(
+            revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
     bareme = parameters(period.start).impot_revenu.bareme
 
-    return - bareme.calc(
+    non_exonere = revenu_assimile_salaire_apres_abattement >= 0
+    if 2014 <= period.start.year <= 2016:
+        non_exonere = (
+            (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
+            ) > parameters(period.start).impot_revenu.exoneration.seuil
+
+    return - 1.0 * non_exonere * bareme.calc(
         (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
         ) / 12
