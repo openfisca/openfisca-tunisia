@@ -85,7 +85,7 @@
 
 
 
-- name: "Salarié 5000 TND chef de famille"
+- name: "Salarié brut > 5000 TND net < 5000 TND car chef de famille exonéré en 2014"
   period: 2014
   absolute_error_margin: 0.5
   input_variables:
