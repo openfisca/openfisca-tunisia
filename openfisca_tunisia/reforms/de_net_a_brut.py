@@ -52,6 +52,7 @@ class salaire_imposable(Variable):
             return individu.empty_array()
 
         simulation = individu.simulation
+        simulation.period = period
         # List of variables already calculated. We will need it to remove their holders,
         # that might contain undesired cache
         requested_variable_names = simulation.requested_periods_by_variable_name.keys()

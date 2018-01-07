@@ -1,0 +1,7 @@
+- name: "De net a brut pour individu à net à payer de 14700 TND"
+  period: 2017-12
+  absolute_error_margin: 0.5
+  input_variables:
+    salaire_net_a_payer: 14700 / 12
+  output_variables:
+    salaire_imposable: 17710 / 12
