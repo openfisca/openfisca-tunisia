@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.12.0 - [#50](https://github.com/openfisca/openfisca-tunisia/pull/50)
+* Update barème impot sur le revenu
+* Adopt long names ofr some parameters (far from completed)
+* Update value of various déductions familiales
+
 ## 0.11.0 - [#44](https://github.com/openfisca/openfisca-tunisia/pull/44)
 * Update to openfisca-core v20 syntax
 * Rename `ir_brut` to `impot_revenu_brut`
