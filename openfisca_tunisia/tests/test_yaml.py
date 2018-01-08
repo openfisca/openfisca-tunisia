@@ -14,6 +14,9 @@ options_by_dir = {
     'reforms/plf_2017': {
         'reforms': ['plf_2017'],
         },
+    'reforms/de_net_a_brut': {
+        'reforms': ['de_net_a_brut'],
+        },
     'fiches_de_paie': {},
     'formulas': {},
     'scipy': {
