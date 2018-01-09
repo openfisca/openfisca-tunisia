@@ -153,10 +153,7 @@ Afin de le tester avec un debugger, ajoutez un point d'arrêt dans le code pytho
 import nose.tools; nose.tools.set_trace(); import ipdb; ipdb.set_trace()
 ```
 
-Et exécutez le test yaml avec `nosetests` :
-```
-nosetests openfisca_tunisia/tests/test_yaml.py openfisca_tunisia/tests/formulas/irpp.yaml
-```
+Et exécutez à nouveau le test yaml.
 
 ### Tout tester
 
