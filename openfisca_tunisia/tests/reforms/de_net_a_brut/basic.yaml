@@ -1,6 +1,6 @@
 - name: "De net a brut pour individu à net à payer de 14700 TND"
   reforms: openfisca_tunisia.reforms.de_net_a_brut.de_net_a_brut
-  period: 2017-12
+  period: 2016-12
   absolute_error_margin: 0.5
   input_variables:
     salaire_net_a_payer: 14700 / 12
