@@ -81,6 +81,7 @@ class chef_de_famille(Variable):
     entity = FoyerFiscal
     label = u"Indicatrice de chef de famille"
     definition_period = YEAR
+    set_input = set_input_dispatch_by_period
 
     # Du point de vue fiscal, est considéré chef de famille :
     # - L’époux ;

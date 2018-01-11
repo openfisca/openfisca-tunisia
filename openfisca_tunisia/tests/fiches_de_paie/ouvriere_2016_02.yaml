@@ -8,4 +8,4 @@
     assiette_cotisations_sociales: 470.204
     cotisations_salarie: -43.164
     salaire_imposable: 427.040
-    # salaire_net_a_payer: 427.040  Mensualiser l'impôt'
+    salaire_net_a_payer: 427.040

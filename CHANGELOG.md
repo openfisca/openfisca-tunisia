@@ -1,8 +1,12 @@
 # Changelog
 
+## 0.13.0 - [#53](https://github.com/openfisca/openfisca-tunisia/pull/53)
+* Fix `de_net_a_brut` reform
+* Remove python script for yaml testing
+
 ## 0.12.0 - [#50](https://github.com/openfisca/openfisca-tunisia/pull/50)
 * Update barème impot sur le revenu
-* Adopt long names ofr some parameters (far from completed)
+* Adopt long names for some parameters (far from completed)
 * Update value of various déductions familiales
 
 ## 0.11.0 - [#44](https://github.com/openfisca/openfisca-tunisia/pull/44)
