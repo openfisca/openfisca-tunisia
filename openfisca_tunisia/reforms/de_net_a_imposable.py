@@ -79,7 +79,7 @@ class salaire_imposable(Variable):
         return brut_calcule
 
 
-class de_net_a_brut(Reform):
+class de_net_a_imposable(Reform):
     name = u'Inversion du calcul brut -> net'
 
     def apply(self):
