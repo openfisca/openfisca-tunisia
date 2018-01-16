@@ -37,6 +37,9 @@ setup(
         tests = [
             'nose',
             ],
+        notebook = [
+            'matplotlib',
+            ],
         ),
     install_requires = [
         'OpenFisca-Core >= 20.0, < 21.0',

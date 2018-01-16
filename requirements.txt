@@ -1,1 +1,1 @@
---editable .
+--editable .[notebook]
