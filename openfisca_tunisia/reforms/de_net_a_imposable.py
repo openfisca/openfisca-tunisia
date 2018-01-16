@@ -30,7 +30,7 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
     for name in requested_variable_names:
         temp_individu.get_holder(name).delete_arrays()
 
-    # Force recomputing of salaire_net
+    # Force recomputing of salaire_net_a_payer
     temp_individu.get_holder('salaire_net_a_payer').delete_arrays()
     net = temp_individu('salaire_net_a_payer', period)[0]
 
@@ -46,7 +46,7 @@ class salaire_imposable(Variable):
 
 
     def formula(individu, period):
-        # Calcule le salaire brut à partir du salaire net par inversion numérique.
+        # Calcule le salaire imposable à partir du salaire net par inversion numérique.
         net = individu.get_holder('salaire_net_a_payer').get_array(period)
         if net is None:
             return individu.empty_array()
@@ -60,7 +60,7 @@ class salaire_imposable(Variable):
             requested_variable_names.remove(u'salaire_imposable')
         # Clean 'requested_periods_by_variable_name', that is used by -core to check for computation cycles.
         # This variable, salaire_imposable, might have been called from variable X,
-        # that will be calculated again in our iterations to compute the salaire_net requested
+        # that will be calculated again in our iterations to compute the salaire_net_a_payer requested
         # as an input variable, hence producing a cycle error
         simulation.requested_periods_by_variable_name = dict()
 
@@ -69,18 +69,18 @@ class salaire_imposable(Variable):
                 return calculate_net_from(essai, individu, period, requested_variable_names) - net
             return innerfunc
 
-        brut_calcule = \
+        imposable_calcule = \
             fsolve(
                 solve_func(net),
                 net * 1.25,  # on entend souvent parler cette méthode...
                 xtol = 1 / 100  # précision
                 )
 
-        return brut_calcule
+        return imposable_calcule
 
 
 class de_net_a_imposable(Reform):
-    name = u'Inversion du calcul brut -> net'
+    name = u'Inversion du calcul imposable -> net'
 
     def apply(self):
         self.update_variable(salaire_imposable)
