@@ -6,4 +6,5 @@
     salaire_net_a_payer: 1240
     categorie_salarie: 8
   output_variables:
+    salaire_imposable: 1495
     salaire_de_base: 1702
