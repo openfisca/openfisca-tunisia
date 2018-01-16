@@ -1,5 +1,5 @@
 - period: "2011-01"
-  reforms: openfisca_tunisia.reforms.de_net_a_brut.de_net_a_brut
+  reforms: openfisca_tunisia.reforms.de_net_a_imposable.de_net_a_imposable
   relative_error_margin: 0.005
   input_variables:
     salaire_net_a_payer: 14700 / 12

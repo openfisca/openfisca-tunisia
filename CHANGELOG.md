@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.14.0 - [#55](https://github.com/openfisca/openfisca-tunisia/pull/55)
+
+* Rename `de_net_a_brut` reform to `de_net_a_imposable`
+* Create reform `de_net_a_salaire_de_base`
+
 ## 0.13.0 - [#53](https://github.com/openfisca/openfisca-tunisia/pull/53)
 * Fix `de_net_a_brut` reform
 * Remove python script for yaml testing

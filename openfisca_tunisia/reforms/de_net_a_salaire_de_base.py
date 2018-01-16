@@ -14,12 +14,12 @@ except ImportError:
 from .. import entities
 
 
-def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
+def calculate_net_from(salaire_de_base, individu, period, requested_variable_names):
     # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
     # To avoid possible conflicts, remove its function
-    holder = individu.get_holder('salaire_imposable')
+    holder = individu.get_holder('salaire_de_base')
     holder.formula.function = None
-    holder.array = salaire_imposable
+    holder.array = salaire_de_base
 
     # Work in isolation
     temp_simulation = individu.simulation.clone()
@@ -30,14 +30,14 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
     for name in requested_variable_names:
         temp_individu.get_holder(name).delete_arrays()
 
-    # Force recomputing of salaire_net
+    # Force recomputing of salaire_net_a_payer
     temp_individu.get_holder('salaire_net_a_payer').delete_arrays()
     net = temp_individu('salaire_net_a_payer', period)[0]
 
     return net
 
 
-class salaire_imposable(Variable):
+class salaire_de_base(Variable):
     value_type = float
     entity = Individu
     label = u"Salaire imposable"
@@ -46,7 +46,7 @@ class salaire_imposable(Variable):
 
 
     def formula(individu, period):
-        # Calcule le salaire brut à partir du salaire net par inversion numérique.
+        # Calcule le salaire de base à partir du salaire net par inversion numérique.
         net = individu.get_holder('salaire_net_a_payer').get_array(period)
         if net is None:
             return individu.empty_array()
@@ -57,7 +57,7 @@ class salaire_imposable(Variable):
         # that might contain undesired cache
         requested_variable_names = simulation.requested_periods_by_variable_name.keys()
         if requested_variable_names:
-            requested_variable_names.remove(u'salaire_imposable')
+            requested_variable_names.remove(u'salaire_de_base')
         # Clean 'requested_periods_by_variable_name', that is used by -core to check for computation cycles.
         # This variable, salaire_imposable, might have been called from variable X,
         # that will be calculated again in our iterations to compute the salaire_net requested
@@ -69,18 +69,18 @@ class salaire_imposable(Variable):
                 return calculate_net_from(essai, individu, period, requested_variable_names) - net
             return innerfunc
 
-        brut_calcule = \
+        salaire_de_base_calcule = \
             fsolve(
                 solve_func(net),
-                net * 1.25,  # on entend souvent parler cette méthode...
+                net * 1.4,  # first guess
                 xtol = 1 / 100  # précision
                 )
 
-        return brut_calcule
+        return salaire_de_base_calcule
 
 
-class de_net_a_brut(Reform):
+class de_net_a_salaire_de_base(Reform):
     name = u'Inversion du calcul brut -> net'
 
     def apply(self):
-        self.update_variable(salaire_imposable)
+        self.update_variable(salaire_de_base)
