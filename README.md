@@ -26,7 +26,7 @@ Vous accédez ainsi à un démonstrateur modifiable où il vous est possible de 
 <p align='right'>يسمح هذا الدفتر بتجريب الجباية المفتوحة لتونس</p>
 
 A demo is available in a Jupyter Notebook.  
-You will be redirected to it by clicking on the following link (wait a few seconds to load it) :  
+You will be redirected to it by clicking on the following link (wait a few seconds to load it):  
 <code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
 Then you will be in an interactive demo where you will be able to play with openfisca-tunisia.  
 

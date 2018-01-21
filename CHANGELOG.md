@@ -1,8 +1,8 @@
 # Changelog
 
-## 0.14.1
+## 0.14.1 - [#56](https://github.com/openfisca/openfisca-tunisia/pull/56)
 
-* Add binder link
+* Add demo jupyter notebook and binder link
 
 ## 0.14.0 - [#55](https://github.com/openfisca/openfisca-tunisia/pull/55)
 
