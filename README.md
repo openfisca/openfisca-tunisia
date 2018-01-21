@@ -13,12 +13,25 @@ Ceci est le code source du module dédié à la Tunisie.
 [OpenFisca](http://openfisca.org) is a versatile microsimulation free software.
 This is the source code of the Tunisia module.
 
-## Demo
+## Demo - لعبة تجريبية
 
-A demo is available thanks to the [Binder project](https://mybinder.org/).
+Un démonstrateur vous est proposé sous la forme d'un Notebook Jupyter.  
+Vous serez redirigé vers celui-ci en cliquant sur le lien suivant (le chargement prendra quelques secondes) :  
+<code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
+Vous accédez ainsi à un démonstrateur modifiable où il vous est possible de tester openfisca-tunisia.   
 
-To launch the demo, click here: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb) then wait a couple of seconds to be redirected to a Jupyter Notebook. Then you'll be in a demo notebook, where you'll be able to play with the openfisca-tunisia.
+<p align='right'>ستجدون لعبة تجريبية في شكل دفتر جوبيتر على الرابط التالي</p>
 
+<code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
+<p align='right'>يسمح هذا الدفتر بتجريب الجباية المفتوحة لتونس</p>
+
+A demo is available in a Jupyter Notebook.  
+You will be redirected to it by clicking on the following link (wait a few seconds to load it) :  
+<code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
+Then you will be in an interactive demo where you will be able to play with openfisca-tunisia.  
+
+
+> This demo is available thanks to [Binder](https://mybinder.org/) and [Jupyter](http://jupyter.org) projects. 
 
 ## Contribution & Contact - المساهمة والاتصال بنا
 
