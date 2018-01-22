@@ -4,23 +4,43 @@
 
 ## Presentation - التقديم
 
-[OpenFisca](http://openfisca.org) est un logiciel libre de micro-simulation.  
+[OpenFisca](http://openfisca.org) est un logiciel libre de micro-simulation.
 Ceci est le code source du module dédié à la Tunisie.
 
-<p align='right'>الجباية المفتوحة برنامج حر لمحاكاة النظام الجبائي.  
+<p align='right'>الجباية المفتوحة برنامج حر لمحاكاة النظام الجبائي.
  هذا مصدر البرنامج للوحدة الخاصة بتونس</p>
 
-[OpenFisca](http://openfisca.org) is a versatile microsimulation free software.  
+[OpenFisca](http://openfisca.org) is a versatile microsimulation free software.
 This is the source code of the Tunisia module.
 
-## Contribution & Contact - المساهمة والاتصال بنا 
+## Demo - لعبة تجريبية
+
+Un démonstrateur vous est proposé sous la forme d'un Notebook Jupyter.  
+Vous serez redirigé vers celui-ci en cliquant sur le lien suivant (le chargement prendra quelques secondes) :  
+<code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
+Vous accédez ainsi à un démonstrateur modifiable où il vous est possible de tester openfisca-tunisia.   
+
+<p align='right'>ستجدون لعبة تجريبية في شكل دفتر جوبيتر على الرابط التالي</p>
+
+<code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
+<p align='right'>يسمح هذا الدفتر بتجريب الجباية المفتوحة لتونس</p>
+
+A demo is available in a Jupyter Notebook.  
+You will be redirected to it by clicking on the following link (wait a few seconds to load it):  
+<code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
+Then you will be in an interactive demo where you will be able to play with openfisca-tunisia.  
+
+
+> This demo is available thanks to [Binder](https://mybinder.org/) and [Jupyter](http://jupyter.org) projects. 
+
+## Contribution & Contact - المساهمة والاتصال بنا
 
 OpenFisca est un projet de logiciel libre.
 
 Son code source est distribué sous la licence [GNU Affero General Public Licence](http://www.gnu.org/licenses/agpl.html)
 version 3 ou ultérieure (cf. [LICENSE](https://github.com/openfisca/openfisca-tunisia/blob/master/LICENSE)).
 
-N'hésitez pas à rejoindre l'équipe de développement OpenFisca !  
+N'hésitez pas à rejoindre l'équipe de développement OpenFisca !
 Pour en savoir plus, une [documentation](http://openfisca.org/doc/contribute/index.html) est à votre disposition.
 
 
@@ -36,7 +56,7 @@ OpenFisca is a free software project.
 Its source code is distributed under the [GNU Affero General Public Licence](http://www.gnu.org/licenses/agpl.html)
 version 3 or later (see [LICENSE](https://github.com/openfisca/openfisca-tunisia/blob/master/LICENSE) file).
 
-Feel free to join the OpenFisca development team!  
+Feel free to join the OpenFisca development team!
 See the [documentation](http://openfisca.org/doc/contribute/index.html) for more information.
 
 ## Documentation
@@ -52,9 +72,9 @@ Par ailleurs, chaque module de la [famille OpenFisca sur GitHub](https://github.
 
 Sous Unix/macOS/Linux, appliquez les étapes qui suivent dans votre Terminal.
 
-Sous Windows, installez un émulateur de terminal avant de poursuivre.  
-Nous vous conseillons en particulier l'émulateur BASH fourni avec le [gestionnaire de version GIT](https://git-for-windows.github.io). 
-En l'intégrant à un outil tel que [Visual Studio Code](https://code.visualstudio.com), vous aurez un environnement fonctionnel pour travailler sur le code source. 
+Sous Windows, installez un émulateur de terminal avant de poursuivre.
+Nous vous conseillons en particulier l'émulateur BASH fourni avec le [gestionnaire de version GIT](https://git-for-windows.github.io).
+En l'intégrant à un outil tel que [Visual Studio Code](https://code.visualstudio.com), vous aurez un environnement fonctionnel pour travailler sur le code source.
 Néanmoins, vous aurez à effectuer des vérifications complémentaires à ce qui est décrit ci-dessous (telles que vérifier la configuration de votre variable d'environnement %PATH%).
 
 ### Langage Python & Environnement virtuel
@@ -75,8 +95,8 @@ Et installez les éventuelles mises à jour pour la gestion de paquets python av
 sudo pip install --upgrade pip wheel
 ```
 
-Ensuite, afin de créer un environnement de travail propre et pour vous permettre de faire cohabiter plusieurs contextes de travail en python, 
-nous vous conseillons l'utilisation d'environnements virtuels, dits virtualenv.  
+Ensuite, afin de créer un environnement de travail propre et pour vous permettre de faire cohabiter plusieurs contextes de travail en python,
+nous vous conseillons l'utilisation d'environnements virtuels, dits virtualenv.
 Il vous faut alors installer un gestionnaire de virtualenv python (tel que [pew](https://github.com/berdario/pew)).
 
 ```
@@ -96,9 +116,9 @@ Usage :
 
 ### Installation du code source
 
-Afin d'interroger ou de modifier OpenFisca-Tunisia, il vous faut installer le code source en local sur votre ordinateur. 
+Afin d'interroger ou de modifier OpenFisca-Tunisia, il vous faut installer le code source en local sur votre ordinateur.
 
-Nous supposons que vous avez activé votre environnement virtuel et que vous vous situez dans le répertoire où vous souhaitez placer le projet.  
+Nous supposons que vous avez activé votre environnement virtuel et que vous vous situez dans le répertoire où vous souhaitez placer le projet.
 Appliquez alors les commandes suivantes pour récupérer les sources d'OpenFisca-Tunisia et configurer le projet (sans omettre le point en fin de ligne :slightly_smiling_face:) :
 
 ```
@@ -107,7 +127,7 @@ cd openfisca-tunisia
 pip install -e .
 ```
 
-:tada: Félicitations, vous avez désormais terminé l'installation d'OpenFisca Tunisia ! 
+:tada: Félicitations, vous avez désormais terminé l'installation d'OpenFisca Tunisia !
 
 Vous pouvez vérifier que votre environnement fonctionne bien en démarrant les tests tel que décrit dans le paragraphe suivant.
 
@@ -124,7 +144,7 @@ Différents formats de tests sont alors à votre disposition : la rédaction de 
 
 ### Test nose
 
-Un test rédigé en python peut être exécuté avec l'outil `nose`.  
+Un test rédigé en python peut être exécuté avec l'outil `nose`.
 Celui-ci déroulera les fonctions python dont le nom commence par le mot `test`.
 
 Ainsi, pour exécuter le test python `openfisca_tunisia/tests/test_simple.py`, utilisez la commande suivante :
@@ -141,11 +161,11 @@ nosetests openfisca_tunisia/tests/core_tests.py:test_1_parent
 
 ### Test yaml
 
-Le format d'un test yaml est décrit dans la [section YAML tests](http://openfisca.org/doc/coding-the-legislation/writing_yaml_tests.html) de la documentation officielle.  
+Le format d'un test yaml est décrit dans la [section YAML tests](http://openfisca.org/doc/coding-the-legislation/writing_yaml_tests.html) de la documentation officielle.
 Ainsi, si vous souhaitez exécuter le test yaml `openfisca_tunisia/tests/formulas/irpp.yaml`, utilisez la commande :
 
 ```
-openfisca-run-test -c openfisca_tunisia openfisca_tunisia/tests/formulas/irpp.yaml 
+openfisca-run-test -c openfisca_tunisia openfisca_tunisia/tests/formulas/irpp.yaml
 ```
 
 Afin de le tester avec un debugger, ajoutez un point d'arrêt dans le code python appelé par le test avec :
@@ -169,10 +189,10 @@ Pour en savoir plus, voir [la section Tests](http://openfisca.org/doc/contribute
 
 ### API principale (en production)
 
-L'API principale est accessible sur [GitHub](https://github.com/openfisca/openfisca-web-api).  
+L'API principale est accessible sur [GitHub](https://github.com/openfisca/openfisca-web-api).
 Une [documentation générale des points de communication](http://openfisca.org/doc/openfisca-web-api/endpoints.html) est également à votre disposition.
 
 ### Nouvelle API (en développement)
 
-La nouvelle API est intégrée au projet [GitHub du module central OpenFisca-Core](https://github.com/openfisca/openfisca-core).  
+La nouvelle API est intégrée au projet [GitHub du module central OpenFisca-Core](https://github.com/openfisca/openfisca-core).
 Pour en savoir plus, nous vous conseillons la lecture de la [documentation officielle de l'API Preview](http://openfisca.org/doc/openfisca-web-api/preview-api.html).
