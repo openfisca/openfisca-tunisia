@@ -7,44 +7,36 @@ from openfisca_tunisia.model.base import *
 # régime réel
 
 
-TYPE_ACTIVITE = Enum(
-        [
-            u"Néant",
-            u"Commerçant",
-            u"Industriel",
-            u"Prestataire de services",
-            u"Artisan",
-            u"Plus d'une activité",
-            ]
-        )
+class TypesActivite(Enum):
+    neant = u"Néant"
+    commercant = u"Commerçant"
+    industriel = u"Industriel"
+    prestataire_de_services = u"Prestataire de services"
+    artisan = u"Artisan"
+    plus_d_une_activite = u"Plus d'une activité"
 
 
-CADRE_LEGAL_ACTIVITE_ENTREPRISE = Enum(
-        [
-            u"Exportation totale dans le cadre du CII",
-            u"Développement régional",
-            u"Développement agricole",
-            u"Parcs des activités économiques",
-            u"Exportation dans le cadre du droit commun",
-            u"Autres (à préciser)",
-            ]
-        )
+class TypesCadreLegalActiviteEntreprise(Enum):
+    exportation_totale = u"Exportation totale dans le cadre du CII"
+    developpement_regional = u"Développement régional"
+    developpement_agricole = u"Développement agricole"
+    parcs_activites_economiques = u"Parcs des activités économiques"
+    exportation_droit_commun = u"Exportation dans le cadre du droit commun"
+    Autres = u"Autres (à préciser)"
 
 
-STRUCTURE_DECLARATION_INVESTISSEMENT = Enum(
-        [
-            u"API",
-            u"APIA",
-            u"Commissariat régional du développement agricole",
-            u"ONT",
-            u"Autre structure (à préciser)"
-            ],
-        )
+class TypesStructureDeclarationInvestissement(Enum):
+    api = u"API"
+    apia = u"APIA"
+    commissariat_regional_developpement_agricole = u"Commissariat régional du développement agricole"
+    ont = u"ONT"
+    autres = u"Autre structure (à préciser)"
 
 
 class bic_reel(Variable):
     value_type = Enum
-    possible_values = TYPE_ACTIVITE
+    possible_values = TypesActivite
+    default_value = TypesActivite.neant
     entity = Individu
     label = u"Type d’activité (BIC)"
     definition_period = YEAR
@@ -65,8 +57,8 @@ class bic_societes_personnes(Variable):
 
 class cadre_legal(Variable):
     value_type = Enum
-    default_value = 1  # Développement régional
-    possible_values = CADRE_LEGAL_ACTIVITE_ENTREPRISE
+    default_value = TypesCadreLegalActiviteEntreprise.developpement_regional  # Développement régional
+    possible_values = TypesCadreLegalActiviteEntreprise
     entity = Individu
     label = u"Cadre légal de l’activité de l’entreprise"
     definition_period = YEAR
@@ -96,7 +88,8 @@ class bic_societes_personnes_resultat(Variable):
 
 class structure_declaration_investissement(Variable):
     value_type = Enum
-    possible_values = STRUCTURE_DECLARATION_INVESTISSEMENT
+    possible_values = TypesStructureDeclarationInvestissement
+    default_value = TypesStructureDeclarationInvestissement.api
     entity = Individu
     label = u"Structure auprès de laquelle la déclaration d’investissement a été déposée"
     definition_period = YEAR
