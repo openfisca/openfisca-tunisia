@@ -2,7 +2,7 @@
   period: 2016-04
   absolute_error_margin: 1
   input_variables:
-    categorie_salarie: 8
+    categorie_salarie: cnrps_sal
     salaire_de_base: 657
     primes: 190 + 752 + 57 + 46.666
   output_variables:
@@ -19,7 +19,7 @@
   period: 2016
   absolute_error_margin: 12
   input_variables:
-    categorie_salarie: 8
+    categorie_salarie: cnrps_sal
     salaire_de_base: 12 * 657
     primes: 12 * (190 + 752 + 57 + 46.666)
   output_variables:
