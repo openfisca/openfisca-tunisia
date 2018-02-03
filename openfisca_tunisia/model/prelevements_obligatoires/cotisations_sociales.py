@@ -7,7 +7,18 @@ from numpy import zeros
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
-CATEGORIE_SALARIE = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
+
+class TypesRegimeSecuriteSociale(Enum):
+    rsna = u'rsna'
+    rsa = u'rsa'
+    rsaa = u'rsaa'
+    rtns = u'rtns'
+    rtte = u'rtte'
+    re = u're'
+    rtfr = u'rtfr'
+    raci = u'raci'
+    cnrps_sal = u'cnrps_sal'
+    cnrps_pen = u'cnrps_pen'
 
 
 def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, parameters = None):
@@ -17,12 +28,13 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     categorie_salarie = individu('categorie_salarie', period)  # TODO change to regime_salarie
     baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
+    types_regime_securite_sociale = categorie_salarie.possible_values
 
-    for regime_name, regime_index in CATEGORIE_SALARIE:
-        if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime_name]:
+    for regime in types_regime_securite_sociale:
+        if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]:
             continue
         baremes_by_name = getattr(
-            baremes_by_regime[regime_name],
+            baremes_by_regime[regime.name],
             'cotisations_{}'.format(cotisation_type),
             )
 
@@ -43,7 +55,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
         if bareme is not None:
             cotisation += bareme.calc(
-                assiette_cotisations_sociales * (categorie_salarie == regime_index),
+                assiette_cotisations_sociales * (categorie_salarie == regime.index),
                 )
 
     return - cotisation
@@ -64,9 +76,10 @@ class assiette_cotisations_sociales(Variable):
 
 class categorie_salarie(Variable):
     value_type = Enum
-    possible_values = CATEGORIE_SALARIE
+    possible_values = TypesRegimeSecuriteSociale
+    default_value = TypesRegimeSecuriteSociale.rsna
     entity = Individu
-    label = u"Catégorie de salarié"
+    label = u"Régime de sécurité sociale du salarié"
     definition_period = ETERNITY
 
 
