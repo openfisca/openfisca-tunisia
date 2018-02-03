@@ -42,7 +42,7 @@ setup(
             ],
         ),
     install_requires = [
-        'OpenFisca-Core >= 20.0, < 21.0',
+        'OpenFisca-Core >= 21.0, < 22.0',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
