@@ -22,7 +22,7 @@ class TypesCadreLegalActiviteEntreprise(Enum):
     developpement_agricole = u"Développement agricole"
     parcs_activites_economiques = u"Parcs des activités économiques"
     exportation_droit_commun = u"Exportation dans le cadre du droit commun"
-    Autres = u"Autres (à préciser)"
+    autres = u"Autres (à préciser)"
 
 
 class TypesStructureDeclarationInvestissement(Enum):

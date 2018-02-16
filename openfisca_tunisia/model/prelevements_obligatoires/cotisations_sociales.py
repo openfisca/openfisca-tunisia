@@ -8,17 +8,20 @@ from numpy import zeros
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
-class TypesRegimeSecuriteSociale(Enum):
-    rsna = u'rsna'
-    rsa = u'rsa'
-    rsaa = u'rsaa'
-    rtns = u'rtns'
-    rtte = u'rtte'
-    re = u're'
-    rtfr = u'rtfr'
-    raci = u'raci'
-    cnrps_sal = u'cnrps_sal'
-    cnrps_pen = u'cnrps_pen'
+class TypesRegimeSecuriteSociale(Enum): 
+    rsna = u"Régime des Salariés Non Agricoles"
+    rsa = u"Régime des Salariés Agricoles"
+    rsaa = u"Régime des Salariés Agricoles Amélioré"
+    rtns = u"Régime des Travailleurs Non Salariés (secteurs agricole et non agricole)"
+    rtte = u"Régime des Travailleurs Tunisiens à l'Etranger"
+    re = u"Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires"
+    rtfr = u"Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)"
+    raci = u"Régime des Artistes, Créateurs et Intellectuels"
+    cnrps_sal = u"cnrps_sal"
+    cnrps_pen = u"cnrps_pen"
+    # references : 
+    # http://www.social.gov.tn/index.php?id=49&L=0
+    # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
 
 
 def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, parameters = None):

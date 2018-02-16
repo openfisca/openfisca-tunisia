@@ -82,8 +82,8 @@ class prestations_familiales_enfant_a_charge(Variable):
     entity = Individu
     label = u"Enfant considéré à charge au sens des prestations familiales"
     definition_period = MONTH
+    reference = u"http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
 
-    #    http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html
     #    Jusqu'à l'âge de 16 ans sans conditions.
     #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération
     # supérieure à 75 % du SMIG.
