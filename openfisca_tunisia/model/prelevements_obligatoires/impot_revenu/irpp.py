@@ -325,6 +325,7 @@ class revenu_assimile_salaire(Variable):
     def formula(foyer_fiscal, period):
         salaire_imposable = foyer_fiscal.declarant_principal('salaire_imposable', period = period, options = [ADD])
         salaire_en_nature = foyer_fiscal.declarant_principal('salaire_en_nature', period = period, options = [ADD])
+        print salaire_en_nature
         return (salaire_imposable + salaire_en_nature)
 
 

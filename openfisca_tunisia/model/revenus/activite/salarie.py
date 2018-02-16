@@ -23,7 +23,7 @@ class primes(Variable):
 
 
 class salaire_en_nature(Variable):
-    value_type = int
+    value_type = float
     label = u"Avantages en nature assimilables à des salaires"
     entity = Individu
     definition_period = MONTH
