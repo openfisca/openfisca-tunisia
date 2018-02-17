@@ -13,7 +13,7 @@ class TypesActivite(Enum):
     industriel = u"Industriel"
     prestataire_de_services = u"Prestataire de services"
     artisan = u"Artisan"
-    plus_d_une_activite = u"Plus d'une activité"
+    multi_activites = u"Plus d'une activité"
 
 
 class TypesCadreLegalActiviteEntreprise(Enum):
