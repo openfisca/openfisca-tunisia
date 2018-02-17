@@ -4,6 +4,10 @@ from openfisca_tunisia import CountryTaxBenefitSystem as TunisiaTaxBenefitSystem
 
 from openfisca_survey_manager.scenarios import AbstractSurveyScenario
 
+survey_variables_filepath = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    'data.py'
+    )
 
 class TunisiaSurveyScenario(AbstractSurveyScenario):
     id_variable_by_entity_key = dict(
@@ -30,10 +34,15 @@ class TunisiaSurveyScenario(AbstractSurveyScenario):
         if tax_benefit_system is None:
             tax_benefit_system = TunisiaTaxBenefitSystem()
 
+        tax_benefit_system.add_variables_from_file(survey_variables_filepath)
+        if baseline_tax_benefit_system:
+            baseline_tax_benefit_system.add_variables_from_file(survey_variables_filepath)
+
         self.set_tax_benefit_systems(
             tax_benefit_system = tax_benefit_system,
             baseline_tax_benefit_system = baseline_tax_benefit_system
             )
+
         self.used_as_input_variables = list(
             set(tax_benefit_system.variables.keys()).intersection(
                 set(input_data_frame.columns)

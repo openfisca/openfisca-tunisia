@@ -40,6 +40,9 @@ setup(
         notebook = [
             'matplotlib',
             ],
+        survey = [
+            'OpenFisca-Survey-Manager >= 0.9.5',
+            ]
         ),
     install_requires = [
         'OpenFisca-Core >= 21.0, < 22.0',
