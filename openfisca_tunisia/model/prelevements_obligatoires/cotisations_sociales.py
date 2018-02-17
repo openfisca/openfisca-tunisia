@@ -17,8 +17,8 @@ class TypesRegimeSecuriteSociale(Enum):
     re = u"Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires"
     rtfr = u"Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)"
     raci = u"Régime des Artistes, Créateurs et Intellectuels"
-    cnrps_sal = u"cnrps_sal"
-    cnrps_pen = u"cnrps_pen"
+    cnrps_sal = u"Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    cnrps_pen = u"Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale"
     # references : 
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
