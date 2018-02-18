@@ -8,7 +8,9 @@ from numpy import zeros
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
-class TypesRegimeSecuriteSociale(Enum): 
+class TypesRegimeSecuriteSociale(Enum):
+    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci cnrps_sal cnrps_pen'  # Needed to preserve the enum order in Python 2
+
     rsna = u"Régime des Salariés Non Agricoles"
     rsa = u"Régime des Salariés Agricoles"
     rsaa = u"Régime des Salariés Agricoles Amélioré"
