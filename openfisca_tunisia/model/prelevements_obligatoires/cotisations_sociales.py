@@ -21,7 +21,7 @@ class TypesRegimeSecuriteSociale(Enum):
     raci = u"Régime des Artistes, Créateurs et Intellectuels"
     cnrps_sal = u"Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
     cnrps_pen = u"Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale"
-    # references : 
+    # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
 
@@ -60,7 +60,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
         if bareme is not None:
             cotisation += bareme.calc(
-                assiette_cotisations_sociales * (categorie_salarie == regime.index),
+                assiette_cotisations_sociales * (categorie_salarie == regime),
                 )
 
     return - cotisation

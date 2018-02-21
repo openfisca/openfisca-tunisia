@@ -3,8 +3,6 @@
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
-from numpy.ma.testutils import assert_not_equal
-from urllib2 import Request
 
 try:
     from scipy.optimize import fsolve
@@ -44,7 +42,6 @@ class salaire_de_base(Variable):
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
-
     def formula(individu, period):
         # Calcule le salaire de base à partir du salaire net par inversion numérique.
         net = individu.get_holder('salaire_net_a_payer').get_array(period)
@@ -73,7 +70,7 @@ class salaire_de_base(Variable):
             fsolve(
                 solve_func(net),
                 net * 1.4,  # first guess
-                xtol = 1 / 100  # précision
+                xtol = 1 / 100,  # précision
                 )
 
         return salaire_de_base_calcule
