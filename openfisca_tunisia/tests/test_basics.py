@@ -4,7 +4,7 @@ from __future__ import division
 
 import datetime
 
-from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import CATEGORIE_SALARIE
+from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
 from openfisca_tunisia.model.base import *
 from openfisca_tunisia.tests import base
 
@@ -15,7 +15,7 @@ scenarios_arguments = [
         parent1 = dict(
             date_naissance = datetime.date(1972, 1, 1),
             salaire_de_base = 2000,
-            categorie_salarie = CATEGORIE_SALARIE['rsna'],
+            categorie_salarie = 'rsna',
             ),
         parent2 = dict(
             date_naissance = datetime.date(1972, 1, 1),

@@ -7,7 +7,23 @@ from numpy import zeros
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
-CATEGORIE_SALARIE = Enum(['rsna', 'rsa', 'rsaa', 'rtns', 'rtte', 're', 'rtfr', 'raci', 'cnrps_sal', 'cnrps_pen'])
+
+class TypesRegimeSecuriteSociale(Enum):
+    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci cnrps_sal cnrps_pen'  # Needed to preserve the enum order in Python 2
+
+    rsna = u"Régime des Salariés Non Agricoles"
+    rsa = u"Régime des Salariés Agricoles"
+    rsaa = u"Régime des Salariés Agricoles Amélioré"
+    rtns = u"Régime des Travailleurs Non Salariés (secteurs agricole et non agricole)"
+    rtte = u"Régime des Travailleurs Tunisiens à l'Etranger"
+    re = u"Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires"
+    rtfr = u"Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)"
+    raci = u"Régime des Artistes, Créateurs et Intellectuels"
+    cnrps_sal = u"Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    cnrps_pen = u"Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    # references :
+    # http://www.social.gov.tn/index.php?id=49&L=0
+    # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
 
 
 def compute_cotisation(individu, period, cotisation_type = None, bareme_name = None, parameters = None):
@@ -17,12 +33,13 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     categorie_salarie = individu('categorie_salarie', period)  # TODO change to regime_salarie
     baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
+    types_regime_securite_sociale = categorie_salarie.possible_values
 
-    for regime_name, regime_index in CATEGORIE_SALARIE:
-        if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime_name]:
+    for regime in types_regime_securite_sociale:
+        if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]:
             continue
         baremes_by_name = getattr(
-            baremes_by_regime[regime_name],
+            baremes_by_regime[regime.name],
             'cotisations_{}'.format(cotisation_type),
             )
 
@@ -43,7 +60,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
         if bareme is not None:
             cotisation += bareme.calc(
-                assiette_cotisations_sociales * (categorie_salarie == regime_index),
+                assiette_cotisations_sociales * (categorie_salarie == regime),
                 )
 
     return - cotisation
@@ -64,9 +81,10 @@ class assiette_cotisations_sociales(Variable):
 
 class categorie_salarie(Variable):
     value_type = Enum
-    possible_values = CATEGORIE_SALARIE
+    possible_values = TypesRegimeSecuriteSociale
+    default_value = TypesRegimeSecuriteSociale.rsna
     entity = Individu
-    label = u"Catégorie de salarié"
+    label = u"Régime de sécurité sociale du salarié"
     definition_period = ETERNITY
 
 
@@ -411,4 +429,4 @@ class ugtt(Variable):
     definition_period = MONTH
 
     def formula(individu, period):
-        return -3 * (individu('categorie_salarie', period) == 8)  # TODO put this value in parameters
+        return -3 * (individu('categorie_salarie', period) == TypesRegimeSecuriteSociale.cnrps_sal)  # TODO put this value in parameters

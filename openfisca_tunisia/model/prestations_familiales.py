@@ -4,17 +4,10 @@
 from __future__ import division
 
 from numpy import (
-    round, zeros, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
+    round, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
     asanyarray, amin, amax, arange)
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
-
-
-CHEF = QUIFOY['vous']
-PART = QUIFOY['conj']
-
-PACS = [QUIMEN['enf' + str(i)] for i in range(1, 10)]
-ENFS = [QUIMEN['enf' + str(i)] for i in range(1, 10)]
 
 
 def age_en_mois_benjamin(age_en_mois):
@@ -70,19 +63,6 @@ def ages_first_kids(age, nb=None):
     return age_list
 
 
-class smig75(Variable):
-    value_type = bool
-    entity = Individu
-    label = u"Indicatrice de salaire supérieur à 75% du smig"
-    definition_period = YEAR
-
-    def formula(individu, period, parameters):
-        salaire_imposable = individu('salaire_imposable', period = period)
-        salaire_en_nature = individu('salaire_en_nature', period = period)
-        smig = simulation.parameters(period.start).cotisations_sociales.gen.smig
-        return (salaire_imposable + salaire_en_nature) < smig
-
-
 class salaire_unique(Variable):
     value_type = bool
     entity = Menage
@@ -97,45 +77,56 @@ class salaire_unique(Variable):
 
 # Allocations familiales
 
+class prestations_familiales_enfant_a_charge(Variable):
+    value_type = bool
+    entity = Individu
+    label = u"Enfant considéré à charge au sens des prestations familiales"
+    definition_period = MONTH
+    reference = u"http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+
+    #    Jusqu'à l'âge de 16 ans sans conditions.
+    #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération
+    # supérieure à 75 % du SMIG.
+    #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire,
+    # supérieur, technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
+    #    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO
+    #    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie
+    # incurable et se trouvant, de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail
+    # lucratif, et pour les handicapés titulaires d'une carte d'handicapé qui ne sont pas pris en charge
+    # intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités
+    # locales.
+
+    def formula(individu, period, parameters):
+        age = individu('age', period)
+        invalide = individu('invalide', period)
+        est_enfant = individu.has_role(Menage.enfant)
+
+        condition_enfant = or_(
+            (age_individu <= 16) +
+            (age_individu <= 18) * (salaire_individu <= .75 * smig48)
+            )
+        condition_jeune_etudiant_ou_invalide = (
+            # (age_individu <= 21) * etudiant ou soeur au foyer
+            (invalide_individu)
+            )
+
+        return or_(condition_enfant, condition_jeune_etudiant_ou_invalide) * est_enfant
+
+
 class af_nbenf(Variable):
     value_type = float
     entity = Menage
     label = u"Nombre d'enfants au sens des allocations familiales"
     definition_period = YEAR
 
-    def formula(individu, period, parameters):
-        age_holder = menage.members('age', period = period)
-        smig75_holder = menage.members('smig75', period = period)
-        ivalide_holder = menage.members('invalide', period = period)
-
-        #    From http://www.allocationfamiliale.com/allocationsfamiliales/allocationsfamilialestunisie.htm
-        #    Jusqu'à l'âge de 16 ans sans conditions.
-        #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération
-        # supérieure à 75 % du SMIG.
-        #    Jusqu'à l'âge de 21 ans pour les enfants qui fréquentent régulièrement un établissement secondaire,
-        # supérieur, technique ou professionnel, à condition que les enfants n'occupent pas d'emplois salariés.
-        #    Jusqu'à l'âge de 21 ans pour la jeune fille qui remplace sa mère auprès de ses frères et sœurs. TODO
-        #    Sans limite d'âge et quelque soit leur rang pour les enfants atteints d'une infirmité ou d'une maladie
-        # incurable et se trouvant, de ce fait, dans l'impossibilité permanente et absolue d'exercer un travail
-        # lucratif, et pour les handicapés titulaires d'une carte d'handicapé qui ne sont pas pris en charge
-        # intégralement par un organisme public ou privé benéficiant de l'aide de l'Etat ou des collectivités
-        # locales.
-
-        age = self.split_by_roles(age_holder, roles=ENFS)
-        smig75 = self.split_by_roles(smig75_holder, roles=ENFS)
-        invalide = self.split_by_roles(ivalide_holder, roles=ENFS)
-
-        ages = ages_first_kids(age, nb=3)
-        res = zeros(ages[0].shape)
-
-        for ag in ages:
-            res += (ag >= 0) * (
-                (1 * (ag < 16) + 1 * (ag < 18) + 1 * (ag < 21)) >= 1)
-    # (ag < 18) + # *smig75[key]*(activite[key] =='aprenti')  + # TODO apprenti
-    # (ag < 21) # *(or_(activite[key]=='eleve', activite[key]=='etudiant'))
-    #                 )  > 1
-
-        return res
+    def formula(menage, period, parameters):
+        prestations_familiales_enfant_a_charge = menage.members(
+            'prestations_familiales_enfant_a_charge', period)
+        af_nbenf = max_(
+            menage.sum(prestations_familiales_enfant_a_charge),
+            3
+            )
+        return af_nbenf
 
 
 class af(Variable):
@@ -146,21 +137,21 @@ class af(Variable):
 
     def formula(menage, period, parameters):
         af_nbenf = menage('af_nbenf', period = period)
-        salaire_imposable_holder = simulation.compute('salaire_imposable', period = period)
-        _P = simulation.parameters(period.start)
-
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée
         # à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
-        salaire_imposable = self.split_by_roles(
-            salaire_imposable_holder, roles=[CHEF, PART])
         P = _P.prestations_familiales
         bm = min_(
-            max_(salaire_imposable[CHEF], salaire_imposable[PART]) / 4, P.af.plaf_trim)  # base trimestrielle
+            max_(
+                menage.personne_de_reference('salaire_imposable', period),
+                menage.conjoint('salaire_imposable', period),
+                ) / 4,
+            P.af.plaf_trim
+            )  # base trimestrielle
         # prestations familliales  # Règle d'arrondi ?
-        af_1enf = round(bm * P.af.taux.enf1, 2)
-        af_2enf = round(bm * P.af.taux.enf2, 2)
-        af_3enf = round(bm * P.af.taux.enf3, 2)
+        af_1enf = round(bm * parameters.af.taux.enf1, 2)
+        af_2enf = round(bm * parameters.af.taux.enf2, 2)
+        af_3enf = round(bm * parameters.af.taux.enf3, 2)
         af_base = (af_nbenf >= 1) * af_1enf + \
             (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
         return 4 * af_base  # annualisé

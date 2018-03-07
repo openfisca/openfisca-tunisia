@@ -7,9 +7,6 @@ from __future__ import division
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
-ALL = [x[1] for x in QUIMEN]
-
-
 class impots_directs(Variable):
     value_type = float
     entity = Individu
