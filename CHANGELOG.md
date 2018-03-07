@@ -2,7 +2,7 @@
 
 ## 0.15.0 - [#58](https://github.com/openfisca/openfisca-tunisia/pull/58)
 
-Adapt to core v21 (Enum)
+* Adapt to core v21 (Enum)
 
 ## 0.14.1 - [#56](https://github.com/openfisca/openfisca-tunisia/pull/56)
 
