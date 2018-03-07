@@ -1,8 +1,12 @@
 # Changelog
 
-## 0.15.0 - [#58](https://github.com/openfisca/openfisca-tunisia/pull/58)
+## 0.15.0 - [#58](https://github.com/openfisca/openfisca-tunisia/pull/58) [#59](https://github.com/openfisca/openfisca-tunisia/pull/59)
 
-* Adapt to core v21 (Enum)
+* Adapt to core v21.0.2 (Enum)
+* Add `prestations_familiales_enfant_a_charge`
+  * Update `af_nbenf`
+  * Delete `smig75`
+* Add `openfisca_tunisia/survey_scenario/`
 
 ## 0.14.1 - [#56](https://github.com/openfisca/openfisca-tunisia/pull/56)
 
