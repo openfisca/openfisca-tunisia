@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.16.0 - [#61](https://github.com/openfisca/openfisca-tunisia/pull/61)
+
+* Rename `categorie_salarie` to `regime_securite_sociale`
+
 ## 0.15.0 - [#58](https://github.com/openfisca/openfisca-tunisia/pull/58) [#59](https://github.com/openfisca/openfisca-tunisia/pull/59)
 
 * Adapt to core v21.0.2 (Enum)
