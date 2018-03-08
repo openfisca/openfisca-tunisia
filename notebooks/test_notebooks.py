@@ -6,6 +6,7 @@ Checks notebook execution result.
 Equal to this command + error management:
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=60 --output executed_notebook.ipynb demo.ipynb
 
+For nbconvert information, see: http://nbconvert.readthedocs.io/en/latest/index.html
 For jupyter configuration information, run: jupyter --path 
 '''
 
