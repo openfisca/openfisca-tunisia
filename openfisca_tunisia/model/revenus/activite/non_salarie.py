@@ -17,7 +17,7 @@ class TypesActivite(Enum):
 
 
 class TypesCadreLegalActiviteEntreprise(Enum):
-    exportation_totale = u"Exportation totale dans le cadre du CII"
+    exportation_totale = u"Exportation totale dans le cadre du Code d'Incitations aux Investissements (CII)"
     developpement_regional = u"Développement régional"
     developpement_agricole = u"Développement agricole"
     parcs_activites_economiques = u"Parcs des activités économiques"
@@ -26,8 +26,8 @@ class TypesCadreLegalActiviteEntreprise(Enum):
 
 
 class TypesStructureDeclarationInvestissement(Enum):
-    api = u"API"
-    apia = u"APIA"
+    api = u"Agence de Promotion de l'Industrie et de l'Innovation"
+    apia = u"Agence de Promotion des Investissements Agricoles"
     commissariat_regional_developpement_agricole = u"Commissariat régional du développement agricole"
     ont = u"ONT"
     autres = u"Autre structure (à préciser)"

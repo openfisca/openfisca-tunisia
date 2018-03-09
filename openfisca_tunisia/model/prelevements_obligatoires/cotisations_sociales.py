@@ -30,10 +30,10 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     assert cotisation_type in ['employeur', 'salarie']
 
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
-    categorie_salarie = individu('categorie_salarie', period)  # TODO change to regime_salarie
+    regime_securite_sociale = individu('regime_securite_sociale', period)
     baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
-    types_regime_securite_sociale = categorie_salarie.possible_values
+    types_regime_securite_sociale = regime_securite_sociale.possible_values
 
     for regime in types_regime_securite_sociale:
         if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]:
@@ -60,7 +60,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
         if bareme is not None:
             cotisation += bareme.calc(
-                assiette_cotisations_sociales * (categorie_salarie == regime),
+                assiette_cotisations_sociales * (regime_securite_sociale == regime),
                 )
 
     return - cotisation
@@ -79,7 +79,7 @@ class assiette_cotisations_sociales(Variable):
             )
 
 
-class categorie_salarie(Variable):
+class regime_securite_sociale(Variable):
     value_type = Enum
     possible_values = TypesRegimeSecuriteSociale
     default_value = TypesRegimeSecuriteSociale.rsna
@@ -429,4 +429,4 @@ class ugtt(Variable):
     definition_period = MONTH
 
     def formula(individu, period):
-        return -3 * (individu('categorie_salarie', period) == TypesRegimeSecuriteSociale.cnrps_sal)  # TODO put this value in parameters
+        return -3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSociale.cnrps_sal)  # TODO put this value in parameters

@@ -4,7 +4,7 @@
   absolute_error_margin: 1
   input_variables:
     salaire_net_a_payer: 1240
-    categorie_salarie: cnrps_sal
+    regime_securite_sociale: cnrps_sal
   output_variables:
     salaire_imposable: 1495
     salaire_de_base: 1702

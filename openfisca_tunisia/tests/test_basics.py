@@ -15,7 +15,7 @@ scenarios_arguments = [
         parent1 = dict(
             date_naissance = datetime.date(1972, 1, 1),
             salaire_de_base = 2000,
-            categorie_salarie = 'rsna',
+            regime_securite_sociale = 'rsna',
             ),
         parent2 = dict(
             date_naissance = datetime.date(1972, 1, 1),
