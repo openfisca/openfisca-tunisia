@@ -429,5 +429,5 @@ class ugtt(Variable):
     definition_period = MONTH
 
     def formula(individu, period):
-        return -3 * (individu('categorie_salarie', period) == TypesRegimeSecuriteSociale.salarie_cnrps)
+        return -3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSociale.salarie_cnrps)
         # TODO put this value (3) in parameters
