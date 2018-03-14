@@ -9,7 +9,8 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
 class TypesRegimeSecuriteSociale(Enum):
-    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps'  # Needed to preserve the enum order in Python 2
+    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps'
+    # Needed to preserve the enum order in Python 2
 
     rsna = u"Régime des Salariés Non Agricoles"
     rsa = u"Régime des Salariés Agricoles"
