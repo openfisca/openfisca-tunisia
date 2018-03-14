@@ -9,7 +9,7 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
 class TypesRegimeSecuriteSociale(Enum):
-    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci cnrps_sal cnrps_pen'  # Needed to preserve the enum order in Python 2
+    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps'  # Needed to preserve the enum order in Python 2
 
     rsna = u"Régime des Salariés Non Agricoles"
     rsa = u"Régime des Salariés Agricoles"
@@ -19,8 +19,8 @@ class TypesRegimeSecuriteSociale(Enum):
     re = u"Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires"
     rtfr = u"Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)"
     raci = u"Régime des Artistes, Créateurs et Intellectuels"
-    cnrps_sal = u"Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
-    cnrps_pen = u"Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    salarie_cnrps = u"Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    pensionne_cnrps = u"Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale"
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
@@ -429,4 +429,5 @@ class ugtt(Variable):
     definition_period = MONTH
 
     def formula(individu, period):
-        return -3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSociale.cnrps_sal)  # TODO put this value in parameters
+        return -3 * (individu('categorie_salarie', period) == TypesRegimeSecuriteSociale.salarie_cnrps)
+        # TODO put this value (3) in parameters
