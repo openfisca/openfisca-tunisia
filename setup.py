@@ -41,6 +41,7 @@ setup(
             'nbconvert >= 5.3.1',
             'nbformat',
             'nose',
+            'matplotlib',
             ],
         notebook = [
             'matplotlib',
