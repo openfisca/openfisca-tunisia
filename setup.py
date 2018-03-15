@@ -31,7 +31,7 @@ setup(
     long_description = '\n'.join(doc_lines[2:]),
     url = 'https://github.com/openfisca/openfisca-tunisia',
 
- data_files = [
+    data_files = [
         ('share/openfisca/openfisca-tunisia', ['CHANGELOG.md', 'LICENSE.AGPL.txt', 'README.md']),
         ],
     extras_require = dict(
