@@ -31,7 +31,8 @@ setup(
     long_description = '\n'.join(doc_lines[2:]),
     url = 'https://github.com/openfisca/openfisca-tunisia',
 
-    data_files = [
+ data_files = [
+        ('share/openfisca/openfisca-tunisia', ['CHANGELOG.md', 'LICENSE.AGPL.txt', 'README.md']),
         ],
     extras_require = dict(
         tests = [
@@ -48,6 +49,7 @@ setup(
             'OpenFisca-Survey-Manager >= 0.9.5',
             ]
         ),
+    include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
         'OpenFisca-Core >= 21.0, < 22.0',
         'PyYAML >= 3.10',

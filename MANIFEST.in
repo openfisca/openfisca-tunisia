@@ -1,0 +1,5 @@
+recursive-include openfisca_tunisia/decompositions *
+recursive-include openfisca_tunisia/parameters *
+recursive-include openfisca_tunisia/reforms/parameters *
+recursive-include openfisca_tunisia/scripts *
+recursive-include notebooks *
