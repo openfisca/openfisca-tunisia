@@ -35,6 +35,10 @@ setup(
         ],
     extras_require = dict(
         tests = [
+            'ipykernel',
+            'jupyter-client',
+            'nbconvert >= 5.3.1',
+            'nbformat',
             'nose',
             ],
         notebook = [
