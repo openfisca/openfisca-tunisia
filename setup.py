@@ -38,10 +38,10 @@ setup(
         tests = [
             'ipykernel',
             'jupyter-client',
+            'matplotlib',
             'nbconvert >= 5.3.1',
             'nbformat',
             'nose',
-            'matplotlib',
             ],
         notebook = [
             'matplotlib',
