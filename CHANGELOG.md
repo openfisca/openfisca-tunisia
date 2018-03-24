@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.16.1 - [#62](https://github.com/openfisca/openfisca-tunisia/pull/62)
+
+* In `TypesRegimeSecuriteSociale` and `/parameters/cotisations_sociales`
+  * Rename `cnrps_sal` to `salarie_cnrps`
+  * Rename `cnrps_pen` to `pensionne_cnrps`  
+
 ## 0.16.0 - [#61](https://github.com/openfisca/openfisca-tunisia/pull/61)
 
 * Rename `categorie_salarie` to `regime_securite_sociale`
@@ -22,37 +28,41 @@
 * Create reform `de_net_a_salaire_de_base`
 
 ## 0.13.0 - [#53](https://github.com/openfisca/openfisca-tunisia/pull/53)
+
 * Fix `de_net_a_brut` reform
 * Remove python script for yaml testing
 
 ## 0.12.0 - [#50](https://github.com/openfisca/openfisca-tunisia/pull/50)
+
 * Update barème impot sur le revenu
 * Adopt long names for some parameters (far from completed)
 * Update value of various déductions familiales
 
 ## 0.11.0 - [#44](https://github.com/openfisca/openfisca-tunisia/pull/44)
+
 * Update to openfisca-core v20 syntax
 * Rename `ir_brut` to `impot_revenu_brut`
 * Rename `rni` to `revenu_net_imposable`
 
 ## 0.10.2 - [#39](https://github.com/openfisca/openfisca-tunisia/pull/39)
-* Add installation instructions
-* Translate revenus/activite/non_salarie.py labels to arabic
 
-## 0.10.2 - [#39](https://github.com/openfisca/openfisca-tunisia/pull/39)
 * Add installation instructions
 * Translate revenus/activite/non_salarie.py labels to arabic
 
 ## 0.10.1 - [#38](https://github.com/openfisca/openfisca-tunisia/pull/38)
+
 * Fix legislation tests
 
 ## 0.10.0
+
 * Migrate to openfisca-core 14.0.1 syntax
 
 ## 0.9.0
+
 * Migrate to openfisca-core 12.1.0 syntax
 
 ## 0.8.0
+
 * Migrate to openfisca-core 10.0.2 syntax
 
 ## 0.7.0 - [#34](https://github.com/openfisca/openfisca-tunisia/pull/34)

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import os
 from openfisca_tunisia import CountryTaxBenefitSystem as TunisiaTaxBenefitSystem
 
 from openfisca_survey_manager.scenarios import AbstractSurveyScenario
@@ -8,6 +9,7 @@ survey_variables_filepath = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     'data.py'
     )
+
 
 class TunisiaSurveyScenario(AbstractSurveyScenario):
     id_variable_by_entity_key = dict(
