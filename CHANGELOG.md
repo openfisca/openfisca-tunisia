@@ -8,7 +8,7 @@
 
 ## 0.16.0 - [#61](https://github.com/openfisca/openfisca-tunisia/pull/61)
 
-* Rename `regime_securite_sociale` to `regime_securite_sociale`
+* Rename `categorie_salarie` to `regime_securite_sociale`
 
 ## 0.15.0 - [#58](https://github.com/openfisca/openfisca-tunisia/pull/58) [#59](https://github.com/openfisca/openfisca-tunisia/pull/59)
 
