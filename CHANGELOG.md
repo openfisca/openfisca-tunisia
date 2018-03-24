@@ -2,9 +2,9 @@
 
 ## 0.16.1 - [#62](https://github.com/openfisca/openfisca-tunisia/pull/62)
 
-* In `TypesRegimeSecuriteSociale`
-  * rename `cnrps_sal` to `salarie_cnrps`
-  * rename `cnrps_pen` to `pensionne_cnrps`
+* In `TypesRegimeSecuriteSociale` and `/parameters/cotisations_sociales`
+  * Rename `cnrps_sal` to `salarie_cnrps`
+  * Rename `cnrps_pen` to `pensionne_cnrps`  
 
 ## 0.16.0 - [#61](https://github.com/openfisca/openfisca-tunisia/pull/61)
 
