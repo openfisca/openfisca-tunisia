@@ -26,4 +26,4 @@ test: check-syntax-errors check-no-prints
 	python notebooks/test_notebooks.py
 
 nb:
-	jupyter notebook notebooks/demo.ipynb
+	python notebooks/test_notebooks.py notebooks/
