@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.16.2 - [#63](https://github.com/openfisca/openfisca-tunisia/pull/63)
+
+* Add `notebooks/test_notebooks.py` script to execute .ipynb files
+  * Add `Makefile` tag `nb` to test specified notebooks
+
 ## 0.16.1 - [#62](https://github.com/openfisca/openfisca-tunisia/pull/62)
 
 * In `TypesRegimeSecuriteSociale` and `/parameters/cotisations_sociales`
