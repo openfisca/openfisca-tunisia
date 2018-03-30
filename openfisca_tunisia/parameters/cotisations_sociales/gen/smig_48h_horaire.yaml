@@ -95,8 +95,9 @@ values:
     value: 1.451
   2014-05-01:
     value: 1.538
-  2015-05-01:
+  2015-11-09:
     value: 1.625
+    reference: Décret n°2015-1762 du 09 Novembre 2015 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
   2017-06-05:
     value: 1.717
     reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf
