@@ -1,0 +1,6 @@
+description: SMIG horaire - régime 40h par semaine
+unit: currency
+values:
+  2017-06-05:
+    value: 1.763
+    reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf

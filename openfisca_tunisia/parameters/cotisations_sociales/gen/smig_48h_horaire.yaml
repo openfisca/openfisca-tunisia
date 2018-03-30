@@ -1,4 +1,4 @@
-description: SMIG horaire
+description: SMIG horaire - régime 48h par semaine
 unit: currency
 values:
   1961-04-01:
@@ -97,3 +97,6 @@ values:
     value: 1.538
   2015-05-01:
     value: 1.625
+  2017-06-05:
+    value: 1.717
+    reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf

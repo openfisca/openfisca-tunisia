@@ -1,4 +1,4 @@
-description: SMIG 48h mensuel
+description: SMIG mensuel - régime 48h par semaine
 unit: currency
 values:
   1990-01-01:
@@ -61,3 +61,6 @@ values:
     value: 319.904
   2015-05-01:
     value: 338.0
+  2017-06-05:
+    value: 357.136
+    reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf

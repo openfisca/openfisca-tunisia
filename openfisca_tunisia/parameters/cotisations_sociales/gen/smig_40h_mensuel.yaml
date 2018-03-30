@@ -1,4 +1,4 @@
-description: SMIG 40h mensuel
+description: SMIG mensuel - régime 40h par semaine
 unit: currency
 values:
   1990-01-01:
@@ -61,3 +61,6 @@ values:
     value: 274.559
   2015-05-01:
     value: 289.639
+  2017-06-05:
+    value: 305.586
+    reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf
