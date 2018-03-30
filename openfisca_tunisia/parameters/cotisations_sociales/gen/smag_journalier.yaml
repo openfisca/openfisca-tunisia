@@ -95,8 +95,9 @@ values:
     value: 10.608
   2012-12-01:
     value: 11.608
-  2014-05-01:
+  2014-08-11:
     value: 12.304
+    reference: Décret n°2014-2908 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429083.pdf
   2015-11-09:
     value: 13.0
     reference: Décret n°2015-1763 du 09 Novembre 2015 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
