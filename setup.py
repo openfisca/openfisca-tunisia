@@ -36,15 +36,16 @@ setup(
         ],
     extras_require = dict(
         tests = [
-            'ipykernel',
-            'jupyter-client',
-            'matplotlib',
-            'nbconvert >= 5.3.1',
-            'nbformat',
-            'nose',
+            'nose'
             ],
         notebook = [
-            'matplotlib',
+            'ipykernel >= 4.8',
+            'jupyter-client >= 5.2',
+            'matplotlib >= 2.2',
+            'nbconvert >= 5.3',
+            'nbformat >= 4.4',
+            'pandas >= 0.22.0',
+            'OpenFisca-Survey-Manager >= 0.9.5'
             ],
         survey = [
             'OpenFisca-Survey-Manager >= 0.9.5',
