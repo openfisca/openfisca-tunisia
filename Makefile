@@ -23,6 +23,7 @@ test: check-syntax-errors check-no-prints
 	@# before parsing source files containing formulas.
 	nosetests openfisca_tunisia/tests --exe --with-doctest
 	openfisca-run-test -c openfisca_tunisia  openfisca_tunisia/tests/
+	python notebooks/test_notebooks.py notebooks/
 
 nb:
-	jupyter notebook notebooks/demo.ipynb
+	python notebooks/test_notebooks.py notebooks/

@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.16.1',
+    version = '0.16.2',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.fr',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -32,20 +32,28 @@ setup(
     url = 'https://github.com/openfisca/openfisca-tunisia',
 
     data_files = [
+        ('share/openfisca/openfisca-tunisia', ['CHANGELOG.md', 'LICENSE.AGPL.txt', 'README.md']),
         ],
     extras_require = dict(
         tests = [
-            'nose',
+            'nose'
             ],
         notebook = [
-            'matplotlib',
+            'ipykernel >= 4.8',
+            'jupyter-client >= 5.2',
+            'matplotlib >= 2.2',
+            'nbconvert >= 5.3',
+            'nbformat >= 4.4',
+            'pandas >= 0.22.0',
+            'OpenFisca-Survey-Manager >= 0.9.5'
             ],
         survey = [
             'OpenFisca-Survey-Manager >= 0.9.5',
             ]
         ),
+    include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >= 21.0, < 22.0',
+        'OpenFisca-Core >= 21.1.2, < 22.0',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
