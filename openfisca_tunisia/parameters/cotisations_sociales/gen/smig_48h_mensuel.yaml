@@ -1,6 +1,15 @@
-description: SMIG mensuel - régime 48h par semaine
+description: Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 48h par semaine
 unit: currency
 values:
+  1975-06-01:
+    value: 30.160
+    reference: Décret n°75-357 du 03 Juin 1975 - http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf
+  1980-05-01:
+    value: 54.704
+    reference: Décret n°80-609 du 19 Mai 1980 - http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf
+  1982-02-01:
+    value: 54.704
+    reference: Décret n°80-609 du 19 Mai 1980 + Décret n°82-501 du 16 Mars 1982 - http://www.legislation.tn/sites/default/files/journal-officiel/1982/1982F/Jo01982.pdf
   1990-01-01:
     value: 123.016
   1991-08-01:
