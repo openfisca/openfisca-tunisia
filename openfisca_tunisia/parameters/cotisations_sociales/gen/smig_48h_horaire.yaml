@@ -93,12 +93,13 @@ values:
     value: 1.375
   2012-07-01:
     value: 1.451
-  2014-08-11:
-    value: 1.392
+    reference: Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf
+  2014-05-01:
+    value: 1.538
     reference: Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf
-  2015-11-09:
+  2015-05-01:
     value: 1.625
     reference: Décret n°2015-1762 du 09 Novembre 2015 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
-  2017-06-05:
+  2016-08-01:
     value: 1.717
     reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf
