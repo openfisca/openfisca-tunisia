@@ -1,6 +1,9 @@
 description: salaire de base mensuel - régime 48h par semaine
 unit: currency
 values:
+  2009-08-01:
+    value: 230.256
+    reference: Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf
   2010-07-01:
     value: 242.112
     reference: Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf

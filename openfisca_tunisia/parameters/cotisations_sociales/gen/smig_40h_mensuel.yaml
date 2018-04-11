@@ -50,7 +50,8 @@ values:
   2008-07-01:
     value: 217.88
   2009-08-01:
-    value: 225.16
+    value: 225.160
+    reference: Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf
   2010-07-01:
     value: 235.040
     reference: Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf
