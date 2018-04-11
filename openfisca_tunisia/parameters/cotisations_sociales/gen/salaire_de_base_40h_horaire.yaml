@@ -1,6 +1,9 @@
 description: salaire de base horaire - régime 40h par semaine
 unit: currency
 values:
+  2011-05-01:
+    value: 1.248
+    reference: Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf
   2012-07-01:
     value: 1.324
     reference: Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf
