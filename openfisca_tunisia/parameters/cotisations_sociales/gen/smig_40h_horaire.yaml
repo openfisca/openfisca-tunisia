@@ -1,6 +1,9 @@
 description: SMIG horaire - régime 40h par semaine
 unit: currency
 values:
+  2010-07-01:
+    value: 1.356
+    reference: Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf
   2011-05-01:
     value: 1.421
     reference: Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf
