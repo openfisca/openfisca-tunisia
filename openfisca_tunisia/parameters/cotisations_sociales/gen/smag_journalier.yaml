@@ -1,4 +1,4 @@
-description: SMAG (montant par jour)
+description: Salaire Minimum Agricole Garanti (SMAG) - montant par jour
 unit: currency
 values:
   1966-01-01:
@@ -39,56 +39,82 @@ values:
     value: 3.315
   1990-01-01:
     value: 3.661
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1991-08-01:
     value: 3.761
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1992-05-01:
     value: 3.961
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1992-08-01:
     value: 4.061
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1993-05-01:
     value: 4.261
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1993-08-01:
     value: 4.361
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1994-08-01:
     value: 4.461
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1995-05-01:
     value: 4.661
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1996-05-01:
     value: 4.861
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1996-09-09:
     value: 4.961
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1997-07-20:
     value: 5.061
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1997-11-07:
     value: 5.209
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1998-08-20:
     value: 5.309
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1999-05-01:
     value: 5.509
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1999-08-19:
     value: 5.609
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2000-05-01:
     value: 5.809
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2001-07-01:
     value: 6.059
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2002-07-01:
     value: 6.259
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2003-07-01:
     value: 6.509
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2004-07-01:
     value: 6.709
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2005-09-01:
     value: 6.909
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2006-07-01:
     value: 7.129
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2007-07-01:
     value: 7.379
-  2008-06-01:
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+  2008-07-01:
     value: 7.749
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2009-08-01:
     value: 8.019
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2010-07-01:
-    value: 8.38
+    value: 8.380
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2011-05-01:
     value: 9.0
   2012-07-01:
