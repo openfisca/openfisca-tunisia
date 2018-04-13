@@ -1,6 +1,75 @@
 description: Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 40h par semaine
 unit: currency
 values:
+  1990-01-01:
+    value: 0.621
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1991-08-01:
+    value: 0.633
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1992-05-01:
+    value: 0.671
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1992-08-01:
+    value: 0.683
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1993-05-01:
+    value: 0.721
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1993-08-01:
+    value: 0.733
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1994-08-01:
+    value: 0.745
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1995-05-01:
+    value: 0.779
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1996-05-01:
+    value: 0.808
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1996-09-01:
+    value: 0.820
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1997-07-20:
+    value: 0.832
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1997-11-07:
+    value: 0.861
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1998-08-20:
+    value: 0.875
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1999-05-01:
+    value: 0.904
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  1999-08-19:
+    value: 0.916
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2000-05-01:
+    value: 0.945
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2001-07-01:
+    value: 0.986
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2002-07-01:
+    value: 1.020
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2003-07-01:
+    value: 1.061
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2004-07-01:
+    value: 1.095
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2005-09-01:
+    value: 1.124
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2006-07-01:
+    value: 1.158
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
+  2007-07-01:
+    value: 1.199
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2008-07-01:
     value: 1.257
     reference: Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf
