@@ -103,7 +103,7 @@ class prestations_familiales_enfant_a_charge(Variable):
 
         condition_enfant = or_(
             (age_individu <= 16) +
-            (age_individu <= 18) * (salaire_individu <= .75 * smig48)
+            (age_individu <= 18) * (salaire_individu <= .75 * smig_48h_mensuel)
             )
         condition_jeune_etudiant_ou_invalide = (
             # (age_individu <= 21) * etudiant ou soeur au foyer
@@ -202,7 +202,7 @@ class contribution_frais_creche(Variable):
     def formula(individu, period, parameters):
         salaire_imposable_holder = menage('salaire_imposable', period = period)
         age_en_mois_holder = menage('age_en_mois', period = period)
-        smig48 = parameters(period.start).cotisations_sociales.gen.smig  # TODO: smig 48H
+        smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
         # activité salariée et dont le salaire ne dépasse pas deux fois et demie

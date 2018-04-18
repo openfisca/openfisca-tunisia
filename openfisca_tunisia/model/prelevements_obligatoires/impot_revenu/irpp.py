@@ -329,7 +329,7 @@ class revenu_assimile_salaire(Variable):
 
 
 class smig(Variable):
-    value_type = float
+    value_type = bool
     entity = FoyerFiscal
     label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
     definition_period = YEAR

@@ -1,105 +1,96 @@
-description: Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 40h par semaine
+description: Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 40h par semaine
 unit: currency
 values:
-  1975-06-01:
-    value: 25.133
-    reference: Décret n°75-357 du 03 Juin 1975 - http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf
-  1980-05-01:
-    value: 45.586
-    reference: Décret n°80-609 du 19 Mai 1980 - http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf
-  1982-02-01:
-    value: 45.586
-    reference: Décret n°80-609 du 19 Mai 1980 + Décret n°82-501 du 16 Mars 1982 - http://www.legislation.tn/sites/default/files/journal-officiel/1982/1982F/Jo01982.pdf
   1990-01-01:
-    value: 107.706
+    value: 0.621
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1991-08-01:
-    value: 109.706
+    value: 0.633
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1992-05-01:
-    value: 116.318
+    value: 0.671
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1992-08-01:
-    value: 118.398
+    value: 0.683
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1993-05-01:
-    value: 124.971
+    value: 0.721
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1993-08-01:
-    value: 127.051
+    value: 0.733
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1994-08-01:
-    value: 129.131
+    value: 0.745
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1995-05-01:
-    value: 135.024
+    value: 0.779
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1996-05-01:
-    value: 140.051
+    value: 0.808
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1996-09-09:
-    value: 142.131
+    value: 0.820
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1997-07-20:
-    value: 144.211
+    value: 0.832
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1997-11-07:
-    value: 149.237
+    value: 0.861
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1998-08-20:
-    value: 151.664
+    value: 0.875
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1999-05-01:
-    value: 156.691
+    value: 0.904
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   1999-08-19:
-    value: 158.771
+    value: 0.916
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2000-05-01:
-    value: 163.798
+    value: 0.945
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2001-07-01:
-    value: 170.905
+    value: 0.986
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2002-07-01:
-    value: 176.799
+    value: 1.020
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2003-07-01:
-    value: 183.906
+    value: 1.061
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2004-07-01:
-    value: 189.800
+    value: 1.095
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2005-09-01:
-    value: 194.827
+    value: 1.124
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2006-07-01:
-    value: 200.721
+    value: 1.158
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2007-07-01:
-    value: 207.828
+    value: 1.199
     reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf
   2008-07-01:
-    value: 217.880
+    value: 1.257
     reference: Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf
   2009-08-01:
-    value: 225.160
+    value: 1.299
     reference: Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf
   2010-07-01:
-    value: 235.040
+    value: 1.356
     reference: Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf
   2011-05-01:
-    value: 246.306
+    value: 1.421
     reference: Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf
   2012-07-01:
-    value: 259.479
+    value: 1.497
     reference: Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf
   2014-05-01:
-    value: 274.559
+    value: 1.584
     reference: Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf
   2015-05-01:
-    value: 289.639
+    value: 1.671
     reference: Décret n°2015-1762 du 09 Novembre 2015 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
   2016-08-01:
-    value: 305.586
+    value: 1.763
     reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/news/tf20176683.pdf

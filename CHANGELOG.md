@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.17.0 - [#64](https://github.com/openfisca/openfisca-tunisia/pull/64)
+
+* Update `smig` variable type
+* Add parameters on `SMIG` _components_
+  * `cotisations_sociales/gen/salaire_de_base_40h_horaire.yaml`
+  * `cotisations_sociales/gen/salaire_de_base_40h_mensuel.yaml`
+  * `cotisations_sociales/gen/salaire_de_base_48h_horaire.yaml`
+  * `cotisations_sociales/gen/salaire_de_base_48h_mensuel.yaml`
+  * `cotisations_sociales/gen/indemnite_complementaire_provisoire.yaml`
+  * `cotisations_sociales/gen/majoration_smig_40h_mensuel.yaml`
+  * `cotisations_sociales/gen/majoration_smig_48h_mensuel.yaml`
+* Update parameters and references on `SMIG`
+  * `cotisations_sociales/gen/smig_40h_horaire.yaml`
+  * `cotisations_sociales/gen/smig_40h_mensuel.yaml`
+  * `cotisations_sociales/gen/smig_48h_horaire.yaml`
+  * `cotisations_sociales/gen/smig_48h_mensuel.yaml`
+* Update parameters and references on `SMAG`
+  * `cotisations_sociales/gen/smag_journalier.yaml`
+
 ## 0.16.2 - [#63](https://github.com/openfisca/openfisca-tunisia/pull/63)
 
 * Add `notebooks/test_notebooks.py` script to execute .ipynb files

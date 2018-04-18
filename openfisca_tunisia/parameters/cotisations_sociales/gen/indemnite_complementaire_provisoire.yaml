@@ -1,0 +1,6 @@
+description: Indemnité Complémentaire Provisoire (ICP) - montant par mois
+unit: currency
+values:
+  1981-04-07:
+    value: 10
+    reference: Décret n° 81-437 du 7 avril 1981
