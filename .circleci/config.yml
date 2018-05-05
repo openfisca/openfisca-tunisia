@@ -2,7 +2,7 @@ version: 2
 
 jobs:
   checkout:
-    working_directory: ~/openfisca-core
+    working_directory: ~/openfisca-tunisia
     docker:
       - image: python:2.7.14
 
@@ -20,7 +20,7 @@ jobs:
             - ~/.ssh/known_hosts
 
   dependencies:
-    working_directory: ~/openfisca-core
+    working_directory: ~/openfisca-tunisia
     docker:
       - image: python:2.7.14
 
@@ -32,31 +32,24 @@ jobs:
       - run:
           name: Create virtualenv
           command: |
-            mkdir -p /tmp/venv/openfisca-core
-            virtualenv /tmp/venv/openfisca-core
+            mkdir -p /tmp/venv/openfisca-tunisia
+            virtualenv /tmp/venv/openfisca-tunisia
 
       # pip >= 8.0 needed to be compatible with "manylinux" wheels, used by numpy >= 1.11
       - run:
           name: Install dependencies
           command: |
-            . /tmp/venv/openfisca-core/bin/activate
+            . /tmp/venv/openfisca-tunisia/bin/activate
             pip install --upgrade pip twine wheel
-            pip install .[test] --upgrade
-
-      # Uncomment and adapt the next line to use a particular feature branch of OpenFisca-Country-Template to run Circle CI tests
-      # - run:
-      #     name: Install a particular feature branch of OpenFisca-Country-Template
-      #     command: |
-      #       . /tmp/venv/openfisca-core/bin/activate
-      #       pip install --editable git+https://github.com/openfisca/country-template.git@BRANCH_NAME#egg=OpenFisca-Country-Template
+            pip install .[tests] --upgrade
 
       - save_cache:
           key: v1-dependencies-{{ .Environment.CIRCLE_SHA1 }}
           paths:
-            - /tmp/venv/openfisca-core
+            - /tmp/venv/openfisca-tunisia
 
   tests:
-    working_directory: ~/openfisca-core
+    working_directory: ~/openfisca-tunisia
     docker:
       - image: python:2.7.14
 
@@ -72,12 +65,12 @@ jobs:
       - run:
           name: Run tests
           command: |
-            . /tmp/venv/openfisca-core/bin/activate
+            . /tmp/venv/openfisca-tunisia/bin/activate
             make test
             . check-version-bump.sh
 
   deploy:
-    working_directory: ~/openfisca-core
+    working_directory: ~/openfisca-tunisia
     docker:
       - image: python:2.7.14
         environment:
@@ -96,12 +89,12 @@ jobs:
       - run:
           name: Deploy (if version bump)
           command: |
-            . /tmp/venv/openfisca-core/bin/activate
+            . /tmp/venv/openfisca-tunisia/bin/activate
             . deploy-if-version-bump.sh
 
 workflows:
   version: 2
-  openfisca-core:
+  openfisca-tunisia:
     jobs:
       - checkout
 
