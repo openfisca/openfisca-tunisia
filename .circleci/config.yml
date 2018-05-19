@@ -41,7 +41,7 @@ jobs:
           command: |
             . /tmp/venv/openfisca-tunisia/bin/activate
             pip install --upgrade pip wheel twine
-            pip install .[tests] --upgrade
+            pip install .[tests,notebook] --upgrade
 
       - save_cache:
           key: v1-dependencies-{{ .Environment.CIRCLE_SHA1 }}
