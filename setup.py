@@ -23,7 +23,7 @@ setup(
     name = 'OpenFisca-Tunisia',
     version = '0.17.0',
     author = 'OpenFisca Team',
-    author_email = 'contact@openfisca.fr',
+    author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
     description = doc_lines[0],
     keywords = 'benefit microsimulation social tax tunisia',
