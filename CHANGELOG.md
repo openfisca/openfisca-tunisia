@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.17.1 - [#66](https://github.com/openfisca/openfisca-tunisia/pull/66)
+
+* Add continuous integration with CircleCI v2
+* Add `CONTRIBUTING.md` information
+
 ## 0.17.0 - [#64](https://github.com/openfisca/openfisca-tunisia/pull/64)
 
 * Update `smig` variable type
