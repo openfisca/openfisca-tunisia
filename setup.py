@@ -21,9 +21,9 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.17.0',
+    version = '0.17.1',
     author = 'OpenFisca Team',
-    author_email = 'contact@openfisca.fr',
+    author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
     description = doc_lines[0],
     keywords = 'benefit microsimulation social tax tunisia',
@@ -36,7 +36,7 @@ setup(
         ],
     extras_require = dict(
         tests = [
-            'nose'
+            'nose >= 1.3.7'
             ],
         notebook = [
             'ipykernel >= 4.8',
