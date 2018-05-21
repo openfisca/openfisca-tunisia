@@ -112,4 +112,4 @@ workflows:
             - tests
           filters:
             branches:
-              only: circle-ci-2
+              only: master
