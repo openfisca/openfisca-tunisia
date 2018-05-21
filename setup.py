@@ -36,7 +36,7 @@ setup(
         ],
     extras_require = dict(
         tests = [
-            'nose'
+            'nose >= 1.3.7'
             ],
         notebook = [
             'ipykernel >= 4.8',
