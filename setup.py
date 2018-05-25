@@ -60,5 +60,5 @@ setup(
     message_extractors = {'openfisca_tunisia': [
         ('**.py', 'python', None),
         ]},
-    packages = find_packages(exclude=['openfisca_tunisia.tests*', 'openfisca_tunisia.old_tests*']),
+    packages = find_packages(exclude=['tests*', 'old_tests*']),
     )
