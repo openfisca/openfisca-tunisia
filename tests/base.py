@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openfisca_core.tools import assert_near
-from .. import TunisiaTaxBenefitSystem
+from openfisca_tunisia import TunisiaTaxBenefitSystem
 
 
 # Initialize a tax_benefit_system
