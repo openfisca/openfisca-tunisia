@@ -6,7 +6,8 @@ import os
 import pandas as pd
 import pkg_resources
 
-
+# SMIG-40-48.xlsx : 
+# https://drive.google.com/file/d/1u3ykLgB9mVFvJ6ru1BjmK-S53bs5KsNa/view?usp=sharing
 smig_1990_2010_path = os.path.join(
     pkg_resources.get_distribution('openfisca-tunisia').location,
     'openfisca_tunisia',
@@ -14,6 +15,9 @@ smig_1990_2010_path = os.path.join(
     'SMIG-40-48.xlsx',
     )
 
+
+# SMIGSMAG.xlsx :
+# https://drive.google.com/file/d/1wr93GvqYz48kT2gCv6PMMgzc3Oa7Mgsz/view?usp=sharing
 smig_all_path = os.path.join(
     pkg_resources.get_distribution('openfisca-tunisia').location,
     'openfisca_tunisia',
@@ -109,4 +113,3 @@ parts = ["""<VALUE deb="{}" fin="{}" valeur="{}" />
     ) for i in range(len(smig_48h)-1, -1, -1)
     ]
 print "".join([header] + parts + [footer])
-
