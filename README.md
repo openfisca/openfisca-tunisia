@@ -147,25 +147,25 @@ Différents formats de tests sont alors à votre disposition : la rédaction de 
 Un test rédigé en python peut être exécuté avec l'outil `nose`.
 Celui-ci déroulera les fonctions python dont le nom commence par le mot `test`.
 
-Ainsi, pour exécuter le test python `openfisca_tunisia/tests/test_simple.py`, utilisez la commande suivante :
+Ainsi, pour exécuter le test python `tests/test_simple.py`, utilisez la commande suivante :
 
 ```
-nosetests openfisca_tunisia/tests/test_simple.py
+nosetests tests/test_simple.py
 ```
 
-Il vous est également possible de n'exécuter qu'un seul test d'un fichier. Dans l'exemple suivant, `test_1_parent` sera l'unique test déroulé du fichier `openfisca_tunisia/tests/core_tests.py` :
+Il vous est également possible de n'exécuter qu'un seul test d'un fichier. Dans l'exemple suivant, `test_1_parent` sera l'unique test déroulé du fichier `tests/core_tests.py` :
 
 ```
-nosetests openfisca_tunisia/tests/core_tests.py:test_1_parent
+nosetests tests/core_tests.py:test_1_parent
 ```
 
 ### Test yaml
 
 Le format d'un test yaml est décrit dans la [section YAML tests](http://openfisca.org/doc/coding-the-legislation/writing_yaml_tests.html) de la documentation officielle.
-Ainsi, si vous souhaitez exécuter le test yaml `openfisca_tunisia/tests/formulas/irpp.yaml`, utilisez la commande :
+Ainsi, si vous souhaitez exécuter le test yaml `tests/formulas/irpp.yaml`, utilisez la commande :
 
 ```
-openfisca-run-test -c openfisca_tunisia openfisca_tunisia/tests/formulas/irpp.yaml
+openfisca-run-test -c openfisca_tunisia tests/formulas/irpp.yaml
 ```
 
 Afin de le tester avec un debugger, ajoutez un point d'arrêt dans le code python appelé par le test avec :
@@ -187,12 +187,13 @@ Pour en savoir plus, voir [la section Tests](http://openfisca.org/doc/contribute
 
 ## Web API
 
-### API principale (en production)
+L'API est issue du dépôt [GitHub du module central OpenFisca-Core](https://github.com/openfisca/openfisca-core).
 
-L'API principale est accessible sur [GitHub](https://github.com/openfisca/openfisca-web-api).
-Une [documentation générale des points de communication](http://openfisca.org/doc/openfisca-web-api/endpoints.html) est également à votre disposition.
+Pour consulter sa version `v0.13.0`, interroger l'un de ses points d'entrée.   
+La liste des paramètres est par exemple consultable à l'adresse suivante :
+```
+www.openfisca.tn/api/v0.13.0/parameters
+```
+Pour en savoir plus, nous vous conseillons la lecture de sa [documentation officielle](http://openfisca.org/doc/openfisca-web-api/preview-api.html).
 
-### Nouvelle API (en développement)
 
-La nouvelle API est intégrée au projet [GitHub du module central OpenFisca-Core](https://github.com/openfisca/openfisca-core).
-Pour en savoir plus, nous vous conseillons la lecture de la [documentation officielle de l'API Preview](http://openfisca.org/doc/openfisca-web-api/preview-api.html).
