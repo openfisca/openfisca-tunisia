@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-from openfisca_tunisia.tests.base import tax_benefit_system
+from tests.base import tax_benefit_system
 
 
 def test_simple():

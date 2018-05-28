@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.17.1',
+    version = '0.18.0',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -60,5 +60,5 @@ setup(
     message_extractors = {'openfisca_tunisia': [
         ('**.py', 'python', None),
         ]},
-    packages = find_packages(exclude=['openfisca_tunisia.tests*', 'openfisca_tunisia.old_tests*']),
+    packages = find_packages(exclude=['tests*', 'old_tests*']),
     )

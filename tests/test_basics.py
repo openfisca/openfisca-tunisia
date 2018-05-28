@@ -6,7 +6,7 @@ import datetime
 
 from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
 from openfisca_tunisia.model.base import *
-from openfisca_tunisia.tests import base
+from tests import base
 
 
 scenarios_arguments = [

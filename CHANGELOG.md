@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.18.0 - [#67](https://github.com/openfisca/openfisca-tunisia/pull/67)
+
+* Move tests outside `openfisca_tunisa` module
+  * And delete `old_tests`
+* Move PDF and Excel files from repository to public drive
+* Update README with public drive link and API latest information
+  * And delete old `api/` configuration
+
 ### 0.17.1 - [#66](https://github.com/openfisca/openfisca-tunisia/pull/66)
 
 * Add continuous integration with CircleCI v2
