@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.18.1 - [#68](https://github.com/openfisca/openfisca-tunisia/pull/68)
+
+* Add 2017 references to `impot_revenu.bareme`
+
 ## 0.18.0 - [#67](https://github.com/openfisca/openfisca-tunisia/pull/67)
 
 * Move tests outside `openfisca_tunisa` module
