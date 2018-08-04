@@ -45,15 +45,15 @@ setup(
             'nbconvert >= 5.3',
             'nbformat >= 4.4',
             'pandas >= 0.22.0',
-            'OpenFisca-Survey-Manager >= 0.9.5'
+            'OpenFisca-Survey-Manager >= 0.9.5, < 0.10'
             ],
         survey = [
-            'OpenFisca-Survey-Manager >= 0.9.5',
+            'OpenFisca-Survey-Manager >= 0.9.5, < 0.10',
             ]
         ),
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >= 21.1.2, < 22.0',
+        'OpenFisca-Core >= 22, < 23.0',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
