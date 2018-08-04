@@ -5,17 +5,17 @@ from __future__ import division
 
 from numpy import (
     round, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
-    asanyarray, amin, amax, arange)
+    asanyarray, amin, amax, arange, nditer)
 
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
-def age_en_mois_benjamin(age_en_mois):
+def age_en_mois_benjamin(ages_en_mois):
     '''
     Renvoi un vecteur (une entree pour chaque famille) avec l'age du benjamin.
     '''
     age_en_mois_benjamin = 12 * 9999
-    for age_en_mois in age_en_moiss.itervalues():
+    for age_en_mois in nditer(ages_en_mois):
         isbenjamin = (age_en_mois < age_en_mois_benjamin) * (age_en_mois >= 0)
         age_en_mois_benjamin = isbenjamin * age_en_mois + \
             not_(isbenjamin) * age_en_mois_benjamin
@@ -218,6 +218,7 @@ class contribution_frais_creche(Variable):
         age_en_mois = menage.members('age_en_mois')
         P = _P.prestations_familiales.creche
         age_m_benj = age_en_mois_benjamin(age_en_mois)
+
         elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
         elig_sal = somme_salaire_imposable < P.plaf * smig48
         return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
