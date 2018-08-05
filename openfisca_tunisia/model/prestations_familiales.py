@@ -10,18 +10,6 @@ from numpy import (
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
-def age_en_mois_benjamin(age_en_mois):
-    '''
-    Renvoi un vecteur (une entree pour chaque famille) avec l'age du benjamin.
-    '''
-    age_en_mois_benjamin = 12 * 9999
-    for age_en_mois in age_en_moiss.itervalues():
-        isbenjamin = (age_en_mois < age_en_mois_benjamin) * (age_en_mois >= 0)
-        age_en_mois_benjamin = isbenjamin * age_en_mois + \
-            not_(isbenjamin) * age_en_mois_benjamin
-    return age_en_mois_benjamin
-
-
 def age_min(age, minimal_age=None):
     '''
     Returns minimal age higher than or equal to a
@@ -199,9 +187,10 @@ class contribution_frais_creche(Variable):
     label = u"Contribution aux frais de crêche"
     definition_period = YEAR
 
-    def formula(individu, period, parameters):
-        salaire_imposable_holder = menage('salaire_imposable', period = period)
-        age_en_mois_holder = menage('age_en_mois', period = period)
+    def formula(menage, period, parameters):
+        month = period.last_month
+        salaire_imposable_holder = menage.members('salaire_imposable', period = month)
+        age_en_mois_holder = menage.members('age_en_mois', period = month)
         smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
@@ -212,15 +201,16 @@ class contribution_frais_creche(Variable):
         # enfant et par mois pendant 11 mois.
         # , _option = {'age_en_mois': ENFS, 'sal': [CHEF, PART]}
         somme_salaire_imposable = (
-            menage.personne_de_reference('salaire_imposable', period = period) +
-            menage.conjoint('salaire_imposable', period = period)
+            menage.personne_de_reference('salaire_imposable', period = month) +
+            menage.conjoint('salaire_imposable', period = month)
             )
-        age_en_mois = menage.members('age_en_mois')
-        P = _P.prestations_familiales.creche
-        age_m_benj = age_en_mois_benjamin(age_en_mois)
-        elig_age = (age_m_benj <= P.age_max) * (age_m_benj >= P.age_min)
+        age_en_mois = menage.members('age_en_mois', period = month)
+        P = parameters(period).prestations_familiales.creche
+        age_en_mois_benjamin = menage.min(age_en_mois)[0]
+
+        elig_age = (age_en_mois_benjamin <= P.age_max) * (age_en_mois_benjamin >= P.age_min)
         elig_sal = somme_salaire_imposable < P.plaf * smig48
-        return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_m_benj)
+        return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_en_mois_benjamin)
 
 
 class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun_trav

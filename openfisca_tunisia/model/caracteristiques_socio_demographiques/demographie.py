@@ -19,6 +19,37 @@ class age(Variable):
         return (datetime64(period.date) - date_naissance).astype('timedelta64[Y]')
 
 
+class age_en_mois(Variable):
+    base_function = missing_value
+    value_type = int
+    default_value = -9999
+    unit = 'months'
+    entity = Individu
+    label = u"Âge (en mois)"
+    is_period_size_independent = True
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        # If age_en_mois is known at the same day of another month, compute the new age_en_mois from it.
+        holder = individu.get_holder('age_en_mois')
+        start = period.start
+        known_periods = holder.get_known_periods()
+
+        for last_period in sorted(known_periods, reverse = True):
+            last_start = last_period.start
+            if last_start.day == start.day:
+                last_array = holder.get_array(last_period)
+                return last_array + ((start.year - last_start.year) * 12 + (start.month - last_start.month))
+
+        has_birth = individu.get_holder('date_naissance').get_known_periods()
+        if not has_birth:
+            has_age = bool(individu.get_holder('age').get_known_periods())
+            if has_age:
+                return individu('age', period) * 12
+        date_naissance = individu('date_naissance', period)
+        return (datetime64(period.start) - date_naissance).astype('timedelta64[M]')
+
+
 class date_naissance(Variable):
     value_type = date
     default_value = date(1970, 1, 1)
@@ -105,5 +136,3 @@ class boursier(Variable):
     value_type = bool
     entity = Individu
     definition_period = ETERNITY
-
-
