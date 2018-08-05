@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.19.0 - [#70](https://github.com/openfisca/openfisca-tunisia/pull/70)
+
+* Migrate to openfisca-core v22 syntax
+* Add `age_en_mois`
+
 ## 0.18.1 - [#68](https://github.com/openfisca/openfisca-tunisia/pull/68)
 
 * Add 2017 references to `impot_revenu.bareme`
