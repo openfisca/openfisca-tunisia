@@ -10,7 +10,7 @@ import uuid
 
 from openfisca_core import conv, scenarios
 from openfisca_core.commons import to_unicode
-from entities import Individu, FoyerFiscal, Menage
+from openfisca_tunisia.entities import Individu, FoyerFiscal, Menage
 
 
 def N_(message):

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from tunisia_taxbenefitsystem import TunisiaTaxBenefitSystem
+from openfisca_tunisia.tunisia_taxbenefitsystem import TunisiaTaxBenefitSystem
 
 CountryTaxBenefitSystem = TunisiaTaxBenefitSystem
-
