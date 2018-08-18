@@ -9,6 +9,7 @@ import re
 import uuid
 
 from openfisca_core import conv, scenarios
+from openfisca_core.commons import to_unicode
 from entities import Individu, FoyerFiscal, Menage
 
 
@@ -17,7 +18,7 @@ def N_(message):
 
 
 log = logging.getLogger(__name__)
-year_or_month_or_day_re = re.compile(ur'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]\d|3[0-1]))?)?$')
+year_or_month_or_day_re = re.compile(r'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]\d|3[0-1]))?)?$')
 
 
 class Scenario(scenarios.AbstractScenario):
@@ -308,7 +309,7 @@ class Scenario(scenarios.AbstractScenario):
                 else:
                     new_foyer_fiscal[u'personnes_a_charge'].append(individu_id)
                 if new_foyer_fiscal_id is None:
-                    new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = unicode(uuid.uuid4())
+                    new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = to_unicode(uuid.uuid4())
                     test_case[u'foyers_fiscaux'].append(new_foyer_fiscal)
                 individus_without_foyer_fiscal.remove(individu_id)
 
@@ -365,7 +366,7 @@ class Scenario(scenarios.AbstractScenario):
                     else:
                         new_menage[u'enfants'].append(individu_id)
                     if new_menage_id is None:
-                        new_menage[u'id'] = new_menage_id = unicode(uuid.uuid4())
+                        new_menage[u'id'] = new_menage_id = to_unicode(uuid.uuid4())
                         test_case[u'menages'].append(new_menage)
                     menages_individus_id.remove(individu_id)
 
