@@ -48,4 +48,4 @@ if __name__ == '__main__':
     logging.basicConfig(level = logging.ERROR, stream = sys.stdout)
     for _, simulation, period in test_basics():
         check_run(simulation, period)
-    print u'OpenFisca-Tunisia basic test was executed successfully.'.encode('utf-8')
+    print(u'OpenFisca-Tunisia basic test was executed successfully.'.encode('utf-8'))

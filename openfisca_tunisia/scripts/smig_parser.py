@@ -69,7 +69,7 @@ parts = ["""<VALUE deb="{}" fin="{}" valeur="{}" />
     str(smig.smig_horaire.loc[i] / 1000)
     ) for i in range(len(smig)-1, -1, -1)
     ]
-print "".join([header] + parts + [footer])
+print("".join([header] + parts + [footer]))
 
 
 smag = smig_all.query("type == 'SMAG'").reset_index()
@@ -84,7 +84,7 @@ parts = ["""<VALUE deb="{}" fin="{}" valeur="{}" />
     str(smag.smig_horaire.loc[i] / 1000)
     ) for i in range(len(smig), 0, -1)
     ]
-print "".join([header] + parts + [footer])
+print("".join([header] + parts + [footer]))
 
 
 header = """<CODE code="smig_40h_mensuel" description="SMIG 40h mensuel" format="float" type="monetary">
@@ -98,7 +98,7 @@ parts = ["""<VALUE deb="{}" fin="{}" valeur="{}" />
     str(smig_40h.smig_mensuel.loc[i])
     ) for i in range(len(smig_40h)-1, -1, -1)
     ]
-print "".join([header] + parts + [footer])
+print("".join([header] + parts + [footer]))
 
 
 header = """<CODE code="smig_48h_mensuel" description="SMIG 48h mensuel" format="float" type="monetary">
@@ -112,4 +112,4 @@ parts = ["""<VALUE deb="{}" fin="{}" valeur="{}" />
     str(smig_48h.smig_mensuel.loc[i])
     ) for i in range(len(smig_48h)-1, -1, -1)
     ]
-print "".join([header] + parts + [footer])
+print("".join([header] + parts + [footer]))
