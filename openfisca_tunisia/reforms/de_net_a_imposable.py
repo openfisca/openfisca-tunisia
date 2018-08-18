@@ -20,10 +20,7 @@ from .. import entities
 
 def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
     # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
-    # To avoid possible conflicts, remove its function
-    holder = individu.get_holder('salaire_imposable')
-    holder.formula.function = None
-    holder.array = salaire_imposable
+    individu.get_holder('salaire_imposable').put_in_cache(salaire_imposable, period)
 
     # Work in isolation
     temp_simulation = individu.simulation.clone()
