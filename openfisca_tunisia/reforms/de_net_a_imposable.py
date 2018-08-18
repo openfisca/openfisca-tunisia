@@ -4,7 +4,11 @@ from __future__ import division
 
 from openfisca_tunisia.model.base import *
 from numpy.ma.testutils import assert_not_equal
-from urllib2 import Request
+
+try:
+    from urllib.request import Request  # python 3.0 and later
+except ImportError:
+    from urllib2 import Request  # python 2
 
 try:
     from scipy.optimize import fsolve
@@ -55,7 +59,7 @@ class salaire_imposable(Variable):
         simulation.period = period
         # List of variables already calculated. We will need it to remove their holders,
         # that might contain undesired cache
-        requested_variable_names = simulation.requested_periods_by_variable_name.keys()
+        requested_variable_names = list(simulation.requested_periods_by_variable_name.keys())
         if requested_variable_names:
             requested_variable_names.remove(u'salaire_imposable')
         # Clean 'requested_periods_by_variable_name', that is used by -core to check for computation cycles.
