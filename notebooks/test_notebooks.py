@@ -77,8 +77,8 @@ if __name__ == "__main__":
       log.warn(u"USAGE : python test_notebooks.py target")
       log.warn(u"        where 'target' is a directory containing .ipynb file OR an .ipynb file to test.")
     else:
-      if e.message:
-        # log.error(str(e.__class__.__name__)+ ': ' + e.message)
+      if e.strerror:
+        log.debug(str(e.__class__.__name__)+ ': ' + e.message)
         log.error(traceback.format_exc())
       else:
         log.error(traceback.format_exc())
