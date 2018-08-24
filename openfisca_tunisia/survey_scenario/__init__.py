@@ -2,6 +2,7 @@
 
 import os
 from openfisca_tunisia import CountryTaxBenefitSystem as TunisiaTaxBenefitSystem
+from openfisca_tunisia.tunisia_taxbenefitsystem import TunisiaTaxBenefitSystem
 
 from openfisca_survey_manager.scenarios import AbstractSurveyScenario
 
@@ -46,7 +47,7 @@ class TunisiaSurveyScenario(AbstractSurveyScenario):
             )
 
         self.used_as_input_variables = list(
-            set(tax_benefit_system.variables.keys()).intersection(
+            set(list(tax_benefit_system.variables.keys())).intersection(
                 set(input_data_frame.columns)
                 ))
         self.init_from_data_frame(input_data_frame = input_data_frame)

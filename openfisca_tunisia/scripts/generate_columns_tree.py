@@ -109,7 +109,7 @@ def main():
         (entity, columns_name_tree)
         for entity, columns_name_tree in (
             (entity1, cleanup_tree(entity1, columns_name_tree1))
-            for entity1, columns_name_tree1 in columns_name_tree_by_entity.iteritems()
+            for entity1, columns_name_tree1 in columns_name_tree_by_entity.items()
             )
         if columns_name_tree is not None
         )
@@ -119,7 +119,7 @@ def main():
         for column_name in iter_placed_tree(columns_name_tree)
         )
 
-    for name, column in tax_benefit_system.variables.iteritems():
+    for name, column in tax_benefit_system.variables.items():
         if not is_valid_input_column(column):
             continue
         if name in placed_columns_name:
