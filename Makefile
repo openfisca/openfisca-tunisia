@@ -19,8 +19,8 @@ flake8:
 	flake8 `git ls-files | grep "\.py$$"`
 
 test: check-syntax-errors check-no-prints
-	@# Launch tests from 'tests' directory (and not .) because TaxBenefitSystem must be initialized
-	@# before parsing source files containing formulas.
+	# Launch tests from 'tests' directory (and not .) because TaxBenefitSystem must be initialized
+	# before parsing source files containing formulas.
 	@echo "> Python tests..."
 	nosetests tests --exe --with-doctest
 	@echo "> Yaml tests..."
@@ -28,5 +28,6 @@ test: check-syntax-errors check-no-prints
 	@echo "> Notebooks tests..."
 	python notebooks/test_notebooks.py notebooks/
 
+# pre-condition: pip install jupyter
 nb:
-	python notebooks/test_notebooks.py notebooks/
+	jupyter notebook demo.ipynb
