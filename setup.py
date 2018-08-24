@@ -45,7 +45,6 @@ setup(
             'nbconvert >= 5.3',
             'nbformat >= 4.4',
             'pandas >= 0.22.0',
-            'OpenFisca-Survey-Manager >= 0.9.5, < 0.10'
             ],
         survey = [
             'OpenFisca-Survey-Manager >= 0.9.5, < 0.10',
