@@ -6,7 +6,7 @@ jobs:
   build_python2:
     docker:
       - image: circleci/python:2.7-jessie
-    
+
     steps:
       - checkout
 
