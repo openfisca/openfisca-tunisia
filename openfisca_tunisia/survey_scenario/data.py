@@ -27,4 +27,3 @@ class poids_foyer_fiscal(Variable):
     label = u"Poids du foyer fiscal dans l'enquête"
     definition_period = YEAR
     is_period_size_independent = True
-

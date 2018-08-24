@@ -3,13 +3,12 @@
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
+from openfisca_tunisia import entities
 
 try:
     from scipy.optimize import fsolve
 except ImportError:
     fsolve = None
-
-from .. import entities
 
 
 def calculate_net_from(salaire_de_base, individu, period, requested_variable_names):
