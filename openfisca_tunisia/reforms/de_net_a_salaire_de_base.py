@@ -3,21 +3,17 @@
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
+from openfisca_tunisia import entities
 
 try:
     from scipy.optimize import fsolve
 except ImportError:
     fsolve = None
 
-from .. import entities
-
 
 def calculate_net_from(salaire_de_base, individu, period, requested_variable_names):
     # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
-    # To avoid possible conflicts, remove its function
-    holder = individu.get_holder('salaire_de_base')
-    holder.formula.function = None
-    holder.array = salaire_de_base
+    individu.get_holder('salaire_de_base').put_in_cache(salaire_de_base, period)
 
     # Work in isolation
     temp_simulation = individu.simulation.clone()
@@ -52,7 +48,7 @@ class salaire_de_base(Variable):
         simulation.period = period
         # List of variables already calculated. We will need it to remove their holders,
         # that might contain undesired cache
-        requested_variable_names = simulation.requested_periods_by_variable_name.keys()
+        requested_variable_names = list(simulation.requested_periods_by_variable_name.keys())
         if requested_variable_names:
             requested_variable_names.remove(u'salaire_de_base')
         # Clean 'requested_periods_by_variable_name', that is used by -core to check for computation cycles.

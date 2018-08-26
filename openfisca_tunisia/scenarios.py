@@ -9,7 +9,8 @@ import re
 import uuid
 
 from openfisca_core import conv, scenarios
-from entities import Individu, FoyerFiscal, Menage
+from openfisca_core.commons import to_unicode
+from openfisca_tunisia.entities import Individu, FoyerFiscal, Menage
 
 
 def N_(message):
@@ -17,7 +18,7 @@ def N_(message):
 
 
 log = logging.getLogger(__name__)
-year_or_month_or_day_re = re.compile(ur'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]\d|3[0-1]))?)?$')
+year_or_month_or_day_re = re.compile(r'(18|19|20)\d{2}(-(0[1-9]|1[0-2])(-([0-2]\d|3[0-1]))?)?$')
 
 
 class Scenario(scenarios.AbstractScenario):
@@ -183,7 +184,7 @@ class Scenario(scenarios.AbstractScenario):
                                                 ),
                                             conv.default([]),
                                             ),
-                                        ).iteritems(),
+                                        ).items(),
                                     )),
                                 drop_none_values = True,
                                 ),
@@ -229,7 +230,7 @@ class Scenario(scenarios.AbstractScenario):
                                             conv.not_none,
                                             ),
                                         personne_de_reference = conv.test_isinstance((basestring, int)),
-                                        ).iteritems(),
+                                        ).items(),
                                     )),
                                 drop_none_values = True,
                                 ),
@@ -308,7 +309,7 @@ class Scenario(scenarios.AbstractScenario):
                 else:
                     new_foyer_fiscal[u'personnes_a_charge'].append(individu_id)
                 if new_foyer_fiscal_id is None:
-                    new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = unicode(uuid.uuid4())
+                    new_foyer_fiscal[u'id'] = new_foyer_fiscal_id = to_unicode(uuid.uuid4())
                     test_case[u'foyers_fiscaux'].append(new_foyer_fiscal)
                 individus_without_foyer_fiscal.remove(individu_id)
 
@@ -365,7 +366,7 @@ class Scenario(scenarios.AbstractScenario):
                     else:
                         new_menage[u'enfants'].append(individu_id)
                     if new_menage_id is None:
-                        new_menage[u'id'] = new_menage_id = unicode(uuid.uuid4())
+                        new_menage[u'id'] = new_menage_id = to_unicode(uuid.uuid4())
                         test_case[u'menages'].append(new_menage)
                     menages_individus_id.remove(individu_id)
 
@@ -520,7 +521,7 @@ class Scenario(scenarios.AbstractScenario):
                 personnes_a_charge = foyer_fiscal.get('personnes_a_charge')
                 if personnes_a_charge:
                     foyer_fiscal_json['personnes_a_charge'] = personnes_a_charge
-                for column_name, variable_value in foyer_fiscal.iteritems():
+                for column_name, variable_value in foyer_fiscal.items():
                     column = variables.get(column_name)
                     if column is not None and column.entity == FoyerFiscal:
                         variable_value_json = column.transform_value_to_json(variable_value)
@@ -533,7 +534,7 @@ class Scenario(scenarios.AbstractScenario):
             individus_json = []
             for individu in (test_case.get('individus') or []):
                 individu_json = collections.OrderedDict()
-                for column_name, variable_value in individu.iteritems():
+                for column_name, variable_value in individu.items():
                     column = variables.get(column_name)
                     if column is not None and column.entity == Individu:
                         variable_value_json = column.transform_value_to_json(variable_value)
@@ -559,7 +560,7 @@ class Scenario(scenarios.AbstractScenario):
                 autres = menage.get('autres')
                 if autres:
                     menage_json['autres'] = autres
-                for column_name, variable_value in menage.iteritems():
+                for column_name, variable_value in menage.items():
                     column = variables.get(column_name)
                     if column is not None and column.entity == Menage:
                         variable_value_json = column.transform_value_to_json(variable_value)
@@ -579,7 +580,7 @@ class Scenario(scenarios.AbstractScenario):
 def find_age(individu, date, default = None):
     date_naissance = individu.get('date_naissance')
     if isinstance(date_naissance, dict):
-        date_naissance = date_naissance.values()[0] if date_naissance else None
+        date_naissance = next(iter(date_naissance.values())) if date_naissance else None
     if date_naissance is not None:
         age = date.year - date_naissance.year
         if date.month < date_naissance.month or date.month == date_naissance.month and date.day < date_naissance.day:
@@ -588,13 +589,13 @@ def find_age(individu, date, default = None):
 
     age = individu.get('age')
     if isinstance(age, dict):
-        age = age.values()[0] if age else None
+        age = next(iter(age.values())) if age else None
     if age is not None:
         return age
 
     age_en_mois = individu.get('age_en_mois')
     if isinstance(age_en_mois, dict):
-        age_en_mois = age_en_mois.values()[0] if age_en_mois else None
+        age_en_mois = next(iter(age_en_mois.values())) if age_en_mois else None
     if age_en_mois is not None:
         return age_en_mois / 12.0
 

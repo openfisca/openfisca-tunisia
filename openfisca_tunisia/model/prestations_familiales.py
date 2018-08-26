@@ -33,7 +33,7 @@ def ages_first_kids(age, nb=None):
     '''
     Returns the ages of the nb first born kids according to age
     '''
-    ages = asanyarray(age.values())
+    ages = asanyarray(list(age.values()))
 
     ages = (ages.T + .00001 * arange(ages.shape[0])).T  # To deal with twins
 
