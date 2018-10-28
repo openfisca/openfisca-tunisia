@@ -1,6 +1,11 @@
 #!/bin/bash
 
+
 all: test
+
+install:
+	pip install --upgrade pip twine wheel
+	pip install --editable .[tests,notebook] --upgrade
 
 check-no-prints:
 	@test -z "`git grep -w print openfisca_tunisia/model`"
