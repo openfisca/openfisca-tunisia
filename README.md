@@ -81,10 +81,13 @@ Néanmoins, vous aurez à effectuer des vérifications complémentaires à ce qu
 ### Langage Python & Environnement virtuel
 
 Ce projet nécessite l'installation préalable des éléments suivants :
-* Le langage [Python 2.7](https://www.python.org/downloads/)
+* Le langage [Python 3.7](https://www.python.org/downloads/)
 * Le gestionnaire de paquets [pip](https://pip.pypa.io/en/stable/installing/).
 
-Vérifiez alors que la version de python appelée par défaut débute bien par `2.7` :
+> La rétro-compatibilité à Python 2.7 est temporairement maintenue.  
+> Elle sera dépréciée au 1er janvier 2019.
+
+Vérifiez alors que la version de python appelée par défaut débute bien par `3.7` :
 
 ```
 python --version
@@ -107,7 +110,7 @@ sudo pip install pew
 Il vous est désormais possible de créer votre premier environnement dédié à OpenFisca-Tunisia. Nommons-le `openfisca` :
 
 ```
-pew new openfisca --python=python2.7
+pew new openfisca --python=python3.7
 # Si demandé, répondez "Y" à la question sur la modification du fichier de configuration de votre shell
 ```
 
@@ -203,7 +206,13 @@ Et exécutez à nouveau le test yaml.
 
 ### Tout tester
 
-L'ensemble des tests définis dans OpenFisca-Tunisia peut être démarré grâce à la commande suivante :
+L'ensemble des tests et exemples définis dans OpenFisca-Tunisia peut être exécuté avec une commande. Néanmoins, cela nécessite l'installation de librairies complémentaires pour les exemples rédigés sous forme de [notebooks Jupyter](http://jupyter.org) :
+
+```
+pip install -e .[notebook]
+```
+
+Le tout peut ensuite être démarré grâce à la commande suivante :
 
 ```
 make test
