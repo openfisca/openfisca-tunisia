@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.21.0 - [#74](https://github.com/openfisca/openfisca-tunisia/pull/74)
+
+* Migrate to openfisca-core v24 syntax
+
 ## 0.20.0 - [#71](https://github.com/openfisca/openfisca-tunisia/pull/71)
 
 * Adapt to Python 3.6 and keep Python 2.7 compatibility
