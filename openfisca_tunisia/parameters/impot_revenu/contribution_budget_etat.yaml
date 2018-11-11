@@ -1,4 +1,7 @@
 description: Contributions au budget de l'Etat (montant de la contribution en jour de salaire ou pension brut par tranche de revenu annuel net)
+metadata:
+  rate_unit: day
+  threshold_unit: currency
 brackets:
 - amount:
     2014-01-01:

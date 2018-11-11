@@ -1,4 +1,5 @@
 description: Extension de l'abattement précédent aux bas salaires
+unit: /1
 values:
   2011-01-01:
     value: 0

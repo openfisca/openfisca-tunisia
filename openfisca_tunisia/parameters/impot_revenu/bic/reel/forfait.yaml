@@ -1,4 +1,5 @@
 description: ---
+unit: currency
 values:
   2007-01-01:
     value: 0
