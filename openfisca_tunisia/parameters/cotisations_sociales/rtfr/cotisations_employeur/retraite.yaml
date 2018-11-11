@@ -1,4 +1,7 @@
 description: Pensions
+metadata:
+  rate_unit: /1
+  threshold_unit: /1
 brackets:
 - rate:
     2002-03-12:

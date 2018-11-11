@@ -1,4 +1,7 @@
 description: Indemnités de décès et capital décès
+metadata:
+  rate_unit: /1
+  threshold_unit: /1
 brackets:
 - rate:
     1960-01-01:
