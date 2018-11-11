@@ -1,4 +1,5 @@
 description: Age (en mois) minimal
+unit: month
 values:
   1960-01-01:
     value: 2

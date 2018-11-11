@@ -1,4 +1,5 @@
 description: Durée maximale (en mois)
+unit: month
 values:
   1960-01-01:
     value: 11
