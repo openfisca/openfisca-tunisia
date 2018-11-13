@@ -1,4 +1,7 @@
 description: Tranches de l'IR
+metadata:
+  amount_unit: currency
+  threshold_unit: currency
 brackets:
 - amount:
     1990-01-01:

@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.21.1 - [#75](https://github.com/openfisca/openfisca-tunisia/pull/75)
+
+* Add missing units to `parameters`
+
 ## 0.21.0 - [#74](https://github.com/openfisca/openfisca-tunisia/pull/74)
 
 * Migrate to openfisca-core v24 syntax
@@ -14,7 +18,7 @@
 * Migrate to openfisca-core v22 syntax
 * Add `age_en_mois`
 
-## 0.18.1 - [#68](https://github.com/openfisca/openfisca-tunisia/pull/68)
+### 0.18.1 - [#68](https://github.com/openfisca/openfisca-tunisia/pull/68)
 
 * Add 2017 references to `impot_revenu.bareme`
 
@@ -50,12 +54,12 @@
 * Update parameters and references on `SMAG`
   * `cotisations_sociales/gen/smag_journalier.yaml`
 
-## 0.16.2 - [#63](https://github.com/openfisca/openfisca-tunisia/pull/63)
+### 0.16.2 - [#63](https://github.com/openfisca/openfisca-tunisia/pull/63)
 
 * Add `notebooks/test_notebooks.py` script to execute .ipynb files
   * Add `Makefile` tag `nb` to test specified notebooks
 
-## 0.16.1 - [#62](https://github.com/openfisca/openfisca-tunisia/pull/62)
+### 0.16.1 - [#62](https://github.com/openfisca/openfisca-tunisia/pull/62)
 
 * In `TypesRegimeSecuriteSociale` and `/parameters/cotisations_sociales`
   * Rename `cnrps_sal` to `salarie_cnrps`
@@ -73,7 +77,7 @@
   * Delete `smig75`
 * Add `openfisca_tunisia/survey_scenario/`
 
-## 0.14.1 - [#56](https://github.com/openfisca/openfisca-tunisia/pull/56)
+### 0.14.1 - [#56](https://github.com/openfisca/openfisca-tunisia/pull/56)
 
 * Add demo jupyter notebook and binder link
 
@@ -99,12 +103,12 @@
 * Rename `ir_brut` to `impot_revenu_brut`
 * Rename `rni` to `revenu_net_imposable`
 
-## 0.10.2 - [#39](https://github.com/openfisca/openfisca-tunisia/pull/39)
+### 0.10.2 - [#39](https://github.com/openfisca/openfisca-tunisia/pull/39)
 
 * Add installation instructions
 * Translate revenus/activite/non_salarie.py labels to arabic
 
-## 0.10.1 - [#38](https://github.com/openfisca/openfisca-tunisia/pull/38)
+### 0.10.1 - [#38](https://github.com/openfisca/openfisca-tunisia/pull/38)
 
 * Fix legislation tests
 

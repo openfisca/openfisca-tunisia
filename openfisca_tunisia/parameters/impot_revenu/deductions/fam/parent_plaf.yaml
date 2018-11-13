@@ -1,4 +1,5 @@
 description: Parent à charge (plafond de revenu en SMIG)
+unit: /1
 values:
   1990-01-01:
     value: 1
