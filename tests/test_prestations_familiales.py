@@ -42,7 +42,6 @@ def test_contribution_frais_creche():
     assert age_benjamin <= base.tax_benefit_system.parameters(year).prestations_familiales.creche.age_max
 
     contribution_frais_creche = simulation.calculate('contribution_frais_creche', period = year)
-    log.debug(contribution_frais_creche)
     assert contribution_frais_creche != 0
 
 
