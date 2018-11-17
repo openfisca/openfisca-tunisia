@@ -26,7 +26,7 @@ jobs:
           command: |
             pip install --upgrade pip twine wheel
             pip install --editable .[tests] --upgrade
-            # pip install --editable git+https://github.com/openfisca/openfisca-core.git@BRANCH_NAME#egg=OpenFisca-Core  # use a specific branch of OpenFisca-Core
+            pip install --editable git+https://github.com/openfisca/openfisca-core.git@fix-enum-filter#egg=OpenFisca-Core  # use a specific branch of OpenFisca-Core
 
       - run:
           name: Install notebook dependencies
@@ -98,7 +98,7 @@ jobs:
           command: |
             pip install --upgrade pip twine wheel
             pip install --editable .[tests] --upgrade
-            # pip install --editable git+https://github.com/openfisca/openfisca-core.git@BRANCH_NAME#egg=OpenFisca-Core  # use a specific branch of OpenFisca-Core
+            pip install --editable git+https://github.com/openfisca/openfisca-core.git@fix-enum-filter#egg=OpenFisca-Core  # use a specific branch of OpenFisca-Core
 
       - run:
           name: Install notebook dependencies
