@@ -33,29 +33,16 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
     regime_securite_sociale = individu('regime_securite_sociale', period)
     types_regime_securite_sociale = regime_securite_sociale.possible_values
-
-    if isinstance(regime_securite_sociale, EnumArray):
-        types_regime_securite_sociale = regime_securite_sociale.possible_values
-        regime_securite_sociale = np.select([regime_securite_sociale == item.index for item in types_regime_securite_sociale], [item.name for item in types_regime_securite_sociale])
-
     baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = np.zeros(len(assiette_cotisations_sociales))
 
-
     for regime in types_regime_securite_sociale:
         cotisation_name = 'cotisations_{}'.format(cotisation_type)
-        bareme_of_regime = baremes_by_regime[regime]
-
-        if isinstance(regime_securite_sociale, EnumArray):
-            bareme_of_regime = bareme_of_regime.parameter_node_at_instant._children.keys()
+        bareme_of_regime = baremes_by_regime[regime.name]
 
         if not hasattr(bareme_of_regime, cotisation_name):
             continue
-
-        baremes_by_name = getattr(
-            bareme_of_regime,
-            cotisation_name,
-            )
+        baremes_by_name = getattr(bareme_of_regime, cotisation_name)
 
         if bareme_name in ['maladie', 'maternite', 'deces']:
             if 'assurances_sociales' in baremes_by_name._children:
