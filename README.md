@@ -1,6 +1,6 @@
 # OpenFisca Tunisia - الجباية المفتوحة  تونس
 
-[![Build Status via Travis CI](https://travis-ci.org/openfisca/openfisca-tunisia.svg?branch=master)](https://travis-ci.org/openfisca/openfisca-tunisia)
+[![CircleCI](https://circleci.com/gh/openfisca/openfisca-tunisia/tree/master.svg?style=svg)](https://circleci.com/gh/openfisca/openfisca-tunisia/tree/master)
 
 ## Presentation - التقديم
 
