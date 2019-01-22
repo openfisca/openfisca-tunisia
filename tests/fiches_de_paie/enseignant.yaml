@@ -1,11 +1,11 @@
-- name: "Enseignant 2016-04"
+- name: Enseignant 2016-04
   period: 2016-04
   absolute_error_margin: 1
-  input_variables:
+  input:
     regime_securite_sociale: salarie_cnrps
     salaire_de_base: 657
     primes: 190 + 752 + 57 + 46.666
-  output_variables:
+  output:
     assiette_cotisations_sociales: 1702.666
     retraite_salarie: -139.618
     deces_salarie: -17.026
@@ -15,13 +15,13 @@
     salaire_net_a_payer: 1240.109
 
 
-- name: "Enseignant 2016-04"
+- name: Enseignant 2016-04
   period: 2016
   absolute_error_margin: 12
-  input_variables:
+  input:
     regime_securite_sociale: salarie_cnrps
     salaire_de_base: 12 * 657
     primes: 12 * (190 + 752 + 57 + 46.666)
-  output_variables:
+  output:
     irpp:
-       2016: -12 * 256.090
+      2016: -12 * 256.090

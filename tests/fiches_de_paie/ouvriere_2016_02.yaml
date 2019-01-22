@@ -1,10 +1,10 @@
-- name: "Ouvrière février 2016"
+- name: Ouvrière février 2016
   period: 2016-02
   absolute_error_margin: 0.5
-  input_variables:
+  input:
     salaire_de_base: 416.624
     primes: 6.080 + 47.500
-  output_variables:
+  output:
     assiette_cotisations_sociales: 470.204
     cotisations_salarie: -43.164
     salaire_imposable: 427.040

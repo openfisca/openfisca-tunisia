@@ -1,8 +1,8 @@
-- name: "Salarié 1000 DT maternité"
+- name: Salarié 1000 DT maternité
   period: 2011-01
-  input_variables:
+  input:
     salaire_de_base: 1000
-  output_variables:
+  output:
     salaire_de_base: 1000
     maternite_salarie: -.002361 * 1000
     maternite_employeur: -.006139 * 1000

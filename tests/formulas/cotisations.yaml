@@ -1,20 +1,20 @@
-- name: "Salarié 1000 DT cotisations sociales"
+- name: Salarié 1000 DT cotisations sociales
   period: 2007-01
   absolute_error_margin: .001
-  input_variables:
+  input:
     salaire_de_base: 1000
-  output_variables:
+  output:
     salaire_de_base: 1000
     cotisations_employeur: -.16 * 1000
     cotisations_salarie: -.0775 * 1000
 
 
-- name: "Salarié 1000 DT cotisations sociales"
+- name: Salarié 1000 DT cotisations sociales
   period: 2016-01
   absolute_error_margin: .001
-  input_variables:
+  input:
     salaire_de_base: 1000
-  output_variables:
+  output:
     salaire_de_base: 1000
     cotisations_employeur: -.1657 * 1000
     cotisations_salarie: -.0918 * 1000

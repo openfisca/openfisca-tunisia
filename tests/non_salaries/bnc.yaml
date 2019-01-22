@@ -1,15 +1,12 @@
-- name: "BNC marié" # TODO marié
+- name: BNC marié
   period: 2016
   absolute_error_margin: 1
-  input_variables:
+  input:
     statut_marital: 1 # marié
     bnc_forfaitaire_recettes_brutes: 27075
     foncier_forfaitaire_batis_recettes: 4380
     revenu_assimile_pension: 25856
-  output_variables:
+  output:
     bnc: 21660
     # revenus_fonciers: 3504
     tspr: 19392.066
-    # rng: 44406.066
-    # revenu_net_imposable: 44406.066
-    # irpp: -2883.920
