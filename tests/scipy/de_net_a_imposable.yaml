@@ -5,5 +5,4 @@
     salaire_net_a_payer: 14700 / 12
   output:           # Full payroll simulation
     salaire_imposable:
-      2011-01:
-      - 17710 / 12
+      2011-01: 17710 / 12

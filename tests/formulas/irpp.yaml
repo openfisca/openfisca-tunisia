@@ -8,8 +8,7 @@
     revenu_assimile_salaire_apres_abattements: 17710 * (1 - .1)
     irpp: -3010
     salaire_net_a_payer:
-      2016-01:
-      - 14700 / 12
+      2016-01: 14700 / 12
 
 - name: Salarié 12000 TND chef de famille
   period: 2016
@@ -111,5 +110,3 @@
     revenu_assimile_salaire: 0
     revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
     irpp: 0
-
-
