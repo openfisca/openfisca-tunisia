@@ -29,7 +29,7 @@ test: check-syntax-errors check-no-prints
 	@echo "> Python tests..."
 	nosetests tests --exe --with-doctest
 	@echo "> Yaml tests..."
-	openfisca-run-test -c openfisca_tunisia  tests/
+	openfisca test -c openfisca_tunisia  tests/
 	@echo "> Notebooks tests..."
 	python notebooks/test_notebooks.py notebooks/
 
