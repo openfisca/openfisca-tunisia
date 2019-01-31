@@ -1,8 +1,8 @@
-- name: "Salarié 1000 DT maladie"
+- name: Salarié 1000 DT maladie
   period: 2011-01
-  input_variables:
+  input:
     salaire_de_base: 1000
-  output_variables:
+  output:
     salaire_de_base: 1000
     maladie_salarie: -.027494 * 1000
     maladie_employeur: -.040006 * 1000

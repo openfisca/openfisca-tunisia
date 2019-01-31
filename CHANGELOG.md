@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.22.0 - [#82](https://github.com/openfisca/openfisca-tunisia/pull/82)
+
+* Migrate to openfisca-core v25 syntax
+* Fix `KeyError` on `compute_cotisation`
+* Rename parameters paths
+  * Rename `cotisations_sociales/rsa/sal` to `cotisations_sociales/rsa/cotisations_salarie`
+  * Rename `cotisations_sociales/rsaa/sal` to `cotisations_sociales/rsaa/cotisations_salarie`
+* Fix `reforms` value in YAML tests
+
 ### 0.21.1 - [#75](https://github.com/openfisca/openfisca-tunisia/pull/75)
 
 * Add missing units to `parameters`

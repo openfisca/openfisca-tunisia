@@ -1,10 +1,11 @@
-- name: "De net a salaire_de_base pour Enseignant à net à payer de 1240 TND"
-  reforms: openfisca_tunisia.reforms.de_net_a_salaire_de_base.de_net_a_salaire_de_base
+- name: De net a salaire_de_base pour Enseignant à net à payer de 1240 TND
+  reforms: 
+    - openfisca_tunisia.reforms.de_net_a_salaire_de_base.de_net_a_salaire_de_base
   period: 2016-04
   absolute_error_margin: 1
-  input_variables:
+  input:
     salaire_net_a_payer: 1240
     regime_securite_sociale: salarie_cnrps
-  output_variables:
+  output:
     salaire_imposable: 1495
     salaire_de_base: 1702
