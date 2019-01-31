@@ -1,9 +1,0 @@
-- period: 2011-01
-  reforms: 
-    - openfisca_tunisia.reforms.de_net_a_imposable.de_net_a_imposable
-  relative_error_margin: 0.005
-  input:
-    salaire_net_a_payer: 14700 / 12
-  output:           # Full payroll simulation
-    salaire_imposable:
-      2011-01: 17710 / 12
