@@ -1,5 +1,6 @@
 - name: De net a salaire_de_base pour Enseignant à net à payer de 1240 TND
-  reforms: openfisca_tunisia.reforms.de_net_a_salaire_de_base.de_net_a_salaire_de_base
+  reforms: 
+    - openfisca_tunisia.reforms.de_net_a_salaire_de_base.de_net_a_salaire_de_base
   period: 2016-04
   absolute_error_margin: 1
   input:

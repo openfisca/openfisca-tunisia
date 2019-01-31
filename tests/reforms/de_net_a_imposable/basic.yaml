@@ -1,5 +1,6 @@
 - name: De net a imposable pour individu à net à payer de 14700 TND
-  reforms: openfisca_tunisia.reforms.de_net_a_imposable.de_net_a_imposable
+  reforms: 
+    - openfisca_tunisia.reforms.de_net_a_imposable.de_net_a_imposable
   period: 2016-12
   absolute_error_margin: 0.5
   input:
