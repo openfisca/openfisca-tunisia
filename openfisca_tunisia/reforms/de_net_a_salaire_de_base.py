@@ -3,7 +3,7 @@
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
-from openfisca_tunisia import entities
+
 
 try:
     from scipy.optimize import fsolve
@@ -11,9 +11,10 @@ except ImportError:
     fsolve = None
 
 
-def calculate_net_from(salaire_de_base, individu, period, requested_variable_names):
+def calculate_net_from(salaire_de_base, primes, individu, period, requested_variable_names):
     # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
     individu.get_holder('salaire_de_base').put_in_cache(salaire_de_base, period)
+    individu.get_holder('primes').put_in_cache(primes, period)
 
     # Work in isolation
     temp_simulation = individu.simulation.clone()
@@ -34,13 +35,17 @@ def calculate_net_from(salaire_de_base, individu, period, requested_variable_nam
 class salaire_de_base(Variable):
     value_type = float
     entity = Individu
-    label = u"Salaire imposable"
+    label = u"Salaire de base"
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
     def formula(individu, period):
         # Calcule le salaire de base à partir du salaire net par inversion numérique.
         net = individu.get_holder('salaire_net_a_payer').get_array(period)
+        primes = individu('primes', period)
+
+        if primes is None:
+            primes = individu.empty_array()
         if net is None:
             return individu.empty_array()
 
@@ -58,15 +63,15 @@ class salaire_de_base(Variable):
         simulation.requested_periods_by_variable_name = dict()
 
         def solve_func(net):
-            def innerfunc(essai):
-                return calculate_net_from(essai, individu, period, requested_variable_names) - net
+            def innerfunc(essai_salaire_de_base):
+                return calculate_net_from(essai_salaire_de_base, primes, individu, period, requested_variable_names) - net
             return innerfunc
 
         salaire_de_base_calcule = \
             fsolve(
                 solve_func(net),
-                net * 1.4,  # first guess
-                xtol = 1 / 100,  # précision
+                net * 1,  # first guess
+                xtol = 1 / 1000,  # précision au millime
                 )
 
         return salaire_de_base_calcule

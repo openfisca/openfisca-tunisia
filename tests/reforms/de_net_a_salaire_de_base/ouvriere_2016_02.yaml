@@ -1,0 +1,18 @@
+- name: OpenJibaya sur cas ouvrière
+  reforms:
+    - openfisca_tunisia.reforms.de_net_a_salaire_de_base.de_net_a_salaire_de_base
+  period: 2016-02
+  absolute_error_margin: 1
+  input:
+    salaire_net_a_payer: 427.040
+    primes: 6.080 + 47.500
+
+  output:
+    primes: 6.080 + 47.500
+    salaire_de_base: 416.624
+    assiette_cotisations_sociales: 470.204 # brut
+    salaire_de_base: 416.624
+    salaire_imposable: 427.040
+    cotisations_salarie: -43.164 # cnss
+    irpp_mensuel_salarie: 0 # déduit de ouvriere_2016_02.yaml
+    # salaire_super_brut: 427.040 + 0 + 43.164 + 6.080 + 47.500 + cotisations_employeur
