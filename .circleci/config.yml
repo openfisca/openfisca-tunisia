@@ -1,6 +1,5 @@
 version: 2
 
-
 jobs:
   build_python3:
     docker:
@@ -68,6 +67,10 @@ jobs:
           command: |
             source /tmp/venv/openfisca_tunisia/bin/activate
             .circleci/publish-python-package.sh
+
+      - run:
+          name: Publish a git tag
+          command: .circleci/publish-git-tag.sh
 
 
 workflows:
