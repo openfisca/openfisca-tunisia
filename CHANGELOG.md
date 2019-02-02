@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.22.1 - [#78](https://github.com/openfisca/openfisca-tunisia/pull/78)
+
+* Add some other missing units to `parameters`
+
 ### 0.22.0 - [#82](https://github.com/openfisca/openfisca-tunisia/pull/82)
 
 * Migrate to openfisca-core v25 syntax
@@ -72,7 +76,7 @@
 
 * In `TypesRegimeSecuriteSociale` and `/parameters/cotisations_sociales`
   * Rename `cnrps_sal` to `salarie_cnrps`
-  * Rename `cnrps_pen` to `pensionne_cnrps`  
+  * Rename `cnrps_pen` to `pensionne_cnrps`
 
 ## 0.16.0 - [#61](https://github.com/openfisca/openfisca-tunisia/pull/61)
 
