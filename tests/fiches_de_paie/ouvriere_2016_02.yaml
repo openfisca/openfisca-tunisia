@@ -9,3 +9,16 @@
     cotisations_salarie: -43.164
     salaire_imposable: 427.040
     salaire_net_a_payer: 427.040
+
+- name: Ouvrière février 2016 imposée mais avec même salaire net que la précédente
+  period: 2016-02
+  absolute_error_margin: 0.5
+  input:
+    salaire_de_base: 466.688
+    primes: 6.080 + 47.500
+
+  output:
+    salaire_net_a_payer: 427.040
+    assiette_cotisations_sociales: 520.268
+    cotisations_salarie: -47.761
+    salaire_imposable: 472.507

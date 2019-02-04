@@ -35,7 +35,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     baremes_by_regime = parameters(period.start).cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
     types_regime_securite_sociale = regime_securite_sociale.possible_values
-    
+
     for regime in types_regime_securite_sociale:
         if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]._children:
             continue
@@ -389,8 +389,8 @@ class salaire_imposable(Variable):
 
     def formula(individu, period):
         return (
-            individu('assiette_cotisations_sociales', period) +
-            individu('cotisations_salarie', period)
+            individu('assiette_cotisations_sociales', period)
+            + individu('cotisations_salarie', period)
             )
 
 
@@ -403,8 +403,8 @@ class salaire_net_a_payer(Variable):
 
     def formula(individu, period):
         return (
-            individu('salaire_imposable', period) +
-            individu('irpp_mensuel_salarie', period)
+            individu('salaire_imposable', period)
+            + individu('irpp_mensuel_salarie', period)
             )
 
 
@@ -417,9 +417,9 @@ class salaire_super_brut(Variable):
 
     def formula(individu, period):
         return (
-            individu('salaire_de_base', period = period) +
-            individu('primes', period = period) -
-            individu('cotisations_employeur', period = period)  # Cotisations employeur sont négatives
+            individu('salaire_de_base', period = period)
+            + individu('primes', period = period)
+            - individu('cotisations_employeur', period = period)  # Cotisations employeur sont négatives
             )
 
 
