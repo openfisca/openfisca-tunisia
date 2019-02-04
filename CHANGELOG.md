@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.23.0 - [#85](https://github.com/openfisca/openfisca-tunisia/pull/85)
+
+* Improve `reforms/de_net_a_salaire_de_base.py`
+  * Adapt with`ouvriere_2016_02.yaml` use case
+* Add `reforms/de_net_a_salaire_de_base/ouvriere_2016_02.yaml` test
+
 ### 0.22.1 - [#78](https://github.com/openfisca/openfisca-tunisia/pull/78)
 
 * Add some other missing units to `parameters`
