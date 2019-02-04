@@ -6,7 +6,6 @@
   input:
     salaire_net_a_payer: 427.040
     primes: 6.080 + 47.500
-
   output:
     primes: 6.080 + 47.500
     salaire_de_base: 416.624
@@ -15,4 +14,3 @@
     salaire_imposable: 427.040
     cotisations_salarie: -43.164 # cnss
     irpp_mensuel_salarie: 0 # déduit de ouvriere_2016_02.yaml
-    # salaire_super_brut: 427.040 + 0 + 43.164 + 6.080 + 47.500 + cotisations_employeur
