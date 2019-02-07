@@ -1,6 +1,10 @@
 # Changelog
 
-### 0.23.0 - [#85](https://github.com/openfisca/openfisca-tunisia/pull/85)
+### 0.23.1 - [#81](https://github.com/openfisca/openfisca-tunisia/pull/81)
+
+* Update `openfisca-survey-manager` to `0.17.*` revision
+
+## 0.23.0 - [#85](https://github.com/openfisca/openfisca-tunisia/pull/85)
 
 * Improve `reforms/de_net_a_salaire_de_base.py`
   * Adapt with`ouvriere_2016_02.yaml` use case
@@ -10,7 +14,7 @@
 
 * Add some other missing units to `parameters`
 
-### 0.22.0 - [#82](https://github.com/openfisca/openfisca-tunisia/pull/82)
+## 0.22.0 - [#82](https://github.com/openfisca/openfisca-tunisia/pull/82)
 
 * Migrate to openfisca-core v25 syntax
 * Fix `KeyError` on `compute_cotisation`

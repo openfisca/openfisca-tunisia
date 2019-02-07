@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.23.0',
+    version = '0.23.1',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -47,7 +47,7 @@ setup(
             'pandas >= 0.22.0',
             ],
         survey = [
-            'OpenFisca-Survey-Manager >= 0.9.5, < 0.10',
+            'OpenFisca-Survey-Manager >=0.9.5,<0.18',
             ]
         ),
     include_package_data = True,  # Will read MANIFEST.in
