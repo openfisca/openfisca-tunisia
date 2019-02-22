@@ -6,6 +6,7 @@ import datetime
 
 from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
 from openfisca_tunisia.model.base import *
+from openfisca_tunisia.scenarios import init_single_entity
 from tests import base
 
 
@@ -34,8 +35,10 @@ def check_run(simulation, period):
 
 def test_basics():
     for scenario_arguments in scenarios_arguments:
-        scenario = base.tax_benefit_system.new_scenario()
-        scenario.init_single_entity(**scenario_arguments)
+        scenario = init_single_entity(
+            base.tax_benefit_system.new_scenario(),
+            **scenario_arguments
+            )
         simulation = scenario.new_simulation(debug = False)
         period = scenario_arguments['period']
         yield check_run, simulation, period
