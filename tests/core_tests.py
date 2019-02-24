@@ -13,12 +13,14 @@ tax_benefit_system = TunisiaTaxBenefitSystem()
 def check_1_parent(year = 2011):
     scenario = init_single_entity(
         tax_benefit_system.new_scenario(),
-        axes = [dict(
-            count = 3,
-            name = 'salaire_imposable',
-            max = 100000,
-            min = 0,
-            )],
+        axes = [[
+            dict(
+                count = 3,
+                name = 'salaire_imposable',
+                max = 100000,
+                min = 0,
+                )
+            ]],
         period = year,
         parent1 = dict(date_naissance = datetime.date(year - 40, 1, 1)),
         )
