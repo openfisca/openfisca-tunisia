@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openfisca_tunisia.model.base import *
+from openfisca_tunisia.scenarios import init_single_entity
 from tests import base
 
 import datetime
@@ -14,7 +15,8 @@ log.setLevel(logging.DEBUG)
 def test_contribution_frais_creche():
     year = 2011
     month = '2011-01'
-    simulation = base.tax_benefit_system.new_scenario().init_single_entity(
+    simulation = init_single_entity(
+        base.tax_benefit_system.new_scenario(),
         period = year,
         parent1 = dict(age = 40),
         parent2 = dict(
@@ -22,15 +24,15 @@ def test_contribution_frais_creche():
             ),
         enfants = [
             dict(
-                id = 'Behija',
+                # id = 'Behija',
                 date_naissance = '1992-01-01',
                 ),
             dict(
-                id = 'Hassen',
+                # id = 'Hassen',
                 date_naissance = '2002-01-01',
                 ),
             dict(
-                id = 'Thoura',
+                # id = 'Thoura',
                 date_naissance = '2008-12-31',
                 )
             ]

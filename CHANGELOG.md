@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.24.0 - [#87](https://github.com/openfisca/openfisca-tunisia/pull/87)
+
+* Migrate to openfisca-core v26 syntax
+
 ### 0.23.1 - [#81](https://github.com/openfisca/openfisca-tunisia/pull/81)
 
 * Update `openfisca-survey-manager` to `0.17.*` revision
