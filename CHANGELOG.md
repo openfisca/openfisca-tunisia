@@ -1,8 +1,12 @@
 # Changelog
 
+## 0.25.0 - [#88](https://github.com/openfisca/openfisca-tunisia/pull/88)
+
+* Migrate to `openfisca-core` v27 syntax
+
 ## 0.24.0 - [#87](https://github.com/openfisca/openfisca-tunisia/pull/87)
 
-* Migrate to openfisca-core v26 syntax
+* Migrate to `openfisca-core` v26 syntax
 
 ### 0.23.1 - [#81](https://github.com/openfisca/openfisca-tunisia/pull/81)
 
