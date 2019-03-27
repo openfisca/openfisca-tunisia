@@ -84,9 +84,6 @@ Ce projet nécessite l'installation préalable des éléments suivants :
 * Le langage [Python 3.7](https://www.python.org/downloads/)
 * Le gestionnaire de paquets [pip](https://pip.pypa.io/en/stable/installing/).
 
-> La rétro-compatibilité à Python 2.7 est temporairement maintenue.  
-> Elle sera dépréciée au 1er janvier 2019.
-
 Vérifiez alors que la version de python appelée par défaut débute bien par `3.7` :
 
 ```
