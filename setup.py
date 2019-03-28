@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.25.0',
+    version = '0.26.0',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -52,12 +52,12 @@ setup(
         ),
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >=27,<28',
+        'OpenFisca-Core >=29, <30',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
     message_extractors = {'openfisca_tunisia': [
         ('**.py', 'python', None),
         ]},
-    packages = find_packages(exclude=['tests*', 'old_tests*']),
+    packages = find_packages(exclude=['tests*']),
     )
