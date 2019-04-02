@@ -18,18 +18,13 @@ except ImportError:
     fsolve = None
 
 
-def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
+def calculate_net_from(salaire_imposable, individu, period):
     # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
     individu.get_holder('salaire_imposable').put_in_cache(salaire_imposable, period)
 
     # Work in isolation
     temp_simulation = individu.simulation.clone()
     temp_individu = temp_simulation.individu
-
-    # Calculated variable holders might contain undesired cache
-    # (their entity.simulation points to the original simulation above)
-    for name in requested_variable_names:
-        temp_individu.get_holder(name).delete_arrays()
 
     # Force recomputing of salaire_net_a_payer
     temp_individu.get_holder('salaire_net_a_payer').delete_arrays()
@@ -57,7 +52,7 @@ class salaire_imposable(Variable):
 
         def solve_func(net):
             def innerfunc(essai):
-                return calculate_net_from(essai, individu, period, requested_variable_names) - net
+                return calculate_net_from(essai, individu, period) - net
             return innerfunc
 
         imposable_calcule = \
