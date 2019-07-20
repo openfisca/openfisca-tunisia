@@ -13,10 +13,6 @@ except ImportError:
 
 
 def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
-    # We're not wanting to calculate salaire_imposable again, 
-    # but instead manually set it as an input variable
-    individu.get_holder('salaire_imposable').put_in_cache(salaire_imposable, period)
-
     # Work in isolation
     temp_simulation = individu.simulation.clone()
     temp_individu = temp_simulation.individu
@@ -24,10 +20,14 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
     # Calculated variable holders might contain undesired cache
     # (their entity.simulation points to the original simulation above)
     for name in requested_variable_names:
-        temp_individu.get_holder(name).delete_arrays()
+        temp_individu.get_holder(name).delete_arrays(period)
+
+    # We're not wanting to calculate salaire_imposable again, 
+    # but instead manually set it as an input variable
+    temp_individu.get_holder('salaire_imposable').set_input(period, salaire_imposable)
 
     # Force recomputing of salaire_net_a_payer
-    temp_individu.get_holder('salaire_net_a_payer').delete_arrays()
+    temp_individu.get_holder('salaire_net_a_payer').delete_arrays(period)
     net = temp_individu('salaire_net_a_payer', period)[0]
 
     return net
@@ -42,18 +42,17 @@ class salaire_imposable(Variable):
 
 
     def formula(individu, period):
-        # Calcule le salaire imposable à partir du salaire net par inversion numérique.
+        # Use numerical inversion to calculate 'salaire_imposable' from 'salaire_net_a_payer'
         net = individu.get_holder('salaire_net_a_payer').get_array(period)
         if net is None:
             return individu.empty_array()
 
         simulation = individu.simulation
         simulation.period = period
-        # List of variables already calculated. We will need it to remove their holders,
-        # that might contain undesired cache
+
+        # List of variables already calculated.
+        # We will need it to remove their holders, that might contain undesired cache
         requested_variable_names = [name for (name, period) in individu.simulation.computation_stack]
-        if requested_variable_names:
-            requested_variable_names.remove('salaire_imposable')
 
         def solve_func(net):
             def innerfunc(essai):
