@@ -1,16 +1,10 @@
-# -*- coding: utf-8 -*-
-
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
 from openfisca_tunisia import entities
 
 from numpy.ma.testutils import assert_not_equal
-
-try:
-    from urllib.request import Request  # python 3.0 and later
-except ImportError:
-    from urllib2 import Request  # python 2
+from urllib.request import Request
 
 try:
     from scipy.optimize import fsolve
@@ -19,7 +13,8 @@ except ImportError:
 
 
 def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
-    # We're not wanting to calculate salaire_imposable again, but instead manually set it as an input variable
+    # We're not wanting to calculate salaire_imposable again, 
+    # but instead manually set it as an input variable
     individu.get_holder('salaire_imposable').put_in_cache(salaire_imposable, period)
 
     # Work in isolation
@@ -58,7 +53,7 @@ class salaire_imposable(Variable):
         # that might contain undesired cache
         requested_variable_names = [name for (name, period) in individu.simulation.computation_stack]
         if requested_variable_names:
-            requested_variable_names.remove(u'salaire_imposable')
+            requested_variable_names.remove('salaire_imposable')
 
         def solve_func(net):
             def innerfunc(essai):
@@ -76,7 +71,7 @@ class salaire_imposable(Variable):
 
 
 class de_net_a_imposable(Reform):
-    name = u'Inversion du calcul imposable -> net'
+    name = 'Inversion du calcul imposable -> net'
 
     def apply(self):
         self.update_variable(salaire_imposable)

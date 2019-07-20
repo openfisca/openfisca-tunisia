@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from __future__ import division
 from openfisca_tunisia.model.base import Reform, Variable, Individu, MONTH, set_input_divide_by_period 
 
@@ -72,7 +70,7 @@ class salaire_de_base(Variable):
 
 
 class de_net_a_salaire_de_base(Reform):
-    name = u'Inversion du calcul brut (salaire_de_base) -> net'
+    name = 'Inversion du calcul brut (salaire_de_base) -> net'
 
     def apply(self):
         self.update_variable(salaire_de_base)
