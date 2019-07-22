@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.27.0 - [#101](https://github.com/openfisca/openfisca-tunisia/pull/101)
+
+* Migrate to `openfisca-core` v30
+  * Adapt `de_net_a_imposable` and `de_net_a_salaire_de_base` reforms
+
 ## 0.26.0 - [#90](https://github.com/openfisca/openfisca-tunisia/pull/90)
 
 * Migrate to `openfisca-core` v29
@@ -21,7 +26,7 @@
 ## 0.23.0 - [#85](https://github.com/openfisca/openfisca-tunisia/pull/85)
 
 * Improve `reforms/de_net_a_salaire_de_base.py`
-  * Adapt with`ouvriere_2016_02.yaml` use case
+  * Adapt with `ouvriere_2016_02.yaml` use case
 * Add `reforms/de_net_a_salaire_de_base/ouvriere_2016_02.yaml` test
 
 ### 0.22.1 - [#78](https://github.com/openfisca/openfisca-tunisia/pull/78)
