@@ -1,5 +1,76 @@
 description: Salaire Minimum Agricole Garanti (SMAG) - montant par jour
-unit: currency
+
+metadata:
+  unit: currency
+  reference:
+    1990-01-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1991-08-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1992-05-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1992-08-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1993-05-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1993-08-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1994-08-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1995-05-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1996-05-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1996-09-09:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1997-07-20:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1997-11-07:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1998-08-20:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1999-05-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    1999-08-19:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2000-05-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2001-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2002-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2003-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2004-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2005-09-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2006-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2007-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2008-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2009-08-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2010-07-01:
+      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
+    2014-08-11:
+      title: Décret n°2014-2908 du 11 Août 2014
+      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429083.pdf
+    2015-11-09:
+      title: Décret n°2015-1763 du 09 Novembre 2015
+      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
+    2017-06-05:
+      title: Décret n°2017-669 du 05 Juin 2017
+      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176693.pdf
+    2018-05-01:
+      title: Décret gouvernemental n°2018-673 du 07 août 2018
+      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf
+    2019-05-01:
+      title: Décret gouvernemental n°2019-455 du 28 mai 2019
+      href: http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-455-du----jort-2019-043__20190430045532?shorten=m5lK
+
 values:
   1966-01-01:
     value: 0.385
@@ -39,82 +110,56 @@ values:
     value: 3.315
   1990-01-01:
     value: 3.661
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1991-08-01:
     value: 3.761
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1992-05-01:
     value: 3.961
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1992-08-01:
     value: 4.061
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1993-05-01:
     value: 4.261
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1993-08-01:
     value: 4.361
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1994-08-01:
     value: 4.461
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1995-05-01:
     value: 4.661
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1996-05-01:
     value: 4.861
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1996-09-09:
     value: 4.961
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1997-07-20:
     value: 5.061
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1997-11-07:
     value: 5.209
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1998-08-20:
     value: 5.309
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1999-05-01:
     value: 5.509
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   1999-08-19:
     value: 5.609
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2000-05-01:
     value: 5.809
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2001-07-01:
     value: 6.059
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2002-07-01:
     value: 6.259
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2003-07-01:
     value: 6.509
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2004-07-01:
     value: 6.709
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2005-09-01:
     value: 6.909
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2006-07-01:
     value: 7.129
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2007-07-01:
     value: 7.379
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2008-07-01:
     value: 7.749
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2009-08-01:
     value: 8.019
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2010-07-01:
     value: 8.380
-    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf
   2011-05-01:
     value: 9.0
   2012-07-01:
@@ -123,16 +168,11 @@ values:
     value: 11.608
   2014-08-11:
     value: 12.304
-    reference: Décret n°2014-2908 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429083.pdf
   2015-11-09:
     value: 13.0
-    reference: Décret n°2015-1763 du 09 Novembre 2015 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
   2017-06-05:
     value: 13.736
-    reference: Décret n°2017-669 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176693.pdf
   2018-05-01:
     value: 14.560
-    reference: Décret gouvernemental n°2018-673 du 07 août 2018 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf
   2019-05-01:
     value: 15.504
-    reference: Décret gouvernemental n° 2019-455 du 28 mai 2019 - http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-455-du----jort-2019-043__20190430045532?shorten=m5lK
