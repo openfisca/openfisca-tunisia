@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.28.0 - [#104](https://github.com/openfisca/openfisca-tunisia/pull/104)
+
+* Migrate to `openfisca-core` v31
+  * Remove the `base_function` of the variable `age_en_mois`
+
 ## 0.27.0 - [#101](https://github.com/openfisca/openfisca-tunisia/pull/101)
 
 * Migrate to `openfisca-core` v30
