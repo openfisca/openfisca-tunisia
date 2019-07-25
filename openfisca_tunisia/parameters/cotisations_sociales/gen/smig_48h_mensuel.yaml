@@ -1,164 +1,111 @@
 description: Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 48h par semaine
-
-metadata:
-  unit: currency
-  reference:
-    1975-06-01:
-      title: Décret n°75-357 du 03 Juin 1975
-      href: http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf
-    1980-05-01:
-      title: Décret n°80-609 du 19 Mai 1980
-      href: http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf
-    1982-02-01:
-      title: Décret n°80-609 du 19 Mai 1980 + Décret n°82-501 du 16 Mars 1982
-      href: http://www.legislation.tn/sites/default/files/journal-officiel/1982/1982F/Jo01982.pdf
-    1990-01-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1991-08-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1992-05-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1992-08-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1993-05-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1993-08-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1994-08-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1995-05-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1996-05-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1996-09-09:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1997-07-20:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1997-11-07:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1998-08-20:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1999-05-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    1999-08-19:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2000-05-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2001-07-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2002-07-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2003-07-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2004-07-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2005-09-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2006-07-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2007-07-01:
-      href: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
-    2008-07-01:
-      title: Décret n°2008-2072 du 02 Juin 2008
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf
-    2009-08-01:
-      title: Décret n°2009-2257 du 14 Juillet 2009
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf
-    2010-07-01:
-      title: Décret n°2010-1746 du 17 Juillet 2010
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf
-    2011-05-01:
-      title: Décret n°2011-679 du 09 Juin 2011
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf
-    2012-07-01:
-      title: Décret n°2012-1981 du 20 Septembre 2012
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf
-    2014-05-01:
-      title: Décret n°2014-2907 du 11 Août 2014
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf
-    2015-05-01:
-      title: Décret n°2015-1762 du 09 Novembre 2015
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
-    2016-08-01:
-      title: Décret n°2017-668 du 05 Juin 2017
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176683.pdf
-    2018-05-01:
-      title: Décret gouvernemental n°2018-672 du 07 août 2018
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf
-    2019-05-01:
-      title: Décret gouvernemental n°2019-454 du 28 mai 2019
-      href: http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq
-
+unit: currency
 values:
   1975-06-01:
     value: 30.160
+    reference: Décret n°75-357 du 03 Juin 1975 - http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf
   1980-05-01:
     value: 54.704
+    reference: Décret n°80-609 du 19 Mai 1980 - http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf
   1982-02-01:
     value: 54.704
+    reference: Décret n°80-609 du 19 Mai 1980 + Décret n°82-501 du 16 Mars 1982 - http://www.legislation.tn/sites/default/files/journal-officiel/1982/1982F/Jo01982.pdf
   1990-01-01:
     value: 123.016
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1991-08-01:
     value: 125.016
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1992-05-01:
     value: 132.912
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1992-08-01:
     value: 134.992
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1993-05-01:
     value: 142.896
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1993-08-01:
     value: 144.976
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1994-08-01:
     value: 147.056
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1995-05-01:
     value: 154.128
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1996-05-01:
     value: 160.160
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1996-09-09:
     value: 162.240
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1997-07-20:
     value: 164.320
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1997-11-07:
     value: 170.352
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1998-08-20:
     value: 172.848
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1999-05-01:
     value: 178.880
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   1999-08-19:
     value: 180.960
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2000-05-01:
     value: 186.992
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2001-07-01:
     value: 195.520
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2002-07-01:
     value: 202.592
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2003-07-01:
     value: 211.120
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2004-07-01:
     value: 218.192
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2005-09-01:
     value: 224.224
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2006-07-01:
     value: 231.296
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2007-07-01:
     value: 239.824
+    reference: http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf
   2008-07-01:
     value: 251.888
+    reference: Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf
   2009-08-01:
     value: 260.624
+    reference: Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf
   2010-07-01:
     value: 272.480
+    reference: Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf
   2011-05-01:
     value: 286.0
+    reference: Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf
   2012-07-01:
     value: 301.808
+    reference: Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf
   2014-05-01:
     value: 319.904
+    reference: Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf
   2015-05-01:
     value: 338.0
+    reference: Décret n°2015-1762 du 09 Novembre 2015 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
   2016-08-01:
     value: 357.136
+    reference: Décret n°2017-668 du 05 Juin 2017 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176683.pdf
   2018-05-01:
     value: 378.560
+    reference: Décret gouvernemental n°2018-672 du 07 août 2018 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf
   2019-05-01:
     value: 403.104
+    reference: Décret gouvernemental n°2019-454 du 28 mai 2019 - http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq
