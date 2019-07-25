@@ -1,5 +1,15 @@
 # Changelog
 
+### 0.28.1 - [#102](https://github.com/openfisca/openfisca-tunisia/pull/102)
+
+* Add 2018 + 2019 values and update metadata of `SMIG`
+  * `cotisations_sociales/gen/smig_40h_horaire.yaml`
+  * `cotisations_sociales/gen/smig_40h_mensuel.yaml`
+  * `cotisations_sociales/gen/smig_48h_horaire.yaml`
+  * `cotisations_sociales/gen/smig_48h_mensuel.yaml`
+* Add 2018 + 2019 values and update metadata of `SMAG`
+  * `cotisations_sociales/gen/smag_journalier.yaml`
+
 ## 0.28.0 - [#104](https://github.com/openfisca/openfisca-tunisia/pull/104)
 
 * Migrate to `openfisca-core` v31
