@@ -1,5 +1,9 @@
 description: Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 48h par semaine
-unit: currency
+documentation: |
+  Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins
+  الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل
+metadata:
+  unit: currency
 values:
   1975-06-01:
     metadata:

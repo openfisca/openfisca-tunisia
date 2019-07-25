@@ -1,5 +1,9 @@
 description: Salaire Minimum Agricole Garanti (SMAG) - montant par jour
-unit: currency
+documentation: |
+  Salaire minimum agricole garanti par journée de travail effectif pour les travailleurs des deux sexes âgés de 18 ans au moins
+  الأجر الأدنى الفلاحي المضمون للعمال من الجنسين البالغين من العمر 18 سنة على الأقل عن كل يوم عمل فعلي
+metadata:
+  unit: currency
 values:
   1966-01-01:
     value: 0.385
