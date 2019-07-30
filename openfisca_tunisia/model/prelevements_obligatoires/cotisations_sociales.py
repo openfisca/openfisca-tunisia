@@ -136,7 +136,7 @@ class cotisations_salarie(Variable):
             individu('maternite_salarie', period) +
             individu('protection_sociale_travailleurs_salarie', period) +
             individu('retraite_salarie', period) +
-            individu('ugtt', period, options = [ADD])
+            individu('ugtt', period)
             )
 
 

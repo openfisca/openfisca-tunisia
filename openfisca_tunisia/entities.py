@@ -38,18 +38,17 @@ Menage = build_entity(
         {
             'key': 'personne_de_reference',
             'label': u'Personne de référence',
-            'max': 1
+            'max': 1,
             },
         {
             'key': 'conjoint',
             'label': u'Conjoint',
-            'max': 1
+            'max': 1,
             },
         {
             'key': 'enfant',
             'plural': 'enfants',
             'label': u'Enfants',
-            'max': 2
             },
         {
             'key': 'autre',
