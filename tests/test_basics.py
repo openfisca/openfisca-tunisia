@@ -1,10 +1,8 @@
 import pytest
 import datetime
 
-from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
 from openfisca_tunisia.model.base import *
 from openfisca_tunisia.scenarios import init_single_entity
-from tests import base
 
 
 scenarios_arguments = [
@@ -39,13 +37,3 @@ def test_basics(one_scenario_arguments):
     simulation = scenario.new_simulation(debug = False)
     period = one_scenario_arguments['period']
     check_run(simulation, period)
-
-
-if __name__ == '__main__':
-    import logging
-    import sys
-
-    logging.basicConfig(level = logging.ERROR, stream = sys.stdout)
-    for _, simulation, period in test_basics():
-        check_run(simulation, period)
-    print('OpenFisca-Tunisia basic test was executed successfully.'.encode('utf-8'))
