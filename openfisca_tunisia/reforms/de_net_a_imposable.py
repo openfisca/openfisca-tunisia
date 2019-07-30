@@ -22,7 +22,7 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
     for name in requested_variable_names:
         temp_individu.get_holder(name).delete_arrays(period)
 
-    # We're not wanting to calculate salaire_imposable again, 
+    # We're not wanting to calculate salaire_imposable again,
     # but instead manually set it as an input variable
     temp_individu.get_holder('salaire_imposable').set_input(period, salaire_imposable)
 
@@ -36,7 +36,7 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
 class salaire_imposable(Variable):
     value_type = float
     entity = Individu
-    label = u"Salaire imposable"
+    label = "Salaire imposable"
     definition_period = MONTH
     set_input = set_input_divide_by_period
 

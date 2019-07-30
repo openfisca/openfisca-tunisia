@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.28.2 - [#106](https://github.com/openfisca/openfisca-tunisia/pull/106)
+
+* Remove python2 unicode mark
+
 ### 0.28.1 - [#102](https://github.com/openfisca/openfisca-tunisia/pull/102)
 
 * Add 2018 + 2019 values and update metadata of `SMIG`
@@ -24,7 +28,7 @@
 
 * Migrate to `openfisca-core` v29
 * Clean up configuration (CI job names, old_tests residue)
-  
+
 
 ## 0.25.0 - [#88](https://github.com/openfisca/openfisca-tunisia/pull/88)
 

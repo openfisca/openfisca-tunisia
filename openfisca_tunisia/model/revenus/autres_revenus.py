@@ -8,28 +8,28 @@ from openfisca_tunisia.model.base import *
 
 class salaire_etranger(Variable):
     value_type = int
-    label = u"Salaires perçus à l'étranger"
+    label = "Salaires perçus à l'étranger"
     entity = Individu
     definition_period = YEAR
 
 
 class pension_etranger_non_transferee(Variable):
     value_type = int
-    label = u"Pensions perçues à l'étranger (non transférées)"
+    label = "Pensions perçues à l'étranger (non transférées)"
     entity = Individu
     definition_period = YEAR
 
 
 class pension_etranger_transferee(Variable):
     value_type = int
-    label = u"Pensions perçues à l'étranger (transférées en Tunisie)"
+    label = "Pensions perçues à l'étranger (transférées en Tunisie)"
     entity = Individu
     definition_period = YEAR
 
 
 class autres_revenus_etranger(Variable):
     value_type = int
-    label = u"Autres revenus perçus à l'étranger"
+    label = "Autres revenus perçus à l'étranger"
     entity = Individu
     definition_period = YEAR
 
@@ -41,6 +41,6 @@ class autres_revenus_etranger(Variable):
 
 class deficits_anterieurs_non_deduits(Variable):
     value_type = int
-    label = u"Déficits des années antérieures non déduits"
+    label = "Déficits des années antérieures non déduits"
     entity = Individu
     definition_period = YEAR

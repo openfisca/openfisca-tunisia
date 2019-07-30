@@ -9,7 +9,7 @@ from openfisca_tunisia.model.base import *
 class age(Variable):
     value_type = int
     entity = Individu
-    label = u"Âge (en années)"
+    label = "Âge (en années)"
     definition_period = YEAR
     is_period_size_independent = True
     set_input = set_input_dispatch_by_period
@@ -24,7 +24,7 @@ class age_en_mois(Variable):
     default_value = -9999
     unit = 'months'
     entity = Individu
-    label = u"Âge (en mois)"
+    label = "Âge (en mois)"
     is_period_size_independent = True
     definition_period = MONTH
 
@@ -53,21 +53,21 @@ class date_naissance(Variable):
     value_type = date
     default_value = date(1970, 1, 1)
     entity = Individu
-    label = u"Date de naissance"
+    label = "Date de naissance"
     definition_period = ETERNITY
 
 
 class male(Variable):
     value_type = bool
     entity = Individu
-    label = u"Mâle"
+    label = "Mâle"
     definition_period = ETERNITY
 
 
 class marie(Variable):
     value_type = bool
     entity = Individu
-    label = u"Marié(e)"
+    label = "Marié(e)"
     definition_period = YEAR
 
     def formula(individu, period):
@@ -78,7 +78,7 @@ class marie(Variable):
 class celibataire(Variable):
     value_type = bool
     entity = Individu
-    label = u"Célibataire"
+    label = "Célibataire"
     definition_period = YEAR
 
     def formula(individu, period):
@@ -89,7 +89,7 @@ class celibataire(Variable):
 class divorce(Variable):
     value_type = bool
     entity = Individu
-    label = u"Divorcé(e)"
+    label = "Divorcé(e)"
     definition_period = YEAR
 
     def formula(individu, period):
@@ -100,7 +100,7 @@ class divorce(Variable):
 class veuf(Variable):
     value_type = bool
     entity = Individu
-    label = u"Veuf(ve)"
+    label = "Veuf(ve)"
     definition_period = YEAR
 
     def formula(individu, period):
@@ -112,13 +112,13 @@ class statut_marital(Variable):
     value_type = int
     default_value = 2
     entity = Individu
-    label = u"Statut marital"
+    label = "Statut marital"
     definition_period = ETERNITY
 
 
 class invalide(Variable):
     value_type = bool
-    label = u"Invalide"
+    label = "Invalide"
     entity = Individu
     definition_period = ETERNITY
 
@@ -126,7 +126,7 @@ class invalide(Variable):
 class activite(Variable):
     value_type = int
     entity = Individu
-    label = u"Activité"
+    label = "Activité"
     definition_period = ETERNITY
 
 
