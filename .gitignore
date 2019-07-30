@@ -1,7 +1,3 @@
-.spyproject
-.project
-.pydevproject
-.settings/
 notebooks/.ipynb_checkpoints
 build/
 dist/
@@ -10,5 +6,9 @@ dist/
 *.pyc
 *.pyo
 *~
-tags
 .noseids
+.project
+.pydevproject
+.settings/
+.spyproject
+tags
