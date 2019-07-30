@@ -41,7 +41,7 @@ def test_basics():
             )
         simulation = scenario.new_simulation(debug = False)
         period = scenario_arguments['period']
-        yield check_run, simulation, period
+        check_run(simulation, period)
 
 
 if __name__ == '__main__':
