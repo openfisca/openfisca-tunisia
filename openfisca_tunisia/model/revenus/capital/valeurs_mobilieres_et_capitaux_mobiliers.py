@@ -9,21 +9,21 @@ from openfisca_tunisia.model.base import *
 
 class valm_nreg(Variable):
     value_type = int
-    label = u"Revenus des valeurs mobilières autres que ceux régulièrement distribués"
+    label = "Revenus des valeurs mobilières autres que ceux régulièrement distribués"
     entity = Individu
     definition_period = YEAR
 
 
 class valm_jpres(Variable):
     value_type = int
-    label = u"Jetons de présence"
+    label = "Jetons de présence"
     entity = Individu
     definition_period = YEAR
 
 
 class valm_aut(Variable):
     value_type = int
-    label = u"Autres rémunérations assimilées"
+    label = "Autres rémunérations assimilées"
     entity = Individu
     definition_period = YEAR
 
@@ -33,62 +33,62 @@ class valm_aut(Variable):
 
 class capm_banq(Variable):
     value_type = int
-    label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques"
+    label = "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_cent(Variable):
     value_type = int
-    label = u"Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT"
+    label = "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_caut(Variable):
     value_type = int
-    label = u"Intérêts des créances et intérêts et rémunérations des cautionnements"
+    label = "Intérêts des créances et intérêts et rémunérations des cautionnements"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_part(Variable):
     value_type = int
-    label = u"Intérêts des titres de participation"
+    label = "Intérêts des titres de participation"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_oblig(Variable):
     value_type = int
-    label = u"Intérêts des emprunts obligataires"
+    label = "Intérêts des emprunts obligataires"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_caisse(Variable):
     value_type = int
-    label = u"Intérêts des bons de caisse"
+    label = "Intérêts des bons de caisse"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_plfcc(Variable):
     value_type = int
-    label = u"Revenus des parts et de liquidation du fonds commun des créances"
+    label = "Revenus des parts et de liquidation du fonds commun des créances"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_epinv(Variable):
     value_type = int
-    label = u"Intérêts des comptes épargne pour l'investissement"
+    label = "Intérêts des comptes épargne pour l'investissement"
     entity = Individu
     definition_period = YEAR
 
 
 class capm_aut(Variable):
     value_type = int
-    label = u"Autres intérêts"
+    label = "Autres intérêts"
     entity = Individu
     definition_period = YEAR

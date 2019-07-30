@@ -54,7 +54,7 @@ def ages_first_kids(age, nb=None):
 class salaire_unique(Variable):
     value_type = bool
     entity = Menage
-    label = u"Indicatrice de salaire unique"
+    label = "Indicatrice de salaire unique"
     definition_period = YEAR
 
     def formula(individu, period):
@@ -68,9 +68,9 @@ class salaire_unique(Variable):
 class prestations_familiales_enfant_a_charge(Variable):
     value_type = bool
     entity = Individu
-    label = u"Enfant considéré à charge au sens des prestations familiales"
+    label = "Enfant considéré à charge au sens des prestations familiales"
     definition_period = MONTH
-    reference = u"http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+    reference = "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
 
     #    Jusqu'à l'âge de 16 ans sans conditions.
     #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération
@@ -104,7 +104,7 @@ class prestations_familiales_enfant_a_charge(Variable):
 class af_nbenf(Variable):
     value_type = float
     entity = Menage
-    label = u"Nombre d'enfants au sens des allocations familiales"
+    label = "Nombre d'enfants au sens des allocations familiales"
     definition_period = YEAR
 
     def formula(menage, period, parameters):
@@ -120,7 +120,7 @@ class af_nbenf(Variable):
 class af(Variable):
     value_type = float
     entity = Menage
-    label = u"Allocations familiales"
+    label = "Allocations familiales"
     definition_period = YEAR
 
     def formula(menage, period, parameters):
@@ -148,7 +148,7 @@ class af(Variable):
 class majoration_salaire_unique(Variable):
     value_type = float
     entity = Menage
-    label = u"Majoration du salaire unique"
+    label = "Majoration du salaire unique"
     definition_period = YEAR  # TODO trimestrialiser
 
     def formula(menage, period, parameters):
@@ -184,7 +184,7 @@ def _af_cong_jeun_trav(age, _P):
 class contribution_frais_creche(Variable):
     value_type = float
     entity = Menage
-    label = u"Contribution aux frais de crêche"
+    label = "Contribution aux frais de crêche"
     definition_period = YEAR
 
     def formula(menage, period, parameters):
@@ -216,7 +216,7 @@ class contribution_frais_creche(Variable):
 class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun_trav
     value_type = float
     entity = Menage
-    label = u"Prestations familales"
+    label = "Prestations familales"
     definition_period = YEAR
 
     def formula(menage, period):
