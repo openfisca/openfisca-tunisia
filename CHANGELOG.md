@@ -1,5 +1,25 @@
 # Changelog
 
+### 0.28.1 - [#102](https://github.com/openfisca/openfisca-tunisia/pull/102)
+
+* Add 2018 + 2019 values and update metadata of `SMIG`
+  * `cotisations_sociales/gen/smig_40h_horaire.yaml`
+  * `cotisations_sociales/gen/smig_40h_mensuel.yaml`
+  * `cotisations_sociales/gen/smig_48h_horaire.yaml`
+  * `cotisations_sociales/gen/smig_48h_mensuel.yaml`
+* Add 2018 + 2019 values and update metadata of `SMAG`
+  * `cotisations_sociales/gen/smag_journalier.yaml`
+
+## 0.28.0 - [#104](https://github.com/openfisca/openfisca-tunisia/pull/104)
+
+* Migrate to `openfisca-core` v31
+  * Remove the `base_function` of the variable `age_en_mois`
+
+## 0.27.0 - [#101](https://github.com/openfisca/openfisca-tunisia/pull/101)
+
+* Migrate to `openfisca-core` v30
+  * Adapt `de_net_a_imposable` and `de_net_a_salaire_de_base` reforms
+
 ## 0.26.0 - [#90](https://github.com/openfisca/openfisca-tunisia/pull/90)
 
 * Migrate to `openfisca-core` v29
@@ -21,7 +41,7 @@
 ## 0.23.0 - [#85](https://github.com/openfisca/openfisca-tunisia/pull/85)
 
 * Improve `reforms/de_net_a_salaire_de_base.py`
-  * Adapt with`ouvriere_2016_02.yaml` use case
+  * Adapt with `ouvriere_2016_02.yaml` use case
 * Add `reforms/de_net_a_salaire_de_base/ouvriere_2016_02.yaml` test
 
 ### 0.22.1 - [#78](https://github.com/openfisca/openfisca-tunisia/pull/78)
