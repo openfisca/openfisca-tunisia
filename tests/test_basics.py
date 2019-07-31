@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-from __future__ import division
-
 import datetime
 
 from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
@@ -51,4 +47,4 @@ if __name__ == '__main__':
     logging.basicConfig(level = logging.ERROR, stream = sys.stdout)
     for _, simulation, period in test_basics():
         check_run(simulation, period)
-    print(u'OpenFisca-Tunisia basic test was executed successfully.'.encode('utf-8'))
+    print('OpenFisca-Tunisia basic test was executed successfully.'.encode('utf-8'))

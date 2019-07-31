@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from openfisca_tunisia.model.base import *
 from openfisca_tunisia.scenarios import init_single_entity
 from tests import base
