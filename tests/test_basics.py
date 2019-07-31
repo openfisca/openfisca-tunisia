@@ -1,3 +1,4 @@
+import pytest
 import datetime
 
 from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
@@ -29,15 +30,15 @@ def check_run(simulation, period):
         "Can't compute salaire_super_brut on period {}".format(period)
 
 
-def test_basics():
-    for scenario_arguments in scenarios_arguments:
-        scenario = init_single_entity(
-            base.tax_benefit_system.new_scenario(),
-            **scenario_arguments
-            )
-        simulation = scenario.new_simulation(debug = False)
-        period = scenario_arguments['period']
-        yield check_run, simulation, period
+@pytest.mark.parametrize('one_scenario_arguments', scenarios_arguments)
+def test_basics(one_scenario_arguments):
+    scenario = init_single_entity(
+        base.tax_benefit_system.new_scenario(),
+        **one_scenario_arguments
+        )
+    simulation = scenario.new_simulation(debug = False)
+    period = one_scenario_arguments['period']
+    check_run(simulation, period)
 
 
 if __name__ == '__main__':

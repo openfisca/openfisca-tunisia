@@ -1,3 +1,4 @@
+import pytest
 import datetime
 
 from openfisca_tunisia import TunisiaTaxBenefitSystem
@@ -7,7 +8,8 @@ from openfisca_tunisia.scenarios import init_single_entity
 tax_benefit_system = TunisiaTaxBenefitSystem()
 
 
-def check_1_parent(year = 2011):
+@pytest.mark.parametrize('year', range(2009, 2011))
+def test_1_parent(year):
     scenario = init_single_entity(
         tax_benefit_system.new_scenario(),
         axes = [[
@@ -23,11 +25,6 @@ def check_1_parent(year = 2011):
         )
     simulation = scenario.new_simulation()
     revenu_disponible = simulation.calculate('revenu_disponible', period = year)
-
-
-def test_1_parent():
-    for year in range(2009, 2011):
-        yield check_1_parent, year
 
 
 if __name__ == '__main__':
