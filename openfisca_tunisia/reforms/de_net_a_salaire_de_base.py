@@ -1,5 +1,5 @@
 from __future__ import division
-from openfisca_tunisia.model.base import Reform, Variable, Individu, MONTH, set_input_divide_by_period 
+from openfisca_tunisia.model.base import Reform, Variable, Individu, MONTH, set_input_divide_by_period
 
 
 try:
@@ -36,7 +36,7 @@ def calculate_net_from(salaire_de_base, individu, period, requested_variable_nam
 class salaire_de_base(Variable):
     value_type = float
     entity = Individu
-    label = u"Salaire de base"
+    label = "Salaire de base"
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
@@ -50,7 +50,7 @@ class salaire_de_base(Variable):
         simulation = individu.simulation
         simulation.period = period
 
-        # List of variables already calculated. 
+        # List of variables already calculated.
         # We will need it to remove their holders, that might contain undesired cache
         requested_variable_names = [variable_period[0] for variable_period in simulation.computation_stack]
 

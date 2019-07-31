@@ -14,7 +14,7 @@ EXTENSIONS_DIRECTORIES = glob.glob(os.path.join(EXTENSIONS_PATH, '*/'))
 
 class TunisiaTaxBenefitSystem(TaxBenefitSystem):
     """Tunisian tax benefit system"""
-    CURRENCY = u"DT"
+    CURRENCY = "DT"
     DECOMP_DIR = os.path.dirname(os.path.abspath(decompositions.__file__))
     DEFAULT_DECOMP_FILE = decompositions.DEFAULT_DECOMP_FILE
     REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')

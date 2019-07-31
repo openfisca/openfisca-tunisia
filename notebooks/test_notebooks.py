@@ -80,19 +80,19 @@ if __name__ == "__main__":
         if os.path.isdir(target):
             for file in os.listdir(target):
                 if is_notebook(file):
-                    log.debug(u"> " + file)
+                    log.debug("> " + file)
                     run(os.path.join(target, file))
         else:
             if not is_notebook(target):
-                raise Exception(u"Expected an .ipynb file. Got: {}".format(target))
+                raise Exception("Expected an .ipynb file. Got: {}".format(target))
             run(target)
 
-        log.info(u"OK. No error detected in tested notebook(s).")
+        log.info("OK. No error detected in tested notebook(s).")
     except BaseException as e:
         if len(sys.argv) == 1:
-            log.error(u"Missing notebook or directory containing notebooks to test.")
-            log.warn(u"USAGE: python test_notebooks.py target")
-            log.warn(u"where 'target' is directory containing notebooks, or a .ipynb notebook file.")
+            log.error("Missing notebook or directory containing notebooks to test.")
+            log.warn("USAGE: python test_notebooks.py target")
+            log.warn("where 'target' is directory containing notebooks, or a .ipynb notebook file.")
 
         else:
             log.debug(str(e.__class__.__name__) + ": ")

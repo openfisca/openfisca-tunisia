@@ -11,7 +11,7 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 class nb_enf(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Nombre d'enfants"
+    label = "Nombre d'enfants"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -31,7 +31,7 @@ class nb_enf(Variable):
 class nb_enf_sup(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Nombre d'enfants étudiants du supérieur non boursiers"
+    label = "Nombre d'enfants étudiants du supérieur non boursiers"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -47,7 +47,7 @@ class nb_enf_sup(Variable):
 class nb_infirme(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Nombre d'enfants infirmes"
+    label = "Nombre d'enfants infirmes"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -63,7 +63,7 @@ class nb_infirme(Variable):
 class nb_parents(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Nombre de parents"
+    label = "Nombre de parents"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -79,7 +79,7 @@ class nb_parents(Variable):
 class chef_de_famille(Variable):
     value_type = bool
     entity = FoyerFiscal
-    label = u"Indicatrice de chef de famille"
+    label = "Indicatrice de chef de famille"
     definition_period = YEAR
     set_input = set_input_dispatch_by_period
 
@@ -125,7 +125,7 @@ class chef_de_famille(Variable):
 class bic(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Bénéfices industriels et commerciaux (BIC)"
+    label = "Bénéfices industriels et commerciaux (BIC)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -143,7 +143,7 @@ class bic(Variable):
 class bic_ca_global(Variable):
     value_type = float
     entity = Individu
-    label = u"Chiffre d’affaires global (BIC, cession de fond de commerce"
+    label = "Chiffre d’affaires global (BIC, cession de fond de commerce"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -160,7 +160,7 @@ class bic_ca_global(Variable):
 class bic_res_cession(Variable):
     value_type = float
     entity = Individu
-    label = u"Résultat (BIC, cession de fond de commerce)"
+    label = "Résultat (BIC, cession de fond de commerce)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -173,7 +173,7 @@ class bic_res_cession(Variable):
 class bic_benef_fiscal_cession(Variable):
     value_type = float
     entity = Individu
-    label = u"Bénéfice fiscal (BIC, cession de fond de commerce)"
+    label = "Bénéfice fiscal (BIC, cession de fond de commerce)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -194,7 +194,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 class bnc(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Bénéfices des professions non commerciales (BNC)"
+    label = "Bénéfices des professions non commerciales (BNC)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -213,7 +213,7 @@ class bnc(Variable):
 class bnc_forf_benef_fiscal(Variable):
     value_type = float
     entity = Individu
-    label = u"Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
+    label = "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -229,7 +229,7 @@ class bnc_forf_benef_fiscal(Variable):
 class beap(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Bénéfices de l'exploitation agricole et de pêche (BEAP)"
+    label = "Bénéfices de l'exploitation agricole et de pêche (BEAP)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -246,7 +246,7 @@ class beap(Variable):
 class revenus_fonciers(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenus fonciers"
+    label = "Revenus fonciers"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -261,7 +261,7 @@ class revenus_fonciers(Variable):
 class fon_forf_bati(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenus fonciers net des immeubles bâtis"
+    label = "Revenus fonciers net des immeubles bâtis"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -283,7 +283,7 @@ class fon_forf_bati(Variable):
 class fon_forf_nbat(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenus fonciers net des terrains non bâtis"
+    label = "Revenus fonciers net des terrains non bâtis"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -304,7 +304,7 @@ class fon_forf_nbat(Variable):
 class tspr(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Traitements, salaires, indemnités, pensions et rentes viagères"
+    label = "Traitements, salaires, indemnités, pensions et rentes viagères"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -319,7 +319,7 @@ class tspr(Variable):
 class revenu_assimile_salaire(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenu assimilé à des salaires"
+    label = "Revenu assimilé à des salaires"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -331,7 +331,7 @@ class revenu_assimile_salaire(Variable):
 class smig(Variable):
     value_type = bool
     entity = FoyerFiscal
-    label = u"Indicatrice de SMIG ou SMAG déduite du montant des salaires"
+    label = "Indicatrice de SMIG ou SMAG déduite du montant des salaires"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -345,7 +345,7 @@ class smig(Variable):
 class revenu_assimile_salaire_apres_abattements(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenu imposé comme des salaires net des abatements"
+    label = "Revenu imposé comme des salaires net des abatements"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -365,7 +365,7 @@ class revenu_assimile_salaire_apres_abattements(Variable):
 class revenu_assimile_pension_apres_abattements(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenu assimilé à des pensions après abattements"
+    label = "Revenu assimilé à des pensions après abattements"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -381,7 +381,7 @@ class revenu_assimile_pension_apres_abattements(Variable):
 class rvcm(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenus de valeurs mobilières et de capitaux mobiliers"
+    label = "Revenus de valeurs mobilières et de capitaux mobiliers"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -406,7 +406,7 @@ class rvcm(Variable):
 class retr(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
+    label = "Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -435,7 +435,7 @@ class retr(Variable):
 class rng(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenu net global"
+    label = "Revenu net global"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -460,7 +460,7 @@ class rng(Variable):
 class deduction_interets(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Déductions intérêts issus de comptes spéciaux ou d'obligations"
+    label = "Déductions intérêts issus de comptes spéciaux ou d'obligations"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -481,7 +481,7 @@ class deduction_interets(Variable):
 class deduction_famille(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Déductions pour situation et charges de famille"
+    label = "Déductions pour situation et charges de famille"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -507,7 +507,7 @@ class deduction_famille(Variable):
 class deduction_rente(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Arrérages et rentes payées à titre obligatoire et gratuit"
+    label = "Arrérages et rentes payées à titre obligatoire et gratuit"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -519,7 +519,7 @@ class deduction_rente(Variable):
 class deduction_assurance_vie(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Primes afférentes aux contrats d'assurance-vie collectifs ou individuels"
+    label = "Primes afférentes aux contrats d'assurance-vie collectifs ou individuels"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -566,7 +566,7 @@ class deduction_assurance_vie(Variable):
 class deduction_smig(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
+    label = "Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -578,7 +578,7 @@ class deduction_smig(Variable):
 class revenu_net_imposable(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Revenu net imposable"
+    label = "Revenu net imposable"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -596,7 +596,7 @@ class revenu_net_imposable(Variable):
 class impot_revenu_brut(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Impôt brut avant non-imposabilité"
+    label = "Impôt brut avant non-imposabilité"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -609,7 +609,7 @@ class impot_revenu_brut(Variable):
 class exoneration(Variable):
     value_type = bool
     entity = FoyerFiscal
-    label = u"Exoneration de l'impôt sur le revenu des personnes physiques"
+    label = "Exoneration de l'impôt sur le revenu des personnes physiques"
     definition_period = YEAR
     end = '2016-12-31'
 
@@ -629,7 +629,7 @@ class exoneration(Variable):
 class irpp(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = u"Impôt sur le revenu des personnes physiques"
+    label = "Impôt sur le revenu des personnes physiques"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -641,7 +641,7 @@ class irpp(Variable):
 class irpp_mensuel_salarie(Variable):
     value_type = float
     entity = Individu
-    label = u"Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
+    label = "Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
     definition_period = MONTH
 
     def formula(individu, period, parameters):
