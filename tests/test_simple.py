@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 from tests.base import tax_benefit_system
 from openfisca_tunisia.scenarios import init_single_entity
 

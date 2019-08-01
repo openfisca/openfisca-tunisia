@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import sys
 import os
 from io import open
@@ -60,8 +58,8 @@ def run(notebook_path):
 
     except CellExecutionError:
         executed_notebook = None
-        msg = u'Error executing the notebook "%s".\n\n' % notebook_filename
-        msg += u'See notebook "%s" for stack traceback.' % notebook_filename_out
+        msg = 'Error executing the notebook "%s".\n\n' % notebook_filename
+        msg += 'See notebook "%s" for stack traceback.' % notebook_filename_out
         log.error(msg)
         raise
 

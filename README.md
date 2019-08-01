@@ -168,21 +168,21 @@ pip install -e .[tests]
 
 Différents formats de tests sont alors à votre disposition : la rédaction de tests est possible en python ou en yaml.
 
-### Test nose
+### Test python
 
-Un test rédigé en python peut être exécuté avec l'outil `nose`.
+Un test rédigé en python peut être exécuté avec l'outil [pytest](https://docs.pytest.org).
 Celui-ci déroulera les fonctions python dont le nom commence par le mot `test`.
 
 Ainsi, pour exécuter le test python `tests/test_simple.py`, utilisez la commande suivante :
 
 ```
-nosetests tests/test_simple.py
+pytest tests/test_simple.py
 ```
 
 Il vous est également possible de n'exécuter qu'un seul test d'un fichier. Dans l'exemple suivant, `test_1_parent` sera l'unique test déroulé du fichier `tests/core_tests.py` :
 
 ```
-nosetests tests/core_tests.py:test_1_parent
+pytest tests/core_tests.py::test_1_parent
 ```
 
 ### Test yaml
@@ -190,16 +190,24 @@ nosetests tests/core_tests.py:test_1_parent
 Le format d'un test yaml est décrit dans la [section YAML tests](http://openfisca.org/doc/coding-the-legislation/writing_yaml_tests.html) de la documentation officielle.
 Ainsi, si vous souhaitez exécuter le test yaml `tests/formulas/irpp.yaml`, utilisez la commande :
 
-```
-openfisca-run-test -c openfisca_tunisia tests/formulas/irpp.yaml
-```
-
-Afin de le tester avec un debugger, ajoutez un point d'arrêt dans le code python appelé par le test avec :
-```
-import nose.tools; nose.tools.set_trace(); import ipdb; ipdb.set_trace()
+```sh
+openfisca test -c openfisca_tunisia tests/formulas/irpp.yaml
 ```
 
-Et exécutez à nouveau le test yaml.
+### Debug
+
+Afin de tester avec un debugger, ajoutez un point d'arrêt dans le code python appelé par le test avec :
+```py
+import ipdb; ipdb.set_trace()
+```
+
+Installez la librairie `ipdb` avec :
+```sh
+pip install ipdb
+```
+
+Et exécutez à nouveau le test (avec l'option `-s` pour la commande `pytest`).
+
 
 ### Tout tester
 

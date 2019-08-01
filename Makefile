@@ -24,10 +24,8 @@ flake8:
 	flake8 `git ls-files | grep "\.py$$"`
 
 test: check-syntax-errors check-no-prints
-	# Launch tests from 'tests' directory (and not .) because TaxBenefitSystem must be initialized
-	# before parsing source files containing formulas.
 	@echo "> Python tests..."
-	nosetests tests --exe --with-doctest
+	pytest
 	@echo "> Yaml tests..."
 	openfisca test -c openfisca_tunisia  tests/
 	@echo "> Notebooks tests..."
