@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.29.0 - [#105](https://github.com/openfisca/openfisca-tunisia/pull/105)
+
+* Migrate tests library and syntax from `nose` to `pytest`
+* Rename `tests/test_legislations.py` to `tests/test_parameters.py`
+* Update tests information in `README` and set a `Debug` section
+* Remove python 2 syntaxes in model and tests
+
 ### 0.28.2 - [#106](https://github.com/openfisca/openfisca-tunisia/pull/106)
 
 * Remove python2 unicode mark
