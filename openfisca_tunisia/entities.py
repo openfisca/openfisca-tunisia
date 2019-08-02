@@ -48,8 +48,7 @@ Menage = build_entity(
         {
             'key': 'enfant',
             'plural': 'enfants',
-            'label': 'Enfants',
-            'max': 2
+            'label': 'Enfants'
             },
         {
             'key': 'autre',
