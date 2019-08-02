@@ -52,7 +52,7 @@ class salaire_imposable(Variable):
 
         # List of variables already calculated.
         # We will need it to remove their holders, that might contain undesired cache
-        requested_variable_names = [name for (name, period) in individu.simulation.computation_stack]
+        requested_variable_names = [stack_frame['name'] for stack_frame in individu.simulation.tracer.stack]
 
         def solve_func(net):
             def innerfunc(essai):

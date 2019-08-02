@@ -52,7 +52,7 @@ class salaire_de_base(Variable):
 
         # List of variables already calculated.
         # We will need it to remove their holders, that might contain undesired cache
-        requested_variable_names = [variable_period[0] for variable_period in simulation.computation_stack]
+        requested_variable_names = [stack_frame['name'] for stack_frame in simulation.tracer.stack]
 
         def solve_func(net):
             def innerfunc(essai_salaire_de_base):
