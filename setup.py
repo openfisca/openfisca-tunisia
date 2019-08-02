@@ -52,7 +52,7 @@ setup(
         ),
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >=32, <33',
+        'OpenFisca-Core >=32, <34',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
