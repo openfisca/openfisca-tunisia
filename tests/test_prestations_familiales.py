@@ -3,11 +3,6 @@ from openfisca_tunisia.scenarios import init_single_entity
 from tests import base
 
 import datetime
-import logging
-
-
-log = logging.getLogger(__name__)
-log.setLevel(logging.DEBUG)
 
 
 def test_contribution_frais_creche():
@@ -42,7 +37,6 @@ def test_contribution_frais_creche():
     assert age_benjamin <= base.tax_benefit_system.parameters(year).prestations_familiales.creche.age_max
 
     contribution_frais_creche = simulation.calculate('contribution_frais_creche', period = year)
-    log.debug(contribution_frais_creche)
     assert contribution_frais_creche != 0
 
 

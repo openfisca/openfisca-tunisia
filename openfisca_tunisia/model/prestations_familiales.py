@@ -87,7 +87,7 @@ class prestations_familiales_enfant_a_charge(Variable):
     def formula(individu, period, parameters):
         age = individu('age', period)
         invalide = individu('invalide', period)
-        est_enfant = individu.has_role(Menage.enfant)
+        est_enfant = individu.has_role(Menage.ENFANT)
 
         condition_enfant = or_(
             (age_individu <= 16) +

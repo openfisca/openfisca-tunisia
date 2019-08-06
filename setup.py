@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.29.0',
+    version = '0.30.0',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -47,12 +47,12 @@ setup(
             'pandas >= 0.22.0',
             ],
         survey = [
-            'OpenFisca-Survey-Manager >=0.9.5,<0.19',
+            'OpenFisca-Survey-Manager >=0.9.5,<0.33',
             ]
         ),
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >=31, <32',
+        'OpenFisca-Core >=34, <35',
         'PyYAML >= 3.10',
         'scipy >= 0.12',
         ],
