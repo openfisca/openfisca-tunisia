@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.30.0 - [#107](https://github.com/openfisca/openfisca-tunisia/pull/107)
+
+* Migrate to `openfisca-core` v34
+  * Migrate to v32, v33 and v34
+* Update `openfisca-survey-manager` dependency to v0.32
+* Remove the upper bound of children number for `Menage` entity
+
 ## 0.29.0 - [#105](https://github.com/openfisca/openfisca-tunisia/pull/105)
 
 * Migrate tests library and syntax from `nose` to `pytest`
