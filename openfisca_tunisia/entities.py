@@ -21,14 +21,14 @@ FoyerFiscal = build_entity(
             'plural': 'declarants',
             'label': 'Déclarants',
             'subroles': ['declarant_principal', 'conjoint']
-            },
+        },
         {
             'key': 'personne_a_charge',
             'plural': 'personnes_a_charge',
             'label': 'Personnes à charge'
-            },
-        ]
-    )
+        },
+    ]
+)
 
 Menage = build_entity(
     key = "menage",
@@ -39,23 +39,23 @@ Menage = build_entity(
             'key': 'personne_de_reference',
             'label': 'Personne de référence',
             'max': 1
-            },
+        },
         {
             'key': 'conjoint',
             'label': 'Conjoint',
             'max': 1
-            },
+        },
         {
             'key': 'enfant',
             'plural': 'enfants',
             'label': 'Enfants'
-            },
+        },
         {
             'key': 'autre',
             'plural': 'autres',
             'label': 'Autres'
-            }
-        ]
-    )
+        }
+    ]
+)
 
 entities = [Individu, FoyerFiscal, Menage]
