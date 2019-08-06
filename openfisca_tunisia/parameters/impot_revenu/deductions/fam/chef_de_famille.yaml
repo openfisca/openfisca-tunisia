@@ -1,5 +1,13 @@
-description: Chef de famille
+description: Chef de famille - رئيس عائلة
+documentation: |
+  Montant de la déduction sur le montant des revenus nets du "chef de famille".
+  مبلغ الطرح من مبلغ المداخيل الصافية لرئيس العائلة
 unit: currency
 values:
   1990-01-01:
     value: 150
+  2017-12-18:
+    value: 300
+    metadata:
+      title: Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés - Article 40 - Paragraphe I
+      href: http://www.legislation.tn/fr/affich-code-article/code-de-l%2526%2523039%3Bimpôt-sur-le-revenu-des-personnes-physiques-et-de-l%2526%2523039%3Bimpôt-sur-les-sociétés-article-40-__6169
