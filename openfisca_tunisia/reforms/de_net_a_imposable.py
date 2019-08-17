@@ -1,4 +1,4 @@
-from __future__ import division
+from openfisca_tunisia.variables.base import *
 
 from openfisca_tunisia.model.base import *
 
