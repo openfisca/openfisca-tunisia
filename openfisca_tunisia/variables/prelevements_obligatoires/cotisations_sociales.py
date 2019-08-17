@@ -2,7 +2,8 @@ from __future__ import division
 
 from numpy import zeros
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class TypesRegimeSecuriteSociale(Enum):
@@ -29,7 +30,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
     regime_securite_sociale = individu('regime_securite_sociale', period)
-    baremes_by_regime = parameters(period.start).cotisations_sociales
+    baremes_by_regime = parameters(period.start).prelevements_sociaux.cotisations_sociales
     cotisation = zeros(len(assiette_cotisations_sociales))
     types_regime_securite_sociale = regime_securite_sociale.possible_values
 
@@ -398,6 +399,14 @@ class salaire_net_a_payer(Variable):
     label = 'Salaire net à payer (fiche de paie)'
     definition_period = MONTH
     set_input = set_input_divide_by_period
+
+
+    def formula_2018_01_01(individu, period):
+        return (
+            individu('salaire_imposable', period)
+            + individu('irpp_mensuel_salarie', period)
+            + individu('contribution_sociale_solidarite', period)
+            )
 
     def formula(individu, period):
         return (

@@ -1,26 +1,46 @@
 description: Tranches de l'IR
+<<<<<<< HEAD
+=======
+metadata:
+  rate_unit: /1
+  threshold_unit: currency
+  href:
+    2017-01-01: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
+>>>>>>> Rename model to variables to follow standard practice
 brackets:
 - threshold:
     1990-01-01:
       value: 0
     2017-01-01:
       value: 0
+<<<<<<< HEAD
   rate:
+=======
+  threshold:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 0
     2017-01-01:
       value: 0
+<<<<<<< HEAD
 - threshold:
     1990-01-01:
       value: 1500
     2017-01-01:
       value: 5000
   rate:
+=======
+- rate:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 0.15
     2017-01-01:
       value: 0.26
+<<<<<<< HEAD
 - threshold:
+=======
+  threshold:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 5000
     2017-01-01:
@@ -30,9 +50,13 @@ brackets:
       value: 0.2
     2017-01-01:
       value: 0.28
+<<<<<<< HEAD
     2018-01-01:
       value: 0.29
 - threshold:
+=======
+  threshold:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 10000
     2017-01-01:
@@ -42,7 +66,11 @@ brackets:
       value: 0.25
     2017-01-01:
       value: 0.32
+<<<<<<< HEAD
 - threshold:
+=======
+  threshold:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 20000
     2017-01-01:
@@ -52,12 +80,20 @@ brackets:
       value: 0.3
     2017-01-01:
       value: 0.35
+<<<<<<< HEAD
 - threshold:
+=======
+  threshold:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 50000
     2017-01-01:
       value: null
+<<<<<<< HEAD
   rate:
+=======
+  threshold:
+>>>>>>> Rename model to variables to follow standard practice
     1990-01-01:
       value: 0.35
     2017-01-01:

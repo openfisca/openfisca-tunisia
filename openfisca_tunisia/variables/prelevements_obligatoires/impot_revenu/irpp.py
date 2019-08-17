@@ -662,7 +662,7 @@ class irpp_mensuel_salarie(Variable):
 
 # Utils
 
-def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, period, parameters):
+def calcule_base_imposable(salaire_mensuel, deduction_famille_annuelle, period, parameters):
     revenu_assimile_salaire = salaire_mensuel
     smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
     smig = revenu_assimile_salaire <= smig_40h_mensuel
@@ -675,7 +675,6 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
     else:
         revenu_assimile_salaire_apres_abattement = max_(
             revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.smig, 0)
-    bareme = parameters(period.start).impot_revenu.bareme
 
     non_exonere = revenu_assimile_salaire_apres_abattement >= 0
     if 2014 <= period.start.year <= 2016:
@@ -683,6 +682,15 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
             (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
             ) > parameters(period.start).impot_revenu.exoneration.seuil
 
-    return - 1.0 * non_exonere * bareme.calc(
-        (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
+    return non_exonere, revenu_assimile_salaire_apres_abattement
+
+
+def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, period, parameters):
+    non_exonere, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
+        salaire_mensuel, deduction_famille_annuelle, period, parameters)
+    bareme = parameters(period.start).impot_revenu.bareme
+    return - (
+        non_exonere * bareme.calc(
+            12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle
+            )
         ) / 12

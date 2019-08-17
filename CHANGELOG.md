@@ -100,7 +100,6 @@
 * Migrate to `openfisca-core` v29
 * Clean up configuration (CI job names, old_tests residue)
 
-
 ## 0.25.0 - [#88](https://github.com/openfisca/openfisca-tunisia/pull/88)
 
 * Migrate to `openfisca-core` v27 syntax

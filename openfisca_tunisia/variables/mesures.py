@@ -1,7 +1,8 @@
 from __future__ import division
 
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class impots_directs(Variable):
@@ -47,8 +48,13 @@ class revenu_disponible_individuel(Variable):
         prestations_sociales = individu('prestations_sociales', period = period)
         impots_directs = individu('impots_directs', period = period)
 
-        return revenus_du_travail + revenu_assimile_pension + revenus_du_capital + prestations_sociales + impots_directs
-
+        return (
+            revenus_du_travail
+            + revenu_assimile_pension
+            + revenus_du_capital
+            + prestations_sociales
+            + impots_directs
+            )
 
 class revenus_du_capital(Variable):
     value_type = float
@@ -69,4 +75,5 @@ class revenus_du_travail(Variable):
 
     def formula(individu, period):
         salaire_imposable = individu('salaire_imposable', period = period, options = [ADD])
-        return salaire_imposable  # + beap + bic + bnc  TODO
+        contribution_sociale_solidarite = individu('contribution_sociale_solidarite', period = period, options = [ADD])
+        return salaire_imposable + contribution_sociale_solidarite # + beap + bic + bnc  TODO
