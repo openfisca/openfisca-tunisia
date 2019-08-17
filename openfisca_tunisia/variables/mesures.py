@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
 
-
-
-
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 

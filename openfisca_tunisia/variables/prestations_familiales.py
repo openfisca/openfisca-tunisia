@@ -191,7 +191,7 @@ class contribution_frais_creche(Variable):
         month = period.last_month
         salaire_imposable_holder = menage.members('salaire_imposable', period = month)
         age_en_mois_holder = menage.members('age_en_mois', period = month)
-        smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
+        smig48 = parameters(period.start).prelevements_sociaux.cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
         # activité salariée et dont le salaire ne dépasse pas deux fois et demie
