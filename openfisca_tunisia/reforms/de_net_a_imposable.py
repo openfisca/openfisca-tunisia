@@ -1,10 +1,5 @@
-from __future__ import division
+from openfisca_tunisia.variables.base import *
 
-from openfisca_tunisia.model.base import *
-from openfisca_tunisia import entities
-
-from numpy.ma.testutils import assert_not_equal
-from urllib.request import Request
 
 try:
     from scipy.optimize import fsolve
@@ -39,7 +34,6 @@ class salaire_imposable(Variable):
     label = "Salaire imposable"
     definition_period = MONTH
     set_input = set_input_divide_by_period
-
 
     def formula(individu, period):
         # Use numerical inversion to calculate 'salaire_imposable' from 'salaire_net_a_payer'

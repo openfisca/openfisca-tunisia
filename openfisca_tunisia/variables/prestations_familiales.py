@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-from __future__ import division
+
 
 from numpy import (
     round, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
     asanyarray, amin, amax, arange)
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 def age_min(age, minimal_age=None):

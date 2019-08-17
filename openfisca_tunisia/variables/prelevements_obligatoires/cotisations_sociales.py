@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 
-from __future__ import division
+
 
 from numpy import zeros
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class TypesRegimeSecuriteSociale(Enum):

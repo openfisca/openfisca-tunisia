@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 
-from __future__ import division
 
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class impots_directs(Variable):
