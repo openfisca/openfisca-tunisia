@@ -1,0 +1,47 @@
+salarie:
+  description: Contribution sociale de solidarité (barème salarié)
+  metadata:
+    rate_unit: /1
+    threshold_unit: currency
+  brackets:
+  - rate:
+      2018-01-01:
+        value: 0.01
+    threshold:
+      2018-01-01:
+        value: 0
+
+entreprise:
+  bareme:
+    description: Contribution sociale de solidarité (barème entreprise)
+    metadata:
+      rate_unit: /1
+      threshold_unit: currency
+    brackets:
+    - rate:
+        2018-01-01:
+          value: 0.01
+      threshold:
+        2018-01-01:
+          value: 0
+
+  montant_minimum:
+    description: Contribution sociale de solidarité (barème entreprise)
+    taux_is_35_pc:
+      description: les personnes soumises à l’impôt sur les sociétés au taux de 35%,
+      unit: currency
+      values:
+        2018-01-01:
+          value: 300
+    taux_is_15_20_25_pc:
+      description: les personnes soumises à l’impôt sur les sociétés au taux de 25%, 20% ou 15%,
+      unit: currency
+      values:
+        2018-01-01:
+          value: 200
+    taux_is_10_pc:
+      description: personnes soumises à l’impôt sur les sociétés au taux de 10%.
+      unit: currency
+      values:
+        2018-01-01:
+          value: 100

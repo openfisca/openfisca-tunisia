@@ -1,0 +1,18 @@
+- name: Salarie foctif
+  period: 2018-04
+  absolute_error_margin: 1
+  input:
+    regime_securite_sociale: salarie_cnrps
+    salaire_de_base: 657
+    primes: 190 + 752 + 57 + 46.666
+  output:
+    assiette_cotisations_sociales: 1702.666
+    retraite_salarie: -139.618
+    deces_salarie: -17.026
+    maladie_salarie: -46.823
+    ugtt: -3
+    irpp_mensuel_salarie: -241.779
+    contribution_sociale_solidarite: -13.458
+    salaire_net_a_payer: 1240.109 + 256.090 - 241.779 - 13.458
+
+
