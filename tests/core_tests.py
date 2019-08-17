@@ -1,14 +1,14 @@
 import pytest
 import datetime
 
-from openfisca_tunisia import TunisiaTaxBenefitSystem
+
 from openfisca_tunisia.scenarios import init_single_entity
 
 
-tax_benefit_system = TunisiaTaxBenefitSystem()
+from tests.base import tax_benefit_system
 
 
-@pytest.mark.parametrize('year', range(2009, 2011))
+@pytest.mark.parametrize('year', range(2009, datetime.date.today().year + 1))
 def test_1_parent(year):
     scenario = init_single_entity(
         tax_benefit_system.new_scenario(),
@@ -24,12 +24,4 @@ def test_1_parent(year):
         parent1 = dict(date_naissance = datetime.date(year - 40, 1, 1)),
         )
     simulation = scenario.new_simulation()
-    revenu_disponible = simulation.calculate('revenu_disponible', period = year)
-
-
-if __name__ == '__main__':
-    import logging
-    import sys
-
-    logging.basicConfig(level = logging.ERROR, stream = sys.stdout)
-    test_1_parent()
+    simulation.calculate('revenu_disponible', period = year)

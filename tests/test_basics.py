@@ -1,8 +1,8 @@
 import pytest
 import datetime
 
-from openfisca_tunisia.model.base import *
 from openfisca_tunisia.scenarios import init_single_entity
+from tests.base import tax_benefit_system
 
 
 scenarios_arguments = [
@@ -17,7 +17,7 @@ scenarios_arguments = [
             date_naissance = datetime.date(1972, 1, 1),
             ),
         )
-    for year in range(2012, 2007, -1)
+    for year in range(datetime.date.today().year + 1, 2007, -1)
     ]
 
 
@@ -31,7 +31,7 @@ def check_run(simulation, period):
 @pytest.mark.parametrize('one_scenario_arguments', scenarios_arguments)
 def test_basics(one_scenario_arguments):
     scenario = init_single_entity(
-        base.tax_benefit_system.new_scenario(),
+        tax_benefit_system.new_scenario(),
         **one_scenario_arguments
         )
     simulation = scenario.new_simulation(debug = False)
