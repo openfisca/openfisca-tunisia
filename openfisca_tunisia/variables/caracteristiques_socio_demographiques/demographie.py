@@ -130,7 +130,6 @@ class activite(Variable):
     definition_period = ETERNITY
 
 
-
 class boursier(Variable):
     value_type = bool
     entity = Individu

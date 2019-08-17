@@ -1,4 +1,3 @@
-from openfisca_tunisia.variables.base import *
 from openfisca_tunisia.scenarios import init_single_entity
 from tests import base
 
