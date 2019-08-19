@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.30.0 - [#109](https://github.com/openfisca/openfisca-tunisia/pull/109)
+## 0.31.1 - [#108](https://github.com/openfisca/openfisca-tunisia/pull/108)
+
+* Met à jour les dépendances de  pytst et openfisca-survey-manager
+
+## 0.31.0 - [#109](https://github.com/openfisca/openfisca-tunisia/pull/109)
 
 * Met à jour le montant de la déduction pour chef de famille suite à la Loi de Finances 2018 conformémément à l'[article 40 de l'IRPP en arabe](http://www.legislation.tn/affich-code-article/code-de-l%2526%2523039%3Bimpôt-sur-le-revenu-des-personnes-physiques-et-de-l%2526%2523039%3Bimpôt-sur-les-sociétés-article-40-__6169)
 
