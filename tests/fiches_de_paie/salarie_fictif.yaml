@@ -1,4 +1,4 @@
-- name: Salarie foctif
+- name: Salarié fictif
   period: 2018-04
   absolute_error_margin: 1
   input:
@@ -14,5 +14,3 @@
     irpp_mensuel_salarie: -241.779
     contribution_sociale_solidarite: -13.458
     salaire_net_a_payer: 1240.109 + 256.090 - 241.779 - 13.458
-
-
