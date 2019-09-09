@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.31.1 - [#108](https://github.com/openfisca/openfisca-tunisia/pull/108)
+### 0.31.2 - [#111](https://github.com/openfisca/openfisca-tunisia/pull/111)
+
+* Nettoie certains tests
+
+### 0.31.1 - [#108](https://github.com/openfisca/openfisca-tunisia/pull/108)
 
 * Met à jour les dépendances de  pytst et openfisca-survey-manager
 
