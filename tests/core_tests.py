@@ -24,7 +24,7 @@ def test_1_parent(year):
         parent1 = dict(date_naissance = datetime.date(year - 40, 1, 1)),
         )
     simulation = scenario.new_simulation()
-    revenu_disponible = simulation.calculate('revenu_disponible', period = year)
+    simulation.calculate('revenu_disponible', period = year)
 
 
 if __name__ == '__main__':

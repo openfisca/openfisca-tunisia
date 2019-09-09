@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from openfisca_tunisia.model.base import *
+from openfisca_tunisia.variables.base import *
 
 
 # Pensions de retraite

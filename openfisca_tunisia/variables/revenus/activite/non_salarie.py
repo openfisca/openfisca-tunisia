@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from openfisca_tunisia.model.base import *
+
+from openfisca_tunisia.variables.base import *
 
 
 # BIC Bénéfices industriels et commerciaux
@@ -239,6 +240,7 @@ class beap_reliq_rec(Variable):
     label = "Recettes brutes (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
     entity = Individu
     definition_period = YEAR
+
 
 class beap_reliq_stock(Variable):
     value_type = int

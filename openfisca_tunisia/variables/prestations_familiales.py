@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-from __future__ import division
+
 
 from numpy import (
     round, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
     asanyarray, amin, amax, arange)
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 def age_min(age, minimal_age=None):
@@ -191,7 +191,7 @@ class contribution_frais_creche(Variable):
         month = period.last_month
         salaire_imposable_holder = menage.members('salaire_imposable', period = month)
         age_en_mois_holder = menage.members('age_en_mois', period = month)
-        smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
+        smig48 = parameters(period.start).prelevements_sociaux.cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
         # activité salariée et dont le salaire ne dépasse pas deux fois et demie
