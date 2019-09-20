@@ -29,7 +29,7 @@ entreprise:
     description: Contribution sociale de solidarité (barème entreprise)
     metadata:
         title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
-        reference: http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661
+        href: http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661
     taux_is_35_pc:
       description: les personnes soumises à l’impôt sur les sociétés au taux de 35%,
       unit: currency
