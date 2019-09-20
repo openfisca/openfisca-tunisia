@@ -2,13 +2,14 @@ description: Tranches de l'IR
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  href:
+    2017-01-01: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
 brackets:
 - rate:
     1990-01-01:
       value: 0
     2017-01-01:
       value: 0
-      reference: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
   threshold:
     1990-01-01:
       value: 0
@@ -19,7 +20,6 @@ brackets:
       value: 0.15
     2017-01-01:
       value: 0.26
-      reference: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
   threshold:
     1990-01-01:
       value: 1500
@@ -30,7 +30,6 @@ brackets:
       value: 0.2
     2017-01-01:
       value: 0.28
-      reference: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
   threshold:
     1990-01-01:
       value: 5000
@@ -41,7 +40,6 @@ brackets:
       value: 0.25
     2017-01-01:
       value: 0.32
-      reference: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
   threshold:
     1990-01-01:
       value: 10000
@@ -52,22 +50,18 @@ brackets:
       value: 0.3
     2017-01-01:
       value: 0.35
-      reference: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
   threshold:
     1990-01-01:
       value: 20000
     2017-01-01:
       value: 50000
-      reference: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
 - rate:
     1990-01-01:
       value: 0.35
     2017-01-01:
       value: null
-      reference: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
   threshold:
     1990-01-01:
       value: 50000
     2017-01-01:
       value: null
-      reference: https://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
