@@ -6,8 +6,6 @@ from openfisca_tunisia import entities
 
 
 COUNTRY_DIR = os.path.dirname(os.path.abspath(__file__))
-EXTENSIONS_PATH = os.path.join(COUNTRY_DIR, 'extensions')
-EXTENSIONS_DIRECTORIES = glob.glob(os.path.join(EXTENSIONS_PATH, '*/'))
 
 
 class TunisiaTaxBenefitSystem(TaxBenefitSystem):
