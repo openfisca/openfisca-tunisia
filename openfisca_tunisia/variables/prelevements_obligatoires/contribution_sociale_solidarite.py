@@ -31,6 +31,6 @@ class contribution_sociale_solidarite(Variable):
         bareme_irpp = parameters(period.start).impot_revenu.bareme.copy()
         bareme_css = parameters(period.start).prelevements_sociaux.contribution_sociale_solidarite.salarie
         bareme_irpp.add_tax_scale(bareme_css)
-        return - irpp_mensuel_salarie - 1.0 * non_exonere * bareme_irpp.calc(
+        return - irpp_mensuel_salarie - non_exonere * bareme_irpp.calc(
             (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
             ) / 12
