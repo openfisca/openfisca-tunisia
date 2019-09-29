@@ -12,7 +12,7 @@ class contribution_sociale_solidarite(Variable):
     definition_period = MONTH
     reference = "http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661"
 
-    def formula(individu, period, parameters):
+    def formula_2018_01_01(individu, period, parameters):
         """
         Art. 53
         Pour les personnes physiques, la différence entre l’impôt sur le revenu déterminé
