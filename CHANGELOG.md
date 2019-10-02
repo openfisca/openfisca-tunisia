@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.32.0 - [#115](https://github.com/openfisca/openfisca-tunisia/pull/115)
+
+* Mets à jour les déductions pour charges de famille
+
 ### 0.31.2 - [#111](https://github.com/openfisca/openfisca-tunisia/pull/111)
 
 * Nettoie certains tests
