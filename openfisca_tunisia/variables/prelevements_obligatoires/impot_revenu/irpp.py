@@ -689,6 +689,6 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
     non_exonere, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
         salaire_mensuel, deduction_famille_annuelle, period, parameters)
     bareme = parameters(period.start).impot_revenu.bareme
-    return - 1.0 * non_exonere * bareme.calc(
+    return - non_exonere * bareme.calc(
         (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
         ) / 12
