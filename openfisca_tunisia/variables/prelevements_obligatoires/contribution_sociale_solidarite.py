@@ -40,7 +40,7 @@ class contribution_sociale_solidarite(Variable):
         bareme_css = parameters(period.start).prelevements_sociaux.contribution_sociale_solidarite.salarie
         bareme_irpp.add_tax_scale(bareme_css)
 
-        if period.year >= 2020:
+        if period.start.year >= 2020:
             non_exonere_css = (
                 (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
                 > parameters(period.start).impot_revenu.exoneration.seuil
