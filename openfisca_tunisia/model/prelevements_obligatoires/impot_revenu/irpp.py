@@ -467,7 +467,7 @@ class deduction_interets(Variable):
         compte_special_epargne_banque = foyer_fiscal('compte_special_epargne_banque')
         compte_special_epargne_cent = foyer_fiscal('compte_special_epargne_cent')
         emprunt_obligataire = foyer_fiscal('emprunt_obligataire')
-        deductions = parameters(period).deduc
+        deductions = parameters(period).impot_revenu.deductions
         return max_(
             max_(
                 max_(compte_special_epargne_banque, deductions.banq.plaf) +
