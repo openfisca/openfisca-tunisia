@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.33.0 - [#119](https://github.com/openfisca/openfisca-tunisia/pull/119)
+
+* Migre à `numpy` 1.18+ via `openfisca-core` v35
+  * Sans impact sur le code qui ne contient pas de syntaxe numpy dépréciée  
+
 ## 0.32.0 - [#115](https://github.com/openfisca/openfisca-tunisia/pull/115)
 
 * Mets à jour les déductions pour charges de famille
@@ -10,7 +15,7 @@
 
 ### 0.31.1 - [#108](https://github.com/openfisca/openfisca-tunisia/pull/108)
 
-* Met à jour les dépendances de  pytst et openfisca-survey-manager
+* Met à jour les dépendances de  pytest et openfisca-survey-manager
 
 ## 0.31.0 - [#109](https://github.com/openfisca/openfisca-tunisia/pull/109)
 
