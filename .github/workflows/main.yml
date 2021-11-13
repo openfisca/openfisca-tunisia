@@ -3,7 +3,7 @@ name: OpenFisca France
 on: push
 
 jobs:
-  validate-yaml:
+  validate_yaml:
     uses: tax-benefit/actions/.github/workflows/validate_yaml.yml@v0.1.3
     with:
       parameters_path: "openfisca_tunisia/parameters"
