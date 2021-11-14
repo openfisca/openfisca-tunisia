@@ -1,6 +1,8 @@
-name: OpenFisca Tunisia
+name: Validate YAML
 
-on: push
+on:
+  - push
+  - workflow_dispatch
 
 jobs:
   validate_yaml:
