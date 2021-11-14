@@ -21,7 +21,7 @@ doc_lines = __doc__.split('\n')
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.33.0',
+    version = '0.33.1',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.org',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
@@ -36,7 +36,7 @@ setup(
         ],
     extras_require = dict(
         tests = [
-            'pytest >= 4.0.0, < 6.0.0',
+            'pytest >= 4.0.0, < 7.0.0',
             ],
         notebook = [
             'ipykernel >= 4.8',

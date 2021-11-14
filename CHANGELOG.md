@@ -1,9 +1,13 @@
 # Changelog
 
+### 0.33.1 - [#117](https://github.com/openfisca/openfisca-tunisia/pull/117)
+
+* Mets à jour la dépendance à pytest
+
 ## 0.33.0 - [#119](https://github.com/openfisca/openfisca-tunisia/pull/119)
 
 * Migre à `numpy` 1.18+ via `openfisca-core` v35
-  * Sans impact sur le code qui ne contient pas de syntaxe numpy dépréciée  
+  * Sans impact sur le code qui ne contient pas de syntaxe numpy dépréciée
 
 ## 0.32.0 - [#115](https://github.com/openfisca/openfisca-tunisia/pull/115)
 
