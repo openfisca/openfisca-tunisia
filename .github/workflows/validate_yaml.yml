@@ -6,7 +6,7 @@ on:
 
 jobs:
   validate_yaml:
-    uses: tax-benefit/actions/.github/workflows/validate_yaml.yml@v1
+    uses: tax-benefit/actions/.github/workflows/validate_yaml.yml@v1.0.0
     with:
       parameters_path: "openfisca_tunisia/parameters"
     secrets:
