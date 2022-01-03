@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.33.2 - [#126](https://github.com/openfisca/openfisca-tunisia/pull/126)
+
+* Ajoute la validation des paramètres YAML ainsi que l'intégration à la CI tax-benefit.org.
+
 ### 0.33.1 - [#117](https://github.com/openfisca/openfisca-tunisia/pull/117)
 
 * Mets à jour la dépendance à pytest
