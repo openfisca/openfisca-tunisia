@@ -31,8 +31,10 @@ setup(
     long_description_content_type='text/markdown',
 
     data_files = [
-        'share/openfisca/openfisca-tunisia',
-        ['CHANGELOG.md', 'LICENSE.AGPL.txt', 'README.md'],
+        (
+            'share/openfisca/openfisca-tunisia',
+            ['CHANGELOG.md', 'README.md'],
+            ),
         ],
     extras_require = {
         'dev': [
