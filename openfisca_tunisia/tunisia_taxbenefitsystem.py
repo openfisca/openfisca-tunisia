@@ -2,7 +2,7 @@ import glob
 import os
 
 from openfisca_core.taxbenefitsystems import TaxBenefitSystem
-from openfisca_tunisia import entities, scenarios
+from openfisca_tunisia import entities
 
 
 COUNTRY_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -11,8 +11,8 @@ EXTENSIONS_DIRECTORIES = glob.glob(os.path.join(EXTENSIONS_PATH, '*/'))
 
 
 class TunisiaTaxBenefitSystem(TaxBenefitSystem):
-    """Tunisian tax benefit system"""
-    CURRENCY = "DT"  # code iso is TND see https://fr.wikipedia.org/wiki/Dinar_tunisien
+    '''Tunisian tax benefit system'''
+    CURRENCY = 'DT'  # code iso is TND see https://fr.wikipedia.org/wiki/Dinar_tunisien
     REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
     REV_TYP = None
 

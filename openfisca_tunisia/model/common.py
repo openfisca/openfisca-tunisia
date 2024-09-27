@@ -7,7 +7,7 @@ from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 class impots_directs(Variable):
     value_type = float
     entity = Individu
-    label = "Impôts directs"
+    label = 'Impôts directs'
     definition_period = YEAR
 
     def formula(individu, period):
@@ -19,14 +19,14 @@ class impots_directs(Variable):
 class prestations_sociales(Variable):
     value_type = int
     entity = Individu
-    label = "Prestations sociales"
+    label = 'Prestations sociales'
     definition_period = YEAR
 
 
 class revenu_disponible(Variable):
     value_type = float
     entity = Menage
-    label = "Revenu disponible du ménage"
+    label = 'Revenu disponible du ménage'
     definition_period = YEAR
 
     def formula(menage, period):
@@ -37,7 +37,7 @@ class revenu_disponible(Variable):
 class revenu_disponible_individuel(Variable):
     value_type = float
     entity = Individu
-    label = "Revenu disponible individuel"
+    label = 'Revenu disponible individuel'
     definition_period = YEAR
 
     def formula(individu, period):
@@ -53,7 +53,7 @@ class revenu_disponible_individuel(Variable):
 class revenus_du_capital(Variable):
     value_type = float
     entity = Individu
-    label = "Revenus du capital"
+    label = 'Revenus du capital'
     definition_period = YEAR
 
     def formula(individu, period):
@@ -64,7 +64,7 @@ class revenus_du_capital(Variable):
 class revenus_du_travail(Variable):
     value_type = float
     entity = Individu
-    label = "Revenus du travail"
+    label = 'Revenus du travail'
     definition_period = YEAR
 
     def formula(individu, period):

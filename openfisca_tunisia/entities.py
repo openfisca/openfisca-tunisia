@@ -2,15 +2,15 @@ from openfisca_core.entities import build_entity
 
 
 Individu = build_entity(
-    key = "individu",
-    plural = "individus",
+    key = 'individu',
+    plural = 'individus',
     label = 'Individu',
     is_person = True
     )
 
 FoyerFiscal = build_entity(
-    key = "foyer_fiscal",
-    plural = "foyers_fiscaux",
+    key = 'foyer_fiscal',
+    plural = 'foyers_fiscaux',
     label = 'Déclaration d’impôts',
     roles = [
         {
@@ -28,8 +28,8 @@ FoyerFiscal = build_entity(
     )
 
 Menage = build_entity(
-    key = "menage",
-    plural = "menages",
+    key = 'menage',
+    plural = 'menages',
     label = 'Logement principal',
     roles = [
         {

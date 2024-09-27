@@ -1,7 +1,5 @@
 from __future__ import division
 
-from numpy import logical_or as or_
-
 from openfisca_tunisia.model.base import *  # noqa analysis:ignore
 
 
@@ -60,7 +58,7 @@ class nb_infirme(Variable):
 class nb_parents(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Nombre de parents"
+    label = 'Nombre de parents'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -68,15 +66,15 @@ class nb_parents(Variable):
         TODO: Nombre de parents
         '''
         return (
-            (foyer_fiscal.declarant_principal('age', period) > 20) +
             (foyer_fiscal.declarant_principal('age', period) > 20)
+            + (foyer_fiscal.declarant_principal('age', period) > 20)
             )
 
 
 class chef_de_famille(Variable):
     value_type = bool
     entity = FoyerFiscal
-    label = "Indicatrice de chef de famille"
+    label = 'Indicatrice de chef de famille'
     definition_period = YEAR
     set_input = set_input_dispatch_by_period
 
@@ -104,10 +102,7 @@ class chef_de_famille(Variable):
         veuf = foyer_fiscal.declarant_principal('veuf', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
         chef_de_famille = (
-            veuf |
-            (marie & male) |
-            (divorce & (nb_enf > 0))  # | 
-            # (marie & (not male)) |
+            veuf | (marie & male) | (divorce & (nb_enf > 0))  # | (marie & (not male)) |
             )
 
         return chef_de_famille
@@ -122,7 +117,7 @@ class chef_de_famille(Variable):
 class bic(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Bénéfices industriels et commerciaux (BIC)"
+    label = 'Bénéfices industriels et commerciaux (BIC)'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -140,14 +135,14 @@ class bic(Variable):
 class bic_ca_global(Variable):
     value_type = float
     entity = Individu
-    label = "Chiffre d’affaires global (BIC, cession de fond de commerce"
+    label = 'Chiffre d’affaires global (BIC, cession de fond de commerce'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        """
+        '''
         Chiffre d’affaires global
         des personnes soumises au régime forfaitaire ayant cédé le fond de commerce
-        """
+        '''
         bic_ca_revente = foyer_fiscal('bic_ca_revente', period = period)
         bic_ca_autre = foyer_fiscal('bic_ca_autre', period = period)
 
@@ -157,7 +152,7 @@ class bic_ca_global(Variable):
 class bic_res_cession(Variable):
     value_type = float
     entity = Individu
-    label = "Résultat (BIC, cession de fond de commerce)"
+    label = 'Résultat (BIC, cession de fond de commerce)'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -170,7 +165,7 @@ class bic_res_cession(Variable):
 class bic_benef_fiscal_cession(Variable):
     value_type = float
     entity = Individu
-    label = "Bénéfice fiscal (BIC, cession de fond de commerce)"
+    label = 'Bénéfice fiscal (BIC, cession de fond de commerce)'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -181,9 +176,9 @@ class bic_benef_fiscal_cession(Variable):
 
 
 def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
-    """
+    '''
     Résultat net BIC TODO: il manque le régime réel
-    """
+    '''
     return bic_benef_fiscal_cession + bic_part_benef_sp
 
 
@@ -191,7 +186,7 @@ def _bic_res_net(bic_benef_fiscal_cession, bic_part_benef_sp):
 class bnc(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Bénéfices des professions non commerciales (BNC)"
+    label = 'Bénéfices des professions non commerciales (BNC)'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -210,13 +205,13 @@ class bnc(Variable):
 class bnc_forf_benef_fiscal(Variable):
     value_type = float
     entity = Individu
-    label = "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
+    label = 'Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        """
+        '''
         Bénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)
-        """
+        '''
         bnc_forfaitaire_recettes_brutes = foyer_fiscal('bnc_forfaitaire_recettes_brutes', period = period)
         part = parameters(period.start).impot_revenu.bnc.forf.part_forf
         return bnc_forfaitaire_recettes_brutes * part
@@ -243,7 +238,7 @@ class beap(Variable):
 class revenus_fonciers(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenus fonciers"
+    label = 'Revenus fonciers'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -258,29 +253,31 @@ class revenus_fonciers(Variable):
 class fon_forf_bati(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenus fonciers net des immeubles bâtis"
+    label = 'Revenus fonciers net des immeubles bâtis'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
         foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal(
             'foncier_forfaitaire_batis_recettes', period = period)
-        foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_batis_reliquat', period = period)
+        # foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal(
+        #     'foncier_forfaitaire_batis_reliquat', period = period)
         foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal(
             'foncier_forfaitaire_batis_frais', period = period)
         foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal(
             'foncier_forfaitaire_batis_taxe', period = period)
-        P = parameters(period.start).impot_revenu.foncier.bati.deduction_frais
+        taux_deduction_frais = parameters(period.start).impot_revenu.foncier.bati.deduction_frais
         return max_(
             0,
-            foncier_forfaitaire_batis_recettes * (1 - P) - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe
+            foncier_forfaitaire_batis_recettes * (1 - taux_deduction_frais)
+            - foncier_forfaitaire_batis_frais
+            - foncier_forfaitaire_batis_taxe
             )
 
 
 class fon_forf_nbat(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenus fonciers net des terrains non bâtis"
+    label = 'Revenus fonciers net des terrains non bâtis'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -301,7 +298,7 @@ class fon_forf_nbat(Variable):
 class tspr(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Traitements, salaires, indemnités, pensions et rentes viagères"
+    label = 'Traitements, salaires, indemnités, pensions et rentes viagères'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -316,7 +313,7 @@ class tspr(Variable):
 class revenu_assimile_salaire(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenu assimilé à des salaires"
+    label = 'Revenu assimilé à des salaires'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -328,21 +325,24 @@ class revenu_assimile_salaire(Variable):
 class smig(Variable):
     value_type = bool
     entity = FoyerFiscal
-    label = "Indicatrice de SMIG ou SMAG déduite du montant des salaires"
+    label = 'Indicatrice de SMIG ou SMAG déduite du montant des salaires'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
         revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
         smig_dec = foyer_fiscal.declarant_principal('smig_dec', period = period.first_month)
         smig_40h_mensuel = parameters(period.start).cotisations_sociales.gen.smig_40h_mensuel
-        smig = or_(smig_dec, revenu_assimile_salaire <= 12 * smig_40h_mensuel)
+        smig = (
+            smig_dec
+            + (revenu_assimile_salaire <= 12 * smig_40h_mensuel)
+            )
         return smig
 
 
 class revenu_assimile_salaire_apres_abattements(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenu imposé comme des salaires net des abatements"
+    label = 'Revenu imposé comme des salaires net des abatements'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -362,7 +362,7 @@ class revenu_assimile_salaire_apres_abattements(Variable):
 class revenu_assimile_pension_apres_abattements(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenu assimilé à des pensions après abattements"
+    label = 'Revenu assimilé à des pensions après abattements'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -378,7 +378,7 @@ class revenu_assimile_pension_apres_abattements(Variable):
 class rvcm(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenus de valeurs mobilières et de capitaux mobiliers"
+    label = 'Revenus de valeurs mobilières et de capitaux mobiliers'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -393,8 +393,15 @@ class rvcm(Variable):
         capm_aut = foyer_fiscal.declarant_principal('capm_aut', period = period)
 
         return (
-            capm_banq + capm_cent + capm_caut + capm_part + capm_oblig + capm_caisse +
-            capm_plfcc + capm_epinv + capm_aut
+            capm_banq
+            + capm_cent
+            + capm_caut
+            + capm_part
+            + capm_oblig
+            + capm_caisse
+            + capm_plfcc
+            + capm_epinv
+            + capm_aut
             )
 
 
@@ -417,10 +424,10 @@ class retr(Variable):
         tspr = parameters(period.start).impot_revenu.tspr
 
         return (
-            salaire_etranger * (1 - tspr.abat_sal) +
-            pension_etranger_non_transferee * (1 - tspr.abat_pen) +
-            pension_etranger_transferee * (1 - tspr.abat_pen_etr) +
-            autres_revenus_etranger
+            salaire_etranger * (1 - tspr.abat_sal)
+            + pension_etranger_non_transferee * (1 - tspr.abat_pen)
+            + pension_etranger_transferee * (1 - tspr.abat_pen_etr)
+            + autres_revenus_etranger
             )
 
 
@@ -432,7 +439,7 @@ class retr(Variable):
 class rng(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenu net global"
+    label = 'Revenu net global'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -467,18 +474,21 @@ class deduction_interets(Variable):
         deductions = parameters(period).impot_revenu.deductions
         return max_(
             max_(
-                max_(compte_special_epargne_banque, deductions.banq.plaf) +
-                max_(compte_special_epargne_cent, deductions.cent.plaf),
-                deductions.banq.plaf
-                ) +
-            max_(emprunt_obligataire, deductions.oblig.plaf), deductions.oblig.plaf
+                (
+                    max_(compte_special_epargne_banque, deductions.banq.plaf)
+                    + max_(compte_special_epargne_cent, deductions.cent.plaf)
+                    ),
+                deductions.banq.plaf,
+                )
+            + max_(emprunt_obligataire, deductions.oblig.plaf),
+            deductions.oblig.plaf,
             )
 
 
 class deduction_famille(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Déductions pour situation et charges de famille"
+    label = 'Déductions pour situation et charges de famille'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -504,7 +514,7 @@ class deduction_famille(Variable):
 class deduction_rente(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Arrérages et rentes payées à titre obligatoire et gratuit"
+    label = 'Arrérages et rentes payées à titre obligatoire et gratuit'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -563,7 +573,7 @@ class deduction_assurance_vie(Variable):
 class deduction_smig(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Déduction supplémentaire pour les salariés payés au SMIG et SMAG"
+    label = 'Déduction supplémentaire pour les salariés payés au SMIG et SMAG'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -575,7 +585,7 @@ class deduction_smig(Variable):
 class revenu_net_imposable(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenu net imposable"
+    label = 'Revenu net imposable'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -593,7 +603,7 @@ class revenu_net_imposable(Variable):
 class impot_revenu_brut(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Impôt brut avant non-imposabilité"
+    label = 'Impôt brut avant non-imposabilité'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
@@ -626,7 +636,7 @@ class exoneration(Variable):
 class irpp(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Impôt sur le revenu des personnes physiques"
+    label = 'Impôt sur le revenu des personnes physiques'
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
@@ -638,7 +648,7 @@ class irpp(Variable):
 class irpp_mensuel_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
+    label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'
     definition_period = MONTH
 
     def formula(individu, period, parameters):

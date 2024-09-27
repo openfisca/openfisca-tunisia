@@ -47,7 +47,7 @@ setup(
             'requests >=2.28.2, <3.0',
             'yamllint >=1.30.0, <2.0'
             ],
-        'notebook' : [
+        'notebook': [
             'ipykernel >= 4.8',
             'jupyter-client >= 5.2',
             'matplotlib >= 2.2',
@@ -55,7 +55,7 @@ setup(
             'nbformat >= 4.4',
             'pandas >= 0.22.0',
             ],
-        'survey' : [
+        'survey': [
             'OpenFisca-Survey-Manager >=0.34,<1.0',
             ],
         },

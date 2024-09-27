@@ -1,4 +1,3 @@
-from openfisca_core.tools import assert_near
 from openfisca_tunisia import TunisiaTaxBenefitSystem
 
 

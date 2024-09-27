@@ -20,7 +20,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-"""Conversion functions"""
+'''Conversion functions'''
 
 
 from openfisca_core.conv import *

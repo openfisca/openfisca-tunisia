@@ -49,21 +49,21 @@ from openfisca_tunisia.model.base import *
 
 class compte_special_epargne_banque(Variable):
     value_type = int
-    label = "Intérêts des comptes spéciaux d’épargne ouverts auprès des banques"
+    label = "Intérêts des comptes spéciaux d'épargne ouverts auprès des banques"
     entity = Individu
     definition_period = YEAR
 
 
 class compte_special_epargne_cent(Variable):
     value_type = int
-    label = "Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite"
+    label = "Intérêts des comptes spéciaux d'épargne ouverts auprès de la CENT dans la limite"
     entity = Individu
     definition_period = YEAR
 
 
 class emprunt_obligataire(Variable):
     value_type = int
-    label = "Intérêts des emprunts obligataires"
+    label = 'Intérêts des emprunts obligataires'
     entity = Individu
     definition_period = YEAR
 
@@ -77,43 +77,42 @@ class compte_epargne_investissement(Variable):
 
 class rente(Variable):
     value_type = int
-    label = "Rentes payées obligatoirement et à titre gratuit"
+    label = 'Rentes payées obligatoirement et à titre gratuit'
     entity = Individu
     definition_period = YEAR
 
 
 class prime_assurance_vie(Variable):
     value_type = int
-    label = "Prime d’assurance-vie"
+    label = 'Prime d’assurance-vie'
     entity = Individu
     definition_period = YEAR
 
 
 class dons(Variable):
     value_type = int
-    label = "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"
+    label = 'Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21'
     entity = Individu
     definition_period = YEAR
 
 
 class pret_universitaire(Variable):
     value_type = int
-    label = "Remboursement des prêts universitaires en principal et intérêts"
+    label = 'Remboursement des prêts universitaires en principal et intérêts'
     entity = Individu
     definition_period = YEAR
 
 
 class cotisations_non_affilie(Variable):
     value_type = int
-    label = "Cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux " \
-        "de la sécurité sociale"
+    label = "Cotisations payées par les travailleurs non salariés affiliés à l'un des régimes légaux de la sécurité sociale"
     entity = Individu
     definition_period = YEAR
 
 
 class interet_acquisition_logement(Variable):
     value_type = int
-    label = "Intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social"
+    label = "Intérêts payés au titre des prêts relatifs à l'acquisition ou à la construction d’un logement social"
     entity = Individu
     definition_period = YEAR
 

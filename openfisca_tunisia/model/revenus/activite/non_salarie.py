@@ -6,29 +6,29 @@ from openfisca_tunisia.model.base import *
 
 
 class TypesActivite(Enum):
-    neant = "Néant"
-    commercant = "Commerçant"
-    industriel = "Industriel"
-    prestataire_de_services = "Prestataire de services"
-    artisan = "Artisan"
+    neant = 'Néant'
+    commercant = 'Commerçant'
+    industriel = 'Industriel'
+    prestataire_de_services = 'Prestataire de services'
+    artisan = 'Artisan'
     multi_activites = "Plus d'une activité"
 
 
 class TypesCadreLegalActiviteEntreprise(Enum):
     exportation_totale = "Exportation totale dans le cadre du Code d'Incitations aux Investissements (CII)"
-    developpement_regional = "Développement régional"
-    developpement_agricole = "Développement agricole"
-    parcs_activites_economiques = "Parcs des activités économiques"
-    exportation_droit_commun = "Exportation dans le cadre du droit commun"
-    autres = "Autres (à préciser)"
+    developpement_regional = 'Développement régional'
+    developpement_agricole = 'Développement agricole'
+    parcs_activites_economiques = 'Parcs des activités économiques'
+    exportation_droit_commun = 'Exportation dans le cadre du droit commun'
+    autres = 'Autres (à préciser)'
 
 
 class TypesStructureDeclarationInvestissement(Enum):
     api = "Agence de Promotion de l'Industrie et de l'Innovation"
-    apia = "Agence de Promotion des Investissements Agricoles"
-    commissariat_regional_developpement_agricole = "Commissariat régional du développement agricole"
-    ont = "ONT"
-    autres = "Autre structure (à préciser)"
+    apia = 'Agence de Promotion des Investissements Agricoles'
+    commissariat_regional_developpement_agricole = 'Commissariat régional du développement agricole'
+    ont = 'ONT'
+    autres = 'Autre structure (à préciser)'
 
 
 class bic_reel(Variable):
@@ -36,7 +36,7 @@ class bic_reel(Variable):
     possible_values = TypesActivite
     default_value = TypesActivite.neant
     entity = Individu
-    label = "Type d’activité (BIC)"
+    label = "Type d'activité (BIC)"
     definition_period = YEAR
 
 
@@ -49,7 +49,7 @@ class bic_reel(Variable):
 class bic_societes_personnes(Variable):
     value_type = bool
     entity = Individu
-    label = "Indicatrice des sociétés de personnes et assimilées (BIC)"
+    label = 'Indicatrice des sociétés de personnes et assimilées (BIC)'
     definition_period = YEAR
 
 
@@ -58,29 +58,29 @@ class cadre_legal(Variable):
     default_value = TypesCadreLegalActiviteEntreprise.developpement_regional  # Développement régional
     possible_values = TypesCadreLegalActiviteEntreprise
     entity = Individu
-    label = "Cadre légal de l’activité de l’entreprise"
+    label = "Cadre légal de l'activité de l'entreprise"
     definition_period = YEAR
 
 
 class bic_reel_res(Variable):
     value_type = int
     entity = Individu
-    label = "Résultat comptable (BIC, régime réel)"
+    label = 'Résultat comptable (BIC, régime réel)'
     definition_period = YEAR
 
 
 class bic_forfaitaire_resultat(Variable):
     value_type = int
     entity = Individu
-    label = "Résultat (BIC, régime forfaitaire, cession de fonds de commerce)"
+    label = 'Résultat (BIC, régime forfaitaire, cession de fonds de commerce)'
     definition_period = YEAR
 
 
 class bic_societes_personnes_resultat(Variable):
     value_type = int
     entity = Individu
-    label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées " \
-        "exerçant dans le secteur industriel et commercial (BIC)"
+    label = 'Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées ' \
+        'exerçant dans le secteur industriel et commercial (BIC)'
     definition_period = YEAR
 
 
@@ -89,7 +89,7 @@ class structure_declaration_investissement(Variable):
     possible_values = TypesStructureDeclarationInvestissement
     default_value = TypesStructureDeclarationInvestissement.api
     entity = Individu
-    label = "Structure auprès de laquelle la déclaration d’investissement a été déposée"
+    label = "Structure auprès de laquelle la déclaration d'investissement a été déposée"
     definition_period = YEAR
 
 
@@ -111,7 +111,7 @@ class structure_declaration_investissement(Variable):
 class bic_res_fiscal(Variable):
     value_type = int
     entity = Individu
-    label = "Résultat fiscal (BIC, régime réel)"
+    label = 'Résultat fiscal (BIC, régime réel)'
     definition_period = YEAR
 
 
@@ -121,21 +121,20 @@ class bic_res_fiscal(Variable):
 class bic_ca_revente(Variable):
     value_type = int
     entity = Individu
-    label = "Chiffre d’affaires global au titre des activités d’achat en vue de la revente " \
-        "et les activités de transformation (BIC, régime forfaitaire, cession de fonds de commerce)"
+    label = "Chiffre d'affaires global au titre des activités d'achat en vue de la revente et les activités de transformation (BIC, régime forfaitaire, cession de fonds de commerce)"
     definition_period = YEAR
 
 
 class bic_ca_autre(Variable):
     value_type = int
     entity = Individu
-    label = "Chiffre d’affaires global au titre d’autres activités (BIC, régime forfaitaire, cession de fonds de commerce)"
+    label = 'Chiffre d’affaires global au titre d’autres activités (BIC, régime forfaitaire, cession de fonds de commerce)'
     definition_period = YEAR
 
 
 class bic_depenses(Variable):
     value_type = int
-    label = "Total des dépenses (BIC, cession de fonds de commerce)"
+    label = 'Total des dépenses (BIC, cession de fonds de commerce)'
     entity = Individu
     definition_period = YEAR
 
@@ -143,7 +142,7 @@ class bic_depenses(Variable):
 class bic_pv_cession(Variable):
     value_type = int
     entity = Individu
-    label = "Plue-value de cession du fond de commerce (BIC, régime forfaitaire, cession de fonds de commerce)"
+    label = 'Plue-value de cession du fond de commerce (BIC, régime forfaitaire, cession de fonds de commerce)'
     definition_period = YEAR
 
 
@@ -153,8 +152,8 @@ class bic_pv_cession(Variable):
 
 class bic_part_benef_sp(Variable):
     value_type = int
-    label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant " \
-        "dans le secteur industriel et commercial"
+    label = 'Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant ' \
+        'dans le secteur industriel et commercial'
     entity = Individu
     definition_period = YEAR
 
@@ -174,7 +173,7 @@ class bic_part_benef_sp(Variable):
 class bnc_reel_res_fiscal(Variable):
     value_type = int
     entity = Individu
-    label = "Résultat fiscal (BNC, régime réel)"
+    label = 'Résultat fiscal (BNC, régime réel)'
     definition_period = YEAR
 
 
@@ -187,7 +186,7 @@ class bnc_reel_res_fiscal(Variable):
 
 class bnc_forfaitaire_recettes_brutes(Variable):
     value_type = int
-    label = "Recettes globales brutes TTC (BNC, assiette forfaitaire)"
+    label = 'Recettes globales brutes TTC (BNC, assiette forfaitaire)'
     entity = Individu
     definition_period = YEAR
 
@@ -203,8 +202,8 @@ class bnc_forfaitaire_recettes_brutes(Variable):
 class bnc_part_benef_sp(Variable):
     value_type = int
     entity = Individu
-    label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées" \
-        "qui réalisent des bénéfices non commerciaux (BNC)"
+    label = 'Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées' \
+        'qui réalisent des bénéfices non commerciaux (BNC)'
     definition_period = YEAR
 
 
@@ -222,7 +221,7 @@ class bnc_part_benef_sp(Variable):
 
 class beap_reel_res_fiscal(Variable):
     value_type = int
-    label = "Résultat fiscal (BEAP, régime réel)"
+    label = 'Résultat fiscal (BEAP, régime réel)'
     entity = Individu
     definition_period = YEAR
 
@@ -234,13 +233,14 @@ class beap_reel_res_fiscal(Variable):
 
 class beap_reliq_rec(Variable):
     value_type = int
-    label = "Recettes brutes (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
+    label = 'Recettes brutes (BEAP, bénéfice comme reliquat positif entre recette et dépenses)'
     entity = Individu
     definition_period = YEAR
 
+
 class beap_reliq_stock(Variable):
     value_type = int
-    label = "Stocks (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
+    label = 'Stocks (BEAP, bénéfice comme reliquat positif entre recette et dépenses)'
     entity = Individu
     definition_period = YEAR
 
@@ -250,7 +250,7 @@ class beap_reliq_stock(Variable):
 
 class beap_reliq_dep_ex(Variable):
     value_type = int
-    label = "Dépenses d’exploitation (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
+    label = "Dépenses d'exploitation (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
     entity = Individu
     definition_period = YEAR
 
@@ -261,7 +261,7 @@ class beap_reliq_dep_ex(Variable):
 
 class beap_reliq_benef_fiscal(Variable):
     value_type = int
-    label = "Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
+    label = 'Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)'
     entity = Individu
     definition_period = YEAR
 
@@ -271,7 +271,7 @@ class beap_reliq_benef_fiscal(Variable):
 
 class beap_monogr(Variable):
     value_type = int
-    label = "Bénéfice sur la base de monographies sectorielles (BEAP)"
+    label = 'Bénéfice sur la base de monographies sectorielles (BEAP)'
     entity = Individu
     definition_period = YEAR
 # D/ Part dans le bénéfice ou dans la perte des sociétés de personnes et
@@ -280,7 +280,7 @@ class beap_monogr(Variable):
 
 class beap_part_benef_sp(Variable):
     value_type = int
-    label = "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées " \
-        "exerçant dans le secteur agricole et de pêche (BEAP)"
+    label = 'Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées ' \
+        'exerçant dans le secteur agricole et de pêche (BEAP)'
     entity = Individu
     definition_period = YEAR

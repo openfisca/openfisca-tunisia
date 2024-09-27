@@ -36,8 +36,8 @@ def init_single_entity(scenario, axes = None, enfants = None, foyer_fiscal = Non
                 menage_nth.setdefault('enfants', []).append(id)
 
         count_so_far += len(group)
-        foyers_fiscaux["ff{}".format(nth)] = foyer_fiscal_nth
-        menages["m{}".format(nth)] = menage_nth
+        foyers_fiscaux['ff{}'.format(nth)] = foyer_fiscal_nth
+        menages['m{}'.format(nth)] = menage_nth
 
     dict = {
         'period': period,
