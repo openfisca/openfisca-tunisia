@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 # OpenFisca -- A versatile microsimulation software
 # By: OpenFisca Team <contact@openfisca.fr>
 #
@@ -44,4 +41,3 @@ def test_in_pop(values, error = None):
         test_in(values, error = error),
         function(remove),
         )
-
