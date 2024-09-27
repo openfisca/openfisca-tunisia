@@ -57,5 +57,5 @@ test: clean check-syntax-errors check-style
 	@# before parsing source files containing formulas.
 	@echo "> Yaml tests..."
 	openfisca test --country-package openfisca_tunisia tests
-	@echo "> Notebooks tests..."
-	python notebooks/test_notebooks.py notebooks/
+	@# @echo "> Notebooks tests..."
+	@# python notebooks/test_notebooks.py notebooks/

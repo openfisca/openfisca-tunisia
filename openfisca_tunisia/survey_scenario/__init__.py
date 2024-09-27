@@ -1,6 +1,5 @@
 import os
 from openfisca_tunisia import CountryTaxBenefitSystem as TunisiaTaxBenefitSystem
-from openfisca_tunisia.tunisia_taxbenefitsystem import TunisiaTaxBenefitSystem
 
 from openfisca_survey_manager.scenarios import AbstractSurveyScenario
 
