@@ -3,7 +3,7 @@
 from numpy import datetime64
 
 
-from openfisca_tunisia.model.base import *
+from openfisca_tunisia.variables.base import *
 
 
 class age(Variable):
@@ -128,7 +128,6 @@ class activite(Variable):
     entity = Individu
     label = "Activité"
     definition_period = ETERNITY
-
 
 
 class boursier(Variable):
