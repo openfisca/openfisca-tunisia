@@ -15,23 +15,23 @@ This is the source code of the Tunisia module.
 
 ## Demo - لعبة تجريبية
 
-Un démonstrateur vous est proposé sous la forme d'un Notebook Jupyter.  
-Vous serez redirigé vers celui-ci en cliquant sur le lien suivant (le chargement prendra quelques secondes) :  
+Un démonstrateur vous est proposé sous la forme d'un Notebook Jupyter.
+Vous serez redirigé vers celui-ci en cliquant sur le lien suivant (le chargement prendra quelques secondes) :
 <code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/master?filepath=notebooks%2Fdemo.ipynb)</p></code>
-Vous accédez ainsi à un démonstrateur modifiable où il vous est possible de tester openfisca-tunisia.   
+Vous accédez ainsi à un démonstrateur modifiable où il vous est possible de tester openfisca-tunisia.
 
 <p align='right'>ستجدون لعبة تجريبية في شكل دفتر جوبيتر على الرابط التالي</p>
 
 <code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/master?filepath=notebooks%2Fdemo.ipynb)</p></code>
 <p align='right'>يسمح هذا الدفتر بتجريب الجباية المفتوحة لتونس</p>
 
-A demo is available in a Jupyter Notebook.  
-You will be redirected to it by clicking on the following link (wait a few seconds to load it):  
+A demo is available in a Jupyter Notebook.
+You will be redirected to it by clicking on the following link (wait a few seconds to load it):
 <code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
-Then you will be in an interactive demo where you will be able to play with openfisca-tunisia.  
+Then you will be in an interactive demo where you will be able to play with openfisca-tunisia.
 
 
-> This demo is available thanks to [Binder](https://mybinder.org/) and [Jupyter](http://jupyter.org) projects. 
+> This demo is available thanks to [Binder](https://mybinder.org/) and [Jupyter](http://jupyter.org) projects.
 
 ## Contribution & Contact - المساهمة والاتصال بنا
 
@@ -73,8 +73,8 @@ Par ailleurs, chaque module de la [famille OpenFisca sur GitHub](https://github.
 
 Sous Unix/macOS/Linux, appliquez les étapes qui suivent dans votre Terminal.
 
-Sous Windows, installez un émulateur de terminal avant de poursuivre.  
-Nous vous conseillons en particulier l'émulateur BASH fourni avec le [gestionnaire de version GIT](https://git-for-windows.github.io).  
+Sous Windows, installez un émulateur de terminal avant de poursuivre.
+Nous vous conseillons en particulier l'émulateur BASH fourni avec le [gestionnaire de version GIT](https://git-for-windows.github.io).
 En l'intégrant à un outil tel que [Visual Studio Code](https://code.visualstudio.com), vous aurez un environnement fonctionnel pour travailler sur le code source.
 Néanmoins, vous aurez à effectuer des vérifications complémentaires à ce qui est décrit ci-dessous (telles que vérifier la configuration de votre variable d'environnement `%PATH%`).
 
@@ -125,7 +125,7 @@ Deux options s'offrent à vous :
 
 Installer le module pré-compilé d'`OpenFisca-Tunisia` vous permet d'interroger le modèle socio-fiscal tunisien.
 
-Nous supposons que vous avez activé votre environnement virtuel.  
+Nous supposons que vous avez activé votre environnement virtuel.
 Appliquez alors la commande suivante pour récupérer la wheel `OpenFisca-Tunisia` depuis la librairie de paquets Python [pypi](https://pypi.org) :
 
 ```sh
@@ -163,7 +163,7 @@ Nous supposons que vous êtes dans le répertoire `openfisca-tunisia` et que vot
 Commencez par installer les outils de test avec :
 
 ```
-pip install -e .[tests]
+pip install -e .[dev]
 ```
 
 Différents formats de tests sont alors à votre disposition : la rédaction de tests est possible en python ou en yaml.
@@ -229,7 +229,7 @@ Pour en savoir plus, voir [la section Tests](http://openfisca.org/doc/contribute
 
 L'API est issue du dépôt [GitHub du module central OpenFisca-Core](https://github.com/openfisca/openfisca-core).
 
-Pour consulter sa version `v0.13.0`, il suffit d'interroger l'un de ses points d'entrée.   
+Pour consulter sa version `v0.13.0`, il suffit d'interroger l'un de ses points d'entrée.
 La liste des paramètres est par exemple consultable à l'adresse suivante :
 ```
 www.openfisca.tn/api/v0.13.0/parameters

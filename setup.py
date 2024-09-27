@@ -55,7 +55,7 @@ setup(
             ],
         'survey' : [
             'OpenFisca-Survey-Manager >=0.34,<1.0',
-            ]
+            ],
         },
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
