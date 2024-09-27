@@ -1,10 +1,11 @@
+# Contributing to OpenFisca Tunisia
+
 > This file defines the rules to follow to contribute to your repository.
 > The rules suggested here are what we generally use for OpenFisca packages.
 
 Thank you for wanting to contribute to OpenFisca! :smiley:
 
 TL;DR: [GitHub Flow](https://guides.github.com/introduction/flow/), [SemVer](http://semver.org/).
-
 
 ## Pull requests
 
@@ -23,7 +24,6 @@ To help reviewers, make sure to add to your PR a **clear text explanation** of y
 In case of breaking changes, you **must** give details about what features were deprecated.
 
 > You must also provide guidelines to help users adapt their code to be compatible with the new version of the package.
-
 
 ## Advertising changes
 
@@ -53,13 +53,12 @@ Each change must be documented with the following elements:
 
 - On the first line appears as a title the version number, as well as a link towards the Pull Request introducing the change. The title level must match the incrementation level of the version.
 
-
   > For instance :
-  > # 13.0.0 [#671](https://github.com/openfisca/openfisca-france/pull/671)
+  > # 13.0.0 [#671](https://github.com/openfisca/openfisca-tunisia/pull/671)
   >
-  > ## 13.2.0 [#676](https://github.com/openfisca/openfisca-france/pull/676)
+  > ## 13.2.0 [#676](https://github.com/openfisca/openfisca-tunisia/pull/676)
   >
-  > ### 13.1.5 [#684](https://github.com/openfisca/openfisca-france/pull/684)
+  > ### 13.1.5 [#684](https://github.com/openfisca/openfisca-tunisia/pull/684)
 
 - The second line indicates the type of the change. The possible types are:
   - `Tax and benefit system evolution`: Calculation improvement, fix, or update. Impacts th
