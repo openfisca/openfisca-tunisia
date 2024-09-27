@@ -62,9 +62,9 @@ setup(
         'OpenFisca-Core >=40.0.1, <42',
         'scipy >= 0.12',
         ],
-    message_extractors = {'openfisca_tunisia': [
-        ('**.py', 'python', None),
-        ]},
+    # message_extractors = {'openfisca_tunisia': [
+    #     ('**.py', 'python', None),
+    #     ]},
     packages = find_namespace_packages(exclude = [
         'tests*',
         ]),
