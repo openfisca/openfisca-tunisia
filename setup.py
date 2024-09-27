@@ -31,8 +31,8 @@ setup(
     long_description_content_type='text/markdown',
 
     data_files = [
-        'share/openfisca/openfisca-tunisia', 
-        ['CHANGELOG.md', 'README.md'],
+        'share/openfisca/openfisca-tunisia',
+        ['CHANGELOG.md', 'LICENSE.AGPL.txt', 'README.md'],
         ],
     extras_require = {
         'dev': [
@@ -44,7 +44,7 @@ setup(
             'scipy >=1.10.1, <2.0',  # Only used to test de_net_a_brut reform
             'requests >=2.28.2, <3.0',
             'yamllint >=1.30.0, <2.0'
-            ],        
+            ],
         'notebook' : [
             'ipykernel >= 4.8',
             'jupyter-client >= 5.2',
@@ -66,6 +66,6 @@ setup(
         ('**.py', 'python', None),
         ]},
     packages = find_namespace_packages(exclude = [
-        'openfisca_tunisia.tests*',
+        'tests*',
         ]),
     )
