@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 # OpenFisca -- A versatile microsimulation software
 # By: OpenFisca Team <contact@openfisca.fr>
 #
@@ -23,7 +20,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-"""Conversion functions"""
+'''Conversion functions'''
 
 
 from openfisca_core.conv import *
@@ -44,4 +41,3 @@ def test_in_pop(values, error = None):
         test_in(values, error = error),
         function(remove),
         )
-

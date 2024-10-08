@@ -1,10 +1,6 @@
 from __future__ import division
 
 from openfisca_tunisia.model.base import *
-from openfisca_tunisia import entities
-
-from numpy.ma.testutils import assert_not_equal
-from urllib.request import Request
 
 try:
     from scipy.optimize import fsolve
@@ -36,10 +32,9 @@ def calculate_net_from(salaire_imposable, individu, period, requested_variable_n
 class salaire_imposable(Variable):
     value_type = float
     entity = Individu
-    label = "Salaire imposable"
+    label = 'Salaire imposable'
     definition_period = MONTH
     set_input = set_input_divide_by_period
-
 
     def formula(individu, period):
         # Use numerical inversion to calculate 'salaire_imposable' from 'salaire_net_a_payer'

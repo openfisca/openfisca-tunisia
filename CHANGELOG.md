@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.33.3 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Détails :
+  - Migration vers Github actions (retrait de CircleCi)
+
 ### 0.33.2 - [#126](https://github.com/openfisca/openfisca-tunisia/pull/126)
 
 * Ajoute la validation des paramètres YAML ainsi que l'intégration à la CI tax-benefit.org.

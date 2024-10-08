@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from openfisca_tunisia.model.base import *
 
 
@@ -41,6 +39,6 @@ class autres_revenus_etranger(Variable):
 
 class deficits_anterieurs_non_deduits(Variable):
     value_type = int
-    label = "Déficits des années antérieures non déduits"
+    label = 'Déficits des années antérieures non déduits'
     entity = Individu
     definition_period = YEAR

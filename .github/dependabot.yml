@@ -3,10 +3,7 @@ updates:
 - package-ecosystem: pip
   directory: "/"
   schedule:
-    interval: daily
-    time: "00:00"
-    timezone: Europe/Paris
+    interval: weekly
+  labels:
+  - kind:dependencies
   open-pull-requests-limit: 2
-  reviewers:
-  - sandcha
-  - benjello

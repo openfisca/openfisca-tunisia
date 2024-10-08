@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 from __future__ import division
 
 from numpy import zeros
@@ -12,16 +9,16 @@ class TypesRegimeSecuriteSociale(Enum):
     __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps'
     # Needed to preserve the enum order in Python 2
 
-    rsna = "Régime des Salariés Non Agricoles"
-    rsa = "Régime des Salariés Agricoles"
-    rsaa = "Régime des Salariés Agricoles Amélioré"
-    rtns = "Régime des Travailleurs Non Salariés (secteurs agricole et non agricole)"
+    rsna = 'Régime des Salariés Non Agricoles'
+    rsa = 'Régime des Salariés Agricoles'
+    rsaa = 'Régime des Salariés Agricoles Amélioré'
+    rtns = 'Régime des Travailleurs Non Salariés (secteurs agricole et non agricole)'
     rtte = "Régime des Travailleurs Tunisiens à l'Etranger"
     re = "Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires"
-    rtfr = "Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)"
-    raci = "Régime des Artistes, Créateurs et Intellectuels"
-    salarie_cnrps = "Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
-    pensionne_cnrps = "Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    rtfr = 'Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)'
+    raci = 'Régime des Artistes, Créateurs et Intellectuels'
+    salarie_cnrps = 'Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale'
+    pensionne_cnrps = 'Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale'
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
@@ -70,13 +67,13 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 class assiette_cotisations_sociales(Variable):
     value_type = float
     entity = Individu
-    label = "Assiette des cotisations sociales"
+    label = 'Assiette des cotisations sociales'
     definition_period = MONTH
 
     def formula(individu, period):
         return (
-            individu('salaire_de_base', period) +
-            individu('primes', period)
+            individu('salaire_de_base', period)
+            + individu('primes', period)
             )
 
 
@@ -85,65 +82,65 @@ class regime_securite_sociale(Variable):
     possible_values = TypesRegimeSecuriteSociale
     default_value = TypesRegimeSecuriteSociale.rsna
     entity = Individu
-    label = "Régime de sécurité sociale du salarié"
+    label = 'Régime de sécurité sociale du salarié'
     definition_period = ETERNITY
 
 
 class cotisations_sociales(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisations sociales"
+    label = 'Cotisations sociales'
     definition_period = MONTH
 
     def formula(individu, period):
         return (
-            individu('cotisations_employeur', period) +
-            individu('cotisations_salarie', period)
+            individu('cotisations_employeur', period)
+            + individu('cotisations_salarie', period)
             )
 
 
 class cotisations_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation sociales employeur"
+    label = 'Cotisation sociales employeur'
     definition_period = MONTH
 
     def formula(individu, period):
         return (
-            individu('accident_du_travail_employeur', period) +
-            individu('deces_employeur', period) +
-            individu('fonds_special_etat', period) +
-            individu('famille_employeur', period) +
-            individu('maladie_employeur', period) +
-            individu('maternite_employeur', period) +
-            individu('protection_sociale_travailleurs_employeur', period) +
-            individu('retraite_employeur', period)
+            individu('accident_du_travail_employeur', period)
+            + individu('deces_employeur', period)
+            + individu('fonds_special_etat', period)
+            + individu('famille_employeur', period)
+            + individu('maladie_employeur', period)
+            + individu('maternite_employeur', period)
+            + individu('protection_sociale_travailleurs_employeur', period)
+            + individu('retraite_employeur', period)
             )
 
 
 class cotisations_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation sociales salarié"
+    label = 'Cotisation sociales salarié'
     definition_period = MONTH
 
     def formula(individu, period):
         return (
-            individu('accident_du_travail_salarie', period) +
-            individu('deces_salarie', period) +
-            individu('famille_salarie', period) +
-            individu('maladie_salarie', period) +
-            individu('maternite_salarie', period) +
-            individu('protection_sociale_travailleurs_salarie', period) +
-            individu('retraite_salarie', period) +
-            individu('ugtt', period)
+            individu('accident_du_travail_salarie', period)
+            + individu('deces_salarie', period)
+            + individu('famille_salarie', period)
+            + individu('maladie_salarie', period)
+            + individu('maternite_salarie', period)
+            + individu('protection_sociale_travailleurs_salarie', period)
+            + individu('retraite_salarie', period)
+            + individu('ugtt', period)
             )
 
 
 class accident_du_travail_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation accidents du travail et maladies professionnelles (employeur)"
+    label = 'Cotisation accidents du travail et maladies professionnelles (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -159,7 +156,7 @@ class accident_du_travail_employeur(Variable):
 class accident_du_travail_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation accidents du travail et maladies professionnelles (salarié)"
+    label = 'Cotisation accidents du travail et maladies professionnelles (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -175,7 +172,7 @@ class accident_du_travail_salarie(Variable):
 class deces_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation assurances sociales: décès (employeur)"
+    label = 'Cotisation assurances sociales: décès (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -191,7 +188,7 @@ class deces_employeur(Variable):
 class deces_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation assurances sociales: décès (salarié)"
+    label = 'Cotisation assurances sociales: décès (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -207,7 +204,7 @@ class deces_salarie(Variable):
 class famille_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation sociale allocations familiales (employeur)"
+    label = 'Cotisation sociale allocations familiales (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -223,7 +220,7 @@ class famille_employeur(Variable):
 class famille_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation sociale allocations familiales (salarié)"
+    label = 'Cotisation sociale allocations familiales (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -255,7 +252,7 @@ class fonds_special_etat(Variable):
 class maladie_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation assurances sociales: maladie (employeur)"
+    label = 'Cotisation assurances sociales: maladie (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -271,7 +268,7 @@ class maladie_employeur(Variable):
 class maladie_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation assurances sociales: maladie (salarié)"
+    label = 'Cotisation assurances sociales: maladie (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -287,7 +284,7 @@ class maladie_salarie(Variable):
 class maternite_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation assurances sociales : maternité (employeur)"
+    label = 'Cotisation assurances sociales : maternité (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -303,7 +300,7 @@ class maternite_employeur(Variable):
 class maternite_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation assurances sociales : maternité (salarié)"
+    label = 'Cotisation assurances sociales : maternité (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -319,7 +316,7 @@ class maternite_salarie(Variable):
 class protection_sociale_travailleurs_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation protection sociale des travailleurs (employeur)"
+    label = 'Cotisation protection sociale des travailleurs (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -335,7 +332,7 @@ class protection_sociale_travailleurs_employeur(Variable):
 class protection_sociale_travailleurs_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation protection sociale des travailleurs (salarié)"
+    label = 'Cotisation protection sociale des travailleurs (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -351,7 +348,7 @@ class protection_sociale_travailleurs_salarie(Variable):
 class retraite_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation pensions de retraite (employeur)"
+    label = 'Cotisation pensions de retraite (employeur)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -367,7 +364,7 @@ class retraite_employeur(Variable):
 class retraite_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation pensions de retraite (salarié)"
+    label = 'Cotisation pensions de retraite (salarié)'
     definition_period = MONTH
 
     def formula(individu, period, parameters):
@@ -383,7 +380,7 @@ class retraite_salarie(Variable):
 class salaire_imposable(Variable):
     value_type = float
     entity = Individu
-    label = "Salaire imposable"
+    label = 'Salaire imposable'
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
@@ -397,7 +394,7 @@ class salaire_imposable(Variable):
 class salaire_net_a_payer(Variable):
     value_type = float
     entity = Individu
-    label = "Salaire net à payer (fiche de paie)"
+    label = 'Salaire net à payer (fiche de paie)'
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
@@ -411,7 +408,7 @@ class salaire_net_a_payer(Variable):
 class salaire_super_brut(Variable):
     value_type = float
     entity = Individu
-    label = "Salaires super bruts"
+    label = 'Salaires super bruts'
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
@@ -426,9 +423,9 @@ class salaire_super_brut(Variable):
 class ugtt(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation syndicale UGTT"
+    label = 'Cotisation syndicale UGTT'
     definition_period = MONTH
 
     def formula(individu, period):
+        # TODO put this value (3) in parameters
         return -3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSociale.salarie_cnrps)
-        # TODO put this value (3) in parameters

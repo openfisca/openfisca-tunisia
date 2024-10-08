@@ -1,32 +1,18 @@
-# -*- coding: utf-8 -*-
-
-
 from __future__ import division
 
+
 from numpy import (
-    round, maximum as max_, minimum as min_, logical_xor as xor_, logical_not as not_,
-    asanyarray, amin, amax, arange)
-
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
-
-
-def age_min(age, minimal_age=None):
-    '''
-    Returns minimal age higher than or equal to a
-    '''
-    if minimal_age is None:
-        minimal_age = 0
-    ages = asanyarray(age)
-    ages = ages + (ages < minimal_age) * 9999
-    return amin(ages, axis=1)
+    amax,
+    arange,
+    asanyarray,
+    # logical_not as not_,
+    maximum as max_,
+    minimum as min_,
+    round,
+    )
 
 
-def age_max(age):
-    '''
-    Returns minimal age higher than or equal to a
-    '''
-    ages = asanyarray(age)
-    return amax(ages, axis=1)
+from openfisca_tunisia.model.base import * # noqa F401
 
 
 def ages_first_kids(age, nb=None):
@@ -54,7 +40,7 @@ def ages_first_kids(age, nb=None):
 class salaire_unique(Variable):
     value_type = bool
     entity = Menage
-    label = "Indicatrice de salaire unique"
+    label = 'Indicatrice de salaire unique'
     definition_period = YEAR
 
     def formula(individu, period):
@@ -68,9 +54,9 @@ class salaire_unique(Variable):
 class prestations_familiales_enfant_a_charge(Variable):
     value_type = bool
     entity = Individu
-    label = "Enfant considéré à charge au sens des prestations familiales"
+    label = 'Enfant considéré à charge au sens des prestations familiales'
     definition_period = MONTH
-    reference = "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+    reference = 'http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html'
 
     #    Jusqu'à l'âge de 16 ans sans conditions.
     #    Jusqu'à l'âge de 18 ans pour les enfants en apprentissage qui ne perçoivent pas une rémunération
@@ -85,20 +71,20 @@ class prestations_familiales_enfant_a_charge(Variable):
     # locales.
 
     def formula(individu, period, parameters):
-        age = individu('age', period)
+        # age = individu('age', period)
         invalide = individu('invalide', period)
         est_enfant = individu.has_role(Menage.ENFANT)
 
-        condition_enfant = or_(
-            (age_individu <= 16) +
-            (age_individu <= 18) * (salaire_individu <= .75 * smig_48h_mensuel)
+        condition_enfant = (
+            (age_individu <= 16)
+            + (age_individu <= 18) * (salaire_individu <= .75 * smig_48h_mensuel)
             )
         condition_jeune_etudiant_ou_invalide = (
             # (age_individu <= 21) * etudiant ou soeur au foyer
-            (invalide_individu)
+            invalide
             )
 
-        return or_(condition_enfant, condition_jeune_etudiant_ou_invalide) * est_enfant
+        return (condition_enfant + condition_jeune_etudiant_ou_invalide) * est_enfant
 
 
 class af_nbenf(Variable):
@@ -120,7 +106,7 @@ class af_nbenf(Variable):
 class af(Variable):
     value_type = float
     entity = Menage
-    label = "Allocations familiales"
+    label = 'Allocations familiales'
     definition_period = YEAR
 
     def formula(menage, period, parameters):
@@ -140,15 +126,18 @@ class af(Variable):
         af_1enf = round(bm * parameters.af.taux.enf1, 2)
         af_2enf = round(bm * parameters.af.taux.enf2, 2)
         af_3enf = round(bm * parameters.af.taux.enf3, 2)
-        af_base = (af_nbenf >= 1) * af_1enf + \
-            (af_nbenf >= 2) * af_2enf + (af_nbenf >= 3) * af_3enf
+        af_base = (
+            (af_nbenf >= 1) * af_1enf
+            + (af_nbenf >= 2) * af_2enf
+            + (af_nbenf >= 3) * af_3enf
+            )
         return 4 * af_base  # annualisé
 
 
 class majoration_salaire_unique(Variable):
     value_type = float
     entity = Menage
-    label = "Majoration du salaire unique"
+    label = 'Majoration du salaire unique'
     definition_period = YEAR  # TODO trimestrialiser
 
     def formula(menage, period, parameters):
@@ -158,8 +147,11 @@ class majoration_salaire_unique(Variable):
         af_1enf = round(P.salaire_unique.enf1, 3)  # trimestrielle
         af_2enf = round(P.salaire_unique.enf2, 3)  # trimestrielle
         af_3enf = round(P.salaire_unique.enf3, 3)  # trimestrielle
-        af = (af_nbenf >= 1) * af_1enf + (af_nbenf >= 2) * \
-            af_2enf + (af_nbenf >= 3) * af_3enf
+        af = (
+            (af_nbenf >= 1) * af_1enf
+            + (af_nbenf >= 2) * af_2enf
+            + (af_nbenf >= 3) * af_3enf
+            )
         return 4 * af * salaire_unique  # annualisé
 
 
@@ -184,13 +176,11 @@ def _af_cong_jeun_trav(age, _P):
 class contribution_frais_creche(Variable):
     value_type = float
     entity = Menage
-    label = "Contribution aux frais de crêche"
+    label = 'Contribution aux frais de crêche'
     definition_period = YEAR
 
     def formula(menage, period, parameters):
         month = period.last_month
-        salaire_imposable_holder = menage.members('salaire_imposable', period = month)
-        age_en_mois_holder = menage.members('age_en_mois', period = month)
         smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
@@ -201,22 +191,22 @@ class contribution_frais_creche(Variable):
         # enfant et par mois pendant 11 mois.
         # , _option = {'age_en_mois': ENFS, 'sal': [CHEF, PART]}
         somme_salaire_imposable = (
-            menage.personne_de_reference('salaire_imposable', period = month) +
-            menage.conjoint('salaire_imposable', period = month)
+            menage.personne_de_reference('salaire_imposable', period = month)
+            + menage.conjoint('salaire_imposable', period = month)
             )
         age_en_mois = menage.members('age_en_mois', period = month)
-        P = parameters(period).prestations_familiales.creche
+        creche = parameters(period).prestations_familiales.creche
         age_en_mois_benjamin = menage.min(age_en_mois)[0]
 
-        elig_age = (age_en_mois_benjamin <= P.age_max) * (age_en_mois_benjamin >= P.age_min)
-        elig_sal = somme_salaire_imposable < P.plaf * smig48
-        return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_en_mois_benjamin)
+        elig_age = (age_en_mois_benjamin <= creche.age_max) * (age_en_mois_benjamin >= creche.age_min)
+        elig_sal = somme_salaire_imposable < creche.plaf * smig48
+        return creche.montant * elig_age * elig_sal * min_(creche.duree, 12 - age_en_mois_benjamin)
 
 
 class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun_trav
     value_type = float
     entity = Menage
-    label = "Prestations familales"
+    label = 'Prestations familales'
     definition_period = YEAR
 
     def formula(menage, period):
@@ -247,7 +237,7 @@ def _as_maternite(age, sal, _P):
     Assurance sociale - maternité  TODO: à compléter
     '''
     # P = _P.as.maternite
-    smig = _P.gen.smig
+    # smig = _P.gen.smig
     # return P.part*max(P.plaf_mult*smig,sal)*P.duree
     return 0
 
