@@ -56,7 +56,7 @@ setup(
             'pandas >= 0.22.0',
             ],
         'survey': [
-            'OpenFisca-Survey-Manager >=0.34,<1.0',
+            'OpenFisca-Survey-Manager >=0.34,<3.0',
             ],
         },
     include_package_data = True,  # Will read MANIFEST.in
