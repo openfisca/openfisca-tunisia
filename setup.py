@@ -61,7 +61,7 @@ setup(
         },
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >=42.0.7, <43',
+        'OpenFisca-Core >=40.0.1, <42',
         'scipy >= 0.12',
         ],
     # message_extractors = {'openfisca_tunisia': [
