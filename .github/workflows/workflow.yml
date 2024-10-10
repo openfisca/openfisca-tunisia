@@ -92,7 +92,7 @@ jobs:
           key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
       - run: |
           shopt -s globstar
-          openfisca test tests/**/*.py
+          openfisca test -c openfisca_tunisia tests/**/*.py
         if: matrix.openfisca-dependencies != 'minimal' || matrix.python-version != '3.9.9'
 
   test-path-length:
