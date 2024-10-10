@@ -9,7 +9,7 @@ long_description = (this_directory / 'README.md').read_text()
 
 setup(
     name = 'OpenFisca-Tunisia',
-    version = '0.33.3',
+    version = '0.33.4',
     author = 'OpenFisca Team',
     author_email = 'contact@openfisca.org',
     classifiers = [
@@ -61,7 +61,7 @@ setup(
         },
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >=40.0.1, <43',
+        'OpenFisca-Core >=40.0.1, <42',
         'scipy >= 0.12',
         ],
     # message_extractors = {'openfisca_tunisia': [

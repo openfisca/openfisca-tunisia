@@ -1,6 +1,14 @@
 # Changelog
 
-### 0.33.3 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+### 0.33.4 - [#135](https://github.com/openfisca/openfisca-tunisia/pull/135)
+
+* Changement mineur.
+* Périodes concernées : aucune.
+* Zones impactées : `README.md`.
+* Détails :
+  - Change les badges
+
+### 0.33.3 - [#134](https://github.com/openfisca/openfisca-tunisia/pull/134)
 
 * Amélioration technique.
 * Détails :
