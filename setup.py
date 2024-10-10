@@ -39,7 +39,7 @@ setup(
     extras_require = {
         'dev': [
             'autopep8 >=2.0.2, <3.0',
-            'flake8 >=6.0.0, <7.0.0',
+            'flake8 >=6.0.0, <8.0.0',
             'flake8-print >=5.0.0, <6.0.0',
             'flake8-quotes >=3.3.2',
             'pytest >=7.2.2, <8.0',
