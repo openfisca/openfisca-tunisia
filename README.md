@@ -67,8 +67,8 @@ See the [documentation](http://openfisca.org/doc/contribute/index.html) for more
 ## Documentation
 
 * [Documentation générale](http://openfisca.org/doc/) du projet OpenFisca (tous pays confondus)
-  - Et son [schéma des composants](http://openfisca.org/doc/#project-components) d'un projet OpenFisca
-* [Explorateur de la législation](https://legislation.openfisca.tn) couverte par OpenFisca-Tunisia
+  - Et son [architectture](https://openfisca.org/doc/architecture.html) d'un projet OpenFisca
+<!-- * [Explorateur de la législation](https://legislation.openfisca.tn) couverte par OpenFisca-Tunisia -->
 * [Wiki](https://github.com/openfisca/openfisca-tunisia/wiki) OpenFisca-Tunisia
 * [Google Drive public](https://drive.google.com/drive/folders/1xzrwEgZF2pEMUIHMQMWtlg7ubIFdy58N?usp=sharing) de références législatives
 
@@ -86,10 +86,10 @@ Néanmoins, vous aurez à effectuer des vérifications complémentaires à ce qu
 ### Langage Python & Environnement virtuel
 
 Ce projet nécessite l'installation préalable des éléments suivants :
-* Le langage [Python 3.7](https://www.python.org/downloads/)
+* Le langage [Python 3.9](https://www.python.org/downloads/)
 * Le gestionnaire de paquets [pip](https://pip.pypa.io/en/stable/installing/).
 
-Vérifiez alors que la version de python appelée par défaut débute bien par `3.7` :
+Vérifiez alors que la version de python appelée par défaut débute bien par `3.9` :
 
 ```
 python --version
@@ -112,7 +112,7 @@ sudo pip install pew
 Il vous est désormais possible de créer votre premier environnement dédié à OpenFisca-Tunisia. Nommons-le `openfisca` :
 
 ```
-pew new openfisca --python=python3.7
+pew new openfisca --python=python3.9
 # Si demandé, répondez "Y" à la question sur la modification du fichier de configuration de votre shell
 ```
 
