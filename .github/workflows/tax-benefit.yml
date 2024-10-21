@@ -37,7 +37,7 @@ jobs:
         DBNOMICS_PROVIDER_CODE="OpenFisca"
         DBNOMICS_URL="https://db.nomics.world/"
 
-        EDITOR_URL="https://editors.parameters.tn.tax-benefit.org/"
+        EDITOR_URL="https://editor.parameters.tn.tax-benefit.org/"
 
         EXPORT_CSV=true
         EXPORT_JSON=false
@@ -47,7 +47,7 @@ jobs:
         PARAMETERS_DIR="../../../openfisca_tunisia/parameters/"
 
         # Description of parameters remote repository
-        PARAMETERS_AUTHOR_EMAIL="editors.parameters.tn@tax-benefit.org"
+        PARAMETERS_AUTHOR_EMAIL="editor.parameters.tn@tax-benefit.org"
         PARAMETERS_AUTHOR_NAME="Éditeur des paramètres d'OpenFisca-Tunisia"
         PARAMETERS_BRANCH="main"
         PARAMETERS_FORGE="github.com"
