@@ -35,8 +35,15 @@ You will be redirected to it by clicking on the following link (wait a few secon
 <code><p align='center'>[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/openfisca/openfisca-tunisia/binder?filepath=notebooks%2Fdemo.ipynb)</p></code>
 Then you will be in an interactive demo where you will be able to play with openfisca-tunisia.
 
-
 > This demo is available thanks to [Binder](https://mybinder.org/) and [Jupyter](http://jupyter.org) projects.
+
+## Legislation
+
+Les paramêtres de la législation peuvent être consultés avec [une interface dédiée](https://parameters.tn.tax-benefit.org/parameters/).
+
+يمكن الاطلاع على معايير التشريع من خلال واجهة مخصصة لذلك
+
+Legislation parameters can be consulted via [a dedicated interface](https://parameters.tn.tax-benefit.org/parameters/).
 
 ## Contribution & Contact - المساهمة والاتصال بنا
 
