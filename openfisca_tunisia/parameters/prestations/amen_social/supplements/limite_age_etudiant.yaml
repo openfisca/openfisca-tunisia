@@ -1,0 +1,6 @@
+description: Limite d'âge d'un enfant étudiant pour être compté à charge d'un ménage éligible au programme Amen social
+values:
+  2019-01-01:
+    value: 21
+metadata:
+  unit: year

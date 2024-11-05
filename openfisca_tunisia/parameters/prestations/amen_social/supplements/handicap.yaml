@@ -1,0 +1,9 @@
+description: Majoration pour handicap
+values:
+  2020-01-01:
+    value: 2
+metadata:
+  unit: 1/
+  reference:
+    2020-01-01:
+    - title: Arrêté 931 du 20 mai 2020

@@ -1,7 +1,6 @@
 - name: Âge (en années) d'après la date de naissance
-  period: '2011'
+  period: 2011-01
   input:
     date_naissance: '1971-01-01'
   output:
     age: 40
-

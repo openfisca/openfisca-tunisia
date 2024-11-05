@@ -1,0 +1,7 @@
+description: Montant de l'aide ponctuelle du programme Amen social délivrée pour la rentrée universitaire
+values:
+  2019-01-01:
+    value: 120
+metadata:
+  short_label: Rentrée universitaire
+  unit: currency

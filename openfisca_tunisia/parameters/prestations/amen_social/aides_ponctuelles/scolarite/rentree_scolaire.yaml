@@ -1,0 +1,7 @@
+description: Montant de l'aide ponctuelle du programme Amen social délivrée pour la rentrée scolaire
+values:
+  2019-01-01:
+    value: 50
+metadata:
+  short_label: Rentrée scolaire
+  unit: currency

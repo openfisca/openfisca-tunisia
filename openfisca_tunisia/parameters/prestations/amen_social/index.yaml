@@ -1,0 +1,7 @@
+description: Programe Amen social
+metadata:
+  label: Amen social
+  order:
+  - allocation_base
+  - aides_ponctuelles
+  - supplements

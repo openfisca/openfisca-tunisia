@@ -34,7 +34,7 @@ def test_contribution_frais_creche():
     ages_en_mois = simulation.menage.members('age_en_mois', period = month)
     age_benjamin = simulation.menage.min(ages_en_mois)[0]
     assert age_benjamin == 24
-    assert age_benjamin <= base.tax_benefit_system.parameters(year).prestations_familiales.creche.age_max
+    assert age_benjamin <= base.tax_benefit_system.parameters(year).prestations.prestations_familiales.creche.age_max
 
     contribution_frais_creche = simulation.calculate('contribution_frais_creche', period = year)
     assert contribution_frais_creche != 0

@@ -1,0 +1,8 @@
+description: Supplément par personne à charge
+values:
+  2019-01-01:
+    value: 10.0
+metadata:
+  unit: currency
+  reference:
+    2019-01-01: Article 4.1 du Décret n° 2019-318

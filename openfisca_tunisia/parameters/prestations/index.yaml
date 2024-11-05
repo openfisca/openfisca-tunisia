@@ -1,0 +1,6 @@
+description: Prestations
+metadata:
+  label: Prestations
+  order:
+  - amen_social
+  - prestations_familiales

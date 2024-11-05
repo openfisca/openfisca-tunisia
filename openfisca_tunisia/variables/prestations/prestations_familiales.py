@@ -1,11 +1,4 @@
-from __future__ import division
-
-
 from numpy import (
-    amax,
-    arange,
-    asanyarray,
-    # logical_not as not_,
     maximum as max_,
     minimum as min_,
     round,
@@ -13,28 +6,6 @@ from numpy import (
 
 
 from openfisca_tunisia.variables.base import * # noqa F401
-
-
-def ages_first_kids(age, nb=None):
-    '''
-    Returns the ages of the nb first born kids according to age
-    '''
-    ages = asanyarray(list(age.values()))
-
-    ages = (ages.T + .00001 * arange(ages.shape[0])).T  # To deal with twins
-
-    if nb is None:
-        nb = 3  # TODO: 4e enfant qui en bénéficiait en 1989
-    i = 0
-    age_list = []
-
-    while i < 4:
-        from numpy import putmask
-        maximas = amax(ages, axis=0)
-        age_list.append(round(maximas))
-        putmask(ages, ages == maximas, -99999)
-        i += 1
-    return age_list
 
 
 class salaire_unique(Variable):
@@ -79,12 +50,11 @@ class prestations_familiales_enfant_a_charge(Variable):
             (age_individu <= 16)
             + (age_individu <= 18) * (salaire_individu <= .75 * smig_48h_mensuel)
             )
-        condition_jeune_etudiant_ou_invalide = (
+        condition_jeune_etudiant = (
             # (age_individu <= 21) * etudiant ou soeur au foyer
-            invalide
             )
 
-        return (condition_enfant + condition_jeune_etudiant_ou_invalide) * est_enfant
+        return (condition_enfant + condition_jeune_etudiant + invalide) * est_enfant
 
 
 class af_nbenf(Variable):
@@ -114,13 +84,13 @@ class af(Variable):
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée
         # à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
-        P = _P.prestations_familiales
+        pf = parameters.prestations.prestations_familiales
         bm = min_(
             max_(
                 menage.personne_de_reference('salaire_imposable', period),
                 menage.conjoint('salaire_imposable', period),
                 ) / 4,
-            P.af.plaf_trim
+            pf.af.plaf_trim
             )  # base trimestrielle
         # prestations familliales  # Règle d'arrondi ?
         af_1enf = round(bm * parameters.af.taux.enf1, 2)
@@ -143,7 +113,7 @@ class majoration_salaire_unique(Variable):
     def formula(menage, period, parameters):
         salaire_unique = menage('salaire_unique', period = period)
         af_nbenf = menage('af_nbenf', period = period)
-        P = parameters(period.start).prestations_familiales
+        P = parameters(period.start).prestations.prestations_familiales
         af_1enf = round(P.salaire_unique.enf1, 3)  # trimestrielle
         af_2enf = round(P.salaire_unique.enf2, 3)  # trimestrielle
         af_3enf = round(P.salaire_unique.enf3, 3)  # trimestrielle
@@ -195,7 +165,7 @@ class contribution_frais_creche(Variable):
             + menage.conjoint('salaire_imposable', period = month)
             )
         age_en_mois = menage.members('age_en_mois', period = month)
-        creche = parameters(period).prestations_familiales.creche
+        creche = parameters(period).prestations.prestations_familiales.creche
         age_en_mois_benjamin = menage.min(age_en_mois)[0]
 
         elig_age = (age_en_mois_benjamin <= creche.age_max) * (age_en_mois_benjamin >= creche.age_min)

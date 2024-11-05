@@ -11,7 +11,7 @@ Individu = build_entity(
 FoyerFiscal = build_entity(
     key = 'foyer_fiscal',
     plural = 'foyers_fiscaux',
-    label = 'Déclaration d’impôts',
+    label = 'Foyer fiscal',
     roles = [
         {
             'key': 'declarant',
@@ -30,7 +30,7 @@ FoyerFiscal = build_entity(
 Menage = build_entity(
     key = 'menage',
     plural = 'menages',
-    label = 'Logement principal',
+    label = 'Ménage',
     roles = [
         {
             'key': 'personne_de_reference',
