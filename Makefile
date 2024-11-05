@@ -58,4 +58,4 @@ test: clean check-syntax-errors check-style
 	@echo "> Yaml tests..."
 	openfisca test --country-package openfisca_tunisia tests
 	@# @echo "> Notebooks tests..."
-	@# python notebooks/test_notebooks.py notebooks/
+	@# python openfisca_tunisia/notebooks/test_notebooks.py notebooks/
