@@ -14,16 +14,12 @@ brackets:
       value: 0
     2017-01-01:
       value: 0
-    2018-01-01:
-      value: 0.01
 - rate:
     1990-01-01:
       value: 0.15
     2017-01-01:
       value: 0.26
       reference: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
-    2018-01-01:
-      value: 0.27
   threshold:
     1990-01-01:
       value: 1500
@@ -48,8 +44,6 @@ brackets:
     2017-01-01:
       value: 0.32
       reference: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
-    2018-01-01:
-      value: 0.33
   threshold:
     1990-01-01:
       value: 10000
@@ -61,8 +55,6 @@ brackets:
     2017-01-01:
       value: 0.35
       reference: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
-    2018-01-01:
-      value: 0.36
   threshold:
     1990-01-01:
       value: 20000
