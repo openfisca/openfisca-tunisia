@@ -1,0 +1,10 @@
+- name: Test avec fichier excel CRES
+  period: 2016-04
+  absolute_error_margin: 1
+  input:
+    regime_securite_sociale: rsna
+    salaire_de_base: 1000
+  output:
+    cotisations_salarie: -.0918 * 1000
+    # irpp_mensuel_salarie: -1533.584 / 12
+    # salaire_net_a_payer: 9364 / 12

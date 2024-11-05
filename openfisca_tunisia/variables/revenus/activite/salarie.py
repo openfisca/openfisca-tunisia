@@ -28,7 +28,7 @@ class salaire_en_nature(Variable):
     set_input = set_input_divide_by_period
 
 
-class smig_dec(Variable):
+class salarie_declarant_percevoir_smig(Variable):
     value_type = bool
     label = 'Salarié déclarant percevoir le SMIG ou le SMAG'
     entity = Individu
