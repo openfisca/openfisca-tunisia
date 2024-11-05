@@ -4,10 +4,8 @@ metadata:
   threshold_unit: currency
 brackets:
 - rate:
-    1985-01-01:
-      value: 0.0
     2007-07-01:
       value: 0.04
   threshold:
-    2002-03-12:
+    2007-07-01:
       value: 0

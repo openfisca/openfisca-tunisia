@@ -83,7 +83,8 @@ class regime_securite_sociale(Variable):
     default_value = TypesRegimeSecuriteSociale.rsna
     entity = Individu
     label = 'Régime de sécurité sociale du salarié'
-    definition_period = ETERNITY
+    definition_period = MONTH
+    set_input = set_input_dispatch_by_period
 
 
 class cotisations_sociales(Variable):

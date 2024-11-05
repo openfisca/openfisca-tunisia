@@ -29,7 +29,6 @@ setup(
     url = 'https://github.com/openfisca/openfisca-tunisia',
     long_description=long_description,
     long_description_content_type='text/markdown',
-
     data_files = [
         (
             'share/openfisca/openfisca-tunisia',
@@ -55,18 +54,12 @@ setup(
             'nbformat >= 4.4',
             'pandas >= 0.22.0',
             ],
-        'survey': [
-            'OpenFisca-Survey-Manager >=0.34,<3.0',
-            ],
         },
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'OpenFisca-Core >=40.0.1, <42',
+        'OpenFisca-Core >=43, <44',
         'scipy >= 0.12',
         ],
-    # message_extractors = {'openfisca_tunisia': [
-    #     ('**.py', 'python', None),
-    #     ]},
     packages = find_namespace_packages(exclude = [
         'tests*',
         ]),
