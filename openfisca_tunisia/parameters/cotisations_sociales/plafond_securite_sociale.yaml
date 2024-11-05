@@ -1,0 +1,5 @@
+description: Plafond de la sécurité sociale (en SMIG)
+unit: /1
+values:
+  1960-01-01:
+    value: 6
