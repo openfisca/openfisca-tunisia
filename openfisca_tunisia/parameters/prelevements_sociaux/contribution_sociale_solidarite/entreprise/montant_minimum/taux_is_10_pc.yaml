@@ -1,0 +1,6 @@
+description: personnes soumises à l’impôt sur les sociétés au taux de 10%.
+values:
+  2018-01-01:
+    value: 100
+metadata:
+  unit: currency
