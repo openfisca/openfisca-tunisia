@@ -1,9 +1,0 @@
-description: Majoration du Salaire Minimum Interprofessionnel Garanti au régime de 48h dans les secteurs non agricoles - montant par mois
-values:
-  1982-03-16:
-    value: 20.368
-metadata:
-  unit: currency
-  reference:
-    1982-03-16:
-      title: Décret n° 82-501 du 16 mars 1982
