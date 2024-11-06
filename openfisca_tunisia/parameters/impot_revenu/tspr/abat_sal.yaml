@@ -1,5 +1,6 @@
 description: Abattement sur les salaires
-unit: /1
 values:
   1990-01-01:
     value: 0.1
+metadata:
+  unit: /1

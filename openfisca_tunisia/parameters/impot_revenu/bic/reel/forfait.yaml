@@ -1,5 +1,6 @@
-description: ---
-unit: currency
+description: "---"
 values:
   2007-01-01:
     value: 0
+metadata:
+  unit: currency

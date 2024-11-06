@@ -1,5 +1,6 @@
 description: Deuxième enfant à charge
-unit: /1
 values:
   1960-01-01:
     value: 0.16
+metadata:
+  unit: /1

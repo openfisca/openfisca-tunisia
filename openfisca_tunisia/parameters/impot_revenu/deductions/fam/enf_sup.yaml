@@ -1,11 +1,15 @@
 description: Enfant non boursier du supérieur
-unit: currency
 values:
   1990-01-01:
     value: 300
   2010-01-01:
     value: 600
-    reference: Article 40 de la loi no 2009-71 du 21-12-2004 portant Loi de finances 2010
   2014-01-01:
     value: 1000
-    reference: Loi de finances 2014
+metadata:
+  unit: currency
+  reference:
+    2010-01-01:
+      title: Article 40 de la loi no 2009-71 du 21-12-2004 portant Loi de finances 2010
+    2014-01-01:
+      title: Loi de finances 2014

@@ -1,11 +1,11 @@
 description: Fond spécial de l'Etat
+brackets:
+- threshold:
+    1960-01-01:
+      value: 0
+  rate:
+    1960-01-01:
+      value: 0.005
 metadata:
   rate_unit: /1
   threshold_unit: currency
-brackets:
-- rate:
-    1960-01-01:
-      value: 0.005
-  threshold:
-    1960-01-01:
-      value: 0

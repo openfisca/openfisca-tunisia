@@ -1,5 +1,6 @@
 description: Premier enfant à charge
-unit: /1
 values:
   1960-01-01:
     value: 0.18
+metadata:
+  unit: /1
