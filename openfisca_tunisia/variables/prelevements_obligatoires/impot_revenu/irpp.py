@@ -105,13 +105,12 @@ class chef_de_famille(Variable):
 
         return chef_de_famille
 
-
 # Revenus catégoriels (voir répertoire idoine)
 
-## 1. BIC
-## 2. BNC
-## 3. BEAP
-## 4. Foncier
+# 1. BIC
+# 2. BNC
+# 3. BEAP
+# 4. Foncier
 
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
 
@@ -478,14 +477,13 @@ class irpp(Variable):
         return impot_revenu_brut * not_(exoneration)
 
 
-def revenu_mensuel_assimile_salaire_apres_abattement(Variable):
+class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
     value_type = float
     entity = Individu
     label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'
     definition_period = MONTH
 
     def formula_2011(foyer_fiscal, period):
-
         revenu_assimile_salaire = individu('salaire_imposable', period = period)
         smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
         smig = revenu_assimile_salaire <= smig_40h_mensuel
@@ -508,15 +506,11 @@ def revenu_mensuel_assimile_salaire_apres_abattement(Variable):
         return revenu_assimile_salaire_apres_abattement
 
 
-
 class irpp_mensuel_salarie(Variable):
     value_type = float
     entity = Individu
     label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'
     definition_period = MONTH
-
-
-
 
     def formula(individu, period, parameters):
         salaire_imposable = individu('salaire_imposable', period = period)
