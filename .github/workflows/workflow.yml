@@ -5,6 +5,9 @@ on:
   pull_request:
     types: [opened, reopened]
 
+env:
+  DEFAULT_PYTHON_VERSION: '3.10.6'
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
@@ -16,32 +19,32 @@ jobs:
         openfisca-dependencies: [minimal, maximal]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Cache build
         id: restore-build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
           restore-keys: |  # in case of a cache miss (systematically unless the same commit is built repeatedly), the keys below will be used to restore dependencies from previous builds, and the cache will be stored at the end of the job, making up-to-date dependencies available for all jobs of the workflow; see more at https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows#example-using-the-cache-action
-            build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ matrix.os }}
+            build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ matrix.os }}
             build-${{ env.pythonLocation }}-${{ matrix.os }}
       - name: Build package
         run: make build
       - name: Minimal version
         if: matrix.openfisca-dependencies == 'minimal'
-        run: | # Installs the OpenFisca dependencies minimal version from setup.py
+        run: | # Installs the OpenFisca dependencies minimal version from pyproject.toml
             pip install $(python ${GITHUB_WORKSPACE}/.github/get_minimal_version.py)
       - name: Cache release
         id: restore-release
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: dist
-          key: release-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
+          key: release-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
 
   lint-files:
     runs-on: ubuntu-20.04
@@ -50,25 +53,26 @@ jobs:
         dependencies-version: [maximal]
     needs: [ build ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all the tags
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Cache build
         id: restore-build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
       - run: make check-syntax-errors
       - run: make check-style
       - name: Lint Python files
         run: "${GITHUB_WORKSPACE}/.github/lint-changed-python-files.sh"
       - name: Lint YAML tests
         run: "${GITHUB_WORKSPACE}/.github/lint-changed-yaml-tests.sh"
+
   test-python:
     runs-on: ${{ matrix.os }}
     needs: [ build ]
@@ -79,30 +83,30 @@ jobs:
         python-version: ["3.9.9", "3.10.6"]
         openfisca-dependencies: [minimal, maximal]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Cache build
         id: restore-build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
       - run: |
           shopt -s globstar
-          openfisca test -c openfisca_tunisia tests/**/*.py
+          openfisca test --country-package openfisca_tunisia tests/**/*.py
         if: matrix.openfisca-dependencies != 'minimal' || matrix.python-version != '3.9.9'
 
   test-path-length:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Test max path length
         run: make check-path-length
 
@@ -119,17 +123,17 @@ jobs:
         openfisca-dependencies: [minimal, maximal]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Cache build
         id: restore-build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.openfisca-dependencies }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.openfisca-dependencies }}
       - name: Split YAML tests
         id: yaml-test
         env:
@@ -139,7 +143,7 @@ jobs:
           echo "TEST_FILES_SUBLIST=$(python "${GITHUB_WORKSPACE}/.github/split_tests.py" ${CI_NODE_TOTAL} ${CI_NODE_INDEX})" >> $GITHUB_ENV
       - name: Run YAML test
         run: |
-          openfisca test ${TEST_FILES_SUBLIST}
+          openfisca test --country-package openfisca_tunisia ${TEST_FILES_SUBLIST}
 
   test-api:
     runs-on: ubuntu-20.04
@@ -148,17 +152,17 @@ jobs:
         dependencies-version: [maximal]
     needs: [ build ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Cache build
         id: restore-build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
       - name: Test the Web API
         run: "${GITHUB_WORKSPACE}/.github/test-api.sh"
 
@@ -166,13 +170,13 @@ jobs:
     runs-on: ubuntu-20.04
     needs: [ lint-files, test-python, test-yaml, test-api ] # Last job to run
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all the tags
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Check version number has been properly updated
         run: "${GITHUB_WORKSPACE}/.github/is-version-number-acceptable.sh"
 
@@ -186,13 +190,13 @@ jobs:
     outputs:
       status: ${{ steps.stop-early.outputs.status }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all the tags
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - id: stop-early
         run: if "${GITHUB_WORKSPACE}/.github/has-functional-changes.sh" ; then echo "::set-output name=status::success" ; fi
 
@@ -207,120 +211,27 @@ jobs:
       PYPI_USERNAME: __token__
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all the tags
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.9
+          python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Cache build
         id: restore-build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
       - name: Cache release
         id: restore-release
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: dist
-          key: release-${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: release-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
       - name: Upload a Python package to PyPi
         run: twine upload dist/* --username $PYPI_USERNAME --password $PYPI_TOKEN
       - name: Publish a git tag
         run: "${GITHUB_WORKSPACE}/.github/publish-git-tag.sh"
 
-  # build-conda:
-  #   runs-on: "ubuntu-20.04"
-  #   needs: [ check-version-and-changelog ]
-  #   # Do not build on master, the artifact will be used
-  #   if: github.ref != 'refs/heads/master'
-  #   steps:
-  #     - uses: conda-incubator/setup-miniconda@v2
-  #       with:
-  #         auto-update-conda: true
-  #         python-version: "3.9.9"
-  #         # Add conda-forge for OpenFisca-Core
-  #         channels: openfisca,conda-forge
-  #         activate-environment: true
-  #     - uses: actions/checkout@v3
-  #     - name: Update meta.yaml
-  #       run: |
-  #         python3 -m pip install requests argparse
-  #         python3 .github/get_pypi_info.py -p OpenFisca-Tunisia
-  #     - name: Get version
-  #       run: echo "PACKAGE_VERSION=$(python3 ./setup.py --version)" >> $GITHUB_ENV
-  #     - name: Conda Config
-  #       run: |
-  #         conda install conda-build anaconda-client
-  #         conda info
-  #     - name: Build Conda package
-  #       run: conda build -c openfisca -c conda-forge --croot /tmp/conda .conda
-  #     - name: Upload Conda build
-  #       uses: actions/upload-artifact@v3
-  #       with:
-  #         name: conda-build-${{ env.PACKAGE_VERSION }}-${{ github.sha }}
-  #         path: /tmp/conda
-  #         retention-days: 30
-
-  # test-on-windows:
-  #   runs-on: "windows-latest"
-  #   needs: [ build-conda ]
-  #   steps:
-  #     - uses: conda-incubator/setup-miniconda@v2
-  #       with:
-  #         auto-update-conda: true
-  #         python-version: "3.9.9"
-  #         # Add conda-forge for OpenFisca-Core
-  #         channels: openfisca,conda-forge
-  #         activate-environment: true
-  #     - uses: actions/checkout@v3
-  #     - name: Test max path length
-  #       run: "python3 openfisca_tunisia/scripts/check_path_length.py"
-  #     - name: Get version
-  #       run: |
-  #         # chcp 65001 #set code page to utf-8
-  #         echo ("PACKAGE_VERSION=" + (python3 ./setup.py --version) ) >> $env:GITHUB_ENV
-  #         echo "Version setup.py: ${{ env.PACKAGE_VERSION }}"
-  #     - name: Download conda build
-  #       uses: actions/download-artifact@v3
-  #       with:
-  #         name: conda-build-${{ env.PACKAGE_VERSION }}-${{ github.sha }}
-  #         path: conda-build-tmp
-  #     - name: Install with conda
-  #       run: |
-  #         conda install -c ./conda-build-tmp/noarch/openfisca-tunisia-dev-${{ env.PACKAGE_VERSION }}-py_0.tar.bz2  openfisca-tunisia-dev
-  #     - name: openfisca test
-  #       run: openfisca test --country-package openfisca_tunisia tests
-
-  # publish-to-conda:
-  #   runs-on: "ubuntu-20.04"
-  #   needs: [ deploy ]
-  #   steps:
-  #     - uses: conda-incubator/setup-miniconda@v2
-  #       with:
-  #         auto-update-conda: true
-  #         python-version: "3.9.9"
-  #         # Add conda-forge for OpenFisca-Core
-  #         channels: conda-forge
-  #         activate-environment: true
-  #     - name: Get source code
-  #       uses: actions/checkout@v3
-  #     - name: Get version
-  #       run: echo "PACKAGE_VERSION=$(python3 ./setup.py --version)" >> $GITHUB_ENV
-  #     # Get the last commit hash on the PR (-2 : before the merge commit)
-  #     - uses: actions/github-script@v6
-  #       id: last_pr_commit
-  #       with:
-  #         script: |
-  #           const commits = ${{ toJSON(github.event.commits) }}
-  #           return commits.at(-2).id;
-  #         result-encoding: string
-  #     - name: Conda build and upload
-  #       # This shell is made necessary by https://github.com/conda-incubator/setup-miniconda/issues/128
-  #       shell: bash -l {0}
-  #       run: |
-  #         conda install --yes conda-build anaconda-client
-  #         conda config --set anaconda_upload yes
-  #         conda build --channel conda-forge --channel openfisca --token ${{ secrets.ANACONDA_TOKEN }} --user openfisca .conda

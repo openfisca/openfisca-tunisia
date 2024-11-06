@@ -1,9 +1,14 @@
 import re
-
-# This script fetches and prints the minimal versions of Openfisca-Core and Openfisca-Tunisia
-# dependencies in order to ensure their compatibility during CI testing
-with open('./setup.py') as file:
-    for line in file:
-        version = re.search(r'(Core|Tunisia)\s*>=\s*([\d\.]*)', line)
+import tomli
+# This script prints the minimal version of Openfisca-Core to ensure their compatibility during CI testing
+with open('./pyproject.toml', 'rb') as file:
+    config = tomli.load(file)
+    deps = config['project']['dependencies']
+    for dep in deps:
+        version = re.search(r'openfisca-core\[([^\]]+)\]\s*>=\s*([\d\.]*)', dep)
         if version:
-            print(f'Openfisca-{version[1]}=={version[2]}')  # noqa: T201 <- This is to avoid flake8 print detection.
+            try:
+                print(f'openfisca-core[{version[1]}]=={version[2]}')  # noqa: T201 <- This is to avoid flake8 print detection.
+            except Exception as e:
+                print(f'Error processing "{dep}": {e}')  # noqa: T201 <- This is to avoid flake8 print detection.
+                exit(1)
