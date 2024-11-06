@@ -20,6 +20,7 @@ class bic(Variable):
 # régime réel simplifié
 # régime forfaitaire
 
+
 class bic_ca_global(Variable):
     value_type = float
     entity = Individu

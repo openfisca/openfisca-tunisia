@@ -106,13 +106,13 @@ class chef_de_famille(Variable):
         return chef_de_famille
 
 # Revenus catégoriels (voir répertoire idoine)
-
 # 1. BIC
 # 2. BNC
 # 3. BEAP
 # 4. Foncier
 
 # 5. Traitements, salaires, indemnités, pensions et rentes viagères
+
 
 class tspr(Variable):
     value_type = float
