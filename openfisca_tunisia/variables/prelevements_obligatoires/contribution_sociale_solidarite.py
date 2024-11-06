@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 from openfisca_tunisia.variables.prelevements_obligatoires.impot_revenu.irpp import calcule_base_imposable
 
@@ -8,12 +5,12 @@ from openfisca_tunisia.variables.prelevements_obligatoires.impot_revenu.irpp imp
 class contribution_sociale_solidarite(Variable):
     value_type = float
     entity = Individu
-    label = "Contribution sociale de solidarité"
+    label = 'Contribution sociale de solidarité'
     definition_period = MONTH
     reference = "http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661"
 
     def formula_2018_01_01(individu, period, parameters):
-        """
+        '''
         Art. 53
         Pour les personnes physiques, la différence entre l’impôt sur le revenu déterminé
         sur la base du barème de l’impôt sur le revenu prévu à l’article 44 du code
@@ -29,7 +26,7 @@ class contribution_sociale_solidarite(Variable):
         après déduction des abattements au titre de la situation et charges de famille
         prévus à l'article 40 dudit code uniquement.
 
-        """
+        '''
         salaire_imposable = individu('salaire_imposable', period = period)
         deduction_famille_annuelle = individu.foyer_fiscal('deduction_famille', period = period.this_year)
         irpp_mensuel_salarie = individu('irpp_mensuel_salarie', period = period)

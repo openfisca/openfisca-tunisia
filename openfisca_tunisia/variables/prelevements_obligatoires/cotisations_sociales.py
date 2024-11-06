@@ -400,7 +400,6 @@ class salaire_net_a_payer(Variable):
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
-
     def formula_2018_01_01(individu, period):
         return (
             individu('salaire_imposable', period)

@@ -1,4 +1,3 @@
-import glob
 import os
 
 from openfisca_core.taxbenefitsystems import TaxBenefitSystem
@@ -12,7 +11,6 @@ class TunisiaTaxBenefitSystem(TaxBenefitSystem):
     '''Tunisian tax benefit system'''
     CURRENCY = 'DT'  # code iso is TND see https://fr.wikipedia.org/wiki/Dinar_tunisien
     REFORMS_DIR = os.path.join(COUNTRY_DIR, 'reformes')
-    REV_TYP = None
 
     def __init__(self):
         # We initialize our tax and benefit system with the general constructor
