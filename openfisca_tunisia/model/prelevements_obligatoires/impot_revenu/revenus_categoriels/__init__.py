@@ -1,0 +1,1 @@
+"""Revenus catégoriels."""
