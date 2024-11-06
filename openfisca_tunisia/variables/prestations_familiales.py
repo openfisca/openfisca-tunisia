@@ -12,7 +12,7 @@ from numpy import (
     )
 
 
-from openfisca_tunisia.model.base import * # noqa F401
+from openfisca_tunisia.variables.base import * # noqa F401
 
 
 def ages_first_kids(age, nb=None):

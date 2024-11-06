@@ -1,7 +1,7 @@
 """3. Bénéfices de l'exploitation agricole et de pêche."""
 
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class beap(Variable):

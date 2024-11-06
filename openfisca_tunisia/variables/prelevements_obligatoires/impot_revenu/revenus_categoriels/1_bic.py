@@ -1,7 +1,7 @@
 """1. Bénéfices industriels et commerciaux."""
 
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class bic(Variable):

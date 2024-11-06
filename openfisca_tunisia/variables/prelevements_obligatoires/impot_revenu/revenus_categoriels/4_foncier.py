@@ -1,7 +1,7 @@
 """4. Revenus fonciers."""
 
 
-from openfisca_tunisia.model.base import *  # noqa analysis:ignore
+from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class revenus_fonciers(Variable):

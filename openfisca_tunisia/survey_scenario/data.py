@@ -1,4 +1,4 @@
-from openfisca_tunisia.model.base import *
+from openfisca_tunisia.variables.base import *
 
 
 class poids(Variable):
