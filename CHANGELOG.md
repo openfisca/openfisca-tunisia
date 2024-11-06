@@ -1,12 +1,21 @@
 # Changelog
 
-### 0.35.O - [#148](https://github.com/openfisca/openfisca-tunisia/pull/148)
+## 0.36.O - [#151](https://github.com/openfisca/openfisca-tunisia/pull/151)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2018
+* Zones impactées : `contribution_sociale_solidarite`.
+* Détails :
+  - Implémenet la CSS
+  - Nettoie le code et l'adapte aux plus récentes conventions
+
+## 0.35.O - [#148](https://github.com/openfisca/openfisca-tunisia/pull/148)
 
 * Changement mineur.
 * Détails :
   - Régorganise les paramètres en créant marche_travail
 
-### 0.34.O - [#147](https://github.com/openfisca/openfisca-tunisia/pull/147)
+## 0.34.O - [#147](https://github.com/openfisca/openfisca-tunisia/pull/147)
 
 * Changement mineur.
 * Détails :
@@ -99,7 +108,6 @@
 
 * Migrate to `openfisca-core` v29
 * Clean up configuration (CI job names, old_tests residue)
-
 
 ## 0.25.0 - [#88](https://github.com/openfisca/openfisca-tunisia/pull/88)
 

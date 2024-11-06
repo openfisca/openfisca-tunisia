@@ -1,6 +1,10 @@
-from __future__ import division
-from openfisca_tunisia.model.base import Reform, Variable, Individu, MONTH, set_input_divide_by_period
-
+from openfisca_tunisia.variables.base import (
+    Individu,
+    MONTH,
+    Reform,
+    set_input_divide_by_period,
+    Variable,
+    )
 
 try:
     from scipy.optimize import fsolve

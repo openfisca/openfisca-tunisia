@@ -1,4 +1,4 @@
-from openfisca_tunisia.model.base import *
+from openfisca_tunisia.variables.base import *
 
 
 class poids(Variable):
@@ -16,6 +16,7 @@ class poids_menage(Variable):
     label = "Poids du ménage dans l'enquête"
     definition_period = YEAR
     is_period_size_independent = True
+    default_value = 1
 
 
 class poids_foyer_fiscal(Variable):
@@ -24,3 +25,4 @@ class poids_foyer_fiscal(Variable):
     label = "Poids du foyer fiscal dans l'enquête"
     definition_period = YEAR
     is_period_size_independent = True
+    default_value = 1
