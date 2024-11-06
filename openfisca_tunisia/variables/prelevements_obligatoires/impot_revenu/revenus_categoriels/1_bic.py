@@ -1,4 +1,4 @@
-"""1. Bénéfices industriels et commerciaux."""
+'''1. Bénéfices industriels et commerciaux.'''
 
 
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore

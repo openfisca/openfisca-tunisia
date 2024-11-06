@@ -1,1 +1,1 @@
-"""Revenus catégoriels."""
+'''Revenus catégoriels.'''

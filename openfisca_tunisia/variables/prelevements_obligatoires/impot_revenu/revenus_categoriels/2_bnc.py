@@ -1,4 +1,4 @@
-"""2. Bénéfices des professions non commerciales"""
+'''2. Bénéfices des professions non commerciales'''
 
 
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore

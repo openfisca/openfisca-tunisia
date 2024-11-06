@@ -1,4 +1,4 @@
-"""4. Revenus fonciers."""
+'''4. Revenus fonciers.'''
 
 
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
