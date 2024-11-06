@@ -1,6 +1,8 @@
 description: Montant de la cotisation
-reference: Décret n°92-631 du 23 mars 1992 tel que modifié par le décret n°2003-1544 du 2 juillet 2003, fixant les conditions de bénéfice du régime de sécurité sociale des étudiants.
-unit: currency
 values:
   2003-07-02:
     value: 5
+metadata:
+  unit: currency
+  reference:
+    title: Décret n°92-631 du 23 mars 1992 tel que modifié par le décret n°2003-1544 du 2 juillet 2003, fixant les conditions de bénéfice du régime de sécurité sociale des étudiants.

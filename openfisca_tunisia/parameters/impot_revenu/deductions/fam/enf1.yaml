@@ -1,8 +1,11 @@
 description: 1er enfant à charge
-unit: currency
 values:
   1990-01-01:
     value: 90
   2019-01-01:
     value: 100
-    reference: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf
+metadata:
+  unit: currency
+  reference:
+    2019-01-01:
+      title: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf

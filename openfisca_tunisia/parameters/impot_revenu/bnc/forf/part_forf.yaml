@@ -1,7 +1,8 @@
 description: Part des recettes brutes TTC imposées
-unit: /1
 values:
-  2014-01-01:
-    value: 0.8
   2007-01-01:
     value: 0.7
+  2014-01-01:
+    value: 0.8
+metadata:
+  unit: /1

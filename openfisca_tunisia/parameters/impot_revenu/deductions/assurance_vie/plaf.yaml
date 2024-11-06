@@ -1,7 +1,8 @@
 description: Plafond de la déduction
-unit: currency
 values:
   1990-01-01:
     value: 800
   2007-01-01:
     value: 1200
+metadata:
+  unit: currency

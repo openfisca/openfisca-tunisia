@@ -1,11 +1,11 @@
 description: Prévoyance sociale
+brackets:
+- threshold:
+    2007-07-01:
+      value: 0
+  rate:
+    2007-07-01:
+      value: 0.04
 metadata:
   rate_unit: /1
   threshold_unit: currency
-brackets:
-- rate:
-    2007-07-01:
-      value: 0.04
-  threshold:
-    2007-07-01:
-      value: 0

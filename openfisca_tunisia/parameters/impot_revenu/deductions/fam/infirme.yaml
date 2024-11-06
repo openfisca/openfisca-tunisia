@@ -1,6 +1,4 @@
 description: Enfant infirme
-reference: Article 40.III du Code l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés
-unit: currency
 values:
   1990-01-01:
     value: 500
@@ -8,13 +6,22 @@ values:
     value: 600
   2005-01-01:
     value: 750
-    reference: Article 50 de la loi no 2004-90 du 31-12-2004 portant Loi de finances 2005
   2010-01-01:
     value: 1000
-    reference: Article 40 de la loi no 2009-71 du 21-12-2009 portant Loi de finances 2010
   2014-01-01:
     value: 1200
-    reference: Article 94 de la loi no 2013-54 du 30-12-2017 portant Loi de finances 2014
   2018-01-01:
     value: 2000
-    reference: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. . Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf
+metadata:
+  unit: currency
+  reference:
+    0001-01-01:
+      title: Article 40.III du Code l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés
+    2005-01-01:
+      title: Article 50 de la loi no 2004-90 du 31-12-2004 portant Loi de finances 2005
+    2010-01-01:
+      title: Article 40 de la loi no 2009-71 du 21-12-2009 portant Loi de finances 2010
+    2014-01-01:
+      title: Article 94 de la loi no 2013-54 du 30-12-2017 portant Loi de finances 2014
+    2018-01-01:
+      title: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. . Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf
