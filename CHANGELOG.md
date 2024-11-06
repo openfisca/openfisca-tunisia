@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.35.O - [#148](https://github.com/openfisca/openfisca-tunisia/pull/148)
+
+* Changement mineur.
+* Détails :
+  - Régorganise les paramètres en créant marche_travail
+
 ### 0.34.O - [#147](https://github.com/openfisca/openfisca-tunisia/pull/147)
 
 * Changement mineur.

@@ -331,7 +331,7 @@ class smig(Variable):
     def formula(foyer_fiscal, period, parameters):
         revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
         smig_dec = foyer_fiscal.declarant_principal('smig_dec', period = period.first_month)
-        smig_40h_mensuel = parameters(period.start).cotisations_sociales.gen.smig_40h_mensuel
+        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
         smig = (
             smig_dec
             + (revenu_assimile_salaire <= 12 * smig_40h_mensuel)
@@ -664,7 +664,7 @@ class irpp_mensuel_salarie(Variable):
 
 def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, period, parameters):
     revenu_assimile_salaire = salaire_mensuel
-    smig_40h_mensuel = parameters(period.start).cotisations_sociales.gen.smig_40h_mensuel
+    smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
     smig = revenu_assimile_salaire <= smig_40h_mensuel
     tspr = parameters(period.start).impot_revenu.tspr
 

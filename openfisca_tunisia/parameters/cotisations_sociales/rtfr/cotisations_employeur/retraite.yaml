@@ -1,17 +1,17 @@
 description: Pensions (seuils exprimés en SMIG/SMAG)
+brackets:
+- threshold:
+    2002-03-12:
+      value: 0
+  rate:
+    2002-03-12:
+      value: 0.008333
+- threshold:
+    2002-03-12:
+      value: 0.66
+  rate:
+    2002-03-12:
+      value: 0
 metadata:
   rate_unit: /1
   threshold_unit: /1
-brackets:
-- rate:
-    2002-03-12:
-      value: 0.008333
-  threshold:
-    2002-03-12:
-      value: 0.0
-- rate:
-    2002-03-12:
-      value: 0.0
-  threshold:
-    2002-03-12:
-      value: 0.66

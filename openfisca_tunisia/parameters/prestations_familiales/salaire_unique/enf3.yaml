@@ -1,5 +1,6 @@
 description: Troisième enfant
-unit: currency
 values:
   1960-01-01:
     value: 23.475
+metadata:
+  unit: currency

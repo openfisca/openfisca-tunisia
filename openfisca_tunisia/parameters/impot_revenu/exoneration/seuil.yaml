@@ -1,7 +1,8 @@
 description: Seuil de revenu imposable net pour être exonéré
-unit: currency
 values:
   2014-01-01:
     value: 5000
   2017-01-01:
     value: null
+metadata:
+  unit: currency

@@ -1,5 +1,6 @@
 description: Abattement sur les pensions
-unit: /1
 values:
   1990-01-01:
     value: 0.25
+metadata:
+  unit: /1

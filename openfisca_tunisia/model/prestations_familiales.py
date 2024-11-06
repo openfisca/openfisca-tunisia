@@ -181,7 +181,7 @@ class contribution_frais_creche(Variable):
 
     def formula(menage, period, parameters):
         month = period.last_month
-        smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H
+        smig48 = parameters(period.start).marche_travail.smig_48h_mensuel  # TODO: smig 48H
         # TODO rework and test
         # Une prise en charge peut être accordée à la mère exerçant une
         # activité salariée et dont le salaire ne dépasse pas deux fois et demie
@@ -220,7 +220,7 @@ class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun
 # Assurances sociales   Maladie
 #
 
-def _as_mal(age, sal, _P):
+def prestationl(age, sal, parameters):
     '''
     Assurance sociale - prestation en espèces TODO: à compléter
     '''
@@ -228,21 +228,21 @@ def _as_mal(age, sal, _P):
     #    P = _P.as.maladie
     P = 0
     mal = 0
-    smig = _P.gen.smig
+    smig = parameters.marche_travail.smig
     return mal * P.part * max(P.plaf_mult * smig, sal) * P.duree
 
 
-def _as_maternite(age, sal, _P):
+def _as_maternite(age, sal, parameters):
     '''
     Assurance sociale - maternité  TODO: à compléter
     '''
-    # P = _P.as.maternite
-    # smig = _P.gen.smig
+    # P = parameters.as.maternite
+    # smig = parameters.marche_travail.smig
     # return P.part*max(P.plaf_mult*smig,sal)*P.duree
     return 0
 
 
-def _as_deces(sal, _P):
+def _as_deces(sal, paramters):
     '''
     Assurance sociale - décès   # TODO: à compléter
     '''
