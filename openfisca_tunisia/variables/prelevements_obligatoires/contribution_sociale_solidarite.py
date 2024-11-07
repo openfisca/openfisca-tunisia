@@ -7,7 +7,6 @@ class contribution_sociale_solidarite(Variable):
     entity = Individu
     label = 'Contribution sociale de solidarité'
     definition_period = MONTH
-    reference = "http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661"
 
     def formula_2018_01_01(individu, period, parameters):
         '''
