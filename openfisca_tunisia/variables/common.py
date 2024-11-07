@@ -1,9 +1,3 @@
-<<<<<<< HEAD:openfisca_tunisia/variables/mesures.py
-=======
-from __future__ import division
-
-
->>>>>>> Migrate params and variables:openfisca_tunisia/variables/common.py
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
