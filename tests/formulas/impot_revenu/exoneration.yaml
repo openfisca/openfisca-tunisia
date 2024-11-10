@@ -47,9 +47,7 @@
       2014-11: 0
       2014-12: 0
 
-
-
-- name: Salarié brut > 5000 TND net < 5000 TND car chef de famille exonéré en 2014
+- name: Salarié brut>5000 TND net<5000 TND car chef de famille exonéré en 2014
   period: 2014
   absolute_error_margin: 0.5
   input:

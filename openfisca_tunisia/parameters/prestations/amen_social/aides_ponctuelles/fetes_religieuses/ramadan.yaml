@@ -1,0 +1,7 @@
+description: Montant de l'aide ponctuelle du programme Amen social délivrée à l'occasion du début du mois de Ramadan
+values:
+  2019-01-01:
+    value: 60
+metadata:
+  short_label: Ramadan
+  unit: currency

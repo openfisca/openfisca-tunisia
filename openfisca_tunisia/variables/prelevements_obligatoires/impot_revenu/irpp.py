@@ -11,7 +11,7 @@ class nb_enf(Variable):
         '''
         TODO: fixme
         '''
-        age = foyer_fiscal.members('age', period = period)
+        age = foyer_fiscal.members('age', period = period.first_month)
         P = parameters(period.start).impot_revenu.deductions.fam
         # res =+ (
         #    (ag < 20) +

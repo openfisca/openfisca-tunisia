@@ -1,0 +1,7 @@
+description: Montant de l'aide ponctuelle du programme Amen social délivrée à l'occasion de l'Aïd Al Fitr
+values:
+  2019-01-01:
+    value: 60
+metadata:
+  short_label: Aïd Al Fitr
+  unit: currency

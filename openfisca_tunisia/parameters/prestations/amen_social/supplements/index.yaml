@@ -1,0 +1,8 @@
+description: Suppléments et majoration de l'allocatotion Amen social
+metadata:
+  short_label: Suppléments et majoration
+  order:
+  - personne_a_charge
+  - limite_age_enfant
+  - limite_age_etudiant
+  - handicap
