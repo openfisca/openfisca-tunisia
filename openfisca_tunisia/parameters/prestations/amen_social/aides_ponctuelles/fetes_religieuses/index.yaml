@@ -1,6 +1,6 @@
 description: Aides ponctuelles pour les fêtes religieuses du programme Amen social
 metadata:
-  label: Fêtes religieuses
+  short_label: Fêtes religieuses
   order:
   - ramadan
   - aid_al_fitr
