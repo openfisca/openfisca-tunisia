@@ -1,7 +1,3 @@
-from __future__ import division
-
-from numpy import zeros
-
 
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
@@ -31,7 +27,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
     regime_securite_sociale = individu('regime_securite_sociale', period)
     baremes_by_regime = parameters(period.start).prelevements_sociaux.cotisations_sociales
-    cotisation = zeros(len(assiette_cotisations_sociales))
+    cotisation = individu.empty_array()
     types_regime_securite_sociale = regime_securite_sociale.possible_values
 
     for regime in types_regime_securite_sociale:
