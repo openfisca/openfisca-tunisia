@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.37.O - [#153](https://github.com/openfisca/openfisca-tunisia/pull/153)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2019
+* Zones impactées : `amen_social`.
+* Détails :
+  - Commence à coder les prestations du programme Amen social
+
 ## 0.36.O - [#151](https://github.com/openfisca/openfisca-tunisia/pull/151)
 
 * Évolution du système socio-fiscal.
