@@ -16,8 +16,8 @@
     menage:
       personne_de_reference: parent1
       enfants:
-      - enfant1
-      - enfant2
+        - enfant1
+        - enfant2
       amen_social_eligible: true
   output:
     amen_social_enfants_a_charge: 2
