@@ -1,0 +1,6 @@
+description: Aides ponctuelles scolaires du programme Amen social
+metadata:
+  short_label: Aides scolaires
+  order:
+  - rentree_scolaire
+  - rentree_universitaire
