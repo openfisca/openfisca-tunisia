@@ -1,7 +1,0 @@
-description: les personnes soumises à l’impôt sur les sociétés au taux de 35%,
-unit: currency
-values:
-  2018-01-01:
-    value: 300
-metadata:
-  unit: currency

@@ -1,7 +1,9 @@
+'''Revenus de valeurs mobilières et de capitaux mobiliers.'''
+
+
 from openfisca_tunisia.variables.base import *
 
 
-# rvcm Revenus de valeurs mobilières et de capitaux mobiliers
 # A Revenus des valeurs mobilières et de capitaux mobiliers
 
 

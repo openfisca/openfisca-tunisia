@@ -399,14 +399,14 @@ class salaire_net_a_payer(Variable):
     def formula_2018_01_01(individu, period):
         return (
             individu('salaire_imposable', period)
-            + individu('irpp_mensuel_salarie', period)
+            + individu('irpp_salarie_preleve_a_la_source', period)
             + individu('contribution_sociale_solidarite', period)
             )
 
     def formula(individu, period):
         return (
             individu('salaire_imposable', period)
-            + individu('irpp_mensuel_salarie', period)
+            + individu('irpp_salarie_preleve_a_la_source', period)
             )
 
 

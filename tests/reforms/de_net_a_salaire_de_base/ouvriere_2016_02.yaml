@@ -12,4 +12,4 @@
     assiette_cotisations_sociales: 470.204 # brut
     salaire_imposable: 427.040
     cotisations_salarie: -43.164 # cnss
-    irpp_mensuel_salarie: 0 # déduit de ouvriere_2016_02.yaml
+    irpp_salarie_preleve_a_la_source: 0 # déduit de ouvriere_2016_02.yaml

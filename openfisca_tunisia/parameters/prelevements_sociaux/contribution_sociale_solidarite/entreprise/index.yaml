@@ -1,5 +1,6 @@
 description: Contribution sociale de solidarité des entreprises
 metadata:
   order:
-  - bareme
-  - montant_minimum
+  - taux_is_10_pc
+  - taux_is_15_20_25_pc
+  - taux_is_35_pc

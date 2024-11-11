@@ -102,168 +102,18 @@ class chef_de_famille(Variable):
         chef_de_famille = (
             veuf | (marie & male) | (divorce & (nb_enf > 0))  # | (marie & (not male)) |
             )
-
         return chef_de_famille
 
 # Revenus catégoriels (voir répertoire idoine)
-# 1. BIC
-# 2. BNC
-# 3. BEAP
-# 4. Foncier
-
-# 5. Traitements, salaires, indemnités, pensions et rentes viagères
-
-
-class tspr(Variable):
-    value_type = float
-    entity = FoyerFiscal
-    label = 'Traitements, salaires, indemnités, pensions et rentes viagères'
-    definition_period = YEAR
-
-    def formula(foyer_fiscal, period):
-        revenu_assimile_salaire_apres_abattements = foyer_fiscal(
-            'revenu_assimile_salaire_apres_abattements', period = period)
-        revenu_assimile_pension_apres_abattements = foyer_fiscal(
-            'revenu_assimile_pension_apres_abattements', period = period)
-
-        return revenu_assimile_salaire_apres_abattements + revenu_assimile_pension_apres_abattements
-
-
-class revenu_assimile_salaire(Variable):
-    value_type = float
-    entity = FoyerFiscal
-    label = 'Revenu assimilé à des salaires'
-    definition_period = YEAR
-
-    def formula(foyer_fiscal, period):
-        salaire_imposable = foyer_fiscal.declarant_principal('salaire_imposable', period = period, options = [ADD])
-        salaire_en_nature = foyer_fiscal.declarant_principal('salaire_en_nature', period = period, options = [ADD])
-        return (salaire_imposable + salaire_en_nature)
-
-
-class smig(Variable):
-    value_type = bool
-    entity = FoyerFiscal
-    label = 'Indicatrice de SMIG ou SMAG déduite du montant des salaires'
-    definition_period = YEAR
-
-    def formula(foyer_fiscal, period, parameters):
-        revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
-        salarie_declarant_percevoir_smig = foyer_fiscal.declarant_principal('salarie_declarant_percevoir_smig', period = period.first_month)
-        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
-        smig = (
-            salarie_declarant_percevoir_smig
-            + (revenu_assimile_salaire <= 12 * smig_40h_mensuel)
-            )
-        return smig
-
-
-class revenu_assimile_salaire_apres_abattements(Variable):
-    value_type = float
-    entity = FoyerFiscal
-    label = 'Revenu imposé comme des salaires net des abatements'
-    definition_period = YEAR
-
-    def formula_2011(foyer_fiscal, period, parameters):
-        revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
-        smig = foyer_fiscal('smig', period = period)
-        tspr = parameters(period.start).impot_revenu.tspr
-
-        revenu_assimile_salaire_apres_abattements = max_(
-            (
-                revenu_assimile_salaire * (1 - tspr.abat_sal)
-                - max_(
-                    smig * tspr.abattement_pour_salaire_minimum,
-                    (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum
-                    )
-                ),
-            0
-            )
-        return revenu_assimile_salaire_apres_abattements
-
-    def formula(foyer_fiscal, period, parameters):
-        revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
-        smig = foyer_fiscal('smig', period = period)
-        tspr = parameters(period.start).impot_revenu.tspr
-
-        return max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.abattement_pour_salaire_minimum, 0)
-
-
-class revenu_assimile_pension_apres_abattements(Variable):
-    value_type = float
-    entity = FoyerFiscal
-    label = 'Revenu assimilé à des pensions après abattements'
-    definition_period = YEAR
-
-    def formula(foyer_fiscal, period, parameters):
-        revenu_assimile_pension = foyer_fiscal.declarant_principal('revenu_assimile_pension', period = period)
-        avantages_nature_assimile_pension = foyer_fiscal.declarant_principal(
-            'avantages_nature_assimile_pension', period = period)
-        tspr = parameters(period.start).impot_revenu.tspr
-        return (revenu_assimile_pension + avantages_nature_assimile_pension) * (1 - tspr.abat_pen)
-
-
-# 6. Revenus de valeurs mobilières et de capitaux mobiliers
-
-class rvcm(Variable):
-    value_type = float
-    entity = FoyerFiscal
-    label = 'Revenus de valeurs mobilières et de capitaux mobiliers'
-    definition_period = YEAR
-
-    def formula(foyer_fiscal, period):
-        capm_banq = foyer_fiscal.declarant_principal('capm_banq', period = period)
-        capm_cent = foyer_fiscal.declarant_principal('capm_cent', period = period)
-        capm_caut = foyer_fiscal.declarant_principal('capm_caut', period = period)
-        capm_part = foyer_fiscal.declarant_principal('capm_part', period = period)
-        capm_oblig = foyer_fiscal.declarant_principal('capm_oblig', period = period)
-        capm_caisse = foyer_fiscal.declarant_principal('capm_caisse', period = period)
-        capm_plfcc = foyer_fiscal.declarant_principal('capm_plfcc', period = period)
-        capm_epinv = foyer_fiscal.declarant_principal('capm_epinv', period = period)
-        capm_aut = foyer_fiscal.declarant_principal('capm_aut', period = period)
-
-        return (
-            capm_banq
-            + capm_cent
-            + capm_caut
-            + capm_part
-            + capm_oblig
-            + capm_caisse
-            + capm_plfcc
-            + capm_epinv
-            + capm_aut
-            )
-
-
+# 1. Bénéfices industriels et commerciaux  bic.py
+# 2. Bénéfices des professions non commerciales  bnc.py
+# 3. Bénéfices de l'exploitation agricole et de pêche beap.py
+# 4. Revenus fonciers foncier.py
+# 5. Traitements, salaires, indemnités, pensions et rentes viagères  tspr.py
+# 6. Revenus de valeurs mobilières et de capitaux mobiliers  rvcm.py
 # 7. revenus de source étrangère
 
-class revenus_source_etrangere(Variable):
-    value_type = float
-    entity = FoyerFiscal
-    label = "Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)"
-    definition_period = YEAR
-
-    def formula(foyer_fiscal, period, parameters):
-        salaire_etranger = foyer_fiscal.declarant_principal('salaire_etranger', period = period)
-        pension_etranger_transferee = foyer_fiscal.declarant_principal(
-            'pension_etranger_transferee', period = period)
-        pension_etranger_non_transferee = foyer_fiscal.declarant_principal(
-            'pension_etranger_non_transferee', period = period)
-        autres_revenus_etranger = foyer_fiscal.declarant_principal(
-            'autres_revenus_etranger', period = period)
-        tspr = parameters(period.start).impot_revenu.tspr
-
-        return (
-            salaire_etranger * (1 - tspr.abat_sal)
-            + pension_etranger_non_transferee * (1 - tspr.abat_pen)
-            + pension_etranger_transferee * (1 - tspr.abat_pen_etr)
-            + autres_revenus_etranger
-            )
-
-
-###############################################################################
-# # Déroulé du calcul de l'irpp
-###############################################################################
+# Déroulé du calcul de l'irpp
 
 
 class rng(Variable):
@@ -506,7 +356,7 @@ class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
         return revenu_assimile_salaire_apres_abattement
 
 
-class irpp_mensuel_salarie(Variable):
+class irpp_salarie_preleve_a_la_source(Variable):
     value_type = float
     entity = Individu
     label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'

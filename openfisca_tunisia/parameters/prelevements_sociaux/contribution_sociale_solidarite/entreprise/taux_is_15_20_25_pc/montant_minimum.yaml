@@ -1,0 +1,12 @@
+description: Montant minimum pour les entreprise soumises à l’impôt sur les sociétés au taux de 25%, 20% ou 15%,
+values:
+  2018-01-01:
+    value: 200
+  2023-01-01:
+    value: 400
+metadata:
+  unit: currency
+  reference:
+     2023-01-01:
+      title: Note commune 1/2023
+      href: https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B001.pdf
