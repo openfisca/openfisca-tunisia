@@ -3,5 +3,11 @@ unit: currency
 values:
   2018-01-01:
     value: 300
+  2023-01-01:
+    value: 500
 metadata:
   unit: currency
+  reference:
+     2023-01-01:
+      title: Note commune 1/2023
+      href: https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B001.pdf
