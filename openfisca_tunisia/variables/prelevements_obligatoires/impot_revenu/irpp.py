@@ -339,9 +339,11 @@ class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
         smig = revenu_assimile_salaire <= smig_40h_mensuel
         tspr = parameters(period.start).impot_revenu.tspr
 
+        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
         revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire * (1 - tspr.abat_sal)
-            - max_(
+            revenu_assimile_salaire
+            - abattement_frais_professionnels
+            - min_(
                 smig * tspr.abattement_pour_salaire_minimum,
                 (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum
                 ),
@@ -349,8 +351,15 @@ class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
         return revenu_assimile_salaire_apres_abattement
 
     def formula(foyer_fiscal, period):
+        revenu_assimile_salaire = individu('salaire_imposable', period = period)
+        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
+        smig = revenu_assimile_salaire <= smig_40h_mensuel
+        tspr = parameters(period.start).impot_revenu.tspr
+        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
         revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.abattement_pour_salaire_minimum,
+            revenu_assimile_salaire
+            - abattement_frais_professionnels
+            - smig * tspr.abattement_pour_salaire_minimum,
             0
             )
         return revenu_assimile_salaire_apres_abattement
@@ -378,14 +387,26 @@ def calcule_base_imposable(salaire_mensuel, deduction_famille_annuelle, period, 
     smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
     smig = revenu_assimile_salaire <= smig_40h_mensuel
     tspr = parameters(period.start).impot_revenu.tspr
+    abattement_frais_professionnels = min_(
+        tspr.abat_sal * revenu_assimile_salaire,
+        tspr.max_abat_sal / 12
+        )
 
     if period.start.year >= 2011:
         revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire * (1 - tspr.abat_sal) - max_(smig * tspr.abattement_pour_salaire_minimum,
-                (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum), 0)
+            revenu_assimile_salaire
+            - abattement_frais_professionnels
+            - max_(
+                smig * tspr.abattement_pour_salaire_minimum,
+                (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum),
+            0
+            )
     else:
         revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.abattement_pour_salaire_minimum, 0)
+            revenu_assimile_salaire
+            - abattement_frais_professionnels
+            - smig * tspr.abattement_pour_salaire_minimum,
+            0)
 
     non_exonere = revenu_assimile_salaire_apres_abattement >= 0
     if 2014 <= period.start.year <= 2016:

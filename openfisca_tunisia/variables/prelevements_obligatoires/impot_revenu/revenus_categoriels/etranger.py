@@ -19,9 +19,10 @@ class revenus_source_etrangere(Variable):
         autres_revenus_etranger = foyer_fiscal.declarant_principal(
             'autres_revenus_etranger', period = period)
         tspr = parameters(period.start).impot_revenu.tspr
+        abattement_frais_professionnels = min_(salaire_etranger * tspr.abat_sal, tspr.max_abat_sal)
 
         return (
-            salaire_etranger * (1 - tspr.abat_sal)
+            salaire_etranger - abattement_frais_professionnels
             + pension_etranger_non_transferee * (1 - tspr.abat_pen)
             + pension_etranger_transferee * (1 - tspr.abat_pen_etr)
             + autres_revenus_etranger

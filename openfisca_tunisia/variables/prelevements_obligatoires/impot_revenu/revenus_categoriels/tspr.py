@@ -58,10 +58,11 @@ class revenu_assimile_salaire_apres_abattements(Variable):
         revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
         smig = foyer_fiscal('smig', period = period)
         tspr = parameters(period.start).impot_revenu.tspr
-
+        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
         revenu_assimile_salaire_apres_abattements = max_(
             (
-                revenu_assimile_salaire * (1 - tspr.abat_sal)
+                revenu_assimile_salaire
+                - abattement_frais_professionnels
                 - max_(
                     smig * tspr.abattement_pour_salaire_minimum,
                     (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum
@@ -75,8 +76,14 @@ class revenu_assimile_salaire_apres_abattements(Variable):
         revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)
         smig = foyer_fiscal('smig', period = period)
         tspr = parameters(period.start).impot_revenu.tspr
-
-        return max_(revenu_assimile_salaire * (1 - tspr.abat_sal) - smig * tspr.abattement_pour_salaire_minimum, 0)
+        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
+        revenu_assimile_salaire_apres_abattements = min_(
+            revenu_assimile_salaire
+            - abattement_frais_professionnels
+            - smig * tspr.abattement_pour_salaire_minimum,
+            0
+            )
+        return revenu_assimile_salaire_apres_abattements
 
 
 class revenu_assimile_pension_apres_abattements(Variable):
