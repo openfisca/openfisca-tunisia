@@ -1,0 +1,16 @@
+description: description: Barème de la contribution sociale de solidarité des entreprises soumises à l’impôt sur les sociétés au taux de 10%
+brackets:
+- rate:
+    2018-01-01:
+      value: 0.01
+    2022-01-01:
+      value: 0.03
+  threshold:
+    2018-01-01:
+      value: 0
+metadata:
+  rate_unit: /1
+  threshold_unit: currency
+  reference:
+    title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
+    href: http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661

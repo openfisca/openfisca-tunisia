@@ -1,9 +1,10 @@
-description: les personnes soumises à l’impôt sur les sociétés au taux de 25%, 20% ou 15%,
+description: Montant minimum pour les entreprise soumises à l’impôt sur les sociétés au taux de 35%
+unit: currency
 values:
   2018-01-01:
-    value: 200
+    value: 300
   2023-01-01:
-    value: 400
+    value: 500
 metadata:
   unit: currency
   reference:
