@@ -28,7 +28,7 @@ class contribution_sociale_solidarite(Variable):
         '''
         salaire_imposable = individu('salaire_imposable', period = period)
         deduction_famille_annuelle = individu.foyer_fiscal('deduction_famille', period = period.this_year)
-        irpp_mensuel_salarie = individu('irpp_mensuel_salarie', period = period)
+        irpp_salarie_preleve_a_la_source = individu('irpp_salarie_preleve_a_la_source', period = period)
 
         non_exonere_irpp, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
             salaire_imposable, deduction_famille_annuelle, period, parameters)
@@ -42,11 +42,10 @@ class contribution_sociale_solidarite(Variable):
             > parameters(period.start).impot_revenu.exoneration.seuil
             )
         return non_exonere_css * (
-            - irpp_mensuel_salarie - non_exonere_irpp * bareme_irpp.calc(
+            - irpp_salarie_preleve_a_la_source - non_exonere_irpp * bareme_irpp.calc(
                 (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
                 ) / 12
             )
-
 
     def formula_2018_01_01(individu, period, parameters):
         '''
@@ -68,7 +67,7 @@ class contribution_sociale_solidarite(Variable):
         '''
         salaire_imposable = individu('salaire_imposable', period = period)
         deduction_famille_annuelle = individu.foyer_fiscal('deduction_famille', period = period.this_year)
-        irpp_mensuel_salarie = individu('irpp_mensuel_salarie', period = period)
+        irpp_salarie_preleve_a_la_source = individu('irpp_salarie_preleve_a_la_source', period = period)
 
         non_exonere_irpp, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
             salaire_imposable, deduction_famille_annuelle, period, parameters)
@@ -77,7 +76,7 @@ class contribution_sociale_solidarite(Variable):
         bareme_irpp.add_tax_scale(bareme_css)
 
         return (
-            - irpp_mensuel_salarie - non_exonere_irpp * bareme_irpp.calc(
+            - irpp_salarie_preleve_a_la_source - non_exonere_irpp * bareme_irpp.calc(
                 (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
                 ) / 12
             )

@@ -33,7 +33,7 @@
       2014-10: 5000 / 12
       2014-11: 5000 / 12
       2014-12: 5000 / 12
-    irpp_mensuel_salarie:
+    irpp_salarie_preleve_a_la_source:
       2014-01: 0
       2014-02: 0
       2014-03: 0
@@ -85,7 +85,7 @@
       2014-10: 5550 / 12
       2014-11: 5550 / 12
       2014-12: 5550 / 12
-    irpp_mensuel_salarie:
+    irpp_salarie_preleve_a_la_source:
       2014-01: 0
       2014-02: 0
       2014-03: 0

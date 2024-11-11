@@ -115,6 +115,7 @@ class chef_de_famille(Variable):
 
 # Déroulé du calcul de l'irpp
 
+
 class rng(Variable):
     value_type = float
     entity = FoyerFiscal
@@ -355,7 +356,7 @@ class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
         return revenu_assimile_salaire_apres_abattement
 
 
-class irpp_mensuel_salarie(Variable):
+class irpp_salarie_preleve_a_la_source(Variable):
     value_type = float
     entity = Individu
     label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'
