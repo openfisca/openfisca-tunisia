@@ -4,4 +4,4 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    fonds_special_etat: -.005 * 1000
+    fonds_special_etat: .005 * 1000

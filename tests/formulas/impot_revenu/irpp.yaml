@@ -6,7 +6,7 @@
   output:
     revenu_assimile_salaire: 17710
     revenu_assimile_salaire_apres_abattements: 17710 * (1 - .1)
-    irpp: -3010
+    irpp: 3010
     salaire_net_a_payer:
       2016-01: 14700 / 12
 
@@ -20,7 +20,7 @@
   output:
     revenu_assimile_salaire: 17710
     revenu_assimile_salaire_apres_abattements: 17710 * (1 - .1)
-    irpp: -2972
+    irpp: 2972
 
 - name: Célibataire - Salaire imposable avant abattement et déduction de 0 TND
   period: 2016

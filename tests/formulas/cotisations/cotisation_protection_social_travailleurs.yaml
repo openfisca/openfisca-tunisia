@@ -4,5 +4,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    protection_sociale_travailleurs_salarie: -.001111 * 1000
-    protection_sociale_travailleurs_employeur: -.002889 * 1000
+    protection_sociale_travailleurs_salarie: .001111 * 1000
+    protection_sociale_travailleurs_employeur: .002889 * 1000

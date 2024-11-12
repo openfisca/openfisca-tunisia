@@ -4,5 +4,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    retraite_employeur: -.077639 * 1000
-    retraite_salarie: -.047361 * 1000
+    retraite_employeur: .077639 * 1000
+    retraite_salarie: .047361 * 1000

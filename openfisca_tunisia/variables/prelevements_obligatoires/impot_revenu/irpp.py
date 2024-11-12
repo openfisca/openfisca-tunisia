@@ -123,13 +123,15 @@ class rng(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        bnc = foyer_fiscal('bnc', period = period)
-        tspr = foyer_fiscal('tspr', period = period)
-        revenus_fonciers = foyer_fiscal('revenus_fonciers', period = period)
-        retr = foyer_fiscal('revenus_source_etrangere', period = period)
-        rvcm = foyer_fiscal('rvcm', period = period)
-
-        return bnc + tspr + revenus_fonciers + +rvcm + retr
+        return (
+            foyer_fiscal('bic', period = period)
+            + foyer_fiscal('bnc', period = period)
+            + foyer_fiscal('beap', period = period)
+            + foyer_fiscal('revenus_fonciers', period = period)
+            + foyer_fiscal('tspr', period = period)
+            + foyer_fiscal('rvcm', period = period)
+            + foyer_fiscal('revenus_source_etrangere', period = period)
+            )
 
 
 #############################
@@ -291,7 +293,7 @@ class impot_revenu_brut(Variable):
     def formula(foyer_fiscal, period, parameters):
         revenu_net_imposable = foyer_fiscal('revenu_net_imposable', period = period)
         bareme = parameters(period.start).impot_revenu.bareme
-        impot_revenu_brut = - bareme.calc(revenu_net_imposable)
+        impot_revenu_brut = bareme.calc(revenu_net_imposable)
         return impot_revenu_brut
 
 
@@ -421,7 +423,7 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
     non_exonere, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
         salaire_mensuel, deduction_famille_annuelle, period, parameters)
     bareme = parameters(period.start).impot_revenu.bareme
-    return - (
+    return (
         non_exonere * bareme.calc(
             12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle
             )

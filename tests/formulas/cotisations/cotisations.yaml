@@ -5,8 +5,8 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    cotisations_employeur: -.16 * 1000
-    cotisations_salarie: -.0775 * 1000
+    cotisations_employeur: .16 * 1000
+    cotisations_salarie: .0775 * 1000
 
 
 - name: Salarié 1000 DT cotisations sociales
@@ -16,5 +16,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    cotisations_employeur: -.1657 * 1000
-    cotisations_salarie: -.0918 * 1000
+    cotisations_employeur: .1657 * 1000
+    cotisations_salarie: .0918 * 1000

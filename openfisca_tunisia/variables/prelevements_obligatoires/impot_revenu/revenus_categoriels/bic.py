@@ -11,7 +11,8 @@ class bic(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        bic_reel_res = foyer_fiscal('bic_reel_res', period = period)
+        bic_reel_res_i = foyer_fiscal.members('bic_reel_res', period = period)
+        bic_reel_res = foyer_fiscal.sum(bic_reel_res_i)
         # TODO:
         #    return bic_reel + bic_simpl + bic_forf
         return bic_reel_res

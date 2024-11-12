@@ -11,5 +11,9 @@ metadata:
   threshold_unit: currency
   reference:
     2018-01-01:
-      title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
-      href: http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661
+      - title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
+        href: https://jibaya.tn/docs/loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018/
+      - title: Note commune 2018/01
+        href: https://jibaya.tn/docs/note-commune-numero-1-commentaire-des-dispositions-de-larticle-53-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-a-lins-2/
+  official_journal_date:
+    2018-01-01: "2017-12-19"

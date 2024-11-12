@@ -4,8 +4,8 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    deces_salarie: -.001806 * 1000
-    deces_employeur: -.004694 * 1000
+    deces_salarie: .001806 * 1000
+    deces_employeur: .004694 * 1000
 
 - name: Salarié 1000 DT décès
   period: 2011-01
@@ -13,5 +13,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    deces_salarie: -.001806 * 1000
-    deces_employeur: -.004694 * 1000
+    deces_salarie: .001806 * 1000
+    deces_employeur: .004694 * 1000
