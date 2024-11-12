@@ -2,8 +2,6 @@ from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 from openfisca_tunisia.variables.prelevements_obligatoires.impot_revenu.irpp import calcule_base_imposable
 
 
-
-
 class contribution_sociale_solidarite(Variable):
     value_type = float
     entity = FoyerFiscal
@@ -51,6 +49,7 @@ class contribution_sociale_solidarite_nette_a_payer(Variable):
             foyer_fiscal('contribution_sociale_solidarite', period)
             - foyer_fiscal.sum(foyer_fiscal.members('contribution_sociale_solidarite_prelevee_source', period, options = [ADD]))
             )
+
 
 class contribution_sociale_solidarite_prelevee_source(Variable):
     value_type = float
