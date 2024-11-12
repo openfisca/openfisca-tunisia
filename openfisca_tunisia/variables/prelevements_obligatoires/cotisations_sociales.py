@@ -400,7 +400,7 @@ class salaire_net_a_payer(Variable):
         return (
             individu('salaire_imposable', period)
             - individu('irpp_salarie_preleve_a_la_source', period)
-            - individu('contribution_sociale_solidarite', period)
+            - individu('contribution_sociale_solidarite_prelevee_source', period)
             )
 
     def formula(individu, period):

@@ -123,13 +123,15 @@ class rng(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        bnc = foyer_fiscal('bnc', period = period)
-        tspr = foyer_fiscal('tspr', period = period)
-        revenus_fonciers = foyer_fiscal('revenus_fonciers', period = period)
-        retr = foyer_fiscal('revenus_source_etrangere', period = period)
-        rvcm = foyer_fiscal('rvcm', period = period)
-
-        return bnc + tspr + revenus_fonciers + +rvcm + retr
+        return (
+            foyer_fiscal('bic', period = period)
+            + foyer_fiscal('bnc', period = period)
+            + foyer_fiscal('beap', period = period)
+            + foyer_fiscal('revenus_fonciers', period = period)
+            + foyer_fiscal('tspr', period = period)
+            + foyer_fiscal('rvcm', period = period)
+            + foyer_fiscal('revenus_source_etrangere', period = period)
+            )
 
 
 #############################
