@@ -6,11 +6,14 @@
     salaire_de_base: 657
     primes: 190 + 752 + 57 + 46.666
   output:
-    assiette_cotisations_sociales: 1702.666
-    retraite_salarie: 139.618
-    deces_salarie: 17.026
-    maladie_salarie: 46.823
-    ugtt: 3
-    irpp_salarie_preleve_a_la_source: 241.779
-    contribution_sociale_solidarite: -13.458
-    salaire_net_a_payer: 1240.109 + 256.090 - 241.779 - 13.458
+      deduction_famille:
+        2018: 0
+      assiette_cotisations_sociales: 1702.666
+      retraite_salarie: 139.618
+      deces_salarie: 17.026
+      maladie_salarie: 46.823
+      ugtt: 3
+      salaire_imposable: 1496.2  # 1702.666 - 139.618 - 17.026 - 46.823 - 3
+      irpp_salarie_preleve_a_la_source: 241.779
+      contribution_sociale_solidarite: 13.458
+      salaire_net_a_payer: 1496.2 - 241.779 - 13.458

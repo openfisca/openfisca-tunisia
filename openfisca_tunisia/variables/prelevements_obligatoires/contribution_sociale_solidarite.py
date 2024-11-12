@@ -42,9 +42,10 @@ class contribution_sociale_solidarite(Variable):
             > parameters(period.start).impot_revenu.exoneration.seuil
             )
         return non_exonere_css * (
-            - irpp_salarie_preleve_a_la_source - non_exonere_irpp * bareme_irpp.calc(
+             non_exonere_irpp * bareme_irpp.calc(
                 (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
                 ) / 12
+            - irpp_salarie_preleve_a_la_source
             )
 
     def formula_2018_01_01(individu, period, parameters):
@@ -75,8 +76,14 @@ class contribution_sociale_solidarite(Variable):
         bareme_css = parameters(period.start).prelevements_sociaux.contribution_sociale_solidarite.salarie
         bareme_irpp.add_tax_scale(bareme_css)
 
-        return (
-            irpp_salarie_preleve_a_la_source - non_exonere_irpp * bareme_irpp.calc(
+        contribution_sociale_solidarite = (
+            non_exonere_irpp * bareme_irpp.calc(
                 (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
                 ) / 12
+            - irpp_salarie_preleve_a_la_source
             )
+
+        print(irpp_salarie_preleve_a_la_source)
+        print(contribution_sociale_solidarite)
+
+        return contribution_sociale_solidarite
