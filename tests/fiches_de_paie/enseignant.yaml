@@ -11,7 +11,7 @@
     deces_salarie: 17.026
     maladie_salarie: 46.823
     ugtt: 3
-    irpp_salarie_preleve_a_la_source: -256.090
+    irpp_salarie_preleve_a_la_source: 256.090
     salaire_net_a_payer: 1240.109
 
 
@@ -24,4 +24,4 @@
     primes: 12 * (190 + 752 + 57 + 46.666)
   output:
     irpp:
-      2016: -12 * 256.090
+      2016: 12 * 256.090
