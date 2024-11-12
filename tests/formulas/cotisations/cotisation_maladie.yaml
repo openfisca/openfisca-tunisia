@@ -4,5 +4,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    maladie_salarie: -.027494 * 1000
-    maladie_employeur: -.040006 * 1000
+    maladie_salarie: .027494 * 1000
+    maladie_employeur: .040006 * 1000

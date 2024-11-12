@@ -4,8 +4,8 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    accident_du_travail_salarie: -.002778 * 1000
-    accident_du_travail_employeur: -.007222 * 1000
+    accident_du_travail_salarie: .002778 * 1000
+    accident_du_travail_employeur: .007222 * 1000
 
 - name: Salarié 1000 DT ATMP
   period: 2016-01
@@ -13,5 +13,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    accident_du_travail_salarie: -.002778 * 1000
-    accident_du_travail_employeur: -.007222 * 1000
+    accident_du_travail_salarie: .002778 * 1000
+    accident_du_travail_employeur: .007222 * 1000

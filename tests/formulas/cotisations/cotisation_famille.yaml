@@ -4,5 +4,5 @@
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
-    famille_salarie: -.008889 * 1000
-    famille_employeur: -.022111 * 1000
+    famille_salarie: .008889 * 1000
+    famille_employeur: .022111 * 1000

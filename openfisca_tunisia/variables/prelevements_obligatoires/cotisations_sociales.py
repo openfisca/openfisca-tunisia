@@ -58,7 +58,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
                 assiette_cotisations_sociales * (regime_securite_sociale == regime),
                 )
 
-    return - cotisation
+    return cotisation
 
 
 class assiette_cotisations_sociales(Variable):
@@ -385,7 +385,7 @@ class salaire_imposable(Variable):
     def formula(individu, period):
         return (
             individu('assiette_cotisations_sociales', period)
-            + individu('cotisations_salarie', period)
+            - individu('cotisations_salarie', period)
             )
 
 
@@ -421,7 +421,7 @@ class salaire_super_brut(Variable):
         return (
             individu('salaire_de_base', period = period)
             + individu('primes', period = period)
-            - individu('cotisations_employeur', period = period)  # Cotisations employeur sont négatives
+            + individu('cotisations_employeur', period = period)  # Cotisations employeur sont négatives
             )
 
 
@@ -433,4 +433,4 @@ class ugtt(Variable):
 
     def formula(individu, period):
         # TODO put this value (3) in parameters
-        return -3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSociale.salarie_cnrps)
+        return 3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSociale.salarie_cnrps)
