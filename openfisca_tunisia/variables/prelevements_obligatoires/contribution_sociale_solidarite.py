@@ -76,7 +76,7 @@ class contribution_sociale_solidarite(Variable):
         bareme_irpp.add_tax_scale(bareme_css)
 
         return (
-            - irpp_salarie_preleve_a_la_source - non_exonere_irpp * bareme_irpp.calc(
+            irpp_salarie_preleve_a_la_source - non_exonere_irpp * bareme_irpp.calc(
                 (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
                 ) / 12
             )

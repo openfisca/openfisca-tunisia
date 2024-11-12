@@ -291,7 +291,7 @@ class impot_revenu_brut(Variable):
     def formula(foyer_fiscal, period, parameters):
         revenu_net_imposable = foyer_fiscal('revenu_net_imposable', period = period)
         bareme = parameters(period.start).impot_revenu.bareme
-        impot_revenu_brut = - bareme.calc(revenu_net_imposable)
+        impot_revenu_brut = bareme.calc(revenu_net_imposable)
         return impot_revenu_brut
 
 
@@ -421,7 +421,7 @@ def calcule_impot_revenu_brut(salaire_mensuel, deduction_famille_annuelle, perio
     non_exonere, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
         salaire_mensuel, deduction_famille_annuelle, period, parameters)
     bareme = parameters(period.start).impot_revenu.bareme
-    return - (
+    return (
         non_exonere * bareme.calc(
             12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle
             )
