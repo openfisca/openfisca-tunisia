@@ -185,7 +185,7 @@ jobs:
   # The `deploy` job is dependent on the output of the `check-for-functional-changes` job.
   check-for-functional-changes:
     runs-on: ubuntu-20.04
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'  # Only triggered for the `master` or `main` branch
+    if: github.ref == 'refs/heads/master' # Only triggered for the `master` or `main` branch
     needs: [ check-version-and-changelog ]
     outputs:
       status: ${{ steps.stop-early.outputs.status }}
