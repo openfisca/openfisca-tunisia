@@ -43,12 +43,12 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     assert cotisation_type in ['employeur', 'salarie']
 
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
-    regime_securite_sociale = individu('regime_securite_sociale', period)
+    regime_securite_sociale_cotisant = individu('regime_securite_sociale_cotisant', period)
     baremes_by_regime = parameters(period.start).prelevements_sociaux.cotisations_sociales
     cotisation = individu.empty_array()
-    types_regime_securite_sociale = regime_securite_sociale.possible_values
+    types_regime_securite_sociale_cotisant = regime_securite_sociale_cotisant.possible_values
 
-    for regime in types_regime_securite_sociale:
+    for regime in types_regime_securite_sociale_cotisant:
         if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]._children:
             continue
         baremes_by_name = getattr(
@@ -73,7 +73,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
         if bareme is not None:
             cotisation += bareme.calc(
-                assiette_cotisations_sociales * (regime_securite_sociale == regime),
+                assiette_cotisations_sociales * (regime_securite_sociale_cotisant == regime),
                 )
 
     return cotisation
@@ -92,7 +92,7 @@ class assiette_cotisations_sociales(Variable):
             )
 
 
-class regime_securite_sociale(Variable):
+class regime_securite_sociale_cotisant(Variable):
     value_type = Enum
     possible_values = TypesRegimeSecuriteSocialeCotisant
     default_value = TypesRegimeSecuriteSocialeCotisant.rsna
@@ -451,4 +451,4 @@ class ugtt(Variable):
 
     def formula(individu, period):
         # TODO put this value (3) in parameters
-        return 3 * (individu('regime_securite_sociale', period) == TypesRegimeSecuriteSocialeCotisant.salarie_cnrps)
+        return 3 * (individu('regime_securite_sociale_cotisant', period) == TypesRegimeSecuriteSocialeCotisant.salarie_cnrps)

@@ -2,7 +2,7 @@
   period: 2023-04
   absolute_error_margin: 1
   input:
-    regime_securite_sociale: rsna
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 1100
     # salaire_de_base: 1000
   output:
