@@ -99,7 +99,7 @@ class assiette_cotisations_sociales(Variable):
 class regime_securite_sociale_cotisant(Variable):
     value_type = Enum
     possible_values = TypesRegimeSecuriteSocialeCotisant
-    default_value = TypesRegimeSecuriteSocialeCotisant.rsna
+    default_value = TypesRegimeSecuriteSocialeCotisant.neant
     entity = Individu
     label = 'Régime de sécurité sociale du salarié'
     definition_period = MONTH

@@ -2,6 +2,7 @@
   period: 2016-02
   absolute_error_margin: 0.5
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 416.624
     primes: 6.080 + 47.500
   output:
@@ -14,6 +15,7 @@
   period: 2016-02
   absolute_error_margin: 0.5
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 466.688
     primes: 6.080 + 47.500
 

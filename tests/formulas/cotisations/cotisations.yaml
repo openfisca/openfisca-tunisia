@@ -2,6 +2,7 @@
   period: 2007-01
   absolute_error_margin: .001
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
@@ -13,6 +14,7 @@
   period: 2016-01
   absolute_error_margin: .001
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000

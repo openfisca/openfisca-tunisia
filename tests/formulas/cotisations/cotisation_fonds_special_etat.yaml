@@ -1,6 +1,7 @@
 - name: Salarié 1000 DT fonds special etat
   period: 2011-01
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
