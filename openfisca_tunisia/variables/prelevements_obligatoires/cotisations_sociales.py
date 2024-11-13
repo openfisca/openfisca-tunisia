@@ -3,7 +3,7 @@ from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class TypesRegimeSecuriteSocialeCotisant(Enum):
-    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps'
+    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps neant'
     # Needed to preserve the enum order in Python 2
 
     rsna = 'Régime des salariés non agricoles'
@@ -16,13 +16,14 @@ class TypesRegimeSecuriteSocialeCotisant(Enum):
     raci = 'Régime des artistes, créateurs et intellectuels'
     salarie_cnrps = 'Régime des salariés affilés à la Caisse nationale de retraite et de rrévoyance sociale (CNRPS)'
     pensionne_cnrps = 'Régime des pensionnés affilés à la Caisse nationale de retraite et de rrévoyance sociale (CNRPS)'
+    neant = 'Néant'
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
 
 
 class TypesRegimeSecuriteSocialeRetraite(Enum):
-    __order__ = 'rsna rtte raci rtns_na rtns_a rtc rsa rsaa cnrps'
+    __order__ = 'rsna rtte raci rtns_na rtns_a rtc rsa rsaa cnrps neant'
     # Needed to preserve the enum order in Python 2
 
     rsna = 'Régime des salariés non agricoles'
@@ -34,6 +35,7 @@ class TypesRegimeSecuriteSocialeRetraite(Enum):
     rsa = 'Régime des salariés agricoles'
     rsaa = 'Régime des salariés agricoles amélioré'
     cnrps = 'Régime des pensionnés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale'
+    neant = 'Néant'
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
@@ -49,6 +51,8 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     types_regime_securite_sociale_cotisant = regime_securite_sociale_cotisant.possible_values
 
     for regime in types_regime_securite_sociale_cotisant:
+        if regime.name == 'neant':
+            continue
         if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]._children:
             continue
         baremes_by_name = getattr(
@@ -96,6 +100,16 @@ class regime_securite_sociale_cotisant(Variable):
     value_type = Enum
     possible_values = TypesRegimeSecuriteSocialeCotisant
     default_value = TypesRegimeSecuriteSocialeCotisant.rsna
+    entity = Individu
+    label = 'Régime de sécurité sociale du salarié'
+    definition_period = MONTH
+    set_input = set_input_dispatch_by_period
+
+
+class regime_securite_sociale_retraite(Variable):
+    value_type = Enum
+    possible_values = TypesRegimeSecuriteSocialeRetraite
+    default_value = TypesRegimeSecuriteSocialeRetraite.neant
     entity = Individu
     label = 'Régime de sécurité sociale du salarié'
     definition_period = MONTH
