@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.38.0 - [#160](https://github.com/openfisca/openfisca-tunisia/pull/160)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `variables/cotisations_sociales`.
+* Détails :
+  - Différencie cotisants et retraités.
+
 ## 0.37.O - [#153](https://github.com/openfisca/openfisca-tunisia/pull/153)
 
 * Évolution du système socio-fiscal.
