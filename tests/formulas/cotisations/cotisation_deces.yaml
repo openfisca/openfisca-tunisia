@@ -1,6 +1,7 @@
 - name: Salarié 1000 DT décès
   period: 2016-01
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000
@@ -10,6 +11,7 @@
 - name: Salarié 1000 DT décès
   period: 2011-01
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_de_base: 1000
   output:
     salaire_de_base: 1000

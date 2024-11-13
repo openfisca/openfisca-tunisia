@@ -4,6 +4,7 @@
   period: 2016-02
   absolute_error_margin: 1
   input:
+    regime_securite_sociale_cotisant: rsna
     salaire_net_a_payer: 427.040
     primes: 6.080 + 47.500
   output:
