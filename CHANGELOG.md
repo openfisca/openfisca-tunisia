@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.38.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/cotisations_sociales`.
+* Détails :
+  - Complète l'historique des cotisations retraite.
+
 ## 0.38.0 - [#160](https://github.com/openfisca/openfisca-tunisia/pull/160)
 
 * Évolution du système socio-fiscal.
