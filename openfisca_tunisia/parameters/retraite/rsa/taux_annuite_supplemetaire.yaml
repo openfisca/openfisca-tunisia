@@ -1,0 +1,5 @@
+description: Taux d'annuité supplémentaire
+unit: /1
+values:
+  1981-02-24:
+    value: 0.02

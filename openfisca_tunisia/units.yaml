@@ -6,8 +6,8 @@
   short_label: "%"
 - name: currency
   label:
-    one: Monnaie tunisienne
-    other: Monnaies tunisiennes
+    one: Dinar
+    other: Dinars
   short_label: DT
 - name: day
   label:
@@ -22,3 +22,13 @@
   short_label:
     one: an
     other: ans
+- name: smig
+  label:
+    one: Smig
+    other: Smigs
+  # parameter: marche_travail.salaire_minimum.smig.
+  ratio: true
+- name: trimestre
+  label:
+    one: trimestre
+    other: trimestres

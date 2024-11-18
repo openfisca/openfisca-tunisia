@@ -53,7 +53,6 @@ check-all-yaml:
 	yamllint tests
 
 test: clean check-syntax-errors check-style
-	@# Launch tests from openfisca_tunisia/tests directory (and not .) because TaxBenefitSystem must be initialized
 	@# before parsing source files containing formulas.
 	@echo "> Yaml tests..."
 	openfisca test --country-package openfisca_tunisia tests

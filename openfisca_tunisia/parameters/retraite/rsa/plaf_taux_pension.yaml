@@ -1,0 +1,5 @@
+description: Plafonnement du taux de pension
+unit: /1
+values:
+  1981-02-24:
+    value: 0.8
