@@ -3,4 +3,5 @@ values:
   2007-01-01:
     value: 0.3
 metadata:
+  label_en: Advance payments (in % of lump-sum tax due)
   unit: /1
