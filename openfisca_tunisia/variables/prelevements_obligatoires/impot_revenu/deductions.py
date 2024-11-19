@@ -13,7 +13,16 @@ from openfisca_tunisia.variables.base import *
 #   retraite ou à l’incapacité de poursuivre la gestion de l’entreprise dans le cadre de la transmission des
 #   entreprises. 6891
 # - Déduction de la plus value provenant de l'intégration des éléments d'actifs. 6851
+
+
 # - Déduction de la plus value provenant de la cession des actions cotées en bourse 6841
+
+class plus_value_cession_actifs_cotes_bourse(Variable):
+    value_type = int
+    label = 'Plus value provenant de la cession des actions cotées en bourse (pour déduction)'
+    entity = Individu
+    definition_period = YEAR
+
 # - Bénéfices provenant des opérations de courtage international 1141
 # - Exportation 1191
 # - Location d’immeubles au profit des étudiants 1211 1212 1213
@@ -110,7 +119,7 @@ class cotisations_non_affilie(Variable):
     definition_period = YEAR
 
 
-class interet_acquisition_logement(Variable):
+class interets_acquisition_logement(Variable):
     value_type = int
     label = "Intérêts payés au titre des prêts relatifs à l'acquisition ou à la construction d’un logement social"
     entity = Individu

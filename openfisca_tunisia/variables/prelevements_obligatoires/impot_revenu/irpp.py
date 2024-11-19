@@ -266,6 +266,22 @@ class deduction_smig(Variable):
         return 0 * chef  # TODO: voir avec tspr
 
 
+class deductions(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = 'Revenu net imposable'
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period):
+        return (
+            foyer_fiscal('deduction_famille', period = period)
+            + foyer_fiscal.declarant_principal('rente', period = period)
+            + foyer_fiscal('deduction_assurance_vie', period = period)
+            + foyer_fiscal.sum(foyer_fiscal.members('plus_value_cession_actifs_cotes_bourse', period = period))
+            + foyer_fiscal.sum(foyer_fiscal.members('interets_acquisition_logement', period = period))
+            )
+
+
 class revenu_net_imposable(Variable):
     value_type = float
     entity = FoyerFiscal
@@ -277,11 +293,10 @@ class revenu_net_imposable(Variable):
         Revenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses
         et charges professionnelles et des revenus non soumis à l'impôt
         '''
-        rng = foyer_fiscal('rng', period = period)
-        deduction_famille = foyer_fiscal('deduction_famille', period = period)
-        deduction_rente = foyer_fiscal.declarant_principal('rente', period = period)
-        deduction_assurance_vie = foyer_fiscal('deduction_assurance_vie', period = period)
-        return rng - (deduction_famille + deduction_rente + deduction_assurance_vie)
+        return max_(
+            foyer_fiscal('rng', period) - foyer_fiscal('deductions', period),
+            0
+            )
 
 
 class impot_revenu_brut(Variable):
