@@ -1,6 +1,15 @@
 # Changelog
 
-## 0.38.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
+## 0.40.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `tests`.
+* Détails :
+  - Ajoute tests css.
+
+
+## 0.39.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : toutes.
