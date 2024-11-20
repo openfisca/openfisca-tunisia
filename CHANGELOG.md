@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.40.1 - [#166](https://github.com/openfisca/openfisca-tunisia/pull/166)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/retraite`.
+* Détails :
+  - Synchro avec `openfsica-tunisia-pension`
+
+
 ## 0.40.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
 
 * Évolution du système socio-fiscal.
