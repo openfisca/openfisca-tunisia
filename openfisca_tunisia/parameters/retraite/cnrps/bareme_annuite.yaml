@@ -8,29 +8,25 @@ brackets:
       value: 0.005
 - threshold:
     1959-02-01:
-      value: null
+      value: 160
     1985-01-01:
       value: 40
   rate:
     1959-02-01:
-      value: null
+      value: 0
     1985-01-01:
       value: 0.0075
 - threshold:
-    1959-02-01:
-      value: null
     1985-01-01:
       value: 80
   rate:
-    1959-02-01:
-      value: null
     1985-01-01:
       value: 0.005
 - threshold:
-    1959-02-01:
+    1985-01-01:
       value: 160
   rate:
-    1959-02-01:
+    1985-01-01:
       value: 0
 metadata:
   threshold_unit: trimestre
