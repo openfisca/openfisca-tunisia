@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.40.2 - [#167](https://github.com/openfisca/openfisca-tunisia/pull/167)
+
+* Amélioration technique.
+* Zones impactées : `parameters/retraite/cnrps`.
+* Détails :
+  - Corrige affichage barème annuité
+
 ### 0.40.1 - [#166](https://github.com/openfisca/openfisca-tunisia/pull/166)
 
 * Évolution du système socio-fiscal.
@@ -8,7 +15,6 @@
 * Détails :
   - Synchro avec `openfsica-tunisia-pension`
 
-
 ## 0.40.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
 
 * Évolution du système socio-fiscal.
@@ -16,7 +22,6 @@
 * Zones impactées : `tests`.
 * Détails :
   - Ajoute tests css.
-
 
 ## 0.39.0 - [#161](https://github.com/openfisca/openfisca-tunisia/pull/161)
 
