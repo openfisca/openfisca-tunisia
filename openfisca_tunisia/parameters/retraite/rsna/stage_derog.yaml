@@ -1,4 +1,6 @@
 description: Durée du stage dérogatoire
 values:
   1974-01-01:
-    value: 5.0
+    value: 5
+metadata:
+  unit: year

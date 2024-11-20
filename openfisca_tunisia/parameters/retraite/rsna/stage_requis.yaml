@@ -1,4 +1,6 @@
 description: Durée normale du stage requis
 values:
   1974-01-01:
-    value: 10.0
+    value: 10
+metadata:
+  unit: year

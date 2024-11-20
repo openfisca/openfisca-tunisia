@@ -1,0 +1,6 @@
+description: Taux d'annuité maximal
+values:
+  1959-02-01:
+    value: 0.9
+metadata:
+  unit: /1

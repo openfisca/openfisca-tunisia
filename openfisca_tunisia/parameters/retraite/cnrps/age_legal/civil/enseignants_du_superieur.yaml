@@ -1,0 +1,10 @@
+description: Age légal de de départ à la retraite pour certains enseignants du supérieur
+values:
+  1959-02-01:
+    value: 60
+metadata:
+  unit: year
+documentation: |-
+  Les enseignants concernés sont:
+  - les professeurs de l’enseignement supérieur et les maîtres de conférences de l’enseignement supérieur aux établissements universitaires et aux établissements de recherche scientifique civils et militaires,
+  - les professeurs hospitalo-universitaires et les maîtres de conférences agrégés hospitalo-universitaires
