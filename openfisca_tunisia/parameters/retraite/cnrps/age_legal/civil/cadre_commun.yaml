@@ -1,0 +1,6 @@
+description: Age légal de de départ à la retraite pour le cadre commun de la CNRPS
+values:
+  1959-02-01:
+    value: 60
+metadata:
+  unit: year

@@ -1,0 +1,14 @@
+description: Age légal de de départ à la retraite pour certains cadres actifs et ouvriers
+values:
+  1959-02-01:
+    value: 55
+metadata:
+  unit: year
+documentation: |-
+  Il s'agit
+  - des ouvriers exerçant dans le cadre commun des taches pénibles et insalubres soumis aux conditions prévues par le décret décret n° 1177 du 24 septembre 1985
+  - les cadres actifs des forces de sécurité intérieure et de la garde nationale
+  - les cadres actifs exerçant dans :
+    - les sociétés de transport
+    - la Société nationale des chemins de fer tunisiens (SNCFT)
+    - la Société tunisienne de l’électricité et du gaz (STEG)

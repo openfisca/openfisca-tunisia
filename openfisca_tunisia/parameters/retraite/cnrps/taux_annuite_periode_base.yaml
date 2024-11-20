@@ -1,0 +1,5 @@
+description: Taux d'annuité de la période de base (allant de la 1ère à la 10e année liquidable) par trimestre
+unit: /1
+values:
+  1959-02-01:
+    value: 0.005

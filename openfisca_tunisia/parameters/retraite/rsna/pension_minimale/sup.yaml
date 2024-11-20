@@ -3,3 +3,5 @@ unit: /1
 values:
   1974-01-01:
     value: 0.66666
+metadata:
+  unit: Smig
