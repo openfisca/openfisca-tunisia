@@ -1,4 +1,4 @@
-description: Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 40h par semaine
+description: Salaire minimum interprofessionnel garanti (Smig) horaire - régime 40h par semaine
 values:
   1990-01-01:
     value: 0.621
@@ -146,5 +146,5 @@ metadata:
       title: Décret gouvernemental n°2019-454 du 28 mai 2019
       href: http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq
 documentation: |-
-  Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins
+  Salaire minimum interprofessionnel garanti (Smig) dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins
   الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل
