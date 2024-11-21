@@ -1,10 +1,10 @@
 description: Capital décès
 brackets:
 - threshold:
-    1985-01-01:
+    1975-06-01:
       value: 0
   rate:
-    1985-01-01:
+    1975-06-01:
       value: 0.01
 metadata:
   rate_unit: /1

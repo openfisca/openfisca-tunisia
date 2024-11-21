@@ -1,0 +1,15 @@
+description: Cotisations salarié de prévoyance sociale
+brackets:
+- threshold:
+    1959-02-01:
+      value: 0
+  rate:
+    1959-02-01:
+      value: 0.01
+    2008-07-01:
+      value: 0.0188
+    2009-07-01:
+      value: 0.0275
+metadata:
+  rate_unit: /1
+  threshold_unit: currency

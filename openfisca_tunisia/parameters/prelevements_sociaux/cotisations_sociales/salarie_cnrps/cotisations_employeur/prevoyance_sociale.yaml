@@ -1,0 +1,17 @@
+description: Cotisations employeur de prévoyance sociale
+brackets:
+- threshold:
+    1959-02-01:
+      value: 0
+  rate:
+    1959-02-01:
+      value: 0.01
+    2007-07-01:
+      value: 0.02
+    2008-07-01:
+      value: 0.03
+    2010-07-01:
+      value: 0.04
+metadata:
+  rate_unit: /1
+  threshold_unit: currency
