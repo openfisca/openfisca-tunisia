@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.40.3 - [#167](https://github.com/openfisca/openfisca-tunisia/pull/167)
+
+* Amélioration technique.
+* Zones impactées : `parameters/retraite/cnrps`.
+* Détails :
+  - Complète l'historique des cotisations CNRPS
+
 ### 0.40.2 - [#167](https://github.com/openfisca/openfisca-tunisia/pull/167)
 
 * Amélioration technique.
