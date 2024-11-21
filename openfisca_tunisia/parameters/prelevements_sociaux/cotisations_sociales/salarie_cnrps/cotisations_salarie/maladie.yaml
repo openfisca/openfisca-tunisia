@@ -1,10 +1,14 @@
-description: Assurance maladie
+description: Cotisations salarié de prévoyance sociale
 brackets:
 - threshold:
-    2002-03-12:
+    1959-02-01:
       value: 0
   rate:
-    1985-01-01:
+    1959-02-01:
+      value: 0.01
+    2008-07-01:
+      value: 0.0188
+    2009-07-01:
       value: 0.0275
 metadata:
   rate_unit: /1

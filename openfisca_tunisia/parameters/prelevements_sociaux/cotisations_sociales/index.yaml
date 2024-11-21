@@ -1,1 +1,13 @@
-description: Cotisations sociales
+description: Cotisations sociales des les agents de l’Etat, des établissements publics, des collectivités locales et de certaines entreprises à participations publiques
+metadata:
+  order:
+  - cotisations_salarie
+  - cotisations_employeur
+documentation: |-
+  La C.N.R.P.S a été créée, par la loi n° 75-83 du 31 décembre 1975 portant loi de finances pour la gestion 1976,
+  en remplacement de la Caisse nationale de retraite (CNR) et de la Caisse de prévoyance sociale (CPS)
+  créées respectivement par la loi n°59-19 du 5 février 1959 et la loi n° 59-45 du 15 avril 1959.
+
+  La C.N.R.P.S assure la gestion des régimes de retraite, de prévoyance sociale et du capital décès.
+  La couverture sociale concerne les agents de l’Etat, des établissements publics, des collectivités locales
+  et de certaines entreprises à participations publiques.
