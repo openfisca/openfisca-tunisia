@@ -1,4 +1,4 @@
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de l'auto école
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la location de main d'oeuvre pour services administratifs
 brackets:
 - rate:
     2004-08-01:
@@ -8,4 +8,4 @@ brackets:
       value: 0
 metadata:
   unit: /1
-  short_label: Auto école
+  short_label: Location de main d'oeuvre pour services administratifs

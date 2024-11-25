@@ -1,8 +1,8 @@
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les concessionnaires automobiles
+description: Cotisation pour les accidents du travail et les maladie professionelles pour la location de voiture et d'équipements
 metadata:
   order:
   - sans_atelier_de_reparation
   - avec_atelier_de_reparation
   - avec_chauffeur
 
-  short_label: Concessionnaires automobiles
+  short_label: Location de voiture et d'équipements
