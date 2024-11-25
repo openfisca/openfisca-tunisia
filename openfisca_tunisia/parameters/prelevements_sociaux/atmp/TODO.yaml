@@ -364,15 +364,35 @@ metadata:
   short_label: Fabrication de machines et équipements mécaniques
 
 
-2,40 %
-
     9-2 Fabrication d'équipements et d'appareils domestiques
 
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de machines et équipements mécaniques
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.024
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Fabrication de machines et équipements mécaniques
 
 2,40 %
 
     9-3 Fabrication automobile et de matériel de transport
 
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de machines et équipements mécaniques
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.024
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Fabrication de machines et équipements mécaniques
 
 2,40 %
 
