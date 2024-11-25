@@ -1,1 +1,40 @@
 description: Cotisation pour les accidents du travail et les maladie professionelles
+metadata:
+  order:
+  - Service de bureaux
+  - Autres services
+  - Commerce
+  - Secteurs des industries artisanales
+  - Agriculture et pêche
+  - Industries agro-alimentaires
+  - Industrie du tabac
+  - Industrie du papier et des arts graphiques
+  - Industries mécaniques
+  - Industrie de fonderie et sidérurgie
+  - Fabrication de machines et appareils électriques
+  - Fabrication de machines de bureau et de matériels informatique
+  - Fabrication d'accumulateurs et de piles électriques
+  - Industries de textille, confection du cuir et des chaussures
+  - Industries du bois
+  - Industrie du meuble et de menuiserie
+  - Industrie du liège
+  - Industries des matériaux de construction
+  - Industrie de verrerie
+  - Industrie de la céramique (à l'exception des industries artisanales)
+  - Autres industries manufacturières
+  - Industries chimiques
+  - Bâtiment et travaux publics
+  - Activités annexes au secteur du bâtiment et travaux publics
+  - Construction et réparation navale
+  - Activités liées aux constructions et réparations navales
+  - Transport et manutention
+  - Auto école
+  - Industries extractives
+  - Location de la main d'oeuvre pour les services administratifs
+  - Gardiennage
+  - Location de la main d'oeuvre autre que pour les services administratifs et le gardiennage
+  - Hôtellerie
+  - Agence de voyage
+  - Concessionnaires automobiles
+  - Location de voiture et d'équipements
+  - Les activités sportives
