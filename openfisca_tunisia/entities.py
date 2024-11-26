@@ -48,6 +48,11 @@ Menage = build_entity(
             'label': 'Enfants'
             },
         {
+            'key': 'ascendant',
+            'plural': 'ascendants',
+            'label': 'Ascendants'
+            },
+        {
             'key': 'autre',
             'plural': 'autres',
             'label': 'Autres'
