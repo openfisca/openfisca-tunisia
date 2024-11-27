@@ -16,74 +16,76 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Clone Legislation Parameters Explorer
-      run: git clone https://git.leximpact.dev/leximpact/legislation-parameters-explorer.git
-    - name: Install Node.js version LTS
-      uses: actions/setup-node@v4
-      with:
-        node-version: 'lts/*'
-    - name: Install viewer dependencies
-      run: npm install
-      working-directory: legislation-parameters-explorer/packages/viewer
-    - name: Configure viewer
-      run: |
-        rm -f .env
-        cat > .env << EOF
-        # Customizations to apply to the site (theme, URLs…)
-        CUSTOMIZATION="openfisca"
+      - uses: actions/checkout@v4
+      - name: Clone Legislation Parameters Explorer
+        run: git clone https://git.leximpact.dev/leximpact/legislation-parameters-explorer.git
+      - name: Install Node.js version LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Install viewer dependencies
+        run: npm install
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Configure viewer
+        run: |
+          rm -f .env
+          cat > .env << EOF
+          # Customizations to apply to the site (theme, URLs…)
+          CUSTOMIZATION="openfisca"
 
-        DBNOMICS_DATASET_CODE="openfisca_tunisia"
-        DBNOMICS_PROVIDER_CODE="OpenFisca"
-        DBNOMICS_URL="https://db.nomics.world/"
+          DBNOMICS_DATASET_CODE="openfisca_tunisia"
+          DBNOMICS_PROVIDER_CODE="OpenFisca"
+          DBNOMICS_URL="https://db.nomics.world/"
 
-        EDITOR_URL="https://editor.parameters.tn.tax-benefit.org/"
+          EDITOR_URL="https://editor.parameters.tn.tax-benefit.org/"
 
-        EXPORT_CSV=true
-        EXPORT_JSON=false
-        EXPORT_XLSX=true
+          EXPORT_CSV=true
+          EXPORT_JSON=false
+          EXPORT_XLSX=true
 
-        # Path of directory containing legislation parameters of country
-        PARAMETERS_DIR="../../../openfisca_tunisia/parameters/"
+          # Path of directory containing legislation parameters of country
+          PARAMETERS_DIR="../../../openfisca_tunisia/parameters/"
 
-        # Description of parameters remote repository
-        PARAMETERS_AUTHOR_EMAIL="editor.parameters.tn@tax-benefit.org"
-        PARAMETERS_AUTHOR_NAME="Éditeur des paramètres d'OpenFisca-Tunisia"
-        PARAMETERS_BRANCH="main"
-        PARAMETERS_FORGE_DOMAIN_NAME="github.com"
-        PARAMETERS_FORGE_TYPE="GitHub"
-        PARAMETERS_GROUP="openfisca"
-        PARAMETERS_PROJECT="openfisca-tunisia"
-        PARAMETERS_PROJECT_DIR="openfisca_tunisia/parameters"
+          # Description of parameters remote repository
+          PARAMETERS_AUTHOR_EMAIL="editor.parameters.tn@tax-benefit.org"
+          PARAMETERS_AUTHOR_NAME="Éditeur des paramètres d'OpenFisca-Tunisia"
+          PARAMETERS_BRANCH="main"
+          PARAMETERS_FORGE_DOMAIN_NAME="github.com"
+          PARAMETERS_FORGE_TYPE="GitHub"
+          PARAMETERS_GROUP="openfisca"
+          PARAMETERS_PROJECT="openfisca-tunisia"
+          PARAMETERS_PROJECT_DIR="openfisca_tunisia/parameters"
 
-        SHOW_LAST_BREADCRUMB_ITEM = false
+          SHOW_LAST_BREADCRUMB_ITEM = false
 
-        TABLE_OF_CONTENTS_DIR="../../../openfisca_tunisia/tables/"
+          TABLE_OF_CONTENTS_DIR="../../../openfisca_tunisia/tables/"
 
-        TITLE="OpenFisca-Tunisia - الجباية المفتوحة  تونس"
+          TITLE="OpenFisca-Tunisia - الجباية المفتوحة  تونس"
 
-        # Path of file containing units used by French legislation parameters
-        UNITS_FILE_PATH="../../../openfisca_tunisia/units.yaml"
-        EOF
-      working-directory: legislation-parameters-explorer/packages/viewer
-    - name: Initialize .svelte-kit directory of viewer
-      run: npx svelte-kit sync
-      working-directory: legislation-parameters-explorer/packages/viewer
-    - name: Generate data of viewer
-      run: npx tsx src/scripts/generate_data.ts
-      working-directory: legislation-parameters-explorer/packages/viewer
-    - name: Build viewer
-      run: npm run build
-      working-directory: legislation-parameters-explorer/packages/viewer
-    - name: Configure ssh for deployment to server
-      uses: tanmancan/action-setup-ssh-agent-key@1.0.0
-      with:
-        ssh-auth-sock: /tmp/my_auth.sock
-        ssh-private-key: ${{ secrets.PARAMETERS_EXPLORER_SSH_PRIVATE_KEY }}
-        ssh-public-key: ${{ secrets.PARAMETERS_EXPLORER_SSH_KNOWN_HOSTS }}
-    - name: Deploy to Server using rsync
-      run: rsync -az --delete -e "ssh -J ssh-proxy@parameters.tn.tax-benefit.org:2222" build/ parameters.tn.tax-benefit.org@10.131.0.2:public_html/
-      working-directory: legislation-parameters-explorer/packages/viewer
+          # Path of file containing units used by French legislation parameters
+          UNITS_FILE_PATH="../../../openfisca_tunisia/units.yaml"
+          EOF
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Initialize .svelte-kit directory of viewer
+        run: npx svelte-kit sync
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Generate data of viewer
+        run: npx tsx src/scripts/generate_data.ts
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Build viewer
+        run: npm run build
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Configure ssh for deployment to server
+        uses: tanmancan/action-setup-ssh-agent-key@1.0.0
+        with:
+          ssh-auth-sock: /tmp/my_auth.sock
+          ssh-private-key: ${{ secrets.PARAMETERS_EXPLORER_SSH_PRIVATE_KEY }}
+          ssh-public-key: ${{ secrets.PARAMETERS_EXPLORER_SSH_KNOWN_HOSTS }}
+      - name: Deploy to Server using rsync
+        run: rsync -az --delete -e "ssh -J ssh-proxy@parameters.tn.tax-benefit.org:2222" build/ parameters.tn.tax-benefit.org@10.131.0.2:public_html/
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Update editor parameters data
+        run: ssh -J ssh-proxy@editor.parameters.tn.tax-benefit.org:2222 debian@10.130.3.2 "cd openfisca-tunisia && git pull && sudo systemctl restart tn-parameters-edit.service"
 
   deploy_simulator:
     uses: tax-benefit/actions/.github/workflows/deploy.yml@v2.1.0
