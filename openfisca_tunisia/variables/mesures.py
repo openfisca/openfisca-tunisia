@@ -72,5 +72,5 @@ class revenus_du_travail(Variable):
 
     def formula(individu, period):
         salaire_imposable = individu('salaire_imposable', period = period, options = [ADD])
-        contribution_sociale_solidarite = individu('contribution_sociale_solidarite_prelevee_source', period = period, options = [ADD])
+        contribution_sociale_solidarite = individu('contribution_sociale_solidarite_prelevee_a_la_source', period = period, options = [ADD])
         return salaire_imposable - contribution_sociale_solidarite  # + beap + bic + bnc  TODO

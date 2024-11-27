@@ -12,12 +12,12 @@ class nb_enf(Variable):
         TODO: fixme
         '''
         age = foyer_fiscal.members('age', period = period.first_month)
-        P = parameters(period.start).impot_revenu.deductions.fam
+        famille = parameters(period.start).impot_revenu.deductions.fam
         # res =+ (
         #    (ag < 20) +
         #    (ag < 25)*not_(boursier)*()
         #    )
-        condition = (age >= 0) * (age <= P.age)
+        condition = (age >= 0) * (age <= famille.age)
         return foyer_fiscal.sum(condition, role = FoyerFiscal.PERSONNE_A_CHARGE)
 
 
@@ -31,10 +31,11 @@ class nb_enf_sup(Variable):
         '''
         TODO: Nombre d'enfants étudiants du supérieur non boursiers
         '''
-        age = foyer_fiscal.members('age', period = period)
+        # age = foyer_fiscal.members('age', period = period)
+        etudiant = foyer_fiscal.members('etudiant', period = period)
         boursier = foyer_fiscal.members('boursier', period = period)
 
-        return 0 * age * not_(boursier)
+        return foyer_fiscal.sum(etudiant * not_(boursier))
 
 
 class nb_infirme(Variable):
@@ -394,6 +395,19 @@ class irpp_salarie_preleve_a_la_source(Variable):
 
         return calcule_impot_revenu_brut(
             salaire_imposable, deduction_famille_annuelle, period, parameters,
+            )
+
+
+class irpp_net_a_payer(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = 'IRPP net des prélèvements à la source'
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period, parameters):
+        return (
+            foyer_fiscal('irpp', period)
+            - foyer_fiscal.sum(foyer_fiscal.members('irpp_salarie_preleve_a_la_source', period, options = [ADD]))
             )
 
 
