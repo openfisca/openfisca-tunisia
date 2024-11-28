@@ -1,22 +1,22 @@
-# # Note commune 2018/01
-# # https://jibaya.tn/docs/note-commune-numero-1-commentaire-des-dispositions-de-larticle-53-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-a-lins-2/
+# Note commune 2018/01
+# https://jibaya.tn/docs/note-commune-numero-1-commentaire-des-dispositions-de-larticle-53-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-a-lins-2/
 
-# - name: Exemple 6
-#   period: 2018
-#   absolute_error_margin: .1
-#   input:
-#     bnc_forfaitaire_recettes_brutes:
-#       2018: 120_000
-#     deductions:
-#       2018: 3500
-#   output:
-#       deductions: 3500
-#       bnc_forfaitaire_benefice_fiscal: 96_000
-#       rng: 96_000
-#       revenu_net_imposable: 92_500
-#       irpp: 27_975
-#       contribution_sociale_solidarite: 925
-#       contribution_sociale_solidarite_nette_a_payer: 925
+- name: Exemple 6
+  period: 2018
+  absolute_error_margin: .1
+  input:
+    bnc_forfaitaire_recettes_brutes:
+      2018: 120_000
+    deductions:
+      2018: 3500
+  output:
+      deductions: 3500
+      bnc_forfaitaire_benefice_fiscal: 96_000
+      rng: 96_000
+      revenu_net_imposable: 92_500
+      irpp: 27_975
+      contribution_sociale_solidarite: 925
+      contribution_sociale_solidarite_nette_a_payer: 925
 
 - name: Exemple 7
   absolute_error_margin: .1
@@ -69,7 +69,7 @@
         2018-10: 3298.100 / 12
         2018-11: 3298.100 / 12
         2018-12: 3298.100 / 12
-      contribution_sociale_solidarite_prelevee_source:
+      contribution_sociale_solidarite_prelevee_a_la_source:
         2018-01: 14.730
         2018-02: 14.730
         2018-03: 14.730

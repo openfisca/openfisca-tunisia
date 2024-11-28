@@ -14,7 +14,6 @@ class contribution_sociale_solidarite(Variable):
         bareme_irpp = parameters(period.start).impot_revenu.bareme.copy()
         bareme_css = parameters(period.start).prelevements_sociaux.contribution_sociale_solidarite.salarie
         bareme_irpp.add_tax_scale(bareme_css)
-
         non_exonere_css = (
             revenu_net_imposable
             > parameters(period.start).impot_revenu.exoneration.seuil
@@ -47,11 +46,11 @@ class contribution_sociale_solidarite_nette_a_payer(Variable):
     def formula(foyer_fiscal, period, parameters):
         return (
             foyer_fiscal('contribution_sociale_solidarite', period)
-            - foyer_fiscal.sum(foyer_fiscal.members('contribution_sociale_solidarite_prelevee_source', period, options = [ADD]))
+            - foyer_fiscal.sum(foyer_fiscal.members('contribution_sociale_solidarite_prelevee_a_la_source', period, options = [ADD]))
             )
 
 
-class contribution_sociale_solidarite_prelevee_source(Variable):
+class contribution_sociale_solidarite_prelevee_a_la_source(Variable):
     value_type = float
     entity = Individu
     label = 'Contribution sociale de solidarité'
@@ -61,14 +60,11 @@ class contribution_sociale_solidarite_prelevee_source(Variable):
         salaire_imposable = individu('salaire_imposable', period = period)
         deduction_famille_annuelle = individu.foyer_fiscal('deduction_famille', period = period.this_year)
         irpp_salarie_preleve_a_la_source = individu('irpp_salarie_preleve_a_la_source', period = period)
-
         non_exonere_irpp, revenu_assimile_salaire_apres_abattement = calcule_base_imposable(
             salaire_imposable, deduction_famille_annuelle, period, parameters)
-
         bareme_irpp = parameters(period.start).impot_revenu.bareme.copy()
         bareme_css = parameters(period.start).prelevements_sociaux.contribution_sociale_solidarite.salarie
         bareme_irpp.add_tax_scale(bareme_css)
-
         non_exonere_css = (
             (12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle)
             > parameters(period.start).impot_revenu.exoneration.seuil
