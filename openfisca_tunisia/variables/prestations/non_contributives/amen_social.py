@@ -16,12 +16,12 @@ class transfert_monetaire_permanent_eligible(Variable):
 
     def formula(menage, period):
         return (
-            menage('transfert_monetaire_permanent_eligibilte_score', period)
-            + menage('transfert_monetaire_permanent_eligibilte_score', period)
+            menage('transfert_monetaire_permanent_eligibilite_score', period)
+            + menage('transfert_monetaire_permanent_eligibilite_supplementaire', period)
             )
 
 
-class transfert_monetaire_permanent_eligibilte_score(Variable):
+class transfert_monetaire_permanent_eligibilite_score(Variable):
     value_type = bool
     entity = Menage
     label = 'Ménage éligible au programme Amen social selon le modèle de ciblage'
@@ -30,9 +30,8 @@ class transfert_monetaire_permanent_eligibilte_score(Variable):
     def formula(menage, period):
         return (
             menage('amen_social_eligible', period)
-            + menage('amen_social_score', period)
+            + (menage('amen_social_score_decile', period) <= 2)
             )
-
 
 
 class transfert_monetaire_permanent_eligibilite_supplementaire(Variable):
@@ -53,7 +52,7 @@ class amen_social_enfants_a_charge(Variable):
         eleve = menage.members('eleve', period.this_year)
         etudiant = menage.members('etudiant', period.this_year)
         invalide = menage.members('invalide', period.this_year)
-        amen_social = parameters(period).prestations.amen_social.supplements
+        amen_social = parameters(period).prestations.non_contributives.amen_social.supplements
         condition_enfant = (age <= amen_social.limite_age_enfant) * eleve
         condition_jeune_etudiant = (age <= amen_social.limite_age_etudiant) * etudiant
         enfant_a_charge = condition_enfant + condition_jeune_etudiant + invalide
@@ -67,7 +66,7 @@ class transfert_monetaire_permanent(Variable):
     definition_period = MONTH
 
     def formula(menage, period, parameters):
-        amen_social = parameters(period).prestations.amen_social
+        amen_social = parameters(period).prestations.non_contributives.amen_social
         eligible = menage('transfert_monetaire_permanent_eligible', period)
 
         allocation = eligible * (
@@ -76,8 +75,6 @@ class transfert_monetaire_permanent(Variable):
             )
 
         return allocation
-
-
 
 # TODO
 
