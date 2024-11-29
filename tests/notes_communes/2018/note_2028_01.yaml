@@ -27,7 +27,7 @@
     interets_acquisition_logement: 3500
     revenus_fonciers: 10_400
   output:
-    deductions: 43500
+    deductions: 43_500
     bnc_forfaitaire_benefice_fiscal: 96_000
     revenu_net_imposable: 62_900
     irpp: 17_615
@@ -51,8 +51,8 @@
       2018-10: 18000 / 0.9 / 12
       2018-11: 18000 / 0.9 / 12
       2018-12: 18000 / 0.9 / 12
-    revenus_fonciers: 12000
-    beap: 3000
+    revenus_fonciers: 12_000
+    beap: 3_000
     deduction_famille:
       2018: 315
   output:
