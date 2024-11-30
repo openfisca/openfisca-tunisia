@@ -1,0 +1,9 @@
+description: Seuil de revenu d’exclusion du programme Amen social (en part de Smig) pour un ménage comprenant trois ou quatre personnes
+values:
+  2020-01-01:
+    value: 1.5
+metadata:
+  unit: Smig
+  reference:
+    2020-01-01:
+      title: Décret 2020-317 du 19 mai 2020
