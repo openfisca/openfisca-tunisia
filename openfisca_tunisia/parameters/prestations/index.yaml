@@ -2,5 +2,5 @@ description: Prestations
 metadata:
   short_label: Prestations
   order:
-  - amen_social
-  - prestations_familiales
+  - contributives
+  - non_contributives
