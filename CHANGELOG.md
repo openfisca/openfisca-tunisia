@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.41.0 - [#174](https://github.com/openfisca/openfisca-tunisia/pull/174)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `prestations/non_contributives`.
+* Détails :
+  - Amélioration Amen social.
+  - Début des allocations familiales.
+
 ### 0.40.3 - [#169](https://github.com/openfisca/openfisca-tunisia/pull/169)
 
 * Amélioration technique.
