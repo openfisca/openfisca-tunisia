@@ -1,0 +1,6 @@
+description: Cotisation annuelle forfaitaire
+values:
+  2015-01-01:
+    value: 10
+metadata:
+  unit: currency

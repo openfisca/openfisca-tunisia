@@ -72,6 +72,8 @@ values:
     value: 323.439
   2019-05-01:
     value: 343.892
+  2022-10-01:
+    value: 390.692
 metadata:
   unit: currency
   reference:
@@ -160,6 +162,10 @@ metadata:
     2019-05-01:
       title: Décret gouvernemental n°2019-454 du 28 mai 2019
       href: http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq
+    2022-10-01:
+      title: Décret gouvernemental n°2022-769 du 19 octobre 2022
+  official_journal_date:
+    2022-10-01: '2022-10-21'
 documentation: |-
   Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins
   الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل

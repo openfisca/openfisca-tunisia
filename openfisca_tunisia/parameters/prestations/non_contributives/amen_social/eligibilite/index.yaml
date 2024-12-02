@@ -1,0 +1,7 @@
+description: Seuil de revenu d’exclusion du programme Amen social selon la taille du ménage
+metadata:
+  order:
+  - un_membre
+  - deux_membres
+  - trois_quatre_membres
+  - plus_de_5_membres

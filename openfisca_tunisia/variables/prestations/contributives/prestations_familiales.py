@@ -84,7 +84,7 @@ class af(Variable):
         # Le montant trimestriel est calculé en pourcentage de la rémunération globale trimestrielle palfonnée
         # à 122 dinars
         # TODO: ajouter éligibilité des parents aux allocations familiales
-        pf = parameters.prestations.prestations_familiales
+        pf = parameters.prestations.contributives.prestations_familiales
         bm = min_(
             max_(
                 menage.personne_de_reference('salaire_imposable', period),
@@ -113,7 +113,7 @@ class majoration_salaire_unique(Variable):
     def formula(menage, period, parameters):
         salaire_unique = menage('salaire_unique', period = period)
         af_nbenf = menage('af_nbenf', period = period)
-        P = parameters(period.start).prestations.prestations_familiales
+        P = parameters(period.start).prestations.contributives.prestations_familiales
         af_1enf = round(P.salaire_unique.enf1, 3)  # trimestrielle
         af_2enf = round(P.salaire_unique.enf2, 3)  # trimestrielle
         af_3enf = round(P.salaire_unique.enf3, 3)  # trimestrielle
@@ -165,7 +165,7 @@ class contribution_frais_creche(Variable):
             + menage.conjoint('salaire_imposable', period = month)
             )
         age_en_mois = menage.members('age_en_mois', period = month)
-        creche = parameters(period).prestations.prestations_familiales.creche
+        creche = parameters(period).prestations.contributives.prestations_familiales.creche
         age_en_mois_benjamin = menage.min(age_en_mois)[0]
 
         elig_age = (age_en_mois_benjamin <= creche.age_max) * (age_en_mois_benjamin >= creche.age_min)

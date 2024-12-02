@@ -1,0 +1,20 @@
+description: Montant de l'allocation de base du transfert monétaire permanent du programme Amen social
+values:
+  2024-01-01:
+    value: 240
+  2023-01-01:
+    value: 220
+  2020-01-01:
+    value: 180
+metadata:
+  unit: currency
+  reference:
+    2024-01-01:
+      title: Arrêté ministériel n° 2023-456 du 15 décembre 2023
+    2019-01-01:
+      - title: Loi organique 2019-10 du 30 janvier 2019 relative au programme AMEN social - Article 2 - Définition des allocations de base
+      - title: Décret 2019-317 du 29 mars 2019 fixant les modalités d'application
+      - title: Arrêté conjoint 2020-931 du ministère des affaires sociales et du ministère de l’économie et des finances du 20 mai 2020
+  official_journal_date:
+    2019-01-01: "2019-01-31"
+    2024-01-01: "2024-01-03"
