@@ -1,5 +1,5 @@
 - name: Enfants au charge pour le programme Amen social
-  period: 2022-01
+  period: 2022-02
   relative_error_margin: 0.01
   input:
     individus:
@@ -7,12 +7,29 @@
         date_naissance: 1980-01-01
       enfant1:
         date_naissance: 2017-01-01
-        eleve:
-          2022: true
       enfant2:
         date_naissance: 2016-01-01
-        eleve:
-          2022: true
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+      amen_social_eligible: true
+  output:
+    amen_social_enfants_a_charge: 1
+
+
+- name: Enfants au charge pour le programme Amen social
+  period: 2022-03
+  relative_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2016-01-01
+      enfant2:
+        date_naissance: 2015-01-01
     menage:
       personne_de_reference: parent1
       enfants:
