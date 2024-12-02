@@ -20,7 +20,7 @@ class amen_social_allocation_familiale(Variable):
         enfant_a_charge_0_5 = (age >= 0) * (age <= 5)
         enfant_a_charge_6_18 = (6 <= age) * (age >= 18)
         eligible_0_5 = amen_social_eligible
-        eligible_6_18 = (pnafn + amg1 + amg_2)
+        eligible_6_18 = (pnafn + amg_1 + amg_2)
         enfants_eligibles = menage.sum(
             enfant_a_charge_0_5 * eligible_0_5 + enfant_a_charge_6_18 * eligible_6_18,
             role = Menage.ENFANT
@@ -61,7 +61,6 @@ class amen_social_allocation_familiale(Variable):
             role = Menage.ENFANT
             )
         return enfants_eligibles * allocation_familiale
-
 
     def formula_2020_06(menage, period, parameters):
         # https://www.unicef.org/mena/media/24061/file
