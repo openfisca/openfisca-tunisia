@@ -3,6 +3,7 @@ values:
   2020-01-01:
     value: 2
 metadata:
+  short_label: Plus de cinq personnes
   unit: Smig
   reference:
     2020-01-01:

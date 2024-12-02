@@ -1,0 +1,98 @@
+- name: Eligibilité au programe Amen social selon la taille du ménage et le revenu
+  period: 2022-01
+  relative_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2017-01-01
+        eleve:
+          2022: true
+      enfant2:
+        date_naissance: 2016-01-01
+        eleve:
+          2022: true
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    amen_social_enfants_a_charge: 2
+    amen_social_eligible: true
+
+
+- name: Eligibilité au programe Amen social 3 enfats 500 DT en 2022
+  period: 2022-01
+  relative_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        salaire_de_base: 500
+      enfant1:
+        date_naissance: 2017-01-01
+        eleve:
+          2022: true
+      enfant2:
+        date_naissance: 2016-01-01
+        eleve:
+          2022: true
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    amen_social_eligible: true
+
+
+- name: Eligibilité au programe Amen social 3 enfats 500 DT en 2022
+  period: 2022-01
+  relative_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        salaire_de_base: 500
+      enfant1:
+        date_naissance: 2017-01-01
+        eleve:
+          2022: true
+      enfant2:
+        date_naissance: 2016-01-01
+        eleve:
+          2022: true
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    amen_social_eligible: true
+
+
+- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022
+  period: 2022-01
+  relative_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        salaire_de_base: 1000
+      enfant1:
+        date_naissance: 2017-01-01
+        eleve:
+          2022: true
+      enfant2:
+        date_naissance: 2016-01-01
+        eleve:
+          2022: true
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    amen_social_eligible: false

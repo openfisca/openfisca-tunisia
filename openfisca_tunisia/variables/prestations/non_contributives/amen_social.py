@@ -7,6 +7,24 @@ class amen_social_eligible(Variable):
     label = 'Ménage éligible au programme Amen social'
     definition_period = MONTH
 
+    def formula(menage, period, parameters):
+        taille_menage = menage.nb_persons()
+        revenu_menage = menage.sum(menage.members('salaire_net_a_payer', period))   # Corriger les revenus
+        seuil_de_revenu = parameters(period).prestations.non_contributives.amen_social.eligibilite
+        smig_mensuel = smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
+        condiitons = [
+            taille_menage == 1,
+            taille_menage == 2,
+            (taille_menage == 3) + (taille_menage == 4),
+            taille_menage >= 5,
+            ]
+        valeurs_choisies = [
+            smig_mensuel * seuil_de_revenu.un_membre,
+            smig_mensuel * seuil_de_revenu.deux_membres,
+            smig_mensuel * seuil_de_revenu.trois_quatre_membres,
+            smig_mensuel * seuil_de_revenu.plus_de_cinq_membres,
+            ]
+        return revenu_menage <= select(condiitons, valeurs_choisies)
 
 class transfert_monetaire_permanent_eligible(Variable):
     value_type = bool

@@ -3,6 +3,7 @@ values:
   2020-01-01:
     value: 1.5
 metadata:
+  short_label: Trois ou quatre personnes
   unit: Smig
   reference:
     2020-01-01:

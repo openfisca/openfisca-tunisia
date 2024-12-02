@@ -3,6 +3,7 @@ values:
   2020-01-01:
     value: .66
 metadata:
+  short_label: Une persone
   unit: Smig
   reference:
     2020-01-01:
