@@ -72,9 +72,8 @@ values:
     value: 323.439
   2019-05-01:
     value: 343.892
-
   2022-10-01:
-
+    value: 390.692
 metadata:
   unit: currency
   reference:
