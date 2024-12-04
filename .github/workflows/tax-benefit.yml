@@ -69,7 +69,7 @@ jobs:
       - name: Initialize .svelte-kit directory of viewer
         run: npx svelte-kit sync
         working-directory: legislation-parameters-explorer/packages/viewer
-      - name: Generate data of viewer
+      - name: Generate viewer data
         run: npx tsx src/scripts/generate_data.ts
         working-directory: legislation-parameters-explorer/packages/viewer
       - name: Build viewer
