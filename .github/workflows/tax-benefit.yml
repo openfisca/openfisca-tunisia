@@ -16,8 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print working directory
-        run: pwd
       - uses: actions/checkout@v4
       - name: Clone Legislation Parameters Explorer
         run: git clone https://git.leximpact.dev/leximpact/legislation-parameters-explorer.git
@@ -71,8 +69,8 @@ jobs:
       - name: Initialize .svelte-kit directory of viewer
         run: npx svelte-kit sync
         working-directory: legislation-parameters-explorer/packages/viewer
-      - name: Print working directory
-        run: pwd
+      - name: Print parameters directory
+        run: ls ../../../openfisca_tunisia/parameters/
         working-directory: legislation-parameters-explorer/packages/viewer
       - name: Generate viewer data
         run: npx tsx src/scripts/generate_data.ts
