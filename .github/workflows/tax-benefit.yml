@@ -69,9 +69,6 @@ jobs:
       - name: Initialize .svelte-kit directory of viewer
         run: npx svelte-kit sync
         working-directory: legislation-parameters-explorer/packages/viewer
-      - name: Print parameters directory
-        run: ls ../../../openfisca_tunisia/parameters/
-        working-directory: legislation-parameters-explorer/packages/viewer
       - name: Generate viewer data
         run: npx tsx src/scripts/generate_data.ts
         working-directory: legislation-parameters-explorer/packages/viewer
