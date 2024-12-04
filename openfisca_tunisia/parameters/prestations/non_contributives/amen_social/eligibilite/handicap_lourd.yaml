@@ -4,7 +4,7 @@ values:
     value: .5
 metadata:
   short_label: Handicap lourd
-  unit: Smig
+  unit: smig
   reference:
     2020-01-01:
       title: Décret 2020-317 du 19 mai 2020
