@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.41.1 - [#175](https://github.com/openfisca/openfisca-tunisia/pull/175)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `prestations/non_contributives`.
+* Détails :
+  - Corrige certains attributs des paramètres
+
 ## 0.41.0 - [#174](https://github.com/openfisca/openfisca-tunisia/pull/174)
 
 * Évolution du système socio-fiscal.
