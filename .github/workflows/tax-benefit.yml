@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Print working directory
+        run: pwd
       - uses: actions/checkout@v4
       - name: Clone Legislation Parameters Explorer
         run: git clone https://git.leximpact.dev/leximpact/legislation-parameters-explorer.git
@@ -68,6 +70,9 @@ jobs:
         working-directory: legislation-parameters-explorer/packages/viewer
       - name: Initialize .svelte-kit directory of viewer
         run: npx svelte-kit sync
+        working-directory: legislation-parameters-explorer/packages/viewer
+      - name: Print working directory
+        run: pwd
         working-directory: legislation-parameters-explorer/packages/viewer
       - name: Generate viewer data
         run: npx tsx src/scripts/generate_data.ts
