@@ -12,7 +12,8 @@ metadata:
   unit: currency
   reference:
     2024-03-01:
-      title: Arrêté ministériel n° 2023-456 du 15 décembre 2023
+      title: JORT n° 33 et paru le 1er mars 2024
+      href: https://www.pist.tn/jort/2024/2024F/Jo0332024.pdf
     2023-04-01:
       title: JORT n° 34 et paru le 6 avril 2023
       href: https://www.pist.tn/jort/2023/2023F/Jo0342023.pdf
@@ -27,5 +28,7 @@ metadata:
     - title: Arrêté conjoint 2020-931 du ministère des affaires sociales et du ministère de l’économie et des finances du 19 mai 2020
       href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
   official_journal_date:
+    2024-03-01: "2024-03-01"
+    2023-04-01: "2023-04-06"
+    2022-04-01: "2022-04-08"
     2020-05-01: "2020-05-20"
-    2024-01-01: "2024-01-03"

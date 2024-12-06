@@ -3,5 +3,6 @@ metadata:
   short_label: Amen social
   order:
   - allocation_base
+  - decile
   - aides_ponctuelles
   - supplements
