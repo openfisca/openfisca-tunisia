@@ -2,5 +2,10 @@ description: Age légal de de départ à la retraite pour le cadre commun de la 
 values:
   1959-02-01:
     value: 60
+  2019-05-01:
+    value: 62
 metadata:
   unit: year
+  reference:
+    2019-05-01:
+      title: Loi 2019-37 du 30 avril 2019
