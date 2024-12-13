@@ -1,0 +1,6 @@
+description: Âge de départ à la retraite
+metadata:
+  short_label: Âge de départ
+  order:
+  - civil
+  - militaire

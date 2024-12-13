@@ -1,10 +1,13 @@
-description: Age légal de de départ à la retraite pour certains enseignants du supérieur
+description: Age de départ à la retraite pour certains enseignants du supérieur
 values:
-  1959-02-01:
-    value: 60
+  2019-04-01:
+    value: 65
 metadata:
   unit: year
 documentation: |-
+  Loi n° 2009-20 du 13 avril 2009, portant dispositions exceptionnelles relatives à la retraite des professeurs de l’enseignement supérieur
   Les enseignants concernés sont:
-  - les professeurs de l’enseignement supérieur et les maîtres de conférences de l’enseignement supérieur aux établissements universitaires et aux établissements de recherche scientifique civils et militaires,
+  - les professeurs de l’enseignement supérieur et les maîtres de conférences de l’enseignement supérieur rattachés aux établissements universitaires et aux établissements de recherche scientifique civils et militaires
   - les professeurs hospitalo-universitaires et les maîtres de conférences agrégés hospitalo-universitaires
+
+  Néanmoins, ils peuvent être maintenus en activité par décret jusqu’à l’âge de soixante-dix (70) ans au maximum.

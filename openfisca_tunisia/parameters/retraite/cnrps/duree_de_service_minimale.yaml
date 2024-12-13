@@ -1,0 +1,6 @@
+description: Durée de service minimale requise pour prétendre à une pension de retraite
+values:
+  1974-01-01:
+    value: 15
+metadata:
+  unit: year

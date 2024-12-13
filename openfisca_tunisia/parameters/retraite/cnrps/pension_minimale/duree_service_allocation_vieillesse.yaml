@@ -1,0 +1,6 @@
+description: Durée de service minimale requise pour prétendre à une allocation de vieillesse
+values:
+  1974-01-01:
+    value: 5
+metadata:
+  unit: year

@@ -1,0 +1,7 @@
+description: Âge de départ à la retraite dans le service public civil
+metadata:
+  short_label: Âge de départ des civils
+  order:
+  - cadre_commun
+  - cadre_actifs
+  - ensegnants_du_superieur
