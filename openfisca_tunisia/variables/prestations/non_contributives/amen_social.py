@@ -30,6 +30,7 @@ class amen_social_pas_de_residence_secondaire(Variable):
     # Critères primaires du décret 2020-317 du 19 mai 2020
     # Le ménage n’est pas propriétaire d’un logement secondaire
 
+
 class amen_social_eligible(Variable):
     value_type = bool
     entity = Menage
@@ -76,7 +77,7 @@ class amen_social_eligible(Variable):
         critere_revenu = where(
             presence_handicap_lourd,
             revenu_menage <= select(conditions_avec_handicap, valeurs_choisies_avec_handicap),
-            revenu_menage <= select(conditions, valeurs_choisies)
+            revenu_menage <= select(conditions_sans_handicap, valeurs_choisies_sans_handicap)
             )
         return pas_d_achat_onereux + pas_de_residence_secondaire + critere_revenu
 
