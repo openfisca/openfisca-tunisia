@@ -1,10 +1,10 @@
 from openfisca_tunisia.variables.base import *
 
 
-class amen_social_allocation_familiale(Variable):
+class allocation_familiale_non_contributive(Variable):
     value_type = float
     entity = Menage
-    label = 'Allocation familiale du programme Amen social'
+    label = 'Allocation familiale pour les ménages on affiliés à un régime de sécurité sociale'
     definition_period = MONTH
 
     def formula_2023_02(menage, period, parameters):
