@@ -3,5 +3,5 @@ metadata:
   short_label: Âge de départ des civils
   order:
   - cadre_commun
-  - cadre_actifs
+  - cadres_actifs
   - ensegnants_du_superieur
