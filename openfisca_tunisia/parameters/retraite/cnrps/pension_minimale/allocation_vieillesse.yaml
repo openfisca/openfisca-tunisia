@@ -3,7 +3,7 @@ values:
   1959-02-01:
     value: 0.5
 metadata:
-  unit: Smig
+  unit: smig
 documentation:
   L'allocation de vieillesse est octroyée aux cotisants ne pouvant bénéficier d'une pension de retraite mais
   qui justifient d'une période d'activité d'au moins 5 ans
