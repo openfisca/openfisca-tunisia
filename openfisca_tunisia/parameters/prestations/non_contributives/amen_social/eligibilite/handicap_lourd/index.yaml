@@ -1,0 +1,8 @@
+description: Seuil de revenu d’exclusion du programme Amen social pour un ménage comprenant une personne présentant un handicap lourd
+metadata:
+  short_label: Ménage avec handicap lourd
+  order:
+  - un_membre
+  - deux_membres
+  - trois_quatre_membres
+  - plus_de_cinq_membres
