@@ -1,5 +1,15 @@
 # Changelog
 
+### 0.41.4 - [#181](https://github.com/openfisca/openfisca-tunisia/pull/181)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : après 2025-01-01
+* Zones impactées : `impot_revenu`, `cotisations_sociales`.
+* Détails :
+  - Nouveau barème de l'IR
+  - Nouveau taux de CSS
+  - Nouveau prélèvement (paramètres seulement dans RSNA) pour financer l'assurance perte d'emploi
+
 ### 0.41.3 - [#179](https://github.com/openfisca/openfisca-tunisia/pull/179)
 
 * Évolution du système socio-fiscal.
