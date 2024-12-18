@@ -12,14 +12,14 @@ class revenus_fonciers(Variable):
 
     def formula(foyer_fiscal, period):
         foncier_reel_resultat_fiscal = foyer_fiscal.declarant_principal('foncier_reel_resultat_fiscal', period = period)
-        fon_forf_bati = foyer_fiscal('fon_forf_bati', period = period)
-        fon_forf_nbat = foyer_fiscal('fon_forf_nbat', period = period)
+        foncier_forfait_bati_resultat_fiscal = foyer_fiscal('foncier_forfait_bati_resultat_fiscal', period = period)
+        foncier_forfait_non_bati_resultat_fiscal = foyer_fiscal('foncier_forfait_non_bati_resultat_fiscal', period = period)
         foncier_societes_personnes = foyer_fiscal.declarant_principal('foncier_societes_personnes', period = period)
 
-        return foncier_reel_resultat_fiscal + fon_forf_bati + fon_forf_nbat + foncier_societes_personnes
+        return foncier_reel_resultat_fiscal + foncier_forfait_bati_resultat_fiscal + foncier_forfait_non_bati_resultat_fiscal + foncier_societes_personnes
 
 
-class fon_forf_bati(Variable):
+class foncier_forfait_bati_resultat_fiscal(Variable):
     value_type = float
     entity = FoyerFiscal
     label = 'Revenus fonciers net des immeubles bâtis'
@@ -43,7 +43,7 @@ class fon_forf_bati(Variable):
             )
 
 
-class fon_forf_nbat(Variable):
+class foncier_forfait_non_bati_resultat_fiscal(Variable):
     value_type = float
     entity = FoyerFiscal
     label = 'Revenus fonciers net des terrains non bâtis'
