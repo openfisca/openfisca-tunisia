@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.41.5 - [#184](https://github.com/openfisca/openfisca-tunisia/pull/184)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes. à partir du 2020.
+* Zones impactées : `marche_travail/smig_*`.
+* Détails :
+  - Mise à jour des séries de Smig
+
 ### 0.41.4 - [#181](https://github.com/openfisca/openfisca-tunisia/pull/181)
 
 * Évolution du système socio-fiscal.

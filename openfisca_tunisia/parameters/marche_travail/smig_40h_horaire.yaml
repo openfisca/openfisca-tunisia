@@ -66,6 +66,14 @@ values:
     value: 1.866
   2019-05-01:
     value: 1.984
+  2020-10-01:
+    value: 2.110
+  2022-10-01:
+    value: 2.254
+  2024-05-01:
+    value: 2.409
+  2025-01-01:
+    value: 2.586
 metadata:
   unit: currency
   reference:
