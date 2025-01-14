@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.42 - [#186](https://github.com/openfisca/openfisca-tunisia/pull/186)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes. à partir du 2020.
+* Zones impactées : `prestations/non_contributives/allocation_familiale`.
+* Détails :
+  - Corrige `allocation_familiale`
+
 ### 0.41.6 - [#183](https://github.com/openfisca/openfisca-tunisia/pull/183)
 
 * Évolution du système socio-fiscal.
