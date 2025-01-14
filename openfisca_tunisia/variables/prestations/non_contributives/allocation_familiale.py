@@ -4,65 +4,54 @@ from openfisca_tunisia.variables.base import *
 class allocation_familiale_non_contributive(Variable):
     value_type = float
     entity = Menage
-    label = 'Allocation familiale pour les ménages on affiliés à un régime de sécurité sociale'
+    label = 'Allocation familiale pour les ménages non affiliés à un régime de sécurité sociale'
     definition_period = MONTH
 
-    def formula_2023_02(menage, period, parameters):
-        # Extension aux amg2
-        age = menage.members('age', period)
-        # Les enfants sont considérés comme éligibles de 6 ans à 18 ans
-        # eleve = menage.members('eleve', period.this_year)
-        allocation_familiale = 30
-        amen_social_eligible = individu('amen_social_eligible', period)
-        pnafn = individu('pnafn_eligible', period)
-        amg_1 = individu('amg_1', period)
-        amg_2 = individu('amg_2', period)
-        enfant_a_charge_0_5 = (age >= 0) * (age <= 5)
-        enfant_a_charge_6_18 = (6 <= age) * (age >= 18)
-        eligible_0_5 = amen_social_eligible
-        eligible_6_18 = (pnafn + amg_1 + amg_2)
-        enfants_eligibles = menage.sum(
-            enfant_a_charge_0_5 * eligible_0_5 + enfant_a_charge_6_18 * eligible_6_18,
-            role = Menage.ENFANT
+    def formula(menage, period, parameters):
+        return (
+            menage('allocation_familiale_non_contributive_0_5', period)
+            + menage('allocation_familiale_non_contributive_6_18', period)
             )
+
+
+class allocation_familiale_non_contributive_0_5(Variable):
+    value_type = float
+    entity = Menage
+    label = 'Allocation familiale pour les enfants entre 0  et 5 ans pour les ménages non affiliés à un régime de sécurité sociale'
+    definition_period = MONTH
+
+    def formula_2020_06(menage, period, parameters):
+        age = menage.members('age', period)
+        eligible = menage('eligible_allocation_familiale_non_contributive_0_5', period)
+        enfant_a_charge_0_5 = (age >= 0) * (age <= 5)
+        enfants_eligibles = eligible * menage.sum(enfant_a_charge_0_5, role = Menage.ENFANT)
+        allocation_familiale = parameters(period).prestations.non_contributives.allocation_familiale
         return enfants_eligibles * allocation_familiale
+
+
+class allocation_familiale_non_contributive_6_18(Variable):
+    value_type = float
+    entity = Menage
+    label = 'Allocation familiale pour les enfants entre 6 et 18 ans pour les ménages non affiliés à un régime de sécurité sociale'
+    definition_period = MONTH
 
     def formula_2022_07(menage, period, parameters):
         age = menage.members('age', period)
-        # Les enfants sont considérés comme éligibles de 6 ans à 18 ans
-        # eleve = menage.members('eleve', period.this_year)
-        allocation_familiale = 30
-        pnafn = individu('pnafn_eligible', period)
-        amg_1 = individu('amg_1', period)
-        amen_social_eligible = individu('amen_social_eligible', period)
-        eligible_0_5 = amen_social_eligible
-        enfant_a_charge_0_5 = (age >= 0) * (age <= 5)
+        eligible = menage('eligible_allocation_familiale_non_contributive_6_18', period)
         enfant_a_charge_6_18 = (6 <= age) * (age >= 18)
-        eligible_6_18 = (pnafn + amg_1)
-        enfants_eligibles = menage.sum(
-            enfant_a_charge_0_5 * eligible_0_5 + enfant_a_charge_6_18 * eligible_6_18,
-            role = Menage.ENFANT
-            )
+        enfants_eligibles = eligible * menage.sum(enfant_a_charge_6_18, role = Menage.ENFANT)
+        allocation_familiale = parameters(period).prestations.non_contributives.allocation_familiale
         return enfants_eligibles * allocation_familiale
 
-    def formula_2022_01(menage, period, parameters):
-        # Décret présidentiel numéro 2022-8
-        # Allocation dans Amen social
-        # Institutionalisation rien ne change ? TODO
-        age = menage.members('age', period)
-        # Les enfants sont considérés comme éligibles de 6 ans à 18 ans
-        # eleve = menage.members('eleve', period.this_year)
-        allocation_familiale = 30
-        amen_social_eligible = individu('amen_social_eligible', period)
-        eligible_0_5 = amen_social_eligible
-        enfant_a_charge_0_5 = (age >= 0) * (age <= 5)
-        enfants_eligibles = menage.sum(
-            enfant_a_charge_0_5 * eligible_0_5,
-            role = Menage.ENFANT
-            )
-        return enfants_eligibles * allocation_familiale
+
+class eligible_allocation_familiale_non_contributive_0_5(Variable):
+    value_type = bool
+    entity = Menage
+    label = "Eligibilité à l'allocation familiale non contributive pour les enfants de 0 à 5 ans"
+    definition_period = MONTH
 
     def formula_2020_06(menage, period, parameters):
+        # TODO quand est-ce que cela débute ?
         # https://www.unicef.org/mena/media/24061/file
         # Mai 2020: décret abolissant
         # la limite du nombre d’enfants
@@ -74,15 +63,30 @@ class allocation_familiale_non_contributive(Variable):
         # bénéficier d’une allocation
         # familiale était de plus de 5
         # ans
-        age = menage.members('age', period)
-        # Les enfants sont considérés comme éligibles de 6 ans à 18 ans
-        # eleve = menage.members('eleve', period.this_year)
-        allocation_familiale = 30
-        amen_social_eligible = individu('amen_social_eligible', period)
-        eligible_0_5 = amen_social_eligible
-        enfant_a_charge_0_5 = (age >= 0) * (age <= 5)
-        enfants_eligibles = menage.sum(
-            enfant_a_charge_0_5 * eligible_0_5,
-            role = Menage.ENFANT
+
+        return (
+            menage('pnafn_eligible', period)
+            + menage('amg_1', period)
+            + menage('amg_2', period)
+            + menage('amen_social_eligible', period)
             )
-        return enfants_eligibles * allocation_familiale
+
+
+class eligible_allocation_familiale_non_contributive_6_18(Variable):
+    value_type = bool
+    entity = Menage
+    label = "Eligibilité à l'allocation familiale non contributive pour les enfants de 6 à 18 ans"
+    definition_period = MONTH
+
+    def formula_2023_02(menage, period, parameters):
+        return (
+            menage('pnafn_eligible', period)
+            + menage('amg_1', period)
+            + menage('amg_2', period)
+            )
+
+    def formula_2022_07(menage, period, parameters):
+        return (
+            menage('pnafn_eligible', period)
+            + menage('amg_1', period)
+            )
