@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de l'installation de menuiserie de bois, de menuiserie métallique et serrurerie
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.03
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Installation de menuiserie de bois, de menuiserie métallique et serrurerie

@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour l'agriculture et la pêche
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.006
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Agriculture et pêche

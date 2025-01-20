@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour les Location de voiture et d'équipements avec atelier de réparation
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.015
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Avec atelier de réparation

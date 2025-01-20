@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de peintures, vernis, pigments broyés
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.035
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Fabrication de peintures, vernis, pigments broyés

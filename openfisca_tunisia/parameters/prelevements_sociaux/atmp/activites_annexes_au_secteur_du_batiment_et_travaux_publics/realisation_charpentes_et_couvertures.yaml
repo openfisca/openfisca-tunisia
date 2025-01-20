@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la réalisation de charpentes et de couvertures
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.03
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Réalisation de charpentes et de couvertures

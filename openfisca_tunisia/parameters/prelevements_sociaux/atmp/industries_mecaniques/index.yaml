@@ -1,0 +1,7 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries mécaniques
+metadata:
+  order:
+  - machines_equipements_mecaniques
+  - equipements_appareils_domestiques
+  - automobile_materiel_de_transport
+  short_label: Industries mécaniques

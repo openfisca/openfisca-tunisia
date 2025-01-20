@@ -1,0 +1,8 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de l'industrie du papier et des arts graphiques
+metadata:
+  order:
+  - fabrication_papier_carton
+  - transformation_papier_carton
+  - imprimerie_edition
+
+  short_label: Industrie du papier et des arts graphiques

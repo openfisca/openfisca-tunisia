@@ -2,646 +2,194 @@ Secteur d'activité
 Taux
 1 - Service de bureaux
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des services de bureaux
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.004
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label:
 
 2 - Autres services
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur  des services autres que les services de bureaux
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.005
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label:
 
 3 - Commerce
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur du commerce
-metadata:
-  order:
-  - commerce_de_gros
-  - commerce_de_détail
 
 
     3-1 Commerce de gros
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur du commerce de gros
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.005
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label:
-
-
     3-2 Commerce de détails
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur du commerce de détail
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.005
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label:
 
 
 4 - Secteurs des industries artisanales
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries artisanales
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.005
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industries artisanales
-
-
 5 - Agriculture et pêche
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour l'agriculture et la pêche
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.006
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Agriculture et pêche
-
 
 
 6 - Industries agro-alimentaires
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries agro-alimentaires
-metadata:
-  order:
-  - lait_et_derives
-  - huiles_corps_gras
-  - travail_des_graines
-  - conserverie_semi_conserverie
-  - sechage_deshydratation
-  - sucre_chocolat_derives
-  - boissons_alcools_vinaigre
-  - aliments_composes
-  - abattoirs
-  - autre_agro_alimentaire
-
-  short_label: Industries agro-alimentaires
-
     6-1 Industrie du lait et dérivés
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour l'industrie du lait et de ses dérivés
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industrie du lait et de ses dérivés
-
 
     6-2 Industrie des huiles et des corps gras
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour l'industrie des huiles et des corps gras
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industrie des huiles et des corps gras
-
-
     6-3 Travail des graines
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour l'industrie du travail des graines
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Travail des graines
-
 
     6-4 Industries de conserverie et semi-conserverie
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les industries de conserverie et semi-conserverie
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industries de conserverie et semi-conserverie
-
-
     6-5 Industries de séchage et de déshydratation
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les industries de séchage et de déshydratation
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industries de séchage et de déshydratation
-
 
     6-6 Industries du sucre, chocolaterie et dérivés
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les industries du sucre, de la chocolaterie et de leurs dérivés
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industries du sucre, chocolaterie et dérivés
-
-
     6-7 Industries de boissons, boissons alcoolisées et vinaigre
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les industries de boissons, boissons alcoolisées et vinaigre
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industries de boissons, boissons alcoolisées et vinaigre
-
 
     6-8 Industries d'aliments composés
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les industries des aliments composés
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industries des aliments composés
-
-
     6-9 Les abattoirs
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les abattoirs
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Les abattoirs
-
 
     6-10 Autres industries agro-alimentaires
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour les autres industries agro-alimentaires
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Autres industries agro-alimentaires
-
-
-
 7 - Industrie du tabac
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour l'industrie du tabac
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.016
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Industrie du tabac
-
 
 8 - Industrie du papier et des arts graphiques
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de l'industrie du papier et des arts graphiques
-metadata:
-  order:
-  - fabrication_papier_carton
-  - transformation_papier_carton
-  - imprimerie_edition
-  short_label: Industrie du papier et des arts graphiques
-
-
     8-1 Fabrication du papier et carton :
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication du papier et du carton
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.02
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Fabrication du papier et du carton
-
 
     8-2 Transformation du papier et carton
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la transformation du papier et du carton
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.008
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Transformation du papier et du carton
-
-
     8-3 Imprimerie et édition :
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de l'imprimerie et de l'édition
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.008
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Imprimerie et édition
 
 9 - Industries mécaniques
 
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries mécaniques
-metadata:
-  order:
-  - machines_equipements_mecaniques
-  - equipements_appareils_domestiques
-  - automobile_materiel_de_transport
-  short_label: Industries mécaniques
-
-
     9-1 Fabrication de machines et équipements mécaniques
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de machines et équipements mécaniques
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.024
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Fabrication de machines et équipements mécaniques
-
 
     9-2 Fabrication d'équipements et d'appareils domestiques
 
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de machines et équipements mécaniques
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.024
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Fabrication de machines et équipements mécaniques
-
-2,40 %
-
     9-3 Fabrication automobile et de matériel de transport
-
-description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de machines et équipements mécaniques
-brackets:
-- rate:
-    2004-08-01:
-      value: 0.024
-  threshold:
-    2004-08-01:
-      value: 0
-metadata:
-  unit: /1
-  short_label: Fabrication de machines et équipements mécaniques
-
-2,40 %
-
 
 
 10 - Industrie de fonderie et sidérurgie
-2,60 %
-11 - Fabrication de machines et appareils électriques
-1,30 %
-12 - Fabrication de machines de bureau et de matériels informatique
-1,30 %
-13 - Fabrication d'accumulateurs et de piles électriques
-1,70 %
-14 - Industries de textille, confection du cuir et des chaussures
 
+11 - Fabrication de machines et appareils électriques
+
+12 - Fabrication de machines de bureau et de matériels informatique
+
+13 - Fabrication d'accumulateurs et de piles électriques
+
+14 - Industries de textille, confection du cuir et des chaussures
 
     14-1 Filature et tissage
 
-
-1,80 %
-
-    14-2 Fabrication de vêtements et de fourrures délavage et
+    14-2 Fabrication de vêtements et de fourrures, délavage et
     blanchisserie
-
-
-1,20 %
 
     14-3 Industrie du cuir
 
-
-1,20 %
-
     14-4 Les tanneries
-
-
-2,00 %
 
     14-5 Fabrication de divers articles en cuir
 
-
-1,30 %
 15 - Industries du bois
-3,40 %
+
 16 - Industrie du meuble et de menuiserie
-2,00 %
+
 17 - Industrie du liège
-3,00 %
+
 18 - Industries des matériaux de construction
-2,80 %
+
 19 - Industrie de verrerie
-2,70 %
+
 20 - Industrie de la céramique (à l'exception des industries artisanales)
-2,20 %
+
 21 - Autres industries manufacturières
-1,70 %
+
 22 - Industries chimiques
 
 
     22-1 Industries chimiques minérales
 
-
-3,50 %
-
     22-2 Fabrication des produits minéraux divers
-
-
-3,50 %
 
     22-3 Fabrication d'engrais et industries de l'azote
 
-
-3,50 %
-
     22-4 Industrie de la synthèse organique
-
-
-3,00 %
 
     22-5 Fabrication de produits pharmaceutiques
 
-
-2,50 %
-
     22-6 Fabrication de peintures, vernis, pigments broyés
-
-
-3,50 %
 
     22-7 Fabrication des produits insecticides et anticyptogramiques
 
-
-3,50%
-
     22-8 Fabrication d'explosifs industriels, d'accessoires, de mises à feu et d'artifices
-
-
-3,50 %
 
     22-9 Forage de pétrole
 
-
-3,00 %
-
     22-10 Fabrication de gaz industriels
-
-
-3,50 %
 
     22-11 Raffinage de pétrole
 
-
-3,50 %
-
-    22-12 Fabrication des dérivés du pétrole
-
-
-3,50 %
+      22-12 Fabrication des dérivés du pétrole
 
     22-13 Fabrication de caoutchouc et d'ouvrages en caoutchouc
 
-
-2,10 %
-
     22-14 Fabrication d'ouvrage en matière plastique et de la mousse
-
-
-2,10 %
 
     22-15 Fabrication de savons, de parfums et de produits d'entretien
 
-
-2,10 %
-
     22-16 Autres industries chimiques
 
-
-2,10 %
 23 - Bâtiment et travaux publics
-3,80 %
-24 - Activités annexes au secteur du bâtiment et travaux publics
 
+24 - Activités annexes au secteur du bâtiment et travaux publics
 
     24-1 Installation de menuiserie de bois, de menuiserie métallique et serrurerie
 
-
-3,00 %
-
     24-2 Travaux de plomberie et d'installation d'équipements thermiques et de climatisation
-
-
-3,00 %
 
     24-3 Travaux de peinture et de vitrerie
 
-
-3,00 %
-
-    24-4 Réalisation de charpentes et de couvertures
-
-
-3,00 %
+    24-4  Réalisation de charpentes et de couvertures
 
     24-5 Travaux d'installation électrique
 
-
-3,00 %
-
     24-6 Autres travaux d'installation et de finition
 
-
-3,00 %
 25 - Construction et réparation navale
-2,50 %
-26 - Activités liées aux constructions et réparations navales
-2,50 %
-27 - Transport et manutention
 
+26 - Activités liées aux constructions et réparations navales
+
+27 - Transport et manutention
 
     27-1 Transports terrestres
 
-
-4,00 %
-
     27-2 Transports maritimes
-
-
-3,00 %
 
     27-3 Transports aériens
 
-
-3,00 %
-
     27-4 Manutention et entreposage
 
-
-4,00 %
 28 - Auto école
-3,50 %
-29 - Industries extractives
-3,50 %
-30 - Location de la main d'oeuvre pour les services administratifs
-0,50 %
-31 - Gardiennage
-0,50 %
-32 - Location de la main d'oeuvre autre que pour les services administratifs et le gardiennage
-2,50 %
-33 - Hôtellerie
-0,50 %
-34 - Agence de voyage
 
+29 - Industries extractives
+
+30 - Location de la main d'oeuvre pour les services administratifs
+
+31 - Gardiennage
+
+32 - Location de la main d'oeuvre autre que pour les services administratifs et le gardiennage
+
+33 - Hôtellerie
+
+34 - Agence de voyage
 
     34-1 agence de voyage catégorie A
 
-
-2,50 %
-
     34-2 agence de voyage catégorie B
 
-
-0,50 %
 35 - Concessionnaires automobiles
-
 
     35-1 avec atelier de réparation
 
-
-1,50 %
-
     35-2 sans atelier de réparation
 
-
-0,50 %
 36 - Location de voiture et d'équipements
-
 
     36-1 Sans chauffeur et sans atelier de réparation
 
-
-0,50 %
-
     36-2 Avec atelier de réparation
-
-
-1,50 %
 
     36-3 Avec chauffeur
 
-
-2,50 %
 37 - Les activités sportives
-1,50 %

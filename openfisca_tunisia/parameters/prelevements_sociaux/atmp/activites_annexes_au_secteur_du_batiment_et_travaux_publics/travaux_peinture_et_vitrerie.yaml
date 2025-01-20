@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des travaux de peinture et de vitrerie
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.03
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Travaux de peinture et de vitrerie

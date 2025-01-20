@@ -1,40 +1,40 @@
-description: Cotisation pour les accidents du travail et les maladie professionelles
+description: Cotisation pour_les_accidents_du_travail et_les_maladie_professionelles
 metadata:
   order:
-  - Service de bureaux
-  - Autres services
-  - Commerce
-  - Secteurs des industries artisanales
-  - Agriculture et pêche
-  - Industries agro-alimentaires
-  - Industrie du tabac
-  - Industrie du papier et des arts graphiques
-  - Industries mécaniques
-  - Industrie de fonderie et sidérurgie
-  - Fabrication de machines et appareils électriques
-  - Fabrication de machines de bureau et de matériels informatique
-  - Fabrication d'accumulateurs et de piles électriques
-  - Industries de textille, confection du cuir et des chaussures
-  - Industries du bois
-  - Industrie du meuble et de menuiserie
-  - Industrie du liège
-  - Industries des matériaux de construction
-  - Industrie de verrerie
-  - Industrie de la céramique (à l'exception des industries artisanales)
-  - Autres industries manufacturières
-  - Industries chimiques
-  - Bâtiment et travaux publics
-  - Activités annexes au secteur du bâtiment et travaux publics
-  - Construction et réparation navale
-  - Activités liées aux constructions et réparations navales
-  - Transport et manutention
-  - Auto école
-  - Industries extractives
-  - Location de la main d'oeuvre pour les services administratifs
-  - Gardiennage
-  - Location de la main d'oeuvre autre que pour les services administratifs et le gardiennage
-  - Hôtellerie
-  - Agence de voyage
-  - Concessionnaires automobiles
-  - Location de voiture et d'équipements
-  - Les activités sportives
+  - services_de_bureaux
+  - autres_services
+  - commerce
+  - industries_artisanales
+  - agriculture_et_peche
+  - industries_agro_alimentaires
+  - industrie_du_tabac
+  - industrie_du_papier_et_des_arts_graphiques
+  - industries_mecaniques
+  - industrie_de_fonderie_et_siderurgie
+  - fabrication_de_machines_et_appareils_electriques
+  - fabrication_de_machines_de_bureau_et_de_materiels_informatique
+  - fabrication_d_accumulateurs_et_de_piles_electriques
+  - industries_de textille_confection_du cuir_et_des_chaussures
+  - industries_du_bois
+  - industrie_du_meuble_et_de_menuiserie
+  - industrie_du_liege
+  - industries_des_materiaux_de_construction
+  - industrie_de_verrerie
+  - industrie_de_la_ceramique
+  - autres_industries_manufacturieres
+  - industries_chimiques
+  - batiment_et_travaux_publics
+  - activites_annexes_au_secteur_du_batiment_et_travaux_publics
+  - construction_et_reparation navale
+  - activites_liees_aux_constructions_et_reparations_navales
+  - transport_et_manutention
+  - auto_ecole
+  - industries_extractives
+  - location_de_la main_d_oeuvre_pour_les_services_administratifs
+  - gardiennage
+  - location_de_main_d_oeuvre_hors_services_administratifs_gardiennage
+  - hotellerie
+  - agence_de_voyage
+  - concessionnaires_automobiles
+  - location_de_voiture_et_d_equipements
+  - activites_sportives

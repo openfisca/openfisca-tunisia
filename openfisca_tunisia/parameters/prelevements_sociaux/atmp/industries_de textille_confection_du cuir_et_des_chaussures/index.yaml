@@ -1,0 +1,10 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries de textille, confection du cuir et des chaussures
+metadata:
+  order:
+  - filature_et_tissage
+  - fabrication_vetements_et_fourrures_delavage_et_blanchisserie
+  - industrie_du_cuir
+  - tanneries
+  - fabrication_de_divers_articles_en_cuir
+
+  short_label: Industries de textille, confection du cuir et des chaussures
