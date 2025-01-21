@@ -1,0 +1,15 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries agro-alimentaires
+metadata:
+  order:
+  - lait_et_derives
+  - huiles_corps_gras
+  - travail_des_graines
+  - conserverie_semi_conserverie
+  - sechage_deshydratation
+  - sucre_chocolat_derives
+  - boissons_alcools_vinaigre
+  - aliments_composes
+  - abattoirs
+  - autre_agro_alimentaire
+
+  short_label: Industries agro-alimentaires

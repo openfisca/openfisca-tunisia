@@ -1,0 +1,40 @@
+description: Cotisation pour_les_accidents_du_travail et_les_maladie_professionelles
+metadata:
+  order:
+  - services_de_bureaux
+  - autres_services
+  - commerce
+  - industries_artisanales
+  - agriculture_et_peche
+  - industries_agro_alimentaires
+  - industrie_du_tabac
+  - industrie_du_papier_et_des_arts_graphiques
+  - industries_mecaniques
+  - industrie_de_fonderie_et_siderurgie
+  - fabrication_de_machines_et_appareils_electriques
+  - fabrication_de_machines_de_bureau_et_de_materiels_informatique
+  - fabrication_d_accumulateurs_et_de_piles_electriques
+  - textile_cuir_chaussures
+  - industries_du_bois
+  - industrie_du_meuble_et_de_menuiserie
+  - industrie_du_liege
+  - industries_des_materiaux_de_construction
+  - industrie_de_verrerie
+  - industrie_de_la_ceramique
+  - autres_industries_manufacturieres
+  - industries_chimiques
+  - batiment_et_travaux_publics
+  - activites_annexes_du_btp
+  - construction_et_reparation navale
+  - activites_liees_aux_constructions_et_reparations_navales
+  - transport_et_manutention
+  - auto_ecole
+  - industries_extractives
+  - location_de_la main_d_oeuvre_pour_les_services_administratifs
+  - gardiennage
+  - location_de_main_d_oeuvre_hors_services_administratifs_gardiennage
+  - hotellerie
+  - agence_de_voyage
+  - concessionnaires_automobiles
+  - location_de_voiture_et_d_equipements
+  - activites_sportives

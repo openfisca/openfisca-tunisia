@@ -1,0 +1,9 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur du transport et de la manutention
+metadata:
+  order:
+  - transports_terrestres
+  - transports_maritimes
+  - transports_aeriens
+  - manutention_et_entreposage
+
+  short_label: Transport et manutention

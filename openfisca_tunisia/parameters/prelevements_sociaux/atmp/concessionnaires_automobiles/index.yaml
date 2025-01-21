@@ -1,0 +1,7 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour les concessionnaires automobiles
+metadata:
+  order:
+  - avec_atelier_de_reparation
+  - sans_atelier_de_reparation
+
+  short_label: Concessionnaires automobiles

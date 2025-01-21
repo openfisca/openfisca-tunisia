@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des activités annexes au secteur du bâtiment et travaux publics
+metadata:
+  order:
+  - installation_de menuiserie_bois_métallique_et_serrurerie
+  - plomberie_et_installation_equipements_thermiques_et_climatisation
+  - travaux_peinture_et_vitrerie
+  - realisation_charpentes_et_couvertures
+  - installation_electrique
+  - autres_travaux_installation_et_finition
+
+  short_label: Activités annexes au secteur du bâtiment et travaux publics

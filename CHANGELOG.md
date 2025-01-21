@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.43 - [#187](https://github.com/openfisca/openfisca-tunisia/pull/187)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/atmp`.
+* Détails :
+  - Ajoute les paramètres ATMP
+
+
 ## 0.42 - [#186](https://github.com/openfisca/openfisca-tunisia/pull/186)
 
 * Évolution du système socio-fiscal.

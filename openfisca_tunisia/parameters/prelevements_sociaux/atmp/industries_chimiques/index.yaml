@@ -1,0 +1,21 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur des industries chimiques
+metadata:
+  order:
+  - industries_chimiques_minerales
+  - fabrication_produits_minéraux_divers
+  - fabrication_engrais_et_industries_de_l_azote
+  - industrie_de_la_synthese_organique
+  - fabrication_de_produits_pharmaceutiques
+  - fabrication_de_peintures_vernis_pigments_broyes
+  - fabrication_des_produits_insecticides_et_anticyptogramiques
+  - fabrication_explosifs_industriels_accessoires_de_mises_a_feu_et_artifices
+  - forage_de_petrole
+  - fabrication_de_gaz_industriels
+  - raffinage_de_petrole
+  - fabrication_des_derives_du_petrole
+  - fabrication_de_caoutchouc_et_d_ouvrages_en_caoutchouc
+  - fabrication_d_ouvrage_en_matiere_plastique_et_de_la_mousse
+  - fabrication_de_savons_de_parfums_et_de_produits_d_entretien
+  - autres_industries_chimiques
+
+  short_label: Industries chimiques

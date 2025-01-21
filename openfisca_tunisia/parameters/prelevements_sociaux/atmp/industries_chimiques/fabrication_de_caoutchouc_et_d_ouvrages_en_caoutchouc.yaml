@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de la fabrication de caoutchouc et d'ouvrages en caoutchouc
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.021
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Fabrication de caoutchouc et d'ouvrages en caoutchouc

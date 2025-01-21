@@ -1,0 +1,11 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour l'industrie du tabac
+brackets:
+- rate:
+    2004-08-01:
+      value: 0.016
+  threshold:
+    2004-08-01:
+      value: 0
+metadata:
+  unit: /1
+  short_label: Industrie du tabac

@@ -1,0 +1,5 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur du commerce
+metadata:
+  order:
+  - commerce_de_gros
+  - commerce_de_detail

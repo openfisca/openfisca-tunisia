@@ -1,0 +1,7 @@
+description: Cotisation pour les accidents du travail et les maladie professionelles pour les agences de voyage
+metadata:
+  order:
+  - categorie_a
+  - categorie_b
+
+  short_label: Agences de voyage
