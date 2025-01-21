@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.44 - [#188](https://github.com/openfisca/openfisca-tunisia/pull/188)
+
+* Changement mineur.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/prelevements_sociaux/atmp`.
+* Détails :
+  - Correction des labels
+
 ## 0.43 - [#187](https://github.com/openfisca/openfisca-tunisia/pull/187)
 
 * Amélioration technique.
