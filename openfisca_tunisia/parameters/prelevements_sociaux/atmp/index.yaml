@@ -1,4 +1,4 @@
-description: Cotisation pour_les_accidents_du_travail et_les_maladie_professionelles
+description: Cotisation pour les accidents du travail et les maladies professionelles
 metadata:
   order:
   - services_de_bureaux
@@ -38,3 +38,4 @@ metadata:
   - concessionnaires_automobiles
   - location_de_voiture_et_d_equipements
   - activites_sportives
+  short_label: Cotisations ATMP
