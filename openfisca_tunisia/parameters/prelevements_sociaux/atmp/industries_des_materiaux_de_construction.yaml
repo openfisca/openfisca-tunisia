@@ -7,5 +7,6 @@ brackets:
     2004-08-01:
       value: 0
 metadata:
-  unit: /1
+  rate_unit: /1
+  threshold_unit: currency
   short_label: Industries des matériaux de construction
