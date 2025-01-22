@@ -31,7 +31,7 @@ brackets:
     2017-01-01:
       value: 0.28
     2025-01-01:
-      value: .25
+      value: 0.25
 - threshold:
     1990-01-01:
       value: 10000
@@ -45,7 +45,7 @@ brackets:
     2017-01-01:
       value: 0.32
     2025-01-01:
-      value: .30
+      value: 0.3
 - threshold:
     1990-01-01:
       value: 20000
@@ -59,33 +59,34 @@ brackets:
     2017-01-01:
       value: 0.35
     2025-01-01:
-      value: .33
+      value: 0.33
 - threshold:
     2025-01-01:
       value: 40000
   rate:
     2025-01-01:
-      value: .36
+      value: 0.36
 - threshold:
     2025-01-01:
       value: 50000
   rate:
     2025-01-01:
-      value: .38
+      value: 0.38
 - threshold:
     2025-01-01:
       value: 70000
   rate:
     2025-01-01:
-      value: .40
+      value: 0.4
 metadata:
+  label_en: Tax scale
   reference:
-    2025-01-01:
-      - title: Loi 2024-48 du 9 décembre 2024 portant loi de finances pour 2025
-        href: https://facture-tunisie.com/411/fr/38/reglementations/principales-dispositions-du-projet-de-la-loi-de-finances-2025
     2017-01-01:
       href: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
+    2025-01-01:
+      title: Loi 2024-48 du 9 décembre 2024 portant loi de finances pour 2025
+      href: https://facture-tunisie.com/411/fr/38/reglementations/principales-dispositions-du-projet-de-la-loi-de-finances-2025
+  official_journal_date:
+    2025-01-01: "2024-12-10"
   rate_unit: /1
   threshold_unit: currency
-  official_journal_date:
-    2025-01-01: '2024-12-10'
