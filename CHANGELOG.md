@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.45 - [#190](https://github.com/openfisca/openfisca-tunisia/pull/190)
+
+* Changement mineur.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/atmp`.
+* Détails :
+  - Corrige les unités
+
 ## 0.44 - [#188](https://github.com/openfisca/openfisca-tunisia/pull/188)
 
 * Changement mineur.
