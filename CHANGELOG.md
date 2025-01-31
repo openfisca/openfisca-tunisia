@@ -1,13 +1,5 @@
 # Changelog
 
-### 0.45.1 - [#191](https://github.com/openfisca/openfisca-tunisia/pull/191)
-
-* Changement mineur.
-* Périodes concernées : toutes.
-* Zones impactées : `parameters/atmp`.
-* Détails :
-  - Corrige le taux de l'auto-école
-
 ## 0.45 - [#190](https://github.com/openfisca/openfisca-tunisia/pull/190)
 
 * Changement mineur.
