@@ -27,7 +27,6 @@
     one: Smig
     other: Smigs
   # parameter: marche_travail.salaire_minimum.smig.
-  ratio: true
 - name: trimestre
   label:
     one: trimestre

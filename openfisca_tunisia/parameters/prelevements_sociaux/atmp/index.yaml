@@ -1,4 +1,4 @@
-description: Cotisation pour les accidents du travail et les maladies professionelles
+description: Cotisation des employeurs affiliés à la CNSS pour les accidents du travail et les maladies professionelles
 metadata:
   order:
   - services_de_bureaux
@@ -38,4 +38,11 @@ metadata:
   - concessionnaires_automobiles
   - location_de_voiture_et_d_equipements
   - activites_sportives
-  short_label: Cotisations ATMP
+  short_label: Cotisations employeur ATMP
+  note: La date d'effet des dispositions du décret n°99-1010 du 10 mai 1999 est portée au 1er avril 1999
+  reference:
+    1999-04-01:
+      title: Décret n°99-1010 du 10 mai 1999, relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles
+      href: https://www.pist.tn/jort/1999/1999F/Jo04099.pdf
+  official_journal_date:
+    1999-04-01: "1999-05-18"
