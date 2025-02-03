@@ -14,7 +14,7 @@ class salaire_unique(Variable):
     label = 'Indicatrice de salaire unique'
     definition_period = YEAR
 
-    def formula(individu, period):
+    def formula(menage, period):
         salaire_imposable_personne_de_reference = menage.personne_de_reference('salaire_imposable', period = period)
         salaire_imposable_conjoint = menage.conjoint('salaire_imposable', period = period)
         return xor_(salaire_imposable_personne_de_reference > 0, salaire_imposable_conjoint > 0)
@@ -42,8 +42,9 @@ class prestations_familiales_enfant_a_charge(Variable):
     # locales.
 
     def formula(individu, period, parameters):
+        # TODO à retravailler
         # age = individu('age', period)
-        invalide = individu('invalide', period)
+        handicap = individu('handicap', period) 
         est_enfant = individu.has_role(Menage.ENFANT)
 
         condition_enfant = (
@@ -54,7 +55,7 @@ class prestations_familiales_enfant_a_charge(Variable):
             # (age_individu <= 21) * etudiant ou soeur au foyer
             )
 
-        return (condition_enfant + condition_jeune_etudiant + invalide) * est_enfant
+        return (condition_enfant + condition_jeune_etudiant + handicap) * est_enfant
 
 
 class af_nbenf(Variable):
