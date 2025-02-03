@@ -49,9 +49,9 @@ class nb_infirme(Variable):
         TODO: Nombre d'enfants infirmes
         '''
         age = foyer_fiscal.members('age', period = period)
-        invalide = foyer_fiscal.members('invalide', period = period)
+        handicap = foyer_fiscal.members('handicap', period = period)
 
-        return 0 * age * invalide
+        return 0 * age * handicap
 
 
 class nb_parents(Variable):

@@ -12,8 +12,9 @@ class amen_social_presence_handicap_lourd(Variable):
 
 class amen_social_pas_d_achat_onereux(Variable):
     value_type = bool
+    default_value = True
     entity = Menage
-    label = 'Ménage comprenant un membre avec un handicap lourd'
+    label = "Ménage n'ayant pas fait d'achat onéreux"
     definition_period = ETERNITY
     # Critères primaires du décret 2020-317 du 19 mai 2020
     # Ni le chef du ménage ni aucun membre de son ménage n’a effectué une transaction d’achat
@@ -24,8 +25,9 @@ class amen_social_pas_d_achat_onereux(Variable):
 
 class amen_social_pas_de_residence_secondaire(Variable):
     value_type = bool
+    default_value = True
     entity = Menage
-    label = 'Ménage comprenant un membre avec un handicap lourd'
+    label = 'Ménage ne possédant pas de résidence secondaire'
     definition_period = ETERNITY
     # Critères primaires du décret 2020-317 du 19 mai 2020
     # Le ménage n’est pas propriétaire d’un logement secondaire
@@ -79,7 +81,7 @@ class amen_social_eligible(Variable):
             revenu_menage <= select(conditions_avec_handicap, valeurs_choisies_avec_handicap),
             revenu_menage <= select(conditions_sans_handicap, valeurs_choisies_sans_handicap)
             )
-        return pas_d_achat_onereux + pas_de_residence_secondaire + critere_revenu
+        return pas_d_achat_onereux * pas_de_residence_secondaire * critere_revenu
 
 
 class transfert_monetaire_permanent_eligible(Variable):
@@ -127,11 +129,11 @@ class amen_social_enfants_a_charge(Variable):
         # Les enfants sont considérés comme elève dès 6 ans  (pris quand ?)
         # eleve = menage.members('eleve', period.this_year)
         etudiant = menage.members('etudiant', period.this_year)
-        invalide = menage.members('invalide', period.this_year)
+        handicap = menage.members('handicap', period.this_year) == 3
         amen_social = parameters(period).prestations.non_contributives.amen_social.supplements
         condition_enfant = (age >= 6) * (age <= amen_social.limite_age_enfant)  # * eleve
         condition_jeune_etudiant = (age <= amen_social.limite_age_etudiant) * etudiant
-        enfant_a_charge = condition_enfant + condition_jeune_etudiant + invalide
+        enfant_a_charge = condition_enfant + condition_jeune_etudiant + handicap
         return menage.sum(1 * enfant_a_charge, role = Menage.ENFANT)
 
 
@@ -143,11 +145,11 @@ class amen_social_enfants_handicapes_a_charge(Variable):
 
     def formula_2020(menage, period, parameters):
         age = menage.members('age', period)
-        invalide = menage.members('invalide', period.this_year)
+        handicap = menage.members('handicap', period.this_year) == 3
         amen_social = parameters(period).prestations.non_contributives.amen_social.supplements
         condition_enfant = (age >= 6) * (age <= amen_social.limite_age_enfant)
         condition_jeune_etudiant = (age <= amen_social.limite_age_etudiant)
-        enfant_a_charge_handicape = (condition_enfant + condition_jeune_etudiant) * invalide
+        enfant_a_charge_handicape = (condition_enfant + condition_jeune_etudiant) * handicap
         return menage.sum(enfant_a_charge_handicape, role = Menage.ENFANT)
 
 
@@ -164,7 +166,7 @@ class transfert_monetaire_permanent(Variable):
         enfants_a_charge = menage('amen_social_enfants_a_charge', period)
         enfants_handicapes_a_charge = menage('amen_social_enfants_handicapes_a_charge', period)
         tmp = eligible * (
-            amen_socialallocation_base
+            amen_social.allocation_base
             + enfants_a_charge * supplements.amen_social_enfants_a_charge
             + enfants_handicapes_a_charge * supplements.amen_social_enfants_a_charge * supplements.handicap
             )

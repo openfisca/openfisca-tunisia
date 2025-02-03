@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.46 - [#191](https://github.com/openfisca/openfisca-tunisia/pull/191)
+
+* Évolution du système socio-fiscal. .
+* Périodes concernées : toutes.
+* Zones impactées : `variables/caracteristiques_socio_demographiques/handicap.py`.
+* Détails :
+  - Introduit un niveau de handicap
+
 ## 0.45 - [#190](https://github.com/openfisca/openfisca-tunisia/pull/190)
 
 * Changement mineur.
