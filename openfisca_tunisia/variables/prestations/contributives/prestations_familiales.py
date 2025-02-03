@@ -44,7 +44,7 @@ class prestations_familiales_enfant_a_charge(Variable):
     def formula(individu, period, parameters):
         # TODO à retravailler
         # age = individu('age', period)
-        handicap = individu('handicap', period) 
+        handicap = individu('handicap', period)
         est_enfant = individu.has_role(Menage.ENFANT)
 
         condition_enfant = (
