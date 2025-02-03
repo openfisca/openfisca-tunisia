@@ -81,7 +81,7 @@ class amen_social_eligible(Variable):
             revenu_menage <= select(conditions_avec_handicap, valeurs_choisies_avec_handicap),
             revenu_menage <= select(conditions_sans_handicap, valeurs_choisies_sans_handicap)
             )
-        return pas_d_achat_onereux + pas_de_residence_secondaire + critere_revenu
+        return pas_d_achat_onereux * pas_de_residence_secondaire * critere_revenu
 
 
 class transfert_monetaire_permanent_eligible(Variable):
