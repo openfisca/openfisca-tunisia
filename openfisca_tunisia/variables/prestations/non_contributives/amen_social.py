@@ -47,7 +47,7 @@ class amen_social_eligible(Variable):
         # Citère du revenu selon présence ou non de handicap lourd
         presence_handicap_lourd = menage('amen_social_presence_handicap_lourd', period)
         taille_menage = menage.nb_persons()
-        revenu_menage = menage.sum(menage.members('salaire_net_a_payer', period))   # Corriger les revenus
+        revenu_menage = menage('amen_social_revenu', period)
         seuil_de_revenu = parameters(period).prestations.non_contributives.amen_social.eligibilite
         smig_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
         conditions_sans_handicap = [
@@ -83,6 +83,19 @@ class amen_social_eligible(Variable):
             )
         return pas_d_achat_onereux * pas_de_residence_secondaire * critere_revenu
 
+
+class amen_social_revenu(Variable):
+    value_type = bool
+    entity = Menage
+    label = 'Revenu du ménage au sens du programme Amen social'
+    definition_period = MONTH
+
+    def formula_2020(menage, period, parameters):
+        revenu_menage = (
+            menage.sum(menage.members('salaire_net_a_payer', period))
+            + menage.sum(menage.members('pension_de_retraite', period))
+            )
+        return revenu_menage
 
 class transfert_monetaire_permanent_eligible(Variable):
     value_type = bool
