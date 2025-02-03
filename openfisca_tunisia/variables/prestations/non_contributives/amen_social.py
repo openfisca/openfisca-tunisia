@@ -12,7 +12,7 @@ class amen_social_presence_handicap_lourd(Variable):
 
 class amen_social_pas_d_achat_onereux(Variable):
     value_type = bool
-    defautl_value = True
+    default_value = True
     entity = Menage
     label = "Ménage n'ayant pas fait d'achat onéreux"
     definition_period = ETERNITY
@@ -25,7 +25,7 @@ class amen_social_pas_d_achat_onereux(Variable):
 
 class amen_social_pas_de_residence_secondaire(Variable):
     value_type = bool
-    defautl_value = True
+    default_value = True
     entity = Menage
     label = 'Ménage ne possédant pas de résidence secondaire'
     definition_period = ETERNITY
