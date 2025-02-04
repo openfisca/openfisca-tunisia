@@ -97,6 +97,7 @@ class amen_social_revenu(Variable):
             )
         return revenu_menage
 
+
 class transfert_monetaire_permanent_eligible(Variable):
     value_type = bool
     entity = Menage
