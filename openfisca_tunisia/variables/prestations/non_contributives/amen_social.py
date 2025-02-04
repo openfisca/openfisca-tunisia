@@ -85,7 +85,7 @@ class amen_social_eligible(Variable):
 
 
 class amen_social_revenu(Variable):
-    value_type = bool
+    value_type = float
     entity = Menage
     label = 'Revenu du ménage au sens du programme Amen social'
     definition_period = MONTH
