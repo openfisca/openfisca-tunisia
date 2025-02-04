@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.47 - [#191](https://github.com/openfisca/openfisca-tunisia/pull/191)
+
+* Évolution du système socio-fiscal. .
+* Périodes concernées : toutes.
+* Zones impactées : `variables/prestations/non_contributives/amen_social.py`.
+* Détails :
+  - Introduit `amen_social_revenu`
+
 ## 0.46 - [#191](https://github.com/openfisca/openfisca-tunisia/pull/191)
 
 * Évolution du système socio-fiscal. .

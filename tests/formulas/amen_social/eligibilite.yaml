@@ -89,10 +89,15 @@
         date_naissance: 2015-01-01
         eleve:
           2022: true
+      enfant3:
+        date_naissance: 2020-01-01
+        eleve:
+          2022: true
     menage:
       personne_de_reference: parent1
       enfants:
         - enfant1
         - enfant2
+        - enfant3
   output:
     amen_social_eligible: false
