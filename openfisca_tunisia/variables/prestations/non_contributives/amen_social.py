@@ -8,6 +8,7 @@ class amen_social_presence_handicap_lourd(Variable):
     definition_period = MONTH
     # Critères primaires du décret 2020-317 du 19 mai 2020
     # Handicap de niveau 3
+
     def formula_2020(menage, period, parameters):
         return menage.sum(menage.members('handicap', period) >= 3)
 
