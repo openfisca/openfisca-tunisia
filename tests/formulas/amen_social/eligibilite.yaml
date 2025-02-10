@@ -103,7 +103,7 @@
     amen_social_eligible: false
 
 
-- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022 dont un handicapé
+- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022 dont un handicapé lourd
   period: 2022-02
   relative_error_margin: 0.01
   input:
@@ -132,10 +132,11 @@
         - enfant2
         - enfant3
   output:
+    amen_social_presence_handicap_lourd: true
     amen_social_eligible: true
 
 
-- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022 dont un handicapé
+- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022 dont un handicapé intermédiaire
   period: 2022-02
   relative_error_margin: 0.01
   input:
@@ -164,10 +165,11 @@
         - enfant2
         - enfant3
   output:
+    amen_social_presence_handicap_lourd: false
     amen_social_eligible: false
 
 
-- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022 dont un handicapé
+- name: Eligibilité au programe Amen social 3 enfants 1000 DT en 2022 dont un handicapé lourd
   period: 2022-02
   relative_error_margin: 0.01
   input:
@@ -196,4 +198,5 @@
         - enfant2
         - enfant3
   output:
+    amen_social_presence_handicap_lourd: true
     amen_social_eligible: false
