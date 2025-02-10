@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.48 - [#192](https://github.com/openfisca/openfisca-tunisia/pull/192)
+## 0.48 - [#193](https://github.com/openfisca/openfisca-tunisia/pull/193)
 
 * Évolution du système socio-fiscal. .
 * Périodes concernées : toutes.
