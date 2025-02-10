@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.48 - [#192](https://github.com/openfisca/openfisca-tunisia/pull/192)
+
+* Évolution du système socio-fiscal. .
+* Périodes concernées : toutes.
+* Zones impactées : `variables/prestations/non_contributives/amen_social.py`.
+* Détails :
+  - Calcule `amen_social_presence_handicap_lourd`
+
 ## 0.47 - [#191](https://github.com/openfisca/openfisca-tunisia/pull/191)
 
 * Évolution du système socio-fiscal. .
