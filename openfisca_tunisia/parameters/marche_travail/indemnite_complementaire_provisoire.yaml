@@ -3,6 +3,9 @@ values:
   1981-04-07:
     value: 10
 metadata:
+  short_label: ICP
+  label_en: Provisional Supplementary Allowance (ICP) - amount per month
+  short_label_en: ICP
   unit: currency
   reference:
     1981-04-07:
