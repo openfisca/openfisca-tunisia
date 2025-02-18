@@ -22,6 +22,8 @@ brackets:
       value: 0.078
     2009-07-01:
       value: 0.082
+    2020-01-01:
+      value: 0.092
 metadata:
   rate_unit: /1
   threshold_unit: currency
