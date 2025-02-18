@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.49 - [#197](https://github.com/openfisca/openfisca-tunisia/pull/197)
+
+* Évolution du système socio-fiscal. .
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/salarie_cnrps`.
+* Détails :
+  - Mise à jour des taux des cotisations retraite
+
 ## 0.48 - [#193](https://github.com/openfisca/openfisca-tunisia/pull/193)
 
 * Évolution du système socio-fiscal. .
