@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.50 - [#198](https://github.com/openfisca/openfisca-tunisia/pull/198)
+
+* Changement mineur.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/salarie_cnrps`.
+* Détails :
+  - Ajoute une référence législaltive pour les cotisations retraite
+
 ## 0.49 - [#197](https://github.com/openfisca/openfisca-tunisia/pull/197)
 
 * Évolution du système socio-fiscal. .
