@@ -27,3 +27,9 @@ brackets:
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    2020-01-01:
+      - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi n°85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
+        href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
+  official_journal_date:
+    2020-01-01: '2019-04-30'
