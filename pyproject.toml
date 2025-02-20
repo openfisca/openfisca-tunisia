@@ -1,6 +1,6 @@
 [project]
 name = "OpenFisca-Tunisia"
-version = "0.49"
+version = "0.50"
 description = "OpenFisca Rules as Code model for Tunisia."
 readme = "README.md"
 keywords = ["microsimulation", "tax", "benefit", "rac", "rules-as-code", "tunisia"]
