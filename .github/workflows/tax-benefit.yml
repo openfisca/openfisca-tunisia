@@ -117,7 +117,7 @@ jobs:
       - name: Generate DBnomics JSON data
         run: |
           npm install
-          npx tsx src/scripts/convert_raw_parameters_to_dbnomics.ts -p ../../../openfisca_tunisia/parameters/ --units ../../../openfisca_tunisia/units.yaml ../../../openfisca-tunisia-json-data/
+          npx tsx src/scripts/convert_raw_parameters_to_dbnomics.ts -p ../../../openfisca_tunisia/parameters/ --target openfisca-tunisia --units ../../../openfisca_tunisia/units.yaml ../../../openfisca-tunisia-json-data/
         working-directory: openfisca-json-model/packages/tools
       - name: Generate DBnomics JSON data
         run: |
