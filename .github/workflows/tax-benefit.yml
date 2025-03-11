@@ -119,7 +119,7 @@ jobs:
           npm install
           npx tsx src/scripts/convert_raw_parameters_to_dbnomics.ts -p ../../../openfisca_tunisia/parameters/ --target openfisca-tunisia --units ../../../openfisca_tunisia/units.yaml ../../../openfisca-tunisia-json-data/
         working-directory: openfisca-json-model/packages/tools
-      - name: Generate DBnomics JSON data
+      - name: Commit & push DBnomics JSON data
         run: |
           git add .
           if git diff --staged --quiet; then
