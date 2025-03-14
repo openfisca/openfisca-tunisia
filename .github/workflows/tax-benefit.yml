@@ -33,8 +33,8 @@ jobs:
           # Customizations to apply to the site (theme, URLs…)
           CUSTOMIZATION="openfisca"
 
-          DBNOMICS_DATASET_CODE="openfisca_tunisia"
-          DBNOMICS_PROVIDER_CODE="OpenFisca"
+          DBNOMICS_DATASET_CODE="parameters"
+          DBNOMICS_PROVIDER_CODE="openfisca-tunisia"
           DBNOMICS_URL="https://db.nomics.world/"
 
           EDITOR_URL="https://editor.parameters.tn.tax-benefit.org/"
