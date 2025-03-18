@@ -12,7 +12,7 @@ class nb_enf(Variable):
         TODO: fixme
         '''
         age = foyer_fiscal.members('age', period = period.first_month)
-        famille = parameters(period.start).impot_revenu.deductions.fam
+        famille = parameters(period.start).impot_revenu.deductions.famille
         # res =+ (
         #    (ag < 20) +
         #    (ag < 25)*not_(boursier)*()
@@ -179,11 +179,16 @@ class deduction_famille(Variable):
         chef_de_famille = foyer_fiscal('chef_de_famille', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
         # nb_parents = foyer_fiscal('nb_parents', period = period)
-        fam = parameters(period.start).impot_revenu.deductions.fam
+        famille = parameters(period.start).impot_revenu.deductions.famille
         #  chef de famille
-        chef_de_famille = fam.chef_de_famille * chef_de_famille
+        chef_de_famille = famille.chef_de_famille * chef_de_famille
 
-        enf = (nb_enf >= 1) * fam.enf1 + (nb_enf >= 2) * fam.enf2 + (nb_enf >= 3) * fam.enf3 + (nb_enf >= 4) * fam.enf4
+        enf = (
+            (nb_enf >= 1) * famille.enf1
+            + (nb_enf >= 2) * famille.enf2
+            + (nb_enf >= 3) * famille.enf3
+            + (nb_enf >= 4) * famille.enf4
+            )
 
         #    sup = P.enf_sup * nb_enf_sup
         #    infirme = P.infirme * nb_infirme
