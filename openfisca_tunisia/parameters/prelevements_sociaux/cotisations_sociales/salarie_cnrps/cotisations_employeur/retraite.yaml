@@ -28,6 +28,8 @@ brackets:
       value: 0.115
     2011-07-01:
       value: 0.125
+    2019-05-01:
+      value: 0.145
 metadata:
   rate_unit: /1
   threshold_unit: currency

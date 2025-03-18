@@ -33,8 +33,8 @@ jobs:
           # Customizations to apply to the site (theme, URLs…)
           CUSTOMIZATION="openfisca"
 
-          DBNOMICS_DATASET_CODE="openfisca_tunisia"
-          DBNOMICS_PROVIDER_CODE="OpenFisca"
+          DBNOMICS_DATASET_CODE="parameters"
+          DBNOMICS_PROVIDER_CODE="openfisca-tunisia"
           DBNOMICS_URL="https://db.nomics.world/"
 
           EDITOR_URL="https://editor.parameters.tn.tax-benefit.org/"
@@ -93,3 +93,41 @@ jobs:
       python_package: "openfisca_tunisia"
     secrets:
       token: ${{ secrets.CONTROL_CENTER_TOKEN }}
+
+  dbnomics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure ssh for DBnomics openfisca-tunisia-json-data
+        uses: tanmancan/action-setup-ssh-agent-key@1.0.0
+        with:
+          ssh-auth-sock: /tmp/my_auth.sock
+          ssh-private-key: ${{ secrets.DBNOMICS_SSH_PRIVATE_KEY }}
+          ssh-public-key: ${{ secrets.DBNOMICS_SSH_KNOWN_HOSTS }}
+      - name: Clone DBnomics openfisca-tunisia-json-data
+        run: git clone git@git.nomics.world:dbnomics-json-data/openfisca-tunisia-json-data.git
+      - name: Clone @tax-benefit/openfisca-json-model
+        run: git clone https://git.en-root.org/tax-benefit/openfisca-json-model.git
+      - name: Install @tax-benefit/openfisca-json-model library.
+        run: |
+          npm install
+          npm run build
+        working-directory: openfisca-json-model/packages/lib
+      - name: Generate DBnomics JSON data
+        run: |
+          npm install
+          npx tsx src/scripts/convert_raw_parameters_to_dbnomics.ts -p ../../../openfisca_tunisia/parameters/ --target openfisca-tunisia --units ../../../openfisca_tunisia/units.yaml ../../../openfisca-tunisia-json-data/
+        working-directory: openfisca-json-model/packages/tools
+      - name: Commit & push DBnomics JSON data
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+          git config user.email "tunisia@openfisca.org"
+          git config user.name "OpenFisca-Tunisia"
+          git commit -m "Mise à jour des paramètres d'OpenFisca-Tunisia"
+            git push
+          fi
+        working-directory: openfisca-tunisia-json-data
