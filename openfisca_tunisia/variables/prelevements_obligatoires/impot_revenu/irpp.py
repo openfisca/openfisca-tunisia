@@ -48,7 +48,6 @@ class nb_infirme(Variable):
         '''
         Nombre d'enfants infirmes
         '''
-        age = foyer_fiscal.members('age', period = period)
         infirme = foyer_fiscal.members('handicap', period = period) >= 3
 
         return foyer_fiscal.sum(1 * infirme, role = FoyerFiscal.personne_a_charge)
