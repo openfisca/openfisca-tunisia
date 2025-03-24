@@ -22,6 +22,6 @@ from openfisca_tunisia.variables.base import *
 class handicap(Variable):
     value_type = int
     default_value = 0
-    label = 'Niveau de handicap (0-Néant, 1-Léger, 2-intermédiraire, 3-Lourd)'
+    label = 'Niveau de handicap (0-Néant, 1-Léger, 2-Intermédiraire, 3-Lourd)'
     entity = Individu
     definition_period = ETERNITY
