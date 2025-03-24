@@ -50,7 +50,7 @@ class nb_infirme(Variable):
         '''
         infirme = foyer_fiscal.members('handicap', period = period) >= 3
 
-        return foyer_fiscal.sum(1 * infirme, role = FoyerFiscal.personne_a_charge)
+        return foyer_fiscal.sum(1 * infirme, role = FoyerFiscal.PERSONNE_A_CHARGE)
 
 
 class nb_parents(Variable):
@@ -177,11 +177,13 @@ class deduction_famille(Variable):
         # rng = foyer_fiscal('rng', period = period)
         chef_de_famille = foyer_fiscal('chef_de_famille', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
-        # nb_parents = foyer_fiscal('nb_parents', period = period)
+        nb_infirme = foyer_fiscal('nb_infirme', period = period)
         famille = parameters(period.start).impot_revenu.deductions.famille
         #  chef de famille
         chef_de_famille = famille.chef_de_famille * chef_de_famille
 
+        infirme = famille.infirme * nb_infirme
+        nb_enf = max_(nb_enf - nb_infirme, 0)
         enf = (
             (nb_enf >= 1) * famille.enf1
             + (nb_enf >= 2) * famille.enf2
@@ -190,11 +192,11 @@ class deduction_famille(Variable):
             )
 
         #    sup = P.enf_sup * nb_enf_sup
-        #    infirme = P.infirme * nb_infirme
-        #    parent = min_(P.parent_taux * rng, P.parent_max)
 
+        #    parent = min_(P.parent_taux * rng, P.parent_max)
         #    return chef_de_famille + enf + sup + infirme + parent
-        res = chef_de_famille + enf
+
+        res = chef_de_famille + enf + infirme
         return res
 
 
