@@ -46,12 +46,12 @@ class nb_infirme(Variable):
 
     def formula(foyer_fiscal, period):
         '''
-        TODO: Nombre d'enfants infirmes
+        Nombre d'enfants infirmes
         '''
         age = foyer_fiscal.members('age', period = period)
-        handicap = foyer_fiscal.members('handicap', period = period)
+        infirme = foyer_fiscal.members('handicap', period = period) >= 3
 
-        return 0 * age * handicap
+        return foyer_fiscal.sum(1 * infirme, role = FoyerFiscal.personne_a_charge)
 
 
 class nb_parents(Variable):
@@ -62,11 +62,11 @@ class nb_parents(Variable):
 
     def formula(foyer_fiscal, period):
         '''
-        TODO: Nombre de parents
+        Nombre de parents
         '''
         return (
             (foyer_fiscal.declarant_principal('age', period) > 20)
-            + (foyer_fiscal.declarant_principal('age', period) > 20)
+            + (foyer_fiscal.conjoint('age', period) > 20)
             )
 
 
