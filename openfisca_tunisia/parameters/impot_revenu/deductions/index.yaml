@@ -1,1 +1,9 @@
 description: Déductions
+metadata:
+  order:
+  - famille
+  - assurance_vie
+  - banq
+  - cent
+  - epinv
+  - oblig

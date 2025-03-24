@@ -10,7 +10,7 @@ values:
     value: 1000
   2014-01-01:
     value: 1200
-  2018-01-01:
+  2017-01-01:
     value: 2000
 metadata:
   unit: currency
@@ -23,5 +23,7 @@ metadata:
       title: Article 40 de la loi no 2009-71 du 21-12-2009 portant Loi de finances 2010
     2014-01-01:
       title: Article 94 de la loi no 2013-54 du 30-12-2017 portant Loi de finances 2014
-    2018-01-01:
-      title: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. . Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf
+    2017-01-01:
+      - title: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. .
+      - title: Note commune 7/2018
+        href: https://jibaya.tn/docs/note-commune-numero-7-commentaire-des-dispositions-des-articles-54-et-55-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-au-r/
