@@ -5,14 +5,8 @@ on:
   - workflow_dispatch
 
 jobs:
-  validate_yaml:
-    uses: tax-benefit/actions/.github/workflows/validate_yaml.yml@v2.1.0
-    with:
-      parameters_path: "openfisca_tunisia/parameters"
-    secrets:
-      token: ${{ secrets.CONTROL_CENTER_TOKEN }}
-
   deploy_parameters:
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
 
     steps:
@@ -49,7 +43,7 @@ jobs:
           # Description of parameters remote repository
           PARAMETERS_AUTHOR_EMAIL="editor.parameters.tn@tax-benefit.org"
           PARAMETERS_AUTHOR_NAME="Éditeur des paramètres d'OpenFisca-Tunisia"
-          PARAMETERS_BRANCH="main"
+          PARAMETERS_BRANCH="master"
           PARAMETERS_FORGE_DOMAIN_NAME="github.com"
           PARAMETERS_FORGE_TYPE="GitHub"
           PARAMETERS_GROUP="openfisca"
