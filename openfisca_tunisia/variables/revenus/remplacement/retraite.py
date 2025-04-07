@@ -4,6 +4,22 @@ from openfisca_tunisia.variables.base import *
 # Pensions
 
 
+class pension_cnss(Variable):
+    value_type = float
+    label = 'Pension'
+    entity = Individu
+    definition_period = MONTH
+    set_input = set_input_divide_by_period
+
+
+class pension_cnrps(Variable):
+    value_type = float
+    label = 'Pension'
+    entity = Individu
+    definition_period = MONTH
+    set_input = set_input_divide_by_period
+
+
 class pension_de_retraite(Variable):
     value_type = float
     label = 'Pension'

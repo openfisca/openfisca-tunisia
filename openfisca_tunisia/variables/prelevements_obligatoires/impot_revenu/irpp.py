@@ -351,44 +351,6 @@ class irpp(Variable):
         return impot_revenu_brut * not_(exoneration)
 
 
-class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
-    value_type = float
-    entity = Individu
-    label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'
-    definition_period = MONTH
-
-    def formula_2011(foyer_fiscal, period):
-        revenu_assimile_salaire = individu('salaire_imposable', period = period)
-        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
-        smig = revenu_assimile_salaire <= smig_40h_mensuel
-        tspr = parameters(period.start).impot_revenu.tspr
-
-        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
-        revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire
-            - abattement_frais_professionnels
-            - min_(
-                smig * tspr.abattement_pour_salaire_minimum,
-                (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum
-                ),
-            0)
-        return revenu_assimile_salaire_apres_abattement
-
-    def formula(foyer_fiscal, period):
-        revenu_assimile_salaire = individu('salaire_imposable', period = period)
-        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
-        smig = revenu_assimile_salaire <= smig_40h_mensuel
-        tspr = parameters(period.start).impot_revenu.tspr
-        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
-        revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire
-            - abattement_frais_professionnels
-            - smig * tspr.abattement_pour_salaire_minimum,
-            0
-            )
-        return revenu_assimile_salaire_apres_abattement
-
-
 class irpp_salarie_preleve_a_la_source(Variable):
     value_type = float
     entity = Individu
