@@ -5,15 +5,7 @@ brackets:
       value: 0
   rate:
     1960-01-01:
-      value: 0.002275
-    2008-07-01:
-      value: 0.008575
-    2009-07-01:
-      value: 0.014875
-    2010-07-01:
-      value: 0.021175
-    2011-07-01:
-      value: 0.027475
+      value: 0.0006
 metadata:
   rate_unit: /1
   threshold_unit: currency

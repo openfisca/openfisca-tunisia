@@ -1,1 +1,9 @@
 description: Régime des salariés agricoles
+documentation: |-
+  Ce régime a été institué en 1970, pour couvrir les salariés employés 180 jours par an chez le même employeur contre les risques liés à la maladie, à la maternité et le décès.
+  Ce régime a été étendu en 1981 pour couvrir les risques liés à la vieillesse, à l'invalidité et à la survie.
+  Ce régime s'applique dorénavant aux travailleurs salariés et aux coopérateurs exerçant des activités considérées comme agricoles et employés 45 jours par trimestre chez le même employeur.
+  L'assiette de cotisation est forfaitaire. Elle est basée sur le salaire minimum agricole garanti rapporté à une durée de travail de 45 jours par trimestre, affecté d'un coefficient multiplicateur selon la spécialité du travailleur :
+  - ouvrier ordinaire : 1
+  - ouvrier spécialisé : 1,5
+  - ouvrier qualifié : 2

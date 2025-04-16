@@ -76,6 +76,11 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
             bareme = getattr(baremes_by_name, bareme_name)
 
         if bareme is not None:
+            if regime.name == 'rtfr':
+                smic = parameters(period.start).marche_travail.smig_40h_mensuel
+                bareme = bareme.multiply_thresholds(smic)
+                print(f'{bareme_name=}, {bareme=}')
+
             cotisation += bareme.calc(
                 assiette_cotisations_sociales * (regime_securite_sociale_cotisant == regime),
                 )
@@ -164,6 +169,7 @@ class cotisations_salarie(Variable):
             'maternite_salarie',
             'protection_sociale_travailleurs_salarie',
             'retraite_salarie',
+            'soin_salarie',
             'ugtt',
             ]
         return sum(individu(f'{cotisation}', period) for cotisation in cotisations_salarie)
@@ -405,6 +411,38 @@ class retraite_salarie(Variable):
             period,
             cotisation_type = 'salarie',
             bareme_name = 'retraite',
+            parameters = parameters
+            )
+
+
+class soin_employeur(Variable):
+    value_type = float
+    entity = Individu
+    label = 'Cotisation soin (employeur)'
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        return compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'soin',
+            parameters = parameters
+            )
+
+
+class soin_salarie(Variable):
+    value_type = float
+    entity = Individu
+    label = 'Cotisation soin (salarié)'
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        return compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'soin',
             parameters = parameters
             )
 

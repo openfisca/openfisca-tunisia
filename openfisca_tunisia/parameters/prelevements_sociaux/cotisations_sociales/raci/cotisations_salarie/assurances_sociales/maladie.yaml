@@ -1,21 +1,19 @@
 description: Assurance Maladie
 brackets:
 - threshold:
-    1981-01-01:
+    2003-01-01:
       value: 0
   rate:
-    1981-01-01:
-      value: 0.0023
+    2003-01-01:
+      value: 0.0304
     2007-07-01:
-      value: 0.0023
+      value: 0.0397
     2008-07-01:
-      value: 0.0086
+      value: 0.0490
     2009-07-01:
-      value: 0.0149
+      value: 0.0583
     2010-07-01:
-      value: 0.0212
-    2011-07-01:
-      value: 0.0275
+      value: 0.0675
 metadata:
   rate_unit: /1
   threshold_unit: currency
