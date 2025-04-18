@@ -79,7 +79,6 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
             if regime.name == 'rtfr':
                 smic = parameters(period.start).marche_travail.smig_40h_mensuel
                 bareme = bareme.multiply_thresholds(smic)
-                print(f'{bareme_name=}, {bareme=}')
 
             cotisation += bareme.calc(
                 assiette_cotisations_sociales * (regime_securite_sociale_cotisant == regime),
