@@ -200,3 +200,64 @@
   output:
     amen_social_presence_handicap_lourd: true
     amen_social_eligible: false
+
+
+- name: Eligibilité au programe Amen social cas Cres
+  period: 2024-01
+  relative_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1960-01-01
+        handicap:
+          2024: 3
+      parent2:
+        date_naissance: 1962-01-01
+        salaire_de_base: 14074 / 12  # 1172.833
+        regime_securite_sociale_cotisant: 'salarie_cnrps'
+      enfant1:
+        date_naissance: 1992-01-01
+        eleve:
+          2024: true
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - enfant1
+  output:
+    deduction_famille:
+      2024: 0
+    assiette_cotisations_sociales: [0, 1172.833, 0]
+    salaire_imposable: [0, 1020.951, 0]
+    # salaire_net_a_payer: 863 selon CRES mais pas abattement de 10%
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: false
+
+
+- name: Eligibilité au programe Amen social
+  period: 2024-01
+  absolute_error_margin: 0.1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1979-01-01
+      enfant1:
+        date_naissance: 2003-01-01
+        salaire_de_base: 8_129_629 / 1000 / 12  # = 677.469
+        regime_securite_sociale_cotisant: 'rsna'
+      enfant2:
+        date_naissance: 2000-01-01
+        salaire_de_base: 16_405_245 / 1000 / 12  # 1367.103
+        regime_securite_sociale_cotisant: 'rsna'
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    assiette_cotisations_sociales: [0, 677.469, 1367.103]
+    # salaire_imposable: [0, 563.639, 10027.120]
+    # salaire_net_a_payer: [0, 563.639, 1027.120]  # 863 selon CRES mais pas abattement de 10%
+    salaire_net_a_payer: [0, 578.950, 1055.898]  # Selon Mongi Hmidi, TODO: Erreur de 2 DT
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: false
