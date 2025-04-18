@@ -6,7 +6,7 @@ on:
     types: [opened, reopened]
 
 env:
-  DEFAULT_PYTHON_VERSION: '3.10.6'
+  DEFAULT_PYTHON_VERSION: '3.10.11'
 
 jobs:
   build:
@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        os: ["ubuntu-20.04"]  # On peut ajouter "macos-latest" si besoin
-        python-version: ["3.9.9", "3.10.6"]
+        os: ["ubuntu-24.04"]  # On peut ajouter "macos-latest" si besoin
+        python-version: ["3.9.12", "3.10.11"]
         openfisca-dependencies: [minimal, maximal]
     steps:
       - name: Checkout
@@ -47,7 +47,7 @@ jobs:
           key: release-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-${{ matrix.os }}-${{ matrix.openfisca-dependencies }}
 
   lint-files:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         dependencies-version: [maximal]
@@ -65,7 +65,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-24.04-${{ matrix.dependencies-version }}
       - run: make check-syntax-errors
       - run: make check-style
       - name: Lint Python files
@@ -79,8 +79,8 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        os: [ "ubuntu-20.04" ]  # On peut ajouter "macos-latest" si besoin
-        python-version: ["3.9.9", "3.10.6"]
+        os: [ "ubuntu-24.04" ]  # On peut ajouter "macos-latest" si besoin
+        python-version: ["3.9.12", "3.10.11"]
         openfisca-dependencies: [minimal, maximal]
     steps:
       - uses: actions/checkout@v4
@@ -97,10 +97,10 @@ jobs:
       - run: |
           shopt -s globstar
           openfisca test --country-package openfisca_tunisia tests/**/*.py
-        if: matrix.openfisca-dependencies != 'minimal' || matrix.python-version != '3.9.9'
+        if: matrix.openfisca-dependencies != 'minimal' || matrix.python-version != '3.9.12'
 
   test-path-length:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -111,7 +111,7 @@ jobs:
         run: make check-path-length
 
   test-yaml:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs: [ build ]
     strategy:
       fail-fast: false
@@ -133,7 +133,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.openfisca-dependencies }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-24.04-${{ matrix.openfisca-dependencies }}
       - name: Split YAML tests
         id: yaml-test
         env:
@@ -146,7 +146,7 @@ jobs:
           openfisca test --country-package openfisca_tunisia ${TEST_FILES_SUBLIST}
 
   test-api:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         dependencies-version: [maximal]
@@ -162,12 +162,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-24.04-${{ matrix.dependencies-version }}
       - name: Test the Web API
         run: "${GITHUB_WORKSPACE}/.github/test-api.sh"
 
   check-version-and-changelog:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs: [ lint-files, test-python, test-yaml, test-api ] # Last job to run
     steps:
       - uses: actions/checkout@v4
@@ -184,8 +184,8 @@ jobs:
   # We build a separate job to substitute the halt option.
   # The `deploy` job is dependent on the output of the `check-for-functional-changes` job.
   check-for-functional-changes:
-    runs-on: ubuntu-20.04
-    if: github.ref == 'refs/heads/master' # Only triggered for the `master` or `main` branch
+    runs-on: ubuntu-24.04
+    if: github.ref == 'refs/heads/master' # Only triggered for the `master` branch
     needs: [ check-version-and-changelog ]
     outputs:
       status: ${{ steps.stop-early.outputs.status }}
@@ -201,7 +201,7 @@ jobs:
         run: if "${GITHUB_WORKSPACE}/.github/has-functional-changes.sh" ; then echo "::set-output name=status::success" ; fi
 
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         dependencies-version: [maximal]
@@ -223,13 +223,13 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.pythonLocation }}
-          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: build-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-24.04-${{ matrix.dependencies-version }}
       - name: Cache release
         id: restore-release
         uses: actions/cache@v4
         with:
           path: dist
-          key: release-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-20.04-${{ matrix.dependencies-version }}
+          key: release-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-${{ github.sha }}-ubuntu-24.04-${{ matrix.dependencies-version }}
       - name: Upload a Python package to PyPi
         run: twine upload dist/* --username $PYPI_USERNAME --password $PYPI_TOKEN
       - name: Publish a git tag
