@@ -14,8 +14,8 @@ class TypesRegimeSecuriteSocialeCotisant(Enum):
     re = "Régime des étudiants, diplômés de l'enseignement supérieur et stagiaires"
     rtfr = 'Régime des travailleurs à faibles revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)'
     raci = 'Régime des artistes, créateurs et intellectuels'
-    salarie_cnrps = 'Régime des salariés affilés à la Caisse nationale de retraite et de rrévoyance sociale (CNRPS)'
-    pensionne_cnrps = 'Régime des pensionnés affilés à la Caisse nationale de retraite et de rrévoyance sociale (CNRPS)'
+    salarie_cnrps = 'Régime des salariés affilés à la Caisse nationale de retraite et de prévoyance sociale (CNRPS)'
+    pensionne_cnrps = 'Régime des pensionnés affilés à la Caisse nationale de retraite et de prévoyance sociale (CNRPS)'
     neant = 'Néant'
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
@@ -53,11 +53,11 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     for regime in types_regime_securite_sociale_cotisant:
         if regime.name == 'neant':
             continue
-        if 'cotisations_{}'.format(cotisation_type) not in baremes_by_regime[regime.name]._children:
+        if f'cotisations_{cotisation_type}' not in baremes_by_regime[regime.name]._children:
             continue
         baremes_by_name = getattr(
             baremes_by_regime[regime.name],
-            'cotisations_{}'.format(cotisation_type),
+            f'cotisations_{cotisation_type}',
             )
 
         if bareme_name in ['maladie', 'maternite', 'deces']:
@@ -76,6 +76,10 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
             bareme = getattr(baremes_by_name, bareme_name)
 
         if bareme is not None:
+            if regime.name == 'rtfr':
+                smic = parameters(period.start).marche_travail.smig_40h_mensuel
+                bareme = bareme.multiply_thresholds(smic)
+
             cotisation += bareme.calc(
                 assiette_cotisations_sociales * (regime_securite_sociale_cotisant == regime),
                 )
@@ -136,16 +140,17 @@ class cotisations_employeur(Variable):
     definition_period = MONTH
 
     def formula(individu, period):
-        return (
-            individu('accident_du_travail_employeur', period)
-            + individu('deces_employeur', period)
-            + individu('fonds_special_etat', period)
-            + individu('famille_employeur', period)
-            + individu('maladie_employeur', period)
-            + individu('maternite_employeur', period)
-            + individu('protection_sociale_travailleurs_employeur', period)
-            + individu('retraite_employeur', period)
-            )
+        cotisations_employeur = [
+            'accident_du_travail_employeur',
+            'deces_employeur',
+            'fonds_special_etat',
+            'famille_employeur',
+            'maladie_employeur',
+            'maternite_employeur',
+            'protection_sociale_travailleurs_employeur',
+            'retraite_employeur',
+            ]
+        return sum(individu(f'{cotisation}', period) for cotisation in cotisations_employeur)
 
 
 class cotisations_salarie(Variable):
@@ -155,16 +160,18 @@ class cotisations_salarie(Variable):
     definition_period = MONTH
 
     def formula(individu, period):
-        return (
-            individu('accident_du_travail_salarie', period)
-            + individu('deces_salarie', period)
-            + individu('famille_salarie', period)
-            + individu('maladie_salarie', period)
-            + individu('maternite_salarie', period)
-            + individu('protection_sociale_travailleurs_salarie', period)
-            + individu('retraite_salarie', period)
-            + individu('ugtt', period)
-            )
+        cotisations_salarie = [
+            'accident_du_travail_salarie',
+            'deces_salarie',
+            'famille_salarie',
+            'maladie_salarie',
+            'maternite_salarie',
+            'protection_sociale_travailleurs_salarie',
+            'retraite_salarie',
+            'soin_salarie',
+            'ugtt',
+            ]
+        return sum(individu(f'{cotisation}', period) for cotisation in cotisations_salarie)
 
 
 class accident_du_travail_employeur(Variable):
@@ -403,6 +410,38 @@ class retraite_salarie(Variable):
             period,
             cotisation_type = 'salarie',
             bareme_name = 'retraite',
+            parameters = parameters
+            )
+
+
+class soin_employeur(Variable):
+    value_type = float
+    entity = Individu
+    label = 'Cotisation soin (employeur)'
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        return compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'employeur',
+            bareme_name = 'soin',
+            parameters = parameters
+            )
+
+
+class soin_salarie(Variable):
+    value_type = float
+    entity = Individu
+    label = 'Cotisation soin (salarié)'
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        return compute_cotisation(
+            individu,
+            period,
+            cotisation_type = 'salarie',
+            bareme_name = 'soin',
             parameters = parameters
             )
 

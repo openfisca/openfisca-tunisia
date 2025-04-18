@@ -12,7 +12,7 @@ class nb_enf(Variable):
         TODO: fixme
         '''
         age = foyer_fiscal.members('age', period = period.first_month)
-        famille = parameters(period.start).impot_revenu.deductions.fam
+        famille = parameters(period.start).impot_revenu.deductions.famille
         # res =+ (
         #    (ag < 20) +
         #    (ag < 25)*not_(boursier)*()
@@ -46,12 +46,11 @@ class nb_infirme(Variable):
 
     def formula(foyer_fiscal, period):
         '''
-        TODO: Nombre d'enfants infirmes
+        Nombre d'enfants infirmes
         '''
-        age = foyer_fiscal.members('age', period = period)
-        handicap = foyer_fiscal.members('handicap', period = period)
+        infirme = foyer_fiscal.members('handicap', period = period) >= 3
 
-        return 0 * age * handicap
+        return foyer_fiscal.sum(1 * infirme, role = FoyerFiscal.PERSONNE_A_CHARGE)
 
 
 class nb_parents(Variable):
@@ -62,11 +61,11 @@ class nb_parents(Variable):
 
     def formula(foyer_fiscal, period):
         '''
-        TODO: Nombre de parents
+        Nombre de parents
         '''
         return (
             (foyer_fiscal.declarant_principal('age', period) > 20)
-            + (foyer_fiscal.declarant_principal('age', period) > 20)
+            + (foyer_fiscal.conjoint('age', period) > 20)
             )
 
 
@@ -178,19 +177,26 @@ class deduction_famille(Variable):
         # rng = foyer_fiscal('rng', period = period)
         chef_de_famille = foyer_fiscal('chef_de_famille', period = period)
         nb_enf = foyer_fiscal('nb_enf', period = period)
-        # nb_parents = foyer_fiscal('nb_parents', period = period)
-        fam = parameters(period.start).impot_revenu.deductions.fam
+        nb_infirme = foyer_fiscal('nb_infirme', period = period)
+        famille = parameters(period.start).impot_revenu.deductions.famille
         #  chef de famille
-        chef_de_famille = fam.chef_de_famille * chef_de_famille
+        chef_de_famille = famille.chef_de_famille * chef_de_famille
 
-        enf = (nb_enf >= 1) * fam.enf1 + (nb_enf >= 2) * fam.enf2 + (nb_enf >= 3) * fam.enf3 + (nb_enf >= 4) * fam.enf4
+        infirme = famille.infirme * nb_infirme
+        nb_enf = max_(nb_enf - nb_infirme, 0)
+        enf = (
+            (nb_enf >= 1) * famille.enf1
+            + (nb_enf >= 2) * famille.enf2
+            + (nb_enf >= 3) * famille.enf3
+            + (nb_enf >= 4) * famille.enf4
+            )
 
         #    sup = P.enf_sup * nb_enf_sup
-        #    infirme = P.infirme * nb_infirme
-        #    parent = min_(P.parent_taux * rng, P.parent_max)
 
+        #    parent = min_(P.parent_taux * rng, P.parent_max)
         #    return chef_de_famille + enf + sup + infirme + parent
-        res = chef_de_famille + enf
+
+        res = chef_de_famille + enf + infirme
         return res
 
 
@@ -343,44 +349,6 @@ class irpp(Variable):
         impot_revenu_brut = foyer_fiscal('impot_revenu_brut', period = period)
         exoneration = foyer_fiscal('exoneration', period = period)
         return impot_revenu_brut * not_(exoneration)
-
-
-class revenu_mensuel_assimile_salaire_apres_abattement(Variable):
-    value_type = float
-    entity = Individu
-    label = 'Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés'
-    definition_period = MONTH
-
-    def formula_2011(foyer_fiscal, period):
-        revenu_assimile_salaire = individu('salaire_imposable', period = period)
-        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
-        smig = revenu_assimile_salaire <= smig_40h_mensuel
-        tspr = parameters(period.start).impot_revenu.tspr
-
-        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
-        revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire
-            - abattement_frais_professionnels
-            - min_(
-                smig * tspr.abattement_pour_salaire_minimum,
-                (revenu_assimile_salaire <= tspr.smig_ext) * tspr.abattement_pour_salaire_minimum
-                ),
-            0)
-        return revenu_assimile_salaire_apres_abattement
-
-    def formula(foyer_fiscal, period):
-        revenu_assimile_salaire = individu('salaire_imposable', period = period)
-        smig_40h_mensuel = parameters(period.start).marche_travail.smig_40h_mensuel
-        smig = revenu_assimile_salaire <= smig_40h_mensuel
-        tspr = parameters(period.start).impot_revenu.tspr
-        abattement_frais_professionnels = min_(revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal)
-        revenu_assimile_salaire_apres_abattement = max_(
-            revenu_assimile_salaire
-            - abattement_frais_professionnels
-            - smig * tspr.abattement_pour_salaire_minimum,
-            0
-            )
-        return revenu_assimile_salaire_apres_abattement
 
 
 class irpp_salarie_preleve_a_la_source(Variable):

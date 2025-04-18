@@ -5,7 +5,7 @@ brackets:
       value: 0
   rate:
     2002-03-12:
-      value: 0.008333
+      value: 0.033333
 - threshold:
     2002-03-12:
       value: 0.66
@@ -14,4 +14,4 @@ brackets:
       value: 0
 metadata:
   rate_unit: /1
-  threshold_unit: /1
+  threshold_unit: smig

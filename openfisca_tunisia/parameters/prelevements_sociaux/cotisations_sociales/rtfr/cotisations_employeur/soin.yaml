@@ -14,4 +14,10 @@ brackets:
       value: 0
 metadata:
   rate_unit: /1
-  threshold_unit: /1
+  threshold_unit: smig
+  reference:
+    2002-03-12:
+      title: Décret n° 2002-916 du 22 avril 2002, relatif aux modalités d'application de la loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole
+      href: https://www.pist.tn/jort/2002/2002F/Jo0352002.pdf
+  official_journal_date:
+    2002-03-12: "2002-04-30"

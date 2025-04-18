@@ -1,0 +1,164 @@
+- name: Célibataire salarié
+  period: 2024
+  absolute_error_margin: 0.5
+  output:
+    deduction_famille: 0
+
+- name: Chef de famille sans enfant
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    chef_de_famille: true
+    marie: true
+    male: true
+  output:
+    nb_enf: 0
+    deduction_famille: 300
+
+- name: Chef de famille + 1 enfant
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1990-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2010-01-01
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf: 1
+      deduction_famille: 400
+
+- name: Chef de famille + 2 enfants
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1990-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2010-01-01
+      enfant2:
+        date_naissance: 2011-01-01
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1, enfant2]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf: 2
+      deduction_famille: 500
+
+
+- name: Chef de famille + 3 enfants
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1990-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2010-01-01
+      enfant2:
+        date_naissance: 2011-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1, enfant2, enfant3]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf: 3
+      deduction_famille: 600
+
+- name: Chef de famille + 4 enfants
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1990-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2010-01-01
+      enfant2:
+        date_naissance: 2011-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+      enfant4:
+        date_naissance: 2013-01-01
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf: 4
+      deduction_famille: 700
+
+- name: Chef de famille + 5 enfants
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1990-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2010-01-01
+      enfant2:
+        date_naissance: 2011-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+      enfant4:
+        date_naissance: 2013-01-01
+      enfant5:
+        date_naissance: 2014-01-01
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1, enfant2, enfant3, enfant4, enfant5]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf: 5
+      deduction_famille: 700
+
+- name: Chef de famille + 1 enfant handicapé
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1990-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2010-01-01
+        handicap: 3
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf: 1
+      deduction_famille: 2300
