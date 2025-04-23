@@ -48,7 +48,7 @@
         - enfant2
       amen_social_revenu: 645
   output:
-    amen_social_eligible: True
+    amen_social_eligible: true
 
 
 - name: Eligibilité au programe Amen social 3 enfants 500 DT en 2022
