@@ -1,0 +1,6 @@
+description: Tarifs des produits énergétiques
+metadata:
+  short_label: Énergie
+  order:
+  - gaz
+  - electricite

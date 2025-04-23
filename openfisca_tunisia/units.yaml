@@ -19,6 +19,11 @@
     one: Dinar pour un litre
     other: Dinars pour litre
   short_label: DT/l
+- name: currency/m3
+  label:
+    one: Dinar par mètre cube
+    other: Dinars par mètre cube
+  short_label: DT/m3
 - name: currency/unit
   label:
     one: Dinar pour une unité
@@ -28,6 +33,11 @@
   label:
     one: jour
     other: jours
+- name: m3
+  label:
+    one: mètre cube
+    other: mètres cube
+  short_label: m3
 - name: month
   label: mois
 - name: year

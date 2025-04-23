@@ -1,0 +1,5 @@
+description: Tarifs du gaz naturel
+metadata:
+  short_label: Gaz naturel
+  order:
+  - prix

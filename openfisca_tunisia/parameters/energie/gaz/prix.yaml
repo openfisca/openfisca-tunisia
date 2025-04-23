@@ -1,0 +1,61 @@
+description: Prix par tranche de consommation de gaz
+brackets:
+- threshold:
+    2015-01-01:
+      value: 0
+  amount:
+    2015-01-01:
+      value: .217
+    2019-01-01:
+      value:
+    2021-01-01:
+      value:
+    2022-01-01:
+      value:
+    2024-01-01:
+      value:
+- threshold:
+    2015-01-01:
+      value: 30
+  amount:
+    2015-01-01:
+      value: .271
+    2019-01-01:
+      value:
+    2021-01-01:
+      value:
+    2022-01-01:
+      value:
+    2024-01-01:
+      value:
+- threshold:
+    2015-01-01:
+      value: 60
+  amount:
+    2015-01-01:
+      value: .312
+    2019-01-01:
+      value:
+    2021-01-01:
+      value:
+    2022-01-01:
+      value:
+    2024-01-01:
+      value:
+- threshold:
+    2015-01-01:
+      value: 150
+  amount:
+    2015-01-01:
+      value: .355
+    2019-01-01:
+      value:
+    2021-01-01:
+      value:
+    2022-01-01:
+      value:
+    2024-01-01:
+      value:
+metadata:
+  amount_unit: currency/m3
+  threshold_unit: m3
