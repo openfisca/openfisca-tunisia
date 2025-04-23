@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.52 - [#205](https://github.com/openfisca/openfisca-tunisia/pull/205)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters`.
+* Détails :
+  - Corrige le smig pris en compte dans l'éligibilité Amen social
+  - Ajoute des paramètres sur les produits alimentaires subventionnés et l'énergie
+
 ### 0.51 - [#204](https://github.com/openfisca/openfisca-tunisia/pull/204)
 
 * Changement mineur.
