@@ -9,6 +9,21 @@
     one: Dinar
     other: Dinars
   short_label: DT
+- name: currency/kg
+  label:
+    one: Dinar pour un kilogramme
+    other: Dinars pour un kilogramme
+  short_label: DT/kg
+- name: currency/l
+  label:
+    one: Dinar pour un litre
+    other: Dinars pour litre
+  short_label: DT/l
+- name: currency/unit
+  label:
+    one: Dinar pour une unité
+    other: Dinars pour une unité
+  short_label: DT/unité
 - name: day
   label:
     one: jour
