@@ -1,0 +1,16 @@
+description: Prix subventionné du lait demi-écrémé en bouteille
+values:
+  2025-01-01:
+    value: 1.300
+  2020-01-01:
+    value: 1.200
+  2015-01-01:
+    value: 1.070
+  2012-01-01:
+    value: 1.020
+  2011-01-01:
+    value: 0.920
+  2010-01-01:
+    value: 0.970
+metadata:
+  unit: currency/l

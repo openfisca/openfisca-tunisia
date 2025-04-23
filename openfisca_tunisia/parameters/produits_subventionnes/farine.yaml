@@ -1,0 +1,7 @@
+description: Prix subventionné de la farine
+values:
+  2025-01-01:
+    value: 0.0
+metadata:
+  unit: currency/kg
+documentation: Indisponible

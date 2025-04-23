@@ -1,0 +1,8 @@
+description: Prix subventionné du couscous
+values:
+  2011-01-01:
+    value: 0.795
+  2010-01-01:
+    value: 0.845
+metadata:
+  unit: currency/kg
