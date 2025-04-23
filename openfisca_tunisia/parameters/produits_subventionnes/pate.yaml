@@ -1,0 +1,8 @@
+description: Prix subventionné des pâtes
+values:
+  2011-01-01:
+    value: 0.805
+  2010-01-01:
+    value: 0.855
+metadata:
+  unit: currency/kg
