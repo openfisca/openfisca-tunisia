@@ -3,9 +3,9 @@ from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
 
 class TypesRegimeSecuriteSocialeCotisant(Enum):
-    __order__ = 'rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps neant'
+    __order__ = 'neant rsna rsa rsaa rtns rtte re rtfr raci salarie_cnrps pensionne_cnrps'
     # Needed to preserve the enum order in Python 2
-
+    neant = 'Néant'
     rsna = 'Régime des salariés non agricoles'
     rsa = 'Régime des salariés agricoles'
     rsaa = 'Régime des salariés agricoles amélioré'
@@ -16,16 +16,15 @@ class TypesRegimeSecuriteSocialeCotisant(Enum):
     raci = 'Régime des artistes, créateurs et intellectuels'
     salarie_cnrps = 'Régime des salariés affilés à la Caisse nationale de retraite et de prévoyance sociale (CNRPS)'
     pensionne_cnrps = 'Régime des pensionnés affilés à la Caisse nationale de retraite et de prévoyance sociale (CNRPS)'
-    neant = 'Néant'
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
 
 
 class TypesRegimeSecuriteSocialeRetraite(Enum):
-    __order__ = 'rsna rtte raci rtns_na rtns_a rtc rsa rsaa cnrps neant'
+    __order__ = 'neant rsna rtte raci rtns_na rtns_a rtc rsa rsaa cnrps'
     # Needed to preserve the enum order in Python 2
-
+    neant = 'Néant'
     rsna = 'Régime des salariés non agricoles'
     rtte = "Régime des travailleurs tunisiens à l'étranger"
     raci = 'Régime des artistes, créateurs etiIntellectuels'
@@ -35,7 +34,6 @@ class TypesRegimeSecuriteSocialeRetraite(Enum):
     rsa = 'Régime des salariés agricoles'
     rsaa = 'Régime des salariés agricoles amélioré'
     cnrps = 'Régime des pensionnés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale'
-    neant = 'Néant'
     # references :
     # http://www.social.gov.tn/index.php?id=49&L=0
     # http://www.paie-tunisie.com/412/fr/83/reglementations/regimes-de-securite-sociale.aspx
