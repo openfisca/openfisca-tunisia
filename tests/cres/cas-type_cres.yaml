@@ -1,0 +1,76 @@
+- name: Femme avec deux enfants
+  period: 2024-12
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1957-02-07
+        pension_de_retraite: 207.692
+        regime_securite_sociale_cotisant: 'rtfr'
+      enfant1:
+        date_naissance: 1982-07-27
+        salaire_de_base: 3532.800 / 12
+        regime_securite_sociale_cotisant: 'rtfr'
+      enfant2:
+        date_naissance: 1979-10-01
+        salaire_de_base: 3532.800 / 12
+        regime_securite_sociale_cotisant: 'rtfr'
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    individus:
+      # parent1:
+      enfant1:
+        salaire_net_a_payer: 287.040
+      enfant2:
+        salaire_net_a_payer: 287.040
+    amen_social_revenu: 781
+    amen_social_enfants_a_charge: 0
+    amen_social_eligible: true
+
+
+- name: Femme avec deux enfants annuel
+  period: 2024
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1957-02-07
+        male: false
+        pension_de_retraite: 12 * 207.692
+        regime_securite_sociale_cotisant: 'neant'
+      enfant1:
+        male: false
+        date_naissance: 1982-07-27
+        salaire_de_base: 3532.800
+        regime_securite_sociale_cotisant: 'rtfr'
+      enfant2:
+        male: false
+        date_naissance: 1979-10-01
+        salaire_de_base: 3532.800
+        regime_securite_sociale_cotisant: 'rtfr'
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    individus:
+      # parent1:
+      enfant1:
+        salaire_de_base:
+          2024-12: 294.39
+        salaire_net_a_payer:
+          2024-12: 255.040
+      enfant2:
+        salaire_net_a_payer:
+          2024-12: 287.040
+    amen_social_revenu:
+      2024-12: 781
+    amen_social_enfants_a_charge:
+      2024-12: 0
+    amen_social_eligible:
+      2024-12: true
