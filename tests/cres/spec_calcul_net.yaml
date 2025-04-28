@@ -73,3 +73,5 @@
   output:
     salaire_de_base: 1000
     cotisations_salarie: .1471 * 1000
+
+
