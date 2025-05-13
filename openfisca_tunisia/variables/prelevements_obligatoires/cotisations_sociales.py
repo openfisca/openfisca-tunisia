@@ -76,7 +76,7 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
         if bareme is not None:
             if regime.name == 'rtfr':
                 smic = parameters(period.start).marche_travail.smig_48h_mensuel
-                bareme = bareme.copy()
+                bareme = bareme.copy()  # To avoid modifying the original object
                 bareme = bareme.multiply_thresholds(smic)
 
             cotisation += bareme.calc(
