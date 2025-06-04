@@ -3,13 +3,11 @@ brackets:
 - threshold:
     1975-06-01:
       value: 0
-  rate:
-    1975-06-01:
-      value: 0.01
-- threshold:
     1993-01-01:
       value: 0
   rate:
+    1975-06-01:
+      value: 0.01
     1993-01-01:
       value: 0.01
 metadata:
@@ -20,4 +18,5 @@ metadata:
       title: Décret n°93-308 du 1er février 1993, relatif au régime du capital décès (article 2).
 documentation: |
   L'assiette de calcul diffère selon le régime de la cotisation. Pour le régime général, l'assiette est constituée de tous les éléments de salaire, tandis que pour la branche facultative transitoire, elle est limitée au salaire de base.
-  Ces éléments sont définis dans la circulaire du premier ministre n°12 du 15 février 1993
+
+  Ces éléments sont définis dans la circulaire du premier ministre n°12 du 15 février 1993 et entrent en vigueur le 1er juillet 1993.
