@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.53 - [#206](https://github.com/openfisca/openfisca-tunisia/pull/206)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters`.
+* Détails :
+  - Ajoute référence pour le capital décès
+
+
 ### 0.52 - [#205](https://github.com/openfisca/openfisca-tunisia/pull/205)
 
 * Évolution du système socio-fiscal.
