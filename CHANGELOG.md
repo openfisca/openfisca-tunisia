@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.54 - [#214](https://github.com/openfisca/openfisca-tunisia/pull/214)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters`.
+* Détails :
+  - Ajout / test href vers repo gitlab
+
+
 ### 0.53 - [#209](https://github.com/openfisca/openfisca-tunisia/pull/209)
 
 * Évolution du système socio-fiscal.
