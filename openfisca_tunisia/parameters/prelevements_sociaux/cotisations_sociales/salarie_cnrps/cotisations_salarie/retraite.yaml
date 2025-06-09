@@ -27,10 +27,11 @@ brackets:
 metadata:
   reference:
     2007-07-01:
-      title: Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux.
+      title: Loi 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_fr.pdf
       note: "Le taux de la cotisation à la charge de l’assuré social augemte de 1,2 point de pourcentage,  et ce, comme suit : 0,40 à partir du 1er juillet 2007, 0,40 à partir du 1er juillet 2008 et 0,40 point de pourcentage à partir du 1er juillet 2009."
     2020-01-01:
-      title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi n°85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
+      title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
       href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
   official_journal_date:
     2020-01-01: "2019-04-30"
