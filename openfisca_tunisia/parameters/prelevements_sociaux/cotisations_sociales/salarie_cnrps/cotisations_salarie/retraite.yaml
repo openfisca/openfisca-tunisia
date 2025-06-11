@@ -27,9 +27,12 @@ brackets:
 metadata:
   reference:
     2002-07-01:
-      title: Loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+    - title: Loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
       note: "Les taux de la contribution au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public et des régimes de retraite des membres du gouvernement, des députés et des gouverneurs sont relevés comme suit :  de 1 de pourcentage de la base de calcul de la contribution à la charge de l’assuré social et ce comme suit : 0.50 point de pourcentage à partir du 1er juillet 2002 , 0.25 point de pourcentage  à partir du 1er juillet 2003, 0.25 point de pourcentage à partir du 1er juillet 2004"
+    - title: قانون عدد 123 لسنــة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة 2002
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+      note: "ترفع نسب المساهمات بنظام الجرايات المدنية والعسكرية للتقاعد والباقين على قيد الحياة في القطاع العمومي وبأنظمة التقاعد لأعضاء الحكومة وأعضاء مجلس النواب والولاّة كما يلي :   1 بالمائة من قاعدة احتساب الاشتراك على كاهل المضمون الاجتماعي وذلك على النحو التالي : 0.50 بالمائة ابتداء من غرة جويلية ‏2002‏‏ ،  0.25  بالمائة ابتداء من غرة جويلية 2003 ، 0.25  بالمائة ابتداء من غرة جويلية 2004"
     2007-07-01:
     - title: Loi 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_fr.pdf
