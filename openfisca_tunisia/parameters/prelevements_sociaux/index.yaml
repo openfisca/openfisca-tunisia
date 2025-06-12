@@ -2,5 +2,7 @@ description: Prélévements sociaux
 metadata:
   order:
   - plafond_securite_sociale
-  - cotisations_sociales
+  - secteur_prive
+  - secteur_public
   - contribution_sociale_solidarite
+  - atmp
