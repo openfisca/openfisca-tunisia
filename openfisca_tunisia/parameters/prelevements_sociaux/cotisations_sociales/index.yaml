@@ -1,13 +1,5 @@
-description: Prélévements sociaux
+description: Cotisations sociales au titre des régimes des secteurs publics et privés
 metadata:
   order:
-  - rsna
-  - rsa
-  - rsaa
-  - raci
-  - rtns
-  - rtfr
-  - rtte
-  - re
-  - salarie_cnrps
-  - pensionne_cnrps
+  - secteur_prive
+  - secteur_public
