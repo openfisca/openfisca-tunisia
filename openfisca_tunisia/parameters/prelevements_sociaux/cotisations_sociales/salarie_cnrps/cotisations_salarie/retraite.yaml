@@ -8,6 +8,8 @@ brackets:
       value: 0.07
     1975-01-01:
       value: 0.05
+    1985-10-01:
+      value: 0.05
     1994-07-01:
       value: 0.06
     2002-07-01:
@@ -40,6 +42,13 @@ metadata:
     - title: قانون عدد 101 لسنة 1974 مؤرخ في 25 ديسمبر 1974 يتعلّق بقانون المالية 1974
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/loi_74-101_ar.pdf
       note: بمقتضى القانون عدد 12 لسنة 1985 المؤرخ في  5 مارس  1985 ألغيت جميع الأحكام السابقة المخالفة لهذا القانون
+    1985-10-01:
+    - title: Loi 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1985/loi_85-12_fr.pdf
+      note: "L’application des cotisations est partir du 01/10/1985 et ce conformément aux dispositions de l’article 75 de la loi 85-12 paru dans le journal officiel à la date du 12 mars 1985 «  La présente loi entre en vigueur à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal Officiel de la République Tunisienne."
+    - title: "قانون عدد 12 لسنة 1985 مؤرخ في 5  مارس 1985 يتعلق بنظام الجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي"
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1985/loi_85-12_ar.pdf
+      note: "عملا بمقتضيات الفصل 75 من هذا القانون يدخل هذا القانون حيز النفاذ بانتهاء ستة اشهر من تاريخ نشره بالرائد الرسمي للجمهورية التونسية"
     1994-07-01:
     - title: Loi 94-71 du 27 juin 1994 relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1994/loi_94_71_fr.pdf
