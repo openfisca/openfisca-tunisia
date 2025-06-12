@@ -33,6 +33,13 @@ metadata:
     - title: قانون عدد 18 لسنة 1959 مؤرخ في 5 فيفري 1959 بتعلق بضبط نظام جرايات التقاعد المدني والعسكري
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/1994/loi_59-18_ar.pdf
       note: تعديل المساهمة إلى 5 يالمائة بمقتضى الفصل 38 من القانون عدد 101 لسنة 1974 المؤرخ في 25/12/1974 -   بمقتضى القانون عدد 12 لسنة 1985 المؤرخ في  5 مارس  1985 ألغيت جميع الأحكام السابقة المخالفة لهذا القانون وخاصة القانون عدد 18 لسنة 1959 المؤرخ ‏في 5 فيفري 1959 وجميع النصوص التي نقحته أو تممته باستثناء الأحكام المتعلقة بالسقوط ‏البدني
+    1975-01-01:
+    - title: Loi n° 74 - 101 du 25 décembre 1974 portant loi de finances pour l'année 1975
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/loi_74-101_fr.pdf?ref_type=heads
+      note: Conformément à la loi 85-12 du 05/03/1985 sont abrogées toutes dispositions antérieures contradictoires à cette loi
+    - title: قانون عدد 101 لسنة 1974 مؤرخ في 25 ديسمبر 1974 يتعلّق بقانون المالية 1974
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/loi_74-101_ar.pdf
+      note: الغيت الأحكام المخالفة للقانون عدد 12 لسنة 1985
     1994-07-01:
     - title: Loi 94-71 du 27 juin 1994 relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1994/loi_94_71_fr.pdf
