@@ -31,11 +31,20 @@ brackets:
     2019-05-01:
       value: 0.145
 metadata:
+  reference:
+    2011-07-01:
+    - title: Décret-loi n° 2011-48 du 4 juin 2011, modifiant les lois régissant les pensions civiles et militaires de retraite et des survivants dans le secteur public, le régime de retraite des membres du gouvernement et le régime de retraite des gouverneurs
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/d%C3%A9cret_loi_2011_48_fr.pdf
+    - title: مرسوم عدد 48 لسنة 2011 مؤرخ في 4 جوان 2011 يتعلق بتنقيح القوانين المنظمة للجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي ولنظام تقاعد أعضاء الحكومة ولنظام تقاعد الولاة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/d%C3%A9cret_loi_2011_48_ar.pdf
+    2019-05-01:
+    - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi n°85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.(article 4)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/loi_2019_37__fr.pdf
+      note: Les taux des contributions dues au titre de la retraite définis par la loi 85-12 du 5 mars 1985 sont majorés de 2 point de pourcentage au titre de l’employeur à partir du premier jour du mois qui suit la date d’entrée en vigueur de la loi 2019-37
+    - title: قانون عدد 37 لسنة 2019 مؤرخ في 30 أفريل 2019 يتعلّق بتنقيح وإتمام القانون عدد 12 لسنة 1985 المؤرخ في 5 مارس 1985 المتعلق بنظام الجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/loi_2019_37_ar.pdf
+      note: تم الترفــــيع في المساهمـــات المستوجبة بعنوان التقاعد المضـــــبوطة بالقانون عدد 12 لسنة 1985 المؤرخ في 5 مارس 1985  2 بالمائة (2%) بالنسبة للمشغل بداية من اليوم الأول من الشهر الموالي لتاريخ دخول القانون 2019-37 حيز النفاذ
+  official_journal_date:
+    2019-05-01: "2019-04-30"
   rate_unit: /1
   threshold_unit: currency
-  reference:
-    2019-05-01:
-      - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi n°85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
-        href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
-  official_journal_date:
-    2019-05-01: '2019-04-30'
