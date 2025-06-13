@@ -32,6 +32,33 @@ brackets:
       value: 0.145
 metadata:
   reference:
+    2002-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+      note: Les taux de la contribution au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public et des régimes de retraite des membres du gouvernement, des députés et des gouverneurs sont relevés de 1.5 point de pourcentage de la base de calcul de la contribution à la charge de l’employeur et ce comme suit :0.50 point de pourcentage à partir du 1er juillet 2002, 0.25 point de pourcentage à partir du 1er juillet 2003, 0.25 point de pourcentage à partir du 1er juillet 2004, 0.25 point de pourcentage à partir du 1er juillet 2005, 0.25 point de pourcentage à partir du 1er juillet 2006
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+      note: "ترفع نسب المساهمات بنظام الجرايات المدنية والعسكرية للتقاعد والباقين على قيد الحياة في القطاع العمومي وبأنظمة التقاعد لأعضاء الحكومة وأعضاء مجلس النواب والولاّة كما يلي : 1.5 بالمائة من قاعدة احتساب الاشتراك على كاهل المؤجر وذلك على النــحو التالي :0.50 بالمائة ابتداء من غرة جويلية 2002 ، 0.25  بالمائة ابتداء من غرة جويلية 2003، 0.25  بالمائة ابتداء من غرة جويلية 2004 ، 0.25  بالمائة ابتداء من غرة جويلية 2005، 0.25  بالمائة ابتداء من غرة جويلية 2006"
+    2003-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2004-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2005-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2006-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
     2011-07-01:
     - title: Décret-loi n° 2011-48 du 4 juin 2011, modifiant les lois régissant les pensions civiles et militaires de retraite et des survivants dans le secteur public, le régime de retraite des membres du gouvernement et le régime de retraite des gouverneurs
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/d%C3%A9cret_loi_2011_48_fr.pdf
