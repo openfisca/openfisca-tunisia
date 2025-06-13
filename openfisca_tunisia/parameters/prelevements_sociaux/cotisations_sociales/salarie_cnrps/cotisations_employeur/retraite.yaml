@@ -32,6 +32,53 @@ brackets:
       value: 0.145
 metadata:
   reference:
+    1995-07-01:
+    - title: loi 94-71 du 27 juin 1994 Relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1994/loi_94_71_fr.pdf
+      note: Les taux de contribution sont relevés  de 1,2  point de pourcentage de la base de calcul de la contribution, à la charge de l'employeur et ce à partir du premier juillet 1995.
+    - title: القانون عدد 71 لسنة 1994 مؤرخ في 27 جوان 1994  يتعلق بتعديل نسب المساهمات في انظمة التقاعد في القطاع العمومي
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1994/loi_94_71_ar.pdf
+      note: ترفع نسب المساهمات ب1،2 بالمائة ابتداء من غرة جويلية 1995
+    2002-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+      note: Les taux de la contribution au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public et des régimes de retraite des membres du gouvernement, des députés et des gouverneurs sont relevés de 1.5 point de pourcentage de la base de calcul de la contribution à la charge de l’employeur et ce comme suit :0.50 point de pourcentage à partir du 1er juillet 2002, 0.25 point de pourcentage à partir du 1er juillet 2003, 0.25 point de pourcentage à partir du 1er juillet 2004, 0.25 point de pourcentage à partir du 1er juillet 2005, 0.25 point de pourcentage à partir du 1er juillet 2006
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+      note: "ترفع نسب المساهمات بنظام الجرايات المدنية والعسكرية للتقاعد والباقين على قيد الحياة في القطاع العمومي وبأنظمة التقاعد لأعضاء الحكومة وأعضاء مجلس النواب والولاّة كما يلي : 1.5 بالمائة من قاعدة احتساب الاشتراك على كاهل المؤجر وذلك على النــحو التالي :0.50 بالمائة ابتداء من غرة جويلية 2002 ، 0.25  بالمائة ابتداء من غرة جويلية 2003، 0.25  بالمائة ابتداء من غرة جويلية 2004 ، 0.25  بالمائة ابتداء من غرة جويلية 2005، 0.25  بالمائة ابتداء من غرة جويلية 2006"
+    2003-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2004-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2005-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2006-07-01:
+    - title: loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة  2002 (الفصل 85)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
+    2007-01-01:
+    - title: Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_fr.pdf
+      note: "Les taux des contributions au régime des pensions civiles et militaires de retraite et de survivants dans le secteur public et aux régimes de retraite des membres du gouvernement, de la chambre des députés, de la chambre des conseillers et des gouverneurs sont relevés à raison de  1,8 point de pourcentage de l’assiette de calcul de cotisation, à la charge de l’employeur, et ce, comme suit: 0,60 point de pourcentage à partir du 1er janvier 2007, 0,60 point de pourcentage à partir du 1er janvier 2008, 0,60 point de pourcentage à partir du 1er janvier 2009."
+    - title: القانون عدد 43 لسنة 2007 المؤرخ في 25 جوان 2007
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_ar.pdf
+      note: ترفع نسب المساهمات بنظام الجرايات المدنية والعسكرية للتقاعد والباقين على قيد الحياة في القطاع العمومي وبأنظمة التقاعد لأعضاء الحكومة وأعضاء مجلس النواب وأعضاء مجلس المستشارين والولاة كما يلي :1,8  بالمائة من قاعدة احتساب الاشتراك على كاهل المؤجر وذلك على النحو التالي :0,60     بالمائة ابتداء من أول جانفي 2007   0,60  بالمائة ابتداء من أول جانفي 2008 0,60  بالمائة ابتداء من أول جانفي 2009
+    2008-07-01:
+    - title: Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux
+    - title: القانون عدد 43 لسنة 2007 المؤرخ في 25 جوان 2007
+    2009-01-01:
+    - title: Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux
+    - title: القانون عدد 43 لسنة 2007 المؤرخ في 25 جوان 2007
     2011-07-01:
     - title: Décret-loi n° 2011-48 du 4 juin 2011, modifiant les lois régissant les pensions civiles et militaires de retraite et des survivants dans le secteur public, le régime de retraite des membres du gouvernement et le régime de retraite des gouverneurs
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/d%C3%A9cret_loi_2011_48_fr.pdf
