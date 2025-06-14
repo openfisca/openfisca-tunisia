@@ -44,13 +44,30 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
 
     assiette_cotisations_sociales = individu('assiette_cotisations_sociales', period)
     regime_securite_sociale_cotisant = individu('regime_securite_sociale_cotisant', period)
-    baremes_by_regime = parameters(period.start).prelevements_sociaux.cotisations_sociales
+    cotisations_sociales = parameters(period.start).prelevements_sociaux.cotisations_sociales
     cotisation = individu.empty_array()
     types_regime_securite_sociale_cotisant = regime_securite_sociale_cotisant.possible_values
+
+    regimes_prive = [
+        'rsna',
+        'rtte',
+        'raci',
+        'rtns',
+        'rsa',
+        'rsaa',
+        're',
+        'rtfr',
+        ]
 
     for regime in types_regime_securite_sociale_cotisant:
         if regime.name == 'neant':
             continue
+
+        if regime.name in regimes_prive:
+            baremes_by_regime = cotisations_sociales.secteur_prive
+        else:
+            baremes_by_regime = cotisations_sociales.secteur_public
+
         if f'cotisations_{cotisation_type}' not in baremes_by_regime[regime.name]._children:
             continue
         baremes_by_name = getattr(
