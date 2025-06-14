@@ -49,14 +49,14 @@ def compute_cotisation(individu, period, cotisation_type = None, bareme_name = N
     types_regime_securite_sociale_cotisant = regime_securite_sociale_cotisant.possible_values
 
     regimes_prive = [
-        "rsna",
-        "rtte",
-        "raci",
-        "rtns",
-        "rsa",
-        "rsaa",
-        "re",
-        "rtfr",
+        'rsna',
+        'rtte',
+        'raci',
+        'rtns',
+        'rsa',
+        'rsaa',
+        're',
+        'rtfr',
         ]
 
     for regime in types_regime_securite_sociale_cotisant:
