@@ -3,20 +3,23 @@ brackets:
 - threshold:
     1975-06-01:
       value: 0
-    1993-01-01:
-      value: 0
   rate:
     1975-06-01:
       value: 0.01
-    1993-01-01:
-      value: 0.01
 metadata:
-  rate_unit: /1
-  threshold_unit: currency
   reference:
     1993-01-01:
-      title: Décret n°93-308 du 1er février 1993, relatif au régime du capital décès (article 2).
-documentation: |
+    - title: Décret n°93-308 du 1er février 1993, relatif au régime du capital décès (article 2).
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/decret__93_308_fr.pdf?ref_type=heads
+      note: "Conformément au Circulaire du premier ministre n°12 du 15 février 1993, Les principales dispositions du décret n°93-308 susvisé permettent aux agents publics d'opter pour 1'une des deux branches suivantes : La branche générale où la cotisation est calculée sur la base de tous les éléments de la rémunération, soumis à retenue pour pension; La branche facultative transitoire où la cotisation est calculée uniquement sur le salaire de base."
+    - title: أمر عدد 308 لسنة 1993 مؤرخ في 1 فيفري 1993 يتعلق بنطام رأس المال عند الوفاة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/decret__93_308_ar.pdf?ref_type=heads
+      note: "طبقا لمنشور الوزير الأول عدد 12 بتاريخ 15 فيفري 1993 حول تطبيق الأمر عدد 308 لسنة 1993 : يمكن الأعوان العموميين من اختيار أحد الفرعين التاليين : الفرع العام وهو فرع تحتسب فيه المساهمة على كافة عناصر المرتب الخاضعة للحجز بعنوان جراية التقاعد، الفرع الاختياري الانتقالي وهو فرع تحتسب فيه المساهمة على الأجر الأساسي فحسب"
+    - title: Circulaire du premier ministre n°12 du 15 février 1993
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/circulaire_93_12_ar.pdf?ref_type=heads
+  rate_unit: /1
+  threshold_unit: currency
+documentation: |-
   L'assiette de calcul diffère selon le régime de la cotisation. Pour le régime général, l'assiette est constituée de tous les éléments de salaire, tandis que pour la branche facultative transitoire, elle est limitée au salaire de base.
 
   Ces éléments sont définis dans la circulaire du premier ministre n°12 du 15 février 1993 et entrent en vigueur le 1er juillet 1993.
