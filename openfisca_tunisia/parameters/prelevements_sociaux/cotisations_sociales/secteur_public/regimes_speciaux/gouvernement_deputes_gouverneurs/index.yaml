@@ -1,0 +1,7 @@
+description: Cotisations sociales du régimes spécial des membres du gouvernement, des députés et des gouverneurs
+metadata:
+  order:
+  - cotisations_salarie
+  - cotisations_employeur
+documentation: |-
+  Le régime spécial des membres du gouvernement, des députés et des gouverneurs est régi par l'article 5 de la loi 83-31 du 17 mars 1983, fixant le régime de retraite des membres du gouvernement.

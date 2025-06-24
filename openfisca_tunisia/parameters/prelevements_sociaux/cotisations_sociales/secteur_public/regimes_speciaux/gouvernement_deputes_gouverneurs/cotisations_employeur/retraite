@@ -1,0 +1,33 @@
+description: Cotisations salariales pour la retraite des membres du gouvernement, des députés et des gouverneurs
+brackets:
+- threshold:
+    1985-04-01:
+      value: 0
+  rate:
+    1985-04-01:
+      value: 0.15
+    1995-07-01:
+      value: 0.162
+    2002-07-01:
+      value: 0.167
+    2003-07-01:
+      value: 0.1695
+    2004-07-01:
+      value: 0.172
+    2005-07-01:
+      value: 0.1745
+    2006-07-01:
+      value: 0.177
+    2008-07-01:
+      value: 0.189
+    2009-07-01:
+      value: 0.195
+    2011-07-01:
+      value: 0.205
+metadata:
+  reference:
+  - title: Loi 83-31 du 17 mars 1983, fixant le régime de retraite des membres du gouvernement (article 5).
+  rate_unit: /1
+  threshold_unit: currency
+  short_label: Retraite
+  label_en: Retirement contributions for government members, deputies, and governors
