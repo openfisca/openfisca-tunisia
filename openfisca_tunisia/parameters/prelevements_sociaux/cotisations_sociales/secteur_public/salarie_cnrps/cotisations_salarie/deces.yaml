@@ -1,13 +1,18 @@
 description: Capital décès
 brackets:
 - threshold:
-    1975-06-01:
+    1974-06-01:
       value: 0
   rate:
-    1975-06-01:
+    1974-06-01:
       value: 0.01
 metadata:
   reference:
+    1974-06-01:
+    - title: décret 74-572 du 22 mai 1974 relatif au capital décès (article 7)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/decret_74_572_fr.pdf
+    - title: الامر عدد 572 لسنة 1974 المؤرخ في 22 ماي 1974 يتعلق براس المال عند الوفاة (الفصل 7)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/decret_74_572_ar.pdf
     1993-01-01:
     - title: Décret n°93-308 du 1er février 1993, relatif au régime du capital décès (article 2).
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/decret__93_308_fr.pdf
