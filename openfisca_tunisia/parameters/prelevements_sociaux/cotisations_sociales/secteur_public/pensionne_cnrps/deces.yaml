@@ -1,11 +1,26 @@
 description: Capital décès
 brackets:
 - threshold:
-    1975-06-01:
+    1974-06-01:
       value: 0
   rate:
-    1975-06-01:
+    1974-06-01:
       value: 0.005
 metadata:
+  reference:
+    1974-06-01:
+    - title: décret 74-572 du 22 mai 1974 relatif au capital-décès
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/decret_74_572_fr.pdf
+      note: امر عدد 572 لسنة 1974 مؤرخ في22 ماي 1974 بتعلق براس المال عند الوفاة
+    - title: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/decret_74_572_ar.pdf
+    - title: Décret n°93-308 du premier février 1993, relatif au régime du capital décès
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/decret__93_308_fr.pdf
+      note: "Les principales dispositions du décret n°93-308 susvisé permettent aux agents publics d'opter pour 1'une des deux branches suivantes :  La branche générale où la cotisation est calculée sur la base de tous les éléments de la rémunération, soumis à retenue pour pension; La branche facultative transitoire où la cotisation est calculée uniquement sur le salaire de base."
+    - title: أمر عدد 308 لسنة 1993 مؤرخ في 1 فيفري 1993 يتعلق بنظام رأس المال عند الوفاة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/decret__93_308_ar.pdf
+      note: "طبقا لمنشور الوزير الأول عدد 12 بتاريخ 15 فيفري 1993 حول تطبيق الأمر عدد 308 لسنة 1993 : يمكن الأعوان العموميين من اختيار أحد الفرعين التاليين : الفرع العام وهو فرع تحتسب فيه المساهمة على كافة عناصر المرتب الخاضعة للحجز بعنوان جراية التقاعد، الفرع الاختياري الانتقالي وهو فرع تحتسب فيه المساهمة على الأجر الأساسي فحسب"
+    - title: Circulaire du premier ministre n°12  du 15 février 1993
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1993/circulaire_93_12_ar.pdf
+      note: "طبقا لمنشور الوزير الأول عدد 12 بتاريخ 15 فيفري 1993 حول تطبيق الأمر عدد 308 لسنة 1993 : يمكن الأعوان العموميين من اختيار أحد الفرعين التاليين : الفرع العام وهو فرع تحتسب فيه المساهمة على كافة عناصر المرتب الخاضعة للحجز بعنوان جراية التقاعد، الفرع الاختياري الانتقالي وهو فرع تحتسب فيه المساهمة على الأجر الأساسي فحسب"
   rate_unit: /1
   threshold_unit: currency
