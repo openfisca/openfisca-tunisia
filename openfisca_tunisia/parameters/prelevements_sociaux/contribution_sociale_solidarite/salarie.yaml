@@ -20,14 +20,16 @@ metadata:
     - title: قانون عدد 66 لسنة 2017 مؤوخ في18 دسيمبر 2017 يتعلق بقانون المالة  لسنة 2018
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_ar.pdf
     2023-01-01:
-    - title: décret loi 2022-79 du 22/12/2019 portant loi de finances pour l'année 2023 (article 22 , point7)
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d%C3%A9cret_loi_2022_79_fr.pdf
-    - title: مرسوم 79 لسنىة 2022 مؤرخ في 22/12/2022 يتعلق بقانون المالية لسنة 2023 (الفصل 22)
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_ar.pdf
+    - title: Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l’année 2023 (article 22- tiret 7)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_fr.pdf
+    - title: note commune n1/2023 du 26/01/2023
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2023/Note_Commune_1_2023.pdf
+    - title: مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 يتعلق بقانون المالية لسنة    2023  (الفصل22)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d2cret_loi_2022_79_ar.pdf
   official_journal_date:
     2018-01-01: "2017-12-19"
   notes:
     2023-01-01:
-    - title: la loi de finances 2023 dans son article 22 a ramené le taux de la contribution sociale de solidarité appliqué aux personnes physiques de 1 point de pourcentage à 0.5 point de pourcentage uniquement aux revenus servant de base pour le calcul de l'impôt dont le délai intervient au cours des années 2023,2024 et 2025
+    - note: la loi de finances 2023 dans son article 22 a ramené le taux de la contribution sociale de solidarité appliqué aux personnes physiques de 1 point de pourcentage à 0.5 point de pourcentage uniquement aux revenus servant de base pour le calcul de l'impôt sur le revenu dont le délai de déclaration intervient au cours des années 2023, 2024 et 2025
   rate_unit: /1
   threshold_unit: currency
