@@ -17,11 +17,11 @@ metadata:
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_ar.pdf
     2022-01-01:
     - title: l’article 22 du décret-loi 79-2022 du 22 décembre 2022 relatif à la loi de finances pour l’année 2023
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d%C3%A9cret_loi_2022_79_fr.pdf
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_fr.pdf
     - title: مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 يتعلق بقانون المالية لسنة 2023 (الفصل22)
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d%C3%A9cret_loi_2022_79_ar.pdf
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_ar.pdf
     - title: note commune 1/2018 du 26/01/2023
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2023/Note_Commune_1_2023.pdf?ref_type=heads
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2023/Note_Commune_1_2023.pdf
       note: taux CSS 2024 déclaré en 2025 est de 3 point de pourcentage
   rate_unit: /1
   threshold_unit: currency
