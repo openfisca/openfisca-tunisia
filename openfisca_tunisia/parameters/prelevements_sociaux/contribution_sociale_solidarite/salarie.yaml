@@ -14,10 +14,20 @@ metadata:
   reference:
     2018-01-01:
     - title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
-      href: https://jibaya.tn/docs/loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018/
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_fr.pdf
     - title: Note commune 2018/01
       href: https://jibaya.tn/docs/note-commune-numero-1-commentaire-des-dispositions-de-larticle-53-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-a-lins-2/
+    - title: قانون عدد 66 لسنة 2017 مؤوخ في18 دسيمبر 2017 يتعلق بقانون المالة  لسنة 2018
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_ar.pdf
+    2023-01-01:
+    - title: décret loi 2022-79 du 22/12/2019 portant loi de finances pour l'année 2023 (article 22 , point7)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d%C3%A9cret_loi_2022_79_fr.pdf
+    - title: مرسوم 79 لسنىة 2022 مؤرخ في 22/12/2022 يتعلق بقانون المالية لسنة 2023 (الفصل 22)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_ar.pdf
   official_journal_date:
     2018-01-01: "2017-12-19"
+  notes:
+    2023-01-01:
+    - title: la loi de finances 2023 dans son article 22 a ramené le taux de la contribution sociale de solidarité appliqué aux personnes physiques de 1 point de pourcentage à 0.5 point de pourcentage uniquement aux revenus servant de base pour le calcul de l'impôt dont le délai intervient au cours des années 2023,2024 et 2025
   rate_unit: /1
   threshold_unit: currency
