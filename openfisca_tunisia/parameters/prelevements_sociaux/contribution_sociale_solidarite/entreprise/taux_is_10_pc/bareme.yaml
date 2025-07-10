@@ -1,16 +1,27 @@
 description: Barème de la contribution sociale de solidarité des entreprises soumises à l’impôt sur les sociétés au taux de 10%
 brackets:
-- rate:
+- threshold:
+    2018-01-01:
+      value: 0
+  rate:
     2018-01-01:
       value: 0.01
     2022-01-01:
       value: 0.03
-  threshold:
-    2018-01-01:
-      value: 0
 metadata:
+  reference:
+    2018-01-01:
+    - title: loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018 (Article 53 )
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_fr.pdf
+    - title: قانون عدد 66 لسنة 2017 مؤرخ في 18 ديسمبر 2017 يتعلق بقانون المالية لسنة 2018 (القصل53)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_ar.pdf
+    2022-01-01:
+    - title: l’article 22 du décret-loi 79-2022 du 22 décembre 2022 relatif à la loi de finances pour l’année 2023
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d%C3%A9cret_loi_2022_79_fr.pdf
+    - title: مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 يتعلق بقانون المالية لسنة 2023 (الفصل22)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/d%C3%A9cret_loi_2022_79_ar.pdf
+    - title: note commune 1/2018 du 26/01/2023
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2023/Note_Commune_1_2023.pdf?ref_type=heads
+      note: taux CSS 2024 déclaré en 2025 est de 3 point de pourcentage
   rate_unit: /1
   threshold_unit: currency
-  reference:
-    title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
-    href: http://www.legislation.tn/fr/detailtexte/Loi-num-2017-66-du----jort-2017-101__2017101000661
