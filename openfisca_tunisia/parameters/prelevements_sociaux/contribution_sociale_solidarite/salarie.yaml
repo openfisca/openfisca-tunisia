@@ -30,6 +30,6 @@ metadata:
     2018-01-01: "2017-12-19"
   notes:
     2023-01-01:
-    - note: la loi de finances 2023 dans son article 22 a ramené le taux de la contribution sociale de solidarité appliqué aux personnes physiques de 1 point de pourcentage à 0.5 point de pourcentage uniquement aux revenus servant de base pour le calcul de l'impôt sur le revenu dont le délai de déclaration intervient au cours des années 2023, 2024 et 2025
+    - note: la loi de finances 2023 dans son article 22 a ramené le taux de la contribution sociale de solidarité appliqué aux personnes physiques de 1 point de pourcentage à 0.5 point de pourcentage uniquement aux revenus servant de base pour le calcul de l'impôt sur le revenu dont le délai de déclaration intervient au cours des années 2023, 2024 et 2025.
   rate_unit: /1
   threshold_unit: currency
