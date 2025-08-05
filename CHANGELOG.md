@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.57 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/07/2007.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive`.
+* Détails :
+  - Alignement des taux de cotisation maladie pour les régimes du secteur privé (RSNA, RSAA, RTNS, RTTE) sur le décret n°2007-1406 du 18 juin 2007.
+
 ## 0.56 - [#257](https://github.com/openfisca/openfisca-tunisia/pull/257)
 
 * Évolution du système socio-fiscal.
@@ -82,7 +90,7 @@
 * Détails :
   - Introduit `amen_social_revenu`
 
-## 0.46 - [#191](https://github.com/openfisca/openfisca-tunisia/pull/191)
+## 0.46 - [#191](https://github.0.com/openfisca/openfisca-tunisia/pull/191)
 
 * Évolution du système socio-fiscal. .
 * Périodes concernées : toutes.
