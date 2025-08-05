@@ -1,0 +1,17 @@
+description: "Indemnité spéciale (IS) mensuelle pour le SMIG"
+metadata:
+  unit: currency
+  reference:
+    1989-08-01:
+      - title: "Décret n°89-1551 du 06-10-1989"
+    1991-08-01:
+      - title: "Décret n°91-1316 du 02-09-1991"
+    1992-05-01:
+      - title: "Décret n°92-1299 du 13-07-1992"
+values:
+  1989-08-01:
+    value: 3.000
+  1991-08-01:
+    value: 5.000
+  1992-05-01:
+    value: 0

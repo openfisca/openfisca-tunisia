@@ -2,6 +2,8 @@ description: Indemnité Complémentaire Provisoire (ICP) - montant par mois
 values:
   1981-04-07:
     value: 10
+  1982-02-01:
+    value: 30
 metadata:
   short_label: ICP
   label_en: Provisional Supplementary Allowance (ICP) - amount per month
@@ -10,4 +12,6 @@ metadata:
   reference:
     1981-04-07:
       title: Décret n° 81-437 du 7 avril 1981
+    1982-02-01:
+      title: Décret n° 82-501 du 16 mars 1982
 documentation: Le smic est composé du salaire de base et de cette indemnité complémentaire provisoire et de sa majoration
