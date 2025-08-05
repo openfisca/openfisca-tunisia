@@ -1,6 +1,8 @@
 description: "Indemnité spéciale (IS) journalière pour le SMAG"
 metadata:
-  unit: "dinars/day"
+  unit: currency
+  short_label: IS
+  label_en: Special Allowance for the Minimum Guaranteed Wage (SMAG)
   reference:
     1989-08-01:
       - title: "Décret n°89-1552 du 06-10-1989"

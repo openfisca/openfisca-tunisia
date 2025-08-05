@@ -1,6 +1,6 @@
 description: "Indemnité spéciale (IS) mensuelle pour le SMIG"
 metadata:
-  unit: "dinars/month"
+  unit: currency
   reference:
     1989-08-01:
       - title: "Décret n°89-1551 du 06-10-1989"
