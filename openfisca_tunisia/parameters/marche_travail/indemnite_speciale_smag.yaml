@@ -1,0 +1,21 @@
+description: "Indemnité spéciale (IS) journalière pour le SMAG"
+metadata:
+  unit: "dinars/day"
+  reference:
+    1989-08-01:
+      - title: "Décret n°89-1552 du 06-10-1989"
+    1990-01-01:
+      - title: "Décret n°90-247 du 05-02-1990"
+    1991-08-01:
+      - title: "Décret n°91-1317 du 02-09-1991"
+    1992-05-01:
+      - title: "Décret n°92-1300 du 13-07-1992"
+values:
+  1989-08-01:
+    value: 0.115
+  1990-01-01:
+    value: 0.115
+  1991-08-01:
+    value: 0.215
+  1992-05-01:
+    value: 0
