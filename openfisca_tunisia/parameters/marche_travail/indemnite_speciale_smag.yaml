@@ -1,17 +1,4 @@
-description: "Indemnité spéciale (IS) journalière pour le SMAG"
-metadata:
-  unit: currency
-  short_label: IS
-  label_en: Special Allowance for the Minimum Guaranteed Wage (SMAG)
-  reference:
-    1989-08-01:
-      - title: "Décret n°89-1552 du 06-10-1989"
-    1990-01-01:
-      - title: "Décret n°90-247 du 05-02-1990"
-    1991-08-01:
-      - title: "Décret n°91-1317 du 02-09-1991"
-    1992-05-01:
-      - title: "Décret n°92-1300 du 13-07-1992"
+description: Indemnité spéciale (IS) journalière pour le SMAG
 values:
   1989-08-01:
     value: 0.115
@@ -21,3 +8,25 @@ values:
     value: 0.215
   1992-05-01:
     value: 0
+metadata:
+  short_label: IS
+  label_en: Special Allowance for the Minimum Guaranteed Wage (SMAG)
+  unit: currency
+  reference:
+    1989-08-01:
+      title: Décret n°89-1552 du 06-10-1989
+    1990-01-01:
+    - title: Décret n°90-247 du 05-02-1990
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1990/décret_90_247_fr.pdf
+    - title: امر عدد 247 لسنة 1990 مؤرخ في  5 فيفري 1991 ينعلق يالاجر الادنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1990/décret_90_247_ar.pdf
+    1991-08-01:
+    - title: Décret n°91-1317 du 02-09-1991
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_92_1300_fr.pdf
+    - title: امر عدد 1317 لسنة 1991 مؤرخ في 02 سبتمبر 1991
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_92_1300_ar.pdf
+    1992-05-01:
+    - title: Décret n°92-1300 du 13-07-1992
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1300_fr.pdf
+    - title: امر عدد 1300 لسنة 1992 مؤرخ  في 13 حويبية 1992 يتعلق يارجر الادنى الغلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1300_ar.pdf
