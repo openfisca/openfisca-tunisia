@@ -11,7 +11,13 @@ metadata:
   unit: currency
   reference:
     1981-04-07:
-      title: Décret n° 81-437 du 7 avril 1981
+    - title: Décret n° 81-437 du 7 avril 1981
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1981/décret_81_437_fr.pdf
+    - title: امر عدد 437 لسنة 1981
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1981/décret_81_437_ar.pdf
     1982-02-01:
-      title: Décret n° 82-501 du 16 mars 1982
-documentation: Le smic est composé du salaire de base et de cette indemnité complémentaire provisoire et de sa majoration
+    - title: Décret n° 82-501 du 16 mars 1982
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1982/décret_82_501_fr.pdf
+    - title: أمر عدد 501 لسنة 1982 يتعلق بالترفيع في الاجر الادنى المضمون لمختلف المهن في الثطاعات غير الفلاحية ةالخاضعى لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1982/décret_82_501_ar.pdf
+documentation: Le Smic est composé du salaire de base et de cette indemnité complémentaire provisoire et de sa majoration
