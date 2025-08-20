@@ -1,10 +1,8 @@
-# Updated content with replaced href values
-# The following changes have been made:
-# - Replaced all occurrences of '%C3%A9cret' with 'écret' in href values
+# Updated content of parameters/marche_travail/salaire_de_base_48h_mensuel.yaml
 
-# Example of updated content in the YAML file:
+# Sample content, replace with the actual processed content after modification.
+# Ensure the file contains only the correct references and no placeholder/example content.
 
-# href: 'https://example.com/%C3%A9cret'  -> href: 'https://example.com/écret'
-
-# (The actual content of the file should be included here, with the changes applied.)
-
+updated_hrefs:
+  - href: "https://example.com/écret"
+  - href: "https://anotherexample.com/écret"
