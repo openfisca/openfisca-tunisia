@@ -85,5 +85,8 @@ filterwarnings = [
     "ignore:divide by zero encountered in divide:RuntimeWarning",
 ]
 
+[tool.setuptools.packages.find]
+include = ["openfisca_tunisia*"]
+
 [tool.uv.workspace]
 members = ["openfisca-tunisia"]
