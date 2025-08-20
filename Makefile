@@ -1,30 +1,30 @@
 all: test
 
 uninstall:
-	uv pip freeze | grep -v "^-e" | xargs uv pip uninstall -y
+	pip freeze | grep -v "^-e" | xargs pip uninstall -y
 
 clean:
 	rm -rf build dist
 	find . -name '*.pyc' -exec rm \{\} \;
 
 deps:
-	uv pip install --upgrade pip build twine
+	pip install --upgrade pip build twine
 
 install: deps
 	@# Install OpenFisca-Tunisia for development.
 	@# `make install` installs the editable version of OpenFisca-Tunisia.
 	@# This allows contributors to test as they code.
-	uv pip install --editable .[dev] --upgrade
-	uv pip install openfisca-core[web-api]
+	pip install --editable .[dev] --upgrade
+	pip install openfisca-core[web-api]
 
 build: clean deps
 	@# Install OpenFisca-Tunisia for deployment and publishing.
 	@# `make build` allows us to be be sure tests are run against the packaged version
 	@# of OpenFisca-Tunisia, the same we put in the hands of users and reusers.
 	python -m build
-	uv pip uninstall openfisca-tunisia
-	find dist -name "*.whl" -exec uv pip install {}[dev] \;
-	uv pip install openfisca-core[web-api]
+	pip uninstall openfisca-tunisia
+	find dist -name "*.whl" -exec pip install {}[dev] \;
+	pip install openfisca-core[web-api]
 
 check-syntax-errors:
 	python -m compileall -q .
