@@ -1,0 +1,1 @@
+Please consider replacing all occurrences of '%C3%A9cret' with 'écret' in the href values for legislative references in the YAML file. This will improve readability and ensure proper display of accented characters in URLs.
