@@ -9,7 +9,7 @@ values:
   1971-05-01:
     value: 0.104
   1974-01-01:
-    value: 0.130
+    value: 0.13
   1975-06-01:
     value: 0.145
   1977-02-01:
@@ -103,7 +103,7 @@ values:
   2019-05-01:
     value: 1.984
   2020-10-01:
-    value: 2.110
+    value: 2.11
   2022-10-01:
     value: 2.254
   2024-05-01:
@@ -114,21 +114,46 @@ metadata:
   unit: currency
   reference:
     1961-04-01:
-      title: Décret n°61-145 du 30 mars 1961
+    - title: Décret n°61-145 du 30 mars 1961 portant relèvement général des salaires
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1961/d%C3%A9cret_61_145_fr.pdf
+    - title: امر عدد 145 لسنة 1961 مؤرخ في 30 مارس 1961 بتعلق بالترفيع العام في الاجور
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1961/d%C3%A9xret_61_145_ar.pdf
     1966-01-01:
-      title: Décret n°65-561 du 31 décembre 1965
+    - title: Décret n°65-561 du 31 décembre 1965 portant relèvement des salaires dans l'industrie, le commerce et les professions libérales
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/d%C3%A9cret_65_561_fr.pdf
+    - title: امر عدد 561 لسنة 1965 يتعلق بالترفيع في الأجور في قطاع الصناعة والتجارة والمهن الحرة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/d%C3%A9cret_65_561_ar.pdf
+      note: "صدر اصلاح خطا بالرائد الرسمي عدد 1 بتاريخ 7 جانفي 1966 حيث تعاد الفقرة ب من الفصل الاول كما يلي: بمبلغ 4 دنانير للشهر الواحد لجميع اصناف المستخدمين الذين يساوي اجرهم القانوني بما فيه المنح الاضافية ستين دينار للشهر الواحد أو اقل"
     1968-05-01:
-      title: Décret n°68-97 du 15 avril 1969
+    - title: Décret n°68-97 du 15 avril 1969 portant suppression des zones de salaires des activités de secteur non agricole
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1968/d%C3%A9cret_68_97_fr.pdf
+    - title: امر عدد 97 لسنة 68 مؤرخ في 15 أفريل 1969 يتعلق بحدف مناطق الاجور في نشاطات القطاع غير الفلاحي
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1968/d%C3%A9cret_68_97_ar.pdf
     1971-05-01:
-      title: Décret n°71-164 du 03 mai 1971
+    - title: Décret n°71-164 du 03 mai 1971 instituant une indemnité de cherté de vie dans l'industrie, le Commerce et les professions libérales
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1971/d%C3%A9cret_71_164_fr.pdf
+    - title: امر عدد 164 لسنة 1971  يتعلق بإحداث منحة لغلو المعاش في الصناعة والتجارة والمهن الحرة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1971/d%C3%A9cret_71_164_ar.pdf
     1974-01-01:
-      title: Décret n°74-63 du 31 janvier 1974
+    - title: Décret n°74-63 du 31 janvier 1974 fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/d%C3%A9cret_74_63_fr.pdf
+    - title: 1974   أمر عدد63 لسنة   مؤرخ في 31 جانفي 1974  يتعلق بضبط الأجر الأدنى بمختلف المهن المضمون في القطاع غير الفلاحي والخاضع لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/d%C3%A9cret_74_63_ar.pdf
     1975-06-01:
-      title: Décret n°75-357 du 03 juin 1975
+    - title: Décret n°75-357 du 03 juin 1975 fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le Code du Travail.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1975/d%C3%A9cret_75_357_fr.pdf
+    - title: امر عدد 357 لسنة 1975 مؤرخ في 03 جوان 1975 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاع الغير الفلاحي والخاضع لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1975/d%C3%A9cret_75_357_ar.pdf
     1977-02-01:
-      title: Décret n°77-115 du 02 février 1977
+    - title: Décret n°77-115 du 02 février  fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1977/d%C3%A9cret_77_115_fr.pdf
+    - title: امر عدد 115 لسنة 1977 مؤرخ في 02 فيفري 1977 يتعلق بضبط الاجر الادنى المضمون لمختلف المهن في القطاع غير الفلاحي و الخاضع لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1977/d%C3%A9cret_77_115_ar.pdf
     1978-05-01:
-      title: Décret n°78-441 du 26 avril 1978
+    - title: Décret n°78-441 du 26 avril 1978 fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1978/d%C3%A9cret_78_441_fr.pdf
+    - title: امر عدد 441 لسنة 1978 مؤرخ في26 افريل 1978 يتعلق بضبط الاجر الادنى المضمون لمختلف المهن في القطاع غير الفلاحي و الخاضع لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1978/d%C3%A9cret_78_441_ar.pdf
     1979-05-01:
       title: Décret n°79-473 du 21 mai 1979
     1980-02-01:
