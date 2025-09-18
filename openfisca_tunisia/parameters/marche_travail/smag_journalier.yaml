@@ -122,13 +122,22 @@ metadata:
     1974-06-01:
       title: Décret n°74-571 du 22 mai 1974
     1975-06-01:
-      title: Décret n°75-358 du 03 juin 1975
+      title: Décret n°75-358 du 03 juin 1975 fixant le salaire minimum agricole garanti
     1977-05-01:
-      title: Décret n°77-166 du 02 février 1977
+    - title: Décret n°77-116 du 02 février 1977 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1977/d%C3%A9cret_77_116_fr.pdf
+    - title: امر عدد 116  لسنة  1977  مؤرخ في 2 فيفري 1977 يتعلق بضبط الأجر الأدنى المضمون في الفلاحة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1977/d%C3%A9cret_77_116_ar.pdf
     1978-05-01:
-      title: Décret n°78-442 du 26 avril 1978
+    - title: Décret n°78-442 du 26 avril 1978 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1978/d%C3%A9cret_78_442_fr.pdf
+    - title: امر عدد 442  لسنة   1978  مؤرخ في 26 افريل 1978   يتعلق بضبط الأجر الأدنى المضمون في الفلاحة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1978/d%C3%A9cret_78_442_ar.pdf
     1979-05-01:
-      title: Décret n°79-474 du 21 mai 1979
+    - title: Décret n°79-474 du 21 mai 1979 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1979/d%C3%A9cret_79_474_fr.pdf
+    - title: امر عدد 474  لسنة 1979  مؤرخ في  21  ماي  1979   يتعلق بضبط الأجر الأدنى المضمون في الفلاحة
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1979/d%C3%A9cret_79_474_ar.pdf
     1980-02-01:
     - title: Décret n°80-76 du 21 janvier 1980 fixant le salaire minimum agricole garanti
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1980/d%C3%A9cret_80_76_fr.pdf
