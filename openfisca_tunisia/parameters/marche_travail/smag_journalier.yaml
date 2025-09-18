@@ -188,14 +188,17 @@ metadata:
     2004-07-01:
       title: Décret n°2004-1804 du 02 août 2004 , fixant le salaire minimum agricole garanti
     2005-09-01:
-      title: Décret n°2005-2321 du 22 août 2005 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2005-2321 du 22 août 2005 fixant le salaire minimum agricole garanti.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2005/D%C3%A9cret_2005_2321_fr.pdf
+    - title: امر عدد 2321 لسنة 2005 مؤرخ في 22 أوت 2005 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2005/D%C3%A9cret_2005_2321_ar.pdf
     2006-07-01:
-    - title: Décret n°2006-2099 du 24 juillet 2006 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2006-2099 du 24 juillet 2006 fixant le salaire minimum agricole garanti
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2006/D%C3%A9cret_2006_2099_fr.pdf
     - title: امر عدد 2099 لسنة 2006 مؤرخ في 24 جويلية 2006 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2006/D%C3%A9cret_2006_2099_ar.pdf
     2007-07-01:
-    - title: Décret n°2007-2080 du 14 août 2007 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2007-2080 du 14 août 2007 fixant le salaire minimum agricole garanti
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/D%C3%A9cret_2007_2080_fr.pdf
     - title: أمر عدد 2080 لسنة 2007 مؤرخ في 14 أوت 2007 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/D%C3%A9cret_2007_2080_ar.pdf
@@ -205,39 +208,52 @@ metadata:
     - title: امر عدد 2073 لسنة 2008 مؤرخ في 2 جوان 2008 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2008/D%C3%A9cret_2008_2073_ar.pdf
     2009-08-01:
-    - title: Décret n°2009-2258 du 02 juin 2009 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2009-2258 du 02 juin 2009 fixant le salaire minimum agricole garanti
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2009/D%C3%A9cret_2009_2258_fr.pdf
     - title: امر عدد 2258 لسنة 2009 مؤرخ في 14 جويلية 2009 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2009/D%C3%A9cret_2009_2258_ar.pdf
     2010-07-01:
-    - title: Décret n°2010-1747 du 17 juillet 2010 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2010-1747 du 17 juillet 2010 fixant le salaire minimum agricole garanti.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2010/D%C3%A9cret_2010_1747_fr.pdf
     - title: امر عدد 1747 لسنة 2010 مؤرخ في 17 جويلية 2010 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2010/D%C3%A9cret_2010_1747_ar.pdf
     2011-05-01:
-    - title: Décret n°2011-681 du 09 juin 2011 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2011-681 du 09 juin 2011 fixant le salaire minimum agricole garanti
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/D%C3%A9cret_2011_681_fr.pdf
     - title: امر عدد 681 لسنة 2011 مؤرخ في 9 جوان 2011 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/D%C3%A9cret_2011_681_ar.pdf
     2012-07-01:
       title: Décret n°2012-1982 du 20 septembre 2012
     2012-12-01:
-      title: Décret n°2012-1982 du 20 septembre 2012
+    - title: Décret n°2012-1982 du 20 septembre 2012 fixant le salaire minimum agricole garanti.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2012/D%C3%A9cret_2012_1982_fr.pdf
+    - title: امر عدد 1982 لسنة 2012 مؤرخ في 20 سبتمبر 2012 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2012/D%C3%A9cret_2012_1982_ar.pdf
     2014-08-11:
-      title: Décret n°2014-2908 du 11 Août 2014
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429083.pdf
+    - title: Décret n°2014-2908 du 11 Août 2014  fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2014/D%C3%A9cret_2014_2908_fr.pdf
+    - title: أمر عدد 2908 لسنة 2014 مؤرخ في 11 أوت 2014 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2014/D%C3%A9cret_2014_2908_ar.pdf
     2015-11-09:
-      title: Décret n°2015-1763 du 09 Novembre 2015
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf
+    - title: Décret n°2015-1763 du 09 Novembre 2015  fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2015/d%C3%A9cret-2015-1763_fr.pdf
+    - title: امر عدد 1763 لسنة 2015 مؤرخ في 9 نوفمبر 2015 يتعلق بالاجر الادنى الفلاحى المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2015/d%C3%A9cret_2015_1763_ar.pdf
     2017-06-05:
-      title: Décret n°2017-669 du 05 Juin 2017
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176693.pdf
+    - title: Décret n°2017-669 du 05 Juin 2017 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/D%C3%A9cret_2017_669_fr.pdf
+    - title: أمر حكومي عدد 669 لسنة 2017 مؤرخ في 5 جوان 2017 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/D%C3%A9cret_2017_669_ar.pdf
     2018-05-01:
-      title: Décret gouvernemental n°2018-673 du 07 août 2018
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf
+    - title: Décret gouvernemental n°2018-673 du 07 août 2018  fixant le salaire minimum agricole garanti.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2018/D%C3%A9cret_2018_673_fr.pdf
+    - title: أمر حكومي عدد 673 لسنة 2018 مؤرخ في 7 أوت 2018 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2018/D%C3%A9cret_2018_673_ar.pdf
     2019-05-01:
-      title: Décret gouvernemental n° 2019-455 du 28 mai 2019
-      href: http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-455-du----jort-2019-043__20190430045532?shorten=m5lK
+    - title: Décret gouvernemental n° 2019-455 du 28 mai 2019 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/D%C3%A9cret_2019_455_fr.pdf
+    - title: أمر حكومي عدد 455 لسنة 2019 مؤرخ في 28 ماي 2019 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/D%C3%A9cret_2019_455_ar.pdf
 documentation: |-
   Salaire minimum agricole garanti par journée de travail effectif pour les travailleurs des deux sexes âgés de 18 ans au moins
   الأجر الأدنى الفلاحي المضمون للعمال من الجنسين البالغين من العمر 18 سنة على الأقل عن كل يوم عمل فعلي
