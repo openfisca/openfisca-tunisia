@@ -67,7 +67,7 @@ values:
   1999-05-01:
     value: 5.509
   1999-08-19:
-    value: 5.609
+    value: null
   2000-05-01:
     value: 5.809
   2001-07-01:
@@ -176,17 +176,32 @@ metadata:
     1999-05-01:
       title: Décret n°99-995 du 10 mai 1999
     1999-08-19:
-      title: Décret n°99-1867 du 31 août 1999
+      title: Décret n°99-1867 du 31 août 1999 fixant le salaire minimum agricole garanti
     2000-05-01:
-      title: Décret n°2000-950 du 11 mai 2000
+    - title: Décret n°2000-950 du 11 mai 2000 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2000/D%C3%A9cret_2000_950_fr.pdf
+    - title: امر عدد  950 لسنة 2000 مؤرخ في 11 ماي 2000 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2000/D%C3%A9cret_2000_950_ar.pdf
     2001-07-01:
-      title: Décret n°2001-1747 du 01 août 2001
+    - title: Décret n°2001-1747 du 01 août 2001 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/D%C3%A9cret_2001_1747_fr.pdf
+    - title: امر عدد 1747 لسنة 2001 مؤرخ في أول أوت 2001 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/D%C3%A9cret_2001_1747_ar.pdf
     2002-07-01:
-      title: Décret n°2002-1791 du 12 août 2002
+    - title: Décret n°2002-1791 du 12 août 2002 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2002/D%C3%A9cret_2002_1791_fr.pdf
+    - title: امر عدد 1791 لسنة 2002 مؤرخ في 12 أوت 2002 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2002/D%C3%A9cret_2002_1791_ar.pdf
     2003-07-01:
-      title: Décret n°2003-1692 du 18 août 2003
+    - title: Décret n°2003-1692 du 18 août 2003 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2003/D%C3%A9cret_2003_1692_fr.pdf
+    - title: امر عدد  1692 لسنة 2003 مؤرخ في 18 أوت 2003 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2003/D%C3%A9cret_2003_1692_ar.pdf
     2004-07-01:
-      title: Décret n°2004-1804 du 02 août 2004 , fixant le salaire minimum agricole garanti
+    - title: Décret n°2004-1804 du 02 août 2004  fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2004/D%C3%A9cret_2004_1804_fr.pdf
+    - title: امر عدد 1804 لسنة 2004 مؤرخ في 2 أوت 2004 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2004/D%C3%A9cret_2004_1804_ar.pdf
     2005-09-01:
     - title: Décret n°2005-2321 du 22 août 2005 fixant le salaire minimum agricole garanti.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2005/D%C3%A9cret_2005_2321_fr.pdf
