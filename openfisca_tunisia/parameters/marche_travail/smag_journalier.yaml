@@ -162,11 +162,18 @@ metadata:
     1994-08-01:
       title: Décret n°94-1865 du 05 septembre 1994
     1995-05-01:
-      title: Décret n°95-901 du 15 mai 1995
+    - title: Décret n°95-901 du 15 mai 1995 fixant le salaire minimum agricole garanti
+    - title: أمر عدد  901   لسنة   1995 مؤرخ في 15  ماي 1995  بتعلق بضبط الأجر الأدنى الفلاحي المضمون
     1996-05-01:
-      title: Décret n°96-1014 du 27 mai 1996
+    - title: Décret n°96-1014 du 27 mai 1996 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1996/d%C3%A9cret_96_1014_fr.pdf
+    - title: أمر عدد 1014 لسنة 1996 مؤرخ في  27 ماي 1996 بتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1996/d%C3%A9cret_96_1014_ar.pdf
     1996-09-09:
-      title: Décret n°96-1548 du 10 septembre 1996 fixant le salaire minimum agricole garanti
+    - title: Décret n°96-1548 du 10 septembre 1996 fixant le salaire minimum agricole garanti
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1996/d%C3%A9cret_96_1548_fr.pdf
+    - title: أمر عدد 1548  لسنة 1996 مؤرخ في 10 سبتمبر 1996 بتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1996/d%C3%A9cret_96-1548_ar.pdf
     1997-07-20:
     - title: Décret n°97-1522 du 04 août 1997 fixant le salaire minimum agricole garanti
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1997/d%C3%A9cret_97_1522_fr.pdf
