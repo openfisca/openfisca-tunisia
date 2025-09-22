@@ -110,7 +110,10 @@ metadata:
   unit: currency
   reference:
     1964-01-01:
-      title: Arrêté du 24 décembre 1963
+      - title: Arrêté des secrétaires d'Etat à l'agriculture et à la santé publique et aux affaires sociales du 24 décembre 1963 modifiant l'arrêté du 30 avril 1968 relatif à la rémunération des travailleurs agricoles
+        href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1963/arrêté_24_12_63_fr.pdf
+      - title: قرار من  كاتبي الدولة للفلاحة والصحة العمومية   مؤرخ في  24 ديسمبر 1963 يتعلق بتنقيح القرار المؤرخ في  30 افريل 1965  المتعلق بخلاص اجولا العملة الفلاحيين
+        href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1963/arrêté_24_12_63_ar.pdf
     1966-01-01:
     - title: Arrêté des secrétaires d'Etat au plan et à  l'économie nationale et à la jeunesse aux sports et aux affaires sociales du 31 décembre 1965 portant relèvement du salaire minimum journalier des travailleurs agricoles
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/arrêté_31_12_1965_fr.pdf
