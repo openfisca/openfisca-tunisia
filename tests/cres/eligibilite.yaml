@@ -1,0 +1,63 @@
+- name: Eligibilité au programe Amen social célibataire
+  period: 2024-01
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1964-01-01
+        salaire_de_base: 4445552 / 1000 / 12
+        regime_securite_sociale_cotisant: 'rsaa'
+    menage:
+      personne_de_reference: parent1
+  output:
+    amen_social_revenu: 344
+
+
+- name: Eligibilité au programe Amen social célibataire
+  period: 2024-01
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1964-01-01
+        salaire_de_base: 4445552 / 1000 / 12
+        regime_securite_sociale_cotisant: 'rtns'
+    menage:
+      personne_de_reference: parent1
+  output:
+    amen_social_revenu: 315
+
+
+# - name: Eligibilité au programe Amen social célibataire
+#   period: 2024-01
+#   absolute_error_margin: 1
+#   input:
+#     individus:
+#       parent1:
+#         date_naissance: 1964-01-01
+#         salaire_de_base: 961
+#         regime_securite_sociale_cotisant: 'rsna'
+#     menage:
+#       personne_de_reference: parent1
+#   output:
+#     salaire_net_a_payer: 836
+#     # amen_social_revenu: 732
+#     amen_social_revenu: 836
+
+
+- name: Eligibilité au programe Amen social célibataire
+  period: 2024-01
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1964-01-01
+        salaire_de_base: 3532800 / 1000 / 12
+        regime_securite_sociale_cotisant: 'rtfr'
+    menage:
+      personne_de_reference: parent1
+  output:
+    cotisations_salarie: .025 * 3532800 / 1000 / 12
+    # salaire_net_a_payer: 287
+    # amen_social_revenu: 732
+    # amen_social_revenu: 836
