@@ -159,15 +159,19 @@ metadata:
     1992-05-01:
       title: Décret n°92-1299 du 13 juillet 1992
     1992-08-01:
-      title: Décret n°92-1630 du 07 septembre 1992
+      title: Décret n°92-1630 du 07 septembre 1992 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
     1993-05-01:
-      title: Décret n°93-1256 du 07 juin 1993
+      title: Décret n°93-1256 du 07 juin 1993 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
     1993-08-01:
-      title: Décret n°93-1838 du 06 septembre 1993
+    - title: Décret n°93-1838 du 06 septembre 1993 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+    - title: أمر عدد  1838   لسنة  1993  مؤرخ في  6 سبتمبر 1993 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
     1994-08-01:
-      title: Décret n°94-1804 du 29 août 1994
+    - title: Décret n°94-1804 du 29 août 1994 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+    - title: أمر عدد   1804  لسنة   1995   مؤرخ في 29 اوت  1995  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
     1995-05-01:
-      title: Décret n°95-900 du 15 mai 1995
+    - title: Décret n°95-900 du 15 mai 1995 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+    - title: أمر عدد  900   لسنة   1995   مؤرخ في 15 ماي 1995  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1995/d%C3%A9cret_95_900_ar.pdf
     1996-05-01:
     - title: Décret n°96-1013 du 27 mai 1996 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1996/d%C3%A9cret_96_1013_fr.pdf
