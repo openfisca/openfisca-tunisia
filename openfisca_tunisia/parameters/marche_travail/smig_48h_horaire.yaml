@@ -184,15 +184,21 @@ metadata:
     2001-07-01:
       title: Décret n°2001-1746 du 01 août 2001
     2002-07-01:
-      title: Décret n°2002-1790 du 12 août 2002
+      title: Décret n°2002-1790 du 12 août 2002 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
     2003-07-01:
       title: Décret n°2003-1691 du 18 août 2003 , fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
     2004-07-01:
       title: Décret n°2004-1803 du 02 août 2004
     2005-09-01:
-      title: Décret n°2005-2320 du 22 août 2005
+    - title: Décret n°2005-2320 du 22 août 2005 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2005/D%C3%A9cret_2005_2320_fr.pdf
+    - title: أمر  عدد 2320 لسنة 2005 مؤرخ في 22 أوت 2005 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2005/D%C3%A9cret_2005_2320_ar.pdf
     2006-07-01:
-      title: Décret n°2006-2098 du 24 juillet 2006 , fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
+    - title: Décret n°2006-2098 du 24 juillet 2006 , fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2006/D%C3%A9cret_2006_2098_fr.pdf
+    - title: أمر عدد 2098 لسنة 2006 مؤرخ في 24 جويلية 2006 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2006/D%C3%A9cret_2006_2098_ar.pdf
     2007-07-01:
     - title: Décret n°2007-2079 du 14 août 2007 , fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/D%C3%A9cret_2007_2079_fr.pdf
