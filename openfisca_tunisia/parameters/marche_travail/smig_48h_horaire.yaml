@@ -114,11 +114,20 @@ metadata:
   unit: currency
   reference:
     1961-04-01:
-      title: Décret n°61-145 du 30 mars 1961
+    - title: Décret n°61-145 du 30 mars 1961 portant  relèvement général des salaires
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1961/d%C3%A9cret_61_145_fr.pdf
+    - title: امر عدد  145 لسنة    1961 مؤرخ  في  30 مارس 1961  يتعلق بالترفيع العام الاجور
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1961/d%C3%A9xret_61_145_ar.pd
     1966-01-01:
-      title: Décret n°65-561 du 31 décembre 1965
+    - title: Décret n°65-561 du 31 décembre 1965 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code de travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/d%C3%A9cret_65_561_fr.pdf
+    - title: امر عدد  561 لسنة   1965  مؤرخ  في 31 ديسمبر 1965    يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/d%C3%A9cret_65_561_ar.pdf
     1968-05-01:
-      title: Décret n°68-97 du 15 avril 1969
+    - title: Décret n°68-97 du 15 avril 1969  fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code de travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1968/d%C3%A9cret_68_97_fr.pdf
+    - title: امر عدد 97   لسنة   1968  مؤرخ  في 15 افريل 1968  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1968/d%C3%A9cret_68_97_ar.pdf
     1971-05-01:
     - title: Décret n°71-164 du 03 mai 1971 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code de travail
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1971/d%C3%A9cret_71_164_fr.pdf
