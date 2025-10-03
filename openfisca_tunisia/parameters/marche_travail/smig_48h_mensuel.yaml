@@ -208,11 +208,15 @@ metadata:
       title: Décret n°2010-1746 du 17 juillet 2010
       href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf
     2011-05-01:
-      title: Décret n°2011-679 du 09 juin 2011
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf
+    - title: Décret n°2011-679 du 09 juin 2011 fixant le  salaire minimum interprofessionnel garanti  dans les secteurs non agricoles régis par le  code du travail.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/D%C3%A9cret_2011_679_fr.pdf
+    - title: أمر عدد 679 لسنة 2011 مؤرخ في 9 جوان 2011 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/D%C3%A9cret_2011_679_ar.pdf
     2012-07-01:
-      title: Décret n°2012-1981 du 20 septembre 2012
-      href: http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf
+    - title: Décret n°2012-1981 du 20 septembre 2012 fixant le  salaire minimum interprofessionnel garanti  dans les secteurs non agricoles régis par le  code du travail.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2012/D%C3%A9cret_2012_1981_fr.pdf
+    - title: امر عدد  437  لسنة  1981   مؤرخ في   7 افريل 1981    يتعلق بإحداث منحة اضافية مؤقتة  في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2012/D%C3%A9cret_2012_1981_ar.pdf
     2014-05-01:
     - title: Décret n°2014-2907 du 11 août 2014, fixant le  salaire minimum interprofessionnel garanti  dans les secteurs non agricoles régis par le  code du travail.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2014/Décret_2014_2907_fr.pdf
@@ -239,8 +243,10 @@ metadata:
     - title: امر حكومي عدد 1069 لسنة 2020 مؤرخ في 30 ديسمبر 2020 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2020/Décret_2020_1069_fr.pdf
     2020-10-01:
-      title: Décret gouvernemental n° 2020-1069 du 30 décembre 2020
-      href: https://www.pist.tn/jort/2021/2021F/Jo0012021.pdf
+    - title: Décret gouvernemental n° 2020-1069 du 30 décembre 2020 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2020/D%C3%A9cret_2020_1069_fr.pdf
+    - title: امر حكومي عدد 1069 لسنة 2020 مؤرخ في 30 ديسمبر 2020 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2020/D%C3%A9cret_2020_1069_ar.pdf
     2022-10-01:
     - title: Décret gouvernemental n°2022-769 du 19 octobre 2022 , fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/Décret_2022_769_fr.pdf
