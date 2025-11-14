@@ -114,31 +114,65 @@ metadata:
   unit: currency
   reference:
     1961-04-01:
-      title: Décret n°61-145 du 30 mars 1961
+    - title: Décret n°61-145 du 30 mars 1961 relative à la majoration générale des salaires
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1961/d%C3%A9cret_61_145_fr.pdf
+    - title: امر عدد  145 لسنة    1961 مؤرخ  في  30 مارس 1961  يتعلق بالترفيع العام الاجور
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1961/d%C3%A9xret_61_145_ar.pdf
     1966-01-01:
-      title: Décret n°65-561 du 31 décembre 1965
+    - title: Décret n°65-561 du 31 décembre 1965  fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/d%C3%A9cret_65_561_fr.pdf
+    - title: امر عدد  561 لسنة   1965  مؤرخ  في 31 ديسمبر 1965    يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1965/d%C3%A9cret_65_561_ar.pdf
     1968-05-01:
-      title: Décret n°68-97 du 15 avril 1969
+    - title: Décret n°68-97 du 15 avril 1969  fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1968/d%C3%A9cret_68_97_fr.pdf
+    - title: امر عدد 97   لسنة   1968  مؤرخ  في 15 افريل 1968  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1968/d%C3%A9cret_68_97_ar.pdf
     1971-05-01:
-      title: Décret n°71-164 du 03 mai 1971
+    - title: Décret n°71-164 du 03 mai 1971 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1971/d%C3%A9cret_71_164_fr.pdf
+    - title: امر عدد 164 لسنة   1971  مؤرخ  في 3 ماي 1971  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1971/d%C3%A9cret_71_164_ar.pdf
     1974-01-01:
-      title: Décret n°74-63 du 31 janvier 1974
+    - title: Décret n°74-63 du 31 janvier 1974 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/d%C3%A9cret_74_63_fr.pdf
+    - title: امر عدد 63  لسنة  1974   مؤرخ  في   31 جانفي 1974   يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/d%C3%A9cret_74_63_ar.pdf
     1975-06-01:
-      title: Décret n°75-357 du 03 Juin 1975
-      href: http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf
+    - title: Décret n°75-357 du 03 Juin 1975 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1975/d%C3%A9cret_75_357_fr.pdf
+    - title: امر عدد  357 لسنة    1975 مؤرخ  في   3 جوان 1975  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1975/d%C3%A9cret_75_357_ar.pdf
     1977-02-01:
-      title: Décret n°77-115 du 02 février 1977
+    - title: Décret n°77-115 du 02 février 1977 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1977/d%C3%A9cret_77_115_fr.pdf
+    - title: امر عدد 115  لسنة    1977 مؤرخ  في  2 فيفري 1977  يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1977/d%C3%A9cret_77_115_ar.pdf
     1978-05-01:
-      title: Décret n°78-441 du 26 avril 1978
+    - title: Décret n°78-441 du 26 avril 1978 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1978/d%C3%A9cret_78_441_fr.pdf
+    - title: امر عدد   441  لسنة    1978 مؤرخ 26 أفريل 1978   يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1978/d%C3%A9cret_78_441_ar.pdf
     1979-05-01:
-      title: Décret n°79-473 du 21 mai 1979
+    - title: Décret n°79-473 du 21 mai 1979 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1979/d%C3%A9cret_79_473_fr.pdf
+    - title: امر عدد   473 لسنة    1979 مؤرخ في    21 ماي 1979   يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1979/d%C3%A9cret_79_473_ar.pdf
     1980-02-01:
-      title: Décret n°80-75 du 21 janvier 1980
+    - title: Décret n°80-75 du 21 janvier 1980 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1980/d%C3%A9cret_80_75_fr.pdf
+    - title: امر عدد   75  لسنة    1980 مؤرخ في    21 جانفي 1980   يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1980/d%C3%A9cret_80_75_ar.pdf
     1980-05-01:
-      title: Décret n°80-609 du 19 Mai 1980
-      href: http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf
+    - title: Décret n°80-609 du 19 Mai 1980 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1980/d%C3%A9cret_80_609_fr.pdf
+    - title: امر عدد  609   لسنة   1980 مؤرخ في    19 ماي 1980    يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1980/d%C3%A9cret_80_609_ar.pdf
     1981-04-01:
-      title: Décret n°81-437 du 07 avril 1981
+    - title: Décret n°81-437 du 07 avril 1981 instituant une indemnité complémentaire provisoire  dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1981/d%C3%A9cret_81_437_fr.pdf
+    - title: امر عدد  437  لسنة  1981   مؤرخ في   7 افريل 1981    يتعلق بإحداث منحة اضافية مؤقتة  في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1981/d%C3%A9cret_81_437_ar.pdf
     1982-02-01:
     - title: Décret n°82-501 du 16 mars 1982 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1982/d%C3%A9cret_82_501_fr.pdf?ref_type=heads
