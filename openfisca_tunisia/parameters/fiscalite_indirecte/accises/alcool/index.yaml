@@ -1,0 +1,7 @@
+description: Boissons alcoolisées
+metadata:
+  short_label: Boissons alcoolisées
+  order:
+  - taux
+  - produits
+documentation: Boissons alcoolisées soumis à un taux d'accise de 100%.

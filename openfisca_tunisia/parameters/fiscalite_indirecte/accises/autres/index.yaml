@@ -1,0 +1,9 @@
+description: Autres produits soumis aux accises
+metadata:
+  order:
+  - taux_2pct
+  - taux_7pct
+  - taux_10pct
+  - taux_25pct
+  - taux_100pct
+  - taux_135pct

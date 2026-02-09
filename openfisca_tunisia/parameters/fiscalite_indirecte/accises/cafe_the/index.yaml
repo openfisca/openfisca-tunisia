@@ -1,0 +1,5 @@
+description: Café et thé
+metadata:
+  order:
+  - taux_10pct
+  - taux_25pct

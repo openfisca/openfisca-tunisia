@@ -1,0 +1,6 @@
+description: Taux d'accise pour produits cosmétiques et de beauté
+values:
+  '2024-01-01':
+    value: 0.25
+metadata:
+  unit: /1

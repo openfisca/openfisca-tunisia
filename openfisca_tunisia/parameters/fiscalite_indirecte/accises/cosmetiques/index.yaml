@@ -1,0 +1,7 @@
+description: Produits cosmétiques et de beauté
+metadata:
+  short_label: Produits cosmétiques et de beauté
+  order:
+  - taux
+  - produits
+documentation: Produits cosmétiques et de beauté soumis à un taux d'accise de 25%.

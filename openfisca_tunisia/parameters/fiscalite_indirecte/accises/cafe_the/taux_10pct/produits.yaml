@@ -1,0 +1,7 @@
+description: Café et thé soumis au taux d'accise de 10%
+values:
+  '2024-01-01':
+    value:
+    - glace_thelja_gervais
+metadata:
+  unit: list

@@ -1,0 +1,26 @@
+description: Tarifs de l'électricité par tranche de consommation
+metadata:
+  unit: millimes/kWh
+  reference: TUN_FiscalSim21_Sim2024_11March2025.xlsm
+brackets:
+  2024-01-01:
+    - threshold: 0
+      rate: 62
+      cost: 472.2
+      reduction_puissance: 700
+    - threshold: 50
+      rate: 96
+    - threshold: 100
+      rate: 176
+    - threshold: 200
+      rate: 218
+    - threshold: 300
+      rate: 341
+    - threshold: 500
+      rate: 414
+documentation: |-
+  Tarifs progressifs de l'électricité en Tunisie.
+  - threshold: Seuil de consommation mensuelle en kWh
+  - rate: Tarif en millimes par kWh
+  - cost: Coût fixe pour la première tranche (millimes)
+  - reduction_puissance: Réduction pour faible puissance (millimes)

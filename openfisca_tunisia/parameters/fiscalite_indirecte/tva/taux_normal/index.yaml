@@ -1,0 +1,7 @@
+description: Taux de TVA normal (19%)
+metadata:
+  short_label: Taux 19%
+  order:
+  - taux
+  - produits
+documentation: Taux de TVA de 19% et liste des produits concernés en Tunisie.

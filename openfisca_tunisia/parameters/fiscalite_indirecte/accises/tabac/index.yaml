@@ -1,0 +1,7 @@
+description: Produits du tabac
+metadata:
+  short_label: Produits du tabac
+  order:
+  - taux
+  - produits
+documentation: Produits du tabac soumis à un taux d'accise de 135%.

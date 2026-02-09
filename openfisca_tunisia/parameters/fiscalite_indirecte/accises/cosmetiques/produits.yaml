@@ -1,0 +1,8 @@
+description: Liste des produits cosmétiques et de beauté soumis aux accises
+values:
+  '2024-01-01':
+    value:
+    - eau_de_cologne_eau_de_toilette_parfum_after_shave
+    - produits_de_maquillage
+metadata:
+  unit: list

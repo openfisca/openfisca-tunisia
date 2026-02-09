@@ -1,0 +1,9 @@
+description: Café et thé soumis au taux d'accise de 25%
+values:
+  '2024-01-01':
+    value:
+    - autres_cafe
+    - capsule_cafe
+    - the_infusion
+metadata:
+  unit: list

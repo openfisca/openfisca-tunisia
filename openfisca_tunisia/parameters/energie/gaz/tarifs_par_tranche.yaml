@@ -1,0 +1,22 @@
+description: Tarifs du gaz naturel par tranche de consommation
+metadata:
+  unit: millimes/m³
+  reference: TUN_FiscalSim21_Sim2024_11March2025.xlsm
+brackets:
+  2024-01-01:
+    - threshold: 0
+      rate: 231
+      cost: 1778
+      reduction_puissance: 15
+    - threshold: 30
+      rate: 368
+    - threshold: 60
+      rate: 556
+    - threshold: 150
+      rate: 824
+documentation: |-
+  Tarifs progressifs du gaz naturel en Tunisie.
+  - threshold: Seuil de consommation mensuelle en m³
+  - rate: Tarif en millimes par m³
+  - cost: Coût fixe pour la première tranche (millimes)
+  - reduction_puissance: Réduction pour faible puissance (millimes)
