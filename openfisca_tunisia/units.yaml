@@ -38,6 +38,16 @@
     one: mètre cube
     other: mètres cube
   short_label: m3
+- name: millimes/kWh
+  label:
+    one: Millime par kilowatt-heure
+    other: Millimes par kilowatt-heure
+  short_label: millimes/kWh
+- name: millimes/m3
+  label:
+    one: Millime par mètre cube
+    other: Millimes par mètre cube
+  short_label: millimes/m³
 - name: month
   label: mois
 - name: year
