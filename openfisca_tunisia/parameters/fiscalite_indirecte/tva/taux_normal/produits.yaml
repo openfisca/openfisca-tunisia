@@ -375,8 +375,5 @@ values:
     - yaourt_sans_autres_indications
 metadata:
   unit: list
-  note: Liste des produits identifiés par leur variable OpenFisca. Cette liste peut
-    évoluer dans le temps selon les décisions fiscales.
 documentation: Liste exhaustive des produits et services soumis au taux de TVA de
-  19% en Tunisie. Les produits sont identifiés par leur nom de variable OpenFisca
-  (snake_case).
+  19% en Tunisie. Les produits sont identifiés par leur nom de variable OpenFisca.

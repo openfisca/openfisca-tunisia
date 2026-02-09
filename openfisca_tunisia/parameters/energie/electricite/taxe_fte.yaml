@@ -1,0 +1,12 @@
+description: Taxe FTE (Fonds de Transition Énergétique) pour l'électricité
+values:
+  2024-01-01:
+    value: 5
+metadata:
+  unit: millimes/kWh
+documentation: |-
+  Taxe pour le Fonds de Transition Énergétique appliquée sur la consommation d'électricité.
+
+  Cette taxe ne s'applique PAS si la consommation mensuelle est inférieure ou égale à 100 kWh.
+  Pour les consommations supérieures à 100 kWh, la taxe de 5 millimes/kWh s'applique
+  sur l'intégralité de la consommation.

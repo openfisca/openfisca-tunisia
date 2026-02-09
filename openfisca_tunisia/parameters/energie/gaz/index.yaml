@@ -5,4 +5,5 @@ metadata:
     - tarifs_par_tranche
     - cout_fixe
     - reduction_puissance
+    - taxe_fte
     - prix
