@@ -1,7 +1,6 @@
 description: Tarifs du gaz naturel par tranche de consommation
 metadata:
-  unit: millimes/m³
-  reference: TUN_FiscalSim21_Sim2024_11March2025.xlsm
+  unit: millimes/m3
 brackets:
   2024-01-01:
     - threshold: 0
