@@ -1,0 +1,9 @@
+description: Coût fixe mensuel du gaz naturel
+values:
+  2024-01-01:
+    value: 1778
+metadata:
+  unit: millimes
+documentation: |-
+  Coût fixe mensuel appliqué à la facture de gaz naturel en Tunisie.
+  Ce montant est facturé indépendamment de la consommation.
