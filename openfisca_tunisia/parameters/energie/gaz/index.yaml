@@ -2,4 +2,7 @@ description: Tarifs du gaz naturel
 metadata:
   short_label: Gaz naturel
   order:
-  - prix
+    - tarifs_par_tranche
+    - cout_fixe
+    - reduction_puissance
+    - prix

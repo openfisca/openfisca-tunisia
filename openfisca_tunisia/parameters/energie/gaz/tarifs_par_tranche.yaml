@@ -5,8 +5,6 @@ brackets:
   2024-01-01:
     - threshold: 0
       rate: 231
-      cost: 1778
-      reduction_puissance: 15
     - threshold: 30
       rate: 368
     - threshold: 60
@@ -15,7 +13,10 @@ brackets:
       rate: 824
 documentation: |-
   Tarifs progressifs du gaz naturel en Tunisie.
+
+  Structure des tranches :
   - threshold: Seuil de consommation mensuelle en m³
   - rate: Tarif en millimes par m³
-  - cost: Coût fixe pour la première tranche (millimes)
-  - reduction_puissance: Réduction pour faible puissance (millimes)
+
+  Note: Le coût fixe et la réduction pour faible puissance sont définis
+  dans des paramètres séparés (cout_fixe.yaml et reduction_puissance.yaml).

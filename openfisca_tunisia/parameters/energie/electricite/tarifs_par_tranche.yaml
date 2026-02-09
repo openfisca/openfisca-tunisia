@@ -5,8 +5,6 @@ brackets:
   2024-01-01:
     - threshold: 0
       rate: 62
-      cost: 472.2
-      reduction_puissance: 700
     - threshold: 50
       rate: 96
     - threshold: 100
@@ -19,7 +17,7 @@ brackets:
       rate: 414
 documentation: |-
   Tarifs progressifs de l'électricité en Tunisie.
+
+  Structure des tranches :
   - threshold: Seuil de consommation mensuelle en kWh
   - rate: Tarif en millimes par kWh
-  - cost: Coût fixe pour la première tranche (millimes)
-  - reduction_puissance: Réduction pour faible puissance (millimes)
