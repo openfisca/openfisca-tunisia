@@ -33,6 +33,10 @@
   label:
     one: jour
     other: jours
+- name: list
+  label:
+    one: Produit
+    other: Produits
 - name: m3
   label:
     one: mètre cube
