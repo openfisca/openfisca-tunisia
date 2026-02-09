@@ -9,6 +9,11 @@
     one: Dinar
     other: Dinars
   short_label: DT
+- name: millimes
+  label:
+    one: Millime
+    other: Millimes
+  short_label: millimes
 - name: currency/kg
   label:
     one: Dinar pour un kilogramme
@@ -52,6 +57,21 @@
     one: Millime par mètre cube
     other: Millimes par mètre cube
   short_label: millimes/m³
+- name: kWh/mois
+  label:
+    one: Kilowatt-heure par mois
+    other: Kilowatt-heures par mois
+  short_label: kWh/mois
+- name: m3/mois
+  label:
+    one: Mètre cube par mois
+    other: Mètres cubes par mois
+  short_label: m³/mois
+- name: kWh
+  label:
+    one: Kilowatt-heure
+    other: Kilowatt-heures
+  short_label: kWh
 - name: month
   label: mois
 - name: year
