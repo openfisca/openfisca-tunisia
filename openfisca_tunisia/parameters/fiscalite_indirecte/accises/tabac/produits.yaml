@@ -1,0 +1,9 @@
+description: Liste des produits du tabac soumis aux accises
+values:
+  '2024-01-01':
+    value:
+    - autre_tabac
+    - cigarette
+    - paquet_de_cigarette
+metadata:
+  unit: list

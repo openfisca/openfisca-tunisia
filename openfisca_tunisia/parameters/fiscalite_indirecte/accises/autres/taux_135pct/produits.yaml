@@ -1,0 +1,7 @@
+description: Autres produits soumis aux accises soumis au taux d'accise de 135%
+values:
+  '2024-01-01':
+    value:
+    - vape_recharge
+metadata:
+  unit: list

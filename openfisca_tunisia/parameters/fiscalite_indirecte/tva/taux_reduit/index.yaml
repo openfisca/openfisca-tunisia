@@ -1,0 +1,7 @@
+description: Taux de TVA réduit (7%)
+metadata:
+  short_label: Taux 7%
+  order:
+  - taux
+  - produits
+documentation: Taux de TVA de 7% et liste des produits concernés en Tunisie.

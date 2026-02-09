@@ -1,0 +1,7 @@
+description: Taux de TVA nul (0%)
+metadata:
+  short_label: Taux 0%
+  order:
+  - taux
+  - produits
+documentation: Taux de TVA de 0% et liste des produits concernés en Tunisie.

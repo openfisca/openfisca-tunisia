@@ -1,0 +1,15 @@
+description: Autres produits soumis aux accises soumis au taux d'accise de 10%
+values:
+  '2024-01-01':
+    value:
+    - autres_produits_sucres
+    - autres_produits_sucres_non_indiques_ailleurs
+    - bonbon
+    - chocolat
+    - confiture_et_compote_de_fruits
+    - halkoum
+    - halwa_chamia
+    - maassel_chicha
+    - shwing_gum
+metadata:
+  unit: list

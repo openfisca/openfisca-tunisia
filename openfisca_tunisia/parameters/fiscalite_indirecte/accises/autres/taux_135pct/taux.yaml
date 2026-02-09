@@ -1,0 +1,6 @@
+description: Taux d'accise de 135%
+values:
+  '2024-01-01':
+    value: 1.35
+metadata:
+  unit: /1

@@ -1,0 +1,6 @@
+description: Taux d'accise pour produits du tabac
+values:
+  '2024-01-01':
+    value: 1.35
+metadata:
+  unit: /1

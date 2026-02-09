@@ -1,0 +1,11 @@
+description: Paramètres du système socio-fiscal tunisien
+metadata:
+  order:
+    - impot_revenu
+    - prelevements_sociaux
+    - marche_travail
+    - prestations
+    - retraite
+    - fiscalite_indirecte
+    - produits_subventionnes
+    - energie

@@ -1,0 +1,8 @@
+description: Paramètres de l'électricité
+metadata:
+  short_label: Électricité
+  order:
+  - tarifs_par_tranche
+documentation: |-
+  Tarifs de l'électricité en Tunisie avec structure progressive par tranches de consommation.
+  Source: TUN_FiscalSim21_Sim2024_11March2025.xlsm

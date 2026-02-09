@@ -1,0 +1,6 @@
+description: Taux d'accise de 7%
+values:
+  '2024-01-01':
+    value: 0.07881188118811881
+metadata:
+  unit: /1

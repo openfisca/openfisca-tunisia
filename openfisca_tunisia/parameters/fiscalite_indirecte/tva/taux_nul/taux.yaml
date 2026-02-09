@@ -1,0 +1,6 @@
+description: Valeur du taux de TVA de 0%
+values:
+  '2021-01-01':
+    value: 0.0
+metadata:
+  unit: /1
