@@ -1,23 +1,29 @@
 description: Tarifs de l'électricité par tranche de consommation
 metadata:
   unit: millimes/kWh
+  amount_unit: millimes/kWh
+  threshold_unit: kWh/mois
+  reference: Tarification progressive de l'électricité en Tunisie
 brackets:
   2024-01-01:
     - threshold: 0
-      rate: 62
+      amount: 62
     - threshold: 50
-      rate: 96
+      amount: 96
     - threshold: 100
-      rate: 176
+      amount: 176
     - threshold: 200
-      rate: 218
+      amount: 218
     - threshold: 300
-      rate: 341
+      amount: 341
     - threshold: 500
-      rate: 414
+      amount: 414
 documentation: |-
   Tarifs progressifs de l'électricité en Tunisie.
 
-  Structure des tranches :
-  - threshold: Seuil de consommation mensuelle en kWh
-  - rate: Tarif en millimes par kWh
+  Structure du barème :
+  - threshold: Seuil de consommation mensuelle en kWh/mois
+  - amount: Tarif applicable en millimes par kWh
+
+  Le tarif applicable à une consommation est déterminé par la tranche
+  dans laquelle elle se situe (tarification par paliers).

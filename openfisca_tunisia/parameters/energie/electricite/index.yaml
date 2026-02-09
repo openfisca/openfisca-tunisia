@@ -5,6 +5,7 @@ metadata:
     - tarifs_par_tranche
     - cout_fixe
     - reduction_puissance
+    - taxe_fte
 documentation: |-
   Tarifs de l'électricité en Tunisie avec structure progressive par tranches de consommation.
 
@@ -12,3 +13,4 @@ documentation: |-
   - Tarifs par tranche de consommation
   - Coût fixe mensuel
   - Réduction pour faible puissance
+  - Taxe FTE (Fonds de Transition Énergétique)
