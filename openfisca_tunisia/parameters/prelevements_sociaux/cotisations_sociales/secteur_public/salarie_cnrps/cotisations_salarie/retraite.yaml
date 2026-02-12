@@ -27,6 +27,7 @@ brackets:
     2020-01-01:
       value: 0.092
 metadata:
+  last_value_still_valid_on: "2025-06-05"
   reference:
     1959-02-01:
     - title: loi n°59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite

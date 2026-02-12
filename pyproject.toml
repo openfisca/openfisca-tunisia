@@ -1,6 +1,6 @@
 [project]
 name = "OpenFisca-Tunisia"
-version = "0.54"
+version = "0.56"
 description = "OpenFisca Rules as Code model for Tunisia."
 readme = "README.md"
 keywords = ["microsimulation", "tax", "benefit", "rac", "rules-as-code", "tunisia"]
@@ -84,6 +84,9 @@ filterwarnings = [
     "ignore:invalid value encountered in multiply:RuntimeWarning",
     "ignore:divide by zero encountered in divide:RuntimeWarning",
 ]
+
+[tool.setuptools.packages.find]
+include = ["openfisca_tunisia*"]
 
 [tool.uv.workspace]
 members = ["openfisca-tunisia"]

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.56 - [#257](https://github.com/openfisca/openfisca-tunisia/pull/257)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/marche_travail`.
+* Détails :
+  - Complète l'historique du SMIG et du SMAG depuis 1961.
+  - Ajoute les paramètres pour les indemnités spéciales (IS) et complémentaires (ICP).
+
+## 0.55 - [#238](https://github.com/openfisca/openfisca-tunisia/pull/238)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes..
+* Zones impactées : `cotisations/sociales/public/regimes_speciaux`.
+* Détails :
+  - Ajout des barèmes de membres du gouvernement, des députés et des gouverneurs.
+
 ### 0.54 - [#214](https://github.com/openfisca/openfisca-tunisia/pull/214)
 
 * Amélioration technique.
