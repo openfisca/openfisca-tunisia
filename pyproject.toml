@@ -19,8 +19,8 @@ classifiers = [
 ]
 requires-python = ">= 3.9"
 dependencies = [
-    "numpy >=1.24.3, <2",
-    "openfisca-core[web-api] >=43, <44",
+    # "numpy >=1.24.3, <2", #TODO: Pour le CRES ?
+    "openfisca-core[web-api] >=44, <45",
 ]
 
 [project.urls]
