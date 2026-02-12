@@ -5,19 +5,42 @@ metadata:
   threshold_unit: kWh/mois
   reference: Tarification progressive de l'électricité en Tunisie
 brackets:
-  2024-01-01:
-    - threshold: 0
-      amount: 62
-    - threshold: 50
-      amount: 96
-    - threshold: 100
-      amount: 176
-    - threshold: 200
-      amount: 218
-    - threshold: 300
-      amount: 341
-    - threshold: 500
-      amount: 414
+- threshold:
+    2024-01-01:
+      value: 0
+  amount:
+    2024-01-01:
+      value: 62
+- threshold:
+    2024-01-01:
+      value: 50
+  amount:
+    2024-01-01:
+      value: 96
+- threshold:
+    2024-01-01:
+      value: 100
+  amount:
+    2024-01-01:
+      value: 176
+- threshold:
+    2024-01-01:
+      value: 200
+  amount:
+    2024-01-01:
+      value: 218
+- threshold:
+    2024-01-01:
+      value: 300
+  amount:
+    2024-01-01:
+      value: 341
+- threshold:
+    2024-01-01:
+      value: 500
+  amount:
+    2024-01-01:
+      value: 414
 documentation: |-
   Tarifs progressifs de l'électricité en Tunisie.
 

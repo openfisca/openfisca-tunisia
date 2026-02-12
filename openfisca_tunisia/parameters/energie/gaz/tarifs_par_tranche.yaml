@@ -5,15 +5,30 @@ metadata:
   threshold_unit: m3/mois
   reference: Tarification progressive du gaz naturel en Tunisie
 brackets:
-  2024-01-01:
-    - threshold: 0
-      amount: 231
-    - threshold: 30
-      amount: 368
-    - threshold: 60
-      amount: 556
-    - threshold: 150
-      amount: 824
+- threshold:
+    2024-01-01:
+      value: 0
+  amount:
+    2024-01-01:
+      value: 231
+- threshold:
+    2024-01-01:
+      value: 30
+  amount:
+    2024-01-01:
+      value: 368
+- threshold:
+    2024-01-01:
+      value: 60
+  amount:
+    2024-01-01:
+      value: 556
+- threshold:
+    2024-01-01:
+      value: 150
+  amount:
+    2024-01-01:
+      value: 824
 documentation: |-
   Tarifs progressifs du gaz naturel en Tunisie.
 
