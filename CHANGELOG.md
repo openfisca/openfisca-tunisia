@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.57 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.57 - [#340](https://github.com/openfisca/openfisca-tunisia/pull/340)
 
 * Évolution du système socio-fiscal.
 * Amélioration technique.
