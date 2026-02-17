@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : CI.
+* Détails :
+  - Corrige l'installation de la version minimale d'openfisca-core en CI (44.0.3 au lieu de 44, inexistante sur PyPI).
+
 ## 0.58 - [#346](https://github.com/openfisca/openfisca-tunisia/pull/346)
 
 * Amélioration technique.
