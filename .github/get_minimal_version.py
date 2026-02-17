@@ -11,7 +11,7 @@ with open('./pyproject.toml', 'r', encoding='utf-8') as file:
 match = re.search(
     r'openfisca-core\[([^\]]+)\]\s*>=\s*([\d\.]+)',
     content,
-)
+    )
 if not match:
     raise SystemExit('Could not find openfisca-core dependency in pyproject.toml')
 
