@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.58 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : CI, documentation.
+* Détails :
+  - Aligne les versions de Python sur openfisca-core v44 (3.10, 3.11, 3.12 ; retrait du support 3.9).
+  - Met à jour le workflow CI et la documentation (README, CONTRIBUTING, .conda/meta.yaml).
+  - Documente la mise à jour des required status checks dans CONTRIBUTING.
+
 ## 0.57 - [#340](https://github.com/openfisca/openfisca-tunisia/pull/340)
 
 * Évolution du système socio-fiscal.

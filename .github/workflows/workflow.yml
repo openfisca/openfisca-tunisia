@@ -1,3 +1,5 @@
+# When changing supported Python versions, update branch protection "Required status checks"
+# in GitHub Settings > Branches: remove obsolete job names (e.g. build with Python 3.9).
 name: OpenFisca Tunisia
 
 on:
