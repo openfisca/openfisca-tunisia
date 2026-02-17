@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.57 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Évolution du système socio-fiscal.
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fiscalite_indirecte`, `parameters/energie`, `parameters/units`.
+* Détails :
+  - Ajoute les paramètres de fiscalité indirecte (TVA avec taux normal, réduit et nul, accises sur alcool, tabac, boissons, café/thé, cosmétiques et autres produits).
+  - Ajoute les paramètres pour l'énergie (électricité et gaz : tarifs par tranche, coûts fixes, réductions de puissance, taxes FTE).
+  - Met à jour openfisca-core vers la version 44.
+  - Ajoute de nouvelles unités de mesure.
+  - Retire la dépendance directe à numpy (désormais fournie par openfisca-core).
+
 ## 0.56 - [#257](https://github.com/openfisca/openfisca-tunisia/pull/257)
 
 * Évolution du système socio-fiscal.
