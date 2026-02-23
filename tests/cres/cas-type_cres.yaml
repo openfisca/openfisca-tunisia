@@ -1,0 +1,249 @@
+- name: Femme avec deux enfants
+  period: 2024-12
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1957-02-07
+        pension_de_retraite: 207.692
+        regime_securite_sociale_cotisant: 'rtfr'
+      enfant1:
+        date_naissance: 1982-07-27
+        salaire_de_base: 3532.800 / 12
+        regime_securite_sociale_cotisant: 'rtfr'
+      enfant2:
+        date_naissance: 1979-10-01
+        salaire_de_base: 3532.800 / 12
+        regime_securite_sociale_cotisant: 'rtfr'
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    individus:
+      # parent1:
+      enfant1:
+        salaire_net_a_payer: 287.040
+      enfant2:
+        salaire_net_a_payer: 287.040
+    amen_social_revenu: 781
+    amen_social_enfants_a_charge: 0
+    amen_social_eligible: true
+
+
+- name: Femme avec deux enfants annuel
+  period: 2024
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1957-02-07
+        male: false
+        pension_de_retraite: 12 * 207.692
+        regime_securite_sociale_cotisant: 'neant'
+      enfant1:
+        male: false
+        date_naissance: 1982-07-27
+        salaire_de_base: 3532.800
+        regime_securite_sociale_cotisant: 'rtfr'
+      enfant2:
+        male: false
+        date_naissance: 1979-10-01
+        salaire_de_base: 3532.800
+        regime_securite_sociale_cotisant: 'rtfr'
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+  output:
+    individus:
+      enfant1:
+        salaire_de_base:
+          2024-12: 294.39
+        cotisations_salarie:
+          2024-01: .025 * 294.39
+          2024-02: .025 * 294.39
+          2024-03: .025 * 294.39
+          2024-04: .025 * 294.39
+          2024-05: .025 * 294.39
+          2024-06: .025 * 294.39
+          2024-07: .025 * 294.39
+          2024-08: .025 * 294.39
+          2024-09: .025 * 294.39
+          2024-10: .025 * 294.39
+          2024-11: .025 * 294.39
+          2024-12: .025 * 294.39
+        salaire_net_a_payer:
+          2024-12: 287.040
+      enfant2:
+        salaire_net_a_payer:
+          2024-12: 287.040
+    amen_social_revenu:
+      2024-12: 781
+    amen_social_enfants_a_charge:
+      2024-12: 0
+    amen_social_eligible:
+      2024-12: true
+# Tester avec enfant en pac pour le foyer fiscal
+
+
+# - name: Chef de ménage avec 3 pac et deux régimes (à améliorer)
+#   period: 2024
+#   absolute_error_margin: 1
+#   input:
+#     individus:
+#       parent1:
+#         date_naissance: 1975-01-27
+#         male: false
+#         regime_securite_sociale_cotisant: 'neant'
+#       pac1:
+#         male: false
+#         date_naissance: 1980-02-03
+#         regime_securite_sociale_cotisant: 'neant'
+#       pac2:
+#         male: false
+#         date_naissance: 1982-12-08
+#         salaire_de_base: 11532.88
+#         regime_securite_sociale_cotisant: 'rsna'
+#       pac3:
+#         male: false
+#         date_naissance: 1967-03-01
+#         regime_securite_sociale_cotisant: 'neant'
+#     menage:
+#       personne_de_reference: parent1
+#       enfants:
+#         - pac1
+#         - pac2
+#         - pac3
+#   output:
+#     individus:
+#       pac1:
+#         salaire_de_base:
+#           2024-12: 0
+#         salaire_net_a_payer:
+#           2024-12: 0
+#       pac2:
+#         salaire_de_base:
+#           2024-12: 961.073
+#         salaire_net_a_payer:
+#           2024-12: 732.534
+#     amen_social_enfants_a_charge:
+#       2024-12: 0
+#     amen_social_revenu:
+#       2024-12: 836
+#     amen_social_eligible:
+#       2024-12: false
+
+
+- name: Couple avec deux enfants salaries
+  period: 2024
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        date_naissance: 1964-04-24
+        male: true
+        regime_securite_sociale_cotisant: 'neant'
+      parent2:
+        date_naissance: 1968-11-01
+        male: false
+        regime_securite_sociale_cotisant: 'neant'
+      pac1:
+        male: false
+        date_naissance: 2001-12-13
+        regime_securite_sociale_cotisant: 'salarie_cnrps'
+        salaire_de_base: 364.08
+      pac2:
+        male: false
+        date_naissance: 1996-02-07
+        salaire_de_base: 5010.843
+        regime_securite_sociale_cotisant: 'rsna'
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - pac1
+        - pac2
+    foyer_fiscal:
+      declarants:
+      - parent1
+      - parent2
+      personnes_a_charge:
+      - pac1
+      - pac2
+  output:
+    individus:
+      pac1:
+        salaire_de_base:
+          2024-12: 30.33
+        salaire_net_a_payer:
+          2024-12: 23.40
+        regime_securite_sociale_cotisant:
+          2024-12: 9
+      pac2:
+        salaire_de_base:
+          2024-12: 417.57
+        regime_securite_sociale_cotisant:
+          2024-12: 1
+        salaire_net_a_payer:
+          2024-12: 379.23
+
+
+- name: Adulte avec trois enfants salaries dont deux salariés
+  period: 2024
+  absolute_error_margin: .5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1960-10-28
+        male: true
+        regime_securite_sociale_cotisant: 'neant'
+      pac1:
+        male: false
+        date_naissance: 1995-04-28
+        regime_securite_sociale_cotisant: 'neant'
+      pac2:
+        male: false
+        date_naissance: 1991-08-20
+        salaire_de_base: 4201.934
+        regime_securite_sociale_cotisant: 'rsna'
+      pac3:
+        male: false
+        date_naissance: 1987-04-10
+        salaire_de_base: 5512.208
+        regime_securite_sociale_cotisant: 'rsna'
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - pac1
+        - pac2
+        - pac3
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge:
+      - pac1
+      - pac2
+      - pac3
+  output:
+    individus:
+      pac2:
+        salaire_de_base:
+          2024-12: 350.161
+        salaire_net_a_payer:
+          2024-12: 318.016
+        regime_securite_sociale_cotisant:
+          2024-12: 1
+      pac3:
+        salaire_de_base:
+          2024-12: 459.351
+        regime_securite_sociale_cotisant:
+          2024-12: 1
+        salaire_net_a_payer:
+          2024-12: 417.182
+    amen_social_revenu:
+      2024-12: 735.19
+    amen_social_eligible:
+      2024-12: false

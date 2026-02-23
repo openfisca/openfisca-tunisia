@@ -52,7 +52,7 @@ class amen_social_eligible(Variable):
         taille_menage = menage.nb_persons()
         revenu_menage = menage('amen_social_revenu', period)
         seuil_de_revenu = parameters(period).prestations.non_contributives.amen_social.eligibilite
-        smig_mensuel = parameters(period.start).marche_travail.smig_48h_mensuel
+        smig_mensuel = parameters(period.this_year.start).marche_travail.smig_48h_mensuel
         conditions_sans_handicap = [
             taille_menage == 1,
             taille_menage == 2,
