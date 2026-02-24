@@ -1,8 +1,7 @@
 description: Tarifs de l'électricité par tranche de consommation
 metadata:
-  unit: millimes/kWh
   amount_unit: millimes/kWh
-  threshold_unit: kWh/mois
+  # threshold_unit: kWh/mois
   reference: Tarification progressive de l'électricité en Tunisie
 brackets:
 - threshold:
