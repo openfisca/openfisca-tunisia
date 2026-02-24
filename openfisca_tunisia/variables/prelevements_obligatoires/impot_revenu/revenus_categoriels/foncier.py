@@ -1,5 +1,4 @@
-'''4. Revenus fonciers.'''
-
+"""4. Revenus fonciers."""
 
 from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 
@@ -7,56 +6,79 @@ from openfisca_tunisia.variables.base import *  # noqa analysis:ignore
 class revenus_fonciers(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = 'Revenus fonciers'
+    label = "Revenus fonciers"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        foncier_reel_resultat_fiscal = foyer_fiscal.declarant_principal('foncier_reel_resultat_fiscal', period = period)
-        foncier_forfait_bati_resultat_fiscal = foyer_fiscal('foncier_forfait_bati_resultat_fiscal', period = period)
-        foncier_forfait_non_bati_resultat_fiscal = foyer_fiscal('foncier_forfait_non_bati_resultat_fiscal', period = period)
-        foncier_societes_personnes = foyer_fiscal.declarant_principal('foncier_societes_personnes', period = period)
+        foncier_reel_resultat_fiscal = foyer_fiscal.declarant_principal(
+            "foncier_reel_resultat_fiscal", period=period
+        )
+        foncier_forfait_bati_resultat_fiscal = foyer_fiscal(
+            "foncier_forfait_bati_resultat_fiscal", period=period
+        )
+        foncier_forfait_non_bati_resultat_fiscal = foyer_fiscal(
+            "foncier_forfait_non_bati_resultat_fiscal", period=period
+        )
+        foncier_societes_personnes = foyer_fiscal.declarant_principal(
+            "foncier_societes_personnes", period=period
+        )
 
-        return foncier_reel_resultat_fiscal + foncier_forfait_bati_resultat_fiscal + foncier_forfait_non_bati_resultat_fiscal + foncier_societes_personnes
+        return (
+            foncier_reel_resultat_fiscal
+            + foncier_forfait_bati_resultat_fiscal
+            + foncier_forfait_non_bati_resultat_fiscal
+            + foncier_societes_personnes
+        )
 
 
 class foncier_forfait_bati_resultat_fiscal(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = 'Revenus fonciers net des immeubles bâtis'
+    label = "Revenus fonciers net des immeubles bâtis"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
         foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_batis_recettes', period = period)
+            "foncier_forfaitaire_batis_recettes", period=period
+        )
         # foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal(
         #     'foncier_forfaitaire_batis_reliquat', period = period)
         foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_batis_frais', period = period)
+            "foncier_forfaitaire_batis_frais", period=period
+        )
         foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_batis_taxe', period = period)
-        taux_deduction_frais = parameters(period.start).impot_revenu.foncier.bati.deduction_frais
+            "foncier_forfaitaire_batis_taxe", period=period
+        )
+        taux_deduction_frais = parameters(
+            period.start
+        ).impot_revenu.foncier.bati.deduction_frais
         return max_(
             0,
             foncier_forfaitaire_batis_recettes * (1 - taux_deduction_frais)
             - foncier_forfaitaire_batis_frais
-            - foncier_forfaitaire_batis_taxe
-            )
+            - foncier_forfaitaire_batis_taxe,
+        )
 
 
 class foncier_forfait_non_bati_resultat_fiscal(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = 'Revenus fonciers net des terrains non bâtis'
+    label = "Revenus fonciers net des terrains non bâtis"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
         foncier_forfaitaire_non_batis_recettes = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_non_batis_recettes', period = period)
+            "foncier_forfaitaire_non_batis_recettes", period=period
+        )
         foncier_forfaitaire_non_batis_depenses = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_non_batis_depenses', period = period)
+            "foncier_forfaitaire_non_batis_depenses", period=period
+        )
         foncier_forfaitaire_non_batis_taxe = foyer_fiscal.declarant_principal(
-            'foncier_forfaitaire_non_batis_taxe', period = period)
+            "foncier_forfaitaire_non_batis_taxe", period=period
+        )
         return max_(
-            foncier_forfaitaire_non_batis_recettes - foncier_forfaitaire_non_batis_depenses - foncier_forfaitaire_non_batis_taxe,
-            0
-            )
+            foncier_forfaitaire_non_batis_recettes
+            - foncier_forfaitaire_non_batis_depenses
+            - foncier_forfaitaire_non_batis_taxe,
+            0,
+        )
