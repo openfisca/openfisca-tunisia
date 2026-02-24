@@ -1,8 +1,7 @@
 description: Tarifs du gaz naturel par tranche de consommation
 metadata:
-  unit: millimes/m3
   amount_unit: millimes/m3
-  threshold_unit: m3/mois
+  # threshold_unit: m3/mois
   reference: Tarification progressive du gaz naturel en Tunisie
 brackets:
 - threshold:
