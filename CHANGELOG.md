@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.60 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : CI, lint, outillage.
+* Détails :
+  - Suppression de flake8, flake8-print, flake8-quotes, flake8-pyproject et autopep8 ; utilisation exclusive de ruff (lint + format) et isort intégré à ruff.
+  - Makefile et CI basés sur uv : `uv sync`, `uv run`, cache uv et venv dans le workflow GitHub Actions.
+  - Scripts CI (.github) mis à jour pour appeler `uv run` (openfisca, python) ; twine ajouté aux dépendances dev pour le déploiement.
+  - Reformattage du code avec `ruff format`.
+
 ## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
 
 * Amélioration technique.

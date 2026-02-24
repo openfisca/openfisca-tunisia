@@ -17,11 +17,13 @@ from openfisca_tunisia.variables.base import *
 
 # - Déduction de la plus value provenant de la cession des actions cotées en bourse 6841
 
+
 class plus_value_cession_actifs_cotes_bourse(Variable):
     value_type = int
-    label = 'Plus value provenant de la cession des actions cotées en bourse (pour déduction)'
+    label = "Plus value provenant de la cession des actions cotées en bourse (pour déduction)"
     entity = Individu
     definition_period = YEAR
+
 
 # - Bénéfices provenant des opérations de courtage international 1141
 # - Exportation 1191
@@ -72,7 +74,7 @@ class compte_special_epargne_cent(Variable):
 
 class emprunt_obligataire(Variable):
     value_type = int
-    label = 'Intérêts des emprunts obligataires'
+    label = "Intérêts des emprunts obligataires"
     entity = Individu
     definition_period = YEAR
 
@@ -86,28 +88,28 @@ class compte_epargne_investissement(Variable):
 
 class rente(Variable):
     value_type = int
-    label = 'Rentes payées obligatoirement et à titre gratuit'
+    label = "Rentes payées obligatoirement et à titre gratuit"
     entity = Individu
     definition_period = YEAR
 
 
 class prime_assurance_vie(Variable):
     value_type = int
-    label = 'Prime d’assurance-vie'
+    label = "Prime d’assurance-vie"
     entity = Individu
     definition_period = YEAR
 
 
 class dons(Variable):
     value_type = int
-    label = 'Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21'
+    label = "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"
     entity = Individu
     definition_period = YEAR
 
 
 class pret_universitaire(Variable):
     value_type = int
-    label = 'Remboursement des prêts universitaires en principal et intérêts'
+    label = "Remboursement des prêts universitaires en principal et intérêts"
     entity = Individu
     definition_period = YEAR
 

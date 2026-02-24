@@ -4,7 +4,7 @@ from openfisca_tunisia.variables.base import (
     Reform,
     set_input_divide_by_period,
     Variable,
-    )
+)
 
 try:
     from scipy.optimize import fsolve
@@ -28,11 +28,11 @@ def calculate_net_from(salaire_de_base, individu, period, requested_variable_nam
     # requested as an input variable, hence producing a cycle error
     temp_simulation.computation_stack = []
 
-    temp_individu.get_holder('salaire_de_base').set_input(period, salaire_de_base)
+    temp_individu.get_holder("salaire_de_base").set_input(period, salaire_de_base)
 
     # Force recomputing of salaire_net_a_payer
-    temp_individu.get_holder('salaire_net_a_payer').delete_arrays()
-    net = temp_individu('salaire_net_a_payer', period)[0]
+    temp_individu.get_holder("salaire_net_a_payer").delete_arrays()
+    net = temp_individu("salaire_net_a_payer", period)[0]
 
     return net
 
@@ -40,13 +40,13 @@ def calculate_net_from(salaire_de_base, individu, period, requested_variable_nam
 class salaire_de_base(Variable):
     value_type = float
     entity = Individu
-    label = 'Salaire de base'
+    label = "Salaire de base"
     definition_period = MONTH
     set_input = set_input_divide_by_period
 
     def formula(individu, period):
         # Use numerical inversion to calculate 'salaire_de_base' from 'salaire_net_a_payer'
-        net = individu.get_holder('salaire_net_a_payer').get_array(period)
+        net = individu.get_holder("salaire_net_a_payer").get_array(period)
 
         if net is None:
             return individu.empty_array()
@@ -56,25 +56,35 @@ class salaire_de_base(Variable):
 
         # List of variables already calculated.
         # We will need it to remove their holders, that might contain undesired cache
-        requested_variable_names = [stack_frame['name'] for stack_frame in simulation.tracer.stack]
+        requested_variable_names = [
+            stack_frame["name"] for stack_frame in simulation.tracer.stack
+        ]
 
         def solve_func(net):
             def innerfunc(essai_salaire_de_base):
-                return calculate_net_from(essai_salaire_de_base, individu, period, requested_variable_names) - net
+                return (
+                    calculate_net_from(
+                        essai_salaire_de_base,
+                        individu,
+                        period,
+                        requested_variable_names,
+                    )
+                    - net
+                )
+
             return innerfunc
 
-        salaire_de_base_calcule = \
-            fsolve(
-                solve_func(net),
-                net * 1,  # first guess
-                xtol = 1 / 1000,  # précision au millime
-                )
+        salaire_de_base_calcule = fsolve(
+            solve_func(net),
+            net * 1,  # first guess
+            xtol=1 / 1000,  # précision au millime
+        )
 
         return salaire_de_base_calcule
 
 
 class de_net_a_salaire_de_base(Reform):
-    name = 'Inversion du calcul brut (salaire_de_base) -> net'
+    name = "Inversion du calcul brut (salaire_de_base) -> net"
 
     def apply(self):
         self.update_variable(salaire_de_base)

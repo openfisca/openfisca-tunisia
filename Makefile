@@ -1,61 +1,48 @@
+# Use uv for all Python/package commands. Override with: make UV=python to use system Python.
+UV = uv run
+
 all: test
 
 uninstall:
-	pip freeze | grep -v "^-e" | xargs pip uninstall -y
+	uv pip uninstall openfisca-tunisia -y 2>/dev/null || true
 
 clean:
 	rm -rf build dist
 	find . -name '*.pyc' -exec rm \{\} \;
 
 deps:
-	pip install --upgrade pip build twine
+	uv pip install build twine
 
-install: deps
-	@# Install OpenFisca-Tunisia for development.
-	@# `make install` installs the editable version of OpenFisca-Tunisia.
-	@# This allows contributors to test as they code.
-	pip install --editable .[dev] --upgrade
-	pip install openfisca-core[web-api]
+install:
+	@# Install OpenFisca-Tunisia for development (editable).
+	uv sync --extra dev
 
 build: clean deps
-	@# Install OpenFisca-Tunisia for deployment and publishing.
-	@# `make build` allows us to be be sure tests are run against the packaged version
-	@# of OpenFisca-Tunisia, the same we put in the hands of users and reusers.
-	python -m build
-	pip uninstall openfisca-tunisia
-	find dist -name "*.whl" -exec pip install {}[dev] \;
-	pip install openfisca-core[web-api]
+	@# Build and install the package from wheel to test the distributed version.
+	uv build
+	uv pip uninstall openfisca-tunisia -y 2>/dev/null || true
+	find dist -name "*.whl" -exec uv pip install {}[dev] \;
 
 check-syntax-errors:
-	python -m compileall -q .
+	$(UV) python -m compileall -q .
 
 format-style:
-	@# Do not analyse .gitignored files.
-	@# `make` needs `$$` to output `$`. Ref: http://stackoverflow.com/questions/2382764.
-	autopep8 `git ls-files | grep "\.py$$"`
+	$(UV) ruff format .
+	$(UV) ruff check --fix .
 
 check-style:
-	@# Ruff first, then flake8. Do not analyse .gitignored files.
-	@# `make` needs `$$` to output `$`. Ref: http://stackoverflow.com/questions/2382764.
-	uv run ruff check .
-	flake8 `git ls-files | grep "\.py$$"`
+	$(UV) ruff check .
 
 check-path-length:
-	@# Verify that there is no path exceeding Windows limit
-	python openfisca_tunisia/scripts/check_path_length.py
+	$(UV) python openfisca_tunisia/scripts/check_path_length.py
 
 check-yaml:
-	@# check yaml style
 	.github/lint-changed-yaml-tests.sh
 
 check-all-yaml:
-	@# check yaml style
-	yamllint openfisca_tunisia/parameters
-	yamllint tests
+	$(UV) yamllint openfisca_tunisia/parameters
+	$(UV) yamllint tests
 
 test: clean check-syntax-errors check-style
-	@# before parsing source files containing formulas.
 	@echo "> Yaml tests..."
-	openfisca test --country-package openfisca_tunisia tests
-	@# @echo "> Notebooks tests..."
-	@# python openfisca_tunisia/notebooks/test_notebooks.py notebooks/
+	$(UV) openfisca test --country-package openfisca_tunisia tests

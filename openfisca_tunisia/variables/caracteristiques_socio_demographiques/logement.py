@@ -4,14 +4,14 @@ from openfisca_tunisia.variables.base import *
 class code_postal(Variable):
     value_type = int
     entity = Menage
-    label = 'Localisation du logement (code postal)'
+    label = "Localisation du logement (code postal)"
     definition_period = ETERNITY
 
 
 class loyer(Variable):
     value_type = int
     entity = Menage
-    label = 'Loyer du logement'
+    label = "Loyer du logement"
     definition_period = YEAR
 
 

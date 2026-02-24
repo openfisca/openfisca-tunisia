@@ -6,7 +6,7 @@ from openfisca_tunisia.variables.base import *
 
 class pension_cnss(Variable):
     value_type = float
-    label = 'Pension'
+    label = "Pension"
     entity = Individu
     definition_period = MONTH
     set_input = set_input_divide_by_period
@@ -14,7 +14,7 @@ class pension_cnss(Variable):
 
 class pension_cnrps(Variable):
     value_type = float
-    label = 'Pension'
+    label = "Pension"
     entity = Individu
     definition_period = MONTH
     set_input = set_input_divide_by_period
@@ -22,7 +22,7 @@ class pension_cnrps(Variable):
 
 class pension_de_retraite(Variable):
     value_type = float
-    label = 'Pension'
+    label = "Pension"
     entity = Individu
     definition_period = MONTH
     set_input = set_input_divide_by_period
@@ -30,7 +30,7 @@ class pension_de_retraite(Variable):
 
 class pension_orphelin(Variable):
     value_type = float
-    label = 'Pension'
+    label = "Pension"
     entity = Individu
     definition_period = MONTH
     set_input = set_input_divide_by_period
@@ -38,7 +38,7 @@ class pension_orphelin(Variable):
 
 class pension_d_invalidite(Variable):
     value_type = float
-    label = 'Pension'
+    label = "Pension"
     entity = Individu
     definition_period = MONTH
     set_input = set_input_divide_by_period
@@ -46,34 +46,34 @@ class pension_d_invalidite(Variable):
 
 class pension(Variable):
     value_type = float
-    label = 'Pension'
+    label = "Pension"
     entity = Individu
     definition_period = YEAR
     set_input = set_input_divide_by_period
 
     def formula(individu, period):
         return (
-            individu('pension_de_retraite', period, options = [ADD])
-            + individu('pension_d_invalidite', period, options = [ADD])
-            + individu('pension_orphelin', period, options = [ADD])
-            )
+            individu("pension_de_retraite", period, options=[ADD])
+            + individu("pension_d_invalidite", period, options=[ADD])
+            + individu("pension_orphelin", period, options=[ADD])
+        )
 
 
 class revenu_assimile_pension(Variable):
     value_type = float
-    label = 'Revenus assimilés à des pensions (pensions et rentes viagères)'
+    label = "Revenus assimilés à des pensions (pensions et rentes viagères)"
     entity = Individu
     definition_period = YEAR
 
     def formula_2025_01(individu, period):
-        return individu('pension_de_retraite', period, options = [ADD])
+        return individu("pension_de_retraite", period, options=[ADD])
 
     def formula(individu, period):
-        return individu('pension', period, options = [ADD])
+        return individu("pension", period, options=[ADD])
 
 
 class avantages_nature_assimile_pension(Variable):
     value_type = float
-    label = 'Avantages en nature assimilables à des pensions'
+    label = "Avantages en nature assimilables à des pensions"
     entity = Individu
     definition_period = YEAR
