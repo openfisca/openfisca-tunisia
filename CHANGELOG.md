@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.61 - [#351](https://github.com/openfisca/openfisca-tunisia/pull/351)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Détails :
+  - Bump version 0.61.
+
 ## 0.60 - [#349](https://github.com/openfisca/openfisca-tunisia/pull/349)
 
 * Amélioration technique.
