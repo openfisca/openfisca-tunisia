@@ -69,16 +69,25 @@ brackets:
 - threshold:
     2025-01-01:
       value: 50000
+    2026-01-01:
+      value: null
   rate:
     2025-01-01:
       value: 0.38
+    2026-01-01:
+      value: null
 - threshold:
     2025-01-01:
       value: 70000
+    2026-01-01:
+      value: null
   rate:
     2025-01-01:
       value: 0.4
+    2026-01-01:
+      value: null
 metadata:
+  short_label: Barème IR
   label_en: Tax scale
   reference:
     2017-01-01:
