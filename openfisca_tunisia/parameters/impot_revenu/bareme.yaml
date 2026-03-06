@@ -1,4 +1,4 @@
-description: Tranches de l'IR
+description: Tranches de l'impôt sur le revenu
 brackets:
 - threshold:
     1990-01-01:
@@ -16,74 +16,63 @@ brackets:
       value: 0.15
     2017-01-01:
       value: 0.26
-    2025-01-01:
+    2026-01-01:
       value: 0.15
 - threshold:
     1990-01-01:
       value: 5000
     2017-01-01:
       value: 20000
-    2025-01-01:
+    2026-01-01:
       value: 10000
   rate:
     1990-01-01:
       value: 0.2
     2017-01-01:
       value: 0.28
-    2025-01-01:
+    2026-01-01:
       value: 0.25
 - threshold:
     1990-01-01:
       value: 10000
     2017-01-01:
       value: 30000
-    2025-01-01:
+    2026-01-01:
       value: 20000
   rate:
     1990-01-01:
       value: 0.25
     2017-01-01:
       value: 0.32
-    2025-01-01:
+    2026-01-01:
       value: 0.3
 - threshold:
     1990-01-01:
       value: 20000
     2017-01-01:
       value: 50000
-    2025-01-01:
+    2026-01-01:
       value: 30000
   rate:
     1990-01-01:
       value: 0.3
     2017-01-01:
       value: 0.35
-    2025-01-01:
+    2026-01-01:
       value: 0.33
 - threshold:
-    2025-01-01:
+    2026-01-01:
       value: 40000
   rate:
-    2025-01-01:
+    2026-01-01:
       value: 0.36
-- threshold:
-    2025-01-01:
-      value: 50000
-  rate:
-    2025-01-01:
-      value: 0.38
-- threshold:
-    2025-01-01:
-      value: 70000
-  rate:
-    2025-01-01:
-      value: 0.4
 metadata:
+  short_label: Tranches de l'IR
   label_en: Tax scale
   reference:
     2017-01-01:
       href: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
-    2025-01-01:
+    2026-01-01:
       title: Loi 2024-48 du 9 décembre 2024 portant loi de finances pour 2025
       href: https://facture-tunisie.com/411/fr/38/reglementations/principales-dispositions-du-projet-de-la-loi-de-finances-2025
   official_journal_date:
