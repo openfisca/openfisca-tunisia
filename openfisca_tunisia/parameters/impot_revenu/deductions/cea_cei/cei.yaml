@@ -1,0 +1,6 @@
+description: Plafond de déduction au titre du Compte Épargne pour l'Investissement
+values:
+  1990-01-01:
+    value: 0
+  2003-01-01:
+    value: 50000

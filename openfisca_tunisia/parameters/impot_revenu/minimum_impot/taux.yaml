@@ -1,0 +1,8 @@
+description: Taux minimum d'imposition applicable suite aux déductions d'impôts et investissements
+values:
+  1990-01-01:
+    value: 0
+  2014-01-01:
+    value: 0.60
+  2020-01-01:
+    value: 0.45

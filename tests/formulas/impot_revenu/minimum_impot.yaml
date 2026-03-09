@@ -1,0 +1,13 @@
+- name: Test de plafonnement par l'impôt minimum (Article 12 bis)
+  period: 2020
+  absolute_error_margin: 0.1
+  input:
+    rng: 100_000
+    compte_epargne_en_actions: 100_000 # Devrait normalement annuler toute la base imposable si ce n'était limité!
+  output:
+    assiette_avant_avantages: 100_000
+    impot_avant_avantages: 30_600 # Impot théorique sur 100k
+    minimum_impot: 13_770 # 45% de 30600 en 2020
+    deduction_cea: 100_000
+    revenu_net_imposable: 0 # Le revenu après avantage fiscal tombe bien à 0
+    impot_revenu_brut: 13_770 # L'impôt calculé final doit correspondre au minimum d'impôt !
