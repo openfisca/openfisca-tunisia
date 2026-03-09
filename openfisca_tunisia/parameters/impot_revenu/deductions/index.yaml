@@ -3,7 +3,9 @@ metadata:
   order:
   - famille
   - assurance_vie
-  - banq
-  - cent
-  - epinv
-  - oblig
+  - interets_comptes_speciaux_epargne_bancaires
+  - interets_comptes_speciaux_epargne_cent
+  - interets_comptes_epargne_investissement
+  - interets_emprunts_obligataires
+  - cea_cei
+  - logement

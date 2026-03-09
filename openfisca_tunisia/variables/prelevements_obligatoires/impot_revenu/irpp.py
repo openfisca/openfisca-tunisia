@@ -11,12 +11,9 @@ class nb_enf(Variable):
         """
         TODO: fixme
         """
-        age = foyer_fiscal.members("age", period=period.first_month)
+        age = foyer_fiscal.members("age", period=period.this_year.first_month)
         famille = parameters(period.start).impot_revenu.deductions.famille
-        # res =+ (
-        #    (ag < 20) +
-        #    (ag < 25)*not_(boursier)*()
-        #    )
+
         condition = (age >= 0) * (age <= famille.age)
         return foyer_fiscal.sum(condition, role=FoyerFiscal.PERSONNE_A_CHARGE)
 
@@ -28,14 +25,16 @@ class nb_enf_sup(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
-        """
-        TODO: Nombre d'enfants étudiants du supérieur non boursiers
-        """
-        # age = foyer_fiscal.members('age', period = period)
-        etudiant = foyer_fiscal.members("etudiant", period=period)
-        boursier = foyer_fiscal.members("boursier", period=period)
+        age = foyer_fiscal.members("age", period=period.this_year.first_month)
+        etudiant = foyer_fiscal.members("etudiant", period=period.this_year)
+        boursier = foyer_fiscal.members("boursier", period=period.this_year)
 
-        return foyer_fiscal.sum(etudiant * not_(boursier))
+        # Article 40 III: Enfant poursuivant des études supérieures sans bénéfice de bourse
+        # et âgé de moins de 25 ans au 1er janvier de l'année d'imposition
+        est_etudiant_eligible = etudiant * not_(boursier) * (age < 25)
+        return foyer_fiscal.sum(
+            est_etudiant_eligible, role=FoyerFiscal.PERSONNE_A_CHARGE
+        )
 
 
 class nb_infirme(Variable):
@@ -55,17 +54,10 @@ class nb_infirme(Variable):
 
 class nb_parents(Variable):
     value_type = float
+    default_value = 0.0
     entity = FoyerFiscal
-    label = "Nombre de parents"
+    label = "Nombre de parents à charge"
     definition_period = YEAR
-
-    def formula(foyer_fiscal, period):
-        """
-        Nombre de parents
-        """
-        return (foyer_fiscal.declarant_principal("age", period) > 20) + (
-            foyer_fiscal.conjoint("age", period) > 20
-        )
 
 
 class chef_de_famille(Variable):
@@ -150,20 +142,25 @@ class deduction_interets(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        compte_special_epargne_banque = foyer_fiscal("compte_special_epargne_banque")
-        compte_special_epargne_cent = foyer_fiscal("compte_special_epargne_cent")
-        emprunt_obligataire = foyer_fiscal("emprunt_obligataire")
-        deductions = parameters(period).impot_revenu.deductions
-        return max_(
-            max_(
-                (
-                    max_(compte_special_epargne_banque, deductions.banq.plaf)
-                    + max_(compte_special_epargne_cent, deductions.cent.plaf)
-                ),
-                deductions.banq.plaf,
-            )
-            + max_(emprunt_obligataire, deductions.oblig.plaf),
-            deductions.oblig.plaf,
+        compte_special_epargne_banque = foyer_fiscal.sum(
+            foyer_fiscal.members("compte_special_epargne_banque", period=period)
+        )
+        compte_special_epargne_cent = foyer_fiscal.sum(
+            foyer_fiscal.members("compte_special_epargne_cent", period=period)
+        )
+        emprunt_obligataire = foyer_fiscal.sum(
+            foyer_fiscal.members("emprunt_obligataire", period=period)
+        )
+        deductions = parameters(period.start).impot_revenu.deductions
+
+        interets_bancaires = min_(
+            compte_special_epargne_banque + compte_special_epargne_cent,
+            deductions.interets_comptes_speciaux_epargne_bancaires.plaf,
+        )
+
+        return min_(
+            interets_bancaires + emprunt_obligataire,
+            deductions.interets_emprunts_obligataires.plaf,
         )
 
 
@@ -174,16 +171,20 @@ class deduction_famille(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        # rng = foyer_fiscal('rng', period = period)
+        rng = foyer_fiscal("rng", period=period)
         chef_de_famille = foyer_fiscal("chef_de_famille", period=period)
         nb_enf = foyer_fiscal("nb_enf", period=period)
         nb_infirme = foyer_fiscal("nb_infirme", period=period)
+        nb_enf_sup = foyer_fiscal("nb_enf_sup", period=period)
+        nb_parents = foyer_fiscal("nb_parents", period=period)
+
         famille = parameters(period.start).impot_revenu.deductions.famille
+
         #  chef de famille
         chef_de_famille = famille.chef_de_famille * chef_de_famille
 
         infirme = famille.infirme * nb_infirme
-        nb_enf = max_(nb_enf - nb_infirme, 0)
+        nb_enf = max_(nb_enf - nb_infirme - nb_enf_sup, 0)
         enf = (
             (nb_enf >= 1) * famille.enf1
             + (nb_enf >= 2) * famille.enf2
@@ -191,12 +192,11 @@ class deduction_famille(Variable):
             + (nb_enf >= 4) * famille.enf4
         )
 
-        #    sup = P.enf_sup * nb_enf_sup
+        sup = famille.enf_sup * nb_enf_sup
 
-        #    parent = min_(P.parent_taux * rng, P.parent_max)
-        #    return chef_de_famille + enf + sup + infirme + parent
+        parent = min_(famille.parent_taux * rng, famille.parent_max) * nb_parents
 
-        res = chef_de_famille + enf + infirme
+        res = chef_de_famille + enf + sup + infirme + parent
         return res
 
 
@@ -278,25 +278,151 @@ class deduction_smig(Variable):
         return 0 * chef  # TODO: voir avec tspr
 
 
-class deductions(Variable):
+class deduction_cea(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "Revenu net imposable"
+    label = "Déduction pour Compte Épargne en Actions (CEA)"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period, parameters):
+        cea = foyer_fiscal.sum(
+            foyer_fiscal.members("compte_epargne_en_actions", period=period)
+        )
+        plafond = parameters(period.start).impot_revenu.deductions.cea_cei.cea
+        return min_(cea, plafond)
+
+
+class deduction_cei(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Déduction pour Compte Épargne Investissement (CEI)"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period, parameters):
+        cei = foyer_fiscal.sum(
+            foyer_fiscal.members("compte_epargne_investissement", period=period)
+        )
+        plafond = parameters(period.start).impot_revenu.deductions.cea_cei.cei
+        return min_(cei, plafond)
+
+
+class interets_acquisition_logement_deductible(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Intérêts d'acquisition de l'habitation principale déductibles (plafonnés selon le coût)"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period, parameters):
+        interets = foyer_fiscal.sum(
+            foyer_fiscal.members("interets_acquisition_logement", period=period)
+        )
+        cout = foyer_fiscal.sum(
+            foyer_fiscal.members("cout_acquisition_logement", period=period)
+        )
+        plafond_cout = parameters(
+            period.start
+        ).impot_revenu.deductions.logement.prix_max
+        # Si le plafond_cout est 0, c'est qu'il n'y a pas de plafond applicable (ex: avant 2016)
+        # S'il y a un plafond, la déduction saute si le coût dépasse le plafond.
+        condition = (plafond_cout == 0) + (cout <= plafond_cout)
+        return interets * condition
+
+
+class deficits_anterieurs_reportables(Variable):
+    value_type = float
+    default_value = 0.0
+    entity = FoyerFiscal
+    label = "Déficits antérieurs reportables (Article 11)"
+    definition_period = YEAR
+
+
+class deductions_base(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Déductions communes (hors investissement et assurance-vie)"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period):
         return (
-            foyer_fiscal("deduction_famille", period=period)
+            foyer_fiscal("deficits_anterieurs_reportables", period=period)
+            + foyer_fiscal("deduction_famille", period=period)
             + foyer_fiscal.declarant_principal("rente", period=period)
-            + foyer_fiscal("deduction_assurance_vie", period=period)
+            + foyer_fiscal("deduction_interets", period=period)
             + foyer_fiscal.sum(
                 foyer_fiscal.members(
                     "plus_value_cession_actifs_cotes_bourse", period=period
                 )
             )
+            + foyer_fiscal("interets_acquisition_logement_deductible", period=period)
             + foyer_fiscal.sum(
-                foyer_fiscal.members("interets_acquisition_logement", period=period)
+                foyer_fiscal.members("pret_universitaire", period=period)
             )
+            + foyer_fiscal.sum(foyer_fiscal.members("dons", period=period))
+            + foyer_fiscal.sum(
+                foyer_fiscal.members("cotisations_non_affilie", period=period)
+            )
+        )
+
+
+class assiette_avant_avantages(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Assiette imposable avant déductions soumises au minimum d'impôt"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period):
+        return max_(
+            foyer_fiscal("rng", period) - foyer_fiscal("deductions_base", period), 0
+        )
+
+
+class impot_avant_avantages(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Impôt dû avant avantages fiscaux"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period, parameters):
+        base = foyer_fiscal("assiette_avant_avantages", period=period)
+        bareme = parameters(period.start).impot_revenu.bareme
+        return bareme.calc(base)
+
+
+class minimum_impot(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Minimum d'impôt exigible (Article 12 bis)"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period, parameters):
+        impot_theorique = foyer_fiscal("impot_avant_avantages", period=period)
+        taux = parameters(period.start).impot_revenu.minimum_impot.taux
+        return impot_theorique * taux
+
+
+class deductions_investissement(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Déductions pour investissement et épargne longue"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period):
+        return (
+            foyer_fiscal("deduction_assurance_vie", period=period)
+            + foyer_fiscal("deduction_cea", period=period)
+            + foyer_fiscal("deduction_cei", period=period)
+        )
+
+
+class deductions(Variable):
+    value_type = float
+    entity = FoyerFiscal
+    label = "Total des déductions"
+    definition_period = YEAR
+
+    def formula(foyer_fiscal, period):
+        return foyer_fiscal("deductions_base", period) + foyer_fiscal(
+            "deductions_investissement", period
         )
 
 
@@ -311,7 +437,11 @@ class revenu_net_imposable(Variable):
         Revenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses
         et charges professionnelles et des revenus non soumis à l'impôt
         """
-        return max_(foyer_fiscal("rng", period) - foyer_fiscal("deductions", period), 0)
+        return max_(
+            foyer_fiscal("assiette_avant_avantages", period)
+            - foyer_fiscal("deductions_investissement", period),
+            0,
+        )
 
 
 class impot_revenu_brut(Variable):
@@ -323,8 +453,9 @@ class impot_revenu_brut(Variable):
     def formula(foyer_fiscal, period, parameters):
         revenu_net_imposable = foyer_fiscal("revenu_net_imposable", period=period)
         bareme = parameters(period.start).impot_revenu.bareme
-        impot_revenu_brut = bareme.calc(revenu_net_imposable)
-        return impot_revenu_brut
+        impot_calcule = bareme.calc(revenu_net_imposable)
+        impot_min = foyer_fiscal("minimum_impot", period=period)
+        return max_(impot_calcule, impot_min)
 
 
 class exoneration(Variable):
@@ -379,18 +510,43 @@ class irpp_salarie_preleve_a_la_source(Variable):
         )
 
 
+class acomptes_provisionnels(Variable):
+    value_type = float
+    entity = Individu
+    label = "Acomptes provisionnels versés durant l'année"
+    definition_period = YEAR
+
+
+class retenues_source_non_salariales(Variable):
+    value_type = float
+    entity = Individu
+    label = (
+        "Retenues à la source subies sur les autres revenus (loyers, honoraires, etc.)"
+    )
+    definition_period = YEAR
+
+
 class irpp_net_a_payer(Variable):
     value_type = float
     entity = FoyerFiscal
-    label = "IRPP net des prélèvements à la source"
+    label = "IRPP net des acomptes et prélèvements à la source"
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        return foyer_fiscal("irpp", period) - foyer_fiscal.sum(
+        irpp = foyer_fiscal("irpp", period)
+        ras_salaires = foyer_fiscal.sum(
             foyer_fiscal.members(
                 "irpp_salarie_preleve_a_la_source", period, options=[ADD]
             )
         )
+        acomptes = foyer_fiscal.sum(
+            foyer_fiscal.members("acomptes_provisionnels", period)
+        )
+        ras_autres = foyer_fiscal.sum(
+            foyer_fiscal.members("retenues_source_non_salariales", period)
+        )
+        net = irpp - ras_salaires - acomptes - ras_autres
+        return net
 
 
 # Utils
