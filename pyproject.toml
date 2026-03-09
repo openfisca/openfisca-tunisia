@@ -76,6 +76,7 @@ filterwarnings = [
     "ignore:invalid value encountered in divide:RuntimeWarning",
     "ignore:invalid value encountered in multiply:RuntimeWarning",
     "ignore:divide by zero encountered in divide:RuntimeWarning",
+    "ignore:The iteration is not making good progress:RuntimeWarning",
 ]
 
 [tool.setuptools.packages.find]

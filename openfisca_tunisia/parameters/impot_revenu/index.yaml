@@ -1,1 +1,9 @@
 description: Impôt sur le revenu
+metadata:
+  order:
+  - bareme
+  - contribution_budget_etat
+  - deductions
+  - exoneration
+  - tspr
+  - minimum_impot
