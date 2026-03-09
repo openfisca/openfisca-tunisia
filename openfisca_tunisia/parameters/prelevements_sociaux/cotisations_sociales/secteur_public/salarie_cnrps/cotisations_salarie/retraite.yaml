@@ -24,6 +24,8 @@ brackets:
       value: 0.078
     2009-07-01:
       value: 0.082
+    2019-06-01:
+      value: 0.087
     2020-01-01:
       value: 0.092
 metadata:
@@ -69,10 +71,15 @@ metadata:
     - title: قانون  عدد 43 لسنة 2007 مؤرخ في 25 جوان 2007 يتعلق بتنقيح وإتمام القوانين المنظمة للجرايات المسندة بعنوان أنظمة التقاعد والعجز والباقين على قيد الحياة في القطاعين العمومي والخاص والأنظمة الخصوصية
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_ar.pdf
       note: "2 بالمائة من قاعدة احتساب الاشتراك على كاهل المضمون الاجتماعي وذلك على النحو التالي :  0,40 بالمائة ابتداء من أوّل جويلية 2007،  0,40 بالمائة ابتداء من أوّل جويلية 2008،  0,40 بالمائة ابتداء من أوّل جويلية 2009"
+    2019-06-01:
+    - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
+      href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
+      note: Majoration de la cotisation salariale de 1%, répartie en 0,5% le mois suivant l'entrée en vigueur (juin 2019) et 0,5% en janvier 2020.
     2020-01-01:
-      title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
+    - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
       href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
   official_journal_date:
+    2019-06-01: "2019-04-30"
     2020-01-01: "2019-04-30"
   rate_unit: /1
   threshold_unit: currency

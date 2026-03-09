@@ -1,0 +1,6 @@
+description: Taux maximum de déduction du revenu net pour les investissements partiels (capital d'entreprises)
+reference:
+  1989-12-30:
+    title: Code de l'IRPP et de l'IS, Article 39 et Textes régissant les Incitations Fiscales
+values:
+  1990-01-01: 0.35
