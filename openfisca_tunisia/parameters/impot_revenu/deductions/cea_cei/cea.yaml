@@ -1,0 +1,6 @@
+description: Plafond de déduction au titre du Compte Épargne en Actions
+values:
+  1990-01-01:
+    value: 0
+  2001-01-01:
+    value: 100000

@@ -6,22 +6,31 @@ except ImportError:
     fsolve = None
 
 
-def calculate_net_from(salaire_imposable, individu, period, requested_variable_names):
-    # Work in isolation
+def calculate_net_from(salaire_imposable, individu, period):
+    # Work in isolation just like the similar function in
+    # de_net_a_salaire_de_base.py. Clone the simulation so that
+    # computations do not pollute the original state.
     temp_simulation = individu.simulation.clone()
     temp_individu = temp_simulation.individu
 
     # Calculated variable holders might contain undesired cache
-    # (their entity.simulation points to the original simulation above)
-    for name in requested_variable_names:
-        temp_individu.get_holder(name).delete_arrays(period)
+    # (their entity.simulation points to the original simulation above).
+    # We delete arrays for *all* variables that have a formula, which
+    # mirrors the behaviour added in the salaire_de_base reform.
+    for name in temp_simulation.tax_benefit_system.variables.keys():
+        try:
+            pop = temp_simulation.get_variable_population(name)
+            holder = pop.get_holder(name)
+            # Only delete arrays if the variable is calculated (formula exists)
+            if holder.variable.formulas:
+                holder.delete_arrays()
+        except Exception:
+            pass
 
-    # We're not wanting to calculate salaire_imposable again,
-    # but instead manually set it as an input variable
+    # Clean 'computation_stack', that is used by -core to check for computation cycles.
+    temp_simulation.computation_stack = []
+
     temp_individu.get_holder("salaire_imposable").set_input(period, salaire_imposable)
-
-    # Force recomputing of salaire_net_a_payer
-    temp_individu.get_holder("salaire_net_a_payer").delete_arrays(period)
     net = temp_individu("salaire_net_a_payer", period)[0]
 
     return net
@@ -43,26 +52,25 @@ class salaire_imposable(Variable):
         simulation = individu.simulation
         simulation.period = period
 
-        # List of variables already calculated.
-        # We will need it to remove their holders, that might contain undesired cache
-        requested_variable_names = [
-            stack_frame["name"] for stack_frame in individu.simulation.tracer.stack
-        ]
+        # There is no need to track already calculated variables any
+        # more: the helper above clears every calculated tier, just as in
+        # de_net_a_salaire_de_base.
 
         def solve_func(net):
             def innerfunc(essai):
-                return (
-                    calculate_net_from(
-                        essai, individu, period, requested_variable_names
-                    )
-                    - net
+                calc = calculate_net_from(essai, individu, period)
+                diff = calc - net
+                # keep a minimal debug print comparable to the salary_de_base
+                print(
+                    f"fsolve debug: essai={essai}, calc_net={calc}, diff={diff}"
                 )
+                return diff
 
             return innerfunc
 
         imposable_calcule = fsolve(
             solve_func(net),
-            net * 1.25,  # on entend souvent parler cette méthode...
+            net * 1.25,  # keep the historical heuristic initial guess
             xtol=1 / 100,  # précision
         )
 
