@@ -1,0 +1,6 @@
+description: Taux de l'impôt sur les revenus soumis à retenue libératoire
+reference:
+  1989-12-30:
+    title: Code de l'IRPP et de l'IS, Article 52 et suivants (selon la nature du revenu)
+values:
+  1990-01-01: 0.20

@@ -8,6 +8,8 @@ brackets:
       value: 0.01
     2023-01-01:
       value: 0.005
+    2025-01-01:
+      value: 0.005
 metadata:
   short_label: CSS
   label_en: Social solidarity contribution (employee scale)
@@ -26,10 +28,16 @@ metadata:
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2023/Note_Commune_1_2023.pdf
     - title: مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 يتعلق بقانون المالية لسنة    2023  (الفصل22)
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_ar.pdf
+    2025-01-01:
+    - title: Loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 (maintien à 0.5% de la retenue à la source)
+      href: https://www.finances.gov.tn/fr/les-lois-de-finances
   official_journal_date:
     2018-01-01: "2017-12-19"
+    2025-01-01: "2024-12-10"
   notes:
     2023-01-01:
     - note: la loi de finances 2023 dans son article 22 a ramené le taux de la contribution sociale de solidarité appliqué aux personnes physiques de 1 point de pourcentage à 0.5 point de pourcentage uniquement aux revenus servant de base pour le calcul de l'impôt sur le revenu dont le délai de déclaration intervient au cours des années 2023, 2024 et 2025.
+    2025-01-01:
+    - note: La LF 2025 confirme le maintien de la retenue à la source au titre de la CSS à 0.5% pour les salariés.
   rate_unit: /1
   threshold_unit: currency

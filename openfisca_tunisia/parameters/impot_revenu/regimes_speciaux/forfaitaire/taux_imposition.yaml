@@ -1,0 +1,8 @@
+description: Taux libératoire d'imposition sur le Chiffre d'Affaires
+reference:
+  1989-12-30:
+    title: Code de l'IRPP et de l'IS, Article 44 bis
+values:
+  # Valeur par défaut basique à titre d'exemple
+  # (Souvent exprimé en barème par pallier ou par activité)
+  2014-01-01: 0.10
