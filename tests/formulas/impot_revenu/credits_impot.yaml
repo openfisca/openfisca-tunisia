@@ -1,0 +1,18 @@
+- name: Imputation des acomptes et retenues sur l'IRPP total dû
+  period: 2021
+  absolute_error_margin: 1
+  input:
+    individus:
+      parent1:
+        # Montants déjà payés
+        acomptes_provisionnels: 2000
+        retenues_source_non_salariales: 3000
+    foyer_fiscal:
+      # On force l'IR total pour examiner sa déduction pure
+      impot_total_du: 10000
+      credit_impot_etranger: 500
+      declarants:
+        - parent1
+  output:
+    foyer_fiscal:
+      irpp_net_a_payer: 4500
