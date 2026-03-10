@@ -13,8 +13,9 @@ Etude AF
 CNRPS
 
 
-A quoi correspond le Smig 2400 heures par an : Smig 48h ?
-2400 / 48 = 50
+## À quoi correspond le SMIG 2400 heures par an (SMIG 48h) ?
+*   **Calcul mensuel légal :** Le régime de 48h/semaine correspond à 208 heures par mois dans le code du travail tunisien `(48h * 52 semaines / 12 mois = 208)`.
+*   **Annualisation administrative :** Sur une année pleine de 12 mois, cela représente `208 * 12 = 2496 heures`. Cependant, l'administration financière (CNSS, Impôts) utilise très souvent la base pragmatique de **2400 heures annuelles**, ce qui équivaut mathématiquement à 50 semaines travaillées de 48h (hors les 2 semaines de congés payés légaux de base). Les 2400h sont donc le seuil annuel "pratique" du SMIG 48h à temps plein.
 
 ---
 

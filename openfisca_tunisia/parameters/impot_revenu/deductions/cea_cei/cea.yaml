@@ -3,4 +3,12 @@ values:
   1990-01-01:
     value: 0
   2001-01-01:
+    value: 50000
+  2021-01-01:
     value: 100000
+metadata:
+  unit: currency
+  reference:
+    2021-01-01:
+      title: Loi n° 2020-46 du 28 décembre 2020, portant loi de finances pour l'année 2021 (Article 24)
+      href: https://www.finances.gov.tn/fr/les-lois-de-finances

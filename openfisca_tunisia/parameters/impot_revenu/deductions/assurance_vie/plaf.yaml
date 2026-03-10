@@ -4,5 +4,13 @@ values:
     value: 800
   2007-01-01:
     value: 1200
+  2014-01-01:
+    value: 10000
+  2021-01-01:
+    value: 100000
 metadata:
   unit: currency
+  reference:
+    2021-01-01:
+      title: Loi de Finances 2021 (Augmentation du plafond de 10 000 à 100 000 dinars)
+      href: https://www.finances.gov.tn/fr/les-lois-de-finances
