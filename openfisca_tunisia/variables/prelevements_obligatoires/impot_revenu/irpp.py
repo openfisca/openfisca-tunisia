@@ -423,13 +423,17 @@ class deduction_investissement_autre(Variable):
     definition_period = YEAR
 
     def formula(foyer_fiscal, period, parameters):
-        taux_plafond = parameters(period.start).impot_revenu.deductions.investissements.taux_plafond_partiel
+        taux_plafond = parameters(
+            period.start
+        ).impot_revenu.deductions.investissements.taux_plafond_partiel
         # L'assiette de plafonnement est classiquement le revenu net après déductions communes
         revenu_plafonnable = foyer_fiscal("assiette_avant_avantages", period=period)
 
         plafond = revenu_plafonnable * taux_plafond
 
-        integral = foyer_fiscal("investissement_deductible_integralement", period=period)
+        integral = foyer_fiscal(
+            "investissement_deductible_integralement", period=period
+        )
         partiel = foyer_fiscal("investissement_deductible_partiellement", period=period)
 
         return integral + min_(partiel, plafond)
@@ -498,7 +502,9 @@ class chiffre_affaires_soumis_au_forfait(Variable):
     value_type = float
     default_value = 0.0
     entity = FoyerFiscal
-    label = "Chiffre d'Affaires soumis au régime forfaitaire (exclus de l'IRPP classique)"
+    label = (
+        "Chiffre d'Affaires soumis au régime forfaitaire (exclus de l'IRPP classique)"
+    )
     definition_period = YEAR
 
 
@@ -510,7 +516,9 @@ class impot_regime_forfaitaire_du(Variable):
 
     def formula(foyer_fiscal, period, parameters):
         ca = foyer_fiscal("chiffre_affaires_soumis_au_forfait", period=period)
-        taux = parameters(period.start).impot_revenu.regimes_speciaux.forfaitaire.taux_imposition
+        taux = parameters(
+            period.start
+        ).impot_revenu.regimes_speciaux.forfaitaire.taux_imposition
         return ca * taux
 
 
@@ -518,7 +526,9 @@ class revenu_soumis_retenue_liberatoire(Variable):
     value_type = float
     default_value = 0.0
     entity = FoyerFiscal
-    label = "Revenus soumis à retenue à la source libératoire (exclus de l'IRPP classique)"
+    label = (
+        "Revenus soumis à retenue à la source libératoire (exclus de l'IRPP classique)"
+    )
     definition_period = YEAR
 
 
@@ -530,7 +540,9 @@ class impot_sur_retenue_liberatoire(Variable):
 
     def formula(foyer_fiscal, period, parameters):
         revenu = foyer_fiscal("revenu_soumis_retenue_liberatoire", period=period)
-        taux = parameters(period.start).impot_revenu.regimes_speciaux.retenue_liberatoire.taux
+        taux = parameters(
+            period.start
+        ).impot_revenu.regimes_speciaux.retenue_liberatoire.taux
         return revenu * taux
 
 
@@ -586,9 +598,6 @@ class credit_impot_etranger(Variable):
     entity = FoyerFiscal
     label = "Crédit d'impôt imputable sur les revenus de source étrangère"
     definition_period = YEAR
-
-
-
 
 
 class irpp_salarie_preleve_a_la_source(Variable):

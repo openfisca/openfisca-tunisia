@@ -61,9 +61,7 @@ class salaire_imposable(Variable):
                 calc = calculate_net_from(essai, individu, period)
                 diff = calc - net
                 # keep a minimal debug print comparable to the salary_de_base
-                print(
-                    f"fsolve debug: essai={essai}, calc_net={calc}, diff={diff}"
-                )
+                print(f"fsolve debug: essai={essai}, calc_net={calc}, diff={diff}")
                 return diff
 
             return innerfunc
