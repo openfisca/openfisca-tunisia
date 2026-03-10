@@ -182,6 +182,7 @@ class cotisations_employeur(Variable):
             "famille_employeur",
             "maladie_employeur",
             "maternite_employeur",
+            "perte_d_emploi_employeur",
             "protection_sociale_travailleurs_employeur",
             "retraite_employeur",
             "retraite_complementaire_employeur",
@@ -204,6 +205,7 @@ class cotisations_salarie(Variable):
             "famille_salarie",
             "maladie_salarie",
             "maternite_salarie",
+            "perte_d_emploi_salarie",
             "protection_sociale_travailleurs_salarie",
             "retraite_salarie",
             "retraite_complementaire_salarie",
@@ -451,6 +453,38 @@ class retraite_salarie(Variable):
             period,
             cotisation_type="salarie",
             bareme_name="retraite",
+            parameters=parameters,
+        )
+
+
+class perte_d_emploi_employeur(Variable):
+    value_type = float
+    entity = Individu
+    label = "Cotisation pour la perte d'emploi (employeur)"
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        return compute_cotisation(
+            individu,
+            period,
+            cotisation_type="employeur",
+            bareme_name="perte_d_emploi",
+            parameters=parameters,
+        )
+
+
+class perte_d_emploi_salarie(Variable):
+    value_type = float
+    entity = Individu
+    label = "Cotisation pour la perte d'emploi (salarié)"
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        return compute_cotisation(
+            individu,
+            period,
+            cotisation_type="salarie",
+            bareme_name="perte_d_emploi",
             parameters=parameters,
         )
 
