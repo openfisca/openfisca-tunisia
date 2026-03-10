@@ -24,6 +24,8 @@ brackets:
       value: 0.195
     2011-07-01:
       value: 0.205
+    2019-06-01:
+      value: 0.225
 metadata:
   short_label: Retraite
   label_en: Retirement contributions for government members, deputies, and governors
@@ -100,6 +102,10 @@ metadata:
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/décret_loi_2011_48_fr.pdf
     - title: مرسوم عدد 48 لسنة 2011 مؤرخ في 4 جوان 2011 يتعلق بتنقيح القوانين المنظمة للجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي ولنظام تقاعد أعضاء الحكومة ولنظام تقاعد الولاة.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2011/décret_loi_2011_48_ar.pdf
+    2019-06-01:
+    - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi n°85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/loi_2019_37__fr.pdf
+      note: Majoration de 2 points de pourcentage au titre de l’employeur à partir du premier jour du mois qui suit la date d’entrée en vigueur de la loi 2019-37. Applicable aux régimes spéciaux.
   notes:
     2005-07-01:
     - title: loi 2005-54 du 18 juillet 2005, étendant les régimes spéciaux applicables aux  membres de la chambre des députés, aux membres de la chambre des conseillers
