@@ -147,6 +147,15 @@ class regime_securite_sociale_retraite(Variable):
     set_input = set_input_dispatch_by_period
 
 
+class adhesion_cnss_regime_complementaire(Variable):
+    value_type = bool
+    default_value = False
+    entity = Individu
+    label = "Adhésion de l'employeur au régime complémentaire (ex-CAVIS)"
+    definition_period = MONTH
+    set_input = set_input_dispatch_by_period
+
+
 class cotisations_sociales(Variable):
     value_type = float
     entity = Individu
@@ -175,6 +184,7 @@ class cotisations_employeur(Variable):
             "maternite_employeur",
             "protection_sociale_travailleurs_employeur",
             "retraite_employeur",
+            "retraite_complementaire_employeur",
         ]
         return sum(
             individu(f"{cotisation}", period) for cotisation in cotisations_employeur
@@ -196,6 +206,7 @@ class cotisations_salarie(Variable):
             "maternite_salarie",
             "protection_sociale_travailleurs_salarie",
             "retraite_salarie",
+            "retraite_complementaire_salarie",
             "soin_salarie",
             "ugtt",
         ]
@@ -442,6 +453,64 @@ class retraite_salarie(Variable):
             bareme_name="retraite",
             parameters=parameters,
         )
+
+
+class retraite_complementaire_employeur(Variable):
+    value_type = float
+    entity = Individu
+    label = "Cotisation au régime complémentaire de retraite (employeur)"
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        smig = parameters(period.start).marche_travail.smig_48h_mensuel
+        assiette = individu("assiette_cotisations_sociales", period)
+        assiette_complementaire = max_(0, assiette - 6 * smig)
+        regime = individu("regime_securite_sociale_cotisant", period)
+        adhesion = individu("adhesion_cnss_regime_complementaire", period)
+
+        cotisations_sociales = parameters(
+            period.start
+        ).prelevements_sociaux.cotisations_sociales
+        bareme = getattr(
+            cotisations_sociales.secteur_prive.rsna.cotisations_employeur,
+            "retraite_complementaire",
+            None,
+        )
+
+        if bareme is None:
+            return 0.0
+
+        condition = (regime == TypesRegimeSecuriteSocialeCotisant.rsna) * adhesion
+        return bareme.calc(assiette_complementaire * condition)
+
+
+class retraite_complementaire_salarie(Variable):
+    value_type = float
+    entity = Individu
+    label = "Cotisation au régime complémentaire de retraite (salarié)"
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        smig = parameters(period.start).marche_travail.smig_48h_mensuel
+        assiette = individu("assiette_cotisations_sociales", period)
+        assiette_complementaire = max_(0, assiette - 6 * smig)
+        regime = individu("regime_securite_sociale_cotisant", period)
+        adhesion = individu("adhesion_cnss_regime_complementaire", period)
+
+        cotisations_sociales = parameters(
+            period.start
+        ).prelevements_sociaux.cotisations_sociales
+        bareme = getattr(
+            cotisations_sociales.secteur_prive.rsna.cotisations_salarie,
+            "retraite_complementaire",
+            None,
+        )
+
+        if bareme is None:
+            return 0.0
+
+        condition = (regime == TypesRegimeSecuriteSocialeCotisant.rsna) * adhesion
+        return bareme.calc(assiette_complementaire * condition)
 
 
 class soin_employeur(Variable):
