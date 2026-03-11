@@ -1,4 +1,5 @@
 description: Age légal de de départ à la retraite
+unit: year
 values:
   1981-02-24:
     value: 60.0

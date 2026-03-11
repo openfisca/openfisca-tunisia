@@ -1,4 +1,5 @@
 description: Décile de score déterminant l'éligibilité au transfert monétaire permanent
+unit: decile
 values:
   2022-06-01:
     value: 1

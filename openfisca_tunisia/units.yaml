@@ -90,3 +90,7 @@
   label:
     one: trimestre
     other: trimestres
+- name: decile
+  label:
+    one: décile
+    other: déciles
