@@ -165,7 +165,6 @@ class contribution_frais_creche(Variable):
         # versée pour les enfants ouvrant droit aux prestations familiales et
         # dont l'âge est compris entre 2 et 36 mois. Elle s'élève à 15 dinars par
         # enfant et par mois pendant 11 mois.
-        # , _option = {'age_en_mois': ENFS, 'sal': [CHEF, PART]}
         somme_salaire_imposable = menage.personne_de_reference(
             "salaire_imposable", period=month
         ) + menage.conjoint("salaire_imposable", period=month)
@@ -179,12 +178,14 @@ class contribution_frais_creche(Variable):
             age_en_mois_benjamin >= creche.age_min
         )
         elig_sal = somme_salaire_imposable < creche.plaf * smig48
-        return (
-            creche.montant
-            * elig_age
-            * elig_sal
-            * min_(creche.duree, 12 - age_en_mois_benjamin)
-        )
+        # duration of payment is at most `creche.duree` months, but we also
+        # cannot give a negative number of months if the beneficiary is older
+        # than one year. the original implementation used
+        # `min(creche.duree, 12 - age_en_mois_benjamin)` which produces a
+        # negative factor when the youngest child has more than 12 months.
+        # clamp to zero to avoid negative contributions.
+        months = max_(0, min_(creche.duree, 12 - age_en_mois_benjamin))
+        return creche.montant * elig_age * elig_sal * months
 
 
 class prestations_familiales(Variable):  # TODO add _af_cong_naiss, af_cong_jeun_trav
