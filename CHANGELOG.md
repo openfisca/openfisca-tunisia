@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.62 - [#354](https://github.com/openfisca/openfisca-tunisia/pull/354)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Détails :
+  - Fix units.
+
+
 ## 0.61 - [#351](https://github.com/openfisca/openfisca-tunisia/pull/351)
 
 * Amélioration technique.
