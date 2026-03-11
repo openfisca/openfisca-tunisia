@@ -505,14 +505,7 @@ class retraite_complementaire_employeur(Variable):
         cotisations_sociales = parameters(
             period.start
         ).prelevements_sociaux.cotisations_sociales
-        bareme = getattr(
-            cotisations_sociales.secteur_prive.rsna.cotisations_employeur,
-            "retraite_complementaire",
-            None,
-        )
-
-        if bareme is None:
-            return 0.0
+        bareme = cotisations_sociales.secteur_prive.rsna.cotisations_employeur.retraite_complementaire
 
         condition = (regime == TypesRegimeSecuriteSocialeCotisant.rsna) * adhesion
         return bareme.calc(assiette_complementaire * condition)
@@ -534,14 +527,7 @@ class retraite_complementaire_salarie(Variable):
         cotisations_sociales = parameters(
             period.start
         ).prelevements_sociaux.cotisations_sociales
-        bareme = getattr(
-            cotisations_sociales.secteur_prive.rsna.cotisations_salarie,
-            "retraite_complementaire",
-            None,
-        )
-
-        if bareme is None:
-            return 0.0
+        bareme = cotisations_sociales.secteur_prive.rsna.cotisations_salarie.retraite_complementaire
 
         condition = (regime == TypesRegimeSecuriteSocialeCotisant.rsna) * adhesion
         return bareme.calc(assiette_complementaire * condition)
