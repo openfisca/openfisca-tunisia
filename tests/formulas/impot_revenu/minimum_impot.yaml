@@ -8,6 +8,7 @@
     assiette_avant_avantages: 100_000
     impot_avant_avantages: 30_600 # Impot théorique sur 100k
     minimum_impot: 13_770 # 45% de 30600 en 2020
-    deduction_cea: 100_000
-    revenu_net_imposable: 0 # Le revenu après avantage fiscal tombe bien à 0
-    impot_revenu_brut: 13_770 # L'impôt calculé final doit correspondre au minimum d'impôt !
+    # la déduction est plafonnée par le paramètre, aujourd'hui 50 000
+    revenu_net_imposable: 50_000 # 100k - plafond(CEA)
+    impot_revenu_brut: 13_770 # impot brut plafonné par le minimum d'impôt
+    deduction_cea: 50_000

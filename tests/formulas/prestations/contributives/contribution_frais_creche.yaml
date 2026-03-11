@@ -1,0 +1,52 @@
+# Test suite sur la variable contribution_frais_creche
+# Deux scenarios : l'un où le dernier enfant a 24 mois (pas de prise en
+# charge), l'autre avec un enfant plus jeune qui ouvre droit à la
+# contribution.
+
+- name: Contribution frais crèche (aucune aide, b&eacute;n&eacute;ficiaire trop vieux)
+  period: 2011
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        age: 40
+      parent2:
+        date_naissance: 1972-01-01
+      enfant1:
+        date_naissance: 1992-01-01
+      enfant2:
+        date_naissance: 2002-01-01
+      enfant3:
+        date_naissance: 2008-12-31
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+        - enfant3
+  # L'enfant le plus jeune a 24 mois, donc le calcul de durée (12 - âge)
+  # est négatif. La formule a été corrigée pour retourner 0 dans ce cas.
+  output:
+    menage:
+      contribution_frais_creche: 0.0
+
+- name: Contribution frais crèche (aide positive pour enfant de 6 mois)
+  period: 2011
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        age: 40
+      parent2:
+        date_naissance: 1972-01-01
+      enfant1:
+        date_naissance: 2010-07-01  # environ 6 mois en 2011-01
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+  # Avec un seul enfant né mi-2010, l'âge est inférieur à 12 mois et la
+  # contribution est positive (montant * durée éligible).
+  output:
+    menage:
+      contribution_frais_creche: 105.0
