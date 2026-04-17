@@ -1,0 +1,12 @@
+description: fixant l'indemnité d'encadrement et de recherche servie aux personnels civils de l'enseignement supérieur militaire,
+  — Professeur de l'enseignement supérieur ou grade équivalent dans l'enseignement ou la recherche
+values:
+  '2008-12-30':
+    value: 299.0
+metadata:
+  unit: currency
+  reference:
+    '2008-12-30':
+    - title: Decret n° 2008-4095 du 30 Décembre 2008, portant modification du decret no 2001-2591 du 9 novembre 2001,fixant
+        le regime de remuneration du corps des enseignants technologues
+      href: https://www.pist.tn/jort/2009/2009F/Jo0032009.pdf

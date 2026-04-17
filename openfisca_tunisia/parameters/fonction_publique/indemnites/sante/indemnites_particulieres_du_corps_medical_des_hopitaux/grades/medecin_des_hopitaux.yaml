@@ -1,0 +1,10 @@
+description: indemnités particulières du corps médical des hôpitaux — Médecin des hôpitaux
+values:
+  '1989-02-15':
+    value: 1095.0
+metadata:
+  unit: currency
+  reference:
+    '1989-02-15':
+    - title: Decret n° 89-299 du 15 Février 1989, relatif aux indemnites particulieres aux corps medical des hopitaux
+      href: https://www.pist.tn/jort/1989/1989F/Jo01789.pdf

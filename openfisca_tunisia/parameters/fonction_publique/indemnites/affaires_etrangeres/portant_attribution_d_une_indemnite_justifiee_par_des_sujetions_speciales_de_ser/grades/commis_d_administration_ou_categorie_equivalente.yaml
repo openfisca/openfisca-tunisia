@@ -1,0 +1,14 @@
+description: Portant attribution d'une indemnité justifiée par des sujétions spéciales de service à certaines catégories des
+  personnels d'exploitation des télécommunications et du chiffre du Ministère des Affaires Etrangères — Commis d'Administration
+  ou catégorie équivalente
+values:
+  '1981-02-16':
+    value: 186.0
+metadata:
+  unit: currency
+  reference:
+    '1981-02-16':
+    - title: Decret n° 81-209 du 16 Février 1981, portant attribution d'une indemnite justifiee par des sujetions speciales
+        de service a certaines categories des personnels d'exploitation des telecommunications et du chiffre du ministere
+        des affaires etrangeres
+      href: https://www.pist.tn/jort/1981/1981F/Jo01281.pdf

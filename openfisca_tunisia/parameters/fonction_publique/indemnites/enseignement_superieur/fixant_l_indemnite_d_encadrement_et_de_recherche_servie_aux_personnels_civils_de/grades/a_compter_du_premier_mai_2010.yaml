@@ -1,0 +1,12 @@
+description: fixant l'indemnité d'encadrement et de recherche servie aux personnels civils de l'enseignement supérieur militaire,
+  — à compter du premier mai 2010
+values:
+  '2010-07-05':
+    value: 1534.0
+metadata:
+  unit: currency
+  reference:
+    '2010-07-05':
+    - title: Decret n° 2010-1671 du 05 Juillet 2010, portant modification du decret no 2001-2591 du 9 novembre 2001,fixant
+        le regime de remuneration du corps des enseignants technologues
+      href: https://www.pist.tn/jort/2010/2010F/Jo0552010.pdf

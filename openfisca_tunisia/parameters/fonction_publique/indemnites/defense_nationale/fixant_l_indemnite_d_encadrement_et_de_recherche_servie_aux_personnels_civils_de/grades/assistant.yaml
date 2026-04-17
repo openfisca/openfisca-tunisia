@@ -1,0 +1,12 @@
+description: fixant l'indemnité d'encadrement et de recherche servie aux personnels civils de l'enseignement supérieur militaire,
+  — Assistant
+values:
+  '1993-10-25':
+    value: 250.0
+metadata:
+  unit: currency
+  reference:
+    '1993-10-25':
+    - title: Decret n° 93-2126 du 25 Octobre 1993, portant modification du decret no 89-112 du 11 janvier 1989,fixant l'indemnite
+        d'encadrement et de recherche servie aux personnels civils de l'enseignement superieur militaire
+      href: https://www.pist.tn/jort/1993/1993F/Jo08393.pdf

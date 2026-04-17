@@ -1,0 +1,13 @@
+description: Indemnité provisoire complémentaire au profit des personnels militaires et des personnels de la police nationale,
+  de la protection civile et des services — Magistrat du 2ème grade
+values:
+  '1982-03-16':
+    value: 600.0
+metadata:
+  unit: currency
+  reference:
+    '1982-03-16':
+    - title: Decret n° 82-515 du 16 Mars 1982, portant institution d'une indemnite provisoire complementaire au profit des
+        personnels militaires et des personnels de la police nationale,de la protection civile et des services penitentiaires
+        et du travail reeducatif
+      href: https://www.pist.tn/jort/1982/1982F/Jo02082.pdf

@@ -1,0 +1,12 @@
+description: indemnités spécifiques allouées aux membres du corps du contrôle général des domaines de l'Etat et des affaires
+  foncières, — (montant unique)
+values:
+  '1991-04-30':
+    value: 70.0
+metadata:
+  unit: currency
+  reference:
+    '1991-04-30':
+    - title: Decret n° 91-845 du 31 Mai 1991, relatif aux indemnites specifiques allouees aux membres du corps du controle
+        general des domaines de l'Etat et des affaires foncieres
+      href: https://www.pist.tn/jort/1991/1991F/Jo04391.pdf

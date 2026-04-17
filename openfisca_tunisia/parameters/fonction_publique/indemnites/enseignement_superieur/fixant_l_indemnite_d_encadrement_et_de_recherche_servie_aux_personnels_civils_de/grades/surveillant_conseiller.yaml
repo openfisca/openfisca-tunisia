@@ -1,0 +1,12 @@
+description: fixant l'indemnité d'encadrement et de recherche servie aux personnels civils de l'enseignement supérieur militaire,
+  — Surveillant conseiller
+values:
+  '2007-04-24':
+    value: 21.0
+metadata:
+  unit: currency
+  reference:
+    '2007-04-24':
+    - title: Decret n° 2007-1037 du 24 Avril 2007, portant modification du decret no 2001-2591 du 9 novembre 2001,fixant le
+        regime de remuneration du corps des enseignants technologues
+      href: https://www.pist.tn/jort/2007/2007F/Jo0362007.pdf

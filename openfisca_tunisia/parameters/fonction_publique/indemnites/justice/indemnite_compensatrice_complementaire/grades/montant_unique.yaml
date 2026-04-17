@@ -1,0 +1,11 @@
+description: Indemnité compensatrice complémentaire — (montant unique)
+values:
+  '1982-03-16':
+    value: 15.0
+metadata:
+  unit: currency
+  reference:
+    '1982-03-16':
+    - title: Decret n° 82-526 du 16 Mars 1982, relatif a l'attribution d'une indemnite compensatrice complementaire a certaines
+        categories de personnels du Ministere de la Justice
+      href: https://www.pist.tn/jort/1982/1982F/Jo02082.pdf

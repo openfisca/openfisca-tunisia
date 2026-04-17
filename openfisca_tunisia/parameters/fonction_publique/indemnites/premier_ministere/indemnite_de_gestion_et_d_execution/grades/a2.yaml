@@ -1,0 +1,12 @@
+description: Indemnité de gestion et d’exécution — A2
+values:
+  '1982-03-16':
+    value: 28.0
+metadata:
+  unit: currency
+  reference:
+    '1982-03-16':
+    - title: Decret n° 82-505 du 16 Mars 1982, portant institution d'une indemnite specifiques dite indemnite de gestion et
+        d'execution au profit des personnels de l'Etat,des collectivites publiques locales et des etablissements publics a
+        caractere administratif
+      href: https://www.pist.tn/jort/1982/1982F/Jo02082.pdf

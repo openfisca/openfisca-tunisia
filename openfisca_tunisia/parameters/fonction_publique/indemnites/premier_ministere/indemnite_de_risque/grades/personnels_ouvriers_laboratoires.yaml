@@ -1,0 +1,12 @@
+description: Indemnité de risque — Personnels ouvriers laboratoires
+values:
+  '1981-09-12':
+    value: 0.0
+metadata:
+  unit: currency
+  reference:
+    '1981-09-12':
+    - title: Decret n° 81-1157 du 12 Septembre 1981, relatif a l'institution d'une indemnite de risque et de contagion au
+        profit de certains personnels relevant des ministeres de l'economie nationale,de l'education nationale de l'enseignement
+        superieur et de la recherche scientifique et de l'agriculture
+      href: https://www.pist.tn/jort/1981/1981F/Jo05881.pdf
