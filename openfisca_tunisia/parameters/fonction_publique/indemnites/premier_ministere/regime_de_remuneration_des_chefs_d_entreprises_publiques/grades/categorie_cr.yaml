@@ -1,0 +1,10 @@
+description: Régime de rémunération des chefs d’entreprises publiques — Catégorie «Cr
+values:
+  '1978-10-11':
+    value: 100.0
+metadata:
+  unit: currency
+  reference:
+    '1978-10-11':
+    - title: Decret n° 78-885 du 11 Octobre 1978, fixant le regime de la remuneration des chefs d'entreprise publique
+      href: https://www.pist.tn/jort/1978/1978F/Jo06878.pdf

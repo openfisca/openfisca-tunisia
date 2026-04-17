@@ -1,0 +1,12 @@
+description: indemnité de non clientèle allouée aux médecins vétérinaires exerçant à plein temps, du 6 novembre 1996 — Médecin
+  Vétérinaire 4ème
+values:
+  '1978-11-07':
+    value: 580.0
+metadata:
+  unit: currency
+  reference:
+    '1978-11-07':
+    - title: Decret n° 78-966 du 07 Novembre 1978, relatif a l'indemnite de non clientele allouee aux medecins veterinaires
+        exercant a plein temps
+      href: https://www.pist.tn/jort/1978/1978F/Jo07678.pdf

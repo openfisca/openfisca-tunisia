@@ -1,0 +1,10 @@
+description: indemnités particulières du personnel pharmacien hospitalo-universitaire — universitaire
+values:
+  '1981-07-15':
+    value: 1800.0
+metadata:
+  unit: currency
+  reference:
+    '1981-07-15':
+    - title: Decret n° 81-979 du 15 Juillet 1981, relatif aux indemnites particulieres du personnel pharmacien hospitalo-universitaires
+      href: https://www.pist.tn/jort/1981/1981F/Jo04981.pdf

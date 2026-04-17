@@ -1,0 +1,18 @@
+description: institution d'une indemnité municipale de l’hygiène et de l'enlèvement des ordures ménagères — Ouvriers de la
+  2ème unité
+values:
+  '1990-08-18':
+    value: 40.75
+  '1991-12-24':
+    value: 40.75
+metadata:
+  unit: currency
+  reference:
+    '1990-08-18':
+    - title: Decret n° 90-1293 du 18 Août 1990, portant institution d'une indemnite municipale de l'hygiene et de l'enlevement
+        des ordures menageres
+      href: https://www.pist.tn/jort/1990/1990F/Jo05590.pdf
+    '1991-12-24':
+    - title: Decret n° 91-2005 du 24 Décembre 1991, etendant le benefice de l'indemnite municipale de l'hygiene et de l'enlevement
+        des ordures menageres instituee par le decret no 90-1293 du 18 aout 1990 aux categories d'ouvriers des conseils regionaux
+      href: https://www.pist.tn/jort/1992/1992F/Jo00292.pdf

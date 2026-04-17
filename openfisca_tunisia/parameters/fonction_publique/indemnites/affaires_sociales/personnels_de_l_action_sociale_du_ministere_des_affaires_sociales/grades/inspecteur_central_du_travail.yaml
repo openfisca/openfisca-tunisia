@@ -1,0 +1,11 @@
+description: Personnels de l’action sociale du ministère des affaires sociales — Inspecteur Central du Travail
+values:
+  '1982-03-16':
+    value: 294.0
+metadata:
+  unit: currency
+  reference:
+    '1982-03-16':
+    - title: Decret n° 82-525 du 16 Mars 1982, relatif a l'institution d'une indemnite specifique dite indemnite de l'Action
+        Sociale au profit du personnel de l'Action Sociale du Ministere des Affaires Sociales
+      href: https://www.pist.tn/jort/1982/1982F/Jo02082.pdf
