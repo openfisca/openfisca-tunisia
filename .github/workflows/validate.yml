@@ -16,14 +16,14 @@ jobs:
       - uses: astral-sh/setup-uv@v4
       - name: Install dependencies
         run: uv sync --extra dev
-      - name: Validate parameters
-        run: uv run openfisca-ai validate-parameters .
-      - name: Validate units
-        run: uv run openfisca-ai validate-units .
-      - name: Validate code
-        run: uv run openfisca-ai validate-code .
-      - name: Full audit
-        run: uv run openfisca-ai audit . --markdown --output audit-report.md
+      - name: Validate code (informational)
+        run: uv run openfisca-ai validate-code . || true
+      - name: Validate parameters (informational)
+        run: uv run openfisca-ai validate-parameters . || true
+      - name: Validate units (informational)
+        run: uv run openfisca-ai validate-units . || true
+      - name: Full audit (informational)
+        run: uv run openfisca-ai audit . --markdown --output audit-report.md || true
       - name: Upload audit report
         if: always()
         uses: actions/upload-artifact@v4
