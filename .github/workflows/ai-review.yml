@@ -11,7 +11,7 @@ permissions:
 jobs:
   review:
     runs-on: ubuntu-24.04
-    if: github.event.pull_request.draft == false && secrets.ANTHROPIC_API_KEY != ''
+    if: github.event.pull_request.draft == false
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,49 +22,85 @@ jobs:
       - uses: astral-sh/setup-uv@v4
       - name: Install dependencies
         run: uv sync --extra dev
-      - name: Run audit
-        run: uv run openfisca-ai audit . --json --output audit.json
-      - name: Get PR diff
-        run: git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+      - name: Get PR diff and pre-digest
+        run: |
+          git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+          uv run openfisca-ai review-diff . --diff-file pr.diff --json > review-digest.json
+          uv run openfisca-ai review-diff . --diff-file pr.diff --markdown > review-digest.md
       - name: AI Review
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python - <<'PYEOF'
-  import json, os, subprocess
+  import json, os
 
-  diff = open("pr.diff").read()
-  audit = open("audit.json").read()
+  digest = open("review-digest.json").read()
+  digest_data = json.loads(digest)
+  diff_excerpt = open("pr.diff").read()[:5000]
 
-  prompt = f"""Tu es un relecteur expert OpenFisca. Analyse ce diff de PR et le rapport d'audit.
+  if digest_data.get("summary", {}).get("is_trivial"):
+      with open("review.md", "w") as f:
+          f.write("Changement trivial (documentation/CI) — pas de review approfondie nécessaire.")
+      raise SystemExit(0)
 
-  ## Rapport d'audit openfisca-ai
-  {audit}
+  prompt = f"""Tu es un relecteur expert OpenFisca. Voici le rapport pré-digéré d'une PR :
 
-  ## Diff de la PR
+  {open("review-digest.md").read()}
+
+  Extrait du diff :
   ```diff
-  {diff[:15000]}
+  {diff_excerpt}
   ```
 
   Produis une review concise en français :
   1. Résumé des changements (2-3 lignes)
-  2. Problèmes détectés (paramètres, formules, tests manquants)
+  2. Problèmes détectés
   3. Suggestions d'amélioration
-  4. Verdict : Approuvé / Changements demandés
+  4. Verdict : Approuvé / Changements demandés"""
 
-  Si le diff est trivial (docs, CI), dis-le en une ligne."""
+  review_text = None
 
-  try:
-      import anthropic
-      client = anthropic.Anthropic()
-      response = client.messages.create(
-          model="claude-haiku-4-5-20251001",
-          max_tokens=1024,
-          messages=[{"role": "user", "content": prompt}],
-      )
-      review_text = response.content[0].text
-  except Exception as e:
-      review_text = f"Review automatique indisponible : {e}"
+  # Try providers in order of preference / availability
+  if os.environ.get("ANTHROPIC_API_KEY"):
+      try:
+          import anthropic
+          client = anthropic.Anthropic()
+          response = client.messages.create(
+              model="claude-haiku-4-5-20251001",
+              max_tokens=1024,
+              messages=[{"role": "user", "content": prompt}],
+          )
+          review_text = response.content[0].text
+      except Exception:
+          pass
+
+  if not review_text and os.environ.get("OPENAI_API_KEY"):
+      try:
+          from openai import OpenAI
+          client = OpenAI()
+          response = client.chat.completions.create(
+              model="gpt-4o-mini",
+              max_tokens=1024,
+              messages=[{"role": "user", "content": prompt}],
+          )
+          review_text = response.choices[0].message.content
+      except Exception:
+          pass
+
+  if not review_text and os.environ.get("GEMINI_API_KEY"):
+      try:
+          import google.generativeai as genai
+          genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+          model = genai.GenerativeModel("gemini-2.0-flash")
+          response = model.generate_content(prompt)
+          review_text = response.text
+      except Exception:
+          pass
+
+  if not review_text:
+      review_text = open("review-digest.md").read()
 
   with open("review.md", "w") as f:
       f.write(review_text)

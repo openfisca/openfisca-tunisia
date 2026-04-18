@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "openfisca": {
+      "command": "uv",
+      "args": [
+        "run",
+        "openfisca-ai",
+        "mcp",
+        "--url",
+        "http://localhost:5000",
+        "--serve",
+        "--serve-command",
+        "uv run openfisca serve --country-package openfisca_tunisia",
+        "--repo-path",
+        "/home/benjello/projets/openfisca-tunisia"
+      ]
+    }
+  }
+}
