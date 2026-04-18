@@ -11,7 +11,7 @@ permissions:
 jobs:
   review:
     runs-on: ubuntu-24.04
-    if: github.event.pull_request.draft == false
+    if: github.event.pull_request.draft == false && secrets.ANTHROPIC_API_KEY != ''
     steps:
       - uses: actions/checkout@v4
         with:
