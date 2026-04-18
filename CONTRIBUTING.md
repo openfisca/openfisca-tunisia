@@ -3,9 +3,48 @@
 > This file defines the rules to follow to contribute to your repository.
 > The rules suggested here are what we generally use for OpenFisca packages.
 
-Thank you for wanting to contribute to OpenFisca! :smiley:
+Thank you for wanting to contribute to OpenFisca!
 
 TL;DR: [GitHub Flow](https://guides.github.com/introduction/flow/), [SemVer](http://semver.org/).
+
+## Development setup
+
+```bash
+git clone <repo-url>
+cd openfisca-tunisia
+uv sync
+```
+
+## Automatic code checks with pre-commit
+
+Automatic checks run before each commit via [pre-commit](https://pre-commit.com/).
+
+```bash
+uv run pre-commit install
+```
+
+Run checks manually:
+
+```bash
+uv run pre-commit run --all-files
+```
+
+## Validation with openfisca-ai
+
+This repository uses [openfisca-ai](https://github.com/benjello/openfisca-ai) as a validation toolkit:
+
+```bash
+uv run openfisca-ai validate-parameters .
+uv run openfisca-ai validate-units .
+uv run openfisca-ai validate-code .
+uv run openfisca-ai audit .
+```
+
+## Tests
+
+```bash
+uv run pytest
+```
 
 ## Pull requests
 
