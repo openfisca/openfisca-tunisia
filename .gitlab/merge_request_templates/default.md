@@ -1,29 +1,29 @@
-## Type of change
+## Type de changement
 
-<!-- Delete lines that do not apply. -->
+<!-- Supprimez les lignes qui ne s'appliquent pas. -->
 
-- Tax and benefit system evolution
-- Technical improvement
-- Bug fix
-- Minor change
+- Évolution du système socio-fiscal
+- Amélioration technique
+- Correction d'un bug
+- Changement mineur
 
 ## Description
 
-<!-- Describe the changes made. -->
+<!-- Décrivez les changements apportés. -->
 
-## Impacted periods
+## Périodes concernées
 
-<!-- e.g. "From 01/01/2024" or "All" -->
+<!-- Ex. : « À partir du 01/01/2024 » ou « Toutes » -->
 
-## Impacted areas
+## Zones impactées
 
-<!-- e.g. `path/to/modified/variables` -->
+<!-- Ex. : `chemin/vers/les/variables/modifiées` -->
 
 ## Checklist
 
-- [ ] I have read the [contributing guide](CONTRIBUTING.md).
-- [ ] I have validated with `openfisca-ai`: `uv run openfisca-ai validate-parameters .`
-- [ ] I have added or updated the relevant tests.
-- [ ] Tests pass: `uv run pytest`.
-- [ ] I have updated the version number in `pyproject.toml`.
-- [ ] I have updated `CHANGELOG.md`.
+- [ ] J'ai consulté le [guide de contribution](CONTRIBUTING.md).
+- [ ] J'ai validé avec `openfisca-ai` : `uv run openfisca-ai validate-parameters .`
+- [ ] J'ai ajouté ou mis à jour les tests correspondants.
+- [ ] Les tests passent : `uv run pytest`.
+- [ ] J'ai mis à jour le numéro de version dans `pyproject.toml`.
+- [ ] J'ai mis à jour le `CHANGELOG.md`.

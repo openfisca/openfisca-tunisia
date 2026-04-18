@@ -1,15 +1,15 @@
-## Feature description
+## Description de la fonctionnalité
 
-<!-- Describe the desired feature. -->
+<!-- Décrivez la fonctionnalité souhaitée. -->
 
 ## Motivation
 
-<!-- Why is this feature needed? What problem does it solve? -->
+<!-- Pourquoi cette fonctionnalité est-elle nécessaire ? Quel problème résout-elle ? -->
 
-## Proposed implementation
+## Proposition de mise en oeuvre
 
-<!-- If you have an idea of how to implement this feature, describe it here. -->
+<!-- Si vous avez une idée de comment implémenter cette fonctionnalité, décrivez-la ici. -->
 
-## Legislative references
+## Références législatives
 
-<!-- Links to relevant Tunisian laws, decrees, or official texts. -->
+<!-- Liens vers les textes de loi, décrets ou textes officiels tunisiens pertinents. -->
