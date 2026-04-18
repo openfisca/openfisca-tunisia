@@ -1,0 +1,77 @@
+name: AI Review
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v4
+      - name: Install dependencies
+        run: uv sync --extra dev
+      - name: Run audit
+        run: uv run openfisca-ai audit . --json --output audit.json
+      - name: Get PR diff
+        run: git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+      - name: AI Review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python - <<'PYEOF'
+  import json, os, subprocess
+
+  diff = open("pr.diff").read()
+  audit = open("audit.json").read()
+
+  prompt = f"""Tu es un relecteur expert OpenFisca. Analyse ce diff de PR et le rapport d'audit.
+
+  ## Rapport d'audit openfisca-ai
+  {audit}
+
+  ## Diff de la PR
+  ```diff
+  {diff[:15000]}
+  ```
+
+  Produis une review concise en français :
+  1. Résumé des changements (2-3 lignes)
+  2. Problèmes détectés (paramètres, formules, tests manquants)
+  3. Suggestions d'amélioration
+  4. Verdict : Approuvé / Changements demandés
+
+  Si le diff est trivial (docs, CI), dis-le en une ligne."""
+
+  try:
+      import anthropic
+      client = anthropic.Anthropic()
+      response = client.messages.create(
+          model="claude-haiku-4-5-20251001",
+          max_tokens=1024,
+          messages=[{"role": "user", "content": prompt}],
+      )
+      review_text = response.content[0].text
+  except Exception as e:
+      review_text = f"Review automatique indisponible : {e}"
+
+  with open("review.md", "w") as f:
+      f.write(review_text)
+  PYEOF
+      - name: Post review comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BODY="## Review automatique openfisca-ai\n\n$(cat review.md)"
+          gh pr comment ${{ github.event.pull_request.number }} --body "$BODY" 2>/dev/null || echo "Could not post comment"
