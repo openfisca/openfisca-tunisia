@@ -38,7 +38,7 @@ ai-review:
   <<: *uv-setup
   stage: review
   rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $ANTHROPIC_API_KEY
   script:
     - uv run openfisca-ai audit . --json --output audit.json
     - git diff ${CI_MERGE_REQUEST_DIFF_BASE_SHA}...${CI_COMMIT_SHA} > mr.diff
