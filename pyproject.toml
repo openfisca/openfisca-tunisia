@@ -36,6 +36,7 @@ build-backend = "setuptools.build_meta"
 
 [project.optional-dependencies]
 dev = [
+    "openfisca-ai",
     "ruff >=0.6.9, <1",
     "pytest",  # Let OpenFisca-Core decide pytest version
     "scipy >=1.10.1, <2.0",
@@ -81,6 +82,9 @@ filterwarnings = [
 
 [tool.setuptools.packages.find]
 include = ["openfisca_tunisia*"]
+
+[tool.uv.sources]
+openfisca-ai = { git = "https://github.com/benjello/openfisca-ai.git" }
 
 [tool.uv.workspace]
 members = ["openfisca-tunisia"]

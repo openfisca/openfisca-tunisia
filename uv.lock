@@ -1551,6 +1551,14 @@ wheels = [
 ]
 
 [[package]]
+name = "openfisca-ai"
+version = "0.1.1"
+source = { git = "https://github.com/benjello/openfisca-ai.git#fd015e26f2f94207e528baaadb7c6a95756078c9" }
+dependencies = [
+    { name = "pyyaml" },
+]
+
+[[package]]
 name = "openfisca-core"
 version = "44.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1590,6 +1598,7 @@ dependencies = [
 
 [package.optional-dependencies]
 dev = [
+    { name = "openfisca-ai" },
     { name = "pytest" },
     { name = "requests" },
     { name = "ruff" },
@@ -1614,6 +1623,7 @@ requires-dist = [
     { name = "matplotlib", marker = "extra == 'notebook'", specifier = ">=2.2" },
     { name = "nbconvert", marker = "extra == 'notebook'", specifier = ">=5.3" },
     { name = "nbformat", marker = "extra == 'notebook'", specifier = ">=4.4" },
+    { name = "openfisca-ai", marker = "extra == 'dev'", git = "https://github.com/benjello/openfisca-ai.git" },
     { name = "openfisca-core", extras = ["web-api"], specifier = ">=44,<45" },
     { name = "pandas", marker = "extra == 'notebook'", specifier = ">=0.22.0" },
     { name = "pytest", marker = "extra == 'dev'" },
