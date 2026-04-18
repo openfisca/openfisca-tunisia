@@ -1,0 +1,12 @@
+description: les taux de l'indemnité de sujétion octroyée aux enseignants de musique du ministère de la culture et de l'information
+  — Professeur d'enseignement de musique du 1* cycle
+values:
+  '1989-06-07':
+    value: 58.0
+metadata:
+  unit: currency
+  reference:
+    '1989-06-07':
+    - title: Decret n° 89-606 du 07 Juin 1989, fixant les taux d'indemnite de sujetion octroyee aux enseignants de musique
+        du ministere de la culture et de l'information
+      href: https://www.pist.tn/jort/1989/1989F/Jo04189.pdf

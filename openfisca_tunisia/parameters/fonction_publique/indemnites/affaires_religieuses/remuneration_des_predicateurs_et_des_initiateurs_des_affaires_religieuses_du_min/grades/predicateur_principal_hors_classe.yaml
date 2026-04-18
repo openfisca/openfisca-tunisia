@@ -1,0 +1,12 @@
+description: rémunération des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses.
+  — Prédicateur principal hors classe
+values:
+  '2014-10-17':
+    value: 717.0
+metadata:
+  unit: currency
+  reference:
+    '2014-10-17':
+    - title: Decret n° 2014-3943 du 17 Octobre 2014, fixant le regime de remuneration des predicateurs et des initiateurs
+        des affaires religieuses du ministere des affaires religieuses
+      href: https://www.pist.tn/jort/2014/2014F/Jo0882014.pdf

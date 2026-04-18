@@ -1,0 +1,10 @@
+description: indemnité d'ingénieur au profit des ingénieurs de l’administration — Ingénieur principal
+values:
+  '1988-06-02':
+    value: 95.0
+metadata:
+  unit: currency
+  reference:
+    '1988-06-02':
+    - title: Decret n° 88-1013 du 02 Juin 1988, instituant une indemnite d'ingenierie au profit des ingenieurs de l'administration
+      href: https://www.pist.tn/jort/1988/1988F/Jo03988.pdf

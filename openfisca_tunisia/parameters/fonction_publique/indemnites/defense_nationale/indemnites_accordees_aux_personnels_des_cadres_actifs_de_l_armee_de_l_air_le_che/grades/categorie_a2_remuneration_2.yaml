@@ -1,0 +1,12 @@
+description: Indemnités accordées aux personnels des cadres actifs de l'armée de l'air. Le chef du gouvernement, Sur proposition
+  du ministre de la Défense National — Catégorie A2 - Rémunération 2
+values:
+  '2014-01-10':
+    value: 47.563
+metadata:
+  unit: currency
+  reference:
+    '2014-01-10':
+    - title: Decret n° 2014-43 du 10 Janvier 2014, modifiant le decret n° 68-385 du 12 decembre 1968 relatif aux indemnites
+        accordees aux personnels des cadres actifs de l'armee de l'air
+      href: https://www.pist.tn/jort/2014/2014F/Jo0062014.pdf

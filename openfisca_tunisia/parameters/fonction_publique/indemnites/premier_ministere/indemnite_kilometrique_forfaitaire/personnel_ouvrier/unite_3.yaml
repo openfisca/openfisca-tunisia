@@ -1,0 +1,11 @@
+description: Indemnité kilométrique forfaitaire — IIIe Unité
+values:
+  '1982-02-01':
+    value: 12
+metadata:
+  unit: currency
+  reference:
+    '1982-02-01':
+    - title: Décret n° 82-506 du 16 mars 1982 portant institution d'une indemnité kilométrique forfaitaire au profit des personnels
+        de l'État, des collectivités publiques locales et des établissements publics à caractère administratif.
+      href: https://www.pist.tn/jort/1982/1982F/Jo02082.pdf

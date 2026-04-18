@@ -1,0 +1,16 @@
+description: régime de rémunération du corps des conseillers éducatifs relevant du ministère de l'éducation. — _____________________________________________________
+  Grades                                                   Montant global de la majoration durant la période 1996-1998 _____________________________________________________
+  - surveillant général de 1ère classe                           90 D _____________________________________________________
+  - surveillant principal                                                72 D - surveillant général de 1ère et 2ème catégorie        72
+  D _____________________________________________________ - surveillant                                                               60
+  D _____________________________________________________ - surveillant de 2ème et 3ème catégorie
+values:
+  '2001-08-01':
+    value: 45.0
+metadata:
+  unit: currency
+  reference:
+    '2001-08-01':
+    - title: Decret n° 2001-1763 du 01 Août 2001, fixant le regime de remuneration du corps des conseillers educatifs relevant
+        du ministere de l'education
+      href: https://www.pist.tn/jort/2001/2001F/Jo0642001.pdf

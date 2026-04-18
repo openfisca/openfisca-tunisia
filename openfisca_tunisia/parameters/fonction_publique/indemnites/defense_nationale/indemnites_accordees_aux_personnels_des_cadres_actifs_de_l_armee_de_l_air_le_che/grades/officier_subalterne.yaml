@@ -1,0 +1,12 @@
+description: Indemnités accordées aux personnels des cadres actifs de l'armée de l'air. Le chef du gouvernement, Sur proposition
+  du ministre de la Défense National — Officier Subalterne
+values:
+  '1968-12-12':
+    value: 56.0
+metadata:
+  unit: currency
+  reference:
+    '1968-12-12':
+    - title: Decret n° 68-385 du 12 Décembre 1968, relatif aux indemnites accordees aux personnels des cadres actifs de l'armee
+        de l'air
+      href: https://www.pist.tn/jort/1968/1968F/Jo05368.pdf

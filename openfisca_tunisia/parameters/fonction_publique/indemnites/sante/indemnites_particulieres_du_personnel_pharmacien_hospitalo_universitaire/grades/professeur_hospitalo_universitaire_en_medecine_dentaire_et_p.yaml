@@ -1,0 +1,12 @@
+description: indemnités particulières du personnel pharmacien hospitalo-universitaire — Professeur hospitalo-universitaire
+  en médecine dentaire et pharmacie
+values:
+  '2013-04-22':
+    value: 409.0
+metadata:
+  unit: currency
+  reference:
+    '2013-04-22':
+    - title: Decret n° 2013-1408 du 22 Avril 2013, modifiant et completant le decret no 81-979 du 15 juillet 1981,relatif
+        aux indemnites particulieres attribuees au corps des pharmaciens hospitalo-universitaires
+      href: https://www.pist.tn/jort/2013/2013F/Jo0342013.pdf

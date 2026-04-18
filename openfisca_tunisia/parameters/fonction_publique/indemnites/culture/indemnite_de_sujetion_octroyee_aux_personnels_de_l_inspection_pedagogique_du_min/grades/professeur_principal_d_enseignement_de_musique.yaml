@@ -1,0 +1,12 @@
+description: indemnité de sujétion octroyée aux personnels de l'inspection pédagogique du ministère de la culture et de l'information,
+  — Professeur principal d'enseignement de musique
+values:
+  '1993-12-20':
+    value: 70.0
+metadata:
+  unit: currency
+  reference:
+    '1993-12-20':
+    - title: Decret n° 93-2633 du 20 Décembre 1993, fixant les taux des indemnites octroyees aux enseignants de musique et
+        aux personnels de l'inspection pedagogique du ministere de la culture
+      href: https://www.pist.tn/jort/1994/1994F/Jo00394.pdf

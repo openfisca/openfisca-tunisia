@@ -1,0 +1,42 @@
+name: AI Review
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v4
+      - name: Install dependencies
+        run: uv sync --extra dev
+      - name: Pre-digest and review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+          uv run openfisca-ai review-diff . --diff-file pr.diff --json > review-digest.json
+          uv run openfisca-ai review-diff . --diff-file pr.diff --markdown > review-digest.md
+          uv run python -m openfisca_ai.tools.ci_review --digest review-digest.json --digest-md review-digest.md --diff pr.diff --output review.md
+      - name: Post review comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BODY="## Review automatique openfisca-ai
+
+          $(cat review.md)"
+          gh pr comment ${{ github.event.pull_request.number }} --body "$BODY" 2>/dev/null || echo "Could not post comment"

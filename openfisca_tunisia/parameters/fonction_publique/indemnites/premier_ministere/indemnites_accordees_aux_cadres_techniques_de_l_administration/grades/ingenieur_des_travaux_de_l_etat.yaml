@@ -1,0 +1,10 @@
+description: Indemnités accordées aux cadres techniques de l'administration — _— Ingénieur des Travaux de l'Etat
+values:
+  '1974-12-20':
+    value: 35.0
+metadata:
+  unit: currency
+  reference:
+    '1974-12-20':
+    - title: Decret n° 74-1109 du 20 Décembre 1974, relatif aux indemnites accordees aux cadres techniques de l'administration
+      href: https://www.pist.tn/jort/1974/1974F/Jo07874.pdf

@@ -1,0 +1,16 @@
+description: taux de l'indemnité spécifique (indemnité de sujétions pédagogiques) allouée aux animateurs d'application et
+  animateurs relevant du ministère de la jeunesse et de l'enfance et aux animateurs d'application des jardins d'enfants et
+  animateurs des jardins d'enfants exerçant dans les différents ministères et collectivités locales, — Animateur et animateur
+  des jardins d'enfants
+values:
+  '1991-10-21':
+    value: 68.0
+metadata:
+  unit: currency
+  reference:
+    '1991-10-21':
+    - title: Decret n° 91-1526 du 21 Octobre 1991, fixant les taux de l'indemnite specifique (indemnite de sujetions pedagogiques)allouee
+        aux animateurs d'application et animateurs relevant du ministere de la jeunesse et de l'enfance et aux animateurs
+        d'application des jardins d'enfants et animateurs des jardins d'enfants exercant dans les differents ministeres et
+        collectivites publiques locales
+      href: https://www.pist.tn/jort/1991/1991F/Jo07391.pdf

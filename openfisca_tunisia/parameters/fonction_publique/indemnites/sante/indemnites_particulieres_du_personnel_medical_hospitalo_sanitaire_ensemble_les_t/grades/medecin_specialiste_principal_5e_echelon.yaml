@@ -1,0 +1,12 @@
+description: indemnités particulières du personnel médical hospitalo-sanitaire, ensemble les textes — Médecin spécialiste
+  principal 5e échelon
+values:
+  '1991-02-04':
+    value: 750.0
+metadata:
+  unit: currency
+  reference:
+    '1991-02-04':
+    - title: Decret n° 91-233 du 04 Février 1991, portant modification du decret no 77-646 du 5 aout 1977 relatif aux indemnites
+        particulieres du personnel medical hospitalo-sanitaire
+      href: https://www.pist.tn/jort/1991/1991F/Jo01491.pdf

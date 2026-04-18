@@ -1,0 +1,12 @@
+description: Institution d’une indemnité de risque et de contagion au profit de certains personnels exerçant dans les hôpitaux
+  et infirmeries militaires — Ouvriers (Risque Direct)
+values:
+  '1977-11-17':
+    value: 5.0
+metadata:
+  unit: currency
+  reference:
+    '1977-11-17':
+    - title: Decret n° 77-980 du 17 Novembre 1977, portant institution d'une indemnite de risque et de contagion au profit
+        de certains personnels exercant dans les hopitaux et infirmeries militaires
+      href: https://www.pist.tn/jort/1977/1977F/Jo08077.pdf

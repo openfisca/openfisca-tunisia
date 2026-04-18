@@ -1,0 +1,68 @@
+name: Auto Changelog
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  changelog:
+    runs-on: ubuntu-24.04
+    if: github.event.pull_request.merged == true && secrets.ANTHROPIC_API_KEY != ''
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+      - name: Generate changelog entry
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PYEOF'
+  import json, os, subprocess
+
+  pr_number = "{}"  # filled at runtime
+  pr_title = os.environ.get("PR_TITLE", "")
+  diff = subprocess.check_output(
+      ["git", "diff", "HEAD~1...HEAD"], text=True
+  )
+
+  prompt = f"""Génère une entrée CHANGELOG en français pour cette PR mergée.
+
+  Titre : {pr_title}
+  Diff (extrait) :
+  ```
+  {diff[:8000]}
+  ```
+
+  Format attendu (une seule section parmi Ajouté/Modifié/Corrigé/Supprimé) :
+  ### Ajouté|Modifié|Corrigé|Supprimé
+  - Description concise du changement.
+
+  Réponds UNIQUEMENT avec l'entrée CHANGELOG, rien d'autre."""
+
+  try:
+      import anthropic
+      client = anthropic.Anthropic()
+      response = client.messages.create(
+          model="claude-haiku-4-5-20251001",
+          max_tokens=256,
+          messages=[{"role": "user", "content": prompt}],
+      )
+      entry = response.content[0].text.strip()
+  except Exception as e:
+      entry = f"- PR mergée (changelog auto indisponible : {e})"
+
+  with open("changelog_entry.md", "w") as f:
+      f.write(entry)
+  print(entry)
+  PYEOF
+      - name: Upload changelog entry
+        uses: actions/upload-artifact@v4
+        with:
+          name: changelog-entry
+          path: changelog_entry.md

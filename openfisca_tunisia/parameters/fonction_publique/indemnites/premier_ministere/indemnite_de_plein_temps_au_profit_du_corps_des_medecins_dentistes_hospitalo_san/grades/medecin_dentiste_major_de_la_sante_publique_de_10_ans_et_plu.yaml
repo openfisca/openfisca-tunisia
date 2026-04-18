@@ -1,0 +1,12 @@
+description: indemnité de plein-temps au profit du corps des médecins dentistes hospitalo-sanitaires. — Médecin dentiste major
+  de la santé publique - De 10 ans et plus
+values:
+  '2014-01-10':
+    value: 2013.0
+metadata:
+  unit: currency
+  reference:
+    '2014-01-10':
+    - title: Decret n° 2014-45 du 10 Janvier 2014, portant fixation de l'indemnite de plein-temps au profit du corps des medecins
+        dentistes hospitalo-sanitaires
+      href: https://www.pist.tn/jort/2014/2014F/Jo0062014.pdf
