@@ -1,0 +1,87 @@
+stages:
+  - validate
+  - test
+  - review
+
+variables:
+  PYTHON_VERSION: "3.12"
+
+.uv-setup: &uv-setup
+  image: python:${PYTHON_VERSION}
+  before_script:
+    - pip install uv
+    - uv sync --extra dev
+
+validate:
+  <<: *uv-setup
+  stage: validate
+  script:
+    - uv run openfisca-ai validate-parameters .
+    - uv run openfisca-ai validate-units .
+    - uv run openfisca-ai validate-code .
+    - uv run openfisca-ai audit . --markdown --output audit-report.md
+  artifacts:
+    paths:
+      - audit-report.md
+    when: always
+
+test:
+  <<: *uv-setup
+  stage: test
+  script:
+    - uv run pytest
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.10", "3.11", "3.12"]
+
+ai-review:
+  <<: *uv-setup
+  stage: review
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  script:
+    - uv run openfisca-ai audit . --json --output audit.json
+    - git diff ${CI_MERGE_REQUEST_DIFF_BASE_SHA}...${CI_COMMIT_SHA} > mr.diff
+    - |
+      python - <<'PYEOF'
+      import json, os
+
+      diff = open("mr.diff").read()
+      audit = open("audit.json").read()
+
+      prompt = f"""Tu es un relecteur expert OpenFisca. Analyse ce diff et le rapport d'audit.
+
+      ## Rapport d'audit
+      {audit}
+
+      ## Diff
+      ```diff
+      {diff[:15000]}
+      ```
+
+      Produis une review concise en français :
+      1. Résumé (2-3 lignes)
+      2. Problèmes détectés
+      3. Suggestions
+      4. Verdict"""
+
+      try:
+          import anthropic
+          client = anthropic.Anthropic()
+          response = client.messages.create(
+              model="claude-haiku-4-5-20251001",
+              max_tokens=1024,
+              messages=[{"role": "user", "content": prompt}],
+          )
+          review = response.content[0].text
+      except Exception as e:
+          review = f"Review indisponible : {e}"
+
+      with open("review.md", "w") as f:
+          f.write(review)
+      print(review)
+      PYEOF
+  artifacts:
+    paths:
+      - review.md
+    when: always
