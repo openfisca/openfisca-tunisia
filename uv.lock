@@ -1553,7 +1553,7 @@ wheels = [
 [[package]]
 name = "openfisca-ai"
 version = "0.1.1"
-source = { git = "https://github.com/benjello/openfisca-ai.git#fd015e26f2f94207e528baaadb7c6a95756078c9" }
+source = { git = "https://github.com/benjello/openfisca-ai.git#b7f821a283759f7462c1823044d4277ddf2977c3" }
 dependencies = [
     { name = "pyyaml" },
 ]
