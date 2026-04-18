@@ -1,13 +1,13 @@
-# Contributing to OpenFisca Tunisia
+# Contribuer à OpenFisca-Tunisia
 
-> This file defines the rules to follow to contribute to your repository.
-> The rules suggested here are what we generally use for OpenFisca packages.
+> Ce fichier définit les règles à suivre pour contribuer à ce dépôt.
+> Les règles proposées ici sont celles généralement utilisées pour les packages OpenFisca.
 
-Thank you for wanting to contribute to OpenFisca!
+Avant tout, merci de votre volonté de contribuer à OpenFisca !
 
-TL;DR: [GitHub Flow](https://guides.github.com/introduction/flow/), [SemVer](http://semver.org/).
+En bref : [GitHub Flow](https://guides.github.com/introduction/flow/), [SemVer](http://semver.org/).
 
-## Development setup
+## Pré-requis
 
 ```bash
 git clone <repo-url>
@@ -15,23 +15,23 @@ cd openfisca-tunisia
 uv sync
 ```
 
-## Automatic code checks with pre-commit
+## Vérifications de code automatiques avec pre-commit
 
-Automatic checks run before each commit via [pre-commit](https://pre-commit.com/).
+Avant chaque commit, des vérifications automatiques sont exécutées via [pre-commit](https://pre-commit.com/).
 
 ```bash
 uv run pre-commit install
 ```
 
-Run checks manually:
+Exécuter les vérifications manuellement :
 
 ```bash
 uv run pre-commit run --all-files
 ```
 
-## Validation with openfisca-ai
+## Validation avec openfisca-ai
 
-This repository uses [openfisca-ai](https://github.com/benjello/openfisca-ai) as a validation toolkit:
+Ce dépôt utilise [openfisca-ai](https://github.com/benjello/openfisca-ai) comme toolkit de validation :
 
 ```bash
 uv run openfisca-ai validate-parameters .
@@ -48,98 +48,79 @@ uv run pytest
 
 ## Pull requests
 
-We follow the [GitHub Flow](https://guides.github.com/introduction/flow/): all code contributions are submitted via a pull request towards the `master` branch.
+Nous suivons le [GitHub Flow](https://guides.github.com/introduction/flow/) : toutes les contributions de code sont soumises via une pull request vers la branche `master`.
 
-Opening a Pull Request means you want that code to be merged. If you want to only discuss it, send a link to your branch along with your questions through whichever communication channel you prefer.
+Ouvrir une Pull Request signifie que vous souhaitez que ce code soit intégré. Si vous souhaitez simplement en discuter, envoyez un lien vers votre branche accompagné de vos questions par le canal de communication de votre choix.
 
-### Peer reviews
+### Revue par les pairs
 
-All pull requests must be reviewed by someone else than their original author.
+Toutes les pull requests doivent être relues par une personne autre que leur auteur·e.
 
-> In case of a lack of available reviewers, one may review oneself, but only after at least 24 hours have passed without working on the code to review.
+> En l'absence de relecteur·e disponible, on peut se relire soi-même, mais uniquement après au moins 24 heures sans avoir travaillé sur le code à relire.
 
-To help reviewers, make sure to add to your PR a **clear text explanation** of your changes.
+Pour faciliter la relecture, veillez à ajouter à votre PR une **explication claire en texte** de vos changements.
 
-In case of breaking changes, you **must** give details about what features were deprecated.
+En cas de changements non rétrocompatibles, vous **devez** détailler les fonctionnalités dépréciées.
 
-> You must also provide guidelines to help users adapt their code to be compatible with the new version of the package.
+> Vous devez également fournir des indications pour aider les utilisateur·e·s à adapter leur code à la nouvelle version du package.
 
-## Advertising changes
+## Signaler les changements
 
-### Version number
+### Numéro de version
 
-We follow the [semantic versioning](http://semver.org/) spec: any change impacts the version number, and the version number conveys API compatibility information **only**.
+Nous suivons le [versionnage sémantique](http://semver.org/) : chaque changement impacte le numéro de version, et le numéro de version communique la compatibilité de l'API **uniquement**.
 
-Examples:
+Exemples :
 
-#### Patch bump
+#### Patch (correctif)
 
-- Fixing or improving an already existing calculation.
+- Correction ou amélioration d'un calcul existant.
 
-#### Minor bump
+#### Mineur
 
-- Adding a variable to the tax and benefit system.
+- Ajout d'une variable au système socio-fiscal.
 
-#### Major bump
+#### Majeur
 
-- Renaming or removing a variable from the tax and benefit system.
+- Renommage ou suppression d'une variable du système socio-fiscal.
 
 ### Changelog
 
-OpenFisca-Extension-Template changes must be understood by users who don't necessarily work on the code. The CHANGELOG must therefore be as explicit as possible.
+Les évolutions d'OpenFisca-Tunisia doivent pouvoir être comprises par des réutilisateur·e·s qui n'interviennent pas nécessairement sur le code. Le CHANGELOG se doit donc d'être le plus explicite possible.
 
-Each change must be documented with the following elements:
+Chaque évolution sera documentée par les éléments suivants :
 
-- On the first line appears as a title the version number, as well as a link towards the Pull Request introducing the change. The title level must match the incrementation level of the version.
+- Sur la première ligne figure en guise de titre le numéro de version, et un lien vers la Pull Request introduisant le changement. Le niveau de titre doit correspondre au niveau d'incrémentation de la version.
 
-  > For instance :
+  > Par exemple :
   > # 13.0.0 [#671](https://github.com/openfisca/openfisca-tunisia/pull/671)
   >
   > ## 13.2.0 [#676](https://github.com/openfisca/openfisca-tunisia/pull/676)
   >
   > ### 13.1.5 [#684](https://github.com/openfisca/openfisca-tunisia/pull/684)
 
-- The second line indicates the type of the change. The possible types are:
-  - `Tax and benefit system evolution`: Calculation improvement, fix, or update. Impacts th
-  users interested in calculations.
-  - `Technical improvement`: Performances improvement, installing process change, formula synta
-  change… Impacts the users who write legislation and/or deploy their own instance.
-  - `Crash fix`: Impact all reusers.
-  - `Minor change`: Refactoring, metadata… Has no impact on users.
+- La deuxième ligne indique de quel type de changement il s'agit. Les types possibles sont :
+  - `Évolution du système socio-fiscal` : Amélioration, correction, mise à jour d'un calcul. Impacte les réutilisateur·e·s intéressé·e·s par les calculs.
+  - `Amélioration technique` : Amélioration des performances, évolution de la procédure d'installation, de la syntaxe des formules… Impacte les réutilisateur·e·s rédigeant des règles et/ou déployant leur propre instance.
+  - `Correction d'un crash` : Impacte tou·te·s les réutilisateur·e·s.
+  - `Changement mineur` : Refactoring, métadonnées… N'a aucun impact sur les réutilisateur·e·s.
 
-- In the case of a `Tax and benefit system evolution`, the following elements must then be specified:
-  - The periods impacted by the change. To avoid any ambiguity, the start day and/or the end day of the impacted periods must be precised. For instance, `from 01/01/2017` is correct, but `from 2017` is not, as it is ambiguous: it is not clear wheter 2017 is included or not in the impacted period.
-  - The tax and benefit system areas impacted by the change. These areas are described by the relative paths to the modified files, without the `.py` extension.
+- **Dans le cas d'une `Évolution du système socio-fiscal`**, il est ensuite précisé :
+  - Les périodes concernées par l'évolution. Les dates doivent être données au jour près pour lever toute ambiguïté : on écrira `au 01/01/2017` et non `pour 2017`.
+  - Les zones du modèle de calcul impactées. Ces zones correspondent à l'arborescence des fichiers dans le modèle, sans l'extension `.py`.
 
-  > For instance :
-  > - Impacted periods: Until 31/12/2015.
-  > - Impacted areas: `benefits/healthcare/universal_coverage`
+  > Par exemple :
+  > - Périodes concernées : Jusqu'au 31/12/2015.
+  > - Zones impactées : `prestations/allocations_familiales`
 
-- Finally, for all cases except `Minor Change`, the changes must be explicited by details given from a user perspective: in which case was an error or a problem was noticed ? What is the new available feature ? Which new behaviour is adopted.
+- Enfin, dans tous les cas hors `Changement mineur`, les corrections apportées doivent être explicitées avec des détails donnés d'un point de vue fonctionnel.
 
-  > For instance:
-  >
-  > * Details :
-  >   - These variables now return a yearly amount (instead of monthly):
-  >     - `middle_school_scholarship`
-  >     - `high_school_scholarship`
-  >   - _The previous monthly amounts were just yearly amounts artificially divided by 12_
-  >
-  > or :
-  >
-  > * Details :
-  >  - Use OpenFisca-Core `12.0.0`
-  >  - Change the syntax used to declare parameters:
-  >      - Remove "fuzzy" attribute
-  >      - Remove "end" attribute
-  >      - All parameters are assumed to be valid until and end date is explicitely specified with an `<END>` tag
+Dans le cas où une Pull Request contient plusieurs évolutions distinctes, plusieurs paragraphes peuvent être ajoutés au CHANGELOG. Pour être correctement formatés en Markdown, ces paragraphes doivent être séparés par `<!-- -->`.
 
-When a Pull Request contains several disctincts changes, several paragraphs may be added to the CHANGELOG. To be properly formatted in Markdown, these paragraphs must be separated by `<!-- -->`.
+## Protection de branche et CI
 
-## Branch protection and CI
+Lorsque les versions Python supportées (ou autre matrice CI) changent dans `.github/workflows/workflow.yml`, mettez à jour les **Required status checks** du dépôt :
 
-When the supported Python versions (or other CI matrix) change in `.github/workflows/workflow.yml`, update the repository’s **Required status checks** so GitHub no longer expects obsolete jobs:
-
-1. Open **Settings** → **Branches** → branch protection rule for `master` (or default branch).
-2. In **Require status checks to pass before merging**, remove any checks that no longer exist (e.g. `build (3.9.12, ubuntu-24.04, minimal)`).
-3. After the next run of the new workflow, add the new job names if you want them to be required.
+1. Ouvrir **Settings** → **Branches** → règle de protection de la branche `master`.
+2. Dans **Require status checks to pass before merging**, retirer les checks obsolètes.
+3. Après la prochaine exécution du nouveau workflow, ajouter les nouveaux noms de jobs si nécessaire.

@@ -1,33 +1,33 @@
-## Bug description
+## Description du bug
 
-<!-- Describe the problem encountered. -->
+<!-- Décrivez le problème rencontré. -->
 
-## Steps to reproduce
+## Étapes pour reproduire
 
 1.
 2.
 3.
 
-## Expected result
+## Résultat attendu
 
-<!-- Describe what should have happened. -->
+<!-- Décrivez ce qui aurait dû se passer. -->
 
-## Actual result
+## Résultat obtenu
 
-<!-- Describe what happened (error message, incorrect value, etc.). -->
+<!-- Décrivez ce qui s'est passé (message d'erreur, valeur incorrecte, etc.). -->
 
-## Environment
+## Environnement
 
-- OpenFisca-Tunisia version:
-- Python version:
-- Operating system:
+- Version d'OpenFisca-Tunisia :
+- Version de Python :
+- Système d'exploitation :
 
-## Context
+## Contexte
 
-I identify as:
+Je m'identifie en tant que :
 
-- [ ] Contributor
-- [ ] Developer
-- [ ] Economist
-- [ ] Maintainer
-- [ ] Other: _(please specify)_
+- [ ] Contributeur·e
+- [ ] Développeur·e
+- [ ] Économiste
+- [ ] Mainteneur·e
+- [ ] Autre : _(précisez)_
