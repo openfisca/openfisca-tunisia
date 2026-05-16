@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.63 - [#365](https://github.com/openfisca/openfisca-tunisia/pull/365)
+
+* Changement mineur.
+* Périodes concernées : à partir du 01/01/2025.
+* Zones impactées : `parameters/impot_revenu/bareme`.
+* Détails :
+  - Remplace la référence secondaire du barème IRPP 2025 par une référence JORT précise : article 36 de la loi n° 2024-48 du 9 décembre 2024, JORT n° 149/2024, p. 6429.
+  - Ne change aucune valeur ni aucun calcul.
+
+<!-- -->
+
 ## 0.62 - [#354](https://github.com/openfisca/openfisca-tunisia/pull/354)
 
 * Amélioration technique.
