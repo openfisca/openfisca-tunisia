@@ -1,3 +1,4 @@
 description: Corps des personnels enseignants exerçant dans les écoles préparatoires
   et les lycées — grade professeur_principal_emerite
-categorie_grille: A1
+metadata:
+  categorie_grille: A1

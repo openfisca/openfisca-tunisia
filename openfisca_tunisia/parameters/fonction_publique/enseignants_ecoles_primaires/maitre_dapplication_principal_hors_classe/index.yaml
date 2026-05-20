@@ -1,3 +1,4 @@
 description: Corps des personnels enseignants exerçant dans les écoles primaires —
   grade maitre_dapplication_principal_hors_classe
-categorie_grille: A2
+metadata:
+  categorie_grille: A2

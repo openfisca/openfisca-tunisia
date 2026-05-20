@@ -1,2 +1,3 @@
 description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_principal_de_la_sante_publique
-categorie_grille: A1
+metadata:
+  categorie_grille: A1

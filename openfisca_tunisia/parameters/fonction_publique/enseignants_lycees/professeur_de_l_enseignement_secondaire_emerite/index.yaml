@@ -1,3 +1,4 @@
 description: Corps des personnels enseignants exerçant dans les écoles préparatoires
   et les lycées — grade professeur_de_l_enseignement_secondaire_emerite
-categorie_grille: A2
+metadata:
+  categorie_grille: A2
