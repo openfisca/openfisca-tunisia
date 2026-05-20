@@ -1,0 +1,65 @@
+description: Corps des surveillants exerçant dans les écoles préparatoires et les
+  lycées — grade surveillant_principal_hors_classe — traitement de base annuel par
+  échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2013-06-25': 521.25
+echelon_2:
+  values:
+    '2013-06-25': 530.25
+echelon_3:
+  values:
+    '2013-06-25': 539.25
+echelon_4:
+  values:
+    '2013-06-25': 548.25
+echelon_5:
+  values:
+    '2013-06-25': 557.25
+echelon_6:
+  values:
+    '2013-06-25': 566.25
+echelon_7:
+  values:
+    '2013-06-25': 575.25
+echelon_8:
+  values:
+    '2013-06-25': 584.25
+echelon_9:
+  values:
+    '2013-06-25': 593.25
+echelon_10:
+  values:
+    '2013-06-25': 602.25
+echelon_11:
+  values:
+    '2013-06-25': 611.25
+echelon_12:
+  values:
+    '2013-06-25': 620.25
+echelon_13:
+  values:
+    '2013-06-25': 629.25
+echelon_14:
+  values:
+    '2013-06-25': 638.25
+echelon_15:
+  values:
+    '2013-06-25': 647.25
+echelon_16:
+  values:
+    '2013-06-25': 656.25
+echelon_17:
+  values:
+    '2013-06-25': 665.25
+echelon_18:
+  values:
+    '2013-06-25': 674.25
+echelon_19:
+  values:
+    '2013-06-25': 683.25
+echelon_20:
+  values:
+    '2013-06-25': 692.25

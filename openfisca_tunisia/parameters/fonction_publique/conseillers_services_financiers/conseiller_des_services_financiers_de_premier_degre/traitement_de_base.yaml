@@ -1,0 +1,56 @@
+description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_premier_degre
+  — traitement de base annuel par échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2020-02-28': 611.0
+    '2021-02-09': 611.0
+echelon_2:
+  values:
+    '2020-02-28': 622.5
+    '2021-02-09': 622.5
+echelon_3:
+  values:
+    '2020-02-28': 634.0
+    '2021-02-09': 634.0
+echelon_4:
+  values:
+    '2020-02-28': 645.5
+    '2021-02-09': 645.5
+echelon_5:
+  values:
+    '2020-02-28': 657.0
+    '2021-02-09': 657.0
+echelon_6:
+  values:
+    '2020-02-28': 668.5
+    '2021-02-09': 668.5
+echelon_7:
+  values:
+    '2020-02-28': 680.0
+    '2021-02-09': 680.0
+echelon_8:
+  values:
+    '2020-02-28': 691.5
+    '2021-02-09': 691.5
+echelon_9:
+  values:
+    '2020-02-28': 703.0
+    '2021-02-09': 703.0
+echelon_10:
+  values:
+    '2020-02-28': 714.5
+    '2021-02-09': 714.5
+echelon_11:
+  values:
+    '2020-02-28': 726.0
+    '2021-02-09': 726.0
+echelon_12:
+  values:
+    '2020-02-28': 737.5
+    '2021-02-09': 737.5
+echelon_13:
+  values:
+    '2020-02-28': 749.0
+    '2021-02-09': 749.0

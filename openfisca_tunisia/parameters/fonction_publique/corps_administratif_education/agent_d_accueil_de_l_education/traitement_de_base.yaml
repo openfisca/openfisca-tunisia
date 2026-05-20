@@ -1,0 +1,79 @@
+description: Corps administratif de l'éducation — grade agent_d_accueil_de_l_education
+  — traitement de base annuel par échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2013-06-25': 270.75
+echelon_2:
+  values:
+    '2013-06-25': 273.75
+echelon_3:
+  values:
+    '2013-06-25': 276.75
+echelon_4:
+  values:
+    '2013-06-25': 279.75
+echelon_5:
+  values:
+    '2013-06-25': 282.75
+echelon_6:
+  values:
+    '2013-06-25': 285.75
+echelon_7:
+  values:
+    '2013-06-25': 288.75
+echelon_8:
+  values:
+    '2013-06-25': 291.75
+echelon_9:
+  values:
+    '2013-06-25': 294.75
+echelon_10:
+  values:
+    '2013-06-25': 297.75
+echelon_11:
+  values:
+    '2013-06-25': 300.75
+echelon_12:
+  values:
+    '2013-06-25': 303.75
+echelon_13:
+  values:
+    '2013-06-25': 306.75
+echelon_14:
+  values:
+    '2013-06-25': 309.75
+echelon_15:
+  values:
+    '2013-06-25': 312.75
+echelon_16:
+  values:
+    '2013-06-25': 315.75
+echelon_17:
+  values:
+    '2013-06-25': 318.75
+echelon_18:
+  values:
+    '2013-06-25': 321.75
+echelon_19:
+  values:
+    '2013-06-25': 324.75
+echelon_20:
+  values:
+    '2013-06-25': 327.75
+echelon_21:
+  values:
+    '2013-06-25': 330.75
+echelon_22:
+  values:
+    '2013-06-25': 333.75
+echelon_23:
+  values:
+    '2013-06-25': 336.75
+echelon_24:
+  values:
+    '2013-06-25': 339.75
+echelon_25:
+  values:
+    '2013-06-25': 342.75

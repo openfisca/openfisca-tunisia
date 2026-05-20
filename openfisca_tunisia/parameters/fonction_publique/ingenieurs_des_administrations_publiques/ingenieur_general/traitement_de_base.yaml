@@ -1,0 +1,70 @@
+description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
+  — traitement de base annuel par échelon
+unit: currency-TND
+reference:
+- 2007-268
+- 97-1832
+echelon_1:
+  values:
+    '1999-04-23': 203.0
+    '2007-04-01': 611.0
+echelon_2:
+  values:
+    '1999-04-23': 214.5
+    '2007-04-01': 622.5
+echelon_3:
+  values:
+    '1999-04-23': 226.0
+    '2007-04-01': 634.0
+echelon_4:
+  values:
+    '1999-04-23': 237.5
+    '2007-04-01': 645.5
+echelon_5:
+  values:
+    '1999-04-23': 249.0
+    '2007-04-01': 657.0
+echelon_6:
+  values:
+    '1999-04-23': 260.5
+    '2007-04-01': 668.5
+echelon_7:
+  values:
+    '1999-04-23': 272.0
+    '2007-04-01': 680.0
+echelon_8:
+  values:
+    '1999-04-23': 283.5
+    '2007-04-01': 691.5
+echelon_9:
+  values:
+    '1999-04-23': 295.0
+    '2007-04-01': 703.0
+echelon_10:
+  values:
+    '1999-04-23': 306.5
+    '2007-04-01': 714.5
+echelon_11:
+  values:
+    '1999-04-23': 318.0
+    '2007-04-01': 726.0
+echelon_12:
+  values:
+    '1999-04-23': 329.5
+    '2007-04-01': 737.5
+echelon_13:
+  values:
+    '1999-04-23': 341.0
+    '2007-04-01': 749.0
+echelon_14:
+  values:
+    '1999-04-23': 352.5
+    '2007-04-01': 760.5
+echelon_15:
+  values:
+    '1999-04-23': 364.0
+    '2007-04-01': 772.0
+echelon_16:
+  values:
+    '1999-04-23': 375.5
+    '2007-04-01': 783.5
