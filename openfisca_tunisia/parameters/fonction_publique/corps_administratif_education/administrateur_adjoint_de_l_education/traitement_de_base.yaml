@@ -1,0 +1,79 @@
+description: Corps administratif de l'éducation — grade administrateur_adjoint_de_l_education
+  — traitement de base annuel par échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2013-06-25': 443.0
+echelon_2:
+  values:
+    '2013-06-25': 451.25
+echelon_3:
+  values:
+    '2013-06-25': 459.5
+echelon_4:
+  values:
+    '2013-06-25': 467.75
+echelon_5:
+  values:
+    '2013-06-25': 476.0
+echelon_6:
+  values:
+    '2013-06-25': 484.25
+echelon_7:
+  values:
+    '2013-06-25': 492.5
+echelon_8:
+  values:
+    '2013-06-25': 500.75
+echelon_9:
+  values:
+    '2013-06-25': 509.0
+echelon_10:
+  values:
+    '2013-06-25': 517.25
+echelon_11:
+  values:
+    '2013-06-25': 525.5
+echelon_12:
+  values:
+    '2013-06-25': 533.75
+echelon_13:
+  values:
+    '2013-06-25': 542.0
+echelon_14:
+  values:
+    '2013-06-25': 550.25
+echelon_15:
+  values:
+    '2013-06-25': 558.5
+echelon_16:
+  values:
+    '2013-06-25': 566.75
+echelon_17:
+  values:
+    '2013-06-25': 575.0
+echelon_18:
+  values:
+    '2013-06-25': 583.25
+echelon_19:
+  values:
+    '2013-06-25': 591.5
+echelon_20:
+  values:
+    '2013-06-25': 599.75
+echelon_21:
+  values:
+    '2013-06-25': 608.0
+echelon_22:
+  values:
+    '2013-06-25': 616.25
+echelon_23:
+  values:
+    '2013-06-25': 624.5
+echelon_24:
+  values:
+    '2013-06-25': 632.75
+echelon_25:
+  values:
+    '2013-06-25': 641.0

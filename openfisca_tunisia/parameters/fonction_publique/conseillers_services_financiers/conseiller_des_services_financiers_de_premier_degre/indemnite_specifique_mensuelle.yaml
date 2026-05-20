@@ -1,0 +1,58 @@
+description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_premier_degre
+  — indemnité spécifique mensuelle par échelon
+unit: currency-TND
+reference:
+- 2020-122
+- 2021-105
+echelon_1:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_2:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_3:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_4:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_5:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_6:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_7:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_8:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_9:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_10:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_11:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_12:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0
+echelon_13:
+  values:
+    '2020-02-28': 1309.5
+    '2021-02-09': 1522.0

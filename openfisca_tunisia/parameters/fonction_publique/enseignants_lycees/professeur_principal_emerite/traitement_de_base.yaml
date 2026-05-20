@@ -1,0 +1,65 @@
+description: Corps des personnels enseignants exerçant dans les écoles préparatoires
+  et les lycées — grade professeur_principal_emerite — traitement de base annuel par
+  échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2013-02-05': 611.0
+echelon_2:
+  values:
+    '2013-02-05': 622.5
+echelon_3:
+  values:
+    '2013-02-05': 634.0
+echelon_4:
+  values:
+    '2013-02-05': 645.5
+echelon_5:
+  values:
+    '2013-02-05': 657.0
+echelon_6:
+  values:
+    '2013-02-05': 668.5
+echelon_7:
+  values:
+    '2013-02-05': 680.0
+echelon_8:
+  values:
+    '2013-02-05': 691.5
+echelon_9:
+  values:
+    '2013-02-05': 703.0
+echelon_10:
+  values:
+    '2013-02-05': 714.5
+echelon_11:
+  values:
+    '2013-02-05': 726.0
+echelon_12:
+  values:
+    '2013-02-05': 737.5
+echelon_13:
+  values:
+    '2013-02-05': 749.0
+echelon_14:
+  values:
+    '2013-02-05': 760.5
+echelon_15:
+  values:
+    '2013-02-05': 772.0
+echelon_16:
+  values:
+    '2013-02-05': 783.5
+echelon_17:
+  values:
+    '2013-02-05': 795.0
+echelon_18:
+  values:
+    '2013-02-05': 806.5
+echelon_19:
+  values:
+    '2013-02-05': 818.0
+echelon_20:
+  values:
+    '2013-02-05': 829.5

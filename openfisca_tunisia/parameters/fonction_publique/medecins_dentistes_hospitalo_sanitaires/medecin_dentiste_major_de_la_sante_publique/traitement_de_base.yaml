@@ -1,0 +1,64 @@
+description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_major_de_la_sante_publique
+  — traitement de base annuel par échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2010-12-17': 611.0
+echelon_2:
+  values:
+    '2010-12-17': 622.5
+echelon_3:
+  values:
+    '2010-12-17': 634.0
+echelon_4:
+  values:
+    '2010-12-17': 645.5
+echelon_5:
+  values:
+    '2010-12-17': 657.0
+echelon_6:
+  values:
+    '2010-12-17': 668.5
+echelon_7:
+  values:
+    '2010-12-17': 680.0
+echelon_8:
+  values:
+    '2010-12-17': 691.5
+echelon_9:
+  values:
+    '2010-12-17': 703.0
+echelon_10:
+  values:
+    '2010-12-17': 714.5
+echelon_11:
+  values:
+    '2010-12-17': 726.0
+echelon_12:
+  values:
+    '2010-12-17': 737.5
+echelon_13:
+  values:
+    '2010-12-17': 749.0
+echelon_14:
+  values:
+    '2010-12-17': 760.5
+echelon_15:
+  values:
+    '2010-12-17': 772.0
+echelon_16:
+  values:
+    '2010-12-17': 783.5
+echelon_17:
+  values:
+    '2010-12-17': 795.0
+echelon_18:
+  values:
+    '2010-12-17': 806.5
+echelon_19:
+  values:
+    '2010-12-17': 818.0
+echelon_20:
+  values:
+    '2010-12-17': 829.5

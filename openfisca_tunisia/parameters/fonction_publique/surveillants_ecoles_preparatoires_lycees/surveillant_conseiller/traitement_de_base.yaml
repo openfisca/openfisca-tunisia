@@ -1,0 +1,70 @@
+description: Corps des surveillants exerçant dans les écoles préparatoires et les
+  lycées — grade surveillant_conseiller — traitement de base annuel par échelon
+unit: currency-TND
+reference: 2007-268
+echelon_1:
+  values:
+    '2013-06-25': 611.0
+echelon_2:
+  values:
+    '2013-06-25': 622.5
+echelon_3:
+  values:
+    '2013-06-25': 634.0
+echelon_4:
+  values:
+    '2013-06-25': 645.5
+echelon_5:
+  values:
+    '2013-06-25': 657.0
+echelon_6:
+  values:
+    '2013-06-25': 668.5
+echelon_7:
+  values:
+    '2013-06-25': 680.0
+echelon_8:
+  values:
+    '2013-06-25': 691.5
+echelon_9:
+  values:
+    '2013-06-25': 703.0
+echelon_10:
+  values:
+    '2013-06-25': 714.5
+echelon_11:
+  values:
+    '2013-06-25': 726.0
+echelon_12:
+  values:
+    '2013-06-25': 737.5
+echelon_13:
+  values:
+    '2013-06-25': 749.0
+echelon_14:
+  values:
+    '2013-06-25': 760.5
+echelon_15:
+  values:
+    '2013-06-25': 772.0
+echelon_16:
+  values:
+    '2013-06-25': 783.5
+echelon_17:
+  values:
+    '2013-06-25': 795.0
+echelon_18:
+  values:
+    '2013-06-25': 806.5
+echelon_19:
+  values:
+    '2013-06-25': 818.0
+echelon_20:
+  values:
+    '2013-06-25': 829.5
+echelon_21:
+  values:
+    '2013-06-25': 841.0
+echelon_22:
+  values:
+    '2013-06-25': 852.5
