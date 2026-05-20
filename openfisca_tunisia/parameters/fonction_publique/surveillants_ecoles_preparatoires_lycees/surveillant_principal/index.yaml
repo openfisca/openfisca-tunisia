@@ -1,3 +1,4 @@
 description: Corps des surveillants exerçant dans les écoles préparatoires et les
   lycées — grade surveillant_principal
-categorie_grille: A2
+metadata:
+  categorie_grille: A2

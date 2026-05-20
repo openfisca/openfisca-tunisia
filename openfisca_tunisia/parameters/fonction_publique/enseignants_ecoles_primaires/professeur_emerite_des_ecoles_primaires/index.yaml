@@ -1,3 +1,4 @@
 description: Corps des personnels enseignants exerçant dans les écoles primaires —
   grade professeur_emerite_des_ecoles_primaires
-categorie_grille: A2
+metadata:
+  categorie_grille: A2
