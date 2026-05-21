@@ -1,5 +1,10 @@
 description: Corps administratif de l'éducation — grade administrateur_de_l_education
   — indemnité spécifique mensuelle par échelon
+documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
+  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
+  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
+  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
+  salaire_base/.
 unit: currency-TND
 echelon_1:
   values:
