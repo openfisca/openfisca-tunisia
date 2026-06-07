@@ -1,0 +1,802 @@
+description: Corps du contrôle général des domaines de l'État et des affaires foncières
+  — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 1
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_2:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 2
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_3:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 3
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_4:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 4
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_5:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 5
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_6:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 6
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_7:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 7
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_8:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 8
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_9:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 9
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_10:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 10
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_11:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 11
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_12:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 12
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_13:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 13
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_14:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 14
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_15:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 15
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_16:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 16
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_17:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 17
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_18:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 18
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_19:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 19
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_20:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 20
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_21:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 21
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_22:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 22
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_23:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 23
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_24:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 24
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)
+echelon_25:
+  description: Corps du contrôle général des domaines de l'État et des affaires foncières
+    — grade controleur_adjoint_domaines_etat — indemnité spécifique mensuelle par
+    échelon — échelon 25
+  values:
+    '2000-04-14':
+      value: 475.0
+    '2010-12-31':
+      value: 1010.0
+    '2013-01-01':
+      value: 1080.0
+    '2021-07-01':
+      value: 1530.0
+    '2025-01-01':
+      value: 1830.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-04-14':
+        title: Décret 94-1110 (base = partie 1 + max partie 2 à terme 1/5/1995, table
+          94-552)
+      '2010-12-31':
+        title: Décret base + Σ globaux 1996-1998..2008-2010 (96-2389, 99-2133, 2002-2857,
+          2005-3186, 2008-4087)
+      '2013-01-01':
+        title: Décret 2012-2981 (+35+35=+70 tous grades, 2e tranche effet 1/1/2013)
+      '2021-07-01':
+        title: Décret 2020-141 (cran 2020-2021 = Total 750/650/550/450, à terme 4e
+          tranche 1/7/2021)
+      '2025-01-01':
+        title: Décret 2022-797 (cran catégorie A1 = +100 oct2022 +100 jan2024 +100
+          jan2025 = +300, à terme)

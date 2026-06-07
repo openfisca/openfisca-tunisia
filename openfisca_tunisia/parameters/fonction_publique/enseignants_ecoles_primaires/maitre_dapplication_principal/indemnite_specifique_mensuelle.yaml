@@ -1,70 +1,266 @@
 description: Corps des personnels enseignants exerçant dans les écoles primaires —
   grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
-unit: currency-TND
-reference: 2013-2227
 echelon_1:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 1
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_2:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 2
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_3:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 3
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_4:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 4
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_5:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 5
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_6:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 6
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_7:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 7
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_8:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 8
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_9:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 9
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_10:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 10
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_11:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 11
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_12:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 12
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_13:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 13
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_14:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 14
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_15:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 15
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_16:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 16
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_17:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 17
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_18:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 18
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_19:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 19
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_20:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 20
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_21:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 21
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227
 echelon_22:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal — indemnité spécifique mensuelle par échelon
+    — échelon 22
   values:
-    '2013-06-07': 541.0
+    '2013-06-07':
+      value: 541.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2013-2227

@@ -1,0 +1,377 @@
+description: Corps des personnels du service social des administrations publiques
+  — grade assistant_social — traitement de base mensuel par échelon
+echelon_1:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 1
+  values:
+    '1999-11-05':
+      value: 128.25
+    '2007-04-01':
+      value: 360.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 2
+  values:
+    '1999-11-05':
+      value: 133.75
+    '2007-04-01':
+      value: 365.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 3
+  values:
+    '1999-11-05':
+      value: 139.25
+    '2007-04-01':
+      value: 371.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 4
+  values:
+    '1999-11-05':
+      value: 144.75
+    '2007-04-01':
+      value: 376.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 5
+  values:
+    '1999-11-05':
+      value: 150.25
+    '2007-04-01':
+      value: 382.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 6
+  values:
+    '1999-11-05':
+      value: 155.75
+    '2007-04-01':
+      value: 387.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 7
+  values:
+    '1999-11-05':
+      value: 161.25
+    '2007-04-01':
+      value: 393.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 8
+  values:
+    '1999-11-05':
+      value: 166.75
+    '2007-04-01':
+      value: 398.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 9
+  values:
+    '1999-11-05':
+      value: 172.25
+    '2007-04-01':
+      value: 404.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 10
+  values:
+    '1999-11-05':
+      value: 177.75
+    '2007-04-01':
+      value: 409.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 11
+  values:
+    '1999-11-05':
+      value: 183.25
+    '2007-04-01':
+      value: 415.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 12
+  values:
+    '1999-11-05':
+      value: 188.75
+    '2007-04-01':
+      value: 420.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 13
+  values:
+    '1999-11-05':
+      value: 194.25
+    '2007-04-01':
+      value: 426.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 14
+  values:
+    '1999-11-05':
+      value: 199.75
+    '2007-04-01':
+      value: 431.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 15
+  values:
+    '1999-11-05':
+      value: 205.25
+    '2007-04-01':
+      value: 437.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 16
+  values:
+    '1999-11-05':
+      value: 210.75
+    '2007-04-01':
+      value: 442.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 17
+  values:
+    '1999-11-05':
+      value: 216.25
+    '2007-04-01':
+      value: 448.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 18
+  values:
+    '1999-11-05':
+      value: 221.75
+    '2007-04-01':
+      value: 453.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 19
+  values:
+    '1999-11-05':
+      value: 227.25
+    '2007-04-01':
+      value: 459.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 20
+  values:
+    '1999-11-05':
+      value: 232.75
+    '2007-04-01':
+      value: 464.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 21
+  values:
+    '1999-11-05':
+      value: 238.25
+    '2007-04-01':
+      value: 470.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 22
+  values:
+    '1999-11-05':
+      value: 243.75
+    '2007-04-01':
+      value: 475.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 23
+  values:
+    '1999-11-05':
+      value: 249.25
+    '2007-04-01':
+      value: 481.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 24
+  values:
+    '1999-11-05':
+      value: 254.75
+    '2007-04-01':
+      value: 486.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Corps des personnels du service social des administrations publiques
+    — grade assistant_social — traitement de base mensuel par échelon — échelon 25
+  values:
+    '1999-11-05':
+      value: 260.25
+    '2007-04-01':
+      value: 492.25
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-05':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

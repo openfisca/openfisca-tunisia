@@ -1,0 +1,1002 @@
+description: Corps des analystes et des techniciens de l'informatique des administrations
+  publiques — grade analyste — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    1
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    2
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    3
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    4
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    5
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    6
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    7
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    8
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    9
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    10
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    11
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    12
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    13
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    14
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    15
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    16
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    17
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    18
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    19
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    20
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_21:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    21
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_22:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    22
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_23:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    23
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_24:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    24
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_25:
+  description: Corps des analystes et des techniciens de l'informatique des administrations
+    publiques — grade analyste — indemnité spécifique mensuelle par échelon — échelon
+    25
+  values:
+    '1999-02-23':
+      value: 350.0
+    '2001-01-01':
+      value: 445.0
+    '2004-01-01':
+      value: 537.0
+    '2007-01-01':
+      value: 629.0
+    '2010-01-01':
+      value: 768.0
+    '2011-07-01':
+      value: 824.0
+    '2013-01-01':
+      value: 894.0
+    '2025-01-01':
+      value: 1164.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-02-23':
+        title: Décret 99-366
+      '2001-01-01':
+        title: Décret 99-2016
+      '2004-01-01':
+        title: Décret 2002-2236
+      '2007-01-01':
+        title: Décret 2005-3133
+      '2010-01-01':
+        title: Décret 2008-4053
+      '2011-07-01':
+        title: Décret 2011-2286
+      '2013-01-01':
+        title: Décret 2012-2962
+      '2025-01-01':
+        title: Décret 2022-797

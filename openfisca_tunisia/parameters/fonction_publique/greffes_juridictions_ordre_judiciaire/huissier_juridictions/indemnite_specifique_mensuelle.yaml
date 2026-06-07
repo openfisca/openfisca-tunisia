@@ -1,0 +1,1052 @@
+description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+  — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 1
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_2:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 2
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_3:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 3
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_4:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 4
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_5:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 5
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_6:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 6
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_7:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 7
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_8:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 8
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_9:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 9
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_10:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 10
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_11:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 11
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_12:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 12
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_13:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 13
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_14:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 14
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_15:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 15
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_16:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 16
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_17:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 17
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_18:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 18
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_19:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 19
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_20:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 20
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_21:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 21
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_22:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 22
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_23:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 23
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_24:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 24
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_25:
+  description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+    — indemnité spécifique mensuelle par échelon — échelon 25
+  values:
+    '1999-08-06':
+      value: 95.75
+    '2001-01-01':
+      value: 140.75
+    '2004-01-01':
+      value: 184.25
+    '2007-01-01':
+      value: 240.75
+    '2010-01-01':
+      value: 306.75
+    '2016-01-01':
+      value: 321.75
+    '2025-01-01':
+      value: 516.75
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 96-1912/1908/1909 Art.2 (augmentation globale 1996-1998 ; Art.1=1re
+          tranche, NON sommee)
+      '2001-01-01':
+        title: Décret 2000-2452 Art.1 (institution grades general/en chef, taux absolu)
+          + 99-2311/2356/2427 (global 1999-2001) + 2000-2452 Art.2 (+64 general/chef)
+      '2004-01-01':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'

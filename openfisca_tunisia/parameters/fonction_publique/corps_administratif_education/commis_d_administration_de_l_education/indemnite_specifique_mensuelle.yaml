@@ -5,79 +5,203 @@ documentation: Aucune indemnité spécifique mensuelle n'est définie dans le r�
   manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
   (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
   salaire_base/.
-unit: currency-TND
 echelon_1:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 1
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_2:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 2
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_3:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 3
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_4:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 4
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_5:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 5
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_6:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 6
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_7:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 7
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_8:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 8
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_9:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 9
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_10:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 10
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_11:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 11
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_12:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 12
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_13:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 13
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_14:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 14
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_15:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 15
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_16:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 16
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_17:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 17
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_18:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 18
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_19:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 19
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_20:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 20
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_21:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 21
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_22:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 22
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_23:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 23
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_24:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 24
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency
 echelon_25:
+  description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+    — indemnité spécifique mensuelle par échelon — échelon 25
   values:
-    '2013-06-25': 0.0
+    '2013-06-25':
+      value: 0.0
+  metadata:
+    unit: currency

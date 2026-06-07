@@ -1,0 +1,1952 @@
+description: Corps des maîtres auxiliaires relevant du ministère de l'éducation —
+  grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 1
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 2
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 3
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 4
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 5
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 6
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 7
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 8
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 9
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 10
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 11
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 12
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 13
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 14
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 15
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 16
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 17
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 18
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 19
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 20
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_21:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 21
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_22:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 22
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_23:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 23
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_24:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 24
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_25:
+  description: Corps des maîtres auxiliaires relevant du ministère de l'éducation
+    — grade maitre_auxiliaire_de_la_categorie_c — indemnité spécifique mensuelle par
+    échelon — échelon 25
+  values:
+    '1999-08-06':
+      value: 124.0
+    '2000-07-01':
+      value: 146.0
+    '2001-05-01':
+      value: 168.0
+    '2002-05-01':
+      value: 187.0
+    '2003-05-01':
+      value: 209.0
+    '2004-05-01':
+      value: 231.0
+    '2005-05-01':
+      value: 252.0
+    '2006-05-01':
+      value: 273.0
+    '2007-05-01':
+      value: 294.0
+    '2008-05-01':
+      value: 325.0
+    '2009-05-01':
+      value: 357.0
+    '2010-05-01':
+      value: 389.0
+    '2012-05-01':
+      value: 424.0
+    '2013-01-01':
+      value: 459.0
+    '2019-03-01':
+      value: 534.0
+    '2020-01-01':
+      value: 614.0
+    '2020-08-01':
+      value: 684.0
+    '2025-01-01':
+      value: 894.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 99-2189
+      '2000-07-01':
+        title: Décret 2000-1070
+      '2001-05-01':
+        title: Décret 2001-1159
+      '2002-05-01':
+        title: Décret 2002-2851
+      '2003-05-01':
+        title: Décret 2003-1235
+      '2004-05-01':
+        title: Décret 2004-1349
+      '2005-05-01':
+        title: Décret 2005-3214
+      '2006-05-01':
+        title: Décret 2006-1794
+      '2007-05-01':
+        title: Décret 2007-1034
+      '2008-05-01':
+        title: Décret 2008-4100
+      '2009-05-01':
+        title: Décret 2009-1508
+      '2010-05-01':
+        title: Décret 2010-527
+      '2012-05-01':
+        title: Décret 2012-2973
+      '2019-03-01':
+        title: Décret 2019-209
+      '2020-01-01':
+        title: Décret 2019-1133
+      '2020-08-01':
+        title: Décret 2020-767
+      '2025-01-01':
+        title: Décret 2022-797

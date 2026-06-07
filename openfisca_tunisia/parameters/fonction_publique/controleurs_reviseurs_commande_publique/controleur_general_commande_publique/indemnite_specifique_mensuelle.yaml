@@ -1,0 +1,323 @@
+description: Corps des contrôleurs et réviseurs de la commande publique relevant de
+  la présidence du gouvernement — grade controleur_general_commande_publique — indemnité
+  spécifique mensuelle par échelon
+echelon_1:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 1
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 2
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 3
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 4
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 5
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 6
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 7
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 8
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 9
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 10
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 11
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 12
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 13
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 14
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 15
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Corps des contrôleurs et réviseurs de la commande publique relevant
+    de la présidence du gouvernement — grade controleur_general_commande_publique
+    — indemnité spécifique mensuelle par échelon — échelon 16
+  values:
+    '2013-12-17':
+      value: 1236.0
+    '2021-07-01':
+      value: 1986.0
+    '2025-01-01':
+      value: 2286.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-12-17':
+        title: Décret 2013-5098
+      '2021-07-01':
+        title: Décret 2020-127
+      '2025-01-01':
+        title: Décret 2022-797

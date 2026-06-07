@@ -1,0 +1,302 @@
+description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
+  — grade secretaire_ens_sup — traitement de base mensuel par échelon
+echelon_1:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 1
+  values:
+    '2014-11-21':
+      value: 360.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 2
+  values:
+    '2014-11-21':
+      value: 365.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 3
+  values:
+    '2014-11-21':
+      value: 371.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 4
+  values:
+    '2014-11-21':
+      value: 376.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 5
+  values:
+    '2014-11-21':
+      value: 382.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 6
+  values:
+    '2014-11-21':
+      value: 387.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 7
+  values:
+    '2014-11-21':
+      value: 393.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 8
+  values:
+    '2014-11-21':
+      value: 398.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 9
+  values:
+    '2014-11-21':
+      value: 404.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 10
+  values:
+    '2014-11-21':
+      value: 409.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 11
+  values:
+    '2014-11-21':
+      value: 415.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 12
+  values:
+    '2014-11-21':
+      value: 420.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 13
+  values:
+    '2014-11-21':
+      value: 426.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 14
+  values:
+    '2014-11-21':
+      value: 431.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 15
+  values:
+    '2014-11-21':
+      value: 437.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 16
+  values:
+    '2014-11-21':
+      value: 442.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_17:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 17
+  values:
+    '2014-11-21':
+      value: 448.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_18:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 18
+  values:
+    '2014-11-21':
+      value: 453.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_19:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 19
+  values:
+    '2014-11-21':
+      value: 459.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_20:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 20
+  values:
+    '2014-11-21':
+      value: 464.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_21:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 21
+  values:
+    '2014-11-21':
+      value: 470.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_22:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 22
+  values:
+    '2014-11-21':
+      value: 475.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_23:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 23
+  values:
+    '2014-11-21':
+      value: 481.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_24:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 24
+  values:
+    '2014-11-21':
+      value: 486.75
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268
+echelon_25:
+  description: Corps administratif de l'enseignement supérieur et de la recherche
+    scientifique — grade secretaire_ens_sup — traitement de base mensuel par échelon
+    — échelon 25
+  values:
+    '2014-11-21':
+      value: 492.25
+  metadata:
+    unit: currency
+    reference:
+      '2014-11-21':
+        title: Décret 2007-268

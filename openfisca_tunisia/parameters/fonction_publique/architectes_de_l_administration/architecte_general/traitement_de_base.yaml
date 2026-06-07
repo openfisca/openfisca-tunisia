@@ -1,0 +1,242 @@
+description: Corps des architectes de l'administration — grade architecte_general
+  — traitement de base mensuel par échelon
+echelon_1:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 1
+  values:
+    '1999-07-27':
+      value: 306.5
+    '2007-04-01':
+      value: 714.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 2
+  values:
+    '1999-07-27':
+      value: 318.0
+    '2007-04-01':
+      value: 726.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 3
+  values:
+    '1999-07-27':
+      value: 329.5
+    '2007-04-01':
+      value: 737.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 4
+  values:
+    '1999-07-27':
+      value: 341.0
+    '2007-04-01':
+      value: 749.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 5
+  values:
+    '1999-07-27':
+      value: 352.5
+    '2007-04-01':
+      value: 760.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 6
+  values:
+    '1999-07-27':
+      value: 364.0
+    '2007-04-01':
+      value: 772.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 7
+  values:
+    '1999-07-27':
+      value: 375.5
+    '2007-04-01':
+      value: 783.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 8
+  values:
+    '1999-07-27':
+      value: 387.0
+    '2007-04-01':
+      value: 795.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 9
+  values:
+    '1999-07-27':
+      value: 398.5
+    '2007-04-01':
+      value: 806.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 10
+  values:
+    '1999-07-27':
+      value: 410.0
+    '2007-04-01':
+      value: 818.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 11
+  values:
+    '1999-07-27':
+      value: 421.5
+    '2007-04-01':
+      value: 829.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 12
+  values:
+    '1999-07-27':
+      value: 433.0
+    '2007-04-01':
+      value: 841.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 13
+  values:
+    '1999-07-27':
+      value: 444.5
+    '2007-04-01':
+      value: 852.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 14
+  values:
+    '1999-07-27':
+      value: 456.0
+    '2007-04-01':
+      value: 864.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 15
+  values:
+    '1999-07-27':
+      value: 467.5
+    '2007-04-01':
+      value: 875.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps des architectes de l'administration — grade architecte_general
+    — traitement de base mensuel par échelon — échelon 16
+  values:
+    '1999-07-27':
+      value: 479.0
+    '2007-04-01':
+      value: 887.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-07-27':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

@@ -1,0 +1,777 @@
+description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+  — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 1
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_2:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 2
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_3:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 3
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_4:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 4
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_5:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 5
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_6:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 6
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_7:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 7
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_8:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 8
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_9:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 9
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_10:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 10
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_11:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 11
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_12:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 12
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_13:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 13
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_14:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 14
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_15:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 15
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_16:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 16
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_17:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 17
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_18:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 18
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_19:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 19
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_20:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 20
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_21:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 21
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_22:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 22
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_23:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 23
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_24:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 24
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984
+echelon_25:
+  description: Corps de la conservation de la propriété foncière — grade inspecteur_de_la_propriete_fonciere
+    — indemnité spécifique mensuelle par échelon — échelon 25
+  values:
+    '1999-11-19':
+      value: 332.5
+    '2001-01-01':
+      value: 417.5
+    '2004-01-01':
+      value: 500.0
+    '2007-01-01':
+      value: 582.5
+    '2010-12-31':
+      value: 706.5
+    '2013-01-01':
+      value: 776.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 96-2410
+      '2001-01-01':
+        title: Décret 99-2193
+      '2004-01-01':
+        title: Décret 2002-2952
+      '2007-01-01':
+        title: Décret 2005-3188
+      '2010-12-31':
+        title: Décret 2008-4090
+      '2013-01-01':
+        title: Décret 2012-2984

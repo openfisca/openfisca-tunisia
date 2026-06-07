@@ -1,65 +1,243 @@
 description: Corps des personnels enseignants exerçant dans les écoles primaires —
-  grade maitre_dapplication_principal_hors_classe — traitement de base annuel par
+  grade maitre_dapplication_principal_hors_classe — traitement de base mensuel par
   échelon
-unit: currency-TND
-reference: 2007-268
 echelon_1:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 1
   values:
-    '2013-06-07': 521.25
+    '2013-06-07':
+      value: 566.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_2:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 2
   values:
-    '2013-06-07': 530.25
+    '2013-06-07':
+      value: 575.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_3:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 3
   values:
-    '2013-06-07': 539.25
+    '2013-06-07':
+      value: 584.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_4:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 4
   values:
-    '2013-06-07': 548.25
+    '2013-06-07':
+      value: 593.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_5:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 5
   values:
-    '2013-06-07': 557.25
+    '2013-06-07':
+      value: 602.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_6:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 6
   values:
-    '2013-06-07': 566.25
+    '2013-06-07':
+      value: 611.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_7:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 7
   values:
-    '2013-06-07': 575.25
+    '2013-06-07':
+      value: 620.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_8:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 8
   values:
-    '2013-06-07': 584.25
+    '2013-06-07':
+      value: 629.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_9:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 9
   values:
-    '2013-06-07': 593.25
+    '2013-06-07':
+      value: 638.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_10:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 10
   values:
-    '2013-06-07': 602.25
+    '2013-06-07':
+      value: 647.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_11:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 11
   values:
-    '2013-06-07': 611.25
+    '2013-06-07':
+      value: 656.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_12:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 12
   values:
-    '2013-06-07': 620.25
+    '2013-06-07':
+      value: 665.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_13:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 13
   values:
-    '2013-06-07': 629.25
+    '2013-06-07':
+      value: 674.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_14:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 14
   values:
-    '2013-06-07': 638.25
+    '2013-06-07':
+      value: 683.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_15:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 15
   values:
-    '2013-06-07': 647.25
+    '2013-06-07':
+      value: 692.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_16:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 16
   values:
-    '2013-06-07': 656.25
+    '2013-06-07':
+      value: 701.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_17:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 17
   values:
-    '2013-06-07': 665.25
+    '2013-06-07':
+      value: 710.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_18:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 18
   values:
-    '2013-06-07': 674.25
+    '2013-06-07':
+      value: 719.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_19:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 19
   values:
-    '2013-06-07': 683.25
+    '2013-06-07':
+      value: 728.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268
 echelon_20:
+  description: Corps des personnels enseignants exerçant dans les écoles primaires
+    — grade maitre_dapplication_principal_hors_classe — traitement de base mensuel
+    par échelon — échelon 20
   values:
-    '2013-06-07': 692.25
+    '2013-06-07':
+      value: 737.25
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-07':
+        title: Décret 2007-268

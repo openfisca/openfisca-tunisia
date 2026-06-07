@@ -1,131 +1,377 @@
 description: Corps des agents des services douaniers — grade lieutenant_des_douanes
-  — traitement de base annuel par échelon
-unit: currency-TND
-reference:
-- 2007-268
-- 97-1832
+  — traitement de base mensuel par échelon
 echelon_1:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 1
   values:
-    '1996-12-10': 181.25
-    '1998-01-01': 181.25
-    '2007-04-01': 521.25
+    '1996-12-10':
+      value: 181.25
+    '2007-04-01':
+      value: 521.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_2:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 2
   values:
-    '1996-12-10': 190.25
-    '1998-01-01': 190.25
-    '2007-04-01': 530.25
+    '1996-12-10':
+      value: 190.25
+    '2007-04-01':
+      value: 530.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_3:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 3
   values:
-    '1996-12-10': 199.25
-    '1998-01-01': 199.25
-    '2007-04-01': 539.25
+    '1996-12-10':
+      value: 199.25
+    '2007-04-01':
+      value: 539.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_4:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 4
   values:
-    '1996-12-10': 208.25
-    '1998-01-01': 208.25
-    '2007-04-01': 548.25
+    '1996-12-10':
+      value: 208.25
+    '2007-04-01':
+      value: 548.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_5:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 5
   values:
-    '1996-12-10': 217.25
-    '1998-01-01': 217.25
-    '2007-04-01': 557.25
+    '1996-12-10':
+      value: 217.25
+    '2007-04-01':
+      value: 557.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_6:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 6
   values:
-    '1996-12-10': 226.25
-    '1998-01-01': 226.25
-    '2007-04-01': 566.25
+    '1996-12-10':
+      value: 226.25
+    '2007-04-01':
+      value: 566.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_7:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 7
   values:
-    '1996-12-10': 235.25
-    '1998-01-01': 235.25
-    '2007-04-01': 575.25
+    '1996-12-10':
+      value: 235.25
+    '2007-04-01':
+      value: 575.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_8:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 8
   values:
-    '1996-12-10': 244.25
-    '1998-01-01': 244.25
-    '2007-04-01': 584.25
+    '1996-12-10':
+      value: 244.25
+    '2007-04-01':
+      value: 584.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_9:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 9
   values:
-    '1996-12-10': 253.25
-    '1998-01-01': 253.25
-    '2007-04-01': 593.25
+    '1996-12-10':
+      value: 253.25
+    '2007-04-01':
+      value: 593.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_10:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 10
   values:
-    '1996-12-10': 262.25
-    '1998-01-01': 262.25
-    '2007-04-01': 602.25
+    '1996-12-10':
+      value: 262.25
+    '2007-04-01':
+      value: 602.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_11:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 11
   values:
-    '1996-12-10': 271.25
-    '1998-01-01': 271.25
-    '2007-04-01': 611.25
+    '1996-12-10':
+      value: 271.25
+    '2007-04-01':
+      value: 611.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_12:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 12
   values:
-    '1996-12-10': 280.25
-    '1998-01-01': 280.25
-    '2007-04-01': 620.25
+    '1996-12-10':
+      value: 280.25
+    '2007-04-01':
+      value: 620.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_13:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 13
   values:
-    '1996-12-10': 289.25
-    '1998-01-01': 289.25
-    '2007-04-01': 629.25
+    '1996-12-10':
+      value: 289.25
+    '2007-04-01':
+      value: 629.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_14:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 14
   values:
-    '1996-12-10': 298.25
-    '1998-01-01': 298.25
-    '2007-04-01': 638.25
+    '1996-12-10':
+      value: 298.25
+    '2007-04-01':
+      value: 638.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_15:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 15
   values:
-    '1996-12-10': 307.25
-    '1998-01-01': 307.25
-    '2007-04-01': 647.25
+    '1996-12-10':
+      value: 307.25
+    '2007-04-01':
+      value: 647.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_16:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 16
   values:
-    '1996-12-10': 316.25
-    '1998-01-01': 316.25
-    '2007-04-01': 656.25
+    '1996-12-10':
+      value: 316.25
+    '2007-04-01':
+      value: 656.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_17:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 17
   values:
-    '1996-12-10': 325.25
-    '1998-01-01': 325.25
-    '2007-04-01': 665.25
+    '1996-12-10':
+      value: 325.25
+    '2007-04-01':
+      value: 665.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_18:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 18
   values:
-    '1996-12-10': 334.25
-    '1998-01-01': 334.25
-    '2007-04-01': 674.25
+    '1996-12-10':
+      value: 334.25
+    '2007-04-01':
+      value: 674.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_19:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 19
   values:
-    '1996-12-10': 343.25
-    '1998-01-01': 343.25
-    '2007-04-01': 683.25
+    '1996-12-10':
+      value: 343.25
+    '2007-04-01':
+      value: 683.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_20:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 20
   values:
-    '1996-12-10': 352.25
-    '1998-01-01': 352.25
-    '2007-04-01': 692.25
+    '1996-12-10':
+      value: 352.25
+    '2007-04-01':
+      value: 692.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_21:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 21
   values:
-    '1996-12-10': 361.25
-    '1998-01-01': 361.25
-    '2007-04-01': 701.25
+    '1996-12-10':
+      value: 361.25
+    '2007-04-01':
+      value: 701.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_22:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 22
   values:
-    '1996-12-10': 370.25
-    '1998-01-01': 370.25
-    '2007-04-01': 710.25
+    '1996-12-10':
+      value: 370.25
+    '2007-04-01':
+      value: 710.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_23:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 23
   values:
-    '1996-12-10': 379.25
-    '1998-01-01': 379.25
-    '2007-04-01': 719.25
+    '1996-12-10':
+      value: 379.25
+    '2007-04-01':
+      value: 719.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_24:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 24
   values:
-    '1996-12-10': 388.25
-    '1998-01-01': 388.25
-    '2007-04-01': 728.25
+    '1996-12-10':
+      value: 388.25
+    '2007-04-01':
+      value: 728.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_25:
+  description: Corps des agents des services douaniers — grade lieutenant_des_douanes
+    — traitement de base mensuel par échelon — échelon 25
   values:
-    '1996-12-10': 397.25
-    '1998-01-01': 397.25
-    '2007-04-01': 737.25
+    '1996-12-10':
+      value: 397.25
+    '2007-04-01':
+      value: 737.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

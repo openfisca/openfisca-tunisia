@@ -1,0 +1,151 @@
+description: Corps des agents de conciliation du ministère des affaires sociales —
+  grade conciliateur_general — indemnité spécifique mensuelle par échelon
+documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
+  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
+  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
+  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
+  salaire_base/.
+echelon_1:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    1
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_2:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    2
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_3:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    3
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_4:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    4
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_5:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    5
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_6:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    6
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_7:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    7
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_8:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    8
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_9:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    9
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_10:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    10
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_11:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    11
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_12:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    12
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_13:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    13
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_14:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    14
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_15:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    15
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency
+echelon_16:
+  description: Corps des agents de conciliation du ministère des affaires sociales
+    — grade conciliateur_general — indemnité spécifique mensuelle par échelon — échelon
+    16
+  values:
+    '1999-10-08':
+      value: 0.0
+  metadata:
+    unit: currency

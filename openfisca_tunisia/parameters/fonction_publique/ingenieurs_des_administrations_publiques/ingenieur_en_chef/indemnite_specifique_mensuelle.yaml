@@ -1,88 +1,782 @@
 description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
   — indemnité spécifique mensuelle par échelon
-documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
-  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
-  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
-  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
-  salaire_base/.
-unit: currency-TND
 echelon_1:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 1
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_2:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 2
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_3:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 3
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_4:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 4
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_5:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 5
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_6:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 6
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_7:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 7
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_8:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 8
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_9:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 9
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_10:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 10
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_11:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 11
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_12:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 12
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_13:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 13
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_14:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 14
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_15:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 15
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_16:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 16
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_17:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 17
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_18:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 18
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_19:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 19
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797
 echelon_20:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — indemnité spécifique mensuelle par échelon — échelon 20
   values:
-    '1999-04-23': 0.0
-    '2007-04-01': 0.0
+    '1999-04-23':
+      value: 530.0
+    '2001-01-01':
+      value: 665.0
+    '2004-01-01':
+      value: 795.5
+    '2007-01-01':
+      value: 926.0
+    '2010-01-01':
+      value: 1123.0
+    '2013-01-01':
+      value: 1193.0
+    '2021-07-01':
+      value: 1743.0
+    '2025-01-01':
+      value: 2043.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 96-1990
+      '2001-01-01':
+        title: Décret 99-2119
+      '2004-01-01':
+        title: Décret 2002-2235
+      '2007-01-01':
+        title: Décret 2005-3127
+      '2010-01-01':
+        title: Décret 2008-4051
+      '2013-01-01':
+        title: Décret 2012-2956
+      '2021-07-01':
+        title: Décret 2020-73
+      '2025-01-01':
+        title: Décret 2022-797

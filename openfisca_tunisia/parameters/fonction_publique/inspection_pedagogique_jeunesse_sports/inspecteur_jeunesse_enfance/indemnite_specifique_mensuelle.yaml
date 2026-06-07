@@ -1,0 +1,779 @@
+description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+  sports et de l'éducation physique et des affaires de la femme, de la famille, de
+  l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+  spécifique mensuelle par échelon
+echelon_1:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 1
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_2:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 2
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_3:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 3
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_4:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 4
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_5:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 5
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_6:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 6
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_7:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 7
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_8:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 8
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_9:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 9
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_10:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 10
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_11:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 11
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_12:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 12
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_13:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 13
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_14:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 14
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_15:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 15
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_16:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 16
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_17:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 17
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_18:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 18
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_19:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 19
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_20:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 20
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_21:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 21
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_22:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 22
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_23:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 23
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_24:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 24
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_25:
+  description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
+    sports et de l'éducation physique et des affaires de la femme, de la famille,
+    de l'enfance et des personnes âgées — grade inspecteur_jeunesse_enfance — indemnité
+    spécifique mensuelle par échelon — échelon 25
+  values:
+    '2010-11-12':
+      value: 0.0
+    '2019-03-01':
+      value: 1239.0
+    '2019-07-01':
+      value: 1279.0
+    '2020-01-01':
+      value: 1329.0
+    '2020-08-01':
+      value: 1419.0
+    '2025-01-01':
+      value: 1719.0
+  metadata:
+    unit: currency
+    reference:
+      '2019-03-01':
+        title: Décret 2019-922 (Art.3, effet 1 mars 2019 - inclut déjà T1 2019-209)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)

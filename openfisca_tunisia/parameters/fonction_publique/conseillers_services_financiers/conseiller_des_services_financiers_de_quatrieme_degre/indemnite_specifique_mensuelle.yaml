@@ -1,106 +1,377 @@
 description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
   — indemnité spécifique mensuelle par échelon
-unit: currency-TND
-reference:
-- 2020-122
-- 2021-105
 echelon_1:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 1
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_2:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 2
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_3:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 3
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_4:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 4
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_5:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 5
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_6:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 6
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_7:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 7
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_8:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 8
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_9:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 9
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_10:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 10
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_11:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 11
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_12:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 12
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_13:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 13
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_14:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 14
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_15:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 15
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_16:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 16
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_17:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 17
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_18:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 18
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_19:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 19
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_20:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 20
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_21:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 21
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_22:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 22
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_23:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 23
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_24:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 24
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
 echelon_25:
+  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+    — indemnité spécifique mensuelle par échelon — échelon 25
   values:
-    '2020-02-28': 950.0
-    '2021-02-09': 1130.0
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105

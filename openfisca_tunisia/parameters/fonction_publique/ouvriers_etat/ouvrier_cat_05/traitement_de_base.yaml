@@ -1,0 +1,403 @@
+description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+  publics à caractère administratif — grade ouvrier_cat_05 — traitement de base mensuel
+  par échelon
+echelon_1:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 1
+  values:
+    '1998-01-01':
+      value: 107.5
+    '2007-04-01':
+      value: 296.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 2
+  values:
+    '1998-01-01':
+      value: 110.5
+    '2007-04-01':
+      value: 299.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 3
+  values:
+    '1998-01-01':
+      value: 113.5
+    '2007-04-01':
+      value: 302.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 4
+  values:
+    '1998-01-01':
+      value: 116.5
+    '2007-04-01':
+      value: 305.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 5
+  values:
+    '1998-01-01':
+      value: 119.5
+    '2007-04-01':
+      value: 308.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 6
+  values:
+    '1998-01-01':
+      value: 122.5
+    '2007-04-01':
+      value: 311.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 7
+  values:
+    '1998-01-01':
+      value: 125.5
+    '2007-04-01':
+      value: 314.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 8
+  values:
+    '1998-01-01':
+      value: 128.5
+    '2007-04-01':
+      value: 317.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 9
+  values:
+    '1998-01-01':
+      value: 131.5
+    '2007-04-01':
+      value: 320.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 10
+  values:
+    '1998-01-01':
+      value: 134.5
+    '2007-04-01':
+      value: 323.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 11
+  values:
+    '1998-01-01':
+      value: 137.5
+    '2007-04-01':
+      value: 326.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 12
+  values:
+    '1998-01-01':
+      value: 140.5
+    '2007-04-01':
+      value: 329.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 13
+  values:
+    '1998-01-01':
+      value: 143.5
+    '2007-04-01':
+      value: 332.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 14
+  values:
+    '1998-01-01':
+      value: 146.5
+    '2007-04-01':
+      value: 335.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 15
+  values:
+    '1998-01-01':
+      value: 149.5
+    '2007-04-01':
+      value: 338.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 16
+  values:
+    '1998-01-01':
+      value: 152.5
+    '2007-04-01':
+      value: 341.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 17
+  values:
+    '1998-01-01':
+      value: 155.5
+    '2007-04-01':
+      value: 344.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 18
+  values:
+    '1998-01-01':
+      value: 158.5
+    '2007-04-01':
+      value: 347.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 19
+  values:
+    '1998-01-01':
+      value: 161.5
+    '2007-04-01':
+      value: 350.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 20
+  values:
+    '1998-01-01':
+      value: 164.5
+    '2007-04-01':
+      value: 353.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 21
+  values:
+    '1998-01-01':
+      value: 167.5
+    '2007-04-01':
+      value: 356.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 22
+  values:
+    '1998-01-01':
+      value: 170.5
+    '2007-04-01':
+      value: 359.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 23
+  values:
+    '1998-01-01':
+      value: 173.5
+    '2007-04-01':
+      value: 362.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 24
+  values:
+    '1998-01-01':
+      value: 176.5
+    '2007-04-01':
+      value: 365.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
+    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
+    mensuel par échelon — échelon 25
+  values:
+    '1998-01-01':
+      value: 179.5
+    '2007-04-01':
+      value: 368.75
+  metadata:
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

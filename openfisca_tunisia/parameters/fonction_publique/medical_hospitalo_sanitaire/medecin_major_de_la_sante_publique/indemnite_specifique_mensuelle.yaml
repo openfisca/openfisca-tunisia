@@ -1,0 +1,914 @@
+description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+  — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 1
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_2:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 2
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_3:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 3
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_4:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 4
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_5:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 5
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_6:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 6
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_7:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 7
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_8:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 8
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_9:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 9
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_10:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 10
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_11:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 11
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_12:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 12
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_13:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 13
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_14:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 14
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_15:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 15
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_16:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 16
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_17:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 17
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_18:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 18
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_19:
+  description: Corps médical hospitalo-sanitaire — grade medecin_major_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 19
+  values:
+    '1999-10-22':
+      value: 1290.0
+    '2001-05-01':
+      value: 1495.0
+    '2004-05-01':
+      value: 1693.5
+    '2007-05-01':
+      value: 1892.0
+    '2010-05-01':
+      value: 2191.0
+    '2011-01-01':
+      value: 2236.0
+    '2011-08-03':
+      value: 2358.0
+    '2015-01-01':
+      value: 2908.0
+    '2021-07-01':
+      value: 3508.0
+    '2025-01-01':
+      value: 3808.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2011-08-03':
+        title: Décret 2011-1093 (restatement absolu des grades major ; médecin major
+          bande terminale 10 ans+ = 2358 ; médecin spécialiste major = 2503)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
