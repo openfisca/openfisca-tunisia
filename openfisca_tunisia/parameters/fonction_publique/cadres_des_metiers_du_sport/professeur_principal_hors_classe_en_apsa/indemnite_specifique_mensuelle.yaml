@@ -1,0 +1,443 @@
+description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+  des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+  — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 1
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 2
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 3
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 4
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 5
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 6
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 7
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 8
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 9
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 10
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 11
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 12
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 13
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 14
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 15
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 16
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 17
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 18
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 19
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
+    des sports et de l'éducation physique — grade professeur_principal_hors_classe_en_apsa
+    — indemnité spécifique mensuelle par échelon — échelon 20
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 483.0
+    '2011-05-01':
+      value: 545.0
+    '2025-01-01':
+      value: 1115.0
+  metadata:
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797

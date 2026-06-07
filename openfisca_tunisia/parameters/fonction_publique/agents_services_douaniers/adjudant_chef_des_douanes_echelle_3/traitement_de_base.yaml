@@ -1,0 +1,257 @@
+description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+  — traitement de base mensuel par échelon
+echelon_1:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 1
+  values:
+    '1996-12-10':
+      value: 172.25
+    '2007-04-01':
+      value: 404.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 2
+  values:
+    '1996-12-10':
+      value: 177.75
+    '2007-04-01':
+      value: 409.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 3
+  values:
+    '1996-12-10':
+      value: 183.25
+    '2007-04-01':
+      value: 415.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 4
+  values:
+    '1996-12-10':
+      value: 188.75
+    '2007-04-01':
+      value: 420.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 5
+  values:
+    '1996-12-10':
+      value: 194.25
+    '2007-04-01':
+      value: 426.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 6
+  values:
+    '1996-12-10':
+      value: 199.75
+    '2007-04-01':
+      value: 431.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 7
+  values:
+    '1996-12-10':
+      value: 205.25
+    '2007-04-01':
+      value: 437.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 8
+  values:
+    '1996-12-10':
+      value: 210.75
+    '2007-04-01':
+      value: 442.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 9
+  values:
+    '1996-12-10':
+      value: 216.25
+    '2007-04-01':
+      value: 448.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 10
+  values:
+    '1996-12-10':
+      value: 221.75
+    '2007-04-01':
+      value: 453.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 11
+  values:
+    '1996-12-10':
+      value: 227.25
+    '2007-04-01':
+      value: 459.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 12
+  values:
+    '1996-12-10':
+      value: 232.75
+    '2007-04-01':
+      value: 464.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 13
+  values:
+    '1996-12-10':
+      value: 238.25
+    '2007-04-01':
+      value: 470.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 14
+  values:
+    '1996-12-10':
+      value: 243.75
+    '2007-04-01':
+      value: 475.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 15
+  values:
+    '1996-12-10':
+      value: 249.25
+    '2007-04-01':
+      value: 481.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 16
+  values:
+    '1996-12-10':
+      value: 254.75
+    '2007-04-01':
+      value: 486.75
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_3
+    — traitement de base mensuel par échelon — échelon 17
+  values:
+    '1996-12-10':
+      value: 260.25
+    '2007-04-01':
+      value: 492.25
+  metadata:
+    unit: currency
+    reference:
+      '1996-12-10':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

@@ -1,0 +1,803 @@
+description: Corps des conseillers rapporteurs auprès des services du contentieux
+  de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+  par échelon
+echelon_1:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 1
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 2
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 3
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 4
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 5
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 6
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 7
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 8
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 9
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 10
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 11
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 12
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 13
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 14
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 15
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 16
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 17
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 18
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 19
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Corps des conseillers rapporteurs auprès des services du contentieux
+    de l'État — grade conseiller_rapporteur_en_chef — indemnité spécifique mensuelle
+    par échelon — échelon 20
+  values:
+    '2000-05-16':
+      value: 726.0
+    '2001-01-01':
+      value: 861.0
+    '2004-01-01':
+      value: 991.5
+    '2007-01-01':
+      value: 1122.0
+    '2010-01-01':
+      value: 1319.0
+    '2013-01-01':
+      value: 1389.0
+    '2014-07-01':
+      value: 1639.0
+    '2025-01-01':
+      value: 1939.0
+  metadata:
+    unit: currency
+    reference:
+      '2000-05-16':
+        title: Décret 96-2388
+      '2001-01-01':
+        title: Décret 99-2132
+      '2004-01-01':
+        title: Décret 2002-2856
+      '2007-01-01':
+        title: Décret 2005-3185
+      '2010-01-01':
+        title: Décret 2008-4088
+      '2013-01-01':
+        title: Décret 2012-2982
+      '2014-07-01':
+        title: Décret 2014-50
+      '2025-01-01':
+        title: Décret 2022-797

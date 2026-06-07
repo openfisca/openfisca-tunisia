@@ -1,83 +1,527 @@
 description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
   — indemnité spécifique mensuelle par échelon
-documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
-  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
-  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
-  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
-  salaire_base/.
-unit: currency-TND
 echelon_1:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 1
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_2:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 2
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_3:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 3
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_4:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 4
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_5:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 5
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_6:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 6
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_7:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 7
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_8:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 8
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_9:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 9
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_10:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 10
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_11:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 11
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_12:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 12
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_13:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 13
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_14:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 14
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_15:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 15
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_16:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 16
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_17:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 17
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_18:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 18
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_19:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 19
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_20:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 20
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_21:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 21
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_22:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 22
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_23:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 23
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_24:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 24
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)
 echelon_25:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_de_la_sante_publique
+    — indemnité spécifique mensuelle par échelon — échelon 25
   values:
-    '2010-12-17': 0.0
+    '2010-12-17':
+      value: 0.0
+    '2013-01-01':
+      value: 1079.0
+    '2015-01-01':
+      value: 1449.0
+    '2025-01-01':
+      value: 1749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2014-45
+      '2015-01-01':
+        title: Décret 2014-1799 (+ 2014-4564, global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (A1 +100x3 = +300, à terme)

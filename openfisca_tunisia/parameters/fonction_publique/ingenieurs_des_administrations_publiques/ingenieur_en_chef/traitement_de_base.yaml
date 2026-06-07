@@ -1,86 +1,302 @@
 description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
-  — traitement de base annuel par échelon
-unit: currency-TND
-reference:
-- 2007-268
-- 97-1832
+  — traitement de base mensuel par échelon
 echelon_1:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 1
   values:
-    '1999-04-23': 203.0
-    '2007-04-01': 611.0
+    '1999-04-23':
+      value: 260.5
+    '2007-04-01':
+      value: 668.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_2:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 2
   values:
-    '1999-04-23': 214.5
-    '2007-04-01': 622.5
+    '1999-04-23':
+      value: 272.0
+    '2007-04-01':
+      value: 680.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_3:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 3
   values:
-    '1999-04-23': 226.0
-    '2007-04-01': 634.0
+    '1999-04-23':
+      value: 283.5
+    '2007-04-01':
+      value: 691.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_4:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 4
   values:
-    '1999-04-23': 237.5
-    '2007-04-01': 645.5
+    '1999-04-23':
+      value: 295.0
+    '2007-04-01':
+      value: 703.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_5:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 5
   values:
-    '1999-04-23': 249.0
-    '2007-04-01': 657.0
+    '1999-04-23':
+      value: 306.5
+    '2007-04-01':
+      value: 714.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_6:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 6
   values:
-    '1999-04-23': 260.5
-    '2007-04-01': 668.5
+    '1999-04-23':
+      value: 318.0
+    '2007-04-01':
+      value: 726.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_7:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 7
   values:
-    '1999-04-23': 272.0
-    '2007-04-01': 680.0
+    '1999-04-23':
+      value: 329.5
+    '2007-04-01':
+      value: 737.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_8:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 8
   values:
-    '1999-04-23': 283.5
-    '2007-04-01': 691.5
+    '1999-04-23':
+      value: 341.0
+    '2007-04-01':
+      value: 749.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_9:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 9
   values:
-    '1999-04-23': 295.0
-    '2007-04-01': 703.0
+    '1999-04-23':
+      value: 352.5
+    '2007-04-01':
+      value: 760.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_10:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 10
   values:
-    '1999-04-23': 306.5
-    '2007-04-01': 714.5
+    '1999-04-23':
+      value: 364.0
+    '2007-04-01':
+      value: 772.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_11:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 11
   values:
-    '1999-04-23': 318.0
-    '2007-04-01': 726.0
+    '1999-04-23':
+      value: 375.5
+    '2007-04-01':
+      value: 783.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_12:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 12
   values:
-    '1999-04-23': 329.5
-    '2007-04-01': 737.5
+    '1999-04-23':
+      value: 387.0
+    '2007-04-01':
+      value: 795.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_13:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 13
   values:
-    '1999-04-23': 341.0
-    '2007-04-01': 749.0
+    '1999-04-23':
+      value: 398.5
+    '2007-04-01':
+      value: 806.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_14:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 14
   values:
-    '1999-04-23': 352.5
-    '2007-04-01': 760.5
+    '1999-04-23':
+      value: 410.0
+    '2007-04-01':
+      value: 818.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_15:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 15
   values:
-    '1999-04-23': 364.0
-    '2007-04-01': 772.0
+    '1999-04-23':
+      value: 421.5
+    '2007-04-01':
+      value: 829.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_16:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 16
   values:
-    '1999-04-23': 375.5
-    '2007-04-01': 783.5
+    '1999-04-23':
+      value: 433.0
+    '2007-04-01':
+      value: 841.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_17:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 17
   values:
-    '1999-04-23': 387.0
-    '2007-04-01': 795.0
+    '1999-04-23':
+      value: 444.5
+    '2007-04-01':
+      value: 852.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_18:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 18
   values:
-    '1999-04-23': 398.5
-    '2007-04-01': 806.5
+    '1999-04-23':
+      value: 456.0
+    '2007-04-01':
+      value: 864.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_19:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 19
   values:
-    '1999-04-23': 410.0
-    '2007-04-01': 818.0
+    '1999-04-23':
+      value: 467.5
+    '2007-04-01':
+      value: 875.5
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
 echelon_20:
+  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_en_chef
+    — traitement de base mensuel par échelon — échelon 20
   values:
-    '1999-04-23': 421.5
-    '2007-04-01': 829.5
+    '1999-04-23':
+      value: 479.0
+    '2007-04-01':
+      value: 887.0
+  metadata:
+    unit: currency
+    reference:
+      '1999-04-23':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

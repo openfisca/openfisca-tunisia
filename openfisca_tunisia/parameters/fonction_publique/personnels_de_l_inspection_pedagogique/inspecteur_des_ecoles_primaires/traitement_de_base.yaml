@@ -1,0 +1,402 @@
+description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+  inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon
+echelon_1:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    1
+  values:
+    '2001-10-09':
+      value: 203.0
+    '2007-04-01':
+      value: 611.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    2
+  values:
+    '2001-10-09':
+      value: 214.5
+    '2007-04-01':
+      value: 622.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    3
+  values:
+    '2001-10-09':
+      value: 226.0
+    '2007-04-01':
+      value: 634.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    4
+  values:
+    '2001-10-09':
+      value: 237.5
+    '2007-04-01':
+      value: 645.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    5
+  values:
+    '2001-10-09':
+      value: 249.0
+    '2007-04-01':
+      value: 657.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    6
+  values:
+    '2001-10-09':
+      value: 260.5
+    '2007-04-01':
+      value: 668.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    7
+  values:
+    '2001-10-09':
+      value: 272.0
+    '2007-04-01':
+      value: 680.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    8
+  values:
+    '2001-10-09':
+      value: 283.5
+    '2007-04-01':
+      value: 691.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    9
+  values:
+    '2001-10-09':
+      value: 295.0
+    '2007-04-01':
+      value: 703.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    10
+  values:
+    '2001-10-09':
+      value: 306.5
+    '2007-04-01':
+      value: 714.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    11
+  values:
+    '2001-10-09':
+      value: 318.0
+    '2007-04-01':
+      value: 726.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    12
+  values:
+    '2001-10-09':
+      value: 329.5
+    '2007-04-01':
+      value: 737.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    13
+  values:
+    '2001-10-09':
+      value: 341.0
+    '2007-04-01':
+      value: 749.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    14
+  values:
+    '2001-10-09':
+      value: 352.5
+    '2007-04-01':
+      value: 760.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    15
+  values:
+    '2001-10-09':
+      value: 364.0
+    '2007-04-01':
+      value: 772.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    16
+  values:
+    '2001-10-09':
+      value: 375.5
+    '2007-04-01':
+      value: 783.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    17
+  values:
+    '2001-10-09':
+      value: 387.0
+    '2007-04-01':
+      value: 795.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    18
+  values:
+    '2001-10-09':
+      value: 398.5
+    '2007-04-01':
+      value: 806.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    19
+  values:
+    '2001-10-09':
+      value: 410.0
+    '2007-04-01':
+      value: 818.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    20
+  values:
+    '2001-10-09':
+      value: 421.5
+    '2007-04-01':
+      value: 829.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    21
+  values:
+    '2001-10-09':
+      value: 433.0
+    '2007-04-01':
+      value: 841.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    22
+  values:
+    '2001-10-09':
+      value: 444.5
+    '2007-04-01':
+      value: 852.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    23
+  values:
+    '2001-10-09':
+      value: 456.0
+    '2007-04-01':
+      value: 864.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    24
+  values:
+    '2001-10-09':
+      value: 467.5
+    '2007-04-01':
+      value: 875.5
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
+    inspecteur_des_ecoles_primaires — traitement de base mensuel par échelon — échelon
+    25
+  values:
+    '2001-10-09':
+      value: 479.0
+    '2007-04-01':
+      value: 887.0
+  metadata:
+    unit: currency
+    reference:
+      '2001-10-09':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

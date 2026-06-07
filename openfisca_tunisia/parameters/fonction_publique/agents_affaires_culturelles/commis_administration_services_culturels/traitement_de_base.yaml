@@ -1,0 +1,277 @@
+description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+  — traitement de base mensuel par échelon
+echelon_1:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 1
+  values:
+    '2019-05-21':
+      value: 300.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_2:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 2
+  values:
+    '2019-05-21':
+      value: 304.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_3:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 3
+  values:
+    '2019-05-21':
+      value: 308.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_4:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 4
+  values:
+    '2019-05-21':
+      value: 312.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_5:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 5
+  values:
+    '2019-05-21':
+      value: 316.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_6:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 6
+  values:
+    '2019-05-21':
+      value: 320.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_7:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 7
+  values:
+    '2019-05-21':
+      value: 324.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_8:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 8
+  values:
+    '2019-05-21':
+      value: 328.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_9:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 9
+  values:
+    '2019-05-21':
+      value: 332.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_10:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 10
+  values:
+    '2019-05-21':
+      value: 336.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_11:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 11
+  values:
+    '2019-05-21':
+      value: 340.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_12:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 12
+  values:
+    '2019-05-21':
+      value: 344.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_13:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 13
+  values:
+    '2019-05-21':
+      value: 348.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_14:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 14
+  values:
+    '2019-05-21':
+      value: 352.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_15:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 15
+  values:
+    '2019-05-21':
+      value: 356.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_16:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 16
+  values:
+    '2019-05-21':
+      value: 360.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_17:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 17
+  values:
+    '2019-05-21':
+      value: 364.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_18:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 18
+  values:
+    '2019-05-21':
+      value: 368.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_19:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 19
+  values:
+    '2019-05-21':
+      value: 372.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_20:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 20
+  values:
+    '2019-05-21':
+      value: 376.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_21:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 21
+  values:
+    '2019-05-21':
+      value: 380.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_22:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 22
+  values:
+    '2019-05-21':
+      value: 384.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_23:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 23
+  values:
+    '2019-05-21':
+      value: 388.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_24:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 24
+  values:
+    '2019-05-21':
+      value: 392.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_25:
+  description: Corps des agents du ministère des affaires culturelles — grade commis_administration_services_culturels
+    — traitement de base mensuel par échelon — échelon 25
+  values:
+    '2019-05-21':
+      value: 396.75
+  metadata:
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268

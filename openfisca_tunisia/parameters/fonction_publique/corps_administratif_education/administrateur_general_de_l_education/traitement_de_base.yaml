@@ -1,79 +1,178 @@
 description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-  — traitement de base annuel par échelon
-unit: currency-TND
-reference: 2007-268
+  — traitement de base mensuel par échelon
 echelon_1:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 1
   values:
-    '2013-06-25': 611.0
+    '2013-06-25':
+      value: 714.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_2:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 2
   values:
-    '2013-06-25': 622.5
+    '2013-06-25':
+      value: 726.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_3:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 3
   values:
-    '2013-06-25': 634.0
+    '2013-06-25':
+      value: 737.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_4:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 4
   values:
-    '2013-06-25': 645.5
+    '2013-06-25':
+      value: 749.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_5:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 5
   values:
-    '2013-06-25': 657.0
+    '2013-06-25':
+      value: 760.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_6:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 6
   values:
-    '2013-06-25': 668.5
+    '2013-06-25':
+      value: 772.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_7:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 7
   values:
-    '2013-06-25': 680.0
+    '2013-06-25':
+      value: 783.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_8:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 8
   values:
-    '2013-06-25': 691.5
+    '2013-06-25':
+      value: 795.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_9:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 9
   values:
-    '2013-06-25': 703.0
+    '2013-06-25':
+      value: 806.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_10:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 10
   values:
-    '2013-06-25': 714.5
+    '2013-06-25':
+      value: 818.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_11:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 11
   values:
-    '2013-06-25': 726.0
+    '2013-06-25':
+      value: 829.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_12:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 12
   values:
-    '2013-06-25': 737.5
+    '2013-06-25':
+      value: 841.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_13:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 13
   values:
-    '2013-06-25': 749.0
+    '2013-06-25':
+      value: 852.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_14:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 14
   values:
-    '2013-06-25': 760.5
+    '2013-06-25':
+      value: 864.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_15:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 15
   values:
-    '2013-06-25': 772.0
+    '2013-06-25':
+      value: 875.5
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268
 echelon_16:
+  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
+    — traitement de base mensuel par échelon — échelon 16
   values:
-    '2013-06-25': 783.5
-echelon_17:
-  values:
-    '2013-06-25': 795.0
-echelon_18:
-  values:
-    '2013-06-25': 806.5
-echelon_19:
-  values:
-    '2013-06-25': 818.0
-echelon_20:
-  values:
-    '2013-06-25': 829.5
-echelon_21:
-  values:
-    '2013-06-25': 841.0
-echelon_22:
-  values:
-    '2013-06-25': 852.5
-echelon_23:
-  values:
-    '2013-06-25': 864.0
-echelon_24:
-  values:
-    '2013-06-25': 875.5
-echelon_25:
-  values:
-    '2013-06-25': 887.0
+    '2013-06-25':
+      value: 887.0
+  metadata:
+    unit: currency
+    reference:
+      '2013-06-25':
+        title: Décret 2007-268

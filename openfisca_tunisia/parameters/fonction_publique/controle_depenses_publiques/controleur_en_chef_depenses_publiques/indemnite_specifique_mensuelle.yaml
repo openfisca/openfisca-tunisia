@@ -1,0 +1,462 @@
+description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+  — indemnité spécifique mensuelle par échelon
+echelon_1:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 1
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 2
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 3
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 4
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 5
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 6
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 7
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 8
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 9
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 10
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 11
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 12
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 13
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 14
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 15
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 16
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 17
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 18
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 19
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+    — indemnité spécifique mensuelle par échelon — échelon 20
+  values:
+    '2012-09-11':
+      value: 990.0
+    '2013-01-01':
+      value: 1060.0
+    '2021-07-01':
+      value: 1710.0
+    '2025-01-01':
+      value: 2010.0
+  metadata:
+    unit: currency
+    reference:
+      '2012-09-11':
+        title: Décret 2012-1684
+      '2013-01-01':
+        title: Décret 2013-719
+      '2021-07-01':
+        title: Décret 2020-129
+      '2025-01-01':
+        title: Décret 2022-797

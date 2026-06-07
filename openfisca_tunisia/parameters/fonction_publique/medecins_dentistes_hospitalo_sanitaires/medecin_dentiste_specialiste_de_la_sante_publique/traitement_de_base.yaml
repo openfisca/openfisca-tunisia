@@ -1,79 +1,277 @@
 description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
-  — traitement de base annuel par échelon
-unit: currency-TND
-reference: 2007-268
+  — traitement de base mensuel par échelon
 echelon_1:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 1
   values:
-    '2010-12-17': 611.0
+    '2010-12-17':
+      value: 611.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_2:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 2
   values:
-    '2010-12-17': 622.5
+    '2010-12-17':
+      value: 622.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_3:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 3
   values:
-    '2010-12-17': 634.0
+    '2010-12-17':
+      value: 634.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_4:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 4
   values:
-    '2010-12-17': 645.5
+    '2010-12-17':
+      value: 645.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_5:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 5
   values:
-    '2010-12-17': 657.0
+    '2010-12-17':
+      value: 657.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_6:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 6
   values:
-    '2010-12-17': 668.5
+    '2010-12-17':
+      value: 668.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_7:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 7
   values:
-    '2010-12-17': 680.0
+    '2010-12-17':
+      value: 680.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_8:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 8
   values:
-    '2010-12-17': 691.5
+    '2010-12-17':
+      value: 691.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_9:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 9
   values:
-    '2010-12-17': 703.0
+    '2010-12-17':
+      value: 703.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_10:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 10
   values:
-    '2010-12-17': 714.5
+    '2010-12-17':
+      value: 714.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_11:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 11
   values:
-    '2010-12-17': 726.0
+    '2010-12-17':
+      value: 726.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_12:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 12
   values:
-    '2010-12-17': 737.5
+    '2010-12-17':
+      value: 737.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_13:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 13
   values:
-    '2010-12-17': 749.0
+    '2010-12-17':
+      value: 749.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_14:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 14
   values:
-    '2010-12-17': 760.5
+    '2010-12-17':
+      value: 760.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_15:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 15
   values:
-    '2010-12-17': 772.0
+    '2010-12-17':
+      value: 772.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_16:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 16
   values:
-    '2010-12-17': 783.5
+    '2010-12-17':
+      value: 783.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_17:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 17
   values:
-    '2010-12-17': 795.0
+    '2010-12-17':
+      value: 795.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_18:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 18
   values:
-    '2010-12-17': 806.5
+    '2010-12-17':
+      value: 806.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_19:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 19
   values:
-    '2010-12-17': 818.0
+    '2010-12-17':
+      value: 818.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_20:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 20
   values:
-    '2010-12-17': 829.5
+    '2010-12-17':
+      value: 829.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_21:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 21
   values:
-    '2010-12-17': 841.0
+    '2010-12-17':
+      value: 841.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_22:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 22
   values:
-    '2010-12-17': 852.5
+    '2010-12-17':
+      value: 852.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_23:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 23
   values:
-    '2010-12-17': 864.0
+    '2010-12-17':
+      value: 864.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_24:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 24
   values:
-    '2010-12-17': 875.5
+    '2010-12-17':
+      value: 875.5
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
 echelon_25:
+  description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_de_la_sante_publique
+    — traitement de base mensuel par échelon — échelon 25
   values:
-    '2010-12-17': 887.0
+    '2010-12-17':
+      value: 887.0
+  metadata:
+    unit: currency
+    reference:
+      '2010-12-17':
+        title: Décret 2007-268
