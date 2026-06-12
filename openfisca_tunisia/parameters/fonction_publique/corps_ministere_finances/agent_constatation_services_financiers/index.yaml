@@ -1,3 +1,6 @@
 description: Corps des personnels du ministère des finances — grade agent_constatation_services_financiers
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

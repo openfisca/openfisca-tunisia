@@ -1,4 +1,7 @@
 description: Corps du contrôle général des domaines de l'État et des affaires foncières
   — grade controleur_general_domaines_etat
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

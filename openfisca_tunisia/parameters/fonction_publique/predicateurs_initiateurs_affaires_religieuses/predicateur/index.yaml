@@ -1,4 +1,7 @@
 description: Corps des prédicateurs et des initiateurs des affaires religieuses du
   ministère des affaires religieuses — grade predicateur
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

@@ -1,3 +1,6 @@
 description: Corps des agents des services douaniers — grade adjudant_des_douanes_echelle_1
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

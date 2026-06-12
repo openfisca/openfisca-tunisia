@@ -1,3 +1,6 @@
 description: Corps des médecins vétérinaires hospitalo-universitaires — grade maitre_de_conferences_agrege_hospitalo_universitaire_en_medecine_veterinaire
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

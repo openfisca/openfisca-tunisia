@@ -1,4 +1,7 @@
 description: Corps des agents des bibliothèques et de la documentation dans les administrations
   publiques — grade aide_bibliothecaire_aide_documentaliste
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

@@ -1,3 +1,6 @@
 description: Corps des personnels du ministère de la culture — grade conseiller_culturel_en_chef
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

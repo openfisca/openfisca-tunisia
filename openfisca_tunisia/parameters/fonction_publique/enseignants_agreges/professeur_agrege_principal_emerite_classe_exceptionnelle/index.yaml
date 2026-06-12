@@ -2,4 +2,7 @@ description: Corps des enseignants agrégés relevant du ministère de l'éducat
   du ministère de l'enseignement supérieur et de la recherche scientifique — grade
   professeur_agrege_principal_emerite_classe_exceptionnelle
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -1,3 +1,6 @@
 description: Corps de la conservation de la propriété foncière — grade inspecteur_en_chef_de_la_propriete_fonciere
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

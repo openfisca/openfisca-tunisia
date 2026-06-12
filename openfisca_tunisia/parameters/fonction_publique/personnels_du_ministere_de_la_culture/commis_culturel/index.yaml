@@ -1,3 +1,6 @@
 description: Corps des personnels du ministère de la culture — grade commis_culturel
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

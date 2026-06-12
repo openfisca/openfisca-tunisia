@@ -1,4 +1,7 @@
 description: Corps des enseignants exerçant dans les centres de l'éducation sociale
   du ministère des affaires sociales — grade maitre_principal_education_sociale
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

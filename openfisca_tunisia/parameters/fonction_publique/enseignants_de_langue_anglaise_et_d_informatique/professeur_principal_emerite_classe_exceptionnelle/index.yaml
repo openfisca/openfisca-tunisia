@@ -2,4 +2,7 @@ description: Corps interdépartemental des enseignants de langue anglaise et d'i
   exerçant dans les établissements d'enseignement relevant du ministère de l'éducation
   et de l'enseignement supérieur — grade professeur_principal_emerite_classe_exceptionnelle
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

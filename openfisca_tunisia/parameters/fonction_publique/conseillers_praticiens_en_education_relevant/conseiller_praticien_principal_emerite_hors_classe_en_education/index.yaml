@@ -1,4 +1,7 @@
 description: Corps des conseillers praticiens en éducation relevant du ministère de
   l'éducation — grade conseiller_praticien_principal_emerite_hors_classe_en_education
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

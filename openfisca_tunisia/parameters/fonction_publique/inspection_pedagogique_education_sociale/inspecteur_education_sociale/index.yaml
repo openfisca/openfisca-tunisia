@@ -1,4 +1,7 @@
 description: Corps de l'inspection pédagogique de l'éducation sociale du ministère
   des affaires sociales — grade inspecteur_education_sociale
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

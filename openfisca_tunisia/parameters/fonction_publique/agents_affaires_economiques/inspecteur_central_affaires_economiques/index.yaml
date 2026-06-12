@@ -1,3 +1,6 @@
 description: Corps des agents des affaires économiques — grade inspecteur_central_affaires_economiques
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

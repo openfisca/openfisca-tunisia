@@ -2,4 +2,7 @@ description: Corps interdépartemental des enseignants de langue anglaise et d'i
   exerçant dans les établissements d'enseignement relevant du ministère de l'éducation
   et de l'enseignement supérieur — grade professeur
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

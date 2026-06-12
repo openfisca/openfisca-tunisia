@@ -1,3 +1,6 @@
 description: Corps du contrôle d'État à la présidence du gouvernement — grade controleur_adjoint_etat
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

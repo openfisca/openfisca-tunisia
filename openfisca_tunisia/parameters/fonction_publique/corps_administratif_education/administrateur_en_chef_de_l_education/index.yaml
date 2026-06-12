@@ -1,3 +1,6 @@
 description: Corps administratif de l'éducation — grade administrateur_en_chef_de_l_education
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -1,3 +1,6 @@
 description: Corps administratif de la santé publique — grade administrateur_en_chef_sante_publique
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

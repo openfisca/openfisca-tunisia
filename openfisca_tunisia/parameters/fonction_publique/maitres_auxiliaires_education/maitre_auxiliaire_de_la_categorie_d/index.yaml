@@ -1,4 +1,7 @@
 description: Corps des maîtres auxiliaires relevant du ministère de l'éducation —
   grade maitre_auxiliaire_de_la_categorie_d
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

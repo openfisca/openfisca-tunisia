@@ -1,3 +1,6 @@
 description: Corps des délégués à la protection de l'enfance — grade delegue_adjoint_protection_enfance
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

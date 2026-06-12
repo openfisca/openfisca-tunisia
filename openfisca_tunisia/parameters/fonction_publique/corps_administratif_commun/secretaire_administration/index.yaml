@@ -1,3 +1,6 @@
 description: Corps administratif commun des administrations publiques — grade secretaire_administration
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

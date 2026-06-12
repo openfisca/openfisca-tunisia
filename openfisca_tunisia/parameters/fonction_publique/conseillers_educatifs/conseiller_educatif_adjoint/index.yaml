@@ -1,4 +1,7 @@
 description: Corps des conseillers éducatifs relevant du ministère de l'éducation
   — grade conseiller_educatif_adjoint
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

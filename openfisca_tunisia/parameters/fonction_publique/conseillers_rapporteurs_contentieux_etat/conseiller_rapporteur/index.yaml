@@ -1,4 +1,7 @@
 description: Corps des conseillers rapporteurs auprès des services du contentieux
   de l'État — grade conseiller_rapporteur
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

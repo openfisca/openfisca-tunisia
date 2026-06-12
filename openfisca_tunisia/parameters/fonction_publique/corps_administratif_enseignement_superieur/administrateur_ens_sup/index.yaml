@@ -1,4 +1,7 @@
 description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
   — grade administrateur_ens_sup
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

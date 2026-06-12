@@ -1,4 +1,7 @@
 description: Corps des personnels enseignants exerçant dans les écoles primaires —
   grade maitre_de_l_education_manuelle_et_technique
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

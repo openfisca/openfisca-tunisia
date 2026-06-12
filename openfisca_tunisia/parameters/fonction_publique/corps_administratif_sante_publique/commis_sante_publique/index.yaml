@@ -1,3 +1,6 @@
 description: Corps administratif de la santé publique — grade commis_sante_publique
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

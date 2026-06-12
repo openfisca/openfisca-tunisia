@@ -1,3 +1,6 @@
 description: Corps administratif commun des administrations publiques — grade agent_accueil
 metadata:
-  categorie_grille: D
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

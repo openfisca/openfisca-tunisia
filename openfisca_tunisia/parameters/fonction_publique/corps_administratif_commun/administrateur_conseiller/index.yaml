@@ -1,3 +1,6 @@
 description: Corps administratif commun des administrations publiques — grade administrateur_conseiller
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

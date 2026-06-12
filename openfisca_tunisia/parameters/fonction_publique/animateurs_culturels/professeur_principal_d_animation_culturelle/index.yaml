@@ -1,3 +1,6 @@
 description: Corps des animateurs culturels — grade professeur_principal_d_animation_culturelle
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

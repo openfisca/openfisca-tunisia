@@ -1,4 +1,7 @@
 description: Corps des personnels des enseignements secondaire et professionnel agricoles
   et des pêches — grade ingenieur_adjoint_enseignant_agricole_peches
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

@@ -1,3 +1,6 @@
 description: Corps administratif de l'éducation — grade agent_d_accueil_de_l_education
 metadata:
-  categorie_grille: D
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

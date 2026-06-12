@@ -1,3 +1,6 @@
 description: Corps des agents du ministère des affaires culturelles — grade administrateur_general_services_culturels
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

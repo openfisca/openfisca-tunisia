@@ -1,3 +1,6 @@
 description: Corps du contrôle économique — grade agent_controle_economique
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

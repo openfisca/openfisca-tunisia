@@ -1,3 +1,6 @@
 description: Corps administratif des conseils régionaux — grade administrateur_en_chef_conseil_regional
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

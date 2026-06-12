@@ -1,4 +1,7 @@
 description: Corps des assistants à l'application et à la recherche de l'enseignement
   supérieur et de la recherche scientifique — grade assistant_application_recherche_en_chef
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
