@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.64 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fonction_publique`.
+* Détails :
+  - Ajoute l'ordre d'indexation des paramètres présents dans chaque grade de la fonction publique.
+  - Déplace l'information de grille de catégorie dans la documentation des index de grade.
+
+<!-- -->
+
 ## 0.63 - [#365](https://github.com/openfisca/openfisca-tunisia/pull/365)
 
 * Changement mineur.
