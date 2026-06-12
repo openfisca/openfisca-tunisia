@@ -1,3 +1,6 @@
 description: Corps des pharmaciens hospitalo-universitaires — grade assistant_hospitalo_universitaire_en_pharmacie
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -1,3 +1,6 @@
 description: Corps des greffes des juridictions de l'ordre judiciaire — grade greffier_juridiction
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

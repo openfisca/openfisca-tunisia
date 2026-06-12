@@ -1,4 +1,7 @@
 description: Corps du personnel des domaines de l'État et des affaires foncières —
   grade commis_administration_domaines_etat
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

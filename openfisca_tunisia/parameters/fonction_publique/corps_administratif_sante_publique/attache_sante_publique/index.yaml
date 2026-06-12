@@ -1,3 +1,6 @@
 description: Corps administratif de la santé publique — grade attache_sante_publique
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

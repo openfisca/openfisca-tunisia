@@ -2,4 +2,7 @@ description: Corps de l'inspection pédagogique des ministères de la jeunesse, 
   sports et de l'éducation physique et des affaires de la femme, de la famille, de
   l'enfance et des personnes âgées — grade inspecteur_general_jeunesse_enfance
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

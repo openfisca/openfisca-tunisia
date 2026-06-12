@@ -1,4 +1,7 @@
 description: Corps des personnels du service social des administrations publiques
   — grade assistant_social
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

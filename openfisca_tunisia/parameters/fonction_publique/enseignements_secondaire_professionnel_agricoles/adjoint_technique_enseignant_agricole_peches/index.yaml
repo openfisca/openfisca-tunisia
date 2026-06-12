@@ -1,4 +1,7 @@
 description: Corps des personnels des enseignements secondaire et professionnel agricoles
   et des pêches — grade adjoint_technique_enseignant_agricole_peches
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

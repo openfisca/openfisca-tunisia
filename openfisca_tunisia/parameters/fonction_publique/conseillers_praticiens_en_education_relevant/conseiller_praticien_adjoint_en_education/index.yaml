@@ -1,4 +1,7 @@
 description: Corps des conseillers praticiens en éducation relevant du ministère de
   l'éducation — grade conseiller_praticien_adjoint_en_education
 metadata:
-  categorie_grille: B
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

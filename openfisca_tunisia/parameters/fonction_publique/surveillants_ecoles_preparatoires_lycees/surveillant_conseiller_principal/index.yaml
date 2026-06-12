@@ -1,4 +1,7 @@
 description: Corps des surveillants exerçant dans les écoles préparatoires et les
   lycées — grade surveillant_conseiller_principal
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

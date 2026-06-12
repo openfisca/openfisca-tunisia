@@ -1,4 +1,7 @@
 description: Corps des agents des bibliothèques et de la documentation dans les administrations
   publiques — grade bibliothecaire_documentaliste
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

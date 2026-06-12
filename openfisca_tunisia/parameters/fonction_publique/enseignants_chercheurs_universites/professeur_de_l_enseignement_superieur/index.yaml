@@ -1,3 +1,6 @@
 description: Corps des enseignants chercheurs des universités — grade professeur_de_l_enseignement_superieur
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

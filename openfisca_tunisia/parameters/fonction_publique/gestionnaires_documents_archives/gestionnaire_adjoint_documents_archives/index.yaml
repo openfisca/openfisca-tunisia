@@ -1,3 +1,6 @@
 description: Corps des gestionnaires de documents et d'archives — grade gestionnaire_adjoint_documents_archives
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

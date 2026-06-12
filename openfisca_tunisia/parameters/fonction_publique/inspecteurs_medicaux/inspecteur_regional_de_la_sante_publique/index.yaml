@@ -1,3 +1,6 @@
 description: Corps des inspecteurs médicaux et juxtamédicaux — grade inspecteur_regional_de_la_sante_publique
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -1,3 +1,6 @@
 description: Corps de contrôle des dépenses publiques — grade commis_controle_depenses_publiques
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

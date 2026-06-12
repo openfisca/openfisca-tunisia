@@ -1,3 +1,6 @@
 description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
 metadata:
-  categorie_grille: D
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

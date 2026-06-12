@@ -1,3 +1,6 @@
 description: Corps des agents des affaires économiques — grade agent_constatation_affaires_economiques
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

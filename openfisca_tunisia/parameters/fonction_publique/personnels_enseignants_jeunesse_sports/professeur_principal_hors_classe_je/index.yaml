@@ -2,4 +2,7 @@ description: Corps des personnels enseignants relevant du ministère de la jeune
   et des sports et du ministère de la femme, de la famille et de l'enfance — grade
   professeur_principal_hors_classe_je
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

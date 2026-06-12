@@ -1,3 +1,6 @@
 description: Corps des chercheurs agricoles et de pêche — grade directeur_de_recherche_agricoles_et_de_peche
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

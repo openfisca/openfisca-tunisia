@@ -1,3 +1,6 @@
 description: Corps des greffes de la cour des comptes — grade huissier_cour_comptes
 metadata:
-  categorie_grille: D
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

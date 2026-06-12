@@ -1,4 +1,7 @@
 description: Corps des cadres des métiers du sport relevant du ministère de la jeunesse,
   des sports et de l'éducation physique — grade animateur_d_application_en_sport_pour_tous
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

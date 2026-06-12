@@ -1,4 +1,7 @@
 description: Corps des personnels de l'éducation spécialisée du ministère des affaires
   sociales — grade educateur_specialise
 metadata:
-  categorie_grille: A2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

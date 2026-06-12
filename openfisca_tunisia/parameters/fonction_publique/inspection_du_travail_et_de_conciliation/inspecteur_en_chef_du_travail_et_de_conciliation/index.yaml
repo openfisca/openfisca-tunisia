@@ -1,4 +1,7 @@
 description: Corps des agents de l'inspection du travail et de conciliation — grade
   inspecteur_en_chef_du_travail_et_de_conciliation
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

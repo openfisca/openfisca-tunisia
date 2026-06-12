@@ -1,3 +1,6 @@
 description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_principal_de_la_sante_publique
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

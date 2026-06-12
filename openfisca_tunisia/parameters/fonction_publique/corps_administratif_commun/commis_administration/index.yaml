@@ -1,3 +1,6 @@
 description: Corps administratif commun des administrations publiques — grade commis_administration
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

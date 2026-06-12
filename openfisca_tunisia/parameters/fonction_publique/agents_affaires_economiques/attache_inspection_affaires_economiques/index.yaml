@@ -1,3 +1,6 @@
 description: Corps des agents des affaires économiques — grade attache_inspection_affaires_economiques
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

@@ -1,4 +1,7 @@
 description: Corps des conseillers en information et en orientation scolaire et universitaire
   du ministère de l'éducation — grade conseiller_general_expert_de_la_vie_scolaire
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

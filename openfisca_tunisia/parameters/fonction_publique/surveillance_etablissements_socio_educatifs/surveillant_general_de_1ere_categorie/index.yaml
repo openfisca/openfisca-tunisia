@@ -2,4 +2,7 @@ description: Corps des personnels de surveillance des établissements et institu
   socio-éducatives relevant du ministère de la jeunesse, de l'enfance et des sports
   — grade surveillant_general_de_1ere_categorie
 metadata:
-  categorie_grille: A3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

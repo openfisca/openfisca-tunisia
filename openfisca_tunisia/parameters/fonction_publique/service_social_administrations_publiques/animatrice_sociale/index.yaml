@@ -1,4 +1,7 @@
 description: Corps des personnels du service social des administrations publiques
   — grade animatrice_sociale
 metadata:
-  categorie_grille: C
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

@@ -1,3 +1,6 @@
 description: Corps administratif de la chambre des députés — grade conseiller_troisieme_ordre_chambre_deputes
 metadata:
-  categorie_grille: A1
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
