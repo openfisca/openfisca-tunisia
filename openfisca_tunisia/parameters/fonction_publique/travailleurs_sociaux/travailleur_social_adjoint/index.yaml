@@ -1,0 +1,7 @@
+description: Travailleurs sociaux adjoints du corps des travailleurs sociaux du ministère des affaires sociales
+metadata:
+  short_label: Travailleurs sociaux adjoints
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

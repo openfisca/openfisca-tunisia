@@ -1,0 +1,7 @@
+description: Agents accueils santes publiques du corps des corps administratif de la santé publique
+metadata:
+  short_label: Agents accueils santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

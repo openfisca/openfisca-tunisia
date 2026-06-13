@@ -1,0 +1,7 @@
+description: Géologues divisionnaires du corps des géologues
+metadata:
+  short_label: Géologues divisionnaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

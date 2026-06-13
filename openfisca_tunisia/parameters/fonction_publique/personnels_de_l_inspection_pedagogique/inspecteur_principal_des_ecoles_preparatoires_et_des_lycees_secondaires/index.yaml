@@ -1,0 +1,7 @@
+description: Inspecteurs principaux des écoles préparatoires et des lycées secondaires du corps des l'inspection pédagogique du ministère de l'éducation
+metadata:
+  short_label: Inspecteurs principaux des écoles préparatoires et des lycées secondaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

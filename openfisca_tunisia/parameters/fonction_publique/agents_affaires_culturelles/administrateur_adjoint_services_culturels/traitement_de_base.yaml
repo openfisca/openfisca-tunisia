@@ -1,0 +1,278 @@
+description: Traitement de base mensuel des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 443.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 451.25
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 459.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 467.75
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 476.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 484.25
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 492.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 500.75
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 509.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 517.25
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 525.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 533.75
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 542.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 550.25
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 558.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 566.75
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 575.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 583.25
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 591.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 599.75
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 608.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 616.25
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 624.5
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 632.75
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des administrateurs adjoints services culturels du corps des agents du ministère des affaires culturelles
+  values:
+    '2019-05-21':
+      value: 641.0
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2019-05-21':
+        title: Décret 2007-268

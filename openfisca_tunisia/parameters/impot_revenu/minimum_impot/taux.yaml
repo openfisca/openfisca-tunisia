@@ -1,4 +1,5 @@
 description: Taux minimum d'imposition applicable suite aux déductions d'impôts et investissements
+unit: /1
 values:
   1990-01-01:
     value: 0

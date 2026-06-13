@@ -1,0 +1,7 @@
+description: Contrôleurs finances troisiemes classes du corps des corps du contrôle général des finances
+metadata:
+  short_label: Contrôleurs finances troisiemes classes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

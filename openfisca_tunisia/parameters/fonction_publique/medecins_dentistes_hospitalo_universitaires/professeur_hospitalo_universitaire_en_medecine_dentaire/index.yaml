@@ -1,0 +1,7 @@
+description: Professeurs hospitalo universitaires en medecines dentaires du corps des médecins dentistes hospitalo-universitaires
+metadata:
+  short_label: Professeurs hospitalo universitaires en medecines dentaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

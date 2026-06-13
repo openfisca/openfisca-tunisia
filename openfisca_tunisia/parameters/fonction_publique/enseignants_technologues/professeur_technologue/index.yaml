@@ -1,0 +1,7 @@
+description: Professeurs technologues du corps des enseignants technologues
+metadata:
+  short_label: Professeurs technologues
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

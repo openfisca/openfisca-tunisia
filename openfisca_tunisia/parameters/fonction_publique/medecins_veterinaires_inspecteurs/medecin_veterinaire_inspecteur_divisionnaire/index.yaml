@@ -1,0 +1,7 @@
+description: Médecins veterinaires inspecteurs divisionnaires du corps des médecins vétérinaires inspecteurs
+metadata:
+  short_label: Médecins veterinaires inspecteurs divisionnaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

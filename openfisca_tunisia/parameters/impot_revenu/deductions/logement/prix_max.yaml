@@ -1,4 +1,5 @@
 description: Coût d'acquisition maximum (hors TVA) pour bénéficier de la déduction des intérêts d'emprunt du logement (Art 39 I-4)
+unit: currency
 metadata:
   reference:
     - title: Article 46 de la Loi de Finances pour l'année 1999 (n° 98-111 du 28/12/1998)

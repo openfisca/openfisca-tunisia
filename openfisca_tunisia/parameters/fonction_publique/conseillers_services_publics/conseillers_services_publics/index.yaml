@@ -1,0 +1,7 @@
+description: Conseillers services publics du corps des conseillers des services publics
+metadata:
+  short_label: Conseillers services publics
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

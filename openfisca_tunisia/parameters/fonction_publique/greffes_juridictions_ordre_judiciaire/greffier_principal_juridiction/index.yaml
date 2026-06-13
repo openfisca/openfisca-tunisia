@@ -1,0 +1,7 @@
+description: Greffiers principaux juridictions du corps des greffes des juridictions de l'ordre judiciaire
+metadata:
+  short_label: Greffiers principaux juridictions
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

@@ -1,0 +1,7 @@
+description: Officiers principaux de 1ère classes marines marchandes du corps des personnels spécialisés de la marine marchande dépendant du ministère du transport
+metadata:
+  short_label: Officiers principaux de 1ère classes marines marchandes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

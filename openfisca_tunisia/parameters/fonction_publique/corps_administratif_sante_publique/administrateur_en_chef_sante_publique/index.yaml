@@ -1,0 +1,7 @@
+description: Administrateurs en chefs santes publiques du corps des corps administratif de la santé publique
+metadata:
+  short_label: Administrateurs en chefs santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
