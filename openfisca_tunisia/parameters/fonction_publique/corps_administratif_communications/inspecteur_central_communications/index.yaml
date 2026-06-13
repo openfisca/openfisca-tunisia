@@ -1,0 +1,7 @@
+description: Inspecteurs centraux communications du corps des corps administratif des communications
+metadata:
+  short_label: Inspecteurs centraux communications
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

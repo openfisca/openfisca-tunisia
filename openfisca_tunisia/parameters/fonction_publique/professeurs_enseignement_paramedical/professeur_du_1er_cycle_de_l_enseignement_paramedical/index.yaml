@@ -1,0 +1,7 @@
+description: Professeurs du 1er cycles de l'enseignements paramedicaux du corps des professeurs de l'enseignement paramédical relevant du ministère de la santé publique
+metadata:
+  short_label: Professeurs du 1er cycles de l'enseignements paramedicaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

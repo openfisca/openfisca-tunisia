@@ -1,0 +1,803 @@
+description: Indemnité spécifique mensuelle des greffiers principaux du corps des corps du greffe du tribunal administratif
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des greffiers principaux du corps des corps du greffe du tribunal administratif
+  values:
+    '2004-10-22':
+      value: 344.0
+    '2007-01-01':
+      value: 429.5
+    '2010-01-01':
+      value: 538.5
+    '2016-01-01':
+      value: 558.5
+    '2025-01-01':
+      value: 778.5
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2004-10-22':
+        title: Décret 2002-3023/2824 (augmentation globale 2002-2004)
+      '2007-01-01':
+        title: Décret 2005-3169/3164 (global 2005-2007) + 2006-463/460/459 (+13 augmentation
+          specifique)
+      '2010-01-01':
+        title: Décret 2008-4085/4064/4062 (augmentation globale 2008-2010)
+      '2012-11-29':
+        title: Décret 2012-2964/2961/2960 (+35 administrateur general uniquement)
+      '2016-01-01':
+        title: Décret 2014-1715/2597/2598 (+20 grades A / +15 greffier-adjoint-huissier
+          ; augmentation specifique, flat)
+      '2025-01-01':
+        title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
+          +210, C/D +195 ; a terme 2025)'

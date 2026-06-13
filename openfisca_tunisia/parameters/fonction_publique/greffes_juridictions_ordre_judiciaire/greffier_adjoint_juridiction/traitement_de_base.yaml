@@ -1,0 +1,378 @@
+description: Traitement de base mensuel des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 111.5
+    '2007-04-01':
+      value: 300.75
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 115.5
+    '2007-04-01':
+      value: 304.75
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 119.5
+    '2007-04-01':
+      value: 308.75
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 123.5
+    '2007-04-01':
+      value: 312.75
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 127.5
+    '2007-04-01':
+      value: 316.75
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 131.5
+    '2007-04-01':
+      value: 320.75
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 135.5
+    '2007-04-01':
+      value: 324.75
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 139.5
+    '2007-04-01':
+      value: 328.75
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 143.5
+    '2007-04-01':
+      value: 332.75
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 147.5
+    '2007-04-01':
+      value: 336.75
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 151.5
+    '2007-04-01':
+      value: 340.75
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 155.5
+    '2007-04-01':
+      value: 344.75
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 159.5
+    '2007-04-01':
+      value: 348.75
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 163.5
+    '2007-04-01':
+      value: 352.75
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 167.5
+    '2007-04-01':
+      value: 356.75
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 171.5
+    '2007-04-01':
+      value: 360.75
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 175.5
+    '2007-04-01':
+      value: 364.75
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 179.5
+    '2007-04-01':
+      value: 368.75
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 183.5
+    '2007-04-01':
+      value: 372.75
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 187.5
+    '2007-04-01':
+      value: 376.75
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 191.5
+    '2007-04-01':
+      value: 380.75
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 195.5
+    '2007-04-01':
+      value: 384.75
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 199.5
+    '2007-04-01':
+      value: 388.75
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 203.5
+    '2007-04-01':
+      value: 392.75
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
+  values:
+    '1999-08-06':
+      value: 207.5
+    '2007-04-01':
+      value: 396.75
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

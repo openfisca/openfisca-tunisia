@@ -1,0 +1,7 @@
+description: Delegues protections enfances 2ème grades du corps des délégués à la protection de l'enfance
+metadata:
+  short_label: Delegues protections enfances 2ème grades
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

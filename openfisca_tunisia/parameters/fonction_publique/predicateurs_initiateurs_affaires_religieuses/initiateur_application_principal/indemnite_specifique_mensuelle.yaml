@@ -1,0 +1,333 @@
+description: Indemnité spécifique mensuelle des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des initiateurs applications principaux du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 541.5
+    '2025-01-01':
+      value: 811.5
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2014-3943 Art.3 (sujétions pédagogiques)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie A1+300/A2+270/A3+220/B+210)

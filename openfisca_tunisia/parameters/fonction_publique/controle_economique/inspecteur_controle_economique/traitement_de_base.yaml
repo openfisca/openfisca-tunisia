@@ -1,0 +1,278 @@
+description: Traitement de base mensuel des inspecteurs controles économiques du corps des corps du contrôle économique
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 521.25
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 530.25
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 539.25
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 548.25
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 557.25
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 566.25
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 575.25
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 584.25
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 593.25
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 602.25
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 611.25
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 620.25
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 629.25
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 638.25
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 647.25
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 656.25
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 665.25
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 674.25
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 683.25
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 692.25
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 701.25
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 710.25
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 719.25
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 728.25
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des inspecteurs controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 737.25
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2007-268

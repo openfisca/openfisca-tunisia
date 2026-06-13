@@ -1,0 +1,928 @@
+description: Indemnité spécifique mensuelle des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+  values:
+    '1999-10-22':
+      value: 252.5
+    '2001-07-01':
+      value: 327.5
+    '2004-07-01':
+      value: 400.0
+    '2007-07-01':
+      value: 472.5
+    '2010-07-01':
+      value: 581.5
+    '2013-01-01':
+      value: 651.5
+    '2025-01-01':
+      value: 871.5
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1910
+      '2001-07-01':
+        title: Décret 99-2121
+      '2004-07-01':
+        title: Décret 2002-2239
+      '2007-07-01':
+        title: Décret 2005-3135
+      '2010-07-01':
+        title: Décret 2008-4048
+      '2013-01-01':
+        title: Décret 2012-2957
+      '2015-01-01':
+        title: Décret 2015-60
+      '2025-01-01':
+        title: Décret 2022-797
