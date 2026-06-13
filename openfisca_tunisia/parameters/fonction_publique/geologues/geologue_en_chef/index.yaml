@@ -1,0 +1,7 @@
+description: Géologues en chefs du corps des géologues
+metadata:
+  short_label: Géologues en chefs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -1,0 +1,7 @@
+description: Adjudants chefs des douanes echelles 3 du corps des agents des services douaniers
+metadata:
+  short_label: Adjudants chefs des douanes echelles 3
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

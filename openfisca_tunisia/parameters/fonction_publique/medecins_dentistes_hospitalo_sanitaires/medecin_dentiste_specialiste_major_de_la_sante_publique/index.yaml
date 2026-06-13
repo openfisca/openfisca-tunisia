@@ -1,0 +1,7 @@
+description: Médecins dentistes specialistes majors de la santes publiques du corps des médecins dentistes hospitalo-sanitaires
+metadata:
+  short_label: Médecins dentistes specialistes majors de la santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

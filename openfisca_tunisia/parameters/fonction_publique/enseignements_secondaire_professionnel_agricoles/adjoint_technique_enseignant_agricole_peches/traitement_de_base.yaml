@@ -1,0 +1,378 @@
+description: Traitement de base mensuel des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 128.25
+    '2007-04-01':
+      value: 360.25
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 133.75
+    '2007-04-01':
+      value: 365.75
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 139.25
+    '2007-04-01':
+      value: 371.25
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 144.75
+    '2007-04-01':
+      value: 376.75
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 150.25
+    '2007-04-01':
+      value: 382.25
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 155.75
+    '2007-04-01':
+      value: 387.75
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 161.25
+    '2007-04-01':
+      value: 393.25
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 166.75
+    '2007-04-01':
+      value: 398.75
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 172.25
+    '2007-04-01':
+      value: 404.25
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 177.75
+    '2007-04-01':
+      value: 409.75
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 183.25
+    '2007-04-01':
+      value: 415.25
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 188.75
+    '2007-04-01':
+      value: 420.75
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 194.25
+    '2007-04-01':
+      value: 426.25
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 199.75
+    '2007-04-01':
+      value: 431.75
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 205.25
+    '2007-04-01':
+      value: 437.25
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 210.75
+    '2007-04-01':
+      value: 442.75
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 216.25
+    '2007-04-01':
+      value: 448.25
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 221.75
+    '2007-04-01':
+      value: 453.75
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 227.25
+    '2007-04-01':
+      value: 459.25
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 232.75
+    '2007-04-01':
+      value: 464.75
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 238.25
+    '2007-04-01':
+      value: 470.25
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 243.75
+    '2007-04-01':
+      value: 475.75
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 249.25
+    '2007-04-01':
+      value: 481.25
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 254.75
+    '2007-04-01':
+      value: 486.75
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des adjoints techniques enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+  values:
+    '1999-10-08':
+      value: 260.25
+    '2007-04-01':
+      value: 492.25
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

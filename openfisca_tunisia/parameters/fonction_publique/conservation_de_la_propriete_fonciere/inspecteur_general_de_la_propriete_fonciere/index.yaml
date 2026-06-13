@@ -1,0 +1,7 @@
+description: Inspecteurs généraux de la proprietes foncieres du corps des la conservation de la propriété foncière
+metadata:
+  short_label: Inspecteurs généraux de la proprietes foncieres
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

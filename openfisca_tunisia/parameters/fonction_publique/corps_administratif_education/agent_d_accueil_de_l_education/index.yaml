@@ -1,0 +1,7 @@
+description: Agents d'accueils de l'educations du corps des corps administratif de l'éducation
+metadata:
+  short_label: Agents d'accueils de l'educations
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

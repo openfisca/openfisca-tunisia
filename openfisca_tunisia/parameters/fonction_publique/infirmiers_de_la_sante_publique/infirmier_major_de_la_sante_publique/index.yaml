@@ -1,0 +1,7 @@
+description: Infirmiers majors de la santes publiques du corps des infirmiers de la santé publique
+metadata:
+  short_label: Infirmiers majors de la santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

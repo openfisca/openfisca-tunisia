@@ -1,0 +1,7 @@
+description: Chefs des travaux de laboratoires divisionnaires du corps des personnels des cadres communs de laboratoire
+metadata:
+  short_label: Chefs des travaux de laboratoires divisionnaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

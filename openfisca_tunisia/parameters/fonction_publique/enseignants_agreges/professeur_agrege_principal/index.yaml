@@ -1,0 +1,7 @@
+description: Professeurs agrégés principaux du corps des enseignants agrégés relevant du ministère de l'éducation et du ministère de l'enseignement supérieur et de la recherche scientifique
+metadata:
+  short_label: Professeurs agrégés principaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

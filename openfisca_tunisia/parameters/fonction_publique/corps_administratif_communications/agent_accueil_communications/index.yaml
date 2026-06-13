@@ -1,0 +1,7 @@
+description: Agents accueils communications du corps des corps administratif des communications
+metadata:
+  short_label: Agents accueils communications
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

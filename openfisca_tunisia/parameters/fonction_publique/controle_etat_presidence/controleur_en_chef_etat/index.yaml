@@ -1,0 +1,7 @@
+description: Contrôleurs en chefs etats du corps des corps du contrôle d'État à la présidence du gouvernement
+metadata:
+  short_label: Contrôleurs en chefs etats
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

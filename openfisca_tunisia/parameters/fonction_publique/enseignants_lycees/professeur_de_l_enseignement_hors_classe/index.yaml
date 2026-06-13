@@ -1,0 +1,7 @@
+description: Professeurs de l'enseignements hors classes du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
+metadata:
+  short_label: Professeurs de l'enseignements hors classes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2
