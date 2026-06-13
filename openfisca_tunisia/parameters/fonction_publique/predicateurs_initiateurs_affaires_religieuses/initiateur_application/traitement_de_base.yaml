@@ -1,0 +1,267 @@
+description: Traitement de base mensuel des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 451.25
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 459.5
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 467.75
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 476.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 484.25
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 492.5
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 500.75
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 509.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 517.25
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 525.5
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 533.75
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 542.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 550.25
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 558.5
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 566.75
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 575.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 583.25
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 591.5
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 599.75
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 608.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 616.25
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 624.5
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 632.75
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des initiateurs applications du corps des prédicateurs et des initiateurs des affaires religieuses du ministère des affaires religieuses
+  values:
+    '2014-10-31':
+      value: 641.0
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2014-10-31':
+        title: Décret 2007-268

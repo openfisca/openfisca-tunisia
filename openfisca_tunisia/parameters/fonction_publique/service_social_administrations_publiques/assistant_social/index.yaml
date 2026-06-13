@@ -1,0 +1,7 @@
+description: Assistants sociaux du corps des personnels du service social des administrations publiques
+metadata:
+  short_label: Assistants sociaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

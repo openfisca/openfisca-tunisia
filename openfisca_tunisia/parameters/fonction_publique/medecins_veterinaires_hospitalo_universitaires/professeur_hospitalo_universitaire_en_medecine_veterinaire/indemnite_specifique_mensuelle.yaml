@@ -1,0 +1,402 @@
+description: Indemnité spécifique mensuelle des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des professeurs hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
+  values:
+    '1999-07-06':
+      value: 0.0
+    '2013-01-01':
+      value: 2228.0
+    '2021-07-01':
+      value: 3328.0
+    '2025-01-01':
+      value: 3628.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 83-1217 art.15 → 2013-1408+2013-1409 (pharmaciens HU)
+      '2021-07-01':
+        title: Décret 83-1217 art.15 → 2020-81 (pharmaciens HU)
+      '2025-01-01':
+        title: Décret 83-1217 art.15 → 2022-797 (pharmaciens HU)

@@ -1,0 +1,7 @@
+description: Inspecteurs généraux controles économiques du corps des corps du contrôle économique
+metadata:
+  short_label: Inspecteurs généraux controles économiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

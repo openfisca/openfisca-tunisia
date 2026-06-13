@@ -1,0 +1,7 @@
+description: Maitres dapplications principaux hors classes du corps des personnels enseignants exerçant dans les écoles primaires
+metadata:
+  short_label: Maitres dapplications principaux hors classes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

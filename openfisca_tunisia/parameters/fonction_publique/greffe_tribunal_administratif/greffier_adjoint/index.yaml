@@ -1,0 +1,7 @@
+description: Greffiers adjoints du corps des corps du greffe du tribunal administratif
+metadata:
+  short_label: Greffiers adjoints
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

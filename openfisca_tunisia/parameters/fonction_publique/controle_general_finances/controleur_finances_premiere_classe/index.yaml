@@ -1,0 +1,7 @@
+description: Contrôleurs finances premieres classes du corps des corps du contrôle général des finances
+metadata:
+  short_label: Contrôleurs finances premieres classes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
