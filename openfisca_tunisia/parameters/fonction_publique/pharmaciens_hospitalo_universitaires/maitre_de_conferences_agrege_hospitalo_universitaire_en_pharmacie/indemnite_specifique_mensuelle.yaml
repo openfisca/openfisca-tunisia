@@ -1,0 +1,465 @@
+description: Indemnité spécifique mensuelle des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des maitres de conférences agrégés hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
+  values:
+    '2000-02-11':
+      value: 0.0
+    '2013-01-01':
+      value: 1912.0
+    '2021-07-01':
+      value: 2812.0
+    '2025-01-01':
+      value: 3112.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2013-01-01':
+        title: Décret 2013-1408+2013-1409
+      '2021-07-01':
+        title: Décret 2020-81
+      '2025-01-01':
+        title: Décret 2022-797

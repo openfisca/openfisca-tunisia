@@ -1,0 +1,7 @@
+description: Ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
+metadata:
+  short_label: Ingénieurs généraux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

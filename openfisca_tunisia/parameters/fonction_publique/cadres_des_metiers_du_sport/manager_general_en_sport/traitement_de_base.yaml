@@ -1,0 +1,179 @@
+description: Traitement de base mensuel des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 714.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 726.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 737.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 749.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 760.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 772.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 783.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 795.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 806.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 818.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 829.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 841.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 852.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 864.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 875.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des managers généraux en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 887.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2008-05-13':
+        title: Décret 2007-268

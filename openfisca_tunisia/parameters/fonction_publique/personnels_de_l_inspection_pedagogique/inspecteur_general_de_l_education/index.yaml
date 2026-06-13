@@ -1,0 +1,7 @@
+description: Inspecteurs généraux de l'educations du corps des l'inspection pédagogique du ministère de l'éducation
+metadata:
+  short_label: Inspecteurs généraux de l'educations
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

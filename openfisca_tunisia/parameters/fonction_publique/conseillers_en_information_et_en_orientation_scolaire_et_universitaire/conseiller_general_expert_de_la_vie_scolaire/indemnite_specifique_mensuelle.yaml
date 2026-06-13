@@ -1,0 +1,499 @@
+description: Indemnité spécifique mensuelle des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des conseillers généraux experts de la vies scolaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+  values:
+    '2018-09-25':
+      value: 1658.0
+    '2019-03-01':
+      value: 1748.0
+    '2019-07-01':
+      value: 1788.0
+    '2020-01-01':
+      value: 1838.0
+    '2020-08-01':
+      value: 1928.0
+    '2025-01-01':
+      value: 2228.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2018-09-25':
+        title: Décret 2018-782 (assimilation 2017-347)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90 ; régime inspection péd. assimilé)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme ; total chaîne +570)

@@ -1,0 +1,7 @@
+description: Surveillants généraux de 1ère categories du corps des personnels de surveillance des établissements et institutions socio-éducatives relevant du ministère de la jeunesse, de l'enfance et des sports
+metadata:
+  short_label: Surveillants généraux de 1ère categories
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

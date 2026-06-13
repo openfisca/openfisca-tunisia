@@ -1,0 +1,7 @@
+description: Commis chambres deputes du corps des corps administratif de la chambre des députés
+metadata:
+  short_label: Commis chambres deputes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

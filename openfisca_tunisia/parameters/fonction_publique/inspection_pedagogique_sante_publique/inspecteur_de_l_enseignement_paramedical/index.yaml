@@ -1,0 +1,7 @@
+description: Inspecteurs de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
+metadata:
+  short_label: Inspecteurs de l'enseignements paramedicaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

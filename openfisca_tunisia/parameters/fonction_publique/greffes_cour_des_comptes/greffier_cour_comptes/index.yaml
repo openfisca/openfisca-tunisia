@@ -1,0 +1,7 @@
+description: Greffiers cours comptes du corps des greffes de la cour des comptes
+metadata:
+  short_label: Greffiers cours comptes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

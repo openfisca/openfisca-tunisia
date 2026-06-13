@@ -1,0 +1,7 @@
+description: Conseillers généraux en informations et en orientations scolaires et universitaires du corps des conseillers en information et en orientation scolaire et universitaire du ministère de l'éducation
+metadata:
+  short_label: Conseillers généraux en informations et en orientations scolaires et universitaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

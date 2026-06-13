@@ -1,0 +1,7 @@
+description: Adjudants des douanes echelles 2 du corps des agents des services douaniers
+metadata:
+  short_label: Adjudants des douanes echelles 2
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B
