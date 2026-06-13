@@ -2,6 +2,8 @@ description: Corps des enseignants agrégés relevant du ministère de l'éducat
   du ministère de l'enseignement supérieur et de la recherche scientifique — grade
   professeur_agrege_principal_emerite_classe_exceptionnelle — traitement de base mensuel
   par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des enseignants agrégés relevant du ministère de l'éducation
     et du ministère de l'enseignement supérieur et de la recherche scientifique —
@@ -11,6 +13,7 @@ echelon_1:
     '2016-01-26':
       value: 611.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2016-01-26':
@@ -24,6 +27,7 @@ echelon_2:
     '2016-01-26':
       value: 622.5
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2016-01-26':
@@ -37,6 +41,7 @@ echelon_3:
     '2016-01-26':
       value: 634.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2016-01-26':
@@ -50,6 +55,7 @@ echelon_4:
     '2016-01-26':
       value: 645.5
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2016-01-26':
@@ -63,6 +69,7 @@ echelon_5:
     '2016-01-26':
       value: 657.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2016-01-26':
@@ -76,6 +83,7 @@ echelon_6:
     '2016-01-26':
       value: 668.5
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2016-01-26':
@@ -89,6 +97,7 @@ echelon_7:
     '2016-01-26':
       value: 680.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2016-01-26':
@@ -102,6 +111,7 @@ echelon_8:
     '2016-01-26':
       value: 691.5
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2016-01-26':
@@ -115,6 +125,7 @@ echelon_9:
     '2016-01-26':
       value: 703.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2016-01-26':
@@ -128,6 +139,7 @@ echelon_10:
     '2016-01-26':
       value: 714.5
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2016-01-26':
@@ -141,6 +153,7 @@ echelon_11:
     '2016-01-26':
       value: 726.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2016-01-26':
@@ -154,6 +167,7 @@ echelon_12:
     '2016-01-26':
       value: 737.5
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2016-01-26':
@@ -167,6 +181,7 @@ echelon_13:
     '2016-01-26':
       value: 749.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2016-01-26':
@@ -180,6 +195,7 @@ echelon_14:
     '2016-01-26':
       value: 760.5
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2016-01-26':
@@ -193,6 +209,7 @@ echelon_15:
     '2016-01-26':
       value: 772.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2016-01-26':
@@ -206,6 +223,7 @@ echelon_16:
     '2016-01-26':
       value: 783.5
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2016-01-26':
@@ -219,6 +237,7 @@ echelon_17:
     '2016-01-26':
       value: 795.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2016-01-26':
@@ -232,6 +251,7 @@ echelon_18:
     '2016-01-26':
       value: 806.5
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2016-01-26':
@@ -245,6 +265,7 @@ echelon_19:
     '2016-01-26':
       value: 818.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2016-01-26':
@@ -258,6 +279,7 @@ echelon_20:
     '2016-01-26':
       value: 829.5
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2016-01-26':
@@ -271,6 +293,7 @@ echelon_21:
     '2016-01-26':
       value: 841.0
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '2016-01-26':
@@ -284,6 +307,7 @@ echelon_22:
     '2016-01-26':
       value: 852.5
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '2016-01-26':
@@ -297,6 +321,7 @@ echelon_23:
     '2016-01-26':
       value: 864.0
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '2016-01-26':
@@ -310,6 +335,7 @@ echelon_24:
     '2016-01-26':
       value: 875.5
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '2016-01-26':
@@ -323,6 +349,7 @@ echelon_25:
     '2016-01-26':
       value: 887.0
   metadata:
+    short_label: Échelon 25
     unit: currency
     reference:
       '2016-01-26':

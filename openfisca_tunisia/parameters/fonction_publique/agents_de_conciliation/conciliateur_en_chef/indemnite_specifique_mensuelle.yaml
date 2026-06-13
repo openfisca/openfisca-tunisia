@@ -1,5 +1,7 @@
 description: Corps des agents de conciliation du ministère des affaires sociales —
   grade conciliateur_en_chef — indemnité spécifique mensuelle par échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
   indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
   manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
@@ -13,6 +15,7 @@ echelon_1:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 1
     unit: currency
 echelon_2:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -22,6 +25,7 @@ echelon_2:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 2
     unit: currency
 echelon_3:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -31,6 +35,7 @@ echelon_3:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 3
     unit: currency
 echelon_4:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -40,6 +45,7 @@ echelon_4:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 4
     unit: currency
 echelon_5:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -49,6 +55,7 @@ echelon_5:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 5
     unit: currency
 echelon_6:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -58,6 +65,7 @@ echelon_6:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 6
     unit: currency
 echelon_7:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -67,6 +75,7 @@ echelon_7:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 7
     unit: currency
 echelon_8:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -76,6 +85,7 @@ echelon_8:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 8
     unit: currency
 echelon_9:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -85,6 +95,7 @@ echelon_9:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 9
     unit: currency
 echelon_10:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -94,6 +105,7 @@ echelon_10:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 10
     unit: currency
 echelon_11:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -103,6 +115,7 @@ echelon_11:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 11
     unit: currency
 echelon_12:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -112,6 +125,7 @@ echelon_12:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 12
     unit: currency
 echelon_13:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -121,6 +135,7 @@ echelon_13:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 13
     unit: currency
 echelon_14:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -130,6 +145,7 @@ echelon_14:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 14
     unit: currency
 echelon_15:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -139,6 +155,7 @@ echelon_15:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 15
     unit: currency
 echelon_16:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -148,6 +165,7 @@ echelon_16:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 16
     unit: currency
 echelon_17:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -157,6 +175,7 @@ echelon_17:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 17
     unit: currency
 echelon_18:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -166,6 +185,7 @@ echelon_18:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 18
     unit: currency
 echelon_19:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -175,6 +195,7 @@ echelon_19:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 19
     unit: currency
 echelon_20:
   description: Corps des agents de conciliation du ministère des affaires sociales
@@ -184,4 +205,5 @@ echelon_20:
     '1999-10-08':
       value: 0.0
   metadata:
+    short_label: Échelon 20
     unit: currency

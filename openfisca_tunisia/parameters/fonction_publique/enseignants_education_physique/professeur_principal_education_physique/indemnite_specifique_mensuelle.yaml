@@ -1,6 +1,8 @@
 description: Corps interdépartemental des enseignants de l'éducation physique relevant
   des ministères de la jeunesse et de l'enfance et de l'enseignement supérieur — grade
   professeur_principal_education_physique — indemnité spécifique mensuelle par échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 echelon_1:
   description: Corps interdépartemental des enseignants de l'éducation physique relevant
     des ministères de la jeunesse et de l'enfance et de l'enseignement supérieur —
@@ -22,6 +24,7 @@ echelon_1:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '1998-10-27':
@@ -59,6 +62,7 @@ echelon_2:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '1998-10-27':
@@ -96,6 +100,7 @@ echelon_3:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '1998-10-27':
@@ -133,6 +138,7 @@ echelon_4:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '1998-10-27':
@@ -170,6 +176,7 @@ echelon_5:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '1998-10-27':
@@ -207,6 +214,7 @@ echelon_6:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '1998-10-27':
@@ -244,6 +252,7 @@ echelon_7:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '1998-10-27':
@@ -281,6 +290,7 @@ echelon_8:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '1998-10-27':
@@ -318,6 +328,7 @@ echelon_9:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '1998-10-27':
@@ -355,6 +366,7 @@ echelon_10:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '1998-10-27':
@@ -392,6 +404,7 @@ echelon_11:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '1998-10-27':
@@ -429,6 +442,7 @@ echelon_12:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '1998-10-27':
@@ -466,6 +480,7 @@ echelon_13:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '1998-10-27':
@@ -503,6 +518,7 @@ echelon_14:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '1998-10-27':
@@ -540,6 +556,7 @@ echelon_15:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '1998-10-27':
@@ -577,6 +594,7 @@ echelon_16:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '1998-10-27':
@@ -614,6 +632,7 @@ echelon_17:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '1998-10-27':
@@ -651,6 +670,7 @@ echelon_18:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '1998-10-27':
@@ -688,6 +708,7 @@ echelon_19:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '1998-10-27':
@@ -725,6 +746,7 @@ echelon_20:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '1998-10-27':
@@ -762,6 +784,7 @@ echelon_21:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '1998-10-27':
@@ -799,6 +822,7 @@ echelon_22:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '1998-10-27':
@@ -836,6 +860,7 @@ echelon_23:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '1998-10-27':
@@ -873,6 +898,7 @@ echelon_24:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '1998-10-27':
@@ -910,6 +936,7 @@ echelon_25:
     '2019-03-01':
       value: 732.0
   metadata:
+    short_label: Échelon 25
     unit: currency
     reference:
       '1998-10-27':

@@ -1,6 +1,8 @@
 description: Corps du personnel des domaines de l'État et des affaires foncières —
   grade administrateur_general_domaines_etat — indemnité spécifique mensuelle par
   échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
   indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
   manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
@@ -14,6 +16,7 @@ echelon_1:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 1
     unit: currency
 echelon_2:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -23,6 +26,7 @@ echelon_2:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 2
     unit: currency
 echelon_3:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -32,6 +36,7 @@ echelon_3:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 3
     unit: currency
 echelon_4:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -41,6 +46,7 @@ echelon_4:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 4
     unit: currency
 echelon_5:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -50,6 +56,7 @@ echelon_5:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 5
     unit: currency
 echelon_6:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -59,6 +66,7 @@ echelon_6:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 6
     unit: currency
 echelon_7:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -68,6 +76,7 @@ echelon_7:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 7
     unit: currency
 echelon_8:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -77,6 +86,7 @@ echelon_8:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 8
     unit: currency
 echelon_9:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -86,6 +96,7 @@ echelon_9:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 9
     unit: currency
 echelon_10:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -95,6 +106,7 @@ echelon_10:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 10
     unit: currency
 echelon_11:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -104,6 +116,7 @@ echelon_11:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 11
     unit: currency
 echelon_12:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -113,6 +126,7 @@ echelon_12:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 12
     unit: currency
 echelon_13:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -122,6 +136,7 @@ echelon_13:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 13
     unit: currency
 echelon_14:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -131,6 +146,7 @@ echelon_14:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 14
     unit: currency
 echelon_15:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -140,6 +156,7 @@ echelon_15:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 15
     unit: currency
 echelon_16:
   description: Corps du personnel des domaines de l'État et des affaires foncières
@@ -149,4 +166,5 @@ echelon_16:
     '2000-05-26':
       value: 0.0
   metadata:
+    short_label: Échelon 16
     unit: currency

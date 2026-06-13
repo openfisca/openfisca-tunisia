@@ -2,6 +2,8 @@ description: Corps de l'inspection pédagogique des ministères de la jeunesse, 
   sports et de l'éducation physique et des affaires de la femme, de la famille, de
   l'enfance et des personnes âgées — grade inspecteur_principal_jeunesse_enfance —
   traitement de base mensuel par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps de l'inspection pédagogique des ministères de la jeunesse, des
     sports et de l'éducation physique et des affaires de la femme, de la famille,
@@ -11,6 +13,7 @@ echelon_1:
     '2010-11-12':
       value: 645.5
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2010-11-12':
@@ -24,6 +27,7 @@ echelon_2:
     '2010-11-12':
       value: 657.0
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2010-11-12':
@@ -37,6 +41,7 @@ echelon_3:
     '2010-11-12':
       value: 668.5
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2010-11-12':
@@ -50,6 +55,7 @@ echelon_4:
     '2010-11-12':
       value: 680.0
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2010-11-12':
@@ -63,6 +69,7 @@ echelon_5:
     '2010-11-12':
       value: 691.5
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2010-11-12':
@@ -76,6 +83,7 @@ echelon_6:
     '2010-11-12':
       value: 703.0
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2010-11-12':
@@ -89,6 +97,7 @@ echelon_7:
     '2010-11-12':
       value: 714.5
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2010-11-12':
@@ -102,6 +111,7 @@ echelon_8:
     '2010-11-12':
       value: 726.0
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2010-11-12':
@@ -115,6 +125,7 @@ echelon_9:
     '2010-11-12':
       value: 737.5
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2010-11-12':
@@ -128,6 +139,7 @@ echelon_10:
     '2010-11-12':
       value: 749.0
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2010-11-12':
@@ -141,6 +153,7 @@ echelon_11:
     '2010-11-12':
       value: 760.5
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2010-11-12':
@@ -154,6 +167,7 @@ echelon_12:
     '2010-11-12':
       value: 772.0
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2010-11-12':
@@ -167,6 +181,7 @@ echelon_13:
     '2010-11-12':
       value: 783.5
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2010-11-12':
@@ -180,6 +195,7 @@ echelon_14:
     '2010-11-12':
       value: 795.0
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2010-11-12':
@@ -193,6 +209,7 @@ echelon_15:
     '2010-11-12':
       value: 806.5
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2010-11-12':
@@ -206,6 +223,7 @@ echelon_16:
     '2010-11-12':
       value: 818.0
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2010-11-12':
@@ -219,6 +237,7 @@ echelon_17:
     '2010-11-12':
       value: 829.5
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2010-11-12':
@@ -232,6 +251,7 @@ echelon_18:
     '2010-11-12':
       value: 841.0
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2010-11-12':
@@ -245,6 +265,7 @@ echelon_19:
     '2010-11-12':
       value: 852.5
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2010-11-12':
@@ -258,6 +279,7 @@ echelon_20:
     '2010-11-12':
       value: 864.0
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2010-11-12':
@@ -271,6 +293,7 @@ echelon_21:
     '2010-11-12':
       value: 875.5
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '2010-11-12':
@@ -284,6 +307,7 @@ echelon_22:
     '2010-11-12':
       value: 887.0
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '2010-11-12':

@@ -1,5 +1,7 @@
 description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
   — indemnité spécifique mensuelle par échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 echelon_1:
   description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
     — indemnité spécifique mensuelle par échelon — échelon 1
@@ -21,6 +23,7 @@ echelon_1:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2001-01-01':
@@ -62,6 +65,7 @@ echelon_2:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2001-01-01':
@@ -103,6 +107,7 @@ echelon_3:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2001-01-01':
@@ -144,6 +149,7 @@ echelon_4:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2001-01-01':
@@ -185,6 +191,7 @@ echelon_5:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2001-01-01':
@@ -226,6 +233,7 @@ echelon_6:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2001-01-01':
@@ -267,6 +275,7 @@ echelon_7:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2001-01-01':
@@ -308,6 +317,7 @@ echelon_8:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2001-01-01':
@@ -349,6 +359,7 @@ echelon_9:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2001-01-01':
@@ -390,6 +401,7 @@ echelon_10:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2001-01-01':
@@ -431,6 +443,7 @@ echelon_11:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2001-01-01':
@@ -472,6 +485,7 @@ echelon_12:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2001-01-01':
@@ -513,6 +527,7 @@ echelon_13:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2001-01-01':
@@ -554,6 +569,7 @@ echelon_14:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2001-01-01':
@@ -595,6 +611,7 @@ echelon_15:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2001-01-01':
@@ -636,6 +653,7 @@ echelon_16:
     '2025-01-01':
       value: 1286.5
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2001-01-01':

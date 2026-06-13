@@ -1,5 +1,7 @@
 description: Corps des travailleurs sociaux du ministère des affaires sociales — grade
   travailleur_social_general — traitement de base mensuel par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des travailleurs sociaux du ministère des affaires sociales —
     grade travailleur_social_general — traitement de base mensuel par échelon — échelon
@@ -8,6 +10,7 @@ echelon_1:
     '2013-01-22':
       value: 714.5
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2013-01-22':
@@ -20,6 +23,7 @@ echelon_2:
     '2013-01-22':
       value: 726.0
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2013-01-22':
@@ -32,6 +36,7 @@ echelon_3:
     '2013-01-22':
       value: 737.5
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2013-01-22':
@@ -44,6 +49,7 @@ echelon_4:
     '2013-01-22':
       value: 749.0
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2013-01-22':
@@ -56,6 +62,7 @@ echelon_5:
     '2013-01-22':
       value: 760.5
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2013-01-22':
@@ -68,6 +75,7 @@ echelon_6:
     '2013-01-22':
       value: 772.0
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2013-01-22':
@@ -80,6 +88,7 @@ echelon_7:
     '2013-01-22':
       value: 783.5
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2013-01-22':
@@ -92,6 +101,7 @@ echelon_8:
     '2013-01-22':
       value: 795.0
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2013-01-22':
@@ -104,6 +114,7 @@ echelon_9:
     '2013-01-22':
       value: 806.5
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2013-01-22':
@@ -116,6 +127,7 @@ echelon_10:
     '2013-01-22':
       value: 818.0
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2013-01-22':
@@ -128,6 +140,7 @@ echelon_11:
     '2013-01-22':
       value: 829.5
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2013-01-22':
@@ -140,6 +153,7 @@ echelon_12:
     '2013-01-22':
       value: 841.0
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2013-01-22':
@@ -152,6 +166,7 @@ echelon_13:
     '2013-01-22':
       value: 852.5
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2013-01-22':
@@ -164,6 +179,7 @@ echelon_14:
     '2013-01-22':
       value: 864.0
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2013-01-22':
@@ -176,6 +192,7 @@ echelon_15:
     '2013-01-22':
       value: 875.5
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2013-01-22':
@@ -188,6 +205,7 @@ echelon_16:
     '2013-01-22':
       value: 887.0
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2013-01-22':
