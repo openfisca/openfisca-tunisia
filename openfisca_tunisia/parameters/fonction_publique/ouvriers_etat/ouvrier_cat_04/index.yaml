@@ -1,0 +1,7 @@
+description: Ouvriers cats 04 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+metadata:
+  short_label: Ouvriers cats 04
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie IV

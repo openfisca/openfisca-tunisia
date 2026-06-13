@@ -1,0 +1,7 @@
+description: Huissiers du tribunaux du corps des corps du greffe du tribunal administratif
+metadata:
+  short_label: Huissiers du tribunaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

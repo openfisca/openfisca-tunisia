@@ -1,0 +1,7 @@
+description: Agents accueils interieurs du corps des corps administratif du ministère de l'intérieur
+metadata:
+  short_label: Agents accueils interieurs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

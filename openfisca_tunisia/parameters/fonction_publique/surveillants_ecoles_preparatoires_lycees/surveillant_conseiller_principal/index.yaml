@@ -1,0 +1,7 @@
+description: Surveillants conseillers principaux du corps des surveillants exerçant dans les écoles préparatoires et les lycées
+metadata:
+  short_label: Surveillants conseillers principaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

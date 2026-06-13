@@ -1,0 +1,7 @@
+description: Psychologues du corps des psychologues des administrations publiques
+metadata:
+  short_label: Psychologues
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

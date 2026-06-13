@@ -1,0 +1,7 @@
+description: Maitres du corps des personnels enseignants exerçant dans les écoles primaires
+metadata:
+  short_label: Maitres
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

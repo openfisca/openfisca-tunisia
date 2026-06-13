@@ -1,0 +1,7 @@
+description: Caporaux des douanes du corps des agents des services douaniers
+metadata:
+  short_label: Caporaux des douanes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

@@ -1,0 +1,378 @@
+description: Traitement de base mensuel des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 94.25
+    '2007-04-01':
+      value: 264.25
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 96.0
+    '2007-04-01':
+      value: 266.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 97.75
+    '2007-04-01':
+      value: 267.75
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 99.5
+    '2007-04-01':
+      value: 269.5
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 101.25
+    '2007-04-01':
+      value: 271.25
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 103.0
+    '2007-04-01':
+      value: 273.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 104.75
+    '2007-04-01':
+      value: 274.75
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 106.5
+    '2007-04-01':
+      value: 276.5
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 108.25
+    '2007-04-01':
+      value: 278.25
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 110.0
+    '2007-04-01':
+      value: 280.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 111.75
+    '2007-04-01':
+      value: 281.75
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 113.5
+    '2007-04-01':
+      value: 283.5
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 115.25
+    '2007-04-01':
+      value: 285.25
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 117.0
+    '2007-04-01':
+      value: 287.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 118.75
+    '2007-04-01':
+      value: 288.75
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 120.5
+    '2007-04-01':
+      value: 290.5
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 122.25
+    '2007-04-01':
+      value: 292.25
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 124.0
+    '2007-04-01':
+      value: 294.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 125.75
+    '2007-04-01':
+      value: 295.75
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 127.5
+    '2007-04-01':
+      value: 297.5
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 129.25
+    '2007-04-01':
+      value: 299.25
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 131.0
+    '2007-04-01':
+      value: 301.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 132.75
+    '2007-04-01':
+      value: 302.75
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 134.5
+    '2007-04-01':
+      value: 304.5
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des ouvriers cats 03 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
+  values:
+    '1998-01-01':
+      value: 136.25
+    '2007-04-01':
+      value: 306.25
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '1998-01-01':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

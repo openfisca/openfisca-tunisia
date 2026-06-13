@@ -1,0 +1,7 @@
+description: Géologues adjoints du corps des géologues
+metadata:
+  short_label: Géologues adjoints
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

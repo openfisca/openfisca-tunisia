@@ -2,5 +2,7 @@ description: Parent à charge (plafond de revenu en SMIG)
 values:
   1990-01-01:
     value: 1
+  2018-01-01:
+    value: 2
 metadata:
   unit: /1

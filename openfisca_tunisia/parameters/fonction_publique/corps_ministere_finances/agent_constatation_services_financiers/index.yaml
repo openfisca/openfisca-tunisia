@@ -1,0 +1,7 @@
+description: Agents constatations services financiers du corps des personnels du ministère des finances
+metadata:
+  short_label: Agents constatations services financiers
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

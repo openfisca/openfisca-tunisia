@@ -1,0 +1,303 @@
+description: Traitement de base mensuel des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 260.5
+    '2007-04-01':
+      value: 668.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 272.0
+    '2007-04-01':
+      value: 680.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 283.5
+    '2007-04-01':
+      value: 691.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 295.0
+    '2007-04-01':
+      value: 703.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 306.5
+    '2007-04-01':
+      value: 714.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 318.0
+    '2007-04-01':
+      value: 726.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 329.5
+    '2007-04-01':
+      value: 737.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 341.0
+    '2007-04-01':
+      value: 749.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 352.5
+    '2007-04-01':
+      value: 760.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 364.0
+    '2007-04-01':
+      value: 772.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 375.5
+    '2007-04-01':
+      value: 783.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 387.0
+    '2007-04-01':
+      value: 795.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 398.5
+    '2007-04-01':
+      value: 806.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 410.0
+    '2007-04-01':
+      value: 818.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 421.5
+    '2007-04-01':
+      value: 829.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 433.0
+    '2007-04-01':
+      value: 841.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 444.5
+    '2007-04-01':
+      value: 852.5
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 456.0
+    '2007-04-01':
+      value: 864.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 467.5
+    '2007-04-01':
+      value: 875.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des conciliateurs en chefs du corps des agents de conciliation du ministère des affaires sociales
+  values:
+    '1999-10-08':
+      value: 479.0
+    '2007-04-01':
+      value: 887.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-10-08':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
