@@ -1,0 +1,7 @@
+description: Conseillers praticiens en chefs emerites en educations du corps des conseillers praticiens en éducation relevant du ministère de l'éducation
+metadata:
+  short_label: Conseillers praticiens en chefs emerites en educations
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

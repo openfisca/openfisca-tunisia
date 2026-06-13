@@ -1,0 +1,7 @@
+description: Conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+metadata:
+  short_label: Conseillers des services financiers de quatriemes degres
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

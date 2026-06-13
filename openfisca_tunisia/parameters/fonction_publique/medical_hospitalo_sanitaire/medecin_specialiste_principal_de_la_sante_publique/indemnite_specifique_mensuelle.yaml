@@ -1,0 +1,906 @@
+description: Indemnité spécifique mensuelle des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des médecins specialistes principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+  values:
+    '1999-10-22':
+      value: 1265.0
+    '2001-05-01':
+      value: 1470.0
+    '2004-05-01':
+      value: 1668.5
+    '2007-05-01':
+      value: 1867.0
+    '2010-05-01':
+      value: 2166.0
+    '2011-01-01':
+      value: 2211.0
+    '2015-01-01':
+      value: 2711.0
+    '2021-07-01':
+      value: 3511.0
+    '2025-01-01':
+      value: 3811.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1999-10-22':
+        title: Décret 96-1923 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2137 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2954 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3198 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4076 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-900 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1798 (+2014-4563, global 2014-2015 à terme)
+      '2021-07-01':
+        title: Décret 2020-83 (colonne Total, global 2020-2021 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)

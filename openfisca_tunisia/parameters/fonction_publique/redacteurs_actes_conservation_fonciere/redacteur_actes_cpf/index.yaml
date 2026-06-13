@@ -1,0 +1,7 @@
+description: Redacteurs actes cpfs du corps des rédacteurs d'actes de la conservation de la propriété foncière
+metadata:
+  short_label: Redacteurs actes cpfs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

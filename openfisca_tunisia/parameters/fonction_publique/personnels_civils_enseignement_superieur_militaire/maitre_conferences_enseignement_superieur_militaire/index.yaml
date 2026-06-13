@@ -1,0 +1,7 @@
+description: Maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
+metadata:
+  short_label: Maitres conférences enseignements supérieurs militaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

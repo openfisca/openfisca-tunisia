@@ -1,0 +1,628 @@
+description: Indemnité spécifique mensuelle des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
+  values:
+    '2000-06-02':
+      value: 0.0
+    '2004-06-07':
+      value: 451.0
+    '2007-01-01':
+      value: 533.5
+    '2010-01-01':
+      value: 657.5
+    '2011-02-01':
+      value: 733.5
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2004-06-07':
+        title: Décret 2002-2837 (global 2002-2004) + 2004-1327 (inspecteur 451 absolu)
+      '2007-01-01':
+        title: Décret 2005-3165 (global 2005-2007)
+      '2010-01-01':
+        title: Décret 2008-4066 (global 2008-2010)
+      '2011-02-01':
+        title: Décret 2011-1262 (+76 charges speciales, tous grades)

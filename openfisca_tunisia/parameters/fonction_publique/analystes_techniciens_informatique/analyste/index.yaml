@@ -1,0 +1,7 @@
+description: Analystes du corps des analystes et des techniciens de l'informatique des administrations publiques
+metadata:
+  short_label: Analystes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

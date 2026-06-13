@@ -1,0 +1,7 @@
+description: Adjoints de 1ère classes de la marines marchandes du corps des personnels spécialisés de la marine marchande dépendant du ministère du transport
+metadata:
+  short_label: Adjoints de 1ère classes de la marines marchandes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

@@ -1,0 +1,7 @@
+description: Secrétaires ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
+metadata:
+  short_label: Secrétaires ens sups
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

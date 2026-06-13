@@ -1,0 +1,7 @@
+description: Médecins principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
+metadata:
+  short_label: Médecins principaux de la santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

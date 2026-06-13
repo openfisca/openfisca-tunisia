@@ -1,4 +1,5 @@
 description: Plafond de déduction au titre du Compte Épargne pour l'Investissement
+unit: currency
 values:
   1990-01-01:
     value: 0

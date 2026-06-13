@@ -1,0 +1,7 @@
+description: Gestionnaires documents archives du corps des gestionnaires de documents et d'archives
+metadata:
+  short_label: Gestionnaires documents archives
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

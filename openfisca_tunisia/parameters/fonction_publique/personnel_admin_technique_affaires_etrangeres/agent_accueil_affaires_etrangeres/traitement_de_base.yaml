@@ -1,0 +1,378 @@
+description: Traitement de base mensuel des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 100.75
+    '2007-04-01':
+      value: 270.75
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 103.75
+    '2007-04-01':
+      value: 273.75
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 106.75
+    '2007-04-01':
+      value: 276.75
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 109.75
+    '2007-04-01':
+      value: 279.75
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 112.75
+    '2007-04-01':
+      value: 282.75
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 115.75
+    '2007-04-01':
+      value: 285.75
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 118.75
+    '2007-04-01':
+      value: 288.75
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 121.75
+    '2007-04-01':
+      value: 291.75
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 124.75
+    '2007-04-01':
+      value: 294.75
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 127.75
+    '2007-04-01':
+      value: 297.75
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 130.75
+    '2007-04-01':
+      value: 300.75
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 133.75
+    '2007-04-01':
+      value: 303.75
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 136.75
+    '2007-04-01':
+      value: 306.75
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 139.75
+    '2007-04-01':
+      value: 309.75
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 142.75
+    '2007-04-01':
+      value: 312.75
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 145.75
+    '2007-04-01':
+      value: 315.75
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 148.75
+    '2007-04-01':
+      value: 318.75
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 151.75
+    '2007-04-01':
+      value: 321.75
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 154.75
+    '2007-04-01':
+      value: 324.75
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 157.75
+    '2007-04-01':
+      value: 327.75
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 160.75
+    '2007-04-01':
+      value: 330.75
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 163.75
+    '2007-04-01':
+      value: 333.75
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 166.75
+    '2007-04-01':
+      value: 336.75
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 169.75
+    '2007-04-01':
+      value: 339.75
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des agents accueils affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+  values:
+    '2000-03-03':
+      value: 172.75
+    '2007-04-01':
+      value: 342.75
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2000-03-03':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

@@ -1,0 +1,7 @@
+description: Médecins veterinaires inspecteurs généraux du corps des médecins vétérinaires inspecteurs
+metadata:
+  short_label: Médecins veterinaires inspecteurs généraux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
