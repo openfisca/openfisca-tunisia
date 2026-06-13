@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère des finances — grade inspecteur_en_chef_services_financiers
+description: Inspecteurs en chefs services financiers du corps des personnels du ministère des finances
 metadata:
+  short_label: Inspecteurs en chefs services financiers
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

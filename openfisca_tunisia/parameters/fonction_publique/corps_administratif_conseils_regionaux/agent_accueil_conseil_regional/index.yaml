@@ -1,5 +1,6 @@
-description: Corps administratif des conseils régionaux — grade agent_accueil_conseil_regional
+description: Agents accueils conseils régionaux du corps des corps administratif des conseils régionaux
 metadata:
+  short_label: Agents accueils conseils régionaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

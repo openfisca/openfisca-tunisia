@@ -1,5 +1,6 @@
-description: Corps administratif de la santé publique — grade secretaire_administration_sante_publique
+description: Secrétaires administrations santes publiques du corps des corps administratif de la santé publique
 metadata:
+  short_label: Secrétaires administrations santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,11 +1,8 @@
-description: Corps des agents des bibliothèques et de la documentation dans les administrations
-  publiques — grade agent_accueil_bibliotheques — traitement de base mensuel par échelon
+description: Traitement de base mensuel des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 100.75
@@ -20,9 +17,7 @@ echelon_1:
       '2007-04-01':
         title: Décret 2007-268
 echelon_2:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 103.75
@@ -37,9 +32,7 @@ echelon_2:
       '2007-04-01':
         title: Décret 2007-268
 echelon_3:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 106.75
@@ -54,9 +47,7 @@ echelon_3:
       '2007-04-01':
         title: Décret 2007-268
 echelon_4:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 109.75
@@ -71,9 +62,7 @@ echelon_4:
       '2007-04-01':
         title: Décret 2007-268
 echelon_5:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 112.75
@@ -88,9 +77,7 @@ echelon_5:
       '2007-04-01':
         title: Décret 2007-268
 echelon_6:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 115.75
@@ -105,9 +92,7 @@ echelon_6:
       '2007-04-01':
         title: Décret 2007-268
 echelon_7:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 118.75
@@ -122,9 +107,7 @@ echelon_7:
       '2007-04-01':
         title: Décret 2007-268
 echelon_8:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 121.75
@@ -139,9 +122,7 @@ echelon_8:
       '2007-04-01':
         title: Décret 2007-268
 echelon_9:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 124.75
@@ -156,9 +137,7 @@ echelon_9:
       '2007-04-01':
         title: Décret 2007-268
 echelon_10:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 127.75
@@ -173,9 +152,7 @@ echelon_10:
       '2007-04-01':
         title: Décret 2007-268
 echelon_11:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 130.75
@@ -190,9 +167,7 @@ echelon_11:
       '2007-04-01':
         title: Décret 2007-268
 echelon_12:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 133.75
@@ -207,9 +182,7 @@ echelon_12:
       '2007-04-01':
         title: Décret 2007-268
 echelon_13:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 136.75
@@ -224,9 +197,7 @@ echelon_13:
       '2007-04-01':
         title: Décret 2007-268
 echelon_14:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 139.75
@@ -241,9 +212,7 @@ echelon_14:
       '2007-04-01':
         title: Décret 2007-268
 echelon_15:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 142.75
@@ -258,9 +227,7 @@ echelon_15:
       '2007-04-01':
         title: Décret 2007-268
 echelon_16:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 145.75
@@ -275,9 +242,7 @@ echelon_16:
       '2007-04-01':
         title: Décret 2007-268
 echelon_17:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 148.75
@@ -292,9 +257,7 @@ echelon_17:
       '2007-04-01':
         title: Décret 2007-268
 echelon_18:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 151.75
@@ -309,9 +272,7 @@ echelon_18:
       '2007-04-01':
         title: Décret 2007-268
 echelon_19:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 154.75
@@ -326,9 +287,7 @@ echelon_19:
       '2007-04-01':
         title: Décret 2007-268
 echelon_20:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 157.75
@@ -343,9 +302,7 @@ echelon_20:
       '2007-04-01':
         title: Décret 2007-268
 echelon_21:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 160.75
@@ -360,9 +317,7 @@ echelon_21:
       '2007-04-01':
         title: Décret 2007-268
 echelon_22:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 163.75
@@ -377,9 +332,7 @@ echelon_22:
       '2007-04-01':
         title: Décret 2007-268
 echelon_23:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 166.75
@@ -394,9 +347,7 @@ echelon_23:
       '2007-04-01':
         title: Décret 2007-268
 echelon_24:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 169.75
@@ -411,9 +362,7 @@ echelon_24:
       '2007-04-01':
         title: Décret 2007-268
 echelon_25:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade agent_accueil_bibliotheques — traitement de
-    base mensuel par échelon — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des agents accueils bibliothèques du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 172.75

@@ -1,5 +1,6 @@
-description: Corps administratif de la chambre des députés — grade conseiller_deuxieme_ordre_chambre_deputes
+description: Conseillers deuxiemes ordres chambres deputes du corps des corps administratif de la chambre des députés
 metadata:
+  short_label: Conseillers deuxiemes ordres chambres deputes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

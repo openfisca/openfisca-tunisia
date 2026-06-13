@@ -1,5 +1,6 @@
-description: Corps des enseignants chercheurs des universités — grade professeur_de_l_enseignement_superieur
+description: Professeurs de l'enseignements supérieurs du corps des enseignants chercheurs des universités
 metadata:
+  short_label: Professeurs de l'enseignements supérieurs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

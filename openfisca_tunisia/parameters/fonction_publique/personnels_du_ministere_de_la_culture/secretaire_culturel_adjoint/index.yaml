@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère de la culture — grade secretaire_culturel_adjoint
+description: Secrétaires culturels adjoints du corps des personnels du ministère de la culture
 metadata:
+  short_label: Secrétaires culturels adjoints
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

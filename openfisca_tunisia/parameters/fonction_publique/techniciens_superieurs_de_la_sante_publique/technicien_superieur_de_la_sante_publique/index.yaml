@@ -1,6 +1,6 @@
-description: Corps commun des techniciens supérieurs de la santé publique — grade
-  technicien_superieur_de_la_sante_publique
+description: Techniciens supérieurs de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
 metadata:
+  short_label: Techniciens supérieurs de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

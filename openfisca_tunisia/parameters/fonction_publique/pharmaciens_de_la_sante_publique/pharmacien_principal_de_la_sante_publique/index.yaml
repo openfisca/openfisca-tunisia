@@ -1,5 +1,6 @@
-description: Corps des pharmaciens de la santé publique — grade pharmacien_principal_de_la_sante_publique
+description: Pharmaciens principaux de la santes publiques du corps des pharmaciens de la santé publique
 metadata:
+  short_label: Pharmaciens principaux de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps du contrôle économique — grade inspecteur_controle_economique
+description: Inspecteurs controles économiques du corps des corps du contrôle économique
 metadata:
+  short_label: Inspecteurs controles économiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

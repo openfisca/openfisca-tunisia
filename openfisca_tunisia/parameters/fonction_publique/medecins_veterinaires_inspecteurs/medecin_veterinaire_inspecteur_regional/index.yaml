@@ -1,5 +1,6 @@
-description: Corps des médecins vétérinaires inspecteurs — grade medecin_veterinaire_inspecteur_regional
+description: Médecins veterinaires inspecteurs régionaux du corps des médecins vétérinaires inspecteurs
 metadata:
+  short_label: Médecins veterinaires inspecteurs régionaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère des finances — grade agent_accueil_services_financiers
+description: Agents accueils services financiers du corps des personnels du ministère des finances
 metadata:
+  short_label: Agents accueils services financiers
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

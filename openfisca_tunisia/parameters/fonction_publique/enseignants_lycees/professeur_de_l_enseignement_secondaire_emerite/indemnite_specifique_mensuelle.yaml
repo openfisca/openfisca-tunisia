@@ -1,12 +1,8 @@
-description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-  et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-  spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -17,9 +13,7 @@ echelon_1:
       '2013-02-05':
         title: Décret 2013-667
 echelon_2:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -30,9 +24,7 @@ echelon_2:
       '2013-02-05':
         title: Décret 2013-667
 echelon_3:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -43,9 +35,7 @@ echelon_3:
       '2013-02-05':
         title: Décret 2013-667
 echelon_4:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -56,9 +46,7 @@ echelon_4:
       '2013-02-05':
         title: Décret 2013-667
 echelon_5:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -69,9 +57,7 @@ echelon_5:
       '2013-02-05':
         title: Décret 2013-667
 echelon_6:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -82,9 +68,7 @@ echelon_6:
       '2013-02-05':
         title: Décret 2013-667
 echelon_7:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -95,9 +79,7 @@ echelon_7:
       '2013-02-05':
         title: Décret 2013-667
 echelon_8:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -108,9 +90,7 @@ echelon_8:
       '2013-02-05':
         title: Décret 2013-667
 echelon_9:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -121,9 +101,7 @@ echelon_9:
       '2013-02-05':
         title: Décret 2013-667
 echelon_10:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -134,9 +112,7 @@ echelon_10:
       '2013-02-05':
         title: Décret 2013-667
 echelon_11:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -147,9 +123,7 @@ echelon_11:
       '2013-02-05':
         title: Décret 2013-667
 echelon_12:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -160,9 +134,7 @@ echelon_12:
       '2013-02-05':
         title: Décret 2013-667
 echelon_13:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -173,9 +145,7 @@ echelon_13:
       '2013-02-05':
         title: Décret 2013-667
 echelon_14:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -186,9 +156,7 @@ echelon_14:
       '2013-02-05':
         title: Décret 2013-667
 echelon_15:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -199,9 +167,7 @@ echelon_15:
       '2013-02-05':
         title: Décret 2013-667
 echelon_16:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -212,9 +178,7 @@ echelon_16:
       '2013-02-05':
         title: Décret 2013-667
 echelon_17:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -225,9 +189,7 @@ echelon_17:
       '2013-02-05':
         title: Décret 2013-667
 echelon_18:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -238,9 +200,7 @@ echelon_18:
       '2013-02-05':
         title: Décret 2013-667
 echelon_19:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0
@@ -251,9 +211,7 @@ echelon_19:
       '2013-02-05':
         title: Décret 2013-667
 echelon_20:
-  description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-    et les lycées — grade professeur_de_l_enseignement_secondaire_emerite — indemnité
-    spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des professeurs de l'enseignements secondaires emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
   values:
     '2013-02-05':
       value: 693.0

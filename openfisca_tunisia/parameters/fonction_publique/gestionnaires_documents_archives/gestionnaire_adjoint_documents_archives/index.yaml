@@ -1,5 +1,6 @@
-description: Corps des gestionnaires de documents et d'archives — grade gestionnaire_adjoint_documents_archives
+description: Gestionnaires adjoints documents archives du corps des gestionnaires de documents et d'archives
 metadata:
+  short_label: Gestionnaires adjoints documents archives
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

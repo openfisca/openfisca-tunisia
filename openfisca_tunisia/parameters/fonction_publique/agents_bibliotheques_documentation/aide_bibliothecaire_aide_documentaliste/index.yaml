@@ -1,6 +1,6 @@
-description: Corps des agents des bibliothèques et de la documentation dans les administrations
-  publiques — grade aide_bibliothecaire_aide_documentaliste
+description: Aides bibliothecaires aides documentalistes du corps des agents des bibliothèques et de la documentation dans les administrations publiques
 metadata:
+  short_label: Aides bibliothecaires aides documentalistes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

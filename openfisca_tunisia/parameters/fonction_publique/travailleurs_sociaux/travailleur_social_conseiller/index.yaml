@@ -1,6 +1,6 @@
-description: Corps des travailleurs sociaux du ministère des affaires sociales — grade
-  travailleur_social_conseiller
+description: Travailleurs sociaux conseillers du corps des travailleurs sociaux du ministère des affaires sociales
 metadata:
+  short_label: Travailleurs sociaux conseillers
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

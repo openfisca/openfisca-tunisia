@@ -1,5 +1,6 @@
-description: Corps de la conservation de la propriété foncière — grade inspecteur_central_de_la_propriete_fonciere
+description: Inspecteurs centraux de la proprietes foncieres du corps des la conservation de la propriété foncière
 metadata:
+  short_label: Inspecteurs centraux de la proprietes foncieres
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

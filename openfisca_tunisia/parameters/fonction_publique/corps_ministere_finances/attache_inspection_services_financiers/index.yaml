@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère des finances — grade attache_inspection_services_financiers
+description: Attachés inspections services financiers du corps des personnels du ministère des finances
 metadata:
+  short_label: Attachés inspections services financiers
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

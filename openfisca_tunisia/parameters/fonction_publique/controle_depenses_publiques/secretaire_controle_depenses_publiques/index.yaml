@@ -1,5 +1,6 @@
-description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
+description: Secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
 metadata:
+  short_label: Secrétaires controles dépenses publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

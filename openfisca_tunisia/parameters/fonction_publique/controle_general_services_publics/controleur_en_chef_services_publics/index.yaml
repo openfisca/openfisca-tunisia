@@ -1,5 +1,6 @@
-description: Corps du contrôle général des services publics — grade controleur_en_chef_services_publics
+description: Contrôleurs en chefs services publics du corps des corps du contrôle général des services publics
 metadata:
+  short_label: Contrôleurs en chefs services publics
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

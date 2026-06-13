@@ -1,12 +1,8 @@
-description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-  publics à caractère administratif — grade ouvrier_cat_05 — traitement de base mensuel
-  par échelon
+description: Traitement de base mensuel des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 107.5
@@ -21,9 +17,7 @@ echelon_1:
       '2007-04-01':
         title: Décret 2007-268
 echelon_2:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 110.5
@@ -38,9 +32,7 @@ echelon_2:
       '2007-04-01':
         title: Décret 2007-268
 echelon_3:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 113.5
@@ -55,9 +47,7 @@ echelon_3:
       '2007-04-01':
         title: Décret 2007-268
 echelon_4:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 116.5
@@ -72,9 +62,7 @@ echelon_4:
       '2007-04-01':
         title: Décret 2007-268
 echelon_5:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 119.5
@@ -89,9 +77,7 @@ echelon_5:
       '2007-04-01':
         title: Décret 2007-268
 echelon_6:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 122.5
@@ -106,9 +92,7 @@ echelon_6:
       '2007-04-01':
         title: Décret 2007-268
 echelon_7:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 125.5
@@ -123,9 +107,7 @@ echelon_7:
       '2007-04-01':
         title: Décret 2007-268
 echelon_8:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 128.5
@@ -140,9 +122,7 @@ echelon_8:
       '2007-04-01':
         title: Décret 2007-268
 echelon_9:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 131.5
@@ -157,9 +137,7 @@ echelon_9:
       '2007-04-01':
         title: Décret 2007-268
 echelon_10:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 134.5
@@ -174,9 +152,7 @@ echelon_10:
       '2007-04-01':
         title: Décret 2007-268
 echelon_11:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 137.5
@@ -191,9 +167,7 @@ echelon_11:
       '2007-04-01':
         title: Décret 2007-268
 echelon_12:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 140.5
@@ -208,9 +182,7 @@ echelon_12:
       '2007-04-01':
         title: Décret 2007-268
 echelon_13:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 143.5
@@ -225,9 +197,7 @@ echelon_13:
       '2007-04-01':
         title: Décret 2007-268
 echelon_14:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 146.5
@@ -242,9 +212,7 @@ echelon_14:
       '2007-04-01':
         title: Décret 2007-268
 echelon_15:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 149.5
@@ -259,9 +227,7 @@ echelon_15:
       '2007-04-01':
         title: Décret 2007-268
 echelon_16:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 152.5
@@ -276,9 +242,7 @@ echelon_16:
       '2007-04-01':
         title: Décret 2007-268
 echelon_17:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 155.5
@@ -293,9 +257,7 @@ echelon_17:
       '2007-04-01':
         title: Décret 2007-268
 echelon_18:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 158.5
@@ -310,9 +272,7 @@ echelon_18:
       '2007-04-01':
         title: Décret 2007-268
 echelon_19:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 161.5
@@ -327,9 +287,7 @@ echelon_19:
       '2007-04-01':
         title: Décret 2007-268
 echelon_20:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 164.5
@@ -344,9 +302,7 @@ echelon_20:
       '2007-04-01':
         title: Décret 2007-268
 echelon_21:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 167.5
@@ -361,9 +317,7 @@ echelon_21:
       '2007-04-01':
         title: Décret 2007-268
 echelon_22:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 170.5
@@ -378,9 +332,7 @@ echelon_22:
       '2007-04-01':
         title: Décret 2007-268
 echelon_23:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 173.5
@@ -395,9 +347,7 @@ echelon_23:
       '2007-04-01':
         title: Décret 2007-268
 echelon_24:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 176.5
@@ -412,9 +362,7 @@ echelon_24:
       '2007-04-01':
         title: Décret 2007-268
 echelon_25:
-  description: Corps des ouvriers de l'État, des collectivités locales et des établissements
-    publics à caractère administratif — grade ouvrier_cat_05 — traitement de base
-    mensuel par échelon — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des ouvriers cats 05 du corps des ouvriers de l'État, des collectivités locales et des établissements publics à caractère administratif
   values:
     '1998-01-01':
       value: 179.5

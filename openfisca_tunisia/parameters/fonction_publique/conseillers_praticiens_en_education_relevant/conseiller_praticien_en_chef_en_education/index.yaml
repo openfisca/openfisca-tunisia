@@ -1,6 +1,6 @@
-description: Corps des conseillers praticiens en éducation relevant du ministère de
-  l'éducation — grade conseiller_praticien_en_chef_en_education
+description: Conseillers praticiens en chefs en educations du corps des conseillers praticiens en éducation relevant du ministère de l'éducation
 metadata:
+  short_label: Conseillers praticiens en chefs en educations
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

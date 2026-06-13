@@ -1,5 +1,6 @@
-description: Corps des greffes de la cour des comptes — grade administrateur_conseiller_greffe_cour_comptes
+description: Administrateurs conseillers greffes cours comptes du corps des greffes de la cour des comptes
 metadata:
+  short_label: Administrateurs conseillers greffes cours comptes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

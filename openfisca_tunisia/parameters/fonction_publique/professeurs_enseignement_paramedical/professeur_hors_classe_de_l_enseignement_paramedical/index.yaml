@@ -1,6 +1,6 @@
-description: Corps des professeurs de l'enseignement paramédical relevant du ministère
-  de la santé publique — grade professeur_hors_classe_de_l_enseignement_paramedical
+description: Professeurs hors classes de l'enseignements paramedicaux du corps des professeurs de l'enseignement paramédical relevant du ministère de la santé publique
 metadata:
+  short_label: Professeurs hors classes de l'enseignements paramedicaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

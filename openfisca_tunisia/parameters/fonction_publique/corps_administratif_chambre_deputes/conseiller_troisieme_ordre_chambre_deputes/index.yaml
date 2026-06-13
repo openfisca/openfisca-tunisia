@@ -1,5 +1,6 @@
-description: Corps administratif de la chambre des députés — grade conseiller_troisieme_ordre_chambre_deputes
+description: Conseillers troisiemes ordres chambres deputes du corps des corps administratif de la chambre des députés
 metadata:
+  short_label: Conseillers troisiemes ordres chambres deputes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

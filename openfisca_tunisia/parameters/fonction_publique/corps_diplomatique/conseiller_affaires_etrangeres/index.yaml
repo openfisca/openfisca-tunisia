@@ -1,5 +1,6 @@
-description: Corps diplomatique du ministère des affaires étrangères — grade conseiller_affaires_etrangeres
+description: Conseillers affaires étrangères du corps des corps diplomatique du ministère des affaires étrangères
 metadata:
+  short_label: Conseillers affaires étrangères
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

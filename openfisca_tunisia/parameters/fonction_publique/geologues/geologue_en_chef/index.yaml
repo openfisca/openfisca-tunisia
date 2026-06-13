@@ -1,5 +1,6 @@
-description: Corps des géologues — grade geologue_en_chef
+description: Géologues en chefs du corps des géologues
 metadata:
+  short_label: Géologues en chefs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

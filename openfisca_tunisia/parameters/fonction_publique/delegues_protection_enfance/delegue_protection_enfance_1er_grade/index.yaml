@@ -1,5 +1,6 @@
-description: Corps des délégués à la protection de l'enfance — grade delegue_protection_enfance_1er_grade
+description: Delegues protections enfances 1er grades du corps des délégués à la protection de l'enfance
 metadata:
+  short_label: Delegues protections enfances 1er grades
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

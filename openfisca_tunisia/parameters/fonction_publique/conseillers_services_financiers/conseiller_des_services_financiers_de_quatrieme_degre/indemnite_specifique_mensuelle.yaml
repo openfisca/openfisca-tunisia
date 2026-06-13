@@ -1,10 +1,8 @@
-description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -19,8 +17,7 @@ echelon_1:
       '2021-02-09':
         title: Décret 2021-105
 echelon_2:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -35,8 +32,7 @@ echelon_2:
       '2021-02-09':
         title: Décret 2021-105
 echelon_3:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -51,8 +47,7 @@ echelon_3:
       '2021-02-09':
         title: Décret 2021-105
 echelon_4:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -67,8 +62,7 @@ echelon_4:
       '2021-02-09':
         title: Décret 2021-105
 echelon_5:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -83,8 +77,7 @@ echelon_5:
       '2021-02-09':
         title: Décret 2021-105
 echelon_6:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -99,8 +92,7 @@ echelon_6:
       '2021-02-09':
         title: Décret 2021-105
 echelon_7:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -115,8 +107,7 @@ echelon_7:
       '2021-02-09':
         title: Décret 2021-105
 echelon_8:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -131,8 +122,7 @@ echelon_8:
       '2021-02-09':
         title: Décret 2021-105
 echelon_9:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -147,8 +137,7 @@ echelon_9:
       '2021-02-09':
         title: Décret 2021-105
 echelon_10:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -163,8 +152,7 @@ echelon_10:
       '2021-02-09':
         title: Décret 2021-105
 echelon_11:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -179,8 +167,7 @@ echelon_11:
       '2021-02-09':
         title: Décret 2021-105
 echelon_12:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -195,8 +182,7 @@ echelon_12:
       '2021-02-09':
         title: Décret 2021-105
 echelon_13:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -211,8 +197,7 @@ echelon_13:
       '2021-02-09':
         title: Décret 2021-105
 echelon_14:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -227,8 +212,7 @@ echelon_14:
       '2021-02-09':
         title: Décret 2021-105
 echelon_15:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -243,8 +227,7 @@ echelon_15:
       '2021-02-09':
         title: Décret 2021-105
 echelon_16:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -259,8 +242,7 @@ echelon_16:
       '2021-02-09':
         title: Décret 2021-105
 echelon_17:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -275,8 +257,7 @@ echelon_17:
       '2021-02-09':
         title: Décret 2021-105
 echelon_18:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -291,8 +272,7 @@ echelon_18:
       '2021-02-09':
         title: Décret 2021-105
 echelon_19:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -307,8 +287,7 @@ echelon_19:
       '2021-02-09':
         title: Décret 2021-105
 echelon_20:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -323,8 +302,7 @@ echelon_20:
       '2021-02-09':
         title: Décret 2021-105
 echelon_21:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 21
+  description: Indemnité spécifique mensuelle de l'échelon 21 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -339,8 +317,7 @@ echelon_21:
       '2021-02-09':
         title: Décret 2021-105
 echelon_22:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 22
+  description: Indemnité spécifique mensuelle de l'échelon 22 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -355,8 +332,7 @@ echelon_22:
       '2021-02-09':
         title: Décret 2021-105
 echelon_23:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 23
+  description: Indemnité spécifique mensuelle de l'échelon 23 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -371,8 +347,7 @@ echelon_23:
       '2021-02-09':
         title: Décret 2021-105
 echelon_24:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 24
+  description: Indemnité spécifique mensuelle de l'échelon 24 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0
@@ -387,8 +362,7 @@ echelon_24:
       '2021-02-09':
         title: Décret 2021-105
 echelon_25:
-  description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
-    — indemnité spécifique mensuelle par échelon — échelon 25
+  description: Indemnité spécifique mensuelle de l'échelon 25 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
   values:
     '2020-02-28':
       value: 950.0

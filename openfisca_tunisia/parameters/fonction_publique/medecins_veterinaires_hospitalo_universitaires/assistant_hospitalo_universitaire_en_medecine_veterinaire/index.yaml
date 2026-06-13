@@ -1,5 +1,6 @@
-description: Corps des médecins vétérinaires hospitalo-universitaires — grade assistant_hospitalo_universitaire_en_medecine_veterinaire
+description: Assistants hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
 metadata:
+  short_label: Assistants hospitalo universitaires en medecines veterinaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

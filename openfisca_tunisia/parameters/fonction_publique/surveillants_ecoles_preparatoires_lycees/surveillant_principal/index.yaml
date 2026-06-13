@@ -1,6 +1,6 @@
-description: Corps des surveillants exerçant dans les écoles préparatoires et les
-  lycées — grade surveillant_principal
+description: Surveillants principaux du corps des surveillants exerçant dans les écoles préparatoires et les lycées
 metadata:
+  short_label: Surveillants principaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

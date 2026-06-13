@@ -1,5 +1,6 @@
-description: Corps des enseignants chercheurs des universités — grade maitre_assistant
+description: Maitres assistants du corps des enseignants chercheurs des universités
 metadata:
+  short_label: Maitres assistants
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des médecins dentistes hospitalo-sanitaires — grade medecin_dentiste_specialiste_major_de_la_sante_publique
+description: Médecins dentistes specialistes majors de la santes publiques du corps des médecins dentistes hospitalo-sanitaires
 metadata:
+  short_label: Médecins dentistes specialistes majors de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

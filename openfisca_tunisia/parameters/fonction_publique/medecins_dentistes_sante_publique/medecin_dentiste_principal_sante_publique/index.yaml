@@ -1,5 +1,6 @@
-description: Corps des médecins dentistes de la santé publique — grade medecin_dentiste_principal_sante_publique
+description: Médecins dentistes principaux santes publiques du corps des médecins dentistes de la santé publique
 metadata:
+  short_label: Médecins dentistes principaux santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,7 +1,6 @@
-description: Corps des personnels enseignants relevant du ministère de la jeunesse
-  et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-  professeur_principal_emerite_classe_exceptionnelle_ep
+description: Professeurs principaux emerites classes exceptionnelles eps du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
 metadata:
+  short_label: Professeurs principaux emerites classes exceptionnelles eps
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

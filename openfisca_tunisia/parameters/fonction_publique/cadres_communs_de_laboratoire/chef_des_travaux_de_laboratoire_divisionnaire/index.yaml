@@ -1,5 +1,6 @@
-description: Corps des personnels des cadres communs de laboratoire — grade chef_des_travaux_de_laboratoire_divisionnaire
+description: Chefs des travaux de laboratoires divisionnaires du corps des personnels des cadres communs de laboratoire
 metadata:
+  short_label: Chefs des travaux de laboratoires divisionnaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

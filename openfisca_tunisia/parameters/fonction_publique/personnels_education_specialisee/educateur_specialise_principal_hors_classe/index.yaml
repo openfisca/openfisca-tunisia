@@ -1,6 +1,6 @@
-description: Corps des personnels de l'éducation spécialisée du ministère des affaires
-  sociales — grade educateur_specialise_principal_hors_classe
+description: Educateurs spécialisés principaux hors classes du corps des personnels de l'éducation spécialisée du ministère des affaires sociales
 metadata:
+  short_label: Educateurs spécialisés principaux hors classes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des médecins vétérinaires inspecteurs — grade medecin_veterinaire_inspecteur_general
+description: Médecins veterinaires inspecteurs généraux du corps des médecins vétérinaires inspecteurs
 metadata:
+  short_label: Médecins veterinaires inspecteurs généraux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,6 +1,6 @@
-description: Corps des personnels enseignants exerçant dans les écoles primaires —
-  grade maitre_dapplication
+description: Maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
 metadata:
+  short_label: Maitres dapplications
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

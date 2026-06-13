@@ -1,13 +1,8 @@
-description: Corps des personnels enseignants relevant du ministère de la jeunesse
-  et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-  professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
+description: Traitement de base mensuel des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 611.0
@@ -18,10 +13,7 @@ echelon_1:
       '2019-11-01':
         title: Décret 2007-268
 echelon_2:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 622.5
@@ -32,10 +24,7 @@ echelon_2:
       '2019-11-01':
         title: Décret 2007-268
 echelon_3:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 634.0
@@ -46,10 +35,7 @@ echelon_3:
       '2019-11-01':
         title: Décret 2007-268
 echelon_4:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 645.5
@@ -60,10 +46,7 @@ echelon_4:
       '2019-11-01':
         title: Décret 2007-268
 echelon_5:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 657.0
@@ -74,10 +57,7 @@ echelon_5:
       '2019-11-01':
         title: Décret 2007-268
 echelon_6:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 668.5
@@ -88,10 +68,7 @@ echelon_6:
       '2019-11-01':
         title: Décret 2007-268
 echelon_7:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 680.0
@@ -102,10 +79,7 @@ echelon_7:
       '2019-11-01':
         title: Décret 2007-268
 echelon_8:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 691.5
@@ -116,10 +90,7 @@ echelon_8:
       '2019-11-01':
         title: Décret 2007-268
 echelon_9:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 703.0
@@ -130,10 +101,7 @@ echelon_9:
       '2019-11-01':
         title: Décret 2007-268
 echelon_10:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 714.5
@@ -144,10 +112,7 @@ echelon_10:
       '2019-11-01':
         title: Décret 2007-268
 echelon_11:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 726.0
@@ -158,10 +123,7 @@ echelon_11:
       '2019-11-01':
         title: Décret 2007-268
 echelon_12:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 737.5
@@ -172,10 +134,7 @@ echelon_12:
       '2019-11-01':
         title: Décret 2007-268
 echelon_13:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 749.0
@@ -186,10 +145,7 @@ echelon_13:
       '2019-11-01':
         title: Décret 2007-268
 echelon_14:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 760.5
@@ -200,10 +156,7 @@ echelon_14:
       '2019-11-01':
         title: Décret 2007-268
 echelon_15:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 772.0
@@ -214,10 +167,7 @@ echelon_15:
       '2019-11-01':
         title: Décret 2007-268
 echelon_16:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 783.5
@@ -228,10 +178,7 @@ echelon_16:
       '2019-11-01':
         title: Décret 2007-268
 echelon_17:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 795.0
@@ -242,10 +189,7 @@ echelon_17:
       '2019-11-01':
         title: Décret 2007-268
 echelon_18:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 806.5
@@ -256,10 +200,7 @@ echelon_18:
       '2019-11-01':
         title: Décret 2007-268
 echelon_19:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 818.0
@@ -270,10 +211,7 @@ echelon_19:
       '2019-11-01':
         title: Décret 2007-268
 echelon_20:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 829.5
@@ -284,10 +222,7 @@ echelon_20:
       '2019-11-01':
         title: Décret 2007-268
 echelon_21:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 841.0
@@ -298,10 +233,7 @@ echelon_21:
       '2019-11-01':
         title: Décret 2007-268
 echelon_22:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 852.5
@@ -312,10 +244,7 @@ echelon_22:
       '2019-11-01':
         title: Décret 2007-268
 echelon_23:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 864.0
@@ -326,10 +255,7 @@ echelon_23:
       '2019-11-01':
         title: Décret 2007-268
 echelon_24:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 875.5
@@ -340,10 +266,7 @@ echelon_24:
       '2019-11-01':
         title: Décret 2007-268
 echelon_25:
-  description: Corps des personnels enseignants relevant du ministère de la jeunesse
-    et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-    professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des professeurs principaux eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
   values:
     '2019-11-01':
       value: 887.0

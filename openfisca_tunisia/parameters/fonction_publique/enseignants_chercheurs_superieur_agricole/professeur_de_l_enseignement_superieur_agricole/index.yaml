@@ -1,6 +1,6 @@
-description: Corps des enseignants chercheurs des établissements d'enseignement supérieur
-  agricole — grade professeur_de_l_enseignement_superieur_agricole
+description: Professeurs de l'enseignements supérieurs agricoles du corps des enseignants chercheurs des établissements d'enseignement supérieur agricole
 metadata:
+  short_label: Professeurs de l'enseignements supérieurs agricoles
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

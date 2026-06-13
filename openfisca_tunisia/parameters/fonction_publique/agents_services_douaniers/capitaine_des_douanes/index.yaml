@@ -1,5 +1,6 @@
-description: Corps des agents des services douaniers — grade capitaine_des_douanes
+description: Capitaines des douanes du corps des agents des services douaniers
 metadata:
+  short_label: Capitaines des douanes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

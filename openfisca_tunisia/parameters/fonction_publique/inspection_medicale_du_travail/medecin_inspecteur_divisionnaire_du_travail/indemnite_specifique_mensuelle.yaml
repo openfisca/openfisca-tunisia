@@ -1,10 +1,8 @@
-description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -19,8 +17,7 @@ echelon_1:
       '2022-11-08':
         title: Décret 2022-797
 echelon_2:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -35,8 +32,7 @@ echelon_2:
       '2022-11-08':
         title: Décret 2022-797
 echelon_3:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -51,8 +47,7 @@ echelon_3:
       '2022-11-08':
         title: Décret 2022-797
 echelon_4:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -67,8 +62,7 @@ echelon_4:
       '2022-11-08':
         title: Décret 2022-797
 echelon_5:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -83,8 +77,7 @@ echelon_5:
       '2022-11-08':
         title: Décret 2022-797
 echelon_6:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -99,8 +92,7 @@ echelon_6:
       '2022-11-08':
         title: Décret 2022-797
 echelon_7:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -115,8 +107,7 @@ echelon_7:
       '2022-11-08':
         title: Décret 2022-797
 echelon_8:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -131,8 +122,7 @@ echelon_8:
       '2022-11-08':
         title: Décret 2022-797
 echelon_9:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -147,8 +137,7 @@ echelon_9:
       '2022-11-08':
         title: Décret 2022-797
 echelon_10:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -163,8 +152,7 @@ echelon_10:
       '2022-11-08':
         title: Décret 2022-797
 echelon_11:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -179,8 +167,7 @@ echelon_11:
       '2022-11-08':
         title: Décret 2022-797
 echelon_12:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -195,8 +182,7 @@ echelon_12:
       '2022-11-08':
         title: Décret 2022-797
 echelon_13:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -211,8 +197,7 @@ echelon_13:
       '2022-11-08':
         title: Décret 2022-797
 echelon_14:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -227,8 +212,7 @@ echelon_14:
       '2022-11-08':
         title: Décret 2022-797
 echelon_15:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -243,8 +227,7 @@ echelon_15:
       '2022-11-08':
         title: Décret 2022-797
 echelon_16:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -259,8 +242,7 @@ echelon_16:
       '2022-11-08':
         title: Décret 2022-797
 echelon_17:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -275,8 +257,7 @@ echelon_17:
       '2022-11-08':
         title: Décret 2022-797
 echelon_18:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -291,8 +272,7 @@ echelon_18:
       '2022-11-08':
         title: Décret 2022-797
 echelon_19:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0
@@ -307,8 +287,7 @@ echelon_19:
       '2022-11-08':
         title: Décret 2022-797
 echelon_20:
-  description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_divisionnaire_du_travail
-    — indemnité spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des médecins inspecteurs divisionnaires du travails du corps des l'inspection médicale du travail
   values:
     '2014-12-09':
       value: 2212.0

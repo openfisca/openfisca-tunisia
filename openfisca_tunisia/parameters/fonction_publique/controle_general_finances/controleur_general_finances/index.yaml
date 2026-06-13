@@ -1,5 +1,6 @@
-description: Corps du contrôle général des finances — grade controleur_general_finances
+description: Contrôleurs généraux finances du corps des corps du contrôle général des finances
 metadata:
+  short_label: Contrôleurs généraux finances
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

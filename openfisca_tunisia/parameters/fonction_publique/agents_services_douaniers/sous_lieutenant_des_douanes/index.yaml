@@ -1,5 +1,6 @@
-description: Corps des agents des services douaniers — grade sous_lieutenant_des_douanes
+description: Sous lieutenants des douanes du corps des agents des services douaniers
 metadata:
+  short_label: Sous lieutenants des douanes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

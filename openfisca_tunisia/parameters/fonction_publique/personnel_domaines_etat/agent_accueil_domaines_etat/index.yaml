@@ -1,6 +1,6 @@
-description: Corps du personnel des domaines de l'État et des affaires foncières —
-  grade agent_accueil_domaines_etat
+description: Agents accueils domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
 metadata:
+  short_label: Agents accueils domaines etats
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

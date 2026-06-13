@@ -1,5 +1,6 @@
-description: Corps des inspecteurs médicaux et juxtamédicaux — grade inspecteur_divisionnaire_de_la_sante_publique
+description: Inspecteurs divisionnaires de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
 metadata:
+  short_label: Inspecteurs divisionnaires de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

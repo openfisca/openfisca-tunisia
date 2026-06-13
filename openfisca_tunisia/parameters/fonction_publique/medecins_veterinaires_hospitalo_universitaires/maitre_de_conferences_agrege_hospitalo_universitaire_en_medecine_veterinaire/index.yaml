@@ -1,5 +1,6 @@
-description: Corps des médecins vétérinaires hospitalo-universitaires — grade maitre_de_conferences_agrege_hospitalo_universitaire_en_medecine_veterinaire
+description: Maitres de conférences agrégés hospitalo universitaires en medecines veterinaires du corps des médecins vétérinaires hospitalo-universitaires
 metadata:
+  short_label: Maitres de conférences agrégés hospitalo universitaires en medecines veterinaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

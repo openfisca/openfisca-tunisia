@@ -1,5 +1,6 @@
-description: Corps administratif de l'éducation — grade commis_d_administration_de_l_education
+description: Commis d'administrations de l'educations du corps des corps administratif de l'éducation
 metadata:
+  short_label: Commis d'administrations de l'educations
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,10 +1,8 @@
-description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-  — traitement de base mensuel par échelon
+description: Traitement de base mensuel des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 714.5
@@ -15,8 +13,7 @@ echelon_1:
       '2013-06-25':
         title: Décret 2007-268
 echelon_2:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 726.0
@@ -27,8 +24,7 @@ echelon_2:
       '2013-06-25':
         title: Décret 2007-268
 echelon_3:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 737.5
@@ -39,8 +35,7 @@ echelon_3:
       '2013-06-25':
         title: Décret 2007-268
 echelon_4:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 749.0
@@ -51,8 +46,7 @@ echelon_4:
       '2013-06-25':
         title: Décret 2007-268
 echelon_5:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 760.5
@@ -63,8 +57,7 @@ echelon_5:
       '2013-06-25':
         title: Décret 2007-268
 echelon_6:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 772.0
@@ -75,8 +68,7 @@ echelon_6:
       '2013-06-25':
         title: Décret 2007-268
 echelon_7:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 783.5
@@ -87,8 +79,7 @@ echelon_7:
       '2013-06-25':
         title: Décret 2007-268
 echelon_8:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 795.0
@@ -99,8 +90,7 @@ echelon_8:
       '2013-06-25':
         title: Décret 2007-268
 echelon_9:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 806.5
@@ -111,8 +101,7 @@ echelon_9:
       '2013-06-25':
         title: Décret 2007-268
 echelon_10:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 818.0
@@ -123,8 +112,7 @@ echelon_10:
       '2013-06-25':
         title: Décret 2007-268
 echelon_11:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 829.5
@@ -135,8 +123,7 @@ echelon_11:
       '2013-06-25':
         title: Décret 2007-268
 echelon_12:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 841.0
@@ -147,8 +134,7 @@ echelon_12:
       '2013-06-25':
         title: Décret 2007-268
 echelon_13:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 852.5
@@ -159,8 +145,7 @@ echelon_13:
       '2013-06-25':
         title: Décret 2007-268
 echelon_14:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 864.0
@@ -171,8 +156,7 @@ echelon_14:
       '2013-06-25':
         title: Décret 2007-268
 echelon_15:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 875.5
@@ -183,8 +167,7 @@ echelon_15:
       '2013-06-25':
         title: Décret 2007-268
 echelon_16:
-  description: Corps administratif de l'éducation — grade administrateur_general_de_l_education
-    — traitement de base mensuel par échelon — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des administrateurs généraux de l'educations du corps des corps administratif de l'éducation
   values:
     '2013-06-25':
       value: 887.0

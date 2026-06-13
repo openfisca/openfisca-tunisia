@@ -1,6 +1,6 @@
-description: Corps des rédacteurs d'actes de la conservation de la propriété foncière
-  — grade redacteur_adjoint_actes_cpf
+description: Redacteurs adjoints actes cpfs du corps des rédacteurs d'actes de la conservation de la propriété foncière
 metadata:
+  short_label: Redacteurs adjoints actes cpfs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,6 +1,6 @@
-description: Corps des analystes et des techniciens de l'informatique des administrations
-  publiques — grade analyste_general
+description: Analystes généraux du corps des analystes et des techniciens de l'informatique des administrations publiques
 metadata:
+  short_label: Analystes généraux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

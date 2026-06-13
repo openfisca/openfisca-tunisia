@@ -1,5 +1,6 @@
-description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_conseiller_greffe_juridiction
+description: Administrateurs conseillers greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
 metadata:
+  short_label: Administrateurs conseillers greffes juridictions
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

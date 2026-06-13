@@ -1,5 +1,6 @@
-description: Corps des agents du ministère des affaires culturelles — grade administrateur_en_chef_services_culturels
+description: Administrateurs en chefs services culturels du corps des agents du ministère des affaires culturelles
 metadata:
+  short_label: Administrateurs en chefs services culturels
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

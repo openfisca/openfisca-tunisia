@@ -1,5 +1,6 @@
-description: Corps administratif des communications — grade inspecteur_en_chef_communications
+description: Inspecteurs en chefs communications du corps des corps administratif des communications
 metadata:
+  short_label: Inspecteurs en chefs communications
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

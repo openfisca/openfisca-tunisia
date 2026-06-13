@@ -1,5 +1,6 @@
-description: Corps des infirmiers de la santé publique — grade infirmier_general_de_la_sante_publique
+description: Infirmiers généraux de la santes publiques du corps des infirmiers de la santé publique
 metadata:
+  short_label: Infirmiers généraux de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

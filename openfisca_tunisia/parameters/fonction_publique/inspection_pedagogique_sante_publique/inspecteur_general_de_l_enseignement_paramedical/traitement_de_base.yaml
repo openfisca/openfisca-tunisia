@@ -1,12 +1,8 @@
-description: Corps de l'inspection pédagogique du ministère de la santé publique —
-  grade inspecteur_general_de_l_enseignement_paramedical — traitement de base mensuel
-  par échelon
+description: Traitement de base mensuel des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 714.5
@@ -17,9 +13,7 @@ echelon_1:
       '2010-04-13':
         title: Décret 2007-268
 echelon_2:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 726.0
@@ -30,9 +24,7 @@ echelon_2:
       '2010-04-13':
         title: Décret 2007-268
 echelon_3:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 737.5
@@ -43,9 +35,7 @@ echelon_3:
       '2010-04-13':
         title: Décret 2007-268
 echelon_4:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 749.0
@@ -56,9 +46,7 @@ echelon_4:
       '2010-04-13':
         title: Décret 2007-268
 echelon_5:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 760.5
@@ -69,9 +57,7 @@ echelon_5:
       '2010-04-13':
         title: Décret 2007-268
 echelon_6:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 772.0
@@ -82,9 +68,7 @@ echelon_6:
       '2010-04-13':
         title: Décret 2007-268
 echelon_7:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 783.5
@@ -95,9 +79,7 @@ echelon_7:
       '2010-04-13':
         title: Décret 2007-268
 echelon_8:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 795.0
@@ -108,9 +90,7 @@ echelon_8:
       '2010-04-13':
         title: Décret 2007-268
 echelon_9:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 806.5
@@ -121,9 +101,7 @@ echelon_9:
       '2010-04-13':
         title: Décret 2007-268
 echelon_10:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 818.0
@@ -134,9 +112,7 @@ echelon_10:
       '2010-04-13':
         title: Décret 2007-268
 echelon_11:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 829.5
@@ -147,9 +123,7 @@ echelon_11:
       '2010-04-13':
         title: Décret 2007-268
 echelon_12:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 841.0
@@ -160,9 +134,7 @@ echelon_12:
       '2010-04-13':
         title: Décret 2007-268
 echelon_13:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 852.5
@@ -173,9 +145,7 @@ echelon_13:
       '2010-04-13':
         title: Décret 2007-268
 echelon_14:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 864.0
@@ -186,9 +156,7 @@ echelon_14:
       '2010-04-13':
         title: Décret 2007-268
 echelon_15:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 875.5
@@ -199,9 +167,7 @@ echelon_15:
       '2010-04-13':
         title: Décret 2007-268
 echelon_16:
-  description: Corps de l'inspection pédagogique du ministère de la santé publique
-    — grade inspecteur_general_de_l_enseignement_paramedical — traitement de base
-    mensuel par échelon — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
   values:
     '2010-04-13':
       value: 887.0

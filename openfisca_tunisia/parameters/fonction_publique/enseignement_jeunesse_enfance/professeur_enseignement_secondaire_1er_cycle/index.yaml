@@ -1,6 +1,6 @@
-description: Corps de l'enseignement du ministère de la jeunesse et de l'enfance —
-  grade professeur_enseignement_secondaire_1er_cycle
+description: Professeurs enseignements secondaires 1er cycles du corps des l'enseignement du ministère de la jeunesse et de l'enfance
 metadata:
+  short_label: Professeurs enseignements secondaires 1er cycles
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

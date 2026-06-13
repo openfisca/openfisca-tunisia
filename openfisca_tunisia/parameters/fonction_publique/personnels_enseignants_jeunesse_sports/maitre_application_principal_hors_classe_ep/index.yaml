@@ -1,7 +1,6 @@
-description: Corps des personnels enseignants relevant du ministère de la jeunesse
-  et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-  maitre_application_principal_hors_classe_ep
+description: Maitres applications principaux hors classes eps du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
 metadata:
+  short_label: Maitres applications principaux hors classes eps
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

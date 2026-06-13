@@ -1,11 +1,8 @@
-description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
-  — grade attache_ens_sup — traitement de base mensuel par échelon
+description: Traitement de base mensuel des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 443.0
@@ -16,9 +13,7 @@ echelon_1:
       '2014-11-21':
         title: Décret 2007-268
 echelon_2:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 451.25
@@ -29,9 +24,7 @@ echelon_2:
       '2014-11-21':
         title: Décret 2007-268
 echelon_3:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 459.5
@@ -42,9 +35,7 @@ echelon_3:
       '2014-11-21':
         title: Décret 2007-268
 echelon_4:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 467.75
@@ -55,9 +46,7 @@ echelon_4:
       '2014-11-21':
         title: Décret 2007-268
 echelon_5:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 476.0
@@ -68,9 +57,7 @@ echelon_5:
       '2014-11-21':
         title: Décret 2007-268
 echelon_6:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 484.25
@@ -81,9 +68,7 @@ echelon_6:
       '2014-11-21':
         title: Décret 2007-268
 echelon_7:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 492.5
@@ -94,9 +79,7 @@ echelon_7:
       '2014-11-21':
         title: Décret 2007-268
 echelon_8:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 500.75
@@ -107,9 +90,7 @@ echelon_8:
       '2014-11-21':
         title: Décret 2007-268
 echelon_9:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 509.0
@@ -120,9 +101,7 @@ echelon_9:
       '2014-11-21':
         title: Décret 2007-268
 echelon_10:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 517.25
@@ -133,9 +112,7 @@ echelon_10:
       '2014-11-21':
         title: Décret 2007-268
 echelon_11:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 525.5
@@ -146,9 +123,7 @@ echelon_11:
       '2014-11-21':
         title: Décret 2007-268
 echelon_12:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 533.75
@@ -159,9 +134,7 @@ echelon_12:
       '2014-11-21':
         title: Décret 2007-268
 echelon_13:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 542.0
@@ -172,9 +145,7 @@ echelon_13:
       '2014-11-21':
         title: Décret 2007-268
 echelon_14:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 550.25
@@ -185,9 +156,7 @@ echelon_14:
       '2014-11-21':
         title: Décret 2007-268
 echelon_15:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 558.5
@@ -198,9 +167,7 @@ echelon_15:
       '2014-11-21':
         title: Décret 2007-268
 echelon_16:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 566.75
@@ -211,9 +178,7 @@ echelon_16:
       '2014-11-21':
         title: Décret 2007-268
 echelon_17:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 575.0
@@ -224,9 +189,7 @@ echelon_17:
       '2014-11-21':
         title: Décret 2007-268
 echelon_18:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 583.25
@@ -237,9 +200,7 @@ echelon_18:
       '2014-11-21':
         title: Décret 2007-268
 echelon_19:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 591.5
@@ -250,9 +211,7 @@ echelon_19:
       '2014-11-21':
         title: Décret 2007-268
 echelon_20:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 599.75
@@ -263,9 +222,7 @@ echelon_20:
       '2014-11-21':
         title: Décret 2007-268
 echelon_21:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 608.0
@@ -276,9 +233,7 @@ echelon_21:
       '2014-11-21':
         title: Décret 2007-268
 echelon_22:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 616.25
@@ -289,9 +244,7 @@ echelon_22:
       '2014-11-21':
         title: Décret 2007-268
 echelon_23:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 624.5
@@ -302,9 +255,7 @@ echelon_23:
       '2014-11-21':
         title: Décret 2007-268
 echelon_24:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 632.75
@@ -315,9 +266,7 @@ echelon_24:
       '2014-11-21':
         title: Décret 2007-268
 echelon_25:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade attache_ens_sup — traitement de base mensuel par échelon
-    — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des attachés ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 641.0

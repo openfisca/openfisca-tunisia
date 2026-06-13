@@ -1,6 +1,6 @@
-description: Corps des personnels civils de l'enseignement supérieur militaire — grade
-  maitre_assistant_enseignement_superieur_militaire
+description: Maitres assistants enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
 metadata:
+  short_label: Maitres assistants enseignements supérieurs militaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

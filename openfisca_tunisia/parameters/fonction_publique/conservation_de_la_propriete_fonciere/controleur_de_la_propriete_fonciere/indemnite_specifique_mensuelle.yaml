@@ -1,10 +1,8 @@
-description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -35,8 +33,7 @@ echelon_1:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_2:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -67,8 +64,7 @@ echelon_2:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_3:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -99,8 +95,7 @@ echelon_3:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_4:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -131,8 +126,7 @@ echelon_4:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_5:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -163,8 +157,7 @@ echelon_5:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_6:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -195,8 +188,7 @@ echelon_6:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_7:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -227,8 +219,7 @@ echelon_7:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_8:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -259,8 +250,7 @@ echelon_8:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_9:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -291,8 +281,7 @@ echelon_9:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_10:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -323,8 +312,7 @@ echelon_10:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_11:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -355,8 +343,7 @@ echelon_11:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_12:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -387,8 +374,7 @@ echelon_12:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_13:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -419,8 +405,7 @@ echelon_13:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_14:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -451,8 +436,7 @@ echelon_14:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_15:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -483,8 +467,7 @@ echelon_15:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_16:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -515,8 +498,7 @@ echelon_16:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_17:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -547,8 +529,7 @@ echelon_17:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_18:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -579,8 +560,7 @@ echelon_18:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_19:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -611,8 +591,7 @@ echelon_19:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_20:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -643,8 +622,7 @@ echelon_20:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_21:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 21
+  description: Indemnité spécifique mensuelle de l'échelon 21 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -675,8 +653,7 @@ echelon_21:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_22:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 22
+  description: Indemnité spécifique mensuelle de l'échelon 22 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -707,8 +684,7 @@ echelon_22:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_23:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 23
+  description: Indemnité spécifique mensuelle de l'échelon 23 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -739,8 +715,7 @@ echelon_23:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_24:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 24
+  description: Indemnité spécifique mensuelle de l'échelon 24 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0
@@ -771,8 +746,7 @@ echelon_24:
       '2013-01-01':
         title: Décret 2012-2984
 echelon_25:
-  description: Corps de la conservation de la propriété foncière — grade controleur_de_la_propriete_fonciere
-    — indemnité spécifique mensuelle par échelon — échelon 25
+  description: Indemnité spécifique mensuelle de l'échelon 25 des contrôleurs de la proprietes foncieres du corps des la conservation de la propriété foncière
   values:
     '1999-11-19':
       value: 226.0

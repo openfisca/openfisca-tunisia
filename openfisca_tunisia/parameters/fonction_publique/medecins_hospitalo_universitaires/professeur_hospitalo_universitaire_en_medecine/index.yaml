@@ -1,5 +1,6 @@
-description: Corps des médecins hospitalo-universitaires — grade professeur_hospitalo_universitaire_en_medecine
+description: Professeurs hospitalo universitaires en medecines du corps des médecins hospitalo-universitaires
 metadata:
+  short_label: Professeurs hospitalo universitaires en medecines
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

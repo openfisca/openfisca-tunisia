@@ -1,5 +1,6 @@
-description: Corps des conseillers des services financiers — grade conseiller_des_services_financiers_de_quatrieme_degre
+description: Conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
 metadata:
+  short_label: Conseillers des services financiers de quatriemes degres
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

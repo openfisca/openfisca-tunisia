@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.65 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fonction_publique`.
+* Détails :
+  - Ajoute des libellés courts aux paramètres de traitement de base et d'indemnité spécifique mensuelle.
+  - Ajoute des libellés courts aux échelons, tout en conservant des descriptions autonomes.
+  - Reformule les descriptions des corps, grades, paramètres et échelons avec des libellés lisibles.
+
+<!-- -->
+
 ## 0.64 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
 
 * Amélioration technique.

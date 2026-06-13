@@ -1,7 +1,6 @@
-description: Corps des enseignants agrégés relevant du ministère de l'éducation et
-  du ministère de l'enseignement supérieur et de la recherche scientifique — grade
-  professeur_agrege_principal_emerite_classe_exceptionnelle
+description: Professeurs agrégés principaux emerites classes exceptionnelles du corps des enseignants agrégés relevant du ministère de l'éducation et du ministère de l'enseignement supérieur et de la recherche scientifique
 metadata:
+  short_label: Professeurs agrégés principaux emerites classes exceptionnelles
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

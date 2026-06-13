@@ -1,5 +1,6 @@
-description: Corps des infirmiers de la santé publique — grade auxiliaire_de_la_sante_publique
+description: Auxiliaires de la santes publiques du corps des infirmiers de la santé publique
 metadata:
+  short_label: Auxiliaires de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,12 +1,8 @@
-description: Corps des membres du comité général d'inspection du travail et d'administration
-  des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -27,9 +23,7 @@ echelon_1:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_2:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -50,9 +44,7 @@ echelon_2:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_3:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -73,9 +65,7 @@ echelon_3:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_4:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -96,9 +86,7 @@ echelon_4:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_5:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -119,9 +107,7 @@ echelon_5:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_6:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -142,9 +128,7 @@ echelon_6:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_7:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -165,9 +149,7 @@ echelon_7:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_8:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -188,9 +170,7 @@ echelon_8:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_9:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -211,9 +191,7 @@ echelon_9:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_10:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -234,9 +212,7 @@ echelon_10:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_11:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -257,9 +233,7 @@ echelon_11:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_12:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -280,9 +254,7 @@ echelon_12:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_13:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -303,9 +275,7 @@ echelon_13:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_14:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -326,9 +296,7 @@ echelon_14:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_15:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0
@@ -349,9 +317,7 @@ echelon_15:
       '2022-11-08':
         title: Décret 2022-797 (cran A1 +300 pour les 4 grades)
 echelon_16:
-  description: Corps des membres du comité général d'inspection du travail et d'administration
-    des conflits du travail du ministère des affaires sociales — grade inspecteur_general_travail
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs généraux travails du corps des membres du comité général d'inspection du travail et d'administration des conflits du travail du ministère des affaires sociales
   values:
     '2014-08-08':
       value: 0.0

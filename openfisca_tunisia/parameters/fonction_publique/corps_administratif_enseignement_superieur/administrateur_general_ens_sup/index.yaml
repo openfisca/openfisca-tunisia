@@ -1,6 +1,6 @@
-description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
-  — grade administrateur_general_ens_sup
+description: Administrateurs généraux ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
 metadata:
+  short_label: Administrateurs généraux ens sups
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

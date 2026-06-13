@@ -1,5 +1,6 @@
-description: Corps des greffes de la cour des comptes — grade greffier_adjoint_cour_comptes
+description: Greffiers adjoints cours comptes du corps des greffes de la cour des comptes
 metadata:
+  short_label: Greffiers adjoints cours comptes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

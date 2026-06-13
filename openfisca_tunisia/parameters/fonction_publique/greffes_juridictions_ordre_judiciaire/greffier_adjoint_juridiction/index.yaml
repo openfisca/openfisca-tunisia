@@ -1,5 +1,6 @@
-description: Corps des greffes des juridictions de l'ordre judiciaire — grade greffier_adjoint_juridiction
+description: Greffiers adjoints juridictions du corps des greffes des juridictions de l'ordre judiciaire
 metadata:
+  short_label: Greffiers adjoints juridictions
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

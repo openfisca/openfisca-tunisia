@@ -1,5 +1,6 @@
-description: Corps des pharmaciens hospitalo-universitaires — grade professeur_hospitalo_universitaire_en_pharmacie
+description: Professeurs hospitalo universitaires en pharmacies du corps des pharmaciens hospitalo-universitaires
 metadata:
+  short_label: Professeurs hospitalo universitaires en pharmacies
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

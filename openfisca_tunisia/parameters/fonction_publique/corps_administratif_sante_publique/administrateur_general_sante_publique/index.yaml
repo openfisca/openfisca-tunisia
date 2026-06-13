@@ -1,5 +1,6 @@
-description: Corps administratif de la santé publique — grade administrateur_general_sante_publique
+description: Administrateurs généraux santes publiques du corps des corps administratif de la santé publique
 metadata:
+  short_label: Administrateurs généraux santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

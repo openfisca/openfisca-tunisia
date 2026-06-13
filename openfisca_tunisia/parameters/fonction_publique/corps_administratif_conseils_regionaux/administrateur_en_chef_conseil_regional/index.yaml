@@ -1,5 +1,6 @@
-description: Corps administratif des conseils régionaux — grade administrateur_en_chef_conseil_regional
+description: Administrateurs en chefs conseils régionaux du corps des corps administratif des conseils régionaux
 metadata:
+  short_label: Administrateurs en chefs conseils régionaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

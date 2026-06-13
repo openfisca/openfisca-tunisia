@@ -1,5 +1,6 @@
-description: Corps de contrôle des dépenses publiques — grade controleur_en_chef_depenses_publiques
+description: Contrôleurs en chefs dépenses publiques du corps des contrôle des dépenses publiques
 metadata:
+  short_label: Contrôleurs en chefs dépenses publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

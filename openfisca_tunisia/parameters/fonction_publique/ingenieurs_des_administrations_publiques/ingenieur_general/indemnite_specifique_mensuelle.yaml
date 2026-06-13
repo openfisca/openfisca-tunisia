@@ -1,10 +1,8 @@
-description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -43,8 +41,7 @@ echelon_1:
       '2025-01-01':
         title: Décret 2022-797
 echelon_2:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -83,8 +80,7 @@ echelon_2:
       '2025-01-01':
         title: Décret 2022-797
 echelon_3:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -123,8 +119,7 @@ echelon_3:
       '2025-01-01':
         title: Décret 2022-797
 echelon_4:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -163,8 +158,7 @@ echelon_4:
       '2025-01-01':
         title: Décret 2022-797
 echelon_5:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -203,8 +197,7 @@ echelon_5:
       '2025-01-01':
         title: Décret 2022-797
 echelon_6:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -243,8 +236,7 @@ echelon_6:
       '2025-01-01':
         title: Décret 2022-797
 echelon_7:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -283,8 +275,7 @@ echelon_7:
       '2025-01-01':
         title: Décret 2022-797
 echelon_8:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -323,8 +314,7 @@ echelon_8:
       '2025-01-01':
         title: Décret 2022-797
 echelon_9:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -363,8 +353,7 @@ echelon_9:
       '2025-01-01':
         title: Décret 2022-797
 echelon_10:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -403,8 +392,7 @@ echelon_10:
       '2025-01-01':
         title: Décret 2022-797
 echelon_11:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -443,8 +431,7 @@ echelon_11:
       '2025-01-01':
         title: Décret 2022-797
 echelon_12:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -483,8 +470,7 @@ echelon_12:
       '2025-01-01':
         title: Décret 2022-797
 echelon_13:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -523,8 +509,7 @@ echelon_13:
       '2025-01-01':
         title: Décret 2022-797
 echelon_14:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -563,8 +548,7 @@ echelon_14:
       '2025-01-01':
         title: Décret 2022-797
 echelon_15:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0
@@ -603,8 +587,7 @@ echelon_15:
       '2025-01-01':
         title: Décret 2022-797
 echelon_16:
-  description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_general
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des ingénieurs généraux du corps des corps commun des ingénieurs des administrations publiques
   values:
     '1999-04-23':
       value: 600.0

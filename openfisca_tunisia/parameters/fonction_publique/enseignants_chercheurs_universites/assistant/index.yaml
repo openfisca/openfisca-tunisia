@@ -1,5 +1,6 @@
-description: Corps des enseignants chercheurs des universités — grade assistant
+description: Assistants du corps des enseignants chercheurs des universités
 metadata:
+  short_label: Assistants
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

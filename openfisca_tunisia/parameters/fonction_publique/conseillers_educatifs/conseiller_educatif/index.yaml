@@ -1,6 +1,6 @@
-description: Corps des conseillers éducatifs relevant du ministère de l'éducation
-  — grade conseiller_educatif
+description: Conseillers educatifs du corps des conseillers éducatifs relevant du ministère de l'éducation
 metadata:
+  short_label: Conseillers educatifs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

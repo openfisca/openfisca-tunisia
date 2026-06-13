@@ -1,10 +1,8 @@
-description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-  — traitement de base mensuel par échelon
+description: Traitement de base mensuel des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 360.25
@@ -15,8 +13,7 @@ echelon_1:
       '2012-09-11':
         title: Décret 2007-268
 echelon_2:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 365.75
@@ -27,8 +24,7 @@ echelon_2:
       '2012-09-11':
         title: Décret 2007-268
 echelon_3:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 371.25
@@ -39,8 +35,7 @@ echelon_3:
       '2012-09-11':
         title: Décret 2007-268
 echelon_4:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 376.75
@@ -51,8 +46,7 @@ echelon_4:
       '2012-09-11':
         title: Décret 2007-268
 echelon_5:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 382.25
@@ -63,8 +57,7 @@ echelon_5:
       '2012-09-11':
         title: Décret 2007-268
 echelon_6:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 387.75
@@ -75,8 +68,7 @@ echelon_6:
       '2012-09-11':
         title: Décret 2007-268
 echelon_7:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 393.25
@@ -87,8 +79,7 @@ echelon_7:
       '2012-09-11':
         title: Décret 2007-268
 echelon_8:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 398.75
@@ -99,8 +90,7 @@ echelon_8:
       '2012-09-11':
         title: Décret 2007-268
 echelon_9:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 404.25
@@ -111,8 +101,7 @@ echelon_9:
       '2012-09-11':
         title: Décret 2007-268
 echelon_10:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 409.75
@@ -123,8 +112,7 @@ echelon_10:
       '2012-09-11':
         title: Décret 2007-268
 echelon_11:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 415.25
@@ -135,8 +123,7 @@ echelon_11:
       '2012-09-11':
         title: Décret 2007-268
 echelon_12:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 420.75
@@ -147,8 +134,7 @@ echelon_12:
       '2012-09-11':
         title: Décret 2007-268
 echelon_13:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 426.25
@@ -159,8 +145,7 @@ echelon_13:
       '2012-09-11':
         title: Décret 2007-268
 echelon_14:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 431.75
@@ -171,8 +156,7 @@ echelon_14:
       '2012-09-11':
         title: Décret 2007-268
 echelon_15:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 437.25
@@ -183,8 +167,7 @@ echelon_15:
       '2012-09-11':
         title: Décret 2007-268
 echelon_16:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 442.75
@@ -195,8 +178,7 @@ echelon_16:
       '2012-09-11':
         title: Décret 2007-268
 echelon_17:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 448.25
@@ -207,8 +189,7 @@ echelon_17:
       '2012-09-11':
         title: Décret 2007-268
 echelon_18:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 453.75
@@ -219,8 +200,7 @@ echelon_18:
       '2012-09-11':
         title: Décret 2007-268
 echelon_19:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 459.25
@@ -231,8 +211,7 @@ echelon_19:
       '2012-09-11':
         title: Décret 2007-268
 echelon_20:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 464.75
@@ -243,8 +222,7 @@ echelon_20:
       '2012-09-11':
         title: Décret 2007-268
 echelon_21:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 470.25
@@ -255,8 +233,7 @@ echelon_21:
       '2012-09-11':
         title: Décret 2007-268
 echelon_22:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 475.75
@@ -267,8 +244,7 @@ echelon_22:
       '2012-09-11':
         title: Décret 2007-268
 echelon_23:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 481.25
@@ -279,8 +255,7 @@ echelon_23:
       '2012-09-11':
         title: Décret 2007-268
 echelon_24:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 486.75
@@ -291,8 +266,7 @@ echelon_24:
       '2012-09-11':
         title: Décret 2007-268
 echelon_25:
-  description: Corps de contrôle des dépenses publiques — grade secretaire_controle_depenses_publiques
-    — traitement de base mensuel par échelon — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des secrétaires controles dépenses publiques du corps des contrôle des dépenses publiques
   values:
     '2012-09-11':
       value: 492.25

@@ -1,5 +1,6 @@
-description: Corps des agents des services douaniers — grade colonel_des_douanes
+description: Colonels des douanes du corps des agents des services douaniers
 metadata:
+  short_label: Colonels des douanes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

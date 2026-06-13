@@ -1,5 +1,6 @@
-description: Corps des personnels des cadres communs de laboratoire — grade chef_de_laboratoire_general
+description: Chefs de laboratoires généraux du corps des personnels des cadres communs de laboratoire
 metadata:
+  short_label: Chefs de laboratoires généraux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base
