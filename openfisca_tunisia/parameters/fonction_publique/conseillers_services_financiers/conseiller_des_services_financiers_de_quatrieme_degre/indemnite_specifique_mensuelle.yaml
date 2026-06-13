@@ -1,0 +1,378 @@
+description: Indemnité spécifique mensuelle des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des conseillers des services financiers de quatriemes degres du corps des conseillers des services financiers
+  values:
+    '2020-02-28':
+      value: 950.0
+    '2021-02-09':
+      value: 1130.0
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2020-02-28':
+        title: Décret 2020-122
+      '2021-02-09':
+        title: Décret 2021-105

@@ -1,0 +1,7 @@
+description: Secrétaires affaires étrangères du corps des corps diplomatique du ministère des affaires étrangères
+metadata:
+  short_label: Secrétaires affaires étrangères
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

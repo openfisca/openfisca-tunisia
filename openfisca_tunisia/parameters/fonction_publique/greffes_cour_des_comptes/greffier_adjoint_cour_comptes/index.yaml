@@ -1,0 +1,7 @@
+description: Greffiers adjoints cours comptes du corps des greffes de la cour des comptes
+metadata:
+  short_label: Greffiers adjoints cours comptes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

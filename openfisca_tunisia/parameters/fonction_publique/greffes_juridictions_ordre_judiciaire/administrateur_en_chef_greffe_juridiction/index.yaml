@@ -1,0 +1,7 @@
+description: Administrateurs en chefs greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
+metadata:
+  short_label: Administrateurs en chefs greffes juridictions
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

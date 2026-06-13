@@ -1,0 +1,411 @@
+description: Traitement de base mensuel des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 154.25
+    '2007-04-01':
+      value: 451.25
+    '2013-06-07':
+      value: 530.25
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 162.5
+    '2007-04-01':
+      value: 459.5
+    '2013-06-07':
+      value: 539.25
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 170.75
+    '2007-04-01':
+      value: 467.75
+    '2013-06-07':
+      value: 548.25
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 179.0
+    '2007-04-01':
+      value: 476.0
+    '2013-06-07':
+      value: 557.25
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 187.25
+    '2007-04-01':
+      value: 484.25
+    '2013-06-07':
+      value: 566.25
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 195.5
+    '2007-04-01':
+      value: 492.5
+    '2013-06-07':
+      value: 575.25
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 203.75
+    '2007-04-01':
+      value: 500.75
+    '2013-06-07':
+      value: 584.25
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 212.0
+    '2007-04-01':
+      value: 509.0
+    '2013-06-07':
+      value: 593.25
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 220.25
+    '2007-04-01':
+      value: 517.25
+    '2013-06-07':
+      value: 602.25
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 228.5
+    '2007-04-01':
+      value: 525.5
+    '2013-06-07':
+      value: 611.25
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 236.75
+    '2007-04-01':
+      value: 533.75
+    '2013-06-07':
+      value: 620.25
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 245.0
+    '2007-04-01':
+      value: 542.0
+    '2013-06-07':
+      value: 629.25
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 253.25
+    '2007-04-01':
+      value: 550.25
+    '2013-06-07':
+      value: 638.25
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 261.5
+    '2007-04-01':
+      value: 558.5
+    '2013-06-07':
+      value: 647.25
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 269.75
+    '2007-04-01':
+      value: 566.75
+    '2013-06-07':
+      value: 656.25
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 278.0
+    '2007-04-01':
+      value: 575.0
+    '2013-06-07':
+      value: 665.25
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 286.25
+    '2007-04-01':
+      value: 583.25
+    '2013-06-07':
+      value: 674.25
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 294.5
+    '2007-04-01':
+      value: 591.5
+    '2013-06-07':
+      value: 683.25
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 302.75
+    '2007-04-01':
+      value: 599.75
+    '2013-06-07':
+      value: 692.25
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 311.0
+    '2007-04-01':
+      value: 608.0
+    '2013-06-07':
+      value: 701.25
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 319.25
+    '2007-04-01':
+      value: 616.25
+    '2013-06-07':
+      value: 710.25
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 327.5
+    '2007-04-01':
+      value: 624.5
+    '2013-06-07':
+      value: 719.25
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 335.75
+    '2007-04-01':
+      value: 632.75
+    '2013-06-07':
+      value: 728.25
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des maitres dapplications du corps des personnels enseignants exerçant dans les écoles primaires
+  values:
+    '1999-08-06':
+      value: 344.0
+    '2007-04-01':
+      value: 641.0
+    '2013-06-07':
+      value: 737.25
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '1999-08-06':
+        title: Décret 97-1832
+      '2007-04-01':
+        title: Décret 2007-268

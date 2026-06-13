@@ -1,0 +1,7 @@
+description: Assistants applications recherches principaux du corps des assistants à l'application et à la recherche de l'enseignement supérieur et de la recherche scientifique
+metadata:
+  short_label: Assistants applications recherches principaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

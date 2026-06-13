@@ -1,0 +1,828 @@
+description: Indemnité spécifique mensuelle des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
+  values:
+    '2001-10-09':
+      value: 0.0
+    '2017-03-10':
+      value: 989.0
+    '2019-03-01':
+      value: 1079.0
+    '2019-07-01':
+      value: 1119.0
+    '2020-01-01':
+      value: 1169.0
+    '2020-08-01':
+      value: 1259.0
+    '2025-01-01':
+      value: 1559.0
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2017-03-10':
+        title: Décret 2017-347 / 2017-349 (Art.3)
+      '2019-03-01':
+        title: Décret 2019-209 (T1, cran A1 +90)
+      '2019-07-01':
+        title: Décret 2019-1133 (T2, cran A1 +40)
+      '2020-01-01':
+        title: Décret 2019-1133 (T3, cran A1 +50)
+      '2020-08-01':
+        title: Décret 2020-767 (cran A1 +90)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +300 à terme)

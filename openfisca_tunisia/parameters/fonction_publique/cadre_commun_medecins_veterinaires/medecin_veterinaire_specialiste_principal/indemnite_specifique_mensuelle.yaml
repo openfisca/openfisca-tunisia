@@ -1,0 +1,318 @@
+description: Indemnité spécifique mensuelle des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des médecins veterinaires specialistes principaux du corps des cadre commun des médecins vétérinaires
+  values:
+    '1999-11-19':
+      value: 856.0
+    '2013-01-01':
+      value: 1876.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '1999-11-19':
+        title: Décret 93-2309
+      '2013-01-01':
+        title: Décret 93-2309 + globaux 1996-2012 (cumul à terme)

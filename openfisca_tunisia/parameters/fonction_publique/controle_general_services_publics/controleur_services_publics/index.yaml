@@ -1,0 +1,7 @@
+description: Contrôleurs services publics du corps des corps du contrôle général des services publics
+metadata:
+  short_label: Contrôleurs services publics
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
