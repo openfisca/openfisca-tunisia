@@ -1,0 +1,7 @@
+description: Commis administrations interieurs du corps des corps administratif du ministère de l'intérieur
+metadata:
+  short_label: Commis administrations interieurs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

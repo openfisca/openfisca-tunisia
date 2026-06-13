@@ -1,0 +1,467 @@
+description: Indemnité spécifique mensuelle des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des delegues protections enfances 3ème grades du corps des délégués à la protection de l'enfance
+  values:
+    '2005-12-23':
+      value: 597.0
+    '2007-12-31':
+      value: 689.0
+    '2010-12-31':
+      value: 828.0
+    '2013-01-01':
+      value: 898.0
+    '2025-01-01':
+      value: 1198.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2005-12-23':
+        title: Décret 2002-2939
+      '2006-09-05':
+        title: Décret 2006-2429
+      '2007-12-31':
+        title: Décret 2007-62
+      '2010-12-31':
+        title: Décret 2008-4096
+      '2013-01-01':
+        title: Décret 2012-2980
+      '2025-01-01':
+        title: Décret 2022-797

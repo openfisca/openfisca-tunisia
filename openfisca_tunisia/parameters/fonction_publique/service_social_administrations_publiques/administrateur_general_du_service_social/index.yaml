@@ -1,0 +1,7 @@
+description: Administrateurs généraux du services sociaux du corps des personnels du service social des administrations publiques
+metadata:
+  short_label: Administrateurs généraux du services sociaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

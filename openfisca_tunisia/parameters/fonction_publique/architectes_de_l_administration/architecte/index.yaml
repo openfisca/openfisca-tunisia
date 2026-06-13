@@ -1,0 +1,7 @@
+description: Architectes du corps des architectes de l'administration
+metadata:
+  short_label: Architectes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

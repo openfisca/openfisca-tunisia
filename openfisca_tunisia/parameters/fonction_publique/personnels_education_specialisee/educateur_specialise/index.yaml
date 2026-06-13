@@ -1,0 +1,7 @@
+description: Educateurs spécialisés du corps des personnels de l'éducation spécialisée du ministère des affaires sociales
+metadata:
+  short_label: Educateurs spécialisés
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

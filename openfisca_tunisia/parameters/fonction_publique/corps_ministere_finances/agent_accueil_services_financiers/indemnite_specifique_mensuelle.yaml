@@ -1,0 +1,208 @@
+description: Indemnité spécifique mensuelle des agents d’accueil des services financiers du corps des personnels du ministère des finances
+metadata:
+  short_label: Indemnité spécifique mensuelle
+documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
+  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
+  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
+  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
+  salaire_base/.
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des agents d’accueil des services financiers du corps des personnels du ministère des finances
+  values:
+    '1999-02-23':
+      value: 0.0
+  metadata:
+    short_label: Échelon 25
+    unit: currency

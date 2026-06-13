@@ -1,0 +1,7 @@
+description: Administrateurs conseils régionaux du corps des corps administratif des conseils régionaux
+metadata:
+  short_label: Administrateurs conseils régionaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

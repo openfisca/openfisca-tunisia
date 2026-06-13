@@ -1,0 +1,7 @@
+description: Professeurs du corps des l'enseignement du ministère de la jeunesse et de l'enfance
+metadata:
+  short_label: Professeurs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2
