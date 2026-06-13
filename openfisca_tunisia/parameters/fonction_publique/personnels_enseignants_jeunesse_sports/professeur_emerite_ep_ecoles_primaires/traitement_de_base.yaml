@@ -1,0 +1,223 @@
+description: Traitement de base mensuel des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+metadata:
+  short_label: Traitement de base
+echelon_1:
+  description: Traitement de base mensuel de l'échelon 1 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 668.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_2:
+  description: Traitement de base mensuel de l'échelon 2 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 680.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_3:
+  description: Traitement de base mensuel de l'échelon 3 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 691.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_4:
+  description: Traitement de base mensuel de l'échelon 4 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 703.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_5:
+  description: Traitement de base mensuel de l'échelon 5 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 714.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_6:
+  description: Traitement de base mensuel de l'échelon 6 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 726.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_7:
+  description: Traitement de base mensuel de l'échelon 7 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 737.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_8:
+  description: Traitement de base mensuel de l'échelon 8 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 749.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_9:
+  description: Traitement de base mensuel de l'échelon 9 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 760.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_10:
+  description: Traitement de base mensuel de l'échelon 10 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 772.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_11:
+  description: Traitement de base mensuel de l'échelon 11 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 783.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_12:
+  description: Traitement de base mensuel de l'échelon 12 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 795.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_13:
+  description: Traitement de base mensuel de l'échelon 13 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 806.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_14:
+  description: Traitement de base mensuel de l'échelon 14 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 818.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_15:
+  description: Traitement de base mensuel de l'échelon 15 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 829.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_16:
+  description: Traitement de base mensuel de l'échelon 16 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 841.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_17:
+  description: Traitement de base mensuel de l'échelon 17 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 852.5
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_18:
+  description: Traitement de base mensuel de l'échelon 18 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 864.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_19:
+  description: Traitement de base mensuel de l'échelon 19 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 875.5
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268
+echelon_20:
+  description: Traitement de base mensuel de l'échelon 20 des professeurs emerites eps écoles primaires du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
+  values:
+    '2019-11-01':
+      value: 887.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2019-11-01':
+        title: Décret 2007-268

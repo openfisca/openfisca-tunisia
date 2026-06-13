@@ -1,0 +1,7 @@
+description: Autres produits soumis aux accises soumis au taux d'accise de 2%
+values:
+  '2024-01-01':
+    value:
+    - gasoil_pour_vehicule
+metadata:
+  unit: list

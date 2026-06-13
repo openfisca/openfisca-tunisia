@@ -1,0 +1,75 @@
+- name: Salarié 1000 DT cotisations sociales salarié RSNA
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    salaire_de_base: 1000
+    cotisations_salarie: .0918 * 1000
+
+
+- name: Salarié 1000 DT cotisations sociales RSA
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsa
+    salaire_de_base: 1000
+  output:
+    salaire_de_base: 1000
+    cotisations_salarie: .045725 * 1000
+
+
+- name: Salarié 1000 DT cotisations sociales RSAA
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsaa
+    salaire_de_base: 1000
+  output:
+    salaire_de_base: 1000
+    cotisations_salarie: .0699 * 1000
+
+
+- name: Salarié 1000 DT cotisations sociales salarié RTNS
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rtns
+    salaire_de_base: 1000
+  output:
+    salaire_de_base: 1000
+    cotisations_salarie: .1471 * 1000
+
+
+- name: Salarié 1000 DT cotisations sociales salarié RTTE
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rtte
+    salaire_de_base: 1000
+  output:
+    salaire_de_base: 1000
+    cotisations_salarie: .133 * 1000
+
+
+- name: Salarié 1000 DT cotisations sociales salarié RTFR
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rtfr
+    salaire_de_base: 100
+  output:
+    salaire_de_base: 100
+    cotisations_salarie: .025 * 100
+
+
+- name: Salarié 1000 DT cotisations sociales salarié RACI
+  period: 2023-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: raci
+    salaire_de_base: 1000
+  output:
+    salaire_de_base: 1000
+    cotisations_salarie: .1471 * 1000

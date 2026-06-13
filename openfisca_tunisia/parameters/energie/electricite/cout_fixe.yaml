@@ -1,0 +1,9 @@
+description: Coût fixe mensuel de l'électricité
+values:
+  2024-01-01:
+    value: 472.2
+metadata:
+  unit: millimes
+documentation: |-
+  Coût fixe mensuel appliqué à la facture d'électricité en Tunisie.
+  Ce montant est facturé indépendamment de la consommation.

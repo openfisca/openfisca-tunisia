@@ -1,0 +1,6 @@
+description: Café et thé - Taux 10%
+metadata:
+  short_label: 10%
+  order:
+  - taux
+  - produits

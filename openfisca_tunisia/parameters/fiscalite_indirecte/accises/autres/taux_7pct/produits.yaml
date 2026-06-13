@@ -1,0 +1,8 @@
+description: Autres produits soumis aux accises soumis au taux d'accise de 7%
+values:
+  '2024-01-01':
+    value:
+    - essence_melangee_pour_cyclomoteur
+    - essence_pour_vehicule
+metadata:
+  unit: list

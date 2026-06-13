@@ -1,0 +1,7 @@
+description: Liste des boissons alcoolisées soumis aux accises
+values:
+  '2024-01-01':
+    value:
+    - boissons_alcoolisees_sans_indications
+metadata:
+  unit: list

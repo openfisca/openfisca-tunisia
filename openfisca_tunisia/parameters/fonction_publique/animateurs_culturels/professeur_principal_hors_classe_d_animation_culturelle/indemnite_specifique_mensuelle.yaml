@@ -1,0 +1,343 @@
+description: Indemnité spécifique mensuelle des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des professeurs principaux hors classes d'animations culturelles du corps des animateurs culturels
+  values:
+    '2012-12-11':
+      value: 0.0
+    '2017-01-06':
+      value: 877.0
+    '2025-01-01':
+      value: 1447.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2017-01-06':
+        title: Décret 2017-69
+      '2025-01-01':
+        title: Décret 2022-797

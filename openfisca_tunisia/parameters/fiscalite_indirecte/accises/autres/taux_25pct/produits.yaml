@@ -1,0 +1,7 @@
+description: Autres produits soumis aux accises soumis au taux d'accise de 25%
+values:
+  '2024-01-01':
+    value:
+    - produits_a_base_d_ufs
+metadata:
+  unit: list

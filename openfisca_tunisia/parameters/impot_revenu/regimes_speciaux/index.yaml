@@ -1,0 +1,5 @@
+description: Régimes spéciaux d'imposition (forfaitaire, retenue libératoire)
+metadata:
+  order:
+  - forfaitaire
+  - retenue_liberatoire

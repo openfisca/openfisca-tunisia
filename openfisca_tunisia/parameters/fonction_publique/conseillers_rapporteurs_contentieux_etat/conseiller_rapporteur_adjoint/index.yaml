@@ -1,0 +1,7 @@
+description: Conseillers rapporteurs adjoints du corps des conseillers rapporteurs auprès des services du contentieux de l'État
+metadata:
+  short_label: Conseillers rapporteurs adjoints
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

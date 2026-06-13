@@ -1,0 +1,7 @@
+description: Médecins inspecteurs régionaux du travails du corps des l'inspection médicale du travail
+metadata:
+  short_label: Médecins inspecteurs régionaux du travails
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

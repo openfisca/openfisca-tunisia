@@ -1,16 +1,33 @@
 description: Montant de l'allocation aux familles nécessiteuses dans le cadre de PNAFN
 values:
-  2018-02-01:
+  2018-04-01:
     value: 180
   2015-01-01:
     value: 150
-  2014-01-01:
-    value: 115
-  2010-01-01:
-    value: 56.7
+  2014-07-01:
+    value: 120
+  2013-07-01:
+    value: 110
+  2012-04-01:
+    value: 100
+  2011-07-01:
+    value: 70
+  2010-07-01:
+    value: 63.333
+  2009-07-01:
+    value: 56.666
+  2009-01-01:
+    value: 53.333
   2000-01-01:
     value: 36.3
   1987-01-01:
     value: 7.7
 metadata:
   unit: currency
+  notes:
+    2010-07-01:
+      title: 190 dinars par trimestre
+    2009-07-01:
+      title: 170 dinars par trimestre
+    2009-01-01:
+      title: 160 dinars par trimestre

@@ -1,0 +1,9 @@
+description: Réduction pour faible puissance d'électricité
+values:
+  2024-01-01:
+    value: 700
+metadata:
+  unit: millimes
+documentation: |-
+  Réduction appliquée sur la facture d'électricité pour les installations de faible puissance.
+  Cette réduction est déduite du montant total de la facture.

@@ -1,0 +1,7 @@
+description: Inspecteurs principaux de la vies scolaires du corps des l'inspection pédagogique du ministère de l'éducation
+metadata:
+  short_label: Inspecteurs principaux de la vies scolaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

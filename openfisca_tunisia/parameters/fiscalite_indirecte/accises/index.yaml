@@ -1,0 +1,12 @@
+description: Droits d'accise (taxes sur la consommation)
+metadata:
+  short_label: Accises
+  order:
+  - tabac
+  - alcool
+  - boissons
+  - cafe_the
+  - cosmetiques
+  - autres
+documentation: Paramètres des droits d'accise en Tunisie organisés par catégorie de
+  produits.

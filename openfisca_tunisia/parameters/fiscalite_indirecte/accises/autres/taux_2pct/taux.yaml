@@ -1,0 +1,6 @@
+description: Taux d'accise de 2%
+values:
+  '2024-01-01':
+    value: 0.029219143576826197
+metadata:
+  unit: /1

@@ -1,0 +1,11 @@
+description: Indemnités de maladie et maternité
+brackets:
+- threshold:
+    1977-01-01:
+      value: 0
+  rate:
+    1977-01-01:
+      value: 0.004
+metadata:
+  rate_unit: /1
+  threshold_unit: currency

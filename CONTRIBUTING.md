@@ -96,3 +96,11 @@ Each change must be documented with the following elements:
   >      - All parameters are assumed to be valid until and end date is explicitely specified with an `<END>` tag
 
 When a Pull Request contains several disctincts changes, several paragraphs may be added to the CHANGELOG. To be properly formatted in Markdown, these paragraphs must be separated by `<!-- -->`.
+
+## Branch protection and CI
+
+When the supported Python versions (or other CI matrix) change in `.github/workflows/workflow.yml`, update the repository’s **Required status checks** so GitHub no longer expects obsolete jobs:
+
+1. Open **Settings** → **Branches** → branch protection rule for `master` (or default branch).
+2. In **Require status checks to pass before merging**, remove any checks that no longer exist (e.g. `build (3.9.12, ubuntu-24.04, minimal)`).
+3. After the next run of the new workflow, add the new job names if you want them to be required.

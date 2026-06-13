@@ -1,0 +1,8 @@
+description: Fiscalité indirecte
+metadata:
+  short_label: Fiscalité indirecte
+  order:
+  - tva
+  - accises
+documentation: Paramètres de la fiscalité indirecte en Tunisie.\nComprend la TVA et
+  les droits d'accise.

@@ -1,0 +1,7 @@
+description: Animatrices sociales du corps des personnels du service social des administrations publiques
+metadata:
+  short_label: Animatrices sociales
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

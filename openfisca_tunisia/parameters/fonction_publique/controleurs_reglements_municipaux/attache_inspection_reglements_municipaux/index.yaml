@@ -1,0 +1,7 @@
+description: Attachés inspections règlements municipaux du corps des contrôleurs des règlements municipaux
+metadata:
+  short_label: Attachés inspections règlements municipaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

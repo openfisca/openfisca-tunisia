@@ -1,0 +1,8 @@
+description: Parent à charge (montant maximum)
+values:
+  1990-01-01:
+    value: 150
+  2018-01-01:
+    value: 450
+metadata:
+  unit: currency

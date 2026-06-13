@@ -93,10 +93,10 @@ Néanmoins, vous aurez à effectuer des vérifications complémentaires à ce qu
 ### Langage Python & Environnement virtuel
 
 Ce projet nécessite l'installation préalable des éléments suivants :
-* Le langage [Python 3.9](https://www.python.org/downloads/)
+* Le langage [Python 3.10](https://www.python.org/downloads/) ou supérieur (3.10, 3.11, 3.12)
 * Le gestionnaire de paquets [pip](https://pip.pypa.io/en/stable/installing/).
 
-Vérifiez alors que la version de python appelée par défaut débute bien par `3.9` :
+Vérifiez alors que la version de python appelée par défaut débute bien par `3.10` ou supérieur :
 
 ```
 python --version
@@ -119,7 +119,7 @@ sudo pip install pew
 Il vous est désormais possible de créer votre premier environnement dédié à OpenFisca-Tunisia. Nommons-le `openfisca` :
 
 ```
-pew new openfisca --python=python3.9
+pew new openfisca --python=python3.10
 # Si demandé, répondez "Y" à la question sur la modification du fichier de configuration de votre shell
 ```
 

@@ -1,0 +1,9 @@
+description: Prix subventionné de la baguette
+values:
+  2011-01-01:
+    value: 0.190
+  2010-01-01:
+    value: 0.200
+metadata:
+  unit: currency/unit
+documentation: Le poids de la baguette subventionnée est fixé à 220 grammes

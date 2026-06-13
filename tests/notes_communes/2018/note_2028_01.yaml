@@ -7,10 +7,10 @@
   input:
     bnc_forfaitaire_recettes_brutes:
       2018: 120_000
-    deductions:
+    deductions_base:
       2018: 3500
   output:
-      deductions: 3500
+      deductions_base: 3500
       bnc_forfaitaire_benefice_fiscal: 96_000
       rng: 96_000
       revenu_net_imposable: 92_500
@@ -27,7 +27,7 @@
     interets_acquisition_logement: 3500
     revenus_fonciers: 10_400
   output:
-    deductions: 43_500
+    deductions_base: 43_500
     bnc_forfaitaire_benefice_fiscal: 96_000
     revenu_net_imposable: 62_900
     irpp: 17_615

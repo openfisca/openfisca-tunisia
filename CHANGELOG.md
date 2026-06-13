@@ -1,11 +1,153 @@
 # Changelog
 
+## 0.65 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fonction_publique`.
+* Détails :
+  - Ajoute des libellés courts aux paramètres de traitement de base et d'indemnité spécifique mensuelle.
+  - Ajoute des libellés courts aux échelons, tout en conservant des descriptions autonomes.
+  - Reformule les descriptions des corps, grades, paramètres et échelons avec des libellés lisibles.
+
+<!-- -->
+
+## 0.64 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fonction_publique`.
+* Détails :
+  - Ajoute l'ordre d'indexation des paramètres présents dans chaque grade de la fonction publique.
+  - Déplace l'information de grille de catégorie dans la documentation des index de grade.
+
+<!-- -->
+
+## 0.63 - [#365](https://github.com/openfisca/openfisca-tunisia/pull/365)
+
+* Changement mineur.
+* Périodes concernées : à partir du 01/01/2025.
+* Zones impactées : `parameters/impot_revenu/bareme`.
+* Détails :
+  - Remplace la référence secondaire du barème IRPP 2025 par une référence JORT précise : article 36 de la loi n° 2024-48 du 9 décembre 2024, JORT n° 149/2024, p. 6429.
+  - Ne change aucune valeur ni aucun calcul.
+
+<!-- -->
+
+## 0.62 - [#354](https://github.com/openfisca/openfisca-tunisia/pull/354)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Détails :
+  - Fix units.
+
+
+## 0.61 - [#351](https://github.com/openfisca/openfisca-tunisia/pull/351)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Détails :
+  - Bump version 0.61.
+
+## 0.60 - [#349](https://github.com/openfisca/openfisca-tunisia/pull/349)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : CI, lint, outillage.
+* Détails :
+  - Suppression de flake8, flake8-print, flake8-quotes, flake8-pyproject et autopep8 ; utilisation exclusive de ruff (lint + format) et isort intégré à ruff.
+  - Makefile et CI basés sur uv : `uv sync`, `uv run`, cache uv et venv dans le workflow GitHub Actions.
+  - Scripts CI (.github) mis à jour pour appeler `uv run` (openfisca, python) ; twine ajouté aux dépendances dev pour le déploiement.
+  - Reformattage du code avec `ruff format`.
+
+## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : CI.
+* Détails :
+  - Corrige l'installation de la version minimale d'openfisca-core en CI (44.0.3 au lieu de 44, inexistante sur PyPI).
+
+## 0.58 - [#346](https://github.com/openfisca/openfisca-tunisia/pull/346)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : CI, documentation.
+* Détails :
+  - Aligne les versions de Python sur openfisca-core v44 (3.10, 3.11, 3.12 ; retrait du support 3.9).
+  - Met à jour le workflow CI et la documentation (README, CONTRIBUTING, .conda/meta.yaml).
+  - Documente la mise à jour des required status checks dans CONTRIBUTING.
+
+## 0.57 - [#340](https://github.com/openfisca/openfisca-tunisia/pull/340)
+
+* Évolution du système socio-fiscal.
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fiscalite_indirecte`, `parameters/energie`, `parameters/units`.
+* Détails :
+  - Ajoute les paramètres de fiscalité indirecte (TVA avec taux normal, réduit et nul, accises sur alcool, tabac, boissons, café/thé, cosmétiques et autres produits).
+  - Ajoute les paramètres pour l'énergie (électricité et gaz : tarifs par tranche, coûts fixes, réductions de puissance, taxes FTE).
+  - Met à jour openfisca-core vers la version 44.
+  - Ajoute de nouvelles unités de mesure.
+  - Retire la dépendance directe à numpy (désormais fournie par openfisca-core).
+
+## 0.56 - [#257](https://github.com/openfisca/openfisca-tunisia/pull/257)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/marche_travail`.
+* Détails :
+  - Complète l'historique du SMIG et du SMAG depuis 1961.
+  - Ajoute les paramètres pour les indemnités spéciales (IS) et complémentaires (ICP).
+
+## 0.55 - [#238](https://github.com/openfisca/openfisca-tunisia/pull/238)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes..
+* Zones impactées : `cotisations/sociales/public/regimes_speciaux`.
+* Détails :
+  - Ajout des barèmes de membres du gouvernement, des députés et des gouverneurs.
+
+### 0.54 - [#214](https://github.com/openfisca/openfisca-tunisia/pull/214)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters`.
+* Détails :
+  - Ajout / test href vers repo gitlab
+
+
+### 0.53 - [#209](https://github.com/openfisca/openfisca-tunisia/pull/209)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters`.
+* Détails :
+  - Ajoute référence pour le capital décès
+
+
+### 0.52 - [#205](https://github.com/openfisca/openfisca-tunisia/pull/205)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters`.
+* Détails :
+  - Corrige le smig pris en compte dans l'éligibilité Amen social
+  - Ajoute des paramètres sur les produits alimentaires subventionnés et l'énergie
+
+### 0.51 - [#204](https://github.com/openfisca/openfisca-tunisia/pull/204)
+
+* Changement mineur.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales`.
+* Détails :
+  - Ajoute une référence législative pour les cotisations retraite
+
 ## 0.50 - [#198](https://github.com/openfisca/openfisca-tunisia/pull/198)
 
 * Changement mineur.
 * Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/salarie_cnrps`.
 * Détails :
-  - Ajoute une référence législaltive pour les cotisations retraite
+  - Ajoute une référence législative pour les cotisations retraite
 
 ## 0.49 - [#197](https://github.com/openfisca/openfisca-tunisia/pull/197)
 

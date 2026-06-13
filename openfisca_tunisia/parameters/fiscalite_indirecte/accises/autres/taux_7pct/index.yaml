@@ -1,0 +1,6 @@
+description: Autres produits soumis aux accises - Taux 7%
+metadata:
+  short_label: 7%
+  order:
+  - taux
+  - produits

@@ -1,0 +1,7 @@
+description: Boissons non alcoolisées
+metadata:
+  short_label: Boissons non alcoolisées
+  order:
+  - taux
+  - produits
+documentation: Boissons non alcoolisées soumis à un taux d'accise de 25%.

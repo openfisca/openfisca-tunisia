@@ -1,4 +1,5 @@
 description: Période de remplacement de base
+unit: year
 values:
   1981-02-24:
-    value: 10.0
+    value: 10

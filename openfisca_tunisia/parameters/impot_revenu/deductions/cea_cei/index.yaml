@@ -1,0 +1,5 @@
+description: Plafonds des Comptes d'Épargne Longue (CEA, CEI)
+metadata:
+  order:
+  - cea
+  - cei
