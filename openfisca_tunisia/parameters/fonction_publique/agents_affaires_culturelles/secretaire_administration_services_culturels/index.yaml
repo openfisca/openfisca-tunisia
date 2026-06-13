@@ -1,0 +1,7 @@
+description: Secrétaires administrations services culturels du corps des agents du ministère des affaires culturelles
+metadata:
+  short_label: Secrétaires administrations services culturels
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

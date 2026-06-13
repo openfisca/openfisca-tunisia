@@ -1,0 +1,7 @@
+description: Professeurs principaux hors classes en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+metadata:
+  short_label: Professeurs principaux hors classes en apsas
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -1,0 +1,7 @@
+description: Professeurs adjoints d'animations culturelles du corps des animateurs culturels
+metadata:
+  short_label: Professeurs adjoints d'animations culturelles
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A3

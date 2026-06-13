@@ -1,0 +1,7 @@
+description: Inspecteurs services financiers du corps des personnels du ministère des finances
+metadata:
+  short_label: Inspecteurs services financiers
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

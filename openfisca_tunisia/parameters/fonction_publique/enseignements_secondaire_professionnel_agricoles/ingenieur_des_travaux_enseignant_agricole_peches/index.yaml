@@ -1,0 +1,7 @@
+description: Ingénieurs des travaux enseignants agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
+metadata:
+  short_label: Ingénieurs des travaux enseignants agricoles peches
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

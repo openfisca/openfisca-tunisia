@@ -1,0 +1,7 @@
+description: Attachés de recherches agricoles et de peches du corps des chercheurs agricoles et de pêche
+metadata:
+  short_label: Attachés de recherches agricoles et de peches
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

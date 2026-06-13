@@ -1,0 +1,7 @@
+description: Pilotes categories a du corps des pilotes professionnels civils d'aéronefs de l'administration
+metadata:
+  short_label: Pilotes categories a
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

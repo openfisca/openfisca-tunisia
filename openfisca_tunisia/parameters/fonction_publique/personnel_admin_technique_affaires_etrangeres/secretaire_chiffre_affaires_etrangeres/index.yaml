@@ -1,0 +1,7 @@
+description: Secrétaires chiffres affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
+metadata:
+  short_label: Secrétaires chiffres affaires étrangères
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

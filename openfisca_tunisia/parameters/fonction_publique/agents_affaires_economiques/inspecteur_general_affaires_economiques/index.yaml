@@ -1,0 +1,7 @@
+description: Inspecteurs généraux affaires économiques du corps des agents des affaires économiques
+metadata:
+  short_label: Inspecteurs généraux affaires économiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

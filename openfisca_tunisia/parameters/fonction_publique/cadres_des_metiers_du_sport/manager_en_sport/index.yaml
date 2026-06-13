@@ -1,0 +1,7 @@
+description: Managers en sports du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+metadata:
+  short_label: Managers en sports
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2
