@@ -1,5 +1,6 @@
-description: Corps du contrôle économique — grade agent_controle_economique
+description: Agents controles économiques du corps des corps du contrôle économique
 metadata:
+  short_label: Agents controles économiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

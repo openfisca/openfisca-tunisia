@@ -1,5 +1,6 @@
-description: Corps des agents des services douaniers — grade sergent_major_des_douanes_echelle_3
+description: Sergents majors des douanes echelles 3 du corps des agents des services douaniers
 metadata:
+  short_label: Sergents majors des douanes echelles 3
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

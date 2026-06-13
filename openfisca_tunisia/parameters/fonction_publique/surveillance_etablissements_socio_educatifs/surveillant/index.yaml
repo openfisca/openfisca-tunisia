@@ -1,7 +1,6 @@
-description: Corps des personnels de surveillance des établissements et institutions
-  socio-éducatives relevant du ministère de la jeunesse, de l'enfance et des sports
-  — grade surveillant
+description: Surveillants du corps des personnels de surveillance des établissements et institutions socio-éducatives relevant du ministère de la jeunesse, de l'enfance et des sports
 metadata:
+  short_label: Surveillants
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

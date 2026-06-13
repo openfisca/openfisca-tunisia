@@ -1,11 +1,8 @@
-description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
-  — grade commis_ens_sup — traitement de base mensuel par échelon
+description: Traitement de base mensuel des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 300.75
@@ -16,9 +13,7 @@ echelon_1:
       '2014-11-21':
         title: Décret 2007-268
 echelon_2:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 304.75
@@ -29,9 +24,7 @@ echelon_2:
       '2014-11-21':
         title: Décret 2007-268
 echelon_3:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 308.75
@@ -42,9 +35,7 @@ echelon_3:
       '2014-11-21':
         title: Décret 2007-268
 echelon_4:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 312.75
@@ -55,9 +46,7 @@ echelon_4:
       '2014-11-21':
         title: Décret 2007-268
 echelon_5:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 316.75
@@ -68,9 +57,7 @@ echelon_5:
       '2014-11-21':
         title: Décret 2007-268
 echelon_6:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 320.75
@@ -81,9 +68,7 @@ echelon_6:
       '2014-11-21':
         title: Décret 2007-268
 echelon_7:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 324.75
@@ -94,9 +79,7 @@ echelon_7:
       '2014-11-21':
         title: Décret 2007-268
 echelon_8:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 328.75
@@ -107,9 +90,7 @@ echelon_8:
       '2014-11-21':
         title: Décret 2007-268
 echelon_9:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 332.75
@@ -120,9 +101,7 @@ echelon_9:
       '2014-11-21':
         title: Décret 2007-268
 echelon_10:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 336.75
@@ -133,9 +112,7 @@ echelon_10:
       '2014-11-21':
         title: Décret 2007-268
 echelon_11:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 340.75
@@ -146,9 +123,7 @@ echelon_11:
       '2014-11-21':
         title: Décret 2007-268
 echelon_12:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 344.75
@@ -159,9 +134,7 @@ echelon_12:
       '2014-11-21':
         title: Décret 2007-268
 echelon_13:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 348.75
@@ -172,9 +145,7 @@ echelon_13:
       '2014-11-21':
         title: Décret 2007-268
 echelon_14:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 352.75
@@ -185,9 +156,7 @@ echelon_14:
       '2014-11-21':
         title: Décret 2007-268
 echelon_15:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 356.75
@@ -198,9 +167,7 @@ echelon_15:
       '2014-11-21':
         title: Décret 2007-268
 echelon_16:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 360.75
@@ -211,9 +178,7 @@ echelon_16:
       '2014-11-21':
         title: Décret 2007-268
 echelon_17:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 364.75
@@ -224,9 +189,7 @@ echelon_17:
       '2014-11-21':
         title: Décret 2007-268
 echelon_18:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 368.75
@@ -237,9 +200,7 @@ echelon_18:
       '2014-11-21':
         title: Décret 2007-268
 echelon_19:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 372.75
@@ -250,9 +211,7 @@ echelon_19:
       '2014-11-21':
         title: Décret 2007-268
 echelon_20:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 376.75
@@ -263,9 +222,7 @@ echelon_20:
       '2014-11-21':
         title: Décret 2007-268
 echelon_21:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 380.75
@@ -276,9 +233,7 @@ echelon_21:
       '2014-11-21':
         title: Décret 2007-268
 echelon_22:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 384.75
@@ -289,9 +244,7 @@ echelon_22:
       '2014-11-21':
         title: Décret 2007-268
 echelon_23:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 388.75
@@ -302,9 +255,7 @@ echelon_23:
       '2014-11-21':
         title: Décret 2007-268
 echelon_24:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 392.75
@@ -315,9 +266,7 @@ echelon_24:
       '2014-11-21':
         title: Décret 2007-268
 echelon_25:
-  description: Corps administratif de l'enseignement supérieur et de la recherche
-    scientifique — grade commis_ens_sup — traitement de base mensuel par échelon —
-    échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
   values:
     '2014-11-21':
       value: 396.75

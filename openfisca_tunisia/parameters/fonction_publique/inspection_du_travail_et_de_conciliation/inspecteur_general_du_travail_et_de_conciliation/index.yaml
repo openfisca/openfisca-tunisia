@@ -1,6 +1,6 @@
-description: Corps des agents de l'inspection du travail et de conciliation — grade
-  inspecteur_general_du_travail_et_de_conciliation
+description: Inspecteurs généraux du travails et de conciliations du corps des agents de l'inspection du travail et de conciliation
 metadata:
+  short_label: Inspecteurs généraux du travails et de conciliations
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

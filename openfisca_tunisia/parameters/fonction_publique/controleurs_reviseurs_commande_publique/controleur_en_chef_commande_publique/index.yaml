@@ -1,6 +1,6 @@
-description: Corps des contrôleurs et réviseurs de la commande publique relevant de
-  la présidence du gouvernement — grade controleur_en_chef_commande_publique
+description: Contrôleurs en chefs commandes publiques du corps des contrôleurs et réviseurs de la commande publique relevant de la présidence du gouvernement
 metadata:
+  short_label: Contrôleurs en chefs commandes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

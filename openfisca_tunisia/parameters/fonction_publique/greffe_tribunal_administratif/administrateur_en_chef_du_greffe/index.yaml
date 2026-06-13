@@ -1,5 +1,6 @@
-description: Corps du greffe du tribunal administratif — grade administrateur_en_chef_du_greffe
+description: Administrateurs en chefs du greffes du corps des corps du greffe du tribunal administratif
 metadata:
+  short_label: Administrateurs en chefs du greffes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,6 +1,6 @@
-description: Corps des analystes et des techniciens de l'informatique des administrations
-  publiques — grade technicien_laboratoire_informatique
+description: Techniciens laboratoires informatiques du corps des analystes et des techniciens de l'informatique des administrations publiques
 metadata:
+  short_label: Techniciens laboratoires informatiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

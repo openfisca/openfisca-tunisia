@@ -1,5 +1,6 @@
-description: Corps administratif commun des administrations publiques — grade secretaire_administration
+description: Secrétaires administrations du corps des corps administratif commun des administrations publiques
 metadata:
+  short_label: Secrétaires administrations
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère de la culture — grade conseiller_culturel_general
+description: Conseillers culturels généraux du corps des personnels du ministère de la culture
 metadata:
+  short_label: Conseillers culturels généraux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

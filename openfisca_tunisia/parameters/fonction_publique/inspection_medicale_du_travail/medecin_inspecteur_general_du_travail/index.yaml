@@ -1,5 +1,6 @@
-description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_general_du_travail
+description: Médecins inspecteurs généraux du travails du corps des l'inspection médicale du travail
 metadata:
+  short_label: Médecins inspecteurs généraux du travails
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

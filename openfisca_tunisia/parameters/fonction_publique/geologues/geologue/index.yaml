@@ -1,5 +1,6 @@
-description: Corps des géologues — grade geologue
+description: Géologues du corps des géologues
 metadata:
+  short_label: Géologues
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

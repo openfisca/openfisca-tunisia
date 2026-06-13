@@ -1,5 +1,6 @@
-description: Corps du greffe du tribunal administratif — grade administrateur_conseiller_du_greffe
+description: Administrateurs conseillers du greffes du corps des corps du greffe du tribunal administratif
 metadata:
+  short_label: Administrateurs conseillers du greffes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

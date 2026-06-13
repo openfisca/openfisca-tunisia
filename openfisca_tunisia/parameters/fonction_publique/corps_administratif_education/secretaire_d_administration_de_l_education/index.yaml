@@ -1,5 +1,6 @@
-description: Corps administratif de l'éducation — grade secretaire_d_administration_de_l_education
+description: Secrétaires d'administrations de l'educations du corps des corps administratif de l'éducation
 metadata:
+  short_label: Secrétaires d'administrations de l'educations
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

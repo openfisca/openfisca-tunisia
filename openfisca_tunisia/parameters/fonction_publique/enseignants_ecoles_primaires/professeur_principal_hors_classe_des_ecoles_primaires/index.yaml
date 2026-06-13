@@ -1,6 +1,6 @@
-description: Corps des personnels enseignants exerçant dans les écoles primaires —
-  grade professeur_principal_hors_classe_des_ecoles_primaires
+description: Professeurs principaux hors classes des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
 metadata:
+  short_label: Professeurs principaux hors classes des écoles primaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

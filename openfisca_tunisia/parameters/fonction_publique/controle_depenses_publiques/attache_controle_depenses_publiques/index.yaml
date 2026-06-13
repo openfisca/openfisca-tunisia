@@ -1,5 +1,6 @@
-description: Corps de contrôle des dépenses publiques — grade attache_controle_depenses_publiques
+description: Attachés controles dépenses publiques du corps des contrôle des dépenses publiques
 metadata:
+  short_label: Attachés controles dépenses publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

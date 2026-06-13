@@ -1,6 +1,6 @@
-description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
-  — grade administrateur_ens_sup
+description: Administrateurs ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
 metadata:
+  short_label: Administrateurs ens sups
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

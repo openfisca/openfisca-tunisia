@@ -1,5 +1,6 @@
-description: Corps des inspecteurs médicaux et juxtamédicaux — grade inspecteur_regional_de_la_sante_publique
+description: Inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
 metadata:
+  short_label: Inspecteurs régionaux de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

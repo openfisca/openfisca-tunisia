@@ -1,6 +1,6 @@
-description: Corps des personnels de l'inspection pédagogique et des enseignants de
-  musique du ministère de la culture — grade conseiller_d_enseignement_de_musique
+description: Conseillers d'enseignements de musiques du corps des personnels de l'inspection pédagogique et des enseignants de musique du ministère de la culture
 metadata:
+  short_label: Conseillers d'enseignements de musiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

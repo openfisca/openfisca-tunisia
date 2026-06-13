@@ -1,6 +1,6 @@
-description: Corps des enseignants chercheurs des établissements d'enseignement supérieur
-  agricole — grade maitre_de_conferences_de_l_enseignement_sup_agricole
+description: Maitres de conférences de l'enseignements sups agricoles du corps des enseignants chercheurs des établissements d'enseignement supérieur agricole
 metadata:
+  short_label: Maitres de conférences de l'enseignements sups agricoles
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

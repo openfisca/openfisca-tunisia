@@ -1,5 +1,6 @@
-description: Corps des agents des services douaniers — grade adjudant_chef_des_douanes_echelle_1
+description: Adjudants chefs des douanes echelles 1 du corps des agents des services douaniers
 metadata:
+  short_label: Adjudants chefs des douanes echelles 1
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

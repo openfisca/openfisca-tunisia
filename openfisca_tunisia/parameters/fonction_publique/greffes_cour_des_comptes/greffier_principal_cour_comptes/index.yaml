@@ -1,5 +1,6 @@
-description: Corps des greffes de la cour des comptes — grade greffier_principal_cour_comptes
+description: Greffiers principaux cours comptes du corps des greffes de la cour des comptes
 metadata:
+  short_label: Greffiers principaux cours comptes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

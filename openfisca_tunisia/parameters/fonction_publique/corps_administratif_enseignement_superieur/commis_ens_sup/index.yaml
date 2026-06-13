@@ -1,6 +1,6 @@
-description: Corps administratif de l'enseignement supérieur et de la recherche scientifique
-  — grade commis_ens_sup
+description: Commis ens sups du corps des corps administratif de l'enseignement supérieur et de la recherche scientifique
 metadata:
+  short_label: Commis ens sups
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

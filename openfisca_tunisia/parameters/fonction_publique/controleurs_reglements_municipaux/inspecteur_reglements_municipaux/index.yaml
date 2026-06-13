@@ -1,5 +1,6 @@
-description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
+description: Inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
 metadata:
+  short_label: Inspecteurs règlements municipaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des enseignants technologues — grade professeur_technologue
+description: Professeurs technologues du corps des enseignants technologues
 metadata:
+  short_label: Professeurs technologues
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

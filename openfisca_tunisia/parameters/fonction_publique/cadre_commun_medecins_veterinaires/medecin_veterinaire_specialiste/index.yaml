@@ -1,5 +1,6 @@
-description: Cadre commun des médecins vétérinaires — grade medecin_veterinaire_specialiste
+description: Médecins veterinaires specialistes du corps des cadre commun des médecins vétérinaires
 metadata:
+  short_label: Médecins veterinaires specialistes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

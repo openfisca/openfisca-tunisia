@@ -1,5 +1,6 @@
-description: Corps des architectes de l'administration — grade architecte_principal
+description: Architectes principaux du corps des architectes de l'administration
 metadata:
+  short_label: Architectes principaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

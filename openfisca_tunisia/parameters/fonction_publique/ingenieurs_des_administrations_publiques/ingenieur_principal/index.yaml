@@ -1,5 +1,6 @@
-description: Corps commun des ingénieurs des administrations publiques — grade ingenieur_principal
+description: Ingénieurs principaux du corps des corps commun des ingénieurs des administrations publiques
 metadata:
+  short_label: Ingénieurs principaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

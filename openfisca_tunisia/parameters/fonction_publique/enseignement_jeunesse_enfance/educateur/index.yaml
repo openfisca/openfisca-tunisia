@@ -1,6 +1,6 @@
-description: Corps de l'enseignement du ministère de la jeunesse et de l'enfance —
-  grade educateur
+description: Educateurs du corps des l'enseignement du ministère de la jeunesse et de l'enfance
 metadata:
+  short_label: Educateurs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

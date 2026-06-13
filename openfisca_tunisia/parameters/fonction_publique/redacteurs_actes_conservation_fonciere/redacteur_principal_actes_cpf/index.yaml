@@ -1,6 +1,6 @@
-description: Corps des rédacteurs d'actes de la conservation de la propriété foncière
-  — grade redacteur_principal_actes_cpf
+description: Redacteurs principaux actes cpfs du corps des rédacteurs d'actes de la conservation de la propriété foncière
 metadata:
+  short_label: Redacteurs principaux actes cpfs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

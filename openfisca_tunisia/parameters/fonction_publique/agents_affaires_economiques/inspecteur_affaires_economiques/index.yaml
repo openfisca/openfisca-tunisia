@@ -1,5 +1,6 @@
-description: Corps des agents des affaires économiques — grade inspecteur_affaires_economiques
+description: Inspecteurs affaires économiques du corps des agents des affaires économiques
 metadata:
+  short_label: Inspecteurs affaires économiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

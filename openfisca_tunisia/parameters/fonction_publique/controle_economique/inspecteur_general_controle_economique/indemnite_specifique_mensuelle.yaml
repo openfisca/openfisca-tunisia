@@ -1,10 +1,8 @@
-description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des inspecteurs généraux controles économiques du corps des corps du contrôle économique
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -21,8 +19,7 @@ echelon_1:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_2:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -39,8 +36,7 @@ echelon_2:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_3:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -57,8 +53,7 @@ echelon_3:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_4:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -75,8 +70,7 @@ echelon_4:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_5:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -93,8 +87,7 @@ echelon_5:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_6:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -111,8 +104,7 @@ echelon_6:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_7:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -129,8 +121,7 @@ echelon_7:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_8:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -147,8 +138,7 @@ echelon_8:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_9:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -165,8 +155,7 @@ echelon_9:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_10:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -183,8 +172,7 @@ echelon_10:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_11:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -201,8 +189,7 @@ echelon_11:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_12:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -219,8 +206,7 @@ echelon_12:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_13:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -237,8 +223,7 @@ echelon_13:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_14:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -255,8 +240,7 @@ echelon_14:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_15:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5
@@ -273,8 +257,7 @@ echelon_15:
         title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
           +270, A3 +220, B +210)
 echelon_16:
-  description: Corps du contrôle économique — grade inspecteur_general_controle_economique
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 699.5

@@ -1,5 +1,6 @@
-description: Corps des greffes des juridictions de l'ordre judiciaire — grade huissier_juridictions
+description: Huissiers juridictions du corps des greffes des juridictions de l'ordre judiciaire
 metadata:
+  short_label: Huissiers juridictions
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

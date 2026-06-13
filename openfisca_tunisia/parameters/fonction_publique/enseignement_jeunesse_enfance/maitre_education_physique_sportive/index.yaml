@@ -1,6 +1,6 @@
-description: Corps de l'enseignement du ministère de la jeunesse et de l'enfance —
-  grade maitre_education_physique_sportive
+description: Maitres educations physiques sportives du corps des l'enseignement du ministère de la jeunesse et de l'enfance
 metadata:
+  short_label: Maitres educations physiques sportives
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

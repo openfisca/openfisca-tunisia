@@ -1,5 +1,6 @@
-description: Corps des architectes de l'administration — grade architecte_en_chef
+description: Architectes en chefs du corps des architectes de l'administration
 metadata:
+  short_label: Architectes en chefs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

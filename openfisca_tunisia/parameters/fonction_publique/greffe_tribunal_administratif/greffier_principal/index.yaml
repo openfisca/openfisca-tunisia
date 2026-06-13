@@ -1,5 +1,6 @@
-description: Corps du greffe du tribunal administratif — grade greffier_principal
+description: Greffiers principaux du corps des corps du greffe du tribunal administratif
 metadata:
+  short_label: Greffiers principaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

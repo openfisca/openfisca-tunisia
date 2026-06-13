@@ -1,5 +1,6 @@
-description: Corps des enseignants technologues — grade technologue
+description: Technologues du corps des enseignants technologues
 metadata:
+  short_label: Technologues
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

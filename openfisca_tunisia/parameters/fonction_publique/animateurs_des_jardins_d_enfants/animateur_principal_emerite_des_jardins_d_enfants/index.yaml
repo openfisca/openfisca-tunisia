@@ -1,5 +1,6 @@
-description: Corps des animateurs des jardins d'enfants — grade animateur_principal_emerite_des_jardins_d_enfants
+description: Animateurs principaux emerites des jardins d'enfants du corps des animateurs des jardins d'enfants
 metadata:
+  short_label: Animateurs principaux emerites des jardins d'enfants
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

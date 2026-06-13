@@ -1,7 +1,6 @@
-description: Corps des personnels enseignants relevant du ministère de la jeunesse
-  et des sports et du ministère de la femme, de la famille et de l'enfance — grade
-  professeur_principal_hors_classe_ep
+description: Professeurs principaux hors classes eps du corps des personnels enseignants relevant du ministère de la jeunesse et des sports et du ministère de la femme, de la famille et de l'enfance
 metadata:
+  short_label: Professeurs principaux hors classes eps
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

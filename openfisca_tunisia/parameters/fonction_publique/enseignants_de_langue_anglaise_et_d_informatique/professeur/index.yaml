@@ -1,7 +1,6 @@
-description: Corps interdépartemental des enseignants de langue anglaise et d'informatique
-  exerçant dans les établissements d'enseignement relevant du ministère de l'éducation
-  et de l'enseignement supérieur — grade professeur
+description: Professeurs du corps des corps interdépartemental des enseignants de langue anglaise et d'informatique exerçant dans les établissements d'enseignement relevant du ministère de l'éducation et de l'enseignement supérieur
 metadata:
+  short_label: Professeurs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère de la culture — grade commis_culturel
+description: Commis culturels du corps des personnels du ministère de la culture
 metadata:
+  short_label: Commis culturels
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

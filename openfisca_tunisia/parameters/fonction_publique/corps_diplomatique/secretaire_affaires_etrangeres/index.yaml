@@ -1,5 +1,6 @@
-description: Corps diplomatique du ministère des affaires étrangères — grade secretaire_affaires_etrangeres
+description: Secrétaires affaires étrangères du corps des corps diplomatique du ministère des affaires étrangères
 metadata:
+  short_label: Secrétaires affaires étrangères
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

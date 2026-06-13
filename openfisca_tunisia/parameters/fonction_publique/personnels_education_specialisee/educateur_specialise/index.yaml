@@ -1,6 +1,6 @@
-description: Corps des personnels de l'éducation spécialisée du ministère des affaires
-  sociales — grade educateur_specialise
+description: Educateurs spécialisés du corps des personnels de l'éducation spécialisée du ministère des affaires sociales
 metadata:
+  short_label: Educateurs spécialisés
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

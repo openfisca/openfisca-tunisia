@@ -1,11 +1,8 @@
-description: Corps des personnels enseignants exerçant dans les écoles primaires —
-  grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
+description: Traitement de base mensuel des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 521.25
@@ -16,9 +13,7 @@ echelon_1:
       '2013-06-07':
         title: Décret 2007-268
 echelon_2:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 530.25
@@ -29,9 +24,7 @@ echelon_2:
       '2013-06-07':
         title: Décret 2007-268
 echelon_3:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 539.25
@@ -42,9 +35,7 @@ echelon_3:
       '2013-06-07':
         title: Décret 2007-268
 echelon_4:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 548.25
@@ -55,9 +46,7 @@ echelon_4:
       '2013-06-07':
         title: Décret 2007-268
 echelon_5:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 557.25
@@ -68,9 +57,7 @@ echelon_5:
       '2013-06-07':
         title: Décret 2007-268
 echelon_6:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 566.25
@@ -81,9 +68,7 @@ echelon_6:
       '2013-06-07':
         title: Décret 2007-268
 echelon_7:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 575.25
@@ -94,9 +79,7 @@ echelon_7:
       '2013-06-07':
         title: Décret 2007-268
 echelon_8:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 584.25
@@ -107,9 +90,7 @@ echelon_8:
       '2013-06-07':
         title: Décret 2007-268
 echelon_9:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 593.25
@@ -120,9 +101,7 @@ echelon_9:
       '2013-06-07':
         title: Décret 2007-268
 echelon_10:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 602.25
@@ -133,9 +112,7 @@ echelon_10:
       '2013-06-07':
         title: Décret 2007-268
 echelon_11:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 611.25
@@ -146,9 +123,7 @@ echelon_11:
       '2013-06-07':
         title: Décret 2007-268
 echelon_12:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 620.25
@@ -159,9 +134,7 @@ echelon_12:
       '2013-06-07':
         title: Décret 2007-268
 echelon_13:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 629.25
@@ -172,9 +145,7 @@ echelon_13:
       '2013-06-07':
         title: Décret 2007-268
 echelon_14:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 638.25
@@ -185,9 +156,7 @@ echelon_14:
       '2013-06-07':
         title: Décret 2007-268
 echelon_15:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 647.25
@@ -198,9 +167,7 @@ echelon_15:
       '2013-06-07':
         title: Décret 2007-268
 echelon_16:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 656.25
@@ -211,9 +178,7 @@ echelon_16:
       '2013-06-07':
         title: Décret 2007-268
 echelon_17:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 665.25
@@ -224,9 +189,7 @@ echelon_17:
       '2013-06-07':
         title: Décret 2007-268
 echelon_18:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 674.25
@@ -237,9 +200,7 @@ echelon_18:
       '2013-06-07':
         title: Décret 2007-268
 echelon_19:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 683.25
@@ -250,9 +211,7 @@ echelon_19:
       '2013-06-07':
         title: Décret 2007-268
 echelon_20:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 692.25
@@ -263,9 +222,7 @@ echelon_20:
       '2013-06-07':
         title: Décret 2007-268
 echelon_21:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 701.25
@@ -276,9 +233,7 @@ echelon_21:
       '2013-06-07':
         title: Décret 2007-268
 echelon_22:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 710.25
@@ -289,9 +244,7 @@ echelon_22:
       '2013-06-07':
         title: Décret 2007-268
 echelon_23:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 719.25
@@ -302,9 +255,7 @@ echelon_23:
       '2013-06-07':
         title: Décret 2007-268
 echelon_24:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 728.25
@@ -315,9 +266,7 @@ echelon_24:
       '2013-06-07':
         title: Décret 2007-268
 echelon_25:
-  description: Corps des personnels enseignants exerçant dans les écoles primaires
-    — grade professeur_des_ecoles_primaires — traitement de base mensuel par échelon
-    — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
   values:
     '2013-06-07':
       value: 737.25

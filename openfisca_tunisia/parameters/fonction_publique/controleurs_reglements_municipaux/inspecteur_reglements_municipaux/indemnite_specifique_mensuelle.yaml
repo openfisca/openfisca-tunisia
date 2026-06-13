@@ -1,10 +1,8 @@
-description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -29,8 +27,7 @@ echelon_1:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_2:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -55,8 +52,7 @@ echelon_2:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_3:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -81,8 +77,7 @@ echelon_3:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_4:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -107,8 +102,7 @@ echelon_4:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_5:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -133,8 +127,7 @@ echelon_5:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_6:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -159,8 +152,7 @@ echelon_6:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_7:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -185,8 +177,7 @@ echelon_7:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_8:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -211,8 +202,7 @@ echelon_8:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_9:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -237,8 +227,7 @@ echelon_9:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_10:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -263,8 +252,7 @@ echelon_10:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_11:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -289,8 +277,7 @@ echelon_11:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_12:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -315,8 +302,7 @@ echelon_12:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_13:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -341,8 +327,7 @@ echelon_13:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_14:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -367,8 +352,7 @@ echelon_14:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_15:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -393,8 +377,7 @@ echelon_15:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_16:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -419,8 +402,7 @@ echelon_16:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_17:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -445,8 +427,7 @@ echelon_17:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_18:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -471,8 +452,7 @@ echelon_18:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_19:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -497,8 +477,7 @@ echelon_19:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_20:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -523,8 +502,7 @@ echelon_20:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_21:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 21
+  description: Indemnité spécifique mensuelle de l'échelon 21 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -549,8 +527,7 @@ echelon_21:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_22:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 22
+  description: Indemnité spécifique mensuelle de l'échelon 22 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -575,8 +552,7 @@ echelon_22:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_23:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 23
+  description: Indemnité spécifique mensuelle de l'échelon 23 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -601,8 +577,7 @@ echelon_23:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_24:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 24
+  description: Indemnité spécifique mensuelle de l'échelon 24 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0
@@ -627,8 +602,7 @@ echelon_24:
       '2011-02-01':
         title: Décret 2011-1262 (+76 charges speciales, tous grades)
 echelon_25:
-  description: Corps des contrôleurs des règlements municipaux — grade inspecteur_reglements_municipaux
-    — indemnité spécifique mensuelle par échelon — échelon 25
+  description: Indemnité spécifique mensuelle de l'échelon 25 des inspecteurs règlements municipaux du corps des contrôleurs des règlements municipaux
   values:
     '2000-06-02':
       value: 0.0

@@ -1,5 +1,6 @@
-description: Corps des enseignants technologues — grade maitre_technologue
+description: Maitres technologues du corps des enseignants technologues
 metadata:
+  short_label: Maitres technologues
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

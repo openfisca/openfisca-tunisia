@@ -1,5 +1,6 @@
-description: Corps des psychologues des administrations publiques — grade psychologue_en_chef
+description: Psychologues en chefs du corps des psychologues des administrations publiques
 metadata:
+  short_label: Psychologues en chefs
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

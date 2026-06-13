@@ -1,5 +1,6 @@
-description: Corps des psychologues des administrations publiques — grade psychologue_principal
+description: Psychologues principaux du corps des psychologues des administrations publiques
 metadata:
+  short_label: Psychologues principaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

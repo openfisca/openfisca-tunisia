@@ -1,5 +1,6 @@
-description: Corps administratif des communications — grade inspecteur_general_communications
+description: Inspecteurs généraux communications du corps des corps administratif des communications
 metadata:
+  short_label: Inspecteurs généraux communications
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

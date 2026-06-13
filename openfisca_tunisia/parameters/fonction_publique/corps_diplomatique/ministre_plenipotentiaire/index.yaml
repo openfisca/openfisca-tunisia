@@ -1,5 +1,6 @@
-description: Corps diplomatique du ministère des affaires étrangères — grade ministre_plenipotentiaire
+description: Ministres plenipotentiaires du corps des corps diplomatique du ministère des affaires étrangères
 metadata:
+  short_label: Ministres plenipotentiaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

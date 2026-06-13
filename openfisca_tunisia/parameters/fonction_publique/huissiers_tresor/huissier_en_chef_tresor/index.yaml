@@ -1,5 +1,6 @@
-description: Corps des huissiers du trésor du ministère des finances — grade huissier_en_chef_tresor
+description: Huissiers en chefs tresors du corps des huissiers du trésor du ministère des finances
 metadata:
+  short_label: Huissiers en chefs tresors
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

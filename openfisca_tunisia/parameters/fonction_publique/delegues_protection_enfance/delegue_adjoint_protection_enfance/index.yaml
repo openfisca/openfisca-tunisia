@@ -1,5 +1,6 @@
-description: Corps des délégués à la protection de l'enfance — grade delegue_adjoint_protection_enfance
+description: Delegues adjoints protections enfances du corps des délégués à la protection de l'enfance
 metadata:
+  short_label: Delegues adjoints protections enfances
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

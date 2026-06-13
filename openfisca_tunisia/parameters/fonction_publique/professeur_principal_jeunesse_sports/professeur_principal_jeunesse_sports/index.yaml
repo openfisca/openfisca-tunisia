@@ -1,5 +1,6 @@
-description: Corps de professeur principal de la jeunesse et des sports — grade professeur_principal_jeunesse_sports
+description: Professeurs principaux jeunesses sports du corps des professeur principal de la jeunesse et des sports
 metadata:
+  short_label: Professeurs principaux jeunesses sports
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

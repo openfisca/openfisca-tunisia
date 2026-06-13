@@ -1,10 +1,8 @@
-description: Corps du contrôle économique — grade agent_controle_economique — traitement
-  de base mensuel par échelon
+description: Traitement de base mensuel des agents controles économiques du corps des corps du contrôle économique
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 360.25
@@ -15,8 +13,7 @@ echelon_1:
       '2013-07-30':
         title: Décret 2007-268
 echelon_2:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 365.75
@@ -27,8 +24,7 @@ echelon_2:
       '2013-07-30':
         title: Décret 2007-268
 echelon_3:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 371.25
@@ -39,8 +35,7 @@ echelon_3:
       '2013-07-30':
         title: Décret 2007-268
 echelon_4:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 376.75
@@ -51,8 +46,7 @@ echelon_4:
       '2013-07-30':
         title: Décret 2007-268
 echelon_5:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 382.25
@@ -63,8 +57,7 @@ echelon_5:
       '2013-07-30':
         title: Décret 2007-268
 echelon_6:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 387.75
@@ -75,8 +68,7 @@ echelon_6:
       '2013-07-30':
         title: Décret 2007-268
 echelon_7:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 393.25
@@ -87,8 +79,7 @@ echelon_7:
       '2013-07-30':
         title: Décret 2007-268
 echelon_8:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 398.75
@@ -99,8 +90,7 @@ echelon_8:
       '2013-07-30':
         title: Décret 2007-268
 echelon_9:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 404.25
@@ -111,8 +101,7 @@ echelon_9:
       '2013-07-30':
         title: Décret 2007-268
 echelon_10:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 409.75
@@ -123,8 +112,7 @@ echelon_10:
       '2013-07-30':
         title: Décret 2007-268
 echelon_11:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 415.25
@@ -135,8 +123,7 @@ echelon_11:
       '2013-07-30':
         title: Décret 2007-268
 echelon_12:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 420.75
@@ -147,8 +134,7 @@ echelon_12:
       '2013-07-30':
         title: Décret 2007-268
 echelon_13:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 426.25
@@ -159,8 +145,7 @@ echelon_13:
       '2013-07-30':
         title: Décret 2007-268
 echelon_14:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 431.75
@@ -171,8 +156,7 @@ echelon_14:
       '2013-07-30':
         title: Décret 2007-268
 echelon_15:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 437.25
@@ -183,8 +167,7 @@ echelon_15:
       '2013-07-30':
         title: Décret 2007-268
 echelon_16:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 442.75
@@ -195,8 +178,7 @@ echelon_16:
       '2013-07-30':
         title: Décret 2007-268
 echelon_17:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 448.25
@@ -207,8 +189,7 @@ echelon_17:
       '2013-07-30':
         title: Décret 2007-268
 echelon_18:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 453.75
@@ -219,8 +200,7 @@ echelon_18:
       '2013-07-30':
         title: Décret 2007-268
 echelon_19:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 459.25
@@ -231,8 +211,7 @@ echelon_19:
       '2013-07-30':
         title: Décret 2007-268
 echelon_20:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 464.75
@@ -243,8 +222,7 @@ echelon_20:
       '2013-07-30':
         title: Décret 2007-268
 echelon_21:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 470.25
@@ -255,8 +233,7 @@ echelon_21:
       '2013-07-30':
         title: Décret 2007-268
 echelon_22:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 475.75
@@ -267,8 +244,7 @@ echelon_22:
       '2013-07-30':
         title: Décret 2007-268
 echelon_23:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 481.25
@@ -279,8 +255,7 @@ echelon_23:
       '2013-07-30':
         title: Décret 2007-268
 echelon_24:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 486.75
@@ -291,8 +266,7 @@ echelon_24:
       '2013-07-30':
         title: Décret 2007-268
 echelon_25:
-  description: Corps du contrôle économique — grade agent_controle_economique — traitement
-    de base mensuel par échelon — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des agents controles économiques du corps des corps du contrôle économique
   values:
     '2013-07-30':
       value: 492.25

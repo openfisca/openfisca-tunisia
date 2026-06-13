@@ -1,6 +1,6 @@
-description: Corps des travailleurs sociaux du ministère des affaires sociales — grade
-  travailleur_social
+description: Travailleurs sociaux du corps des travailleurs sociaux du ministère des affaires sociales
 metadata:
+  short_label: Travailleurs sociaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,6 +1,6 @@
-description: Corps du personnel administratif et technique du ministère des affaires
-  étrangères — grade commis_affaires_etrangeres
+description: Commis affaires étrangères du corps des corps du personnel administratif et technique du ministère des affaires étrangères
 metadata:
+  short_label: Commis affaires étrangères
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

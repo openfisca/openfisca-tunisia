@@ -1,12 +1,8 @@
-description: Corps des personnels civils de l'enseignement supérieur militaire — grade
-  maitre_conferences_enseignement_superieur_militaire — indemnité spécifique mensuelle
-  par échelon
+description: Indemnité spécifique mensuelle des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -37,9 +33,7 @@ echelon_1:
       '2025-01-01':
         title: Décret 2022-797
 echelon_2:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -70,9 +64,7 @@ echelon_2:
       '2025-01-01':
         title: Décret 2022-797
 echelon_3:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -103,9 +95,7 @@ echelon_3:
       '2025-01-01':
         title: Décret 2022-797
 echelon_4:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -136,9 +126,7 @@ echelon_4:
       '2025-01-01':
         title: Décret 2022-797
 echelon_5:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -169,9 +157,7 @@ echelon_5:
       '2025-01-01':
         title: Décret 2022-797
 echelon_6:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -202,9 +188,7 @@ echelon_6:
       '2025-01-01':
         title: Décret 2022-797
 echelon_7:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -235,9 +219,7 @@ echelon_7:
       '2025-01-01':
         title: Décret 2022-797
 echelon_8:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -268,9 +250,7 @@ echelon_8:
       '2025-01-01':
         title: Décret 2022-797
 echelon_9:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -301,9 +281,7 @@ echelon_9:
       '2025-01-01':
         title: Décret 2022-797
 echelon_10:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -334,9 +312,7 @@ echelon_10:
       '2025-01-01':
         title: Décret 2022-797
 echelon_11:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -367,9 +343,7 @@ echelon_11:
       '2025-01-01':
         title: Décret 2022-797
 echelon_12:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -400,9 +374,7 @@ echelon_12:
       '2025-01-01':
         title: Décret 2022-797
 echelon_13:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -433,9 +405,7 @@ echelon_13:
       '2025-01-01':
         title: Décret 2022-797
 echelon_14:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -466,9 +436,7 @@ echelon_14:
       '2025-01-01':
         title: Décret 2022-797
 echelon_15:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -499,9 +467,7 @@ echelon_15:
       '2025-01-01':
         title: Décret 2022-797
 echelon_16:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -532,9 +498,7 @@ echelon_16:
       '2025-01-01':
         title: Décret 2022-797
 echelon_17:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -565,9 +529,7 @@ echelon_17:
       '2025-01-01':
         title: Décret 2022-797
 echelon_18:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -598,9 +560,7 @@ echelon_18:
       '2025-01-01':
         title: Décret 2022-797
 echelon_19:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -631,9 +591,7 @@ echelon_19:
       '2025-01-01':
         title: Décret 2022-797
 echelon_20:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -664,9 +622,7 @@ echelon_20:
       '2025-01-01':
         title: Décret 2022-797
 echelon_21:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 21
+  description: Indemnité spécifique mensuelle de l'échelon 21 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5
@@ -697,9 +653,7 @@ echelon_21:
       '2025-01-01':
         title: Décret 2022-797
 echelon_22:
-  description: Corps des personnels civils de l'enseignement supérieur militaire —
-    grade maitre_conferences_enseignement_superieur_militaire — indemnité spécifique
-    mensuelle par échelon — échelon 22
+  description: Indemnité spécifique mensuelle de l'échelon 22 des maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
   values:
     '1999-06-11':
       value: 954.5

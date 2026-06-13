@@ -1,6 +1,6 @@
-description: Corps de l'enseignement du ministère de la jeunesse et de l'enfance —
-  grade animateur_d_application
+description: Animateurs d'applications du corps des l'enseignement du ministère de la jeunesse et de l'enfance
 metadata:
+  short_label: Animateurs d'applications
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

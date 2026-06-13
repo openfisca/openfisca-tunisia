@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère des finances — grade inspecteur_general_services_financiers
+description: Inspecteurs généraux des services financiers du corps des personnels du ministère des finances
 metadata:
+  short_label: Inspecteurs généraux des services financiers
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

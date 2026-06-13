@@ -1,6 +1,6 @@
-description: Corps des personnels enseignants exerçant dans les écoles primaires —
-  grade professeur_des_ecoles_primaires
+description: Professeurs des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
 metadata:
+  short_label: Professeurs des écoles primaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

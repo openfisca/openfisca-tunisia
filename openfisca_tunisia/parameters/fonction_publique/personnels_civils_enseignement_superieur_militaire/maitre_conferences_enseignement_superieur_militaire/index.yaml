@@ -1,6 +1,6 @@
-description: Corps des personnels civils de l'enseignement supérieur militaire — grade
-  maitre_conferences_enseignement_superieur_militaire
+description: Maitres conférences enseignements supérieurs militaires du corps des personnels civils de l'enseignement supérieur militaire
 metadata:
+  short_label: Maitres conférences enseignements supérieurs militaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps administratif de la chambre des députés — grade agent_accueil_chambre_deputes
+description: Agents accueils chambres deputes du corps des corps administratif de la chambre des députés
 metadata:
+  short_label: Agents accueils chambres deputes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

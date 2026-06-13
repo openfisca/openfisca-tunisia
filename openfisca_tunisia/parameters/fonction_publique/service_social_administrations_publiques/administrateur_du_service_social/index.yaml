@@ -1,6 +1,6 @@
-description: Corps des personnels du service social des administrations publiques
-  — grade administrateur_du_service_social
+description: Administrateurs du services sociaux du corps des personnels du service social des administrations publiques
 metadata:
+  short_label: Administrateurs du services sociaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

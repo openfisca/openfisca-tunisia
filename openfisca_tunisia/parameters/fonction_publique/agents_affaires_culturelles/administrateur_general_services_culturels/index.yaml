@@ -1,5 +1,6 @@
-description: Corps des agents du ministère des affaires culturelles — grade administrateur_general_services_culturels
+description: Administrateurs généraux des services culturels du corps des agents du ministère des affaires culturelles
 metadata:
+  short_label: Administrateurs généraux des services culturels
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

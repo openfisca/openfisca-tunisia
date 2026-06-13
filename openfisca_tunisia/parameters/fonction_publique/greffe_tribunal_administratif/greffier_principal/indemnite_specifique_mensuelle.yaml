@@ -1,10 +1,8 @@
-description: Corps du greffe du tribunal administratif — grade greffier_principal
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des greffiers principaux du corps des corps du greffe du tribunal administratif
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -36,8 +34,7 @@ echelon_1:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_2:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -69,8 +66,7 @@ echelon_2:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_3:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -102,8 +98,7 @@ echelon_3:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_4:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -135,8 +130,7 @@ echelon_4:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_5:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -168,8 +162,7 @@ echelon_5:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_6:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -201,8 +194,7 @@ echelon_6:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_7:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -234,8 +226,7 @@ echelon_7:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_8:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -267,8 +258,7 @@ echelon_8:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_9:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -300,8 +290,7 @@ echelon_9:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_10:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -333,8 +322,7 @@ echelon_10:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_11:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -366,8 +354,7 @@ echelon_11:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_12:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -399,8 +386,7 @@ echelon_12:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_13:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -432,8 +418,7 @@ echelon_13:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_14:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -465,8 +450,7 @@ echelon_14:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_15:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -498,8 +482,7 @@ echelon_15:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_16:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -531,8 +514,7 @@ echelon_16:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_17:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -564,8 +546,7 @@ echelon_17:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_18:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -597,8 +578,7 @@ echelon_18:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_19:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -630,8 +610,7 @@ echelon_19:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_20:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -663,8 +642,7 @@ echelon_20:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_21:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 21
+  description: Indemnité spécifique mensuelle de l'échelon 21 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -696,8 +674,7 @@ echelon_21:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_22:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 22
+  description: Indemnité spécifique mensuelle de l'échelon 22 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -729,8 +706,7 @@ echelon_22:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_23:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 23
+  description: Indemnité spécifique mensuelle de l'échelon 23 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -762,8 +738,7 @@ echelon_23:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_24:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 24
+  description: Indemnité spécifique mensuelle de l'échelon 24 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0
@@ -795,8 +770,7 @@ echelon_24:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_25:
-  description: Corps du greffe du tribunal administratif — grade greffier_principal
-    — indemnité spécifique mensuelle par échelon — échelon 25
+  description: Indemnité spécifique mensuelle de l'échelon 25 des greffiers principaux du corps des corps du greffe du tribunal administratif
   values:
     '2004-10-22':
       value: 344.0

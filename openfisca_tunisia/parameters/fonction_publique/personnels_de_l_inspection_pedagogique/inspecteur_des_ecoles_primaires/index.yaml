@@ -1,6 +1,6 @@
-description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
-  inspecteur_des_ecoles_primaires
+description: Inspecteurs des écoles primaires du corps des l'inspection pédagogique du ministère de l'éducation
 metadata:
+  short_label: Inspecteurs des écoles primaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,5 +1,6 @@
-description: Corps des urbanistes de l'administration — grade urbaniste_divisionnaire
+description: Urbanistes divisionnaires du corps des urbanistes de l'administration
 metadata:
+  short_label: Urbanistes divisionnaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

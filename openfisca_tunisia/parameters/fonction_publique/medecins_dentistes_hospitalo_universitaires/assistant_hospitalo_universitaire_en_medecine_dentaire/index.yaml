@@ -1,5 +1,6 @@
-description: Corps des médecins dentistes hospitalo-universitaires — grade assistant_hospitalo_universitaire_en_medecine_dentaire
+description: Assistants hospitalo universitaires en medecines dentaires du corps des médecins dentistes hospitalo-universitaires
 metadata:
+  short_label: Assistants hospitalo universitaires en medecines dentaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

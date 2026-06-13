@@ -1,5 +1,6 @@
-description: Corps médical hospitalo-sanitaire — grade medecin_principal_de_la_sante_publique
+description: Médecins principaux de la santes publiques du corps des corps médical hospitalo-sanitaire
 metadata:
+  short_label: Médecins principaux de la santes publiques
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

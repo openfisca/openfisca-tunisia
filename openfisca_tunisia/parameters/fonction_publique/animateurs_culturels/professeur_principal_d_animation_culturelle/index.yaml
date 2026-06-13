@@ -1,5 +1,6 @@
-description: Corps des animateurs culturels — grade professeur_principal_d_animation_culturelle
+description: Professeurs principaux d'animations culturelles du corps des animateurs culturels
 metadata:
+  short_label: Professeurs principaux d'animations culturelles
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

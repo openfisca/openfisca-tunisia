@@ -1,6 +1,6 @@
-description: Corps de l'inspection pédagogique du ministère de l'éducation — grade
-  inspecteur_principal_de_la_vie_scolaire
+description: Inspecteurs principaux de la vies scolaires du corps des l'inspection pédagogique du ministère de l'éducation
 metadata:
+  short_label: Inspecteurs principaux de la vies scolaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

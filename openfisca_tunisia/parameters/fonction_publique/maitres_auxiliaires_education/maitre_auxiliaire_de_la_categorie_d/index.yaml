@@ -1,6 +1,6 @@
-description: Corps des maîtres auxiliaires relevant du ministère de l'éducation —
-  grade maitre_auxiliaire_de_la_categorie_d
+description: Maitres auxiliaires de la categories d' du corps des maîtres auxiliaires relevant du ministère de l'éducation
 metadata:
+  short_label: Maitres auxiliaires de la categories d'
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

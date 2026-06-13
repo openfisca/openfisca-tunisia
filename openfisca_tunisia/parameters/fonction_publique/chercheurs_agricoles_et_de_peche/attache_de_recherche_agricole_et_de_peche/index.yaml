@@ -1,5 +1,6 @@
-description: Corps des chercheurs agricoles et de pêche — grade attache_de_recherche_agricole_et_de_peche
+description: Attachés de recherches agricoles et de peches du corps des chercheurs agricoles et de pêche
 metadata:
+  short_label: Attachés de recherches agricoles et de peches
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

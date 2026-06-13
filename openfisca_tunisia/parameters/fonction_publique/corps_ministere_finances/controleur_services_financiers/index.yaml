@@ -1,5 +1,6 @@
-description: Corps des personnels du ministère des finances — grade controleur_services_financiers
+description: Contrôleurs services financiers du corps des personnels du ministère des finances
 metadata:
+  short_label: Contrôleurs services financiers
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

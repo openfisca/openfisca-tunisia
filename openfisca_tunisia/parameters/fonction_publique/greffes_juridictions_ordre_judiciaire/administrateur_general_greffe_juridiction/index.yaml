@@ -1,5 +1,6 @@
-description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
+description: Administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
 metadata:
+  short_label: Administrateurs généraux greffes juridictions
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

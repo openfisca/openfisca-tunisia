@@ -1,5 +1,6 @@
-description: Corps des médecins dentistes hospitalo-universitaires — grade maitre_de_conferences_agrege_hospitalo_universitaire_en_medecine_dentaire
+description: Maitres de conférences agrégés hospitalo universitaires en medecines dentaires du corps des médecins dentistes hospitalo-universitaires
 metadata:
+  short_label: Maitres de conférences agrégés hospitalo universitaires en medecines dentaires
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

@@ -1,6 +1,6 @@
-description: Corps des personnels enseignants exerçant dans les écoles préparatoires
-  et les lycées — grade professeur_principal_emerite
+description: Professeurs principaux emerites du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
 metadata:
+  short_label: Professeurs principaux emerites
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

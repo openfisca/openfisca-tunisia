@@ -1,10 +1,8 @@
-description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-  — indemnité spécifique mensuelle par échelon
+description: Indemnité spécifique mensuelle des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
 metadata:
   short_label: Indemnité spécifique mensuelle
 echelon_1:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -45,8 +43,7 @@ echelon_1:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_2:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -87,8 +84,7 @@ echelon_2:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_3:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -129,8 +125,7 @@ echelon_3:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_4:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -171,8 +166,7 @@ echelon_4:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_5:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -213,8 +207,7 @@ echelon_5:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_6:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -255,8 +248,7 @@ echelon_6:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_7:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -297,8 +289,7 @@ echelon_7:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_8:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -339,8 +330,7 @@ echelon_8:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_9:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -381,8 +371,7 @@ echelon_9:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_10:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -423,8 +412,7 @@ echelon_10:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_11:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -465,8 +453,7 @@ echelon_11:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_12:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -507,8 +494,7 @@ echelon_12:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_13:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -549,8 +535,7 @@ echelon_13:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_14:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -591,8 +576,7 @@ echelon_14:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_15:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0
@@ -633,8 +617,7 @@ echelon_15:
         title: 'Décret 2022-797 (cran par categorie : A1 +300, A2 +270, A3 +220, B
           +210, C/D +195 ; a terme 2025)'
 echelon_16:
-  description: Corps des greffes des juridictions de l'ordre judiciaire — grade administrateur_general_greffe_juridiction
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des administrateurs généraux greffes juridictions du corps des greffes des juridictions de l'ordre judiciaire
   values:
     '1999-08-06':
       value: 0.0

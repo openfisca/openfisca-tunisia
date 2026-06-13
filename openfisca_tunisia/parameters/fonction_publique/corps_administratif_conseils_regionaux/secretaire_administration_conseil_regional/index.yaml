@@ -1,5 +1,6 @@
-description: Corps administratif des conseils régionaux — grade secretaire_administration_conseil_regional
+description: Secrétaires administrations conseils régionaux du corps des corps administratif des conseils régionaux
 metadata:
+  short_label: Secrétaires administrations conseils régionaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

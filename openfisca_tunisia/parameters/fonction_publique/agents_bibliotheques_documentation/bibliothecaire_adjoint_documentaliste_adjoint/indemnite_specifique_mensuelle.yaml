@@ -1,6 +1,4 @@
-description: Corps des agents des bibliothèques et de la documentation dans les administrations
-  publiques — grade bibliothecaire_adjoint_documentaliste_adjoint — indemnité spécifique
-  mensuelle par échelon
+description: Indemnité spécifique mensuelle des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
 metadata:
   short_label: Indemnité spécifique mensuelle
 documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
@@ -9,9 +7,7 @@ documentation: Aucune indemnité spécifique mensuelle n'est définie dans le r�
   (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
   salaire_base/.
 echelon_1:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 1
+  description: Indemnité spécifique mensuelle de l'échelon 1 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -19,9 +15,7 @@ echelon_1:
     short_label: Échelon 1
     unit: currency
 echelon_2:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 2
+  description: Indemnité spécifique mensuelle de l'échelon 2 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -29,9 +23,7 @@ echelon_2:
     short_label: Échelon 2
     unit: currency
 echelon_3:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 3
+  description: Indemnité spécifique mensuelle de l'échelon 3 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -39,9 +31,7 @@ echelon_3:
     short_label: Échelon 3
     unit: currency
 echelon_4:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 4
+  description: Indemnité spécifique mensuelle de l'échelon 4 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -49,9 +39,7 @@ echelon_4:
     short_label: Échelon 4
     unit: currency
 echelon_5:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 5
+  description: Indemnité spécifique mensuelle de l'échelon 5 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -59,9 +47,7 @@ echelon_5:
     short_label: Échelon 5
     unit: currency
 echelon_6:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 6
+  description: Indemnité spécifique mensuelle de l'échelon 6 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -69,9 +55,7 @@ echelon_6:
     short_label: Échelon 6
     unit: currency
 echelon_7:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 7
+  description: Indemnité spécifique mensuelle de l'échelon 7 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -79,9 +63,7 @@ echelon_7:
     short_label: Échelon 7
     unit: currency
 echelon_8:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 8
+  description: Indemnité spécifique mensuelle de l'échelon 8 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -89,9 +71,7 @@ echelon_8:
     short_label: Échelon 8
     unit: currency
 echelon_9:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 9
+  description: Indemnité spécifique mensuelle de l'échelon 9 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -99,9 +79,7 @@ echelon_9:
     short_label: Échelon 9
     unit: currency
 echelon_10:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 10
+  description: Indemnité spécifique mensuelle de l'échelon 10 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -109,9 +87,7 @@ echelon_10:
     short_label: Échelon 10
     unit: currency
 echelon_11:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 11
+  description: Indemnité spécifique mensuelle de l'échelon 11 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -119,9 +95,7 @@ echelon_11:
     short_label: Échelon 11
     unit: currency
 echelon_12:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 12
+  description: Indemnité spécifique mensuelle de l'échelon 12 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -129,9 +103,7 @@ echelon_12:
     short_label: Échelon 12
     unit: currency
 echelon_13:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 13
+  description: Indemnité spécifique mensuelle de l'échelon 13 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -139,9 +111,7 @@ echelon_13:
     short_label: Échelon 13
     unit: currency
 echelon_14:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 14
+  description: Indemnité spécifique mensuelle de l'échelon 14 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -149,9 +119,7 @@ echelon_14:
     short_label: Échelon 14
     unit: currency
 echelon_15:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 15
+  description: Indemnité spécifique mensuelle de l'échelon 15 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -159,9 +127,7 @@ echelon_15:
     short_label: Échelon 15
     unit: currency
 echelon_16:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 16
+  description: Indemnité spécifique mensuelle de l'échelon 16 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -169,9 +135,7 @@ echelon_16:
     short_label: Échelon 16
     unit: currency
 echelon_17:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 17
+  description: Indemnité spécifique mensuelle de l'échelon 17 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -179,9 +143,7 @@ echelon_17:
     short_label: Échelon 17
     unit: currency
 echelon_18:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 18
+  description: Indemnité spécifique mensuelle de l'échelon 18 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -189,9 +151,7 @@ echelon_18:
     short_label: Échelon 18
     unit: currency
 echelon_19:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 19
+  description: Indemnité spécifique mensuelle de l'échelon 19 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -199,9 +159,7 @@ echelon_19:
     short_label: Échelon 19
     unit: currency
 echelon_20:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 20
+  description: Indemnité spécifique mensuelle de l'échelon 20 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -209,9 +167,7 @@ echelon_20:
     short_label: Échelon 20
     unit: currency
 echelon_21:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 21
+  description: Indemnité spécifique mensuelle de l'échelon 21 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -219,9 +175,7 @@ echelon_21:
     short_label: Échelon 21
     unit: currency
 echelon_22:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 22
+  description: Indemnité spécifique mensuelle de l'échelon 22 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -229,9 +183,7 @@ echelon_22:
     short_label: Échelon 22
     unit: currency
 echelon_23:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 23
+  description: Indemnité spécifique mensuelle de l'échelon 23 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -239,9 +191,7 @@ echelon_23:
     short_label: Échelon 23
     unit: currency
 echelon_24:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 24
+  description: Indemnité spécifique mensuelle de l'échelon 24 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0
@@ -249,9 +199,7 @@ echelon_24:
     short_label: Échelon 24
     unit: currency
 echelon_25:
-  description: Corps des agents des bibliothèques et de la documentation dans les
-    administrations publiques — grade bibliothecaire_adjoint_documentaliste_adjoint
-    — indemnité spécifique mensuelle par échelon — échelon 25
+  description: Indemnité spécifique mensuelle de l'échelon 25 des bibliothecaires adjoints documentalistes adjoints du corps des agents des bibliothèques et de la documentation dans les administrations publiques
   values:
     '1999-12-17':
       value: 0.0

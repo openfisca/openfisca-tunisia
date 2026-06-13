@@ -1,11 +1,8 @@
-description: Corps du personnel des domaines de l'État et des affaires foncières —
-  grade administrateur_domaines_etat — traitement de base mensuel par échelon
+description: Traitement de base mensuel des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
 metadata:
   short_label: Traitement de base
 echelon_1:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 1
+  description: Traitement de base mensuel de l'échelon 1 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 181.25
@@ -20,9 +17,7 @@ echelon_1:
       '2007-04-01':
         title: Décret 2007-268
 echelon_2:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 2
+  description: Traitement de base mensuel de l'échelon 2 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 190.25
@@ -37,9 +32,7 @@ echelon_2:
       '2007-04-01':
         title: Décret 2007-268
 echelon_3:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 3
+  description: Traitement de base mensuel de l'échelon 3 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 199.25
@@ -54,9 +47,7 @@ echelon_3:
       '2007-04-01':
         title: Décret 2007-268
 echelon_4:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 4
+  description: Traitement de base mensuel de l'échelon 4 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 208.25
@@ -71,9 +62,7 @@ echelon_4:
       '2007-04-01':
         title: Décret 2007-268
 echelon_5:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 5
+  description: Traitement de base mensuel de l'échelon 5 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 217.25
@@ -88,9 +77,7 @@ echelon_5:
       '2007-04-01':
         title: Décret 2007-268
 echelon_6:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 6
+  description: Traitement de base mensuel de l'échelon 6 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 226.25
@@ -105,9 +92,7 @@ echelon_6:
       '2007-04-01':
         title: Décret 2007-268
 echelon_7:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 7
+  description: Traitement de base mensuel de l'échelon 7 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 235.25
@@ -122,9 +107,7 @@ echelon_7:
       '2007-04-01':
         title: Décret 2007-268
 echelon_8:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 8
+  description: Traitement de base mensuel de l'échelon 8 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 244.25
@@ -139,9 +122,7 @@ echelon_8:
       '2007-04-01':
         title: Décret 2007-268
 echelon_9:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 9
+  description: Traitement de base mensuel de l'échelon 9 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 253.25
@@ -156,9 +137,7 @@ echelon_9:
       '2007-04-01':
         title: Décret 2007-268
 echelon_10:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 10
+  description: Traitement de base mensuel de l'échelon 10 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 262.25
@@ -173,9 +152,7 @@ echelon_10:
       '2007-04-01':
         title: Décret 2007-268
 echelon_11:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 11
+  description: Traitement de base mensuel de l'échelon 11 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 271.25
@@ -190,9 +167,7 @@ echelon_11:
       '2007-04-01':
         title: Décret 2007-268
 echelon_12:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 12
+  description: Traitement de base mensuel de l'échelon 12 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 280.25
@@ -207,9 +182,7 @@ echelon_12:
       '2007-04-01':
         title: Décret 2007-268
 echelon_13:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 13
+  description: Traitement de base mensuel de l'échelon 13 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 289.25
@@ -224,9 +197,7 @@ echelon_13:
       '2007-04-01':
         title: Décret 2007-268
 echelon_14:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 14
+  description: Traitement de base mensuel de l'échelon 14 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 298.25
@@ -241,9 +212,7 @@ echelon_14:
       '2007-04-01':
         title: Décret 2007-268
 echelon_15:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 15
+  description: Traitement de base mensuel de l'échelon 15 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 307.25
@@ -258,9 +227,7 @@ echelon_15:
       '2007-04-01':
         title: Décret 2007-268
 echelon_16:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 16
+  description: Traitement de base mensuel de l'échelon 16 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 316.25
@@ -275,9 +242,7 @@ echelon_16:
       '2007-04-01':
         title: Décret 2007-268
 echelon_17:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 17
+  description: Traitement de base mensuel de l'échelon 17 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 325.25
@@ -292,9 +257,7 @@ echelon_17:
       '2007-04-01':
         title: Décret 2007-268
 echelon_18:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 18
+  description: Traitement de base mensuel de l'échelon 18 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 334.25
@@ -309,9 +272,7 @@ echelon_18:
       '2007-04-01':
         title: Décret 2007-268
 echelon_19:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 19
+  description: Traitement de base mensuel de l'échelon 19 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 343.25
@@ -326,9 +287,7 @@ echelon_19:
       '2007-04-01':
         title: Décret 2007-268
 echelon_20:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 20
+  description: Traitement de base mensuel de l'échelon 20 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 352.25
@@ -343,9 +302,7 @@ echelon_20:
       '2007-04-01':
         title: Décret 2007-268
 echelon_21:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 21
+  description: Traitement de base mensuel de l'échelon 21 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 361.25
@@ -360,9 +317,7 @@ echelon_21:
       '2007-04-01':
         title: Décret 2007-268
 echelon_22:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 22
+  description: Traitement de base mensuel de l'échelon 22 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 370.25
@@ -377,9 +332,7 @@ echelon_22:
       '2007-04-01':
         title: Décret 2007-268
 echelon_23:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 23
+  description: Traitement de base mensuel de l'échelon 23 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 379.25
@@ -394,9 +347,7 @@ echelon_23:
       '2007-04-01':
         title: Décret 2007-268
 echelon_24:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 24
+  description: Traitement de base mensuel de l'échelon 24 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 388.25
@@ -411,9 +362,7 @@ echelon_24:
       '2007-04-01':
         title: Décret 2007-268
 echelon_25:
-  description: Corps du personnel des domaines de l'État et des affaires foncières
-    — grade administrateur_domaines_etat — traitement de base mensuel par échelon
-    — échelon 25
+  description: Traitement de base mensuel de l'échelon 25 des administrateurs domaines etats du corps des corps du personnel des domaines de l'État et des affaires foncières
   values:
     '2000-05-26':
       value: 397.25

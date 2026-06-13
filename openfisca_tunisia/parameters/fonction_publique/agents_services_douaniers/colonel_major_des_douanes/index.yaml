@@ -1,5 +1,6 @@
-description: Corps des agents des services douaniers — grade colonel_major_des_douanes
+description: Colonels majors des douanes du corps des agents des services douaniers
 metadata:
+  short_label: Colonels majors des douanes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

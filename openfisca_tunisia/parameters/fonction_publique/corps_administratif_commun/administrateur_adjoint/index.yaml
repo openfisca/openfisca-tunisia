@@ -1,5 +1,6 @@
-description: Corps administratif commun des administrations publiques — grade administrateur_adjoint
+description: Administrateurs adjoints du corps des corps administratif commun des administrations publiques
 metadata:
+  short_label: Administrateurs adjoints
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

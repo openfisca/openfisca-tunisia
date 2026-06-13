@@ -1,6 +1,6 @@
-description: Corps de l'inspection pédagogique du ministère de la santé publique —
-  grade inspecteur_general_de_l_enseignement_paramedical
+description: Inspecteurs généraux de l'enseignements paramedicaux du corps des l'inspection pédagogique du ministère de la santé publique
 metadata:
+  short_label: Inspecteurs généraux de l'enseignements paramedicaux
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

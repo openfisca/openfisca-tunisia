@@ -1,5 +1,6 @@
-description: Corps des greffes de la cour des comptes — grade huissier_cour_comptes
+description: Huissiers cours comptes du corps des greffes de la cour des comptes
 metadata:
+  short_label: Huissiers cours comptes
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base

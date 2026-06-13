@@ -1,6 +1,6 @@
-description: Corps des personnels des enseignements secondaire et professionnel agricoles
-  et des pêches — grade inspecteur_enseignement_agricole_peches
+description: Inspecteurs enseignements agricoles peches du corps des personnels des enseignements secondaire et professionnel agricoles et des pêches
 metadata:
+  short_label: Inspecteurs enseignements agricoles peches
   order:
     - indemnite_specifique_mensuelle
     - traitement_de_base
