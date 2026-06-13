@@ -1,0 +1,7 @@
+description: Pharmaciens majors de la santes publiques du corps des pharmaciens de la santé publique
+metadata:
+  short_label: Pharmaciens majors de la santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

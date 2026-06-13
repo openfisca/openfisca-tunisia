@@ -1,0 +1,7 @@
+description: Commis administrations du corps des corps administratif commun des administrations publiques
+metadata:
+  short_label: Commis administrations
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

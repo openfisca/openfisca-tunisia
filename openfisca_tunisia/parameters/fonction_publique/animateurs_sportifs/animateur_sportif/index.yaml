@@ -1,0 +1,7 @@
+description: Animateurs sportifs du corps des animateurs sportifs relevant du ministère de la jeunesse, des sports et de l'intégration professionnelle
+metadata:
+  short_label: Animateurs sportifs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

@@ -1,0 +1,7 @@
+description: Conseillers educatifs principaux du corps des conseillers éducatifs relevant du ministère de l'éducation
+metadata:
+  short_label: Conseillers educatifs principaux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

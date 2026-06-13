@@ -1,0 +1,7 @@
+description: Chefs de laboratoires du corps des personnels des cadres communs de laboratoire
+metadata:
+  short_label: Chefs de laboratoires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

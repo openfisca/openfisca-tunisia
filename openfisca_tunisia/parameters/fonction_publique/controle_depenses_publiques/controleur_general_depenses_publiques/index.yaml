@@ -1,0 +1,7 @@
+description: Contrôleurs généraux dépenses publiques du corps des contrôle des dépenses publiques
+metadata:
+  short_label: Contrôleurs généraux dépenses publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

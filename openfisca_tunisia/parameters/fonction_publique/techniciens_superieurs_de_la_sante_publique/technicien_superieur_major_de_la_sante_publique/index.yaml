@@ -1,0 +1,7 @@
+description: Techniciens supérieurs majors de la santes publiques du corps des corps commun des techniciens supérieurs de la santé publique
+metadata:
+  short_label: Techniciens supérieurs majors de la santes publiques
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

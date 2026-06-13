@@ -1,0 +1,7 @@
+description: Psychologues généraux du corps des psychologues des administrations publiques
+metadata:
+  short_label: Psychologues généraux
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

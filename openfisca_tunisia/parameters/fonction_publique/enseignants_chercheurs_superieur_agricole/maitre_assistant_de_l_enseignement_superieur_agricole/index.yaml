@@ -1,0 +1,7 @@
+description: Maitres assistants de l'enseignements supérieurs agricoles du corps des enseignants chercheurs des établissements d'enseignement supérieur agricole
+metadata:
+  short_label: Maitres assistants de l'enseignements supérieurs agricoles
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

@@ -2,5 +2,19 @@ description: Abattement sur les pensions
 values:
   1990-01-01:
     value: 0.25
+  2027-01-01:
+    value: 0.30
+  2028-01-01:
+    value: 0.40
+  2029-01-01:
+    value: 0.50
 metadata:
   unit: /1
+  reference:
+    2027-01-01:
+      title: Article 56 de la loi n° 2025-17 du 12 décembre 2025 portant loi de finances pour l'année 2026 (modifiant l'article 26-II du code de l'IRPP et de l'IS)
+  official_journal_date:
+    2027-01-01: "2025-12-12"
+  notes:
+    2027-01-01:
+    - note: L'abattement de 25% sur le montant brut des pensions et rentes viagères (art. 26-II du code de l'IRPP) est relevé à 30% à partir du 1er janvier 2027, 40% à partir du 1er janvier 2028 et 50% à partir du 1er janvier 2029. La valeur 2026 reste à 25%.

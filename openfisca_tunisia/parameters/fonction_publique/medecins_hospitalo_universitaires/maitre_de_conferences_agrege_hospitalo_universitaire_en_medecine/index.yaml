@@ -1,0 +1,7 @@
+description: Maitres de conférences agrégés hospitalo universitaires en medecines du corps des médecins hospitalo-universitaires
+metadata:
+  short_label: Maitres de conférences agrégés hospitalo universitaires en medecines
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

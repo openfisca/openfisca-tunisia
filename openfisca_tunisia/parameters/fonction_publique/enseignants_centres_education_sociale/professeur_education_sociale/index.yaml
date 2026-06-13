@@ -1,0 +1,7 @@
+description: Professeurs educations sociales du corps des enseignants exerçant dans les centres de l'éducation sociale du ministère des affaires sociales
+metadata:
+  short_label: Professeurs educations sociales
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

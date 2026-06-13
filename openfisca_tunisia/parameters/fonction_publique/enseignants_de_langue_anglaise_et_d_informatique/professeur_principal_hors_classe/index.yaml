@@ -1,0 +1,7 @@
+description: Professeurs principaux hors classes du corps des corps interdépartemental des enseignants de langue anglaise et d'informatique exerçant dans les établissements d'enseignement relevant du ministère de l'éducation et de l'enseignement supérieur
+metadata:
+  short_label: Professeurs principaux hors classes
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1
