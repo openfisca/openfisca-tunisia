@@ -1,6 +1,8 @@
 description: Corps des assistants à l'application et à la recherche de l'enseignement
   supérieur et de la recherche scientifique — grade assistant_application_recherche
   — traitement de base mensuel par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des assistants à l'application et à la recherche de l'enseignement
     supérieur et de la recherche scientifique — grade assistant_application_recherche
@@ -9,6 +11,7 @@ echelon_1:
     '2014-11-25':
       value: 443.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2014-11-25':
@@ -21,6 +24,7 @@ echelon_2:
     '2014-11-25':
       value: 451.25
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2014-11-25':
@@ -33,6 +37,7 @@ echelon_3:
     '2014-11-25':
       value: 459.5
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2014-11-25':
@@ -45,6 +50,7 @@ echelon_4:
     '2014-11-25':
       value: 467.75
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2014-11-25':
@@ -57,6 +63,7 @@ echelon_5:
     '2014-11-25':
       value: 476.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2014-11-25':
@@ -69,6 +76,7 @@ echelon_6:
     '2014-11-25':
       value: 484.25
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2014-11-25':
@@ -81,6 +89,7 @@ echelon_7:
     '2014-11-25':
       value: 492.5
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2014-11-25':
@@ -93,6 +102,7 @@ echelon_8:
     '2014-11-25':
       value: 500.75
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2014-11-25':
@@ -105,6 +115,7 @@ echelon_9:
     '2014-11-25':
       value: 509.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2014-11-25':
@@ -117,6 +128,7 @@ echelon_10:
     '2014-11-25':
       value: 517.25
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2014-11-25':
@@ -129,6 +141,7 @@ echelon_11:
     '2014-11-25':
       value: 525.5
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2014-11-25':
@@ -141,6 +154,7 @@ echelon_12:
     '2014-11-25':
       value: 533.75
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2014-11-25':
@@ -153,6 +167,7 @@ echelon_13:
     '2014-11-25':
       value: 542.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2014-11-25':
@@ -165,6 +180,7 @@ echelon_14:
     '2014-11-25':
       value: 550.25
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2014-11-25':
@@ -177,6 +193,7 @@ echelon_15:
     '2014-11-25':
       value: 558.5
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2014-11-25':
@@ -189,6 +206,7 @@ echelon_16:
     '2014-11-25':
       value: 566.75
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2014-11-25':
@@ -201,6 +219,7 @@ echelon_17:
     '2014-11-25':
       value: 575.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2014-11-25':
@@ -213,6 +232,7 @@ echelon_18:
     '2014-11-25':
       value: 583.25
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2014-11-25':
@@ -225,6 +245,7 @@ echelon_19:
     '2014-11-25':
       value: 591.5
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2014-11-25':
@@ -237,6 +258,7 @@ echelon_20:
     '2014-11-25':
       value: 599.75
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2014-11-25':
@@ -249,6 +271,7 @@ echelon_21:
     '2014-11-25':
       value: 608.0
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '2014-11-25':
@@ -261,6 +284,7 @@ echelon_22:
     '2014-11-25':
       value: 616.25
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '2014-11-25':
@@ -273,6 +297,7 @@ echelon_23:
     '2014-11-25':
       value: 624.5
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '2014-11-25':
@@ -285,6 +310,7 @@ echelon_24:
     '2014-11-25':
       value: 632.75
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '2014-11-25':
@@ -297,6 +323,7 @@ echelon_25:
     '2014-11-25':
       value: 641.0
   metadata:
+    short_label: Échelon 25
     unit: currency
     reference:
       '2014-11-25':

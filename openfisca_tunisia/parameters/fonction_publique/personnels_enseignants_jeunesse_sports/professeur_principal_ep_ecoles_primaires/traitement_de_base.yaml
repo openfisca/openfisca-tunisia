@@ -1,6 +1,8 @@
 description: Corps des personnels enseignants relevant du ministère de la jeunesse
   et des sports et du ministère de la femme, de la famille et de l'enfance — grade
   professeur_principal_ep_ecoles_primaires — traitement de base mensuel par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des personnels enseignants relevant du ministère de la jeunesse
     et des sports et du ministère de la femme, de la famille et de l'enfance — grade
@@ -10,6 +12,7 @@ echelon_1:
     '2019-11-01':
       value: 611.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2019-11-01':
@@ -23,6 +26,7 @@ echelon_2:
     '2019-11-01':
       value: 622.5
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2019-11-01':
@@ -36,6 +40,7 @@ echelon_3:
     '2019-11-01':
       value: 634.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2019-11-01':
@@ -49,6 +54,7 @@ echelon_4:
     '2019-11-01':
       value: 645.5
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2019-11-01':
@@ -62,6 +68,7 @@ echelon_5:
     '2019-11-01':
       value: 657.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2019-11-01':
@@ -75,6 +82,7 @@ echelon_6:
     '2019-11-01':
       value: 668.5
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2019-11-01':
@@ -88,6 +96,7 @@ echelon_7:
     '2019-11-01':
       value: 680.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2019-11-01':
@@ -101,6 +110,7 @@ echelon_8:
     '2019-11-01':
       value: 691.5
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2019-11-01':
@@ -114,6 +124,7 @@ echelon_9:
     '2019-11-01':
       value: 703.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2019-11-01':
@@ -127,6 +138,7 @@ echelon_10:
     '2019-11-01':
       value: 714.5
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2019-11-01':
@@ -140,6 +152,7 @@ echelon_11:
     '2019-11-01':
       value: 726.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2019-11-01':
@@ -153,6 +166,7 @@ echelon_12:
     '2019-11-01':
       value: 737.5
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2019-11-01':
@@ -166,6 +180,7 @@ echelon_13:
     '2019-11-01':
       value: 749.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2019-11-01':
@@ -179,6 +194,7 @@ echelon_14:
     '2019-11-01':
       value: 760.5
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2019-11-01':
@@ -192,6 +208,7 @@ echelon_15:
     '2019-11-01':
       value: 772.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2019-11-01':
@@ -205,6 +222,7 @@ echelon_16:
     '2019-11-01':
       value: 783.5
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2019-11-01':
@@ -218,6 +236,7 @@ echelon_17:
     '2019-11-01':
       value: 795.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2019-11-01':
@@ -231,6 +250,7 @@ echelon_18:
     '2019-11-01':
       value: 806.5
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2019-11-01':
@@ -244,6 +264,7 @@ echelon_19:
     '2019-11-01':
       value: 818.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2019-11-01':
@@ -257,6 +278,7 @@ echelon_20:
     '2019-11-01':
       value: 829.5
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2019-11-01':
@@ -270,6 +292,7 @@ echelon_21:
     '2019-11-01':
       value: 841.0
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '2019-11-01':
@@ -283,6 +306,7 @@ echelon_22:
     '2019-11-01':
       value: 852.5
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '2019-11-01':
@@ -296,6 +320,7 @@ echelon_23:
     '2019-11-01':
       value: 864.0
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '2019-11-01':
@@ -309,6 +334,7 @@ echelon_24:
     '2019-11-01':
       value: 875.5
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '2019-11-01':
@@ -322,6 +348,7 @@ echelon_25:
     '2019-11-01':
       value: 887.0
   metadata:
+    short_label: Échelon 25
     unit: currency
     reference:
       '2019-11-01':

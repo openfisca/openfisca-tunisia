@@ -1,6 +1,8 @@
 description: Corps des surveillants exerçant dans les écoles préparatoires et les
   lycées — grade surveillant_principal_hors_classe — indemnité spécifique mensuelle
   par échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 echelon_1:
   description: Corps des surveillants exerçant dans les écoles préparatoires et les
     lycées — grade surveillant_principal_hors_classe — indemnité spécifique mensuelle
@@ -9,6 +11,7 @@ echelon_1:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2013-06-25':
@@ -21,6 +24,7 @@ echelon_2:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2013-06-25':
@@ -33,6 +37,7 @@ echelon_3:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2013-06-25':
@@ -45,6 +50,7 @@ echelon_4:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2013-06-25':
@@ -57,6 +63,7 @@ echelon_5:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2013-06-25':
@@ -69,6 +76,7 @@ echelon_6:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2013-06-25':
@@ -81,6 +89,7 @@ echelon_7:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2013-06-25':
@@ -93,6 +102,7 @@ echelon_8:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2013-06-25':
@@ -105,6 +115,7 @@ echelon_9:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2013-06-25':
@@ -117,6 +128,7 @@ echelon_10:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2013-06-25':
@@ -129,6 +141,7 @@ echelon_11:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2013-06-25':
@@ -141,6 +154,7 @@ echelon_12:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2013-06-25':
@@ -153,6 +167,7 @@ echelon_13:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2013-06-25':
@@ -165,6 +180,7 @@ echelon_14:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2013-06-25':
@@ -177,6 +193,7 @@ echelon_15:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2013-06-25':
@@ -189,6 +206,7 @@ echelon_16:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2013-06-25':
@@ -201,6 +219,7 @@ echelon_17:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2013-06-25':
@@ -213,6 +232,7 @@ echelon_18:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2013-06-25':
@@ -225,6 +245,7 @@ echelon_19:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2013-06-25':
@@ -237,6 +258,7 @@ echelon_20:
     '2013-06-25':
       value: 623.0
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2013-06-25':

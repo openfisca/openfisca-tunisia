@@ -1,5 +1,7 @@
 description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_general_du_travail
   — indemnité spécifique mensuelle par échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 echelon_1:
   description: Corps de l'inspection médicale du travail — grade medecin_inspecteur_general_du_travail
     — indemnité spécifique mensuelle par échelon — échelon 1
@@ -9,6 +11,7 @@ echelon_1:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2014-12-09':
@@ -24,6 +27,7 @@ echelon_2:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2014-12-09':
@@ -39,6 +43,7 @@ echelon_3:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2014-12-09':
@@ -54,6 +59,7 @@ echelon_4:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2014-12-09':
@@ -69,6 +75,7 @@ echelon_5:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2014-12-09':
@@ -84,6 +91,7 @@ echelon_6:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2014-12-09':
@@ -99,6 +107,7 @@ echelon_7:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2014-12-09':
@@ -114,6 +123,7 @@ echelon_8:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2014-12-09':
@@ -129,6 +139,7 @@ echelon_9:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2014-12-09':
@@ -144,6 +155,7 @@ echelon_10:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2014-12-09':
@@ -159,6 +171,7 @@ echelon_11:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2014-12-09':
@@ -174,6 +187,7 @@ echelon_12:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2014-12-09':
@@ -189,6 +203,7 @@ echelon_13:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2014-12-09':
@@ -204,6 +219,7 @@ echelon_14:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2014-12-09':
@@ -219,6 +235,7 @@ echelon_15:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2014-12-09':
@@ -234,6 +251,7 @@ echelon_16:
     '2022-11-08':
       value: 2786.0
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2014-12-09':

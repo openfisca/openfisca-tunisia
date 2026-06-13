@@ -1,6 +1,8 @@
 description: Corps des ouvriers de l'État, des collectivités locales et des établissements
   publics à caractère administratif — grade ouvrier_cat_09 — traitement de base mensuel
   par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des ouvriers de l'État, des collectivités locales et des établissements
     publics à caractère administratif — grade ouvrier_cat_09 — traitement de base
@@ -11,6 +13,7 @@ echelon_1:
     '2007-04-01':
       value: 366.5
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '1998-01-01':
@@ -27,6 +30,7 @@ echelon_2:
     '2007-04-01':
       value: 370.25
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '1998-01-01':
@@ -43,6 +47,7 @@ echelon_3:
     '2007-04-01':
       value: 374.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '1998-01-01':
@@ -59,6 +64,7 @@ echelon_4:
     '2007-04-01':
       value: 377.75
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '1998-01-01':
@@ -75,6 +81,7 @@ echelon_5:
     '2007-04-01':
       value: 381.5
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '1998-01-01':
@@ -91,6 +98,7 @@ echelon_6:
     '2007-04-01':
       value: 385.25
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '1998-01-01':
@@ -107,6 +115,7 @@ echelon_7:
     '2007-04-01':
       value: 389.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '1998-01-01':
@@ -123,6 +132,7 @@ echelon_8:
     '2007-04-01':
       value: 392.75
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '1998-01-01':
@@ -139,6 +149,7 @@ echelon_9:
     '2007-04-01':
       value: 396.5
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '1998-01-01':
@@ -155,6 +166,7 @@ echelon_10:
     '2007-04-01':
       value: 400.25
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '1998-01-01':
@@ -171,6 +183,7 @@ echelon_11:
     '2007-04-01':
       value: 404.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '1998-01-01':
@@ -187,6 +200,7 @@ echelon_12:
     '2007-04-01':
       value: 407.75
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '1998-01-01':
@@ -203,6 +217,7 @@ echelon_13:
     '2007-04-01':
       value: 411.5
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '1998-01-01':
@@ -219,6 +234,7 @@ echelon_14:
     '2007-04-01':
       value: 415.25
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '1998-01-01':
@@ -235,6 +251,7 @@ echelon_15:
     '2007-04-01':
       value: 419.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '1998-01-01':
@@ -251,6 +268,7 @@ echelon_16:
     '2007-04-01':
       value: 422.75
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '1998-01-01':
@@ -267,6 +285,7 @@ echelon_17:
     '2007-04-01':
       value: 426.5
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '1998-01-01':
@@ -283,6 +302,7 @@ echelon_18:
     '2007-04-01':
       value: 430.25
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '1998-01-01':
@@ -299,6 +319,7 @@ echelon_19:
     '2007-04-01':
       value: 434.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '1998-01-01':
@@ -315,6 +336,7 @@ echelon_20:
     '2007-04-01':
       value: 437.75
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '1998-01-01':
@@ -331,6 +353,7 @@ echelon_21:
     '2007-04-01':
       value: 441.5
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '1998-01-01':
@@ -347,6 +370,7 @@ echelon_22:
     '2007-04-01':
       value: 445.25
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '1998-01-01':
@@ -363,6 +387,7 @@ echelon_23:
     '2007-04-01':
       value: 449.0
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '1998-01-01':
@@ -379,6 +404,7 @@ echelon_24:
     '2007-04-01':
       value: 452.75
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '1998-01-01':
@@ -395,6 +421,7 @@ echelon_25:
     '2007-04-01':
       value: 456.5
   metadata:
+    short_label: Échelon 25
     unit: currency
     reference:
       '1998-01-01':

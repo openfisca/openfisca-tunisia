@@ -1,5 +1,7 @@
 description: Corps des personnels enseignants exerçant dans les écoles primaires —
   grade maitre_dapplication — traitement de base mensuel par échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des personnels enseignants exerçant dans les écoles primaires
     — grade maitre_dapplication — traitement de base mensuel par échelon — échelon
@@ -12,6 +14,7 @@ echelon_1:
     '2013-06-07':
       value: 530.25
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '1999-08-06':
@@ -30,6 +33,7 @@ echelon_2:
     '2013-06-07':
       value: 539.25
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '1999-08-06':
@@ -48,6 +52,7 @@ echelon_3:
     '2013-06-07':
       value: 548.25
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '1999-08-06':
@@ -66,6 +71,7 @@ echelon_4:
     '2013-06-07':
       value: 557.25
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '1999-08-06':
@@ -84,6 +90,7 @@ echelon_5:
     '2013-06-07':
       value: 566.25
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '1999-08-06':
@@ -102,6 +109,7 @@ echelon_6:
     '2013-06-07':
       value: 575.25
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '1999-08-06':
@@ -120,6 +128,7 @@ echelon_7:
     '2013-06-07':
       value: 584.25
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '1999-08-06':
@@ -138,6 +147,7 @@ echelon_8:
     '2013-06-07':
       value: 593.25
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '1999-08-06':
@@ -156,6 +166,7 @@ echelon_9:
     '2013-06-07':
       value: 602.25
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '1999-08-06':
@@ -174,6 +185,7 @@ echelon_10:
     '2013-06-07':
       value: 611.25
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '1999-08-06':
@@ -192,6 +204,7 @@ echelon_11:
     '2013-06-07':
       value: 620.25
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '1999-08-06':
@@ -210,6 +223,7 @@ echelon_12:
     '2013-06-07':
       value: 629.25
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '1999-08-06':
@@ -228,6 +242,7 @@ echelon_13:
     '2013-06-07':
       value: 638.25
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '1999-08-06':
@@ -246,6 +261,7 @@ echelon_14:
     '2013-06-07':
       value: 647.25
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '1999-08-06':
@@ -264,6 +280,7 @@ echelon_15:
     '2013-06-07':
       value: 656.25
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '1999-08-06':
@@ -282,6 +299,7 @@ echelon_16:
     '2013-06-07':
       value: 665.25
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '1999-08-06':
@@ -300,6 +318,7 @@ echelon_17:
     '2013-06-07':
       value: 674.25
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '1999-08-06':
@@ -318,6 +337,7 @@ echelon_18:
     '2013-06-07':
       value: 683.25
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '1999-08-06':
@@ -336,6 +356,7 @@ echelon_19:
     '2013-06-07':
       value: 692.25
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '1999-08-06':
@@ -354,6 +375,7 @@ echelon_20:
     '2013-06-07':
       value: 701.25
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '1999-08-06':
@@ -372,6 +394,7 @@ echelon_21:
     '2013-06-07':
       value: 710.25
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '1999-08-06':
@@ -390,6 +413,7 @@ echelon_22:
     '2013-06-07':
       value: 719.25
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '1999-08-06':
@@ -408,6 +432,7 @@ echelon_23:
     '2013-06-07':
       value: 728.25
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '1999-08-06':
@@ -426,6 +451,7 @@ echelon_24:
     '2013-06-07':
       value: 737.25
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '1999-08-06':

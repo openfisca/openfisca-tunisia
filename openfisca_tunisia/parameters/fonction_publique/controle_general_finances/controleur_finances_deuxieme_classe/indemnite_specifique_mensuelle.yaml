@@ -1,5 +1,7 @@
 description: Corps du contrôle général des finances — grade controleur_finances_deuxieme_classe
   — indemnité spécifique mensuelle par échelon
+metadata:
+  short_label: Indemnité spécifique mensuelle
 echelon_1:
   description: Corps du contrôle général des finances — grade controleur_finances_deuxieme_classe
     — indemnité spécifique mensuelle par échelon — échelon 1
@@ -13,6 +15,7 @@ echelon_1:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2000-03-14':
@@ -39,6 +42,7 @@ echelon_2:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2000-03-14':
@@ -65,6 +69,7 @@ echelon_3:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2000-03-14':
@@ -91,6 +96,7 @@ echelon_4:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2000-03-14':
@@ -117,6 +123,7 @@ echelon_5:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2000-03-14':
@@ -143,6 +150,7 @@ echelon_6:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2000-03-14':
@@ -169,6 +177,7 @@ echelon_7:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2000-03-14':
@@ -195,6 +204,7 @@ echelon_8:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2000-03-14':
@@ -221,6 +231,7 @@ echelon_9:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2000-03-14':
@@ -247,6 +258,7 @@ echelon_10:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2000-03-14':
@@ -273,6 +285,7 @@ echelon_11:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2000-03-14':
@@ -299,6 +312,7 @@ echelon_12:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2000-03-14':
@@ -325,6 +339,7 @@ echelon_13:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2000-03-14':
@@ -351,6 +366,7 @@ echelon_14:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2000-03-14':
@@ -377,6 +393,7 @@ echelon_15:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2000-03-14':
@@ -403,6 +420,7 @@ echelon_16:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2000-03-14':
@@ -429,6 +447,7 @@ echelon_17:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2000-03-14':
@@ -455,6 +474,7 @@ echelon_18:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2000-03-14':
@@ -481,6 +501,7 @@ echelon_19:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2000-03-14':
@@ -507,6 +528,7 @@ echelon_20:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2000-03-14':
@@ -533,6 +555,7 @@ echelon_21:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '2000-03-14':
@@ -559,6 +582,7 @@ echelon_22:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '2000-03-14':
@@ -585,6 +609,7 @@ echelon_23:
     '2025-01-01':
       value: 1521.0
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '2000-03-14':

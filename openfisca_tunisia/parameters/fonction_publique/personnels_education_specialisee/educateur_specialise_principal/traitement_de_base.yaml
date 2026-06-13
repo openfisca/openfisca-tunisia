@@ -1,6 +1,8 @@
 description: Corps des personnels de l'éducation spécialisée du ministère des affaires
   sociales — grade educateur_specialise_principal — traitement de base mensuel par
   échelon
+metadata:
+  short_label: Traitement de base
 echelon_1:
   description: Corps des personnels de l'éducation spécialisée du ministère des affaires
     sociales — grade educateur_specialise_principal — traitement de base mensuel par
@@ -9,6 +11,7 @@ echelon_1:
     '2015-09-15':
       value: 611.0
   metadata:
+    short_label: Échelon 1
     unit: currency
     reference:
       '2015-09-15':
@@ -21,6 +24,7 @@ echelon_2:
     '2015-09-15':
       value: 622.5
   metadata:
+    short_label: Échelon 2
     unit: currency
     reference:
       '2015-09-15':
@@ -33,6 +37,7 @@ echelon_3:
     '2015-09-15':
       value: 634.0
   metadata:
+    short_label: Échelon 3
     unit: currency
     reference:
       '2015-09-15':
@@ -45,6 +50,7 @@ echelon_4:
     '2015-09-15':
       value: 645.5
   metadata:
+    short_label: Échelon 4
     unit: currency
     reference:
       '2015-09-15':
@@ -57,6 +63,7 @@ echelon_5:
     '2015-09-15':
       value: 657.0
   metadata:
+    short_label: Échelon 5
     unit: currency
     reference:
       '2015-09-15':
@@ -69,6 +76,7 @@ echelon_6:
     '2015-09-15':
       value: 668.5
   metadata:
+    short_label: Échelon 6
     unit: currency
     reference:
       '2015-09-15':
@@ -81,6 +89,7 @@ echelon_7:
     '2015-09-15':
       value: 680.0
   metadata:
+    short_label: Échelon 7
     unit: currency
     reference:
       '2015-09-15':
@@ -93,6 +102,7 @@ echelon_8:
     '2015-09-15':
       value: 691.5
   metadata:
+    short_label: Échelon 8
     unit: currency
     reference:
       '2015-09-15':
@@ -105,6 +115,7 @@ echelon_9:
     '2015-09-15':
       value: 703.0
   metadata:
+    short_label: Échelon 9
     unit: currency
     reference:
       '2015-09-15':
@@ -117,6 +128,7 @@ echelon_10:
     '2015-09-15':
       value: 714.5
   metadata:
+    short_label: Échelon 10
     unit: currency
     reference:
       '2015-09-15':
@@ -129,6 +141,7 @@ echelon_11:
     '2015-09-15':
       value: 726.0
   metadata:
+    short_label: Échelon 11
     unit: currency
     reference:
       '2015-09-15':
@@ -141,6 +154,7 @@ echelon_12:
     '2015-09-15':
       value: 737.5
   metadata:
+    short_label: Échelon 12
     unit: currency
     reference:
       '2015-09-15':
@@ -153,6 +167,7 @@ echelon_13:
     '2015-09-15':
       value: 749.0
   metadata:
+    short_label: Échelon 13
     unit: currency
     reference:
       '2015-09-15':
@@ -165,6 +180,7 @@ echelon_14:
     '2015-09-15':
       value: 760.5
   metadata:
+    short_label: Échelon 14
     unit: currency
     reference:
       '2015-09-15':
@@ -177,6 +193,7 @@ echelon_15:
     '2015-09-15':
       value: 772.0
   metadata:
+    short_label: Échelon 15
     unit: currency
     reference:
       '2015-09-15':
@@ -189,6 +206,7 @@ echelon_16:
     '2015-09-15':
       value: 783.5
   metadata:
+    short_label: Échelon 16
     unit: currency
     reference:
       '2015-09-15':
@@ -201,6 +219,7 @@ echelon_17:
     '2015-09-15':
       value: 795.0
   metadata:
+    short_label: Échelon 17
     unit: currency
     reference:
       '2015-09-15':
@@ -213,6 +232,7 @@ echelon_18:
     '2015-09-15':
       value: 806.5
   metadata:
+    short_label: Échelon 18
     unit: currency
     reference:
       '2015-09-15':
@@ -225,6 +245,7 @@ echelon_19:
     '2015-09-15':
       value: 818.0
   metadata:
+    short_label: Échelon 19
     unit: currency
     reference:
       '2015-09-15':
@@ -237,6 +258,7 @@ echelon_20:
     '2015-09-15':
       value: 829.5
   metadata:
+    short_label: Échelon 20
     unit: currency
     reference:
       '2015-09-15':
@@ -249,6 +271,7 @@ echelon_21:
     '2015-09-15':
       value: 841.0
   metadata:
+    short_label: Échelon 21
     unit: currency
     reference:
       '2015-09-15':
@@ -261,6 +284,7 @@ echelon_22:
     '2015-09-15':
       value: 852.5
   metadata:
+    short_label: Échelon 22
     unit: currency
     reference:
       '2015-09-15':
@@ -273,6 +297,7 @@ echelon_23:
     '2015-09-15':
       value: 864.0
   metadata:
+    short_label: Échelon 23
     unit: currency
     reference:
       '2015-09-15':
@@ -285,6 +310,7 @@ echelon_24:
     '2015-09-15':
       value: 875.5
   metadata:
+    short_label: Échelon 24
     unit: currency
     reference:
       '2015-09-15':
@@ -297,6 +323,7 @@ echelon_25:
     '2015-09-15':
       value: 887.0
   metadata:
+    short_label: Échelon 25
     unit: currency
     reference:
       '2015-09-15':
