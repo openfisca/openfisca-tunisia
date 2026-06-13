@@ -123,7 +123,6 @@ jobs:
 
   test-path-length:
     runs-on: ubuntu-24.04
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -140,7 +139,8 @@ jobs:
       - name: Install dependencies
         run: uv sync --extra dev
       - name: Test max path length
-        run: make check-path-length
+        run: |
+          make check-path-length || echo "::warning::Some parameter paths exceed the recommended maximum length."
 
   test-yaml:
     runs-on: ubuntu-24.04
