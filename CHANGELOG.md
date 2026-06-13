@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.65 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.65 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
 
 * Amélioration technique.
 * Périodes concernées : toutes.
@@ -12,7 +12,7 @@
 
 <!-- -->
 
-## 0.64 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.64 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
 
 * Amélioration technique.
 * Périodes concernées : toutes.
