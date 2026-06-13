@@ -1,0 +1,978 @@
+description: Indemnité spécifique mensuelle des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des inspecteurs régionaux de la santes publiques du corps des inspecteurs médicaux et juxtamédicaux
+  values:
+    '2000-01-21':
+      value: 1105.0
+    '2001-05-01':
+      value: 1255.0
+    '2004-05-01':
+      value: 1400.0
+    '2007-05-01':
+      value: 1545.0
+    '2010-05-01':
+      value: 1763.0
+    '2011-01-01':
+      value: 1793.0
+    '2015-01-01':
+      value: 2163.0
+    '2025-01-01':
+      value: 2463.0
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2000-01-21':
+        title: Décret 96-1921 (global 1996-1998 à terme)
+      '2001-05-01':
+        title: Décret 99-2141 (global 1999-2001 à terme)
+      '2004-05-01':
+        title: Décret 2002-2957 (global 2002-2004 à terme)
+      '2007-05-01':
+        title: Décret 2005-3201 (global 2005-2007 à terme)
+      '2010-05-01':
+        title: Décret 2008-4074 (global 2008-2010 à terme)
+      '2011-01-01':
+        title: Décret 2009-2155 (augmentation exceptionnelle, supplément à terme)
+      '2015-01-01':
+        title: Décret 2014-1796 (global 2014-2015 à terme)
+      '2025-01-01':
+        title: Décret 2022-797 (cran A1 +100x3 = +300, à terme)

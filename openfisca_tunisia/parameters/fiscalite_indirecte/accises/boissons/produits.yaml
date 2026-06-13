@@ -1,0 +1,13 @@
+description: Liste des boissons non alcoolisées soumis aux accises
+values:
+  '2024-01-01':
+    value:
+    - autres_boissons
+    - boisson_energitique
+    - boisson_gazeuse
+    - boisson_non_gazeuse_sucre
+    - jus_de_fruits
+    - jus_de_legumes
+    - legmi_fermente
+metadata:
+  unit: list

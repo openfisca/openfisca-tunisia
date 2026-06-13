@@ -1,0 +1,7 @@
+description: Inspecteurs du travails et de conciliations du corps des agents de l'inspection du travail et de conciliation
+metadata:
+  short_label: Inspecteurs du travails et de conciliations
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

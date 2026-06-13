@@ -1,0 +1,11 @@
+- name: Test des revalorisations de niches fiscales IRPP (Assurance Vie et CEA)
+  period: 2024
+  absolute_error_margin: 1
+  input:
+    salaire_imposable: 150_000
+    prime_assurance_vie: 100_000
+    compte_epargne_en_actions: 50_000
+  output:
+    deduction_assurance_vie: 100_000
+    deduction_cea: 50_000
+    revenu_net_imposable: 0

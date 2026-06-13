@@ -1,0 +1,7 @@
+description: Agents accueils services culturels du corps des agents du ministère des affaires culturelles
+metadata:
+  short_label: Agents accueils services culturels
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie D

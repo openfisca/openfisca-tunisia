@@ -1,0 +1,14 @@
+description: Prix subventionné du sucre
+values:
+  2022-01-01:
+    value: 1.400
+  2021-01-01:
+    value: 1.150
+  2020-01-01:
+    value: 1.050
+  2011-01-01:
+    value: 0.970
+  2010-01-01:
+    value: 1.020
+metadata:
+  unit: currency/kg

@@ -1,0 +1,7 @@
+description: Secrétaires administrations interieurs du corps des corps administratif du ministère de l'intérieur
+metadata:
+  short_label: Secrétaires administrations interieurs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

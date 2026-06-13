@@ -6,4 +6,7 @@ metadata:
   unit: currency
   reference:
     1982-03-16:
-      title: Décret n° 82-501 du 16 mars 1982
+    - title: Décret n° 82-501 du 16 mars 1982 Portant majoration du salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1982/décret_82_501_fr.pdf
+    - title: أمر عدد 501 لسنة 1982 مؤرخ في 16 مارس 1982 يتعلق بالترفيع في الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية والخاضعة لمجلة الشغل
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1982/décret_82_501_ar.pdf

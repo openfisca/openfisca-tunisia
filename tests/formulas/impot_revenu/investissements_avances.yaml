@@ -1,0 +1,24 @@
+- name: Investissement déductible intégralement
+  period: 2021
+  absolute_error_margin: 1
+  input:
+    bnc: 50000
+    investissement_deductible_integralement: 10000
+  output:
+    # RNG = 50000
+    # assiette_avant_avantages = 50000
+    # deductions_investissement = 10000
+    # revenu_net_imposable = 40000
+    revenu_net_imposable: 40000
+
+- name: Investissement déductible partiellement
+  period: 2021
+  absolute_error_margin: 1
+  input:
+    bnc: 50000
+    investissement_deductible_partiellement: 30000
+  output:
+    # plafonnement = 50000 * 35% = 17500
+    # deductions_investissement = 17500
+    # revenu_net_imposable = 50000 - 17500 = 32500
+    revenu_net_imposable: 32500

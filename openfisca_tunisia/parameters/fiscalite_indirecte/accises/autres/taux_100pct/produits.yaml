@@ -1,0 +1,7 @@
+description: Autres produits soumis aux accises soumis au taux d'accise de 100%
+values:
+  '2024-01-01':
+    value:
+    - liqueur
+metadata:
+  unit: list

@@ -1,0 +1,14 @@
+- name: Prise en compte des déficits antérieurs pour l'assiette imposable
+  period: 2021
+  absolute_error_margin: 1
+  input:
+    # On simule un Revenu Net Global de base via les BNC par exemple
+    bnc: 20000
+    # Déficit des années passées à déduire
+    deficits_anterieurs_reportables: 15000
+  output:
+    # 20 000 (RNG) - 15 000 (Déd déficits) = 5 000 Assiette
+    # On vérifie sur rng et assiette_avant_avantages
+    rng: 20000
+    deductions_base: 15000
+    assiette_avant_avantages: 5000

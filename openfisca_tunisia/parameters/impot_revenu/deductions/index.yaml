@@ -1,1 +1,12 @@
 description: Déductions
+metadata:
+  order:
+  - famille
+  - assurance_vie
+  - interets_comptes_speciaux_epargne_bancaires
+  - interets_comptes_speciaux_epargne_cent
+  - interets_comptes_epargne_investissement
+  - interets_emprunts_obligataires
+  - cea_cei
+  - logement
+  - investissements

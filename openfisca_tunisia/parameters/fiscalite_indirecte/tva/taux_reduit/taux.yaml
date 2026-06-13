@@ -1,0 +1,6 @@
+description: Valeur du taux de TVA de 7%
+values:
+  '2021-01-01':
+    value: 0.07
+metadata:
+  unit: /1

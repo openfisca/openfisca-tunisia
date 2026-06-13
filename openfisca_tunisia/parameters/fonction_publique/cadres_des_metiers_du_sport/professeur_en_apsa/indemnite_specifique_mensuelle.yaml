@@ -1,0 +1,528 @@
+description: Indemnité spécifique mensuelle des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_17:
+  description: Indemnité spécifique mensuelle de l'échelon 17 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 17
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_18:
+  description: Indemnité spécifique mensuelle de l'échelon 18 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 18
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_19:
+  description: Indemnité spécifique mensuelle de l'échelon 19 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 19
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_20:
+  description: Indemnité spécifique mensuelle de l'échelon 20 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 20
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_21:
+  description: Indemnité spécifique mensuelle de l'échelon 21 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_22:
+  description: Indemnité spécifique mensuelle de l'échelon 22 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_23:
+  description: Indemnité spécifique mensuelle de l'échelon 23 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_24:
+  description: Indemnité spécifique mensuelle de l'échelon 24 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797
+echelon_25:
+  description: Indemnité spécifique mensuelle de l'échelon 25 des professeurs en apsas du corps des cadres des métiers du sport relevant du ministère de la jeunesse, des sports et de l'éducation physique
+  values:
+    '2008-05-13':
+      value: 0.0
+    '2009-10-05':
+      value: 354.0
+    '2011-05-01':
+      value: 410.0
+    '2025-01-01':
+      value: 950.0
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2009-10-05':
+        title: Décret 2009-2972
+      '2011-05-01':
+        title: Décret 2011-4836
+      '2025-01-01':
+        title: Décret 2022-797

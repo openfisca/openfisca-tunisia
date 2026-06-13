@@ -1,0 +1,9 @@
+description: Prix subventionné du gros pain
+values:
+  2011-01-01:
+    value: 0.230
+  2010-01-01:
+    value: 0.250
+metadata:
+  unit: currency/unit
+documentation: Le poids du gros pain subventionné est fixé à 400 grammes

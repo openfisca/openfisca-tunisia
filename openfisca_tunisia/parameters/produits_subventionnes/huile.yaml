@@ -1,0 +1,6 @@
+description: Prix subventionné de l'huile végétale en bouteille de verre
+values:
+  2010-01-01:
+    value: 0.900
+metadata:
+  unit: currency/l

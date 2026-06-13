@@ -1,0 +1,7 @@
+description: Animateurs du corps des l'enseignement du ministère de la jeunesse et de l'enfance
+metadata:
+  short_label: Animateurs
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

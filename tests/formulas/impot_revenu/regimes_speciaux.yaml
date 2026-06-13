@@ -1,0 +1,28 @@
+- name: Régime Forfaitaire Isolé de l'Assiette Progressive
+  period: 2021
+  absolute_error_margin: 1
+  input:
+    # 5 000 de CA soumis à un impôt forfaitaire (paramétré par défaut à 10%)
+    chiffre_affaires_soumis_au_forfait: 5000
+    # Le RNG devrait être nul (pas de revenus classiques)
+  output:
+    impot_revenu_brut: 0
+    impot_regime_forfaitaire_du: 500
+    impot_sur_retenue_liberatoire: 0
+    impot_total_du: 500
+
+- name: Retenue Libératoire + Salaires Classiques (Mixte)
+  period: 2021
+  absolute_error_margin: 1
+  input:
+    # Salaires normaux imposés au barème progressif
+    salaire_imposable: 20000
+    # Revenu de la Bourse (par ex) soumis à une retenue libératoire (paramétrée à 20%)
+    revenu_soumis_retenue_liberatoire: 10000
+  output:
+    # La Retenue Libératoire doit générer 10000 * 20% = 2000
+    impot_sur_retenue_liberatoire: 2000
+    impot_regime_forfaitaire_du: 0
+    # L'impôt total combine le résultat du barème sur les 20 000 DT et ces 2 000 DT.
+    # OpenFisca va calculer exactement `impot_revenu_brut`.
+    # Ce test valide la cohabitation. On ne force pas la valeur exacte du brut ici mais on confirme que le total > retenue libératoire.

@@ -6,3 +6,14 @@ values:
     value: 200
 metadata:
   unit: currency
+  reference:
+    2018-01-01:
+    - title: Article 53 de la loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l’année 2018
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_fr.pdf
+    - title: قانون عدد 66 لسنة 2017 مؤرخ في 18 ديسمبر 2017 يتعلق بقانون المالية لسنة 2018 (القصل53)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2017/loi_2017_66_ar.pdf
+    2023-01-01:
+    - title: l’article 22 du décret-loi 79-2022 du 22 décembre 2022 relatif à la loi de finances pour l’année 2023
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_fr.pdf
+    - title: مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 يتعلق بقانون المالية لسنة 2023 (الفصل22)
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2022/décret_loi_2022_79_ar.pdf

@@ -20,8 +20,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-'''Conversion functions'''
-
+"""Conversion functions"""
 
 from openfisca_core.conv import *
 
@@ -29,15 +28,15 @@ from openfisca_core.conv import *
 json_to_natural_int = pipe(
     test_isinstance(int),
     test_greater_or_equal(0),
-    )
+)
 
 
-def test_in_pop(values, error = None):
+def test_in_pop(values, error=None):
     def remove(value):
         values.remove(value)
         return value
 
     return pipe(
-        test_in(values, error = error),
+        test_in(values, error=error),
         function(remove),
-        )
+    )

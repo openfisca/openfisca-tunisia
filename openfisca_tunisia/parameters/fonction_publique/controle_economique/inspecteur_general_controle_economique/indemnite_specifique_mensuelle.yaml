@@ -1,0 +1,275 @@
+description: Indemnité spécifique mensuelle des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+metadata:
+  short_label: Indemnité spécifique mensuelle
+echelon_1:
+  description: Indemnité spécifique mensuelle de l'échelon 1 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 1
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_2:
+  description: Indemnité spécifique mensuelle de l'échelon 2 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 2
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_3:
+  description: Indemnité spécifique mensuelle de l'échelon 3 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 3
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_4:
+  description: Indemnité spécifique mensuelle de l'échelon 4 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 4
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_5:
+  description: Indemnité spécifique mensuelle de l'échelon 5 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 5
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_6:
+  description: Indemnité spécifique mensuelle de l'échelon 6 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 6
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_7:
+  description: Indemnité spécifique mensuelle de l'échelon 7 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 7
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_8:
+  description: Indemnité spécifique mensuelle de l'échelon 8 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 8
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_9:
+  description: Indemnité spécifique mensuelle de l'échelon 9 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 9
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_10:
+  description: Indemnité spécifique mensuelle de l'échelon 10 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 10
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_11:
+  description: Indemnité spécifique mensuelle de l'échelon 11 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 11
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_12:
+  description: Indemnité spécifique mensuelle de l'échelon 12 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 12
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_13:
+  description: Indemnité spécifique mensuelle de l'échelon 13 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 13
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_14:
+  description: Indemnité spécifique mensuelle de l'échelon 14 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 14
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_15:
+  description: Indemnité spécifique mensuelle de l'échelon 15 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 15
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)
+echelon_16:
+  description: Indemnité spécifique mensuelle de l'échelon 16 des inspecteurs généraux controles économiques du corps des corps du contrôle économique
+  values:
+    '2013-07-30':
+      value: 699.5
+    '2025-01-01':
+      value: 999.5
+  metadata:
+    short_label: Échelon 16
+    unit: currency
+    reference:
+      '2013-07-30':
+        title: Décret 2013-3114 (art.3, indemnité des enquêtes économiques, montant
+          mensuel de base)
+      '2025-01-01':
+        title: Décret 2022-797 (cran par catégorie, à terme 1/1/2025 ; A1 +300, A2
+          +270, A3 +220, B +210)

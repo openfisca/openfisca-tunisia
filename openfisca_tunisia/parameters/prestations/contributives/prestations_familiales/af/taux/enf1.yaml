@@ -4,3 +4,11 @@ values:
     value: 0.18
 metadata:
   unit: /1
+  reference:
+    1960-01-01:
+    - title: loi n°88-38 du 6 mai 1988 complétant et modifiant la loi 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1988/loi_88_38_fr.pdf
+      note: "texte de base : la  loi 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale  (article 61)"
+    - title: القانون عدد 38 لسنة 1988 مؤرخ في 6 ماي 1988 يتعلق بتنقيح القاتون عدد 30 لسنة 1960 المؤرخ في 14 ديسمبر 1960 المتعلق بتنظيم انظمة الضمان الاجتماعي
+      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1988/loi_88_38_ar.pdf
+      note: "61قاتون عدد 30 لسنة 1960 المؤرخ في 14 ديسمبر 1960 المتعلق بتنظيم انظمة الضمان الاجتماعي : الفصل"

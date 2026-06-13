@@ -1,0 +1,39 @@
+description: Tarifs du gaz naturel par tranche de consommation
+metadata:
+  amount_unit: millimes/m3
+  # threshold_unit: m3/mois
+  reference: Tarification progressive du gaz naturel en Tunisie
+brackets:
+- threshold:
+    2024-01-01:
+      value: 0
+  amount:
+    2024-01-01:
+      value: 231
+- threshold:
+    2024-01-01:
+      value: 30
+  amount:
+    2024-01-01:
+      value: 368
+- threshold:
+    2024-01-01:
+      value: 60
+  amount:
+    2024-01-01:
+      value: 556
+- threshold:
+    2024-01-01:
+      value: 150
+  amount:
+    2024-01-01:
+      value: 824
+documentation: |-
+  Tarifs progressifs du gaz naturel en Tunisie.
+
+  Structure du barème :
+  - threshold: Seuil de consommation mensuelle en m³/mois
+  - amount: Tarif applicable en millimes par m³
+
+  Le tarif applicable à une consommation est déterminé par la tranche
+  dans laquelle elle se situe (tarification par paliers).

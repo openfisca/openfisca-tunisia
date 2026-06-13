@@ -1,0 +1,16 @@
+description: Prix subventionné du lait demi-écrémé UHT
+values:
+  2025-01-01:
+    value: 1.350
+  2020-01-01:
+    value: 1.250
+  2015-01-01:
+    value: 1.120
+  2012-01-01:
+    value: 1.060
+  2011-01-01:
+    value: 0.970
+  2010-01-01:
+    value: 1.030
+metadata:
+  unit: currency/l

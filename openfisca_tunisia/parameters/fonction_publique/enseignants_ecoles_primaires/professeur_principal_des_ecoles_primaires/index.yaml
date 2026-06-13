@@ -1,0 +1,7 @@
+description: Professeurs principaux des écoles primaires du corps des personnels enseignants exerçant dans les écoles primaires
+metadata:
+  short_label: Professeurs principaux des écoles primaires
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A2

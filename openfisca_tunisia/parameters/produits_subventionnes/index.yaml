@@ -1,0 +1,15 @@
+description: Produits subventionnés
+metadata:
+  short_label: Produits subventionnés
+  order:
+  - lait_demi_ecreme_uht
+  - gros_pain
+  - baguette
+  - semoule
+  - huile
+  - pate
+  - sucre
+  - couscous
+  - farine
+documentation: |-
+  Source: [Office du Commerce de Tunisie](https://commerce.gov.tn/storage/donwloads/fr2.pdf)

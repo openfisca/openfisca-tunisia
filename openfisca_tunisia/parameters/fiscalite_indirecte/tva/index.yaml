@@ -1,0 +1,10 @@
+description: Taxe sur la Valeur Ajoutée (TVA)
+metadata:
+  short_label: TVA
+  order:
+  - taux_nul
+  - taux_reduit
+  - taux_normal
+documentation: 'Paramètres de la TVA en Tunisie.\nLes produits sont organisés par
+  taux applicable:\n- 0%: Produits de première nécessité\n- 7%: Taux réduit\n- 19%:
+  Taux normal'

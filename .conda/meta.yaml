@@ -27,7 +27,7 @@ requirements:
     {% for req in data.get('install_requires', []) %}
     - {{ req }}
     {% endfor %}
-    # - python >=3.9,<4.0
+    # - python >=3.10,<4.0
     # - OpenFisca-Core >=40,<41
 
 
@@ -49,7 +49,7 @@ outputs:
       host:
         - python
       run:
-        - python >=3.9,<4.0
+        - python >=3.10,<4.0
         {% for req in data.get('dev_requirements', []) %}
         - {{ req }}
         {% endfor %}
