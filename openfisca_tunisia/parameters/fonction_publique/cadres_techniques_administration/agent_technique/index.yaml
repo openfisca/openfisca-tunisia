@@ -1,0 +1,7 @@
+description: Grade « agent technique » du corps « Corps technique commun des administrations publiques »
+metadata:
+  short_label: Agent technique
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie C

@@ -1,0 +1,7 @@
+description: Grade « technicien général » du corps « Corps technique commun des administrations publiques »
+metadata:
+  short_label: Technicien général
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

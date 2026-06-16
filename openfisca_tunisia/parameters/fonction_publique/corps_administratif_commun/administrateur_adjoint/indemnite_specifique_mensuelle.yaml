@@ -1,11 +1,6 @@
 description: Indemnité spécifique mensuelle des administrateurs adjoints du corps des corps administratif commun des administrations publiques
 metadata:
   short_label: Indemnité spécifique mensuelle
-documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
-  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
-  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
-  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
-  salaire_base/.
 echelon_1:
   description: Indemnité spécifique mensuelle de l'échelon 1 des administrateurs adjoints du corps des corps administratif commun des administrations publiques
   values:

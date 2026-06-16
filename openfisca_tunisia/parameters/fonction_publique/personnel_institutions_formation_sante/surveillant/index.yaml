@@ -1,0 +1,7 @@
+description: Grade « surveillant » du corps « Corps du personnel des institutions de formation du ministère de la santé publique »
+metadata:
+  short_label: Surveillant
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B

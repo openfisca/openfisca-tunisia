@@ -1,0 +1,7 @@
+description: Grade « technicien en chef principal » du corps « Corps technique commun des administrations publiques »
+metadata:
+  short_label: Technicien en chef principal
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie A1

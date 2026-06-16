@@ -1,0 +1,7 @@
+description: Grade « maître d'enseignement technique » du corps « Corps des personnels d'enseignement exerçant aux établissements d'enseignement secondaire technique et professionnel du ministère de l'éducation »
+metadata:
+  short_label: Maître d'enseignement technique
+  order:
+    - indemnite_specifique_mensuelle
+    - traitement_de_base
+documentation: Grille de catégorie B
