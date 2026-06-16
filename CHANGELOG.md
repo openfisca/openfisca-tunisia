@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.66 - [#370](https://github.com/openfisca/openfisca-tunisia/pull/370)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Détails :
+  - Mise à jour des dépendances de sécurité : pillow, pygments, requests, tornado, werkzeug, mistune, nbconvert, cryptography, flask, fonttools.
+
+<!-- -->
+
 ## 0.65 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
 
 * Amélioration technique.
