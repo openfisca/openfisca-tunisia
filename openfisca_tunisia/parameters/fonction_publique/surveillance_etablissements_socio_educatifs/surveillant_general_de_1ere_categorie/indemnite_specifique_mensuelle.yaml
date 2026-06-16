@@ -1,11 +1,6 @@
 description: Indemnité spécifique mensuelle des surveillants généraux de 1ère categories du corps des personnels de surveillance des établissements et institutions socio-éducatives relevant du ministère de la jeunesse, de l'enfance et des sports
 metadata:
   short_label: Indemnité spécifique mensuelle
-documentation: Aucune indemnité spécifique mensuelle n'est définie dans le régime
-  indiciaire de ce corps. Les valeurs 0 sont nominales — il ne s'agit pas de données
-  manquantes. Les indemnités éventuelles pour ce corps relèvent de décrets séparés
-  (indemnités spéciales/de risque/de charges administratives) traités hors pipeline
-  salaire_base/.
 echelon_1:
   description: Indemnité spécifique mensuelle de l'échelon 1 des surveillants généraux de 1ère categories du corps des personnels de surveillance des établissements et institutions socio-éducatives relevant du ministère de la jeunesse, de l'enfance et des sports
   values:

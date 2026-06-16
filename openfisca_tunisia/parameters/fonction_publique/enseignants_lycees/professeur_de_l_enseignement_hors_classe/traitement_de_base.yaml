@@ -6,6 +6,8 @@ echelon_1:
   values:
     '2013-02-05':
       value: 566.25
+    '2015-09-04':
+      value: 521.25
   metadata:
     short_label: Échelon 1
     unit: currency
@@ -17,6 +19,8 @@ echelon_2:
   values:
     '2013-02-05':
       value: 575.25
+    '2015-09-04':
+      value: 530.25
   metadata:
     short_label: Échelon 2
     unit: currency
@@ -28,6 +32,8 @@ echelon_3:
   values:
     '2013-02-05':
       value: 584.25
+    '2015-09-04':
+      value: 539.25
   metadata:
     short_label: Échelon 3
     unit: currency
@@ -39,6 +45,8 @@ echelon_4:
   values:
     '2013-02-05':
       value: 593.25
+    '2015-09-04':
+      value: 548.25
   metadata:
     short_label: Échelon 4
     unit: currency
@@ -50,6 +58,8 @@ echelon_5:
   values:
     '2013-02-05':
       value: 602.25
+    '2015-09-04':
+      value: 557.25
   metadata:
     short_label: Échelon 5
     unit: currency
@@ -61,6 +71,8 @@ echelon_6:
   values:
     '2013-02-05':
       value: 611.25
+    '2015-09-04':
+      value: 566.25
   metadata:
     short_label: Échelon 6
     unit: currency
@@ -72,6 +84,8 @@ echelon_7:
   values:
     '2013-02-05':
       value: 620.25
+    '2015-09-04':
+      value: 575.25
   metadata:
     short_label: Échelon 7
     unit: currency
@@ -83,6 +97,8 @@ echelon_8:
   values:
     '2013-02-05':
       value: 629.25
+    '2015-09-04':
+      value: 584.25
   metadata:
     short_label: Échelon 8
     unit: currency
@@ -94,6 +110,8 @@ echelon_9:
   values:
     '2013-02-05':
       value: 638.25
+    '2015-09-04':
+      value: 593.25
   metadata:
     short_label: Échelon 9
     unit: currency
@@ -105,6 +123,8 @@ echelon_10:
   values:
     '2013-02-05':
       value: 647.25
+    '2015-09-04':
+      value: 602.25
   metadata:
     short_label: Échelon 10
     unit: currency
@@ -116,6 +136,8 @@ echelon_11:
   values:
     '2013-02-05':
       value: 656.25
+    '2015-09-04':
+      value: 611.25
   metadata:
     short_label: Échelon 11
     unit: currency
@@ -127,6 +149,8 @@ echelon_12:
   values:
     '2013-02-05':
       value: 665.25
+    '2015-09-04':
+      value: 620.25
   metadata:
     short_label: Échelon 12
     unit: currency
@@ -138,6 +162,8 @@ echelon_13:
   values:
     '2013-02-05':
       value: 674.25
+    '2015-09-04':
+      value: 629.25
   metadata:
     short_label: Échelon 13
     unit: currency
@@ -149,6 +175,8 @@ echelon_14:
   values:
     '2013-02-05':
       value: 683.25
+    '2015-09-04':
+      value: 638.25
   metadata:
     short_label: Échelon 14
     unit: currency
@@ -160,6 +188,8 @@ echelon_15:
   values:
     '2013-02-05':
       value: 692.25
+    '2015-09-04':
+      value: 647.25
   metadata:
     short_label: Échelon 15
     unit: currency
@@ -171,6 +201,8 @@ echelon_16:
   values:
     '2013-02-05':
       value: 701.25
+    '2015-09-04':
+      value: 656.25
   metadata:
     short_label: Échelon 16
     unit: currency
@@ -182,6 +214,8 @@ echelon_17:
   values:
     '2013-02-05':
       value: 710.25
+    '2015-09-04':
+      value: 665.25
   metadata:
     short_label: Échelon 17
     unit: currency
@@ -193,6 +227,8 @@ echelon_18:
   values:
     '2013-02-05':
       value: 719.25
+    '2015-09-04':
+      value: 674.25
   metadata:
     short_label: Échelon 18
     unit: currency
@@ -204,6 +240,8 @@ echelon_19:
   values:
     '2013-02-05':
       value: 728.25
+    '2015-09-04':
+      value: 683.25
   metadata:
     short_label: Échelon 19
     unit: currency
@@ -215,9 +253,66 @@ echelon_20:
   values:
     '2013-02-05':
       value: 737.25
+    '2015-09-04':
+      value: 692.25
   metadata:
     short_label: Échelon 20
     unit: currency
     reference:
       '2013-02-05':
+        title: Décret 2007-268
+echelon_21:
+  description: Traitement de base mensuel de l'échelon 21 des professeurs de l'enseignements hors classes du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
+  values:
+    '2015-09-04':
+      value: 701.25
+  metadata:
+    short_label: Échelon 21
+    unit: currency
+    reference:
+      '2015-09-04':
+        title: Décret 2007-268
+echelon_22:
+  description: Traitement de base mensuel de l'échelon 22 des professeurs de l'enseignements hors classes du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
+  values:
+    '2015-09-04':
+      value: 710.25
+  metadata:
+    short_label: Échelon 22
+    unit: currency
+    reference:
+      '2015-09-04':
+        title: Décret 2007-268
+echelon_23:
+  description: Traitement de base mensuel de l'échelon 23 des professeurs de l'enseignements hors classes du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
+  values:
+    '2015-09-04':
+      value: 719.25
+  metadata:
+    short_label: Échelon 23
+    unit: currency
+    reference:
+      '2015-09-04':
+        title: Décret 2007-268
+echelon_24:
+  description: Traitement de base mensuel de l'échelon 24 des professeurs de l'enseignements hors classes du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
+  values:
+    '2015-09-04':
+      value: 728.25
+  metadata:
+    short_label: Échelon 24
+    unit: currency
+    reference:
+      '2015-09-04':
+        title: Décret 2007-268
+echelon_25:
+  description: Traitement de base mensuel de l'échelon 25 des professeurs de l'enseignements hors classes du corps des personnels enseignants exerçant dans les écoles préparatoires et les lycées
+  values:
+    '2015-09-04':
+      value: 737.25
+  metadata:
+    short_label: Échelon 25
+    unit: currency
+    reference:
+      '2015-09-04':
         title: Décret 2007-268
