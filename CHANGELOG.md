@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.67 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
+
+* Ajout de paramètres.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/fonction_publique`.
+* Détails :
+  - Injecte les indemnités spécifiques mensuelles reconstruites depuis les sources primaires pour 10 corps (campagne 2026-06) ; retire la note « valeurs 0 nominales » pour les corps concernés.
+  - Ré-encode 4 grades d'`enseignants_lycees` de 16/20 à 25 échelons (concordance identité 2015-1165) et ajoute 2 grades de classe exceptionnelle (2015-1163).
+  - Ajoute 5 corps nouveaux au format master : `cadres_techniques_administration`, `enseignement_secondaire_technique_professionnel`, `maitres_principaux_eps`, `personnel_institutions_formation_sante`, `surveillants_generaux_education`.
+
+<!-- -->
+
 ## 0.66 - [#370](https://github.com/openfisca/openfisca-tunisia/pull/370)
 
 * Amélioration technique.
