@@ -1,8 +1,22 @@
-description: Part des recettes brutes TTC imposées
+description: Part des recettes brutes retenue comme bénéfice forfaitaire
 values:
-  2007-01-01:
-    value: 0.7
-  2014-01-01:
-    value: 0.8
+  1990-01-01:
+    value: 0.70
+  2013-01-01:
+    value: 0.80
 metadata:
   unit: /1
+  reference:
+    1990-01-01:
+      title: Article 22 § II du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 6
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2013-01-01:
+      title: Article 46 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, intitulé « Rationalisation de l'assiette forfaitaire des bénéfices non commerciaux »
+documentation: |
+  Régime forfaitaire optionnel des bénéfices non commerciaux : le bénéfice imposable est égal à
+  cette part des recettes brutes.
+
+  Dates corrigées : le taux de 70 % remonte à 1990 et non à 2007. L'article 46 de la loi de
+  finances pour 2014 le remplace par 80 % ; il n'énonce pas de date d'effet propre et aucune note
+  commune n'a été identifiée, de sorte que le rattachement aux revenus de 2013 est DÉRIVÉ de la
+  règle de conversion et non attesté. À confirmer.

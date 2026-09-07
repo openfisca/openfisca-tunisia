@@ -2,7 +2,20 @@ description: Parent à charge (montant maximum)
 values:
   1990-01-01:
     value: 150
-  2018-01-01:
+  2019-01-01:
     value: 450
 metadata:
   unit: currency
+  reference:
+    1990-01-01:
+      title: Article 40 § IV du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2019-01-01:
+      title: Article 41 de la loi n° 2019-78 du 23 décembre 2019 portant loi de finances pour l'année 2020, JORT n° 104 du 27 décembre 2019, p. 4435 ; note commune n° 3/2020 rattachant la mesure aux revenus réalisés à partir du 1er janvier 2019
+documentation: |
+  Plafond, par parent à charge, de la déduction de 5 % du revenu net (article 40 § IV).
+
+  Date corrigée de 2018 à 2019 : la note commune n° 3/2020 rattache la mesure aux revenus
+  réalisés à partir du 1er janvier 2019. La comparaison des millésimes du code consolidé le
+  confirme indirectement — l'édition 2019 porte encore la condition de ressources ancienne,
+  l'édition 2020 la nouvelle.

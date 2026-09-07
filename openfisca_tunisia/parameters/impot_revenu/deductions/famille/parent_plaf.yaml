@@ -1,8 +1,21 @@
-description: Parent à charge (plafond de revenu en SMIG)
+description: Parent à charge (plafond de revenu, en multiples du SMIG)
 values:
   1990-01-01:
     value: 1
-  2018-01-01:
+  2019-01-01:
     value: 2
 metadata:
   unit: /1
+  reference:
+    1990-01-01:
+      title: Article 40 § IV du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2019-01-01:
+      title: Article 41 de la loi n° 2019-78 du 23 décembre 2019 (loi de finances 2020) ; note commune n° 3/2020
+documentation: |
+  Condition de ressources du parent à charge : son revenu, augmenté du montant de la déduction,
+  ne doit pas excéder ce multiple du SMIG.
+
+  Date corrigée de 2018 à 2019. Le doublement est directement lisible dans le code consolidé :
+  l'édition 2019 dit « n'excède pas le salaire minimum interprofessionnel garanti », l'édition
+  2020 « n'excède pas le double du salaire minimum interprofessionnel garanti ».

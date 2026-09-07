@@ -91,7 +91,7 @@ class revenu_assimile_salaire_apres_abattements(Variable):
         abattement_frais_professionnels = min_(
             revenu_assimile_salaire * tspr.abat_sal, tspr.max_abat_sal
         )
-        revenu_assimile_salaire_apres_abattements = min_(
+        revenu_assimile_salaire_apres_abattements = max_(
             revenu_assimile_salaire
             - abattement_frais_professionnels
             - smig * tspr.abattement_pour_salaire_minimum,

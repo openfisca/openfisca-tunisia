@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.71 - [#383](https://github.com/openfisca/openfisca-tunisia/pull/383)
+
+* Correction d'un bug.
+* Périodes concernées : jusqu'au 31/12/2010.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/revenus_categoriels/tspr`.
+* Détails :
+  - Corrige `revenu_assimile_salaire_apres_abattements` : la formule applicable avant 2011 encadrait le résultat par `min_(..., 0)` au lieu de `max_(..., 0)`. Le revenu après abattements était donc systématiquement nul, et **l'IRPP de tous les salariés était nul pour les revenus antérieurs à 2011**. Un salaire imposable de 20 000 D en 2010 donne désormais 3 525 D d'impôt au lieu de 0.
+
+<!-- -->
+
+## 0.70 - [#382](https://github.com/openfisca/openfisca-tunisia/pull/382)
+
+* Correction d'un bug.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/impot_revenu/tspr`, `parameters/impot_revenu/deductions/famille`, `parameters/impot_revenu/foncier`, `parameters/impot_revenu/bnc`, `parameters/impot_revenu/minimum_impot`.
+* Détails :
+  - Corrige le plafond de la déduction pour frais professionnels sur les salaires : il était encodé à 2 000 D dès 1990, alors que l'article 14 § 2 de la loi de finances 2017 le **crée**. De 1990 à 2016 inclus, la déduction de 10 % est sans limite. L'assiette salariale était surestimée pour tous les revenus supérieurs à 20 000 D sur 27 exercices.
+  - Corrige l'abattement pour salaire minimum, qui restait appliqué alors qu'il est abrogé à compter des revenus 2014 par l'article 73 § 2 de la loi de finances 2014.
+  - Corrige la déduction forfaitaire des revenus fonciers bâtis : 30 % dès 1990 et non 2007, bascule à 20 % aux revenus 2015 et non 2016, et ajout du relèvement à 25 % aux revenus 2024, absent.
+  - Corrige les dates des déductions pour charges de famille (enfant infirme, enfant étudiant, parent à charge) et supprime une valeur d'enfant infirme de 2004 sans support. Corrige le numéro d'article cité pour le chef de famille et les enfants (article 54 et non 55 de la loi de finances 2018).
+  - Corrige la date du minimum d'impôt au titre des avantages fiscaux : 45 % à partir du 1er avril 2017 et non de 2020.
+  - Corrige la part forfaitaire des bénéfices non commerciaux (70 % dès 1990) et l'abattement sur pensions étrangères (80 % aux revenus 2006 et non 2007).
+  - Ajoute à chaque paramètre corrigé ses références JORT et une documentation distinguant les dates attestées par note commune des dates dérivées de la règle de conversion en années de revenus.
+
+<!-- -->
+
 ## 0.69 - [#381](https://github.com/openfisca/openfisca-tunisia/pull/381)
 
 * Ajout de paramètres.
