@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.69 - [#381](https://github.com/openfisca/openfisca-tunisia/pull/381)
+
+* Ajout de paramètres.
+* Périodes concernées : jusqu'au 31/12/1989.
+* Zones impactées : `parameters/impot_revenu/contribution_personnelle_etat`.
+* Détails :
+  - Ajoute le tarif de la contribution personnelle d'État, impôt progressif sur le revenu global institué par le décret du 31 mars 1932 et supprimé pour les revenus réalisés à compter du 1er janvier 1990. Trois rédactions successives de l'article 8 : revenus 1980 (11 tranches, 80 % au-delà de 8 500 D), revenus 1983 (20 tranches, 80 % au-delà de 100 000 D) et revenus 1986 (18 tranches, 68 % au-delà de 80 000 D), avec leurs références JORT.
+  - Ajoute le plafond de cotisation effective (55 % du revenu global imposable pour les revenus 1980, 60 % à partir des revenus 1983), qui n'a pas d'équivalent dans l'IRPP.
+  - Aucune variable ne consomme ces paramètres : le modèle ne calcule pas l'avant-1990. Ils servent de référence datée et sourcée. Des tests vérifient que la colonne des taux d'imposition à la limite supérieure, imprimée dans les textes de loi, se déduit du tarif encodé.
+
+<!-- -->
+
+## 0.68 - [#380](https://github.com/openfisca/openfisca-tunisia/pull/380)
+
+* Correction d'un bug.
+* Périodes concernées : jusqu'au 31/12/2016.
+* Zones impactées : `parameters/impot_revenu/bareme`, `parameters/impot_revenu/exoneration`.
+* Détails :
+  - Corrige le barème de l'IRPP applicable aux revenus de 1990 à 2016 : la tranche supérieure était absente. Le barème encodé s'arrêtait à « au-delà de 20 000 D : 30 % », alors que l'article 44 § I du code de l'IRPP et de l'IS institue une tranche de 20 000,001 à 50 000 D à 30 % puis une tranche à 35 % au-delà de 50 000 D. Les revenus nets imposables supérieurs à 50 000 D étaient sous-imposés.
+  - Ajoute les références JORT (avec URL pist.tn) des trois millésimes du barème : code annexé à la loi n° 89-114 (JORT n° 1 du 2-5 janvier 1990, p. 9), article 14-1 de la loi n° 2016-78 (JORT n° 105 du 27 décembre 2016, p. 3831) et article 36 de la loi n° 2024-48 (JORT n° 149 du 10 décembre 2024, p. 6429).
+  - Documente le seuil d'exonération de 2014 : il s'agit d'une exonération catégorielle des salariés et pensionnés, abrogée à compter des revenus de 2017, et non de l'ancêtre de la tranche à 0 % du barème.
+
+<!-- -->
+
 ## 0.67 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
 
 * Ajout de paramètres.
