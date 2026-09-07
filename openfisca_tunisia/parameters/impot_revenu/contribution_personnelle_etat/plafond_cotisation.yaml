@@ -1,0 +1,24 @@
+description: Plafond de la cotisation effective, en part du revenu global imposable
+values:
+  1980-01-01:
+    value: 0.55
+  1983-01-01:
+    value: 0.60
+metadata:
+  unit: /1
+  reference:
+    1980-01-01:
+      title: Article 8 (nouveau) § II, loi n° 79-66 du 31 décembre 1979, JORT n° 76 des 28-31 décembre 1979, p. 3540
+      href: https://www.pist.tn/jort/1979/1979F/Jo07679.pdf
+    1983-01-01:
+      title: Article 8 (nouveau) § II, loi n° 82-91 du 31 décembre 1982, JORT n° 84 du 31 décembre 1982, p. 2877
+      href: https://www.pist.tn/jort/1982/1982F/Jo08482.pdf
+documentation: |
+  « La cotisation effective de la contribution personnelle d'État calculée conformément aux
+  dispositions du paragraphe III ci-après ne peut excéder X % du revenu global imposable. »
+
+  Ce plafonnement n'a pas d'équivalent dans le barème de l'IRPP institué en 1990. Il explique
+  que la dernière ligne du barème publié au JORT de 1979 porte, dans la colonne des taux
+  d'imposition à la limite supérieure, la valeur du plafond (55 %) et non un taux calculé.
+
+  Le plafond est maintenu à 60 % par l'article 8 de la loi n° 85-109 (loi de finances 1986).
