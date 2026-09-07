@@ -1,16 +1,44 @@
-description: Plafond de la déduction
+description: Plafond de la déduction des primes d'assurance-vie
 values:
   1990-01-01:
-    value: 800
+    value: 200
   2007-01-01:
     value: 1200
-  2014-01-01:
+  2013-01-01:
     value: 10000
-  2021-01-01:
+  2020-01-01:
     value: 100000
 metadata:
   unit: currency
   reference:
-    2021-01-01:
-      title: Loi de Finances 2021 (Augmentation du plafond de 10 000 à 100 000 dinars)
-      href: https://www.finances.gov.tn/fr/les-lois-de-finances
+    1990-01-01:
+      title: Article 39 § I-2 du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2007-01-01:
+      title: Article 23 § 1 de la loi n° 2007-70 du 27 décembre 2007 portant loi de finances pour l'année 2008, intitulé « Relèvement du plafond déductible des primes d'assurance vie »
+    2013-01-01:
+      title: Article 24 § 1 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, intitulé « Encouragement de l'épargne à long terme en matière d'assurance vie »
+    2020-01-01:
+      title: Article 16 § 2 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021, JORT n° 128 du 25 décembre 2020, p. 3129 ; note commune n° 1/2021 rattachant la mesure aux revenus réalisés à partir de l'année 2020
+documentation: |
+  Plafond annuel de déduction des primes d'assurance-vie et des contrats de capitalisation
+  (article 39 § I-2 du code).
+
+  VALEUR DE 1990 CORRIGÉE : 200 dinars et non 800. Le texte d'origine dispose « Ces versements
+  sont admis en déduction dans la limite de 200 dinars par an, majorés de : 100 dinars au titre
+  du conjoint ; 50 dinars au titre de chacun des quatre premiers enfants à charge »
+  (JORT n° 1 des 2-5 janvier 1990, page 8, lue à l'image). Les majorations sont dans les
+  paramètres voisins `conj_plaf` et `enf_plaf`, corrigés dans les mêmes proportions.
+
+  DATES CORRIGÉES. Le plafond de 10 000 dinars est rattaché aux revenus de 2013 et non de 2014 :
+  l'article 24 de la loi de finances pour 2014 n'énonce pas de date d'effet propre, et
+  l'administration rattache alors la mesure aux revenus de l'année précédant le millésime de la
+  loi. Le plafond de 100 000 dinars est rattaché aux revenus de 2020 et non de 2021, cette fois
+  sur attestation expresse de la note commune n° 1/2021.
+
+  La loi de finances 2021 soumet en outre cette déduction, pour la première fois, au minimum
+  d'impôt de l'article 12 bis de la loi n° 89-114.
+
+  RESTE OUVERT : une valeur intermédiaire existe nécessairement entre 200 et 1 200 dinars,
+  l'intitulé de l'article 23 de la loi de finances 2008 parlant de « relèvement ». Elle est
+  vraisemblablement dans l'article 52 de la loi de finances pour 1998, non vérifié.

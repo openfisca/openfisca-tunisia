@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.72 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Ajout de paramètres.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/impot_revenu/deductions`.
+* Détails :
+  - Ajoute la déduction des intérêts de l'épargne de l'article 39 § II du code, dans sa structure réelle à deux niveaux : un plafond global (1 000 D en 1990, 1 500 D en 1992, 5 000 D en 2016, 10 000 D en 2021) et un sous-plafond propre aux comptes spéciaux d'épargne (1 000 D, puis 3 000 D et 6 000 D). Les paramètres existants, découpés par établissement, ne correspondaient pas à la structure du texte et restaient figés à leur valeur de 1990.
+  - Corrige les plafonds de déduction des primes d'assurance-vie : la valeur d'origine est de 200 dinars et non 800, la majoration pour conjoint de 100 dinars et non 400, celle par enfant de 50 dinars et non 200 — soit un facteur quatre sur les trois. Corrige également deux dates : 10 000 D aux revenus 2013 et non 2014, 100 000 D aux revenus 2020 et non 2021.
+
+<!-- -->
+
 ## 0.71 - [#383](https://github.com/openfisca/openfisca-tunisia/pull/383)
 
 * Correction d'un bug.

@@ -1,8 +1,17 @@
-description: Majoration au titre du conjoint
+description: Majoration du plafond au titre du conjoint
 values:
   1990-01-01:
-    value: 400
+    value: 100
   2007-01-01:
     value: 600
 metadata:
   unit: currency
+  reference:
+    1990-01-01:
+      title: Article 39 § I-2 du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2007-01-01:
+      title: Article 23 § 1 de la loi n° 2007-70 du 27 décembre 2007 portant loi de finances pour l'année 2008, intitulé « Relèvement du plafond déductible des primes d'assurance vie »
+documentation: |
+  VALEUR DE 1990 CORRIGÉE : 100 dinars et non 400 (JORT n° 1 des 2-5 janvier 1990, p. 8).
+  La majoration disparaît avec le plafond unique institué par la loi de finances pour 2014.
