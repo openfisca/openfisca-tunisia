@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.69 - [#381](https://github.com/openfisca/openfisca-tunisia/pull/381)
+
+* Ajout de paramètres.
+* Périodes concernées : jusqu'au 31/12/1989.
+* Zones impactées : `parameters/impot_revenu/contribution_personnelle_etat`.
+* Détails :
+  - Ajoute le tarif de la contribution personnelle d'État, impôt progressif sur le revenu global institué par le décret du 31 mars 1932 et supprimé pour les revenus réalisés à compter du 1er janvier 1990. Trois rédactions successives de l'article 8 : revenus 1980 (11 tranches, 80 % au-delà de 8 500 D), revenus 1983 (20 tranches, 80 % au-delà de 100 000 D) et revenus 1986 (18 tranches, 68 % au-delà de 80 000 D), avec leurs références JORT.
+  - Ajoute le plafond de cotisation effective (55 % du revenu global imposable pour les revenus 1980, 60 % à partir des revenus 1983), qui n'a pas d'équivalent dans l'IRPP.
+  - Aucune variable ne consomme ces paramètres : le modèle ne calcule pas l'avant-1990. Ils servent de référence datée et sourcée. Des tests vérifient que la colonne des taux d'imposition à la limite supérieure, imprimée dans les textes de loi, se déduit du tarif encodé.
+
+<!-- -->
+
 ## 0.68 - [#380](https://github.com/openfisca/openfisca-tunisia/pull/380)
 
 * Correction d'un bug.

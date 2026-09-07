@@ -2,6 +2,7 @@ description: Impôt sur le revenu
 metadata:
   order:
   - bareme
+  - contribution_personnelle_etat
   - contribution_budget_etat
   - deductions
   - exoneration
