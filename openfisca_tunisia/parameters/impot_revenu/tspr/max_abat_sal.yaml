@@ -1,6 +1,29 @@
-description: Abattement sur les salaires
+description: Plafond de la déduction pour frais professionnels
 values:
   1990-01-01:
+    value: .inf
+  2017-01-01:
     value: 2000
 metadata:
   unit: currency
+  reference:
+    1990-01-01:
+      title: Article 26 § I du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 6
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2017-01-01:
+      title: Article 14 § 2 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017, JORT n° 105 du 27 décembre 2016, p. 3831
+      href: https://www.pist.tn/jort/2016/2016F/Jo1052016.pdf
+  official_journal_date:
+    2017-01-01: "2016-12-27"
+documentation: |
+  Plafond de la déduction forfaitaire pour frais professionnels sur les traitements et salaires
+  (article 26 § I du code).
+
+  CE PLAFOND N'EXISTE PAS AVANT LES REVENUS DE 2017. L'article 14 § 2 de la loi de finances pour
+  2017 le CRÉE — sa rédaction est « Est ajouté au deuxième tiret … sans que la déduction dépasse
+  2.000 dinars par an » — et non le relève. De 1990 à 2016 inclus, la déduction de 10 % s'applique
+  sans limite de montant. D'où la valeur infinie sur cette période, qui n'est pas une commodité de
+  calcul mais l'état du droit.
+
+  L'article 14 énonce sa propre date d'effet (§ 4) : « revenus réalisés à partir du 1er janvier
+  2017 ».

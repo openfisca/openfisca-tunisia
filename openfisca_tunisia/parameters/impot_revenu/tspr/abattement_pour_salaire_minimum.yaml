@@ -1,8 +1,34 @@
-description: Abattement pour salaire minimum
+description: Déduction supplémentaire pour les salariés payés au salaire minimum
 values:
-  2005-01-01:
+  2004-01-01:
     value: 500
-  2010-01-01:
+  2009-01-01:
     value: 1000
+  2014-01-01:
+    value: 0
 metadata:
   unit: currency
+  reference:
+    2004-01-01:
+      title: Article 49 de la loi n° 2004-90 du 31 décembre 2004 portant loi de finances pour l'année 2005, JORT n° 105 du 31 décembre 2004, p. 3440
+    2009-01-01:
+      title: Article 39 § 2 de la loi n° 2009-71 du 21 décembre 2009 portant loi de finances pour l'année 2010, JORT n° 102 du 22 décembre 2009, p. 3919
+    2014-01-01:
+      title: Abrogation par l'article 73 § 2 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, JORT n° 105 du 31 décembre 2013, p. 3691
+  official_journal_date:
+    2014-01-01: "2013-12-31"
+documentation: |
+  Déduction supplémentaire du revenu annuel net des salariés payés au SMIG, ancien paragraphe V
+  de l'article 40 du code.
+
+  DISPOSITIF ABROGÉ à compter des revenus de 2014 par l'article 73 § 2 de la loi de finances pour
+  2014, qui lui substitue dans le même article l'exonération des revenus nets n'excédant pas
+  5 000 dinars. Le paragraphe V est absent des six millésimes du code consolidé (2019 à 2025).
+  La valeur nulle à partir de 2014 traduit cette abrogation ; le paramètre n'est pas clôturé par
+  une valeur absente parce que les formules qui le consomment le lisent sans garde.
+
+  Les années 2004 et 2009 sont des ANNÉES DE REVENUS. Les articles instituteurs n'énoncent pas de
+  date d'effet propre : elles sont dérivées de la lecture administrative de l'article final de la
+  loi (une loi de finances pour N muette produit effet sur les revenus de N-1), établie par la note
+  commune n° 33/2005 pour la loi de finances 2005 et par la note commune n° 14/2010 pour celle de
+  2010. L'abrogation, elle, est attestée par la clause propre de l'article 73 § 3.

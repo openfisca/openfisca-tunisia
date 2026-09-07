@@ -3,27 +3,33 @@ values:
   1990-01-01:
     value: 500
   2004-01-01:
-    value: 600
-  2005-01-01:
     value: 750
-  2010-01-01:
+  2009-01-01:
     value: 1000
-  2014-01-01:
+  2013-01-01:
     value: 1200
   2017-01-01:
     value: 2000
 metadata:
   unit: currency
   reference:
-    0001-01-01:
-      title: Article 40.III du Code l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés
-    2005-01-01:
-      title: Article 50 de la loi no 2004-90 du 31-12-2004 portant Loi de finances 2005
-    2010-01-01:
-      title: Article 40 de la loi no 2009-71 du 21-12-2009 portant Loi de finances 2010
-    2014-01-01:
-      title: Article 94 de la loi no 2013-54 du 30-12-2017 portant Loi de finances 2014
+    1990-01-01:
+      title: Article 40 § III du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2004-01-01:
+      title: Article 50 de la loi n° 2004-90 du 31 décembre 2004 (loi de finances 2005) ; note commune n° 33/2005 rattachant la mesure aux revenus de l'année 2004
+    2009-01-01:
+      title: Article 40 § 2 de la loi n° 2009-71 du 21 décembre 2009 (loi de finances 2010)
+    2013-01-01:
+      title: Article 94 § 2 de la loi n° 2013-54 du 30 décembre 2013 (loi de finances 2014)
     2017-01-01:
-      - title: Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. .
-      - title: Note commune 7/2018
-        href: https://jibaya.tn/docs/note-commune-numero-7-commentaire-des-dispositions-des-articles-54-et-55-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-au-r/
+      title: Article 55 de la loi n° 2017-66 du 18 décembre 2017 (loi de finances 2018) ; note commune n° 7/2018 rattachant la mesure aux revenus réalisés à partir du 1er janvier 2017
+documentation: |
+  Déduction au titre d'un enfant infirme, sans condition d'âge ni de rang (article 40 § III).
+
+  Les dates sont des ANNÉES DE REVENUS. La valeur de 600 dinars précédemment encodée en 2004
+  est SUPPRIMÉE : elle n'a aucun support: la note commune n° 33/2005 atteste un passage direct
+  de 500 à 750 dinars.
+
+  Les millésimes 2004 et 2009 sont dérivés de la règle de conversion (loi de finances pour N
+  muette sur sa date d'effet -> revenus de N-1) ; 2004 et 2017 sont attestés par note commune.

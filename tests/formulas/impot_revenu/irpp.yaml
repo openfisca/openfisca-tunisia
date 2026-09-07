@@ -123,6 +123,21 @@
     marie: false
     salaire_imposable: 100000
   output:
-    revenu_net_imposable: 98000
-    # 3 500 x 15 % + 5 000 x 20 % + 10 000 x 25 % + 30 000 x 30 % + 48 000 x 35 %
-    irpp: 29825
+    # 100 000 - 10 % de frais professionnels SANS PLAFOND : le plafond de 2 000 D
+    # n'est créé qu'en 2017 par l'article 14 § 2 de la loi de finances 2017.
+    revenu_net_imposable: 90000
+    # 3 500 x 15 % + 5 000 x 20 % + 10 000 x 25 % + 30 000 x 30 % + 40 000 x 35 %
+    irpp: 27025
+
+- name: Salarié au SMIG 2016 - la déduction supplémentaire est abrogée
+  # Non-régression : l'abattement pour salaire minimum est abrogé à compter des revenus 2014
+  # par l'article 73 § 2 de la loi de finances 2014. Il était encore appliqué par le modèle.
+  period: 2016
+  absolute_error_margin: 0.5
+  input:
+    male: true
+    marie: false
+    smig: true
+    salaire_imposable: 6000
+  output:
+    revenu_net_imposable: 6000 * 0.9

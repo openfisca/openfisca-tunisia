@@ -1,8 +1,22 @@
-description: Abattement sur les pensions étrangères
+description: Abattement sur les pensions et rentes viagères de source étrangère
 values:
   2001-01-01:
     value: 0
-  2007-01-01:
+  2006-01-01:
     value: 0.8
 metadata:
   unit: /1
+  reference:
+    2006-01-01:
+      title: Article 35 de la loi n° 2006-85 du 25 décembre 2006 portant loi de finances pour l'année 2007, intitulé « Instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères provenant de l'étranger » ; note commune n° 18/2007 rattachant la mesure aux « pensions et rentes perçues en 2006 et déclarées en 2007 »
+documentation: |
+  Abattement applicable aux pensions et rentes viagères de source étrangère, sous condition de
+  transfert des sommes en Tunisie (article 37 dernier alinéa du code).
+
+  Date corrigée de 2007 à 2006 : la note commune n° 18/2007 rattache expressément la mesure aux
+  pensions perçues EN 2006.
+
+  RÉSERVE : la borne 2001-01-01 n'a aucun support établi. Avant le régime de faveur, ces pensions
+  relevaient par renvoi de l'abattement de droit commun de l'article 26 (25 %), introduit par
+  l'article 61 de la loi de finances pour 1998 — valeur et date non vérifiées, la valeur nulle
+  encodée ici est donc probablement fausse pour la période antérieure à 2006.

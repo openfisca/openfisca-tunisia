@@ -1,8 +1,34 @@
-description: Déduction pour frais, charges et amortissments
+description: Déduction forfaitaire pour frais, charges et amortissements des propriétés bâties
 values:
-  2007-01-01:
-    value: 0.3
-  2016-01-01:
-    value: 0.2
+  1990-01-01:
+    value: 0.30
+  2015-01-01:
+    value: 0.20
+  2024-01-01:
+    value: 0.25
 metadata:
   unit: /1
+  reference:
+    1990-01-01:
+      title: Article 28 § II du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 7
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2015-01-01:
+      title: Article 21 § 1 de la loi n° 2015-53 du 25 décembre 2015 portant loi de finances pour l'année 2016, JORT n° 104 du 29 décembre 2015, p. 3142-3143 ; note commune n° 16/2016 rattachant la mesure à l'exercice 2015
+    2024-01-01:
+      title: Article 39 § 1 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour l'année 2025, JORT n° 149 du 10 décembre 2024, p. 3431-3432 de l'édition française ; l'article 39 § 2 vise « les revenus des propriétés bâties réalisés à partir du 1er janvier 2024 »
+  official_journal_date:
+    2024-01-01: "2024-12-10"
+documentation: |
+  ATTENTION : LES TROIS TAUX NE SONT PAS COMPARABLES ENTRE EUX, leur assiette de charges
+  couvertes ayant changé.
+
+  De 1990 à 2023, le forfait couvre les frais de gestion, la rémunération du concierge, les
+  assurances et l'amortissement, les frais de réparation et d'entretien restant déductibles au
+  réel EN SUS. À partir des revenus de 2024, le forfait de 25 % ABSORBE les frais de réparation
+  et d'entretien. Un bailleur engageant des travaux peut donc être perdant malgré un taux nominal
+  plus élevé.
+
+  Dates corrigées : le taux de 30 % remonte à 1990 et non à 2007 ; la bascule à 20 % vaut pour les
+  revenus de 2015 et non de 2016 ; le relèvement à 25 % pour les revenus de 2024 était absent.
+  Ce dernier est confirmé par comparaison des millésimes du code consolidé, qui porte 20 % jusqu'à
+  l'édition 2023 et 25 % dans l'édition 2025.
