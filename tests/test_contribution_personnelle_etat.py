@@ -8,7 +8,6 @@ limite supérieure de la tranche », imprimée dans le texte de loi, se déduit 
 encodé. Une erreur de seuil ou de taux casse cette seconde vérification.
 """
 
-import datetime
 
 from openfisca_tunisia import TunisiaTaxBenefitSystem
 

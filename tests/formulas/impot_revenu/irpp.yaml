@@ -141,3 +141,46 @@
     salaire_imposable: 6000
   output:
     revenu_net_imposable: 6000 * 0.9
+
+- name: Salarié 2010 - le revenu après abattements n'est pas nul
+  # Non-régression : la formule applicable avant 2011 encadrait le revenu après abattements par
+  # min_(..., 0) au lieu de max_(..., 0). Le résultat était donc systématiquement nul et l'IRPP
+  # de tous les salariés était nul pour les revenus antérieurs à 2011.
+  period: 2010
+  absolute_error_margin: 0.5
+  input:
+    male: true
+    marie: false
+    salaire_imposable: 20000
+  output:
+    # 20 000 - 10 % de frais professionnels, sans plafond avant 2017
+    revenu_assimile_salaire_apres_abattements: 18000
+    # 3 500 x 15 % + 5 000 x 20 % + 8 000 x 25 %
+    irpp: 3525
+
+- name: Salarié 2011 - continuité avec 2010
+  # Le barème et les abattements sont identiques en 2010 et 2011 : à revenu égal, l'impôt doit
+  # l'être aussi. C'est cette continuité que la formule antérieure à 2011 rompait.
+  period: 2011
+  absolute_error_margin: 0.5
+  input:
+    male: true
+    marie: false
+    salaire_imposable: 20000
+  output:
+    revenu_assimile_salaire_apres_abattements: 18000
+    irpp: 3525
+
+- name: Salarié au SMIG 2010 - le revenu après abattements reste borné à zéro
+  # La correction remplace min_ par max_ : elle ne doit pas laisser passer de revenu négatif
+  # lorsque les abattements excèdent le salaire.
+  period: 2010
+  absolute_error_margin: 0.5
+  input:
+    male: true
+    marie: false
+    smig: true
+    salaire_imposable: 1000
+  output:
+    revenu_assimile_salaire_apres_abattements: 0
+    irpp: 0
