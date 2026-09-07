@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.72 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+## 0.72 - [#385](https://github.com/openfisca/openfisca-tunisia/pull/385)
 
 * Ajout de paramètres.
 * Périodes concernées : toutes.
