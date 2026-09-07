@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.71 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Correction d'un bug.
+* Périodes concernées : jusqu'au 31/12/2010.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/revenus_categoriels/tspr`.
+* Détails :
+  - Corrige `revenu_assimile_salaire_apres_abattements` : la formule applicable avant 2011 encadrait le résultat par `min_(..., 0)` au lieu de `max_(..., 0)`. Le revenu après abattements était donc systématiquement nul, et **l'IRPP de tous les salariés était nul pour les revenus antérieurs à 2011**. Un salaire imposable de 20 000 D en 2010 donne désormais 3 525 D d'impôt au lieu de 0.
+
+<!-- -->
+
 ## 0.70 - [#382](https://github.com/openfisca/openfisca-tunisia/pull/382)
 
 * Correction d'un bug.
