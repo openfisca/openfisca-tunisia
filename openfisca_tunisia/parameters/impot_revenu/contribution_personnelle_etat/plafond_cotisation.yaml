@@ -1,5 +1,9 @@
 description: Plafond de la cotisation effective, en part du revenu global imposable
 values:
+  1962-01-01:
+    value: 0.40
+  1965-01-01:
+    value: 0.45
   1980-01-01:
     value: 0.55
   1983-01-01:
@@ -7,6 +11,12 @@ values:
 metadata:
   unit: /1
   reference:
+    1962-01-01:
+      title: Article 8 (nouveau) § II, loi n° 62-73 du 31 décembre 1962, JORT n° 64 des 28-31 décembre 1962, p. 1647
+      href: https://www.pist.tn/jort/1962/1962F/Jo06462.pdf
+    1965-01-01:
+      title: Article 8 (nouveau) § II, loi n° 65-46 du 31 décembre 1965, JORT n° 66 du 31 décembre 1965, p. 1716
+      href: https://www.pist.tn/jort/1965/1965F/Jo06665.pdf
     1980-01-01:
       title: Article 8 (nouveau) § II, loi n° 79-66 du 31 décembre 1979, JORT n° 76 des 28-31 décembre 1979, p. 3540
       href: https://www.pist.tn/jort/1979/1979F/Jo07679.pdf
@@ -15,10 +25,15 @@ metadata:
       href: https://www.pist.tn/jort/1982/1982F/Jo08482.pdf
 documentation: |
   « La cotisation effective de la contribution personnelle d'État calculée conformément aux
-  dispositions du paragraphe III ci-après ne peut excéder X % du revenu global imposable. »
+  dispositions du paragraphe III ci-après, à l'exclusion de toute majoration, ne peut excéder
+  X % du revenu global imposable. »
 
-  Ce plafonnement n'a pas d'équivalent dans le barème de l'IRPP institué en 1990. Il explique
-  que la dernière ligne du barème publié au JORT de 1979 porte, dans la colonne des taux
-  d'imposition à la limite supérieure, la valeur du plafond (55 %) et non un taux calculé.
+  Ce plafonnement n'a pas d'équivalent dans le barème de l'IRPP institué en 1990. Il tempère
+  fortement les taux marginaux nominaux, très élevés dans les premières rédactions du tarif
+  (88 % au-delà de 9 800 D pour les revenus de 1965, sous un plafond de 45 %).
+
+  Il explique aussi que la dernière ligne du barème publié au JORT de 1979 porte « 55,00 % »
+  dans la colonne des taux d'imposition à la limite supérieure : c'est le plafond, et non un
+  taux calculé.
 
   Le plafond est maintenu à 60 % par l'article 8 de la loi n° 85-109 (loi de finances 1986).
