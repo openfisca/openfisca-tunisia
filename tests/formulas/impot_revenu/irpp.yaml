@@ -110,3 +110,19 @@
     revenu_assimile_salaire: 0
     revenu_assimile_salaire_apres_abattements: 0 * (1 - 0.1)
     irpp: 0
+
+- name: Haut revenu 2016 - tranche supérieure du barème 1990-2016 (35 % au-delà de 50 000 D)
+  # Non-régression : le barème encodé s'arrêtait à « au-delà de 20 000 D : 30 % » et omettait
+  # la coupure à 50 000 D et la tranche à 35 %. Barème officiel : article 44 § I du code de
+  # l'IRPP et de l'IS annexé à la loi n° 89-114, JORT n° 1 du 2-5 janvier 1990, p. 9 —
+  # inchangé jusqu'aux revenus de 2016 inclus.
+  period: 2016
+  absolute_error_margin: 0.5
+  input:
+    male: true
+    marie: false
+    salaire_imposable: 100000
+  output:
+    revenu_net_imposable: 98000
+    # 3 500 x 15 % + 5 000 x 20 % + 10 000 x 25 % + 30 000 x 30 % + 48 000 x 35 %
+    irpp: 29825

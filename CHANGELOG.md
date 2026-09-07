@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.68 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Correction d'un bug.
+* Périodes concernées : jusqu'au 31/12/2016.
+* Zones impactées : `parameters/impot_revenu/bareme`, `parameters/impot_revenu/exoneration`.
+* Détails :
+  - Corrige le barème de l'IRPP applicable aux revenus de 1990 à 2016 : la tranche supérieure était absente. Le barème encodé s'arrêtait à « au-delà de 20 000 D : 30 % », alors que l'article 44 § I du code de l'IRPP et de l'IS institue une tranche de 20 000,001 à 50 000 D à 30 % puis une tranche à 35 % au-delà de 50 000 D. Les revenus nets imposables supérieurs à 50 000 D étaient sous-imposés.
+  - Ajoute les références JORT (avec URL pist.tn) des trois millésimes du barème : code annexé à la loi n° 89-114 (JORT n° 1 du 2-5 janvier 1990, p. 9), article 14-1 de la loi n° 2016-78 (JORT n° 105 du 27 décembre 2016, p. 3831) et article 36 de la loi n° 2024-48 (JORT n° 149 du 10 décembre 2024, p. 6429).
+  - Documente le seuil d'exonération de 2014 : il s'agit d'une exonération catégorielle des salariés et pensionnés, abrogée à compter des revenus de 2017, et non de l'ancêtre de la tranche à 0 % du barème.
+
+<!-- -->
+
 ## 0.67 - [#369](https://github.com/openfisca/openfisca-tunisia/pull/369)
 
 * Ajout de paramètres.

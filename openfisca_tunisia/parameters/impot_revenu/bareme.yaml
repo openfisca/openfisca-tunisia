@@ -61,9 +61,17 @@ brackets:
     2025-01-01:
       value: 0.33
 - threshold:
+    1990-01-01:
+      value: 50000
+    2017-01-01:
+      value: null
     2025-01-01:
       value: 40000
   rate:
+    1990-01-01:
+      value: 0.35
+    2017-01-01:
+      value: null
     2025-01-01:
       value: 0.36
 - threshold:
@@ -81,11 +89,18 @@ brackets:
 metadata:
   label_en: Tax scale
   reference:
+    1990-01-01:
+      title: Article 44 § I du code de l'IRPP et de l'IS, annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 du 2-5 janvier 1990, p. 3-21 (article 44 p. 9)
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
     2017-01-01:
-      href: http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4
+      title: Article 14-1 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017, JORT n° 105 du 27 décembre 2016, p. 3831
+      href: https://www.pist.tn/jort/2016/2016F/Jo10516.pdf
     2025-01-01:
-      title: Article 36 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour l'année 2025, JORT n° 149/2024, p. 6429
+      title: Article 36 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour l'année 2025, JORT n° 149 du 10 décembre 2024, p. 6429
+      href: https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf
   official_journal_date:
+    1990-01-01: "1990-01-02"
+    2017-01-01: "2016-12-27"
     2025-01-01: "2024-12-10"
   rate_unit: /1
   threshold_unit: currency
