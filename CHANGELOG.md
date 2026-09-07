@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.73 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Correction d'un bug.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/impot_revenu/tspr`, `parameters/impot_revenu/minimum_impot`.
+* Détails :
+  - Complète l'abattement sur les pensions de source étrangère, qui ne connaissait que le régime de faveur de 80 %. Trois régimes successifs sont désormais encodés et sourcés : aucun abattement de 1990 à 1996, 25 % par renvoi à l'article 26 à partir des revenus 1997 (article 61 de la loi de finances 1998), 80 % à partir des pensions perçues en 2006. La borne 2001 sans support est supprimée.
+  - Établit la date du minimum d'impôt au titre des avantages fiscaux : le taux de 60 % s'applique **à partir du 1er janvier 1999** en vertu de l'article 62 de la loi de finances pour 1998, et non de 2014 comme encodé jusqu'ici sans support.
+
+<!-- -->
+
 ## 0.72 - [#385](https://github.com/openfisca/openfisca-tunisia/pull/385)
 
 * Ajout de paramètres.
