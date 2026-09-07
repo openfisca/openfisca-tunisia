@@ -33,6 +33,38 @@ def taux_effectifs(bareme):
     return resultats
 
 
+def test_monotonie_des_tarifs():
+    """Les taux d'un barème progressif croissent avec le revenu, sans exception.
+
+    Ce contrôle n'est pas décoratif : les tarifs de 1962 et 1965 ne publient pas la colonne
+    des taux d'imposition à la limite supérieure, qui sert de vérification pour 1980, 1983 et
+    1986. La monotonie est alors le seul garde-fou contre une erreur de transcription du
+    fac-similé — c'est elle qui a permis d'écarter une lecture « 29 % » entre 20 % et 24 %
+    dans le tarif de 1962.
+    """
+    for annee in (1962, 1965, 1980, 1983, 1986):
+        taux = list(bareme(annee).rates)
+        assert taux == sorted(taux), f"taux non monotones pour les revenus {annee} : {taux}"
+        seuils = list(bareme(annee).thresholds)
+        assert seuils == sorted(set(seuils)), f"seuils non croissants pour les revenus {annee}"
+
+
+def test_structure_des_tarifs_anterieurs_a_1980():
+    # Revenus 1962 : art. 2 de la loi n° 62-73, JORT n° 64 des 28-31 décembre 1962, p. 1647.
+    # Le texte date en année d'imposition : « au titre de l'année 1963 (revenus de 1962) ».
+    assert len(bareme(1962).thresholds) == 31
+    assert bareme(1962).thresholds[-1] == 10200
+    assert bareme(1962).rates[-1] == 0.80
+
+    # Revenus 1965 : art. 10 de la loi n° 65-46, JORT n° 66 du 31 décembre 1965, p. 1716.
+    assert len(bareme(1965).thresholds) == 30
+    assert bareme(1965).thresholds[-1] == 9800
+    assert bareme(1965).rates[-1] == 0.88
+    # Première tranche imposée dès le premier dinar, au taux de 1 %.
+    assert bareme(1965).thresholds[0] == 0
+    assert bareme(1965).rates[0] == 0.01
+
+
 def test_structure_des_trois_tarifs():
     # Revenus 1980 : art. 8 de la loi n° 79-66, JORT n° 76 des 28-31 décembre 1979, p. 3540.
     assert len(bareme(1980).thresholds) == 11
@@ -88,6 +120,8 @@ def test_plafond_de_cotisation():
         parametres = tax_benefit_system.get_parameters_at_instant(f"{annee}-01-01")
         return parametres.impot_revenu.contribution_personnelle_etat.plafond_cotisation
 
+    assert plafond(1962) == 0.40
+    assert plafond(1965) == 0.45
     assert plafond(1980) == 0.55
     assert plafond(1983) == 0.60
     assert plafond(1989) == 0.60

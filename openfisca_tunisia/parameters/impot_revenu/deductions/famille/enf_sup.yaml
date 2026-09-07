@@ -2,14 +2,26 @@ description: Enfant non boursier du supérieur
 values:
   1990-01-01:
     value: 300
-  2010-01-01:
+  2009-01-01:
     value: 600
-  2014-01-01:
+  2013-01-01:
     value: 1000
 metadata:
   unit: currency
   reference:
-    2010-01-01:
-      title: Article 40 de la loi no 2009-71 du 21-12-2004 portant Loi de finances 2010
-    2014-01-01:
-      title: Loi de finances 2014
+    1990-01-01:
+      title: Article 40 § III du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    2009-01-01:
+      title: Article 40 § 2 de la loi n° 2009-71 du 21 décembre 2009 (loi de finances 2010)
+    2013-01-01:
+      title: Article 94 § 2 de la loi n° 2013-54 du 30 décembre 2013 (loi de finances 2014)
+documentation: |
+  Déduction au titre d'un enfant poursuivant des études supérieures sans bénéfice de bourse et
+  âgé de moins de 25 ans (article 40 § III).
+
+  Les dates sont des ANNÉES DE REVENUS et ont été décalées d'un an : les articles instituteurs
+  n'énoncent pas de date d'effet propre, et l'article final de la loi de finances pour N est lu
+  par l'administration comme visant les revenus de N-1. Au sein de la loi de finances pour 2014,
+  l'article 73 porte au contraire une clause propre visant les revenus de 2014 : deux mesures
+  d'une même loi ne prennent pas nécessairement effet la même année de revenus.

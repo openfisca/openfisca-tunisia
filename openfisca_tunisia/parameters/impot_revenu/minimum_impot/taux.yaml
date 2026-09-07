@@ -1,9 +1,32 @@
-description: Taux minimum d'imposition applicable suite aux déductions d'impôts et investissements
-unit: /1
+description: Minimum d'impôt au titre des avantages fiscaux (article 12 bis de la loi n° 89-114)
 values:
   1990-01-01:
     value: 0
   2014-01-01:
     value: 0.60
-  2020-01-01:
+  2017-04-01:
     value: 0.45
+metadata:
+  unit: /1
+  reference:
+    2017-04-01:
+      title: Article 2 § 6 de la loi n° 2017-8 du 14 février 2017 portant refonte du dispositif des avantages fiscaux, JORT n° 15 du 21 février 2017, p. 777 ; l'article 23 fixe l'application « à partir du 1er avril 2017 »
+documentation: |
+  Ce paramètre est le minimum d'impôt de l'ARTICLE 12 BIS DE LA LOI N° 89-114 du 30 décembre 1989
+  portant promulgation du code — et non d'un article du code lui-même, ce qui explique qu'il soit
+  introuvable dans les millésimes consolidés. Il plafonne indirectement les avantages fiscaux :
+  quel que soit le volume de déductions mobilisées, l'impôt ne peut descendre en dessous de cette
+  fraction de ce qu'il aurait été sans elles.
+
+  NE PAS CONFONDRE avec deux homonymes : l'article 44 § II du code (minimum d'impôt assis sur le
+  chiffre d'affaires) et l'article 12 bis DU CODE (amortissements).
+
+  Date corrigée : le passage à 45 % est daté du 1er AVRIL 2017 et non de 2020. C'est la seule date
+  d'effet calendaire, en cours d'exercice, de tout ce sous-arbre ; l'exercice de rattachement n'est
+  pas établi et la valeur est donc datée au 1er avril, telle que l'énonce l'article 23.
+
+  RÉSERVE : la borne 2014-01-01 pour le taux de 60 % N'A AUCUN SUPPORT ÉTABLI. Le taux de 60 %
+  existait au moins depuis 2007, et le véhicule qui l'a institué n'est pas identifié — le
+  dépouillement des lois de finances 2000-2006 est bloqué par des PDF dont la police à encodage
+  décalé supprime les chiffres à l'extraction. La valeur est conservée faute de mieux ; sa date
+  est à retenir comme non fiable.
