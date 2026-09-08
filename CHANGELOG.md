@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.76 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+## 0.76 - [#395](https://github.com/openfisca/openfisca-tunisia/pull/395)
 
 * Correction d'un bug.
 * Périodes concernées : à partir du 2020-05-20.
