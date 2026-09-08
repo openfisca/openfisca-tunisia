@@ -15,26 +15,30 @@ def deductions(annee):
 
 def test_interets_epargne_structure_a_deux_niveaux():
     """Avant 1992, un seul plafond ; ensuite, un plafond global et un sous-plafond."""
+    # `interets_emprunts_obligataires` porte le plafond GLOBAL, malgré son nom.
     # 1990 : « sans que cette déduction n'excède 1000 dinars par an », comptes spéciaux seuls.
-    assert deductions(1990).interets_epargne.plafond_global == 1000
-    assert deductions(1990).interets_epargne.plafond_comptes_speciaux == 1000
+    assert deductions(1990).interets_emprunts_obligataires.plaf == 1000
+    assert deductions(1990).interets_comptes_speciaux_epargne_bancaires.plaf == 1000
 
     # 1992 : « dans la limite d'un montant annuel de mille cinq cent dinars (1500 d) sans que ce
     # montant n'excède mille dinars pour les intérêts provenant des comptes spéciaux d'épargne ».
-    assert deductions(1992).interets_epargne.plafond_global == 1500
-    assert deductions(1992).interets_epargne.plafond_comptes_speciaux == 1000
+    assert deductions(1992).interets_emprunts_obligataires.plaf == 1500
+    assert deductions(1992).interets_comptes_speciaux_epargne_bancaires.plaf == 1000
 
-    assert deductions(2016).interets_epargne.plafond_global == 5000
-    assert deductions(2016).interets_epargne.plafond_comptes_speciaux == 3000
-    assert deductions(2021).interets_epargne.plafond_global == 10000
-    assert deductions(2021).interets_epargne.plafond_comptes_speciaux == 6000
+    assert deductions(2016).interets_emprunts_obligataires.plaf == 5000
+    assert deductions(2016).interets_comptes_speciaux_epargne_bancaires.plaf == 3000
+    assert deductions(2021).interets_emprunts_obligataires.plaf == 10000
+    assert deductions(2021).interets_comptes_speciaux_epargne_bancaires.plaf == 6000
 
 
 def test_sous_plafond_jamais_superieur_au_plafond_global():
     """Contrainte de cohérence interne du dispositif, à tout millésime."""
     for annee in range(1990, 2027):
-        epargne = deductions(annee).interets_epargne
-        assert epargne.plafond_comptes_speciaux <= epargne.plafond_global, annee
+        d = deductions(annee)
+        assert (
+            d.interets_comptes_speciaux_epargne_bancaires.plaf
+            <= d.interets_emprunts_obligataires.plaf
+        ), annee
 
 
 def test_assurance_vie_valeurs_d_origine():
