@@ -48,7 +48,7 @@ def test_allocation_familiale_non_contributive_nexiste_pas_avant_2022():
 def test_amen_social_supplements():
     """Limite d'âge de l'étudiant à 25 ans, et non 21 ; effet au 20 mai 2020."""
     with pytest.raises(ParameterNotFoundError):
-        nc("2020-05-19").supplements if False else nc("2020-05-19").amen_social.supplements.enfant_a_charge
+        nc("2020-05-19").amen_social.supplements.enfant_a_charge
 
     s = nc("2020-05-20").amen_social.supplements
     assert s.enfant_a_charge == 10
@@ -57,10 +57,12 @@ def test_amen_social_supplements():
 
 
 def test_amen_social_allocation_de_base():
-    a = lambda d: nc(d).amen_social.allocation_base
-    assert a("2020-06-01") == 180
-    assert a("2022-06-01") == 200
-    assert a("2023-06-01") == 220
-    assert a("2024-06-01") == 240
+    def base(date):
+        return nc(date).amen_social.allocation_base
+
+    assert base("2020-06-01") == 180
+    assert base("2022-06-01") == 200
+    assert base("2023-06-01") == 220
+    assert base("2024-06-01") == 240
     # Palier ajouté : arrêté du 29 août 2025, rétroactif au 1er janvier.
-    assert a("2025-06-01") == 260
+    assert base("2025-06-01") == 260
