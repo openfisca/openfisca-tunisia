@@ -1,9 +1,15 @@
-description: Majoration pour handicap
+description: Coefficient appliqué au supplément en cas de handicap
 values:
-  2020-01-01:
+  2020-05-20:
     value: 2
 metadata:
   unit: /1
   reference:
-    2020-01-01:
-    - title: Arrêté 931 du 20 mai 2020
+    2020-05-20:
+      title: Dernier alinéa de l'article 2 de l'arrêté conjoint du 19 mai 2020
+documentation: |
+  RÉFÉRENCE APOCRYPHE CORRIGÉE. Le paramètre citait un « arrêté 931 du 20 mai 2020 » : cette
+  référence n'existe pas sous cette forme. La disposition figure au dernier alinéa de l'article 2
+  de l'arrêté conjoint du 19 mai 2020.
+
+  DATE CORRIGÉE : 20 mai 2020 et non 1er janvier 2020.

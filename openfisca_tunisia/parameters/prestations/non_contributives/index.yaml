@@ -1,0 +1,7 @@
+description: Prestations non contributives (assistance sociale)
+metadata:
+  order:
+  - pnafn
+  - amen_social
+  - allocation_familiale
+  - amg2

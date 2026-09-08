@@ -24,10 +24,30 @@ values:
     value: 7.7
 metadata:
   unit: currency
-  notes:
-    2010-07-01:
-      title: 190 dinars par trimestre
-    2009-07-01:
-      title: 170 dinars par trimestre
-    2009-01-01:
-      title: 160 dinars par trimestre
+  reference:
+    2018-04-01:
+      title: Montant constaté à 180 dinars par l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 10 juillet 2024
+documentation: |
+  Allocation mensuelle du programme national d'aide aux familles nécessiteuses.
+
+  AUCUN DE CES ONZE PALIERS N'A DE TEXTE. Ce n'est pas une lacune de documentation mais un
+  résultat établi : aucun texte publié au JORT ne crée le programme, n'en fixe l'objet,
+  l'éligibilité ni le montant. Le programme n'y apparaît qu'en qualité d'objet de dépense —
+  loi de finances rectificative n° 86-83, arrêté du 6 janvier 1987 fixant la contribution des
+  caisses, loi de finances n° 87-83 — et la loi de 1986 le mentionne comme DÉJÀ EXISTANT.
+
+  L'absence est démontrée et non supposée : la forme juridique de l'arrêté ministériel existait
+  et a servi pour l'aide aux personnes âgées (1997), à la famille d'accueil (1997) et à la
+  personne handicapée (2006). Elle n'a pas été employée ici. Mieux, l'arrêté du 30 septembre
+  1997 REFUSE d'énoncer un chiffre et renvoie au « montant servi dans le cadre du programme ».
+
+  Les valeurs de 2009 et 2010 sont des conversions de montants trimestriels (160, 170, 190
+  dinars par trimestre), ce que leur forme décimale trahit.
+
+  SEUL LE PALIER DE 180 DINARS EST ATTESTÉ : l'arrêté conjoint du 10 juillet 2024 le constate
+  « fixé à 180 dinars à la date de la publication ». Ce même arrêté autorise un relèvement
+  PLAFONNÉ au niveau du transfert AMEN — 240 dinars, porté à 260 par l'arrêté du 29 août 2025 —
+  sans fixer de nouveau montant. Encoder 240 ou 260 comme des valeurs serait une
+  sur-interprétation : ce sont des plafonds sur une revalorisation, pas des barèmes.
+
+  La série s'arrête donc en juillet 2024, faute de montant publié.
