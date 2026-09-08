@@ -1,6 +1,21 @@
 description: Troisième enfant à charge
 values:
   1960-01-01:
+    value: 0.15
+  1976-01-01:
     value: 0.14
 metadata:
   unit: /1
+  reference:
+    1960-01-01:
+      title: Article 61 de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, JORT n° 57 de 1960, p. 1606
+      href: https://www.pist.tn/jort/1960/1960F/Jo05760.pdf
+    1976-01-01:
+      title: Article premier de la loi n° 75-82 du 30 décembre 1975, JORT n° 87 des 30-31 décembre 1975, p. 2852 ; effet au 1er janvier 1976 (art. 2)
+      href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
+documentation: |
+  DATE CORRIGÉE. Le taux de 14% était encodé au 1er janvier 1960 en citant la loi n° 88-38
+  de 1988. Il date en réalité de la loi n° 75-82, avec effet au 1er janvier 1976.
+
+  L'article 61 d'origine ne connaît qu'un taux UNIQUE de 15 % par enfant, quel que soit son
+  rang. Le barème dégressif par rang — 18, 16, 14 puis 12 % — est l'apport de 1976.

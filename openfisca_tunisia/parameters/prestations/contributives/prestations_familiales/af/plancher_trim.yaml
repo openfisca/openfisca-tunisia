@@ -1,0 +1,26 @@
+description: Plancher de la rémunération globale trimestrielle servant d'assiette
+values:
+  1960-01-01:
+    value: 52
+  1976-01-01:
+    value: null
+metadata:
+  unit: currency
+  reference:
+    1960-01-01:
+      title: Article 61 de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, JORT n° 57 de 1960, p. 1606
+      href: https://www.pist.tn/jort/1960/1960F/Jo05760.pdf
+    1976-01-01:
+      title: Article premier de la loi n° 75-82 du 30 décembre 1975, JORT n° 87 des 30-31 décembre 1975, p. 2852 ; effet au 1er janvier 1976 (art. 2)
+      href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
+documentation: |
+  Borne basse de la bande d'assiette de l'article 61 de la loi n° 60-30 dans sa rédaction
+  d'origine : les allocations familiales se calculaient sur la rémunération trimestrielle
+  comprise entre 52 et 500 dinars.
+
+  PARAMÈTRE CRÉÉ. Il manquait, et sans lui la période 1960-1975 est inreprésentable : le
+  modèle appliquait un plafond de 122 dinars, valeur de 1986, à des exercices où le régime
+  était tout autre.
+
+  La bande disparaît avec la loi n° 75-82 au profit d'un plafond unique : le paramètre est
+  clôturé au 1er janvier 1976.
