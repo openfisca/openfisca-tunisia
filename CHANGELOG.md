@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.76 - [#395](https://github.com/openfisca/openfisca-tunisia/pull/395)
+
+* Correction d'un bug.
+* Périodes concernées : à partir du 2020-05-20.
+* Zones impactées : `parameters/prestations/non_contributives/amen_social`.
+* Détails :
+  - Ajoute `supplements/age_min_enfant`, borne basse d'âge du supplément par enfant du transfert monétaire permanent. Le modèle ne connaissait que la borne haute. Cette borne passe de 0 à **6 ans** le 1er février 2022, jour où l'allocation familiale non contributive de 30 dinars prend en charge les enfants de moins de six ans : c'est une **règle de non-cumul**, sans laquelle un enfant de moins de six ans ouvre droit aux deux prestations à la fois.
+  - Corrige la date d'effet de l'allocation de base, portée du 1er au **20 mai 2020** : l'arrêté conjoint du 19 mai 2020 est publié au JORT n° 45 du 20 mai 2020, p. 1097, et aucun texte n'énonce le 1er mai.
+  - Réaligne `metadata.official_journal_date` sur les dates de valeur, dont il avait divergé (clés 2022-04-01, 2023-04-01, 2024-03-01 pour des valeurs datées du 1er janvier), et ajoute la référence du palier 2025, qui n'en avait aucune.
+
+<!-- -->
+
 ## 0.75 - [#393](https://github.com/openfisca/openfisca-tunisia/pull/393)
 
 * Correction d'un bug.

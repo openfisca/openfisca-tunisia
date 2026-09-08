@@ -1,0 +1,25 @@
+description: Âge minimal de l'enfant ouvrant droit au supplément
+values:
+  2020-05-20:
+    value: 0
+  2022-02-01:
+    value: 6
+metadata:
+  unit: year
+  reference:
+    2020-05-20:
+      title: Article 2 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, JORT n° 45 du 20 mai 2020, p. 1097 — aucune borne basse d'âge
+      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+    2022-02-01:
+      title: Article premier de l'arrêté conjoint du 1er avril 2022 modifiant l'arrêté du 19 mai 2020, JORT n° 38 du 8 avril 2022, p. 972 ; effet au 1er février 2022
+      href: https://www.pist.tn/jort/2022/2022F/Jo0382022.pdf
+documentation: |
+  PARAMÈTRE AJOUTÉ. Le supplément par enfant du transfert monétaire permanent n'avait, dans
+  le modèle, qu'une borne haute d'âge (`limite_age_enfant`, 18 ans) et une borne d'études
+  (`limite_age_etudiant`, 25 ans). Il lui manquait sa borne basse.
+
+  Cette borne n'est pas un détail : l'arrêté du 1er avril 2022 la porte de 0 à 6 ans avec
+  effet au 1er février 2022, jour où l'allocation familiale non contributive de 30 dinars
+  (article 11 bis de la loi organique n° 2019-10, ajouté par le décret-loi n° 2022-8) prend
+  en charge les enfants de moins de six ans. C'est une RÈGLE DE NON-CUMUL : sans cette borne,
+  un enfant de moins de six ans ouvre droit aux deux prestations à la fois.

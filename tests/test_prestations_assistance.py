@@ -66,3 +66,28 @@ def test_amen_social_allocation_de_base():
     assert base("2024-06-01") == 240
     # Palier ajouté : arrêté du 29 août 2025, rétroactif au 1er janvier.
     assert base("2025-06-01") == 260
+
+
+def test_amen_supplement_borne_basse_dage_et_non_cumul():
+    """La borne basse passe de 0 à 6 ans le 1er février 2022, jour où l'allocation
+    familiale non contributive prend en charge les enfants de moins de six ans.
+
+    Sans cette borne, un enfant de moins de six ans ouvrirait droit aux deux prestations.
+    """
+    supplements = nc("2020-06-01").amen_social.supplements
+    assert supplements.age_min_enfant == 0
+    assert supplements.limite_age_enfant == 18
+
+    apres = nc("2022-02-01").amen_social.supplements
+    assert apres.age_min_enfant == 6
+    assert nc("2022-01-31").amen_social.supplements.age_min_enfant == 0
+
+
+def test_amen_allocation_de_base_prend_effet_a_la_publication():
+    """L'arrêté conjoint du 19 mai 2020 est publié au JORT n° 45 du 20 mai 2020.
+
+    La série portait le 1er mai 2020, date qu'aucun texte n'énonce.
+    """
+    with pytest.raises(ParameterNotFoundError):
+        nc("2020-05-19").amen_social.allocation_base
+    assert nc("2020-05-20").amen_social.allocation_base == 180

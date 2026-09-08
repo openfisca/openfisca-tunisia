@@ -1,6 +1,6 @@
 description: Montant de l'allocation de base du transfert monétaire permanent du programme Amen social
 values:
-  2020-05-01:
+  2020-05-20:
     value: 180
   2022-01-01:
     value: 200
@@ -13,7 +13,7 @@ values:
 metadata:
   unit: currency
   reference:
-    2020-05-01:
+    2020-05-20:
     - title: Loi organique 2019-10 du 30 janvier 2019 relative au programme AMEN social - Article 2 - Définition des allocations de base
       href: https://www.pist.tn/jort/2019/2019F/Jo0112019.pdf
     - title: Décret 2020-317 du 19 mai 2020 fixant les modalités d'application
@@ -29,11 +29,15 @@ metadata:
     2024-01-01:
       title: JORT n° 33 et paru le 1er mars 2024
       href: https://www.pist.tn/jort/2024/2024F/Jo0332024.pdf
+    2025-01-01:
+      title: Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 29 janvier 2025, JORT n° 12 du 30 janvier 2025, p. 275 ; effet rétroactif au 1er janvier 2025
+      href: https://www.pist.tn/jort/2025/2025F/Jo0122025.pdf
   official_journal_date:
-    2020-05-01: "2020-05-20"
-    2022-04-01: "2022-04-08"
-    2023-04-01: "2023-04-06"
-    2024-03-01: "2024-03-01"
+    2020-05-20: "2020-05-20"
+    2022-01-01: "2022-04-08"
+    2023-01-01: "2023-04-06"
+    2024-01-01: "2024-03-01"
+    2025-01-01: "2025-01-30"
 documentation: |
   Montant de base mensuel du transfert monétaire permanent du programme AMEN social.
 
