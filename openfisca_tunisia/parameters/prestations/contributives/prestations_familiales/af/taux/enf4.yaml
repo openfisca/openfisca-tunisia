@@ -1,0 +1,28 @@
+description: Quatrième enfant à charge
+values:
+  1960-01-01:
+    value: 0.15
+  1976-01-01:
+    value: 0.12
+  1989-01-01:
+    value: null
+metadata:
+  unit: /1
+  reference:
+    1960-01-01:
+      title: Article 61 de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, JORT n° 57 de 1960, p. 1606
+      href: https://www.pist.tn/jort/1960/1960F/Jo05760.pdf
+    1976-01-01:
+      title: Article premier de la loi n° 75-82 du 30 décembre 1975, JORT n° 87 des 30-31 décembre 1975, p. 2852 ; effet au 1er janvier 1976 (art. 2)
+      href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
+    1989-01-01:
+      title: Article premier de la loi n° 88-38 du 6 mai 1988, JORT n° 33 des 13-17 mai 1988, p. 735 ; effet au 1er janvier 1989 (art. 5)
+      href: https://www.pist.tn/jort/1988/1988F/Jo03388.pdf
+documentation: |
+  PARAMÈTRE CRÉÉ. Le quatrième rang manquait, et sans lui la période 1960-1988 est
+  inreprésentable : les allocations étaient dues pour les QUATRE premiers enfants.
+
+  L'article 52 d'origine ouvre le droit aux quatre premiers enfants, au taux unique de 15 %,
+  puis au taux de 12 % à partir des revenus de 1976. L'article premier de la loi n° 88-38
+  ramène le plafond de quatre à TROIS enfants à compter du 1er janvier 1989 : le paramètre est
+  clôturé à cette date.

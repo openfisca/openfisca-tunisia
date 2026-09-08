@@ -1,6 +1,26 @@
-description: Troisième enfant
+description: Majoration trimestrielle pour trois enfants à charge ou plus
 values:
-  1960-01-01:
+  1980-05-01:
     value: 23.475
 metadata:
   unit: currency
+  reference:
+    1980-05-01:
+      title: Article 65 bis de la loi n° 60-30, ajouté par l'article premier de la loi n° 80-36 du 28 mai 1980, JORT n° 32 des 27-30 mai 1980, p. 1478 ; effet au 1er mai 1980 (art. 2)
+      href: https://www.pist.tn/jort/1980/1980F/Jo03280.pdf
+documentation: |
+  DATE ET TEXTE CORRIGÉS. La valeur était encodée au 1er janvier 1960 sans aucune référence.
+  Le dispositif n'existe pas en 1960 : il est CRÉÉ par la loi n° 80-36 du 28 mai 1980, qui
+  ajoute au chapitre premier du titre II de la loi n° 60-30 une « SECTION I bis — Majoration
+  pour Salaire Unique » et un article 65 bis, avec effet au 1er mai 1980.
+
+  Le texte fondateur était réputé introuvable : son intitulé ne porte que « complétant la loi
+  n° 60-30 » et aucune recherche par titre ne pouvait l'atteindre. Le décret n° 74-463, seul
+  texte dont le titre porte l'expression « majoration pour salaire unique », ne la contient
+  pas dans son dispositif — il accorde aux militaires « les indemnités à caractère familial ».
+
+  Conditions cumulatives de l'article 65 bis : enfants à charge au sens de l'article 53, droit
+  ouvert aux allocations familiales, et conjoint sans activité professionnelle.
+
+  REVALORISATION NON ÉTABLIE : aucun texte modificatif n'a été repéré depuis 1980. Le montant
+  serait donc nominalement gelé, ce qui est plausible mais non vérifié.

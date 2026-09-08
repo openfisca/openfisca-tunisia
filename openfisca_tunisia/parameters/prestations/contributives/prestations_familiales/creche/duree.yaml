@@ -1,6 +1,17 @@
-description: Durée maximale (en mois)
+description: Durée maximale de service, en mois
 values:
-  1960-01-01:
+  1994-10-01:
     value: 11
 metadata:
   unit: month
+  reference:
+    1994-10-01:
+      title: Loi n° 94-88 du 26 juillet 1994 et décret n° 95-114 du 16 janvier 1995 ; effet au 1er octobre 1994
+      href: https://www.pist.tn/jort/1994/1994F/Jo06094.pdf
+documentation: |
+  DATE ET BASE LÉGALE CORRIGÉES. La valeur était encodée au 1er janvier 1960 sans référence.
+  Le dispositif est institué par la loi n° 94-88 du 26 juillet 1994 et son décret d'application
+  n° 95-114 du 16 janvier 1995, avec effet au 1er octobre 1994 — soit trente-quatre ans après
+  la date encodée.
+
+  REVALORISATION NON ÉTABLIE : aucun texte modificatif repéré depuis.

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.74 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Correction d'un bug.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/prestations/contributives/prestations_familiales`.
+* Détails :
+  - Corrige les treize valeurs des prestations familiales, toutes datées du 1er janvier 1960 alors qu'**aucune ne date de 1960**. Les taux de 18, 16 et 14 % viennent de la loi n° 75-82 (revenus 1976), le plafond de 122 dinars de la loi n° 86-75 (mai 1986) et non de la loi n° 88-38 qui était citée, la majoration pour salaire unique de la loi n° 80-36 (mai 1980), la contribution aux frais de crèche de la loi n° 94-88 et du décret n° 95-114 (octobre 1994).
+  - Ajoute l'état d'origine du barème, absent : l'article 61 de la loi n° 60-30 ne connaît qu'un taux **unique de 15 %** appliqué à une **bande d'assiette de 52 à 500 dinars**, et non un plafond simple.
+  - Crée trois paramètres sans lesquels la période 1960-1988 est inreprésentable : `af/plancher_trim` (borne basse de la bande, clôturée en 1976), `af/taux/enf4` (quatrième rang, clôturé en 1989) et `af/nb_enfants_max` (quatre enfants, ramené à trois par la loi n° 88-38).
+  - Ajoute à chaque paramètre sa référence JORT avec URL pist.tn, page et date d'effet énoncée par le texte.
+
+<!-- -->
+
 ## 0.73 - [#386](https://github.com/openfisca/openfisca-tunisia/pull/386)
 
 * Correction d'un bug.

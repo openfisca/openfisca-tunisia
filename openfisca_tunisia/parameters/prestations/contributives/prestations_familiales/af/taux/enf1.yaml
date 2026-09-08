@@ -1,14 +1,21 @@
 description: Premier enfant à charge
 values:
   1960-01-01:
+    value: 0.15
+  1976-01-01:
     value: 0.18
 metadata:
   unit: /1
   reference:
     1960-01-01:
-    - title: loi n°88-38 du 6 mai 1988 complétant et modifiant la loi 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1988/loi_88_38_fr.pdf
-      note: "texte de base : la  loi 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale  (article 61)"
-    - title: القانون عدد 38 لسنة 1988 مؤرخ في 6 ماي 1988 يتعلق بتنقيح القاتون عدد 30 لسنة 1960 المؤرخ في 14 ديسمبر 1960 المتعلق بتنظيم انظمة الضمان الاجتماعي
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1988/loi_88_38_ar.pdf
-      note: "61قاتون عدد 30 لسنة 1960 المؤرخ في 14 ديسمبر 1960 المتعلق بتنظيم انظمة الضمان الاجتماعي : الفصل"
+      title: Article 61 de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, JORT n° 57 de 1960, p. 1606
+      href: https://www.pist.tn/jort/1960/1960F/Jo05760.pdf
+    1976-01-01:
+      title: Article premier de la loi n° 75-82 du 30 décembre 1975, JORT n° 87 des 30-31 décembre 1975, p. 2852 ; effet au 1er janvier 1976 (art. 2)
+      href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
+documentation: |
+  DATE CORRIGÉE. Le taux de 18% était encodé au 1er janvier 1960 en citant la loi n° 88-38
+  de 1988. Il date en réalité de la loi n° 75-82, avec effet au 1er janvier 1976.
+
+  L'article 61 d'origine ne connaît qu'un taux UNIQUE de 15 % par enfant, quel que soit son
+  rang. Le barème dégressif par rang — 18, 16, 14 puis 12 % — est l'apport de 1976.
