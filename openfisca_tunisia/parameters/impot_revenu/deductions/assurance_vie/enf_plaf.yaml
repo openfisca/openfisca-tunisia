@@ -6,6 +6,8 @@ values:
     value: 200
   2007-01-01:
     value: 300
+  2013-01-01:
+    value: 0
 metadata:
   unit: currency
   reference:
@@ -16,6 +18,8 @@ metadata:
       title: Article 52 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998, JORT n° 104 des 30-31 décembre 1997, p. 2439, sous l'intitulé « Encouragement de l'épargne dans le cadre des contrats d'assurance-vie »
     2007-01-01:
       title: Article 23 § 1 de la loi n° 2007-70 du 27 décembre 2007 portant loi de finances pour l'année 2008, intitulé « Relèvement du plafond déductible des primes d'assurance vie »
+    2013-01-01:
+      title: Article 24 § 1 de la loi n° 2013-54 du 30 décembre 2013 (loi de finances 2014), qui remplace le plafond majoré par un plafond unique et supprime donc les majorations
 documentation: |
   VALEUR DE 1990 CORRIGÉE : 50 dinars et non 200 (JORT n° 1 des 2-5 janvier 1990, p. 8).
   Les 200 dinars sont ceux de l'article 52 de la loi de finances pour 1998, mal datés.
@@ -25,4 +29,8 @@ documentation: |
   charge au sens des paragraphes II et III de l'article 40 », sans limite de rang. Le modèle
   n'encode pas cette borne de rang : à vérifier avant tout calcul sur les revenus 1990 à 1996.
 
-  La majoration disparaît avec le plafond unique institué par la loi de finances pour 2014.
+  La majoration est CLÔTURÉE à zéro à compter des revenus 2013 : l'article 24 de la loi de
+  finances pour 2014 remplace le plafond majoré par un plafond unique de 10 000 dinars. La
+  formule `deduction_assurance_vie` additionne le plafond et les majorations ; les laisser à
+  leur dernière valeur aurait porté le plafond effectif d'un couple avec enfants au-delà des
+  10 000 dinars du texte.
