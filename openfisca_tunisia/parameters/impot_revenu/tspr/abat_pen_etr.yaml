@@ -1,22 +1,38 @@
 description: Abattement sur les pensions et rentes viagères de source étrangère
 values:
-  2001-01-01:
+  1990-01-01:
     value: 0
+  1997-01-01:
+    value: 0.25
   2006-01-01:
     value: 0.8
 metadata:
   unit: /1
   reference:
+    1990-01-01:
+      title: Article 37 du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    1997-01-01:
+      title: Article 61 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998, JORT n° 104 des 30-31 décembre 1997, p. 2441
     2006-01-01:
-      title: Article 35 de la loi n° 2006-85 du 25 décembre 2006 portant loi de finances pour l'année 2007, intitulé « Instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères provenant de l'étranger » ; note commune n° 18/2007 rattachant la mesure aux « pensions et rentes perçues en 2006 et déclarées en 2007 »
+      title: Article 35 de la loi n° 2006-85 du 25 décembre 2006 portant loi de finances pour l'année 2007, intitulé « Instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères provenant de l'étranger » ; note commune n° 18/2007 rattachant la mesure aux pensions perçues en 2006
 documentation: |
-  Abattement applicable aux pensions et rentes viagères de source étrangère, sous condition de
-  transfert des sommes en Tunisie (article 37 dernier alinéa du code).
+  Abattement applicable aux pensions et rentes viagères de source étrangère.
 
-  Date corrigée de 2007 à 2006 : la note commune n° 18/2007 rattache expressément la mesure aux
-  pensions perçues EN 2006.
+  Trois régimes successifs, désormais tous sourcés.
 
-  RÉSERVE : la borne 2001-01-01 n'a aucun support établi. Avant le régime de faveur, ces pensions
-  relevaient par renvoi de l'abattement de droit commun de l'article 26 (25 %), introduit par
-  l'article 61 de la loi de finances pour 1998 — valeur et date non vérifiées, la valeur nulle
-  encodée ici est donc probablement fausse pour la période antérieure à 2006.
+  1990 : aucune règle propre. L'article 37 du code, dans sa version d'origine, impose les
+  « sommes effectivement perçues de l'étranger », sans abattement.
+
+  1997 : l'article 61 de la loi de finances pour 1998 ajoute à l'article 37 un renvoi à
+  l'article 26 — « Le revenu net des traitements, salaires, pensions et rentes viagères est
+  déterminé conformément aux dispositions de l'article 26 du présent code » — ce qui étend aux
+  pensions de source étrangère l'abattement de droit commun de 25 %. L'article n'énonce pas de
+  date d'effet propre ; le rattachement aux revenus de 1997 est DÉRIVÉ de la règle générale de
+  conversion. À noter que l'article 62 de la même loi, lui, porte une clause explicite : deux
+  mesures d'une même loi de finances ne prennent pas nécessairement effet la même année.
+
+  2006 : régime de faveur de 80 %, sous condition de transfert des sommes vers un compte
+  bancaire ou postal en Tunisie et de production des justificatifs.
+
+  La borne 2001-01-01 précédemment encodée, sans valeur ni support, est supprimée.
