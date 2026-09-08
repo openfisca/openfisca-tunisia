@@ -1,6 +1,17 @@
-description: Cotisation annuelle forfaitaire
+description: Droit annuel d'affiliation au régime des soins à tarifs réduits (AMG2)
 values:
-  2015-01-01:
+  1998-02-27:
     value: 10
 metadata:
   unit: currency
+  reference:
+    1998-02-27:
+      title: Article 10 du décret n° 98-409 du 18 février 1998 fixant les catégories des bénéficiaires des tarifs réduits de soins et d'hospitalisation, JORT n° 17 du 27 février 1998
+      href: https://www.pist.tn/jort/1998/1998F/Jo01798.pdf
+documentation: |
+  DATE CORRIGÉE : 1998 et non 2015. Le droit annuel de 10 dinars est fixé par l'article 10 du
+  décret n° 98-409, qui institue la carte de soins à tarifs réduits. La date de 2015 encodée
+  jusqu'ici n'avait aucun support.
+
+  Ce paramètre est une COTISATION et non une prestation ; il reste rangé sous
+  `prestations/non_contributives/` par cohérence avec le dispositif auquel il donne accès.

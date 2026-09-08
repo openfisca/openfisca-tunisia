@@ -1,6 +1,16 @@
-description: Limite d'âge d'un enfant pour être compté à charge d'un ménage éligible au programme Amen social
+description: Âge maximal de l'enfant ouvrant droit au supplément
 values:
-  2019-01-01:
+  2020-05-20:
     value: 18
 metadata:
   unit: year
+  reference:
+    2020-05-20:
+      title: Article 2 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, pris pour l'application du décret gouvernemental n° 2020-317
+documentation: |
+  DATE CORRIGÉE : 20 mai 2020 et non 1er janvier 2019.
+
+  BORNE BASSE NON MODÉLISÉE : l'arrêté conjoint du 1er avril 2022 réserve le supplément aux
+  enfants de six à dix-huit ans, les moins de six ans relevant désormais de l'allocation
+  familiale non contributive. Encoder cette borne demanderait un paramètre distinct et une
+  formule qui le lise ; ni l'un ni l'autre n'existe.

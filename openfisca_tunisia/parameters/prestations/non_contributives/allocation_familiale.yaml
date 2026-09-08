@@ -1,6 +1,19 @@
-description: Montant de l'allocation familiale non contributive
+description: Allocation familiale non contributive, montant mensuel par enfant
 values:
-  2020-06-01:
+  2022-04-08:
     value: 30
 metadata:
   unit: currency
+  reference:
+    2022-04-08:
+      title: Article 11 bis de la loi organique n° 2019-10, ajouté par le décret-loi n° 2022-8 du 31 janvier 2022, et arrêté conjoint du 1er avril 2022
+documentation: |
+  DATE CORRIGÉE : l'allocation familiale non contributive n'existe qu'à partir d'avril 2022,
+  et non de juin 2020. Ce qui existait en 2020 est le SUPPLÉMENT pour enfant à charge du
+  transfert monétaire permanent, d'un montant de 10 dinars — un dispositif distinct, avec
+  lequel elle NE SE CUMULE PAS.
+
+  Conditions non modélisées, faute de variables correspondantes : enfant de moins de six ans,
+  sans plafond de nombre d'enfants, et EXCLUSION des catégories à revenu limité affiliées à un
+  régime de sécurité sociale. Le même arrêté déplace la borne du supplément AMEN à « 6 à
+  18 ans ».

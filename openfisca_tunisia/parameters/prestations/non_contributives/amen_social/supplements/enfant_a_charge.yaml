@@ -1,8 +1,19 @@
-description: Supplément par enfant à charge
+description: Supplément mensuel par enfant à charge du transfert monétaire permanent
 values:
-  2019-01-01:
-    value: 10.0
+  2020-05-20:
+    value: 10
 metadata:
   unit: currency
   reference:
-    2019-01-01: Article 4.1 du Décret n° 2019-318
+    2020-05-20:
+      title: Article 2 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, pris pour l'application du décret gouvernemental n° 2020-317
+documentation: |
+  RÉFÉRENCE APOCRYPHE CORRIGÉE. Le paramètre citait un « article 4.1 du décret n° 2019-318 » :
+  ce décret n'existe pas. Le supplément est fixé par l'arrêté conjoint du 19 mai 2020, pris
+  pour l'application du décret gouvernemental n° 2020-317.
+
+  DATE CORRIGÉE : 20 mai 2020 et non 1er janvier 2019.
+
+  À ne pas confondre avec l'allocation familiale non contributive de 30 dinars, créée en avril
+  2022, avec laquelle ce supplément NE SE CUMULE PAS. Le même arrêté d'avril 2022 déplace la
+  borne d'âge de ce supplément à « 6 à 18 ans ».

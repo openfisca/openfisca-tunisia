@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.75 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Correction d'un bug.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/prestations/non_contributives`.
+* Détails :
+  - Corrige deux **références apocryphes** : le « décret n° 2019-318 » et l'« arrêté 931 du 20 mai 2020 » cités par les suppléments du programme AMEN social n'existent pas. La disposition figure à l'article 2 de l'arrêté conjoint du 19 mai 2020.
+  - Corrige la limite d'âge de l'étudiant ouvrant droit au supplément : **25 ans** et non 21.
+  - Redate l'allocation familiale non contributive à **avril 2022** et non juin 2020. Ce qui existait en 2020 est le supplément pour enfant à charge du transfert AMEN, dispositif distinct avec lequel elle ne se cumule pas.
+  - Redate le droit annuel d'affiliation à l'AMG2 à **février 1998** (décret n° 98-409, art. 10) et non 2015.
+  - Ajoute le palier de **260 dinars au 1er janvier 2025** de l'allocation de base du programme AMEN social.
+  - Documente que les onze paliers de l'allocation du PNAFN **n'ont aucun texte**, ce qui est un résultat établi et non une lacune, et que les montants de 240 et 260 dinars des arrêtés de 2024 et 2025 sont des **plafonds sur un relèvement**, non des barèmes : les encoder comme valeurs serait une sur-interprétation.
+
+<!-- -->
+
 ## 0.74 - [#392](https://github.com/openfisca/openfisca-tunisia/pull/392)
 
 * Correction d'un bug.
