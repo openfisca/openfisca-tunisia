@@ -2,6 +2,8 @@ description: Plafond de la déduction des primes d'assurance-vie
 values:
   1990-01-01:
     value: 200
+  1997-01-01:
+    value: 800
   2007-01-01:
     value: 1200
   2013-01-01:
@@ -14,6 +16,8 @@ metadata:
     1990-01-01:
       title: Article 39 § I-2 du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
       href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    1997-01-01:
+      title: Article 52 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998, JORT n° 104 des 30-31 décembre 1997, p. 2439, sous l'intitulé « Encouragement de l'épargne dans le cadre des contrats d'assurance-vie »
     2007-01-01:
       title: Article 23 § 1 de la loi n° 2007-70 du 27 décembre 2007 portant loi de finances pour l'année 2008, intitulé « Relèvement du plafond déductible des primes d'assurance vie »
     2013-01-01:
@@ -24,21 +28,18 @@ documentation: |
   Plafond annuel de déduction des primes d'assurance-vie et des contrats de capitalisation
   (article 39 § I-2 du code).
 
-  VALEUR DE 1990 CORRIGÉE : 200 dinars et non 800. Le texte d'origine dispose « Ces versements
+  VALEUR DE 1990 CORRIGÉE, ET SON ERREUR EXPLIQUÉE. Le texte d'origine dispose « Ces versements
   sont admis en déduction dans la limite de 200 dinars par an, majorés de : 100 dinars au titre
   du conjoint ; 50 dinars au titre de chacun des quatre premiers enfants à charge »
-  (JORT n° 1 des 2-5 janvier 1990, page 8, lue à l'image). Les majorations sont dans les
-  paramètres voisins `conj_plaf` et `enf_plaf`, corrigés dans les mêmes proportions.
+  (JORT n° 1 des 2-5 janvier 1990, page 8). Les valeurs 800, 400 et 200 précédemment portées à
+  1990 n'étaient pas fausses en elles-mêmes : ce sont celles de l'article 52 de la loi de
+  finances pour 1998, rattachées à la mauvaise date.
 
-  DATES CORRIGÉES. Le plafond de 10 000 dinars est rattaché aux revenus de 2013 et non de 2014 :
-  l'article 24 de la loi de finances pour 2014 n'énonce pas de date d'effet propre, et
-  l'administration rattache alors la mesure aux revenus de l'année précédant le millésime de la
-  loi. Le plafond de 100 000 dinars est rattaché aux revenus de 2020 et non de 2021, cette fois
-  sur attestation expresse de la note commune n° 1/2021.
+  DATES. Le rattachement du palier de 1997 est DÉRIVÉ de la règle de conversion, l'article 52
+  n'énonçant pas de date d'effet propre — à la différence de l'article 62 de la même loi. Même
+  raisonnement pour 2007 et 2013. Le palier de 100 000 dinars, lui, est attesté aux revenus 2020
+  par la note commune n° 1/2021.
 
-  La loi de finances 2021 soumet en outre cette déduction, pour la première fois, au minimum
-  d'impôt de l'article 12 bis de la loi n° 89-114.
-
-  RESTE OUVERT : une valeur intermédiaire existe nécessairement entre 200 et 1 200 dinars,
-  l'intitulé de l'article 23 de la loi de finances 2008 parlant de « relèvement ». Elle est
-  vraisemblablement dans l'article 52 de la loi de finances pour 1998, non vérifié.
+  La loi de finances 2014 supprime les majorations pour conjoint et enfants au profit d'un
+  plafond unique ; la loi de finances 2021 soumet en outre cette déduction, pour la première
+  fois, au minimum d'impôt de l'article 12 bis de la loi n° 89-114.

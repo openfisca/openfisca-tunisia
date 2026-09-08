@@ -47,6 +47,12 @@ def test_assurance_vie_valeurs_d_origine():
 
 
 def test_assurance_vie_serie():
+    # Article 52 de la loi de finances 1998 : « dans la limite de 800 dinars par an, majorés de :
+    # 400 dinars au titre du conjoint ; et 200 dinars au titre de chacun des enfants à charge ».
+    assert deductions(1997).assurance_vie.plaf == 800
+    assert deductions(1997).assurance_vie.conj_plaf == 400
+    assert deductions(1997).assurance_vie.enf_plaf == 200
+
     assert deductions(2007).assurance_vie.plaf == 1200
     assert deductions(2013).assurance_vie.plaf == 10000
     # Rattaché aux revenus 2020 par la note commune n° 1/2021, et non à 2021.
