@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.78 - [#397](https://github.com/openfisca/openfisca-tunisia/pull/397)
+
+* Correction d'un bug.
+* Périodes concernées : à partir du 1959-02-01.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public`.
+* Détails :
+  - Supprime le palier salarié du **1er juin 2019** (8,7 %), que le texte contredit. L'article 4 de la loi n° 2019-37 (JORT n° 35, p. 1314) répartit les 3 points ainsi : « Au titre de l'employeur : 2 % à partir du premier jour du mois qui suit la date d'entrée en vigueur de la présente loi. Au titre de l'agent : 1 % à partir du premier janvier 2020. » La part salariale monte donc d'un point **en une seule fois** au 1er janvier 2020 ; la date de juin 2019 vaut pour la part patronale seule.
+  - Redate la deuxième marche patronale de la loi n° 2007-43 au **1er janvier 2008** : le texte (p. 2198) donne 0,60 point au 1er janvier 2007, 2008 et 2009 côté employeur, contre 0,40 au 1er juillet côté salarié. Le fichier datait 2007 et 2009 en janvier et 2008 en juillet, se contredisant lui-même.
+  - Fait commencer la **prévoyance sociale des pensionnés au 1er juillet 2007** au lieu de 1959. Le décret n° 2007-1406 (JORT n° 49, art. 2 p. 2156, art. 13 p. 2162) assied la cotisation sur le montant brut de la pension et échelonne le taux à 1, 2, 3 puis 4 %. Aucun texte antérieur établissant un prélèvement obligatoire sur la pension n'a pu être retrouvé.
+  - Redate le millésime de **1985 au 12 septembre**, six mois après la publication du 12 mars comme l'article 75 de la loi n° 85-12 le prescrit. Le taux est inchangé de part et d'autre : ce millésime marque la refonte du régime, non un mouvement de taux.
+  - Remplace **toutes** les références du secteur public — dépôt GitLab personnel et natlex — par les fascicules du JORT sur pist.tn, en éditions française et arabe, avec numéro de fascicule et page. Chaque URL a été vérifiée, et les deux éditions distinguées par la taille du fichier.
+  - Référence les quatre paliers de 2003, 2004, 2008 et 2009, qui n'avaient aucun texte en regard : ils sont programmés par les échéanciers pluriannuels de l'article 85 de la loi de finances 2002 et de l'article premier de la loi n° 2007-43, et non par des textes distincts.
+  - Corrige la date de création de la CNRPS dans les deux `index.yaml` : l'article 28 de la loi n° 75-83 du **30** décembre 1975 (et non du 31) « transforme en un établissement public à caractère financier » la CNR et la CPS.
+  - Signale dans la note du paramètre que la date du **1er février 1959 n'a aucun appui textuel** : la loi n° 59-18 n'énonce pas d'effet pour son article 5, et sa seule date — le 1er avril 1959 — porte sur l'ouverture des droits à pension.
+
+<!-- -->
+
 ## 0.77 - [#396](https://github.com/openfisca/openfisca-tunisia/pull/396)
 
 * Correction d'un bug.
