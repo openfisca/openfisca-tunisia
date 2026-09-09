@@ -8,7 +8,7 @@ brackets:
       value: 0.07
     1975-01-01:
       value: 0.05
-    1985-10-01:
+    1985-09-12:
       value: 0.05
     1994-07-01:
       value: 0.06
@@ -24,62 +24,95 @@ brackets:
       value: 0.078
     2009-07-01:
       value: 0.082
-    2019-06-01:
-      value: 0.087
     2020-01-01:
       value: 0.092
 metadata:
   last_value_still_valid_on: "2025-06-05"
   reference:
     1959-02-01:
-    - title: loi n°59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1959/loi_59_18_fr.pdf
-      note: Ce montant a été ramené à 5% par l’article 38 de la loi 74-101 du 25/12/1974 portant loi des finances pour l’année 1975. Les dispositions de la loi n°59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite sont abrogées sauf les dispositions de la section II concernant l’invalidité ne résultant pas de l'exercice des fonctions non abrogées et ce par la loi n°85-12 du 5 mars 1985
-    - title: قانون عدد 18 لسنة 1959 مؤرخ في 5 فيفري 1959 بتعلق بضبط نظام جرايات التقاعد المدني والعسكري
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1959/loi_59_18_ar.pdf
-      note: تعديل المساهمة إلى 5 يالمائة بمقتضى الفصل 38 من القانون عدد 101 لسنة 1974 المؤرخ في 25/12/1974 -   بمقتضى القانون عدد 12 لسنة 1985 المؤرخ في  5 مارس  1985 ألغيت جميع الأحكام السابقة المخالفة لهذا القانون وخاصة القانون عدد 18 لسنة 1959 المؤرخ ‏في 5 فيفري 1959 وجميع النصوص التي نقحته أو تممته باستثناء الأحكام المتعلقة بالسقوط ‏البدني
+    - title: Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article 5-I
+      href: https://www.pist.tn/jort/1959/1959F/Jo00859.pdf
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 93. La loi n'énonce aucune date d'effet pour l'article 5 : la seule date qu'elle fixe, le 1er avril 1959 (article 52), porte sur l'ouverture des droits à pension. Le 1er février 1959 retenu ici n'est pas énoncé par le texte. Le taux reste à 7 % jusqu'en 1974 ; la loi n° 73-71 du 19 novembre 1973 (JORT n° 43, p. 1852) remplace l'article 5 en maintenant le taux et en élargissant l'assiette. La loi n° 85-12 du 5 mars 1985 abroge la loi 59-18, à l'exception des dispositions sur l'invalidité ne résultant pas de l'exercice des fonctions."
+    - title: قانون عدد 18 لسنة 1959 مؤرخ في 5 فيفري 1959 يتعلق بضبط نظام جرايات التقاعد المدني والعسكري، الفصل 5
+      href: https://www.pist.tn/jort/1959/1959A/Ja00859.pdf
+      note: "الرائد الرسمي عدد 8 بتاريخ 3-6 فيفري 1959. لا ينص القانون على تاريخ لبداية سريان الفصل 5."
     1975-01-01:
-    - title: Loi n° 74 - 101 du 25 décembre 1974 portant loi de finances pour l'année 1975
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/loi_74-101_fr.pdf
-      note: Conformément à la loi 85-12 du 05/03/1985 sont abrogées toutes dispositions antérieures contradictoires à cette loi
-    - title: قانون عدد 101 لسنة 1974 مؤرخ في 25 ديسمبر 1974 يتعلّق بقانون المالية 1974
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1974/loi_74-101_ar.pdf
-      note: بمقتضى القانون عدد 12 لسنة 1985 المؤرخ في  5 مارس  1985 ألغيت جميع الأحكام السابقة المخالفة لهذا القانون
-    1985-10-01:
-    - title: Loi 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1985/loi_85_12_fr.pdf
-      note: "L’application des cotisations est partir du 01/10/1985 et ce conformément aux dispositions de l’article 75 de la loi 85-12 paru dans le journal officiel à la date du 12 mars 1985. La présente loi entre en vigueur à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal Officiel de la République Tunisienne."
-    - title: "قانون عدد 12 لسنة 1985 مؤرخ في 5  مارس 1985 يتعلق بنظام الجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي"
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1985/loi_85_12_ar.pdf
-      note: "عملا بمقتضيات الفصل 75 من هذا القانون يدخل هذا القانون حيز النفاذ بانتهاء ستة اشهر من تاريخ نشره بالرائد الرسمي للجمهورية التونسية"
+    - title: Loi n° 74-101 du 25 décembre 1974 portant loi de finances pour l'année 1975, article 38
+      href: https://www.pist.tn/jort/1974/1974F/Jo08074.pdf
+      note: "JORT n° 80 du 31 décembre 1974, p. 2917. L'article 38 abroge et remplace l'article 5 de la loi 59-18 : le prélèvement passe à 5 %, mais l'assiette s'élargit simultanément aux émoluments globaux indiciaires, primes et indemnités entrant dans le calcul de la pension. La baisse de deux points ne se lit donc pas comme une baisse nette du prélèvement. L'article ne porte aucune date d'effet ; le 1er janvier 1975 se déduit du rattachement à la gestion 1975."
+    - title: قانون عدد 101 لسنة 1974 مؤرخ في 25 ديسمبر 1974 يتعلق بقانون المالية لسنة 1975، الفصل 38
+      href: https://www.pist.tn/jort/1974/1974A/Ja08074.pdf
+      note: "الرائد الرسمي عدد 80 بتاريخ 31 ديسمبر 1974. لا ينص الفصل على تاريخ لبداية السريان."
+    1985-09-12:
+    - title: Loi n° 85-12 du 5 mars 1985 portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 9
+      href: https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+      note: "JORT n° 20 du 12 mars 1985, p. 359 ; article 75 p. 365. Le taux est inchangé, à 5 % : ce millésime marque la refonte du régime, non un mouvement de taux. L'article 75 fait entrer la loi en vigueur à l'expiration d'un délai de six mois à compter de la publication, soit le 12 septembre 1985 — date déduite, non énoncée telle quelle."
+    - title: قانون عدد 12 لسنة 1985 مؤرخ في 5 مارس 1985 يتعلق بنظام الجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي، الفصل 9
+      href: https://www.pist.tn/jort/1985/1985A/Ja02085.pdf
+      note: "الرائد الرسمي عدد 20 بتاريخ 12 مارس 1985. يدخل القانون حيز النفاذ بانتهاء ستة أشهر من تاريخ نشره عملا بالفصل 75."
     1994-07-01:
-    - title: Loi 94-71 du 27 juin 1994 relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1994/loi_94_71_fr.pdf
-    - title: قانون عدد  71 لسنة  1994 المؤرخ في 27 جوان 1994 يتعلق بتعديل نسب المساهمات في أنظمة التقاعد في القطاع العمومي
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1994/loi_94_71_ar.pdf
+    - title: Loi n° 94-71 du 27 juin 1994 relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public, article unique
+      href: https://www.pist.tn/jort/1994/1994F/Jo05094.pdf
+      note: "JORT n° 50 du 28 juin 1994, p. 1086. Le relèvement de la part salariale prend effet au 1er juillet 1994 ; celui de la part patronale, au 1er juillet 1995."
+    - title: قانون عدد 71 لسنة 1994 مؤرخ في 27 جوان 1994 يتعلق بتعديل نسب المساهمات في أنظمة التقاعد في القطاع العمومي
+      href: https://www.pist.tn/jort/1994/1994A/Ja05094.pdf
+      note: "الرائد الرسمي عدد 50 بتاريخ 28 جوان 1994."
     2002-07-01:
-    - title: Loi 2001-123 du 28 décembre 2001 portant loi de finances 2002 (article 85)
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_fr.pdf
-      note: "Les taux de la contribution au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public et des régimes de retraite des membres du gouvernement, des députés et des gouverneurs sont relevés comme suit :  de 1 de pourcentage de la base de calcul de la contribution à la charge de l’assuré social et ce comme suit : 0.50 point de pourcentage à partir du 1er juillet 2002 , 0.25 point de pourcentage  à partir du 1er juillet 2003, 0.25 point de pourcentage à partir du 1er juillet 2004"
-    - title: قانون عدد 123 لسنــة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة 2002
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2001/loi_2001_123_ar.pdf
-      note: "ترفع نسب المساهمات بنظام الجرايات المدنية والعسكرية للتقاعد والباقين على قيد الحياة في القطاع العمومي وبأنظمة التقاعد لأعضاء الحكومة وأعضاء مجلس النواب والولاّة كما يلي :   1 بالمائة من قاعدة احتساب الاشتراك على كاهل المضمون الاجتماعي وذلك على النحو التالي : 0.50 بالمائة ابتداء من غرة جويلية ‏2002‏‏ ،  0.25  بالمائة ابتداء من غرة جويلية 2003 ، 0.25  بالمائة ابتداء من غرة جويلية 2004"
+    - title: Loi n° 2001-123 du 28 décembre 2001 portant loi de finances pour l'année 2002, article 85
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "JORT n° 104 du 28 décembre 2001, p. 4260. L'article porte un échéancier pluriannuel : la part de l'assuré social est relevée de 1 point, réparti en 0,50 point au 1er juillet 2002, 0,25 au 1er juillet 2003 et 0,25 au 1er juillet 2004. Les trois millésimes qui suivent relèvent donc de ce seul article."
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة 2002، الفصل 85
+      href: https://www.pist.tn/jort/2001/2001A/Ja1042001.pdf
+      note: "الرائد الرسمي عدد 104 بتاريخ 28 ديسمبر 2001. يضبط الفصل رزنامة متعددة السنوات."
+    2003-07-01:
+    - title: Loi n° 2001-123 du 28 décembre 2001 portant loi de finances pour l'année 2002, article 85 (échéancier)
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "Deuxième marche de l'échéancier de l'article 85 : 0,25 point au 1er juillet 2003. Aucun texte distinct ne fixe ce palier."
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة 2002، الفصل 85
+      href: https://www.pist.tn/jort/2001/2001A/Ja1042001.pdf
+    2004-07-01:
+    - title: Loi n° 2001-123 du 28 décembre 2001 portant loi de finances pour l'année 2002, article 85 (échéancier)
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "Troisième marche de l'échéancier de l'article 85 : 0,25 point au 1er juillet 2004. Aucun texte distinct ne fixe ce palier."
+    - title: قانون عدد 123 لسنة 2001 مؤرخ في 28 ديسمبر 2001 يتعلق بقانون المالية لسنة 2002، الفصل 85
+      href: https://www.pist.tn/jort/2001/2001A/Ja1042001.pdf
     2007-07-01:
-    - title: Loi 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d’invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux.
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_fr.pdf
-      note: "Le taux de la cotisation à la charge de l’assuré social augemte de 1,2 point de pourcentage,  et ce, comme suit : 0,40 à partir du 1er juillet 2007, 0,40 à partir du 1er juillet 2008 et 0,40 point de pourcentage à partir du 1er juillet 2009."
-    - title: قانون  عدد 43 لسنة 2007 مؤرخ في 25 جوان 2007 يتعلق بتنقيح وإتمام القوانين المنظمة للجرايات المسندة بعنوان أنظمة التقاعد والعجز والباقين على قيد الحياة في القطاعين العمومي والخاص والأنظمة الخصوصية
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2007/loi_2007_43_ar.pdf
-      note: "2 بالمائة من قاعدة احتساب الاشتراك على كاهل المضمون الاجتماعي وذلك على النحو التالي :  0,40 بالمائة ابتداء من أوّل جويلية 2007،  0,40 بالمائة ابتداء من أوّل جويلية 2008،  0,40 بالمائة ابتداء من أوّل جويلية 2009"
-    2019-06-01:
-    - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
-      href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
-      note: Majoration de la cotisation salariale de 1%, répartie en 0,5% le mois suivant l'entrée en vigueur (juin 2019) et 0,5% en janvier 2020.
+    - title: Loi n° 2007-43 du 25 juin 2007 modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux, article premier
+      href: https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+      note: "JORT n° 51 du 26 juin 2007, p. 2198. Second échéancier pluriannuel : la part de l'assuré social est relevée de 1,2 point, réparti en 0,40 point au 1er juillet 2007, 2008 et 2009. La part patronale suit un calendrier distinct, en janvier."
+    - title: قانون عدد 43 لسنة 2007 مؤرخ في 25 جوان 2007 يتعلق بتنقيح وإتمام القوانين المنظمة للجرايات المسندة بعنوان أنظمة التقاعد والعجز والباقين على قيد الحياة في القطاعين العمومي والخاص والأنظمة الخصوصية، الفصل الأول
+      href: https://www.pist.tn/jort/2007/2007A/Ja0512007.pdf
+      note: "الرائد الرسمي عدد 51 بتاريخ 26 جوان 2007."
+    2008-07-01:
+    - title: Loi n° 2007-43 du 25 juin 2007, article premier (échéancier)
+      href: https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+      note: "Deuxième marche de l'échéancier : 0,40 point au 1er juillet 2008. Aucun texte distinct ne fixe ce palier."
+    - title: قانون عدد 43 لسنة 2007 مؤرخ في 25 جوان 2007، الفصل الأول
+      href: https://www.pist.tn/jort/2007/2007A/Ja0512007.pdf
+    2009-07-01:
+    - title: Loi n° 2007-43 du 25 juin 2007, article premier (échéancier)
+      href: https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+      note: "Troisième marche de l'échéancier : 0,40 point au 1er juillet 2009. Aucun texte distinct ne fixe ce palier."
+    - title: قانون عدد 43 لسنة 2007 مؤرخ في 25 جوان 2007، الفصل الأول
+      href: https://www.pist.tn/jort/2007/2007A/Ja0512007.pdf
     2020-01-01:
-    - title: Loi 2019-37 du 30 avril 2019, modifiant et complétant la loi 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public.
-      href: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/112573/TUN-112573.pdf
+    - title: Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 4
+      href: https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+      note: "JORT n° 35 du 30 avril 2019, p. 1314. L'article 4 majore les taux de 3 points au total, répartis ainsi : « Au titre de l'employeur : 2 % à partir du premier jour du mois qui suit la date d'entrée en vigueur de la présente loi. Au titre de l'agent : 1 % à partir du premier janvier 2020. » La part salariale monte donc d'un point en une seule fois au 1er janvier 2020. Le palier intermédiaire au 1er juin 2019 (8,7 %) que portait ce fichier est contredit par le texte : cette date vaut pour la part patronale seule."
+    - title: قانون عدد 37 لسنة 2019 مؤرخ في 30 أفريل 2019 يتعلق بتنقيح وإتمام القانون عدد 12 لسنة 1985 المؤرخ في 5 مارس 1985 المتعلق بنظام الجرايات المدنية والعسكرية للتقاعد وللباقين على قيد الحياة في القطاع العمومي، الفصل 4
+      href: https://www.pist.tn/jort/2019/2019A/Ja0352019.pdf
+      note: "الرائد الرسمي عدد 35 بتاريخ 30 أفريل 2019. ترفع مساهمة العون بنقطة واحدة ابتداء من غرة جانفي 2020."
   official_journal_date:
-    2019-06-01: "2019-04-30"
+    1959-02-01: "1959-02-03"
+    1975-01-01: "1974-12-31"
+    1985-09-12: "1985-03-12"
+    1994-07-01: "1994-06-28"
+    2002-07-01: "2001-12-28"
+    2003-07-01: "2001-12-28"
+    2004-07-01: "2001-12-28"
+    2007-07-01: "2007-06-26"
+    2008-07-01: "2007-06-26"
+    2009-07-01: "2007-06-26"
     2020-01-01: "2019-04-30"
   rate_unit: /1
   threshold_unit: currency
