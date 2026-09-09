@@ -1,11 +1,19 @@
 description: Prestations familiales
 brackets:
 - threshold:
-    1960-01-01:
+    2003-01-01:
       value: 0
   rate:
-    1960-01-01:
+    2003-01-01:
       value: 0.022111
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    2003-01-01:
+    - title: "Décret n° 2003-1212 du 2 juin 2003 modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 5 b) nouveau"
+      href: "https://www.pist.tn/jort/2003/2003F/Jo0462003.pdf"
+      note: "JORT n° 46, p. 1834-1835. Porte à 7,25/20e la quote-part du taux global affectée au régime de pensions, avec effet au 1er janvier 2003 (article 2). C'est la dernière pièce de la construction : avant elle, la ventilation par branche du taux global n'est pas celle que porte ce paramètre. Édition arabe : https://www.pist.tn/jort/2003/2003A/Ja0462003.pdf"
+    - title: "Loi n° 97-4 du 3 février 1997 modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 41 (nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo01097.pdf"
+      note: "JORT n° 10, p. 155. L'article 41 (nouveau) porte le taux global des régimes de la loi n° 60-30 à 18 %, réparti 13 % à la charge de l'employeur et 5 % à la charge du travailleur. La loi n'énonce pas de date d'effet pour ce taux : la seule date qu'elle fixe, le 1er octobre 1996, porte sur la réduction conventionnelle de deux points du paragraphe 2. La date retenue ici est celle de la publication. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01097.pdf"

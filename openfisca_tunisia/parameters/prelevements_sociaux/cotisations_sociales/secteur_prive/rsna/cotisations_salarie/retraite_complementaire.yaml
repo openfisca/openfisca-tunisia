@@ -1,11 +1,16 @@
 description: Cotisation au régime complémentaire de retraite (ex-CAVIS)
 brackets:
 - threshold:
-    1960-01-01:
+    1974-01-01:
       value: 0
   rate:
-    1960-01-01:
+    1974-01-01:
       value: 0.03
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    1974-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79, p. 3374-3379. Le règlement « entre en application à compter du 1er janvier 1974 ». DEUX RÉSERVES SUR CE PARAMÈTRE. Le taux : le règlement fixe un taux d'appel initial de 4,5 %, et confie ses révisions à une décision du comité de gestion de la CAVIS non publiée au Journal officiel — le passage à 9 % ne peut donc être ni sourcé ni daté ; seule la clé de répartition deux tiers / un tiers est attestée. L'assiette : l'article 6 du règlement la définit comme « la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations », et non comme le salaire entier auquel ce paramètre s'applique. Édition arabe : https://www.pist.tn/jort/1978/1978A/Ja07978.pdf"

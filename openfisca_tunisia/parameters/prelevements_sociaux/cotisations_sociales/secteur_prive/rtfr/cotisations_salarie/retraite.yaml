@@ -15,3 +15,11 @@ brackets:
 metadata:
   rate_unit: /1
   threshold_unit: smig
+  reference:
+    2002-03-12:
+    - title: "Loi n° 2002-32 du 12 mars 2002 relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole, article 7"
+      href: "https://www.pist.tn/jort/2002/2002F/Jo0222002.pdf"
+      note: "JORT n° 22, p. 603. L'article fixe en une phrase le taux global de 7,5 %, l'assiette — les deux tiers du SMIG ou du SMAG selon la catégorie — et la clé deux tiers employeur / un tiers salarié. La loi n'énonce pas de date d'effet ; la date retenue est celle de sa signature. ATTENTION : le seuil de 0,66 encodé ici traduit cette ASSIETTE FORFAITAIRE des deux tiers, et non un plafond au-delà duquel le prélèvement cesserait. Édition arabe : https://www.pist.tn/jort/2002/2002A/Ja0222002.pdf"
+    - title: "Décret n° 2002-916 du 22 avril 2002 fixant les modalités d'application de la loi n° 2002-32, articles 13 à 15"
+      href: "https://www.pist.tn/jort/2002/2002F/Jo0352002.pdf"
+      note: "JORT n° 35, p. 1058-1061. L'article 14 ventile les 7,5 % par branche — 2,5 points de soins et 5 points de pensions — et l'article 15 par payeur — 5 points employeur et 2,5 points salarié. LES DEUX RÉPARTITIONS NE SONT JAMAIS CROISÉES PAR UN TEXTE : les quatre valeurs de ce régime (3,3333 / 1,6667 / 1,6667 / 0,8333) résultent d'un croisement opéré par le modèle. Édition arabe : https://www.pist.tn/jort/2002/2002A/Ja0352002.pdf"

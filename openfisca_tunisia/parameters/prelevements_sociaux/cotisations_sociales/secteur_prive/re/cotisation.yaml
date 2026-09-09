@@ -1,8 +1,17 @@
 description: Montant de la cotisation
 values:
+  1992-03-23:
+    value: 2
   2003-07-02:
     value: 5
 metadata:
   unit: currency
   reference:
-    title: Décret n°92-631 du 23 mars 1992 tel que modifié par le décret n°2003-1544 du 2 juillet 2003, fixant les conditions de bénéfice du régime de sécurité sociale des étudiants.
+    1992-03-23:
+    - title: "Décret n° 92-631 du 23 mars 1992 fixant les conditions de bénéfice du régime de sécurité sociale des étudiants, article 2"
+      href: "https://www.pist.tn/jort/1992/1992F/Jo02192.pdf"
+      note: "JORT n° 21, p. 426-427. Fixe la cotisation forfaitaire annuelle à 2 dinars — valeur que ce fichier ignorait, sa série commençant directement à 5 dinars. Le décret n'énonce pas de date d'effet ; la date retenue est celle de sa signature. Les branches couvertes par le régime ne sont énoncées ni par ce décret ni par celui de 2003 : elles supposent l'ouverture de la loi n° 65-17, qui n'a pas été faite. Édition arabe : https://www.pist.tn/jort/1992/1992A/Ja02192.pdf"
+    2003-07-02:
+    - title: "Décret n° 2003-1544 du 2 juillet 2003 modifiant le décret n° 92-631 du 23 mars 1992"
+      href: "https://www.pist.tn/jort/2003/2003F/Jo0552003.pdf"
+      note: "JORT n° 55, p. 2132. Porte la cotisation forfaitaire de 2 à 5 dinars. Le décret n'énonce pas de date d'effet ; la date retenue est celle de sa signature. Édition arabe : https://www.pist.tn/jort/2003/2003A/Ja0552003.pdf"

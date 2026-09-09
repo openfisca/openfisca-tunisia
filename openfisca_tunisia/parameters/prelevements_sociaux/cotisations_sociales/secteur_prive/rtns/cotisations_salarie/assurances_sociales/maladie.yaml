@@ -1,10 +1,10 @@
 description: Assurance Maladie
 brackets:
 - threshold:
-    1960-01-01:
+    1995-07-03:
       value: 0
   rate:
-    1960-01-01:
+    1995-07-03:
       value: 0.0304
     2007-07-01:
       value: 0.0397
@@ -17,3 +17,8 @@ brackets:
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    1995-07-03:
+    - title: "Décret n° 95-1166 du 3 juillet 1995 relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 9"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
+      note: "JORT n° 55, p. 1486-1489. Fixe le taux à 11 %, réparti 7 points de pensions et 4 points d'assurances sociales. Le décret n'énonce pas de date d'effet. Le partage interne des 4 % n'est fixé par aucun texte identifié : seule la part maladie de 3,04 % est attestée, par le décret n° 2007-1406. Édition arabe : https://www.pist.tn/jort/1995/1995A/Ja05595.pdf"

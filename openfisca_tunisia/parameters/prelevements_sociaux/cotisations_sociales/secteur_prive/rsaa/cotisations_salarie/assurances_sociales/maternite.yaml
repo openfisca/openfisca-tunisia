@@ -1,11 +1,16 @@
 description: Indemnités de maladie et maternité
 brackets:
 - threshold:
-    1977-01-01:
+    1989-10-01:
       value: 0
   rate:
-    1977-01-01:
+    1989-10-01:
       value: 0.002
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    1989-10-01:
+    - title: "Loi n° 89-73 du 2 septembre 1989 modifiant et complétant la loi n° 81-6 du 12 février 1981, articles 4 et 90"
+      href: "https://www.pist.tn/jort/1989/1989F/Jo06089.pdf"
+      note: "JORT n° 60, p. 1338-1339. Ajoute à la loi de 1981 le titre III instituant le régime agricole amélioré, avec effet au 1er octobre 1989 (article 4). L'article 90 fixe le taux global à 15 %, réparti 10 % employeur et 5 % salarié, et renvoie sa ventilation par branche à un décret QUI N'A PAS ÉTÉ IDENTIFIÉ : seule la part maladie de 2,28 % est attestée, par le décret n° 2007-1406. Édition arabe : https://www.pist.tn/jort/1989/1989A/Ja06089.pdf"

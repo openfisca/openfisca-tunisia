@@ -1,11 +1,18 @@
 description: Protection sociale des travailleurs
 brackets:
 - threshold:
-    1960-01-01:
+    1996-11-22:
       value: 0
   rate:
-    1960-01-01:
+    1996-11-22:
       value: 0.002889
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    1996-11-22:
+    - title: "Loi n° 96-101 du 18 novembre 1996 relative à la protection sociale des travailleurs, article 5"
+      href: "https://www.pist.tn/jort/1996/1996F/Jo09496.pdf"
+      note: "JORT n° 94, p. 2319-2320. Institue « une cotisation complémentaire de 0,4 % des salaires à prélever sur le taux global des cotisations de sécurité sociale fixé par la loi n° 60-30 ». La loi n'énonce pas de date d'effet ; la date retenue est celle de la publication. Édition arabe : https://www.pist.tn/jort/1996/1996A/Ja09496.pdf"
+  official_journal_date:
+    1996-11-22: "1996-11-22"

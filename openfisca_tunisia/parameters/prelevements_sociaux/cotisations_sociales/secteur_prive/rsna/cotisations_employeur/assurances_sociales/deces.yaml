@@ -1,11 +1,18 @@
 description: Indemnités de décès et capital décès
 brackets:
 - threshold:
-    1960-01-01:
+    1997-02-04:
       value: 0
   rate:
-    1960-01-01:
+    1997-02-04:
       value: 0.004694
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    1997-02-04:
+    - title: "Loi n° 97-4 du 3 février 1997 modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 41 (nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo01097.pdf"
+      note: "JORT n° 10, p. 155. L'article 41 (nouveau) porte le taux global des régimes de la loi n° 60-30 à 18 %, réparti 13 % à la charge de l'employeur et 5 % à la charge du travailleur. La loi n'énonce pas de date d'effet pour ce taux : la seule date qu'elle fixe, le 1er octobre 1996, porte sur la réduction conventionnelle de deux points du paragraphe 2. La date retenue ici est celle de la publication. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01097.pdf"
+  official_journal_date:
+    1997-02-04: "1997-02-04"

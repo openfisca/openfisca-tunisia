@@ -12,7 +12,8 @@ metadata:
   threshold_unit: currency
   reference:
     2025-01-01:
-      - title: Loi 2024-48 du 9 décembre 2024 portant loi de finances pour 2025
-        href: https://facture-tunisie.com/411/fr/38/reglementations/principales-dispositions-du-projet-de-la-loi-de-finances-2025
+    - title: "Loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour l'année 2025, article 17"
+      href: "https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf"
+      note: "JORT n° 149 du 10 décembre 2024, p. 6418 ; le paragraphe 2 de l'article 17 institue une cotisation de 0,5 % à la charge de l'employeur et de 0,5 % à la charge du salarié, assise sur la masse salariale déclarée à la CNSS. L'URL est celle de l'ÉDITION ARABE : l'édition française de ce fascicule répond 404 sur pist.tn, et c'est dans l'édition arabe que l'article a été lu. L'article n'énonce pas de date d'effet ; le 1er janvier 2025 se déduit du rattachement à la loi de finances, et son décret d'application n'est pas recensé à ce jour."
   official_journal_date:
     2025-01-01: '2024-12-10'
