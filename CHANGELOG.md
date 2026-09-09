@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.77 - [#396](https://github.com/openfisca/openfisca-tunisia/pull/396)
+
+* Correction d'un bug.
+* Périodes concernées : à partir du 2020-05-20.
+* Zones impactées : `parameters/prestations/non_contributives/amen_social/aides_ponctuelles`.
+* Détails :
+  - Date les cinq aides ponctuelles de l'AMEN social sur leur texte. Elles portaient le 1er janvier **2019**, qui n'est la date d'aucun texte : l'appui financier occasionnel est fixé par l'arrêté conjoint du **19 mai 2020**, publié au JORT n° 45 du 20 mai 2020, p. 1097. Les montants — 60 D pour le Ramadan, l'Aïd al-Fitr et l'Aïd al-Idha, 50 D par enfant à la rentrée scolaire, 120 D dans le supérieur — étaient exacts. Aucun des cinq ne portait de référence ; tous en ont désormais deux, l'arrêté du 8 décembre 2022 ayant abrogé celui de 2020 en reprenant les mêmes montants.
+  - Ajoute l'**appui pour dépenses exceptionnelles** créé par l'arrêté du 8 décembre 2022, absent du modèle. Son montant n'est pas fixe : il est compris **entre 60 et 200 dinars** selon la situation financière de la famille, et servi **quatre fois par an au plus**. D'où trois paramètres — deux bornes et un compte — plutôt qu'une valeur unique qui aurait inventé un barème.
+  - Documente ce qui n'est **pas** modélisé et pourquoi : la prise en charge des abonnements de transport scolaire et universitaire n'a pas de montant propre, le texte renvoyant aux tarifs des entreprises de transport public.
+
+<!-- -->
+
 ## 0.76 - [#395](https://github.com/openfisca/openfisca-tunisia/pull/395)
 
 * Correction d'un bug.

@@ -1,0 +1,7 @@
+description: Appui pour dépenses exceptionnelles d'urgence sanitaire ou sociale
+metadata:
+  short_label: Appui d'urgence
+  order:
+  - montant_min
+  - montant_max
+  - nombre_max_par_an

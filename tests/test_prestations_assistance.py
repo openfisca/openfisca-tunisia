@@ -91,3 +91,32 @@ def test_amen_allocation_de_base_prend_effet_a_la_publication():
     with pytest.raises(ParameterNotFoundError):
         nc("2020-05-19").amen_social.allocation_base
     assert nc("2020-05-20").amen_social.allocation_base == 180
+
+
+def test_aides_ponctuelles_datees_de_2020_et_non_de_2019():
+    """L'appui financier occasionnel est fixé par l'arrêté conjoint du 19 mai 2020,
+    publié au JORT n° 45 du 20 mai 2020. L'année 2019 n'est la date d'aucun texte.
+    """
+    aides = nc("2020-05-20").amen_social.aides_ponctuelles
+    assert aides.fetes_religieuses.ramadan == 60
+    assert aides.fetes_religieuses.aid_al_fitr == 60
+    assert aides.fetes_religieuses.aid_al_adha == 60
+    assert aides.scolarite.rentree_scolaire == 50
+    assert aides.scolarite.rentree_universitaire == 120
+
+    with pytest.raises(ParameterNotFoundError):
+        nc("2019-06-01").amen_social.aides_ponctuelles.fetes_religieuses.ramadan
+
+
+def test_appui_urgence_est_un_intervalle_et_non_un_montant():
+    """L'arrêté du 8 décembre 2022 module l'appui entre 60 et 200 dinars selon la
+    situation de la famille : c'est le seul du dispositif à ne pas avoir de montant fixe.
+    """
+    urgence = nc("2023-01-01").amen_social.aides_ponctuelles.urgence
+    assert urgence.montant_min == 60
+    assert urgence.montant_max == 200
+    assert urgence.nombre_max_par_an == 4
+
+    # Un NŒUD de paramètres existe à toute date ; seule une feuille sans valeur lève.
+    with pytest.raises(ParameterNotFoundError):
+        nc("2022-12-08").amen_social.aides_ponctuelles.urgence.montant_min
