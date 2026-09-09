@@ -1,11 +1,19 @@
 description: Pensions
 brackets:
 - threshold:
-    1960-01-01:
+    1981-02-24:
       value: 0
   rate:
-    1960-01-01:
+    1981-02-24:
       value: 0.0175
 metadata:
   rate_unit: /1
   threshold_unit: currency
+  reference:
+    1981-02-24:
+    - title: "Décret n° 81-224 du 24 février 1981 fixant la répartition des cotisations de sécurité sociale dans le secteur agricole"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo01381.pdf"
+      note: "JORT n° 13, p. 425-426. Répartit les 6,45 % en 1,20 % d'assurances sociales et 5,25 % de pensions. Le partage interne des 1,20 % entre maladie, maternité et décès n'est fixé par aucun texte identifié : seule la part maladie de 0,91 % est attestée, par le décret n° 2007-1406. Édition arabe : https://www.pist.tn/jort/1981/1981A/Ja01381.pdf"
+    - title: "Loi n° 81-6 du 12 février 1981 organisant les régimes de sécurité sociale dans le secteur agricole, article 18"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf"
+      note: "JORT n° 9, p. 265-273. Fixe le taux global du régime des salariés agricoles à 6,45 %. La loi n'énonce pas de date d'effet. Édition arabe : https://www.pist.tn/jort/1981/1981A/Ja00981.pdf"
