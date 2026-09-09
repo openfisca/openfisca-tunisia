@@ -1,0 +1,19 @@
+description: Montant minimal de l'appui pour dépenses exceptionnelles
+values:
+  2022-12-09:
+    value: 60
+metadata:
+  unit: currency
+  reference:
+    2022-12-09:
+      title: Article 3 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 8 décembre 2022, JORT n° 136 du 9 décembre 2022, p. 3446-3447
+      href: https://www.pist.tn/jort/2022/2022F/Jo1362022.pdf
+documentation: |
+  PARAMÈTRE AJOUTÉ. L'arrêté conjoint du 8 décembre 2022 crée un appui destiné aux dépenses
+  exceptionnelles nécessitées par des conditions sanitaires ou sociales d'urgence, ou pour
+  appuyer la prise en charge des enfants scolarisés exposés à l'inadaptation sociale et au
+  décrochage scolaire.
+
+  Son montant n'est pas fixe : il est compris entre 60 et 200 dinars selon la situation
+  financière de la famille. C'est le seul appui du dispositif dont le montant relève d'une
+  appréciation, ce qui interdit de le modéliser par une valeur unique — d'où deux bornes.

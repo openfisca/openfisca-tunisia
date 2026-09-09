@@ -4,3 +4,12 @@ metadata:
   order:
   - fetes_religieuses
   - scolarite
+  - urgence
+documentation: |
+  Appui financier occasionnel prévu par l'article 12 de la loi organique n° 2019-10, par
+  opposition au transfert monétaire permanent de l'article 11.
+
+  NON MODÉLISÉ : la prise en charge des abonnements annuels de transport scolaire et
+  universitaire, créée par l'arrêté du 8 décembre 2022. Elle n'a pas de montant propre — le
+  texte renvoie « aux tarifs pratiqués par les entreprises de transport public » —, et
+  l'encoder par une valeur reviendrait à inventer un barème que le texte ne fixe pas.

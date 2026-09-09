@@ -1,7 +1,27 @@
 description: Montant de l'aide ponctuelle du programme Amen social délivrée à l'occasion de l'Aïd Al Adha
 values:
-  2019-01-01:
+  2020-05-20:
     value: 60
 metadata:
   short_label: Aïd Al Adha
   unit: currency
+  reference:
+    2020-05-20:
+      title: Article 4 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité, JORT n° 45 du 20 mai 2020, p. 1097
+      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+    2022-12-09:
+      title: Article 4 de l'arrêté conjoint du 8 décembre 2022, JORT n° 136 du 9 décembre 2022, p. 3446-3447 ; son article 5 abroge l'arrêté du 19 mai 2020 et reprend les mêmes montants
+      href: https://www.pist.tn/jort/2022/2022F/Jo1362022.pdf
+documentation: |
+  DATE CORRIGÉE. La valeur était datée du 1er janvier 2019 sans référence. Le montant est
+  exact, mais 2019 n'est la date d'aucun texte : l'appui financier occasionnel est fixé par
+  l'arrêté conjoint du 19 mai 2020, pris sur le fondement de l'article 12 de la loi organique
+  n° 2019-10, et publié au JORT n° 45 du 20 mai 2020.
+
+  L'arrêté conjoint du 8 décembre 2022 ABROGE celui de 2020 (art. 5) et REPREND le même
+  montant. La valeur ne change donc pas au 9 décembre 2022, mais son fondement, si : c'est
+  pourquoi la date figure dans les références.
+
+  CHAMP D'APPLICATION, non modélisé ici : l'appui des fêtes religieuses est réservé aux
+  catégories pauvres (art. 2), tandis que les aides de rentrée sont ouvertes aux catégories
+  pauvres ET aux catégories à revenu limité (art. 3).
