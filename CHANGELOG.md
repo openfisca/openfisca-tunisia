@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.79 - [#398](https://github.com/openfisca/openfisca-tunisia/pull/398)
+
+* Correction d'un bug.
+* Périodes concernées : à partir du 1974-01-01.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive`.
+* Détails :
+  - Date les **37 valeurs du secteur privé qui portaient le 1er janvier 1960** sans aucune référence. La structure qu'elles décrivent n'existe pas avant 1997 : le taux du régime général est la somme des 18 % répartis 13/5 de l'article 41 (nouveau) de la **loi n° 97-4** (publiée le 4 février 1997), du fonds spécial de l'État de l'article 57 de la **loi n° 74-101** (1er janvier 1975) et de la cotisation propre du régime de pensions de l'article 9 (nouveau) du **décret n° 97-555** — soit 23,75 %, dont les 16,00 % et 7,75 % que porte le modèle avant assurance maladie. La dernière pièce est le **décret n° 2003-1212**, qui porte la quote-part des pensions à 7,25/20e au 1er janvier 2003.
+  - Date les autres régimes sur leurs textes : **1981-02-24** pour les salariés agricoles (loi n° 81-6, décret n° 81-224), **1989-10-01** pour le régime agricole amélioré (loi n° 89-73, art. 4 et 90), **1995-07-03** pour les travailleurs non salariés (décret n° 95-1166), **2002-12-31** pour les artistes (loi n° 2002-104), **1989-01-10** pour les Tunisiens à l'étranger (décret n° 89-107), **1995-04-01** pour le point transféré aux accidents du travail (décret n° 95-538), **1996-11-22** pour la protection sociale des travailleurs (loi n° 96-101) et **1974-01-01** pour la retraite complémentaire (arrêté du 18 novembre 1978).
+  - Ajoute la valeur manquante de la **cotisation des étudiants** : la série commençait à 5 dinars, alors que le décret n° 92-631 la fixe d'abord à **2 dinars**.
+  - Remplace **toutes** les références du secteur privé — dépôt GitLab personnel et, pour la perte d'emploi, un site commercial — par les fascicules du JORT sur pist.tn, avec numéro de fascicule, page et lien vers l'édition arabe. La référence de la perte d'emploi pointe vers l'édition arabe : l'édition française de ce fascicule répond 404, et c'est dans l'arabe que l'article 17 de la loi n° 2024-48 a été lu.
+  - Consigne dans les notes trois défauts de structure qui appellent des correctifs distincts : le point d'accidents du travail n'est pas le tarif d'accidents du travail (patronal, de 0,50 % à 5 % selon dix-huit classes) ; le seuil de 0,66 du régime des bas revenus est une assiette forfaitaire et non un plafond, et ses quatre valeurs croisent deux répartitions que les textes ne croisent jamais ; l'assiette de la retraite complémentaire est la fraction de salaire excédant la limite de calcul des prestations, et son taux de 9 % n'a aucune source publiée.
+  - **Aucune valeur de taux n'est modifiée** : les tableaux engendrés par le précis socio-fiscal sont identiques avant et après.
+
+<!-- -->
+
 ## 0.78 - [#397](https://github.com/openfisca/openfisca-tunisia/pull/397)
 
 * Correction d'un bug.
