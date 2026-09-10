@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.80 - [#402](https://github.com/openfisca/openfisca-tunisia/pull/402)
+
+* Amélioration technique.
+* Périodes concernées : toutes.
+* Zones impactées : `parameters/retraite`.
+* Détails :
+  - Supprime `parameters/retraite/` — trente fichiers que **rien ne lisait**. Aucun `.py`, `.yaml` ou `.ipynb` de ce paquet n'accède à `retraite.cnrps`, `retraite.rsna` ni `retraite.rsa` ; les variables de retraite d'ici sont toutes des variables d'entrée sans formule, de simples réceptacles pour l'IRPP et l'AMEN social, et elles restent.
+  - Ces paramètres vivent, eux, dans `openfisca-tunisia-pension`, où ils sont lus par les formules de liquidation. Vingt-huit des trente fichiers y existaient à l'identique : c'était une seconde source de vérité pour les mêmes paramètres de droit, et elle avait déjà commencé à diverger dans ses métadonnées.
+  - **La règle qui en découle** : un sous-arbre de paramètres a un propriétaire et un seul. `retraite/` appartient à `openfisca-tunisia-pension`, `marche_travail/` à ce paquet-ci. Le pendant de ce changement est la PR openfisca-tunisia-pension#23, qui greffe `marche_travail` depuis ici au lieu d'en garder une copie — laquelle avait figé le SMIG en 2019.
+  - Les trois éléments que seule cette arborescence portait ont été récoltés avant suppression : l'URL du fascicule du JORT sur les âges légaux du cadre commun et des cadres actifs, le paragraphe sur l'option de report des enseignants du supérieur, et `rsna/plaf_taux_pension.yaml`.
+
+<!-- -->
+
 ## 0.79 - [#398](https://github.com/openfisca/openfisca-tunisia/pull/398)
 
 * Correction d'un bug.
