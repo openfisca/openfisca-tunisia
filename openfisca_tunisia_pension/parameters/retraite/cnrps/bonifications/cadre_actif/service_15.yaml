@@ -19,4 +19,13 @@ documentation: |-
   de l'article 32 : la période bonifiable des agents exerçant des fonctions astreignantes et
   des cadres actifs court désormais jusqu'à 62 ans. Le barème 5 / 4 / 3 / 2 n'est pas modifié.
 
+  L'article 33, distinct, accorde la bonification jusqu'à 60 ans aux militaires et agents des
+  forces de sécurité intérieure blessés en service, aux agents invalides à 80 % au moins et aux
+  agents mis à la retraite pour suppression d'emplois. La loi n° 88-71 du 27 juin 1988 (JORT
+  n° 45 du 1er juillet 1988, pp. 967-968, effet 1er janvier 1989) le réécrit : elle y ajoute les
+  services actifs des douanes et les agents mis à la retraite d'office, dont la bonification ne
+  peut dépasser un rendement de 20 % de la rémunération de liquidation. Ce plafond de 20 % date
+  de 1988 ; la loi n° 2019-37 le reconduit en portant le repère à 62 ans. La suppression
+  d'emplois en est retirée par la loi n° 2002-61 du 9 juillet 2002.
+
   La formule `cnrps_bonifications` n'utilise pas ce paramètre : le barème y est écrit en dur.
