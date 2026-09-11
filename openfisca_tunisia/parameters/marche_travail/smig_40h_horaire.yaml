@@ -34,12 +34,8 @@ values:
     value: 0.532
   1988-04-01:
     value: 0.556
-  1989-08-01:
-    value: 0.573
   1990-01-01:
-    value: 0.621
-  1991-08-01:
-    value: 0.633
+    value: 0.604
   1992-05-01:
     value: 0.671
   1992-08-01:
@@ -110,6 +106,12 @@ values:
     value: 2.409
   2025-01-01:
     value: 2.586
+  2026-01-01:
+    value: 2.713
+  2027-01-01:
+    value: 2.846
+  2028-01-01:
+    value: 2.986
 metadata:
   unit: currency
   reference:
@@ -198,25 +200,18 @@ metadata:
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1988/décret_88_889_fr.pdf
     - title: امر عدد   889  لسنة  1988  مؤرخ في 5 ماي 1988 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1988/décret_88_889_ar.pdf
-    1989-08-01:
-    - title: Décret n°89-1551 du 06 octobre 1989  portant octroi d'une Indemnité spéciale au profit des travailleurs payés au salaire minimum agricole garantl.
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1989/décret_89_1551_fr.pdf
-    - title: أمر عدد 1551 لسنة 1989 مؤرخ في 6 أكتوبر 1989 يتعلق باسناد منحة خاصة لفائدة العملة الخالصين بالاجر الأدنى المضمون لمختلف المهن ، المشتغلين بالقطاعات غير الفلاحية والخاضعة لمجلة الشغل .
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1989/décret_89_1551_ar.pdf
     1990-01-01:
-    - title: Décret n°90-246 du 05 février 1990 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1990/décret_90_246_fr.pdf
-    - title: أمر عدد 246 لسنة 1990  مؤرخ في 5 فيفري 1990 يتعلّق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1990/décret_90_246_ar.pdf
-    1991-08-01:
-    - title: Décret n°91-1316 du 02 septembre 1991 portant fixation de l'indemnité spéciale octroyée au profit des travailleurs payés au salaire minimum interprofessionnel garanti, employés dans les secteurs non agricoles régis par le code du travail
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_91_1316_fr.pdf
-    - title: أمر عدد  1316 بسنة 1991 يتعلّق بضبط المنحة الخاصة المسندة لفائدة العملة الخالصين بالأجر الأدنى المضمون لمختلف المهن المشتغلين بالقطاعات غير الفلاحية والخاضعة لمجلة الشغل
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_91_1316_ar.pdf
+    - title: "Décret n° 90-246 du 5 février 1990, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/1990/1990F/Jo01390.pdf
+      note: "JORT n° 13 du 16 février 1990, p. 252. Article premier : le SMIG est fixé à 120,016 dinars et à 104,706 dinars par mois et à 577 millimes et 604 millimes l'heure, respectivement pour les régimes de 48 heures et de 40 heures. Article 7 : effet à compter du 1er janvier 1990. Ce montant ne comprend pas l'indemnité spéciale du décret n° 89-1551 (3 dinars par mois ; 14 millimes l'heure en 48 heures, 17 millimes en 40 heures), qui subsiste à côté du SMIG et figure dans marche_travail.indemnite_speciale_smig. Jusqu'au 1er janvier 1990 exclu, le SMIG reste celui du décret n° 88-889 : le décret n° 89-1551 ne le modifie pas."
+    - title: "أمر عدد 246 لسنة 1990 مؤرخ في 5 فيفري 1990 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/1990/1990A/Ja01390.pdf
     1992-05-01:
-    - title: Décret n°92-1299 du 13 juillet 1992 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1299_fr.pdf
-    - href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1299_ar.pdf
+    - title: "Décret n° 92-1299 du 13 juillet 1992, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, articles premier et 3"
+      href: https://www.pist.tn/jort/1992/1992F/Jo04992.pdf
+      note: "JORT n° 49 du 28 juillet 1992, pp. 935-936. Article premier : le SMIG est fixé à 132,912 dinars et à 116,318 dinars par mois et à 639 millimes et 671 millimes l'heure, respectivement pour les régimes de 48 heures et de 40 heures. Article 3 : ce SMIG « comprend l'indemnité spéciale fixée par le décret sus-visé n° 91-1316 du 2 septembre 1991 » (5 dinars par mois), que l'article 8 abroge. Article 9 : effet à compter du 1er mai 1992. La hausse de 120,016 à 132,912 dinars (48 heures) intègre donc ces 5 dinars. Un rectificatif est publié au JORT n° 55 du 21 août 1992, p. 1067 (non lu)."
+    - title: "أمر عدد 1299 لسنة 1992 مؤرخ في 13 جويلية 1992 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/1992/1992A/Ja04992.pdf
     1992-08-01:
     - title: Décret n°92-1630 du 07 septembre 1992   fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1630_fr.pdf
@@ -387,6 +382,24 @@ metadata:
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2024/Décret_2024_419_fr.pdf
     - title: امر عدد 419 لسنة 2024 مؤرخ في 9 جويلية 2024 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
       href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2024/Décret_2024_419_ar.pdf
+    2026-01-01:
+    - title: "Décret n° 2026-67 du 30 avril 2026, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+      note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier, point 1 : à compter du 1er janvier 2026, le SMIG est fixé à 554,736 dinars (48 heures) et à 470,251 dinars (40 heures) par mois, et à 2,667 dinars (48 heures) et à 2,713 dinars (40 heures) l'heure ; il comprend l'indemnité complémentaire provisoire. Article 6 : l'augmentation du SMIG s'applique aux pensions de retraite servies par la Caisse nationale de sécurité sociale."
+    - title: "أمر عدد 67 لسنة 2026 مؤرخ في 30 أفريل 2026 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/2026/2026A/Ja0442026.pdf
+    2027-01-01:
+    - title: "Décret n° 2026-67 du 30 avril 2026, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+      note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier, point 2 : à compter du 1er janvier 2027, le SMIG est fixé à 582,400 dinars (48 heures) et à 493,304 dinars (40 heures) par mois, et à 2,800 dinars (48 heures) et à 2,846 dinars (40 heures) l'heure ; il comprend l'indemnité complémentaire provisoire. Article 6 : l'augmentation du SMIG s'applique aux pensions de retraite servies par la Caisse nationale de sécurité sociale."
+    - title: "أمر عدد 67 لسنة 2026 مؤرخ في 30 أفريل 2026 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/2026/2026A/Ja0442026.pdf
+    2028-01-01:
+    - title: "Décret n° 2026-67 du 30 avril 2026, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+      note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier, point 3 : à compter du 1er janvier 2028, le SMIG est fixé à 611,520 dinars (48 heures) et à 517,571 dinars (40 heures) par mois, et à 2,940 dinars (48 heures) et à 2,986 dinars (40 heures) l'heure ; il comprend l'indemnité complémentaire provisoire. Article 6 : l'augmentation du SMIG s'applique aux pensions de retraite servies par la Caisse nationale de sécurité sociale."
+    - title: "أمر عدد 67 لسنة 2026 مؤرخ في 30 أفريل 2026 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/2026/2026A/Ja0442026.pdf
 documentation: |-
   Salaire minimum interprofessionnel garanti (Smig) dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins
   الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل

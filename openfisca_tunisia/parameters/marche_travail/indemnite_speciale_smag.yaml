@@ -2,8 +2,6 @@ description: Indemnité spéciale (IS) journalière pour le SMAG
 values:
   1989-08-01:
     value: 0.115
-  1990-01-01:
-    value: 0.115
   1991-08-01:
     value: 0.215
   1992-05-01:
@@ -14,19 +12,20 @@ metadata:
   unit: currency
   reference:
     1989-08-01:
-      title: Décret n°89-1552 du 06-10-1989
-    1990-01-01:
-    - title: Décret n°90-247 du 05-02-1990
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1990/décret_90_247_fr.pdf
-    - title: امر عدد 247 لسنة 1990 مؤرخ في  5 فيفري 1991 ينعلق يالاجر الادنى الفلاحي المضمون
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1990/décret_90_247_ar.pdf
+    - title: "Décret n° 89-1552 du 6 octobre 1989, portant octroi d'une indemnité spéciale au profit des travailleurs payés au salaire minimum agricole garanti, article premier"
+      href: https://www.pist.tn/jort/1989/1989F/Jo06989.pdf
+      note: "JORT n° 69 du 17 octobre 1989, p. 1632. Article premier : « Le montant journalier de cette indemnité est fixé à 115 millimes. » Article 3 : les retenues d'impôt sur les traitements et salaires, de contribution personnelle d'État, de contribution de solidarité et au profit du FOPROLOS sont suspendues au titre de cette indemnité. Article 4 : l'indemnité n'est pas prise en compte pour la détermination de l'assiette des cotisations et des prestations de sécurité sociale. Article 6 : effet à compter du 1er août 1989. Le décret n° 90-247, qui fixe le SMAG au 1er janvier 1990, ne modifie pas l'indemnité."
+    - title: "أمر عدد 1552 لسنة 1989 مؤرخ في 6 أكتوبر 1989 يتعلق باسناد منحة خاصة لفائدة العملة الخالصين بالأجر الأدنى الفلاحي المضمون"
+      href: https://www.pist.tn/jort/1989/1989A/Ja06989.pdf
     1991-08-01:
-    - title: Décret n°91-1317 du 02-09-1991
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_92_1300_fr.pdf
-    - title: امر عدد 1317 لسنة 1991 مؤرخ في 02 سبتمبر 1991
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_92_1300_ar.pdf
+    - title: "Décret n° 91-1317 du 2 septembre 1991, portant fixation de l'indemnité spéciale octroyée au profit des travailleurs payés au salaire minimum agricole garanti, article premier"
+      href: https://www.pist.tn/jort/1991/1991F/Jo06391.pdf
+      note: "JORT n° 63 du 17 septembre 1991, p. 1581. Article premier : indemnité fixée à 215 millimes par journée. Article 3 : les retenues d'impôt sur le revenu sont suspendues au titre de cette indemnité. Article 4 : même exclusion de l'assiette des cotisations et des prestations de sécurité sociale. Article 6 : abroge le décret n° 89-1552. Article 7 : effet à compter du 1er août 1991."
+    - title: "أمر عدد 1317 لسنة 1991 مؤرخ في 2 سبتمبر 1991 يتعلق بضبط المنحة الخاصة المسندة لفائدة العملة الخالصين بالأجر الأدنى الفلاحي المضمون"
+      href: https://www.pist.tn/jort/1991/1991A/Ja06391.pdf
     1992-05-01:
-    - title: Décret n°92-1300 du 13-07-1992
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1300_fr.pdf
-    - title: امر عدد 1300 لسنة 1992 مؤرخ  في 13 حويبية 1992 يتعلق يارجر الادنى الغلاحي المضمون
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1300_ar.pdf
+    - title: "Décret n° 92-1300 du 13 juillet 1992, fixant le salaire minimum agricole garanti, article 3"
+      href: https://www.pist.tn/jort/1992/1992F/Jo04992.pdf
+      note: "JORT n° 49 du 28 juillet 1992, p. 936. Article 3 : les salaires minima fixés aux articles 1 et 2 « comprennent l'indemnité spéciale fixée par le décret sus-visé n° 91-1317 du 2 septembre 1991 ». Article 6 : abroge le décret n° 91-1317. Article 7 : effet à compter du 1er mai 1992. La valeur nulle traduit l'intégration de l'indemnité au SMAG, non sa suppression."
+    - title: "أمر عدد 1300 لسنة 1992 مؤرخ في 13 جويلية 1992 يتعلق بضبط الأجر الأدنى الفلاحي المضمون"
+      href: https://www.pist.tn/jort/1992/1992A/Ja04992.pdf
