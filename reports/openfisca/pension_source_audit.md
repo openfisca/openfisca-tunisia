@@ -32,6 +32,7 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 | `1985-12` - Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public | 23 | JORT 1985/20, texte pivot |
 | `1986-611` - Texte cité par les paramètres | 4 | JORT 1986/34 |
 | `1988-1136` - Texte cité par les paramètres | 3 | JORT 1988/43 |
+| `1988-39` - Texte cité par les paramètres | 1 | JORT 1988/33 |
 | `1988-71` - Texte cité par les paramètres | 1 | JORT 1988/45 |
 | `1993-308` - Texte cité par les paramètres | 4 | JORT 1993/13 |
 | `1996-1906` - Texte cité par les paramètres | 4 | JORT 1996/85 |
@@ -51,8 +52,8 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 | --- | --- | --- |
 | `retraite.cnrps.bonifications.militaire.bonus` | Bonification maximum pour militaires | 1985-03-05 |
 | `retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum` | Âge minimum de jouissance de la pension pour les mères de 3 enfants | 1985-03-05 |
-| `retraite.rsa.pension_min` | Pension minimale (en part de SMAG) | 1981-02-24 |
-| `retraite.rsa.periode_remplacement_base` | Période de remplacement de base | 1981-02-24 |
+| `retraite.rsa.pension_min` | Pension minimale (en part de SMAG) | 1981-01-01 |
+| `retraite.rsa.periode_remplacement_base` | Période de remplacement de base | 1981-01-01 |
 
 ## Paramètres multi-dates à relier finement
 
@@ -61,7 +62,7 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 | `retraite.cnrps.accessoires.indemnites_familiales.rang_1` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-1136`, `1996-1906` |
 | `retraite.cnrps.accessoires.indemnites_familiales.rang_2` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-1136`, `1996-1906` |
 | `retraite.cnrps.accessoires.indemnites_familiales.rang_3` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-1136`, `1996-1906` |
-| `retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus` | 1986-05-01, 1996-11-01 | `1986-611`, `1996-1906` |
+| `retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-39`, `1996-1906` |
 | `retraite.cnrps.age_legal.civil.cadre_commun` | 1959-02-01, 2019-07-01, 2020-01-01 | `1959-18`, `1985-12`, `2019-37` |
 | `retraite.cnrps.age_legal.civil.cadres_actifs` | 1959-02-01, 2019-07-01, 2020-01-01 | `1959-18`, `1985-12`, `2019-37` |
 | `retraite.cnrps.age_legal.civil.fonctions_astreignantes` | 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
@@ -73,8 +74,8 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 | `retraite.cnrps.bonifications.cadre_actif.service_35` | 1985-03-05, 1985-09-12 | `1985-12` |
 | `retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant` | 1985-03-05, 1985-09-12, 1989-01-01 | `1985-12`, `1988-71` |
 | `retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum` | 1985-03-05, 1985-09-12, 2007-06-26 | `1985-12`, `2007-43` |
-| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum` | 1985-03-05, 1985-09-12, 2007-06-26 | `1985-12`, `2007-43` |
+| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum` | 1985-03-05, 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
+| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum` | 1985-03-05, 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
 | `retraite.cnrps.duree_de_service_minimale` | 1974-01-01, 1985-09-12 | `1985-12` |
 | `retraite.cnrps.pension_minimale.allocation_vieillesse` | 1959-02-01, 1985-09-12 | `1985-12` |
 | `retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse` | 1974-01-01, 1985-09-12 | `1985-12` |
@@ -84,12 +85,12 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 | `retraite.cnrps.survivants.taux_conjoint` | 1981-05-01, 1985-09-12 | `1959-18`, `1981-70`, `1985-12` |
 | `retraite.cnrps.survivants.taux_orphelin` | 1985-03-05, 1985-09-12 | `1985-12` |
 | `retraite.cnrps.survivants.taux_partage_5_orphelins` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.rsna.age_dep_anticip` | 1974-01-01, 1982-07-20 | `1974-499`, `1982-1030` |
-| `retraite.rsna.bareme_annuite` | 1960-01-01, 1974-01-01, 1982-07-20 | `1974-499`, `1982-1030` |
-| `retraite.rsna.pension_minimale.inf` | 1974-01-01, 1982-07-20 | `1974-499`, `1982-1030` |
-| `retraite.rsna.pension_minimale.sup` | 1974-01-01, 1982-07-20 | `1974-499`, `1982-1030` |
-| `retraite.rsna.plaf_taux_pension` | 1974-01-01, 1982-07-20 | `1974-499`, `1982-1030` |
-| `retraite.rsna.stage_derog` | 1974-01-01, 1982-07-20 | `1974-499`, `1982-1030` |
+| `retraite.rsna.age_dep_anticip` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
+| `retraite.rsna.bareme_annuite` | 1960-01-01, 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
+| `retraite.rsna.pension_minimale.inf` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
+| `retraite.rsna.pension_minimale.sup` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
+| `retraite.rsna.plaf_taux_pension` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
+| `retraite.rsna.stage_derog` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
 
 ## Accès aux paramètres depuis les variables
 

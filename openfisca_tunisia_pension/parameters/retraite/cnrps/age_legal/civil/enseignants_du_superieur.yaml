@@ -1,14 +1,14 @@
 description: Age de départ à la retraite pour certains enseignants du supérieur
 values:
-  2009-04-14:
+  2009-04-19:
     value: 65
 metadata:
   unit: year
   reference:
-    2009-04-14:
+    2009-04-19:
     - title: "Loi n° 2009-20 du 13 avril 2009, portant dispositions exceptionnelles relatives à la retraite des professeurs de l'enseignement supérieur, article 2 (article 29 bis de la loi n° 85-12)"
       href: "https://www.pist.tn/jort/2009/2009F/Jo0302009.pdf"
-      note: "JORT n° 30 du 14 avril 2009, p. 1036 : « L'âge de mise à la retraite est fixé à soixante-cinq (65) ans pour les professeurs de l'enseignement supérieur et les maîtres de conférences de l'enseignement supérieur […] ». L'article premier insère « 29 bis » à l'article 24 de la loi n° 85-12. La loi ne comporte pas de clause d'entrée en vigueur : la date retenue est celle de sa publication."
+      note: "JORT n° 30 du 14 avril 2009, p. 1036 : « L'âge de mise à la retraite est fixé à soixante-cinq (65) ans pour les professeurs de l'enseignement supérieur et les maîtres de conférences de l'enseignement supérieur […] ». L'article premier insère « 29 bis » à l'article 24 de la loi n° 85-12. La loi ne comporte pas de clause d'entrée en vigueur. Date retenue : 19 avril 2009, date à laquelle elle devient exécutoire selon l'article 2 de la loi n° 93-64 du 5 juillet 1993 (cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté), le dépôt étant pris à la date de publication, le 14 avril 2009."
 documentation: |-
   Les enseignants concernés sont :
   - les professeurs de l'enseignement supérieur et les maîtres de conférences de l'enseignement supérieur rattachés aux établissements universitaires et aux établissements de recherche scientifique civils et militaires ;

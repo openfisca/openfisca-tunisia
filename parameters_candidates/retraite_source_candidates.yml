@@ -318,6 +318,23 @@ law_candidates:
     - retraite.cnrps.accessoires.indemnites_familiales.rang_1
     - retraite.cnrps.accessoires.indemnites_familiales.rang_2
     - retraite.cnrps.accessoires.indemnites_familiales.rang_3
+  1988-39:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 88-39
+      titre: Loi n° 88-39 du 06 Mai 1988, relative a l'octroi des indemnites familiales dans le secteur
+        public
+      date_signature: '1988-05-06'
+      date_publication: '1988-05-13'
+      jort_annee: 1988
+      jort_numero: 33
+      pages: '0735'
+      pdf_fr: /jort/1988/1988F/Jo03388.pdf
+      pdf_ar: /jort/1988/1988A/Ja03388.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus
   1988-71:
     title: null
     local_texts: []
@@ -555,14 +572,19 @@ parameter_candidates:
   description: Indemnités familiales - 4ème enfant et plus
   dates:
   - '1986-05-01'
+  - '1989-01-01'
   - '1996-11-01'
   laws:
   - 1986-611
+  - 1988-39
   - 1996-1906
   references:
   - Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article
     premier
   - https://www.pist.tn/jort/1986/1986F/Jo03486.pdf
+  - Loi n° 88-39 du 6 mai 1988, relative à l'octroi des indemnités familiales dans le secteur public,
+    article unique
+  - https://www.pist.tn/jort/1988/1988F/Jo03388.pdf
   - Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial,
     articles 2 et 3
   - https://www.pist.tn/jort/1996/1996F/Jo08596.pdf
@@ -608,7 +630,7 @@ parameter_candidates:
 - parameter: retraite.cnrps.age_legal.civil.enseignants_du_superieur
   description: Age de départ à la retraite pour certains enseignants du supérieur
   dates:
-  - '2009-04-14'
+  - '2009-04-19'
   laws:
   - 1985-12
   - 2009-20
@@ -836,7 +858,7 @@ parameter_candidates:
   dates:
   - '1985-03-05'
   - '1985-09-12'
-  - '2007-06-26'
+  - '2007-07-01'
   laws:
   - 1985-12
   - 2007-43
@@ -854,7 +876,7 @@ parameter_candidates:
   dates:
   - '1985-03-05'
   - '1985-09-12'
-  - '2007-06-26'
+  - '2007-07-01'
   laws:
   - 1985-12
   - 2007-43
@@ -1007,14 +1029,14 @@ parameter_candidates:
 - parameter: retraite.rsa.pension_min
   description: Pension minimale (en part de SMAG)
   dates:
-  - '1981-02-24'
+  - '1981-01-01'
   laws: []
   references: []
   needs_review: true
 - parameter: retraite.rsa.periode_remplacement_base
   description: Période de remplacement de base
   dates:
-  - '1981-02-24'
+  - '1981-01-01'
   laws: []
   references: []
   needs_review: true
@@ -1066,7 +1088,7 @@ parameter_candidates:
   description: Age minimum de départ à la retraite anticipée
   dates:
   - '1974-01-01'
-  - '1982-07-20'
+  - '1982-07-22'
   laws:
   - 1974-499
   - 1982-1030
@@ -1092,7 +1114,7 @@ parameter_candidates:
   dates:
   - '1960-01-01'
   - '1974-01-01'
-  - '1982-07-20'
+  - '1982-07-22'
   laws:
   - 1974-499
   - 1982-1030
@@ -1109,7 +1131,7 @@ parameter_candidates:
   description: Inférieur à la durée du stage requis
   dates:
   - '1974-01-01'
-  - '1982-07-20'
+  - '1982-07-22'
   laws:
   - 1974-499
   - 1982-1030
@@ -1123,7 +1145,7 @@ parameter_candidates:
   description: Supérieur à la durée du stage requis
   dates:
   - '1974-01-01'
-  - '1982-07-20'
+  - '1982-07-22'
   laws:
   - 1974-499
   - 1982-1030
@@ -1140,7 +1162,7 @@ parameter_candidates:
   description: Plafonnement du taux de pension
   dates:
   - '1974-01-01'
-  - '1982-07-20'
+  - '1982-07-22'
   laws:
   - 1974-499
   - 1982-1030
@@ -1157,7 +1179,7 @@ parameter_candidates:
   description: Durée du stage dérogatoire
   dates:
   - '1974-01-01'
-  - '1982-07-20'
+  - '1982-07-22'
   laws:
   - 1974-499
   - 1982-1030

@@ -2,15 +2,15 @@ description: Age minimum de départ à la retraite anticipée
 values:
   1974-01-01:
     value: 50
-  1982-07-20:
+  1982-07-22:
     value: 50
 metadata:
   unit: year
   reference:
-    1982-07-20:
+    1982-07-22:
     - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (article 15 bis)"
       href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
-      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606. L'article 15 bis ouvre le droit à la retraite sans condition d'âge, « la jouissance de pension [étant] différée jusqu'à ce que l'intéressé ait atteint l'âge de cinquante ans », dans quatre cas : licenciement économique, usure prématurée, convenance personnelle avec 360 mois de cotisations, mères de trois enfants avec 180 mois. Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution) : la date retenue est celle de la publication. Rectificatif publié au JORT n° 66 du 19 octobre 1982, p. 2197, non lu."
+      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606. L'article 15 bis ouvre le droit à la retraite sans condition d'âge, « la jouissance de pension [étant] différée jusqu'à ce que l'intéressé ait atteint l'âge de cinquante ans », dans quatre cas : licenciement économique, usure prématurée, convenance personnelle avec 360 mois de cotisations, mères de trois enfants avec 180 mois. Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution). Date retenue : 22 juillet 1982, date à laquelle il devient obligatoire selon la règle générale alors en vigueur — « un jour franc après la publication au Journal Officiel » (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956, JORT n° 74 du 14 septembre 1956, p. 1247), la publication étant prise au premier jour du fascicule daté des 20-23 juillet ; au dernier jour, ce serait le 25 juillet. Rectificatif publié au JORT n° 66 du 19 octobre 1982, p. 2197, non lu."
 documentation: |-
   Le départ anticipé du régime des salariés non agricoles est créé en 1982 par
   l'article 15 bis, inséré par le décret n° 82-1030. Le décret n° 74-499 dans sa
@@ -18,7 +18,7 @@ documentation: |-
   dernier alinéa, abaisse l'âge à 55 ans pour les travaux pénibles ou insalubres,
   par arrêté.
 
-  La valeur portée du 1er janvier 1974 au 19 juillet 1982 est antérieure au texte :
+  La valeur portée du 1er janvier 1974 au 21 juillet 1982 est antérieure au texte :
   valeur antérieure au texte non établie, conservée pour la continuité des calculs.
 
   Le décret n° 2007-2148 abroge le cas de la convenance personnelle de l'article
