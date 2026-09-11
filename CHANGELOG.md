@@ -1,5 +1,18 @@
 # Changelog
 
+### 5.4.1 - [#NN](https://github.com/openfisca/openfisca-tunisia-pension/pull/NN)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `scripts/generate_pension_source_audit.py`.
+* Détails :
+  - Le rapport d'audit des sources rattachait quatre textes au mauvais fascicule du JORT : le décret n° 74-499 au n° 39 de 1974, le décret n° 82-1030 au n° 66 de 1982 et la loi n° 81-6 au n° 26 de 1981, qui publient leurs rectificatifs ; la loi n° 2009-20 au n° 100 de 2009, qui publie une circulaire de même numéro. Ils sont désormais rattachés aux n° 30 de 1974, 51 de 1982, 9 de 1981 et 30 de 2009.
+  - _Le cache `jort_cache.db` range le rectificatif sous le type, le numéro et la date de signature du texte qu'il corrige, avec un identifiant plus petit ; la circulaire n'a pas de date de signature. Trié par date puis par identifiant, le mauvais enregistrement venait en tête, et seuls six textes pivots faisaient l'objet d'un contrôle de type._
+  - Le choix du fascicule lit maintenant la référence : le type cité (« Décret n° », « Loi n° ») doit concorder avec celui de l'enregistrement ; un rectificatif passe toujours après le texte principal ; à égalité, le fascicule désigné par le lien pist.tn de la référence, puis l'année de signature, départagent les candidats.
+  - Dans `parameters_candidates/retraite_source_candidates.yml`, les correspondances sont classées, rectificatifs en dernier, et la circulaire n° 2009-20 n'y figure plus.
+
+<!-- -->
+
 ## 5.4.0 - [#25](https://github.com/openfisca/openfisca-tunisia-pension/pull/25)
 
 * Évolution du système socio-fiscal.

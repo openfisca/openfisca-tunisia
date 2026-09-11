@@ -24,10 +24,10 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | Texte | Occurrences paramètres | Statut |
 | --- | ---: | --- |
 | `1959-18` - Loi n° 59-18 du 5 février 1959, pensions civiles et militaires | 9 | JORT 1959/8, texte pivot |
-| `1974-499` - Texte cité par les paramètres | 8 | JORT 1974/39 |
-| `1981-6` - Loi n° 81-6 du 12 février 1981, sécurité sociale secteur agricole | 5 | JORT 1981/26, texte pivot |
+| `1974-499` - Texte cité par les paramètres | 8 | JORT 1974/30 |
+| `1981-6` - Loi n° 81-6 du 12 février 1981, sécurité sociale secteur agricole | 5 | JORT 1981/9, texte pivot |
 | `1981-70` - Texte cité par les paramètres | 6 | JORT 1981/51 |
-| `1982-1030` - Texte cité par les paramètres | 6 | JORT 1982/66 |
+| `1982-1030` - Texte cité par les paramètres | 6 | JORT 1982/51 |
 | `1985-1178` - Texte cité par les paramètres | 2 | JORT 1985/68 |
 | `1985-12` - Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public | 23 | JORT 1985/20, texte pivot |
 | `1986-611` - Texte cité par les paramètres | 4 | JORT 1986/34 |
@@ -37,7 +37,7 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | `1993-308` - Texte cité par les paramètres | 4 | JORT 1993/13 |
 | `1996-1906` - Texte cité par les paramètres | 4 | JORT 1996/85 |
 | `2007-43` - Loi n° 2007-43 du 25 juin 2007, pensions public/privé/régimes spéciaux | 2 | texte local, JORT 2007/51, texte pivot |
-| `2009-20` - Texte cité par les paramètres | 1 | JORT 2009/100 |
+| `2009-20` - Texte cité par les paramètres | 1 | JORT 2009/30 |
 | `2019-37` - Loi n° 2019-37 du 30 avril 2019, relèvement âge retraite | 4 | JORT 2019/35, texte pivot |
 
 ## Textes JORT locaux

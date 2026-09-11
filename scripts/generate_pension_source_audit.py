@@ -6,6 +6,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 import sqlite3
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -24,6 +25,17 @@ EXTERNAL_JORT_CACHE = ROOT.parent / "PDFs-legislation-tunisie" / "jort_cache.db"
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 LAW_RE = re.compile(r"(?:loi\s*)?(?:n[°º]\s*)?(\d{2,4})[-‑](\d+)", re.IGNORECASE)
 PARAMETER_ACCESS_RE = re.compile(r"parameters\(period\)\.retraite\.([A-Za-z0-9_\.]+)")
+# Un numéro de texte précédé de son type : « Décret n° 74-499 », « de la loi n° 85-12 ».
+CITED_TEXT_RE = re.compile(
+    r"\b(?P<type>loi(?:\s+organique|\s+constitutionnelle|\s+d['’]orientation)?"
+    r"|d[ée]cret(?:[-‑]loi|\s+gouvernemental|\s+pr[ée]sidentiel)?"
+    r"|arr[êe]t[ée]|circulaire|d[ée]cision)"
+    r"\s+n[°º]\s*(?P<year>\d{2,4})[-‑](?P<number>\d+)",
+    re.IGNORECASE,
+)
+# Chemin d'un fascicule du JORT sur pist.tn, sous la forme de `textes.pdf_fr`.
+JORT_PDF_RE = re.compile(r"(/jort/\d{4}/\d{4}F/[^/?#]+\.pdf)$", re.IGNORECASE)
+RECTIFICATIF_RE = re.compile(r"\brectificatif\b", re.IGNORECASE)
 
 KNOWN_TEXTS = {
     "1959-18": "Loi n° 59-18 du 5 février 1959, pensions civiles et militaires",
@@ -133,6 +145,7 @@ def describe_parameters() -> tuple[list[dict[str, Any]], Counter[str], Counter[s
         data = load_yaml(path)
         metadata = data.get("metadata") if isinstance(data.get("metadata"), dict) else {}
         references = flatten_reference(metadata.get("reference"))
+        citation_hints = collect_citation_hints(metadata.get("reference"))
         laws = sorted(extract_laws(references))
         for law in laws:
             law_counts[law] += 1
@@ -151,6 +164,7 @@ def describe_parameters() -> tuple[list[dict[str, Any]], Counter[str], Counter[s
                 "has_reference": bool(references),
                 "references": references,
                 "laws": laws,
+                "citation_hints": citation_hints,
                 "dates": sorted(collect_dates(data)),
                 "unit": metadata.get("unit") or metadata.get("rate_unit") or data.get("unit"),
             }
@@ -190,6 +204,10 @@ def describe_local_jorts() -> list[dict[str, Any]]:
 
 
 def query_external_jort_cache(laws: set[str]) -> dict[str, list[dict[str, Any]]]:
+    """Tous les enregistrements du cache qui portent le numéro, sans sélection.
+
+    Le choix du bon enregistrement revient à `rank_jort_matches`.
+    """
     matches: dict[str, list[dict[str, Any]]] = defaultdict(list)
     if not EXTERNAL_JORT_CACHE.exists():
         return matches
@@ -204,11 +222,7 @@ def query_external_jort_cache(laws: set[str]) -> dict[str, list[dict[str, Any]]]
     connection = sqlite3.connect(f"file:{EXTERNAL_JORT_CACHE}?mode=ro", uri=True)
     try:
         for law in sorted(laws):
-            rows = connection.execute(query, jort_numbers(law)).fetchall()
-            expected_type = KNOWN_TEXT_TYPES.get(law)
-            if expected_type:
-                rows = [row for row in rows if row[0] == expected_type] or rows
-            for row in rows:
+            for row in connection.execute(query, jort_numbers(law)).fetchall():
                 matches[law].append(
                     {
                         "type": row[0],
@@ -228,15 +242,126 @@ def query_external_jort_cache(laws: set[str]) -> dict[str, list[dict[str, Any]]]
     return matches
 
 
-def best_jort_match(law: str, matches: list[dict[str, Any]]) -> dict[str, Any] | None:
-    if not matches:
-        return None
-    expected_type = KNOWN_TEXT_TYPES.get(law)
-    if expected_type:
-        for match in matches:
-            if match["type"] == expected_type:
-                return match
-    return matches[0]
+def normalize_text_type(text_type: str | None) -> str:
+    """« Décret-Loi » → « decret-loi » : sans accents, en minuscules."""
+    decomposed = unicodedata.normalize("NFKD", text_type or "")
+    stripped = "".join(char for char in decomposed if not unicodedata.combining(char))
+    return " ".join(stripped.replace("‑", "-").lower().split())
+
+
+def text_type_matches(expected_type: str, record_type: str | None) -> bool:
+    """Le type d'un enregistrement concorde avec le type cité.
+
+    Un « décret » cité admet un « décret gouvernemental », mais pas un « décret-loi » ;
+    une « loi » admet une « loi organique », mais pas une « circulaire ».
+    """
+    expected = normalize_text_type(expected_type)
+    actual = normalize_text_type(record_type)
+    return actual == expected or actual.startswith(expected + " ")
+
+
+def is_rectificatif(match: dict[str, Any]) -> bool:
+    """Le cache enregistre un rectificatif sous le type et le numéro du texte qu'il
+    corrige, et ne le distingue que par la mention « (rectificatif) » du titre."""
+    return bool(
+        RECTIFICATIF_RE.search(match.get("type") or "")
+        or RECTIFICATIF_RE.search(match.get("titre") or "")
+    )
+
+
+def jort_pdf_path(href: str | None) -> str | None:
+    match = JORT_PDF_RE.search(href or "")
+    return match.group(1).lower() if match else None
+
+
+def iter_reference_entries(reference: Any):
+    """(texte, lien) de chaque référence : titre et href d'une référence structurée,
+    ou chaîne libre sans lien."""
+    if isinstance(reference, str):
+        yield reference, None
+    elif isinstance(reference, dict):
+        if any(champ in reference for champ in CHAMPS_PORTEURS_DE_TEXTE):
+            yield str(reference.get("title") or ""), reference.get("href")
+        else:
+            for value in reference.values():
+                yield from iter_reference_entries(value)
+    elif isinstance(reference, list):
+        for value in reference:
+            yield from iter_reference_entries(value)
+
+
+def collect_citation_hints(reference: Any) -> dict[str, dict[str, set[str]]]:
+    """Ce que les références disent de chaque texte cité : son type et son fascicule.
+
+    Le lien d'une référence structurée pointe vers le fascicule du premier texte nommé
+    par le titre ; les textes cités ensuite — « modifiant le décret n° 74-499 » — n'en
+    reçoivent que leur type.
+    """
+    hints: dict[str, dict[str, set[str]]] = defaultdict(lambda: {"types": set(), "pdfs": set()})
+    for text, href in iter_reference_entries(reference):
+        citations = list(CITED_TEXT_RE.finditer(text))
+        for citation in citations:
+            law = normalize_law_id(citation["year"], citation["number"])
+            hints[law]["types"].add(normalize_text_type(citation["type"]))
+        pdf = jort_pdf_path(href)
+        if citations and pdf:
+            first = citations[0]
+            hints[normalize_law_id(first["year"], first["number"])]["pdfs"].add(pdf)
+    return dict(hints)
+
+
+def merge_citation_hints(hint_maps: list[dict[str, dict[str, set[str]]]]) -> dict[str, dict[str, set[str]]]:
+    merged: dict[str, dict[str, set[str]]] = defaultdict(lambda: {"types": set(), "pdfs": set()})
+    for hint_map in hint_maps:
+        for law, hints in hint_map.items():
+            merged[law]["types"] |= hints["types"]
+            merged[law]["pdfs"] |= hints["pdfs"]
+    return dict(merged)
+
+
+def rank_jort_matches(
+    law: str,
+    matches: list[dict[str, Any]],
+    hints: dict[str, set[str]] | None = None,
+) -> list[dict[str, Any]]:
+    """Les enregistrements du cache qui peuvent être le texte cité, le meilleur en tête.
+
+    - Le type doit concorder avec le type cité (ou, à défaut, avec `KNOWN_TEXT_TYPES`) :
+      la circulaire n° 2009-20 n'est pas la loi n° 2009-20.
+    - Un rectificatif passe toujours après le texte principal, qui porte le même type,
+      le même numéro et la même date de signature.
+    - Viennent ensuite la concordance du fascicule avec le lien de la référence, puis
+      celle de l'année de signature avec l'année du numéro.
+    Le tri est stable : à égalité, l'ordre du cache (date de signature, recid) demeure.
+    """
+    hints = hints or {}
+    expected_types = set(hints.get("types", ()))
+    if law in KNOWN_TEXT_TYPES:
+        expected_types.add(normalize_text_type(KNOWN_TEXT_TYPES[law]))
+    if expected_types:
+        matches = [
+            match
+            for match in matches
+            if any(text_type_matches(expected, match.get("type")) for expected in expected_types)
+        ]
+    cited_pdfs = {pdf.lower() for pdf in hints.get("pdfs", ())}
+    year = law.split("-", 1)[0]
+
+    def sort_key(match: dict[str, Any]) -> tuple[bool, bool, bool]:
+        pdf_mismatch = bool(cited_pdfs) and (match.get("pdf_fr") or "").lower() not in cited_pdfs
+        year_mismatch = not (match.get("date_signature") or "").startswith(year)
+        return is_rectificatif(match), pdf_mismatch, year_mismatch
+
+    return sorted(matches, key=sort_key)
+
+
+def best_jort_match(
+    law: str,
+    matches: list[dict[str, Any]],
+    hints: dict[str, set[str]] | None = None,
+) -> dict[str, Any] | None:
+    ranked = rank_jort_matches(law, matches, hints)
+    return ranked[0] if ranked else None
 
 
 def make_markdown(
@@ -283,7 +408,9 @@ def make_markdown(
             status_parts = []
             if any(law in row["primary_laws"] for row in local_jorts):
                 status_parts.append("texte local")
-            first_match = best_jort_match(law, jort_matches.get(law, []))
+            # Les correspondances arrivent déjà classées par `rank_jort_matches`.
+            ranked_matches = jort_matches.get(law, [])
+            first_match = ranked_matches[0] if ranked_matches else None
             if first_match:
                 status_parts.append(f"JORT {first_match['jort_annee']}/{first_match['jort_numero']}")
             if law in KNOWN_TEXTS:
@@ -395,7 +522,11 @@ def main() -> None:
     variable_accesses = describe_variables()
     local_jorts = describe_local_jorts()
     all_laws = set(law_counts) | {law for row in local_jorts for law in row["primary_laws"]}
-    jort_matches = query_external_jort_cache(all_laws)
+    citation_hints = merge_citation_hints([row["citation_hints"] for row in parameter_rows])
+    jort_matches = {
+        law: rank_jort_matches(law, rows, citation_hints.get(law))
+        for law, rows in query_external_jort_cache(all_laws).items()
+    }
 
     REPORT_PATH.write_text(
         make_markdown(
