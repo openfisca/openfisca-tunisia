@@ -2,11 +2,20 @@ description: Plafonnement du taux de pension
 values:
   1974-01-01:
     value: 0.8
+  1982-07-20:
+    value: 0.8
 metadata:
   unit: /1
-  documentation: |-
-    Valeur reprise d'openfisca-tunisia lors du partage de propriété des paramètres,
-    où elle existait sans être lue par aucune formule. Elle n'est pas sourcée : la date
-    de 1974 est celle que porte tout le bloc RSNA, sans qu'un texte l'établisse, et le
-    plafond de 80 % ne fait aujourd'hui que redire la tranche terminale à taux zéro du
-    barème d'annuités. À établir sur le décret n° 74-499 et sa chaîne modificative.
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 17"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30 des 30 avril, 3 et 4 mai 1974, p. 917 : « sans que le montant total de la pension puisse excéder un maximum de 80 % dudit salaire ». L'article 64 fait prendre effet au décret à compter du 1er janvier 1974."
+    1982-07-20:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 4 (article 17, alinéa 2 nouveau)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, pp. 1605-1607. La majoration devient trimestrielle (0,5 % par trimestre) et le plafond de 80 % est reconduit : valeur inchangée. Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution) : la date retenue est celle de la publication."
+documentation: |-
+  Plafond énoncé en toutes lettres par le texte. Le barème d'annuités
+  (`retraite.rsna.bareme_annuite`) le rencontre par construction à 120 trimestres
+  (40 % + 2 % par année au-delà de dix ans). Aucune formule ne lit ce paramètre à ce jour.

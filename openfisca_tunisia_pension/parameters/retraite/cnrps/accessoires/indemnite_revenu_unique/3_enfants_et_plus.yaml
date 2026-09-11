@@ -1,6 +1,20 @@
 description: Montant mensuel de l'Indemnité de Revenu Unique (IRU) selon le nombre d'enfants
 values:
-  1981-05-01: 7.825
+  1981-05-01:
+    value: 7.825
 metadata:
+  unit: currency
   reference:
-    1981-05-01: Loi n ° 81-70 du 01/08/1981 étendant le bénéfice de l’indemnité de revenu unique au profit des retraités du secteur public
+    1981-05-01:
+    - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 22, § V nouveau de la loi n° 59-18)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
+      note: "JORT n° 51 du 7 août 1981, p. 1789 : « À la pension de retraite et à la pension de veuve s'ajoutent, le cas échéant, l'indemnité familiale et une majoration pour revenu unique attribuées dans les mêmes conditions et selon les mêmes taux et les mêmes modalités que les indemnités familiales et la majoration pour salaire unique servies aux agents en activité. » La loi ouvre le droit aux retraités ; elle ne fixe aucun montant. L'article 5 énonce : « L'article 4 de la présente loi prend effet à compter du 1er mai 1981 » (p. 1790)."
+    - title: "Caisse nationale de retraite et de prévoyance sociale, Manuel de liquidation des pensions & accessoires, 19 décembre 2013, p. 94"
+      href: "https://github.com/openfisca/openfisca-tunisia-pension/blob/master/tmp/manuel%20pensions.pdf"
+      note: "Document administratif interne de la caisse, non normatif, antérieur à la réforme de 2019. Source de la table des montants mensuels (3,125 / 6,250 / 7,825 dinars pour un, deux, trois enfants et plus). Le manuel ne cite pas le texte qui fixe ces montants ; aucun texte du Journal officiel qui les fixe n'a été trouvé."
+documentation: |-
+  Montants non établis par un texte normatif : ils proviennent du manuel de liquidation de la
+  CNRPS, qui ne cite pas leur texte. La date du 1er mai 1981 est celle de l'ouverture du droit
+  aux retraités par la loi n° 81-70. La loi n° 85-12 du 5 mars 1985, article 40, reconduit
+  l'indemnité pour revenu unique comme accessoire de la pension, attribuée dans les mêmes
+  conditions qu'aux agents en activité.

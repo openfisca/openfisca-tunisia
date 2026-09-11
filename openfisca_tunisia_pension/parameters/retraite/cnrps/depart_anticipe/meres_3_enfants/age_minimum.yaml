@@ -4,8 +4,15 @@ values:
     value: 50
 metadata:
   unit: year
-  reference:
-    1985-03-05:
-    - title: "Loi n° 85-12 du 5 mars 1985, article 5"
-      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
-      note: "JORT n° 20/1985, p. 359-365, modifié par la loi n° 88-71 du 27 juin 1988"
+documentation: |-
+  Aucun texte lu ne fixe cet âge pour les mères de trois enfants. L'article 5, 2° e) de la
+  loi n° 85-12 du 5 mars 1985 ouvre le départ sans fixer d'âge. Son article 41, dans la
+  rédaction de 1985, diffère jusqu'à 50 ans la jouissance de la pension des agents mis à la
+  retraite sur leur demande, sans nommer les mères ; qu'elles en relèvent n'est écrit nulle
+  part.
+
+  Depuis le 1er janvier 1989, l'article 41 nouveau issu de la loi n° 88-71 du 27 juin 1988
+  (JORT n° 45 du 1er juillet 1988, pp. 967-968) range « la mise à la retraite sur la demande
+  des mères » parmi les cas de jouissance immédiate. La valeur de 50 ans est donc contredite
+  par le texte à partir de cette date ; elle est conservée pour la continuité des calculs,
+  dans l'attente d'une correction de la formule qui la lit.

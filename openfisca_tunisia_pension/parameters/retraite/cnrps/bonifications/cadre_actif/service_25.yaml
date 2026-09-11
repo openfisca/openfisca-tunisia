@@ -2,9 +2,21 @@ description: Bonification pour cadres actifs pour 25 ans de service
 values:
   1985-03-05:
     value: 4
+  1985-09-12:
+    value: 4
 metadata:
   unit: year
   reference:
-    1985-03-05:
-    - title: "Loi n°85-12 du 5 mars 1985 (art 32) et décret n°85-1177 du 24-09-1985"
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 32"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361. L'article 32 fixe la bonification des ouvriers accomplissant des travaux pénibles et insalubres à 5 ans pour 35 ans de services, 4 ans pour 25 ans, 3 ans pour 20 ans et 2 ans pour 15 ans ; celle des cadres actifs à la période restant à courir jusqu'à 60 ans, dans la limite du même barème. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+
+  La loi n° 2019-37 du 30 avril 2019 (JORT n° 35 du 30 avril 2019, pp. 1312-1315), article 2,
+  substitue « l'âge de soixante-deux ans » à « l'âge de soixante ans » aux paragraphes 2 et 3
+  de l'article 32 : la période bonifiable des agents exerçant des fonctions astreignantes et
+  des cadres actifs court désormais jusqu'à 62 ans. Le barème 5 / 4 / 3 / 2 n'est pas modifié.
+
+  La formule `cnrps_bonifications` n'utilise pas ce paramètre : le barème y est écrit en dur.

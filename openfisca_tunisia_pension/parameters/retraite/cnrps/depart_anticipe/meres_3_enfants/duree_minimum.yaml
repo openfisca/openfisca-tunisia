@@ -2,10 +2,14 @@ description: Durée minimum de services effectifs pour la retraite anticipée de
 values:
   1985-03-05:
     value: 15
+  1985-09-12:
+    value: 15
 metadata:
   unit: year
   reference:
-    1985-03-05:
-    - title: "Loi n° 85-12 du 5 mars 1985, article 5"
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 22"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
-      note: "JORT n° 20/1985, p. 359-365"
+      note: "JORT n° 20 du 12 mars 1985, p. 360 : la pension de retraite est acquise après quinze (15) ans de services au moins. L'article 5, 2° e), qui ouvre le départ des mères, ne fixe pas de durée propre : les quinze ans sont la condition générale de l'article 22. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.

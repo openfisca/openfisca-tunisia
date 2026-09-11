@@ -4,3 +4,8 @@ values:
     value: 60
 metadata:
   unit: year
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 15 a)"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30 des 30 avril, 3 et 4 mai 1974, p. 916 : « avoir atteint l'âge de soixante ans au moins ». L'article 64 fait prendre effet au décret à compter du 1er janvier 1974. Rectificatif publié au JORT n° 39 du 7 juin 1974, p. 1252, non lu."

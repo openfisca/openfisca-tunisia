@@ -1,4 +1,11 @@
 description: Durée normale du stage requis
 values:
-  1981-02-24:
+  1981-01-01:
     value: 10.0
+metadata:
+  unit: year
+  reference:
+    1981-01-01:
+    - title: "Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole, article 48 b)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf"
+      note: "JORT n° 9 du 13 février 1981, p. 270 : 40 trimestres de cotisations effectives ou assimilées, soit 10 ans. L'article 88 énonce : « La présente loi entrera en vigueur le 1er janvier 1981. » Rectificatif publié au JORT n° 26 du 17 avril 1981, p. 844, non lu."

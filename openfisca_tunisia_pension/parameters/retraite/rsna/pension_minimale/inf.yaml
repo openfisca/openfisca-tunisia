@@ -1,7 +1,25 @@
 description: Inférieur à la durée du stage requis
-unit: /1
 values:
   1974-01-01:
     value: 0.5
+  1982-07-20:
+    value: 0.5
 metadata:
   unit: smig
+  reference:
+    1982-07-20:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 5 (article 45, alinéa premier nouveau)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606 : « En ce qui concerne les pensions de retraite anticipée et les pensions proportionnelles liquidées en application de l'article 15 bis a) et b) et de l'article 39, le montant à servir ne peut être inférieur à la moitié du SMIG rapporté à une durée d'occupation de 2 400 heures. » Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution) : la date retenue est celle de la publication."
+documentation: |-
+  Ce plancher est créé en 1982. Dans sa rédaction de 1974, l'article 45 du décret
+  n° 74-499 ne connaît que le plancher des deux tiers du SMIG, et exclut
+  l'allocation de vieillesse — alors versée en capital aux assurés qui n'ont pas
+  accompli le stage (articles 39 à 43) — de toute garantie de montant.
+
+  La valeur portée du 1er janvier 1974 au 19 juillet 1982 est antérieure au texte :
+  valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+
+  Le critère du texte est le type de pension (retraite anticipée, pension
+  proportionnelle), non la durée du stage ; la formule l'approche par la durée
+  d'assurance.

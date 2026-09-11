@@ -1,11 +1,20 @@
 description: Taux de la pension de réversion du conjoint survivant (part de la pension de l'agent)
 values:
-  1985-03-05:
+  1981-05-01:
+    value: 0.75
+  1985-09-12:
     value: 0.75
 metadata:
   unit: /1
   reference:
-    1985-03-05:
-    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public"
+    1981-05-01:
+    - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 31, § I nouveau de la loi n° 59-18)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
+      note: "JORT n° 51 du 7 août 1981, p. 1789 : la pension de veuve est portée à 75 % de la pension de l'agent, réduite pendant le service des pensions d'orphelins de 5 % au titre du troisième enfant et de 10 % au titre de chacun des suivants, sans descendre au-dessous de 50 %. L'article 5 énonce : « L'article 4 de la présente loi prend effet à compter du 1er mai 1981 » (p. 1790)."
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 43"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
-      note: "JORT n° 20/1985, p. 359-365 — article 43"
+      note: "JORT n° 20 du 12 mars 1985, p. 362 : 75 % de la pension de retraite dont l'agent avait bénéficié ou aurait pu bénéficier ; même réduction de 5 % puis 10 % par orphelin, plancher de 50 % (alinéa 2). Valeur inchangée. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Le texte antérieur au 1er mai 1981 n'a pas été lu. L'article 43 n'est modifié par aucun
+  texte de la chaîne modificative de la loi n° 85-12 lue jusqu'au 10 avril 2026.
