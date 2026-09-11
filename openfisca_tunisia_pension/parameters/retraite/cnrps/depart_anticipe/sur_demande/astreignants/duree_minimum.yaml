@@ -1,8 +1,30 @@
 description: Durée minimum de services effectifs pour la retraite anticipée sur demande pour travaux astreignants
 values:
-  1985-09-24:
+  1985-03-05:
+    value: 35
+  1985-09-12:
     value: 35
 metadata:
   unit: year
   reference:
-    1985-09-24: Décret n°85-1178 du 24 septembre 1985
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 28"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361 : « Les agents exerçant des fonctions astreignantes sont mis à la retraite après avoir accompli trente cinq (35) ans de services et atteint l'âge de cinquante cinq (55) ans au moins. » Ils peuvent être maintenus en activité jusqu'à 60 ans ; la liste est fixée par décret. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+
+  L'article 28 ne crée pas un départ anticipé sur demande : il fixe l'âge et la durée de
+  services au terme desquels les agents exerçant des fonctions astreignantes sont mis à la
+  retraite. La formule `cnrps_duree_requise_annees` lit ce paramètre comme durée requise de
+  l'agent qui part sur demande et exerce une fonction astreignante ; l'âge est porté par
+  `age_minimum`.
+
+  La loi n° 2019-37 du 30 avril 2019 (JORT n° 35, p. 1312) remplace l'article 28 sans
+  changer la durée : les agents « sont mis à la retraite après avoir accompli trente-cinq
+  (35) ans de services et atteint au moins l'âge de cinquante-sept (57) ans ». Le
+  relèvement transitoire de son article 5 ne porte que sur l'âge.
+
+  La liste des fonctions astreignantes est fixée par le décret n° 85-1178 du 24 septembre
+  1985 (JORT n° 68 du 1er octobre 1985, p. 1256), qui prend effet le 1er juillet 1986
+  (article 2). Le décret ne fixe ni l'âge ni la durée.

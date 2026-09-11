@@ -1,8 +1,40 @@
 description: Âge minimum pour la retraite anticipée sur demande pour travaux astreignants
 values:
-  1985-09-24:
+  1985-03-05:
     value: 55
+  1985-09-12:
+    value: 55
+  2019-07-01:
+    value: 56
+  2020-01-01:
+    value: 57
 metadata:
   unit: year
   reference:
-    1985-09-24: Décret n°85-1178 du 24 septembre 1985
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 28"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361 : « Les agents exerçant des fonctions astreignantes sont mis à la retraite après avoir accompli trente cinq (35) ans de services et atteint l'âge de cinquante cinq (55) ans au moins. » Ils peuvent être maintenus en activité jusqu'à 60 ans ; la liste est fixée par décret. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+    2019-07-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 5"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, p. 1314 : « A titre transitoire et contrairement aux dispositions des articles 24 (nouveau), 27 (nouveau), 28 (nouveau), 29 (nouveau) et 61 (nouveau) de la présente loi, l'âge de la retraite appliqué à la date de l'entrée en vigueur de la présente loi est repoussé comme suit : - d'une année à partir du premier juillet 2019 pour les agents qui atteignent l'âge de la retraite à partir de cette date et jusqu'au 31 décembre 2019, - de deux ans à partir du premier janvier 2020 pour les agents qui atteignent l'âge de la retraite à partir de cette date. » Dates d'effet énoncées par le texte."
+    2020-01-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier (article 28 nouveau) et article 5"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, pp. 1312 et 1314. Article 28 nouveau (p. 1312) : « Les agents exerçant des fonctions astreignantes, sont mis à la retraite après avoir accompli trente-cinq (35) ans de services et atteint au moins l'âge de cinquante-sept (57) ans. » L'article 5 (p. 1314) applique le relèvement de deux ans « à partir du premier janvier 2020 », date d'effet énoncée par le texte."
+documentation: |-
+  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+
+  L'article 28 ne crée pas un départ anticipé sur demande : il fixe l'âge et la durée de
+  services au terme desquels les agents exerçant des fonctions astreignantes sont mis à la
+  retraite. La formule `cnrps_age_requis` lit ce paramètre comme âge requis de l'agent qui
+  part sur demande et exerce une fonction astreignante ; la durée est portée par
+  `duree_minimum`. Le même âge est porté, en données, par
+  `age_legal.civil.fonctions_astreignantes`, qu'aucune formule ne lit.
+
+  La liste des fonctions astreignantes est fixée par le décret n° 85-1178 du 24 septembre
+  1985 (JORT n° 68 du 1er octobre 1985, p. 1256), qui prend effet le 1er juillet 1986
+  (article 2). Le décret ne fixe ni l'âge ni la durée. La variable `fonction_astreignante`
+  est une donnée d'entrée : la formule ne tient pas compte de ce que la liste ne s'applique
+  qu'à partir du 1er juillet 1986.
