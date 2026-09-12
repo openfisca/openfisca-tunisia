@@ -1,7 +1,5 @@
 description: Durée de service minimale requise pour prétendre à une pension de retraite
 values:
-  1974-01-01:
-    value: 15
   1985-09-12:
     value: 15
 metadata:
@@ -14,8 +12,10 @@ metadata:
 documentation: |-
   Le minimum est ramené à dix ans pour les ouvriers occasionnels (exception non modélisée).
 
-  La valeur portée du 1er janvier 1974 au 11 septembre 1985 est antérieure au texte :
-  valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
 
   La dispense de cette condition pour les agents recrutés avant l'entrée en vigueur de la
   loi (article 72) est abrogée par l'article 5 de la loi n° 87-8 du 6 mars 1987 (JORT

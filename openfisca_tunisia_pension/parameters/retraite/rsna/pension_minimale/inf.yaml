@@ -1,7 +1,5 @@
 description: Inférieur à la durée du stage requis
 values:
-  1974-01-01:
-    value: 0.5
   1982-07-22:
     value: 0.5
 metadata:
@@ -17,8 +15,8 @@ documentation: |-
   l'allocation de vieillesse — alors versée en capital aux assurés qui n'ont pas
   accompli le stage (articles 39 à 43) — de toute garantie de montant.
 
-  La valeur portée du 1er janvier 1974 au 21 juillet 1982 est antérieure au texte :
-  valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Aucune valeur n'est portée avant le 22 juillet 1982 : le paramètre n'a pas d'objet
+  avant le texte qui le crée.
 
   Le critère du texte est le type de pension (retraite anticipée, pension
   proportionnelle), non la durée du stage ; la formule l'approche par la durée

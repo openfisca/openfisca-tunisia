@@ -1,7 +1,5 @@
 description: Part de la pension de l'agent revenant au conjoint lorsqu'il y a au moins 5 orphelins (les 50% restants sont partagés entre les orphelins)
 values:
-  1985-03-05:
-    value: 0.5
   1985-09-12:
     value: 0.5
 metadata:
@@ -12,4 +10,7 @@ metadata:
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
       note: "JORT n° 20 du 12 mars 1985, p. 363 : lorsque les orphelins sont au nombre de cinq ou plus, le conjoint bénéficie de 50 % ; les 50 % restants sont répartis à parts égales entre les orphelins. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
 documentation: |-
-  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.

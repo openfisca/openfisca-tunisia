@@ -1,7 +1,5 @@
 description: Allocation de vieillesse (en parts du Smig)
 values:
-  1959-02-01:
-    value: 0.5
   1985-09-12:
     value: 0.5
 metadata:
@@ -16,8 +14,10 @@ documentation: |-
   bénéficier d'une pension de retraite mais justifient d'au moins cinq années
   d'ancienneté ; l'autre branche de l'option est le remboursement des contributions.
 
-  La valeur portée du 1er février 1959 au 11 septembre 1985 est antérieure au texte :
-  valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
 
   La loi n° 97-74 du 18 novembre 1997 (JORT n° 93 du 21 novembre 1997, p. 2080) ajoute un
   alinéa 3 à l'article 42 : l'allocation devient réversible au conjoint survivant et aux

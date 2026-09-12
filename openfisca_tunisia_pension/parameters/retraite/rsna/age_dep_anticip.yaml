@@ -1,7 +1,5 @@
 description: Age minimum de départ à la retraite anticipée
 values:
-  1974-01-01:
-    value: 50
   1982-07-22:
     value: 50
 metadata:
@@ -18,8 +16,8 @@ documentation: |-
   dernier alinéa, abaisse l'âge à 55 ans pour les travaux pénibles ou insalubres,
   par arrêté.
 
-  La valeur portée du 1er janvier 1974 au 21 juillet 1982 est antérieure au texte :
-  valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Aucune valeur n'est portée avant le 22 juillet 1982 : le paramètre n'a pas d'objet
+  avant le texte qui le crée.
 
   Le décret n° 2007-2148 abroge le cas de la convenance personnelle de l'article
   15 bis et crée un article 15 ter, où la jouissance est différée jusqu'à 55 ans

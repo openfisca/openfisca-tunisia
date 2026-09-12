@@ -1,43 +1,31 @@
 description: Taux d'annuité par trimestre validé du régime des salariés non agricoles (RSNA) de la CNSS
 brackets:
 - threshold:
-    1960-01-01:
-      value: 0
     1974-01-01:
       value: 0
     1982-07-22:
       value: 0
   rate:
-    1960-01-01:
-      value: 0.01
     1974-01-01:
       value: 0.01
     1982-07-22:
       value: 0.01
 - threshold:
-    1960-01-01:
-      value: 40
     1974-01-01:
       value: 40
     1982-07-22:
       value: 40
   rate:
-    1960-01-01:
-      value: 0.005
     1974-01-01:
       value: 0.005
     1982-07-22:
       value: 0.005
 - threshold:
-    1960-01-01:
-      value: 120
     1974-01-01:
       value: 120
     1982-07-22:
       value: 120
   rate:
-    1960-01-01:
-      value: 0
     1974-01-01:
       value: 0
     1982-07-22:
@@ -60,6 +48,5 @@ documentation: |-
   le 1er janvier 1974. La loi n° 60-33 n'a pas été lue, non plus que le décret
   n° 71-432 que le décret de 1974 abroge.
 
-  Les valeurs portées du 1er janvier 1960 au 31 décembre 1973 sont antérieures au
-  texte : valeur antérieure au texte non établie, conservée pour la continuité des
-  calculs.
+  Aucune valeur n'est portée avant le 1er janvier 1974 : le barème antérieur n'est pas
+  établi.

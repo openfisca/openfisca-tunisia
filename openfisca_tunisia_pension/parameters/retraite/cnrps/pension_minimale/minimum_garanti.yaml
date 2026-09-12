@@ -1,7 +1,5 @@
 description: Pension minimale garanti de la CNRPS
 values:
-  1974-01-01:
-    value: 0.66666
   1981-05-01:
     value: 0.66666
   1985-09-12:
@@ -20,8 +18,9 @@ metadata:
 documentation: |-
   Pension minimale servie aux agents qui justifient de la durée de services requise.
 
-  La valeur portée du 1er janvier 1974 au 30 avril 1981 est antérieure au texte :
-  valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 1er mai 1981, date d'effet de l'article 4 de la loi n° 81-70.
+  Le texte antérieur, la loi n° 59-18 du 5 février 1959, n'a pas été lu pour cette
+  période : aucune valeur n'est portée avant le 1er mai 1981.
 
   Aucun texte de la chaîne modificative de la loi n° 85-12 lue jusqu'au 10 avril 2026 ne
   modifie l'article 39.

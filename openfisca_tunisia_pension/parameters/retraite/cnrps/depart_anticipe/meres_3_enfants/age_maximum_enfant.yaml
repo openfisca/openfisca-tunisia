@@ -1,7 +1,5 @@
 description: Âge maximum des enfants pour le droit à la retraite anticipée des mères de 3 enfants
 values:
-  1985-03-05:
-    value: 15
   1985-09-12:
     value: 15
   1989-01-01:
@@ -18,7 +16,10 @@ metadata:
       href: "https://www.pist.tn/jort/1988/1988F/Jo04588.pdf"
       note: "JORT n° 45 du 1er juillet 1988, pp. 967-968 : « sur la demande des mères ayant au moins trois enfants dont l'âge n'a pas dépassé 20 ans ou un enfant handicapé d'un handicap profond et après accord du Premier ministre ». Entrée en vigueur : l'article 4 la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 1er juillet 1988, soit le 1er janvier 1989 — date déduite de la clause et de la date de publication, non énoncée telle quelle."
 documentation: |-
-  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
 
   Depuis le 1er janvier 1989, le droit est aussi ouvert à la mère d'un enfant atteint
   d'un handicap profond, et subordonné à l'accord du Premier ministre ; ni l'une ni

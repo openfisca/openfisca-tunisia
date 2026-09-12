@@ -1,7 +1,5 @@
 description: Durée minimum de services effectifs pour la retraite anticipée sur demande (Cadre commun)
 values:
-  1985-03-05:
-    value: 35
   1985-09-12:
     value: 35
   2007-07-01:
@@ -18,4 +16,7 @@ metadata:
       href: "https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf"
       note: "JORT n° 51 du 26 juin 2007, pp. 2198-2199 : l'article 30 nouveau porte les conditions à 37 ans de services et 57 ans. La loi ne comporte pas de clause d'entrée en vigueur. Date retenue : 1er juillet 2007, date à laquelle elle devient exécutoire selon l'article 2 de la loi n° 93-64 du 5 juillet 1993 (JORT n° 50, p. 931) — « cinq jours après le dépôt du journal officiel […] au siège du gouvernorat de Tunis », le jour du dépôt n'étant pas compté —, le dépôt étant pris à la date de publication, le 26 juin 2007."
 documentation: |-
-  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.

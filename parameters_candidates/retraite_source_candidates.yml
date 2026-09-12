@@ -1,6 +1,6 @@
 metadata:
   generated_by: scripts/generate_pension_source_audit.py
-  generated_at: '2026-09-11'
+  generated_at: '2026-09-12'
   needs_review: true
   scope: openfisca_tunisia_pension.parameters.retraite
 coverage:
@@ -703,7 +703,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.bonifications.cadre_actif.service_15
   description: Bonification pour cadres actifs pour 15 ans de service
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -715,7 +714,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.bonifications.cadre_actif.service_20
   description: Bonification pour cadres actifs pour 20 ans de service
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -727,7 +725,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.bonifications.cadre_actif.service_25
   description: Bonification pour cadres actifs pour 25 ans de service
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -739,7 +736,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.bonifications.cadre_actif.service_35
   description: Bonification maximum pour cadres actifs et travaux pénibles pour 35 ans de service
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -800,7 +796,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
   description: Âge maximum des enfants pour le droit à la retraite anticipée des mères de 3 enfants
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   - '1989-01-01'
   laws:
@@ -825,7 +820,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
   description: Durée minimum de services effectifs pour la retraite anticipée des mères de 3 enfants
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -856,7 +850,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
   description: Âge minimum pour la retraite anticipée sur demande (Cadre commun)
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   - '2007-07-01'
   laws:
@@ -874,7 +867,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum
   description: Durée minimum de services effectifs pour la retraite anticipée sur demande (Cadre commun)
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   - '2007-07-01'
   laws:
@@ -892,7 +884,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.duree_de_service_minimale
   description: Durée de service minimale requise pour prétendre à une pension de retraite
   dates:
-  - '1974-01-01'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -904,7 +895,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.pension_minimale.allocation_vieillesse
   description: Allocation de vieillesse (en parts du Smig)
   dates:
-  - '1959-02-01'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -916,7 +906,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse
   description: Durée de service minimale requise pour prétendre à une allocation de vieillesse
   dates:
-  - '1974-01-01'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -928,7 +917,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.pension_minimale.minimum_garanti
   description: Pension minimale garanti de la CNRPS
   dates:
-  - '1974-01-01'
   - '1981-05-01'
   - '1985-09-12'
   laws:
@@ -964,7 +952,6 @@ parameter_candidates:
   description: Plafond du cumul des pensions de survivants (conjoint + orphelins), en part de la pension
     de l'agent
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -993,7 +980,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.survivants.taux_orphelin
   description: Taux de la pension temporaire d'orphelin, par orphelin (part de la pension de l'agent)
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -1006,7 +992,6 @@ parameter_candidates:
   description: Part de la pension de l'agent revenant au conjoint lorsqu'il y a au moins 5 orphelins (les
     50% restants sont partagés entre les orphelins)
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
@@ -1087,7 +1072,6 @@ parameter_candidates:
 - parameter: retraite.rsna.age_dep_anticip
   description: Age minimum de départ à la retraite anticipée
   dates:
-  - '1974-01-01'
   - '1982-07-22'
   laws:
   - 1974-499
@@ -1112,7 +1096,6 @@ parameter_candidates:
 - parameter: retraite.rsna.bareme_annuite
   description: Taux d'annuité par trimestre validé du régime des salariés non agricoles (RSNA) de la CNSS
   dates:
-  - '1960-01-01'
   - '1974-01-01'
   - '1982-07-22'
   laws:
@@ -1130,7 +1113,6 @@ parameter_candidates:
 - parameter: retraite.rsna.pension_minimale.inf
   description: Inférieur à la durée du stage requis
   dates:
-  - '1974-01-01'
   - '1982-07-22'
   laws:
   - 1974-499
