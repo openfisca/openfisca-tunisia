@@ -1,0 +1,98 @@
+# Réduction conventionnelle de deux points de la cotisation employeur (issue #410).
+#
+# Article 41 (nouveau) § 2 de la loi n° 60-30, issu de la loi n° 97-4 : une réduction peut être
+# accordée aux employeurs qui assurent à leurs salariés une couverture maladie conventionnelle.
+# Article 2 de la même loi : applicable à compter du 1er octobre 1996. Article 16 du décret
+# n° 2007-1406 : abrogation au 1er juillet 2007.
+#
+# Sans l'indicatrice, rien ne change : la valeur par défaut est « sans réduction ».
+
+- name: Régime général, sans couverture conventionnelle, cotisation patronale de droit commun
+  period: 2003-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    cotisations_employeur: .16 * 1000
+    reduction_cotisation_conventionnelle_employeur: 0
+
+
+- name: Régime général, avec couverture conventionnelle, deux points en moins
+  period: 2003-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+    couverture_maladie_conventionnelle: true
+  output:
+    reduction_cotisation_conventionnelle_employeur: .02 * 1000
+    cotisations_employeur: .16 * 1000 - .02 * 1000
+
+
+# Borne haute : le dispositif vit jusqu'au 30 juin 2007 et disparaît le 1er juillet.
+
+- name: Dernier mois du dispositif, la réduction s'applique encore
+  period: 2007-06
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+    couverture_maladie_conventionnelle: true
+  output:
+    reduction_cotisation_conventionnelle_employeur: .02 * 1000
+    cotisations_employeur: .16 * 1000 - .02 * 1000
+
+
+- name: Premier mois après l'abrogation, la réduction ne s'applique plus
+  period: 2007-07
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+    couverture_maladie_conventionnelle: true
+  output:
+    reduction_cotisation_conventionnelle_employeur: 0
+    cotisations_employeur: .1657 * 1000
+
+
+# Borne basse : rien avant le 1er octobre 1996, puis la réduction s'applique. Sur ces mois-là,
+# la décomposition par branche du régime général n'est pas encore renseignée — les pensions ne
+# commencent qu'au 1er janvier 2003 — et le plancher empêche une cotisation patronale négative.
+
+- name: Le mois précédant l'entrée en vigueur, aucune réduction
+  period: 1996-09
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+    couverture_maladie_conventionnelle: true
+  output:
+    reduction_cotisation_conventionnelle_employeur: 0
+
+
+- name: Premier mois d'application, la réduction joue et la cotisation ne devient pas négative
+  period: 1996-10
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+    couverture_maladie_conventionnelle: true
+  output:
+    reduction_cotisation_conventionnelle_employeur: .02 * 1000
+    cotisations_employeur: 0
+
+
+# La réduction est propre au régime général : l'article 41 est celui de la loi n° 60-30, et le
+# décret n° 97-1645 vise « les employeurs assujettis à cette loi ».
+
+- name: Régime des salariés agricoles, la couverture conventionnelle ne change rien
+  period: 2003-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsa
+    salaire_de_base: 1000
+    couverture_maladie_conventionnelle: true
+  output:
+    reduction_cotisation_conventionnelle_employeur: 0
+    cotisations_employeur: 43.975

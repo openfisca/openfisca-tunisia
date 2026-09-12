@@ -1,0 +1,46 @@
+description: Réduction du taux de cotisation accordée aux employeurs assurant une couverture maladie conventionnelle
+values:
+  1996-10-01:
+    value: 0.02
+  2007-07-01:
+    value: 0
+metadata:
+  short_label: Réduction conventionnelle
+  unit: /1
+  reference:
+    1996-10-01:
+    - title: "Loi n° 97-4 du 3 février 1997 modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 41 (nouveau) § 2 et article 2"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo01097.pdf"
+      note: "JORT n° 10, p. 154. L'article 41 (nouveau) met 13 % à la charge des employeurs, puis : « Une réduction du taux de cotisation prévue à l'article présent peut être accordée aux employeurs qui assurent à leurs salariés ainsi qu'à leurs ayants droit, une couverture totale ou partielle des soins de santé dans le cadre d'un régime conventionnel. » L'article 2 en fixe la date : « Les dispositions du paragraphe 2 de l'article 41 susvisé relatives à la réduction de deux points de la contribution mise à la charge de l'employeur sont applicables à compter du 1er octobre 1996. » Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01097.pdf"
+    - title: "Décret n° 97-1645 du 25 août 1997 relatif à la détermination des conditions et modalités de bénéfice de la réduction du taux de cotisation à la sécurité sociale pour les entreprises assurant à leurs salariés une couverture de soins de santé dans le cadre d'un régime conventionnel"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo07197.pdf"
+      note: "JORT n° 71, pp. 1675-1676. Article premier : « Peuvent bénéficier d'une réduction de deux points du taux de cotisation au régime de sécurité sociale, prévu à l'article 41 de la loi susvisée n° 60-30 […], les employeurs assujettis à cette loi, assurant à leurs salariés ainsi qu'à leurs ayants droit […] une couverture en matière d'assurance maladie ordinaire et d'accouchement, dans le cadre d'un régime conventionnel. » Article 6 : « La réduction du taux de cotisation prend effet à partir du premier jour du trimestre suivant celui au cours duquel la décision du bénéfice de la réduction a été accordée. » Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja07197.pdf"
+    2007-07-01:
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, article 16"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "JORT n° 49, art. 16 p. 2162. « Le présent décret entre en vigueur à compter du premier juillet 2007, et sont abrogées dès lors toutes les dispositions qui lui sont contraires et notamment celles du décret n° 97-1645 du 25 août 1997 susvisé. » La réduction conventionnelle disparaît donc avec la mise en place de l'assurance maladie de base ; la valeur nulle traduit cette abrogation."
+documentation: |
+  RÉDUCTION DE DEUX POINTS, DU 1er OCTOBRE 1996 AU 30 JUIN 2007. L'article 41 (nouveau) de la
+  loi n° 60-30, issu de la loi n° 97-4, met 13 % à la charge de l'employeur du régime général et
+  ouvre, à son paragraphe 2, une réduction de deux points — soit 11 % — aux employeurs assurant
+  à leurs salariés une couverture maladie conventionnelle. Le décret n° 97-1645 en fixe les
+  conditions ; le décret n° 2007-1406, article 16, l'abroge au 1er juillet 2007.
+
+  LA RÉDUCTION EST PORTÉE PAR UN PARAMÈTRE PROPRE, et non par une seconde série de taux par
+  branche. Le taux de 13 % n'existe nulle part en un seul endroit du modèle : il est réparti
+  entre les branches, et la réduction, elle, porte sur le total. Un paramètre unique, appliqué à
+  l'assiette, est la traduction la plus fidèle du texte, qui parle bien de « deux points du taux
+  de cotisation ». La question de savoir s'il faudrait plutôt l'imputer branche par branche est
+  posée à la revue.
+
+  CE QUE LE MODÈLE NE SAIT PAS DIRE. L'article 6 du décret n° 97-1645 fait prendre effet la
+  réduction « à partir du premier jour du trimestre suivant celui au cours duquel la décision
+  […] a été accordée ». Une variable d'entrée mensuelle ne peut pas exprimer cette règle de
+  trimestre : elle dit, mois par mois, si l'employeur en bénéficie. C'est à l'utilisateur de
+  poser l'indicatrice à la bonne date.
+
+  LA DATE DE DÉBUT EST CELLE DU TEXTE, non celle de la structure. L'article 2 de la loi n° 97-4
+  fixe l'application au 1er octobre 1996, alors que les taux par branche du régime général ne
+  commencent qu'au 4 février 1997, date de publication de la loi. Du 1er octobre 1996 au
+  3 février 1997, la réduction s'applique donc à une assiette dont la décomposition par branche
+  n'est pas encore renseignée.

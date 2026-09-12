@@ -156,6 +156,45 @@ class adhesion_cnss_regime_complementaire(Variable):
     set_input = set_input_dispatch_by_period
 
 
+class couverture_maladie_conventionnelle(Variable):
+    value_type = bool
+    default_value = False
+    entity = Individu
+    label = "L'employeur assure une couverture maladie conventionnelle ouvrant droit à la réduction de deux points"
+    definition_period = MONTH
+    set_input = set_input_dispatch_by_period
+    reference = "https://www.pist.tn/jort/1997/1997F/Jo07197.pdf"
+
+
+class reduction_cotisation_conventionnelle_employeur(Variable):
+    value_type = float
+    entity = Individu
+    label = "Réduction de deux points de la cotisation employeur pour couverture maladie conventionnelle"
+    definition_period = MONTH
+
+    def formula_1996_10_01(individu, period, parameters):
+        """Article 41 (nouveau) § 2 de la loi n° 60-30, issu de la loi n° 97-4.
+
+        « Une réduction du taux de cotisation prévue à l'article présent peut être accordée aux
+        employeurs qui assurent à leurs salariés ainsi qu'à leurs ayants droit, une couverture
+        totale ou partielle des soins de santé dans le cadre d'un régime conventionnel. »
+        L'article 2 de la même loi l'applique à compter du 1er octobre 1996 ; le décret
+        n° 97-1645 en fixe les modalités ; l'article 16 du décret n° 2007-1406 l'abroge au
+        1er juillet 2007, d'où un taux nul à partir de cette date.
+
+        La réduction ne vaut que pour le régime général : l'article 41 est celui de la loi
+        n° 60-30, et le décret n° 97-1645 vise « les employeurs assujettis à cette loi ».
+        """
+        assiette = individu("assiette_cotisations_sociales", period)
+        regime = individu("regime_securite_sociale_cotisant", period)
+        couverture = individu("couverture_maladie_conventionnelle", period)
+        taux = parameters(
+            period.start
+        ).prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.reduction_conventionnelle
+        eligible = (regime == TypesRegimeSecuriteSocialeCotisant.rsna) * couverture
+        return eligible * taux * assiette
+
+
 class cotisations_sociales(Variable):
     value_type = float
     entity = Individu
@@ -187,9 +226,16 @@ class cotisations_employeur(Variable):
             "retraite_employeur",
             "retraite_complementaire_employeur",
         ]
-        return sum(
+        cotisations_brutes = sum(
             individu(f"{cotisation}", period) for cotisation in cotisations_employeur
         )
+        # La réduction conventionnelle de deux points (loi n° 97-4, art. 41 nouveau § 2) ne
+        # peut pas rendre la cotisation patronale négative. Le plancher n'est pas décoratif :
+        # la décomposition par branche du régime général n'est renseignée qu'à partir du
+        # 1er janvier 2003 pour les pensions, si bien qu'entre 1996 et 2002 le total patronal
+        # modélisé est inférieur aux deux points que le texte retranche.
+        reduction = individu("reduction_cotisation_conventionnelle_employeur", period)
+        return max_(cotisations_brutes - reduction, 0)
 
 
 class cotisations_salarie(Variable):
