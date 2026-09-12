@@ -1,7 +1,5 @@
 description: Âge minimum pour la retraite anticipée sur demande pour travaux astreignants
 values:
-  1985-03-05:
-    value: 55
   1985-09-12:
     value: 55
   2019-07-01:
@@ -24,7 +22,10 @@ metadata:
       href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
       note: "JORT n° 35 du 30 avril 2019, pp. 1312 et 1314. Article 28 nouveau (p. 1312) : « Les agents exerçant des fonctions astreignantes, sont mis à la retraite après avoir accompli trente-cinq (35) ans de services et atteint au moins l'âge de cinquante-sept (57) ans. » L'article 5 (p. 1314) applique le relèvement de deux ans « à partir du premier janvier 2020 », date d'effet énoncée par le texte."
 documentation: |-
-  La valeur portée du 5 mars 1985, date de signature de la loi n° 85-12, au 11 septembre 1985 est antérieure à son entrée en vigueur : valeur antérieure au texte non établie, conservée pour la continuité des calculs.
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
 
   L'article 28 ne crée pas un départ anticipé sur demande : il fixe l'âge et la durée de
   services au terme desquels les agents exerçant des fonctions astreignantes sont mis à la

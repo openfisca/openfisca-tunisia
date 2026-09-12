@@ -1,6 +1,6 @@
 # Audit sources retraite OpenFisca Tunisia Pension
 
-Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
+Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 
 ## Synthèse
 
@@ -8,7 +8,7 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 - Paramètres avec valeurs ou barèmes: 53
 - Paramètres avec référence: 49 / 53
 - Paramètres sans référence: 4 / 53
-- Paramètres multi-dates: 34
+- Paramètres multi-dates: 20
 - Textes JORT locaux: 1
 
 ## Couverture par régime
@@ -67,28 +67,14 @@ Généré le 2026-09-11 par `scripts/generate_pension_source_audit.py`.
 | `retraite.cnrps.age_legal.civil.fonctions_astreignantes` | 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
 | `retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles` | 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
 | `retraite.cnrps.bareme_annuite` | 1959-02-01, 1985-09-12 | `1959-18`, `1985-12` |
-| `retraite.cnrps.bonifications.cadre_actif.service_15` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.bonifications.cadre_actif.service_20` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.bonifications.cadre_actif.service_25` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.bonifications.cadre_actif.service_35` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant` | 1985-03-05, 1985-09-12, 1989-01-01 | `1985-12`, `1988-71` |
-| `retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum` | 1985-03-05, 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
-| `retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum` | 1985-03-05, 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
-| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum` | 1985-03-05, 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
-| `retraite.cnrps.duree_de_service_minimale` | 1974-01-01, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.pension_minimale.allocation_vieillesse` | 1959-02-01, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse` | 1974-01-01, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.pension_minimale.minimum_garanti` | 1974-01-01, 1981-05-01, 1985-09-12 | `1959-18`, `1981-70`, `1985-12` |
+| `retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant` | 1985-09-12, 1989-01-01 | `1985-12`, `1988-71` |
+| `retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum` | 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
+| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum` | 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
+| `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum` | 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
+| `retraite.cnrps.pension_minimale.minimum_garanti` | 1981-05-01, 1985-09-12 | `1959-18`, `1981-70`, `1985-12` |
 | `retraite.cnrps.plaf_taux_pension` | 1981-05-01, 1985-09-12 | `1959-18`, `1981-70`, `1985-12` |
-| `retraite.cnrps.survivants.plafond_cumul` | 1985-03-05, 1985-09-12 | `1985-12` |
 | `retraite.cnrps.survivants.taux_conjoint` | 1981-05-01, 1985-09-12 | `1959-18`, `1981-70`, `1985-12` |
-| `retraite.cnrps.survivants.taux_orphelin` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.cnrps.survivants.taux_partage_5_orphelins` | 1985-03-05, 1985-09-12 | `1985-12` |
-| `retraite.rsna.age_dep_anticip` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
-| `retraite.rsna.bareme_annuite` | 1960-01-01, 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
-| `retraite.rsna.pension_minimale.inf` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
+| `retraite.rsna.bareme_annuite` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
 | `retraite.rsna.pension_minimale.sup` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
 | `retraite.rsna.plaf_taux_pension` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |
 | `retraite.rsna.stage_derog` | 1974-01-01, 1982-07-22 | `1974-499`, `1982-1030` |

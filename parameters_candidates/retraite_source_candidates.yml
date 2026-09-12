@@ -806,7 +806,6 @@ parameter_candidates:
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
   description: Âge minimum pour la retraite anticipée sur demande pour travaux astreignants
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   - '2019-07-01'
   - '2020-01-01'
@@ -830,7 +829,6 @@ parameter_candidates:
   description: Durée minimum de services effectifs pour la retraite anticipée sur demande pour travaux
     astreignants
   dates:
-  - '1985-03-05'
   - '1985-09-12'
   laws:
   - 1985-12
