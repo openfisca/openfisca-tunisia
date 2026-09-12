@@ -37,12 +37,13 @@ check-path-length:
 	uv run python openfisca_tunisia_pension/scripts/check_path_length.py
 
 check-yaml:
-	.github/lint-changed-yaml-tests.sh
+	@# `uv run` fournit yamllint au script, qui appelle le binaire par son nom.
+	uv run .github/lint-changed-yaml-tests.sh
 
 check-all-yaml:
 	uv run yamllint openfisca_tunisia_pension/parameters
 	uv run yamllint tests
 
-test: clean check-syntax-errors check-style
+test: clean check-syntax-errors check-style check-yaml
 	@echo "> Yaml tests..."
 	uv run openfisca test --country-package openfisca_tunisia_pension tests
