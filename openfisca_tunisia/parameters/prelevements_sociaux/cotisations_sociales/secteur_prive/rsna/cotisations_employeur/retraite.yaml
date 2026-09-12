@@ -17,3 +17,14 @@ metadata:
     - title: "Loi n° 97-4 du 3 février 1997 modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 41 (nouveau)"
       href: "https://www.pist.tn/jort/1997/1997F/Jo01097.pdf"
       note: "JORT n° 10, p. 155. L'article 41 (nouveau) porte le taux global des régimes de la loi n° 60-30 à 18 %, réparti 13 % à la charge de l'employeur et 5 % à la charge du travailleur. La loi n'énonce pas de date d'effet pour ce taux : la seule date qu'elle fixe, le 1er octobre 1996, porte sur la réduction conventionnelle de deux points du paragraphe 2. La date retenue ici est celle de la publication. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01097.pdf"
+documentation: |
+  LE PARTAGE EMPLOYEUR/SALARIÉ DE CETTE BRANCHE N'EST PAS PROPORTIONNEL, ET L'ÉCART N'A PAS
+  DE TEXTE. L'article 41 (nouveau) de la loi n° 60-30 répartit le taux global de 18 % en
+  13 points d'employeur et 5 points de travailleur. Appliquée branche par branche, cette clé
+  donnerait 5,2361 / 2,0139 pour les pensions (7,25) et 2,2389 / 0,8611 pour les prestations
+  familiales (3,10). Le modèle porte 5,2639 / 1,9861 et 2,2111 / 0,8889 : 0,0278 point est
+  DÉPLACÉ des prestations familiales vers les pensions du côté de l'employeur, et en sens
+  inverse du côté du salarié. Les totaux par branche et le taux global sont inchangés.
+
+  Aucun texte lu n'établit ce déplacement. Il est conservé parce qu'il fait tomber les totaux
+  publiés par la CNSS, non parce qu'une source le fixe.
