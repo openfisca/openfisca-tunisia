@@ -7,9 +7,9 @@ brackets:
     1981-02-24:
       value: 0.0068
     2007-07-01:
-      value: 0.013
+      value: 0.0135
     2008-07-01:
-      value: 0.020
+      value: 0.0202
     2009-07-01:
       value: 0.0268
     2010-07-01:
@@ -20,6 +20,14 @@ metadata:
   rate_unit: /1
   threshold_unit: currency
   reference:
+    2007-07-01:
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, article 7"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "JORT n° 49, art. 7 p. 2159. « À compter du 1er juillet 2007, le taux de cotisations dues est fixé à 1,58 % de l'assiette des cotisations prévue au premier article du présent décret, et se répartit à raison de : 0,91 % prélevé sur le taux global des cotisations prévues par la loi n° 81-6 du 12 février 1981 susvisée ; 0,67 % au titre des cotisations supplémentaires à la charge de l'employeur. » Le point supplémentaire est donc intégralement patronal : la part de l'employeur passe de 0,68 à 1,35 %, celle du salarié reste à 0,23 %. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
+    2008-07-01:
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, article 7"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "JORT n° 49, art. 7 p. 2159. « À compter du 1er juillet 2008, le taux de cotisations prévu au sous paragraphe 1er du présent article est relevé de 1,58 % à 2,88 %, le taux de cotisations supplémentaires, fixé à 1,3 %, se répartit comme suit : 0,67 % à la charge de l'employeur ; 0,63 % à la charge du salarié. » La part de l'employeur passe donc de 1,35 à 2,02 %, celle du salarié de 0,23 à 0,86 %. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
     1981-02-24:
     - title: "Décret n° 81-224 du 24 février 1981 fixant la répartition des cotisations de sécurité sociale dans le secteur agricole"
       href: "https://www.pist.tn/jort/1981/1981F/Jo01381.pdf"
@@ -27,3 +35,15 @@ metadata:
     - title: "Loi n° 81-6 du 12 février 1981 organisant les régimes de sécurité sociale dans le secteur agricole, article 18"
       href: "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf"
       note: "JORT n° 9, p. 265-273. Fixe le taux global du régime des salariés agricoles à 6,45 %. La loi n'énonce pas de date d'effet. Édition arabe : https://www.pist.tn/jort/1981/1981A/Ja00981.pdf"
+documentation: |
+  LES DEUX PREMIERS PALIERS ONT ÉTÉ CORRIGÉS SUR LE TEXTE (issue #412). L'article 7 du décret
+  n° 2007-1406 donne 1,58 % au 1er juillet 2007 et 2,88 % au 1er juillet 2008 ; les paramètres
+  portaient 1,53 % (1,30 + 0,23) et 2,86 % (2,00 + 0,86). La part patronale passe de 1,30 à
+  1,35 % puis de 2,00 à 2,02 %, la part salariale étant inchangée, comme l'article le prescrit :
+  le point supplémentaire de 2007 est intégralement patronal, celui de 2008 se partage en
+  0,67 employeur et 0,63 salarié.
+
+  LA CORRECTION SE REFERME SUR LES VALEURS DÉJÀ EXACTES. Le palier du 1er juillet 2009, que rien
+  n'a touché ici, vaut 4,17 % réparti 2,68 / 1,49. Il s'obtient exactement du palier corrigé de
+  2008 par les incréments que l'article énonce : 2,02 + 0,66 = 2,68 et 0,86 + 0,63 = 1,49. Avec
+  les anciennes valeurs, l'enchaînement ne tombait pas juste.
