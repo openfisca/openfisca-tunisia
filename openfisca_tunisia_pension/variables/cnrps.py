@@ -35,10 +35,12 @@ class cnrps_bonifications(Variable):
     definition_period = YEAR
 
     def formula(individu, period, parameters):
+        bonifications = parameters(period).retraite.cnrps.bonifications
+        cadre_actif = bonifications.cadre_actif
         duree_militaire = individu('duree_service_militaire', period)
         duree_actif = individu('duree_service_cadre_actif', period)
-        bonus_militaire = (duree_militaire >= 20) * 5
-        bonus_actif = (duree_actif >= 35) * 5 + ((duree_actif >= 25) & (duree_actif < 35)) * 4 + ((duree_actif >= 20) & (duree_actif < 25)) * 3 + ((duree_actif >= 15) & (duree_actif < 20)) * 2
+        bonus_actif = (duree_actif >= 35) * cadre_actif.service_35 + ((duree_actif >= 25) & (duree_actif < 35)) * cadre_actif.service_25 + ((duree_actif >= 20) & (duree_actif < 25)) * cadre_actif.service_20 + ((duree_actif >= 15) & (duree_actif < 20)) * cadre_actif.service_15
+        bonus_militaire = (duree_militaire >= 20) * bonifications.militaire.bonus
         return (bonus_militaire + bonus_actif) * 4
 
 class cnrps_cotisation(Variable):

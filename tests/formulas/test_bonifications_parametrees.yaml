@@ -1,0 +1,197 @@
+# Bonifications CNRPS — barème de l'article 32 de la loi n° 85-12.
+#
+# La bonification est une période d'années ajoutée à la durée de
+# services, que la formule rend en trimestres (× 4).
+#
+# Barème de l'article 32, lu dans les paramètres
+# retraite.cnrps.bonifications.cadre_actif :
+#   35 ans de services et plus -> 5 ans     (service_35)
+#   de 25 à 34 ans             -> 4 ans     (service_25)
+#   de 20 à 24 ans             -> 3 ans     (service_20)
+#   de 15 à 19 ans             -> 2 ans     (service_15)
+#   moins de 15 ans            -> aucune
+#
+# Militaires : 5 ans à partir de 20 ans de services
+# (retraite.cnrps.bonifications.militaire.bonus). Ni ce forfait ni son
+# seuil de 20 ans ne sont appuyés par un texte lu : voir la
+# documentation du paramètre et les questions ouvertes de la PR.
+#
+# Les valeurs ne changent pas depuis le 12 septembre 1985 : la loi
+# n° 2019-37 ne touche qu'au repère d'âge des articles 32 et 67, que la
+# formule ne modélise pas. Les cas de 2019 et 2020 le constatent.
+
+# --- Les quatre seuils du barème, encadrés des deux côtés -----------
+
+- name: 0 an de services, aucune bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 0
+  output:
+    cnrps_bonifications: 0
+
+- name: 14 ans, juste sous le premier seuil
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 14
+  output:
+    cnrps_bonifications: 0
+
+- name: 15 ans, premier seuil atteint, 2 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 15
+  output:
+    cnrps_bonifications: 2 * 4
+
+- name: 19 ans, encore 2 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 19
+  output:
+    cnrps_bonifications: 2 * 4
+
+- name: 20 ans, deuxième seuil, 3 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 20
+  output:
+    cnrps_bonifications: 3 * 4
+
+- name: 24 ans, encore 3 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 24
+  output:
+    cnrps_bonifications: 3 * 4
+
+- name: 25 ans, troisième seuil, 4 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 25
+  output:
+    cnrps_bonifications: 4 * 4
+
+- name: 34 ans, encore 4 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 34
+  output:
+    cnrps_bonifications: 4 * 4
+
+- name: 35 ans, quatrième seuil, 5 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 35
+  output:
+    cnrps_bonifications: 5 * 4
+
+- name: 40 ans, le barème plafonne à 5 ans
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 40
+  output:
+    cnrps_bonifications: 5 * 4
+
+# --- Militaires : le seuil de 20 ans, encadré ----------------------
+
+- name: Militaire, 19 ans de services, aucune bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_militaire: 19
+  output:
+    cnrps_bonifications: 0
+
+- name: Militaire, 20 ans de services, 5 ans de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_militaire: 20
+  output:
+    cnrps_bonifications: 5 * 4
+
+- name: Militaire, 30 ans de services, toujours 5 ans
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_militaire: 30
+  output:
+    cnrps_bonifications: 5 * 4
+
+# --- Les deux bonifications se cumulent ----------------------------
+
+- name: 15 ans de cadre actif et 20 ans de militaire, 2 + 5 ans
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 15
+    duree_service_militaire: 20
+  output:
+    cnrps_bonifications: (2 + 5) * 4
+
+- name: 35 ans de cadre actif et 25 ans de militaire, 5 + 5 ans
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 35
+    duree_service_militaire: 25
+  output:
+    cnrps_bonifications: (5 + 5) * 4
+
+# --- Les valeurs ne bougent pas dans le temps ----------------------
+# Premier exercice entier sous la loi n° 85-12, effet 12/09/1985.
+
+- name: 35 ans en 1986, même bonification qu'en 2024
+  period: 1986
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 35
+  output:
+    cnrps_bonifications: 5 * 4
+
+- name: 25 ans en 2019, la loi n° 2019-37 ne change pas le barème
+  period: 2019
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 25
+  output:
+    cnrps_bonifications: 4 * 4
+
+- name: 25 ans en 2020, barème inchangé
+  period: 2020
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 25
+  output:
+    cnrps_bonifications: 4 * 4
+
+# --- La bonification s'ajoute à la durée d'assurance ---------------
+
+- name: 35 ans de services, 140 trimestres plus 20 de bonification
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 35
+    cnrps_duree_assurance_annuelle: 35 * 4
+  output:
+    cnrps_duree_assurance: 35 * 4 + 5 * 4
+
+- name: 25 ans de cadre actif et 25 de militaire, 100 plus 36
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    duree_service_cadre_actif: 25
+    duree_service_militaire: 25
+    cnrps_duree_assurance_annuelle: 25 * 4
+  output:
+    cnrps_duree_assurance: 25 * 4 + (4 + 5) * 4
