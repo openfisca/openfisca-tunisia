@@ -1,6 +1,6 @@
 # Changelog
 
-## 5.6.0 - [#XX](https://github.com/openfisca/openfisca-tunisia-pension/pull/XX)
+## 5.6.0 - [#42](https://github.com/openfisca/openfisca-tunisia-pension/pull/42)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : jusqu'au 11/09/1985 (bonifications CNRPS, qui n'aboutissent plus) ; à partir du 12/09/1985, résultats inchangés.
