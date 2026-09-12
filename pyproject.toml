@@ -1,6 +1,6 @@
 [project]
 name = "OpenFisca-Tunisia"
-version = "0.81"
+version = "0.82"
 description = "OpenFisca Rules as Code model for Tunisia."
 readme = "README.md"
 keywords = ["microsimulation", "tax", "benefit", "rac", "rules-as-code", "tunisia"]
@@ -36,7 +36,7 @@ build-backend = "setuptools.build_meta"
 
 [project.optional-dependencies]
 dev = [
-    "ruff >=0.6.9, <1",
+    "ruff >=0.6.9, <0.9",
     "pytest",  # Let OpenFisca-Core decide pytest version
     "scipy >=1.10.1, <2.0",
     "requests >=2.28.2, <3.0",
@@ -47,7 +47,6 @@ notebook = [
     'ipykernel >= 4.8',
     'jupyter-client >= 5.2',
     'matplotlib >= 2.2',
-    'nbconvert >= 5.3',
     'nbformat >= 4.4',
     'pandas >= 0.22.0',
 ]

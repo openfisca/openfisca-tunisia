@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.82 - [#420](https://github.com/openfisca/openfisca-tunisia/pull/420)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : aucune (`pyproject.toml`, `uv.lock`).
+* Détails :
+  - Rafraîchit le verrou de dépendances (`uv lock --upgrade`) et solde d'un coup les sept propositions de Dependabot ouvertes de juin à septembre 2026 : bleach, idna, soupsieve, mistune, pillow, cryptography, tornado. Les fusionner une par une aurait produit sept conflits de verrou successifs.
+  - **Retire `nbconvert` de l'extra `notebook`**, et avec lui onze paquets du verrou — dont **bleach**, dont la version 6.4.0 du 5 juin 2026 annonce la fin du projet, « y compris pour des failles de sécurité ». `nbconvert` déclare `bleach[css]` en dépendance obligatoire : aucune montée ni aucun choix d'extra ne permettait de s'en défaire, seul le retrait du paquet le pouvait. Disparaissent aussi beautifulsoup4, defusedxml, jupyterlab-pygments, mistune, nbclient, pandocfilters, soupsieve, tinycss2 et webencodings. Trois des sept propositions de Dependabot — bleach, mistune, soupsieve — deviennent de ce fait sans objet.
+  - **Conséquence à connaître** : `openfisca_tunisia/notebooks/test_notebooks.py`, qui exécute le carnet de démonstration, importe `nbconvert.preprocessors` et ne peut donc plus s'exécuter sans installation ponctuelle (`uv run --with nbconvert …`). Ce script n'est lancé ni par l'intégration continue ni par le `Makefile`.
+  - **Aucune de ces sept dépendances n'est une dépendance de production** : toutes sont transitives, et arrivent par les extras `dev` (via `twine`) ou `notebook` (via `nbconvert`, `matplotlib`, `ipykernel`). Le calcul du système socio-fiscal n'en dépend pas.
+  - Une montée corrige une faille : **cryptography 45.0.7 → 50.0.1** (oracle de Bleichenbacher sur `pkcs7_decrypt_der`), hors chaîne de production. La faille de **mistune** (déni de service quadratique dans `parse_link_text`, CWE-400) se règle par la disparition du paquet.
+  - Le verrou monte aussi **openfisca-core de 44.2.1 à 44.7.1**, seul changement qui atteigne les réutilisateurs du paquet. La borne `>= 44, < 45` de `pyproject.toml` est inchangée.
+  - **Resserre la borne de `ruff` de `< 1` à `< 0.9`**, seule modification de `pyproject.toml` en dehors du numéro de version. Le rafraîchissement du verrou emportait `ruff` de 0.8.6 à 0.16.7, dont les règles activées par défaut ont changé : `make check-style` relevait alors **100 anomalies** dans du code inchangé (21 `I001`, 15 `RUF100`, 14 `T201`, 10 `B018`…), et l'intégration continue aurait échoué. Adopter `ruff` 0.16 suppose de reformater le paquet, ce qui n'a pas sa place dans une mise à jour de dépendances : la borne conserve le comportement actuel jusqu'à ce que ce reformatage soit fait dans sa propre proposition.
+  - Aucune borne de `pyproject.toml` n'a été élargie : les sept paquets n'y figurent pas, et les versions retenues satisfont les contraintes existantes. La matrice « minimal » de l'intégration continue n'est donc pas touchée — `.github/get_minimal_version.py` ne lit que la borne basse d'`openfisca-core`.
+
+<!-- -->
+
 ## 0.81 - [#404](https://github.com/openfisca/openfisca-tunisia/pull/404)
 
 * Évolution du système socio-fiscal.
