@@ -1,0 +1,29 @@
+- name: Ouvrière février 2016
+  reforms:
+    - openfisca_tunisia.reforms.variables_by_regime.openfisca_variable_by_regime_extension
+  period: 2016-02
+  absolute_error_margin: 0.5
+  input:
+    rsna_salaire_de_base: 416.624
+    primes: 6.080 + 47.500
+  output:
+    # assiette_cotisations_sociales: 470.204
+    rsna_cotisations_salarie: 43.164
+    rsna_salaire_imposable: 427.040
+    rsna_salaire_net_a_payer: 427.040
+
+- name: Ouvrière février 2016 imposée mais avec même salaire net que la précédente
+  reforms:
+    - openfisca_tunisia.reforms.variables_by_regime.openfisca_variable_by_regime_extension
+  period: 2016-02
+  absolute_error_margin: 0.5
+  input:
+    regime_securite_sociale_cotisant: rsna
+    rsna_salaire_de_base: 466.688
+    primes: 6.080 + 47.500
+
+  output:
+    rsna_salaire_net_a_payer: 427.040
+    # assiette_cotisations_sociales: 520.268
+    rsna_cotisations_salarie: 47.761
+    rsna_salaire_imposable: 472.507
