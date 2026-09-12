@@ -6,9 +6,9 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 
 - Fichiers paramètres retraite: 66
 - Paramètres avec valeurs ou barèmes: 53
-- Paramètres avec référence: 49 / 53
-- Paramètres sans référence: 4 / 53
-- Paramètres multi-dates: 20
+- Paramètres avec référence: 50 / 53
+- Paramètres sans référence: 3 / 53
+- Paramètres multi-dates: 21
 - Textes JORT locaux: 1
 
 ## Couverture par régime
@@ -28,11 +28,11 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | `1981-6` - Loi n° 81-6 du 12 février 1981, sécurité sociale secteur agricole | 5 | JORT 1981/9, texte pivot |
 | `1981-70` - Texte cité par les paramètres | 6 | JORT 1981/51 |
 | `1982-1030` - Texte cité par les paramètres | 6 | JORT 1982/51 |
-| `1985-12` - Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public | 25 | JORT 1985/20, texte pivot |
+| `1985-12` - Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public | 26 | JORT 1985/20, texte pivot |
 | `1986-611` - Texte cité par les paramètres | 4 | JORT 1986/34 |
 | `1988-1136` - Texte cité par les paramètres | 3 | JORT 1988/43 |
 | `1988-39` - Texte cité par les paramètres | 1 | JORT 1988/33 |
-| `1988-71` - Texte cité par les paramètres | 1 | JORT 1988/45 |
+| `1988-71` - Texte cité par les paramètres | 2 | JORT 1988/45 |
 | `1993-308` - Texte cité par les paramètres | 4 | JORT 1993/13 |
 | `1996-1906` - Texte cité par les paramètres | 4 | JORT 1996/85 |
 | `2007-43` - Loi n° 2007-43 du 25 juin 2007, pensions public/privé/régimes spéciaux | 2 | texte local, JORT 2007/51, texte pivot |
@@ -50,7 +50,6 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | Paramètre | Description | Dates |
 | --- | --- | --- |
 | `retraite.cnrps.bonifications.militaire.bonus` | Bonification maximum pour militaires | 1985-03-05 |
-| `retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum` | Âge minimum de jouissance de la pension pour les mères de 3 enfants | 1985-03-05 |
 | `retraite.rsa.pension_min` | Pension minimale (en part de SMAG) | 1981-01-01 |
 | `retraite.rsa.periode_remplacement_base` | Période de remplacement de base | 1981-01-01 |
 
@@ -68,6 +67,7 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | `retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles` | 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
 | `retraite.cnrps.bareme_annuite` | 1959-02-01, 1985-09-12 | `1959-18`, `1985-12` |
 | `retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant` | 1985-09-12, 1989-01-01 | `1985-12`, `1988-71` |
+| `retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum` | 1985-09-12, 1989-01-01 | `1985-12`, `1988-71` |
 | `retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum` | 1985-09-12, 2019-07-01, 2020-01-01 | `1985-12`, `2019-37` |
 | `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum` | 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |
 | `retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum` | 1985-09-12, 2007-07-01 | `1985-12`, `2007-43` |

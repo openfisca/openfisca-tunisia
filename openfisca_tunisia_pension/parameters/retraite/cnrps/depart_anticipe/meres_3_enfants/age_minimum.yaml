@@ -1,18 +1,40 @@
-description: Âge minimum de jouissance de la pension pour les mères de 3 enfants
+description: Âge minimum de jouissance de la pension pour les mères de 3 enfants (0 = jouissance immédiate)
 values:
-  1985-03-05:
+  1985-09-12:
     value: 50
+  1989-01-01:
+    value: 0
 metadata:
   unit: year
+  reference:
+    1989-01-01:
+    - title: "Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985 portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier (article 41 nouveau)"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo04588.pdf"
+      note: "JORT n° 45 du 1er juillet 1988, pp. 967-968. L'article 41 nouveau range « la mise à la retraite sur la demande des mères » parmi les cas de jouissance immédiate de la pension, aux côtés de l'atteinte de l'âge légal, de l'invalidité, du licenciement pour suppression d'emplois et de la mise à la retraite d'office. Les jouissances différées — 50 ans pour les agents mis à la retraite sur leur demande ou licenciés pour insuffisance professionnelle, âge légal pour les agents révoqués ou démissionnaires — sont reconduites sans changement, et ne visent pas les mères. Aucune condition d'âge ne subsiste donc pour elles : la valeur est 0. Entrée en vigueur : l'article 4 la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 1er juillet 1988, soit le 1er janvier 1989 — date déduite de la clause et de la date de publication, non énoncée telle quelle."
 documentation: |-
-  Aucun texte lu ne fixe cet âge pour les mères de trois enfants. L'article 5, 2° e) de la
-  loi n° 85-12 du 5 mars 1985 ouvre le départ sans fixer d'âge. Son article 41, dans la
-  rédaction de 1985, diffère jusqu'à 50 ans la jouissance de la pension des agents mis à la
-  retraite sur leur demande, sans nommer les mères ; qu'elles en relèvent n'est écrit nulle
-  part.
+  **Depuis le 1er janvier 1989, il n'y a plus de condition d'âge.** L'article 41 nouveau,
+  issu de la loi n° 88-71 du 27 juin 1988, rend la jouissance de la pension immédiate pour
+  les mères admises à la retraite sur leur demande. La valeur 0 exprime cette absence de
+  condition : la formule `cnrps_age_requis` la lit, et aucun âge n'est plus opposé à la
+  mère qui remplit les conditions de l'article 5, 2° e) — trois enfants au moins dont l'âge
+  n'a pas dépassé 20 ans, ou un enfant handicapé d'un handicap profond.
 
-  Depuis le 1er janvier 1989, l'article 41 nouveau issu de la loi n° 88-71 du 27 juin 1988
-  (JORT n° 45 du 1er juillet 1988, pp. 967-968) range « la mise à la retraite sur la demande
-  des mères » parmi les cas de jouissance immédiate. La valeur de 50 ans est donc contredite
-  par le texte à partir de cette date ; elle est conservée pour la continuité des calculs,
-  dans l'attente d'une correction de la formule qui la lit.
+  **Avant le 1er janvier 1989, les textes lus n'établissent pas l'état du droit.** La valeur
+  de 50 ans qui couvre cette période n'est appuyée par aucun texte, et elle n'est pas
+  sourcée : l'article 5, 2° e) de la loi n° 85-12 ouvre le départ des mères sans fixer
+  d'âge, et l'article 41, dans sa rédaction de 1985, diffère la jouissance jusqu'à 50 ans
+  pour les agents mis à la retraite « sur leur demande » sans nommer les mères. Qu'elles
+  relèvent de cette catégorie est une lecture possible — c'est vraisemblablement celle dont
+  la valeur procède — mais elle n'est écrite nulle part, et la réécriture de 1988, qui range
+  les mères dans un cas distinct de la demande ordinaire, invite plutôt à en douter.
+
+  La valeur est néanmoins conservée pour la période 1985-1988, et non retirée : la retirer
+  rendrait tout calcul CNRPS impossible entre le 12 septembre 1985 et le 31 décembre 1988,
+  puisque `cnrps_age_requis` évalue toutes les branches de son `select` pour tous les
+  individus. Le choix est donc de conserver une valeur non sourcée en la déclarant telle,
+  plutôt que de fermer une fenêtre de trois ans de calculs. Il est réversible, et il gagne à
+  être tranché par la lecture du texte qui manque.
+
+  La date de départ passe du 5 mars 1985 — date de **signature** de la loi n° 85-12, que la
+  convention du dépôt rejette — au 12 septembre 1985, date de son **effet** (article 75),
+  comme les autres paramètres du même bloc.

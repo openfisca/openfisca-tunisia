@@ -5,10 +5,9 @@ metadata:
   scope: openfisca_tunisia_pension.parameters.retraite
 coverage:
   parameters_with_values: 53
-  parameters_with_reference: 49
+  parameters_with_reference: 50
   parameters_without_reference:
   - retraite.cnrps.bonifications.militaire.bonus
-  - retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
   - retraite.rsa.pension_min
   - retraite.rsa.periode_remplacement_base
   local_jort_laws:
@@ -251,6 +250,7 @@ law_candidates:
     - retraite.cnrps.bonifications.cadre_actif.service_25
     - retraite.cnrps.bonifications.cadre_actif.service_35
     - retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
     - retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
     - retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
     - retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum
@@ -336,6 +336,7 @@ law_candidates:
       pdf_ar: /jort/1988/1988A/Ja04588.pdf
     parameters:
     - retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
   1993-308:
     title: null
     local_texts: []
@@ -786,11 +787,18 @@ parameter_candidates:
   - https://www.pist.tn/jort/1988/1988F/Jo04588.pdf
   needs_review: true
 - parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
-  description: Âge minimum de jouissance de la pension pour les mères de 3 enfants
+  description: Âge minimum de jouissance de la pension pour les mères de 3 enfants (0 = jouissance immédiate)
   dates:
-  - '1985-03-05'
-  laws: []
-  references: []
+  - '1985-09-12'
+  - '1989-01-01'
+  laws:
+  - 1985-12
+  - 1988-71
+  references:
+  - Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985 portant régime
+    des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier
+    (article 41 nouveau)
+  - https://www.pist.tn/jort/1988/1988F/Jo04588.pdf
   needs_review: true
 - parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
   description: Durée minimum de services effectifs pour la retraite anticipée des mères de 3 enfants

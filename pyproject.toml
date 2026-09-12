@@ -1,6 +1,6 @@
 [project]
 name = "OpenFisca-Tunisia-Pension"
-version = "5.6.0"
+version = "5.7.0"
 description = "OpenFisca Rules as Code model for Tunisia pensions."
 readme = "README.md"
 keywords = ["microsimulation", "tax", "benefit", "pension", "rac", "rules-as-code", "tunisia"]

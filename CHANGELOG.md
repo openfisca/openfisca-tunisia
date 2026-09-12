@@ -1,5 +1,21 @@
 # Changelog
 
+## 5.7.0 - [#XX](https://github.com/openfisca/openfisca-tunisia-pension/pull/XX)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1989 (âge requis des mères de trois enfants, et leur éligibilité) ; du 05/03/1985 au 11/09/1985 (date de départ du paramètre).
+* Zones impactées : `parameters/retraite/cnrps/depart_anticipe/meres_3_enfants`.
+* Détails :
+  - **Depuis le 1er janvier 1989, la jouissance de la pension des mères de trois enfants est immédiate** (issue #27). `cnrps.depart_anticipe.meres_3_enfants.age_minimum` valait 50 ans pour toute période, sans qu'aucun texte lu ne fixe cet âge — la version 5.4.0 en avait retiré la référence à l'article 5, qui ne le contient pas. L'**article 41 nouveau**, issu de la loi n° 88-71 du 27 juin 1988 (JORT n° 45 du 1er juillet 1988, pp. 967-968 ; effet au 1er janvier 1989 par son article 4), range « la mise à la retraite sur la demande des mères » parmi les cas de **jouissance immédiate**, aux côtés de l'atteinte de l'âge légal, de l'invalidité, du licenciement pour suppression d'emplois et de la mise à la retraite d'office. Le paramètre prend donc la valeur **0** au 1er janvier 1989, avec sa référence : aucune condition d'âge n'est plus opposable.
+  - **Résultat modifié.** À partir du 1er janvier 1989, `cnrps_age_requis` rend 0 au lieu de 50 pour les mères de trois enfants, et `cnrps_eligible` devient vrai pour celles qui remplissent la condition de durée — quinze ans de services, inchangée — sans avoir atteint 50 ans. Une mère de 45 ans totalisant seize ans de services n'ouvrait pas droit ; elle ouvre droit désormais. Les mères de 50 ans et plus, seules que les tests couvraient jusqu'ici, sont inchangées.
+  - **La formule n'est pas modifiée**, et c'est délibéré : `cnrps_age_requis` lit déjà le paramètre dans la branche des mères de trois enfants. Corriger la valeur datée corrige la formule là où elle se trompait, sans toucher à un `select` que les questions ouvertes de #37 destinent à un remaniement. Une valeur de 0 s'y compose correctement, la condition `age >= age_requis` étant alors toujours vraie.
+  - **L'état antérieur à 1989 n'est pas établi par les textes lus, et le paramètre le dit.** L'article 5, 2° e) de la loi n° 85-12 ouvre le départ des mères sans fixer d'âge ; l'article 41, dans sa rédaction de 1985, diffère la jouissance jusqu'à 50 ans pour les agents mis à la retraite « sur leur demande », sans nommer les mères. Qu'elles relèvent de cette catégorie est une lecture possible — vraisemblablement celle dont la valeur procède — mais elle n'est écrite nulle part, et la réécriture de 1988, qui range les mères dans un cas **distinct** de la demande ordinaire, invite plutôt à en douter. La valeur de 50 ans est néanmoins **conservée** pour 1985-1988, en étant déclarée non sourcée : la retirer rendrait tout calcul CNRPS impossible du 12 septembre 1985 au 31 décembre 1988, `cnrps_age_requis` évaluant toutes les branches de son `select` pour tous les individus. Conserver une valeur non sourcée en la déclarant telle a paru préférable à fermer trois ans de calculs ; le choix est réversible.
+  - **Date de départ corrigée** : du 5 mars 1985, date de **signature** de la loi n° 85-12 que la convention du dépôt rejette, au 12 septembre 1985, date de son **effet** (article 75) — comme les autres paramètres du même bloc depuis la version 5.4.0. Aucun calcul n'aboutissait de toute façon avant cette date.
+  - Tests : `tests/formulas/test_meres_trois_enfants.py` vérifie l'âge requis aux deux périodes (50 avant 1989, 0 ensuite), l'éligibilité de la mère de 45 ans en 1988 et en 1990, la stabilité du cas de 52 ans que couvraient déjà `test_anticipe.py` et `test_depart_anticipe.yaml`, et l'invariance de la durée requise de quinze ans. Aucun test existant n'est modifié. `make test` : 109 tests passent, contre 97 sur la branche de base.
+  - Rapport d'audit régénéré : 50 paramètres sur 53 ont une référence, contre 49 ; il n'en reste que trois sans source — `bonifications.militaire.bonus`, `rsa.pension_min` et `rsa.periode_remplacement_base`, tous trois documentés comme tels. Les paramètres multi-dates passent de 20 à 21, et la loi n° 88-71 est citée par deux paramètres au lieu d'un.
+
+<!-- -->
+
 ## 5.6.0 - [#42](https://github.com/openfisca/openfisca-tunisia-pension/pull/42)
 
 * Évolution du système socio-fiscal.
