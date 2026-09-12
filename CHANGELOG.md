@@ -1,5 +1,21 @@
 # Changelog
 
+### 0.82.1 - [#413](https://github.com/openfisca/openfisca-tunisia/pull/413)
+
+* Amélioration technique.
+* Périodes concernées : aucune. Aucune valeur n'est modifiée.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales`, `parameters/prelevements_sociaux/contribution_sociale_solidarite`, `parameters/marche_travail`.
+* Détails :
+  - Corrige le **titre arabe de la loi n° 88-16**, qui datait de 1983 un texte de 1988. Le titre est repris sur le fascicule arabe du JORT n° 20 du 22 mars 1988, p. 427. Les deux fichiers du régime de retraite des gouverneurs, qui portaient deux libellés différents, portent désormais celui du fascicule.
+  - Écrit dans la documentation des paramètres que les parts **prestations familiales 3,10 %**, **indemnités de maladie et de maternité 0,85 %** et **décès 0,65 %** du régime général sont obtenues **par solde** du taux global de 18 % — 18,00 − 7,25 − 4,75 − 1,00 − 0,40 = 4,60 — et qu'aucun texte lu ne les établit. Aucune source n'est inventée : la documentation dit que la source manque.
+  - Fait de même pour les deux points voisins : le **déplacement de 0,0278 point** entre pensions et prestations familiales, qui écarte le partage employeur/salarié de la clé 13/5 de l'article 41 (nouveau) sans qu'un texte le prescrive, et le **partage des 1,20 % d'assurances sociales du régime agricole**, dont seule la part de maladie de 0,91 % est attestée, tardivement, par l'article 7 du décret n° 2007-1406.
+  - Remplace **88 liens** vers un dépôt GitLab personnel par les fascicules du JORT sur pist.tn, en éditions française et arabe. Chaque cible vient de `jort_cache.db`, le numéro du texte étant pris dans l'intitulé et jamais dans le lien GitLab, faux par endroits ; chaque URL a été vérifiée.
+  - Corrige dans `marche_travail` les **titres arabes du SMIG 2012 et du SMIG 2022**, qui étaient ceux du décret n° 81-437 et du décret n° 2020-1069, et le lien du **SMIG 40 h horaire de 1986**, qui renvoyait au décret n° 86-690 quand la valeur porte le décret n° 86-689.
+  - Résout les **arrêtés SMAG de 1963 et de 1965**, que l'issue croyait hors du corpus utilisable : ils sont dans `jort_cache.db`. Répare enfin une entrée de `pensionne_cnrps/deces` qui portait une URL en guise d'intitulé, sans `href`.
+  - **Quatorze liens subsistent**, faute d'adresse fiable : les décrets gouvernementaux n° 2019-454 et n° 2019-455, absents du cache, la note commune n° 1/2023 et la circulaire du Premier ministre n° 12 de 1993, qui ne sont pas des textes du JORT. Le décret-loi n° 2022-79 n'ayant pas d'édition française — le fascicule n° 141 de 2022 répond 404 en français et 200 en arabe — ses trois références pointent vers l'édition arabe.
+
+<!-- -->
+
 ## 0.82 - [#420](https://github.com/openfisca/openfisca-tunisia/pull/420)
 
 * Amélioration technique.
