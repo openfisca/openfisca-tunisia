@@ -1,5 +1,18 @@
 # Changelog
 
+### 5.5.1 - [#XX](https://github.com/openfisca/openfisca-tunisia-pension/pull/XX)
+
+* Changement mineur.
+* Périodes concernées : aucune.
+* Zones impactées : aucune — notes de référence et documentation seules.
+* Détails :
+  - **Citation de l'article 5 de la loi n° 2019-37 reprise sur le fascicule** (issue #40). Les notes de `cnrps.age_legal.civil.fonctions_astreignantes` et `cnrps.age_legal.civil.ouvriers_travaux_penibles` résumaient le calendrier transitoire en écrivant « contrairement aux dispositions des articles 24, 27, 28, 29 et 61 (nouveaux) ». Le texte publié fait suivre **chaque** numéro de sa propre mention : « contrairement aux dispositions des articles 24 (nouveau), 27 (nouveau), 28 (nouveau), 29 (nouveau) et 61 (nouveau) ». La citation est désormais donnée in extenso, comme celle que porte déjà `depart_anticipe.sur_demande.astreignants.age_minimum`, et la mention « La loi ne comporte pas de clause d'entrée en vigueur » cède la place à « Dates d'effet énoncées par le texte » : l'article 5 énonce bien le 1er juillet 2019 et le 1er janvier 2020. Source : JORT n° 35 du 30 avril 2019, p. 1314.
+  - **`retraite.rsa.periode_remplacement_base` : dix ans que nul texte lu n'appuie** (issue #32, second point). Le paramètre reçoit une `documentation` qui le constate. L'article 50 de la loi n° 81-6 retient les **trois ou cinq dernières années**, la plus avantageuse des deux ; aucune fenêtre de dix ans n'y figure, ni ailleurs dans les articles lus du régime des salariés agricoles. Aucune source n'est inventée : la valeur est conservée, son origine déclarée non établie, et sa date du 1er janvier 1981 explicitée comme celle du bloc RSA — l'entrée en vigueur de la loi n° 81-6 énoncée par son article 88 — et non comme celle d'un texte qui fixerait dix ans. La documentation renvoie à l'issue #24, qui porte le même sujet : les textes disent les **dernières** années là où les formules retiennent les **meilleures**.
+  - _Le premier point de l'issue #32 — la documentation de `cnrps.age_legal.civil.cadres_actifs`, qui décrivait encore les ouvriers des travaux pénibles — a été traité par la version 5.5.0._
+  - Valeurs, dates et formules inchangées. Les tests passent sans modification.
+
+<!-- -->
+
 ## 5.5.0 - [#35](https://github.com/openfisca/openfisca-tunisia-pension/pull/35)
 
 * Évolution du système socio-fiscal.
