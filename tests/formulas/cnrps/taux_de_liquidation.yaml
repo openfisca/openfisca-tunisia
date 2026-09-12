@@ -54,7 +54,9 @@
   output:
     cnrps_taux_de_liquidation: .9
 
-# À partir de 1986 (paramètres depart_anticipe disponibles à partir de 1985)
+# À partir de 1986 : les conditions d'ouverture du droit, lues par
+# cnrps_duree_requise_annees, ne commencent que le 12 septembre 1985,
+# donc la période annuelle 1985 ne se calcule pas.
 
 - name: "21 ans de trimetres CNRPS"
   period: 1986

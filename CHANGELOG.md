@@ -1,5 +1,22 @@
 # Changelog
 
+## 5.5.0 - [#35](https://github.com/openfisca/openfisca-tunisia-pension/pull/35)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 12/09/1985 au 23/09/1985 (calculs CNRPS, qui échouaient) ; à partir du 01/07/2019 (âge requis des agents exerçant des fonctions astreignantes) ; ailleurs, dates, références et documentation seules.
+* Zones impactées : `parameters/retraite/cnrps/depart_anticipe/sur_demande/astreignants`, `parameters/retraite/cnrps/age_legal/civil`.
+* Détails :
+  - **Aucun calcul CNRPS n'aboutissait avant le 24 septembre 1985.** `cnrps_age_requis` et `cnrps_duree_requise_annees` lisent, pour tous les individus, `depart_anticipe.sur_demande.astreignants.age_minimum` et `duree_minimum`, qui ne commençaient qu'à cette date ; `cnrps_taux_de_liquidation`, `cnrps_eligible` et `cnrps_pension` levaient `ParameterNotFoundError`. Ils se calculent désormais à partir du **12 septembre 1985**, date d'effet de la loi n° 85-12 : avec 80 trimestres, le taux de liquidation vaut 50 % (article 38). Avant cette date, ils lèvent toujours `ParameterNotFoundError`, et c'est voulu : aucune condition d'ouverture du droit n'est portée avant l'effet de la loi, faute de texte lu pour la période de la loi n° 59-18 (voir 5.4.0). Le barème d'annuités CNRPS du 1er février 1959 reste encodé et sourcé, mais aucun calcul ne peut l'atteindre.
+  - **Source et date d'effet.** Les deux paramètres citaient le décret n° 85-1178 du 24 septembre 1985 et prenaient sa date de signature. Les 55 ans et 35 ans de services sont fixés par l'article 28 de la loi n° 85-12 (JORT n° 20 du 12 mars 1985, p. 361), qui entre en vigueur le 12 septembre 1985 (article 75). Le décret n° 85-1178 ne fait que dresser la liste des fonctions astreignantes, et prend effet le 1er juillet 1986 (article 2) ; il est cité dans la documentation. Aucune valeur n'est portée avant le 12 septembre 1985 : la valeur antérieure, identique et sans source, serait la même valeur mal datée, comme celles que la version 5.4.0 a retirées des paramètres `cadre_commun`, `meres_3_enfants` et `duree_de_service_minimale` que la même formule lit dans le même `select`.
+  - **Relèvement de 2019.** `astreignants.age_minimum` passe à 56 ans au 1er juillet 2019 et à 57 ans au 1er janvier 2020 (loi n° 2019-37 du 30 avril 2019, article premier, article 28 nouveau, et article 5), comme `age_legal.civil.fonctions_astreignantes`. Il restait à 55 ans. La durée de 35 ans est inchangée.
+  - Les paramètres gardent leur nom : l'article 28 fixe les conditions d'une mise à la retraite, non d'un départ anticipé sur demande. La documentation le dit, et renvoie à `age_legal.civil.fonctions_astreignantes`, qui porte le même âge en données.
+  - `age_legal.civil.cadres_actifs` ne documente plus les ouvriers accomplissant des tâches pénibles et insalubres, portés par `age_legal.civil.ouvriers_travaux_penibles` ; sa référence ne rattache plus les cadres actifs au décret n° 85-1177, qui fixe la liste de ces ouvriers. Valeurs inchangées.
+  - Les calculs restent impossibles avant le 12 septembre 1985 : toutes les branches de `cnrps_age_requis` et de `cnrps_duree_requise_annees` commencent à cette date.
+  - Tests : `tests/formulas/test_astreignants.py` vérifie le taux de liquidation au 12 et au 24 septembre 1985, l'âge et la durée requis des astreignants au 12 septembre 1985, en 2019 et en 2020, et constate l'erreur explicite attendue au 1er juin et au 11 septembre 1985, en disant pourquoi elle vaut mieux qu'une valeur inventée. Aucun test existant ne change.
+  - Rapport d'audit régénéré : le décret n° 85-1178 n'est plus cité comme source de valeurs ; la loi n° 85-12 l'est par 25 paramètres, la loi n° 2019-37 par 5 ; les paramètres multi-dates passent de 19 à 20.
+
+<!-- -->
+
 ### 5.4.1 - [#34](https://github.com/openfisca/openfisca-tunisia-pension/pull/34)
 
 * Amélioration technique.

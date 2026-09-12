@@ -224,24 +224,6 @@ law_candidates:
     - retraite.rsna.pension_minimale.sup
     - retraite.rsna.plaf_taux_pension
     - retraite.rsna.stage_derog
-  1985-1178:
-    title: null
-    local_texts: []
-    jort_cache_matches:
-    - type: Decret
-      numero: 85-1178
-      titre: Decret n° 85-1178 du 24 Septembre 1985, fixant la liste des agents exercant des fonctions
-        astreignantes
-      date_signature: '1985-09-24'
-      date_publication: '1985-10-01'
-      jort_annee: 1985
-      jort_numero: 68
-      pages: '1256'
-      pdf_fr: /jort/1985/1985F/Jo06885.pdf
-      pdf_ar: /jort/1985/1985A/Ja06885.pdf
-    parameters:
-    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
-    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum
   1985-12:
     title: Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public
     local_texts: []
@@ -270,6 +252,8 @@ law_candidates:
     - retraite.cnrps.bonifications.cadre_actif.service_35
     - retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
     - retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
+    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
+    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum
     - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
     - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum
     - retraite.cnrps.duree_de_service_minimale
@@ -449,6 +433,7 @@ law_candidates:
     - retraite.cnrps.age_legal.civil.cadres_actifs
     - retraite.cnrps.age_legal.civil.fonctions_astreignantes
     - retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
+    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
 parameter_candidates:
 - parameter: retraite.cnrps.accessoires.indemnite_revenu_unique.1_enfant
   description: Montant mensuel de l'Indemnité de Revenu Unique (IRU) selon le nombre d'enfants
@@ -599,7 +584,7 @@ parameter_candidates:
   - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
   needs_review: true
 - parameter: retraite.cnrps.age_legal.civil.cadres_actifs
-  description: Age légal de de départ à la retraite pour certains cadres actifs et ouvriers
+  description: Age légal de de départ à la retraite pour certains cadres actifs
   dates:
   - '1959-02-01'
   - '2019-07-01'
@@ -821,21 +806,36 @@ parameter_candidates:
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
   description: Âge minimum pour la retraite anticipée sur demande pour travaux astreignants
   dates:
-  - '1985-09-24'
+  - '1985-09-12'
+  - '2019-07-01'
+  - '2020-01-01'
   laws:
-  - 1985-1178
+  - 1985-12
+  - 2019-37
   references:
-  - Décret n°85-1178 du 24 septembre 1985
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 28
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
+    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
+    5
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
+    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
+    premier (article 28 nouveau) et article 5
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
   needs_review: true
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum
   description: Durée minimum de services effectifs pour la retraite anticipée sur demande pour travaux
     astreignants
   dates:
-  - '1985-09-24'
+  - '1985-09-12'
   laws:
-  - 1985-1178
+  - 1985-12
   references:
-  - Décret n°85-1178 du 24 septembre 1985
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 28
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
   needs_review: true
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
   description: Âge minimum pour la retraite anticipée sur demande (Cadre commun)
