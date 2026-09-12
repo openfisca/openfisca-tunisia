@@ -4,3 +4,23 @@ values:
     value: 0
 metadata:
   unit: /1
+documentation: |
+  PARAMÈTRE SANS SOURCE ET SANS EFFET, CONSERVÉ EN L'ÉTAT (issue #390).
+
+  Il est censé étendre aux salaires légèrement supérieurs au salaire minimum la déduction
+  supplémentaire de `abattement_pour_salaire_minimum`. Deux faits le privent de portée :
+
+  1. IL VAUT ZÉRO. La formule qui le consomme teste `revenu_assimile_salaire <= smig_ext` ;
+     avec un seuil nul, la condition est fausse pour tout revenu positif. La branche est donc
+     inerte, y compris sur les années où elle existe.
+  2. IL N'EXISTE QU'À PARTIR DU 1er JANVIER 2011, et n'a aucune référence. C'est pourquoi la
+     formule applicable avant 2011 ne peut pas recevoir la même branche : la lire en 2010
+     lève une `ParameterNotFoundError`.
+
+  L'issue #390 se demandait si l'absence de cette branche avant 2011 était une lacune ou une
+  règle étendue en 2011. La question ne peut pas être tranchée sans le texte qui institue le
+  seuil, que le dépouillement n'a pas trouvé ; et tant que la valeur est nulle, les deux
+  rédactions de la formule donnent le même résultat. Antidater une valeur reviendrait à
+  inventer une source. Le dispositif lui-même — l'ancien paragraphe V de l'article 40 — est
+  de toute façon abrogé à compter des revenus 2014.
+

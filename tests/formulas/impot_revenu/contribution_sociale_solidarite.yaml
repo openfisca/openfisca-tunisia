@@ -1,0 +1,65 @@
+# La contribution sociale de solidarité à partir des revenus 2020 (issue #387).
+#
+# Ces cas échouent sans la correction : la formule 2020 de `contribution_sociale_solidarite`
+# lisait `bareme` et `revenu_net_imposable` avant de les définir, et levait une NameError —
+# la variable était donc incalculable sur toute la période. Le seuil de non-application est
+# désormais dérivé du barème (première tranche imposée) et non plus lu dans le paramètre
+# d'exonération catégorielle, abrogé aux revenus de 2017.
+
+- name: Revenu net imposable sous le seuil de la première tranche imposée, pas de contribution
+  period: 2021
+  absolute_error_margin: .1
+  input:
+    salaire_imposable: 5000
+  output:
+    revenu_net_imposable: 4500
+    contribution_sociale_solidarite: 0
+
+
+- name: Revenu net imposable au-dessus du seuil, contribution due
+  period: 2021
+  absolute_error_margin: .1
+  input:
+    salaire_imposable: 6000
+  output:
+    revenu_net_imposable: 5400
+    contribution_sociale_solidarite: 54
+
+
+- name: Contribution d'un revenu net imposable de 28 000 dinars
+  period: 2021
+  absolute_error_margin: .1
+  input:
+    salaire_imposable: 30000
+  output:
+    revenu_net_imposable: 28000
+    contribution_sociale_solidarite: 280
+
+
+# Retenue à la source : elle lisait, elle aussi, le paramètre d'exonération abrogé.
+
+- name: Retenue à la source nulle sous le seuil
+  period: 2021-06
+  absolute_error_margin: .1
+  input:
+    salaire_imposable: 400
+  output:
+    contribution_sociale_solidarite_prelevee_a_la_source: 0
+
+
+- name: Retenue à la source au-dessus du seuil
+  period: 2021-06
+  absolute_error_margin: .1
+  input:
+    salaire_imposable: 500
+  output:
+    contribution_sociale_solidarite_prelevee_a_la_source: 4.5
+
+
+- name: Retenue à la source sur un salaire de 2 500 dinars par mois
+  period: 2021-06
+  absolute_error_margin: .1
+  input:
+    salaire_imposable: 2500
+  output:
+    contribution_sociale_solidarite_prelevee_a_la_source: 23.333

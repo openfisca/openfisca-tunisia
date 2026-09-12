@@ -2064,7 +2064,7 @@ web-api = [
 
 [[package]]
 name = "openfisca-tunisia"
-version = "0.83"
+version = "0.84"
 source = { editable = "." }
 dependencies = [
     { name = "openfisca-core", extra = ["web-api"] },

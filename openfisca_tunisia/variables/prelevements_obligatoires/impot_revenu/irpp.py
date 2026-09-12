@@ -226,11 +226,16 @@ class deduction_assurance_vie(Variable):
         marie = foyer_fiscal.declarant_principal("statut_marital", period=period)
         nb_enf = foyer_fiscal("nb_enf", period=period)
         assurance_vie = parameters(period.start).impot_revenu.deductions.assurance_vie
+        # Article 39 § I-2 du code, rédaction d'origine : la majoration est réservée à
+        # « chacun des quatre premiers enfants à charge ». La limite de rang disparaît avec
+        # l'article 52 de la loi de finances pour 1998, qui vise « chacun des enfants à
+        # charge ». D'où un rang maximal daté plutôt qu'un nombre en dur.
+        nb_enf_majores = min_(nb_enf, assurance_vie.nb_enfants_max)
         deduction = min_(
             somme_primes_assurance_vie,
             assurance_vie.plaf
             + marie * assurance_vie.conj_plaf
-            + nb_enf * assurance_vie.enf_plaf,
+            + nb_enf_majores * assurance_vie.enf_plaf,
         )
         return deduction
 

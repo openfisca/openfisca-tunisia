@@ -1,5 +1,41 @@
 # Changelog
 
+## 0.84 - [#415](https://github.com/openfisca/openfisca-tunisia/pull/415)
+
+* Correction d'un bug.
+* Périodes concernées : à partir des revenus du 01/01/2020.
+* Zones impactées : `variables/prelevements_obligatoires/contribution_sociale_solidarite`, `parameters/impot_revenu/exoneration`.
+* Détails :
+  - Rend la **contribution sociale de solidarité de nouveau calculable** à partir des revenus 2020. `contribution_sociale_solidarite.formula_2020_01_01` lisait `bareme` et `revenu_net_imposable` **avant de les définir** et levait une `NameError` : la variable annuelle ne rendait aucun résultat sur toute la période. Aucun test ne couvrait ces années, d'où la survie du défaut.
+  - Fait **dériver du barème** le seuil de non-application de la contribution, au lieu de le lire dans `impot_revenu.exoneration.seuil`. Ce paramètre porte l'exonération catégorielle de l'article 73-1 de la loi de finances 2014, **abrogée aux revenus de 2017** par l'article 14-5 de la loi de finances 2017, qui lui substitue précisément la tranche à 0 % du barème. Les deux valeurs coïncidant à 5 000 dinars, le résultat n'était juste que par coïncidence ; il aurait cessé de l'être au premier déplacement de la tranche à 0 %. Le seuil retenu est le premier dont le taux n'est pas nul.
+  - **Clôture `impot_revenu/exoneration/seuil` aux revenus de 2017**, à la date de son abrogation. C'était impossible tant que les formules de la contribution le lisaient : la clôture y provoquait une `ParameterNotFoundError`.
+  - La **formule 2018 n'est pas touchée** : contrairement à ce qu'indiquait l'issue, elle ne lit pas ce paramètre. Les deux lecteurs étaient les formules 2020 de `contribution_sociale_solidarite` et de `contribution_sociale_solidarite_prelevee_a_la_source`. Les cas de la note commune 2018/01 rendent les mêmes valeurs qu'avant.
+  - Six cas de test sont ajoutés dans `tests/formulas/impot_revenu/contribution_sociale_solidarite.yaml` — trois annuels, trois de retenue à la source —, les premiers à couvrir la période.
+
+<!-- -->
+
+## 0.84 - [#415](https://github.com/openfisca/openfisca-tunisia/pull/415)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : les revenus de 1990 à 1996.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/irpp`, `parameters/impot_revenu/deductions/assurance_vie`.
+* Détails :
+  - Borne la **majoration du plafond d'assurance-vie aux quatre premiers enfants à charge** jusqu'aux revenus de 1996. L'article 39 § I-2 du code, dans sa rédaction d'origine, la réserve à « chacun des quatre premiers enfants à charge » (JORT n° 1 des 2-5 janvier 1990, p. 8) ; la formule utilisait `nb_enf` sans borne. La limite disparaît avec l'article 52 de la loi de finances pour 1998.
+  - La limite est portée par un paramètre daté, `assurance_vie/nb_enfants_max`, plutôt que par une constante en dur. La valeur retenue à partir de 1997 est une **sentinelle**, non un chiffre de droit : le texte ne pose alors aucune limite, et un paramètre daté ne sait pas dire « pas de limite ».
+  - **Effet** : un foyer marié de six enfants déduisait 600 dinars là où le texte en donne 500. La question devient sans objet à compter des revenus 2013, la loi de finances 2014 ayant remplacé le plafond majoré par un plafond unique.
+  - Cinq cas de test encadrent la limite de rang en 1995, 1996 et 1998.
+
+<!-- -->
+
+## 0.84 - [#415](https://github.com/openfisca/openfisca-tunisia/pull/415)
+
+* Changement mineur.
+* Détails :
+  - Consigne dans la documentation de `impot_revenu/tspr/smig_ext` **pourquoi l'issue #390 ne peut pas être corrigée** : le paramètre vaut zéro, ce qui rend inerte la branche qui le lit, et il n'existe qu'à partir du 1er janvier 2011 — l'ajouter à la formule d'avant 2011 lèverait une `ParameterNotFoundError` de 2004 à 2010. Trancher demanderait le texte qui institue ce seuil, que le dépouillement n'a pas trouvé ; antidater une valeur reviendrait à inventer une source.
+  - L'issue **#389 n'est pas traitée** non plus : elle ne relève aucun défaut de comportement — « seuls les noms induisent en erreur » —, le renommage qu'elle propose est cassant, donc d'incrément majeur, et l'avertissement qu'elle réclame figure déjà en tête des deux paramètres depuis la PR #385. Le renommage et le retrait de `interets_comptes_speciaux_epargne_cent` appellent une PR majeure distincte.
+
+<!-- -->
+
 ## 0.83 - [#414](https://github.com/openfisca/openfisca-tunisia/pull/414)
 
 * Évolution du système socio-fiscal.

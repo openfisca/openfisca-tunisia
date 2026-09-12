@@ -1,0 +1,63 @@
+# Majoration du plafond d'assurance-vie et limite de rang (issue #388).
+#
+# Article 39 § I-2 du code, rédaction d'origine : « dans la limite de 200 dinars par an,
+# majorés de : 100 dinars au titre du conjoint ; 50 dinars au titre de chacun des QUATRE
+# PREMIERS enfants à charge » (JORT n° 1 des 2-5 janvier 1990, p. 8). L'article 52 de la loi
+# de finances pour 1998 supprime la limite de rang.
+#
+# `statut_marital: 1` vaut « marié » ; la formule lit ce code entier là où un booléen est
+# attendu, aussi le cas est-il posé explicitement.
+
+- name: Deux enfants en 1995, en deçà de la limite de rang
+  period: 1995
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 2
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 200 + 100 + 2 * 50
+
+
+- name: Quatre enfants en 1995, à la limite de rang
+  period: 1995
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 4
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 200 + 100 + 4 * 50
+
+
+- name: Six enfants en 1995, la majoration s'arrête au quatrième
+  period: 1995
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 6
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 200 + 100 + 4 * 50
+
+
+- name: Six enfants en 1996, dernière année de la limite de rang
+  period: 1996
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 6
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 200 + 100 + 4 * 50
+
+
+- name: Six enfants en 1998, la limite de rang a disparu
+  period: 1998
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 6
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 800 + 400 + 6 * 200
