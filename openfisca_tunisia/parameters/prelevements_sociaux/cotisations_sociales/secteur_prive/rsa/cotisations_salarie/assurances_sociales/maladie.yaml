@@ -20,6 +20,14 @@ metadata:
   rate_unit: /1
   threshold_unit: currency
   reference:
+    2007-07-01:
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, article 7"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "JORT n° 49, art. 7 p. 2159. Le point supplémentaire du 1er juillet 2007 est intégralement à la charge de l'employeur : la part salariale reste à 0,23 %. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
+    2008-07-01:
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, article 7"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "JORT n° 49, art. 7 p. 2159. Au 1er juillet 2008 les cotisations supplémentaires, fixées à 1,3 %, se répartissent en 0,67 employeur et 0,63 salarié : la part salariale passe de 0,23 à 0,86 %. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
     1981-02-24:
     - title: "Décret n° 81-224 du 24 février 1981 fixant la répartition des cotisations de sécurité sociale dans le secteur agricole"
       href: "https://www.pist.tn/jort/1981/1981F/Jo01381.pdf"

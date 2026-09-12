@@ -7,3 +7,40 @@
     salaire_de_base: 1000
     maladie_salarie: .027494 * 1000
     maladie_employeur: .040006 * 1000
+
+
+# Régime des salariés agricoles : les deux paliers corrigés sur l'article 7 du
+# décret n° 2007-1406 (JORT n° 49, p. 2159), puis le palier suivant, déjà exact,
+# qui vérifie que la correction se referme sur lui.
+
+- name: Salarié agricole 1000 DT maladie au premier palier (1er juillet 2007)
+  period: 2007-10
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsa
+    salaire_de_base: 1000
+  output:
+    maladie_employeur: .0135 * 1000
+    maladie_salarie: .0023 * 1000
+
+
+- name: Salarié agricole 1000 DT maladie au deuxième palier (1er juillet 2008)
+  period: 2008-10
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsa
+    salaire_de_base: 1000
+  output:
+    maladie_employeur: .0202 * 1000
+    maladie_salarie: .0086 * 1000
+
+
+- name: Salarié agricole 1000 DT maladie au troisième palier (1er juillet 2009)
+  period: 2009-10
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsa
+    salaire_de_base: 1000
+  output:
+    maladie_employeur: .0268 * 1000
+    maladie_salarie: .0149 * 1000
