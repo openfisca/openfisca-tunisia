@@ -2,6 +2,8 @@ description: Seuil de revenu net imposable pour l'exonération catégorielle des
 values:
   2014-01-01:
     value: 5000
+  2017-01-01:
+    value: null
 metadata:
   unit: currency
   reference:
@@ -13,14 +15,12 @@ documentation: |
   Exonération catégorielle des salariés et pensionnés dont le revenu net imposable
   n'excède pas 5 000 dinars, instituée par l'article 73-1 de la loi de finances pour 2014.
 
-  ATTENTION — ce paramètre est juridiquement ABROGÉ à compter des revenus de 2017 par
-  l'article 14-5 de la loi n° 2016-78 (loi de finances pour 2017), qui lui substitue la
-  tranche à 0 % du barème jusqu'à 5 000 dinars. La variable `exoneration` respecte cette
-  borne (`end = "2016-12-31"`).
+  CE PARAMÈTRE EST CLÔTURÉ AUX REVENUS DE 2017, date de son abrogation par l'article 14-5
+  de la loi n° 2016-78 (loi de finances pour 2017), qui lui substitue la tranche à 0 % du
+  barème jusqu'à 5 000 dinars. La variable `exoneration` respecte la même borne
+  (`end = "2016-12-31"`).
 
-  Il n'est pas clôturé ici (pas de `value: null` en 2017) parce que les formules de la
-  contribution sociale de solidarité (`contribution_sociale_solidarite`, formules 2018 et
-  2020) le lisent encore pour des années postérieures à l'abrogation. Elles devraient
-  vraisemblablement s'appuyer sur le seuil de la première tranche imposée du barème plutôt
-  que sur ce paramètre. Clôturer ce paramètre sans corriger d'abord ces formules provoque
-  une ParameterNotFoundError. Voir la discussion dans la PR qui a introduit cette note.
+  Il restait ouvert jusqu'ici parce que les formules de la contribution sociale de solidarité
+  le lisaient pour des années postérieures à l'abrogation — le résultat n'étant juste que par
+  coïncidence, les deux seuils valant 5 000 dinars. Ces formules dérivent désormais le seuil
+  du barème lui-même (première tranche imposée), ce qui lève l'obstacle à la clôture.

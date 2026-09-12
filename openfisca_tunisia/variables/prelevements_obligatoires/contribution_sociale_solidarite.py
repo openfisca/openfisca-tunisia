@@ -4,6 +4,28 @@ from openfisca_tunisia.variables.prelevements_obligatoires.impot_revenu.irpp imp
 )
 
 
+def seuil_de_la_premiere_tranche_imposee(parameters, period):
+    """Seuil au-delà duquel le barème de l'article 44 du code commence à imposer.
+
+    La contribution sociale de solidarité ne s'applique pas aux personnes physiques dont le
+    revenu annuel net ne dépasse pas ce seuil (article 39 de la loi de finances 2020). Ce seuil
+    était lu jusqu'ici dans `impot_revenu.exoneration.seuil`, qui porte l'exonération
+    catégorielle des salariés et pensionnés de l'article 73-1 de la loi de finances 2014 —
+    ABROGÉE à compter des revenus de 2017 par l'article 14-5 de la loi de finances 2017, qui lui
+    substitue précisément la tranche à 0 % du barème. Les deux valeurs coïncidaient à 5 000
+    dinars, de sorte que le résultat était juste par coïncidence ; il aurait cessé de l'être au
+    premier déplacement de la tranche à 0 %.
+
+    Le seuil est dérivé du barème plutôt que lu dans une constante : c'est le premier seuil dont
+    le taux n'est pas nul, ce qui reste vrai quel que soit le nombre de tranches non imposées.
+    """
+    bareme = parameters(period.start).impot_revenu.bareme
+    for seuil, taux in zip(bareme.thresholds, bareme.rates):
+        if taux > 0:
+            return seuil
+    return bareme.thresholds[-1]
+
+
 class contribution_sociale_solidarite(Variable):
     value_type = float
     entity = FoyerFiscal
@@ -11,20 +33,23 @@ class contribution_sociale_solidarite(Variable):
     definition_period = YEAR
 
     def formula_2020_01_01(foyer_fiscal, period, parameters):
-        impot_revenu_brut = bareme.calc(revenu_net_imposable)
+        """Article 39 de la loi de finances 2020.
+
+        La contribution ne s'applique pas aux personnes physiques dont le revenu annuel net
+        ne dépasse pas le seuil de la première tranche imposée du barème.
+        """
         revenu_net_imposable = foyer_fiscal("revenu_net_imposable", period=period)
         bareme_irpp = parameters(period.start).impot_revenu.bareme.copy()
+        impot_revenu_brut = bareme_irpp.calc(revenu_net_imposable)
         bareme_css = parameters(
             period.start
         ).prelevements_sociaux.contribution_sociale_solidarite.salarie
         bareme_irpp.add_tax_scale(bareme_css)
-        non_exonere_css = (
-            revenu_net_imposable
-            > parameters(period.start).impot_revenu.exoneration.seuil
+        non_exonere_css = revenu_net_imposable > seuil_de_la_premiere_tranche_imposee(
+            parameters, period
         )
         return non_exonere_css * (
-            non_exonere_irpp * bareme_irpp.calc(revenu_net_imposable)
-            - impot_revenu_brut
+            bareme_irpp.calc(revenu_net_imposable) - impot_revenu_brut
         )
 
     def formula_2018_01_01(foyer_fiscal, period, parameters):
@@ -87,7 +112,7 @@ class contribution_sociale_solidarite_prelevee_a_la_source(Variable):
         bareme_irpp.add_tax_scale(bareme_css)
         non_exonere_css = (
             12 * revenu_assimile_salaire_apres_abattement - deduction_famille_annuelle
-        ) > parameters(period.start).impot_revenu.exoneration.seuil
+        ) > seuil_de_la_premiere_tranche_imposee(parameters, period)
         return non_exonere_css * (
             non_exonere_irpp
             * bareme_irpp.calc(
