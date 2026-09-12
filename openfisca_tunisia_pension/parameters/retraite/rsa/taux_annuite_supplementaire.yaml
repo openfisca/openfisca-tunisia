@@ -1,5 +1,11 @@
 description: Taux d'annuité supplémentaire
-unit: /1
 values:
-  1981-02-24:
+  1981-01-01:
     value: 0.02
+metadata:
+  unit: /1
+  reference:
+    1981-01-01:
+    - title: "Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole, article 49"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf"
+      note: "JORT n° 9 du 13 février 1981, p. 270 : majoration de 0,5 % du salaire moyen de référence par trimestre de cotisation au-delà de 40 trimestres, soit 2 % par année. L'article 88 énonce : « La présente loi entrera en vigueur le 1er janvier 1981. » Rectificatif publié au JORT n° 26 du 17 avril 1981, p. 844, non lu."

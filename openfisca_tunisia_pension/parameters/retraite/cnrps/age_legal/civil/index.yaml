@@ -4,4 +4,6 @@ metadata:
   order:
   - cadre_commun
   - cadres_actifs
+  - ouvriers_travaux_penibles
+  - fonctions_astreignantes
   - enseignants_du_superieur

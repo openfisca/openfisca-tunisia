@@ -1,0 +1,29 @@
+description: Âge de mise à la retraite des ouvriers accomplissant des tâches pénibles et insalubres (article 27 de la loi n° 85-12)
+values:
+  1985-09-12:
+    value: 55
+  2019-07-01:
+    value: 56
+  2020-01-01:
+    value: 57
+metadata:
+  unit: year
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 27"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361 : l'âge de mise à la retraite est fixé à 55 ans pour les ouvriers accomplissant des tâches pénibles et insalubres, dont la liste est fixée par décret. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+    2019-07-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 5"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, p. 1314. L'article 5 relève « à titre transitoire, contrairement aux dispositions des articles 24, 27, 28, 29 et 61 (nouveaux) » l'âge de mise à la retraite d'un an à partir du 1er juillet 2019, pour les agents qui l'atteignent entre cette date et le 31 décembre 2019, et de deux ans à partir du 1er janvier 2020. La loi ne comporte pas de clause d'entrée en vigueur."
+    2020-01-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier (article 27 nouveau) et article 5"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, pp. 1312-1314. L'article 27 nouveau fixe l'âge à 57 ans ; l'article 5 l'applique à titre transitoire à partir du 1er janvier 2020. La loi ne comporte pas de clause d'entrée en vigueur."
+documentation: |-
+  La liste des catégories d'ouvriers est fixée par le décret n° 85-1177 du 24 septembre 1985
+  (JORT n° 68 du 1er octobre 1985, pp. 1255-1256), qui prend effet le 1er juillet 1986
+  (article 2).
+
+  Paramètre de données : aucune formule ne le lit à ce jour.

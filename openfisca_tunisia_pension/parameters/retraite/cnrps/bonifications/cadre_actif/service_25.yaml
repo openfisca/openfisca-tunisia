@@ -1,10 +1,32 @@
 description: Bonification pour cadres actifs pour 25 ans de service
 values:
-  1985-03-05:
+  1985-09-12:
     value: 4
 metadata:
   unit: year
   reference:
-    1985-03-05:
-    - title: "Loi n°85-12 du 5 mars 1985 (art 32) et décret n°85-1177 du 24-09-1985"
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 32"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361. L'article 32 fixe la bonification des ouvriers accomplissant des travaux pénibles et insalubres à 5 ans pour 35 ans de services, 4 ans pour 25 ans, 3 ans pour 20 ans et 2 ans pour 15 ans ; celle des cadres actifs à la période restant à courir jusqu'à 60 ans, dans la limite du même barème. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
+
+  La loi n° 2019-37 du 30 avril 2019 (JORT n° 35 du 30 avril 2019, pp. 1312-1315), article 2,
+  substitue « l'âge de soixante-deux ans » à « l'âge de soixante ans » aux paragraphes 2 et 3
+  de l'article 32 : la période bonifiable des agents exerçant des fonctions astreignantes et
+  des cadres actifs court désormais jusqu'à 62 ans. Le barème 5 / 4 / 3 / 2 n'est pas modifié.
+
+  L'article 33, distinct, accorde la bonification jusqu'à 60 ans aux militaires et agents des
+  forces de sécurité intérieure blessés en service, aux agents invalides à 80 % au moins et aux
+  agents mis à la retraite pour suppression d'emplois. La loi n° 88-71 du 27 juin 1988 (JORT
+  n° 45 du 1er juillet 1988, pp. 967-968, effet 1er janvier 1989) le réécrit : elle y ajoute les
+  services actifs des douanes et les agents mis à la retraite d'office, dont la bonification ne
+  peut dépasser un rendement de 20 % de la rémunération de liquidation. Ce plafond de 20 % date
+  de 1988 ; la loi n° 2019-37 le reconduit en portant le repère à 62 ans. La suppression
+  d'emplois en est retirée par la loi n° 2002-61 du 9 juillet 2002.
+
+  La formule `cnrps_bonifications` n'utilise pas ce paramètre : le barème y est écrit en dur.

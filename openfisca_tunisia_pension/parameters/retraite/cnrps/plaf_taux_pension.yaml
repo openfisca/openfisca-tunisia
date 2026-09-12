@@ -1,0 +1,24 @@
+description: Plafond du taux de liquidation de la pension de retraite CNRPS
+values:
+  1981-05-01:
+    value: 0.8
+  1985-09-12:
+    value: 0.9
+metadata:
+  unit: /1
+  reference:
+    1981-05-01:
+    - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 22, § II nouveau de la loi n° 59-18)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
+      note: "JORT n° 51 du 7 août 1981, p. 1789 : « La rémunération de l'ensemble des annuités liquidées […] ne peut être supérieure à 80 % de la rémunération globale définie à l'article 21 ci-dessus. » L'article 5 énonce : « L'article 4 de la présente loi prend effet à compter du 1er mai 1981 » (p. 1790)."
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 38"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 362 : « Le montant de la pension de retraite ne doit pas dépasser 90 % de la rémunération sur la base de laquelle a été liquidée la pension. » (dernier alinéa). Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Plafond énoncé en toutes lettres. Le barème d'annuités (`retraite.cnrps.bareme_annuite`)
+  le rencontre par construction : à 40 ans de services pour la loi n° 85-12 (20 % + 30 %
+  + 40 %), à 160 trimestres pour le barème antérieur.
+
+  Le texte antérieur au 1er mai 1981 n'a pas été lu. Aucune formule ne lit ce paramètre à
+  ce jour.

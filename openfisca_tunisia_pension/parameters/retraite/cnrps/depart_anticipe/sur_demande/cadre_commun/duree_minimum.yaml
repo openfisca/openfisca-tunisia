@@ -1,17 +1,22 @@
 description: Durée minimum de services effectifs pour la retraite anticipée sur demande (Cadre commun)
 values:
-  1985-03-05:
+  1985-09-12:
     value: 35
-  2007-06-25:
+  2007-07-01:
     value: 37
 metadata:
   unit: year
   reference:
-    1985-03-05:
-    - title: "Loi n° 85-12 du 5 mars 1985, article 30 avant modification"
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 30"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
-      note: "JORT n° 20/1985, p. 359-365"
-    2007-06-25:
-    - title: "Loi n° 2007-43 du 25 juin 2007, modifiant l'article 30"
+      note: "JORT n° 20 du 12 mars 1985, p. 361 : droit au départ anticipé après 35 ans de services et à 55 ans, quelle que soit la fonction. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+    2007-07-01:
+    - title: "Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux, article 2 (article 30 nouveau de la loi n° 85-12)"
       href: "https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf"
-      note: "JORT n° 51/2007, p. 2198-2199"
+      note: "JORT n° 51 du 26 juin 2007, pp. 2198-2199 : l'article 30 nouveau porte les conditions à 37 ans de services et 57 ans. La loi ne comporte pas de clause d'entrée en vigueur. Date retenue : 1er juillet 2007, date à laquelle elle devient exécutoire selon l'article 2 de la loi n° 93-64 du 5 juillet 1993 (JORT n° 50, p. 931) — « cinq jours après le dépôt du journal officiel […] au siège du gouvernorat de Tunis », le jour du dépôt n'étant pas compté —, le dépôt étant pris à la date de publication, le 26 juin 2007."
+documentation: |-
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.

@@ -1,6 +1,27 @@
 description: Indemnités familiales
 values:
-  1986-06-03: 7.320
+  1986-05-01:
+    value: 7.600
+  1989-01-01:
+    value: 7.600
+  1996-11-01:
+    value: 7.320
 metadata:
+  unit: currency
   reference:
-    1986-06-03: Décret n° 85-611 du 3 juin 1986 portant révision des taux mensuels des indemnités familiales
+    1986-05-01:
+    - title: "Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article premier"
+      href: "https://www.pist.tn/jort/1986/1986F/Jo03486.pdf"
+      note: "JORT n° 34 des 3-6 juin 1986, p. 674. Taux mensuels : premier enfant 7,600 dinars ; deuxième 6,500 ; troisième 5,600 ; quatrième 4,700. L'article 3 énonce : « prend effet à compter du 1er mai 1986 ». L'article 2 abroge le décret n° 75-952 du 30 décembre 1975, non lu. Ce décret était cité par erreur sous le numéro « 85-611 »."
+    1989-01-01:
+    - title: "Décret n° 88-1136 du 11 juin 1988, portant fixation des taux des indemnités à caractère familial, article premier"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo04388.pdf"
+      note: "JORT n° 43 du 24 juin 1988, p. 941. Taux mensuels : premier enfant 7,600 dinars ; deuxième 6,500 ; troisième 5,600 — trois rangs seulement, la loi n° 88-39 du 6 mai 1988 (JORT n° 33 du 13 mai 1988, p. 735) limitant le droit aux trois premiers enfants. Valeur inchangée. L'article 2 énonce : « prend effet à compter du 1er janvier 1989 »."
+    1996-11-01:
+    - title: "Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial, article premier"
+      href: "https://www.pist.tn/jort/1996/1996F/Jo08596.pdf"
+      note: "JORT n° 85 du 22 octobre 1996, p. 2097. Taux mensuels par enfant à charge des fonctionnaires et agents de l'État, des collectivités locales et des établissements publics à caractère administratif : premier enfant 7,320 dinars ; deuxième 6,507 ; troisième 5,693. L'article 4 abroge les décrets n° 86-611 et n° 88-1136. L'article 5 énonce : « prend effet à compter du 1er novembre 1996 »."
+documentation: |-
+  Montant mensuel de l'indemnité familiale servie avec la pension, dans les mêmes conditions
+  qu'aux agents en activité (loi n° 85-12 du 5 mars 1985, article 40). Le texte antérieur au
+  1er mai 1986 — le décret n° 75-952 — n'a pas été lu.

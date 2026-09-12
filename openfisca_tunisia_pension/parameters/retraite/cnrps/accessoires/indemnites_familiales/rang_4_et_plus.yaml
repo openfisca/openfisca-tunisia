@@ -1,6 +1,42 @@
 description: Indemnités familiales - 4ème enfant et plus
 values:
-  1986-06-03: 4.880
+  1986-05-01:
+    value: 4.700
+  1989-01-01:
+    value: 4.700
+  1996-11-01:
+    value: 4.880
 metadata:
+  unit: currency
   reference:
-    1986-06-03: Décret n° 85-611 du 3 juin 1986 portant révision des taux mensuels des indemnités familiales
+    1986-05-01:
+    - title: "Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article premier"
+      href: "https://www.pist.tn/jort/1986/1986F/Jo03486.pdf"
+      note: "JORT n° 34 des 3-6 juin 1986, p. 674. Taux mensuels : premier enfant 7,600 dinars ; deuxième 6,500 ; troisième 5,600 ; quatrième 4,700. L'article 3 énonce : « prend effet à compter du 1er mai 1986 ». L'article 2 abroge le décret n° 75-952 du 30 décembre 1975, non lu. Ce décret était cité par erreur sous le numéro « 85-611 »."
+    1989-01-01:
+    - title: "Loi n° 88-39 du 6 mai 1988, relative à l'octroi des indemnités familiales dans le secteur public, article unique"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo03388.pdf"
+      note: "JORT n° 33 du 13 mai 1988, p. 735. Limite l'indemnité familiale « dans la limite des trois premiers enfants », et dispose : « Les dispositions de la présente loi ne s'appliquent pas aux droits acquis antérieurement au 1er janvier 1989. » Le décret n° 88-1136 du 11 juin 1988 (JORT n° 43 du 24 juin 1988, p. 941), qui prend effet le 1er janvier 1989, ne fixe que trois taux et n'abroge pas le décret n° 86-611 : le taux de 4,700 dinars continue de s'appliquer aux droits acquis. Textes lus à l'image."
+    1996-11-01:
+    - title: "Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial, articles 2 et 3"
+      href: "https://www.pist.tn/jort/1996/1996F/Jo08596.pdf"
+      note: "JORT n° 85 du 22 octobre 1996, p. 2097. Article 2 : « Le taux mensuel de l'indemnité familiale due au titre du quatrième enfant ayant acquis ce droit antérieurement au 1er janvier 1989, par application des dispositions de la loi 88-39 du 6 mai 1988, est fixé à 4 d,880. » Article 3 : même taux pour l'enfant handicapé venant après le troisième rang (loi n° 81-46, article 18). L'article 4 abroge les décrets n° 86-611 et n° 88-1136. L'article 5 énonce : « prend effet à compter du 1er novembre 1996 »."
+documentation: |-
+  Montant mensuel de l'indemnité familiale servie avec la pension au titre du quatrième enfant,
+  dans les mêmes conditions qu'aux agents en activité (loi n° 85-12 du 5 mars 1985, article 40).
+  Les textes nomment le quatrième enfant ; la formule applique ce taux à chaque enfant au-delà du
+  troisième.
+
+  À compter du 1er janvier 1989, la loi n° 88-39 du 6 mai 1988 (JORT n° 33 du 13 mai 1988,
+  p. 735, article unique) limite le droit aux trois premiers enfants, mais « ne s'applique pas aux
+  droits acquis antérieurement au 1er janvier 1989 » ; l'enfant handicapé y ouvre droit quel que
+  soit son rang (loi n° 81-46 du 29 mai 1981, article 18). Le décret n° 88-1136, qui prend effet
+  le même jour, ne fixe que trois taux et n'abroge pas le décret n° 86-611. Le taux de
+  4,700 dinars de ce dernier reste donc celui des droits acquis jusqu'à son abrogation au
+  1er novembre 1996, par l'article 4 du décret n° 96-1906, dont l'article 2 fixe à 4,880 dinars le
+  taux du « quatrième enfant ayant acquis ce droit antérieurement au 1er janvier 1989 ».
+
+  Ce paramètre représente ainsi, à partir de 1989, le taux des droits acquis et des enfants
+  handicapés au-delà du troisième rang. La formule ne teste ni l'une ni l'autre de ces conditions :
+  il revient à l'utilisateur de ne compter au-delà du troisième que les enfants qui y ouvrent
+  droit. Un taux nul à partir de 1989 aurait supprimé les droits que la loi n° 88-39 maintient.

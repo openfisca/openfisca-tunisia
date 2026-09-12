@@ -1,4 +1,15 @@
 description: Pension minimale (en part de SMAG)
 values:
-  1981-02-24:
+  1981-01-01:
     value: 0.4
+documentation: |-
+  Aucun texte lu n'appuie ce plancher. Les articles 45 à 88 de la loi n° 81-6 du
+  12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole,
+  ne comportent aucun plancher de pension pour le régime des salariés agricoles. Le
+  seul plancher agricole lu est celui du régime agricole amélioré, à la moitié du SMAG
+  rapporté à 300 jours (article 96, ajouté par la loi n° 89-73 du 2 septembre 1989,
+  en vigueur le 1er octobre 1989). La valeur de 0,4 SMAG n'est ni celle-là, ni les
+  deux tiers du régime non agricole.
+
+  La valeur et sa date sont conservées ; la date, qui était celle de la signature du décret n° 81-224 du 24 février 1981, est alignée sur l'entrée en vigueur de la loi n° 81-6 au 1er janvier 1981 (article 88), comme le reste du régime, parce que la formule du
+  régime les lit ; leur origine reste à établir.

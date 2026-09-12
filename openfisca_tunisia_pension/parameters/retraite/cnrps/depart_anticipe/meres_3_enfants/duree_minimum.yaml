@@ -1,11 +1,16 @@
 description: Durée minimum de services effectifs pour la retraite anticipée des mères de 3 enfants
 values:
-  1985-03-05:
+  1985-09-12:
     value: 15
 metadata:
   unit: year
   reference:
-    1985-03-05:
-    - title: "Loi n° 85-12 du 5 mars 1985, article 5"
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 22"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
-      note: "JORT n° 20/1985, p. 359-365"
+      note: "JORT n° 20 du 12 mars 1985, p. 360 : la pension de retraite est acquise après quinze (15) ans de services au moins. L'article 5, 2° e), qui ouvre le départ des mères, ne fixe pas de durée propre : les quinze ans sont la condition générale de l'article 22. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.

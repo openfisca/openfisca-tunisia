@@ -2,5 +2,16 @@ description: Durée du stage dérogatoire
 values:
   1974-01-01:
     value: 5
+  1982-07-22:
+    value: 5
 metadata:
   unit: year
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 40"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30 des 30 avril, 3 et 4 mai 1974, p. 918 : l'allocation de vieillesse suppose 60 mois de cotisation effective au moins, soit 5 ans. L'article 64 fait prendre effet au décret à compter du 1er janvier 1974. Le texte ne qualifie pas ces 60 mois de « stage dérogatoire » : le rattachement de ce paramètre à l'article 40 est une lecture, non une citation."
+    1982-07-22:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 3 (article 40 nouveau)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606. La section 6 devient « de la pension proportionnelle » ; l'article 40 nouveau maintient la condition de 60 mois au moins. Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution). Date retenue : 22 juillet 1982, date à laquelle il devient obligatoire selon la règle générale alors en vigueur — « un jour franc après la publication au Journal Officiel » (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956, JORT n° 74 du 14 septembre 1956, p. 1247), la publication étant prise au premier jour du fascicule daté des 20-23 juillet ; au dernier jour, ce serait le 25 juillet."

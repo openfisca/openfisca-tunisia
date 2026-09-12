@@ -1,26 +1,52 @@
 description: Taux d'annuité par trimestre validé du régime des salariés non agricoles (RSNA) de la CNSS
 brackets:
 - threshold:
-    1960-01-01:
+    1974-01-01:
+      value: 0
+    1982-07-22:
       value: 0
   rate:
-    1960-01-01:
+    1974-01-01:
+      value: 0.01
+    1982-07-22:
       value: 0.01
 - threshold:
-    1960-01-01:
+    1974-01-01:
+      value: 40
+    1982-07-22:
       value: 40
   rate:
-    1960-01-01:
+    1974-01-01:
+      value: 0.005
+    1982-07-22:
       value: 0.005
 - threshold:
-    1960-01-01:
+    1974-01-01:
+      value: 120
+    1982-07-22:
       value: 120
   rate:
-    1960-01-01:
+    1974-01-01:
+      value: 0
+    1982-07-22:
       value: 0
 metadata:
   threshold_unit: trimestre
   rate_unit: /1
   reference:
-    1960-01-01:
-      title: Loi n° 60-33 du 14 décembre 1960 instituant un régime d'invalidité, de vieillesse et de survie et un régime d'allocation de vieillesse et de survie dans le secteur non agricole, JORT n° 57/1960, p. 1616
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 17"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30 des 30 avril, 3 et 4 mai 1974, p. 917 : 40 % du salaire moyen de référence pour 120 mois de cotisation (1 % par trimestre sur 40 trimestres), puis majoration de 2 % par période de 12 mois supplémentaires (0,5 % par trimestre), dans la limite de 80 %, atteinte à 120 trimestres. L'article 64 fait prendre effet au décret à compter du 1er janvier 1974."
+    1982-07-22:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 4 (article 17, alinéa 2 nouveau)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, pp. 1605-1607 : « par période de 3 mois de cotisation supplémentaire à une majoration égale à 0,5 % », plafond de 80 %. La majoration passe d'une expression annuelle à une expression trimestrielle, à taux annuel constant : barème inchangé. Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution). Date retenue : 22 juillet 1982, date à laquelle il devient obligatoire selon la règle générale alors en vigueur — « un jour franc après la publication au Journal Officiel » (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956, JORT n° 74 du 14 septembre 1956, p. 1247), la publication étant prise au premier jour du fascicule daté des 20-23 juillet ; au dernier jour, ce serait le 25 juillet."
+documentation: |-
+  Ce barème était rattaché à la loi n° 60-33 du 14 décembre 1960 et daté du
+  1er janvier 1960. Il est celui de l'article 17 du décret n° 74-499, qui prend effet
+  le 1er janvier 1974. La loi n° 60-33 n'a pas été lue, non plus que le décret
+  n° 71-432 que le décret de 1974 abroge.
+
+  Aucune valeur n'est portée avant le 1er janvier 1974 : le barème antérieur n'est pas
+  établi.

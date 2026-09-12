@@ -1,9 +1,24 @@
 description: Allocation de vieillesse (en parts du Smig)
 values:
-  1959-02-01:
+  1985-09-12:
     value: 0.5
 metadata:
   unit: smig
-documentation:
-  L'allocation de vieillesse est octroyée aux cotisants ne pouvant bénéficier d'une pension de retraite mais
-  qui justifient d'une période d'activité d'au moins 5 ans
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 42"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 362 : l'agent qui a cinq années d'ancienneté au moins sans atteindre la durée de l'article 22 opte entre le remboursement des contributions et une allocation de vieillesse égale à la moitié du SMIG du régime de 2 400 heures par an. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  L'allocation de vieillesse est octroyée, sur option, aux agents qui ne peuvent
+  bénéficier d'une pension de retraite mais justifient d'au moins cinq années
+  d'ancienneté ; l'autre branche de l'option est le remboursement des contributions.
+
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
+
+  La loi n° 97-74 du 18 novembre 1997 (JORT n° 93 du 21 novembre 1997, p. 2080) ajoute un
+  alinéa 3 à l'article 42 : l'allocation devient réversible au conjoint survivant et aux
+  orphelins. Le montant n'est pas modifié.
