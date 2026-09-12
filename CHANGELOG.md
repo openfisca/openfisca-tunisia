@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.85 - [#416](https://github.com/openfisca/openfisca-tunisia/pull/416)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/10/1996 au 30/06/2007.
+* Zones impactées : `variables/prelevements_obligatoires/cotisations_sociales`, `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna`.
+* Détails :
+  - Modélise la **réduction conventionnelle de deux points** de la cotisation employeur du régime général. L'article 41 (nouveau) de la loi n° 60-30, issu de la **loi n° 97-4 du 3 février 1997** (JORT n° 10, p. 154), met 13 % à la charge de l'employeur et ouvre, à son paragraphe 2, une réduction aux employeurs « qui assurent à leurs salariés ainsi qu'à leurs ayants droit, une couverture totale ou partielle des soins de santé dans le cadre d'un régime conventionnel ». L'**article 2** l'applique à compter du **1er octobre 1996** ; le **décret n° 97-1645 du 25 août 1997** en fixe les conditions ; l'**article 16 du décret n° 2007-1406** l'abroge au **1er juillet 2007**.
+  - Trois ajouts : la variable d'entrée `couverture_maladie_conventionnelle` (booléenne, mensuelle, **fausse par défaut**), le paramètre daté `secteur_prive/rsna/reduction_conventionnelle` et la variable calculée `reduction_cotisation_conventionnelle_employeur`, retranchée de `cotisations_employeur`.
+  - **Aucun résultat existant ne change** : sans l'indicatrice, qui vaut faux par défaut, la cotisation patronale est celle de droit commun. Sur 1 000 dinars d'assiette en 2003 : 160 sans réduction, **140 avec**.
+  - La réduction est portée par un **paramètre propre** et non par une seconde série de taux par branche : le 13 % n'existe nulle part en un seul endroit du modèle, et le texte parle de « deux points du taux de cotisation », c'est-à-dire du total. Elle ne vaut que pour le **régime général**.
+  - Un **plancher** empêche la cotisation patronale de devenir négative. Il masque un défaut antérieur, signalé à la revue : la décomposition par branche du régime général n'étant renseignée qu'à partir du 1er janvier 2003 pour les pensions, le total patronal modélisé vaut 12,22 pour 1 000 dinars en 1996 contre 160 en 2003, quand les deux points en retranchent 20.
+  - Ce que le modèle **ne sait pas dire** : l'article 6 du décret n° 97-1645 fait prendre effet la réduction « à partir du premier jour du trimestre suivant celui au cours duquel la décision […] a été accordée ». Une indicatrice mensuelle n'exprime pas cette règle de trimestre.
+  - Sept cas de test couvrent les deux cas et les deux bornes de la période, plus un régime agricole qui vérifie que la réduction ne déborde pas.
+
+<!-- -->
+
 ## 0.84 - [#415](https://github.com/openfisca/openfisca-tunisia/pull/415)
 
 * Correction d'un bug.
