@@ -1,0 +1,55 @@
+# Rémunération minimale servie, indemnité spéciale comprise (issue #406).
+#
+# Décrets n° 89-1551 et n° 89-1552 : indemnité de 3 dinars par mois et de 115 millimes par
+# journée, à compter du 1er août 1989, exclue de l'assiette des cotisations, des prestations et
+# de l'impôt. Décrets n° 91-1316 et n° 91-1317 : 5 dinars et 215 millimes au 1er août 1991.
+# Décrets n° 92-1299 et n° 92-1300, article 3 : l'indemnité est intégrée au salaire minimum au
+# 1er mai 1992, et les paramètres tombent à zéro.
+
+- name: Avant l'institution de l'indemnité, la variable n'est pas définie
+  period: 1989-07
+  absolute_error_margin: .001
+  output:
+    remuneration_minimale_servie_48h_mensuel: 0
+    remuneration_minimale_servie_agricole_journaliere: 0
+
+
+- name: Premier mois de l'indemnité spéciale
+  period: 1989-08
+  absolute_error_margin: .001
+  output:
+    remuneration_minimale_servie_48h_mensuel: 110.032 + 3
+    remuneration_minimale_servie_40h_mensuel: 96.386 + 3
+    remuneration_minimale_servie_agricole_journaliere: 3.2 + 0.115
+
+
+- name: Le SMIG de 1990 ne comprend pas l'indemnité, qui subsiste à côté de lui
+  period: 1990-06
+  absolute_error_margin: .001
+  output:
+    remuneration_minimale_servie_48h_mensuel: 120.016 + 3
+    remuneration_minimale_servie_agricole_journaliere: 3.546 + 0.115
+
+
+- name: Relèvement de l'indemnité au 1er août 1991
+  period: 1991-08
+  absolute_error_margin: .001
+  output:
+    remuneration_minimale_servie_48h_mensuel: 120.016 + 5
+    remuneration_minimale_servie_agricole_journaliere: 3.546 + 0.215
+
+
+- name: Dernier mois avant l'intégration au salaire minimum
+  period: 1992-04
+  absolute_error_margin: .001
+  output:
+    remuneration_minimale_servie_48h_mensuel: 120.016 + 5
+    remuneration_minimale_servie_agricole_journaliere: 3.546 + 0.215
+
+
+- name: Au 1er mai 1992 l'indemnité est intégrée, la rémunération servie est le salaire minimum
+  period: 1992-05
+  absolute_error_margin: .001
+  output:
+    remuneration_minimale_servie_48h_mensuel: 132.912
+    remuneration_minimale_servie_agricole_journaliere: 3.961
