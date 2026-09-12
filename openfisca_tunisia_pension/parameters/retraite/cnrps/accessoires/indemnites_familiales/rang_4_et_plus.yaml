@@ -40,8 +40,9 @@ documentation: |-
   handicapés au-delà du troisième rang. Un taux nul à partir de 1989 aurait supprimé les droits
   que la loi n° 88-39 maintient.
 
-  La formule teste désormais ces deux conditions, et ne les laisse plus à la charge de
-  l'utilisateur : `limitation_trois_premiers_enfants` dit à partir de quand la limitation
-  s'applique, et les variables d'entrée `nombre_enfants_indemnite_familiale_droit_acquis` et
-  `nombre_enfants_handicapes_au_dela_du_troisieme_rang`, nulles par défaut, disent combien
-  d'enfants au-delà du troisième rang y échappent.
+  La limitation elle-même n'est pas portée par un paramètre : ce n'est pas une valeur du droit,
+  mais un changement de règle. `cnrps_indemnites_familiales` en fait une seconde formule datée,
+  `formula_1989_01_01`, qui réserve ce taux aux enfants désignés par les variables d'entrée
+  `nombre_enfants_indemnite_familiale_droit_acquis` et
+  `nombre_enfants_handicapes_au_dela_du_troisieme_rang`, nulles par défaut. Avant cette date, la
+  formule de base l'applique à chaque enfant au-delà du troisième.

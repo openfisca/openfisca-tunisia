@@ -4,18 +4,18 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 
 ## Synthèse
 
-- Fichiers paramètres retraite: 67
-- Paramètres avec valeurs ou barèmes: 54
-- Paramètres avec référence: 51 / 54
-- Paramètres sans référence: 3 / 54
-- Paramètres multi-dates: 22
+- Fichiers paramètres retraite: 66
+- Paramètres avec valeurs ou barèmes: 53
+- Paramètres avec référence: 50 / 53
+- Paramètres sans référence: 3 / 53
+- Paramètres multi-dates: 21
 - Textes JORT locaux: 1
 
 ## Couverture par régime
 
 | Régime | Paramètres avec valeurs |
 | --- | ---: |
-| `cnrps` | 39 |
+| `cnrps` | 38 |
 | `rsa` | 7 |
 | `rsna` | 8 |
 
@@ -29,9 +29,9 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | `1981-70` - Texte cité par les paramètres | 6 | JORT 1981/51 |
 | `1982-1030` - Texte cité par les paramètres | 6 | JORT 1982/51 |
 | `1985-12` - Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public | 26 | JORT 1985/20, texte pivot |
-| `1986-611` - Texte cité par les paramètres | 5 | JORT 1986/34 |
+| `1986-611` - Texte cité par les paramètres | 4 | JORT 1986/34 |
 | `1988-1136` - Texte cité par les paramètres | 3 | JORT 1988/43 |
-| `1988-39` - Texte cité par les paramètres | 2 | JORT 1988/33 |
+| `1988-39` - Texte cité par les paramètres | 1 | JORT 1988/33 |
 | `1988-71` - Texte cité par les paramètres | 2 | JORT 1988/45 |
 | `1993-308` - Texte cité par les paramètres | 4 | JORT 1993/13 |
 | `1996-1906` - Texte cité par les paramètres | 4 | JORT 1996/85 |
@@ -57,7 +57,6 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 
 | Paramètre | Dates | Lois citées |
 | --- | --- | --- |
-| `retraite.cnrps.accessoires.indemnites_familiales.limitation_trois_premiers_enfants` | 1986-05-01, 1989-01-01 | `1986-611`, `1988-39` |
 | `retraite.cnrps.accessoires.indemnites_familiales.rang_1` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-1136`, `1996-1906` |
 | `retraite.cnrps.accessoires.indemnites_familiales.rang_2` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-1136`, `1996-1906` |
 | `retraite.cnrps.accessoires.indemnites_familiales.rang_3` | 1986-05-01, 1989-01-01, 1996-11-01 | `1986-611`, `1988-1136`, `1996-1906` |

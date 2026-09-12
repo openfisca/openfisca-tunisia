@@ -4,8 +4,8 @@ metadata:
   needs_review: true
   scope: openfisca_tunisia_pension.parameters.retraite
 coverage:
-  parameters_with_values: 54
-  parameters_with_reference: 51
+  parameters_with_values: 53
+  parameters_with_reference: 50
   parameters_without_reference:
   - retraite.cnrps.bonifications.militaire.bonus
   - retraite.rsa.pension_min
@@ -280,7 +280,6 @@ law_candidates:
       pdf_fr: /jort/1986/1986F/Jo03486.pdf
       pdf_ar: /jort/1986/1986A/Ja03486.pdf
     parameters:
-    - retraite.cnrps.accessoires.indemnites_familiales.limitation_trois_premiers_enfants
     - retraite.cnrps.accessoires.indemnites_familiales.rang_1
     - retraite.cnrps.accessoires.indemnites_familiales.rang_2
     - retraite.cnrps.accessoires.indemnites_familiales.rang_3
@@ -319,7 +318,6 @@ law_candidates:
       pdf_fr: /jort/1988/1988F/Jo03388.pdf
       pdf_ar: /jort/1988/1988A/Ja03388.pdf
     parameters:
-    - retraite.cnrps.accessoires.indemnites_familiales.limitation_trois_premiers_enfants
     - retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus
   1988-71:
     title: null
@@ -482,22 +480,6 @@ parameter_candidates:
   - Caisse nationale de retraite et de prévoyance sociale, Manuel de liquidation des pensions & accessoires,
     19 décembre 2013, p. 94
   - https://github.com/openfisca/openfisca-tunisia-pension/blob/master/tmp/manuel%20pensions.pdf
-  needs_review: true
-- parameter: retraite.cnrps.accessoires.indemnites_familiales.limitation_trois_premiers_enfants
-  description: L'indemnité familiale est limitée aux trois premiers enfants
-  dates:
-  - '1986-05-01'
-  - '1989-01-01'
-  laws:
-  - 1986-611
-  - 1988-39
-  references:
-  - Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article
-    premier
-  - https://www.pist.tn/jort/1986/1986F/Jo03486.pdf
-  - Loi n° 88-39 du 6 mai 1988, relative à l'octroi des indemnités familiales dans le secteur public,
-    article unique
-  - https://www.pist.tn/jort/1988/1988F/Jo03388.pdf
   needs_review: true
 - parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_1
   description: Indemnités familiales
