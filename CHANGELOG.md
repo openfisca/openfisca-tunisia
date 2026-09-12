@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.81 - [#404](https://github.com/openfisca/openfisca-tunisia/pull/404)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 1989-08-01 au 1992-04-30, du 2014-05-01 au 2017-06-04, et à partir du 2020-10-01.
+* Zones impactées : `parameters/marche_travail`.
+* Détails :
+  - **Sépare le SMIG de l'indemnité spéciale de 1989-1991.** Les quatre séries du SMIG portaient au 1er août 1989, au 1er janvier 1990 et au 1er août 1991 le SMIG augmenté de l'indemnité spéciale (123,016 D au lieu de 120,016 D en 1990, régime de 48 heures). Or l'indemnité n'est pas le SMIG : le décret n° 89-1551 l'institue « au profit des travailleurs payés au » SMIG, l'exclut de l'assiette des cotisations et des prestations de sécurité sociale (art. 5) et suspend à son titre les retenues d'impôt (art. 4) ; le décret n° 91-1316, qui la porte à 5 D, reprend les deux clauses (art. 4 et 5). Le SMIG légal est celui du décret n° 90-246 (JORT n° 13 du 16 février 1990, p. 252) : **120,016 D et 104,706 D par mois, 577 et 604 millimes l'heure**. Les valeurs du 1er août 1989 et du 1er août 1991, dates où seul le montant de l'indemnité change, sont supprimées. L'indemnité reste portée par `indemnite_speciale_smig`, jusqu'à son intégration au SMIG par l'article 3 du décret n° 92-1299 au 1er mai 1992.
+  - Même correction pour le SMAG : **3,546 D** par jour au 1er janvier 1990 (décret n° 90-247, art. 1er) au lieu de 3,661 D, qui comptait l'indemnité spéciale agricole de 115 millimes (décret n° 89-1552) ; suppression des valeurs du 1er août 1989 et du 1er août 1991. Dans `indemnite_speciale_smag`, supprime la valeur du 1er janvier 1990, rattachée au décret n° 90-247, qui ne touche pas l'indemnité.
+  - Tous les usages de ces paramètres visent le SMIG ou le SMAG légal : cotisations du régime des travailleurs à faible revenu et assiette de la retraite complémentaire (`cotisations_sociales`), prestations familiales et contribution aux frais de crèche, seuils de l'AMEN social, indicatrice `smig` et abattement de l'IRPP (`tspr`, `irpp`). Aucun ne doit compter une indemnité exclue des cotisations, des prestations et de la retenue d'impôt.
+  - Conséquence pour la revalorisation des pensions indexées sur le SMIG : la hausse du 1er mai 1992 est de **+10,75 %** (120,016 → 132,912 D), dont les 5 D d'indemnité intégrée, et non de +6,32 %.
+  - Ajoute le SMIG au **1er janvier 2026, 2027 et 2028** (décret n° 2026-67, JORT n° 44 du 30 avril 2026, pp. 838-839) : 554,736 / 582,400 / 611,520 D (48 heures, mensuel), 470,251 / 493,304 / 517,571 D (40 heures), 2,667 / 2,800 / 2,940 D et 2,713 / 2,846 / 2,986 D l'heure.
+  - Ajoute le SMAG journalier manquant : **16,512 D** au 1er octobre 2020 (n° 2020-1070), **17,664 D** au 1er octobre 2022 (n° 2022-768), **18,904 D** au 1er mai 2024 et **20,320 D** au 1er janvier 2025 (n° 2024-420), **21,336 / 22,400 / 23,520 D** aux 1er janvier 2026, 2027 et 2028 (n° 2026-66).
+  - Redate trois valeurs du SMAG qui portaient la date de signature du décret : 12,304 D au **1er mai 2014** (n° 2014-2908, art. 6), 13 D au **1er mai 2015** (n° 2015-1763, art. 6), 13,736 D au **1er août 2016** (n° 2017-669, art. 6). Toutes les dates de ce changement sont des dates d'effet énoncées par le texte.
+  - Corrige l'intitulé du décret SMAG n° 2009-2258, daté du 14 juillet 2009 et non du 2 juin.
+  - Chaque entrée touchée renvoie au fascicule du JORT sur pist.tn, éditions française et arabe, avec numéro, page, article et clause d'effet. Le fascicule n° 45 de 2017 n'est servi qu'en arabe : la référence du SMAG du 1er août 2016 pointe vers l'édition arabe, où le texte a été lu.
+
+<!-- -->
+
 ## 0.80 - [#402](https://github.com/openfisca/openfisca-tunisia/pull/402)
 
 * Amélioration technique.

@@ -10,17 +10,20 @@ metadata:
   unit: currency
   reference:
     1989-08-01:
-    - title: Décret n°89-1551 du 06-10-1989 portant octroi d'une indemnité spéciale au profit des travailleurs payés au salaire minimum interprofessionnel garanti, employés dans les secteurs non agricoles régis par le code du travail.
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1989/décret_89_1551_fr.pdf
-    - title: امر عدد 1551 لسنة 1989 مؤرخ في 6 جوان 1989 يتعلّق بضبط المنحة الخاصة المسندة لفائدة العملة الخالصين بالأجر الأدنى المضمون لمختلف المهن المشتغلين بالقطاعات غير الفلاحية والخاضعة لمجلة الشغل
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1989/décret_89_1551_ar.pdf
+    - title: "Décret n° 89-1551 du 6 octobre 1989, portant octroi d'une indemnité spéciale au profit des travailleurs payés au salaire minimum interprofessionnel garanti, employés dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/1989/1989F/Jo06989.pdf
+      note: "JORT n° 69 du 17 octobre 1989, p. 1632. Article premier : indemnité de 3 dinars par mois pour le personnel payé au mois ; 17 millimes l'heure (40 heures) et 14 millimes l'heure (48 heures) pour le personnel payé à l'heure. Article 4 : les retenues d'impôt sur les traitements et salaires, de contribution personnelle d'État, de contribution de solidarité et au profit du FOPROLOS sont suspendues au titre de cette indemnité. Article 5 : « A titre exceptionnel, l'indemnité spéciale n'est pas prise en compte pour la détermination de l'assiette des cotisations et des prestations de sécurité sociale. » Article 7 : effet à compter du 1er août 1989. L'indemnité s'ajoute au SMIG sans le modifier."
+    - title: "أمر عدد 1551 لسنة 1989 مؤرخ في 6 أكتوبر 1989 يتعلق باسناد منحة خاصة لفائدة العملة الخالصين بالأجر الأدنى المضمون لمختلف المهن المشتغلين بالقطاعات غير الفلاحية والخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/1989/1989A/Ja06989.pdf
     1991-08-01:
-    - title: Décret n°91-1316 du 02-09-1991 portant fixation de l'indemnité spéciale octroyée au profit des travailleurs payés au salaire minimum interprofessionnel garanti, employés dans les secteurs non agricoles régis par le code du travail
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_91_1316_fr.pdf
-    - title: امر عدد 1316 لسنة 1991 يتعلّق بضبط المنحة الخاصة المسندة لفائدة العملة الخالصين بالأجر الأدنى المضمون لمختلف المهن المشتغلين بالقطاعات غير الفلاحية والخاضعة لمجلة الشغل
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1991/décret_91_1316_ar.pdf
+    - title: "Décret n° 91-1316 du 2 septembre 1991, portant fixation de l'indemnité spéciale octroyée au profit des travailleurs payés au salaire minimum interprofessionnel garanti, employés dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/1991/1991F/Jo06391.pdf
+      note: "JORT n° 63 du 17 septembre 1991, pp. 1580-1581. Article premier : indemnité portée à 5 dinars par mois ; 29 millimes l'heure (40 heures) et 24 millimes l'heure (le fascicule imprime « 45 heures » pour le régime de 48 heures). Article 4 : les retenues d'impôt sur le revenu sont suspendues au titre de cette indemnité. Article 5 : même exclusion de l'assiette des cotisations et des prestations de sécurité sociale. Article 7 : abroge le décret n° 89-1551. Article 8 : effet à compter du 1er août 1991."
+    - title: "أمر عدد 1316 لسنة 1991 مؤرخ في 2 سبتمبر 1991 يتعلق بضبط المنحة الخاصة المسندة لفائدة العملة الخالصين بالأجر الأدنى المضمون لمختلف المهن المشتغلين بالقطاعات غير الفلاحية والخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/1991/1991A/Ja06391.pdf
     1992-05-01:
-    - title: Décret n°92-1299 du 13-07-1992 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1299_fr.pdf
-    - title: امر عدد 1299 لسنة 1992 مؤرخ في 13 جويلية 1992 بتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/1992/décret_92_1299_ar.pdf
+    - title: "Décret n° 92-1299 du 13 juillet 1992, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, articles premier et 3"
+      href: https://www.pist.tn/jort/1992/1992F/Jo04992.pdf
+      note: "JORT n° 49 du 28 juillet 1992, pp. 935-936. Article 3 : le SMIG fixé à l'article premier « comprend l'indemnité spéciale fixée par le décret sus-visé n° 91-1316 du 2 septembre 1991 ». Article 8 : abroge le décret n° 91-1316. Article 9 : effet à compter du 1er mai 1992. La valeur nulle traduit l'intégration de l'indemnité au SMIG, non sa suppression."
+    - title: "أمر عدد 1299 لسنة 1992 مؤرخ في 13 جويلية 1992 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/1992/1992A/Ja04992.pdf
