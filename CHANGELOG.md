@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.86 - [#417](https://github.com/openfisca/openfisca-tunisia/pull/417)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/08/1989.
+* Zones impactées : `variables/marche_travail`.
+* Détails :
+  - Expose la **rémunération minimale effectivement servie** — salaire minimum légal **plus indemnité spéciale** — par trois variables calculées : `remuneration_minimale_servie_48h_mensuel`, `remuneration_minimale_servie_40h_mensuel` et `remuneration_minimale_servie_agricole_journaliere`. Les paramètres `marche_travail/indemnite_speciale_smig` et `indemnite_speciale_smag`, posés par la PR #404, n'étaient lus par **aucune formule** : d'août 1989 à avril 1992, une rémunération minimale simulée était inférieure de 3 à 5 dinars par mois à ce qui était servi.
+  - **Une variable calculée plutôt qu'une variable d'entrée** : la grandeur ne dépend d'aucune situation individuelle, elle se déduit entièrement de deux paramètres et de la date.
+  - **Ces variables ne sont branchées sur aucune assiette, et c'est le point.** L'article 5 du décret n° 89-1551 dispose qu'« à titre exceptionnel, l'indemnité spéciale n'est pas prise en compte pour la détermination de l'assiette des cotisations et des prestations de sécurité sociale », et son article 4 suspend à son titre les retenues d'impôt sur les traitements et salaires, de contribution personnelle d'État, de contribution de solidarité et au profit du FOPROLOS ; les décrets n° 89-1552, n° 91-1316 et n° 91-1317 disent la même chose. Les brancher sur `assiette_cotisations_sociales`, `salaire_imposable` ou `revenu_assimile_salaire` contredirait ces textes. **Aucun résultat existant ne change.**
+  - Les formules commencent au **1er août 1989**, faute de paramètre d'indemnité avant cette date. Le **décret n° 92-1299** (art. 3) et le **décret n° 92-1300** (art. 3) intègrent l'indemnité au SMIG et au SMAG au **1er mai 1992** : les paramètres valent alors zéro et la rémunération servie se confond avec le minimum légal.
+  - Six cas de test couvrent les quatre dates qui comptent, de la veille de l'institution au mois de l'intégration.
+
+<!-- -->
+
 ## 0.85 - [#416](https://github.com/openfisca/openfisca-tunisia/pull/416)
 
 * Évolution du système socio-fiscal.
