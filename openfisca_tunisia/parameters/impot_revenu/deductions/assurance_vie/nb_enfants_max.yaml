@@ -1,0 +1,30 @@
+description: Nombre d'enfants à charge ouvrant droit à la majoration du plafond
+values:
+  1990-01-01:
+    value: 4
+  1997-01-01:
+    value: 99
+metadata:
+  unit: /1
+  reference:
+    1990-01-01:
+      title: Article 39 § I-2 du code de l'IRPP et de l'IS annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990, p. 8
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+    1997-01-01:
+      title: Article 52 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998, JORT n° 104 des 30-31 décembre 1997, p. 2439, sous l'intitulé « Encouragement de l'épargne dans le cadre des contrats d'assurance-vie »
+documentation: |
+  LIMITE DE RANG DE LA MAJORATION POUR ENFANTS À CHARGE. Le texte d'origine réserve la
+  majoration aux QUATRE PREMIERS enfants : « majorés de : 100 dinars au titre du conjoint ;
+  50 dinars au titre de chacun des quatre premiers enfants à charge » (JORT n° 1 des
+  2-5 janvier 1990, page 8). La limite disparaît avec l'article 52 de la loi de finances pour
+  1998, qui vise « chacun des enfants à charge au sens des paragraphes II et III de
+  l'article 40 », sans limite de rang.
+
+  LA VALEUR DE 99 EST UNE SENTINELLE, NON UN CHIFFRE DE DROIT : à partir de 1997 le texte ne
+  pose aucune limite, et un paramètre daté ne sait pas dire « pas de limite ». Elle est choisie
+  hors de portée d'un foyer réel. Le point est signalé à la revue, qui peut lui préférer une
+  autre forme.
+
+  La question devient sans objet à compter des revenus 2013 : l'article 24 § 1 de la loi de
+  finances pour 2014 remplace le plafond majoré par un plafond unique, et `enf_plaf` est
+  clôturé à zéro.
