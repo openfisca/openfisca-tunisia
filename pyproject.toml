@@ -47,7 +47,6 @@ notebook = [
     'ipykernel >= 4.8',
     'jupyter-client >= 5.2',
     'matplotlib >= 2.2',
-    'nbconvert >= 5.3',
     'nbformat >= 4.4',
     'pandas >= 0.22.0',
 ]
