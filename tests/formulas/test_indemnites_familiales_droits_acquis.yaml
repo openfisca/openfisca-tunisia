@@ -1,0 +1,94 @@
+# Indemnités familiales : la limitation aux trois premiers enfants, et ses deux exceptions.
+#
+# Depuis le 1er janvier 1989, la loi n° 88-39 du 6 mai 1988 limite l'indemnité familiale
+# aux trois premiers enfants, en réservant expressément les droits acquis antérieurement ;
+# l'enfant handicapé ouvre droit quel que soit son rang (loi n° 81-46, art. 18).
+#
+# Taux applicables : 7,600 / 6,500 / 5,600 / 4,700 du 1er mai 1986 au 31 octobre 1996 ;
+# 7,320 / 6,507 / 5,693 / 4,880 depuis le 1er novembre 1996.
+
+- name: Trois enfants en 2024 - inchangé, la limitation ne mord pas
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 3
+  output:
+    cnrps_indemnites_familiales: 19.520
+
+- name: Quatre enfants en 2024 sans droit acquis ni handicap - le quatrième n'ouvre pas droit
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 19.520
+
+- name: Quatre enfants en 2024 dont un droit acquis avant 1989
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Quatre enfants en 2024 dont un handicapé au-delà du troisième rang
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_handicapes_au_dela_du_troisieme_rang: 1
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Cinq enfants en 2024 dont un droit acquis et un handicapé
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+    nombre_enfants_handicapes_au_dela_du_troisieme_rang: 1
+  output:
+    cnrps_indemnites_familiales: 29.280
+
+- name: On ne peut ouvrir droit pour plus d'enfants qu'il n'y en a au-delà du troisième
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 3
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Quatre enfants en 1987 - avant la limitation, le quatrième ouvre droit sans déclaration
+  period: 1987-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Cinq enfants en 1987 - comportement antérieur préservé
+  period: 1987-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+  output:
+    cnrps_indemnites_familiales: 29.100
+
+- name: Quatre enfants en 1990 sans déclaration - la limitation s'applique
+  period: 1990-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 19.700
+
+- name: Quatre enfants en 1990 avec droit acquis - le taux de 1986 s'applique encore
+  period: 1990-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+  output:
+    cnrps_indemnites_familiales: 24.400

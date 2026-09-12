@@ -1,5 +1,22 @@
 # Changelog
 
+## 5.8.0 - [#XX](https://github.com/openfisca/openfisca-tunisia-pension/pull/XX)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1989 (indemnités familiales au-delà du troisième enfant).
+* Zones impactées : `parameters/retraite/cnrps/accessoires/indemnites_familiales`, `variables/accessoires_formulas`, `variables/accessoires_inputs`.
+* Détails :
+  - **L'indemnité familiale est limitée aux trois premiers enfants depuis le 1er janvier 1989** (issue #30). `cnrps_indemnites_familiales` appliquait le taux du 4e rang à **chaque** enfant au-delà du troisième, quelle que soit la période. La loi n° 88-39 du 6 mai 1988 (JORT n° 33 du 13 mai 1988, p. 735, article unique) accorde l'indemnité « dans la limite des trois premiers enfants » à compter du 1er janvier 1989. La formule surestimait donc l'indemnité de tout pensionné de quatre enfants ou plus, sur trente-sept ans.
+  - **Deux exceptions, que la loi réserve et que la formule porte désormais.** Les **droits acquis antérieurement au 1er janvier 1989**, que l'article unique excepte expressément et dont le décret n° 96-1906 (article 2) fixe encore le taux en 1996 au titre du « quatrième enfant ayant acquis ce droit antérieurement au 1er janvier 1989 » ; et l'**enfant handicapé** venant après le troisième rang, qui ouvre droit quel que soit son rang (loi n° 81-46 du 29 mai 1981, article 18 ; décret n° 96-1906, article 3).
+  - **Un paramètre daté et sourcé** : `accessoires.indemnites_familiales.limitation_trois_premiers_enfants`, faux au 1er mai 1986 — le décret n° 86-611 fixe un taux pour le quatrième enfant, donc le droit n'est pas limité — et vrai au 1er janvier 1989. La valeur de 1986 est **déduite** de l'existence de ce quatrième taux, et non d'une clause qui écarterait une limitation : la note le dit, aucun texte lu n'en énonçant pour cette période. Le paramètre commence à la même date que les quatre taux qu'il gouverne.
+  - **Deux variables d'entrée, nulles par défaut** : `nombre_enfants_indemnite_familiale_droit_acquis` et `nombre_enfants_handicapes_au_dela_du_troisieme_rang`. Le défaut de 0 ne change **rien** aux cas courants — trois enfants ou moins, l'écrasante majorité — et applique la limitation à qui ne déclare rien, ce qui est l'état du droit commun depuis 1989. La formule borne par ailleurs le nombre d'enfants ouvrant droit au nombre d'enfants effectivement présents au-delà du troisième : on ne peut pas déclarer plus de droits acquis qu'on n'a d'enfants.
+  - **Résultats modifiés**, à partir du 1er janvier 1989 et pour les seuls pensionnés de quatre enfants ou plus qui ne déclarent ni droit acquis ni enfant handicapé : en 2024, quatre enfants donnaient 24,400 dinars par mois, et donnent 19,520. Avec un droit acquis ou un enfant handicapé déclaré, le montant est inchangé. **Avant le 1er janvier 1989, aucun résultat ne change** : la limitation ne s'applique pas, et chaque enfant au-delà du troisième continue d'ouvrir droit sans déclaration.
+  - Tests : `tests/formulas/test_indemnites_familiales_droits_acquis.yaml` couvre les deux situations — droit acquis et enfant handicapé —, les deux côtés du 1er janvier 1989, le cas courant de trois enfants, et la borne qui empêche de déclarer plus d'enfants qu'il n'y en a. Les quatre tests existants de `test_accessoires.yaml` passent **sans modification** : ils portent sur un et trois enfants, que la limitation ne touche pas. `make test` : 119 tests passent, contre 109 sur la branche de base.
+  - Rapport d'audit régénéré : le dépôt compte 54 paramètres porteurs de valeurs au lieu de 53, dont 51 ont une référence au lieu de 50 ; les paramètres multi-dates passent de 21 à 22. Les trois paramètres sans source restent les mêmes — `bonifications.militaire.bonus`, `rsa.pension_min` et `rsa.periode_remplacement_base` —, le paramètre ajouté étant sourcé sur le décret n° 86-611 et la loi n° 88-39, désormais cités par cinq et deux paramètres.
+  - _Ce que la formule ne fait toujours pas : l'âge limite des enfants — 16 ans, reculé à 18 en apprentissage et à 21 pour les études —, qui relève de la doctrine de la caisse et non d'un texte lu, reste à la charge de l'utilisateur dans `nombre_enfants_charge`._
+
+<!-- -->
+
 ## 5.7.0 - [#43](https://github.com/openfisca/openfisca-tunisia-pension/pull/43)
 
 * Évolution du système socio-fiscal.

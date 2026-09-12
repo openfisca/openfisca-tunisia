@@ -37,6 +37,11 @@ documentation: |-
   taux du « quatrième enfant ayant acquis ce droit antérieurement au 1er janvier 1989 ».
 
   Ce paramètre représente ainsi, à partir de 1989, le taux des droits acquis et des enfants
-  handicapés au-delà du troisième rang. La formule ne teste ni l'une ni l'autre de ces conditions :
-  il revient à l'utilisateur de ne compter au-delà du troisième que les enfants qui y ouvrent
-  droit. Un taux nul à partir de 1989 aurait supprimé les droits que la loi n° 88-39 maintient.
+  handicapés au-delà du troisième rang. Un taux nul à partir de 1989 aurait supprimé les droits
+  que la loi n° 88-39 maintient.
+
+  La formule teste désormais ces deux conditions, et ne les laisse plus à la charge de
+  l'utilisateur : `limitation_trois_premiers_enfants` dit à partir de quand la limitation
+  s'applique, et les variables d'entrée `nombre_enfants_indemnite_familiale_droit_acquis` et
+  `nombre_enfants_handicapes_au_dela_du_troisieme_rang`, nulles par défaut, disent combien
+  d'enfants au-delà du troisième rang y échappent.

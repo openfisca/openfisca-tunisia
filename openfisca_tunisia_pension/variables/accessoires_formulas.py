@@ -1,5 +1,5 @@
 # Third Party
-from openfisca_core.model_api import MONTH, Variable, max_
+from openfisca_core.model_api import MONTH, Variable, max_, min_, where
 
 # First Party
 from openfisca_tunisia_pension.entities import Individu
@@ -22,9 +22,27 @@ class cnrps_indemnites_familiales(Variable):
         mnt_2 = (nb_enfants >= 2) * params_if.rang_2
         # Enfant 3
         mnt_3 = (nb_enfants >= 3) * params_if.rang_3
-        # Enfants 4 et plus (Loi 88-3 limits this essentially to 3, but grandfathered in some cases)
-        # Assuming for the base case only 3, but allowing calculation if nb_enfants > 3
-        mnt_4_plus = max_(0, nb_enfants - 3) * params_if.rang_4_et_plus
+
+        # Au-delà du troisième rang, la loi n° 88-39 du 6 mai 1988 limite le droit
+        # aux trois premiers enfants à compter du 1er janvier 1989, en réservant
+        # expressément les droits acquis antérieurement. L'enfant handicapé ouvre
+        # droit quel que soit son rang (loi n° 81-46, art. 18 ; décret n° 96-1906,
+        # art. 3). Avant 1989, aucune limitation : le décret n° 86-611 fixe un taux
+        # pour le quatrième enfant.
+        enfants_au_dela = max_(0, nb_enfants - 3)
+        droits_acquis = individu(
+            "nombre_enfants_indemnite_familiale_droit_acquis", period
+        )
+        handicapes = individu(
+            "nombre_enfants_handicapes_au_dela_du_troisieme_rang", period
+        )
+        enfants_ouvrant_droit_au_dela = where(
+            params_if.limitation_trois_premiers_enfants,
+            # On ne peut ouvrir droit pour plus d'enfants qu'il n'y en a.
+            min_(enfants_au_dela, droits_acquis + handicapes),
+            enfants_au_dela,
+        )
+        mnt_4_plus = enfants_ouvrant_droit_au_dela * params_if.rang_4_et_plus
 
         return mnt_1 + mnt_2 + mnt_3 + mnt_4_plus
 
