@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.83 - [#414](https://github.com/openfisca/openfisca-tunisia/pull/414)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/07/2007 au 30/06/2009.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsa`.
+* Détails :
+  - Aligne les **deux premiers paliers d'assurance maladie du régime des salariés agricoles** sur l'article 7 du **décret n° 2007-1406 du 18 juin 2007** (JORT n° 49, p. 2159), lu au fascicule. Le texte fixe le taux à **1,58 %** au 1er juillet 2007 et à **2,88 %** au 1er juillet 2008 ; les paramètres portaient 1,53 et 2,86. Les trois paliers suivants étaient exacts et ne sont pas touchés.
+  - La **répartition employeur/salarié** que l'article énonce est respectée à la lettre : le point supplémentaire de 2007 est intégralement patronal (« 0,67 % au titre des cotisations supplémentaires à la charge de l'employeur »), celui de 2008 se partage en 0,67 employeur et 0,63 salarié. Seule la part employeur bouge donc : 1,30 → **1,35 %** puis 2,00 → **2,02 %**, la part salariale restant à 0,23 puis 0,86 %.
+  - La correction **se referme sur des valeurs déjà exactes** : le palier du 1er juillet 2009 vaut 2,68 / 1,49, et l'article 7 § 3 le construit en ajoutant 0,66 à l'employeur et 0,63 au salarié. Avec les valeurs corrigées de 2008, l'enchaînement tombe juste ; avec les anciennes, il ne tombait pas.
+  - Trois cas de test sont ajoutés dans `tests/formulas/cotisations/cotisation_maladie.yaml`, un par palier ; les deux premiers échouent sans la correction.
+
+<!-- -->
+
 ### 0.82.1 - [#413](https://github.com/openfisca/openfisca-tunisia/pull/413)
 
 * Amélioration technique.
