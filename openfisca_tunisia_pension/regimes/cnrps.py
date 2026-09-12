@@ -228,20 +228,25 @@ class RegimeCNRPS(AbstractRegimeEnAnnuites):
         definition_period = YEAR
 
         def formula(individu, period, parameters):
+            bonifications = parameters(period).retraite.regime_name.bonifications
+            cadre_actif = bonifications.cadre_actif
+
             duree_militaire = individu("duree_service_militaire", period)
             duree_actif = individu("duree_service_cadre_actif", period)
 
-            # Hardcoding the rules as the YAML parameter mapping seems to be failing
-            # Military: 20 -> 5y, 25 -> 5y, 30 -> 5y
-            bonus_militaire = (duree_militaire >= 20) * 5
-
-            # Actif: 15->2y, 20->3y, 25->4y, 35->5y
+            # Article 32 de la loi n° 85-12 : 5 ans pour 35 ans de services, 4 ans
+            # pour 25 ans, 3 ans pour 20 ans, 2 ans pour 15 ans. Les seuils restent
+            # écrits ici ; ce sont les noms des paramètres qui portent les valeurs.
             bonus_actif = (
-                (duree_actif >= 35) * 5
-                + ((duree_actif >= 25) & (duree_actif < 35)) * 4
-                + ((duree_actif >= 20) & (duree_actif < 25)) * 3
-                + ((duree_actif >= 15) & (duree_actif < 20)) * 2
+                (duree_actif >= 35) * cadre_actif.service_35
+                + ((duree_actif >= 25) & (duree_actif < 35)) * cadre_actif.service_25
+                + ((duree_actif >= 20) & (duree_actif < 25)) * cadre_actif.service_20
+                + ((duree_actif >= 15) & (duree_actif < 20)) * cadre_actif.service_15
             )
+
+            # Le seuil de 20 ans n'est porté par aucun paramètre et par aucun texte
+            # lu : voir la documentation de bonifications/militaire/bonus.
+            bonus_militaire = (duree_militaire >= 20) * bonifications.militaire.bonus
 
             return (bonus_militaire + bonus_actif) * 4
 

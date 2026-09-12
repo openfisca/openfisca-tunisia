@@ -84,7 +84,7 @@ Généré le 2026-09-12 par `scripts/generate_pension_source_audit.py`.
 | Fichier | Paramètres retraite accédés |
 | --- | --- |
 | `accessoires_formulas.py` | `retraite.cnrps.accessoires.indemnites_familiales` |
-| `cnrps.py` | `retraite.cnrps`, `retraite.cnrps.bareme_annuite` |
+| `cnrps.py` | `retraite.cnrps`, `retraite.cnrps.bareme_annuite`, `retraite.cnrps.bonifications` |
 | `rsa.py` | `retraite.rsa`, `retraite.rsa.bareme_annuite` |
 | `rsna.py` | `retraite.rsna`, `retraite.rsna.bareme_annuite` |
 | `survivants.py` | `retraite.cnrps.capital_deces`, `retraite.cnrps.survivants` |
