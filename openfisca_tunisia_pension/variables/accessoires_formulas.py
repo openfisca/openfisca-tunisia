@@ -25,32 +25,37 @@ class cnrps_indemnites_familiales(Variable):
     definition_period = MONTH
 
     def formula_1986_05_01(individu, period, parameters):
-        """Chaque enfant au-delà du troisième rang ouvre droit à l'indemnité.
+        """Les quatre premiers enfants ouvrent droit, et eux seuls.
 
         Le décret n° 86-611 du 3 juin 1986, portant fixation des taux des
         indemnités à caractère familial (JORT n° 34 des 3-6 juin 1986, p. 674),
-        fixe à son article premier quatre taux mensuels — premier enfant 7,600
-        dinars, deuxième 6,500, troisième 5,600, quatrième 4,700. Aucun texte lu
-        ne limite alors le nombre d'enfants ouvrant droit.
+        fixe à son article premier quatre taux mensuels, et quatre seulement —
+        premier enfant 7,600 dinars, deuxième 6,500, troisième 5,600, quatrième
+        4,700. Le barème s'arrête au quatrième rang : aucun taux n'est publié
+        pour un cinquième enfant, qui n'ouvre donc aucun droit.
+
+        La lecture est stricte, et non extensive : le taux du quatrième rang
+        vaut pour le quatrième enfant, pas pour chacun de ceux qui le suivent.
+        Le décret n° 96-1906 du 16 octobre 1996 confirme cette lecture en
+        parlant au singulier du « quatrième enfant ayant acquis ce droit
+        antérieurement au 1er janvier 1989 » (article 2).
 
         La formule commence au 1er mai 1986, date d'effet que donne l'article 3
         du décret et première date portée par les quatre paramètres de rang :
         les lire plus tôt lèverait une ParameterNotFoundError. Avant cette date,
         la variable vaut zéro faute de taux publié, plutôt que d'interrompre le
         calcul.
-
-        Les textes nomment le « quatrième enfant » ; cette formule applique son
-        taux à chaque enfant au-delà du troisième, faute d'un texte lu qui
-        tranche le sort du cinquième. Le point est posé en question ouverte.
         """
         nb_enfants = individu("nombre_enfants_charge", period)
         params_if = parameters(period).retraite.cnrps.accessoires.indemnites_familiales
 
-        enfants_au_dela = max_(0, nb_enfants - 3)
+        # Le barème s'arrête au quatrième rang : au plus un enfant au-delà du
+        # troisième, et non chacun de ceux qui suivent.
+        quatrieme_enfant = min_(max_(0, nb_enfants - 3), 1)
 
         return (
             _indemnite_des_trois_premiers_rangs(nb_enfants, params_if)
-            + enfants_au_dela * params_if.rang_4_et_plus
+            + quatrieme_enfant * params_if.rang_4_et_plus
         )
 
     def formula_1989_01_01(individu, period, parameters):
@@ -69,10 +74,15 @@ class cnrps_indemnites_familiales(Variable):
         - ceux qui avaient **acquis le droit avant le 1er janvier 1989**, que la
           loi excepte expressément et dont le décret n° 96-1906 du 16 octobre
           1996 (article 2) fixe encore le taux au titre du « quatrième enfant
-          ayant acquis ce droit antérieurement au 1er janvier 1989 » ;
+          ayant acquis ce droit antérieurement au 1er janvier 1989 ». Le texte
+          parle du quatrième enfant, au singulier : le droit acquis ne vaut donc
+          que pour un enfant, le barème ne connaissant pas de cinquième rang ;
         - l'**enfant handicapé**, qui ouvre droit quel que soit son rang (loi
           n° 81-46 du 29 mai 1981, article 18 ; décret n° 96-1906, article 3, qui
-          lui donne le même taux).
+          vise « l'enfant handicapé venant après le 3e rang » et lui donne le
+          même taux). Ici le rang est indifférent par disposition expresse : un
+          cinquième enfant handicapé ouvre droit, et la limite du barème ne lui
+          est pas opposable.
 
         La date d'effet du 1er janvier 1989 est celle que l'article unique de la
         loi n° 88-39 réserve aux droits acquis, et celle qu'énonce l'article 2 du
@@ -88,9 +98,13 @@ class cnrps_indemnites_familiales(Variable):
         handicapes = individu(
             "nombre_enfants_handicapes_au_dela_du_troisieme_rang", period
         )
+        # Le droit acquis ne vise que le quatrième enfant : un seul, quand bien
+        # même plusieurs seraient déclarés. Le handicap, lui, ouvre droit quel
+        # que soit le rang, et n'est donc pas borné de la même façon.
+        droit_acquis_retenu = min_(droits_acquis, 1)
         # On ne peut ouvrir droit pour plus d'enfants qu'il n'y en a.
         enfants_ouvrant_droit_au_dela = min_(
-            enfants_au_dela, droits_acquis + handicapes
+            enfants_au_dela, droit_acquis_retenu + handicapes
         )
 
         return (

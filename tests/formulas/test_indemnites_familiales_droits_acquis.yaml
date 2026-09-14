@@ -80,13 +80,23 @@
   output:
     cnrps_indemnites_familiales: 24.400
 
-- name: Cinq enfants en 1987, chacun au-delà du troisième ouvre droit
+# Le barème du décret n° 86-611 s'arrête au quatrième rang : aucun taux
+# n'est publié pour un cinquième enfant, qui n'ouvre donc aucun droit.
+- name: Cinq enfants en 1987, le cinquième n'ouvre aucun droit
   period: 1987-01
   absolute_error_margin: 0.00001
   input:
     nombre_enfants_charge: 5
   output:
-    cnrps_indemnites_familiales: 29.100
+    cnrps_indemnites_familiales: 24.400
+
+- name: Huit enfants en 1987, le barème s'arrête toujours au quatrième
+  period: 1987-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 8
+  output:
+    cnrps_indemnites_familiales: 24.400
 
 # --- Le second régime, depuis 1989 ---------------------------------
 
@@ -148,6 +158,30 @@
     nombre_enfants_charge: 5
     nombre_enfants_indemnite_familiale_droit_acquis: 1
     nombre_enfants_handicapes_au_dela_du_troisieme_rang: 1
+  output:
+    cnrps_indemnites_familiales: 29.280
+
+# Le décret n° 96-1906 vise « le quatrième enfant ayant acquis ce droit »,
+# au singulier : le droit acquis ne vaut que pour un enfant.
+- name: Cinq enfants en 2024, deux droits acquis déclarés, un seul retenu
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    nombre_enfants_indemnite_familiale_droit_acquis: 2
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+# L'enfant handicapé ouvre droit quel que soit son rang (loi n° 81-46,
+# art. 18) : la limite du barème au quatrième rang ne lui est pas
+# opposable, et deux enfants handicapés au-delà du troisième comptent
+# tous les deux.
+- name: Cinq enfants en 2024, deux handicapés au-delà du troisième rang
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    nombre_enfants_handicapes_au_dela_du_troisieme_rang: 2
   output:
     cnrps_indemnites_familiales: 29.280
 
