@@ -113,7 +113,7 @@ class RegimeCNRPS(AbstractRegimeEnAnnuites):
 
             choix = [
                 0,
-                cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum,
+                cnrps.age_legal.civil.fonctions_astreignantes.duree_services,
                 cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum,
                 cnrps.depart_anticipe.meres_3_enfants.duree_minimum,
             ]
@@ -144,7 +144,7 @@ class RegimeCNRPS(AbstractRegimeEnAnnuites):
 
             choix = [
                 0,
-                cnrps.depart_anticipe.sur_demande.astreignants.age_minimum,
+                cnrps.age_legal.civil.fonctions_astreignantes.age,
                 cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum,
                 cnrps.depart_anticipe.meres_3_enfants.age_minimum,
             ]
