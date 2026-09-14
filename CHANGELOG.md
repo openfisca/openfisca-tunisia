@@ -1,5 +1,20 @@
 # Changelog
 
+# 7.0.0
+
+* Changement non rétrocompatible.
+* Zones impactées : `parameters/retraite/cnrps/age_legal/civil`, `parameters/retraite/cnrps/depart_anticipe/sur_demande`, `variables/cnrps`, `regimes/cnrps`.
+* Détails :
+  - **Les deux conditions de l'article 28 sont réunies sous un seul nœud** (issue #37). L'article 28 de la loi n° 85-12 pose deux conditions cumulatives pour les agents exerçant des fonctions astreignantes : un âge et une durée de services. Elles étaient portées par deux jeux de paramètres distincts, l'un décrivant à tort un départ anticipé « sur demande ». `age_legal.civil.fonctions_astreignantes` devient un nœud portant `age` et `duree_services`.
+  - **Chemins supprimés** : `retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum` et `.duree_minimum`. **Chemin transformé** : `retraite.cnrps.age_legal.civil.fonctions_astreignantes`, qui était une valeur scalaire, devient un nœud — les appels qui le lisaient comme un âge doivent viser `fonctions_astreignantes.age`.
+  - **Le nom disait le contraire du texte.** L'article 28 ne décrit pas un départ à l'initiative de l'agent : il fixe l'âge et la durée au terme desquels les agents « sont mis à la retraite », avec maintien possible en activité jusqu'à 60 ans. Les ranger sous `depart_anticipe.sur_demande` présentait comme une faculté ce que la loi écrit comme une mise à la retraite.
+  - **Un doublon disparaît.** Les deux jeux portaient les mêmes valeurs — 55 ans au 12 septembre 1985, 56 au 1er juillet 2019, 57 au 1er janvier 2020 — et la même source, mais un seul des deux était lu par les formules, et seul l'autre portait la durée de 35 ans. Les notes conservées sont les plus complètes des deux : elles citent l'article 28 *in extenso*, dans sa rédaction de 1985 puis dans celle de la loi n° 2019-37.
+  - **Aucun résultat ne change.** Les valeurs, les dates d'effet et les références sont identiques ; seuls les chemins changent. `cnrps_age_requis` et `cnrps_duree_requise_annees`, dans `variables/cnrps` comme dans `regimes/cnrps`, lisent désormais le nœud fusionné. Les quatre tests de `tests/formulas/test_astreignants.py` passent sans modification de leurs valeurs attendues. `make test` : 144 tests.
+  - Rapport d'audit régénéré : le dépôt compte **52 paramètres porteurs de valeurs au lieu de 53**, et 49 avec référence au lieu de 50. La baisse est exactement le doublon supprimé — trois paramètres disparaissent (`fonctions_astreignantes` comme valeur scalaire, `astreignants.age_minimum`, `astreignants.duree_minimum`), deux les remplacent (`fonctions_astreignantes.age`, `fonctions_astreignantes.duree_services`). Les paramètres multi-dates passent de 21 à 20, deux d'entre eux ayant porté les mêmes trois dates jusqu'ici. Aucune valeur, aucune date d'effet et aucune référence ne sont modifiées : seule la structure change, et les trois paramètres sans source restent les mêmes (`bonifications.militaire.bonus`, `rsa.pension_min`, `rsa.periode_remplacement_base`).
+  - _Dépendance à connaître : le précis socio-fiscal lit `age_legal/civil/fonctions_astreignantes.yaml` comme une feuille scalaire pour engendrer son tableau des âges. Sa mise à jour doit suivre la publication de cette version, et non la précéder._
+
+<!-- -->
+
 ## 6.1.0
 
 * Évolution du système socio-fiscal.

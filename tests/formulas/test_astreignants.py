@@ -1,8 +1,9 @@
 """Fonctions astreignantes (article 28 de la loi n° 85-12) et calculs CNRPS de 1985.
 
-Les paramètres `depart_anticipe.sur_demande.astreignants` commençaient au
-24 septembre 1985, date de signature du décret n° 85-1178 ; ils sont désormais fondés
-sur l'article 28 de la loi n° 85-12, dont l'effet est au 12 septembre 1985.
+Les conditions de l'article 28 — un âge et une durée de services, cumulatives — sont
+portées par `age_legal.civil.fonctions_astreignantes.age` et `.duree_services`. Elles
+commençaient au 24 septembre 1985, date de signature du décret n° 85-1178 ; elles sont
+désormais fondées sur l'article 28 lui-même, dont l'effet est au 12 septembre 1985.
 
 Aucun calcul CNRPS n'aboutit avant cette date. `cnrps_age_requis` et
 `cnrps_duree_requise_annees` lisent, pour tous les individus, toutes les branches de

@@ -4,8 +4,8 @@ metadata:
   needs_review: true
   scope: openfisca_tunisia_pension.parameters.retraite
 coverage:
-  parameters_with_values: 53
-  parameters_with_reference: 50
+  parameters_with_values: 52
+  parameters_with_reference: 49
   parameters_without_reference:
   - retraite.cnrps.bonifications.militaire.bonus
   - retraite.rsa.pension_min
@@ -242,7 +242,8 @@ law_candidates:
     - retraite.cnrps.age_legal.civil.cadre_commun
     - retraite.cnrps.age_legal.civil.cadres_actifs
     - retraite.cnrps.age_legal.civil.enseignants_du_superieur
-    - retraite.cnrps.age_legal.civil.fonctions_astreignantes
+    - retraite.cnrps.age_legal.civil.fonctions_astreignantes.age
+    - retraite.cnrps.age_legal.civil.fonctions_astreignantes.duree_services
     - retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
     - retraite.cnrps.bareme_annuite
     - retraite.cnrps.bonifications.cadre_actif.service_15
@@ -252,8 +253,6 @@ law_candidates:
     - retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
     - retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
     - retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
-    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
-    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum
     - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
     - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum
     - retraite.cnrps.duree_de_service_minimale
@@ -432,9 +431,8 @@ law_candidates:
     parameters:
     - retraite.cnrps.age_legal.civil.cadre_commun
     - retraite.cnrps.age_legal.civil.cadres_actifs
-    - retraite.cnrps.age_legal.civil.fonctions_astreignantes
+    - retraite.cnrps.age_legal.civil.fonctions_astreignantes.age
     - retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
-    - retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
 parameter_candidates:
 - parameter: retraite.cnrps.accessoires.indemnite_revenu_unique.1_enfant
   description: Montant mensuel de l'Indemnité de Revenu Unique (IRU) selon le nombre d'enfants
@@ -615,9 +613,8 @@ parameter_candidates:
     professeurs de l'enseignement supérieur, article 2 (article 29 bis de la loi n° 85-12)
   - https://www.pist.tn/jort/2009/2009F/Jo0302009.pdf
   needs_review: true
-- parameter: retraite.cnrps.age_legal.civil.fonctions_astreignantes
-  description: Âge de mise à la retraite des agents exerçant des fonctions astreignantes (article 28 de
-    la loi n° 85-12)
+- parameter: retraite.cnrps.age_legal.civil.fonctions_astreignantes.age
+  description: Âge de mise à la retraite des agents exerçant des fonctions astreignantes
   dates:
   - '1985-09-12'
   - '2019-07-01'
@@ -637,6 +634,17 @@ parameter_candidates:
     régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
     premier (article 28 nouveau) et article 5
   - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.fonctions_astreignantes.duree_services
+  description: Durée de services exigée pour la mise à la retraite des agents exerçant des fonctions astreignantes
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 28
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
   needs_review: true
 - parameter: retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
   description: Âge de mise à la retraite des ouvriers accomplissant des tâches pénibles et insalubres
@@ -809,40 +817,6 @@ parameter_candidates:
   references:
   - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
     survivants dans le secteur public, article 22
-  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
-  needs_review: true
-- parameter: retraite.cnrps.depart_anticipe.sur_demande.astreignants.age_minimum
-  description: Âge minimum pour la retraite anticipée sur demande pour travaux astreignants
-  dates:
-  - '1985-09-12'
-  - '2019-07-01'
-  - '2020-01-01'
-  laws:
-  - 1985-12
-  - 2019-37
-  references:
-  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
-    survivants dans le secteur public, article 28
-  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
-  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
-    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
-    5
-  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
-  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
-    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
-    premier (article 28 nouveau) et article 5
-  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
-  needs_review: true
-- parameter: retraite.cnrps.depart_anticipe.sur_demande.astreignants.duree_minimum
-  description: Durée minimum de services effectifs pour la retraite anticipée sur demande pour travaux
-    astreignants
-  dates:
-  - '1985-09-12'
-  laws:
-  - 1985-12
-  references:
-  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
-    survivants dans le secteur public, article 28
   - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
   needs_review: true
 - parameter: retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
