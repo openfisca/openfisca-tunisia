@@ -28,5 +28,3 @@ documentation: |-
   peut dépasser un rendement de 20 % de la rémunération de liquidation. Ce plafond de 20 % date
   de 1988 ; la loi n° 2019-37 le reconduit en portant le repère à 62 ans. La suppression
   d'emplois en est retirée par la loi n° 2002-61 du 9 juillet 2002.
-
-  La formule `cnrps_bonifications` n'utilise pas ce paramètre : le barème y est écrit en dur.
