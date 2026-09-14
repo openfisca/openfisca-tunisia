@@ -41,8 +41,8 @@ documentation: |-
   que la loi n° 88-39 maintient.
 
   La limitation elle-même n'est pas portée par un paramètre : ce n'est pas une valeur du droit,
-  mais un changement de règle. `cnrps_indemnites_familiales` en fait une seconde formule datée,
-  `formula_1989_01_01`, qui réserve ce taux aux enfants désignés par les variables d'entrée
-  `nombre_enfants_indemnite_familiale_droit_acquis` et
-  `nombre_enfants_handicapes_au_dela_du_troisieme_rang`, nulles par défaut. Avant cette date, la
-  formule de base l'applique à chaque enfant au-delà du troisième.
+  mais un changement de règle. Deux catégories d'enfants y échappent à compter du 1er janvier
+  1989 — ceux dont le droit était acquis avant cette date, et l'enfant handicapé quel que soit
+  son rang. Savoir si un enfant donné relève de l'une ou de l'autre ne se lit dans aucun texte :
+  cela décrit la situation de l'intéressé, et non une règle de droit. Avant le 1er janvier 1989,
+  le taux vaut pour chaque enfant au-delà du troisième.
