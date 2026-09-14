@@ -1776,7 +1776,7 @@ wheels = [
 
 [[package]]
 name = "openfisca-tunisia-pension"
-version = "6.0.0"
+version = "6.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "numba" },

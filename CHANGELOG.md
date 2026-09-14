@@ -1,5 +1,19 @@
 # Changelog
 
+## 6.1.0
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : jusqu'au 30/04/1981 (indemnité de revenu unique).
+* Zones impactées : `variables/accessoires_formulas`.
+* Détails :
+  - **`cnrps_indemnite_revenu_unique` reçoit une formule datée** (issue #47). Elle portait une formule non datée, alors que ses trois paramètres de montant ne commencent qu'au 1er mai 1981. Elle devient `formula_1981_05_01`. La date est celle de l'**effet** énoncé par l'article 5 de la loi n° 81-70 du 1er août 1981 — « L'article 4 de la présente loi prend effet à compter du 1er mai 1981 » (JORT n° 51 du 7 août 1981, p. 1790) — et non celle de sa signature ni de sa publication. C'est l'article 4 qui ouvre le droit aux retraités, en ajoutant un paragraphe V à l'article 22 de la loi n° 59-18.
+  - **Un zéro silencieux est supprimé, et c'était le vrai défaut.** La formule lisait ses paramètres par `getattr(params_iru, "1_enfant", 0)`. Or `ParameterNotFoundError` **dérive de `AttributeError`** — MRO : `['ParameterNotFoundError', 'AttributeError', 'Exception', ...]` —, de sorte que la valeur par défaut avalait l'erreur. Avant mai 1981, la variable rendait bien zéro, mais par accident. Le même filet aurait transformé, **à n'importe quelle date**, un paramètre mal orthographié, supprimé ou renommé en un zéro silencieux qu'aucun test n'aurait vu : le renommage `rang_4_et_plus` → `rang_4` de la 6.0.0 aurait pu passer inaperçu ici. Les trois valeurs par défaut sont retirées ; un paramètre manquant échoue désormais bruyamment. Le `getattr` lui-même est conservé, « 1_enfant » n'étant pas un identifiant Python valide.
+  - **Aucun résultat ne change à partir du 1er mai 1981.** Avant cette date, la variable vaut toujours zéro, mais parce que la formule n'existe pas encore — résultat voulu, et non produit d'une erreur masquée.
+  - Tests : `tests/formulas/test_indemnite_revenu_unique.yaml`, **neuf cas** en YAML — l'entrée en vigueur au mois près (décembre 1980 et avril 1981 à zéro, mai 1981 à 3,125), les trois montants selon le nombre d'enfants, le taux de trois enfants appliqué au-delà, la condition de revenu unique dans ses deux formes, et l'absence d'enfant. Les deux tests existants de `test_accessoires.yaml` passent **sans modification**. `make test` : 144 tests passent.
+  - _Ce que la formule ne fait toujours pas : les montants ne sont établis par aucun texte du Journal officiel — ils viennent du manuel de liquidation de la caisse, qui ne cite pas leur source. Les paramètres le déclarent._
+
+<!-- -->
+
 # 6.0.0 - [#44](https://github.com/openfisca/openfisca-tunisia-pension/pull/44)
 
 * Évolution du système socio-fiscal.
