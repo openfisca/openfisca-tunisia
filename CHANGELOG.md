@@ -1,5 +1,17 @@
 # Changelog
 
+### 7.0.1
+
+* Amélioration technique.
+* Zones impactées : `parameters/retraite/cnrps/bonifications`, `parameters/retraite/cnrps/depart_anticipe/meres_3_enfants`.
+* Détails :
+  - **Six paramètres cessent de se documenter par le modèle** (issue #46). Un paramètre porte une valeur du droit : il doit pouvoir se lire avec le texte seul, sans connaître le nom des formules qui l'emploient. Aucune valeur, aucune date d'effet et aucune référence ne sont modifiées.
+  - **Cinq de ces mentions étaient devenues fausses.** Les quatre paliers de `bonifications.cadre_actif` et `bonifications.militaire.bonus` affirmaient : « La formule `cnrps_bonifications` n'utilise pas ce paramètre : le barème y est écrit en dur. » C'était exact à leur rédaction, mais la 5.6.0 (PR #42, issue #29) a précisément branché la formule sur ces paramètres. La phrase désinformait donc le lecteur sur l'état du modèle, en plus de l'y renvoyer.
+  - **Un motif de conception rejoint le CHANGELOG, où il a sa place.** `depart_anticipe.meres_3_enfants.age_minimum` expliquait conserver une valeur non sourcée pour 1985-1988 parce que « `cnrps_age_requis` évalue toutes les branches de son `select` pour tous les individus » : la retirer rendrait tout calcul CNRPS impossible sur ces trois années. Le fait est vrai et utile, mais il décrit le modèle, non le droit. Le paramètre conserve le fait juridique — aucun texte lu n'appuie les 50 ans, et l'article 41 nouveau de 1988 range les mères dans un cas distinct de la demande ordinaire, ce qui invite à en douter.
+  - Aucun test n'est modifié : `make test` passe à l'identique.
+
+<!-- -->
+
 # 7.0.0
 
 * Changement non rétrocompatible.

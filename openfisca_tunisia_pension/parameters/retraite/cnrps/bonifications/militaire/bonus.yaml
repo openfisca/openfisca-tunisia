@@ -19,5 +19,4 @@ documentation: |-
   la limite d'un rendement de 20 % de la rémunération de liquidation. Aucun de ces articles ne
   fixe un nombre d'années.
 
-  La valeur est conservée pour la continuité des calculs ; son origine reste à établir. La
-  formule `cnrps_bonifications` n'utilise pas ce paramètre : la bonification y est écrite en dur.
+  La valeur est conservée faute de mieux ; son origine reste à établir.

@@ -15,9 +15,9 @@ documentation: |-
   **Depuis le 1er janvier 1989, il n'y a plus de condition d'âge.** L'article 41 nouveau,
   issu de la loi n° 88-71 du 27 juin 1988, rend la jouissance de la pension immédiate pour
   les mères admises à la retraite sur leur demande. La valeur 0 exprime cette absence de
-  condition : la formule `cnrps_age_requis` la lit, et aucun âge n'est plus opposé à la
-  mère qui remplit les conditions de l'article 5, 2° e) — trois enfants au moins dont l'âge
-  n'a pas dépassé 20 ans, ou un enfant handicapé d'un handicap profond.
+  condition : aucun âge n'est plus opposé à la mère qui remplit les conditions de
+  l'article 5, 2° e) — trois enfants au moins dont l'âge n'a pas dépassé 20 ans, ou un enfant
+  handicapé d'un handicap profond.
 
   **Avant le 1er janvier 1989, les textes lus n'établissent pas l'état du droit.** La valeur
   de 50 ans qui couvre cette période n'est appuyée par aucun texte, et elle n'est pas
@@ -28,12 +28,10 @@ documentation: |-
   la valeur procède — mais elle n'est écrite nulle part, et la réécriture de 1988, qui range
   les mères dans un cas distinct de la demande ordinaire, invite plutôt à en douter.
 
-  La valeur est néanmoins conservée pour la période 1985-1988, et non retirée : la retirer
-  rendrait tout calcul CNRPS impossible entre le 12 septembre 1985 et le 31 décembre 1988,
-  puisque `cnrps_age_requis` évalue toutes les branches de son `select` pour tous les
-  individus. Le choix est donc de conserver une valeur non sourcée en la déclarant telle,
-  plutôt que de fermer une fenêtre de trois ans de calculs. Il est réversible, et il gagne à
-  être tranché par la lecture du texte qui manque.
+  La valeur est néanmoins conservée pour la période 1985-1988, et non retirée : le choix est
+  de porter une valeur non sourcée en la déclarant telle, plutôt que de laisser ces trois
+  années sans aucune condition d'âge. Il est réversible, et il gagne à être tranché par la
+  lecture du texte qui manque.
 
   La date de départ passe du 5 mars 1985 — date de **signature** de la loi n° 85-12, que la
   convention du dépôt rejette — au 12 septembre 1985, date de son **effet** (article 75),
