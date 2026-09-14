@@ -119,23 +119,51 @@ class cnrps_indemnite_revenu_unique(Variable):
     label = "Indemnité de Revenu Unique (IRU) CNRPS"
     definition_period = MONTH
 
-    def formula(individu, period, parameters):
+    def formula_1981_05_01(individu, period, parameters):
+        """La majoration pour revenu unique, servie avec la pension.
+
+        La loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la
+        gestion 1981 (JORT n° 51 du 7 août 1981, p. 1789), ajoute par son
+        article 4 un paragraphe V à l'article 22 de la loi n° 59-18 : « À la
+        pension de retraite et à la pension de veuve s'ajoutent, le cas échéant,
+        l'indemnité familiale et une majoration pour revenu unique attribuées
+        dans les mêmes conditions et selon les mêmes taux et les mêmes modalités
+        que les indemnités familiales et la majoration pour salaire unique
+        servies aux agents en activité. » La loi n° 85-12 du 5 mars 1985,
+        article 40, reconduit l'indemnité comme accessoire de la pension.
+
+        La formule commence au 1er mai 1981, date d'**effet** que donne
+        l'article 5 de la loi n° 81-70 — « L'article 4 de la présente loi prend
+        effet à compter du 1er mai 1981 » — et non celle de sa signature ni de sa
+        publication. C'est aussi la première date portée par les trois
+        paramètres de montant. Avant cette date, le droit n'est pas ouvert aux
+        retraités et la variable vaut zéro.
+
+        Les montants eux-mêmes ne sont établis par aucun texte normatif : ils
+        proviennent du manuel de liquidation de la caisse, qui ne cite pas leur
+        source. Les paramètres le disent.
+        """
         nb_enfants = individu("nombre_enfants_charge", period)
         conjoint_sans_revenu = individu("conjoint_sans_revenu", period)
         mere_divorcee = individu("mere_divorcee_garde_enfants", period)
 
-        # The pensioner must have formed a family and had a single income.
-        # This is simplified here by checking if they declare the spouse has no income
-        # or if it's a divorced mother with custody (who receives it directly per manual).
+        # Le droit suppose une famille et un revenu unique. La condition est
+        # approchée ici par la déclaration d'un conjoint sans revenu, ou par
+        # celle d'une mère divorcée ayant la garde, qui la perçoit directement
+        # selon le manuel de la caisse.
         eligible = conjoint_sans_revenu + mere_divorcee
 
         params_iru = parameters(
             period
         ).retraite.cnrps.accessoires.indemnite_revenu_unique
 
-        # Determine amount based on number of children
-        mnt_1 = (nb_enfants == 1) * getattr(params_iru, "1_enfant", 0)
-        mnt_2 = (nb_enfants == 2) * getattr(params_iru, "2_enfants", 0)
-        mnt_3_plus = (nb_enfants >= 3) * getattr(params_iru, "3_enfants_et_plus", 0)
+        # `getattr` est ici le seul accès possible : « 1_enfant » n'est pas un
+        # identifiant Python valide. Aucune valeur par défaut n'est passée, à
+        # dessein : ParameterNotFoundError dérivant d'AttributeError, un défaut
+        # transformerait un paramètre absent, mal orthographié ou renommé en un
+        # zéro silencieux, que nul test ne verrait.
+        mnt_1 = (nb_enfants == 1) * getattr(params_iru, "1_enfant")
+        mnt_2 = (nb_enfants == 2) * getattr(params_iru, "2_enfants")
+        mnt_3_plus = (nb_enfants >= 3) * getattr(params_iru, "3_enfants_et_plus")
 
         return (mnt_1 + mnt_2 + mnt_3_plus) * eligible
