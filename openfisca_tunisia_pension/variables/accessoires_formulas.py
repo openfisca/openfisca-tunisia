@@ -24,7 +24,7 @@ class cnrps_indemnites_familiales(Variable):
     label = "Montant mensuel des indemnités familiales CNRPS"
     definition_period = MONTH
 
-    def formula(individu, period, parameters):
+    def formula_1986_05_01(individu, period, parameters):
         """Chaque enfant au-delà du troisième rang ouvre droit à l'indemnité.
 
         Le décret n° 86-611 du 3 juin 1986, portant fixation des taux des
@@ -32,6 +32,12 @@ class cnrps_indemnites_familiales(Variable):
         fixe à son article premier quatre taux mensuels — premier enfant 7,600
         dinars, deuxième 6,500, troisième 5,600, quatrième 4,700. Aucun texte lu
         ne limite alors le nombre d'enfants ouvrant droit.
+
+        La formule commence au 1er mai 1986, date d'effet que donne l'article 3
+        du décret et première date portée par les quatre paramètres de rang :
+        les lire plus tôt lèverait une ParameterNotFoundError. Avant cette date,
+        la variable vaut zéro faute de taux publié, plutôt que d'interrompre le
+        calcul.
 
         Les textes nomment le « quatrième enfant » ; cette formule applique son
         taux à chaque enfant au-delà du troisième, faute d'un texte lu qui

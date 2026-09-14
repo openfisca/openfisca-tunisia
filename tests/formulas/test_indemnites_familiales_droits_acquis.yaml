@@ -12,6 +12,36 @@
 #
 # Taux : 7,600 / 6,500 / 5,600 / 4,700 du 1er mai 1986 au 31 octobre
 # 1996 ; 7,320 / 6,507 / 5,693 / 4,880 depuis le 1er novembre 1996.
+#
+# Avant le 1er mai 1986, aucun taux n'est publié : la première formule
+# est datée de ce jour, et la variable vaut zéro auparavant au lieu de
+# lever une ParameterNotFoundError.
+
+# --- Avant le premier taux publié ----------------------------------
+
+- name: Décembre 1985, avant toute date d'effet, la variable vaut zéro
+  period: 1985-12
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 0
+
+- name: Avril 1986, dernier mois avant la date d'effet du décret 86-611
+  period: 1986-04
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 0
+
+- name: Mai 1986, premier mois des quatre taux
+  period: 1986-05
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 24.400
 
 # --- La bascule, au mois près --------------------------------------
 
