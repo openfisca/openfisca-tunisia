@@ -1,8 +1,9 @@
 # Changelog
 
-## 5.8.0 - [#44](https://github.com/openfisca/openfisca-tunisia-pension/pull/44)
+# 6.0.0 - [#44](https://github.com/openfisca/openfisca-tunisia-pension/pull/44)
 
 * Évolution du système socio-fiscal.
+* **Changement non rétrocompatible** : le paramètre `retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus` est renommé **`rang_4`**. Son ancien nom affirmait un « et plus » que les textes ne portent pas — le barème du décret n° 86-611 s'arrête au quatrième rang. Tout code ou test appelant l'ancien chemin doit être mis à jour ; le contenu du paramètre, ses valeurs, ses dates et ses références sont inchangés.
 * Périodes concernées : à partir du 01/01/1989 (indemnités familiales au-delà du troisième enfant).
 * Zones impactées : `parameters/retraite/cnrps/accessoires/indemnites_familiales`, `variables/accessoires_formulas`, `variables/accessoires_inputs`.
 * Détails :

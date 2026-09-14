@@ -55,7 +55,7 @@ class cnrps_indemnites_familiales(Variable):
 
         return (
             _indemnite_des_trois_premiers_rangs(nb_enfants, params_if)
-            + quatrieme_enfant * params_if.rang_4_et_plus
+            + quatrieme_enfant * params_if.rang_4
         )
 
     def formula_1989_01_01(individu, period, parameters):
@@ -109,7 +109,7 @@ class cnrps_indemnites_familiales(Variable):
 
         return (
             _indemnite_des_trois_premiers_rangs(nb_enfants, params_if)
-            + enfants_ouvrant_droit_au_dela * params_if.rang_4_et_plus
+            + enfants_ouvrant_droit_au_dela * params_if.rang_4
         )
 
 
