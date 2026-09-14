@@ -1,6 +1,6 @@
 metadata:
   generated_by: scripts/generate_pension_source_audit.py
-  generated_at: '2026-09-12'
+  generated_at: '2026-09-14'
   needs_review: true
   scope: openfisca_tunisia_pension.parameters.retraite
 coverage:
@@ -283,7 +283,7 @@ law_candidates:
     - retraite.cnrps.accessoires.indemnites_familiales.rang_1
     - retraite.cnrps.accessoires.indemnites_familiales.rang_2
     - retraite.cnrps.accessoires.indemnites_familiales.rang_3
-    - retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4
   1988-1136:
     title: null
     local_texts: []
@@ -318,7 +318,7 @@ law_candidates:
       pdf_fr: /jort/1988/1988F/Jo03388.pdf
       pdf_ar: /jort/1988/1988A/Ja03388.pdf
     parameters:
-    - retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4
   1988-71:
     title: null
     local_texts: []
@@ -375,7 +375,7 @@ law_candidates:
     - retraite.cnrps.accessoires.indemnites_familiales.rang_1
     - retraite.cnrps.accessoires.indemnites_familiales.rang_2
     - retraite.cnrps.accessoires.indemnites_familiales.rang_3
-    - retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4
   2007-43:
     title: Loi n° 2007-43 du 25 juin 2007, pensions public/privé/régimes spéciaux
     local_texts:
@@ -544,8 +544,8 @@ parameter_candidates:
     article premier
   - https://www.pist.tn/jort/1996/1996F/Jo08596.pdf
   needs_review: true
-- parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_4_et_plus
-  description: Indemnités familiales - 4ème enfant et plus
+- parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_4
+  description: Indemnités familiales - 4ème enfant
   dates:
   - '1986-05-01'
   - '1989-01-01'

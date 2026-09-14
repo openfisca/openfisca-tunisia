@@ -1,4 +1,4 @@
-description: Indemnités familiales - 4ème enfant et plus
+description: Indemnités familiales - 4ème enfant
 values:
   1986-05-01:
     value: 4.700
@@ -24,8 +24,15 @@ metadata:
 documentation: |-
   Montant mensuel de l'indemnité familiale servie avec la pension au titre du quatrième enfant,
   dans les mêmes conditions qu'aux agents en activité (loi n° 85-12 du 5 mars 1985, article 40).
-  Les textes nomment le quatrième enfant ; la formule applique ce taux à chaque enfant au-delà du
-  troisième.
+  Le barème du décret n° 86-611 s'arrête au quatrième rang : il ne publie aucun taux pour un
+  cinquième enfant, qui n'ouvre donc aucun droit. Le taux ci-dessous vaut pour le quatrième
+  enfant, et pour lui seul — le décret n° 96-1906 en parle d'ailleurs au singulier, « le
+  quatrième enfant ayant acquis ce droit antérieurement au 1er janvier 1989 » (article 2).
+
+  L'enfant handicapé fait exception : l'article 18 de la loi n° 81-46 du 29 mai 1981 lui ouvre
+  droit quels que soient son âge et son rang, et l'article 3 du décret n° 96-1906 lui attribue ce
+  même taux en visant « l'enfant handicapé venant après le 3e rang ». La limite du barème ne lui
+  est donc pas opposable.
 
   À compter du 1er janvier 1989, la loi n° 88-39 du 6 mai 1988 (JORT n° 33 du 13 mai 1988,
   p. 735, article unique) limite le droit aux trois premiers enfants, mais « ne s'applique pas aux
@@ -37,6 +44,12 @@ documentation: |-
   taux du « quatrième enfant ayant acquis ce droit antérieurement au 1er janvier 1989 ».
 
   Ce paramètre représente ainsi, à partir de 1989, le taux des droits acquis et des enfants
-  handicapés au-delà du troisième rang. La formule ne teste ni l'une ni l'autre de ces conditions :
-  il revient à l'utilisateur de ne compter au-delà du troisième que les enfants qui y ouvrent
-  droit. Un taux nul à partir de 1989 aurait supprimé les droits que la loi n° 88-39 maintient.
+  handicapés au-delà du troisième rang. Un taux nul à partir de 1989 aurait supprimé les droits
+  que la loi n° 88-39 maintient.
+
+  La limitation elle-même n'est pas portée par un paramètre : ce n'est pas une valeur du droit,
+  mais un changement de règle. Deux catégories d'enfants y échappent à compter du 1er janvier
+  1989 — ceux dont le droit était acquis avant cette date, et l'enfant handicapé quel que soit
+  son rang. Savoir si un enfant donné relève de l'une ou de l'autre ne se lit dans aucun texte :
+  cela décrit la situation de l'intéressé, et non une règle de droit. Avant le 1er janvier 1989,
+  le taux vaut pour le quatrième enfant, sans qu'aucune déclaration soit nécessaire.
