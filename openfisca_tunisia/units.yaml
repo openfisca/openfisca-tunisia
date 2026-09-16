@@ -19,11 +19,26 @@
     one: Dinar pour un kilogramme
     other: Dinars pour un kilogramme
   short_label: DT/kg
+- name: currency/100kg
+  label:
+    one: Dinar pour cent kilogrammes
+    other: Dinars pour cent kilogrammes
+  short_label: DT/100 kg
+- name: currency/hl
+  label:
+    one: Dinar pour un hectolitre
+    other: Dinars pour hectolitre
+  short_label: DT/hl
 - name: currency/l
   label:
     one: Dinar pour un litre
     other: Dinars pour litre
   short_label: DT/l
+- name: currency/tonne
+  label:
+    one: Dinar pour une tonne
+    other: Dinars pour tonne
+  short_label: DT/tonne
 - name: currency/m3
   label:
     one: Dinar par mètre cube

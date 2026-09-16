@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.87 - [#NUMÉRO-DE-PR-À-RENSEIGNER](https://github.com/openfisca/openfisca-tunisia/pulls)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/07/1988.
+* Zones impactées : `parameters/fiscalite_indirecte/accises`, `units.yaml`.
+* Détails :
+  - Verse les **tarifs spécifiques du droit de consommation sur les produits pétroliers** sous `fiscalite_indirecte/accises/produits_petroliers` : dix-sept paramètres, positions 27-09 à 27-11.
+  - **Une technique que les accises ne portaient pas.** Les branches existantes ne contiennent que des taux *ad valorem*, rangés par taux et non par position tarifaire. Un tarif spécifique s'exprime par unité de volume ou de masse : il ne pouvait pas s'y loger, d'où un sous-arbre propre.
+  - Trois états datés, chacun lu au Journal officiel et porteur de sa référence : **01/07/1988** (tableau annexé à la loi n° 88-62, JORT n° 39, p. 849), **05/02/1991** (article premier du décret n° 91-550, JORT n° 29, p. 936) et **22/04/1999** (décret n° 99-894, JORT n° 33, p. 624-625).
+  - Déclare trois unités dans `units.yaml` : `currency/hl`, `currency/100kg` et `currency/tonne`. Les unités suivent la source **sans conversion** — le tarif est imprimé par hectolitre, par cent kilogrammes ou par tonne selon le produit.
+  - **Ce qui n'est pas versé, et pourquoi.** L'état consolidé de 2023 n'a pas de date d'effet établie ; lui en attribuer une serait inventer. Deux lignes y portent pourtant une valeur différente de 1999 — l'essence super sans plomb et le gaz-oil : leur documentation le signale et avertit que la valeur de 1999 y court au-delà de sa validité réelle. Les deux lignes nées après 1999, le gaz-oil à teneur réduite en soufre et le gaz naturel carburant, sont écartées pour la même raison.
+  - **Aucun résultat existant ne change** : ces paramètres ne sont lus par aucune formule, et ne peuvent pas l'être en l'état. Un tarif au volume suppose des quantités, quand les enquêtes de consommation portent des dépenses. Ils sont versés comme référence datée et sourcée.
+  - Valeurs engendrées depuis le relevé du précis de la législation socio-fiscale, puis relues depuis openfisca : 44 valeurs, aucun écart.
+
+<!-- -->
+
 ## 0.86 - [#417](https://github.com/openfisca/openfisca-tunisia/pull/417)
 
 * Évolution du système socio-fiscal.
