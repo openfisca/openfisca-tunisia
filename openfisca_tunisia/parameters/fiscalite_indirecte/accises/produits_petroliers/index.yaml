@@ -1,0 +1,38 @@
+description: "Tarifs spécifiques du droit de consommation sur les produits pétroliers"
+metadata:
+  short_label: Produits pétroliers
+  order:
+  - huiles_brutes
+  - essence_super
+  - essence_super_sans_plomb
+  - essence_normale
+  - essence_avion
+  - white_spirit
+  - petrole_lampant
+  - gaz_oil
+  - fuel_oil_domestique
+  - fuel_oil_leger
+  - fuel_oil_lourd
+  - huiles_graissage_lubrifiants
+  - huiles_vaseline_paraffine
+  - autres_position_27_10
+  - propane_butane
+  - propane_butane_bouteilles_13kg_ou_moins
+  - propane_butane_vrac_ou_bouteilles_plus_13kg
+documentation: |-
+  Tarifs SPÉCIFIQUES : exprimés par unité de volume ou de masse, non en
+  pourcentage de la valeur. Ils ne sont donc pas de même nature que les taux
+  ad valorem des autres branches de `accises`, et ne peuvent pas être appliqués
+  à une dépense sans une série de prix.
+
+  Trois états datés sont versés : 1988 (loi n° 88-62), 1991 (décret n° 91-550)
+  et 1999 (décret n° 99-894), chacun lu au Journal officiel. L'état consolidé de
+  2023 n'est PAS versé : sa date d'effet n'est pas établie. Les lignes dont la
+  valeur a changé depuis 1999 le signalent dans leur propre documentation.
+
+  Écartées faute d'état daté : le gaz-oil à teneur réduite en soufre et le gaz
+  naturel carburant, tous deux nés après 1999.
+
+  Source amont : precis/fr/fiscalite/tarifs/tarifs-releves-droits-consommation.csv
+  du précis de la législation socio-fiscale, dont les valeurs sont vérifiées
+  contre les tableaux publiés.

@@ -1,0 +1,23 @@
+description: "Droit de consommation - gaz-oil (position 27-10)"
+values:
+  1988-07-01:
+    value: 2.887
+  1991-02-05:
+    value: 4.7456
+  1999-04-22:
+    value: 5.8309
+metadata:
+  unit: currency/hl
+  reference:
+    1988-07-01:
+      title: "Tableau annexé à la loi n° 88-62 du 2 juin 1988, portant refonte de la réglementation relative aux droits de consommation, JORT n° 39 du 10 juin 1988, p. 849 ; applicable à compter du 1er juillet 1988 (décret n° 88-1109, art. 2)"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo03988.pdf"
+    1991-02-05:
+      title: "Article premier du décret n° 91-550 du 20 avril 1991, portant modification du tableau annexé à la loi n° 88-62, JORT n° 29 du 30 avril 1991, p. 936 ; art. 2, applicable à partir du 5 février 1991"
+      href: "https://www.pist.tn/jort/1991/1991F/Jo02991.pdf"
+    1999-04-22:
+      title: "Décret n° 99-894 du 19 avril 1999, fixant le tarif du droit de consommation applicable aux produits pétroliers, JORT n° 33 du 23 avril 1999, p. 624-625 ; art. 2, applicable à compter du 22 avril 1999"
+      href: "https://www.pist.tn/jort/1999/1999F/Jo03399.pdf"
+documentation: |-
+  Tarif spécifique du droit de consommation sur la position 27-10.
+  ATTENTION - l'état consolidé de 2023 porte 12,116 D/hl, valeur DIFFÉRENTE de celle de 1999. La date d'effet de ce changement n'est pas établie : elle n'est donc pas versée ici, et la valeur de 1999 court au-delà de sa validité réelle.

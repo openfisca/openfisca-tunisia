@@ -1,0 +1,13 @@
+description: "Droit de consommation - propane et butane, en vrac ou bouteilles > 13 kg (position Ex 27-11)"
+values:
+  1999-04-22:
+    value: 44.7
+metadata:
+  unit: currency/tonne
+  reference:
+    1999-04-22:
+      title: "Décret n° 99-894 du 19 avril 1999, fixant le tarif du droit de consommation applicable aux produits pétroliers, JORT n° 33 du 23 avril 1999, p. 624-625 ; art. 2, applicable à compter du 22 avril 1999"
+      href: "https://www.pist.tn/jort/1999/1999F/Jo03399.pdf"
+documentation: |-
+  Tarif spécifique du droit de consommation sur la position Ex 27-11.
+  L'état consolidé de 2023 porte la même valeur : le tarif est resté nominalement inchangé depuis 1999.
