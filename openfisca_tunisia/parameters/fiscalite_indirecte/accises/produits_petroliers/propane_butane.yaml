@@ -1,0 +1,17 @@
+description: "Droit de consommation - propane et butane (position Ex 27-11)"
+values:
+  1988-07-01:
+    value: 6.235
+  1991-02-05:
+    value: 27.386
+metadata:
+  unit: currency/tonne
+  reference:
+    1988-07-01:
+      title: "Tableau annexé à la loi n° 88-62 du 2 juin 1988, portant refonte de la réglementation relative aux droits de consommation, JORT n° 39 du 10 juin 1988, p. 849 ; applicable à compter du 1er juillet 1988 (décret n° 88-1109, art. 2)"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo03988.pdf"
+    1991-02-05:
+      title: "Article premier du décret n° 91-550 du 20 avril 1991, portant modification du tableau annexé à la loi n° 88-62, JORT n° 29 du 30 avril 1991, p. 936 ; art. 2, applicable à partir du 5 février 1991"
+      href: "https://www.pist.tn/jort/1991/1991F/Jo02991.pdf"
+documentation: |-
+  Tarif spécifique du droit de consommation sur la position Ex 27-11.
