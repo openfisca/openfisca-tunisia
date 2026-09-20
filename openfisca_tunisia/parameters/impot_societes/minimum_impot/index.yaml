@@ -6,37 +6,37 @@ metadata:
   - montant_minimum_normal
   - montant_minimum_reduit
 documentation: |
-  Minimum d'impôt de l'ARTICLE 49 § II du code, assis sur le chiffre d'affaires. L'impôt
+  Minimum d'impôt de l'article 49 § II du code, assis sur le chiffre d'affaires. L'impôt
   annuel ne peut lui être inférieur, et il reste exigible même en l'absence de chiffre
   d'affaires.
 
-  NE PAS CONFONDRE AVEC DEUX HOMONYMES, confusion que le dépôt documente déjà ailleurs :
-    - le minimum de l'ARTICLE 12 BIS DE LA LOI n° 89-114, qui plafonne les avantages
+  Ne pas confondre avec deux homonymes, confusion que le dépôt documente déjà ailleurs :
+    - le minimum de l'article 12 bis de la loi n° 89-114, qui plafonne les avantages
       fiscaux et vit sous `impot_revenu/minimum_impot` — c'est une fraction de l'impôt
       théorique, non du chiffre d'affaires ;
-    - le minimum de l'ARTICLE 44 § II du code, qui est son équivalent du côté de l'impôt
+    - le minimum de l'article 44 § II du code, qui est son équivalent du côté de l'impôt
       sur le revenu des personnes physiques.
 
-  DEUX RÉGLAGES D'UNE MÊME RÈGLE. Les minima des articles 44 § II et 49 § II ont les mêmes
+  Deux réglages d'une même règle. Les minima des articles 44 § II et 49 § II ont les mêmes
   taux et des planchers différents, et ils ont été modifiés par les mêmes lois, souvent par
   un même article — ainsi de l'article 48 de la loi n° 2013-54, dont le § 1 vise l'article 44
   et le § 2 l'article 49. La frontière entre les deux impôts ne sépare pas ici deux règles,
   mais deux réglages de la même.
 
-  DEUX EXONÉRATIONS, non versées parce qu'elles dépendent de la situation de l'entreprise et
+  Deux exonérations, non versées parce qu'elles dépendent de la situation de l'entreprise et
   non de la date : les entreprises nouvelles, durant la réalisation du projet et dans la
   limite de trois ans à compter du dépôt de la déclaration d'existence ; et les entreprises
   bénéficiant de la déduction totale de leurs bénéfices d'exploitation, durant la période
   qui leur est impartie. Le minimum est par ailleurs majoré de 50 % en cas de paiement plus
   d'un mois après l'expiration des délais légaux.
 
-  LES SÉRIES COMMENCENT EN 2006, ET CE N'EST PAS UNE LACUNE MAIS UNE DISTINCTION. L'état
-  antérieur est désormais établi sur pièce, et il porte un mécanisme DIFFÉRENT. Le code de
+  Les séries commencent en 2006, et ce n'est pas une lacune mais une distinction. L'état
+  antérieur est désormais établi sur pièce, et il porte un mécanisme différent. Le code de
   1990 dispose : « L'impôt annuel ne peut être inférieur à un minimum de 0,5 % du chiffre
-  d'affaires. Ce minimum NE PEUT EXCÉDER : 500 dinars pour les entreprises soumises au taux
+  d'affaires. Ce minimum ne peut excéder : 500 dinars pour les entreprises soumises au taux
   de 10 % ; 1 000 dinars pour les entreprises soumises au taux de 35 % » (art. 49 § II, lu
   par reconnaissance optique du JORT n° 1 des 2-5 janvier 1990, p. 10 du fichier). Les
-  montants sont alors des PLAFONDS, doublés à 1 000 et 2 000 dinars par l'article 46 de la
+  montants sont alors des plafonds, doublés à 1 000 et 2 000 dinars par l'article 46 de la
   loi n° 97-88 sous l'intitulé « relèvement du plafond de l'impôt minimum » (JORT n° 104 des
   30-31 décembre 1997, p. 2439).
 
@@ -47,7 +47,7 @@ documentation: |
   n'est pas un plancher. Les valeurs antérieures à 2006 sont donc documentées ici plutôt que
   versées, et la chronologie complète se lit dans le tableau du précis.
 
-  AUCUN TEXTE INTERMÉDIAIRE ENTRE 1998 ET 2006 : la filiation que le code donne lui-même de
+  Aucun texte intermédiaire entre 1998 et 2006 : la filiation que le code donne lui-même de
   l'article 49 § II n'en nomme aucun, et deux recherches distinctes dans la base des textes
   n'en font apparaître aucun. La loi n° 98-73, que son intitulé « suppression de l'impôt
   minimum » désigne comme candidate, ne vise en réalité que le minimum au titre de la

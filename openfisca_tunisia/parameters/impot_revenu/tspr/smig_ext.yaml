@@ -5,14 +5,14 @@ values:
 metadata:
   unit: /1
 documentation: |
-  PARAMÈTRE SANS SOURCE ET SANS EFFET, CONSERVÉ EN L'ÉTAT (issue #390).
+  Paramètre sans source et sans effet, conservé en l'état (issue #390).
 
   Il est censé étendre aux salaires légèrement supérieurs au salaire minimum la déduction
   supplémentaire de `abattement_pour_salaire_minimum`. Deux faits le privent de portée :
 
-  1. IL VAUT ZÉRO sur toute sa durée : aucun revenu positif ne peut lui être inférieur, de
-  sorte que l'extension qu'il est censé porter reste sans objet. 2. IL N'EXISTE QU'À PARTIR
-  DU 1er JANVIER 2011, et n'a aucune référence.
+  1. Il vaut zéro sur toute sa durée : aucun revenu positif ne peut lui être inférieur, de
+  sorte que l'extension qu'il est censé porter reste sans objet. 2. Il n'existe qu'à partir
+  du 1er janvier 2011, et n'a aucune référence.
 
   L'issue #390 se demandait si l'absence de ce seuil avant 2011 était une lacune ou une
   règle étendue en 2011. La question ne peut pas être tranchée sans le texte qui institue le

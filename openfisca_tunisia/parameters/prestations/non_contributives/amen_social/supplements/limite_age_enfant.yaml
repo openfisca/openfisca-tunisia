@@ -8,9 +8,9 @@ metadata:
     2020-05-20:
       title: Article 2 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, pris pour l'application du décret gouvernemental n° 2020-317
 documentation: |
-  DATE CORRIGÉE : 20 mai 2020 et non 1er janvier 2019.
+  Date corrigée : 20 mai 2020 et non 1er janvier 2019.
 
-  BORNE BASSE NON MODÉLISÉE : l'arrêté conjoint du 1er avril 2022 réserve le supplément aux
+  Borne basse non modélisée : l'arrêté conjoint du 1er avril 2022 réserve le supplément aux
   enfants de six à dix-huit ans, les moins de six ans relevant désormais de l'allocation
   familiale non contributive. Encoder cette borne demanderait un paramètre distinct et une
   formule qui le lise ; ni l'un ni l'autre n'existe.

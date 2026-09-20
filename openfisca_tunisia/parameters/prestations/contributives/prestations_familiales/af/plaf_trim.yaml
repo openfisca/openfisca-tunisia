@@ -22,13 +22,13 @@ documentation: |
   Plafond de la rémunération globale trimestrielle à laquelle s'appliquent les taux des
   allocations familiales (article 61 de la loi n° 60-30).
 
-  DATE CORRIGÉE. La valeur de 122 dinars était encodée au 1er janvier 1960 en citant la loi
+  Date corrigée. La valeur de 122 dinars était encodée au 1er janvier 1960 en citant la loi
   n° 88-38 de 1988 — une valeur juste rattachée à la mauvaise date, et au mauvais texte. C'est
   la loi n° 86-75 qui porte le plafond à 122 dinars, avec effet au 1er mai 1986. Ce que la loi
   n° 88-38 apporte, c'est la suppression du quatrième rang, non le plafond.
 
-  ATTENTION À LA PÉRIODE 1960-1975. L'article 61 d'origine ne fixe pas un plafond simple mais
-  une BANDE : les taux s'appliquent à la rémunération trimestrielle comprise entre 52 et
+  Attention à la période 1960-1975. L'article 61 d'origine ne fixe pas un plafond simple mais
+  une bande : les taux s'appliquent à la rémunération trimestrielle comprise entre 52 et
   500 dinars. La borne basse est dans `plancher_trim`. La loi n° 75-82 supprime la bande au
   profit d'un plafond unique de 72 dinars, à des taux plus élevés — la baisse apparente de
   500 à 72 dinars n'est donc pas une coupe.

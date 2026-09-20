@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.91 - [#432](https://github.com/openfisca/openfisca-tunisia/pull/432)
+
+* Amélioration technique.
+* Zones impactées : `parameters`.
+* Détails :
+  - **L'emphase par capitales quitte la prose des paramètres.** Un millier de mots, dans 105 fichiers, criaient une rubrique — « DATE CORRIGÉE », « SANS TEXTE », « PARAMÈTRE AJOUTÉ » — ou ouvraient un paragraphe en majuscules. C'est une convention de commentaire de code, non de notice : elle n'a pas sa place dans un magasin de valeurs, où le lecteur vient chercher le droit et non le ton de celui qui l'a versé.
+  - **Seule la casse change.** Un contrôle programmatique compare chaque fichier avant et après en bas de casse intégrale : aucun écart. Aucun mot n'est ajouté, retiré ni déplacé, et les 2 447 fichiers de paramètres restent valides.
+  - **La portée est la prose seule** : les blocs `documentation` et les champs `note`. Les `title`, les `description` et les valeurs portent des codes qui sont des données — `C/D`, `HU`, `A1+300/A2+270`, la mention « NON sommee » des grilles de la fonction publique — qu'une mise en bas de casse aurait abîmés.
+  - **Les sigles et les chiffres romains sont préservés**, y compris sous élision : `l'IRPP`, `d'IS`, `L'URL`, `JORT`, `SMIG`, `CNSS`, `C.N.R.P.S`, `l'article 49 § II`.
+
 ## 0.90 - [#431](https://github.com/openfisca/openfisca-tunisia/pull/431)
 
 * Amélioration technique.
