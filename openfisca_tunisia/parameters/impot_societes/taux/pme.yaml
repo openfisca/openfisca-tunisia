@@ -1,0 +1,33 @@
+description: Taux de l'impôt sur les sociétés applicable aux petites et moyennes sociétés sous seuils de chiffre d'affaires
+values:
+  2018-01-01:
+    value: 0.20
+  2021-01-01:
+    value: null
+metadata:
+  unit: /1
+  reference:
+    2018-01-01:
+      title: Article 15 de la loi n° 2017-66 du 18 décembre 2017 portant loi de finances pour l'année 2018, JORT n° 101 du 19 décembre 2017, p. 4270 — ajoute au premier paragraphe de l'article 49 § I du code le taux de 20 % ; applicable à compter du 1er janvier 2018 par l'article 67 § 1 de la même loi
+    2021-01-01:
+      title: Article 14 § 2 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021, JORT n° 128 du 25 décembre 2020 — abroge le deuxième paragraphe de l'article 49 § I ; effet aux bénéfices réalisés à partir du 1er janvier 2021 par son article 14 § 28
+documentation: |
+  Taux réduit visant les bénéfices de l'ACTIVITÉ PRINCIPALE, ainsi que les bénéfices
+  exceptionnels de l'article 11 § I bis du code et aux mêmes conditions, pour les sociétés
+  dont le chiffre d'affaires annuel hors taxes ne dépassait pas :
+    - 1 million de dinars pour la transformation et l'achat en vue de la revente ;
+    - 500 mille dinars pour les services et les professions non commerciales.
+
+  UN TAUX QUI A VÉCU TROIS EXERCICES, ceux de 2018, 2019 et 2020, puis a disparu. Il naît de
+  la loi de finances pour 2018 et meurt avec celle pour 2021, qui abroge le paragraphe
+  entier. La clôture par une valeur nulle en 2021 est donc un fait de droit, non une lacune
+  de dépouillement : au-delà de cette date, le paramètre n'a plus d'objet.
+
+  LES SEUILS NE SONT PAS VERSÉS. Ils qualifient la société, non la date, et aucune formule
+  ne les lirait ; ils sont énoncés ci-dessus plutôt que transformés en paramètres muets.
+
+  UNE CONFIRMATION INTERMÉDIAIRE, SANS EFFET SUR LA VALEUR. L'article 14 de la loi
+  n° 2018-56 abroge et remplace l'article 49 § I tout entier et y reconduit ce taux de 20 %
+  aux mêmes seuils — mais son article 18 en différait l'effet aux bénéfices de 2021, année
+  où la loi de finances pour 2021 l'a précisément abrogé. Cette rédaction n'a donc jamais
+  régi un seul exercice, et le taux de 20 % n'a vécu que sous la rédaction de 2017.

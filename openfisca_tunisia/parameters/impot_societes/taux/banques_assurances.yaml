@@ -1,0 +1,44 @@
+description: Taux de l'impôt sur les sociétés applicable aux banques et aux entreprises d'assurance
+values:
+  2024-01-01:
+    value: 0.40
+metadata:
+  unit: /1
+  reference:
+    2024-01-01:
+      title: >-
+        Article 37 § 2 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances
+        pour l'année 2025, JORT n° 149 du 10 décembre 2024, édition française, p. 3430.
+        Il ajoute au troisième paragraphe de l'article 49 § I du code un paragraphe 4
+        ainsi libellé — « 4- 40 %, et ce, pour les banques et les établissements
+        financiers y compris ceux non-résidents prévus par la loi n° 2016-48 du
+        11 juillet 2016, à l'exception des établissements de paiement ; les entreprises
+        d'assurance et de réassurance, y compris les assurances mutuelles, les
+        entreprises d'assurance et de réassurance takaful ainsi que pour le fonds des
+        adhérents ». Date d'effet fixée par le § 16 du même article aux bénéfices
+        réalisés à compter du 1er janvier 2024.
+documentation: |
+  Quatrième niveau de la grille, visant les banques et les établissements financiers régis
+  par la loi n° 2016-48 — à l'exception des établissements de paiement —, ainsi que les
+  entreprises d'assurance et de réassurance, y compris les assurances mutuelles, les
+  entreprises takaful et le fonds des adhérents prévu au code des assurances.
+
+  AVANT 2024, CES ACTIVITÉS RELEVAIENT DU TAUX DE 35 % (voir `secteurs_35`), où elles
+  figuraient depuis la loi n° 2006-80 et où la refonte de l'article 49 § I opérée par
+  l'article 14 de la loi n° 2018-56 les maintenait expressément : dans cette rédaction, les
+  banques et les compagnies d'assurance sont le premier et le quatrième tiret du niveau à
+  35 %. Ce taux de 40 % n'est donc PAS l'œuvre de la loi de finances pour 2019, contrairement
+  à ce qu'une lecture du seul code consolidé pourrait suggérer — son marqueur d'abrogation
+  porte sur le paragraphe entier, non sur ce niveau.
+
+  LE TEXTE DE 2024 N'A PAS ÉTÉ LU AU JOURNAL OFFICIEL. La loi n° 2024-48 est absente du
+  corpus local, n'est pas indexée par la base des textes, et l'édition française de son
+  fascicule n'est pas en ligne. La valeur et sa date reposent sur le CODE CONSOLIDÉ de 2025 :
+  source officielle, mais de seconde main.
+
+  UN RÉGIME TRANSITOIRE, NON VERSÉ. La note (2) de l'article 49 signale que, conformément à
+  l'article 41 de la loi de finances pour 2019, les prestataires de services financiers
+  non-résidents en activité au 31 décembre 2018 ont continué de bénéficier du taux de 10 %
+  au titre de leurs opérations avec les non-résidents jusqu'au 31 décembre 2020. Cette
+  exception dépend de la situation de chaque entreprise et non de la seule date : elle ne
+  peut pas être représentée par un paramètre daté.

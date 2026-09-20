@@ -1,0 +1,31 @@
+description: Taux de l'impôt sur les sociétés
+metadata:
+  order:
+  - droit_commun
+  - reduit
+  - pme
+  - secteurs_35
+  - banques_assurances
+  - plus_value_option
+documentation: |
+  Les taux de l'article 49 § I du code.
+
+  POURQUOI PLUSIEURS FICHIERS ET NON UN BARÈME. Ces taux ne forment pas une échelle : ils
+  s'appliquent à des champs disjoints, définis par l'activité de la société et non par le
+  montant de son bénéfice. Les réunir en un barème par tranches serait faux. Chacun porte
+  donc sa propre histoire et ses propres dates d'effet.
+
+  Les dates sont celles des BÉNÉFICES concernés, non de la publication du texte : c'est la
+  convention que retiennent les lois elles-mêmes, qui disposent « applicable aux bénéfices
+  réalisés à compter du 1er janvier … ».
+
+  UN TAUX QUI N'EST PAS VERSÉ PARCE QU'IL N'A JAMAIS EXISTÉ EN FAIT : celui de 13,5 %.
+  L'article 14 de la loi n° 2018-56 crée un niveau à 13,5 % pour une douzaine d'industries ;
+  l'article 26 de la loi n° 2019-78 y ajoute les services de conseil et d'études à forte
+  valeur ajoutée. Mais l'article 18 de la loi n° 2018-56 différait l'effet de cette grille
+  aux bénéfices réalisés à partir du 1er janvier 2021 — et, avant que cette date n'arrive,
+  l'article 14 de la loi n° 2020-46 a abrogé ce niveau (§ 3) et supprimé l'expression
+  « ou 13,5 % » partout dans le code (§ 16), pour ces mêmes bénéfices de 2021. Institué en
+  2018, étendu en 2019, abrogé en 2020, applicable en 2021 : le taux est mort avant sa date
+  d'entrée en vigueur et n'a régi AUCUN exercice. Le verser serait faire croire à un droit
+  qui n'a jamais produit d'effet.

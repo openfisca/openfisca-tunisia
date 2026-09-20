@@ -1,0 +1,44 @@
+description: Taux réduit de l'impôt sur les sociétés
+values:
+  1990-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  reference:
+    1990-01-01:
+      title: Article 49 § I du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990
+documentation: |
+  UNE VALEUR INCHANGÉE DEPUIS TRENTE-CINQ ANS. Le taux réduit de 10 % figure dans le code
+  dès son origine — « Toutefois, ce taux est fixé à 10 % pour : les entreprises exerçant une
+  activité artisanale, agricole, de pêche ou d'armement de bateaux de pêche… » — et le code
+  de 2025 le porte encore. Pendant que le taux de droit commun passait de 35 % à 20 % en
+  trois étapes, celui-ci n'a pas bougé.
+
+  CE QUI A BOUGÉ, C'EST LE CHAMP, NON LE TAUX. L'article 23 de la loi n° 2015-53 du
+  25 décembre 2015 portant loi de finances pour 2016 limite le bénéfice de ce taux aux
+  « bénéfices provenant de l'activité principale ainsi que les bénéfices exceptionnels visés
+  au paragraphe I bis de l'article 11 » du code. Un périmètre qui se resserre à taux
+  constant ne se représente pas par une valeur datée : il est consigné ici, et non dans
+  `values`.
+
+  Le champ actuel comprend notamment l'artisanat, l'agriculture, la pêche et l'armement de
+  bateaux de pêche, les investissements dans les zones de développement régional et dans les
+  activités de lutte contre la pollution après expiration des périodes de déduction totale,
+  ainsi que plusieurs catégories de coopératives.
+
+  DEUX RÉÉCRITURES QUI N'ONT PAS TOUCHÉ LA VALEUR. L'article 14 de la loi n° 2018-56 abroge
+  et remplace l'article 49 § I tout entier, et y reconduit ce taux de 10 % à l'identique, en
+  premier niveau de sa grille — la liste des bénéficiaires y est mot pour mot celle de 1990,
+  augmentée des catégories ajoutées entre-temps. Le code consolidé porte par ailleurs sur ce
+  niveau le marqueur « Modifié Art 37-1 LF 2024-48 » : là encore, c'est la rédaction du
+  champ qui bouge, non le taux, que le code de 2025 porte toujours à 10 %.
+
+  UN TAUX QUI TRAVERSE TOUT, SAUF UNE CHOSE. De 1990 à aujourd'hui, ce 10 % survit à quatre
+  changements du droit commun, à la création puis à l'abrogation de deux niveaux
+  intermédiaires — le 20 % des PME et le 13,5 % qui n'a jamais produit effet — et à trois
+  refontes de l'article 49 § I. C'est le seul point fixe de la grille.
+
+  ATTENTION À UNE CONFUSION DOCUMENTÉE. La note bibliographique du précis attachée à la loi
+  n° 2006-80 mentionne un « remplacement du taux de 10 % par 12 % ». Lecture faite de
+  l'article 17 de cette loi, il s'agit du taux de la TAXE SUR LA VALEUR AJOUTÉE, non de
+  l'impôt sur les sociétés. Le taux réduit d'IS n'a pas été modifié en 2006.

@@ -1,0 +1,58 @@
+description: Taux de droit commun de l'impôt sur les sociétés
+values:
+  1990-01-01:
+    value: 0.35
+  2007-01-01:
+    value: 0.30
+  2014-01-01:
+    value: 0.25
+  2021-01-01:
+    value: 0.15
+  2024-01-01:
+    value: 0.20
+metadata:
+  unit: /1
+  reference:
+    1990-01-01:
+      title: Article 49 § I du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989, JORT n° 1 des 2-5 janvier 1990
+    2007-01-01:
+      title: Article premier § 1 de la loi n° 2006-80 du 18 décembre 2006, relative à la réduction des taux de l'impôt et à l'allègement de la pression fiscale sur les entreprises, JORT n° 101 du 19 décembre 2006, p. 4300 ; date d'application fixée au 1er janvier 2007 par son article 19
+    2014-01-01:
+      title: Article 18 § 1 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, JORT n° 105 du 31 décembre 2013 ; applicable aux bénéfices réalisés à compter du 1er janvier 2014
+    2021-01-01:
+      title: Article 14 § 1 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021, JORT n° 128 du 25 décembre 2020 — « Le taux de l'impôt sur les sociétés fixé à 25 % est réduit à 15 % là où il se trouve dans les textes en vigueur » ; date d'effet fixée par son article 14 § 28 aux bénéfices réalisés à partir du 1er janvier 2021
+    2024-01-01:
+      title: Article 37 § 1 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour l'année 2025, JORT n° 149 du 10 décembre 2024, édition française, p. 3429-3430 — « Le taux de l'impôt sur les sociétés, appliqué au bénéfice imposable arrondi au dinar inférieur, est fixé à 20 % » ; date d'effet fixée par le § 16 du même article aux bénéfices réalisés à compter du 1er janvier 2024
+documentation: |
+  Le taux appliqué au bénéfice imposable arrondi au dinar inférieur, à défaut d'un taux
+  propre à l'activité de la société.
+
+  DATES EN ANNÉES DE BÉNÉFICES, non de publication. La loi n° 2006-80 est publiée le
+  19 décembre 2006 et s'applique aux bénéfices de 2007 ; la loi de finances pour 2014 est
+  publiée le 31 décembre 2013 et vise les bénéfices de 2014 ; celle pour 2021, publiée le
+  25 décembre 2020, vise les bénéfices de 2021.
+
+  UNE BAISSE À 15 % QUE L'ÉTAT COURANT DU CODE NE LAISSE PLUS VOIR. Entre le 25 % de 2014 et
+  le 20 % d'aujourd'hui s'intercale un taux de 15 %, en vigueur pour les bénéfices de 2021 à
+  2023. Il ne figure nulle part dans le texte consolidé, puisqu'une valeur postérieure l'a
+  remplacé : seul le texte de la loi de finances pour 2021 l'atteste. Lire la série
+  25 % → 20 % comme une baisse continue serait doublement faux — le taux a d'abord chuté de
+  dix points, puis REMONTÉ de cinq.
+
+  LE 35 % NE DISPARAÎT PAS EN 2007. L'article premier de la loi n° 2006-80 abaisse le taux
+  général à 30 %, mais son paragraphe 2 maintient 35 % pour neuf secteurs : voir
+  `secteurs_35`. Lire la baisse de 2007 comme une baisse générale serait inexact.
+
+  VALEUR D'ORIGINE ÉTABLIE PAR LECTURE DU CODE. Le fascicule portant le code annexé
+  (JORT n° 1 de 1990) est un scan sans couche texte ; l'article 49 a été lu par
+  reconnaissance optique, à la page 10 du fichier, et dispose : « Le taux de l'impôt sur les
+  sociétés, appliqué au bénéfice imposable arrondi au dinar inférieur, est fixé à 35 %. »
+
+  LE TEXTE DE 2024 A ÉTÉ LU SUR PIÈCE, le 20 septembre 2026. L'article 37 de la loi
+  n° 2024-48 figure aux pages 3429-3431 de l'édition FRANÇAISE, dans le texte conservé au
+  corpus local (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2025.pdf,
+  117 pages, couche texte), sous l'intitulé officiel « Appui à l'équité fiscale par
+  l'adoption de taux progressifs de l'impôt sur les sociétés ». La valeur de 20 % et sa date
+  ne reposent donc plus sur le code consolidé. L'édition française du fascicule n'est
+  toujours pas en ligne sur pist.tn — le chemin en 2024F y rend un 404 —, ce qui explique
+  que la référence pointe l'édition arabe.

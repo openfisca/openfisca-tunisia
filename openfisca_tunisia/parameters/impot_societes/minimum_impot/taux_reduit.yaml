@@ -1,0 +1,25 @@
+description: Taux du minimum d'impôt sur les sociétés, régime réduit
+values:
+  2006-01-01:
+    value: 0.001
+metadata:
+  unit: /1
+  reference:
+    2006-01-01:
+      title: Article 43 § 1 de la loi n° 2005-106 du 19 décembre 2005 portant loi de finances pour l'année 2006, JORT n° 101 du 20 décembre 2005, p. 3601-3602
+    2014-01-01:
+      title: Article 48 § 2 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, JORT n° 105 du 31 décembre 2013, p. 3679 — taux maintenu à 0,1 % pour les sociétés soumises à l'impôt au taux de 10 %
+documentation: |
+  Taux applicable au chiffre d'affaires dont les bénéfices sont soumis à l'impôt sur les
+  sociétés au taux de 10 %, ainsi qu'au chiffre d'affaires réalisé sur des produits ou
+  services soumis au régime de l'homologation administrative des prix dont la marge
+  bénéficiaire brute ne dépasse pas 6 %.
+
+  UNE VALEUR STABLE, DEUX FONCTIONS SUCCESSIVES. De 2006 à 2013, 0,1 % est le taux UNIQUE du
+  minimum d'impôt, les deux régimes ne se distinguant que par leur plancher. À partir des
+  bénéfices de 2014, le régime normal passe à 0,2 % et 0,1 % devient le taux RÉDUIT. La
+  valeur ne change pas ; sa portée se restreint. La seconde référence est donc datée sans
+  valeur nouvelle, comme pour le taux sectoriel de 35 %.
+
+  DATE D'EFFET PRÉSUMÉE POUR 2006 : la clause d'application de la loi n° 2005-106 n'a pas
+  été lue.
