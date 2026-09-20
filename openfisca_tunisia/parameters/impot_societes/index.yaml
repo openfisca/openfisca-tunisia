@@ -8,11 +8,6 @@ documentation: |
   et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989 et
   applicable aux bénéfices réalisés à compter du 1er janvier 1990.
 
-  Magasin de valeurs, sans formule. Aucune variable ne lit cet arbre, et aucune ne le peut
-  en l'état : le modèle ne déclare que trois entités — Individu, FoyerFiscal, Menage — et
-  n'a donc pas d'entité « société ». Les paramètres sont versés comme référence datée et
-  sourcée. Aucun résultat existant ne change.
-
   Ce que l'arbre ne dit pas : le taux effectif. Celui que supporte une société donnée ne se
   lit pas dans le seul article 49 du code : un régime extérieur peut s'y substituer. La loi
   n° 2010-29 du 7 juin 2010, relative à l'encouragement des entreprises à l'admission de
