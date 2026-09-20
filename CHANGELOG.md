@@ -21,6 +21,15 @@
   - **Le fait juridique, lui, est conservé ou renforcé** : l'abrogation du paragraphe V de l'article 40 aux revenus de 2014, la clôture du seuil d'exonération aux revenus de 2017, la correction de la valeur de 1990 de la majoration d'assurance vie, la nature trimestrielle de la prise d'effet de la réduction conventionnelle — autant de choses qui se disent sans nommer une variable.
   - **Le déplacement de 0,0278 point** entre pensions et prestations familiales du RSNA reste documenté et reste sans texte : c'est la valeur versée qui le porte, et non « le modèle ».
 
+## 0.89 - [#430](https://github.com/openfisca/openfisca-tunisia/pull/430)
+
+* Amélioration technique.
+* Zones impactées : `parameters/impot_societes`.
+* Détails :
+  - **Deux paramètres cessent de se documenter par le modèle.** Un fichier de paramètre porte une valeur du droit : il doit pouvoir se lire avec le texte seul, sans rien savoir des formules ni des entités. Aucune valeur, aucune date d'effet et aucune référence ne sont modifiées.
+  - `impot_societes/index.yaml` affirmait qu'« aucune variable ne lit cet arbre » et énumérait les trois entités du modèle. Le fait est exact, mais il décrit le modèle et non le droit — et une telle phrase se périme : l'issue openfisca-tunisia-pension#46 est née de six mentions du même genre, dont cinq étaient devenues fausses après qu'une version eut branché les formules qu'elles disaient absentes. Le fait est désormais consigné dans l'issue #429.
+  - `impot_societes/taux/pme.yaml` justifiait de ne pas verser les seuils de chiffre d'affaires par le fait qu'« aucune formule ne les lirait ». Le motif juridique suffit et demeure : les seuils qualifient la société et non la date, et sont énoncés avec le taux qu'ils conditionnent.
+
 ## 0.88 - [#428](https://github.com/openfisca/openfisca-tunisia/pull/428)
 
 * Évolution du système socio-fiscal.
