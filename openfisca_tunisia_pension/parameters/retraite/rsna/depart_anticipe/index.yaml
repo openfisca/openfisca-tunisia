@@ -1,0 +1,14 @@
+description: Départs anticipés du régime des salariés non agricoles
+documentation: |-
+  L'article 15 bis, inséré en 1982, ouvre quatre cas de départ avant l'âge : licenciement
+  pour raisons économiques, usure due aux conditions de travail, convenance personnelle et
+  mères de trois enfants vivants au moins. Le décret n° 2007-2148 abroge le cas de la
+  convenance personnelle et le reprend dans un article 15 ter, où la jouissance est
+  repoussée de 50 à 55 ans.
+
+  L'âge de jouissance commun aux cas maintenus à l'article 15 bis est porté par
+  `retraite.rsna.age_dep_anticip`, où il vaut 50 ans depuis 1982.
+
+  Les conditions propres à chaque cas ne sont pas versées, faute d'être des valeurs : l'appro-
+  bation du licenciement par la commission de contrôle, le constat de l'usure, le nombre
+  d'enfants vivants. Seules les durées et les taux le sont.

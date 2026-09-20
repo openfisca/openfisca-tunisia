@@ -1,0 +1,21 @@
+description: Âge de jouissance de la pension en cas de départ pour convenance personnelle (article 15 ter)
+values:
+  2007-08-30:
+    value: 55
+metadata:
+  unit: year
+  reference:
+    2007-08-30:
+    - title: "Décret n° 2007-2148 du 21 août 2007, modifiant et complétant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 3 (article 15 ter ajouté)"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0692007.pdf"
+      note: "JORT n° 69 du 28 août 2007, pp. 3070-3071. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. L'article 15 ter ouvre le droit à la retraite sans condition d'âge après 360 mois de cotisations, la jouissance de la pension étant différée jusqu'à cinquante-cinq ans."
+documentation: |-
+  Ce paramètre ne commence qu'en 2007 parce que l'article qui le porte n'existe pas avant.
+  De 1982 à 2007, le départ pour convenance personnelle est le cas c) de l'article 15 bis,
+  et la jouissance y est fixée à cinquante ans comme pour les autres cas : c'est
+  `retraite.rsna.age_dep_anticip` qui la porte.
+
+  Le décret n° 2007-2148 ne déplace donc pas un âge, il sort un cas de l'article 15 bis
+  pour le mettre ailleurs avec un âge plus élevé. Lire les deux paramètres comme une série
+  de 50 puis 55 ferait croire que tous les départs anticipés ont été repoussés, ce qui est
+  faux : les trois autres cas restent à cinquante ans.

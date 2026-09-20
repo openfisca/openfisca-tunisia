@@ -1,0 +1,18 @@
+description: Âge jusqu'auquel la pension d'orphelin est servie à l'orphelin qui poursuit des études supérieures sans bourse
+values:
+  1997-05-01:
+    value: 25
+metadata:
+  unit: year
+  reference:
+    1997-05-01:
+    - title: "Décret n° 97-1927 du 29 septembre 1997, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (article 33 nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo08097.pdf"
+      note: "JORT n° 80 du 7 octobre 1997, p. 1851. L'article 2 fixe l'effet au 1er mai 1997. L'article 33 nouveau sert la pension jusqu'à vingt-cinq ans à l'orphelin qui poursuit des études supérieures sans bénéficier d'une bourse universitaire."
+documentation: |-
+  Le paramètre ne commence qu'en 1997 parce que la distinction n'existe pas avant : la
+  rédaction de 1974 ne connaît qu'une limite unique de vingt et un ans pour toutes les
+  études, portée par `age_limite_orphelin_etudes`.
+
+  La condition d'absence de bourse universitaire fait partie du droit au service de la
+  pension, non de sa durée : elle n'est pas versée.

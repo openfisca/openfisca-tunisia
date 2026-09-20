@@ -1,0 +1,22 @@
+description: Âge jusqu'auquel la pension d'orphelin est servie sans condition
+values:
+  1974-01-01:
+    value: 16
+metadata:
+  unit: year
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 33"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, pp. 915-919. La pension d'orphelin est servie jusqu'à seize ans sans condition. L'article 64 fixe l'effet du décret au 1er janvier 1974."
+    1997-05-01:
+    - title: "Décret n° 97-1927 du 29 septembre 1997, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (article 33 nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo08097.pdf"
+      note: "JORT n° 80 du 7 octobre 1997, p. 1851. L'article 2 fixe l'effet au 1er mai 1997. L'article 33 nouveau est réécrit en entier mais conserve seize ans comme limite servie sans condition ; ce sont les prolongations au-delà qui changent."
+documentation: |-
+  La limite de droit commun n'a pas bougé. Les prolongations qui s'y ajoutent, elles, ont
+  été réécrites en 1997 : elles sont portées par `age_limite_orphelin_etudes` et
+  `age_limite_orphelin_etudes_superieures`.
+
+  Le décret n° 81-188 a réécrit cet article en 1981, dans une rédaction qui n'a pas été
+  lue. Aucune valeur n'est portée à cette date : elle supposerait un texte établi.

@@ -18,4 +18,4 @@ metadata:
 documentation: |-
   Plafond énoncé en toutes lettres par le texte. Le barème d'annuités
   (`retraite.rsna.bareme_annuite`) le rencontre par construction à 120 trimestres
-  (40 % + 2 % par année au-delà de dix ans). Aucune formule ne lit ce paramètre à ce jour.
+  (40 % + 2 % par année au-delà de dix ans).

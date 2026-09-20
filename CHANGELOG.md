@@ -1,5 +1,20 @@
 # Changelog
 
+### 7.2.0
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `parameters/retraite/rsna/survivants`, `parameters/retraite/rsna/depart_anticipe`, `parameters/retraite/cnrps/age_legal/militaire`.
+* Détails :
+  - **Verse trois jeux de paramètres que l'arbre ne portait pas** : les droits des survivants du régime des salariés non agricoles, les durées et le taux des départs anticipés du même régime, et les âges de mise à la retraite des militaires par grade. Dix-huit fichiers, aucune valeur existante modifiée, aucun résultat changé.
+  - **Les survivants du régime non agricole.** Réversion du conjoint survivant à la moitié de la pension de l'assuré depuis 1974 ; pension d'orphelin au cinquième, portée à trois dixièmes en 1981 ; âges limites de service, seize ans sans condition, vingt et un ans en cas d'études, vingt-cinq ans pour les études supérieures sans bourse à compter du 1er mai 1997.
+  - **Deux taux sont dédoublés plutôt que mis en série, parce qu'une série serait fausse.** La majoration de l'article 31, qui porte la réversion jusqu'aux trois quarts, est un plafond sous conditions et non un taux : elle est versée à part, faute de quoi le modèle affirmerait que tout conjoint survivant touche les trois quarts depuis 1981. De même, le taux d'orphelin de père et de mère vaut trois dixièmes sur toute la période : la réforme de 1981 ne le relève pas, elle aligne sur lui le taux de l'orphelin ordinaire et fait disparaître la distinction.
+  - **Les départs anticipés du régime non agricole.** Stage de 360 mois pour la convenance personnelle et de 180 mois pour les mères de trois enfants vivants au moins, depuis 1982 ; décote d'un demi pour cent par trimestre restant à courir ; jouissance à cinquante-cinq ans pour l'article 15 ter à compter de 2007. Les textes comptent en mois, et les paramètres aussi.
+  - **Le décret n° 2007-2148 ne repousse pas l'âge des départs anticipés**, contrairement à ce qu'une lecture rapide suggérerait : il sort la convenance personnelle de l'article 15 bis pour la porter à un article 15 ter où la jouissance est différée à cinquante-cinq ans. Les trois autres cas restent à cinquante ans.
+  - **Les âges militaires.** Cinquante ans pour les hommes de troupe, cinquante-cinq pour les sous-officiers, cinquante-huit pour les officiers subalternes, soixante pour les officiers supérieurs, soixante-deux pour les officiers généraux — ce dernier abaissé à soixante par la loi n° 88-71, au 1er janvier 1989. Les quatre autres sont reconduits sans changement, et portent une référence de 1989 sans valeur nouvelle pour que la relecture du texte ne conclue pas à une lacune.
+  - **Deux gardes sont ajoutées**, portées depuis openfisca-tunisia, dans `tests/test_parametres_lisibles.py` : la prose d'un paramètre ne nomme ni variable, ni formule, ni entité, et n'use pas de l'emphase par capitales. Elles ont trouvé sept fichiers de ce dépôt qui décrivaient le modèle, désormais corrigés sans qu'aucune valeur bouge.
+  - **Ce qui n'est pas versé, et pourquoi.** Trois règles de la section des survivants n'ont pas de valeur : le sort de la réversion en cas de remariage, le plafond de cumul de l'article 38, qui borne un total par un autre montant, et l'interdiction de cumuler invalidité et survivant, levée en 1997. Du côté de l'article 32 de la loi n° 85-12, seul le repère d'âge — soixante ans, porté à soixante-deux par la loi n° 2019-37 — serait versable, mais la date d'effet de l'article 2 de cette loi n'est pas établie : le fait reste documenté dans `bonifications/cadre_actif/service_35.yaml` plutôt que daté à tort.
+
 ### 7.1.0
 
 * Évolution du système socio-fiscal.
