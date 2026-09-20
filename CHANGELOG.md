@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.92 - [#433](https://github.com/openfisca/openfisca-tunisia/pull/433)
+
+* Amélioration technique.
+* Zones impactées : `parameters/impot_societes`.
+* Détails :
+  - **Rétablit ce que la #430 avait retiré et que la #432 a réintroduit en fusionnant.** La #432 était coupée d'une branche antérieure à la #430 ; sa passe de casse a touché les deux mêmes fichiers, de sorte que sa version — celle d'avant la #430 — l'a emporté à la fusion. `impot_societes/index.yaml` a retrouvé son paragraphe sur les trois entités du modèle, et `taux/pme.yaml` sa phrase sur la formule qui ne lirait pas les seuils. Les deux repartent, cette fois en bas de casse.
+  - **Deux tests garantissent que cela ne se reproduise pas**, dans `tests/test_parametres_lisibles.py`. Le premier refuse toute mention d'une variable, d'une formule ou d'une entité dans la prose d'un paramètre ; le second refuse l'emphase par capitales. Les deux ont été éprouvés sur la régression réelle avant d'être versés : ils échouent sur elle, et passent une fois corrigée.
+  - Les deux tests ne lisent que la **prose** — blocs `documentation` et champs `note`. Les `title`, les `description` et les valeurs portent des codes qui sont des données, et restent hors de leur portée.
+
 ## 0.91 - [#432](https://github.com/openfisca/openfisca-tunisia/pull/432)
 
 * Amélioration technique.
