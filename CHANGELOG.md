@@ -1,5 +1,18 @@
 # Changelog
 
+### 7.1.0
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/07/1994.
+* Zones impactées : `parameters/retraite/rsna/salaire_reference`.
+* Détails :
+  - **Verse la fenêtre du salaire moyen de référence** du régime des salariés non agricoles, que le modèle ne portait pas : soixante mois à partir du 1er juillet 1994, quatre-vingt-quatre à partir du 1er juillet 1995, cent vingt à partir du 1er juillet 1996.
+  - **Les trois dates sont écrites dans un seul texte.** La montée de cinq à dix ans n'est pas l'œuvre de trois décrets successifs : le décret n° 94-1429 porte les trois échéances dans son article 18 nouveau. Chercher un modificatif pour 1995 ou 1996 serait peine perdue.
+  - **LA SÉRIE NE COMMENCE QU'EN 1994, ET CE N'EST PAS UNE LACUNE.** Ni l'état de 1974 ni celui de 1990 ne se laissent écrire en un nombre, et la documentation du paramètre dit pourquoi. En 1974, le décret n° 74-499 retient les salaires des trois OU cinq dernières années, « selon que l'une ou l'autre de ces périodes de référence est plus avantageuse » pour l'assuré : deux valeurs et une règle de choix, dont un paramètre scalaire ne retiendrait qu'une.
+  - **En 1990, le texte se contredit lui-même.** Le décret n° 90-1455 porte la fenêtre à dix ans en réécrivant le seul article 18 et LAISSE L'ARTICLE 19 INCHANGÉ, lequel continue de diviser par trente-six ou soixante mois. La contradiction dure près de quatre ans, et aucun texte publié au Journal officiel entre septembre 1990 et juin 1994 ne dit lequel des deux articles l'a emporté en pratique. Verser cent vingt mois pour cette période trancherait une question que les textes laissent ouverte.
+  - Le décret n° 94-1429 abroge et remplace ENSEMBLE les articles 18 et 19, et fait suivre à la moyenne la durée de la fenêtre : la contradiction disparaît, et la valeur devient représentable.
+  - Aucun résultat existant ne change : les 47 tests passent à l'identique. Ce que l'arbre doit au modèle, et ce que le modèle lui doit, relève du CHANGELOG et des issues — un fichier de paramètre porte une valeur du droit, et doit pouvoir se lire avec le texte seul.
+
 ### 7.0.1
 
 * Amélioration technique.
