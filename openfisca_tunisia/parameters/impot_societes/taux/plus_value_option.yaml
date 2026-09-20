@@ -1,0 +1,35 @@
+description: Taux optionnel de l'impôt sur les sociétés sur le prix de cession, pour la plus-value de l'article 45 § II
+values:
+  2021-01-01:
+    value: 0.10
+  2024-01-01:
+    value: 0.15
+metadata:
+  unit: /1
+  reference:
+    2021-01-01:
+      title: Article 14 § 11 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021, JORT n° 128 du 25 décembre 2020 — remplace « au taux de 15 % du prix de cession » par « au taux de 10 % du prix de cession » au troisième paragraphe de l'article 49 § I ; effet fixé par son article 14 § 28 à la plus-value réalisée à partir du 1er janvier 2021
+    2024-01-01:
+      title: Article 37 § 1 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour l'année 2025, JORT n° 149 du 10 décembre 2024, édition française, p. 3429-3430 — « les intéressés peuvent opter pour le paiement de l'impôt sur les sociétés au titre de ladite plus-value au taux de 15 % du prix de cession » ; date d'effet fixée par le § 16 du même article aux bénéfices réalisés à compter du 1er janvier 2024
+documentation: |
+  UNE ASSIETTE QUI N'EST PAS LE BÉNÉFICE. Ce taux ne frappe pas le bénéfice imposable mais
+  le PRIX DE CESSION, et il relève d'une OPTION : à défaut, la plus-value de l'article 45
+  § II est imposée au taux de droit commun. Il ne peut donc pas être comparé terme à terme
+  aux autres taux de cet arbre, et il ne s'y substitue jamais d'office.
+
+  UN CALENDRIER PROPRE, DISTINCT DE CELUI DES BÉNÉFICES. C'est le seul paramètre de l'arbre
+  dont les dates ne sont pas des années de bénéfices. La loi de finances pour 2021 date ses
+  effets « à la plus-value RÉALISÉE à partir du 1er janvier 2021 », par une clause séparée
+  de celle qui vise les bénéfices ; et le code consolidé porte deux notes distinctes — la
+  note (2) rattache le droit commun de 20 % aux bénéfices de 2024, la note (3) rattache ces
+  taux-ci à la plus-value réalisée à partir de 2025. Aligner les deux séries serait une
+  erreur d'un an.
+
+  L'ÉTAT ANTÉRIEUR À 2021 N'EST PAS DATÉ. L'existence d'un taux d'option de 15 % avant cette
+  date est certaine — la loi de finances pour 2021 le remplace, donc il existait —, mais le
+  texte qui l'a institué et sa date d'effet n'ont pas été établis. La série commence donc à
+  l'état attesté plutôt que de faire courir une valeur dont l'origine serait supposée.
+
+  LE TEXTE DE 2024 N'A PAS ÉTÉ LU AU JOURNAL OFFICIEL : la loi n° 2024-48 est absente du
+  corpus local, n'est pas indexée par la base des textes et l'édition française de son
+  fascicule n'est pas en ligne. La valeur de 2025 repose sur le code consolidé.

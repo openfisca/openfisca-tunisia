@@ -1,0 +1,49 @@
+description: Taux de l'impôt sur les sociétés applicable aux secteurs financiers et énergétiques
+values:
+  1990-01-01:
+    value: 0.35
+metadata:
+  unit: /1
+  reference:
+    1990-01-01:
+      title: Article 49 § I du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989 — taux alors de droit commun
+    2007-01-01:
+      title: Article premier § 2 de la loi n° 2006-80 du 18 décembre 2006, JORT n° 101 du 19 décembre 2006, p. 4300 — maintien de 35 % pour neuf secteurs, le droit commun passant à 30 %
+    2021-01-01:
+      title: Article 14 de la loi n° 2018-56 du 27 décembre 2018 portant loi de finances pour l'année 2019, JORT n° 104 du 28 décembre 2018 — abroge et remplace l'article 49 § I, où le niveau 3 reprend le taux de 35 % ; date d'effet fixée par son article 18 aux bénéfices réalisés à partir du 1er janvier 2021
+documentation: |
+  UN TAUX QUI N'A PAS CHANGÉ DE VALEUR, MAIS DE NATURE. De 1990 à 2006, 35 % est le taux de
+  DROIT COMMUN de l'impôt sur les sociétés. L'article premier de la loi n° 2006-80 abaisse
+  ce droit commun à 30 % et, par son paragraphe 2, maintient 35 % pour une liste de
+  secteurs : le même nombre devient alors un taux SECTORIEL MAJORÉ. La valeur ne bouge pas ;
+  sa fonction change. C'est pourquoi les références postérieures sont datées sans valeur
+  nouvelle.
+
+  LES NEUF SECTEURS DE 2007, tels que les énumère l'article premier § 2 :
+    - les établissements de crédit régis par la loi n° 2001-65 ;
+    - les organismes financiers et bancaires travaillant essentiellement avec les
+      non-résidents (loi n° 85-108), pour leurs opérations avec les résidents ;
+    - les sociétés d'investissement prévues par la loi n° 88-92 ;
+    - les compagnies d'assurance et de réassurance (code des assurances, loi n° 92-24) ;
+    - les sociétés de recouvrement de créances (loi n° 98-4) ;
+    - les opérateurs de réseaux de télécommunications (code des télécommunications) ;
+    - les sociétés de services dans le secteur des hydrocarbures ;
+    - les entreprises de production et de transport d'hydrocarbures sous conventions
+      particulières, et le transport de produits pétroliers par pipe-line ;
+    - le raffinage du pétrole et la vente en gros de produits pétroliers (loi n° 91-45).
+
+  UN PÉRIMÈTRE QUI N'A CESSÉ DE BOUGER, alors que la valeur n'a jamais bougé. C'est le
+  contraire du cas ordinaire, et c'est ce que ce fichier ne peut pas représenter :
+    - l'article 28 de la loi n° 2017-66 y ajoute les ASSURANCES MUTUELLES, pour les
+      bénéfices réalisés à partir du 1er janvier 2018 ;
+    - son article 29 y ajoute les GRANDES SURFACES COMMERCIALES, les CONCESSIONNAIRES
+      AUTOMOBILES et les FRANCHISÉS d'une enseigne étrangère — sauf taux d'intégration d'au
+      moins 30 %. L'article 67 § 4 de cette loi en différait l'effet à 2019, puis
+      l'article 89 de la loi n° 2018-56 a reporté le premier de ces trois tirets aux
+      bénéfices de 2020, en laissant les deux autres à 2019 ;
+    - l'article 25 de la loi n° 2019-78 récrit le tiret des services d'hydrocarbures ;
+    - la loi n° 2024-48 en détache les banques et les assurances vers un taux de 40 %
+      (voir `banques_assurances`) et abroge plusieurs autres tirets.
+
+  Les membres exacts de la liste à une date donnée se lisent donc dans le code, non ici : un
+  paramètre porte une valeur datée, pas un périmètre.

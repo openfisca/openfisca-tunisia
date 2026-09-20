@@ -1,0 +1,40 @@
+description: Impôt sur les sociétés
+metadata:
+  order:
+  - taux
+  - minimum_impot
+documentation: |
+  Impôt sur les sociétés, régi par le code de l'impôt sur le revenu des personnes physiques
+  et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989 et
+  applicable aux bénéfices réalisés à compter du 1er janvier 1990.
+
+  MAGASIN DE VALEURS, SANS FORMULE. Aucune variable ne lit cet arbre, et aucune ne le peut
+  en l'état : le modèle ne déclare que trois entités — Individu, FoyerFiscal, Menage — et
+  n'a donc pas d'entité « société ». Les paramètres sont versés comme référence datée et
+  sourcée. Aucun résultat existant ne change.
+
+  CE QUE L'ARBRE NE DIT PAS : LE TAUX EFFECTIF. Celui que supporte une société donnée ne se
+  lit pas dans le seul article 49 du code : un régime extérieur peut s'y substituer. La loi
+  n° 2010-29 du 7 juin 2010, relative à l'encouragement des entreprises à l'admission de
+  leurs actions en bourse, réduit le taux pour les sociétés qui ouvrent au public au moins
+  30 % de leur capital, pendant cinq ans à compter de l'année de l'admission.
+
+  CE RÉGIME N'EST PAS MORT, contrairement à ce qu'une lecture de la seule loi de finances
+  pour 2021 laisserait croire. Son article 14 abroge bien plusieurs expressions de taux de
+  la loi n° 2010-29 (§§ 24 et 26) et le quatrième paragraphe de son article premier (§ 25).
+  Mais l'article 37 de la loi n° 2024-48 la MODIFIE de nouveau — son § 12 ajoute
+  « ou 40 % » après le taux de 35 % aux articles premier et 2, son § 13 remplace 15 % par
+  20 % à l'article 3 —, et l'on ne modifie pas un texte abrogé. Le régime a donc été
+  reparamétré, non supprimé.
+
+  Il n'est pas versé ici pour une autre raison : il dépend d'une condition propre à chaque
+  société — la date d'admission en bourse et le taux d'ouverture du capital — et non de la
+  seule date d'exercice.
+
+  UNE MISE EN GARDE DE MÉTHODE, PAYÉE AU PRIX FORT. L'état consolidé du code ne montre que
+  la dernière rédaction de chaque disposition : un taux abrogé par un texte postérieur y
+  devient invisible, et un taux voté mais jamais entré en vigueur peut y laisser des traces
+  trompeuses. Deux faits de cet arbre ne s'établissent que par la lecture des lois de
+  finances elles-mêmes — le droit commun de 15 % des exercices 2021 à 2023, et le taux de
+  13,5 % qui n'a jamais régi un seul exercice. Reconstituer une chronologie à partir du seul
+  code consolidé conduirait à les manquer tous les deux.

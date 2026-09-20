@@ -1,0 +1,40 @@
+description: Taux du minimum d'impôt sur les sociétés, régime normal
+values:
+  2006-01-01:
+    value: 0.001
+  2014-01-01:
+    value: 0.002
+metadata:
+  unit: /1
+  reference:
+    2006-01-01:
+      title: Article 43 § 1 de la loi n° 2005-106 du 19 décembre 2005 portant loi de finances pour l'année 2006, JORT n° 101 du 20 décembre 2005, p. 3601-3602 — « 0,1 % du chiffre d'affaires brut autre que celui provenant de l'exportation »
+    2014-01-01:
+      title: Article 48 § 2 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, JORT n° 105 du 31 décembre 2013, p. 3679 — « 0,2 % du chiffre d'affaires local brut »
+documentation: |
+  Taux applicable aux sociétés qui ne relèvent pas du taux d'impôt sur les sociétés de 10 %.
+
+  UN DÉDOUBLEMENT EN 2014, ET NON UNE SIMPLE HAUSSE. Jusque-là, l'article 49 § II portait un
+  taux unique de 0,1 % assorti de deux planchers distincts selon le taux d'impôt de la
+  société. L'article 48 § 2 de la loi de finances pour 2014 sépare aussi les taux : 0,2 %
+  pour le régime normal, 0,1 % maintenu pour les sociétés au taux de 10 %.
+
+  DATE D'EFFET PRÉSUMÉE POUR 2006. La clause d'application de la loi n° 2005-106 n'a pas été
+  lue : la date du 1er janvier 2006 suit l'usage des lois de finances, elle n'est pas
+  établie sur le texte. Celle de 2014, en revanche, l'est.
+
+  L'ASSIETTE A CHANGÉ DE RÉDACTION sans que le taux bouge : « chiffre d'affaires brut autre
+  que celui provenant de l'exportation » en 2005, « chiffre d'affaires local brut » en 2013,
+  puis « chiffre d'affaires brut » — le mot « local » disparaissant — par l'article 16 § 3
+  de la loi n° 2018-56 du 27 décembre 2018, qui récrit le premier paragraphe de l'article 49
+  § II lui-même. Le § 1 du même article 16 opère la suppression symétrique du côté de
+  l'impôt sur le revenu, à l'article 44 § II : les deux minima ont donc été réécrits par un
+  même article, une fois de plus. Un paramètre porte un taux, non une assiette : ces
+  déplacements se lisent dans le code.
+
+  UNE MENTION QUI A VÉCU PUIS DISPARU. Cette même rédaction de 2018 visait « les sociétés
+  non soumises à l'impôt sur les sociétés au taux de 10 % OU 13,5 % », et l'article 14 § 16
+  de la loi n° 2020-46 a supprimé l'expression « ou 13,5 % » partout dans le code. Le taux
+  et le plancher n'ont pas bougé pour autant : seule l'énumération des sociétés visées s'est
+  resserrée, en même temps que le niveau de 13,5 % était abrogé sans avoir jamais produit
+  effet.

@@ -1,0 +1,34 @@
+description: Montant minimum exigible au titre du minimum d'impôt sur les sociétés, régime normal
+values:
+  2006-01-01:
+    value: 250
+  2011-01-01:
+    value: 350
+  2014-01-01:
+    value: 500
+metadata:
+  unit: currency
+  reference:
+    2006-01-01:
+      title: Article 43 § 1 de la loi n° 2005-106 du 19 décembre 2005 portant loi de finances pour l'année 2006, JORT n° 101 du 20 décembre 2005, p. 3601-3602 — « 250 dinars pour les entreprises soumises au taux de 35 % »
+    2011-01-01:
+      title: Article 38 § 2 de la loi n° 2010-58 du 17 décembre 2010 portant loi de finances pour l'année 2011, JORT n° 102 du 21 décembre 2010, p. 3474 — « Le montant de 250 dinars prévu au deuxième tiret du premier alinéa du paragraphe II de l'article 49 … est relevé à 350 dinars »
+    2014-01-01:
+      title: Article 48 § 2 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, JORT n° 105 du 31 décembre 2013, p. 3679 — « avec un minimum égal à 500 dinars »
+documentation: |
+  Montant dû même en l'absence de chiffre d'affaires, pour les sociétés qui ne relèvent pas
+  du taux d'impôt sur les sociétés de 10 %.
+
+  CE PLANCHER SUIT LE TAUX D'IMPÔT DE LA SOCIÉTÉ, NON SON CHIFFRE D'AFFAIRES. En 2005 il
+  s'énonce « pour les entreprises soumises au taux de 35 % » ; après la réduction de 2007 il
+  vise « le taux de 30 % ou le taux de 35 % » (article 2 de la loi n° 2006-80, qui harmonise
+  la rédaction sans toucher au montant) ; depuis 2014, « les sociétés non soumises à l'impôt
+  sur les sociétés au taux de 10 % ». Trois rédactions, une même intention.
+
+  UN PLANCHER QUI DOUBLE EN HUIT ANS, quand le taux de l'impôt lui-même baissait de 35 % à
+  25 %. Le minimum d'impôt a donc évolué en sens inverse du barème : pour les sociétés sans
+  bénéfice, la charge a augmenté pendant que le taux nominal diminuait.
+
+  DATES D'EFFET PRÉSUMÉES POUR 2006 ET 2011 : les clauses d'application des lois
+  n° 2005-106 et n° 2010-58 n'ont pas été lues, et ces dates suivent l'usage des lois de
+  finances. Celle de 2014 est établie sur le texte.
