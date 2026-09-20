@@ -21,11 +21,10 @@ documentation: |
   Déduction supplémentaire du revenu annuel net des salariés payés au SMIG, ancien paragraphe V
   de l'article 40 du code.
 
-  DISPOSITIF ABROGÉ à compter des revenus de 2014 par l'article 73 § 2 de la loi de finances pour
-  2014, qui lui substitue dans le même article l'exonération des revenus nets n'excédant pas
-  5 000 dinars. Le paragraphe V est absent des six millésimes du code consolidé (2019 à 2025).
-  La valeur nulle à partir de 2014 traduit cette abrogation ; le paramètre n'est pas clôturé par
-  une valeur absente parce que les formules qui le consomment le lisent sans garde.
+  DISPOSITIF ABROGÉ à compter des revenus de 2014 par l'article 73 § 2 de la loi de finances
+  pour 2014, qui lui substitue dans le même article l'exonération des revenus nets
+  n'excédant pas 5 000 dinars. Le paragraphe V est absent des six millésimes du code
+  consolidé (2019 à 2025). La valeur nulle à partir de 2014 traduit cette abrogation.
 
   Les années 2004 et 2009 sont des ANNÉES DE REVENUS. Les articles instituteurs n'énoncent pas de
   date d'effet propre : elles sont dérivées de la lecture administrative de l'article final de la

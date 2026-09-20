@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.90 - [#431](https://github.com/openfisca/openfisca-tunisia/pull/431)
+
+* Amélioration technique.
+* Zones impactées : `parameters/impot_revenu`, `parameters/prelevements_sociaux`, `parameters/prestations`.
+* Détails :
+  - **Douze fichiers de paramètres cessent de se documenter par le modèle**, après les deux de la PR #430. Un arbre de paramètres est un magasin de valeurs datées : il doit pouvoir vivre comme une base indépendante des formules, et se lire avec le seul texte de droit. Aucune valeur, aucune date d'effet, aucune référence et aucune description ne sont modifiées — seuls les blocs `documentation` changent.
+  - **Pourquoi ces phrases sont un risque et non un service.** Elles nomment des variables, des entités et des formules, c'est-à-dire l'état du modèle à une date ; le droit qu'elles entourent, lui, ne bouge pas. L'issue openfisca-tunisia-pension#46 est née de six mentions du même genre, dont cinq étaient devenues fausses après qu'une version eut branché les formules qu'elles disaient absentes.
+  - **Rien de substantiel n'est perdu.** Chaque fait qui décrivait un défaut du modèle était déjà suivi par une issue, et la documentation y renvoie désormais plutôt que de le décrire : #389 pour le nom trompeur de `interets_emprunts_obligataires/plaf.yaml`, qui porte en réalité le plafond global de l'article 39 § II ; #387 pour la coïncidence des deux seuils de 5 000 dinars ; #391 pour le plafond de rang des allocations familiales.
+  - **Le fait juridique, lui, est conservé ou renforcé** : l'abrogation du paragraphe V de l'article 40 aux revenus de 2014, la clôture du seuil d'exonération aux revenus de 2017, la correction de la valeur de 1990 de la majoration d'assurance vie, la nature trimestrielle de la prise d'effet de la réduction conventionnelle — autant de choses qui se disent sans nommer une variable.
+  - **Le déplacement de 0,0278 point** entre pensions et prestations familiales du RSNA reste documenté et reste sans texte : c'est la valeur versée qui le porte, et non « le modèle ».
+
 ## 0.88 - [#428](https://github.com/openfisca/openfisca-tunisia/pull/428)
 
 * Évolution du système socio-fiscal.

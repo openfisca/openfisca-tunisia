@@ -23,9 +23,8 @@ metadata:
 documentation: |
   ATTENTION AU NOM. Ce paramètre ne porte pas le plafond propre aux emprunts obligataires :
   il porte le PLAFOND GLOBAL de la déduction des intérêts de l'épargne de l'article 39 § II,
-  qui couvre à la fois les comptes spéciaux d'épargne et les emprunts obligataires. C'est
-  ainsi que la variable `deduction_interets` l'utilise. Le nom est conservé pour ne pas
-  casser les usages ; un renommage est proposé par ailleurs.
+  qui couvre à la fois les comptes spéciaux d'épargne et les emprunts obligataires. Le nom
+  est conservé pour ne pas casser les usages ; un renommage est proposé par l'issue #389.
 
   Le sous-plafond propre aux comptes spéciaux d'épargne est dans
   `interets_comptes_speciaux_epargne_bancaires/plaf.yaml`.

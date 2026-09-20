@@ -26,18 +26,16 @@ documentation: |
   à leurs salariés une couverture maladie conventionnelle. Le décret n° 97-1645 en fixe les
   conditions ; le décret n° 2007-1406, article 16, l'abroge au 1er juillet 2007.
 
-  LA RÉDUCTION EST PORTÉE PAR UN PARAMÈTRE PROPRE, et non par une seconde série de taux par
-  branche. Le taux de 13 % n'existe nulle part en un seul endroit du modèle : il est réparti
-  entre les branches, et la réduction, elle, porte sur le total. Un paramètre unique, appliqué à
-  l'assiette, est la traduction la plus fidèle du texte, qui parle bien de « deux points du taux
-  de cotisation ». La question de savoir s'il faudrait plutôt l'imputer branche par branche est
-  posée à la revue.
+  LA RÉDUCTION PORTE SUR LE TOTAL, et non sur chaque branche. Le texte parle de « deux
+  points du taux de cotisation », lequel s'entend du taux global : elle est donc versée
+  comme un paramètre propre plutôt que comme une seconde série de taux par branche. La
+  question de savoir s'il faudrait plutôt l'imputer branche par branche est posée à la
+  revue.
 
-  CE QUE LE MODÈLE NE SAIT PAS DIRE. L'article 6 du décret n° 97-1645 fait prendre effet la
-  réduction « à partir du premier jour du trimestre suivant celui au cours duquel la décision
-  […] a été accordée ». Une variable d'entrée mensuelle ne peut pas exprimer cette règle de
-  trimestre : elle dit, mois par mois, si l'employeur en bénéficie. C'est à l'utilisateur de
-  poser l'indicatrice à la bonne date.
+  UNE DATE D'EFFET TRIMESTRIELLE. L'article 6 du décret n° 97-1645 fait prendre effet la
+  réduction « à partir du premier jour du trimestre suivant celui au cours duquel la
+  décision […] a été accordée ». La date d'octroi de la décision et celle de la prise
+  d'effet sont donc distinctes, et la seconde se déduit de la première.
 
   LA DATE DE DÉBUT EST CELLE DU TEXTE, non celle de la structure. L'article 2 de la loi n° 97-4
   fixe l'application au 1er octobre 1996, alors que les taux par branche du régime général ne

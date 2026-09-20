@@ -574,6 +574,5 @@ documentation: |
   lois de finances de 1967 à 1979 n'ont pas toutes été dépouillées. Une valeur lue pour
   une année intermédiaire est donc le dernier tarif connu, pas un tarif attesté.
 
-  Aucune variable du modèle ne consomme ces paramètres : openfisca-tunisia ne calcule
-  pas l'avant-1990. Ils servent de référence datée et sourcée, notamment aux tableaux
-  du précis socio-fiscal.
+  Ces paramètres portent un état du droit antérieur au code de 1990. Ils sont versés comme
+  référence datée et sourcée.

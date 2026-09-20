@@ -30,7 +30,5 @@ documentation: |
   Les deux relèvements de 2016 et 2021 manquaient ; la valeur était figée à 1 000 dinars depuis
   l'origine.
 
-  La variable `deduction_interets` applique ce sous-plafond à la somme des comptes ouverts
-  auprès des banques ET de la Caisse d'épargne nationale, ce qui est conforme au texte de 1992.
-  Le paramètre voisin `interets_comptes_speciaux_epargne_cent` n'est consommé par aucune
-  formule et fait double emploi.
+  Le texte de 1992 vise ensemble les comptes ouverts auprès des banques et de la Caisse
+  d'épargne nationale : le sous-plafond porte sur leur somme.
