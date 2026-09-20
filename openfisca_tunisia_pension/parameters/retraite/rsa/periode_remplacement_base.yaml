@@ -16,7 +16,6 @@ documentation: |-
   article 88 : c'est la date du bloc RSA, non celle d'un texte qui fixerait cette valeur.
 
   Le sujet rejoint celui de la fenêtre du salaire de référence, ouvert par l'issue #24 : les
-  textes retiennent les **dernières** années, quand les formules retiennent les
-  **meilleures**. Les deux ne coïncident que pour une carrière dont le salaire ne baisse
-  jamais. La correction de la fenêtre et celle de la règle de sélection relèvent du même
-  remaniement, et ne sont pas faites ici.
+  textes retiennent les **dernières** années, et non les **meilleures**. Les deux ne
+  coïncident que pour une carrière dont le salaire ne baisse jamais. La fenêtre et la règle
+  de sélection relèvent du même remaniement, qui n'est pas fait ici.

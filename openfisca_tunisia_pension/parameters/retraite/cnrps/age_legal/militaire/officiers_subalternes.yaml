@@ -1,0 +1,15 @@
+description: Âge de mise à la retraite des militaires — officiers subalternes
+values:
+  1985-09-12:
+    value: 58
+metadata:
+  unit: year
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 61"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 364. L'article 61, 1°, fixe l'âge de mise à la retraite des militaires par grade. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+    1989-01-01:
+    - title: "Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985, article premier (article 61, 1° nouveau)"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo04588.pdf"
+      note: "JORT n° 45 du 1er juillet 1988, pp. 967-968. L'article premier remplace l'article 61 de la loi n° 85-12. La loi prend effet au 1er janvier 1989. L'âge de ce grade est reconduit à 58 ans : la valeur ne change pas."

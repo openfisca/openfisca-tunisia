@@ -1,0 +1,14 @@
+description: Âge de mise à la retraite des militaires, par grade
+documentation: |-
+  L'article 61, 1°, de la loi n° 85-12 échelonne l'âge de mise à la retraite des militaires
+  selon le grade, du plus bas au plus élevé. Chaque grade a son fichier, parce que ces âges
+  ne forment pas une échelle indexée sur une grandeur continue : ce sont cinq valeurs
+  attachées à cinq positions statutaires.
+
+  La loi n° 88-71 réécrit l'article 61 en entier. Un seul de ces âges change, celui des
+  officiers généraux ; les quatre autres sont reconduits. Une référence de 1989 est
+  attachée à chacun, sans valeur nouvelle, pour que la relecture du texte ne conclue pas à
+  une lacune.
+
+  L'état du droit antérieur au 12 septembre 1985 n'est pas établi : la loi n° 59-18 du
+  5 février 1959, que la loi n° 85-12 remplace, n'a pas été lue pour cette période.

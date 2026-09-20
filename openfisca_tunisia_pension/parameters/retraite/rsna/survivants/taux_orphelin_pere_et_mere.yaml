@@ -1,0 +1,24 @@
+description: Taux de la pension de l'orphelin de père et de mère (part de la pension de l'assuré)
+values:
+  1974-01-01:
+    value: 0.3
+metadata:
+  unit: /1
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 34"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, pp. 915-919. La pension d'orphelin est portée à trois dixièmes de la pension de l'assuré pour l'orphelin de père et de mère. L'article 64 fixe l'effet du décret au 1er janvier 1974."
+    1981-02-19:
+    - title: "Décret n° 81-188 du 14 février 1981, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 2 (article 34 nouveau)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo01081.pdf"
+      note: "JORT n° 10 du 17 février 1981, pp. 319-320. L'article 34 nouveau retient trois dixièmes pour tout orphelin. La valeur de ce paramètre est donc inchangée ; ce qui disparaît est la distinction qui la justifiait."
+documentation: |-
+  Une valeur qui ne bouge pas, et dont le sens change. De 1974 à 1981, trois dixièmes est
+  le taux majoré de l'orphelin qui a perdu ses deux parents, par opposition au cinquième de
+  l'orphelin ordinaire. Depuis 1981, c'est le taux de tout orphelin : le décret n° 81-188
+  aligne le second sur le premier.
+
+  Le paramètre est conservé distinct de `taux_orphelin` parce qu'il porte une règle qui a
+  existé, et qu'une seule série ne saurait dire. Une référence de 1981 est attachée sans
+  valeur nouvelle, pour que la relecture du texte ne conclue pas à une lacune.

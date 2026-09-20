@@ -1,0 +1,17 @@
+description: Plafond du taux de la pension de réversion du conjoint survivant, lorsque la majoration de l'article 31 s'applique
+values:
+  1981-02-19:
+    value: 0.75
+metadata:
+  unit: /1
+  reference:
+    1981-02-19:
+    - title: "Décret n° 81-188 du 14 février 1981, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 2 (article 31, alinéa 2 ajouté)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo01081.pdf"
+      note: "JORT n° 10 du 17 février 1981, pp. 319-320. La pension du conjoint survivant peut être portée jusqu'aux trois quarts de celle de l'assuré s'il n'existe pas d'enfant bénéficiaire, ou si le total des pensions de conjoint survivant et d'orphelins ne dépasse pas la pension de l'assuré ; en cas de dépassement, la pension d'orphelin est réduite à due concurrence. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication."
+documentation: |-
+  Ce n'est pas un taux, c'est un plafond, et il ne joue pas dans tous les cas. Le taux de
+  droit commun reste la moitié, porté par le paramètre voisin `taux_conjoint`.
+
+  Le paramètre ne commence qu'en 1981 parce que la majoration n'existe pas avant : le
+  décret n° 74-499 ne connaît que la moitié.
