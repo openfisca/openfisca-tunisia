@@ -1,0 +1,28 @@
+description: Salaire moyen de référence du régime des salariés non agricoles
+metadata:
+  order:
+  - duree_mois
+documentation: |-
+  Le salaire moyen de référence est l'assiette de la pension : les salaires soumis à
+  cotisation perçus pendant une fenêtre qui précède l'ouverture du droit, actualisés
+  puis divisés par un nombre de mois.
+
+  LA SÉRIE NE COMMENCE QU'EN 1994, et ce n'est pas une lacune. Ni l'état de 1974 ni
+  celui de 1990 ne se laissent écrire en un nombre.
+
+  1974 — le décret n° 74-499 retient les salaires des TROIS OU CINQ dernières années,
+  « selon que l'une ou l'autre de ces périodes de référence est plus avantageuse »
+  pour l'assuré (art. 18), la moyenne se faisant sur 36 ou 60 mois (art. 19). Deux
+  valeurs et une règle de choix : un paramètre scalaire en retiendrait une et
+  tairait l'autre.
+
+  1990 — le décret n° 90-1455 porte la fenêtre à DIX ANS en réécrivant le seul
+  article 18, et LAISSE L'ARTICLE 19 INCHANGÉ, lequel continue de diviser par 36 ou
+  60 mois. Le texte se contredit donc lui-même pendant près de quatre ans, et aucun
+  texte publié au Journal officiel entre septembre 1990 et juin 1994 ne dit lequel
+  des deux articles l'a emporté en pratique. Verser 120 mois pour cette période
+  reviendrait à trancher une question que les textes laissent ouverte.
+
+  1994 — le décret n° 94-1429 abroge et remplace ENSEMBLE les articles 18 et 19, et
+  fait suivre à la moyenne la durée de la fenêtre. La contradiction disparaît, et la
+  valeur devient représentable. C'est de là que part la série.

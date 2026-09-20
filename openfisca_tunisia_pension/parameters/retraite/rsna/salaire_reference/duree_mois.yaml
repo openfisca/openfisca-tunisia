@@ -1,0 +1,39 @@
+description: Nombre de mois de salaires retenus pour le salaire moyen de référence
+values:
+  1994-07-01:
+    value: 60
+  1995-07-01:
+    value: 84
+  1996-07-01:
+    value: 120
+metadata:
+  unit: month
+  reference:
+    1994-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du 27 avril 1974 relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (articles 18 et 19 nouveaux)"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "JORT n° 52 du 5 juillet 1994, p. 1141. L'article 18 nouveau retient « les cinq dernières années à partir du 1er juillet 1994 », et l'article 19 nouveau divise par les « soixante ou quatre vingt quatre ou cent vingt mois validés », suivant ainsi la fenêtre. Texte lu sur pièce dans l'édition française du fascicule."
+    1995-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, article premier (article 18 nouveau, deuxième tiret)"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "« les sept dernières années à partir du 1er juillet 1995 ». La montée est écrite dans le texte d'origine : aucun texte postérieur n'est nécessaire."
+    1996-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, article premier (article 18 nouveau, troisième tiret)"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "« les dix dernières années à partir du 1er juillet 1996 »."
+documentation: |-
+  Les salaires de cette fenêtre ne sont pas pris pour leur valeur nominale : ils sont
+  actualisés selon un barème fixé annuellement par arrêté du ministre des affaires
+  sociales. Ils ne sont par ailleurs retenus que dans la limite de six fois le salaire
+  minimum interprofessionnel garanti, régime 48 heures, rapporté à 2 400 heures par an.
+
+  Si la période d'activité déclarée est plus courte que la fenêtre, la moyenne se fait
+  sur cette seule période.
+
+  TROIS DATES ÉCRITES DANS UN SEUL TEXTE. La montée de cinq à dix ans n'est pas
+  l'œuvre de trois décrets successifs : le décret n° 94-1429 porte les trois échéances
+  dans son article 18 nouveau. Chercher un texte modificatif pour 1995 ou 1996 serait
+  peine perdue.
+
+  AUCUNE FORMULE NE LIT CE PARAMÈTRE à ce jour ; il est versé comme valeur datée et
+  sourcée.
