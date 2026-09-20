@@ -30,7 +30,5 @@ documentation: |
   n'encode pas cette borne de rang : à vérifier avant tout calcul sur les revenus 1990 à 1996.
 
   La majoration est CLÔTURÉE à zéro à compter des revenus 2013 : l'article 24 de la loi de
-  finances pour 2014 remplace le plafond majoré par un plafond unique de 10 000 dinars. La
-  formule `deduction_assurance_vie` additionne le plafond et les majorations ; les laisser à
-  leur dernière valeur aurait porté le plafond effectif d'un couple avec enfants au-delà des
-  10 000 dinars du texte.
+  finances pour 2014 remplace le plafond majoré par un plafond unique de 10 000 dinars,
+  qu'aucune majoration ne vient plus accroître.
