@@ -41,10 +41,10 @@ metadata:
 documentation: |
   Montant de base mensuel du transfert monétaire permanent du programme AMEN social.
 
-  PALIER 2025 AJOUTÉ : 260 dinars, par l'arrêté conjoint du 29 août 2025, rétroactif au
+  Palier 2025 ajouté : 260 dinars, par l'arrêté conjoint du 29 août 2025, rétroactif au
   1er janvier 2025. La série s'arrêtait à 240 dinars.
 
-  AVERTISSEMENT SUR LES DATES. Les clés `official_journal_date` portent les dates de
-  PUBLICATION des arrêtés — avril 2022, avril 2023, mars 2024 — tandis que les dates d'effet
+  Avertissement sur les dates. Les clés `official_journal_date` portent les dates de
+  publication des arrêtés — avril 2022, avril 2023, mars 2024 — tandis que les dates d'effet
   encodées sont au 1er janvier. Les deux séries de dates sont exactes mais ne décrivent pas la
   même chose ; ne pas aligner les unes sur les autres sans lire l'article d'effet.
