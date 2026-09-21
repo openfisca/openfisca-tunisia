@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.95 - [#438](https://github.com/openfisca/openfisca-tunisia/pull/438)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/07/1994.
+* Zones impactées : `parameters/retraite/rsna/salaire_reference/actualisation`.
+* Détails :
+  - **Verse le barème d'actualisation des salaires du régime des salariés non agricoles** : 28 arrêtés annuels du ministre des affaires sociales, du 17 novembre 1994 au 16 juillet 2024, soit 1 319 coefficients. Un paramètre par année de salaire, de 1961 à 2023 ; ses valeurs successives sont celles des arrêtés successifs, chacun applicable aux pensions dont le droit est ouvert à compter du 1er janvier de son année — le premier à compter du 1er juillet 1994.
+  - **Lecture sur pièce.** Vingt-six barèmes viennent de la couche texte des fascicules, dont six à police décalée, décodée. Celui de 1996, sans couche texte, et celui de 2024, inséré en image, ont été lus à l'image ; l'océrisation du second avait changé 2,74285 en 2,14285. Celui de 1994 a été relu à l'image. Un contrôle croisé compare, d'un arrêté au suivant, le rapport des coefficients de deux années voisines : aucun écart isolé, signe d'une faute de lecture, ne subsiste.
+  - **Le barème n'est pas une simple chaîne** : il a été recalculé en 2004, 2011 et 2013, et les valeurs sont versées telles que publiées. La documentation le décrit.
+  - **Aucun arrêté retrouvé pour 2016, 2017, 2019 et 2025** : les valeurs du barème précédent sont conservées, et la documentation le signale.
+  - Numéro de version 0.95, pour suivre la 0.94 de la #437.
+
 ## 0.93 - [#434](https://github.com/openfisca/openfisca-tunisia/pull/434)
 
 * Amélioration technique.

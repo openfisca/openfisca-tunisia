@@ -2,6 +2,7 @@ description: Salaire moyen de référence du régime des salariés non agricoles
 metadata:
   order:
   - duree_mois
+  - actualisation
 documentation: |-
   Le salaire moyen de référence est l'assiette de la pension : les salaires soumis à
   cotisation perçus pendant une fenêtre qui précède l'ouverture du droit, actualisés
