@@ -1,0 +1,34 @@
+description: Âge jusqu'auquel court la période bonifiable des cadres actifs et des fonctions astreignantes (article 32, paragraphes 2 et 3)
+values:
+  1985-09-12:
+    value: 60
+  2019-05-02:
+    value: 62
+metadata:
+  unit: year
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 32"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361. Les paragraphes 2 et 3 de l'article 32 accordent aux cadres actifs et aux agents des fonctions astreignantes une bonification égale à la période restant à courir jusqu'à soixante ans. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+    2019-05-02:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 2"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, p. 1313. L'article 2 remplace « l'âge de soixante ans » par « l'âge de soixante-deux ans » aux paragraphes 2 et 3 de l'article 32. La loi ne porte pas de clause d'entrée en vigueur propre : la date est déduite de la règle générale, un jour franc après la publication du 30 avril 2019, non énoncée. Elle est corroborée par l'article 4 de la même loi, qui fait courir la hausse des cotisations « à partir du premier jour du mois qui suit la date d'entrée en vigueur » et que le modèle date au 1er juin 2019 : l'entrée en vigueur tombe donc en mai, et non le jour même de la publication."
+documentation: |-
+  Ce paramètre porte le terme de la période bonifiable, non la bonification elle-même. Pour
+  les cadres actifs, la période restant à courir jusqu'à cet âge est plafonnée par le barème
+  5 / 4 / 3 / 2 que portent les fichiers `service_*` voisins ; pour les fonctions
+  astreignantes, elle ne l'est pas. Ce partage est une règle et n'est pas versé.
+
+  Le passage de soixante à soixante-deux ans est immédiat, sans palier. L'article 5 de la loi
+  n° 2019-37, qui échelonne le relèvement des âges de départ, énumère les articles auxquels
+  il déroge — 24, 27, 28, 29 et 61 — et l'article 32 n'en est pas. La lecture a été faite deux
+  fois, en extraction mise en page puis en extraction brute, la première ayant perdu un
+  numéro de l'énumération. Le terme de la bonification saute donc d'un coup, quand l'âge de
+  départ des mêmes agents monte en deux temps.
+
+  Trois articles de la même loi portent un terme de soixante-deux ans, pour trois populations
+  et par trois voies différentes : l'article 32 par l'article 2, les articles 33 et 67 par
+  l'article premier. Le nom de ce fichier désigne l'article 32 pour qu'on n'y lise pas les
+  deux autres.
