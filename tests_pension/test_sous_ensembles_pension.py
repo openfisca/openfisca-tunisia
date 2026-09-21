@@ -1,7 +1,7 @@
 """Le système des pensions lit sa part de l'arbre commun, et cohabite avec le système fiscal.
 
 Ces tests vivent ici, et non dans `tests/`, parce qu'ils importent le paquet de la pension,
-qui exige numba et scipy : la suite du système fiscal doit pouvoir tourner sans eux.
+qui exige numba : la suite du système fiscal doit pouvoir tourner sans lui.
 """
 
 import importlib.metadata

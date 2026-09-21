@@ -47,3 +47,8 @@ check-all-yaml:
 test: clean check-syntax-errors check-style check-yaml
 	@echo "> Yaml tests..."
 	$(UV) openfisca test --country-package openfisca_tunisia tests
+
+# Le système des pensions exige l'extra [pension] (numba) : `uv sync --extra pension`.
+test-pension:
+	@echo "> Tests du système des pensions..."
+	$(UV) openfisca test --country-package openfisca_tunisia_pension tests_pension

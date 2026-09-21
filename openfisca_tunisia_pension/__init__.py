@@ -6,6 +6,14 @@ import logging
 import os
 
 # Third Party
+try:
+    import numba  # noqa: F401
+except ImportError as erreur:
+    msg = (
+        "Le système des pensions exige numba. "
+        "Installer l'extra : pip install 'openfisca-tunisia[pension]'."
+    )
+    raise ImportError(msg) from erreur
 from openfisca_core.taxbenefitsystems import TaxBenefitSystem
 
 # First Party

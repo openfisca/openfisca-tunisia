@@ -43,6 +43,13 @@ dev = [
     "twine >=6.0.0",
     "yamllint >=1.30.0, <2.0"
 ]
+# Le système des pensions compile ses calculs avec numba. numba 0.64 à 0.66 plafonnent
+# numpy sous 2.5 : exiger 0.67 permet aux deux systèmes de partager le même numpy.
+# scipy, que l'ancien dépôt déclarait, n'est importé nulle part : la suite de la pension
+# passe avec scipy bloqué.
+pension = [
+    "numba >=0.67, <1.0",
+]
 notebook = [
     'ipykernel >= 4.8',
     'jupyter-client >= 5.2',
@@ -59,8 +66,15 @@ exclude = ["build", "dist", ".git", "**/notebooks"]
 [tool.ruff.lint]
 ignore = ["F403", "F405"]  # star imports
 
+[tool.ruff.lint.per-file-ignores]
+# Le code de la pension est en partie GÉNÉRÉ par script_ast à partir des régimes, et ses
+# formules emploient des noms résolus à l'exécution. Ces exemptions sont celles que la
+# pension appliquait dans son propre dépôt ; elles sont bornées à ses deux dossiers.
+"openfisca_tunisia_pension/regimes/*.py" = ["F811", "F821"]
+"openfisca_tunisia_pension/variables/*.py" = ["E402", "F401", "F811", "F821"]
+
 [tool.ruff.lint.isort]
-known-first-party = ["openfisca_tunisia"]
+known-first-party = ["openfisca_tunisia", "openfisca_tunisia_pension"]
 combine-as-imports = true
 force-single-line = false
 
