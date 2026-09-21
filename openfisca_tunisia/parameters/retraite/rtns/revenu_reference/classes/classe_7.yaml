@@ -1,0 +1,10 @@
+description: Coefficient multiplicateur de la classe 7
+values:
+  1995-07-13:
+    value: 9
+metadata:
+  reference:
+    1995-07-13:
+    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 7"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
+      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Le coefficient multiplicateur de la classe 7 est fixé à 9, pour le secteur non agricole comme pour le secteur agricole."

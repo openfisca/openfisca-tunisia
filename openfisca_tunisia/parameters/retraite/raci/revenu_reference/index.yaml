@@ -1,0 +1,6 @@
+description: Revenu de référence du régime des artistes, des créateurs et des intellectuels
+documentation: |-
+  Le revenu annuel moyen de référence est la moyenne pondérée des coefficients des classes
+  auxquelles l'assuré est inscrit, appliquée au SMIG du régime de 48 heures rapporté à
+  `heures_annuelles_smig`, en vigueur à l'ouverture du droit (décret n° 2003-894, article 16).
+  Les classes sont propres au régime : elles ne sont pas celles des non-salariés.

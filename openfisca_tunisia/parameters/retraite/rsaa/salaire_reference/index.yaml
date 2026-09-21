@@ -1,0 +1,10 @@
+description: Salaire de référence du régime agricole amélioré
+metadata:
+  order:
+  - limite_multiple_smag
+  - jours_annuels_smag
+documentation: |-
+  Les pensions sont calculées sur les salaires déclarés des trois ou cinq années précédant celle
+  de l'ouverture du droit, la période la plus avantageuse étant retenue. Chaque année n'est prise
+  en compte que dans la limite de `limite_multiple_smag` fois le SMAG rapporté à
+  `jours_annuels_smag` (article 95).

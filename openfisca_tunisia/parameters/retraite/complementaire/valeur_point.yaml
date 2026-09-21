@@ -1,0 +1,57 @@
+description: Valeur du point de retraite
+values:
+  2019-07-01:
+    value: 0.414
+  2015-07-01:
+    value: 0.397
+  2013-07-01:
+    value: 0.385
+  2011-07-01:
+    value: 0.371
+  2009-07-01:
+    value: 0.356
+  1977-07-01:
+    value: null
+  1977-01-01:
+    value: 0.116
+metadata:
+  unit: currency
+  reference:
+    1977-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, annexe I, B"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, p. 3379, lu à l'image. La valeur du point de retraite prévue à l'article 18 est fixée à 0,116 dinar pour la période du 1er janvier au 30 juin 1977."
+    1977-07-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, article 18"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, p. 3377. Pour les périodes postérieures, la valeur est fixée par le directeur général de la CAVIS sur avis du comité de gestion, à effet du premier juillet de chaque année, en fonction de l'évolution du salaire de référence."
+    2009-07-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Valeur du point en 2009 : 0,356 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2011-07-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Valeur du point en 2011 : 0,371 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2013-07-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Valeur du point en 2013 : 0,385 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2015-07-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Valeur du point en 2015 : 0,397 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2019-07-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Valeur du point en 2019 : 0,414 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+documentation: |-
+  La pension annuelle est le nombre de points multiplié par la valeur du point (article 17). Seule
+  la valeur de la période initiale est publiée au Journal officiel. Les suivantes sont fixées au
+  1er juillet de chaque année par décision de la CAVIS, puis de la CNSS, non publiée : la valeur
+  nulle au 1er juillet 1977 le signale. Tant que la réserve de prévoyance n'a pas atteint son
+  niveau cible, la valeur retenue ne peut engager plus des trois quarts des ressources attendues.
+
+  À partir de 2009, la série est reprise d'une source secondaire, secu.tn, qui ne donne que
+  l'année : la date du 1er juillet vient de l'article 18. Entre 1977 et 2009, aucune valeur n'est
+  connue. La valeur de 0,414 dinar est gelée depuis 2019.

@@ -101,6 +101,10 @@
     one: Smig
     other: Smigs
   # parameter: marche_travail.salaire_minimum.smig.
+- name: heure
+  label:
+    one: heure
+    other: heures
 - name: trimestre
   label:
     one: trimestre

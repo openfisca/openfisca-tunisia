@@ -1,0 +1,11 @@
+description: Âge à partir duquel la pension de vieillesse peut être demandée, avec décote
+values:
+  1989-01-19:
+    value: 60
+metadata:
+  unit: year
+  reference:
+    1989-01-19:
+    - title: "Décret n° 89-107 du 10 janvier 1989, étendant le régime de sécurité sociale aux travailleurs tunisiens à l'étranger, article 18"
+      href: "https://www.pist.tn/jort/1989/1989F/Jo00489.pdf"
+      note: "JORT n° 4 du 17 janvier 1989, pp. 98-99, lu à l'image, le fascicule n'ayant pas de couche texte. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Les intéressés peuvent demander une pension de retraite à partir de 60 ans ; le montant est alors réduit de 0,5 % par trimestre restant à courir jusqu'à 65 ans."

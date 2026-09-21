@@ -1,0 +1,29 @@
+description: Pensions du régime des artistes, des créateurs et des intellectuels
+metadata:
+  order:
+  - age_legal
+  - stage_trimestres
+  - taux_base
+  - majoration_par_trimestre
+  - plafond_taux
+  - plancher_mensuel
+  - invalidite
+  - survivants
+  - revenu_reference
+documentation: |-
+  Régime institué par la loi n° 2002-104 du 30 décembre 2002. La loi fixe l'âge, le stage,
+  le minimum et les survivants ; elle renvoie au décret n° 2003-894 les classes de revenus et
+  le revenu de référence, donc le calcul de la pension. Celui-ci ne commence qu'avec le décret,
+  le 1er mai 2003 : entre le 2 janvier et le 1er mai 2003, la loi fixe un minimum de 200 dinars
+  mais pas encore de taux.
+
+  Un minimum en dinars, non en part du salaire minimum. Les pensions de vieillesse,
+  d'invalidité et de survivants ne peuvent être inférieures à 200 dinars par mois (loi,
+  articles 13 et 15 ; décret, article 17). C'est la seule des pensions du secteur privé dont le
+  plancher soit un montant fixe.
+
+  La revalorisation n'est pas versée, faute d'être une valeur : les pensions en cours sont
+  revalorisées automatiquement à chaque hausse du SMIG du régime de 48 heures, proportionnellement
+  à son taux d'augmentation (loi, article 31). Les dispositions transitoires des articles 33 et
+  34 de la loi, qui servent une pension sans cotisation aux personnes de plus de 55 ans à sa
+  promulgation, ne sont pas versées.
