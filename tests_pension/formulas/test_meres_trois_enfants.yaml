@@ -1,0 +1,125 @@
+# Mères de trois enfants : la jouissance est immédiate depuis 1989.
+#
+# L'article 41 nouveau, issu de la loi n° 88-71 du 27 juin 1988 (effet
+# au 1er janvier 1989), range « la mise à la retraite sur la demande
+# des mères » parmi les cas de jouissance immédiate. Aucune condition
+# d'âge ne leur est plus opposable : le paramètre
+# cnrps.depart_anticipe.meres_3_enfants.age_minimum passe de 50 à 0.
+#
+# Avant 1989, la valeur de 50 ans n'est appuyée par aucun texte lu ;
+# elle est conservée et documentée comme telle.
+#
+# La durée requise — quinze ans, soit 60 trimestres, par l'article 22 —
+# ne change pas : les cas ci-dessous portent 65 trimestres.
+
+# --- Avant le 1er janvier 1989 : la condition de 50 ans joue --------
+
+- name: 1986, l'âge requis des mères est de 50 ans
+  period: 1986
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_age_requis: 50
+
+- name: 1988, l'âge requis est encore de 50 ans
+  period: 1988
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_age_requis: 50
+
+- name: 1988, une mère de 45 ans n'ouvre pas droit
+  period: 1988
+  input:
+    age: 45
+    mere_3_enfants: true
+    cnrps_duree_assurance: 65
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_eligible: false
+
+- name: 1988, une mère de 52 ans ouvre droit
+  period: 1988
+  input:
+    age: 52
+    mere_3_enfants: true
+    cnrps_duree_assurance: 65
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_eligible: true
+
+# --- Depuis le 1er janvier 1989 : plus de condition d'âge ----------
+
+- name: 1989, l'âge requis tombe à zéro
+  period: 1989
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_age_requis: 0
+
+- name: 1990, l'âge requis reste nul
+  period: 1990
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_age_requis: 0
+
+- name: 2024, l'âge requis reste nul
+  period: 2024
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_age_requis: 0
+
+- name: 1990, la mère de 45 ans ouvre droit désormais
+  period: 1990
+  input:
+    age: 45
+    mere_3_enfants: true
+    cnrps_duree_assurance: 65
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_eligible: true
+
+- name: 1990, la mère de 52 ans reste éligible
+  period: 1990
+  input:
+    age: 52
+    mere_3_enfants: true
+    cnrps_duree_assurance: 65
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_eligible: true
+
+- name: 2024, la mère de 45 ans ouvre droit
+  period: 2024
+  input:
+    age: 45
+    mere_3_enfants: true
+    cnrps_duree_assurance: 65
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_eligible: true
+
+# --- Seule la condition d'âge change ------------------------------
+
+- name: 1988, la durée requise est de quinze ans
+  period: 1988
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_duree_requise_annees: 15
+
+- name: 1990, la durée requise est toujours de quinze ans
+  period: 1990
+  absolute_error_margin: 0
+  input:
+    mere_3_enfants: true
+  output:
+    cnrps_duree_requise_annees: 15

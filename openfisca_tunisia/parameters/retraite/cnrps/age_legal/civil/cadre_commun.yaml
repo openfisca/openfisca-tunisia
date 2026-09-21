@@ -1,0 +1,23 @@
+description: Age légal de de départ à la retraite pour le cadre commun de la CNRPS
+values:
+  1959-02-01:
+    value: 60
+  2019-07-01:
+    value: 61
+  2020-01-01:
+    value: 62
+metadata:
+  unit: year
+  reference:
+    1959-02-01:
+    - title: "Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 93."
+    2019-07-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985 (dispositions transitoires)"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, pp. 1312-1315."
+    2020-01-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, pp. 1312-1315."

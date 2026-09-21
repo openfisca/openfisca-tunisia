@@ -1,0 +1,55 @@
+- name: "5 ans de trimetres CNSS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 5 * 4
+  output:
+    rsna_taux_de_liquidation: .2
+
+- name: "10 ans de trimetres CNSS RSNA"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 10 * 4
+  output:
+    rsna_taux_de_liquidation: .4
+
+- name: "13 ans de trimetres CNSS RSNA"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 13 * 4
+  output:
+    rsna_taux_de_liquidation: .4 + .06
+
+- name: "21 ans de trimetres CNSS RSNA"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 21 * 4
+  output:
+    rsna_taux_de_liquidation: .4 + .22
+
+- name: "31 ans de trimetres CNSS RSNA"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 31 * 4
+  output:
+    rsna_taux_de_liquidation: .8
+
+- name: "40 ans de trimetres CNSS RSNA"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 40 * 4
+  output:
+    rsna_taux_de_liquidation: .8
+
+- name: "50 ans de trimetres CNSS RSNA"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    rsna_duree_assurance: 50 * 4
+  output:
+    rsna_taux_de_liquidation: .8

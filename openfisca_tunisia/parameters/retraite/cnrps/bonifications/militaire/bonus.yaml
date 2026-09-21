@@ -1,0 +1,22 @@
+description: Bonification maximum pour militaires
+values:
+  1985-03-05:
+    value: 5
+metadata:
+  unit: year
+documentation: |-
+  Aucun texte lu ne fixe à cinq ans la bonification des militaires. La référence que portait
+  ce paramètre — article 32 de la loi n° 85-12 du 5 mars 1985 — vise les ouvriers accomplissant
+  des travaux pénibles et insalubres, les agents exerçant des fonctions astreignantes et les
+  cadres actifs, non les militaires.
+
+  Pour les militaires mis à la retraite d'office ou ayant atteint la limite d'âge de leur grade,
+  l'article 67 de la loi n° 85-12 (JORT n° 20 du 12 mars 1985, p. 364) accorde une
+  bonification égale à la période restant à courir jusqu'à 60 ans ; l'article 67 nouveau issu
+  de la loi n° 2019-37 du 30 avril 2019 porte ce repère à 62 ans. L'article 33 accorde en outre
+  la bonification jusqu'à 60 ans aux militaires blessés en service (62 ans depuis 2019) ; la loi
+  n° 88-71 du 27 juin 1988, effet 1er janvier 1989, y ajoute la retraite d'office, bonifiée dans
+  la limite d'un rendement de 20 % de la rémunération de liquidation. Aucun de ces articles ne
+  fixe un nombre d'années.
+
+  La valeur est conservée faute de mieux ; son origine reste à établir.

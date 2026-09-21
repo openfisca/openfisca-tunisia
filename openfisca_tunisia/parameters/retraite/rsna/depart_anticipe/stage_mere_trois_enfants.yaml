@@ -1,0 +1,18 @@
+description: Durée de cotisation exigée pour un départ anticipé des mères de trois enfants vivants au moins
+values:
+  1982-07-22:
+    value: 180
+metadata:
+  unit: month
+  reference:
+    1982-07-22:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (article 15 bis ajouté)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606. Le cas d) de l'article 15 bis ouvre le droit aux mères de trois enfants vivants au moins, sous condition de 180 mois de cotisations. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication."
+documentation: |-
+  Le texte compte en mois : quinze ans est une conversion exacte, mais c'est la rédaction du
+  décret qui fait foi.
+
+  La condition d'avoir trois enfants vivants au moins n'est pas versée : c'est un fait de
+  situation, non une valeur datée du régime. Aucun texte lu jusqu'au 20 septembre 2026 ne
+  modifie ce stage.

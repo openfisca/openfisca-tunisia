@@ -1,0 +1,21 @@
+description: Période de remplacement de base
+values:
+  1981-01-01:
+    value: 10.0
+metadata:
+  unit: year
+documentation: |-
+  Aucun texte lu ne fixe cette période à dix ans. L'article 50 de la loi n° 81-6 du
+  12 février 1981 (JORT n° 9 du 13 février 1981, pp. 265-273), seul article du régime des
+  salariés agricoles qui fixe l'assiette de la pension, retient la moyenne des salaires des
+  **trois ou cinq dernières années**, la plus avantageuse des deux étant retenue — et non
+  une fenêtre de dix ans.
+
+  La valeur est conservée pour la continuité des calculs ; son origine reste à établir. La
+  date du 1er janvier 1981 est celle d'entrée en vigueur de la loi n° 81-6, énoncée par son
+  article 88 : c'est la date du bloc RSA, non celle d'un texte qui fixerait cette valeur.
+
+  Le sujet rejoint celui de la fenêtre du salaire de référence, ouvert par l'issue #24 : les
+  textes retiennent les **dernières** années, et non les **meilleures**. Les deux ne
+  coïncident que pour une carrière dont le salaire ne baisse jamais. La fenêtre et la règle
+  de sélection relèvent du même remaniement, qui n'est pas fait ici.

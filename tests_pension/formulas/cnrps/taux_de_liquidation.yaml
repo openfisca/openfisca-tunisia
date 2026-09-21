@@ -1,0 +1,91 @@
+- name: "5 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 5 * 4
+  output:
+    cnrps_taux_de_liquidation: .1
+
+- name: "10 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 10 * 4
+  output:
+    cnrps_taux_de_liquidation: .2
+
+- name: "13 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 13 * 4
+  output:
+    cnrps_taux_de_liquidation: .2 + .09
+
+- name: "21 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 21 * 4
+  output:
+    cnrps_taux_de_liquidation: .5 + .02
+
+- name: "31 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 31 * 4
+  output:
+    cnrps_taux_de_liquidation: .5 + .22
+
+- name: "40 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 40 * 4
+  output:
+    cnrps_taux_de_liquidation: .9
+
+- name: "50 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 50 * 4
+  output:
+    cnrps_taux_de_liquidation: .9
+
+# À partir de 1986 : les conditions d'ouverture du droit, lues par
+# cnrps_duree_requise_annees, ne commencent que le 12 septembre 1985,
+# donc la période annuelle 1985 ne se calcule pas.
+
+- name: "21 ans de trimetres CNRPS"
+  period: 1986
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 21 * 4
+  output:
+    cnrps_taux_de_liquidation: .52
+
+- name: "31 ans de trimetres CNRPS"
+  period: 1986
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 31 * 4
+  output:
+    cnrps_taux_de_liquidation: .72
+
+- name: "40 ans de trimetres CNRPS"
+  period: 1986
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 40 * 4
+  output:
+    cnrps_taux_de_liquidation: .9
+
+- name: "45 ans de trimetres CNRPS"
+  period: 1986
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 45 * 4
+  output:
+    cnrps_taux_de_liquidation: .9

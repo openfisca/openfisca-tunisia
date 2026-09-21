@@ -1,0 +1,22 @@
+description: Durée de cotisation exigée pour un départ pour convenance personnelle
+values:
+  1982-07-22:
+    value: 360
+metadata:
+  unit: month
+  reference:
+    1982-07-22:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (article 15 bis ajouté)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606. Le cas c) de l'article 15 bis exige 360 mois de cotisations. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication."
+    2007-08-30:
+    - title: "Décret n° 2007-2148 du 21 août 2007, modifiant et complétant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, articles premier et 3"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0692007.pdf"
+      note: "JORT n° 69 du 28 août 2007, pp. 3070-3071. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Le tiret c) de l'article 15 bis est abrogé et le cas repris à l'article 15 ter, avec le même stage de 360 mois. La valeur ne change pas ; l'article qui la porte, oui."
+documentation: |-
+  Le texte compte en mois, et le paramètre aussi : trente ans est une conversion exacte,
+  mais c'est la rédaction du décret qui fait foi.
+
+  La durée n'a pas bougé depuis 1982. Ce qui a changé en 2007 est l'article qui la porte et
+  l'âge auquel la pension est servie, non le stage lui-même. Une référence de 2007 est
+  attachée sans valeur nouvelle, pour que la relecture ne conclue pas à une lacune.

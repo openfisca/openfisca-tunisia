@@ -1,0 +1,25 @@
+description: Taux de la pension de réversion du conjoint survivant (part de la pension de l'assuré)
+values:
+  1974-01-01:
+    value: 0.5
+metadata:
+  unit: /1
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 31, alinéa 1er"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, pp. 915-919. Au décès de l'assuré, le conjoint survivant perçoit la moitié de la pension dont l'assuré bénéficiait ou aurait dû bénéficier. L'article 64 fixe l'effet du décret au 1er janvier 1974."
+documentation: |-
+  Ce taux de base n'a pas changé depuis 1974. Ce qui a changé est ce qui s'y ajoute et qui
+  y a droit.
+
+  Le décret n° 81-188 ne le remplace pas : il ajoute à l'article 31 un second alinéa qui
+  permet de le porter jusqu'aux trois quarts, sous conditions. Ce plafond majoré est porté
+  par le paramètre voisin `taux_conjoint_majore`, et non ici, parce qu'il ne s'applique pas
+  à tous : lire les deux comme une série de 0,5 puis 0,75 ferait croire que tout conjoint
+  survivant touche les trois quarts depuis 1981.
+
+  Le bénéficiaire, lui, s'est élargi. Dans la rédaction de 1974, l'article 29 ouvre le droit
+  à la veuve et au veuf invalide ; le décret n° 97-291 l'ouvre au « conjoint survivant »,
+  sans condition d'invalidité pour l'homme. Un champ qui s'élargit à taux constant se
+  documente, il ne se date pas.

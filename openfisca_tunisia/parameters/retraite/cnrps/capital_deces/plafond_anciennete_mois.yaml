@@ -1,0 +1,11 @@
+description: Plafond de la majoration d'ancienneté du capital-décès, en mois de salaire (1/12 de la rémunération annuelle par année de service)
+values:
+  1993-02-01:
+    value: 18
+metadata:
+  unit: month
+  reference:
+    1993-02-01:
+    - title: "Décret n° 93-308 du 1er février 1993, relatif au régime du capital-décès"
+      href: "https://www.pist.tn/jort/1993/1993F/Jo01393.pdf"
+      note: "JORT n° 13/1993, p. 246-247 — article 5"

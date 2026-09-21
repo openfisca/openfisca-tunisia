@@ -1,0 +1,33 @@
+- name: Indemnités familiales - 1 enfant
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 1
+  output:
+    cnrps_indemnites_familiales: 7.320
+
+- name: Indemnités familiales - 3 enfants
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 3
+  output:
+    cnrps_indemnites_familiales: 19.520
+
+- name: Indemnité de Revenu Unique (IRU) - 1 enfant
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 1
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 3.125
+
+- name: Indemnité de Revenu Unique (IRU) - 2 enfants mere divorcee
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 2
+    mere_divorcee_garde_enfants: true
+  output:
+    cnrps_indemnite_revenu_unique: 6.250

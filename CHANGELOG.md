@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.93 - [#434](https://github.com/openfisca/openfisca-tunisia/pull/434)
+
+* Amélioration technique.
+* Zones impactées : `parameters/retraite`, `openfisca_tunisia_pension`, `openfisca_tunisia/sous_ensembles.py`.
+* Détails :
+  - **openfisca-tunisia-pension rejoint ce dépôt.** Un seul arbre de paramètres, sous `openfisca_tunisia/parameters/`, et deux systèmes socio-fiscaux qui n'en lisent chacun qu'une partie : le système fiscal tout sauf `retraite`, le système des pensions `retraite` et `marche_travail`. Les listes sont déclarées dans `openfisca_tunisia/sous_ensembles.py`, et un test refuse tout sous-arbre qu'aucun système ne lit.
+  - **L'histoire de la pension est conservée** : `git log --follow` retrouve chacun de ses fichiers jusqu'à son premier commit.
+  - **Aucune valeur ne change.** Des références prises avant la fusion le vérifient : les 29 359 feuilles du système fiscal et les 93 de `retraite` sont identiques, à 32 dates. Le système fiscal lit désormais une liste explicite de sous-arbres au lieu du répertoire entier, sans quoi il aurait lu `retraite` en silence ; les 31 195 nœuds et feuilles qu'il charge ont gardé leurs noms, leurs types et leurs métadonnées.
+  - **Un défaut réel corrigé au passage.** La pension lisait `marche_travail` dans un openfisca-tunisia 0.80, figé par son propre verrou : sa CI testait contre un SMIG vieux de douze versions — en 2026, 528,32 dinars pour le SMIG 48 h mensuel au lieu de 554,736. Elle lit maintenant le même arbre que le système fiscal.
+  - **Chaque système garde ses entités.** Elles portent les variables, et les deux `age` ne se définissent pas de la même façon : mensuel et calculé côté fiscal, annuel et saisi côté pension. Un test construit les deux systèmes dans un même processus et vérifie qu'aucun ne capture les entités de l'autre.
+  - **Installation.** `pip install 'openfisca-tunisia[pension]'` apporte numba, en version 0.67 au moins : les versions antérieures plafonnent numpy sous 2.5, et 0.67 permet aux deux systèmes de partager numpy 2.5.3. Sans l'extra, le système fiscal fonctionne seul, et importer la pension échoue avec un message qui dit quoi installer.
+  - **Trois corrections d'outillage.** Les métadonnées de paquet de la pension sont lues sur la distribution `openfisca-tunisia` : openfisca-core les cherchait sous le nom du paquet d'import et aurait annoncé une version 0.0.0. `tools.py` est exclu de la réécriture des assertions de pytest, qui empêchait numba de le compiler. Le test d'API, qui se terminait par `exit $?` après `kill` et ne pouvait donc jamais échouer, vérifie désormais les deux systèmes et renvoie le résultat de ses contrôles.
+  - L'ancien CHANGELOG de la pension est conservé sous `docs/pension/CHANGELOG.md`.
+
 ## 0.92 - [#433](https://github.com/openfisca/openfisca-tunisia/pull/433)
 
 * Amélioration technique.

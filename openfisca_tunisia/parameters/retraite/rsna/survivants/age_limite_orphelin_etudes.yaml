@@ -1,0 +1,26 @@
+description: Âge jusqu'auquel la pension d'orphelin est servie à l'orphelin qui poursuit ses études
+values:
+  1974-01-01:
+    value: 21
+metadata:
+  unit: year
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 33"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, pp. 915-919. La pension est servie jusqu'à vingt et un ans à l'orphelin qui poursuit ses études, et sans limite d'âge en cas d'affection incurable. L'article 64 fixe l'effet du décret au 1er janvier 1974."
+    1997-05-01:
+    - title: "Décret n° 97-1927 du 29 septembre 1997, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier (article 33 nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo08097.pdf"
+      note: "JORT n° 80 du 7 octobre 1997, p. 1851. L'article 2 fixe l'effet au 1er mai 1997. L'article 33 nouveau maintient vingt et un ans, mais réserve désormais cette prolongation aux études secondaires, techniques ou professionnelles : les études supérieures relèvent d'une limite propre de vingt-cinq ans."
+documentation: |-
+  Une valeur inchangée, un champ qui se resserre. Vingt et un ans vaut pour toutes les
+  études de 1974 à 1997 ; à compter du 1er mai 1997, cette limite ne vise plus que les
+  études secondaires, techniques ou professionnelles, les études supérieures ayant la leur.
+  Un périmètre qui se restreint à valeur constante se documente, il ne se date pas.
+
+  Deux prolongations de la même série ne sont pas versées parce qu'elles n'ont pas d'âge :
+  celle de l'affection incurable, sans limite depuis 1974, et celle de la fille sans
+  ressources ou dont l'entretien n'incombe pas à son mari, introduite en 1997. Le décret
+  n° 2007-2148 précise pour cette dernière que le paiement est définitivement suspendu dès
+  qu'une des conditions vient à manquer, ce qui est une règle de service et non un âge.

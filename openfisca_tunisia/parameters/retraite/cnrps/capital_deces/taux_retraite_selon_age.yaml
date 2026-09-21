@@ -1,0 +1,47 @@
+description: Taux appliqué au capital-décès du retraité selon l'âge au décès (50 % au-delà de 60 ans, réduit ensuite). Les agents en activité (< 60 ans) perçoivent 100 %.
+brackets:
+- threshold:
+    1993-02-01:
+      value: 0
+  amount:
+    1993-02-01:
+      value: 1.0
+- threshold:
+    1993-02-01:
+      value: 60
+  amount:
+    1993-02-01:
+      value: 0.50
+- threshold:
+    1993-02-01:
+      value: 70
+  amount:
+    1993-02-01:
+      value: 0.40
+- threshold:
+    1993-02-01:
+      value: 75
+  amount:
+    1993-02-01:
+      value: 0.30
+- threshold:
+    1993-02-01:
+      value: 80
+  amount:
+    1993-02-01:
+      value: 0.20
+- threshold:
+    1993-02-01:
+      value: 85
+  amount:
+    1993-02-01:
+      value: 0.10
+metadata:
+  type: single_amount
+  threshold_unit: year
+  amount_unit: /1
+  reference:
+    1993-02-01:
+    - title: "Décret n° 93-308 du 1er février 1993, relatif au régime du capital-décès"
+      href: "https://www.pist.tn/jort/1993/1993F/Jo01393.pdf"
+      note: "JORT n° 13/1993, p. 246-247 — article 6"

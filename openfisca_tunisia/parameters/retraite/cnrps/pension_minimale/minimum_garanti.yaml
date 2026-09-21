@@ -1,0 +1,26 @@
+description: Pension minimale garanti de la CNRPS
+values:
+  1981-05-01:
+    value: 0.66666
+  1985-09-12:
+    value: 0.66666
+metadata:
+  unit: smig
+  reference:
+    1981-05-01:
+    - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 22, § II nouveau de la loi n° 59-18)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
+      note: "JORT n° 51 du 7 août 1981, p. 1789 : la rémunération des annuités liquidées « ne peut être inférieure pour la pension d'ancienneté ou proportionnelle aux 2/3 du SMIG selon les conditions qui seront fixées par décret ». L'article 5 énonce : « L'article 4 de la présente loi prend effet à compter du 1er mai 1981 » (p. 1790)."
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 39"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 362 : la pension ne peut être inférieure aux deux tiers du SMIG du régime de 2 400 heures par an. Valeur inchangée. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Pension minimale servie aux agents qui justifient de la durée de services requise.
+
+  Le paramètre commence le 1er mai 1981, date d'effet de l'article 4 de la loi n° 81-70.
+  Le texte antérieur, la loi n° 59-18 du 5 février 1959, n'a pas été lu pour cette
+  période : aucune valeur n'est portée avant le 1er mai 1981.
+
+  Aucun texte de la chaîne modificative de la loi n° 85-12 lue jusqu'au 10 avril 2026 ne
+  modifie l'article 39.

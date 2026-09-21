@@ -2,6 +2,7 @@ import os
 
 from openfisca_core.taxbenefitsystems import TaxBenefitSystem
 from openfisca_tunisia import entities
+from openfisca_tunisia.sous_ensembles import SOUS_ARBRES_FISCAL, charger_sous_ensemble
 # from openfisca_tunisia.conf.cache_blacklist import cache_blacklist as conf_cache_blacklist
 
 
@@ -21,6 +22,9 @@ class TunisiaTaxBenefitSystem(TaxBenefitSystem):
         # We add to our tax and benefit system all the variables
         self.add_variables_from_directory(os.path.join(COUNTRY_DIR, "variables"))
         # self.cache_blacklist = conf_cache_blacklist
-        # We add to our tax and benefit system all the legislation parameters defined in the  parameters files
-        param_path = os.path.join(COUNTRY_DIR, "parameters")
-        self.load_parameters(param_path)
+        # Le système ne lit que ses sous-arbres de l'arbre commun, et non le répertoire
+        # entier : voir `openfisca_tunisia/sous_ensembles.py`.
+        parameters = charger_sous_ensemble(SOUS_ARBRES_FISCAL)
+        if self.preprocess_parameters is not None:
+            parameters = self.preprocess_parameters(parameters)
+        self.parameters = parameters

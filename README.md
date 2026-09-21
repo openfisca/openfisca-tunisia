@@ -152,6 +152,23 @@ pip list
 # Résultat attendu : Liste contenant OpenFisca-Tunisia et ses dépendances.
 ```
 
+#### Deux systèmes socio-fiscaux, un seul arbre de paramètres
+
+Le paquet livre deux systèmes, qui lisent chacun une partie du même arbre de paramètres
+(`openfisca_tunisia/parameters/`) :
+
+- `openfisca_tunisia` — impôts, cotisations, prestations, rémunérations publiques ;
+- `openfisca_tunisia_pension` — les pensions de retraite, autrefois publiées sous le nom
+  `openfisca-tunisia-pension`. Il exige numba, qu'apporte l'extra `pension` :
+
+```sh
+pip install 'openfisca-tunisia[pension]'
+openfisca serve --country-package openfisca_tunisia_pension
+```
+
+Ce que chaque système lit est déclaré dans `openfisca_tunisia/sous_ensembles.py`. Les
+tests du système des pensions se lancent avec `make test-pension`.
+
 #### Installer le code source
 
 Installer le code source d'`OpenFisca-Tunisia` sur votre ordinateur vous permet d'interroger ou de modifier le modèle socio-fiscal tunisien.
