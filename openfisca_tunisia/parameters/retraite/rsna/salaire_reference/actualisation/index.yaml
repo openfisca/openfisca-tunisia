@@ -1,0 +1,89 @@
+description: Barème d'actualisation des salaires retenus pour le salaire moyen de référence
+metadata:
+  order:
+  - annee_1961
+  - annee_1962
+  - annee_1963
+  - annee_1964
+  - annee_1965
+  - annee_1966
+  - annee_1967
+  - annee_1968
+  - annee_1969
+  - annee_1970
+  - annee_1971
+  - annee_1972
+  - annee_1973
+  - annee_1974
+  - annee_1975
+  - annee_1976
+  - annee_1977
+  - annee_1978
+  - annee_1979
+  - annee_1980
+  - annee_1981
+  - annee_1982
+  - annee_1983
+  - annee_1984
+  - annee_1985
+  - annee_1986
+  - annee_1987
+  - annee_1988
+  - annee_1989
+  - annee_1990
+  - annee_1991
+  - annee_1992
+  - annee_1993
+  - annee_1994
+  - annee_1995
+  - annee_1996
+  - annee_1997
+  - annee_1998
+  - annee_1999
+  - annee_2000
+  - annee_2001
+  - annee_2002
+  - annee_2003
+  - annee_2004
+  - annee_2005
+  - annee_2006
+  - annee_2007
+  - annee_2008
+  - annee_2009
+  - annee_2010
+  - annee_2011
+  - annee_2012
+  - annee_2013
+  - annee_2014
+  - annee_2015
+  - annee_2016
+  - annee_2017
+  - annee_2018
+  - annee_2019
+  - annee_2020
+  - annee_2021
+  - annee_2022
+  - annee_2023
+documentation: |-
+  Les salaires qui entrent dans le salaire moyen de référence sont actualisés selon un barème
+  fixé chaque année par arrêté du ministre des affaires sociales, sur le fondement de
+  l'article 18 du décret n° 74-499, dans sa rédaction issue du décret n° 94-1429. Chaque arrêté
+  donne un coefficient par année de salaire, depuis 1961 jusqu'à l'année qui précède, dont le
+  coefficient vaut 1. Il s'applique aux pensions dont le droit est ouvert à compter du
+  1er janvier de l'année de l'arrêté ; le premier, du 17 novembre 1994, à compter du
+  1er juillet 1994, date d'effet de la réforme.
+
+  Chaque paramètre porte donc une année de salaire, et ses valeurs successives sont celles
+  des arrêtés successifs : le coefficient des salaires de 1961 passe de 6,48469 dans le barème
+  de 1994 à 24,91897 dans celui de 2024.
+
+  Le barème n'est pas une simple chaîne. D'un arrêté à l'autre, le rapport entre les
+  coefficients de deux années voisines reste en général le même, mais il change pour
+  plusieurs années dans les arrêtés de 2004, de 2011 et de 2013 : ces barèmes ont été
+  recalculés. Les rapports de 2013 sont repris en 2014 et en 2015, puis ceux d'avant reviennent
+  en 2018. Les valeurs sont versées telles que publiées.
+
+  Aucun arrêté n'a été retrouvé au Journal officiel pour 2016, 2017, 2019, 2025 ni 2026. Les
+  valeurs du barème précédent sont alors conservées, ce que les textes ne disent pas
+  expressément. Les salaires de 2015 et de 2016 n'ont de coefficient qu'à partir du barème de
+  2018, ceux de 2018 qu'à partir du barème de 2020.

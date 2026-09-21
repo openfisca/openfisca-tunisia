@@ -1,0 +1,47 @@
+description: Coefficient d'actualisation des salaires de l'année 2014
+values:
+  2024-01-01:
+    value: 1.73582
+  2023-01-01:
+    value: 1.58779
+  2022-01-01:
+    value: 1.46599
+  2021-01-01:
+    value: 1.38685
+  2020-01-01:
+    value: 1.31287
+  2018-01-01:
+    value: 1.14404
+  2015-01-01:
+    value: 1.00000
+metadata:
+  unit: /1
+  reference:
+    2015-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 30 mars 2015, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2015/2015F/Jo0272015.pdf"
+      note: "JORT n° 27 du 3 avril 2015, pp. 603-604. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2015."
+    2018-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 19 février 2018, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2018/2018F/Jo0162018.pdf"
+      note: "JORT n° 16 du 23 février 2018, pp. 510-511. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2018."
+    2020-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 23 juin 2020, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2020/2020F/Jo0612020.pdf"
+      note: "JORT n° 61 du 26 juin 2020, pp. 1368-1369. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2020."
+    2021-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 13 avril 2021, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2021/2021F/Jo0352021.pdf"
+      note: "JORT n° 35 du 20 avril 2021, pp. 868-869. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2021."
+    2022-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 21 février 2022, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2022/2022F/Jo0212022.pdf"
+      note: "JORT n° 21 du 25 février 2022, p. 570. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2022."
+    2023-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 9 mars 2023, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2023/2023F/Jo0312023.pdf"
+      note: "JORT n° 31 du 28 mars 2023, p. 714. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2023."
+    2024-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 16 juillet 2024, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2024/2024F/Jo0902024.pdf"
+      note: "JORT n° 90 du 19 juillet 2024, p. 1966. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2024. Le barème est une image insérée dans le fascicule : lu à l'image."
