@@ -1,5 +1,18 @@
 # Changelog
 
+### 7.3.0
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 02/05/2019.
+* Zones impactées : `parameters/retraite/cnrps/age_legal/militaire`, `parameters/retraite/cnrps/bonifications/cadre_actif`.
+* Détails :
+  - **Verse les âges militaires issus de la loi n° 2019-37**, relue sur pièce. Son article premier réécrit l'article 61 : cinquante-deux ans pour les hommes de troupe, cinquante-sept pour les sous-officiers, soixante pour les officiers subalternes, soixante-deux pour les officiers supérieurs et les officiers généraux. Son article 5 les atteint en deux temps : un an de plus au 1er juillet 2019, deux ans au 1er janvier 2020.
+  - **Le second palier retombe exactement sur l'article 61 nouveau, pour chacun des cinq grades.** C'est ce qui permet d'attribuer les quatre âges du texte aux cinq grades sans ambiguïté, les officiers supérieurs et généraux partageant le même.
+  - **Verse le terme de la période bonifiable de l'article 32** : soixante ans, porté à soixante-deux par l'article 2 de la loi. Le nom du fichier, `age_terme_article_32`, désigne l'article pour qu'on n'y lise pas les articles 33 et 67, qui portent aussi un terme de soixante-deux ans mais par une autre voie.
+  - **Ce terme saute d'un coup, quand l'âge de départ des mêmes agents monte en deux temps.** L'article 5, qui échelonne le relèvement, énumère les articles auxquels il déroge — 24, 27, 28, 29 et 61 — et l'article 32 n'en est pas. L'énumération a été lue deux fois : l'extraction mise en page avait perdu un numéro, l'extraction brute l'a rendu.
+  - **La date d'entrée en vigueur est déduite, et corroborée.** La loi n'a pas de clause propre et se clôt sur la formule ordinaire : elle devient exécutoire un jour franc après sa publication du 30 avril, le 2 mai 2019. Son article 4 fait courir la hausse des cotisations « à partir du premier jour du mois qui suit la date d'entrée en vigueur », et openfisca-tunisia la date au 1er juin 2019 : l'entrée en vigueur tombe donc bien en mai, et non le jour de la publication.
+  - Aucune valeur antérieure n'est modifiée. La bonification militaire, calculée comme un forfait de cinq ans que le texte ne fonde pas, fait l'objet de l'issue #53.
+
 ### 7.2.0
 
 * Évolution du système socio-fiscal.

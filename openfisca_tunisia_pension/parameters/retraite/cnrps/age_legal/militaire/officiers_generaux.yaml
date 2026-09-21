@@ -4,6 +4,10 @@ values:
     value: 62
   1989-01-01:
     value: 60
+  2019-07-01:
+    value: 61
+  2020-01-01:
+    value: 62
 metadata:
   unit: year
   reference:
@@ -15,3 +19,11 @@ metadata:
     - title: "Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985, article premier (article 61, 1° nouveau)"
       href: "https://www.pist.tn/jort/1988/1988F/Jo04588.pdf"
       note: "JORT n° 45 du 1er juillet 1988, pp. 967-968. L'article premier remplace l'article 61 de la loi n° 85-12. La loi prend effet au 1er janvier 1989. L'âge des officiers généraux est abaissé de 62 à 60 ans."
+    2019-07-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 5 (dispositions transitoires)"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, pp. 1312-1315. À titre transitoire et par dérogation à l'article 61 nouveau, l'âge en vigueur est repoussé d'une année à partir du 1er juillet 2019 pour les agents qui l'atteignent entre cette date et le 31 décembre 2019 : 60 ans deviennent 61 ans."
+    2020-01-01:
+    - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, articles premier (article 61, paragraphe premier nouveau) et 5"
+      href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
+      note: "JORT n° 35 du 30 avril 2019, pp. 1312-1315. L'article 61 nouveau fixe 62 ans pour les officiers généraux ; l'article 5 repousse l'âge de deux ans à partir du 1er janvier 2020, ce qui y conduit exactement."
