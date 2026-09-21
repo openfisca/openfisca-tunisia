@@ -1,0 +1,23 @@
+description: Valeur du point de retraite
+values:
+  1977-07-01:
+    value: null
+  1977-01-01:
+    value: 0.116
+metadata:
+  unit: currency
+  reference:
+    1977-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, annexe I, B"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, p. 3379, lu à l'image. La valeur du point de retraite prévue à l'article 18 est fixée à 0,116 dinar pour la période du 1er janvier au 30 juin 1977."
+    1977-07-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, article 18"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, p. 3377. Pour les périodes postérieures, la valeur est fixée par le directeur général de la CAVIS sur avis du comité de gestion, à effet du premier juillet de chaque année, en fonction de l'évolution du salaire de référence."
+documentation: |-
+  La pension annuelle est le nombre de points multiplié par la valeur du point (article 17). Seule
+  la valeur de la période initiale est publiée au Journal officiel. Les suivantes sont fixées au
+  1er juillet de chaque année par décision de la CAVIS, puis de la CNSS, non publiée : la valeur
+  nulle au 1er juillet 1977 le signale. Tant que la réserve de prévoyance n'a pas atteint son
+  niveau cible, la valeur retenue ne peut engager plus des trois quarts des ressources attendues.

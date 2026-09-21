@@ -3,6 +3,8 @@ metadata:
   order:
   - taux_cotisation_contractuel
   - salaire_minimal_cotisable_part_smig
+  - salaire_reference
+  - valeur_point
   - survivants
 documentation: |-
   Régime par points, fonctionnant en répartition, qui permet aux salariés du régime non agricole
@@ -19,10 +21,8 @@ documentation: |-
   valeur du point à la liquidation, puis à chaque échéance (article 17). L'ouverture du droit suit
   les conditions d'âge et de cessation d'activité du régime légal (article 15).
 
-  Les deux séries qui font la pension ne sont pas versées, et ne peuvent pas l'être sur la seule
-  foi du Journal officiel. Le salaire de référence est donné par l'annexe I, A, du règlement pour
-  les années antérieures à 1977, puis fixé chaque année par le directeur général de la CAVIS
-  (article 11). La valeur du point est donnée par l'annexe I, B, pour la période initiale, puis
-  fixée par la même autorité au 1er juillet de chaque année (article 18). Ces décisions ne sont
-  pas publiées au Journal officiel, et le tableau de l'annexe I n'a pu être lu de façon fiable sur
-  l'océrisation.
+  Les deux séries qui font la pension ne sont versées que pour la période initiale, seule publiée
+  au Journal officiel : le salaire de référence de 1961 à 1976 et la valeur du point du premier
+  semestre 1977 (annexe I du règlement). Les valeurs suivantes sont fixées chaque année par le
+  directeur général de la CAVIS, puis de la CNSS (articles 11 et 18), par des décisions qui ne
+  paraissent pas au Journal officiel.

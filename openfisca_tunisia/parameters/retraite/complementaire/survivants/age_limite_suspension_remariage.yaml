@@ -1,0 +1,15 @@
+description: Âge en deçà duquel le remariage suspend la pension du conjoint survivant
+values:
+  1997-02-09:
+    value: 55
+metadata:
+  unit: year
+  reference:
+    1997-02-09:
+    - title: "Arrêté du ministre des affaires sociales du 27 janvier 1997, modifiant l'arrêté du 18 novembre 1978, relatif au régime complémentaire de pensions de vieillesse, d'invalidité et de survivants, article 24 (nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo01197.pdf"
+      note: "JORT n° 11 du 7 février 1997, pp. 183-184. Sans clause d'entrée en vigueur : publication plus un jour franc. Le paiement de la pension du conjoint survivant est suspendu lorsque l'intéressé se remarie après le décès de son conjoint et sans avoir atteint l'âge de 55 ans ; il est rétabli en cas de décès du nouveau conjoint ou de dissolution du mariage."
+documentation: |-
+  Dans la rédaction de 1978, le remariage de la veuve supprimait la pension de réversion à partir
+  du premier jour du trimestre civil suivant, quel que soit l'âge (article 24). L'arrêté de 1997
+  remplace cette suppression par une suspension, limitée aux remariages avant 55 ans.
