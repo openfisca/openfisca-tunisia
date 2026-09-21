@@ -1,0 +1,14 @@
+description: Stage requis pour le taux de la pension de vieillesse
+values:
+  1989-01-19:
+    value: 120
+metadata:
+  unit: month
+  reference:
+    1989-01-19:
+    - title: "Décret n° 89-107 du 10 janvier 1989, étendant le régime de sécurité sociale aux travailleurs tunisiens à l'étranger, article 20"
+      href: "https://www.pist.tn/jort/1989/1989F/Jo00489.pdf"
+      note: "JORT n° 4 du 17 janvier 1989, pp. 98-99, lu à l'image, le fascicule n'ayant pas de couche texte. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Le taux de 30 % s'applique lorsque se trouve réalisée la condition de 120 mois de cotisations énoncée à l'article 15 b du décret n° 74-499."
+documentation: |-
+  Le décret emprunte la durée du stage au régime non agricole, par renvoi à l'article 15 b du
+  décret n° 74-499, et la compte en mois.
