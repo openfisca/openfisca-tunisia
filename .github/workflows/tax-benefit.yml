@@ -37,6 +37,10 @@ jobs:
           EXPORT_JSON=false
           EXPORT_XLSX=true
 
+          # Langues de l'interface, la première étant celle par défaut. L'explorateur lit
+          # cette variable à la construction : absente, il refuse de se construire.
+          PUBLIC_LANGUAGES="fr,ar"
+
           # Path of directory containing legislation parameters of country
           PARAMETERS_DIR="../../../openfisca_tunisia/parameters/"
 
