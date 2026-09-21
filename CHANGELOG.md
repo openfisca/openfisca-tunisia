@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.94 - [#437](https://github.com/openfisca/openfisca-tunisia/pull/437)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 13/07/1995.
+* Zones impactées : `parameters/retraite/rtns`, `units.yaml`.
+* Détails :
+  - **Verse les paramètres de pension du régime des travailleurs non salariés**, institué par le décret n° 95-1166 du 3 juillet 1995 et lu sur pièce. L'arbre n'en portait jusqu'ici que les cotisations.
+  - **Le renvoi au régime non agricole est partiel, et ce sont ses exceptions qui sont versées.** L'article premier du décret rend applicables les articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499, mais l'article 22 réserve les dispositions particulières des articles 23 à 31. Les survivants et la liquidation viennent donc du régime non agricole, et ne sont pas recopiés. La pension de vieillesse, elle, est propre au régime : stage de 40 trimestres, âge de 65 ans, départ possible dès 60 ans avec une décote de 0,5 % par trimestre, taux de 30 % majoré de 0,5 % par trimestre au-delà de 40, plafond de 80 %.
+  - **Deux valeurs diffèrent de celles que le renvoi aurait importées.** La pension d'invalidité est de 30 %, et non de 50 % comme au régime non agricole ; le plancher est de 30 % du salaire minimum annuel, et non des deux tiers.
+  - **Le calcul part d'une classe, non d'un salaire.** Dix classes de revenus, de coefficient 1 à 18, multiplient le SMIG du régime de 48 heures rapporté à 2 400 heures par an, ou le SMAG rapporté à un nombre de jours qui a varié. Le barème est le même pour les deux secteurs : ses coefficients n'ont donc pas d'unité. Une unité `heure` est enregistrée pour les 2 400 heures.
+  - **Le nombre de jours du SMAG est une série.** Le décret n° 96-1797 fixe 180 jours jusqu'au 31 décembre 1996, 260 jours en 1997, et 300 jours à compter du 1er décembre 1998. Il ne dit rien du 1er janvier au 30 novembre 1998 : aucune valeur n'est inventée pour ces onze mois, et la documentation le signale.
+  - **Deux incohérences du texte sont versées telles quelles**, après relecture sur deux extractions du fascicule. L'article 27 ouvre l'invalidité à 20 trimestres mais ne la majore qu'au-delà de 40 ; l'article 28 renvoie aux « articles 23 et 26 » pour un stage que porte l'article 27.
+  - **Ce qui n'est pas versé** : la revalorisation, qui est une règle — un arrêté de 1998, puis une indexation automatique depuis le décret n° 2002-3018 — et les tableaux de conversion des anciens régimes des travailleurs indépendants (articles 37 et 38).
+
 ## 0.93 - [#434](https://github.com/openfisca/openfisca-tunisia/pull/434)
 
 * Amélioration technique.

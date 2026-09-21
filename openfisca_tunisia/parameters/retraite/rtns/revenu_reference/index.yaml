@@ -1,0 +1,9 @@
+description: Revenu de référence du régime des travailleurs non salariés
+documentation: |-
+  Le revenu de référence est la moyenne pondérée des coefficients des classes auxquelles
+  l'assuré a adhéré, appliquée au salaire minimum du secteur en vigueur à l'ouverture du
+  droit : le SMIG du régime de 48 heures, rapporté à `heures_annuelles_smig`, ou le SMAG,
+  rapporté à `jours_annuels_smag` (article 25 du décret n° 95-1166).
+
+  Le même barème sert d'assiette aux cotisations (article 7) : les cotisations et les
+  prestations se calculent sur les mêmes classes.

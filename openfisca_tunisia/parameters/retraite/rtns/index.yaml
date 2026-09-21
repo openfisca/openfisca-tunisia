@@ -1,0 +1,49 @@
+description: Pensions du régime des travailleurs non salariés des secteurs agricole et non agricole
+metadata:
+  order:
+  - stage_trimestres
+  - age_legal
+  - age_depart_anticipe
+  - decote_par_trimestre
+  - taux_base
+  - majoration_par_trimestre
+  - plafond_taux
+  - plancher_taux
+  - invalidite
+  - revenu_reference
+documentation: |-
+  Régime institué par le décret n° 95-1166 du 3 juillet 1995, géré par la Caisse nationale
+  de sécurité sociale. Il procède par extension : son article premier rend applicables aux
+  non-salariés les articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499, sous réserve
+  des dispositions particulières de ses articles 23 à 31 (article 22).
+
+  Ce que le renvoi importe, et qui n'est donc pas versé ici : les droits des survivants
+  (articles 29 à 38 du décret n° 74-499), portés par `retraite.rsna.survivants`, et les
+  règles de liquidation (articles 46 à 52).
+
+  Ce que le décret de 1995 remplace, et qui est versé ici, parce que le régime non agricole
+  en dispose autrement :
+  - la pension de vieillesse (articles 23 à 26), au lieu des articles 14 à 19 du décret
+    n° 74-499 : stage, âges, décote, taux, majoration, plafond ;
+  - le taux de la pension d'invalidité (article 27) : 30 %, et non 50 % comme au régime non
+    agricole ;
+  - le plancher (article 29) : 30 % du salaire minimum annuel, et non les deux tiers ;
+  - la revalorisation (article 30), au lieu de l'article 53.
+
+  Le calcul ne part pas d'un salaire mais d'une classe de revenus (article 7) : le revenu de
+  référence est la moyenne pondérée des coefficients des classes auxquelles l'assuré a
+  adhéré, appliquée au SMIG du régime de 48 heures rapporté à 2 400 heures par an, ou au
+  SMAG rapporté à un nombre de jours par an qui a varié (article 25 ; décret n° 96-1797).
+
+  Les dates suivent la convention de l'arbre : celle du texte lorsqu'il énonce sa date
+  d'effet, sinon celle où il devient exécutoire, un jour franc après sa publication. Le
+  décret n° 95-1166, publié le 11 juillet 1995 et sans clause propre, prend effet le
+  13 juillet 1995.
+
+  La revalorisation n'est pas versée, faute d'être une valeur. Dans la rédaction de 1995,
+  l'article 30 renvoie la date et les modalités de la révision à un arrêté ; celui du
+  29 juillet 1998 applique, au 1er mai 1998, un coefficient qui dépend de l'année
+  d'ouverture du droit. Le décret n° 2002-3018 réécrit l'article 30 : la pension est
+  désormais revalorisée automatiquement, dans la proportion de la hausse du salaire
+  minimum. Les cinq textes modificatifs du décret de 1995 n'ont touché ni l'âge, ni le
+  stage, ni le taux.

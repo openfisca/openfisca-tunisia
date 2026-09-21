@@ -1,0 +1,25 @@
+description: Coefficients multiplicateurs du salaire minimum, par classe de revenus
+metadata:
+  order:
+  - classe_1
+  - classe_2
+  - classe_3
+  - classe_4
+  - classe_5
+  - classe_6
+  - classe_7
+  - classe_8
+  - classe_9
+  - classe_10
+documentation: |-
+  Dix classes de revenus, dont le coefficient multiplie le salaire minimum annuel du secteur
+  pour donner le revenu forfaitaire de l'assuré (article 7 du décret n° 95-1166). Le
+  barème est le même pour les deux secteurs : ce qui change est le salaire minimum auquel il
+  s'applique, le SMIG ou le SMAG. C'est pourquoi ces coefficients n'ont pas d'unité — ils ne
+  sont des multiples ni du seul SMIG ni du seul SMAG.
+
+  L'assuré ne peut être placé dans une classe inférieure à celle de son activité, fixée par
+  arrêté, mais peut adhérer à une classe supérieure, pour une année civile entière
+  (articles 7 et 8). Les classes des anciens régimes des travailleurs indépendants
+  (décrets n° 82-1359 et n° 82-1360) sont converties selon les tableaux des articles 37 et
+  38, qui ne sont pas versés.
