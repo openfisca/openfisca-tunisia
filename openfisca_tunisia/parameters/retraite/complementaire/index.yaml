@@ -2,7 +2,7 @@ description: Pensions du régime complémentaire de vieillesse, d'invalidité et
 metadata:
   order:
   - taux_cotisation_contractuel
-  - cotisation_minimale_part_smig
+  - salaire_minimal_cotisable_part_smig
   - survivants
 documentation: |-
   Régime par points, fonctionnant en répartition, qui permet aux salariés du régime non agricole
