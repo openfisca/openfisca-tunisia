@@ -15,12 +15,19 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PARAMETERS_DIR = ROOT / "openfisca_tunisia_pension" / "parameters" / "retraite"
+# Depuis la fusion des dépôts, les paramètres de retraite vivent dans l'arbre unique.
+PARAMETERS_DIR = ROOT / "openfisca_tunisia" / "parameters" / "retraite"
 VARIABLES_DIR = ROOT / "openfisca_tunisia_pension" / "variables"
 JORTS_DIR = ROOT / "tmp" / "JORTs"
 REPORT_PATH = ROOT / "reports" / "openfisca" / "pension_source_audit.md"
 CANDIDATES_PATH = ROOT / "parameters_candidates" / "retraite_source_candidates.yml"
 EXTERNAL_JORT_CACHE = ROOT.parent / "PDFs-legislation-tunisie" / "jort_cache.db"
+
+# Un répertoire absent ne doit pas produire un rapport vide : c'est ce qui arrivait après la
+# fusion des dépôts, où ce script réécrivait en silence un audit de zéro paramètre.
+for _repertoire in (PARAMETERS_DIR, VARIABLES_DIR):
+    if not _repertoire.is_dir():
+        raise SystemExit(f"Répertoire introuvable : {_repertoire}")
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 LAW_RE = re.compile(r"(?:loi\s*)?(?:n[°º]\s*)?(\d{2,4})[-‑](\d+)", re.IGNORECASE)
