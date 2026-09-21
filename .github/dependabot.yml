@@ -1,9 +1,0 @@
-version: 2
-updates:
-- package-ecosystem: pip
-  directory: "/"
-  schedule:
-    interval: monthly
-  labels:
-  - kind:dependencies
-  open-pull-requests-limit: 2
