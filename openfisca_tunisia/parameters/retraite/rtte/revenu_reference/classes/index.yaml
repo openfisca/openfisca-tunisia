@@ -1,0 +1,11 @@
+description: Coefficients multiplicateurs du SMIG, par classe de revenus
+metadata:
+  order:
+  - classe_1
+  - classe_2
+  - classe_3
+  - classe_4
+documentation: |-
+  Quatre classes, entre lesquelles l'assuré choisit (article 6). Elles ne s'appliquent qu'au
+  SMIG : leurs coefficients en sont des multiples, et en portent l'unité. Ce ne sont ni les
+  classes des non-salariés ni celles des artistes.

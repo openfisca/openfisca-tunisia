@@ -1,0 +1,11 @@
+description: Durée annuelle d'occupation à laquelle le SMIG est rapporté
+values:
+  2003-05-01:
+    value: 2400
+metadata:
+  unit: heure
+  reference:
+    2003-05-01:
+    - title: "Décret n° 2003-894 du 21 avril 2003, fixant les modalités d'application du régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 16"
+      href: "https://www.pist.tn/jort/2003/2003F/Jo0342003.pdf"
+      note: "JORT n° 34 du 29 avril 2003, pp. 1291-1294. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Le revenu de référence est rapporté à la valeur du SMIG du régime de 48 heures, correspondant à une durée d'occupation de 2 400 heures par an."

@@ -1,0 +1,11 @@
+description: Coefficient multiplicateur du SMIG de la classe 2
+values:
+  1989-01-19:
+    value: 4
+metadata:
+  unit: smig
+  reference:
+    1989-01-19:
+    - title: "Décret n° 89-107 du 10 janvier 1989, étendant le régime de sécurité sociale aux travailleurs tunisiens à l'étranger, article 6"
+      href: "https://www.pist.tn/jort/1989/1989F/Jo00489.pdf"
+      note: "JORT n° 4 du 17 janvier 1989, pp. 98-99, lu à l'image, le fascicule n'ayant pas de couche texte. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Le coefficient multiplicateur de la classe 2 est fixé à 4."

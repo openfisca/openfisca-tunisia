@@ -1,0 +1,26 @@
+description: Pensions du régime agricole amélioré
+metadata:
+  order:
+  - seuil_trimestre_smag
+  - salaire_reference
+  - plancher_taux
+documentation: |-
+  Titre III de la loi n° 81-6, ajouté par la loi n° 89-73 et en vigueur le 1er octobre 1989. Il
+  s'applique aux coopérateurs salariés des sociétés et coopératives agricoles, aux salariés des
+  exploitants employant au moins trente salariés permanents, et à certains pêcheurs et petits
+  armateurs (article 86).
+
+  Il renvoie aux titres I et II de la loi, c'est-à-dire au régime des salariés agricoles, « dans
+  la mesure où il n'y est pas dérogé » (article 101). L'âge, le stage, les taux et le plafond
+  sont donc ceux de `retraite.rsa`, et ne sont pas recopiés.
+
+  Ce que le titre III remplace, et qui est versé ici : la validation des trimestres (article 93),
+  le salaire de référence et sa limite (article 95), et le plancher (article 96). Le régime
+  retient des salaires déclarés et non un forfait, ce qui le rapproche du régime non agricole.
+
+  Le salaire de référence porte sur les trois ou les cinq années précédant l'ouverture du droit,
+  la période la plus avantageuse étant retenue : c'est une règle de choix et non une valeur, et
+  elle n'est pas versée. La revalorisation non plus : elle est automatique à chaque hausse du
+  SMAG, la majoration mensuelle étant la hausse du SMAG journalier rapportée à 25 jours et
+  affectée du taux de la pension (article 97), et elle ne se cumule pas avec le relèvement au
+  plancher (article 98).

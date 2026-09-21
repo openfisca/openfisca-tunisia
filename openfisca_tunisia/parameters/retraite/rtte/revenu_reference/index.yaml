@@ -1,0 +1,6 @@
+description: Revenu de référence du régime des travailleurs tunisiens à l'étranger
+documentation: |-
+  Le revenu annuel moyen de référence est la moyenne pondérée des coefficients des classes
+  auxquelles l'assuré a adhéré, appliquée au SMIG du régime de 48 heures en vigueur à la
+  liquidation, rapporté à `heures_annuelles_smig` (article 19). Le même revenu forfaitaire sert
+  d'assiette aux cotisations (article 6).

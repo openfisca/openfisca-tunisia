@@ -1,0 +1,86 @@
+description: Salaire de référence, prix d'acquisition d'un point de retraite
+values:
+  2022-01-01:
+    value: 2.782
+  2019-01-01:
+    value: 2.721
+  2014-01-01:
+    value: 2.668
+  2012-01-01:
+    value: 2.589
+  2009-01-01:
+    value: 2.495
+  1977-01-01:
+    value: null
+  1976-01-01:
+    value: 0.838
+  1975-01-01:
+    value: 0.780
+  1974-01-01:
+    value: 0.666
+  1973-01-01:
+    value: 0.606
+  1972-01-01:
+    value: 0.562
+  1971-01-01:
+    value: 0.517
+  1970-01-01:
+    value: 0.497
+  1969-01-01:
+    value: 0.481
+  1968-01-01:
+    value: 0.457
+  1967-01-01:
+    value: 0.439
+  1966-01-01:
+    value: 0.422
+  1965-01-01:
+    value: 0.389
+  1964-01-01:
+    value: 0.375
+  1963-01-01:
+    value: 0.357
+  1962-01-01:
+    value: 0.349
+  1961-01-01:
+    value: 0.342
+metadata:
+  unit: currency
+  reference:
+    1961-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, annexe I, A"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, p. 3379, lu à l'image. Les salaires de référence applicables aux périodes antérieures à l'année 1977 font l'objet d'un tableau, de 0,342 dinar pour 1961 à 0,838 dinar pour 1976."
+    1977-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, article 11"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, p. 3376. Pour les années postérieures à 1976, le salaire de référence est fixé par le directeur général de la CAVIS sur avis du comité de gestion, dans les six premiers mois suivant la clôture de l'exercice."
+    2009-01-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Salaire de référence en 2009 : 2,495 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2012-01-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Salaire de référence en 2012 : 2,589 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2014-01-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Salaire de référence en 2014 : 2,668 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2019-01-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Salaire de référence en 2019 : 2,721 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+    2022-01-01:
+    - title: "secu.tn, Retraite complémentaire CNSS : calculateur et explication des points et de la pension"
+      href: "https://secu.tn/fr/calculateur-retraite-complementaire-cnss.html"
+      note: "Salaire de référence en 2022 : 2,782 dinars. Source secondaire : site privé d'information sur la sécurité sociale, qui ne cite pas ses sources ; les décisions fixant ces valeurs ne sont pas publiées au Journal officiel. La page ne donne que certaines années ; les années intermédiaires sont tenues ici pour inchangées, ce que la page ne dit pas expressément. Consulté le 21 septembre 2026."
+documentation: |-
+  Le salaire de référence est la cotisation qui donne droit à un point de retraite, en dinars
+  (article 11). Les valeurs antérieures à 1977 servent à la reconstitution de carrière, qui peut
+  remonter à 1961 (article 12). Les valeurs postérieures sont fixées chaque année par décision de
+  la CAVIS, puis de la CNSS, qui ne paraît pas au Journal officiel : la série publiée s'arrête donc en
+  1976, et la valeur nulle au 1er janvier 1977 le signale.
+
+  À partir de 2009, la série est reprise d'une source secondaire, secu.tn, qui la donne par
+  année. Entre 1977 et 2009, aucune valeur n'est connue.

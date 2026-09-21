@@ -1,0 +1,18 @@
+description: Âge jusqu'auquel la pension d'orphelin est servie — sans condition
+values:
+  2002-03-17:
+    value: 16
+metadata:
+  unit: year
+  reference:
+    2002-03-17:
+    - title: "Loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole, article 25"
+      href: "https://www.pist.tn/jort/2002/2002F/Jo0222002.pdf"
+      note: "JORT n° 22 du 15 mars 2002, pp. 603-606. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, un jour franc après sa publication. La pension temporaire d'orphelin est servie jusqu'à 16 ans sans condition."
+    2007-06-28:
+    - title: "Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans le secteur privé, articles 3 et 4"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf"
+      note: "JORT n° 51 du 26 juin 2007, pp. 2198-2199. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, un jour franc après sa publication. La loi supprime le mot « mineur » en tête de l'article et récrit le droit de la fille sans ressources ; elle ne change pas cet âge."
+documentation: |-
+  Une référence de 2007 est attachée sans valeur nouvelle : la loi n° 2007-43 réécrit
+  l'article sans changer cet âge. La relecture du texte ne doit pas conclure à une lacune.

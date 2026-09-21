@@ -1,0 +1,11 @@
+description: Taux de la pension de réversion, en part de la pension du défunt
+values:
+  1974-01-01:
+    value: 0.5
+metadata:
+  unit: /1
+  reference:
+    1974-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, article 23"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, pp. 3374-3379, lu sur une océrisation du fascicule, qui n'a pas de couche texte. L'article 2 de l'arrêté fait entrer le règlement en application à compter du 1er janvier 1974. Le taux annuel de la pension viagère de réversion est égal à 50 % de la pension de vieillesse ou d'invalidité dont bénéficiait ou aurait dû bénéficier le défunt."

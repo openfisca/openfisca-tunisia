@@ -1,0 +1,31 @@
+description: Pensions du régime des travailleurs tunisiens à l'étranger
+metadata:
+  order:
+  - age_legal
+  - age_depart_anticipe
+  - decote_par_trimestre
+  - stage_mois
+  - taux_base
+  - majoration_par_trimestre
+  - plafond_taux
+  - plancher_taux
+  - invalidite
+  - revenu_reference
+documentation: |-
+  Régime institué par le décret n° 89-107 du 10 janvier 1989, ouvert sur adhésion volontaire aux
+  travailleurs tunisiens à l'étranger, salariés ou non, qu'aucune convention bilatérale ni
+  réglementation spéciale ne couvre. Il procède par extension, comme le régime des non-salariés
+  après lui : son article premier rend applicables les articles 20 à 38, 46 à 52, 54 et 57 du
+  décret n° 74-499, sous réserve des dispositions particulières des articles 18 à 23 (article 16).
+
+  Ce que le renvoi importe, et qui n'est donc pas versé ici : les droits des survivants, portés
+  par `retraite.rsna.survivants`, et les règles de liquidation. Les périodes d'emploi à
+  l'étranger ayant donné lieu à cotisation comptent comme des périodes accomplies en Tunisie
+  (article 17).
+
+  Ce que le décret remplace, et qui est versé ici : la pension de vieillesse (articles 18 à 20),
+  l'invalidité (article 21) et le plancher (article 22), qui est de la moitié du SMIG annuel.
+
+  La revalorisation n'est pas versée, faute d'être une valeur : les pensions en cours sont
+  révisées en cas de hausse sensible du niveau de vie, à une date et selon des modalités que
+  fixe un décret (article 23).

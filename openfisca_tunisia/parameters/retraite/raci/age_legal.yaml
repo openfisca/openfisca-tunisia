@@ -1,0 +1,11 @@
+description: Âge d'ouverture du droit à pension de vieillesse
+values:
+  2003-01-02:
+    value: 65
+metadata:
+  unit: year
+  reference:
+    2003-01-02:
+    - title: "Loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 12"
+      href: "https://www.pist.tn/jort/2002/2002F/Jo1062002.pdf"
+      note: "JORT n° 106 du 31 décembre 2002, pp. 3187-3190. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, un jour franc après sa publication. Les assurés bénéficient d'une pension de vieillesse s'ils atteignent l'âge de 65 ans et justifient d'un stage minimum de 40 trimestres de cotisations effectives."
