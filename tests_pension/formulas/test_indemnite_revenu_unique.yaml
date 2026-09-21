@@ -1,0 +1,101 @@
+# Majoration pour revenu unique servie avec la pension (IRU).
+#
+# La loi n° 81-70 du 1er août 1981, article 4, ouvre le droit aux
+# retraités ; son article 5 en fixe l'effet au 1er mai 1981. Avant
+# cette date, la variable vaut zéro : le droit n'est pas ouvert.
+#
+# Montants mensuels : 3,125 dinars pour un enfant, 6,250 pour deux,
+# 7,825 pour trois et plus. Ils proviennent du manuel de liquidation
+# de la caisse ; aucun texte du Journal officiel ne les fixe.
+#
+# Le droit suppose un revenu unique, approché par la déclaration d'un
+# conjoint sans revenu ou d'une mère divorcée ayant la garde.
+
+# --- Avant l'ouverture du droit ------------------------------------
+
+- name: Décembre 1980, le droit n'est pas encore ouvert aux retraités
+  period: 1980-12
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 1
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 0
+
+- name: Avril 1981, dernier mois avant la date d'effet de la loi 81-70
+  period: 1981-04
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 3
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 0
+
+# --- L'entrée en vigueur, au mois près ------------------------------
+
+- name: Mai 1981, premier mois du droit, un enfant
+  period: 1981-05
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 1
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 3.125
+
+- name: Mai 1981, deux enfants
+  period: 1981-05
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 2
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 6.250
+
+- name: Mai 1981, trois enfants
+  period: 1981-05
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 3
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 7.825
+
+# Le taux de trois enfants vaut aussi au-delà : le paramètre est
+# nommé « 3_enfants_et_plus », et aucun montant distinct n'est connu
+# pour un quatrième enfant.
+- name: Mai 1981, cinq enfants, le taux de trois et plus s'applique
+  period: 1981-05
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 7.825
+
+# --- La condition de revenu unique ----------------------------------
+
+- name: Sans conjoint sans revenu ni mère divorcée, rien n'est dû
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 2
+  output:
+    cnrps_indemnite_revenu_unique: 0
+
+- name: La mère divorcée ayant la garde perçoit l'indemnité
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 3
+    mere_divorcee_garde_enfants: true
+  output:
+    cnrps_indemnite_revenu_unique: 7.825
+
+- name: Sans enfant, rien n'est dû
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 0
+    conjoint_sans_revenu: true
+  output:
+    cnrps_indemnite_revenu_unique: 0

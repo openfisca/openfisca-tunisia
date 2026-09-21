@@ -1,0 +1,14 @@
+description: Fonctions astreignantes (article 28 de la loi n° 85-12)
+metadata:
+  short_label: Fonctions astreignantes
+  order:
+    - age
+    - duree_services
+documentation: |-
+  L'article 28 de la loi n° 85-12 du 5 mars 1985 pose **deux conditions cumulatives** pour la
+  mise à la retraite des agents exerçant des fonctions astreignantes : un âge et une durée de
+  services. Elles sont réunies ici, sous le même nœud, parce qu'aucune ne suffit seule.
+
+  La liste des fonctions astreignantes est fixée par le décret n° 85-1178 du 24 septembre 1985
+  (JORT n° 68 du 1er octobre 1985, p. 1256), qui prend effet le 1er juillet 1986 (article 2).
+  Ce décret ne fixe ni l'âge ni la durée.

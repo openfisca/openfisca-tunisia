@@ -1,0 +1,1159 @@
+metadata:
+  generated_by: scripts/generate_pension_source_audit.py
+  generated_at: '2026-09-14'
+  needs_review: true
+  scope: openfisca_tunisia_pension.parameters.retraite
+coverage:
+  parameters_with_values: 52
+  parameters_with_reference: 49
+  parameters_without_reference:
+  - retraite.cnrps.bonifications.militaire.bonus
+  - retraite.rsa.pension_min
+  - retraite.rsa.periode_remplacement_base
+  local_jort_laws:
+  - 2007-43
+law_candidates:
+  1959-18:
+    title: Loi n° 59-18 du 5 février 1959, pensions civiles et militaires
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 59-18
+      titre: Loi n° 59-18 du 05 Février 1959, fixant le regime des pensions civiles et militaires de retraite
+      date_signature: '1959-02-05'
+      date_publication: '1959-02-03'
+      jort_annee: 1959
+      jort_numero: 8
+      pages: 0093-0100
+      pdf_fr: /jort/1959/1959F/Jo00859.pdf
+      pdf_ar: /jort/1959/1959A/Ja00859.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnite_revenu_unique.1_enfant
+    - retraite.cnrps.accessoires.indemnite_revenu_unique.2_enfants
+    - retraite.cnrps.accessoires.indemnite_revenu_unique.3_enfants_et_plus
+    - retraite.cnrps.age_legal.civil.cadre_commun
+    - retraite.cnrps.age_legal.civil.cadres_actifs
+    - retraite.cnrps.bareme_annuite
+    - retraite.cnrps.pension_minimale.minimum_garanti
+    - retraite.cnrps.plaf_taux_pension
+    - retraite.cnrps.survivants.taux_conjoint
+  1974-499:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Decret
+      numero: 74-499
+      titre: Decret n° 74-499 du 27 Avril 1974, relatif au regime de pension de vieillesse,d'invalidite
+        et de survivants dans le secteurs non agricole
+      date_signature: '1974-04-27'
+      date_publication: '1974-04-30'
+      jort_annee: 1974
+      jort_numero: 30
+      pages: 0915-0919
+      pdf_fr: /jort/1974/1974F/Jo03074.pdf
+      pdf_ar: /jort/1974/1974A/Ja03074.pdf
+    - type: Decret
+      numero: 74-499
+      titre: Decret n° 74-499 du 27 Avril 1974, relatif au regime de pension de vieillesse,invalidite
+        et de survivants dans le secteur non agricole (rectificatif)
+      date_signature: '1974-04-27'
+      date_publication: '1974-06-07'
+      jort_annee: 1974
+      jort_numero: 39
+      pages: '1252'
+      pdf_fr: /jort/1974/1974F/Jo03974.pdf
+      pdf_ar: /jort/1974/1974A/Ja03974.pdf
+    parameters:
+    - retraite.rsna.age_dep_anticip
+    - retraite.rsna.age_legal
+    - retraite.rsna.bareme_annuite
+    - retraite.rsna.pension_minimale.inf
+    - retraite.rsna.pension_minimale.sup
+    - retraite.rsna.plaf_taux_pension
+    - retraite.rsna.stage_derog
+    - retraite.rsna.stage_requis
+  1981-6:
+    title: Loi n° 81-6 du 12 février 1981, sécurité sociale secteur agricole
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 81-6
+      titre: Loi n° 81-6 du 12 Février 1981, organisant les regimes de securite sociale dans le secteur
+        agricole
+      date_signature: '1981-02-12'
+      date_publication: '1981-02-13'
+      jort_annee: 1981
+      jort_numero: 9
+      pages: 0265-0273
+      pdf_fr: /jort/1981/1981F/Jo00981.pdf
+      pdf_ar: /jort/1981/1981A/Ja00981.pdf
+    - type: Loi
+      numero: 81-6
+      titre: Loi n° 81-6 du 12 Février 1981, organisant les regimes de securite sociale dans le secteur
+        agricole (rectificatif)
+      date_signature: '1981-02-12'
+      date_publication: '1981-04-17'
+      jort_annee: 1981
+      jort_numero: 26
+      pages: 0844
+      pdf_fr: /jort/1981/1981F/Jo02681.pdf
+      pdf_ar: /jort/1981/1981A/Ja02681.pdf
+    parameters:
+    - retraite.rsa.age_legal
+    - retraite.rsa.plaf_taux_pension
+    - retraite.rsa.stage_requis
+    - retraite.rsa.taux_annuite_base
+    - retraite.rsa.taux_annuite_supplementaire
+  1981-70:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 81-70
+      titre: Loi n° 81-70 du 01 Août 1981, modifiant la loi no 80-88 du 31 decembre 1980,portant loi de
+        finances pour la gestion 1981:premiere partie:titre premier:budget ordinaire:chapitre premier:dispositions
+        generales - Art.1 a 3
+      date_signature: '1981-08-01'
+      date_publication: '1981-08-07'
+      jort_annee: 1981
+      jort_numero: 51
+      pages: '1789'
+      pdf_fr: /jort/1981/1981F/Jo05181.pdf
+      pdf_ar: /jort/1981/1981A/Ja05181.pdf
+    - type: Loi
+      numero: 81-70
+      titre: Loi n° 81-70 du 01 Août 1981, modifiant la loi no 80-88 du 31 decembre 1980,portant loi de
+        finances pour la gestion 1981:premiere partie:titre premier:budget ordinaire:chapitre premier:dispositions
+        generales:modification de la loi no 59-18 du 5 fevrier 1959,fixant le regime des pensions civiles
+        et militaires de retraite - Art.4 et 5 abrogeant et remplacant les articles 22,paragraphe 2 et
+        5,26 paragraphe 2,31 paragraphe 1 et 6,32 alinea premier,36,37 et 42 alinea 1 de la loi no 59-18
+        du 5 fevrier 1959
+      date_signature: '1981-08-01'
+      date_publication: '1981-08-07'
+      jort_annee: 1981
+      jort_numero: 51
+      pages: 1789-1790
+      pdf_fr: /jort/1981/1981F/Jo05181.pdf
+      pdf_ar: /jort/1981/1981A/Ja05181.pdf
+    - type: Loi
+      numero: 81-70
+      titre: Loi n° 81-70 du 01 Août 1981, modifiant la loi no 80-88 du 31 decembre 1980,portant loi de
+        finances pour la gestion 1981:premiere partie:titre premier:budget ordinaire:chapitre premier:dispositions
+        generales:extension du benefice des regimes de prevoyance sociale geres par la CNRPS - Art.6 abrogeant
+        et remplacant l'article 2 de la loi no 72-2 du 15 fevrier 1972
+      date_signature: '1981-08-01'
+      date_publication: '1981-08-07'
+      jort_annee: 1981
+      jort_numero: 51
+      pages: '1790'
+      pdf_fr: /jort/1981/1981F/Jo05181.pdf
+      pdf_ar: /jort/1981/1981A/Ja05181.pdf
+    - type: Loi
+      numero: 81-70
+      titre: Loi n° 81-70 du 01 Août 1981, modifiant la loi no 80-88 du 31 decembre 1980,portant loi de
+        finances pour la gestion 1981:premiere partie:titre premier:budget ordinaire:chapitre premier:dispositions
+        generales:remunerations publiques - Art.7
+      date_signature: '1981-08-01'
+      date_publication: '1981-08-07'
+      jort_annee: 1981
+      jort_numero: 51
+      pages: '1790'
+      pdf_fr: /jort/1981/1981F/Jo05181.pdf
+      pdf_ar: /jort/1981/1981A/Ja05181.pdf
+    - type: Loi
+      numero: 81-70
+      titre: Loi n° 81-70 du 01 Août 1981, modifiant la loi no 80-88 du 31 decembre 1980,portant loi de
+        finances pour la gestion 1981:deuxieme partie:titre 2:budget d'equipement - Art.8 a 10
+      date_signature: '1981-08-01'
+      date_publication: '1981-08-07'
+      jort_annee: 1981
+      jort_numero: 51
+      pages: '1790'
+      pdf_fr: /jort/1981/1981F/Jo05181.pdf
+      pdf_ar: /jort/1981/1981A/Ja05181.pdf
+    - type: Loi
+      numero: 81-70
+      titre: Loi n° 81-70 du 01 Août 1981, modifiant la loi no 80-88 du 31 decembre 1980,portant loi de
+        finances pour la gestion 1981:troisieme partie:fonds speciaux du tresor - Art.11
+      date_signature: '1981-08-01'
+      date_publication: '1981-08-07'
+      jort_annee: 1981
+      jort_numero: 51
+      pages: 1790-1798
+      pdf_fr: /jort/1981/1981F/Jo05181.pdf
+      pdf_ar: /jort/1981/1981A/Ja05181.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnite_revenu_unique.1_enfant
+    - retraite.cnrps.accessoires.indemnite_revenu_unique.2_enfants
+    - retraite.cnrps.accessoires.indemnite_revenu_unique.3_enfants_et_plus
+    - retraite.cnrps.pension_minimale.minimum_garanti
+    - retraite.cnrps.plaf_taux_pension
+    - retraite.cnrps.survivants.taux_conjoint
+  1982-1030:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Decret
+      numero: 82-1030
+      titre: Decret n° 82-1030 du 15 Juillet 1982, modifiant le decret no 74-499 du 27 avril 1974 relatif
+        au regime des pensions de veillesse d'invalidite et de survivants dans le secteur non agricole
+      date_signature: '1982-07-15'
+      date_publication: '1982-07-20'
+      jort_annee: 1982
+      jort_numero: 51
+      pages: 1605-1607
+      pdf_fr: /jort/1982/1982F/Jo05182.pdf
+      pdf_ar: /jort/1982/1982A/Ja05182.pdf
+    - type: Decret
+      numero: 82-1030
+      titre: Decret n° 82-1030 du 15 Juillet 1982, modifiant le decret no 74-499 du 27 avril 1974,relatif
+        au regime de pensions de vieillesse,d'invalidite et de survivants,dans le secteur non agricole
+        (J.O.R.T.no 51 du 20 et 23 juillet 1982,page 1606)(rectificatif)
+      date_signature: '1982-07-15'
+      date_publication: '1982-10-19'
+      jort_annee: 1982
+      jort_numero: 66
+      pages: '2197'
+      pdf_fr: /jort/1982/1982F/Jo06682.pdf
+      pdf_ar: /jort/1982/1982A/Ja06682.pdf
+    parameters:
+    - retraite.rsna.age_dep_anticip
+    - retraite.rsna.bareme_annuite
+    - retraite.rsna.pension_minimale.inf
+    - retraite.rsna.pension_minimale.sup
+    - retraite.rsna.plaf_taux_pension
+    - retraite.rsna.stage_derog
+  1985-12:
+    title: Loi n° 85-12 du 5 mars 1985, pensions civiles et militaires secteur public
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 85-12
+      titre: Loi n° 85-12 du 05 Mars 1985, portant regime des pensions civiles et militaires de retraite
+        et des survivants dans le secteur public
+      date_signature: '1985-03-05'
+      date_publication: '1985-03-12'
+      jort_annee: 1985
+      jort_numero: 20
+      pages: 0359-0365
+      pdf_fr: /jort/1985/1985F/Jo02085.pdf
+      pdf_ar: /jort/1985/1985A/Ja02085.pdf
+    parameters:
+    - retraite.cnrps.age_legal.civil.cadre_commun
+    - retraite.cnrps.age_legal.civil.cadres_actifs
+    - retraite.cnrps.age_legal.civil.enseignants_du_superieur
+    - retraite.cnrps.age_legal.civil.fonctions_astreignantes.age
+    - retraite.cnrps.age_legal.civil.fonctions_astreignantes.duree_services
+    - retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
+    - retraite.cnrps.bareme_annuite
+    - retraite.cnrps.bonifications.cadre_actif.service_15
+    - retraite.cnrps.bonifications.cadre_actif.service_20
+    - retraite.cnrps.bonifications.cadre_actif.service_25
+    - retraite.cnrps.bonifications.cadre_actif.service_35
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
+    - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
+    - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum
+    - retraite.cnrps.duree_de_service_minimale
+    - retraite.cnrps.pension_minimale.allocation_vieillesse
+    - retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse
+    - retraite.cnrps.pension_minimale.minimum_garanti
+    - retraite.cnrps.plaf_taux_pension
+    - retraite.cnrps.survivants.plafond_cumul
+    - retraite.cnrps.survivants.taux_conjoint
+    - retraite.cnrps.survivants.taux_orphelin
+    - retraite.cnrps.survivants.taux_partage_5_orphelins
+  1986-611:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Decret
+      numero: 86-611
+      titre: Decret n° 86-611 du 03 Juin 1986, portant fixation des taux des indemnites a caractere familial
+      date_signature: '1986-06-03'
+      date_publication: '1986-06-03'
+      jort_annee: 1986
+      jort_numero: 34
+      pages: '0674'
+      pdf_fr: /jort/1986/1986F/Jo03486.pdf
+      pdf_ar: /jort/1986/1986A/Ja03486.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_1
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_2
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_3
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4
+  1988-1136:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Decret
+      numero: 88-1136
+      titre: Decret n° 88-1136 du 11 Juin 1988, portant fixation des taux des indemnites a caractere familial
+      date_signature: '1988-06-11'
+      date_publication: '1988-06-24'
+      jort_annee: 1988
+      jort_numero: 43
+      pages: 0941
+      pdf_fr: /jort/1988/1988F/Jo04388.pdf
+      pdf_ar: /jort/1988/1988A/Ja04388.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_1
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_2
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_3
+  1988-39:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 88-39
+      titre: Loi n° 88-39 du 06 Mai 1988, relative a l'octroi des indemnites familiales dans le secteur
+        public
+      date_signature: '1988-05-06'
+      date_publication: '1988-05-13'
+      jort_annee: 1988
+      jort_numero: 33
+      pages: '0735'
+      pdf_fr: /jort/1988/1988F/Jo03388.pdf
+      pdf_ar: /jort/1988/1988A/Ja03388.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4
+  1988-71:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 88-71
+      titre: Loi n° 88-71 du 27 Juin 1988, modifiant et completant la loi no 85-12 du 5 mars 1985 portant
+        regime des pensions civiles et militaires de retraite et des survivants dans le secteur public
+      date_signature: '1988-06-27'
+      date_publication: '1988-07-01'
+      jort_annee: 1988
+      jort_numero: 45
+      pages: 0967-0968
+      pdf_fr: /jort/1988/1988F/Jo04588.pdf
+      pdf_ar: /jort/1988/1988A/Ja04588.pdf
+    parameters:
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
+    - retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
+  1993-308:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Decret
+      numero: 93-308
+      titre: Decret n° 93-308 du 01 Février 1993, relatif au regime du capital-deces
+      date_signature: '1993-02-01'
+      date_publication: '1993-02-16'
+      jort_annee: 1993
+      jort_numero: 13
+      pages: 0246-0247
+      pdf_fr: /jort/1993/1993F/Jo01393.pdf
+      pdf_ar: /jort/1993/1993A/Ja01393.pdf
+    parameters:
+    - retraite.cnrps.capital_deces.majoration_par_enfant
+    - retraite.cnrps.capital_deces.multiplicateur_deces_accidentel
+    - retraite.cnrps.capital_deces.plafond_anciennete_mois
+    - retraite.cnrps.capital_deces.taux_retraite_selon_age
+  1996-1906:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Decret
+      numero: 96-1906
+      titre: Decret n° 96-1906 du 16 Octobre 1996, portant fixation des taux des indemnites a caractere
+        familial
+      date_signature: '1996-10-16'
+      date_publication: '1996-10-22'
+      jort_annee: 1996
+      jort_numero: 85
+      pages: '2097'
+      pdf_fr: /jort/1996/1996F/Jo08596.pdf
+      pdf_ar: /jort/1996/1996A/Ja08596.pdf
+    parameters:
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_1
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_2
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_3
+    - retraite.cnrps.accessoires.indemnites_familiales.rang_4
+  2007-43:
+    title: Loi n° 2007-43 du 25 juin 2007, pensions public/privé/régimes spéciaux
+    local_texts:
+    - tmp/JORTs/Loi-n°-2007-43-du-25-Juin-2007-Fr.txt
+    jort_cache_matches:
+    - type: Loi
+      numero: 2007-43
+      titre: Loi n° 2007-43 du 25 Juin 2007, modifiant et completant les lois regissant les pensions servies
+        au titre des regimes de retraite,d'invalidite et de survivants dans les secteurs public et prive
+        et des regimes speciaux
+      date_signature: '2007-06-25'
+      date_publication: '2007-06-26'
+      jort_annee: 2007
+      jort_numero: 51
+      pages: 2198-2199
+      pdf_fr: /jort/2007/2007F/Jo0512007.pdf
+      pdf_ar: /jort/2007/2007A/Ja0512007.pdf
+    parameters:
+    - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
+    - retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum
+  2009-20:
+    title: null
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 2009-20
+      titre: Loi n° 2009-20 du 13 Avril 2009, portant dispositions exceptionnelles relatives a la retraite
+        des professeurs de l'enseignement superieur
+      date_signature: '2009-04-13'
+      date_publication: '2009-04-14'
+      jort_annee: 2009
+      jort_numero: 30
+      pages: '1036'
+      pdf_fr: /jort/2009/2009F/Jo0302009.pdf
+      pdf_ar: /jort/2009/2009A/Ja0302009.pdf
+    parameters:
+    - retraite.cnrps.age_legal.civil.enseignants_du_superieur
+  2019-37:
+    title: Loi n° 2019-37 du 30 avril 2019, relèvement âge retraite
+    local_texts: []
+    jort_cache_matches:
+    - type: Loi
+      numero: 2019-37
+      titre: Loi n° 2019-37 du 30 avril 2019, modifiant et completant la loi n° 85-12 du 5 mars 1985,
+        relative au regime des pensions civiles et militaires de retraite et des survivants dans le secteur
+        public
+      date_signature: '2019-04-30'
+      date_publication: '2019-04-30'
+      jort_annee: 2019
+      jort_numero: 35
+      pages: 1312-1315
+      pdf_fr: /jort/2019/2019F/Jo0352019.pdf
+      pdf_ar: /jort/2019/2019A/Ja0352019.pdf
+    parameters:
+    - retraite.cnrps.age_legal.civil.cadre_commun
+    - retraite.cnrps.age_legal.civil.cadres_actifs
+    - retraite.cnrps.age_legal.civil.fonctions_astreignantes.age
+    - retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
+parameter_candidates:
+- parameter: retraite.cnrps.accessoires.indemnite_revenu_unique.1_enfant
+  description: Montant mensuel de l'Indemnité de Revenu Unique (IRU) selon le nombre d'enfants
+  dates:
+  - '1981-05-01'
+  laws:
+  - 1959-18
+  - 1981-70
+  references:
+  - Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article
+    22, § V nouveau de la loi n° 59-18)
+  - https://www.pist.tn/jort/1981/1981F/Jo05181.pdf
+  - Caisse nationale de retraite et de prévoyance sociale, Manuel de liquidation des pensions & accessoires,
+    19 décembre 2013, p. 94
+  - https://github.com/openfisca/openfisca-tunisia-pension/blob/master/tmp/manuel%20pensions.pdf
+  needs_review: true
+- parameter: retraite.cnrps.accessoires.indemnite_revenu_unique.2_enfants
+  description: Montant mensuel de l'Indemnité de Revenu Unique (IRU) selon le nombre d'enfants
+  dates:
+  - '1981-05-01'
+  laws:
+  - 1959-18
+  - 1981-70
+  references:
+  - Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article
+    22, § V nouveau de la loi n° 59-18)
+  - https://www.pist.tn/jort/1981/1981F/Jo05181.pdf
+  - Caisse nationale de retraite et de prévoyance sociale, Manuel de liquidation des pensions & accessoires,
+    19 décembre 2013, p. 94
+  - https://github.com/openfisca/openfisca-tunisia-pension/blob/master/tmp/manuel%20pensions.pdf
+  needs_review: true
+- parameter: retraite.cnrps.accessoires.indemnite_revenu_unique.3_enfants_et_plus
+  description: Montant mensuel de l'Indemnité de Revenu Unique (IRU) selon le nombre d'enfants
+  dates:
+  - '1981-05-01'
+  laws:
+  - 1959-18
+  - 1981-70
+  references:
+  - Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article
+    22, § V nouveau de la loi n° 59-18)
+  - https://www.pist.tn/jort/1981/1981F/Jo05181.pdf
+  - Caisse nationale de retraite et de prévoyance sociale, Manuel de liquidation des pensions & accessoires,
+    19 décembre 2013, p. 94
+  - https://github.com/openfisca/openfisca-tunisia-pension/blob/master/tmp/manuel%20pensions.pdf
+  needs_review: true
+- parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_1
+  description: Indemnités familiales
+  dates:
+  - '1986-05-01'
+  - '1989-01-01'
+  - '1996-11-01'
+  laws:
+  - 1986-611
+  - 1988-1136
+  - 1996-1906
+  references:
+  - Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article
+    premier
+  - https://www.pist.tn/jort/1986/1986F/Jo03486.pdf
+  - Décret n° 88-1136 du 11 juin 1988, portant fixation des taux des indemnités à caractère familial,
+    article premier
+  - https://www.pist.tn/jort/1988/1988F/Jo04388.pdf
+  - Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial,
+    article premier
+  - https://www.pist.tn/jort/1996/1996F/Jo08596.pdf
+  needs_review: true
+- parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_2
+  description: Indemnités familiales - 2ème enfant
+  dates:
+  - '1986-05-01'
+  - '1989-01-01'
+  - '1996-11-01'
+  laws:
+  - 1986-611
+  - 1988-1136
+  - 1996-1906
+  references:
+  - Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article
+    premier
+  - https://www.pist.tn/jort/1986/1986F/Jo03486.pdf
+  - Décret n° 88-1136 du 11 juin 1988, portant fixation des taux des indemnités à caractère familial,
+    article premier
+  - https://www.pist.tn/jort/1988/1988F/Jo04388.pdf
+  - Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial,
+    article premier
+  - https://www.pist.tn/jort/1996/1996F/Jo08596.pdf
+  needs_review: true
+- parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_3
+  description: Indemnités familiales - 3ème enfant
+  dates:
+  - '1986-05-01'
+  - '1989-01-01'
+  - '1996-11-01'
+  laws:
+  - 1986-611
+  - 1988-1136
+  - 1996-1906
+  references:
+  - Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article
+    premier
+  - https://www.pist.tn/jort/1986/1986F/Jo03486.pdf
+  - Décret n° 88-1136 du 11 juin 1988, portant fixation des taux des indemnités à caractère familial,
+    article premier
+  - https://www.pist.tn/jort/1988/1988F/Jo04388.pdf
+  - Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial,
+    article premier
+  - https://www.pist.tn/jort/1996/1996F/Jo08596.pdf
+  needs_review: true
+- parameter: retraite.cnrps.accessoires.indemnites_familiales.rang_4
+  description: Indemnités familiales - 4ème enfant
+  dates:
+  - '1986-05-01'
+  - '1989-01-01'
+  - '1996-11-01'
+  laws:
+  - 1986-611
+  - 1988-39
+  - 1996-1906
+  references:
+  - Décret n° 86-611 du 3 juin 1986, portant fixation des taux des indemnités à caractère familial, article
+    premier
+  - https://www.pist.tn/jort/1986/1986F/Jo03486.pdf
+  - Loi n° 88-39 du 6 mai 1988, relative à l'octroi des indemnités familiales dans le secteur public,
+    article unique
+  - https://www.pist.tn/jort/1988/1988F/Jo03388.pdf
+  - Décret n° 96-1906 du 16 octobre 1996, portant fixation des taux des indemnités à caractère familial,
+    articles 2 et 3
+  - https://www.pist.tn/jort/1996/1996F/Jo08596.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.cadre_commun
+  description: Age légal de de départ à la retraite pour le cadre commun de la CNRPS
+  dates:
+  - '1959-02-01'
+  - '2019-07-01'
+  - '2020-01-01'
+  laws:
+  - 1959-18
+  - 1985-12
+  - 2019-37
+  references:
+  - Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite
+  - https://www.pist.tn/jort/1959/1959F/Jo00859.pdf
+  - Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985 (dispositions
+    transitoires)
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  - Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.cadres_actifs
+  description: Age légal de de départ à la retraite pour certains cadres actifs
+  dates:
+  - '1959-02-01'
+  - '2019-07-01'
+  - '2020-01-01'
+  laws:
+  - 1959-18
+  - 1985-12
+  - 2019-37
+  references:
+  - Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite
+  - https://www.pist.tn/jort/1959/1959F/Jo00859.pdf
+  - Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985 (dispositions
+    transitoires)
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  - Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.enseignants_du_superieur
+  description: Age de départ à la retraite pour certains enseignants du supérieur
+  dates:
+  - '2009-04-19'
+  laws:
+  - 1985-12
+  - 2009-20
+  references:
+  - Loi n° 2009-20 du 13 avril 2009, portant dispositions exceptionnelles relatives à la retraite des
+    professeurs de l'enseignement supérieur, article 2 (article 29 bis de la loi n° 85-12)
+  - https://www.pist.tn/jort/2009/2009F/Jo0302009.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.fonctions_astreignantes.age
+  description: Âge de mise à la retraite des agents exerçant des fonctions astreignantes
+  dates:
+  - '1985-09-12'
+  - '2019-07-01'
+  - '2020-01-01'
+  laws:
+  - 1985-12
+  - 2019-37
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 28
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
+    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
+    5
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
+    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
+    premier (article 28 nouveau) et article 5
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.fonctions_astreignantes.duree_services
+  description: Durée de services exigée pour la mise à la retraite des agents exerçant des fonctions astreignantes
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 28
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles
+  description: Âge de mise à la retraite des ouvriers accomplissant des tâches pénibles et insalubres
+    (article 27 de la loi n° 85-12)
+  dates:
+  - '1985-09-12'
+  - '2019-07-01'
+  - '2020-01-01'
+  laws:
+  - 1985-12
+  - 2019-37
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 27
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
+    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
+    5
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  - Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985 relative au
+    régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article
+    premier (article 27 nouveau) et article 5
+  - https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf
+  needs_review: true
+- parameter: retraite.cnrps.bareme_annuite
+  description: Taux d'annuité par trimestre validé
+  dates:
+  - '1959-02-01'
+  - '1985-09-12'
+  laws:
+  - 1959-18
+  - 1985-12
+  references:
+  - Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite
+  - https://www.pist.tn/jort/1959/1959F/Jo00859.pdf
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 38
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.bonifications.cadre_actif.service_15
+  description: Bonification pour cadres actifs pour 15 ans de service
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 32
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.bonifications.cadre_actif.service_20
+  description: Bonification pour cadres actifs pour 20 ans de service
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 32
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.bonifications.cadre_actif.service_25
+  description: Bonification pour cadres actifs pour 25 ans de service
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 32
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.bonifications.cadre_actif.service_35
+  description: Bonification maximum pour cadres actifs et travaux pénibles pour 35 ans de service
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 32
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.bonifications.militaire.bonus
+  description: Bonification maximum pour militaires
+  dates:
+  - '1985-03-05'
+  laws: []
+  references: []
+  needs_review: true
+- parameter: retraite.cnrps.capital_deces.majoration_par_enfant
+  description: Majoration du capital-décès par enfant à charge (part du montant de base)
+  dates:
+  - '1993-02-01'
+  laws:
+  - 1993-308
+  references:
+  - Décret n° 93-308 du 1er février 1993, relatif au régime du capital-décès
+  - https://www.pist.tn/jort/1993/1993F/Jo01393.pdf
+  needs_review: true
+- parameter: retraite.cnrps.capital_deces.multiplicateur_deces_accidentel
+  description: Multiplicateur du capital-décès en cas de décès en service commandé ou par accident
+  dates:
+  - '1993-02-01'
+  laws:
+  - 1993-308
+  references:
+  - Décret n° 93-308 du 1er février 1993, relatif au régime du capital-décès
+  - https://www.pist.tn/jort/1993/1993F/Jo01393.pdf
+  needs_review: true
+- parameter: retraite.cnrps.capital_deces.plafond_anciennete_mois
+  description: Plafond de la majoration d'ancienneté du capital-décès, en mois de salaire (1/12 de la
+    rémunération annuelle par année de service)
+  dates:
+  - '1993-02-01'
+  laws:
+  - 1993-308
+  references:
+  - Décret n° 93-308 du 1er février 1993, relatif au régime du capital-décès
+  - https://www.pist.tn/jort/1993/1993F/Jo01393.pdf
+  needs_review: true
+- parameter: retraite.cnrps.capital_deces.taux_retraite_selon_age
+  description: Taux appliqué au capital-décès du retraité selon l'âge au décès (50 % au-delà de 60 ans,
+    réduit ensuite). Les agents en activité (< 60 ans) perçoivent 100 %.
+  dates:
+  - '1993-02-01'
+  laws:
+  - 1993-308
+  references:
+  - Décret n° 93-308 du 1er février 1993, relatif au régime du capital-décès
+  - https://www.pist.tn/jort/1993/1993F/Jo01393.pdf
+  needs_review: true
+- parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant
+  description: Âge maximum des enfants pour le droit à la retraite anticipée des mères de 3 enfants
+  dates:
+  - '1985-09-12'
+  - '1989-01-01'
+  laws:
+  - 1985-12
+  - 1988-71
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 5, 2° e)
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  - Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985 portant régime
+    des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier
+    (article 5 nouveau)
+  - https://www.pist.tn/jort/1988/1988F/Jo04588.pdf
+  needs_review: true
+- parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.age_minimum
+  description: Âge minimum de jouissance de la pension pour les mères de 3 enfants (0 = jouissance immédiate)
+  dates:
+  - '1985-09-12'
+  - '1989-01-01'
+  laws:
+  - 1985-12
+  - 1988-71
+  references:
+  - Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985 portant régime
+    des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier
+    (article 41 nouveau)
+  - https://www.pist.tn/jort/1988/1988F/Jo04588.pdf
+  needs_review: true
+- parameter: retraite.cnrps.depart_anticipe.meres_3_enfants.duree_minimum
+  description: Durée minimum de services effectifs pour la retraite anticipée des mères de 3 enfants
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 22
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum
+  description: Âge minimum pour la retraite anticipée sur demande (Cadre commun)
+  dates:
+  - '1985-09-12'
+  - '2007-07-01'
+  laws:
+  - 1985-12
+  - 2007-43
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 30
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  - Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au
+    titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et
+    des régimes spéciaux, article 2 (article 30 nouveau de la loi n° 85-12)
+  - https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+  needs_review: true
+- parameter: retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum
+  description: Durée minimum de services effectifs pour la retraite anticipée sur demande (Cadre commun)
+  dates:
+  - '1985-09-12'
+  - '2007-07-01'
+  laws:
+  - 1985-12
+  - 2007-43
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 30
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  - Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au
+    titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et
+    des régimes spéciaux, article 2 (article 30 nouveau de la loi n° 85-12)
+  - https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+  needs_review: true
+- parameter: retraite.cnrps.duree_de_service_minimale
+  description: Durée de service minimale requise pour prétendre à une pension de retraite
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 22
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.pension_minimale.allocation_vieillesse
+  description: Allocation de vieillesse (en parts du Smig)
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 42
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse
+  description: Durée de service minimale requise pour prétendre à une allocation de vieillesse
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 42
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.pension_minimale.minimum_garanti
+  description: Pension minimale garanti de la CNRPS
+  dates:
+  - '1981-05-01'
+  - '1985-09-12'
+  laws:
+  - 1959-18
+  - 1981-70
+  - 1985-12
+  references:
+  - Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article
+    22, § II nouveau de la loi n° 59-18)
+  - https://www.pist.tn/jort/1981/1981F/Jo05181.pdf
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 39
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.plaf_taux_pension
+  description: Plafond du taux de liquidation de la pension de retraite CNRPS
+  dates:
+  - '1981-05-01'
+  - '1985-09-12'
+  laws:
+  - 1959-18
+  - 1981-70
+  - 1985-12
+  references:
+  - Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article
+    22, § II nouveau de la loi n° 59-18)
+  - https://www.pist.tn/jort/1981/1981F/Jo05181.pdf
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 38
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.survivants.plafond_cumul
+  description: Plafond du cumul des pensions de survivants (conjoint + orphelins), en part de la pension
+    de l'agent
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 45
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.survivants.taux_conjoint
+  description: Taux de la pension de réversion du conjoint survivant (part de la pension de l'agent)
+  dates:
+  - '1981-05-01'
+  - '1985-09-12'
+  laws:
+  - 1959-18
+  - 1981-70
+  - 1985-12
+  references:
+  - Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article
+    31, § I nouveau de la loi n° 59-18)
+  - https://www.pist.tn/jort/1981/1981F/Jo05181.pdf
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 43
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.survivants.taux_orphelin
+  description: Taux de la pension temporaire d'orphelin, par orphelin (part de la pension de l'agent)
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 45
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.cnrps.survivants.taux_partage_5_orphelins
+  description: Part de la pension de l'agent revenant au conjoint lorsqu'il y a au moins 5 orphelins (les
+    50% restants sont partagés entre les orphelins)
+  dates:
+  - '1985-09-12'
+  laws:
+  - 1985-12
+  references:
+  - Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des
+    survivants dans le secteur public, article 45
+  - https://www.pist.tn/jort/1985/1985F/Jo02085.pdf
+  needs_review: true
+- parameter: retraite.rsa.age_legal
+  description: Age légal de de départ à la retraite
+  dates:
+  - '1981-01-01'
+  laws:
+  - 1981-6
+  references:
+  - Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole,
+    article 48 a)
+  - https://www.pist.tn/jort/1981/1981F/Jo00981.pdf
+  needs_review: true
+- parameter: retraite.rsa.pension_min
+  description: Pension minimale (en part de SMAG)
+  dates:
+  - '1981-01-01'
+  laws: []
+  references: []
+  needs_review: true
+- parameter: retraite.rsa.periode_remplacement_base
+  description: Période de remplacement de base
+  dates:
+  - '1981-01-01'
+  laws: []
+  references: []
+  needs_review: true
+- parameter: retraite.rsa.plaf_taux_pension
+  description: Plafonnement du taux de pension
+  dates:
+  - '1981-01-01'
+  laws:
+  - 1981-6
+  references:
+  - Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole,
+    article 49
+  - https://www.pist.tn/jort/1981/1981F/Jo00981.pdf
+  needs_review: true
+- parameter: retraite.rsa.stage_requis
+  description: Durée normale du stage requis
+  dates:
+  - '1981-01-01'
+  laws:
+  - 1981-6
+  references:
+  - Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole,
+    article 48 b)
+  - https://www.pist.tn/jort/1981/1981F/Jo00981.pdf
+  needs_review: true
+- parameter: retraite.rsa.taux_annuite_base
+  description: Taux d'annuité de base
+  dates:
+  - '1981-01-01'
+  laws:
+  - 1981-6
+  references:
+  - Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole,
+    article 49
+  - https://www.pist.tn/jort/1981/1981F/Jo00981.pdf
+  needs_review: true
+- parameter: retraite.rsa.taux_annuite_supplementaire
+  description: Taux d'annuité supplémentaire
+  dates:
+  - '1981-01-01'
+  laws:
+  - 1981-6
+  references:
+  - Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole,
+    article 49
+  - https://www.pist.tn/jort/1981/1981F/Jo00981.pdf
+  needs_review: true
+- parameter: retraite.rsna.age_dep_anticip
+  description: Age minimum de départ à la retraite anticipée
+  dates:
+  - '1982-07-22'
+  laws:
+  - 1974-499
+  - 1982-1030
+  references:
+  - Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime
+    des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article premier
+    (article 15 bis)
+  - https://www.pist.tn/jort/1982/1982F/Jo05182.pdf
+  needs_review: true
+- parameter: retraite.rsna.age_legal
+  description: Age légal de de départ à la retraite
+  dates:
+  - '1974-01-01'
+  laws:
+  - 1974-499
+  references:
+  - Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de
+    survivants dans le secteur non agricole, article 15 a)
+  - https://www.pist.tn/jort/1974/1974F/Jo03074.pdf
+  needs_review: true
+- parameter: retraite.rsna.bareme_annuite
+  description: Taux d'annuité par trimestre validé du régime des salariés non agricoles (RSNA) de la CNSS
+  dates:
+  - '1974-01-01'
+  - '1982-07-22'
+  laws:
+  - 1974-499
+  - 1982-1030
+  references:
+  - Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de
+    survivants dans le secteur non agricole, article 17
+  - https://www.pist.tn/jort/1974/1974F/Jo03074.pdf
+  - Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime
+    des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 4
+    (article 17, alinéa 2 nouveau)
+  - https://www.pist.tn/jort/1982/1982F/Jo05182.pdf
+  needs_review: true
+- parameter: retraite.rsna.pension_minimale.inf
+  description: Inférieur à la durée du stage requis
+  dates:
+  - '1982-07-22'
+  laws:
+  - 1974-499
+  - 1982-1030
+  references:
+  - Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime
+    des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 5
+    (article 45, alinéa premier nouveau)
+  - https://www.pist.tn/jort/1982/1982F/Jo05182.pdf
+  needs_review: true
+- parameter: retraite.rsna.pension_minimale.sup
+  description: Supérieur à la durée du stage requis
+  dates:
+  - '1974-01-01'
+  - '1982-07-22'
+  laws:
+  - 1974-499
+  - 1982-1030
+  references:
+  - Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de
+    survivants dans le secteur non agricole, article 45
+  - https://www.pist.tn/jort/1974/1974F/Jo03074.pdf
+  - Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime
+    des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 5
+    (article 45, alinéa premier nouveau)
+  - https://www.pist.tn/jort/1982/1982F/Jo05182.pdf
+  needs_review: true
+- parameter: retraite.rsna.plaf_taux_pension
+  description: Plafonnement du taux de pension
+  dates:
+  - '1974-01-01'
+  - '1982-07-22'
+  laws:
+  - 1974-499
+  - 1982-1030
+  references:
+  - Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de
+    survivants dans le secteur non agricole, article 17
+  - https://www.pist.tn/jort/1974/1974F/Jo03074.pdf
+  - Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime
+    des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 4
+    (article 17, alinéa 2 nouveau)
+  - https://www.pist.tn/jort/1982/1982F/Jo05182.pdf
+  needs_review: true
+- parameter: retraite.rsna.stage_derog
+  description: Durée du stage dérogatoire
+  dates:
+  - '1974-01-01'
+  - '1982-07-22'
+  laws:
+  - 1974-499
+  - 1982-1030
+  references:
+  - Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de
+    survivants dans le secteur non agricole, article 40
+  - https://www.pist.tn/jort/1974/1974F/Jo03074.pdf
+  - Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime
+    des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 3
+    (article 40 nouveau)
+  - https://www.pist.tn/jort/1982/1982F/Jo05182.pdf
+  needs_review: true
+- parameter: retraite.rsna.stage_requis
+  description: Durée normale du stage requis
+  dates:
+  - '1974-01-01'
+  laws:
+  - 1974-499
+  references:
+  - Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de
+    survivants dans le secteur non agricole, article 15 b)
+  - https://www.pist.tn/jort/1974/1974F/Jo03074.pdf
+  needs_review: true

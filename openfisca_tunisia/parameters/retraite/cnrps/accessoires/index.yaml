@@ -1,0 +1,5 @@
+description: Accessoires de pension
+metadata:
+  order:
+    - indemnites_familiales
+    - indemnite_revenu_unique

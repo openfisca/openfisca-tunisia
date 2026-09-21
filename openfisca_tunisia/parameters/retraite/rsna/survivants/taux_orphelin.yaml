@@ -1,0 +1,30 @@
+description: Taux de la pension d'orphelin, par orphelin (part de la pension de l'assuré)
+values:
+  1974-01-01:
+    value: 0.2
+  1981-02-19:
+    value: 0.3
+metadata:
+  unit: /1
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 34"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, pp. 915-919. La pension d'orphelin est du cinquième de la pension de l'assuré, portée à trois dixièmes pour l'orphelin de père et de mère. L'article 64 fixe l'effet du décret au 1er janvier 1974."
+    1981-02-19:
+    - title: "Décret n° 81-188 du 14 février 1981, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 2 (article 34 nouveau)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo01081.pdf"
+      note: "JORT n° 10 du 17 février 1981, pp. 319-320. L'article 34 nouveau porte la pension d'orphelin à trois dixièmes de la pension de l'assuré, sans distinguer selon que l'orphelin a perdu un parent ou les deux. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication."
+documentation: |-
+  Deux taux en 1974, un seul depuis 1981. Ce paramètre porte celui de l'orphelin qui a
+  perdu un seul de ses parents ; celui de l'orphelin de père et de mère est porté par
+  `taux_orphelin_pere_et_mere`, et vaut trois dixièmes sur toute la période.
+
+  La réforme de 1981 ne relève donc pas un taux unique : elle aligne le premier sur le
+  second et fait disparaître la distinction. Lire la seule série 0,2 puis 0,3 sans le
+  paramètre voisin donnerait à croire que la pension d'orphelin de père et de mère a
+  augmenté elle aussi, ce qui n'est pas le cas.
+
+  La pension d'orphelin peut être réduite lorsque le conjoint survivant bénéficie de la
+  majoration de l'article 31 et que le total dépasse la pension de l'assuré. Cette
+  réduction est une règle de cumul, non un taux, et n'est pas versée.

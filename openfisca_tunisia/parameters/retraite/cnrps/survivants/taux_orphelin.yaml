@@ -1,0 +1,23 @@
+description: Taux de la pension temporaire d'orphelin, par orphelin (part de la pension de l'agent)
+values:
+  1985-09-12:
+    value: 0.1
+metadata:
+  unit: /1
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 45"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 363 : pension temporaire d'orphelin égale à 10 % de la pension de retraite, jusqu'à 21 ans. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
+
+  Conditions de service, qui ne changent pas le taux :
+  - dans la rédaction de 1985, la pension d'orphelin est servie jusqu'à 21 ans (article 45) ;
+  - à compter du 1er mai 1997, la loi n° 97-59 du 28 juillet 1997 (JORT n° 61 du 1er août 1997, p. 1359, article 2 pour la date d'effet) ajoute un alinéa 3 à l'article 47 : les articles 45 et 46 s'appliquent jusqu'à 25 ans aux orphelins qui poursuivent des études supérieures sans bourse universitaire, et à la fille tant qu'elle ne dispose pas de ressources ou que l'obligation alimentaire n'incombe pas à son époux ;
+  - la loi n° 2007-43 du 25 juin 2007 (JORT n° 51 du 26 juin 2007, pp. 2198-2199, article 2) réécrit l'article 47 : orphelins atteints d'une maladie incurable ou d'une invalidité permanente sans condition d'âge ; études supérieures sans bourse jusqu'à 25 ans ; fille sans ressources sans condition d'âge, le paiement étant définitivement suspendu si l'une des conditions vient à manquer. Elle réécrit aussi l'article 46 : en l'absence de pension du conjoint, celle-ci est répartie à parts égales entre les orphelins en sus de leurs pensions, la pension de la fille sans ressources ne pouvant dépasser 50 % de la pension de l'agent.
+
+  La loi n° 96-67 du 22 juillet 1996 (JORT n° 60 du 26 juillet 1996, p. 1604) remplace l'article 48 : les indemnités familiales ne sont plus le plancher des pensions d'orphelins, elles s'y ajoutent.

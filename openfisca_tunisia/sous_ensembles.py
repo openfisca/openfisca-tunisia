@@ -30,22 +30,35 @@ SOUS_ARBRES_FISCAL = (
     "produits_subventionnes",
 )
 
+# Le système des pensions : ses propres paramètres, et le marché du travail pour le SMIG,
+# sur lequel les pensions minimales sont indexées.
+SOUS_ARBRES_PENSION = (
+    "marche_travail",
+    "retraite",
+)
+
 # Chaque système et ce qu'il lit. Un sous-arbre peut être lu par plusieurs systèmes : il
 # reste un seul fichier, à une seule place.
 SYSTEMES = {
     "fiscal": SOUS_ARBRES_FISCAL,
+    "pension": SOUS_ARBRES_PENSION,
 }
 
 
-def charger_sous_ensemble(sous_arbres):
+def charger_sous_ensemble(sous_arbres, avec_index=True):
     """Construit la racine de l'arbre avec les seuls sous-arbres demandés.
 
     C'est l'équivalent de `load_parameters` restreint à une liste : la racine reprend la
     description et les métadonnées de `parameters/index.yaml`, et chaque sous-arbre est lu
     à sa place, sous le nom qu'il aurait eu dans un chargement complet.
+
+    `avec_index=False` laisse la racine nue : c'est l'état de la pension avant la fusion,
+    dont l'arbre n'avait pas d'index, et que ce chargement reproduit.
     """
-    with open(os.path.join(RACINE_PARAMETRES, "index.yaml"), encoding="utf-8") as f:
-        index = yaml.safe_load(f) or {}
+    index = {}
+    if avec_index:
+        with open(os.path.join(RACINE_PARAMETRES, "index.yaml"), encoding="utf-8") as f:
+            index = yaml.safe_load(f) or {}
     racine = ParameterNode("", data=index)
     for nom in sous_arbres:
         chemin = os.path.join(RACINE_PARAMETRES, nom)

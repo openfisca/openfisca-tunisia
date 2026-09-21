@@ -1,0 +1,16 @@
+description: Plafond du cumul des pensions de survivants (conjoint + orphelins), en part de la pension de l'agent
+values:
+  1985-09-12:
+    value: 1.0
+metadata:
+  unit: /1
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 45"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 363 : « Le total des pensions d'orphelins et la pension du conjoint survivant ne doit pas dépasser le montant de la pension de l'agent. » En cas de dépassement, la pension du conjoint est réduite selon l'article 43. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.

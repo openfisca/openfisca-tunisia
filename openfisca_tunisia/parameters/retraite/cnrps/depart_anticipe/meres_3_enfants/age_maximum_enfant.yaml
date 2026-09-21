@@ -1,0 +1,26 @@
+description: Âge maximum des enfants pour le droit à la retraite anticipée des mères de 3 enfants
+values:
+  1985-09-12:
+    value: 15
+  1989-01-01:
+    value: 20
+metadata:
+  unit: year
+  reference:
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 5, 2° e)"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 359 : mise à la retraite « sur la demande des mères ayant trois enfants dont l'âge n'a pas dépassé 15 ans ». Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+    1989-01-01:
+    - title: "Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12 du 5 mars 1985 portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article premier (article 5 nouveau)"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo04588.pdf"
+      note: "JORT n° 45 du 1er juillet 1988, pp. 967-968 : « sur la demande des mères ayant au moins trois enfants dont l'âge n'a pas dépassé 20 ans ou un enfant handicapé d'un handicap profond et après accord du Premier ministre ». Entrée en vigueur : l'article 4 la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 1er juillet 1988, soit le 1er janvier 1989 — date déduite de la clause et de la date de publication, non énoncée telle quelle."
+documentation: |-
+  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
+  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
+  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
+  date.
+
+  Depuis le 1er janvier 1989, le droit est aussi ouvert à la mère d'un enfant atteint
+  d'un handicap profond, et subordonné à l'accord du Premier ministre ; ni l'une ni
+  l'autre de ces conditions n'est portée par ce paramètre.

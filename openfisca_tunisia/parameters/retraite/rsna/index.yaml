@@ -1,0 +1,11 @@
+description: Régime des salariés non agricoles (RSNA)
+metadata:
+  short_label: RSNA
+  order:
+  - age_legal
+  - age_dep_anticip
+  - stage_requis
+  - stage_derog
+  - salaire_reference
+  - bareme_annuite
+  - pension_minimale

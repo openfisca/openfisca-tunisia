@@ -1,0 +1,22 @@
+description: Supérieur à la durée du stage requis
+values:
+  1974-01-01:
+    value: 0.66666
+  1982-07-22:
+    value: 0.66666
+metadata:
+  unit: smig
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 45"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30 des 30 avril, 3 et 4 mai 1974, p. 918 : le montant annuel des pensions de vieillesse ou d'invalidité ne peut être inférieur aux deux tiers du SMIG rapporté à 2 400 heures ; l'allocation de vieillesse en est exclue. L'article 64 fait prendre effet au décret à compter du 1er janvier 1974."
+    1982-07-22:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 5 (article 45, alinéa premier nouveau)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, p. 1606 : plancher des deux tiers du SMIG reconduit pour les pensions de vieillesse ou d'invalidité, valeur inchangée. Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution). Date retenue : 22 juillet 1982, date à laquelle il devient obligatoire selon la règle générale alors en vigueur — « un jour franc après la publication au Journal Officiel » (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956, JORT n° 74 du 14 septembre 1956, p. 1247), la publication étant prise au premier jour du fascicule daté des 20-23 juillet ; au dernier jour, ce serait le 25 juillet."
+documentation: |-
+  Le critère de partage entre ce plancher et `inf` n'est pas, dans le texte, la durée
+  du stage : c'est le type de pension. Les deux tiers du SMIG valent pour les pensions
+  de vieillesse ou d'invalidité ; la moitié, pour les retraites anticipées (article
+  15 bis a) et b)) et les pensions proportionnelles (article 39).

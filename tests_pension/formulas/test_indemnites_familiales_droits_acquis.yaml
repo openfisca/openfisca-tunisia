@@ -1,0 +1,197 @@
+# Indemnités familiales : deux régimes, de part et d'autre du
+# 1er janvier 1989, portés par deux formules datées.
+#
+# Jusqu'au 31 décembre 1988, chaque enfant au-delà du troisième ouvre
+# droit : le décret n° 86-611 fixe quatre taux, et aucun texte lu ne
+# limite alors le nombre d'enfants.
+#
+# Depuis le 1er janvier 1989, la loi n° 88-39 du 6 mai 1988 accorde
+# l'indemnité « dans la limite des trois premiers enfants », en
+# réservant les droits acquis antérieurement ; l'enfant handicapé ouvre
+# droit quel que soit son rang (loi n° 81-46, art. 18).
+#
+# Taux : 7,600 / 6,500 / 5,600 / 4,700 du 1er mai 1986 au 31 octobre
+# 1996 ; 7,320 / 6,507 / 5,693 / 4,880 depuis le 1er novembre 1996.
+#
+# Avant le 1er mai 1986, aucun taux n'est publié : la première formule
+# est datée de ce jour, et la variable vaut zéro auparavant au lieu de
+# lever une ParameterNotFoundError.
+
+# --- Avant le premier taux publié ----------------------------------
+
+- name: Décembre 1985, avant toute date d'effet, la variable vaut zéro
+  period: 1985-12
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 0
+
+- name: Avril 1986, dernier mois avant la date d'effet du décret 86-611
+  period: 1986-04
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 0
+
+- name: Mai 1986, premier mois des quatre taux
+  period: 1986-05
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+# --- La bascule, au mois près --------------------------------------
+
+- name: Décembre 1988, dernier mois du premier régime
+  period: 1988-12
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Janvier 1989, premier mois du second régime
+  period: 1989-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 19.700
+
+- name: Janvier 1989, le droit acquis échappe à la limitation
+  period: 1989-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+# --- Le premier régime, avant 1989 ---------------------------------
+
+- name: Quatre enfants en 1987, sans déclaration
+  period: 1987-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+# Le barème du décret n° 86-611 s'arrête au quatrième rang : aucun taux
+# n'est publié pour un cinquième enfant, qui n'ouvre donc aucun droit.
+- name: Cinq enfants en 1987, le cinquième n'ouvre aucun droit
+  period: 1987-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Huit enfants en 1987, le barème s'arrête toujours au quatrième
+  period: 1987-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 8
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+# --- Le second régime, depuis 1989 ---------------------------------
+
+- name: Quatre enfants en 1990 sans déclaration
+  period: 1990-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 19.700
+
+- name: Quatre enfants en 1990, le taux de 1986 vaut pour l'acquis
+  period: 1990-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Trois enfants en 2024, la limitation ne mord pas
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 3
+  output:
+    cnrps_indemnites_familiales: 19.520
+
+- name: Quatre enfants en 2024, rien de déclaré
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+  output:
+    cnrps_indemnites_familiales: 19.520
+
+- name: Quatre enfants en 2024, dont un droit acquis avant 1989
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Quatre enfants en 2024, dont un handicapé au-delà du 3e rang
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_handicapes_au_dela_du_troisieme_rang: 1
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+- name: Cinq enfants en 2024, un droit acquis et un handicapé
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    nombre_enfants_indemnite_familiale_droit_acquis: 1
+    nombre_enfants_handicapes_au_dela_du_troisieme_rang: 1
+  output:
+    cnrps_indemnites_familiales: 29.280
+
+# Le décret n° 96-1906 vise « le quatrième enfant ayant acquis ce droit »,
+# au singulier : le droit acquis ne vaut que pour un enfant.
+- name: Cinq enfants en 2024, deux droits acquis déclarés, un seul retenu
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    nombre_enfants_indemnite_familiale_droit_acquis: 2
+  output:
+    cnrps_indemnites_familiales: 24.400
+
+# L'enfant handicapé ouvre droit quel que soit son rang (loi n° 81-46,
+# art. 18) : la limite du barème au quatrième rang ne lui est pas
+# opposable, et deux enfants handicapés au-delà du troisième comptent
+# tous les deux.
+- name: Cinq enfants en 2024, deux handicapés au-delà du troisième rang
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 5
+    nombre_enfants_handicapes_au_dela_du_troisieme_rang: 2
+  output:
+    cnrps_indemnites_familiales: 29.280
+
+# On ne peut ouvrir droit pour plus d'enfants qu'il n'y en a au-delà
+# du troisième rang : trois droits acquis déclarés, un seul compté.
+- name: Le nombre d'enfants ouvrant droit est borné
+  period: 2024-01
+  absolute_error_margin: 0.00001
+  input:
+    nombre_enfants_charge: 4
+    nombre_enfants_indemnite_familiale_droit_acquis: 3
+  output:
+    cnrps_indemnites_familiales: 24.400

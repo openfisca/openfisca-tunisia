@@ -1,0 +1,36 @@
+- name: "3 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-4
+  input:
+    cnrps_duree_assurance: 3 * 4
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_pension: 0
+
+
+- name: "7 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 7 * 4
+    cnrps_salaire_de_reference: 1000
+  output:
+    cnrps_pension_minimale: 0.5 * 235.04 * 12
+
+
+- name: "12 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 12 * 4
+  output:
+    cnrps_pension_minimale: 0.5 * 235.04 * 12
+
+
+- name: "17 ans de trimetres CNRPS"
+  period: 2011
+  absolute_error_margin: 1e-10
+  input:
+    cnrps_duree_assurance: 17 * 4
+  output:
+    cnrps_pension_minimale: 0.66666 * 235.04 * 12

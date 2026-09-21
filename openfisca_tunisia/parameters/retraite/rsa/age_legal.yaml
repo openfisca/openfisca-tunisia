@@ -1,0 +1,11 @@
+description: Age légal de de départ à la retraite
+values:
+  1981-01-01:
+    value: 60.0
+metadata:
+  unit: year
+  reference:
+    1981-01-01:
+    - title: "Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole, article 48 a)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf"
+      note: "JORT n° 9 du 13 février 1981, p. 270 : « avoir atteint l'âge de soixante ans au moins ». L'article 88 énonce : « La présente loi entrera en vigueur le 1er janvier 1981. » Rectificatif publié au JORT n° 26 du 17 avril 1981, p. 844, non lu."
