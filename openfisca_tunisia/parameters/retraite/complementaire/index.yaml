@@ -1,0 +1,28 @@
+description: Pensions du régime complémentaire de vieillesse, d'invalidité et de survivants
+metadata:
+  order:
+  - taux_cotisation_contractuel
+  - cotisation_minimale_part_smig
+  - survivants
+documentation: |-
+  Régime par points, fonctionnant en répartition, qui permet aux salariés du régime non agricole
+  d'acquérir des droits sur la tranche de salaire dépassant la limite de calcul de ce régime. Il
+  est géré par la Caisse d'assurance vieillesse, invalidité et survivants (CAVIS), et organisé par
+  un règlement publié par arrêté du 18 novembre 1978, applicable à compter du 1er janvier 1974.
+  Les cotisations sont portées par
+  `prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_employeur.retraite_complementaire`
+  et son pendant salarié.
+
+  Le calcul tient en deux égalités. Les points acquis sur une période valent la cotisation
+  contractuelle — `taux_cotisation_contractuel` du salaire de base — divisée par le salaire de
+  référence de la période (article 10). La pension vaut le nombre de points multiplié par la
+  valeur du point à la liquidation, puis à chaque échéance (article 17). L'ouverture du droit suit
+  les conditions d'âge et de cessation d'activité du régime légal (article 15).
+
+  Les deux séries qui font la pension ne sont pas versées, et ne peuvent pas l'être sur la seule
+  foi du Journal officiel. Le salaire de référence est donné par l'annexe I, A, du règlement pour
+  les années antérieures à 1977, puis fixé chaque année par le directeur général de la CAVIS
+  (article 11). La valeur du point est donnée par l'annexe I, B, pour la période initiale, puis
+  fixée par la même autorité au 1er juillet de chaque année (article 18). Ces décisions ne sont
+  pas publiées au Journal officiel, et le tableau de l'annexe I n'a pu être lu de façon fiable sur
+  l'océrisation.

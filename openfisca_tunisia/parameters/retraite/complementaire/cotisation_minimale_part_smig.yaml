@@ -1,0 +1,14 @@
+description: Salaire sur lequel est calculée la cotisation minimum, en part du SMIG
+values:
+  1974-01-01:
+    value: 0.5
+metadata:
+  unit: /1
+  reference:
+    1974-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 18 novembre 1978 portant publication du règlement du régime complémentaire de pension de vieillesse, d'invalidité et de survivants, article 14"
+      href: "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf"
+      note: "JORT n° 79 du 24 novembre 1978, pp. 3374-3379, lu sur une océrisation du fascicule, qui n'a pas de couche texte. L'article 2 de l'arrêté fait entrer le règlement en application à compter du 1er janvier 1974. Pour éviter la sortie des participants par suite des variations de la limite inférieure des salaires soumis à cotisation, une cotisation mensuelle minimum est calculée sur la base d'un salaire égal à la moitié du SMIG."
+documentation: |-
+  Le comité de gestion de la CAVIS peut modifier ce minimum ; aucune de ses décisions n'est
+  publiée au Journal officiel. Le minimum ne s'applique pas deux années consécutives.
