@@ -1,0 +1,19 @@
+description: Coefficients multiplicateurs du SMIG, par classe de revenus
+metadata:
+  order:
+  - classe_1
+  - classe_2
+  - classe_3
+  - classe_4
+  - classe_5
+  - classe_6
+  - classe_7
+  - classe_8
+  - classe_9
+  - classe_10
+documentation: |-
+  Dix classes de revenus propres au régime, dont le coefficient multiplie le SMIG annuel
+  (décret n° 2003-894, article 5). À la différence des classes des non-salariés, elles ne
+  s'appliquent qu'au SMIG : leurs coefficients sont donc des multiples du SMIG, et en portent
+  l'unité. L'assuré choisit sa classe, et peut en changer une fois par an, pour l'année civile
+  suivante (articles 6 et 7).

@@ -1,0 +1,29 @@
+description: Pensions du régime des travailleurs à faibles revenus
+metadata:
+  order:
+  - age_legal
+  - stage_mois
+  - taux_base
+  - majoration_par_trimestre
+  - plafond_taux
+  - invalidite
+  - survivants
+documentation: |-
+  Régime institué par la loi n° 2002-32 du 12 mars 2002 pour cinq catégories : employés de
+  maison ; personnes employées par l'État, les collectivités locales et les établissements
+  publics administratifs sans autre couverture ; petits pêcheurs et petits armateurs ; petits
+  agriculteurs ; artisans travaillant à la pièce. La loi fixe elle-même toutes les règles de
+  pension ; elle ne procède pas par renvoi au régime non agricole.
+
+  Deux bases distinctes, à ne pas confondre. Le taux de 30 % porte sur le salaire minimum du
+  secteur, SMIG ou SMAG entier (articles 14 et 17). La majoration par trimestre et le plafond de
+  80 % portent sur le salaire ayant servi au calcul des cotisations, qui n'en est que les deux
+  tiers (article 7) ; les cotisations sont portées par
+  `prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr`.
+
+  La revalorisation n'est pas versée, faute d'être une valeur : les pensions en cours sont
+  revalorisées automatiquement à chaque hausse du SMIG ou du SMAG (article 32).
+
+  La loi n° 2007-43 ne change aucune valeur du régime. Elle supprime le mot « mineur » en tête
+  de l'article 25 et récrit le droit de la fille orpheline sans ressources, dont la pension est
+  désormais définitivement suspendue si une condition fait défaut.
