@@ -92,8 +92,17 @@ jobs:
     secrets:
       token: ${{ secrets.CONTROL_CENTER_TOKEN }}
 
+  # Publie les paramètres dans le dépôt de données de DBnomics. Seul `master` publie : une
+  # branche ne fait que la conversion, qui contrôle que les paramètres se convertissent, sans
+  # rien pousser chez le tiers. Les publications sont sérialisées : deux poussées concurrentes
+  # partaient du même état du dépôt distant, et la seconde était rejetée (« fetch first »).
+  # Chaque branche a son propre groupe, pour qu'une conversion en attente sur une branche ne
+  # soit jamais annulée par une autre.
   dbnomics:
     runs-on: ubuntu-latest
+    concurrency:
+      group: dbnomics-${{ github.ref == 'refs/heads/master' && 'publication' || github.ref }}
+      cancel-in-progress: false
 
     steps:
       - uses: actions/checkout@v4
@@ -117,15 +126,23 @@ jobs:
           npm install
           npx tsx src/scripts/convert_raw_parameters_to_dbnomics.ts -p ../../../openfisca_tunisia/parameters/ --target openfisca-tunisia --units ../../../openfisca_tunisia/units.yaml ../../../openfisca-tunisia-json-data/
         working-directory: openfisca-json-model/packages/tools
+      - name: Show DBnomics JSON data changes (conversion only, nothing is pushed)
+        if: github.ref != 'refs/heads/master'
+        run: |
+          git add .
+          git diff --staged --stat
+        working-directory: openfisca-tunisia-json-data
       - name: Commit & push DBnomics JSON data
+        if: github.ref == 'refs/heads/master'
         run: |
           git add .
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-          git config user.email "tunisia@openfisca.org"
-          git config user.name "OpenFisca-Tunisia"
-          git commit -m "Mise à jour des paramètres d'OpenFisca-Tunisia"
+            git config user.email "tunisia@openfisca.org"
+            git config user.name "OpenFisca-Tunisia"
+            git commit -m "Mise à jour des paramètres d'OpenFisca-Tunisia"
+            git pull --rebase
             git push
           fi
         working-directory: openfisca-tunisia-json-data
