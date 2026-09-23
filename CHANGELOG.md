@@ -14,7 +14,7 @@
 ## 0.100 - [#443](https://github.com/openfisca/openfisca-tunisia/pull/443)
 
 * Évolution du système socio-fiscal.
-* Périodes concernées : du 01/01/1974 au 31/12/1994.
+* Périodes concernées : jusqu'au 31/12/1994.
 * Zones impactées : `openfisca_tunisia_pension/regimes/rsna`, `openfisca_tunisia_pension/variables/rsna`, `parameters/retraite/rsna/salaire_reference`.
 * Détails :
   - **Le salaire de référence du régime des salariés non agricoles suit ses deux rédactions antérieures à 1994.** La formule unique (moyenne des dix meilleures années sur quarante, année courante comprise) s'appliquait à toutes les périodes ; elle ne vaut plus qu'à partir du 1er juillet 1994, et ses résultats y sont inchangés.
@@ -22,6 +22,7 @@
   - **Rédaction de 1990** (décret n° 90-1455, exécutoire le 23 septembre 1990) : l'article 18 nouveau retient dix années (`periode_annees`), l'article 19, non modifié, divise toujours par 36 ou 60 mois. Les deux articles ne se concilient pas : le calcul s'arrête sur une erreur explicite pour les exercices 1991 à 1994, plutôt que de rendre une valeur qu'aucun texte n'établit.
   - Les exercices étant annuels et datés du 1er janvier, l'exercice 1990 relève de la rédaction de 1974, les exercices 1991 à 1994 de celle de 1990, et l'exercice 1995 de celle de 1994.
   - **Résultats qui changent** : tout salaire de référence RSNA des exercices 1974 à 1994. Aucun test existant ne portait sur ces exercices.
+  - **Avant 1974, le salaire de référence vaut désormais zéro**, faute de formule : le régime de pensions du décret n° 74-499 ne prend effet qu'au 1er janvier 1974, et le décret n° 71-452 qui le précédait servait un forfait, sans salaire de référence. La formule unique rendait jusqu'ici une moyenne pour ces exercices aussi.
   - La limite de six SMIG par année n'est appliquée par aucune des trois rédactions du calcul : c'est une correction distincte.
   - Tests : `tests_pension/formulas/rsna/salaire_de_reference.yaml` (sept cas, dont 1995 et 2011, identiques avant et après) ; `tests_pension/formulas/test_salaire_reference_rsna_1990.py` pour l'erreur des exercices 1991 à 1994, qu'un test YAML ne sait pas attendre.
 
