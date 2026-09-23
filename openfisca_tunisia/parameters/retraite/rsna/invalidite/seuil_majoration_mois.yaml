@@ -1,0 +1,21 @@
+description: Durée de cotisation au-delà de laquelle la pension d'invalidité est majorée
+values:
+  1974-01-01:
+    value: 120
+  1982-07-22:
+    value: 180
+metadata:
+  unit: month
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 22, alinéa 2"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, p. 917 : « Toute fraction de cotisation supérieure à 120 mois ouvre droit par période de 12 mois de cotisation supplémentaire à une majoration égale à 2 % dudit salaire moyen de référence sans que le montant total de la pension puisse excéder un maximum de 80 % dudit salaire. » L'article 64 fixe l'effet du décret au 1er janvier 1974. Lu à l'image."
+    1982-07-22:
+    - title: "Décret n° 82-1030 du 15 juillet 1982, modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime des pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 4 (article 22, alinéa 2 nouveau)"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo05182.pdf"
+      note: "JORT n° 51 des 20-23 juillet 1982, pp. 1605-1607 : « Toute fraction de cotisation supérieure à 180 mois ouvre droit par période de 3 mois de cotisation supplémentaire à une majoration égale à 0,5 % du dit salaire moyen de référence sans que le montant total de la pension puisse excéder un maximum de 80 % du dit salaire. » Le décret n'énonce pas de date d'effet (l'article 8 est une clause d'exécution). Date retenue : 22 juillet 1982, date à laquelle il devient obligatoire selon la règle générale alors en vigueur — « un jour franc après la publication au Journal Officiel » (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), la publication étant prise au premier jour du fascicule daté des 20-23 juillet ; au dernier jour, ce serait le 25 juillet."
+documentation: |-
+  Le seuil n'est pas le stage : le droit s'ouvre à soixante mois, la majoration ne court
+  qu'au-delà de cent vingt mois en 1974, de cent quatre-vingts mois depuis 1982. Pour la
+  vieillesse, le seuil est resté de cent vingt mois.

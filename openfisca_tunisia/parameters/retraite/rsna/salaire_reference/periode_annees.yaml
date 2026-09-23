@@ -1,0 +1,24 @@
+description: Nombre de dernières années dont les salaires sont retenus pour le salaire moyen de référence, dans la rédaction de 1990
+values:
+  1990-09-23:
+    value: 10
+  1994-07-01:
+    value: null
+metadata:
+  unit: year
+  reference:
+    1990-09-23:
+    - title: "Décret n° 90-1455 du 10 septembre 1990, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (article 18 nouveau)"
+      href: "https://www.pist.tn/jort/1990/1990F/Jo06090.pdf"
+      note: "JORT n° 60 du 21 septembre 1990, p. 1358. L'article 18 nouveau retient les salaires des dix dernières années précédant l'âge d'ouverture du droit, dans la limite de six fois le SMIG rapporté à 2 400 heures, actualisés selon un barème fixé par arrêté du ministre des affaires sociales. Aucune disposition transitoire. Le décret n'énonce pas de date d'effet : exécutoire un jour franc après sa publication, soit le 23 septembre 1990. Lu à l'image, éditions française et arabe concordantes."
+    1994-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du 27 avril 1974 relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (articles 18 et 19 nouveaux)"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "JORT n° 52 du 5 juillet 1994, pp. 1141-1142. Les articles 18 et 19 sont abrogés et remplacés ensemble : cinq, sept puis dix dernières années à partir des 1er juillet 1994, 1995 et 1996, avec un diviseur qui suit la période. Le paramètre cesse à cette date ; la suite est portée par duree_mois."
+documentation: |-
+  Dix ans, mais divisés par quoi ? Le décret n° 90-1455 récrit l'article 18 et laisse
+  l'article 19 intact : celui-ci continue de prendre « les trente six ou soixante mois
+  écoulés » et de diviser leur total par 36 ou 60. Les deux articles ne se concilient pas.
+  Aucun texte publié au Journal officiel entre septembre 1990 et juin 1994 ne dit lequel
+  l'a emporté. La valeur versée est celle que l'article 18 énonce ; les diviseurs de
+  l'article 19 restent ceux de 1974, dans les paramètres voisins.

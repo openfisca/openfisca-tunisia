@@ -34,6 +34,82 @@
   - **Les paliers de cotisation de la loi** (article 1er, au 1er janvier et au 1er juillet 2007 à 2009) ont leur propre date énoncée et ne bougent pas.
   - **Aucun calcul ne change** : les variables du système des pensions sont annuelles et lisent les paramètres au 1er janvier ; l'exercice 2007 relevait déjà de 55 ans et 35 ans, l'exercice 2008 de 57 ans et 37 ans. Des tests YAML le fixent aux bornes, et un test Python lit les paramètres aux instants du 1er et du 2 juillet 2007.
 
+## 0.101 - [#444](https://github.com/openfisca/openfisca-tunisia/pull/444)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : jusqu'au 11/09/1985.
+* Zones impactées : `parameters/retraite/cnrps/plaf_taux_pension`, `parameters/retraite/cnrps/age_legal/civil/cadre_commun`, `parameters/retraite/cnrps/age_legal/civil/cadres_actifs`.
+* Détails :
+  - **Plafond du taux de pension CNRPS avant 1981** : 60 % à partir du 1er avril 1959 (loi n° 59-18, art. 22 § II), 80 % à partir du 1er juillet 1970 (décret-loi n° 70-1, art. 22 § II nouveau et art. 2). Le paramètre commençait au 1er mai 1981 ; la valeur de 1981 (loi n° 81-70) est conservée avec sa référence, comme reconduction.
+  - **Âge du cadre commun** : la valeur de 60 ans datée du 1er février 1959, sans article, part désormais du 1er avril 1959, date à laquelle l'article 52 de la loi n° 59-18 ouvre les droits des fonctionnaires ; le 5 février 1959 est la date de signature. Références : article 9 § I (soixante ans d'âge et trente années de services) et décret n° 59-78 (limite d'âge de soixante ans), plus la loi n° 85-12, article 24, attachée au 12 septembre 1985 sans valeur nouvelle.
+  - **Âge des cadres actifs** : la valeur de 55 ans datée du 1er février 1959 n'avait pas de texte — l'article 10 de la loi n° 59-18 ne permet qu'une réduction « de cinq ans au maximum », par décret de classement non lu. Elle part désormais du 12 septembre 1985, avec l'article 29 de la loi n° 85-12.
+  - Aucun calcul ne change : les calculs CNRPS antérieurs au 12 septembre 1985 n'aboutissent toujours pas (openfisca/openfisca-tunisia-pension#36), et la formule du taux ne lit pas le plafond.
+
+## 0.100 - [#443](https://github.com/openfisca/openfisca-tunisia/pull/443)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : jusqu'au 31/12/1994.
+* Zones impactées : `openfisca_tunisia_pension/regimes/rsna`, `openfisca_tunisia_pension/variables/rsna`, `parameters/retraite/rsna/salaire_reference`.
+* Détails :
+  - **Le salaire de référence du régime des salariés non agricoles suit ses deux rédactions antérieures à 1994.** La formule unique (moyenne des dix meilleures années sur quarante, année courante comprise) s'appliquait à toutes les périodes ; elle ne vaut plus qu'à partir du 1er juillet 1994, et ses résultats y sont inchangés.
+  - **Rédaction de 1974** (décret n° 74-499, art. 18 et 19, lus à l'image) : les salaires des trois ou des cinq années écoulées au 1er janvier de l'année d'ouverture du droit, divisés par 36 ou 60 mois, la période la plus avantageuse étant retenue. Quatre paramètres : `periode_courte_annees` (3), `periode_longue_annees` (5), `diviseur_court_mois` (36), `diviseur_long_mois` (60).
+  - **Rédaction de 1990** (décret n° 90-1455, exécutoire le 23 septembre 1990) : l'article 18 nouveau retient dix années (`periode_annees`), l'article 19, non modifié, divise toujours par 36 ou 60 mois. Les deux articles ne se concilient pas : le calcul s'arrête sur une erreur explicite pour les exercices 1991 à 1994, plutôt que de rendre une valeur qu'aucun texte n'établit.
+  - Les exercices étant annuels et datés du 1er janvier, l'exercice 1990 relève de la rédaction de 1974, les exercices 1991 à 1994 de celle de 1990, et l'exercice 1995 de celle de 1994.
+  - **Résultats qui changent** : tout salaire de référence RSNA des exercices 1974 à 1994. Aucun test existant ne portait sur ces exercices.
+  - **Avant 1974, le salaire de référence vaut désormais zéro**, faute de formule : le régime de pensions du décret n° 74-499 ne prend effet qu'au 1er janvier 1974, et le décret n° 71-452 qui le précédait servait un forfait, sans salaire de référence. La formule unique rendait jusqu'ici une moyenne pour ces exercices aussi.
+  - La limite de six SMIG par année n'est appliquée par aucune des trois rédactions du calcul : c'est une correction distincte.
+  - Tests : `tests_pension/formulas/rsna/salaire_de_reference.yaml` (sept cas, dont 1995 et 2011, identiques avant et après) ; `tests_pension/formulas/test_salaire_reference_rsna_1990.py` pour l'erreur des exercices 1991 à 1994, qu'un test YAML ne sait pas attendre.
+
+## 0.99 - [#442](https://github.com/openfisca/openfisca-tunisia/pull/442)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `parameters/retraite/rsna/salaire_reference/limite_multiple_smig`, `parameters/retraite/rsna/salaire_reference/limite_heures_annuelles`.
+* Détails :
+  - **Verse la limite dans laquelle les salaires entrent dans le salaire moyen de référence du régime des salariés non agricoles** : six fois le SMIG rapporté à une durée d'occupation annuelle de 2 400 heures (décret n° 74-499, art. 18, lu à l'image). Deux paramètres, le multiple (unité `smig`) et la durée (unité `heure`), datés du 1er janvier 1974.
+  - La valeur ne change pas ensuite : le décret n° 90-1455 (23 septembre 1990) et le décret n° 94-1429 (1er juillet 1994, qui précise le SMIG du régime de 48 heures) reprennent la limite ; leurs références sont attachées sans valeur nouvelle.
+  - Aucun calcul ne change : le salaire de référence calculé par le système des pensions n'applique pas encore cette limite, et la cotisation au régime complémentaire, dans le système fiscal, garde sa constante (voir #399).
+
+## 0.98 - [#440](https://github.com/openfisca/openfisca-tunisia/pull/440)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants`.
+* Détails :
+  - **Le système des pensions calcule les pensions de survivants du régime des salariés non agricoles**, qu'il ne calculait pas : seules celles de la CNRPS existaient. Les paramètres `retraite.rsna.survivants` étaient versés et datés, mais aucune formule ne les lisait.
+  - Nouvelles variables : `rsna_taux_reversion`, `rsna_pension_de_reversion` et `rsna_pension_orphelins_totale`, et deux variables d'entrée, `rsna_pension_reference_deces` (la pension dont le défunt bénéficiait ou aurait dû bénéficier) et `nombre_orphelins_pere_et_mere_eligibles` (défaut 0). Les entrées `age_deces`, `conjoint_survivant_eligible` et `nombre_orphelins_eligibles`, déjà utilisées pour la CNRPS, sont reprises.
+  - **1974** (décret n° 74-499, art. 31, 34 et 38) : la moitié au conjoint, un cinquième par orphelin, trois dixièmes pour l'orphelin de père et de mère ; le total ne dépasse pas la pension de l'assuré, les pensions d'orphelins étant réduites.
+  - **À partir du 19 février 1981** (décret n° 81-188, art. 2, art. 31 al. 2 ajouté ; exécutoire un jour franc après sa publication du 17 février) : le taux du conjoint est relevé « à concurrence de 75 % » tant que le total des pensions du conjoint et des orphelins ne dépasse pas la pension de l'assuré. Sans orphelin, 75 % ; avec un orphelin (30 %), 70 % ; avec deux orphelins ou plus, la moitié, et les orphelins sont réduits. La lecture du texte est discutée dans la PR.
+  - Aucun résultat existant ne change : les variables sont nouvelles, et les nouvelles entrées ont des valeurs par défaut neutres.
+  - Tests : `tests_pension/formulas/rsna/survivants.yaml`, dix cas, dont la borne de février-mars 1981.
+
+## 0.97 - [#449](https://github.com/openfisca/openfisca-tunisia/pull/449)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `parameters/retraite/rsna/invalidite`.
+* Détails :
+  - **Verse les paramètres de la pension d'invalidité du régime des salariés non agricoles**, que l'arbre ne portait pas, alors que quatre régimes à renvoi (non-salariés, Tunisiens à l'étranger, faibles revenus, artistes) portaient déjà les leurs. Section 4 du décret n° 74-499, lue à l'image.
+  - Stage de 60 mois depuis 1974 (art. 21 b)) ; la condition de six mois au cours des douze derniers, présente en 1974, disparaît avec le décret n° 81-188 : référence attachée sans valeur nouvelle.
+  - Taux de base : 40 % au 1er janvier 1974 (art. 22 al. 1), 50 % au 19 février 1981 (décret n° 81-188, exécutoire un jour franc après sa publication).
+  - Majoration : 2 % par période entière de 12 mois au-delà de 120 mois en 1974 (art. 22 al. 2) ; 0,5 % par période de 3 mois au-delà de 180 mois au 22 juillet 1982 (décret n° 82-1030, art. 4). La majoration de 1974 se compte par années entières, et n'est donc pas versée comme 0,5 % par trimestre : elle est décrite par deux paramètres, `majoration` et `periode_majoration_mois`.
+  - Plafond de 80 % depuis 1974, reconduit en 1982 ; bonification de 20 % pour tierce personne (art. 23).
+  - Aucun calcul ne change : le système des pensions ne calcule pas la pension d'invalidité du régime.
+
+## 0.96 - [#439](https://github.com/openfisca/openfisca-tunisia/pull/439)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1974 au 31/12/2002.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_employeur/retraite`, `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_salarie/retraite`.
+* Détails :
+  - **La branche pensions du régime des salariés non agricoles commence en 1974, et non plus en 2003.** Elle additionne deux ressources du décret n° 74-499 : la cotisation propre de l'article 9 et la quote-part de l'article 5 b), prélevée sur le taux global des régimes de la loi n° 60-30. Avant cette version, toute cotisation de retraite RSNA antérieure au 1er janvier 2003 valait zéro.
+  - **La quote-part**, en vingtièmes de « la masse des cotisations patronales et ouvrières » : 1,25/20e au 1er janvier 1974, 4,25/20e au 1er janvier 1988 (décret n° 88-1137, art. 2), 6,25/20e au 1er janvier 1994 (décret n° 94-1429, art. 2), 7,25/20e au 1er janvier 2003 (valeur existante). Toutes ces dates sont énoncées par les textes.
+  - **La cotisation propre** : 3,75 % en 1974, dont 2,5 % patronaux et 1,25 % ouvriers. Le décret n° 94-1429 la porte à 5,75 %, mais ne rend la part ouvrière exigible que par paliers : 1,75 %, 2,25 % et 2,75 % aux 1er juillet 1994, 1995 et 1996. Ce sont ces taux exigibles qui sont versés. Le décret n° 97-555 récrit l'article 9 à 5,25 %, dont 2,75 % ouvriers, avant l'échéance du palier de 3,25 % prévu au 1er juillet 1997, qui n'a donc jamais couru. Ce décret ne change aucune valeur : il est cité, avec sa date exécutoire au plus tôt le 9 avril 1997.
+  - **Partage de la quote-part.** Aucun texte ne le fixe : la quote-part est prélevée sur une masse commune. Jusqu'en 1997, le taux global est de 15 points patronaux et 5 points ouvriers, et le partage versé est celui de la masse (trois quarts, un quart). Depuis la loi n° 97-4 (18 %, 13/5), la quote-part est lue « en points », comme la valeur de 2003 et comme la caisse la lit, et répartie selon la clé 13/18. La documentation chiffre la lecture littérale (6,25/20 × 18 = 5,625 points de 1997 à 2002, 6,525 points depuis 2003, soit 11,775 % pour la branche au lieu de 12,5 %).
+  - Valeurs de la branche, employeur / salarié : 3,4375 / 1,5625 % en 1974 ; 5,6875 / 2,3125 % en 1988 ; 7,1875 / 2,8125 % au 1er janvier 1994 ; part salariale à 3,3125, 3,8125 et 4,3125 % aux 1er juillet 1994, 1995 et 1996 ; 7,0139 / 4,4861 % au 4 février 1997 ; inchangé depuis 2003.
+  - **Un résultat existant change** : le test « Premier mois d'application » de la réduction conventionnelle (octobre 1996) attendait une cotisation patronale nulle, plancher compris, parce que la branche pensions était vide avant 2003. Elle vaut désormais 64,097 dinars pour 1 000 dinars de salaire — fonds spécial de l'État, accidents du travail et pensions, moins les deux points de la réduction. Le test est renommé et sa valeur écrite en clair. Le commentaire de la formule, qui justifiait le plancher par l'absence de la branche pensions, est mis à jour.
+  - Tests de bornes ajoutés dans `tests/formulas/cotisations/cotisation_retraite.yaml`, de décembre 1973 à janvier 2003.
+
 ## 0.95 - [#438](https://github.com/openfisca/openfisca-tunisia/pull/438)
 
 * Évolution du système socio-fiscal.

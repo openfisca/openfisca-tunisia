@@ -57,8 +57,11 @@
 
 
 # Borne basse : rien avant le 1er octobre 1996, puis la réduction s'applique. Sur ces mois-là,
-# la décomposition par branche du régime général n'est pas encore renseignée — les pensions ne
-# commencent qu'au 1er janvier 2003 — et le plancher empêche une cotisation patronale négative.
+# la décomposition par branche du régime général n'est pas encore complète : maladie,
+# maternité et décès ne commencent qu'en février 1997, les prestations familiales qu'en 2003.
+# En octobre 1996, la cotisation patronale est la somme des branches renseignées — fonds
+# spécial de l'État (0,5 %), accidents du travail (0,7222 %) et pensions (2,5 % de cotisation
+# propre et 6,25/20e des 15 points patronaux du taux global) —, diminuée des deux points.
 
 - name: Le mois précédant l'entrée en vigueur, aucune réduction
   period: 1996-09
@@ -71,7 +74,7 @@
     reduction_cotisation_conventionnelle_employeur: 0
 
 
-- name: Premier mois d'application, la réduction joue et la cotisation ne devient pas négative
+- name: Premier mois d'application, la réduction joue
   period: 1996-10
   absolute_error_margin: .001
   input:
@@ -80,7 +83,7 @@
     couverture_maladie_conventionnelle: true
   output:
     reduction_cotisation_conventionnelle_employeur: .02 * 1000
-    cotisations_employeur: 0
+    cotisations_employeur: (.005 + .007222 + .025 + 6.25 / 20 * .15 - .02) * 1000
 
 
 # La réduction est propre au régime général : l'article 41 est celui de la loi n° 60-30, et le
