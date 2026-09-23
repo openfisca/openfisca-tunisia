@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.102 - [#PR1](https://github.com/openfisca/openfisca-tunisia/pull/PR1)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : le 01/07/2007.
+* Zones impactées : `parameters/retraite/cnrps/depart_anticipe/sur_demande/cadre_commun`, `parameters/retraite/raci/survivants`, `parameters/retraite/rtfr/survivants`.
+* Détails :
+  - **La loi n° 2007-43 prend effet le 2 juillet 2007, et non le 1er.** Elle n'a pas de clause d'entrée en vigueur ; le fascicule n° 51 du 26 juin 2007 porte en dernière page son dépôt au siège du gouvernorat de Tunis le 27 juin 2007. Elle devient donc exécutoire cinq jours après, le jour du dépôt non compté (loi n° 93-64, article 2) : le 2 juillet. La date du 1er juillet prenait le dépôt à la date de publication.
+  - **Départ anticipé sur demande de la CNRPS** : 57 ans et 37 ans de services à compter du 2 juillet 2007 (article 30 nouveau de la loi n° 85-12). Le 1er juillet 2007 relève encore de 55 ans et 35 ans.
+  - **Orphelins des artistes (RACI) et des travailleurs à faibles revenus (RTFR)** : les références à la loi, attachées sans valeur nouvelle, étaient datées du 28 juin 2007, par la règle du jour franc qui ne vaut plus depuis 1993. Elles passent au 2 juillet. Leur intitulé est rétabli (« dans les secteurs public et privé et des régimes spéciaux »). Pour le RACI, seul l'article 3 est cité : l'article 4, qui supprime le mot « mineur », ne vise que la loi n° 81-6 et la loi n° 2002-32.
+  - **Les paliers de cotisation de la loi** (article 1er, au 1er janvier et au 1er juillet 2007 à 2009) ont leur propre date énoncée et ne bougent pas.
+  - **Aucun calcul ne change** : les variables du système des pensions sont annuelles et lisent les paramètres au 1er janvier ; l'exercice 2007 relevait déjà de 55 ans et 35 ans, l'exercice 2008 de 57 ans et 37 ans. Des tests YAML le fixent aux bornes, et un test Python lit les paramètres aux instants du 1er et du 2 juillet 2007.
+
 ## 0.95 - [#438](https://github.com/openfisca/openfisca-tunisia/pull/438)
 
 * Évolution du système socio-fiscal.
