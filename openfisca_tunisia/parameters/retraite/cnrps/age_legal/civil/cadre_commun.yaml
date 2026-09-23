@@ -1,6 +1,6 @@
 description: Age légal de de départ à la retraite pour le cadre commun de la CNRPS
 values:
-  1959-02-01:
+  1959-04-01:
     value: 60
   2019-07-01:
     value: 61
@@ -9,10 +9,17 @@ values:
 metadata:
   unit: year
   reference:
-    1959-02-01:
-    - title: "Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite"
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article 9, § I, et article 52"
       href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
-      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 93."
+      note: "JORT n° 8, fascicule des 3-6 février 1959, pp. 93-100 (article 9 : p. 94). Article 9, § I, lu à l'image : « Le droit à pension d'ancienneté est acquis lorsque se trouve remplie, à la cessation de l'activité, la double condition de soixante ans d'âge et de trente années accomplies de services effectifs, civils ou militaires. » L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature. La double condition est reprise mot pour mot par l'article 9 nouveau de la loi n° 73-71, puis par celui de la loi n° 79-66, article 43."
+    - title: "Décret n° 59-78 du 17 mars 1959, fixant les limites d'âge des fonctionnaires et employés civils, article 1er"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo01659.pdf"
+      note: "JORT n° 16, fascicule des 17-20 mars 1959, p. 226. La limite d'âge des fonctionnaires civils de l'État et des établissements publics est fixée à soixante ans. L'article 5 fixe l'effet au 1er avril 1959."
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 24"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, p. 361 : âge de mise à la retraite du cadre commun fixé à soixante ans, valeur inchangée. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985."
     2019-07-01:
     - title: "Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985 (dispositions transitoires)"
       href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"

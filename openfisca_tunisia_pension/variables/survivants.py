@@ -2,6 +2,7 @@
 from openfisca_core.model_api import (
     MONTH,
     Variable,
+    max_,
     min_,
     set_input_dispatch_by_period,
     where,
@@ -194,3 +195,112 @@ class cnrps_pension_orphelins_totale(Variable):
         )
 
         return pension_ref * taux_orphelins * is_deceased
+
+
+# Régime des salariés non agricoles (décret n° 74-499, section 5, articles 29 à 38).
+
+
+class rsna_pension_reference_deces(Variable):
+    value_type = float
+    entity = Individu
+    default_value = 0.0
+    definition_period = MONTH
+    label = "Pension de vieillesse ou d'invalidité dont le défunt bénéficiait ou aurait dû bénéficier (RSNA)"
+    set_input = set_input_dispatch_by_period
+
+
+class nombre_orphelins_pere_et_mere_eligibles(Variable):
+    value_type = int
+    entity = Individu
+    default_value = 0
+    definition_period = MONTH
+    label = "Parmi les orphelins éligibles, nombre d'orphelins de père et de mère"
+    set_input = set_input_dispatch_by_period
+
+
+def _rsna_taux_orphelins(individu, period, parameters):
+    """Somme des taux d'orphelins avant tout plafonnement (article 34).
+
+    De 1974 à 1981, l'orphelin de père et de mère a un taux propre ; depuis le décret
+    n° 81-188, les deux taux sont égaux et la distinction ne change plus rien.
+    """
+    survivants = parameters(period).retraite.rsna.survivants
+    nb_orphelins = individu("nombre_orphelins_eligibles", period)
+    nb_pere_et_mere = min_(
+        individu("nombre_orphelins_pere_et_mere_eligibles", period), nb_orphelins
+    )
+    return (
+        (nb_orphelins - nb_pere_et_mere) * survivants.taux_orphelin
+        + nb_pere_et_mere * survivants.taux_orphelin_pere_et_mere
+    )
+
+
+class rsna_taux_reversion(Variable):
+    value_type = float
+    entity = Individu
+    label = "Taux de la pension du conjoint survivant, en part de la pension de l'assuré (RSNA)"
+    definition_period = MONTH
+
+    def formula_1974_01_01(individu, period, parameters):
+        """Article 31 du décret n° 74-499 : la moitié de la pension de l'assuré."""
+        survivants = parameters(period).retraite.rsna.survivants
+        eligible = individu("conjoint_survivant_eligible", period)
+        return survivants.taux_conjoint * eligible
+
+    def formula_1981_02_19(individu, period, parameters):
+        """Article 31, alinéa 2, ajouté par le décret n° 81-188, article 2.
+
+        « Ce taux est majoré à concurrence de 75 % de la pension de vieillesse ou
+        d'invalidité dont bénéficiait ou aurait dû bénéficier le défunt au moment de son
+        décès, à condition qu'il n'y ait pas d'enfant bénéficiaire, ou que le total de la
+        pension de veuve et d'orphelin ne dépasse pas le montant de la pension de l'assuré.
+        En cas de dépassement la pension d'orphelin est réduite d'autant. »
+
+        Lecture retenue : « à concurrence de » fixe un plafond. Le taux de la moitié est
+        relevé jusqu'à 75 % tant que la pension du conjoint et celles des orphelins,
+        additionnées, ne dépassent pas la pension de l'assuré. Sans orphelin, 75 % ; avec
+        un orphelin à 30 %, 70 % ; dès que la moitié et les orphelins atteignent la
+        pension de l'assuré, la moitié sans majoration.
+        """
+        survivants = parameters(period).retraite.rsna.survivants
+        eligible = individu("conjoint_survivant_eligible", period)
+        taux_orphelins = _rsna_taux_orphelins(individu, period, parameters)
+        taux = max_(
+            survivants.taux_conjoint,
+            min_(survivants.taux_conjoint_majore, 1 - taux_orphelins),
+        )
+        return taux * eligible
+
+
+class rsna_pension_de_reversion(Variable):
+    value_type = float
+    entity = Individu
+    label = "Pension de réversion servie au conjoint survivant (RSNA)"
+    definition_period = MONTH
+
+    def formula(individu, period):
+        pension_reference = individu("rsna_pension_reference_deces", period)
+        taux = individu("rsna_taux_reversion", period)
+        decede = individu("age_deces", period) >= 0
+        return pension_reference * taux * decede
+
+
+class rsna_pension_orphelins_totale(Variable):
+    value_type = float
+    entity = Individu
+    label = "Montant total des pensions d'orphelins servies (RSNA)"
+    definition_period = MONTH
+
+    def formula(individu, period, parameters):
+        """Articles 34 et 38 du décret n° 74-499.
+
+        Le total des pensions du conjoint survivant et des orphelins ne dépasse pas la
+        pension de l'assuré ; les pensions d'orphelins sont, le cas échéant, réduites
+        temporairement. Le décret n° 97-291 récrit l'article 38 sans changer la règle.
+        """
+        pension_reference = individu("rsna_pension_reference_deces", period)
+        taux_conjoint = individu("rsna_taux_reversion", period)
+        taux_orphelins = _rsna_taux_orphelins(individu, period, parameters)
+        decede = individu("age_deces", period) >= 0
+        taux = min_(taux_orphelins, max_(1 - taux_conjoint, 0))
+        return pension_reference * taux * decede
