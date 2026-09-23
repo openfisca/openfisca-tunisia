@@ -7,3 +7,145 @@
     salaire_de_base: 1000
     retraite_employeur: .077639 * 1000
     retraite_salarie: .047361 * 1000
+
+# Branche pensions du régime des salariés non agricoles, 1974-2003 : cotisation
+# propre de l'article 9 du décret n° 74-499, plus quote-part de l'article 5 b) prélevée
+# sur le taux global de l'article 41 de la loi n° 60-30 (15 points patronaux et
+# 5 points ouvriers jusqu'à la loi n° 97-4, 13 et 5 ensuite). Chaque borne est
+# encadrée par le mois qui la précède.
+- name: Branche pensions RSNA, décembre 1973, avant le décret n° 74-499
+  period: 1973-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: 0
+    retraite_salarie: 0
+- name: Branche pensions RSNA, janvier 1974, quote-part de 1,25/20e
+  period: 1974-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 1.25 / 20 * .15) * 1000
+    retraite_salarie: (.0125 + 1.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, décembre 1987, dernier mois à 1,25/20e
+  period: 1987-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 1.25 / 20 * .15) * 1000
+    retraite_salarie: (.0125 + 1.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, janvier 1988, quote-part de 4,25/20e (décret n° 88-1137)
+  period: 1988-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 4.25 / 20 * .15) * 1000
+    retraite_salarie: (.0125 + 4.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, décembre 1993, dernier mois à 4,25/20e
+  period: 1993-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 4.25 / 20 * .15) * 1000
+    retraite_salarie: (.0125 + 4.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, janvier 1994, quote-part de 6,25/20e (décret n° 94-1429, art. 2)
+  period: 1994-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 6.25 / 20 * .15) * 1000
+    retraite_salarie: (.0125 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, juin 1994, part ouvrière propre encore à 1,25 %
+  period: 1994-06
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 6.25 / 20 * .15) * 1000
+    retraite_salarie: (.0125 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, juillet 1994, premier palier ouvrier de 1,75 %
+  period: 1994-07
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 6.25 / 20 * .15) * 1000
+    retraite_salarie: (.0175 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, juin 1995, dernier mois du premier palier
+  period: 1995-06
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_salarie: (.0175 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, juillet 1995, palier ouvrier de 2,25 %
+  period: 1995-07
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 6.25 / 20 * .15) * 1000
+    retraite_salarie: (.0225 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, juin 1996, dernier mois du deuxième palier
+  period: 1996-06
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_salarie: (.0225 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, juillet 1996, palier ouvrier de 2,75 %
+  period: 1996-07
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 6.25 / 20 * .15) * 1000
+    retraite_salarie: (.0275 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, février 1997, taux global encore de 20 % au premier du mois
+  period: 1997-02
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + 6.25 / 20 * .15) * 1000
+    retraite_salarie: (.0275 + 6.25 / 20 * .05) * 1000
+- name: Branche pensions RSNA, mars 1997, 6,25 points répartis selon la clé 13/18 (loi n° 97-4)
+  period: 1997-03
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + .0625 * 13 / 18) * 1000
+    retraite_salarie: (.0275 + .0625 * 5 / 18) * 1000
+- name: Branche pensions RSNA, juillet 1997, le palier ouvrier de 3,25 % n'a pas couru (décret n° 97-555)
+  period: 1997-07
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_salarie: (.0275 + .0625 * 5 / 18) * 1000
+- name: Branche pensions RSNA, décembre 2002, dernier mois à 6,25/20e
+  period: 2002-12
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: (.025 + .0625 * 13 / 18) * 1000
+    retraite_salarie: (.0275 + .0625 * 5 / 18) * 1000
+- name: Branche pensions RSNA, janvier 2003, quote-part de 7,25/20e (décret n° 2003-1212)
+  period: 2003-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    retraite_employeur: .077639 * 1000
+    retraite_salarie: .047361 * 1000
