@@ -1,0 +1,121 @@
+# Salaire moyen de référence du régime des salariés non agricoles, rendu en montant
+# annuel.
+#
+# Rédaction de 1974 (décret n° 74-499, articles 18 et 19) : les salaires des trois ou des
+# cinq années qui précèdent le 1er janvier de l'année d'ouverture du droit, divisés par 36
+# ou 60 mois, la période la plus avantageuse étant retenue. L'année d'ouverture du droit
+# n'est pas comptée : ses salaires sont renseignés à dessein, et ne doivent pas jouer.
+#
+# À partir du 1er juillet 1994, le calcul est inchangé par rapport aux versions
+# précédentes (cas de 1995 et de 2011).
+
+- name: RSNA 1985, les trois dernières années sont plus avantageuses
+  period: 1985
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1978: 5000
+      1979: 5000
+      1980: 10000
+      1981: 10000
+      1982: 10000
+      1983: 20000
+      1984: 20000
+      1985: 99999
+  output:
+    # 3 ans : (10 000 + 20 000 + 20 000) × 12 / 36 ; 5 ans : 70 000 × 12 / 60 = 14 000.
+    rsna_salaire_de_reference: (10000 + 20000 + 20000) * 12 / 36
+
+- name: RSNA 1985, les cinq dernières années sont plus avantageuses
+  period: 1985
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1980: 20000
+      1981: 20000
+      1982: 10000
+      1983: 10000
+      1984: 10000
+      1985: 99999
+  output:
+    # 3 ans : 30 000 × 12 / 36 = 10 000 ; 5 ans : 70 000 × 12 / 60.
+    rsna_salaire_de_reference: (20000 + 20000 + 10000 + 10000 + 10000) * 12 / 60
+
+- name: RSNA 1985, une seule année de salaire, divisée par 36 mois
+  period: 1985
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1984: 12000
+  output:
+    rsna_salaire_de_reference: 12000 * 12 / 36
+
+- name: RSNA 1974, premier exercice de la rédaction de 1974
+  period: 1974
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1969: 3000
+      1970: 3000
+      1971: 3000
+      1972: 3000
+      1973: 3000
+  output:
+    rsna_salaire_de_reference: 3000
+
+- name: RSNA 1990, dernier exercice entier de la rédaction de 1974
+  period: 1990
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1983: 5000
+      1984: 5000
+      1985: 10000
+      1986: 10000
+      1987: 10000
+      1988: 20000
+      1989: 20000
+      1990: 99999
+  output:
+    rsna_salaire_de_reference: (10000 + 20000 + 20000) * 12 / 36
+
+- name: RSNA 1995, rédaction de 1994, résultat inchangé
+  period: 1995
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1985: 12000
+      1986: 12000
+      1987: 12000
+      1988: 12000
+      1989: 12000
+      1990: 12000
+      1991: 12000
+      1992: 12000
+      1993: 30000
+      1994: 30000
+      1995: 12000
+  output:
+    # Moyenne des dix plus élevées des années renseignées, année courante comprise :
+    # (2 × 30 000 + 8 × 12 000) / 10.
+    rsna_salaire_de_reference: (2 * 30000 + 8 * 12000) / 10
+
+- name: RSNA 2011, rédaction de 1994, résultat inchangé
+  period: 2011
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      2000: 10000
+      2001: 10000
+      2002: 10000
+      2003: 10000
+      2004: 10000
+      2005: 20000
+      2006: 20000
+      2007: 20000
+      2008: 20000
+      2009: 20000
+      2010: 20000
+      2011: 20000
+  output:
+    rsna_salaire_de_reference: (7 * 20000 + 3 * 10000) / 10

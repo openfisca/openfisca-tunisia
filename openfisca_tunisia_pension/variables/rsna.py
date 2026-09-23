@@ -6,7 +6,7 @@ from openfisca_tunisia_pension.entities import Individu
 from openfisca_tunisia_pension.tools import revalorise
 'Régime des salariés non agricoles.'
 from numpy import apply_along_axis, vstack
-from openfisca_core.model_api import ADD, YEAR, Enum, Variable, apply_thresholds
+from openfisca_core.model_api import ADD, YEAR, Enum, Variable, apply_thresholds, max_
 from openfisca_tunisia_pension.entities import Individu
 from openfisca_tunisia_pension.regimes.regime import AbstractRegimeEnAnnuites
 from openfisca_tunisia_pension.tools import make_mean_over_largest
@@ -154,7 +154,33 @@ class rsna_salaire_de_reference(Variable):
     label = 'Salaires de référence du régime des salariés non agricoles'
     definition_period = YEAR
 
-    def formula(individu, period):
+    def formula_1974_01_01(individu, period, parameters):
+        """Articles 18 et 19 du décret n° 74-499, dans leur rédaction de 1974.
+
+            Les salaires des trois ou des cinq dernières années, la période la plus
+            avantageuse étant retenue ; ces années sont celles qui précèdent le 1er janvier
+            de l'année d'ouverture du droit, laquelle n'est donc pas comptée. Le salaire
+            mensuel moyen est le 1/36 ou le 1/60 du total ; il est rendu ici en montant
+            annuel, comme dans la rédaction de 1994.
+            """
+        salaire_reference = parameters(period).retraite.rsna.salaire_reference
+
+        def moyenne_annuelle(nombre_annees, diviseur_mois):
+            total = sum((individu('rsna_salaire_de_base', period=period.offset(-rang, 'year'), options=[ADD]) for rang in range(1, int(nombre_annees) + 1)))
+            return 12 * total / diviseur_mois
+        return max_(moyenne_annuelle(salaire_reference.periode_courte_annees, salaire_reference.diviseur_court_mois), moyenne_annuelle(salaire_reference.periode_longue_annees, salaire_reference.diviseur_long_mois))
+
+    def formula_1990_09_23(individu, period, parameters):
+        """Décret n° 90-1455 : dix années (article 18 nouveau), divisées par 36 ou 60 mois.
+
+            L'article 18 nouveau retient dix années ; l'article 19, non modifié, divise
+            toujours le total par 36 ou 60 mois. Les deux articles ne se concilient pas, et
+            aucun texte publié ne dit lequel l'a emporté jusqu'au décret n° 94-1429. Aucune
+            valeur n'est calculée plutôt qu'une valeur inventée.
+            """
+        raise NotImplementedError("Salaire de référence du régime des salariés non agricoles du 23 septembre 1990 au 30 juin 1994 : l'article 18 du décret n° 74-499, récrit par le décret n° 90-1455, retient dix années, et l'article 19, non modifié, divise leur total par 36 ou 60 mois. Les textes ne disent pas lequel l'emporte.")
+
+    def formula_1994_07_01(individu, period):
         k = 10
         mean_over_largest = make_mean_over_largest(k=k)
         n = 40

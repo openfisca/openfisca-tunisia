@@ -1,6 +1,6 @@
 description: Age légal de de départ à la retraite pour certains cadres actifs
 values:
-  1959-02-01:
+  1985-09-12:
     value: 55
   2019-07-01:
     value: 56
@@ -9,10 +9,10 @@ values:
 metadata:
   unit: year
   reference:
-    1959-02-01:
-    - title: "Loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite"
-      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
-      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 93."
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 29"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, pp. 359-365 : âge de mise à la retraite des cadres actifs fixé à cinquante-cinq ans, avec maintien possible jusqu'à soixante ans ; la liste est fixée par décret. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985."
     2019-07-01:
     - title: "Loi n° 2019-37 du 30 avril 2019 modifiant et complétant la loi n° 85-12 du 5 mars 1985 (dispositions transitoires)"
       href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
@@ -22,6 +22,12 @@ metadata:
       href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
       note: "JORT n° 35 du 30 avril 2019, pp. 1312-1315."
 documentation: |-
+  Le paramètre commence avec la loi n° 85-12. Sous la loi n° 59-18, l'article 10 permet
+  seulement de réduire d'office l'âge du droit à pension d'ancienneté « de cinq ans au
+  maximum » pour les emplois classés dans la partie active, dont la liste est fixée par
+  décret ; les décrets de classement n'ont pas été lus, et l'âge applicable avant le
+  12 septembre 1985 n'est pas établi.
+
   Il s'agit
   - des cadres actifs des forces de sécurité intérieure et de la garde nationale
   - les cadres actifs exerçant dans :
