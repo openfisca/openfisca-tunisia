@@ -1,16 +1,19 @@
 description: Plancher de la pension, en part du salaire minimum annuel du secteur
 values:
-  1995-07-13:
+  1995-07-19:
     value: 0.3
 metadata:
   unit: /1
   reference:
-    1995-07-13:
+    1995-07-19:
     - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 29"
       href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
-      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. À la date d'ouverture du droit, le montant annuel des pensions de vieillesse, d'invalidité ou de survivants ne peut être inférieur à 30 % du SMIG du régime de 48 heures rapporté à 2 400 heures par an, ou à 30 % du SMAG rapporté à 300 jours par an, selon la nature de l'activité."
+      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 14 juillet 1995. À la date d'ouverture du droit, le montant annuel des pensions de vieillesse, d'invalidité ou de survivants ne peut être inférieur à 30 % du SMIG du régime de 48 heures rapporté à 2 400 heures par an, ou à 30 % du SMAG rapporté à 300 jours par an, selon la nature de l'activité."
 documentation: |-
   Le plancher s'applique à la date d'ouverture du droit, et vaut pour les trois pensions du
   régime. Il est propre aux non-salariés : le régime non agricole garantit les deux tiers du
-  SMIG. Exprimé en part du salaire minimum, il monte avec lui, et a été la seule indexation
-  du régime avant 2002.
+  SMIG. Exprimé en part du salaire minimum, il monte avec lui.
+
+  Au secteur non agricole, il succède au minimum de 1982, égal à la moitié du SMIG rapporté à
+  2 400 heures (décret n° 82-1359, article 22) : le décret de 1995 l'abaisse à 30 %. Au
+  secteur agricole, le décret n° 82-1360 n'en prévoyait pas : le plancher y est créé en 1995.
