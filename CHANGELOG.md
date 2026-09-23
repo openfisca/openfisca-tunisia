@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.104 - [#PR3](https://github.com/openfisca/openfisca-tunisia/pull/PR3)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 09/02/1997 au 15/02/1997.
+* Zones impactées : `parameters/retraite/complementaire/survivants`.
+* Détails :
+  - **L'arrêté du 27 janvier 1997 prend effet le 16 février 1997, et non le 9.** Sans clause d'entrée en vigueur, il devient exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis (loi n° 93-64, article 2) ; le JORT n° 11 du 7 février 1997 porte un dépôt le 11 février. La date du 9 appliquait le jour franc d'avant 1993. L'âge de 55 ans en deçà duquel le remariage suspend la pension du conjoint survivant commence donc le 16 février.
+  - **La documentation des survivants décrit l'état de 1978 au passé**, et détaille les quatre articles récrits en 1997 : conjoint survivant, lien de mariage au décès, suspension, rétablissement et non-cumul, plafond égal à la pension du défunt.
+  - Aucun calcul ne change : le régime complémentaire n'est pas calculé.
+
 ## 0.103 - [#446](https://github.com/openfisca/openfisca-tunisia/pull/446)
 
 * Évolution du système socio-fiscal.
