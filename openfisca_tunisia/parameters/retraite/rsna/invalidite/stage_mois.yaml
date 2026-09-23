@@ -1,0 +1,20 @@
+description: Stage requis pour l'ouverture du droit à pension d'invalidité
+values:
+  1974-01-01:
+    value: 60
+metadata:
+  unit: month
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 21 b)"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, p. 917 : l'assuré doit « avoir accompli un stage au moins égal à 60 mois de cotisations dont 6 au cours des 12 mois précédant la première constatation de la maladie ou la déclaration de l'accident ayant entraîné l'état d'invalidité ». Aucun stage n'est exigé de l'assuré victime d'un accident non professionnel qui justifie de l'antériorité de son immatriculation. L'article 64 fixe l'effet du décret au 1er janvier 1974. Lu à l'image."
+    1981-02-19:
+    - title: "Décret n° 81-188 du 14 février 1981, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (article 21 b) nouveau)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo01081.pdf"
+      note: "JORT n° 10 du 17 février 1981, pp. 319-320 (p. 320) : « avoir accompli un stage au moins égal à 60 mois de cotisations. » La durée est inchangée ; la condition de six mois de cotisation au cours des douze mois précédant la première constatation disparaît. Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Lu à l'image."
+documentation: |-
+  Soixante mois depuis 1974. Ce qui change en 1981 est la condition qui accompagnait la
+  durée : de 1974 à 1981, six de ces mois devaient se situer dans les douze mois précédant
+  la première constatation de la maladie ou la déclaration de l'accident. Le décret
+  n° 81-188 la supprime. Une référence de 1981 est attachée sans valeur nouvelle.
