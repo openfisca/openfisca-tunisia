@@ -1,11 +1,11 @@
 description: Majoration du taux par trimestre de cotisation au-delà de quarante
 values:
-  1995-07-13:
+  1995-07-19:
     value: 0.005
 metadata:
   unit: /1
   reference:
-    1995-07-13:
+    1995-07-19:
     - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 26"
       href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
-      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Toute fraction de cotisation supérieure à quarante trimestres ouvre droit, par trimestre supplémentaire, à une majoration de 0,5 % du revenu moyen de référence."
+      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 14 juillet 1995. Toute fraction de cotisation supérieure à quarante trimestres ouvre droit, par trimestre supplémentaire, à une majoration de 0,5 % du revenu moyen de référence."

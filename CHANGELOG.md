@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.105 - [#448](https://github.com/openfisca/openfisca-tunisia/pull/448)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 13/07/1995 au 18/07/1995.
+* Zones impactées : `parameters/retraite/rtns`.
+* Détails :
+  - **Le décret n° 95-1166 prend effet le 19 juillet 1995, et non le 13.** Sans clause d'entrée en vigueur, il devient exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis (loi n° 93-64, article 2) ; le JORT n° 55 du 11 juillet 1995 porte un dépôt le 14 juillet. La date du 13 appliquait le jour franc d'avant 1993. Les 23 paramètres du régime passent au 19 juillet : stage, âges, décote, taux, majoration, plafond, plancher, invalidité, dix classes, heures annuelles du SMIG et première valeur des jours annuels du SMAG.
+  - **Le régime n'est pas né en 1995.** La documentation le disait « institué » par le décret n° 95-1166 ; les non-salariés sont couverts depuis le 1er juillet 1982 par les décrets n° 82-1359 (non agricole) et 82-1360 (agricole), que le décret de 1995 fusionne et abroge. La documentation décrit l'état de 1982 de chaque secteur, sans le verser : les deux secteurs différaient, et une valeur commune serait fausse pour l'un d'eux.
+  - **Le plancher n'a pas été la seule indexation avant 2002**, contrairement à ce qu'écrivait sa documentation : depuis le décret n° 89-1611, le revenu de référence du secteur non agricole suit le SMIG jusqu'à la liquidation, et la pension est révisée par arrêté en cas de majoration du SMIG. Le plancher lui-même succède, au secteur non agricole, à un minimum de la moitié du SMIG (1982) ; il est créé en 1995 au secteur agricole.
+  - Aucun calcul ne change : le régime des non-salariés n'est pas calculé.
+
 ## 0.104 - [#447](https://github.com/openfisca/openfisca-tunisia/pull/447)
 
 * Évolution du système socio-fiscal.
