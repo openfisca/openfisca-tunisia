@@ -1,0 +1,32 @@
+description: Pension d'invalidité du régime des salariés non agricoles
+metadata:
+  order:
+  - stage_mois
+  - taux_base
+  - seuil_majoration_mois
+  - periode_majoration_mois
+  - majoration
+  - plafond_taux
+  - majoration_tierce_personne
+documentation: |-
+  Section 4 du décret n° 74-499, articles 20 à 28. Est invalide l'assuré dont une
+  invalidité d'origine non professionnelle réduit des deux tiers au moins la capacité de
+  travail ou de gain (article 20), qui n'a pas atteint l'âge de la pension de vieillesse et
+  justifie du stage de l'article 21.
+
+  Le taux se construit comme celui de la vieillesse : un taux de base au stage, une
+  majoration par période de cotisation au-delà d'un seuil, un plafond de 80 % du salaire
+  moyen de référence. Les deux réformes ne touchent pas les mêmes pièces.
+
+  | Depuis | Taux de base | Majoration | Au-delà de | Plafond |
+  |---|---:|---|---:|---:|
+  | 1er janvier 1974 | 40 % | 2 % par période entière de 12 mois | 120 mois | 80 % |
+  | 19 février 1981 | 50 % | 2 % par période entière de 12 mois | 120 mois | 80 % |
+  | 22 juillet 1982 | 50 % | 0,5 % par période de 3 mois | 180 mois | 80 % |
+
+  La majoration de 1974 se compte par tranches entières de douze mois : 2 % par an ne se
+  confond pas avec 0,5 % par trimestre, qui majore dès le premier trimestre achevé. D'où
+  deux paramètres, le montant de la majoration et la période qui l'ouvre.
+
+  Avec un taux de base de 50 % et un seuil de 180 mois, le plafond de 80 % est atteint à
+  420 mois, soit 180 + 60 trimestres.

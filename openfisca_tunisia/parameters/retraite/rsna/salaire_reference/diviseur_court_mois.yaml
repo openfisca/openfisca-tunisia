@@ -1,0 +1,21 @@
+description: Nombre de mois qui divise le total des salaires de la période courte
+values:
+  1974-01-01:
+    value: 36
+  1994-07-01:
+    value: null
+metadata:
+  unit: month
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 19"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, p. 917 : « Pour le calcul du salaire mensuel moyen, sont pris en considération dans leur ordre chronologique les trente six ou soixante mois écoulés à la date du 1er janvier de l'année au cours de laquelle l'assuré remplit la condition d'âge pour l'ouverture du droit à pension ou à allocation ou a cessé son activité professionnelle assujettie. Le salaire mensuel moyen est égal au 1/36 ou au 1/60 du total des salaires visés à l'article précédent » L'article 64 fixe l'effet du décret au 1er janvier 1974. Lu à l'image."
+    1990-09-23:
+    - title: "Décret n° 90-1455 du 10 septembre 1990, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (article 18 nouveau)"
+      href: "https://www.pist.tn/jort/1990/1990F/Jo06090.pdf"
+      note: "JORT n° 60 du 21 septembre 1990, p. 1358. Exécutoire un jour franc après sa publication, soit le 23 septembre 1990. Le décret ne récrit que l'article 18 : l'article 19, et avec lui ce diviseur, reste inchangé. Référence attachée sans valeur nouvelle."
+    1994-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du 27 avril 1974 relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (articles 18 et 19 nouveaux)"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "JORT n° 52 du 5 juillet 1994, pp. 1141-1142. Les articles 18 et 19 sont abrogés et remplacés ensemble ; la période de référence et le diviseur sont désormais portés par duree_mois, à partir du 1er juillet 1994, date énoncée par l'article 18 nouveau."

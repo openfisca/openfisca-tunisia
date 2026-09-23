@@ -1,5 +1,9 @@
 description: Plafond du taux de liquidation de la pension de retraite CNRPS
 values:
+  1959-04-01:
+    value: 0.6
+  1970-07-01:
+    value: 0.8
   1981-05-01:
     value: 0.8
   1985-09-12:
@@ -7,6 +11,14 @@ values:
 metadata:
   unit: /1
   reference:
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 22, § II, et article 52"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, pp. 93-100. L'article 22, § II, lu à l'image : la pension « ne peut être supérieure à 60 % de la rémunération indiciaire globale ». L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; la loi n° 59-100 du 20 août 1959 fixe au 3 mai 1956 la date d'effet pour les militaires, qui n'est pas versée ici."
+    1970-07-01:
+    - title: "Décret-loi n° 70-1 du 14 septembre 1970, modifiant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article 1er (article 22, § II nouveau) et article 2"
+      href: "https://www.pist.tn/jort/1970/1970F/Jo04370.pdf"
+      note: "JORT n° 43, fascicule des 11-15-18 septembre 1970, pp. 1186-1187. L'article 22 nouveau, § II, lu à l'image : la pension « ne peut être supérieure à 80 % de la rémunération indiciaire globale ». L'article 2 fait procéder à une nouvelle liquidation des pensions à compter du 1er juillet 1970."
     1981-05-01:
     - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 22, § II nouveau de la loi n° 59-18)"
       href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
@@ -20,4 +32,7 @@ documentation: |-
   le rencontre par construction : à 40 ans de services pour la loi n° 85-12 (20 % + 30 %
   + 40 %), à 160 trimestres pour le barème antérieur.
 
-  Le texte antérieur au 1er mai 1981 n'a pas été lu.
+  Sous la loi n° 59-18, à 2 % par annuité, le plafond de 60 % est atteint à trente
+  annuités, et celui de 80 % à quarante annuités, le maximum liquidable de l'article 20,
+  § III. Le plafond de 80 % date donc du 1er juillet 1970 : la loi n° 81-70 le reconduit
+  au 1er mai 1981 en changeant sa base, la rémunération globale de l'article 21.
