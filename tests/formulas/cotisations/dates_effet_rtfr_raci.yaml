@@ -1,0 +1,55 @@
+# Dates d'effet des cotisations des travailleurs à faibles revenus (RTFR) et des artistes,
+# créateurs et intellectuels (RACI).
+#
+# Aucun des textes ne porte de clause d'entrée en vigueur : chacun devient exécutoire cinq
+# jours après le dépôt de son fascicule au siège du gouvernorat de Tunis, le jour du dépôt
+# n'étant pas compté (loi n° 93-64, article 2).
+#
+# RTFR : les cotisations par branche croisent la clé employeur / salarié de la loi n° 2002-32
+# (article 7, exécutoire le 21 mars 2002) et la ventilation par branche du décret n° 2002-916
+# (article 14, exécutoire le 7 mai 2002). Elles commencent le 7 mai 2002. Un mois se lit au
+# premier du mois : mai 2002 est sans cotisation, juin 2002 la porte. Le taux salarial est
+# de 2,5 %. Le texte assoit la cotisation sur une assiette forfaitaire, les deux tiers du
+# salaire minimum ; le barème l'encode par un seuil de 0,66 SMIG de 48 heures (195,520 D en
+# 2002), au-delà duquel le taux est nul (#401). Ce test ne vérifie que la date : pour un
+# salaire supérieur au seuil, la cotisation vaut 2,5 % de 0,66 SMIG.
+#
+# RACI : la loi n° 2002-104 (article 7 : 11 %, dont 7 points de pensions et 4 points
+# d'assurances sociales) est exécutoire le 5 janvier 2003. Janvier 2003 est sans cotisation,
+# février 2003 la porte.
+
+- name: RTFR, mai 2002, avant le décret n° 2002-916
+  period: 2002-05
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: rtfr
+    salaire_de_base: 1000
+  output:
+    cotisations_salarie: 0
+
+- name: RTFR, juin 2002, premier mois entier sous le décret n° 2002-916
+  period: 2002-06
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: rtfr
+    salaire_de_base: 1000
+  output:
+    cotisations_salarie: 0.025 * 0.66 * 195.52
+
+- name: RACI, janvier 2003, avant la date où la loi n° 2002-104 devient exécutoire
+  period: 2003-01
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: raci
+    salaire_de_base: 1000
+  output:
+    cotisations_salarie: 0
+
+- name: RACI, février 2003, premier mois entier sous la loi n° 2002-104
+  period: 2003-02
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: raci
+    salaire_de_base: 1000
+  output:
+    cotisations_salarie: 0.11 * 1000

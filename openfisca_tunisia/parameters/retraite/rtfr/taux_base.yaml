@@ -1,14 +1,14 @@
 description: Taux de la pension de vieillesse, en part du salaire minimum du secteur
 values:
-  2002-03-17:
+  2002-03-21:
     value: 0.3
 metadata:
   unit: /1
   reference:
-    2002-03-17:
+    2002-03-21:
     - title: "Loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole, article 14"
       href: "https://www.pist.tn/jort/2002/2002F/Jo0222002.pdf"
-      note: "JORT n° 22 du 15 mars 2002, pp. 603-606. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, un jour franc après sa publication. Le montant minimum de la pension de vieillesse est fixé à 30 % du salaire minimum garanti du secteur d'appartenance de l'assuré, en cas de réalisation de la condition de 120 mois."
+      note: "JORT n° 22 du 15 mars 2002, pp. 603-606. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 16 mars 2002. Le montant minimum de la pension de vieillesse est fixé à 30 % du salaire minimum garanti du secteur d'appartenance de l'assuré, en cas de réalisation de la condition de 120 mois."
 documentation: |-
   Ce taux porte sur le salaire minimum entier, SMIG ou SMAG selon le secteur, et non sur
   le salaire de cotisation, qui n'en est que les deux tiers.

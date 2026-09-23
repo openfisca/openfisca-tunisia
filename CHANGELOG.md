@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.107 - [#452](https://github.com/openfisca/openfisca-tunisia/pull/452)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/02/1959 au 31/03/1959 ; du 12/03/2002 au 06/05/2002 ; du 31/12/2002 au 04/05/2003.
+* Zones impactées : `parameters/retraite/rtfr`, `parameters/retraite/raci`, `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr`, `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci`, `parameters/retraite/cnrps/bareme_annuite`.
+* Détails :
+  - **Les textes de 2002 et 2003 deviennent exécutoires selon la loi n° 93-64, non selon la règle d'avant 1993.** Aucun des quatre textes ne porte de clause d'entrée en vigueur ; chacun devient exécutoire cinq jours après le dépôt de son fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64, article 2). Dépôts lus sur la dernière page de chaque fascicule : loi n° 2002-32 (RTFR), JORT n° 22/2002, déposé le 16 mars 2002, exécutoire le **21 mars 2002** ; décret n° 2002-916, JORT n° 35/2002, déposé le 2 mai, exécutoire le **7 mai 2002** ; loi n° 2002-104 (RACI), JORT n° 106/2002, déposé le 31 décembre 2002, exécutoire le **5 janvier 2003** ; décret n° 2003-894, JORT n° 34/2003, déposé le 30 avril, exécutoire le **5 mai 2003**.
+  - **Pensions du RTFR** (`retraite/rtfr`, 14 paramètres) : du 17 au 21 mars 2002 — le 17 appliquait le jour franc d'avant 1993.
+  - **Pensions du RACI** (`retraite/raci`, 26 paramètres) : les valeurs de la loi passent du 2 au 5 janvier 2003, celles du décret du 1er au 5 mai 2003 (taux, classes de revenu, heures annuelles du SMIG, référence du minimum).
+  - **Cotisations du RTFR** : du 12 mars 2002, date de signature de la loi, au **7 mai 2002**. Les quatre valeurs par branche et par payeur croisent la clé employeur / salarié de la loi (article 7) et la ventilation par branche du décret (article 14) : elles n'existent qu'une fois les deux textes en vigueur. Conséquence mesurée : une simulation RTFR d'avril ou de mai 2002 rendait 3,226 D de cotisations salariales et 4,301 D de cotisations patronales pour un salaire de 1 000 D ; elle rend désormais 0 (un mois se lit au premier du mois). Juin 2002 est inchangé.
+  - **Cotisations du RACI** : du 31 décembre 2002, date de publication, au **5 janvier 2003**. Conséquence mesurée : une simulation RACI de janvier 2003 rendait 110 D de cotisations salariales pour un revenu de 1 000 D ; elle rend désormais 0. Février 2003 est inchangé.
+  - **Barème d'annuités de la CNRPS de 1959** (`retraite/cnrps/bareme_annuite`) : du 1er février, date de signature de la loi n° 59-18, au **1er avril 1959**, date à laquelle elle s'applique aux fonctionnaires (article 52, rédaction de la loi n° 59-100 du 20 août 1959). La référence cite désormais l'article 22, § I (2 % par annuité), l'article 20, § III (maximum de 40 annuités) et l'article 52, ainsi que la loi n° 59-100. Le barème rejoint le plafond du taux de 60 % (#444), qui commence le même jour. Aucun calcul de pension de la CNRPS n'aboutissant avant le 12 septembre 1985, aucun résultat ne change.
+  - Aucun chemin de paramètre ne change. Aucun test existant ne change. Un test YAML nouveau, `tests/formulas/cotisations/dates_effet_rtfr_raci.yaml`, encadre les deux bornes de cotisation au mois près (mai et juin 2002, janvier et février 2003).
+
 ## 0.106 - [#450](https://github.com/openfisca/openfisca-tunisia/pull/450)
 
 * Évolution du système socio-fiscal.

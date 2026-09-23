@@ -1,10 +1,10 @@
 description: Assurance Maladie
 brackets:
 - threshold:
-    2002-12-31:
+    2003-01-05:
       value: 0
   rate:
-    2002-12-31:
+    2003-01-05:
       value: 0.0304
     2007-07-01:
       value: 0.0397
@@ -18,9 +18,9 @@ metadata:
   rate_unit: /1
   threshold_unit: currency
   reference:
-    2002-12-31:
+    2003-01-05:
     - title: "Loi n° 2002-104 du 30 décembre 2002 relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 7"
       href: "https://www.pist.tn/jort/2002/2002F/Jo1062002.pdf"
-      note: "JORT n° 106, p. 3187-3190. Fixe le taux à 11 %, réparti 7 points de pensions et 4 points d'assurances sociales — architecture identique à celle des travailleurs non salariés. La loi ne comporte aucune clause d'entrée en vigueur ; la date retenue est celle de la publication. Édition arabe : https://www.pist.tn/jort/2002/2002A/Ja1062002.pdf"
+      note: "JORT n° 106, p. 3187-3190. Fixe le taux à 11 %, réparti 7 points de pensions et 4 points d'assurances sociales — architecture identique à celle des travailleurs non salariés. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 31 décembre 2002. Édition arabe : https://www.pist.tn/jort/2002/2002A/Ja1062002.pdf"
   official_journal_date:
-    2002-12-31: "2002-12-31"
+    2003-01-05: "2002-12-31"

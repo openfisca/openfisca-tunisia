@@ -1,18 +1,18 @@
 description: Taux d'annuité par trimestre validé
 brackets:
 - threshold:
-    1959-02-01:
+    1959-04-01:
       value: 0
   rate:
-    1959-02-01:
+    1959-04-01:
       value: 0.005
 - threshold:
-    1959-02-01:
+    1959-04-01:
       value: 160
     1985-09-12:
       value: 40
   rate:
-    1959-02-01:
+    1959-04-01:
       value: 0
     1985-09-12:
       value: 0.0075
@@ -32,11 +32,26 @@ metadata:
   threshold_unit: trimestre
   rate_unit: /1
   reference:
-    1959-02-01:
-    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite"
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 20, § III, article 22, § I, et article 52"
       href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
-      note: "JORT n° 8/1959, p. 93-100"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, pp. 93-100. L'article 22, § I, lu à l'image : « La pension d'ancienneté ou proportionnelle est fixée à 2 % des émoluments de base par annuité liquidable », soit 0,5 % par trimestre. L'article 20, § III : « Le maximum des annuités liquidables […] est fixé à 40 annuités », soit 160 trimestres. L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature."
+    - title: "Loi n° 59-100 du 20 août 1959, complétant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article premier (article 52, alinéa 1er nouveau)"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo04459.pdf"
+      note: "JORT n° 44, fascicule des 25-28 août 1959, p. 913. L'article 52, alinéa 1er nouveau, lu à l'image : les dispositions de la loi « prennent effet à compter du 3 mai 1956 en ce qui concerne les militaires et leurs ayants droit. Elles sont applicables à compter du 1er avril 1959 aux fonctionnaires ainsi qu'à leurs ayants droit, dont les droits à pension s'ouvriront à cette date. » La date du 3 mai 1956, propre aux militaires, n'est pas versée ici."
     1985-09-12:
     - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 38"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
       note: "JORT n° 20 du 12 mars 1985, p. 362 : les dix premières années à 2 % (0,5 % par trimestre), les dix deuxièmes à 3 % (0,75 % par trimestre), les autres à 2 % (0,5 % par trimestre), dans la limite de 90 % (article 38, dernier alinéa). Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  De 1959 à 1985, un taux unique : 2 % par annuité liquidable (loi n° 59-18, article 22, § I),
+  jusqu'au maximum de 40 annuités (article 20, § III). Le barème commence le 1er avril 1959,
+  date à laquelle la loi s'applique aux fonctionnaires (article 52, rédaction de la loi
+  n° 59-100), et non le 5 février 1959, date de sa signature.
+
+  Sous la loi n° 59-18, le décompte final des annuités se fait par semestre : la fraction de
+  semestre égale ou supérieure à trois mois compte pour six mois, la fraction inférieure est
+  négligée (article 20, § II). Le barème, exprimé en trimestres, ne porte pas cet arrondi.
+
+  Depuis le 12 septembre 1985, le barème de l'article 38 de la loi n° 85-12 : 2 % par année
+  pour les dix premières, 3 % pour les dix suivantes, 2 % au-delà.
