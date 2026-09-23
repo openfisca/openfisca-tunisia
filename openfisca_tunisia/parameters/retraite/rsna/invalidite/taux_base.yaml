@@ -1,0 +1,17 @@
+description: Taux de la pension d'invalidité lorsque le stage est réalisé, en part du salaire moyen de référence
+values:
+  1974-01-01:
+    value: 0.4
+  1981-02-19:
+    value: 0.5
+metadata:
+  unit: /1
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 22, alinéa 1er"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, p. 917 : « L'invalidité ouvre droit à une pension d'invalidité dont le taux est fixé à 40 % du salaire moyen de référence défini à l'article 18 lorsque se trouve réalisée la condition de 60 mois de cotisation énoncée à l'article 21, b) précédent. » L'article 64 fixe l'effet du décret au 1er janvier 1974. Lu à l'image."
+    1981-02-19:
+    - title: "Décret n° 81-188 du 14 février 1981, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (article 22, 1er alinéa nouveau)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo01081.pdf"
+      note: "JORT n° 10 du 17 février 1981, pp. 319-320 (p. 320) : le taux est « fixé à 50 % du salaire moyen de référence défini à l'article 18 lorsque se trouve réalisée la condition de 60 mois de cotisation ». Le décret n'énonce pas de date d'effet : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Lu à l'image."
