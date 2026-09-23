@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.108 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Changement mineur.
+* Détails :
+  - **La documentation de `retraite/rsa/pension_min` rend compte de la recherche de sa source, sans en trouver.** La valeur de 0,4 SMAG n'est établie par aucun texte : ni les articles 45 à 88 de la loi n° 81-6, ni son rectificatif du 17 avril 1981, ni ses modificatifs (lois n° 89-73, 95-102, 96-66, 97-61 et 2007-43), ni aucun intitulé du Journal officiel ne portent de minimum de pension pour le régime des salariés agricoles. La valeur n'est pas modifiée : elle est lue par le calcul de la pension du régime, dont la revue doit décider s'il garde un plancher.
+  - Aucune valeur, aucune date, aucun résultat ne change.
+
 ## 0.107 - [#452](https://github.com/openfisca/openfisca-tunisia/pull/452)
 
 * Évolution du système socio-fiscal.
