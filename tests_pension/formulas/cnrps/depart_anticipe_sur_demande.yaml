@@ -1,0 +1,87 @@
+# Départ anticipé sur demande, cadre commun (loi n° 85-12, article 30).
+# 55 ans et 35 ans de services depuis le 12 septembre 1985 ; 57 ans et 37 ans depuis le
+# 2 juillet 2007, date où la loi n° 2007-43 devient exécutoire (dépôt au gouvernorat le
+# 27 juin 2007). L'exercice annuel lit les paramètres au 1er janvier : 2007 relève encore
+# de la rédaction de 1985, 2008 de celle de 2007.
+
+- name: Exercice 2007 — âge et durée requis, rédaction de 1985
+  period: 2007
+  input:
+    depart_anticipe_sur_demande: true
+  output:
+    cnrps_age_requis: 55
+    cnrps_duree_requise_annees: 35
+
+- name: Exercice 2008 — âge et durée requis, rédaction de 2007
+  period: 2008
+  input:
+    depart_anticipe_sur_demande: true
+  output:
+    cnrps_age_requis: 57
+    cnrps_duree_requise_annees: 37
+
+- name: Exercice 2007 — 55 ans et 140 trimestres, éligible
+  period: 2007
+  input:
+    age: 55
+    cnrps_duree_assurance: 140
+    depart_anticipe_sur_demande: true
+    cnrps_salaire_de_base:
+      2007: 1000
+  output:
+    cnrps_eligible: true
+
+- name: Exercice 2007 — 54 ans, non éligible
+  period: 2007
+  input:
+    age: 54
+    cnrps_duree_assurance: 140
+    depart_anticipe_sur_demande: true
+    cnrps_salaire_de_base:
+      2007: 1000
+  output:
+    cnrps_eligible: false
+
+- name: Exercice 2007 — 55 ans et 139 trimestres, non éligible
+  period: 2007
+  input:
+    age: 55
+    cnrps_duree_assurance: 139
+    depart_anticipe_sur_demande: true
+    cnrps_salaire_de_base:
+      2007: 1000
+  output:
+    cnrps_eligible: false
+
+- name: Exercice 2008 — 57 ans et 148 trimestres, éligible
+  period: 2008
+  input:
+    age: 57
+    cnrps_duree_assurance: 148
+    depart_anticipe_sur_demande: true
+    cnrps_salaire_de_base:
+      2008: 1000
+  output:
+    cnrps_eligible: true
+
+- name: Exercice 2008 — 56 ans, non éligible
+  period: 2008
+  input:
+    age: 56
+    cnrps_duree_assurance: 148
+    depart_anticipe_sur_demande: true
+    cnrps_salaire_de_base:
+      2008: 1000
+  output:
+    cnrps_eligible: false
+
+- name: Exercice 2008 — 57 ans et 147 trimestres, non éligible
+  period: 2008
+  input:
+    age: 57
+    cnrps_duree_assurance: 147
+    depart_anticipe_sur_demande: true
+    cnrps_salaire_de_base:
+      2008: 1000
+  output:
+    cnrps_eligible: false
