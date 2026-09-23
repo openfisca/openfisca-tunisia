@@ -230,10 +230,11 @@ class cotisations_employeur(Variable):
             individu(f"{cotisation}", period) for cotisation in cotisations_employeur
         )
         # La réduction conventionnelle de deux points (loi n° 97-4, art. 41 nouveau § 2) ne
-        # peut pas rendre la cotisation patronale négative. Le plancher n'est pas décoratif :
-        # la décomposition par branche du régime général n'est renseignée qu'à partir du
-        # 1er janvier 2003 pour les pensions, si bien qu'entre 1996 et 2002 le total patronal
-        # modélisé est inférieur aux deux points que le texte retranche.
+        # peut pas rendre la cotisation patronale négative. Entre 1996 et 2002, la
+        # décomposition par branche du régime général est incomplète (maladie, maternité et
+        # décès à partir de février 1997, prestations familiales à partir de 2003) : le
+        # plancher garde le total patronal modélisé positif quelle que soit la branche qui
+        # manque.
         reduction = individu("reduction_cotisation_conventionnelle_employeur", period)
         return max_(cotisations_brutes - reduction, 0)
 

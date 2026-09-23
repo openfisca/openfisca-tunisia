@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.96 - [#439](https://github.com/openfisca/openfisca-tunisia/pull/439)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1974 au 31/12/2002.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_employeur/retraite`, `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_salarie/retraite`.
+* Détails :
+  - **La branche pensions du régime des salariés non agricoles commence en 1974, et non plus en 2003.** Elle additionne deux ressources du décret n° 74-499 : la cotisation propre de l'article 9 et la quote-part de l'article 5 b), prélevée sur le taux global des régimes de la loi n° 60-30. Avant cette version, toute cotisation de retraite RSNA antérieure au 1er janvier 2003 valait zéro.
+  - **La quote-part**, en vingtièmes de « la masse des cotisations patronales et ouvrières » : 1,25/20e au 1er janvier 1974, 4,25/20e au 1er janvier 1988 (décret n° 88-1137, art. 2), 6,25/20e au 1er janvier 1994 (décret n° 94-1429, art. 2), 7,25/20e au 1er janvier 2003 (valeur existante). Toutes ces dates sont énoncées par les textes.
+  - **La cotisation propre** : 3,75 % en 1974, dont 2,5 % patronaux et 1,25 % ouvriers. Le décret n° 94-1429 la porte à 5,75 %, mais ne rend la part ouvrière exigible que par paliers : 1,75 %, 2,25 % et 2,75 % aux 1er juillet 1994, 1995 et 1996. Ce sont ces taux exigibles qui sont versés. Le décret n° 97-555 récrit l'article 9 à 5,25 %, dont 2,75 % ouvriers, avant l'échéance du palier de 3,25 % prévu au 1er juillet 1997, qui n'a donc jamais couru. Ce décret ne change aucune valeur : il est cité, avec sa date exécutoire au plus tôt le 9 avril 1997.
+  - **Partage de la quote-part.** Aucun texte ne le fixe : la quote-part est prélevée sur une masse commune. Jusqu'en 1997, le taux global est de 15 points patronaux et 5 points ouvriers, et le partage versé est celui de la masse (trois quarts, un quart). Depuis la loi n° 97-4 (18 %, 13/5), la quote-part est lue « en points », comme la valeur de 2003 et comme la caisse la lit, et répartie selon la clé 13/18. La documentation chiffre la lecture littérale (6,25/20 × 18 = 5,625 points de 1997 à 2002, 6,525 points depuis 2003, soit 11,775 % pour la branche au lieu de 12,5 %).
+  - Valeurs de la branche, employeur / salarié : 3,4375 / 1,5625 % en 1974 ; 5,6875 / 2,3125 % en 1988 ; 7,1875 / 2,8125 % au 1er janvier 1994 ; part salariale à 3,3125, 3,8125 et 4,3125 % aux 1er juillet 1994, 1995 et 1996 ; 7,0139 / 4,4861 % au 4 février 1997 ; inchangé depuis 2003.
+  - **Un résultat existant change** : le test « Premier mois d'application » de la réduction conventionnelle (octobre 1996) attendait une cotisation patronale nulle, plancher compris, parce que la branche pensions était vide avant 2003. Elle vaut désormais 64,097 dinars pour 1 000 dinars de salaire — fonds spécial de l'État, accidents du travail et pensions, moins les deux points de la réduction. Le test est renommé et sa valeur écrite en clair. Le commentaire de la formule, qui justifiait le plancher par l'absence de la branche pensions, est mis à jour.
+  - Tests de bornes ajoutés dans `tests/formulas/cotisations/cotisation_retraite.yaml`, de décembre 1973 à janvier 2003.
+
 ## 0.95 - [#438](https://github.com/openfisca/openfisca-tunisia/pull/438)
 
 * Évolution du système socio-fiscal.

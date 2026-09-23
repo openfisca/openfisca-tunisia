@@ -1,31 +1,126 @@
 description: Pensions
 brackets:
 - threshold:
-    2003-01-01:
+    1974-01-01:
       value: 0
   rate:
+    1974-01-01:
+      value: 0.015625
+    1988-01-01:
+      value: 0.023125
+    1994-01-01:
+      value: 0.028125
+    1994-07-01:
+      value: 0.033125
+    1995-07-01:
+      value: 0.038125
+    1996-07-01:
+      value: 0.043125
+    1997-02-04:
+      value: 0.044861
     2003-01-01:
       value: 0.047361
 metadata:
   rate_unit: /1
   threshold_unit: currency
   reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, articles 5 b) et 9"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, pp. 915-919 (art. 5 et 9 : p. 916). Deux ressources. L'article 5 b) affecte au régime de pensions « une quote-part égale à 1,25/20e de la masse des cotisations patronales et ouvrières provenant des régimes de sécurité sociale définis par la loi n° 60-30 ». L'article 9 institue une cotisation propre de 3,75 % des salaires, dont 2,5 % à la charge de l'employeur et 1,25 % à la charge du travailleur. L'article 64 fixe l'effet du décret au 1er janvier 1974. Valeur : 1,25 point de cotisation propre et 1,25/20e des 5 points ouvriers de l'article 41 de la loi n° 60-30, soit 0,3125 point : 1,5625 %."
+    - title: "Loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale, article 41"
+      href: "https://www.pist.tn/jort/1960/1960F/Jo05760.pdf"
+      note: "JORT n° 57, fascicule des 13-16 décembre 1960, p. 1605. Taux global des régimes de la loi : 15 % à la charge des employeurs et 5 % à la charge des travailleurs. C'est la masse dont l'article 5 b) du décret n° 74-499 prélève sa quote-part."
+    1988-01-01:
+    - title: "Décret n° 88-1137 du 11 juin 1988, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, articles 1er (article 5 b) nouveau) et 2"
+      href: "https://www.pist.tn/jort/1988/1988F/Jo04388.pdf"
+      note: "JORT n° 43 du 24 juin 1988, p. 942. Porte la quote-part à 4,25/20e ; l'article 2 fait prendre effet au décret à partir du 1er janvier 1988. La cotisation propre est inchangée. Valeur : 1,25 + 4,25/20 × 5 = 1,25 + 1,0625 = 2,3125 %."
+    1994-01-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du 27 avril 1974 relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, articles 1er (article 5 b) nouveau) et 2"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "JORT n° 52 du 5 juillet 1994, pp. 1141-1142. Porte la quote-part à 6,25/20e ; l'article 2 donne à cette seule disposition effet au 1er janvier 1994. La part des travailleurs dans la cotisation propre reste de 1,25 % jusqu'au premier palier de l'article 9 nouveau. Valeur : 1,25 + 6,25/20 × 5 = 1,25 + 1,5625 = 2,8125 %."
+    1994-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du 27 avril 1974 relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (article 9 nouveau)"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "JORT n° 52 du 5 juillet 1994, pp. 1141-1142. L'article 9 nouveau fixe la cotisation propre à 5,75 %, dont 2,5 % à la charge des employeurs et 3,25 % à la charge des travailleurs, cette dernière part étant exigible par paliers : 1,75 % à partir du 1er juillet 1994. La date est celle que l'article énonce. Valeur : 1,75 + 1,5625 = 3,3125 %."
+    1995-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, article 1er (article 9 nouveau), deuxième palier"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "Part des travailleurs exigible de 2,25 % à partir du 1er juillet 1995. Valeur : 2,25 + 1,5625 = 3,8125 %."
+    1996-07-01:
+    - title: "Décret n° 94-1429 du 30 juin 1994, article 1er (article 9 nouveau), troisième palier"
+      href: "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf"
+      note: "Part des travailleurs exigible de 2,75 % à partir du 1er juillet 1996. Valeur : 2,75 + 1,5625 = 4,3125 %."
+    1997-02-04:
+    - title: "Loi n° 97-4 du 3 février 1997 modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 41 (nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo01097.pdf"
+      note: "JORT n° 10, p. 155. Le taux global passe à 18 %, dont 13 % à la charge de l'employeur et 5 % à la charge du travailleur. La quote-part de 6,25/20e est lue « en points » (6,25 points de salaire), comme au 1er janvier 2003, et répartie selon la clé 5/18 du nouveau taux global : 6,25 × 5/18 = 1,7361 point. Valeur : 2,75 + 1,7361 = 4,4861 %. La date est celle que portent les autres branches du taux global dans cet arbre, soit la publication du 4 février 1997 ; ce n'est pas la date où la loi devient exécutoire selon l'article 2 de la loi n° 93-64, cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, dépôt dont la date n'est pas connue. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01097.pdf"
+    - title: "Décret n° 97-555 du 31 mars 1997, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 9 (nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo02797.pdf"
+      note: "JORT n° 27 du 4 avril 1997, p. 553. Abroge et remplace l'article 9 : cotisation propre de 5,25 %, dont 2,75 % à la charge des travailleurs, soit le niveau exigible depuis le 1er juillet 1996. Le palier de 3,25 % que le décret n° 94-1429 prévoyait au 1er juillet 1997 disparaît avant son échéance. Le décret n'énonce pas de date d'effet ; il devient exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis (loi n° 93-64, article 2), au plus tôt le 9 avril 1997, et en tout état de cause avant le 1er juillet 1997. Il n'ouvre donc aucune valeur nouvelle ici."
     2003-01-01:
     - title: "Décret n° 2003-1212 du 2 juin 2003 modifiant le décret n° 74-499 du 27 avril 1974 relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 5 b) nouveau"
       href: "https://www.pist.tn/jort/2003/2003F/Jo0462003.pdf"
       note: "JORT n° 46, p. 1834-1835. Porte à 7,25/20e la quote-part du taux global affectée au régime de pensions, avec effet au 1er janvier 2003 (article 2). C'est la dernière pièce de la construction : avant elle, la ventilation par branche du taux global n'est pas celle que porte ce paramètre. Édition arabe : https://www.pist.tn/jort/2003/2003A/Ja0462003.pdf"
+    - title: "Décret n° 97-555 du 31 mars 1997, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 9 (nouveau)"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo02797.pdf"
+      note: "JORT n° 27 du 4 avril 1997, p. 553. Source des 5,25 points de cotisation propre, dont 2,75 à la charge des travailleurs, que cette valeur additionne à la quote-part. Aucun texte postérieur ne récrit l'article 9."
     - title: "Loi n° 97-4 du 3 février 1997 modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 41 (nouveau)"
       href: "https://www.pist.tn/jort/1997/1997F/Jo01097.pdf"
       note: "JORT n° 10, p. 155. L'article 41 (nouveau) porte le taux global des régimes de la loi n° 60-30 à 18 %, réparti 13 % à la charge de l'employeur et 5 % à la charge du travailleur. La loi n'énonce pas de date d'effet pour ce taux : la seule date qu'elle fixe, le 1er octobre 1996, porte sur la réduction conventionnelle de deux points du paragraphe 2. La date retenue ici est celle de la publication. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01097.pdf"
 documentation: |
-  Le partage employeur/salarié de cette branche n'est pas proportionnel, et l'écart n'a pas
-  de texte. L'article 41 (nouveau) de la loi n° 60-30 répartit le taux global de 18 % en 13
-  points d'employeur et 5 points de travailleur. Appliquée branche par branche, cette clé
-  donnerait 5,2361 / 2,0139 pour les pensions (7,25) et 2,2389 / 0,8611 pour les prestations
-  familiales (3,10). Les valeurs versées ici sont 5,2639 / 1,9861 et 2,2111 / 0,8889 :
-  0,0278 point est déplacé des prestations familiales vers les pensions du côté de
-  l'employeur, et en sens inverse du côté du salarié. Les totaux par branche et le taux
-  global sont inchangés.
+  La cotisation de la branche pensions additionne deux ressources que le décret n° 74-499
+  distingue : une cotisation propre (article 9), dont le texte fixe lui-même le partage entre
+  employeur et travailleur, et une quote-part du taux global des régimes de la loi n° 60-30
+  (article 5 b)), exprimée en vingtièmes de « la masse des cotisations patronales et
+  ouvrières ».
+
+  | Depuis | Quote-part | Part ouvrière de la quote-part | Cotisation propre ouvrière | Total |
+  |---|---:|---:|---:|---:|
+  | 1er janvier 1974 | 1,25/20e | 0,3125 | 1,25 | 1,5625 |
+  | 1er janvier 1988 | 4,25/20e | 1,0625 | 1,25 | 2,3125 |
+  | 1er janvier 1994 | 6,25/20e | 1,5625 | 1,25 | 2,8125 |
+  | 1er juillet 1994 | 6,25/20e | 1,5625 | 1,75 | 3,3125 |
+  | 1er juillet 1995 | 6,25/20e | 1,5625 | 2,25 | 3,8125 |
+  | 1er juillet 1996 | 6,25/20e | 1,5625 | 2,75 | 4,3125 |
+  | 4 février 1997 | 6,25/20e | 1,7361 | 2,75 | 4,4861 |
+  | 1er janvier 2003 | 7,25/20e | 1,9861 | 2,75 | 4,7361 |
+
+  Le décret n° 94-1429 fixe la cotisation propre à 5,75 %, mais n'en rend la part des
+  travailleurs exigible que par paliers : 1,75 %, 2,25 %, 2,75 % puis 3,25 % aux 1er juillet
+  1994, 1995, 1996 et 1997. Les valeurs versées sont les taux exigibles. Le dernier palier
+  n'a jamais couru : le décret n° 97-555 récrit l'article 9 à 5,25 %, dont 2,75 % à la
+  charge des travailleurs, avant le 1er juillet 1997.
+
+  Aucun texte ne partage la quote-part entre employeur et travailleur : elle est prélevée
+  sur une masse commune. Le partage versé ici est celui de cette masse. Tant que le taux
+  global est de 20 % (15 points patronaux, 5 points ouvriers), prélever 1,25/20e de la
+  masse revient à prélever 1,25/20e de chacune de ses deux parts, soit 0,9375 point patronal
+  et 0,3125 point ouvrier.
+
+  Depuis la loi n° 97-4, qui ramène le taux global à 18 %, la fraction se lit de deux
+  façons. Lue « en points », elle vaut 6,25 points de salaire, puis 7,25 depuis 2003 :
+  c'est la lecture de la caisse, qui publie pour la branche un taux de 12,5 %. Lue
+  littéralement, comme une fraction des 18 %, elle vaut 6,25/20 × 18 = 5,625 points, puis
+  7,25/20 × 18 = 6,525 points, soit une branche à 11,775 % depuis 2003. Aucun texte
+  retrouvé n'a converti la fraction après 1997. Ce paramètre suit la lecture « en points »,
+  et répartit ces points selon la clé 5/18 du nouveau taux global. Dans la lecture
+  littérale, la part ouvrière de la quote-part resterait de 6,25/20 × 5 = 1,5625 point de
+  1997 à 2002, et serait de 7,25/20 × 5 = 1,8125 point depuis 2003.
+
+  Le taux global de 20 % retenu de 1974 à 1997 est celui de la rédaction d'origine de
+  l'article 41 de la loi n° 60-30 : le dépouillement n'a retrouvé aucun texte qui le
+  modifie avant la loi n° 97-4, sans que tous les modificatifs de la loi aient été relus.
+
+  Au 1er janvier 2003, le partage employeur/salarié de cette branche n'est pas
+  proportionnel, et l'écart n'a pas de texte. L'article 41 (nouveau) de la loi n° 60-30
+  répartit le taux global de 18 % en 13 points d'employeur et 5 points de travailleur.
+  Appliquée branche par branche, cette clé donnerait 5,2361 / 2,0139 pour les pensions
+  (7,25) et 2,2389 / 0,8611 pour les prestations familiales (3,10). Les valeurs versées ici
+  sont 5,2639 / 1,9861 et 2,2111 / 0,8889 : 0,0278 point est déplacé des prestations
+  familiales vers les pensions du côté de l'employeur, et en sens inverse du côté du
+  salarié. Les totaux par branche et le taux global sont inchangés.
 
   Aucun texte lu n'établit ce déplacement. Il est conservé parce qu'il fait tomber les totaux
-  publiés par la CNSS, non parce qu'une source le fixe.
+  publiés par la CNSS, non parce qu'une source le fixe. Il n'est pas reporté sur la période
+  1997-2002, dont le partage suit la clé 5/18 sans correction.
