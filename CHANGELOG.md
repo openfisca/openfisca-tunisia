@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.97 - [#449](https://github.com/openfisca/openfisca-tunisia/pull/449)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `parameters/retraite/rsna/invalidite`.
+* Détails :
+  - **Verse les paramètres de la pension d'invalidité du régime des salariés non agricoles**, que l'arbre ne portait pas, alors que quatre régimes à renvoi (non-salariés, Tunisiens à l'étranger, faibles revenus, artistes) portaient déjà les leurs. Section 4 du décret n° 74-499, lue à l'image.
+  - Stage de 60 mois depuis 1974 (art. 21 b)) ; la condition de six mois au cours des douze derniers, présente en 1974, disparaît avec le décret n° 81-188 : référence attachée sans valeur nouvelle.
+  - Taux de base : 40 % au 1er janvier 1974 (art. 22 al. 1), 50 % au 19 février 1981 (décret n° 81-188, exécutoire un jour franc après sa publication).
+  - Majoration : 2 % par période entière de 12 mois au-delà de 120 mois en 1974 (art. 22 al. 2) ; 0,5 % par période de 3 mois au-delà de 180 mois au 22 juillet 1982 (décret n° 82-1030, art. 4). La majoration de 1974 se compte par années entières, et n'est donc pas versée comme 0,5 % par trimestre : elle est décrite par deux paramètres, `majoration` et `periode_majoration_mois`.
+  - Plafond de 80 % depuis 1974, reconduit en 1982 ; bonification de 20 % pour tierce personne (art. 23).
+  - Aucun calcul ne change : le système des pensions ne calcule pas la pension d'invalidité du régime.
+
 ## 0.96 - [#439](https://github.com/openfisca/openfisca-tunisia/pull/439)
 
 * Évolution du système socio-fiscal.
