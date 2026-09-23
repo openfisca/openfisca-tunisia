@@ -1,14 +1,15 @@
 description: Nombre maximal d'enfants ouvrant droit aux allocations familiales
 values:
-  1960-01-01:
+  1961-04-01:
     value: 4
   1989-01-01:
     value: 3
 metadata:
   reference:
-    1960-01-01:
-      title: Article 52 de la loi n° 60-30 du 14 décembre 1960, JORT n° 57 de 1960, p. 1606
+    1961-04-01:
+      title: Article 52 de la loi n° 60-30 du 14 décembre 1960, JORT n° 57 des 13-16 décembre 1960, p. 1606 ; entrée en vigueur le 1er avril 1961 (art. 130, p. 1612)
       href: https://www.pist.tn/jort/1960/1960F/Jo05760.pdf
+      note: "Article 130 : « La présente loi entre en vigueur le 1er avril 1961, sauf en ce qui concerne les dispositions prévues par les articles 1 à 33, 119, 124 à 126 et 129, qui sont d'application immédiate. » L'article 52 n'est pas de ceux-là."
     1989-01-01:
       title: Article premier de la loi n° 88-38 du 6 mai 1988, JORT n° 33 des 13-17 mai 1988, p. 735 ; effet au 1er janvier 1989 (art. 5)
       href: https://www.pist.tn/jort/1988/1988F/Jo03388.pdf

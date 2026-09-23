@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.106 - [#450](https://github.com/openfisca/openfisca-tunisia/pull/450)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1960 au 31/12/1975.
+* Zones impactées : `parameters/prestations/contributives/prestations_familiales/af`.
+* Détails :
+  - **Le plafond trimestriel d'origine des allocations familiales est de 52,500 dinars, non de 500.** L'article 61, 2e alinéa, de la loi n° 60-30, lu à l'image dans les deux éditions du JORT n° 57 des 13-16 décembre 1960 (p. 1607 en français, p. 1945 en arabe), exclut du calcul « les parties des salaires, rémunérations ou gains […] dépassant 52 D, 500 par trimestre » ; l'édition arabe écrit « 500ر52 دينارا ». Le « 52 D, 500 » avait été lu comme une bande de 52 à 500 dinars. `af/plaf_trim` passe de 500 à 52,5 ; le passage à 72 dinars en 1976 (loi n° 75-82) est une hausse du plafond, non une baisse.
+  - **Supprime `af/plancher_trim`.** Sa seule valeur, 52 dinars, venait de la même lecture ; aucun texte lu ne fonde un plancher d'assiette. Le paramètre n'est lu par aucune formule.
+  - **La loi n° 60-30 entre en vigueur le 1er avril 1961 pour ses articles 52 et 61**, et non le 1er janvier 1960, date antérieure au texte lui-même. Son article 130 (p. 1612) fixe cette date, sauf pour les articles 1 à 33, 119, 124 à 126 et 129, d'application immédiate. Le plafond, les quatre taux de 15 % (`af/taux/enf1` à `enf4`) et le nombre maximal de quatre enfants (`af/nb_enfants_max`) commencent donc le 1er avril 1961 ; avant cette date, ils n'ont plus de valeur, le régime antérieur n'étant pas établi. La référence à l'article 61 cite la p. 1607 au lieu de la p. 1606.
+  - Aucun résultat de calcul ne change : la variable `af` ne se calcule aujourd'hui pour aucune période. Le contrôle des valeurs reste dans `tests/test_prestations_familiales.py`, mis à jour aux bornes du 31 mars et du 1er avril 1961, du 31 décembre 1975 et du 1er janvier 1976.
+
 ## 0.105 - [#448](https://github.com/openfisca/openfisca-tunisia/pull/448)
 
 * Évolution du système socio-fiscal.

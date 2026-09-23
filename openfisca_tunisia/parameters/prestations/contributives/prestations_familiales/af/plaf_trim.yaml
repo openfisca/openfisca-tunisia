@@ -1,7 +1,7 @@
 description: Plafond de la rémunération globale trimestrielle servant d'assiette
 values:
-  1960-01-01:
-    value: 500
+  1961-04-01:
+    value: 52.5
   1976-01-01:
     value: 72
   1986-05-01:
@@ -9,9 +9,10 @@ values:
 metadata:
   unit: currency
   reference:
-    1960-01-01:
-      title: Article 61 de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, JORT n° 57 de 1960, p. 1606
+    1961-04-01:
+      title: Article 61, 2e alinéa, de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, JORT n° 57 des 13-16 décembre 1960, p. 1607 ; entrée en vigueur le 1er avril 1961 (art. 130, p. 1612)
       href: https://www.pist.tn/jort/1960/1960F/Jo05760.pdf
+      note: "Article 130 : « La présente loi entre en vigueur le 1er avril 1961, sauf en ce qui concerne les dispositions prévues par les articles 1 à 33, 119, 124 à 126 et 129, qui sont d'application immédiate. » L'article 61 n'est pas de ceux-là."
     1976-01-01:
       title: Article premier de la loi n° 75-82 du 30 décembre 1975, JORT n° 87 des 30-31 décembre 1975, p. 2852 ; effet au 1er janvier 1976 (art. 2)
       href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
@@ -22,13 +23,19 @@ documentation: |
   Plafond de la rémunération globale trimestrielle à laquelle s'appliquent les taux des
   allocations familiales (article 61 de la loi n° 60-30).
 
-  Date corrigée. La valeur de 122 dinars était encodée au 1er janvier 1960 en citant la loi
-  n° 88-38 de 1988 — une valeur juste rattachée à la mauvaise date, et au mauvais texte. C'est
-  la loi n° 86-75 qui porte le plafond à 122 dinars, avec effet au 1er mai 1986. Ce que la loi
-  n° 88-38 apporte, c'est la suppression du quatrième rang, non le plafond.
+  Rédaction d'origine de l'article 61, 2e alinéa, lue à l'image dans les deux éditions du
+  JORT n° 57 des 13-16 décembre 1960 (p. 1607 en français, p. 1945 en arabe) : « Toutefois,
+  les parties des salaires, rémunérations ou gains ainsi déterminés, et dépassant 52 D, 500 par
+  trimestre, n'entrent pas en compte pour le calcul des allocations familiales afférentes au
+  trimestre considéré. » L'édition arabe porte « 500ر52 دينارا », soit 52,500 dinars. C'est un
+  plafond unique de 52,500 dinars, et non une bande de 52 à 500 dinars comme on l'avait lu.
 
-  Attention à la période 1960-1975. L'article 61 d'origine ne fixe pas un plafond simple mais
-  une bande : les taux s'appliquent à la rémunération trimestrielle comprise entre 52 et
-  500 dinars. La borne basse est dans `plancher_trim`. La loi n° 75-82 supprime la bande au
-  profit d'un plafond unique de 72 dinars, à des taux plus élevés — la baisse apparente de
-  500 à 72 dinars n'est donc pas une coupe.
+  La loi n° 75-82 porte le plafond à 72 dinars au 1er janvier 1976, avec un barème dégressif par
+  rang, puis la loi n° 86-75 à 122 dinars au 1er mai 1986.
+
+  Aucune valeur avant le 1er avril 1961 : le régime antérieur des allocations familiales,
+  abrogé par l'article 131 de la loi n° 60-30, n'est pas établi ici.
+
+  Date corrigée. La valeur de 122 dinars était encodée au 1er janvier 1960 en citant la loi
+  n° 88-38 de 1988. C'est la loi n° 86-75 qui porte le plafond à 122 dinars, avec effet au
+  1er mai 1986 ; la loi n° 88-38 supprime le quatrième rang, non le plafond.
