@@ -1,0 +1,128 @@
+# Pensions de survivants du régime des salariés agricoles (loi n° 81-6 du 12 février 1981,
+# articles 60 à 69, en vigueur le 1er janvier 1981). Pension du défunt : 1 000 dinars.
+#
+# Conjoint à la moitié (article 62) ; orphelin au cinquième, aux trois dixièmes s'il est
+# orphelin de père et de mère (article 65) ; le total ne dépasse pas la pension du défunt,
+# les pensions d'orphelins étant réduites (article 69). À la différence du régime non
+# agricole, aucune majoration du conjoint, et le taux de l'orphelin de père et de mère
+# demeure.
+#
+# Remariage (article 63) : jusqu'au 3 août 1996, il supprime la pension ; depuis le
+# 4 août 1996 (loi n° 96-66), il ne la suspend que s'il intervient avant 55 ans. Un mois
+# se lit au premier du mois : août 1996 relève encore de la rédaction de 1981.
+
+- name: RSA décembre 1980, avant l'entrée en vigueur de la loi n° 81-6
+  period: 1980-12
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    rsa_pension_de_reversion: 0
+    rsa_pension_orphelins_totale: 0
+
+- name: RSA janvier 1981, conjoint sans orphelin, la moitié
+  period: 1981-01
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsa_pension_de_reversion: 0.5 * 1000
+    rsa_pension_orphelins_totale: 0
+
+- name: RSA 1990, conjoint et un orphelin, un cinquième pour l'orphelin
+  period: 1990-06
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    rsa_pension_de_reversion: 0.5 * 1000
+    rsa_pension_orphelins_totale: 0.2 * 1000
+
+- name: RSA 1990, trois orphelins dont un de père et de mère, plafond de l'article 69
+  period: 1990-06
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 3
+    nombre_orphelins_pere_et_mere_eligibles: 1
+  output:
+    # 2 × 0,2 + 0,3 = 0,7, ramené à 1 - 0,5.
+    rsa_pension_de_reversion: 0.5 * 1000
+    rsa_pension_orphelins_totale: (1 - 0.5) * 1000
+
+- name: RSA 2024, sans conjoint, un orphelin de père et de mère, trois dixièmes
+  period: 2024-01
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    nombre_orphelins_eligibles: 1
+    nombre_orphelins_pere_et_mere_eligibles: 1
+  output:
+    rsa_pension_de_reversion: 0
+    rsa_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSA 2024, sans conjoint, six orphelins, plafond de la pension du défunt
+  period: 2024-01
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    nombre_orphelins_eligibles: 6
+  output:
+    # 6 × 0,2 = 1,2, ramené à 1.
+    rsa_pension_de_reversion: 0
+    rsa_pension_orphelins_totale: 1000
+
+- name: RSA 2024, assuré vivant, rien
+  period: 2024-01
+  input:
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    rsa_pension_de_reversion: 0
+    rsa_pension_orphelins_totale: 0
+
+- name: RSA août 1996, conjoint remarié à 60 ans, pension supprimée (article 63 de 1981)
+  period: 1996-08
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+    nombre_orphelins_eligibles: 1
+  output:
+    # Sans pension de conjoint, le plafond ne réduit pas l'orphelin.
+    rsa_pension_de_reversion: 0
+    rsa_pension_orphelins_totale: 0.2 * 1000
+
+- name: RSA septembre 1996, conjoint remarié à 60 ans, pension maintenue (loi n° 96-66)
+  period: 1996-09
+  input:
+    age_deces: 55
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+    nombre_orphelins_eligibles: 1
+  output:
+    rsa_pension_de_reversion: 0.5 * 1000
+    rsa_pension_orphelins_totale: 0.2 * 1000
+
+- name: RSA septembre 1996, conjoint remarié à 50 ans, pension suspendue (loi n° 96-66)
+  period: 1996-09
+  input:
+    age_deces: 45
+    rsa_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 50
+  output:
+    rsa_pension_de_reversion: 0
+    rsa_pension_orphelins_totale: 0

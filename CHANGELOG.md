@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.110 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1981.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants`.
+* Détails :
+  - **Le système des pensions calcule les pensions de survivants du régime des salariés agricoles.** Les paramètres `retraite.rsa.survivants` (#446) n'étaient lus par aucune formule. Loi n° 81-6, articles 60 à 69, en vigueur le 1er janvier 1981 : conjoint à la moitié de la pension du défunt (article 62) ; orphelin au cinquième, aux trois dixièmes s'il est orphelin de père et de mère (article 65) ; total plafonné à la pension du défunt, les pensions d'orphelins étant réduites (article 69).
+  - **Remariage** (article 63) : jusqu'au 3 août 1996, il supprime la pension du conjoint ; depuis le 4 août 1996 (loi n° 96-66), il ne la suspend que s'il intervient avant 55 ans (`retraite.rsa.survivants.age_remariage_suspensif`, jusqu'ici lu par aucune formule).
+  - Nouvelles variables : `rsa_pension_reference_deces` (entrée), `conjoint_survivant_remarie` et `age_remariage_conjoint_survivant` (entrées, neutres par défaut), `rsa_taux_reversion`, `rsa_pension_de_reversion`, `rsa_pension_orphelins_totale`. La somme des taux d'orphelins est désormais commune au RSNA et au RSA ; le RSNA est inchangé.
+  - Tests : `tests_pension/formulas/rsa/survivants.yaml`, dix cas. Aucun test existant ne change.
+
 ## 0.109 - [#454](https://github.com/openfisca/openfisca-tunisia/pull/454)
 
 * Évolution du système socio-fiscal.
