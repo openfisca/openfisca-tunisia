@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.101 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : jusqu'au 11/09/1985.
+* Zones impactées : `parameters/retraite/cnrps/plaf_taux_pension`, `parameters/retraite/cnrps/age_legal/civil/cadre_commun`, `parameters/retraite/cnrps/age_legal/civil/cadres_actifs`.
+* Détails :
+  - **Plafond du taux de pension CNRPS avant 1981** : 60 % à partir du 1er avril 1959 (loi n° 59-18, art. 22 § II), 80 % à partir du 1er juillet 1970 (décret-loi n° 70-1, art. 22 § II nouveau et art. 2). Le paramètre commençait au 1er mai 1981 ; la valeur de 1981 (loi n° 81-70) est conservée avec sa référence, comme reconduction.
+  - **Âge du cadre commun** : la valeur de 60 ans datée du 1er février 1959, sans article, part désormais du 1er avril 1959, date à laquelle l'article 52 de la loi n° 59-18 ouvre les droits des fonctionnaires ; le 5 février 1959 est la date de signature. Références : article 9 § I (soixante ans d'âge et trente années de services) et décret n° 59-78 (limite d'âge de soixante ans), plus la loi n° 85-12, article 24, attachée au 12 septembre 1985 sans valeur nouvelle.
+  - **Âge des cadres actifs** : la valeur de 55 ans datée du 1er février 1959 n'avait pas de texte — l'article 10 de la loi n° 59-18 ne permet qu'une réduction « de cinq ans au maximum », par décret de classement non lu. Elle part désormais du 12 septembre 1985, avec l'article 29 de la loi n° 85-12.
+  - Aucun calcul ne change : les calculs CNRPS antérieurs au 12 septembre 1985 n'aboutissent toujours pas (openfisca/openfisca-tunisia-pension#36), et la formule du taux ne lit pas le plafond.
+
 ## 0.100 - [#443](https://github.com/openfisca/openfisca-tunisia/pull/443)
 
 * Évolution du système socio-fiscal.
