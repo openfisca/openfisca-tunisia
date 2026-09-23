@@ -1,0 +1,17 @@
+description: Première des deux périodes de référence entre lesquelles l'assuré choisit la plus avantageuse
+values:
+  1974-01-01:
+    value: 3
+  1990-09-23:
+    value: null
+metadata:
+  unit: year
+  reference:
+    1974-01-01:
+    - title: "Décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 18"
+      href: "https://www.pist.tn/jort/1974/1974F/Jo03074.pdf"
+      note: "JORT n° 30, fascicule des 30 avril - 3-4 mai 1974, p. 917 : « La pension est basée sur les salaires soumis à cotisation que l'assuré a perçus au cours des trois ou cinq dernières années précédant l'âge d'ouverture du droit à pension ou à allocation, selon que l'une ou l'autre de ces périodes de référence est plus avantageuse pour lui. » L'article 64 fixe l'effet du décret au 1er janvier 1974. Lu à l'image."
+    1990-09-23:
+    - title: "Décret n° 90-1455 du 10 septembre 1990, amendant le décret n° 74-499 du 27 avril 1974, relatif au régime de vieillesse, d'invalidité et de survivants dans le secteur non agricole, article 1er (article 18 nouveau)"
+      href: "https://www.pist.tn/jort/1990/1990F/Jo06090.pdf"
+      note: "JORT n° 60 du 21 septembre 1990, p. 1358. Exécutoire un jour franc après sa publication, soit le 23 septembre 1990. L'article 18 nouveau retient les salaires des dix dernières années précédant l'âge d'ouverture du droit : il n'y a plus de choix entre deux périodes, et la période de dix ans est portée par periode_annees. Le paramètre cesse à cette date."
