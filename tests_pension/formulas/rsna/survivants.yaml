@@ -1,0 +1,119 @@
+# Pensions de survivants du régime des salariés non agricoles (décret n° 74-499,
+# articles 31, 34 et 38). Pension de l'assuré : 1 000 dinars.
+#
+# 1974 : conjoint à la moitié ; orphelin au cinquième, trois dixièmes s'il est orphelin
+# de père et de mère ; le total ne dépasse pas la pension de l'assuré, les pensions
+# d'orphelins étant réduites (article 38).
+# Décret n° 81-188, exécutoire le 19 février 1981 : orphelin à trois dixièmes dans tous
+# les cas, et conjoint relevé « à concurrence de 75 % » tant que le total ne dépasse pas
+# la pension de l'assuré (article 31, alinéa 2).
+
+- name: RSNA 1975, conjoint sans orphelin, la moitié
+  period: 1975-06
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsna_pension_de_reversion: 0.5 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA 1975, conjoint et un orphelin, un cinquième pour l'orphelin
+  period: 1975-06
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0.5 * 1000
+    rsna_pension_orphelins_totale: 0.2 * 1000
+
+- name: RSNA 1975, trois orphelins dont un de père et de mère, plafond de l'article 38
+  period: 1975-06
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 3
+    nombre_orphelins_pere_et_mere_eligibles: 1
+  output:
+    # 2 × 0,2 + 0,3 = 0,7, ramené à 1 - 0,5.
+    rsna_pension_de_reversion: 0.5 * 1000
+    rsna_pension_orphelins_totale: (1 - 0.5) * 1000
+
+- name: RSNA 1975, sans conjoint, un orphelin de père et de mère
+  period: 1975-06
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    nombre_orphelins_eligibles: 1
+    nombre_orphelins_pere_et_mere_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA février 1981, avant le décret n° 81-188, pas de majoration
+  period: 1981-02
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsna_pension_de_reversion: 0.5 * 1000
+
+- name: RSNA mars 1981, conjoint sans orphelin, majoration jusqu'à 75 %
+  period: 1981-03
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsna_pension_de_reversion: 0.75 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA mars 1981, conjoint et un orphelin, majoration bornée par la pension de l'assuré
+  period: 1981-03
+  absolute_error_margin: 0.001
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    # Lecture retenue de l'article 31, alinéa 2 : 1 - 0,3 = 0,7, entre 0,5 et 0,75.
+    rsna_pension_de_reversion: (1 - 0.3) * 1000
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA mars 1981, conjoint et deux orphelins, pas de majoration, orphelins réduits
+  period: 1981-03
+  absolute_error_margin: 0.001
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 2
+  output:
+    # 0,5 + 2 × 0,3 = 1,1 : la moitié sans majoration, orphelins ramenés à 0,5.
+    rsna_pension_de_reversion: 0.5 * 1000
+    rsna_pension_orphelins_totale: (1 - 0.5) * 1000
+
+- name: RSNA 2024, sans conjoint, quatre orphelins plafonnés à la pension de l'assuré
+  period: 2024-01
+  input:
+    age_deces: 50
+    rsna_pension_reference_deces: 1000
+    nombre_orphelins_eligibles: 4
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 1000
+
+- name: RSNA 2024, assuré vivant, aucune pension de survivant
+  period: 2024-01
+  input:
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0

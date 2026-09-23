@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.97 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants`.
+* Détails :
+  - **Le système des pensions calcule les pensions de survivants du régime des salariés non agricoles**, qu'il ne calculait pas : seules celles de la CNRPS existaient. Les paramètres `retraite.rsna.survivants` étaient versés et datés, mais aucune formule ne les lisait.
+  - Nouvelles variables : `rsna_taux_reversion`, `rsna_pension_de_reversion` et `rsna_pension_orphelins_totale`, et deux variables d'entrée, `rsna_pension_reference_deces` (la pension dont le défunt bénéficiait ou aurait dû bénéficier) et `nombre_orphelins_pere_et_mere_eligibles` (défaut 0). Les entrées `age_deces`, `conjoint_survivant_eligible` et `nombre_orphelins_eligibles`, déjà utilisées pour la CNRPS, sont reprises.
+  - **1974** (décret n° 74-499, art. 31, 34 et 38) : la moitié au conjoint, un cinquième par orphelin, trois dixièmes pour l'orphelin de père et de mère ; le total ne dépasse pas la pension de l'assuré, les pensions d'orphelins étant réduites.
+  - **À partir du 19 février 1981** (décret n° 81-188, art. 2, art. 31 al. 2 ajouté ; exécutoire un jour franc après sa publication du 17 février) : le taux du conjoint est relevé « à concurrence de 75 % » tant que le total des pensions du conjoint et des orphelins ne dépasse pas la pension de l'assuré. Sans orphelin, 75 % ; avec un orphelin (30 %), 70 % ; avec deux orphelins ou plus, la moitié, et les orphelins sont réduits. La lecture du texte est discutée dans la PR.
+  - Aucun résultat existant ne change : les variables sont nouvelles, et les nouvelles entrées ont des valeurs par défaut neutres.
+  - Tests : `tests_pension/formulas/rsna/survivants.yaml`, dix cas, dont la borne de février-mars 1981.
+
 ## 0.96 - [#439](https://github.com/openfisca/openfisca-tunisia/pull/439)
 
 * Évolution du système socio-fiscal.
