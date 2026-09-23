@@ -1,18 +1,18 @@
 description: Montant minimum mensuel des pensions
 values:
-  2003-01-02:
+  2003-01-05:
     value: 200
 metadata:
   unit: currency
   reference:
-    2003-01-02:
+    2003-01-05:
     - title: "Loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 13"
       href: "https://www.pist.tn/jort/2002/2002F/Jo1062002.pdf"
-      note: "JORT n° 106 du 31 décembre 2002, pp. 3187-3190. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, un jour franc après sa publication. Le montant minimal de la pension de vieillesse est fixé à 200 dinars par mois, en cas de réalisation des conditions de l'article 12."
-    2003-05-01:
+      note: "JORT n° 106 du 31 décembre 2002, pp. 3187-3190. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 31 décembre 2002. Le montant minimal de la pension de vieillesse est fixé à 200 dinars par mois, en cas de réalisation des conditions de l'article 12."
+    2003-05-05:
     - title: "Décret n° 2003-894 du 21 avril 2003, fixant les modalités d'application du régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 17"
       href: "https://www.pist.tn/jort/2003/2003F/Jo0342003.pdf"
-      note: "JORT n° 34 du 29 avril 2003, pp. 1291-1294. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. En tout état de cause, le montant de la pension de vieillesse, d'invalidité et de survivants ne peut être inférieur à 200 dinars par mois."
+      note: "JORT n° 34 du 29 avril 2003, pp. 1291-1294. Le décret ne porte pas de clause d'entrée en vigueur, son article 26 n'étant que la clause d'exécution : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 30 avril 2003. En tout état de cause, le montant de la pension de vieillesse, d'invalidité et de survivants ne peut être inférieur à 200 dinars par mois."
 documentation: |-
   La loi fixe ce minimum pour la vieillesse (article 13) et l'invalidité (article 15) ; le
   décret l'étend aux pensions de survivants. Le montant ne change pas en 2003 : une référence

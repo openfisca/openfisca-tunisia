@@ -1,14 +1,14 @@
 description: Nombre de trimestres au-delà duquel la pension d'invalidité est majorée
 values:
-  2003-01-02:
+  2003-01-05:
     value: 40
 metadata:
   unit: trimestre
   reference:
-    2003-01-02:
+    2003-01-05:
     - title: "Loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 15"
       href: "https://www.pist.tn/jort/2002/2002F/Jo1062002.pdf"
-      note: "JORT n° 106 du 31 décembre 2002, pp. 3187-3190. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, un jour franc après sa publication. Toute fraction de cotisation supérieure à 40 trimestres ouvre droit, par trimestre supplémentaire, à une majoration de 0,5 % du revenu pris en considération pour les cotisations, dans la limite de 80 %."
+      note: "JORT n° 106 du 31 décembre 2002, pp. 3187-3190. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 31 décembre 2002. Toute fraction de cotisation supérieure à 40 trimestres ouvre droit, par trimestre supplémentaire, à une majoration de 0,5 % du revenu pris en considération pour les cotisations, dans la limite de 80 %."
 documentation: |-
   Le seuil de la majoration n'est pas le stage : le droit s'ouvre à 20 trimestres et la
   majoration ne court qu'au-delà de 40, comme au régime des non-salariés.

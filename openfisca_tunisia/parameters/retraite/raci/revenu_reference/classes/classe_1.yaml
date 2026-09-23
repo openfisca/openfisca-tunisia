@@ -1,11 +1,11 @@
 description: Coefficient multiplicateur du SMIG de la classe 1
 values:
-  2003-05-01:
+  2003-05-05:
     value: 2
 metadata:
   unit: smig
   reference:
-    2003-05-01:
+    2003-05-05:
     - title: "Décret n° 2003-894 du 21 avril 2003, fixant les modalités d'application du régime de sécurité sociale des artistes, des créateurs et des intellectuels, article 5"
       href: "https://www.pist.tn/jort/2003/2003F/Jo0342003.pdf"
-      note: "JORT n° 34 du 29 avril 2003, pp. 1291-1294. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, un jour franc après sa publication. Le coefficient multiplicateur du SMIG de la classe 1 est fixé à 2."
+      note: "JORT n° 34 du 29 avril 2003, pp. 1291-1294. Le décret ne porte pas de clause d'entrée en vigueur, son article 26 n'étant que la clause d'exécution : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 30 avril 2003. Le coefficient multiplicateur du SMIG de la classe 1 est fixé à 2."
