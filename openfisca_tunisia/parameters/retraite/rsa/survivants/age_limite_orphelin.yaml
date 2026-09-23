@@ -1,0 +1,22 @@
+description: Âge jusqu'auquel la pension d'orphelin est servie — sans condition
+values:
+  1981-01-01:
+    value: 16
+metadata:
+  unit: year
+  reference:
+    1981-01-01:
+    - title: "Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole, article 64"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf"
+      note: "JORT n° 9 du 13 février 1981, p. 271. « a) jusqu'à l'âge de 16 ans, sans justification d'une activité scolaire ou d'apprentissage ». L'article 88 énonce : « La présente loi entrera en vigueur le 1er janvier 1981. » Le rectificatif publié au JORT n° 26 du 17 avril 1981, p. 844, ne touche pas les articles 60 à 69."
+    1997-05-01:
+    - title: "Loi n° 97-61 du 28 juillet 1997, amendant la loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole, article premier (article 64 nouveau) et article 2"
+      href: "https://www.pist.tn/jort/1997/1997F/Jo06197.pdf"
+      note: "JORT n° 61 du 1er août 1997, p. 1360. L'article 2 énonce : « La présente loi prend effet à compter du 1er mai 1997. » « a - jusqu'à l'âge de 16 ans sans condition » : âge inchangé."
+    2007-07-02:
+    - title: "Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux, articles 3 et 4"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf"
+      note: "JORT n° 51 du 26 juin 2007, pp. 2198-2199. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 27 juin 2007. La loi supprime le mot « mineur » en tête de l'article 64 et récrit le droit de la fille sans ressources (paragraphe d) ; elle ne change pas cet âge."
+documentation: |-
+  L'âge n'a pas changé depuis 1981. Les références de 1997 et de 2007 sont attachées sans
+  valeur nouvelle : les deux lois récrivent l'article 64 sans changer cet âge.

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.103 - [#PR2](https://github.com/openfisca/openfisca-tunisia/pull/PR2)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1981.
+* Zones impactées : `parameters/retraite/rsa/survivants`.
+* Détails :
+  - **Verse les pensions de survivants du régime des salariés agricoles**, que l'arbre ne portait pas : loi n° 81-6, articles 60 à 69, en vigueur le 1er janvier 1981 (article 88), lus à l'image. Conjoint : 50 % de la pension du défunt (article 62). Orphelin : 20 %, 30 % s'il est orphelin de père et de mère (article 65).
+  - **Âges des orphelins** (article 64) : 16 ans sans condition ; 21 ans en études, second degré ou supérieur. La loi n° 97-61, avec effet au 1er mai 1997 (article 2), distingue le secondaire, technique ou professionnel (21 ans) du supérieur sans bourse (**25 ans**). La loi n° 2007-43 (exécutoire le 2 juillet 2007) récrit le droit de la fille et supprime le mot « mineur » sans changer ces âges : ses références sont attachées sans valeur nouvelle.
+  - **Remariage** : en 1981, il supprime la pension quel que soit l'âge (article 63) ; la loi n° 96-66, exécutoire le 4 août 1996 (dépôt le 30 juillet), ne la suspend plus qu'en cas de remariage avant **55 ans**, avec rétablissement. Le paramètre commence donc en 1996.
+  - **Ce qui n'est pas une valeur est décrit dans la documentation du nœud** : veuve et veuf invalide devenus conjoint survivant, mariage antérieur à l'ouverture du droit devenu lien existant au décès, plafond du cumul passé de la « pension de référence du mari » à la pension du défunt (loi n° 96-66), fille sans ressources (lois n° 97-61 et 2007-43).
+  - Aucun calcul ne change : ces paramètres sont nouveaux.
+
 ## 0.102 - [#445](https://github.com/openfisca/openfisca-tunisia/pull/445)
 
 * Évolution du système socio-fiscal.
