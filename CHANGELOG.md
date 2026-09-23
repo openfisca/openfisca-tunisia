@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.99 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974.
+* Zones impactées : `parameters/retraite/rsna/salaire_reference/limite_multiple_smig`, `parameters/retraite/rsna/salaire_reference/limite_heures_annuelles`.
+* Détails :
+  - **Verse la limite dans laquelle les salaires entrent dans le salaire moyen de référence du régime des salariés non agricoles** : six fois le SMIG rapporté à une durée d'occupation annuelle de 2 400 heures (décret n° 74-499, art. 18, lu à l'image). Deux paramètres, le multiple (unité `smig`) et la durée (unité `heure`), datés du 1er janvier 1974.
+  - La valeur ne change pas ensuite : le décret n° 90-1455 (23 septembre 1990) et le décret n° 94-1429 (1er juillet 1994, qui précise le SMIG du régime de 48 heures) reprennent la limite ; leurs références sont attachées sans valeur nouvelle.
+  - Aucun calcul ne change : le salaire de référence calculé par le système des pensions n'applique pas encore cette limite, et la cotisation au régime complémentaire, dans le système fiscal, garde sa constante (voir #399).
+
 ## 0.98 - [#441](https://github.com/openfisca/openfisca-tunisia/pull/441)
 
 * Évolution du système socio-fiscal.

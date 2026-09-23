@@ -2,14 +2,17 @@ description: Salaire moyen de référence du régime des salariés non agricoles
 metadata:
   order:
   - duree_mois
+  - limite_multiple_smig
+  - limite_heures_annuelles
   - actualisation
 documentation: |-
   Le salaire moyen de référence est l'assiette de la pension : les salaires soumis à
   cotisation perçus pendant une fenêtre qui précède l'ouverture du droit, actualisés
-  puis divisés par un nombre de mois.
+  puis divisés par un nombre de mois. Les salaires de chaque année n'y entrent que dans
+  la limite de six fois le SMIG rapporté à 2 400 heures, limite inchangée depuis 1974.
 
-  La série ne commence qu'en 1994, et ce n'est pas une lacune. Ni l'état de 1974 ni
-  celui de 1990 ne se laissent écrire en un nombre.
+  La série des durées ne commence qu'en 1994, et ce n'est pas une lacune. Ni l'état de
+  1974 ni celui de 1990 ne se laissent écrire en un nombre.
 
   1974 — le décret n° 74-499 retient les salaires des trois ou cinq dernières années,
   « selon que l'une ou l'autre de ces périodes de référence est plus avantageuse »
