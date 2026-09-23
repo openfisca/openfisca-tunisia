@@ -183,6 +183,46 @@
     menage:
       af: 5 * 0.60 * 72 / 3 + 7 * 0.48 * 72 / 3
 
+- name: Décembre 1975, dernier mois du taux unique de 15 % et du plafond de 52,500 D
+  period: 1975-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1975: 360
+        regime_securite_sociale_cotisant:
+          1975: rsna
+      enfant1:
+        date_naissance: 1971-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.15 * 52.5 / 3
+
+- name: Janvier 1976, premier mois du barème par rang et du plafond de 72 D (loi n° 75-82)
+  period: 1976-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1976: 360
+        regime_securite_sociale_cotisant:
+          1976: rsna
+      enfant1:
+        date_naissance: 1971-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.18 * 72 / 3
+
 - name: 1962, droit maintenu du cinquième enfant né avant 1961 (loi n° 60-30, articles 127 et 128)
   # Cinq enfants servis à 15 % : 5 × 15 % × 52,500 = 39,375 D par trimestre.
   period: 1962
@@ -328,6 +368,58 @@
       af_nbenf:
         1989-01: 3
       af: 4 * (0.18 + 0.16 + 0.14) * 122
+
+- name: Décembre 1988, quatre enfants servis, dernier mois du quatrième rang
+  period: 1988-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1988: 1200
+        regime_securite_sociale_cotisant:
+          1988: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af_mensuelle: (0.18 + 0.16 + 0.14 + 0.12) * 122 / 3
+
+- name: Janvier 1989, trois enfants servis (loi n° 88-38)
+  period: 1989-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1989: 1200
+        regime_securite_sociale_cotisant:
+          1989: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af_mensuelle: (0.18 + 0.16 + 0.14) * 122 / 3
 
 - name: 1989, droit acquis du quatrième enfant maintenu au taux de 1988 (loi n° 88-38, article 5)
   period: 1989

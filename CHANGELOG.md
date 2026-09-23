@@ -12,7 +12,7 @@
   - **Droits maintenus** : une entrée `af_droit_acquis` (par défaut faux) couvre les articles 127 et 128 de la loi n° 60-30 et l'article 5 de la loi n° 88-38 ; l'enfant servi au-delà du nombre maximal reçoit le taux du quatrième rang (au 31 décembre 1988 depuis 1989).
   - **Régime agricole amélioré** : ses salariés ouvrent droit depuis le 1er octobre 1989 (loi n° 89-73, articles 91 et 92).
   - Nouvelles variables : `af_scolarite_enfant`, `af_apprenti_remuneration_sous_plafond`, `af_fille_remplacant_mere`, `af_enfant_infirme`, `af_droit_acquis`, `af_rang_enfant`, `af_enfant_ouvrant_droit`, `af_remuneration_trimestrielle`, `af_mensuelle`. `af_nbenf` devient mensuelle et entière ; `majoration_salaire_unique` la lit au premier mois de l'année.
-  - Tests : `tests/formulas/prestations/contributives/allocations_familiales.yaml`, 21 cas aux bornes de 1961, 1975-1976, 1986, 1988-1989 et 1995-1997, valeurs écrites depuis les taux et les plafonds. Aucun test existant ne change.
+  - Tests : `tests/formulas/prestations/contributives/allocations_familiales.yaml`, 25 cas aux bornes de 1961, 1975-1976, 1986, 1988-1989 et 1995-1997, valeurs écrites depuis les taux et les plafonds. Aucun test existant ne change.
 
 ## 0.108 - [#453](https://github.com/openfisca/openfisca-tunisia/pull/453)
 
