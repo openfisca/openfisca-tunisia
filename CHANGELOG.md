@@ -10,6 +10,30 @@
   - **Le plafond de 60 % est rétabli par l'article 8 de la loi n° 85-109** (loi de finances pour 1986, JORT n° 91 du 31 décembre 1985, p. 1731, paragraphe 2, lu à l'image). La loi, sans clause d'application aux revenus, est exécutoire le 2 janvier 1986, un jour franc après sa publication. Dans la convention du paramètre (années de revenus), le plafond vaut donc à compter des revenus de 1986 : **1er janvier 1986**, la date que porte déjà le tarif de la même loi dans `bareme`.
   - Aucune formule ne lit ce paramètre. Le test `tests/test_contribution_personnelle_etat.py::test_plafond_de_cotisation` change, parce que la nouvelle valeur est celle du texte : 1983 et 1985 lèvent désormais `ParameterNotFoundError` au lieu de rendre 0,60, 1986 rend 0,60, et 1982 garde 0,55.
 
+## 0.110 - [#457](https://github.com/openfisca/openfisca-tunisia/pull/457)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/07/1982 au 18/07/1995.
+* Zones impactées : `parameters/retraite/rtns/avant_1995`, `parameters/retraite/rtns/index`.
+* Détails :
+  - **Nouveau nœud `retraite/rtns/avant_1995`, les régimes des non-salariés antérieurs à la fusion de 1995**, en deux sous-nœuds par secteur. Les valeurs ont été lues à l'image au JORT n° 66 des 19-22 octobre 1982 (pp. 2193-2197) et au JORT n° 70 du 20 octobre 1989 (pp. 1653-1654). Elles valent du 1er juillet 1982, date d'effet énoncée par les deux décrets de 1982, au 19 juillet 1995. À cette date, le décret n° 95-1166 les abroge (article 39) et elles deviennent nulles.
+  - **Secteur non agricole** (`non_agricole`, décret n° 82-1359) : âge de 65 ans, départ dès 60 ans avec une réduction de 0,5 % par trimestre (article 18) ; taux de 30 % à 120 mois, majoré de 0,5 % par période de trois mois, plafond de 80 % (article 20) ; invalidité à 30 % après 60 mois (article 21) ; minimum égal à la moitié du SMIG rapporté à 2 400 heures (article 22). Le décret n° 89-1611 remplace le 22 octobre 1989 (exécutoire un jour franc après sa publication du 20 octobre) les six classes en dinars (660 à 15 000 D, `classes_dinars`) par neuf classes en multiples du SMIG (2/3 à 15, `classes_smig`).
+  - **Secteur agricole** (`agricole`, décret n° 82-1360) : âge de 65 ans et salaire de référence égal au SMAG de 300 jours (article 8) ; coefficients 1, 1,5 et 2 des trois catégories (article 5) ; allocation de vieillesse dès 10 trimestres en période transitoire (article 17). Le taux, la majoration, le plafond et le stage ne sont pas versés : le décret ne les énonce pas, ils viennent de la loi n° 81-6 par renvoi.
+  - Aucun chemin existant ne change : les feuilles du régime fusionné restent au premier niveau de `retraite/rtns`, qui ajoute `avant_1995` à son ordre et récrit le paragraphe qui disait les régimes de 1982 « non versés ».
+  - Aucun résultat ne change : rien ne lit ces paramètres. Un test nouveau, `tests_pension/formulas/test_rtns_avant_1995.py`, lit chaque paramètre la veille et le jour de chaque borne.
+
+## 0.109 - [#456](https://github.com/openfisca/openfisca-tunisia/pull/456)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/04/1959 au 11/09/1985.
+* Zones impactées : `parameters/retraite/cnrps/survivants`, `parameters/retraite/cnrps/maximum_annuites_liquidables`, `parameters/retraite/cnrps/pension_minimale`, `units.yaml`.
+* Détails :
+  - **Réversion et orphelins de la CNRPS sous la loi n° 59-18.** `survivants/taux_conjoint` commence le 1er avril 1959 à 50 % (article 31, § I, lu à l'image au JORT n° 8 de 1959, p. 97), avant les 75 % du 1er mai 1981 (loi n° 81-70) ; `survivants/taux_orphelin` commence le 1er avril 1959 à 10 % (article 31, § III), valeur que la loi n° 85-12 reprend. Le 1er avril 1959 est la date d'application aux fonctionnaires (article 52, rédaction de la loi n° 59-100), non la date de signature.
+  - **Nouveau paramètre `retraite/cnrps/maximum_annuites_liquidables`** : 40 annuités du 1er avril 1959 (article 20, § III) au 11 septembre 1985 ; valeur nulle au 12 septembre 1985, la loi n° 85-12 (articles 35 et 38, lus à l'image) ne fixant aucun maximum.
+  - **Nouveau nœud `retraite/cnrps/pension_minimale/indice_100`**, le plancher antérieur au SMIG : la pension ne peut être inférieure au traitement de l'indice 100 pour trente annuités, ni, en deçà, à 4 % du traitement par annuité dans la même limite (loi n° 59-18, article 22, § II) ; puis 60 % des émoluments globaux indiciaires de l'indice 100 au 1er juillet 1970 (décret-loi n° 70-1, article 22, § II nouveau et article 2, lus à l'image) ; valeurs nulles au 1er mai 1981, où la loi n° 81-70 exprime le plancher en SMIG. Unité nouvelle : `remuneration_indice_100`, enregistrée dans `units.yaml`.
+  - La documentation de `survivants/plafond_cumul` et de `survivants/taux_partage_5_orphelins` ne dit plus la loi n° 59-18 « non lue » : elle décrit le plafond de 1959, assis sur la pension nette et résorbé sur les orphelins, qui n'est pas antéposé. La description de `pension_minimale` ne dit plus « en part de Smig ». Dans le même nœud, `minimum_garanti` renvoie à `indice_100` pour l'état antérieur au 1er mai 1981, et `allocation_vieillesse` et `duree_service_allocation_vieillesse` disent que la loi n° 59-18 ne connaît pas d'allocation de vieillesse, seulement le remboursement des retenues (article 49, § I), au lieu de la dire « non lue ».
+  - Aucun chemin existant ne change. Aucun résultat ne change : les pensions de survivants de la CNRPS lisent aussi `plafond_cumul` et `taux_partage_5_orphelins`, qui commencent le 12 septembre 1985 ; un calcul antérieur échoue toujours, désormais sur ces deux paramètres au lieu de `taux_conjoint` et `taux_orphelin`. Aucun test existant ne change ; un test nouveau, `tests_pension/formulas/test_cnrps_avant_1985.py`, lit les paramètres la veille et le jour de chaque borne.
+
 ## 0.108 - [#453](https://github.com/openfisca/openfisca-tunisia/pull/453)
 
 * Changement mineur.

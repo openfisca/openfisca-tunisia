@@ -1,0 +1,30 @@
+description: Régime des travailleurs non salariés du secteur non agricole, du 1er juillet 1982 au 18 juillet 1995
+metadata:
+  order:
+  - stage_mois
+  - age_legal
+  - age_depart_anticipe
+  - decote_par_trimestre
+  - taux_base
+  - majoration_par_trimestre
+  - plafond_taux
+  - plancher_taux
+  - heures_annuelles_smig
+  - invalidite
+  - classes_dinars
+  - classes_smig
+documentation: |-
+  Décret n° 82-1359 du 21 octobre 1982, effet au 1er juillet 1982 (article 26). Il procède par
+  extension : les articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499 s'appliquent aux
+  non-salariés, sous réserve des dispositions particulières des articles 18 à 24 (articles 1er
+  et 17).
+
+  Le revenu de référence est la moyenne pondérée des revenus forfaitaires de toute la carrière
+  (article 19), fixés en dinars par classe (`classes_dinars`). Le décret n° 89-1611, exécutoire le
+  22 octobre 1989, remplace les classes par des multiples du SMIG (`classes_smig`) et rapporte le
+  revenu de référence au SMIG en vigueur au moment de la liquidation (article 19 nouveau). Il ne
+  touche ni l'âge, ni le taux, ni le plafond, ni le minimum.
+
+  La revalorisation des pensions en cours n'est pas une valeur : « en cas de hausse sensible du
+  niveau de vie », par décret (article 23) ; à compter du 22 octobre 1989, « en cas de majoration
+  du SMIG », par arrêté du ministre des affaires sociales (article 23 nouveau).
