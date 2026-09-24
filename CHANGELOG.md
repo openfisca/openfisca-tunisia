@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.112 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/2016 au 31/12/2017, et du 01/01/2019 au 31/12/2019.
+* Zones impactées : `parameters/retraite/rsna/salaire_reference/actualisation`.
+* Détails :
+  - **Verse les barèmes d'actualisation des salaires de 2016, 2017 et 2019**, que la 0.95 disait introuvables. Ce sont trois arrêtés du ministre des affaires sociales, que le répertoire des textes du Journal officiel ne connaît que sous leur intitulé arabe. Celui du 1er mars 2016 (JORT n° 20 du 8 mars 2016, p. 686) donne 55 coefficients, de 1961 à 2015. Celui du 10 avril 2017 (JORT n° 32 du 21 avril 2017, pp. 1497-1498) en donne 56, de 1961 à 2016. Celui du 5 mars 2019 (JORT n° 21 du 12 mars 2019, p. 783) en donne 58, de 1961 à 2018. Au total, 169 coefficients s'ajoutent aux 1 319 de la 0.95, soit 1 488.
+  - **Chaque arrêté s'applique, selon son article 2, aux pensions dont le droit est ouvert à compter du 1er janvier de son année.** C'est la convention déjà suivie pour les autres barèmes. Jusqu'ici, le barème de 2015 valait pour 2016 et 2017, et celui de 2018 pour 2019. Les salaires de 2015 ont désormais un coefficient dès 2016, ceux de 2016 dès 2017 et ceux de 2018 dès 2019 : ils n'en avaient pas avant 2018, 2018 et 2020.
+  - **Lecture sur pièce.** Les trois barèmes ont été lus à l'image, et leur couche texte concorde. L'édition française de 2016 imprime « 1l.77057 », « 1l.30686 » et « 1l.21149 » pour 1968, 1969 et 1970 ; l'édition arabe porte 11.77057, 11.30686 et 11.21149. **Aucune édition française du JORT n° 21 de 2019 n'a été trouvée** : l'adresse de l'édition française sur pist.tn sert le fascicule arabe. La référence renvoie donc à l'édition arabe, et l'intitulé français est une traduction.
+  - **Contrôle croisé.** D'un arrêté au suivant, on compare le rapport des coefficients de deux années voisines. De 2015 à 2016, de 2017 à 2018 et de 2018 à 2019, tous les coefficients sont multipliés par un même facteur, à 2·10⁻⁵ près : aucune faute de lecture. De 2016 à 2017, les rapports changent pour la plupart des années. L'arrêté de 2017 est un recalcul : pour les salaires antérieurs à 2011, il revient aux rapports des barèmes de 2011 et de 2012, et il modifie ceux des salaires de 2012 et de 2013. La documentation disait que ce retour avait lieu en 2018 ; elle est corrigée.
+  - **Il reste 2025 et 2026 sans arrêté identifié.** Ni l'intitulé dans le répertoire des textes, ni une recherche en plein texte dans les fascicules locaux de ces deux années n'en ont fait paraître un, ce qui n'en prouve pas l'absence. Le barème de 2024 continue donc de s'appliquer, et la documentation le dit.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit encore le barème : le salaire de référence du régime, depuis 1994, est la moyenne des meilleurs salaires bruts, sans actualisation. Un test nouveau, `tests_pension/test_actualisation_rsna_2016_2019.py`, lit les coefficients la veille et le jour de chaque date d'effet. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre ne change.
+  - Numéro de version 0.112, pour suivre la 0.111 de la #458.
+
 ## 0.111 - [#458](https://github.com/openfisca/openfisca-tunisia/pull/458)
 
 * Évolution du système socio-fiscal.
