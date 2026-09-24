@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.113 - [#460](https://github.com/openfisca/openfisca-tunisia/pull/460)
+## 0.114 - [#460](https://github.com/openfisca/openfisca-tunisia/pull/460)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : droits ouverts à partir du 01/07/1994.
@@ -19,6 +19,19 @@
   - **Tests nouveaux**, aux bornes : droit ouvert le 15 septembre 1994 (cinq ans, barème de 1994) ; les 30 juin et 1er juillet 1995 (cinq puis sept ans) ; les 30 juin et 1er juillet 1996 (sept puis dix ans) ; 1995 sans date de liquidation ; 2024 avec les coefficients de l'arrêté du 16 juillet 2024, une carrière avec deux années sans salaire, une carrière de trois ans, et une carrière dont les meilleurs salaires sont anciens. Les coefficients sont recopiés en clair dans les tests. Les erreurs attendues — droit ouvert le 30 juin 1994, droits ouverts en 2025 — sont testées en Python dans `tests_pension/formulas/test_salaire_reference_rsna_1994.py`, un test YAML ne sachant pas attendre une exception.
   - Le plafonnement des salaires à six fois le SMIG, prévu par le même article, n'est toujours pas appliqué.
   - Aucune variable ni aucun paramètre n'est ajouté, renommé ou déplacé.
+
+## 0.113 - [#461](https://github.com/openfisca/openfisca-tunisia/pull/461)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 19/07/1995 au 18/10/1996, et du 01/01/1998 au 30/11/1998.
+* Zones impactées : `parameters/retraite/rtns/revenu_reference/jours_annuels_smag`.
+* Détails :
+  - **Le retour à 300 jours date du 1er janvier 1998, et non du 1er décembre 1998.** Le décret n° 96-1797 fixe la durée de travail à laquelle le SMAG est rapporté pour les non-salariés agricoles. Son article premier a été lu à l'image dans les deux éditions du JORT n° 82 du 11 octobre 1996. L'édition arabe (p. 2315) porte « 300 يوما في السنة بداية من غرة جانفي 1998 » ; l'édition française (p. 2021) porte « à compter du 1er décembre 1998 ». L'édition arabe fait foi : l'article premier de la loi n° 93-64 du 5 juillet 1993 publie les décrets en langue arabe, et dans une autre langue « uniquement à titre d'information ». Du 1er janvier au 30 novembre 1998, le paramètre passe donc de 260 à 300 jours, et la documentation perd les onze mois « sans texte ».
+  - **Les 180 jours commencent le 19 octobre 1996, et non le 19 juillet 1995.** Le décret n° 96-1797 n'a pas de clause d'effet et ne dit pas à partir de quand les 180 jours s'appliquent. La date retenue est donc celle où il devient exécutoire : le fascicule a été déposé au siège du gouvernorat de Tunis le 14 octobre 1996, d'où le 19 octobre 1996 (loi n° 93-64, article 2).
+  - **Du 19 juillet 1995 au 18 octobre 1996, la valeur est de 300 jours, celle du décret n° 95-1166.** Ce n'est pas une valeur reconduite sans source. L'article 7, alinéa 3 (p. 1487) et l'article 25 (p. 1488) du décret n° 95-1166 rapportent le SMAG à 300 jours par an. Ils ont été lus dans l'édition française et, à l'image, dans l'édition arabe (JORT n° 55 du 11 juillet 1995, pp. 1479-1480). Le décret est exécutoire le 19 juillet 1995. Sur cette période, le paramètre passe de 180 à 300 jours.
+  - Chaque date porte désormais ses références dans les deux éditions, avec l'extrait du texte.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ce paramètre. Un test nouveau, `tests_pension/formulas/test_rtns_jours_annuels_smag.py`, le lit la veille et le jour de chaque borne, et aussi au 1er décembre 1998. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre ne change.
 
 ## 0.112 - [#459](https://github.com/openfisca/openfisca-tunisia/pull/459)
 
