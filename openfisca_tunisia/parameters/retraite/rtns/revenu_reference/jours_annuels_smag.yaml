@@ -1,38 +1,55 @@
 description: Durée annuelle de travail à laquelle le SMAG est rapporté, secteur agricole
 values:
   1995-07-19:
+    value: 300
+  1996-10-19:
     value: 180
   1997-01-01:
     value: 260
-  1998-12-01:
+  1998-01-01:
     value: 300
 metadata:
   unit: day
   reference:
     1995-07-19:
-    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 7, alinéa 3"
+    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, articles 7, alinéa 3, et 25"
       href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
-      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 14 juillet 1995. L'article 7 rapporte le SMAG à 300 jours par an ; le décret n° 96-1797 y déroge, avec effet dès l'origine du régime."
+      note: "JORT n° 55 du 11 juillet 1995, p. 1487 (article 7) et p. 1488 (article 25). Article 7, alinéa 3 : « Le revenu forfaitaire à retenir pour le travailleur du secteur agricole est déterminé par référence au salaire minimun agricole garanti (SMAG) rapporté à une durée de travail de 300 jours par an. » L'article 25 rapporte de même le SMAG à « une durée de travail de 300 jours par an » pour le revenu de référence des pensions. Le décret ne porte pas de clause d'entrée en vigueur : il devient exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte un dépôt le 14 juillet 1995 : exécutoire le 19 juillet 1995."
+    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, articles 7, alinéa 3, et 25 (édition arabe)"
+      href: "https://www.pist.tn/jort/1995/1995A/Ja05595.pdf"
+      note: "الرائد الرسمي عدد 55 بتاريخ 11 جويلية 1995، ص. 1479 (الفصل 7) و1480 (الفصل 25). الفصل 7، الفقرة الثالثة : « ويضبط الدخل التقديري المعتبر بالنسبة للعامل بالقطاع الفلاحي بالرجوع إلى الأجر الأدنى الفلاحي المضمون، المرتبط بمدة شغل تساوي 300 يوما في السنة ». Lu à l'image."
+    1996-10-19:
     - title: "Décret n° 96-1797 du 30 septembre 1996, portant amendement du décret n° 95-1166 du 3 juillet 1995, article premier"
       href: "https://www.pist.tn/jort/1996/1996F/Jo08296.pdf"
-      note: "JORT n° 82 du 11 octobre 1996, p. 2021. À titre transitoire et par dérogation à l'article 7, alinéa 3, les cotisations et les prestations des non-salariés agricoles sont déterminées par référence au SMAG rapporté à 180 jours par an jusqu'au 31 décembre 1996."
+      note: "JORT n° 82 du 11 octobre 1996, p. 2021. « A titre transitoire et par dérogation aux dispositions du troisième alinéa de l'article 7 du décret susvisé n° 95-1166 du 3 juillet 1995, les cotisations et les prestations sont déterminées pour les travailleurs non salariés du secteur agricole, par référence au salaire minimum agricole garanti (SMAG) rapporté à une durée de travail de : - 180 jours par an, jusqu'au 31 décembre 1996 ». Le décret ne porte pas de clause d'entrée en vigueur et ne dit pas à partir de quand les 180 jours s'appliquent : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte un dépôt le 14 octobre 1996 : exécutoire le 19 octobre 1996."
+    - title: "Décret n° 96-1797 du 30 septembre 1996, portant amendement du décret n° 95-1166 du 3 juillet 1995, article premier (édition arabe)"
+      href: "https://www.pist.tn/jort/1996/1996A/Ja08296.pdf"
+      note: "الرائد الرسمي عدد 82 بتاريخ 11 أكتوبر 1996، ص. 2315. « ـ 180 يوما في السنة إلى تاريخ 31 ديسمبر 1996 ». Lu à l'image."
     1997-01-01:
     - title: "Décret n° 96-1797 du 30 septembre 1996, portant amendement du décret n° 95-1166 du 3 juillet 1995, article premier"
       href: "https://www.pist.tn/jort/1996/1996F/Jo08296.pdf"
-      note: "JORT n° 82 du 11 octobre 1996, p. 2021. 260 jours par an du 1er janvier au 31 décembre 1997."
-    1998-12-01:
+      note: "JORT n° 82 du 11 octobre 1996, p. 2021. « - 260 jours par an, pour la période comprise entre le 1er janvier 1997 et le 31 décembre 1997 »."
+    - title: "Décret n° 96-1797 du 30 septembre 1996, portant amendement du décret n° 95-1166 du 3 juillet 1995, article premier (édition arabe)"
+      href: "https://www.pist.tn/jort/1996/1996A/Ja08296.pdf"
+      note: "الرائد الرسمي عدد 82 بتاريخ 11 أكتوبر 1996، ص. 2315. « ـ 260 يوما في السنة بالنسبة للفترة المتراوحة بين غرة جانفي 1997 و31 ديسمبر 1997 ». Lu à l'image."
+    1998-01-01:
+    - title: "Décret n° 96-1797 du 30 septembre 1996, portant amendement du décret n° 95-1166 du 3 juillet 1995, article premier (édition arabe)"
+      href: "https://www.pist.tn/jort/1996/1996A/Ja08296.pdf"
+      note: "الرائد الرسمي عدد 82 بتاريخ 11 أكتوبر 1996، ص. 2315. « ـ 300 يوما في السنة بداية من غرة جانفي 1998 », soit 300 jours par an à compter du 1er janvier 1998. Lu à l'image. L'édition arabe fait foi : les décrets sont publiés au Journal officiel en langue arabe, et dans une autre langue « uniquement à titre d'information » (loi n° 93-64 du 5 juillet 1993, article premier, JORT n° 50 du 6 juillet 1993, p. 931)."
     - title: "Décret n° 96-1797 du 30 septembre 1996, portant amendement du décret n° 95-1166 du 3 juillet 1995, article premier"
       href: "https://www.pist.tn/jort/1996/1996F/Jo08296.pdf"
-      note: "JORT n° 82 du 11 octobre 1996, p. 2021. 300 jours par an à compter du 1er décembre 1998, soit la valeur de l'article 7."
+      note: "JORT n° 82 du 11 octobre 1996, p. 2021. L'édition française porte « - 300 jours par an, à compter du 1er décembre 1998 », en contradiction avec l'édition arabe, qui seule fait foi."
 documentation: |-
-  La série vient d'une dérogation transitoire à l'article 7, qui fixe 300 jours. Le décret
-  n° 96-1797 y substitue 180 jours jusqu'au 31 décembre 1996, puis 260 jours en 1997, puis
-  300 jours à compter du 1er décembre 1998. Publié le 11 octobre 1996, il déroge pour une
-  période qui commence avec le régime : la première valeur est donc datée du 19 juillet 1995.
+  L'article 7, alinéa 3, et l'article 25 du décret n° 95-1166 rapportent le SMAG à 300 jours
+  par an, pour les cotisations comme pour le revenu de référence des pensions. Le décret
+  n° 96-1797 y déroge à titre transitoire : 180 jours par an jusqu'au 31 décembre 1996, 260 jours
+  en 1997, puis 300 jours à compter du 1er janvier 1998. Sa dérogation vise « les cotisations et
+  les prestations ».
 
-  Le texte ne dit rien du 1er janvier au 30 novembre 1998. Aucune valeur n'est inventée pour
-  ces onze mois : le paramètre y garde celle de 1997, 260 jours, faute de texte, ce qui
-  n'est pas une règle établie. Le 1er décembre est peut-être une coquille pour le 1er
-  janvier ; seul un texte le dirait.
+  Le décret n° 96-1797 ne dit pas à partir de quand les 180 jours s'appliquent, et ne porte pas
+  de clause d'effet. Les 180 jours sont donc datés du jour où il devient exécutoire, le
+  19 octobre 1996. Du 19 juillet 1995 à cette date, la valeur est celle du décret n° 95-1166,
+  300 jours.
 
-  La même durée détermine les cotisations et les prestations.
+  Le retour à 300 jours est daté du 1er janvier 1998, selon l'édition arabe, qui fait foi.
+  L'édition française, publiée à titre d'information, porte « à compter du 1er décembre 1998 ».
