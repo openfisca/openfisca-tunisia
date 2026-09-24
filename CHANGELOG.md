@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.113 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+## 0.113 - [#461](https://github.com/openfisca/openfisca-tunisia/pull/461)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : du 19/07/1995 au 18/10/1996, et du 01/01/1998 au 30/11/1998.
@@ -12,7 +12,6 @@
   - Chaque date porte désormais ses références dans les deux éditions, avec l'extrait du texte.
   - **Aucun résultat de calcul ne change.** Aucune formule ne lit ce paramètre. Un test nouveau, `tests_pension/formulas/test_rtns_jours_annuels_smag.py`, le lit la veille et le jour de chaque borne, et aussi au 1er décembre 1998. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
   - Aucun chemin de paramètre ne change.
-
 
 ## 0.112 - [#459](https://github.com/openfisca/openfisca-tunisia/pull/459)
 
