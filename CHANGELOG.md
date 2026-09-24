@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.110 - [#PR_B](https://github.com/openfisca/openfisca-tunisia/pull/PR_B)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/07/1982 au 18/07/1995.
+* Zones impactées : `parameters/retraite/rtns/avant_1995`, `parameters/retraite/rtns/index`.
+* Détails :
+  - **Nouveau nœud `retraite/rtns/avant_1995`, les régimes des non-salariés antérieurs à la fusion de 1995**, en deux sous-nœuds par secteur. Les valeurs ont été lues à l'image au JORT n° 66 des 19-22 octobre 1982 (pp. 2193-2197) et au JORT n° 70 du 20 octobre 1989 (pp. 1653-1654). Elles valent du 1er juillet 1982, date d'effet énoncée par les deux décrets de 1982, au 19 juillet 1995. À cette date, le décret n° 95-1166 les abroge (article 39) et elles deviennent nulles.
+  - **Secteur non agricole** (`non_agricole`, décret n° 82-1359) : âge de 65 ans, départ dès 60 ans avec une réduction de 0,5 % par trimestre (article 18) ; taux de 30 % à 120 mois, majoré de 0,5 % par période de trois mois, plafond de 80 % (article 20) ; invalidité à 30 % après 60 mois (article 21) ; minimum égal à la moitié du SMIG rapporté à 2 400 heures (article 22). Le décret n° 89-1611 remplace le 22 octobre 1989 (exécutoire un jour franc après sa publication du 20 octobre) les six classes en dinars (660 à 15 000 D, `classes_dinars`) par neuf classes en multiples du SMIG (2/3 à 15, `classes_smig`).
+  - **Secteur agricole** (`agricole`, décret n° 82-1360) : âge de 65 ans et salaire de référence égal au SMAG de 300 jours (article 8) ; coefficients 1, 1,5 et 2 des trois catégories (article 5) ; allocation de vieillesse dès 10 trimestres en période transitoire (article 17). Le taux, la majoration, le plafond et le stage ne sont pas versés : le décret ne les énonce pas, ils viennent de la loi n° 81-6 par renvoi.
+  - Aucun chemin existant ne change : les feuilles du régime fusionné restent au premier niveau de `retraite/rtns`, qui ajoute `avant_1995` à son ordre et récrit le paragraphe qui disait les régimes de 1982 « non versés ».
+  - Aucun résultat ne change : rien ne lit ces paramètres. Un test nouveau, `tests_pension/formulas/test_rtns_avant_1995.py`, lit chaque paramètre la veille et le jour de chaque borne.
+
 ## 0.108 - [#453](https://github.com/openfisca/openfisca-tunisia/pull/453)
 
 * Changement mineur.
