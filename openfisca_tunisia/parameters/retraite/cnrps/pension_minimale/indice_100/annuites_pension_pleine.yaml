@@ -1,0 +1,27 @@
+description: Nombre d'annuités de la pension dont le plancher est la rémunération afférente à l'indice 100
+values:
+  1959-04-01:
+    value: 30
+  1970-07-01:
+    value: null
+metadata:
+  unit: year
+  reference:
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 22, § II, et article 52"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 95, lu à l'image. Article 22, § II : la pension « ne peut être inférieure : a) Pour les pensions basées sur 30 annuités, au traitement soumis à retenue afférent à l'indice 100. b) Pour les pensions proportionnelles basées sur moins de 30 annuités, au montant de la pension calculée à raison de 4 % du traitement soumis à retenue par annuité liquidable des services et bonifications énumérés à l'article 11, sans pouvoir excéder le montant du traitement soumis à retenue afférent à l'indice 100. » L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature."
+    - title: "Loi n° 59-100 du 20 août 1959, complétant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article premier (article 52, alinéa 1er nouveau)"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo04459.pdf"
+      note: "JORT n° 44, fascicule des 25-28 août 1959, p. 913. Les dispositions de la loi n° 59-18 sont applicables à compter du 1er avril 1959 aux fonctionnaires et à leurs ayants droit ; elles prennent effet au 3 mai 1956 pour les militaires et leurs ayants droit, date qui n'est pas versée ici."
+    1970-07-01:
+    - title: "Décret-loi n° 70-1 du 14 septembre 1970, modifiant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article 1er (article 22, § II nouveau) et article 2"
+      href: "https://www.pist.tn/jort/1970/1970F/Jo04370.pdf"
+      note: "JORT n° 43, fascicule des 11-15-18 septembre 1970, p. 1186, lu à l'image. Article 22, § II nouveau : la pension « ne peut être inférieure pour la pension d'ancienneté ou proportionnelle à 60 % des émoluments globaux indiciaires afférents à l'indice 100 ». L'article 2 (p. 1187) fait procéder à une nouvelle liquidation des pensions « à compter du 1er juillet 1970, suivant les modalités de calcul prévues dans l'article 1er »."
+documentation: |-
+  Le texte de 1959 vise les « pensions basées sur 30 annuités », et les pensions
+  proportionnelles « basées sur moins de 30 annuités » : il ne dit pas en toutes lettres ce
+  qu'il advient d'une pension basée sur plus de trente annuités.
+
+  Le décret-loi n° 70-1 supprime la distinction par le nombre d'annuités au 1er juillet 1970 :
+  la valeur est nulle à cette date, faute de règle.
