@@ -1,19 +1,35 @@
 description: Taux de la pension temporaire d'orphelin, par orphelin (part de la pension de l'agent)
 values:
+  1959-04-01:
+    value: 0.1
   1985-09-12:
     value: 0.1
 metadata:
   unit: /1
   reference:
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 31, § III, et article 52"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 97, lu à l'image. Article 31, § III : « Chaque orphelin a droit jusqu'à sa majorité, et sans condition d'âge s'il est atteint d'une maladie incurable ou d'une infirmité le rendant inapte à tout travail rémunéré, à une pension égale à 10 % de la pension brute d'ancienneté ou proportionnelle obtenue par le père ou qu'il aurait obtenue le jour de son décès et augmentée, le cas échéant, de 10 % de la rente d'invalidité dont il bénéficiait ou aurait pu bénéficier ». L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature."
+    - title: "Loi n° 59-100 du 20 août 1959, complétant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article premier (article 52, alinéa 1er nouveau)"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo04459.pdf"
+      note: "JORT n° 44, fascicule des 25-28 août 1959, p. 913. Les dispositions de la loi n° 59-18 sont applicables à compter du 1er avril 1959 aux fonctionnaires et à leurs ayants droit ; elles prennent effet au 3 mai 1956 pour les militaires et leurs ayants droit, date qui n'est pas versée ici."
     1985-09-12:
     - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 45"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
       note: "JORT n° 20 du 12 mars 1985, p. 363 : pension temporaire d'orphelin égale à 10 % de la pension de retraite, jusqu'à 21 ans. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
 documentation: |-
-  Le paramètre commence le 12 septembre 1985, date d'effet de la loi n° 85-12. La loi
-  n° 59-18 du 5 février 1959, qu'elle remplace, n'a pas été lue pour cette période :
-  l'état du droit antérieur n'est pas établi, et aucune valeur n'est portée avant cette
-  date.
+  Le taux de 10 % par orphelin est celui de la loi n° 59-18 (article 31, § III) comme de la
+  loi n° 85-12 (article 45). Entre les deux, ni le décret-loi n° 70-1, qui réécrit les
+  paragraphes II et XI de l'article 31, ni la loi n° 81-70, qui en réécrit les paragraphes I
+  et VI, ne touchent au paragraphe III.
+
+  Dans la rédaction de 1959, la pension est servie jusqu'à la majorité, et sans condition
+  d'âge à l'orphelin atteint d'une maladie incurable ou d'une infirmité le rendant inapte à
+  tout travail rémunéré ; au décès de la mère, ou si elle est inhabile à obtenir une pension
+  ou déchue de ses droits, les droits de la veuve passent aux enfants mineurs, la pension de
+  10 % étant maintenue à chacun à partir du deuxième (article 31, § IV). Le décret-loi n° 70-1 porte à 21 ans l'âge au-delà duquel l'orphelin
+  infirme doit justifier d'une invalidité totale (article 31, § XI nouveau).
 
   Conditions de service, qui ne changent pas le taux :
   - dans la rédaction de 1985, la pension d'orphelin est servie jusqu'à 21 ans (article 45) ;

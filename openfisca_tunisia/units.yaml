@@ -101,6 +101,11 @@
     one: Smig
     other: Smigs
   # parameter: marche_travail.salaire_minimum.smig.
+- name: remuneration_indice_100
+  label:
+    one: rémunération afférente à l'indice 100
+    other: rémunérations afférentes à l'indice 100
+  # Grille indiciaire de la fonction publique ; aucun paramètre n'en porte la valeur.
 - name: heure
   label:
     one: heure
