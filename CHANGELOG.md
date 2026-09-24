@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.113 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 19/07/1995 au 18/10/1996, et du 01/01/1998 au 30/11/1998.
+* Zones impactées : `parameters/retraite/rtns/revenu_reference/jours_annuels_smag`.
+* Détails :
+  - **Le retour à 300 jours date du 1er janvier 1998, et non du 1er décembre 1998.** Le décret n° 96-1797 fixe la durée de travail à laquelle le SMAG est rapporté pour les non-salariés agricoles. Son article premier a été lu à l'image dans les deux éditions du JORT n° 82 du 11 octobre 1996. L'édition arabe (p. 2315) porte « 300 يوما في السنة بداية من غرة جانفي 1998 » ; l'édition française (p. 2021) porte « à compter du 1er décembre 1998 ». L'édition arabe fait foi : l'article premier de la loi n° 93-64 du 5 juillet 1993 publie les décrets en langue arabe, et dans une autre langue « uniquement à titre d'information ». Du 1er janvier au 30 novembre 1998, le paramètre passe donc de 260 à 300 jours, et la documentation perd les onze mois « sans texte ».
+  - **Les 180 jours commencent le 19 octobre 1996, et non le 19 juillet 1995.** Le décret n° 96-1797 n'a pas de clause d'effet et ne dit pas à partir de quand les 180 jours s'appliquent. La date retenue est donc celle où il devient exécutoire : le fascicule a été déposé au siège du gouvernorat de Tunis le 14 octobre 1996, d'où le 19 octobre 1996 (loi n° 93-64, article 2).
+  - **Du 19 juillet 1995 au 18 octobre 1996, la valeur est de 300 jours, celle du décret n° 95-1166.** Ce n'est pas une valeur reconduite sans source. L'article 7, alinéa 3 (p. 1487) et l'article 25 (p. 1488) du décret n° 95-1166 rapportent le SMAG à 300 jours par an. Ils ont été lus dans l'édition française et, à l'image, dans l'édition arabe (JORT n° 55 du 11 juillet 1995, pp. 1479-1480). Le décret est exécutoire le 19 juillet 1995. Sur cette période, le paramètre passe de 180 à 300 jours.
+  - Chaque date porte désormais ses références dans les deux éditions, avec l'extrait du texte.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ce paramètre. Un test nouveau, `tests_pension/formulas/test_rtns_jours_annuels_smag.py`, le lit la veille et le jour de chaque borne, et aussi au 1er décembre 1998. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre ne change.
+
+
 ## 0.112 - [#459](https://github.com/openfisca/openfisca-tunisia/pull/459)
 
 * Évolution du système socio-fiscal.
