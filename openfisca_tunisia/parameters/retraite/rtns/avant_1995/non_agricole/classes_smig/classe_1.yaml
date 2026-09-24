@@ -1,0 +1,16 @@
+description: Coefficient multiplicateur du SMIG de la classe 1, secteur non agricole, de 1989 à 1995
+values:
+  1989-10-22:
+    value: 0.666667
+  1995-07-19:
+    value: null
+metadata:
+  reference:
+    1989-10-22:
+    - title: "Décret n° 89-1611 du 10 octobre 1989, modifiant et complétant le décret n° 82-1359 du 21 octobre 1982, étendant le régime de sécurité sociale aux travailleurs indépendants dans le secteur non agricole, article premier (article 7 nouveau du décret n° 82-1359)"
+      href: "https://www.pist.tn/jort/1989/1989F/Jo07089.pdf"
+      note: "JORT n° 70 du 20 octobre 1989, p. 1653, barème lu à l'image. Article 7 nouveau (p. 1653) : les cotisations sont assises sur un revenu forfaitaire déterminé par référence au SMIG du régime de 48 heures, rapporté à une durée d'occupation de 2 400 heures par an, et affecté du coefficient multiplicateur de la classe de l'assuré : classe 1, 2/3 ; classe 2, 1 ; classe 3, 1,5 ; classe 4, 2 ; classe 5, 4 ; classe 6, 6 ; classe 7, 9 ; classe 8, 12 ; classe 9, 15. « L'assuré est placé selon son choix, dans l'une de ces 9 classes. » La valeur 0,666667 transcrit la fraction 2/3 du texte. Le décret ne porte pas de clause d'entrée en vigueur : publié au Journal officiel du vendredi 20 octobre 1989, il devient exécutoire un jour franc après sa publication, soit le 22 octobre 1989 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Le décret n° 93-357 du 8 février 1993, qui proroge « à compter du 22 octobre 1992 » le délai de trois ans ouvert par l'article 24 nouveau, retient le même point de départ."
+    1995-07-19:
+    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 39"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
+      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Article 39 : « Sont abrogées toutes dispositions antérieures contraires et notamment les décrets susvisés n° 82-1359 et n° 82-1360 du 21 octobre 1982. » Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 14 juillet 1995."

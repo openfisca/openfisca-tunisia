@@ -1,0 +1,5 @@
+description: Pension d'invalidité des travailleurs non salariés du secteur non agricole, de 1982 à 1995
+metadata:
+  order:
+  - stage_mois
+  - taux_base
