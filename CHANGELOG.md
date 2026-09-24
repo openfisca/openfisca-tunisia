@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.109 - [#PR_A](https://github.com/openfisca/openfisca-tunisia/pull/PR_A)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/04/1959 au 11/09/1985.
+* Zones impactées : `parameters/retraite/cnrps/survivants`, `parameters/retraite/cnrps/maximum_annuites_liquidables`, `parameters/retraite/cnrps/pension_minimale`, `units.yaml`.
+* Détails :
+  - **Réversion et orphelins de la CNRPS sous la loi n° 59-18.** `survivants/taux_conjoint` commence le 1er avril 1959 à 50 % (article 31, § I, lu à l'image au JORT n° 8 de 1959, p. 97), avant les 75 % du 1er mai 1981 (loi n° 81-70) ; `survivants/taux_orphelin` commence le 1er avril 1959 à 10 % (article 31, § III), valeur que la loi n° 85-12 reprend. Le 1er avril 1959 est la date d'application aux fonctionnaires (article 52, rédaction de la loi n° 59-100), non la date de signature.
+  - **Nouveau paramètre `retraite/cnrps/maximum_annuites_liquidables`** : 40 annuités du 1er avril 1959 (article 20, § III) au 11 septembre 1985 ; valeur nulle au 12 septembre 1985, la loi n° 85-12 (articles 35 et 38, lus à l'image) ne fixant aucun maximum.
+  - **Nouveau nœud `retraite/cnrps/pension_minimale/indice_100`**, le plancher antérieur au SMIG : la pension ne peut être inférieure au traitement de l'indice 100 pour trente annuités, ni, en deçà, à 4 % du traitement par annuité dans la même limite (loi n° 59-18, article 22, § II) ; puis 60 % des émoluments globaux indiciaires de l'indice 100 au 1er juillet 1970 (décret-loi n° 70-1, article 22, § II nouveau et article 2, lus à l'image) ; valeurs nulles au 1er mai 1981, où la loi n° 81-70 exprime le plancher en SMIG. Unité nouvelle : `remuneration_indice_100`, enregistrée dans `units.yaml`.
+  - La documentation de `survivants/plafond_cumul` et de `survivants/taux_partage_5_orphelins` ne dit plus la loi n° 59-18 « non lue » : elle décrit le plafond de 1959, assis sur la pension nette et résorbé sur les orphelins, qui n'est pas antéposé. La description de `pension_minimale` ne dit plus « en part de Smig ».
+  - Aucun chemin existant ne change. Aucun résultat ne change : les pensions de survivants de la CNRPS lisent aussi `plafond_cumul` et `taux_partage_5_orphelins`, qui commencent le 12 septembre 1985 ; un calcul antérieur échoue toujours, désormais sur ces deux paramètres au lieu de `taux_conjoint` et `taux_orphelin`. Aucun test existant ne change ; un test nouveau, `tests_pension/formulas/test_cnrps_avant_1985.py`, lit les paramètres la veille et le jour de chaque borne.
+
 ## 0.108 - [#453](https://github.com/openfisca/openfisca-tunisia/pull/453)
 
 * Changement mineur.
