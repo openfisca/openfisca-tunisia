@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.111 - [#458](https://github.com/openfisca/openfisca-tunisia/pull/458)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : revenus du 01/01/1983 au 31/12/1985.
+* Zones impactées : `parameters/impot_revenu/contribution_personnelle_etat/plafond_cotisation`.
+* Détails :
+  - **La contribution personnelle d'État n'a pas de plafond pour les revenus de 1983 à 1985.** Le paramètre portait 60 % au 1er janvier 1983 et citait un « article 8 (nouveau) § II » de la loi n° 82-91. Or son article 9, lu à l'image (JORT n° 84 du 31 décembre 1982, pp. 2877-2878), réécrit l'article 8 du décret du 31 mars 1932 sans clause de plafonnement. Le tarif de 1983 atteint d'ailleurs 60,76 % puis 62,29 % de taux global. Le décret n° 84-1265, qui fixe le barème par tranches de 20 dinars, n'en rétablit pas. La valeur devient nulle au 1er janvier 1983 : c'est l'absence de plafond, non un plafond nul.
+  - **Le plafond de 60 % est rétabli par l'article 8 de la loi n° 85-109** (loi de finances pour 1986, JORT n° 91 du 31 décembre 1985, p. 1731, paragraphe 2, lu à l'image). La loi, sans clause d'application aux revenus, est exécutoire le 2 janvier 1986, un jour franc après sa publication. Dans la convention du paramètre (années de revenus), le plafond vaut donc à compter des revenus de 1986 : **1er janvier 1986**, la date que porte déjà le tarif de la même loi dans `bareme`.
+  - Aucune formule ne lit ce paramètre. Le test `tests/test_contribution_personnelle_etat.py::test_plafond_de_cotisation` change, parce que la nouvelle valeur est celle du texte : 1983 et 1985 lèvent désormais `ParameterNotFoundError` au lieu de rendre 0,60, 1986 rend 0,60, et 1982 garde 0,55.
+
 ## 0.110 - [#457](https://github.com/openfisca/openfisca-tunisia/pull/457)
 
 * Évolution du système socio-fiscal.
