@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.113 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : droits ouverts à partir du 01/07/1994.
+* Zones impactées : `openfisca_tunisia_pension/regimes/rsna`, `openfisca_tunisia_pension/variables/rsna`.
+* Détails :
+  - **Le salaire de référence du régime des salariés non agricoles est actualisé.** L'article 18 du décret n° 74-499, dans la rédaction du décret n° 94-1429 (JORT n° 52 du 5 juillet 1994, p. 1141), prévoit que les salaires « sont actualisés selon un barème fixé annuellement par arrêté du ministre des affaires sociales ». Chaque salaire est désormais multiplié par le coefficient de son année au barème applicable à la date d'ouverture du droit (`retraite/rsna/salaire_reference/actualisation`, versé par la 0.95 et la 0.112). Jusqu'ici, la moyenne portait sur les salaires nominaux.
+  - **La fenêtre monte de cinq à dix ans.** Cinq années pour les droits ouverts à compter du 1er juillet 1994, sept à compter du 1er juillet 1995, dix à compter du 1er juillet 1996 : ce sont les trois tirets de l'article 18 nouveau, déjà versés dans `retraite/rsna/salaire_reference/duree_mois`. La formule retenait dix années dès 1994.
+  - **Les dernières années, et non les meilleures.** L'article 18 nouveau retient « les cinq [sept, dix] dernières années », et l'article 19 nouveau les mois validés « dans leur ordre chronologique », sans compter les périodes sans activité assujettie. La formule prend donc, en remontant, les dernières années de salaire non nul, là où elle prenait les dix plus élevées des quarante dernières. Avec l'actualisation, l'ancienne règle aurait retenu les années les plus anciennes, dont les coefficients sont les plus forts. Si l'assuré compte moins d'années que la fenêtre, la moyenne se fait sur celles-ci (article 18, alinéa 2). Cela règle, pour ce seul régime, une partie du ticket openfisca-tunisia-pension#24.
+  - **L'année d'ouverture du droit ne compte plus.** L'article 19 nouveau retient les mois « écoulés à la date du 1er janvier de l'année » d'ouverture du droit, et chaque barème donne le coefficient 1 aux salaires de l'année qui précède. La formule comptait l'année d'ouverture elle-même.
+  - **La date d'ouverture départage les semestres.** Les variables annuelles lisent leurs paramètres au 1er janvier : la fenêtre de sept ans aurait valu en 1996, celle de dix ans en 1997, et l'exercice 1994 relevait tout entier de la rédaction de 1990, qui s'arrête sur une erreur. La date retenue est désormais la date de liquidation (`rsna_liquidation_date`) quand elle tombe dans l'exercice, le 1er janvier de l'exercice sinon. Un droit ouvert entre le 1er juillet et le 31 décembre 1994 est calculé selon la rédaction de 1994 ; avant le 1er juillet, l'erreur explicite de la rédaction de 1990 demeure.
+  - **Pas de barème, pas de calcul.** Aucun arrêté d'actualisation n'est identifié pour 2025 ni pour 2026. Pour un droit ouvert à partir du 1er janvier 2025, le calcul s'arrête sur une `ParameterNotFoundError` qui nomme le coefficient manquant, plutôt que de réemployer le barème de 2024.
+  - **Résultats qui changent**, parce que la nouvelle valeur est celle du texte :
+    - `tests_pension/formulas/rsna/pension.yaml`, salaire constant de 12 000 D, droit ouvert en 2011 : le salaire de référence passe de 12 000 D à 12 000 × 11,88322 / 10 = 14 259,86 D (années 2001 à 2010, barème de 2011), et la pension de 5 400 D à 6 416,94 D (45 %) ;
+    - `tests_pension/formulas/rsna/salaire_de_reference.yaml`, les deux cas « résultat inchangé » de 1995 et de 2011 sont remplacés : le premier comptait l'année d'ouverture et dix années au lieu de cinq, le second ne connaissait pas l'actualisation ;
+    - `tests_pension/formulas/test_salaire_reference_rsna_1990.py`, exercice 1995 à salaire constant de 12 000 D : 13 249,99 D au lieu de 12 000 D (cinq années actualisées par le barème de 1995).
+  - **Tests nouveaux**, aux bornes : droit ouvert le 15 septembre 1994 (cinq ans, barème de 1994) ; les 30 juin et 1er juillet 1995 (cinq puis sept ans) ; les 30 juin et 1er juillet 1996 (sept puis dix ans) ; 1995 sans date de liquidation ; 2024 avec les coefficients de l'arrêté du 16 juillet 2024, une carrière avec deux années sans salaire, une carrière de trois ans, et une carrière dont les meilleurs salaires sont anciens. Les coefficients sont recopiés en clair dans les tests. Les erreurs attendues — droit ouvert le 30 juin 1994, droits ouverts en 2025 — sont testées en Python dans `tests_pension/formulas/test_salaire_reference_rsna_1994.py`, un test YAML ne sachant pas attendre une exception.
+  - Le plafonnement des salaires à six fois le SMIG, prévu par le même article, n'est toujours pas appliqué.
+  - Aucune variable ni aucun paramètre n'est ajouté, renommé ou déplacé.
+
 ## 0.112 - [#459](https://github.com/openfisca/openfisca-tunisia/pull/459)
 
 * Évolution du système socio-fiscal.
