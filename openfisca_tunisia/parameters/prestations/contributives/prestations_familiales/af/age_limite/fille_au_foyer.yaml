@@ -1,0 +1,20 @@
+description: Âge jusqu'auquel la fille qui remplace la mère au foyer ouvre droit aux allocations familiales
+values:
+  1961-04-01:
+    value: 20
+  1996-08-04:
+    value: 21
+metadata:
+  unit: year
+  reference:
+    1961-04-01:
+    - title: "Loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 54"
+      href: "https://www.pist.tn/jort/1960/1960F/Jo05760.pdf"
+      note: "JORT n° 57 des 13-16 décembre 1960, p. 1607, lu à l'image. Entrée en vigueur le 1er avril 1961 : « La présente loi entre en vigueur le 1er avril 1961, sauf en ce qui concerne les dispositions prévues par les articles 1 à 33, 119, 124 à 126 et 129, qui sont d'application immédiate » (article 130, p. 1612). « 3° jusqu'à l'âge de 20 ans : […] b) au titre de celle des filles qui remplace, auprès de ses frères et sœurs, la mère de famille, lorsque celle-ci est décédée ou impotente ou divorcée ou veuve, occupant un emploi salarié absorbant toute son activité. »"
+    1996-08-04:
+    - title: "Loi n° 96-65 du 22 juillet 1996, amendant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article unique (article 54 nouveau)"
+      href: "https://www.pist.tn/jort/1996/1996F/Jo06096.pdf"
+      note: "JORT n° 60 du 26 juillet 1996, p. 1603. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 30 juillet 1996. « 2) jusqu'à l'âge de 21 ans : […] b - au titre de celle des filles qui remplacent auprès de ses frères et sœurs, la mère de famille, lorsque celle-ci est décédée ou impotente ou divorcée ou veuve occupant un emploi salarié absorbant toute son activité. »"
+documentation: |-
+  La fille qui remplace, auprès de ses frères et sœurs, la mère décédée, impotente, ou
+  divorcée ou veuve occupant un emploi salarié qui absorbe toute son activité.

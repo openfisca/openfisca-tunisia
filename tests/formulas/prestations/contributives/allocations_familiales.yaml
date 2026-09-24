@@ -1,0 +1,619 @@
+# Allocations familiales du régime des salariés non agricoles : loi n° 60-30 du
+# 14 décembre 1960, articles 52 à 65, en vigueur le 1er avril 1961 (article 130).
+#
+# Le montant trimestriel est un pourcentage, par enfant, de la rémunération globale
+# trimestrielle plafonnée (article 61). Il est réparti par tiers entre les mois du
+# trimestre, chaque tiers au droit en vigueur le premier du mois ; la variable annuelle `af`
+# additionne les douze tiers.
+#
+# | Depuis         | Texte             | Taux par rang           | Plafond trimestriel | Rangs |
+# |----------------|-------------------|-------------------------|--------------------:|------:|
+# | 1er avril 1961 | loi n° 60-30      | 15 % pour chaque enfant |            52,500 D |     4 |
+# | 1er janv. 1976 | loi n° 75-82      | 18 / 16 / 14 / 12 %     |            72,000 D |     4 |
+# | 1er mai 1986   | loi n° 86-75      | 18 / 16 / 14 / 12 %     |           122,000 D |     4 |
+# | 1er janv. 1989 | loi n° 88-38      | 18 / 16 / 14 %          |           122,000 D |     3 |
+#
+# Limites d'âge (article 54) : moins de 14 ans sans condition, 16 ans en primaire, 18 ans en
+# apprentissage, 20 ans en études secondaires ou supérieures, au-delà de 20 ans pour l'enfant
+# infirme ; depuis la loi n° 96-65 (exécutoire le 4 août 1996, donc à partir de septembre
+# 1996 pour un calcul mensuel), 16, 18 et 21 ans.
+#
+# Les dates de naissance évitent le premier du mois : l'âge se lit au premier jour du mois.
+# Les salaires sont annuels et répartis par douzièmes.
+
+# --- 1961 : entrée en vigueur au 1er avril --------------------------------------------------
+
+- name: 1960, avant l'entrée en vigueur de l'article 61, aucune allocation
+  period: 1960
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1953-07-15
+      enfant2:
+        date_naissance: 1955-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2]
+  output:
+    menage:
+      af: 0
+
+- name: 1961, trois trimestres à 15 % par enfant d'une rémunération plafonnée à 52,500 D
+  # 30 D par mois, soit 90 D par trimestre, plafonnés à 52,500 D.
+  # Deux enfants : 2 × 15 % × 52,500 = 15,750 D par trimestre, d'avril à décembre.
+  period: 1961
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1953-07-15
+      enfant2:
+        date_naissance: 1955-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2]
+  output:
+    menage:
+      af: 3 * 2 * 0.15 * 52.5
+
+- name: Mars 1961, dernier mois avant le 1er avril
+  period: 1961-03
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        # La base est la rémunération du trimestre civil entier : salaire saisi sur l'année.
+        salaire_de_base:
+          1961: 360
+        regime_securite_sociale_cotisant:
+          1961: rsna
+      enfant1:
+        date_naissance: 1953-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0
+
+- name: Avril 1961, premier mois, 15 % d'un tiers du plafond de 52,500 D
+  period: 1961-04
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1961: 360
+        regime_securite_sociale_cotisant:
+          1961: rsna
+      enfant1:
+        date_naissance: 1953-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.15 * 52.5 / 3
+
+- name: Un salarié qui ne relève pas du régime de la loi n° 60-30 n'ouvre pas droit
+  period: 1962
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsa
+      enfant1:
+        date_naissance: 1953-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af: 0
+
+# --- 1975 et 1976 : le barème par rang -------------------------------------------------------
+
+- name: 1975, cinq enfants, les quatre premiers seuls ouvrent droit, à 15 %
+  # 4 × 15 % × 52,500 = 31,500 D par trimestre.
+  period: 1975
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1962-05-15
+      enfant2:
+        date_naissance: 1964-07-15
+      enfant3:
+        date_naissance: 1966-07-15
+      enfant4:
+        date_naissance: 1968-07-15
+      enfant5:
+        date_naissance: 1970-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4, enfant5]
+  output:
+    menage:
+      af: 4 * 4 * 0.15 * 52.5
+
+- name: 1976, barème par rang et plafond de 72 D ; l'aîné atteint 14 ans en mai
+  # Janvier à mai : quatre enfants, (18 + 16 + 14 + 12) % × 72 / 3 = 14,400 D par mois.
+  # Juin à décembre : l'aîné a 14 ans ; les trois suivants sont servis aux taux des trois
+  # premiers rangs, (18 + 16 + 14) % × 72 / 3 = 11,520 D par mois. Le cinquième ne vient
+  # jamais en rang utile (article 52).
+  period: 1976
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1962-05-15
+      enfant2:
+        date_naissance: 1964-07-15
+      enfant3:
+        date_naissance: 1966-07-15
+      enfant4:
+        date_naissance: 1968-07-15
+      enfant5:
+        date_naissance: 1970-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4, enfant5]
+  output:
+    menage:
+      af: 5 * 0.60 * 72 / 3 + 7 * 0.48 * 72 / 3
+
+- name: Décembre 1975, dernier mois du taux unique de 15 % et du plafond de 52,500 D
+  period: 1975-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1975: 360
+        regime_securite_sociale_cotisant:
+          1975: rsna
+      enfant1:
+        date_naissance: 1971-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.15 * 52.5 / 3
+
+- name: Janvier 1976, premier mois du barème par rang et du plafond de 72 D (loi n° 75-82)
+  period: 1976-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1976: 360
+        regime_securite_sociale_cotisant:
+          1976: rsna
+      enfant1:
+        date_naissance: 1971-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.18 * 72 / 3
+
+- name: 1962, droit maintenu du cinquième enfant né avant 1961 (loi n° 60-30, articles 127 et 128)
+  # Cinq enfants servis à 15 % : 5 × 15 % × 52,500 = 39,375 D par trimestre.
+  period: 1962
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1952-07-15
+      enfant2:
+        date_naissance: 1954-07-15
+      enfant3:
+        date_naissance: 1956-07-15
+      enfant4:
+        date_naissance: 1958-07-15
+      enfant5:
+        date_naissance: 1960-07-15
+        af_droit_acquis: true
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4, enfant5]
+  output:
+    menage:
+      af: 4 * 5 * 0.15 * 52.5
+
+# --- 1986 : le plafond de 122 D au 1er mai, en cours de trimestre ----------------------------
+
+- name: 1986, un enfant, plafond de 72 D jusqu'en avril et de 122 D à partir de mai
+  # 100 D par mois, soit 300 D par trimestre. Janvier à avril : 18 % × 72 / 3 = 4,320 D par
+  # mois ; mai à décembre : 18 % × 122 / 3 = 7,320 D par mois.
+  period: 1986
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af: 4 * 0.18 * 72 / 3 + 8 * 0.18 * 122 / 3
+
+- name: Avril 1986, dernier mois au plafond de 72 D
+  period: 1986-04
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        # La base est la rémunération du trimestre civil entier : salaire saisi sur l'année.
+        salaire_de_base:
+          1986: 1200
+        regime_securite_sociale_cotisant:
+          1986: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.18 * 72 / 3
+
+- name: Mai 1986, premier mois au plafond de 122 D
+  period: 1986-05
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        # La base est la rémunération du trimestre civil entier : salaire saisi sur l'année.
+        salaire_de_base:
+          1986: 1200
+        regime_securite_sociale_cotisant:
+          1986: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af_mensuelle: 0.18 * 122 / 3
+
+# --- 1988 et 1989 : trois enfants, et le droit acquis du quatrième ----------------------------
+
+- name: 1988, quatre enfants servis
+  period: 1988
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af_nbenf:
+        1988-12: 4
+      af: 4 * (0.18 + 0.16 + 0.14 + 0.12) * 122
+
+- name: 1989, le quatrième enfant cesse d'ouvrir droit (loi n° 88-38)
+  period: 1989
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af_nbenf:
+        1989-01: 3
+      af: 4 * (0.18 + 0.16 + 0.14) * 122
+
+- name: Décembre 1988, quatre enfants servis, dernier mois du quatrième rang
+  period: 1988-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1988: 1200
+        regime_securite_sociale_cotisant:
+          1988: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af_mensuelle: (0.18 + 0.16 + 0.14 + 0.12) * 122 / 3
+
+- name: Janvier 1989, trois enfants servis (loi n° 88-38)
+  period: 1989-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base:
+          1989: 1200
+        regime_securite_sociale_cotisant:
+          1989: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af_mensuelle: (0.18 + 0.16 + 0.14) * 122 / 3
+
+- name: 1989, droit acquis du quatrième enfant maintenu au taux de 1988 (loi n° 88-38, article 5)
+  period: 1989
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1980-07-15
+      enfant2:
+        date_naissance: 1981-07-15
+      enfant3:
+        date_naissance: 1982-07-15
+      enfant4:
+        date_naissance: 1983-07-15
+        af_droit_acquis: true
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af: 4 * (0.18 + 0.16 + 0.14 + 0.12) * 122
+
+- name: 1990, rang saisi pour un aîné qui a quitté le ménage
+  # Les trois enfants du ménage sont les 2e, 3e et 4e de la fratrie : le 4e n'ouvre pas droit.
+  period: 1990
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant2:
+        date_naissance: 1981-07-15
+        af_rang_enfant: 2
+      enfant3:
+        date_naissance: 1982-07-15
+        af_rang_enfant: 3
+      enfant4:
+        date_naissance: 1983-07-15
+        af_rang_enfant: 4
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant2, enfant3, enfant4]
+  output:
+    menage:
+      af: 4 * (0.18 + 0.16) * 122
+
+- name: 1990, la rémunération la plus élevée des deux parents (article 55)
+  # Père à 30 D par mois (90 D par trimestre, sous le plafond), mère à 100 D (300 D,
+  # plafonnés à 122 D) : l'allocation servie est la plus élevée, celle de la mère. Au seul
+  # titre du père, elle serait de 4 × 18 % × 90 = 64,800 D.
+  period: 1990
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 360
+        regime_securite_sociale_cotisant: rsna
+      mere:
+        date_naissance: 1935-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1985-07-15
+    menage:
+      personne_de_reference: pere
+      conjoint: mere
+      enfants: [enfant1]
+  output:
+    menage:
+      af: 4 * 0.18 * 122
+
+- name: 1989, régime agricole amélioré, à partir du 1er octobre (loi n° 89-73)
+  period: 1989
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsaa
+      enfant1:
+        date_naissance: 1985-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af: 0.18 * 122
+
+# --- 1995 à 1997 : les limites d'âge de la loi n° 96-65 --------------------------------------
+
+- name: 1996, enfant de 15 ans sans scolarité, droit ouvert à partir de septembre (loi n° 96-65)
+  # 14 ans jusqu'en février, 15 ans ensuite : sous l'article 54 d'origine, il faudrait
+  # l'enseignement primaire. L'article 54 nouveau (16 ans sans condition) s'applique à partir
+  # du mois qui suit le 4 août 1996 : septembre à décembre, 18 % × 122 / 3 par mois.
+  period: 1996
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1981-02-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af: 4 * 0.18 * 122 / 3
+
+- name: 1995, étudiant qui atteint 20 ans en juin
+  # Janvier à juin : 19 ans, servi ; juillet à décembre : 20 ans, limite de l'article 54
+  # d'origine atteinte.
+  period: 1995
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1975-06-15
+        af_scolarite_enfant: enseignement_second_degre_superieur_technique_professionnel
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1]
+  output:
+    menage:
+      af: 6 * 0.18 * 122 / 3
+
+- name: 1995, enfant infirme au-delà du troisième rang, non servi
+  # Trois aînés majeurs sans droit, le quatrième infirme de plus de 20 ans, le cinquième de
+  # 5 ans : ni le quatrième ni le cinquième ne viennent en rang utile.
+  period: 1995
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1968-07-15
+      enfant2:
+        date_naissance: 1969-07-15
+      enfant3:
+        date_naissance: 1970-07-15
+      enfant4:
+        date_naissance: 1972-07-15
+        af_enfant_infirme: true
+      enfant5:
+        date_naissance: 1990-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4, enfant5]
+  output:
+    menage:
+      af: 0
+
+- name: 1997, le même enfant infirme est servi quel que soit son rang (loi n° 96-65)
+  # Seul l'enfant infirme est servi, au taux du premier enfant servi ; le cinquième ne vient
+  # toujours pas en rang utile.
+  period: 1997
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      pere:
+        date_naissance: 1930-06-15
+        salaire_de_base: 1200
+        regime_securite_sociale_cotisant: rsna
+      enfant1:
+        date_naissance: 1968-07-15
+      enfant2:
+        date_naissance: 1969-07-15
+      enfant3:
+        date_naissance: 1970-07-15
+      enfant4:
+        date_naissance: 1972-07-15
+        af_enfant_infirme: true
+      enfant5:
+        date_naissance: 1990-07-15
+    menage:
+      personne_de_reference: pere
+      enfants: [enfant1, enfant2, enfant3, enfant4, enfant5]
+  output:
+    menage:
+      af: 4 * 0.18 * 122

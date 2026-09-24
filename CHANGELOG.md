@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.112 - [#454](https://github.com/openfisca/openfisca-tunisia/pull/454)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1961.
+* Zones impactées : `variables/prestations/contributives/prestations_familiales`, `parameters/prestations/contributives/prestations_familiales/af/age_limite`.
+* Détails :
+  - **Les allocations familiales se calculent.** La variable `af` ne se calculait pour aucune période : `prestations_familiales_enfant_a_charge` levait `NameError` (`age_individu`, `salaire_individu`, `smig_48h_mensuel` jamais définis), `af` lisait `parameters.af.taux` sans instant et par un chemin invalide, et `af_nbenf` appliquait un plancher de trois enfants (`max_(…, 3)`). La formule suit désormais les articles 52 à 65 de la loi n° 60-30 et leurs modificatifs.
+  - **Montant** (article 61) : pourcentage, par enfant, de la rémunération trimestrielle (assiette des cotisations, article 42) plafonnée ; 15 % pour chaque enfant et 52,500 D au 1er avril 1961 ; 18 / 16 / 14 / 12 % et 72 D au 1er janvier 1976 (loi n° 75-82) ; 122 D au 1er mai 1986 (loi n° 86-75) ; trois rangs au 1er janvier 1989 (loi n° 88-38). Le montant trimestriel est réparti par tiers entre les mois du trimestre, chacun au droit en vigueur le premier du mois (`af_mensuelle`) ; `af`, annuelle, additionne les douze tiers. Lorsque les deux parents ouvrent droit, l'allocation la plus élevée est servie (article 55). L'arrondi à deux décimales, sans texte, est retiré.
+  - **Enfants** : limites d'âge de l'article 54 versées comme paramètres datés sous `af/age_limite` (14, 16, 18 et 20 ans en 1961 ; 16, 18 et 21 ans depuis le 4 août 1996, loi n° 96-65, exécutoire cinq jours après le dépôt du 30 juillet 1996) ; rang dans l'ordre de primogéniture, calculé dans le ménage et saisissable (`af_rang_enfant`) ; nombre maximal de rangs utiles (article 52) ; enfant infirme ou handicapé servi quel que soit son rang depuis la loi n° 96-65.
+  - **Droits maintenus** : une entrée `af_droit_acquis` (par défaut faux) couvre les articles 127 et 128 de la loi n° 60-30 et l'article 5 de la loi n° 88-38 ; l'enfant servi au-delà du nombre maximal reçoit le taux du quatrième rang (au 31 décembre 1988 depuis 1989).
+  - **Régime agricole amélioré** : ses salariés ouvrent droit depuis le 1er octobre 1989 (loi n° 89-73, articles 91 et 92).
+  - Nouvelles variables : `af_scolarite_enfant`, `af_apprenti_remuneration_sous_plafond`, `af_fille_remplacant_mere`, `af_enfant_infirme`, `af_droit_acquis`, `af_rang_enfant`, `af_enfant_ouvrant_droit`, `af_remuneration_trimestrielle`, `af_mensuelle`. `af_nbenf` devient mensuelle et entière ; `majoration_salaire_unique` la lit au premier mois de l'année.
+  - Tests : `tests/formulas/prestations/contributives/allocations_familiales.yaml`, 25 cas aux bornes de 1961, 1975-1976, 1986, 1988-1989 et 1995-1997, valeurs écrites depuis les taux et les plafonds. Aucun test existant ne change.
+
 ## 0.111 - [#458](https://github.com/openfisca/openfisca-tunisia/pull/458)
 
 * Évolution du système socio-fiscal.

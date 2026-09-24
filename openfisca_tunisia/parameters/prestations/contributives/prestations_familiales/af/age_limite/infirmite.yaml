@@ -1,0 +1,23 @@
+description: Âge au-delà duquel l'enfant infirme ou atteint d'une maladie incurable ouvre droit aux allocations familiales sans limite d'âge
+values:
+  1961-04-01:
+    value: 20
+  1996-08-04:
+    value: 21
+metadata:
+  unit: year
+  reference:
+    1961-04-01:
+    - title: "Loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article 54"
+      href: "https://www.pist.tn/jort/1960/1960F/Jo05760.pdf"
+      note: "JORT n° 57 des 13-16 décembre 1960, p. 1607, lu à l'image. Entrée en vigueur le 1er avril 1961 : « La présente loi entre en vigueur le 1er avril 1961, sauf en ce qui concerne les dispositions prévues par les articles 1 à 33, 119, 124 à 126 et 129, qui sont d'application immédiate » (article 130, p. 1612). « 4° au delà de 20 ans, au titre des enfants qui, par suite d'infirmité ou de maladie incurable, sont dans l'impossibilité permanente et absolue de se livrer à un travail salarié, quand ils ne sont pas pris en charge par un organisme public ou un organisme privé bénéficiant de l'aide de l'État ou des collectivités locales. »"
+    1996-08-04:
+    - title: "Loi n° 96-65 du 22 juillet 1996, amendant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale, article unique (article 54 nouveau)"
+      href: "https://www.pist.tn/jort/1996/1996F/Jo06096.pdf"
+      note: "JORT n° 60 du 26 juillet 1996, p. 1603. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où elle devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 30 juillet 1996. « 3) au delà de 21 ans au titre des enfants qui par suite d'infirmité ou de maladie incurable, sont dans l'impossibilité permanente et absolue de se livrer à un travail salarié et aux handicapés titulaires d'une carte d'handicapé qui ne sont pas pris en charge intégralement par un organisme public ou un organisme privé bénéficiant de l'aide de l'Etat ou des collectivités locales. Dans les cas visés au paragraphe précédent, les allocations familiales sont servies quel que soit le rang de l'enfant handicapé ou infirme. »"
+documentation: |-
+  Le texte ouvre ce droit « au-delà » de l'âge, sans limite supérieure. Il ne vise pas
+  l'enfant infirme plus jeune, qui ouvre droit aux conditions des autres enfants.
+
+  Depuis 1996, le droit s'étend aux titulaires d'une carte d'handicapé, et il est servi quel
+  que soit le rang de l'enfant.
