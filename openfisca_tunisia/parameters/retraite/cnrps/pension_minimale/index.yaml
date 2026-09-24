@@ -1,6 +1,10 @@
 description: Pension minimale
 documentation: |-
-  Depuis le 1er mai 1981, la pension minimale et l'allocation de vieillesse s'expriment en
-  part du SMIG. Du 1er avril 1959 au 30 avril 1981, le plancher s'exprime par référence à la
+  Depuis le 1er mai 1981, la pension minimale s'exprime en part du SMIG
+  (`minimum_garanti`). Du 1er avril 1959 au 30 avril 1981, elle s'exprime par référence à la
   rémunération afférente à l'indice 100 de la grille des traitements : ses paramètres sont
   réunis dans `indice_100`.
+
+  L'allocation de vieillesse, elle aussi exprimée en part du SMIG, naît avec la loi n° 85-12
+  (article 42) : sous la loi n° 59-18, l'agent qui quitte le service sans droit à pension n'a
+  droit qu'au remboursement de ses retenues (article 49, § I).
