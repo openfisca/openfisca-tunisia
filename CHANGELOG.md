@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.116 - [#468](https://github.com/openfisca/openfisca-tunisia/pull/468)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1995 au 31/03/1995.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_employeur/accident_du_travail`, `parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_salarie/accident_du_travail`.
+* Détails :
+  - **Le point d'accidents du travail transféré du régime général commence le 1er janvier 1995, et non le 1er avril 1995.** Le décret n° 95-538 opère ce transfert à son article 2. Il est signé le 1er avril 1995, mais son article 28 le fait entrer en vigueur « à compter du 1er janvier 1995 ». L'article a été lu dans les deux éditions du JORT n° 30 du 14 avril 1995 : p. 693 de l'édition française, et à l'image p. 693 de l'édition arabe, qui porte « بداية من أول جانفي 1995 ». La date retenue jusqu'ici était celle de la signature.
+  - **Les résultats changent de janvier à mars 1995.** Pour un salaire de base de 1 000 DT, `accident_du_travail_salarie` passe de 0 à 2,778 DT, et `accident_du_travail_employeur` de 0 à 7,222 DT. Quatre cas nouveaux de `tests/formulas/cotisations/cotisation_accident_du_travail.yaml` lisent décembre 1994, janvier, mars et avril 1995.
+  - Aucune autre branche du régime général ne change au 1er avril 1995 dans les paramètres : le point transféré ne se retranche donc d'aucune branche, ni à l'ancienne date ni à la nouvelle.
+  - Aucun chemin de paramètre ne change.
+
 ## 0.115 - [#465](https://github.com/openfisca/openfisca-tunisia/pull/465)
 
 * Évolution du système socio-fiscal.
