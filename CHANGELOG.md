@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.115 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/04/1999 au 31/07/2004.
+* Zones impactées : `parameters/prelevements_sociaux/atmp`.
+* Détails :
+  - **Les 82 taux de cotisation des accidents du travail et des maladies professionnelles commencent le 1er avril 1999, et non le 1er août 2004.** Ce sont les taux de l'article 2 nouveau du décret n° 95-538, dans la rédaction de l'article premier du décret n° 99-1010 du 10 mai 1999 : ceux des employeurs affiliés à la CNSS, une fois opéré le transfert d'un point des cotisations du régime général au régime de réparation. Le décret entre en vigueur « à compter du 1er avril 1999 » (article 2). L'`index.yaml` portait déjà cette référence et cette date ; les taux, eux, ne portaient ni l'une ni l'autre, et commençaient au 1er août 2004 sans texte.
+  - **Lecture sur pièce.** Les 37 secteurs et leurs sous-secteurs ont été lus à l'image dans les deux éditions du JORT n° 40 du 18 mai 1999 : pp. 733-734 de l'édition française, pp. 897-898 de l'édition arabe, qui fait foi. Les taux concordent d'une édition à l'autre, et **les 82 valeurs déjà versées sont toutes celles du décret** : aucune ne change. Chaque taux porte désormais sa référence, avec le numéro de son point dans l'article 2 nouveau.
+  - **Aucun texte modifiant cette échelle après 1999 n'a été identifié** dans le répertoire des textes du Journal officiel ; cela n'en prouve pas l'absence. Aucun texte de taux daté de 2004 n'a été identifié non plus.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres. Un test nouveau, `tests/test_atmp_99_1010.py`, lit onze taux la veille et le jour de l'entrée en vigueur, et au 1er août 2004. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - **Un intitulé diffère d'une édition à l'autre.** Le point 14-3 est « industrie du cuir » dans l'édition française, « صناعة الأحذية » (industrie de la chaussure) dans l'édition arabe, qui fait foi. Le taux est le même ; le nom du paramètre, `industrie_du_cuir`, suit l'édition française et n'est pas changé ici.
+  - Aucun chemin de paramètre ne change.
+  - Numéro de version 0.115, pour suivre la 0.114 de la #460.
+
 ## 0.113 - [#461](https://github.com/openfisca/openfisca-tunisia/pull/461)
 
 * Évolution du système socio-fiscal.
