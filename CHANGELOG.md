@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.118 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1999.
+* Zones impactées : `parameters/prelevements_sociaux/atmp_avant_transfert`.
+* Détails :
+  - **Verse les taux de l'article premier nouveau du décret n° 95-538**, dans la rédaction du décret n° 99-1010 du 10 mai 1999. Ce sont les taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles, fixés par secteur d'activité **avant** le transfert d'un point des cotisations du régime général. `atmp` portait déjà les taux de l'article 2 nouveau, ceux d'après le transfert : les deux échelles sont désormais présentes.
+  - Le nœud `atmp_avant_transfert` reprend exactement l'arborescence et les noms de feuilles d'`atmp`. Il compte 82 taux, de 0,50 % (services de bureaux) à 6 % (transports terrestres, manutention et entreposage, auto-écoles).
+  - **Lecture sur pièce.** Les taux ont été lus à l'image dans les deux éditions du JORT n° 40 du 18 mai 1999 : pp. 732-733 de l'édition française, pp. 896-897 de l'édition arabe. Ils concordent. Ils s'appliquent à compter du 1er avril 1999 (article 2 du décret n° 99-1010).
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres. Un test nouveau, `tests/test_atmp_avant_transfert_99_1010.py`, lit huit taux, vérifie que l'arborescence est celle d'`atmp`, et qu'aucun taux d'avant le transfert n'est inférieur au taux d'après. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.117 - [#469](https://github.com/openfisca/openfisca-tunisia/pull/469)
 
 * Évolution du système socio-fiscal.
