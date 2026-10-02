@@ -1,0 +1,7 @@
+description: "Industries mécaniques, de fonderies et électriques (point 9)"
+metadata:
+  short_label: "Industries mécaniques, de fonderies et électriques"
+  order:
+  - mecaniques
+  - fonderie_siderurgie
+  - electriques

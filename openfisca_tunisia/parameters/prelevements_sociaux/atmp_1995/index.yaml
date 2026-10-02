@@ -1,0 +1,6 @@
+description: "Échelle des taux de cotisation au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles fixée par le décret n° 95-538, en vigueur du 1er janvier 1995 au 31 mars 1999"
+metadata:
+  short_label: "Échelle AT/MP de 1995"
+  order:
+  - avant_transfert
+  - apres_transfert

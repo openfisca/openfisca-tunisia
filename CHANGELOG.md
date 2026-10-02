@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.117 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1995 au 31/03/1999.
+* Zones impactées : `parameters/prelevements_sociaux/atmp_1995`.
+* Détails :
+  - **Verse l'échelle des taux de cotisation des accidents du travail et des maladies professionnelles de 1995**, fixée par le décret n° 95-538 du 1er avril 1995. Elle compte dix-huit classes d'activité, dont quatre subdivisées, soit 40 taux. Le nœud est propre à cette échelle, parce que ses classes ne recoupent pas les secteurs de 1999 portés par `atmp`.
+  - **Deux séries.** `atmp_1995/avant_transfert` porte les taux de l'article premier, de 0,60 % (services de bureaux) à 7,20 % (grandes industries chimiques, industries extractives). `atmp_1995/apres_transfert` porte ceux de l'article 2, qui s'appliquent aux employeurs affiliés à la CNSS une fois transféré un point des cotisations du régime général : de 0,50 % à 5 %.
+  - **Dates.** Les taux s'appliquent du 1er janvier 1995, date d'entrée en vigueur du décret (article 28), au 31 mars 1999. Le décret n° 99-1010 abroge et remplace les articles 1er et 2 à compter du 1er avril 1999. Aucun texte modifiant l'échelle entre-temps n'a été identifié : ni le répertoire des textes du Journal officiel, ni le visa du décret n° 99-1010, qui cite le décret n° 95-538 sans « tel que modifié », n'en font paraître.
+  - **Lecture sur pièce.** Les taux ont été lus dans les deux éditions du JORT n° 30 du 14 avril 1995, pp. 690-691 : la couche texte de l'édition française, et l'image de l'édition arabe. Ils concordent.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres. Un test nouveau, `tests/test_atmp_95_538.py`, lit neuf taux de chaque série la veille et le jour de chaque borne. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.116 - [#468](https://github.com/openfisca/openfisca-tunisia/pull/468)
 
 * Évolution du système socio-fiscal.
