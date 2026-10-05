@@ -6,8 +6,6 @@ values:
     value: 14.56
   1968-05-01:
     value: 14.56
-  1971-05-01:
-    value: 18.026
   1974-01-01:
     value: 22.533
   1975-06-01:
@@ -116,28 +114,27 @@ metadata:
   unit: currency
   reference:
     1961-04-01:
-    - title: Décret n°61-145 du 30 mars 1961 portant relèvement général des salaires
+    - title: "Décret n° 61-145 du 30 mars 1961, portant relèvement général des salaires, article 6"
       href: https://www.pist.tn/jort/1961/1961F/Jo01261.pdf
-    - title: امر عدد   145 بسنة  1961 مؤرخ في 30 مارس 1961 يتعلق بالترفيع العام للاجور
+      note: "JORT n° 12 du 28-31 mars 1961, pp. 445-446. Il n'existe pas encore de salaire minimum interprofessionnel garanti : le décret majore de 5 % les minima des règlements de salaires (article premier) et fixe un plancher (article 6) : le salaire ne peut être inférieur, par heure de travail effectif, à 76 millimes dans les entreprises et chantiers situés à Tunis, Bizerte, Sousse, Sfax et leur banlieue, et à 60 millimes dans les autres localités. La valeur portée ici est celle de la première zone ; celle de la seconde n'est pas représentée. Le décret fixe un plancher horaire unique, sans distinguer de régime horaire ni fixer de montant mensuel : les montants mensuels sont ce plancher rapporté à 208 heures (48 heures) ou à 173,33 heures (40 heures). Second article 11 (numérotation du fascicule) : effet à compter du 1er avril 1961."
+    - title: "أمر عدد 145 لسنة 1961 مؤرخ في 30 مارس 1961 يتعلق بالترفيع العام في الأجور"
       href: https://www.pist.tn/jort/1961/1961A/Ja01261.pdf
     1966-01-01:
-    - title: Décret n°65-561 du 31 décembre 1965
+    - title: "Décret n° 65-561 du 31 décembre 1965, portant relèvement des salaires dans l'industrie, le commerce et les professions libérales, article 5"
       href: https://www.pist.tn/jort/1965/1965F/Jo06665.pdf
-    - title: امر عدد 561  لسنة 1965 مؤرخ في 31 ديسمبر   يتعلق بالترفيع  في الاجور في قطاع الصناعة والتجارة  و المهن الحرة
+      note: "JORT n° 66 du 31 décembre 1965, p. 1741. Article 5 : le salaire ne peut être inférieur, par heure de travail effectif, à 84 millimes dans les entreprises et chantiers situés à Tunis, Bizerte, Sousse, Sfax et leur banlieue, et à 66 millimes dans les autres localités. La valeur portée ici est celle de la première zone ; celle de la seconde n'est pas représentée. Le décret fixe un plancher horaire unique, sans distinguer de régime horaire ni fixer de montant mensuel : les montants mensuels sont ce plancher rapporté à 208 heures (48 heures) ou à 173,33 heures (40 heures). Article 12 : effet à compter du 1er janvier 1966."
+    - title: "أمر عدد 561 لسنة 1965 مؤرخ في 31 ديسمبر 1965 يتعلق بالترفيع في الأجور في قطاع الصناعة والتجارة والمهن الحرة"
       href: https://www.pist.tn/jort/1965/1965A/Ja06665.pdf
     1968-05-01:
-    - title: Décret n°68-97 du 15 avril 1969 portant suppression des zones de salaires dans les activités  du secteur non agricole
+    - title: "Décret n° 68-97 du 15 avril 1968, portant suppression des zones de salaires dans les activités du secteur non agricole, articles premier et 2"
       href: https://www.pist.tn/jort/1968/1968F/Jo01668.pdf
-    - title: امر عدد   97 لسنة   1968  مؤرخ في     يتعلق بجدف الأجور في نشاطات  القطاع غير الفلاحي
+      note: "JORT n° 16 du 16-19 avril 1968, p. 399. Article premier : la zone II est supprimée. Article 2 : les taux de salaire minima de la zone I sont étendus à l'ensemble du territoire. Le décret ne fixe aucun montant : la valeur reste celle du décret n° 65-561. Article 7 : effet à compter du 1er mai 1968."
+    - title: "أمر عدد 97 لسنة 1968 مؤرخ في 15 أفريل 1968 يتعلق بحذف مناطق الأجور في نشاطات القطاع غير الفلاحي"
       href: https://www.pist.tn/jort/1968/1968A/Ja01668.pdf
-    1971-05-01:
-    - title: Décret n°71-164 du 03 mai 1971 instituant une indemnité de cherté de vie dans l'industrie , le commerce et les professions libérales
-      href: https://www.pist.tn/jort/1971/1971F/Jo02071.pdf
-    - title: امر عدد  164  لسنة   1971  مؤرخ في   3 ماي 1971  يتعلق باحداث منحة لغلو  المعاش  في القطاعات في الصناعة  و التجارة  والمهن الحرة
-      href: https://www.pist.tn/jort/1971/1971A/Ja02071.pdf
     1974-01-01:
     - title: Décret n°74-63 du 31 janvier 1974 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail.
       href: https://www.pist.tn/jort/1974/1974F/Jo01074.pdf
+      note: "JORT n° 10 du 8 février 1974, p. 283. Article premier : le SMIG est fixé à 130 millimes l'heure pour les travailleurs âgés de dix-huit ans au moins ; « l'indemnité de vie chère de 0 D. 020 par heure de travail effectif est comprise dans le salaire minimum interprofessionnel garanti ». C'est l'indemnité de cherté de vie du décret n° 71-164, qui cesse alors d'exister à côté du minimum. Le décret fixe un plancher horaire unique, sans distinguer de régime horaire ni fixer de montant mensuel : les montants mensuels sont ce plancher rapporté à 208 heures (48 heures) ou à 173,33 heures (40 heures). Article 5 : effet à compter du 1er janvier 1974."
     - title: امر عدد 63   لسنة   1974  مؤرخ في   31 جانفي 1974   يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
       href: https://www.pist.tn/jort/1974/1974A/Ja01074.pdf
     1975-06-01:
@@ -348,20 +345,20 @@ metadata:
     - title: امر حكومي عدد 1762 لسنة 2015 مؤرخ في 9 نوفمبر 2015 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
       href: https://www.pist.tn/jort/2015/2015A/Ja0912015.pdf
     2016-08-01:
-    - title: Décret n°2017-668 du 05 juin 2017  fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
-      href: https://www.pist.tn/jort/2017/2017F/Jo0452017.pdf
-    - title: امر حكومي عدد 668 لسنة 2017 مؤرخ في 5 جوان 2017 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
+    - title: "أمر حكومي عدد 668 لسنة 2017 مؤرخ في 5 جوان 2017 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
       href: https://www.pist.tn/jort/2017/2017A/Ja0452017.pdf
+      note: "Décret gouvernemental n° 2017-668 du 5 juin 2017, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail. JORT n° 45 du 6 juin 2017. L'édition française de ce fascicule n'est pas servie par pist.tn : l'adresse 2017F/Jo0452017.pdf renvoie le même fichier que l'édition arabe."
     2018-05-01:
     - title: Décret gouvernemental n°2018-672 du 07 août 2018 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
       href: https://www.pist.tn/jort/2018/2018F/Jo0642018.pdf
     - title: امر حكومي عدد 672 لسنة 2018 مؤرخ في 7 أوت 2018 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل
       href: https://www.pist.tn/jort/2018/2018A/Ja0642018.pdf
     2019-05-01:
-    - title: Décret gouvernemental n°2019-454 du 28 mai 2019 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/décret_2019_454_fr.pdf
-    - title: امر حكومي عدد 454 لسنة 2019 مؤرخ في 28 ماي 2019 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل.
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/décret_2019_454_ar.pdf
+    - title: "Décret gouvernemental n° 2019-454 du 28 mai 2019, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, article premier"
+      href: https://www.pist.tn/jort/2019/2019F/Jo0432019.pdf
+      note: "JORT n° 43 du 28 mai 2019, pp. 1585-1586. Article premier : le SMIG est fixé à 403,104 dinars (48 heures) et à 343,892 dinars (40 heures) par mois, et à 1 938 millimes (48 heures) et à 1 984 millimes (40 heures) l'heure ; il comprend l'indemnité complémentaire provisoire instituée par le décret n° 81-437 et majorée par le décret n° 82-501. Article 7 : effet à compter du 1er mai 2019."
+    - title: "أمر حكومي عدد 454 لسنة 2019 مؤرخ في 28 ماي 2019 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/2019/2019A/Ja0432019.pdf
     2020-10-01:
     - title: Décret gouvernemental n° 2020-1069 du 30 décembre 2020 fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
       href: https://www.pist.tn/jort/2021/2021F/Jo0012021.pdf
