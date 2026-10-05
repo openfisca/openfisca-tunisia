@@ -45,7 +45,6 @@ CAS = [
     ("indemnite_cherte_de_vie_horaire", "1973-12-31", 0.02),
     ("indemnite_cherte_de_vie_horaire", "1974-01-01", 0),
     ("indemnite_cherte_de_vie_mensuelle", "1971-05-01", 4),
-    ("indemnite_cherte_de_vie_mensuelle", "1974-01-01", 0),
     # Indemnité complémentaire provisoire et majoration de 1982
     ("indemnite_complementaire_provisoire", "1981-04-01", 10),
     ("indemnite_complementaire_provisoire", "1982-02-01", 10),
@@ -95,3 +94,10 @@ def test_smig_1982_se_decompose_selon_le_decret_82_501(regime, smig):
     assert MARCHE_TRAVAIL.children[f"smig_{regime}_mensuel"](
         "1982-02-01"
     ) == pytest.approx(smig)
+
+
+def test_montant_mensuel_de_cherte_de_vie_sans_valeur_apres_1973():
+    """Le décret n° 74-63 n'intègre au SMIG que le montant horaire : la série mensuelle s'arrête."""
+    mensuelle = MARCHE_TRAVAIL.children["indemnite_cherte_de_vie_mensuelle"]
+    assert mensuelle("1973-12-31") == pytest.approx(4)
+    assert mensuelle("1974-01-01") is None

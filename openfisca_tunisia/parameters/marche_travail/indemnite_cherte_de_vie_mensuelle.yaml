@@ -3,7 +3,7 @@ values:
   1971-05-01:
     value: 4
   1974-01-01:
-    value: 0
+    value: null
 metadata:
   unit: currency
   reference:
@@ -16,7 +16,7 @@ metadata:
     1974-01-01:
     - title: "Décret n° 74-63 du 31 janvier 1974, fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le code du travail, article premier"
       href: https://www.pist.tn/jort/1974/1974F/Jo01074.pdf
-      note: "JORT n° 10 du 8 février 1974, p. 283. Article premier : « l'indemnité de vie chère de 0 D. 020 par heure de travail effectif est comprise dans le salaire minimum interprofessionnel garanti ». Le décret ne mentionne pas le montant mensuel de quatre dinars : la valeur nulle suppose qu'il suit le montant horaire, dont il est la contrepartie pour les employés payés au mois. Article 5 : effet à compter du 1er janvier 1974."
+      note: "JORT n° 10 du 8 février 1974, p. 283. Article premier : « l'indemnité de vie chère de 0 D. 020 par heure de travail effectif est comprise dans le salaire minimum interprofessionnel garanti ». Le décret ne mentionne pas le montant mensuel de quatre dinars : la série s'arrête à cette date sans qu'un montant soit posé, faute de texte qui dise s'il est intégré au SMIG comme le montant horaire. Article 5 : effet à compter du 1er janvier 1974."
     - title: "أمر عدد 63 لسنة 1974 مؤرخ في 31 جانفي 1974 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
       href: https://www.pist.tn/jort/1974/1974A/Ja01074.pdf
 documentation: |-
