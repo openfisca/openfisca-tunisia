@@ -1,0 +1,8 @@
+description: Avance sur la taxe de formation professionnelle (crédit d'impôt formation)
+metadata:
+  order:
+  - taux_max
+  - seuil
+  short_label: Avance sur la TFP
+documentation: |-
+  L'avance est un crédit d'impôt accordé à l'entreprise qui forme son personnel. Elle se calcule sur la taxe de l'année précédente, au niveau de l'entreprise.
