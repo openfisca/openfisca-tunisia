@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.119 - [#478](https://github.com/openfisca/openfisca-tunisia/pull/478)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1967 (taxe de formation professionnelle) et du 01/08/1977 (contribution au FOPROLOS).
+* Zones impactées : `parameters/prelevements_sociaux/autres`, `variables/prelevements_obligatoires/autres_prelevements_salaires`, `variables/prelevements_obligatoires/cotisations_sociales`.
+* Détails :
+  - **Verse les taux de la taxe de formation professionnelle (TFP)** : 2 % pour tous les secteurs à compter du 1er janvier 1967 (décret n° 66-527, articles premier et 2) ; à compter des salaires de janvier 1989, 1 % pour les industries manufacturières et 2 % pour les autres secteurs (loi n° 88-145, articles 29 et 30). Le taux fixé en 1957 n'est pas établi : aucune valeur n'est posée avant 1967, et la taxe vaut zéro avant cette date.
+  - **Verse le taux de la contribution au fonds de promotion du logement pour les salariés (FOPROLOS)** : 2 % à compter du 1er août 1977 (loi n° 77-54, articles 2 et 10), 1 % à compter des salaires de janvier 1989 (loi n° 88-145, article 35).
+  - **Verse les paramètres de l'avance sur la TFP** (crédit d'impôt formation, à compter du 1er janvier 2009) : 60 % au plus de la taxe de l'année précédente, pour une taxe annuelle d'au moins 1 000 dinars (décret n° 2009-292, articles 2 et 3 ; loi n° 2007-69, articles 27 et 31). Aucune formule ne les lit : l'avance se calcule par entreprise, sur l'année précédente.
+  - **Nouvelles variables** : `taxe_formation_professionnelle` et `contribution_foprolos`, assises sur `assiette_cotisations_sociales` ; leur somme `autres_prelevements_employeur` ; et trois variables d'entrée. `employeur_industrie_manufacturiere` vaut faux par défaut. `employeur_redevable_tfp` et `employeur_redevable_foprolos` prennent une valeur par défaut déduite du régime du salarié, et se saisissent pour tout autre cas : TFP pour le seul régime des salariés non agricoles, FOPROLOS pour ce régime et pour les agents affiliés à la CNRPS. Sans régime renseigné, rien ne change.
+  - **`salaire_super_brut` change** : il comprend désormais `autres_prelevements_employeur`. Pour un salarié du régime des salariés non agricoles payé 1 000 DT, il augmente de 20 DT par mois de 1967 à juillet 1977, de 40 DT d'août 1977 à décembre 1988, puis de 30 DT (20 DT dans les industries manufacturières). Pour un agent affilié à la CNRPS, il augmente du seul FOPROLOS. `cotisations_employeur` ne change pas : ces prélèvements ne sont pas des cotisations de sécurité sociale.
+  - Tests : `tests/formulas/cotisations/autres_prelevements_salaires.yaml`, aux bornes de 1967, 1977 et 1989, par secteur et par régime.
+
 ## 0.118 - [#470](https://github.com/openfisca/openfisca-tunisia/pull/470)
 
 * Évolution du système socio-fiscal.
