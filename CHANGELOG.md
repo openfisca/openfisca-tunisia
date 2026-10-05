@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.120 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+## 0.120 - [#479](https://github.com/openfisca/openfisca-tunisia/pull/479)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : du 01/10/1969 au 31/10/1969 et du 01/02/1977 au 30/04/1977 (SMAG) ; du 01/05/1971 au 31/12/1973 (SMIG) ; du 01/04/1981 au 06/04/1981, puis à partir du 01/02/1982 (indemnité complémentaire provisoire) ; du 01/02/1982 au 15/03/1982 (majoration du SMIG de 1982).
