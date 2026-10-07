@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.121 - [#480](https://github.com/openfisca/openfisca-tunisia/pull/480)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/07/1988 au 31/12/2020 (taux normal, réduit et nul, jusque-là sans valeur avant 2021) ; à partir du 01/07/1988 (taux majoré) et du 01/01/1995 (taux intermédiaire), paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/tva`.
+* Détails :
+  - **La grille des taux de la TVA est datée et sourcée, de 1988 à aujourd'hui.** Les trois paramètres existants ne portaient qu'une valeur au 1er janvier 2021, sans référence. Cette date, qui n'est celle d'aucun texte, disparaît ; chaque valeur commence à la date d'effet énoncée par son texte et porte sa référence au *Journal officiel*.
+  - **`taux_normal.taux`** : 17 % au 1er juillet 1988 (code de la TVA, article 7 ; décret n° 88-1109, article premier), 18 % au 1er janvier 1998 (loi n° 97-88, articles 25 et 90), 19 % au 1er janvier 2018 (loi n° 2017-66, articles 43 et 67).
+  - **`taux_reduit.taux`** : 6 % au 1er juillet 1988 (article 7, numéro 1, tableau « B »), 7 % au 1er janvier 2018 (loi n° 2017-66, articles 43 et 67).
+  - **`taux_nul.taux`** : 0 à compter du 1er juillet 1988. Le code ne fixe aucun taux de 0 % ; la valeur tient lieu de l'exonération de l'article 4 (tableau « A »), et la note le dit.
+  - **Paramètre nouveau `taux_intermediaire.taux`** : 10 % au 1er janvier 1995, créé hors du code (loi n° 94-127, articles 56 à 58 et 100) ; même taux incorporé à l'article 7 du code au 1er janvier 2002 (loi n° 2001-123, articles 82 à 84 et 97) ; 12 % au 1er janvier 2007 (loi n° 2006-80, articles 17 et 19) ; 13 % au 1er janvier 2018 (loi n° 2017-66, articles 43 et 67). Sans valeur avant 1995.
+  - **Paramètre nouveau `taux_majore.taux`** : 29 % du 1er juillet 1988 au 31 décembre 2006 (article 7, numéro 2, tableau « C ») ; sans valeur à compter du 1er janvier 2007, date de sa suppression (loi n° 2006-80, articles 13 et 19).
+  - Les descriptions et libellés des nœuds ne portent plus de valeur (« Taux 19% » devient « Taux normal »).
+  - **Effet sur les calculs.** Aucune variable du système fiscal ni du système des pensions ne lit ces paramètres : aucun résultat ne change, aucun test existant ne bouge. Pour qui les lit directement, les trois taux existants ont désormais une valeur du 1er juillet 1988 au 31 décembre 2020, là où la lecture échouait ; la valeur lue à partir de 2021 est inchangée (19 %, 7 %, 0). Avant 2018, elle n'est pas celle de 2021 : 18 % et 6 % de 1998 à 2017, 17 % et 6 % de 1988 à 1997. Les listes `produits`, datées de 2021, ne sont pas touchées : elles restent sans valeur avant cette date.
+  - Aucun chemin de paramètre existant ne change.
+
 ## 0.120 - [#479](https://github.com/openfisca/openfisca-tunisia/pull/479)
 
 * Évolution du système socio-fiscal.
