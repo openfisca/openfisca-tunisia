@@ -1,5 +1,6 @@
 description: "Conventions collectives sectorielles"
 metadata:
+  short_label: "Conventions collectives"
   order:
   - assurances
   - batiment
@@ -9,14 +10,15 @@ documentation: |-
   avenants, agréés par arrêté du ministre chargé des affaires sociales et publiés au Journal
   officiel. Un sous-nœud par branche.
 
-  Chaque branche porte pour l'instant un résumé de sa grille : le salaire de base du bas de la
-  grille (`salaire_base_bas`) et celui du haut (`salaire_base_haut`), à chaque date d'effet. La
-  position exacte que chacun désigne — grille, catégorie, échelon — est dite dans sa description.
-  Le textile et le bâtiment sont en dinars par heure, les assurances en dinars par mois.
+  Sous chaque branche, le nœud `salaire_base` reprend la structure de la grille elle-même : la
+  grille quand la convention en a plusieurs, puis la catégorie ou l'échelle, puis l'échelon quand
+  la grille en a. Chaque paramètre est une case de la grille, nommée comme la convention la nomme.
+  Les grilles sont remplies en partie : seules les cases lues ont un fichier, et l'index de chaque
+  grille dit lesquelles.
 
   Chaque date est la date d'effet que la grille énonce. Seules entrent les suites d'avenants
   consécutifs, tous lus, dont les grilles ont le même périmètre au regard de l'indemnité
-  complémentaire provisoire ; une date d'effet dont le salaire n'est pas établi porte une valeur
-  vide, pour que la valeur précédente ne se prolonge pas.
+  complémentaire provisoire ; une date d'effet à laquelle le salaire d'une case n'est pas établi
+  porte une valeur vide, pour que la valeur précédente ne se prolonge pas.
 
   Ces salaires sont des salaires de base : les indemnités et primes conventionnelles s'y ajoutent.

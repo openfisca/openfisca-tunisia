@@ -1,0 +1,31 @@
+description: "Bâtiment et travaux publics - grille du personnel occasionnel"
+metadata:
+  short_label: "Personnel occasionnel"
+  order:
+  - manoeuvre_ordinaire
+  - chef_equipe_3e_degre
+documentation: |-
+  Structure de la grille : un salaire horaire par catégorie, sans échelon. Les catégories sont le
+  manœuvre ordinaire, le manœuvre spécialisé, l'aide-ouvrier, l'ouvrier qualifié de 1re catégorie,
+  l'ouvrier qualifié de 2e catégorie, l'ouvrier hautement qualifié et le chef d'équipe, à trois
+  degrés. L'ouvrier hautement qualifié n'a qu'une ligne dans les grilles de 1999 à 2007 ; la grille
+  du 1er mai 2008 le divise en deux niveaux, I et II. Dans les avenants, cette grille porte le
+  numéro 1, 3 ou 5 selon la date d'effet.
+
+  Chaque catégorie est une case, nommée par son intitulé : `manoeuvre_ordinaire`,
+  `chef_equipe_3e_degre`.
+
+  Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+  hebdomadaire du travail elle se rapporte.
+
+  Cases versées, du 1er mai 1996 (avenant n° 5) à l'avenant n° 16 :
+  - manœuvre ordinaire — le salaire le plus bas de la grille ;
+  - chef d'équipe du 3e degré — le salaire le plus élevé de la grille.
+
+  Les autres cases de la grille restent à lire : aucune entrée ne les représente.
+
+  La série commence au 1er mai 1996. La grille de 1990 ne comprend pas l'indemnité complémentaire
+  provisoire et ne mesure donc pas la même grandeur, et les grilles de 1991 à 1993 ne sont pas
+  relevées : rien d'antérieur n'est versé. De l'avenant n° 5 à l'avenant n° 16, tous les avenants
+  ont été lus, sans numéro manquant. Les trois grilles de l'avenant n° 16 (1er décembre 2021,
+  1er janvier 2023, 1er janvier 2024) sont lues sur une reproduction du journal par un site tiers.

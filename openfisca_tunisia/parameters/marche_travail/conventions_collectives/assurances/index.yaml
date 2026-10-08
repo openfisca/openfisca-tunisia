@@ -1,8 +1,8 @@
 description: "Convention collective nationale, puis sectorielle, des assurances"
 metadata:
+  short_label: "Assurances"
   order:
-  - salaire_base_bas
-  - salaire_base_haut
+  - salaire_base
   reference:
   - title: "Arrêté du ministre des affaires sociales du 24 décembre 1975, portant agrément de la convention collective nationale des assurances"
     href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
@@ -27,8 +27,6 @@ documentation: |-
   d'assurance et leurs employés, les concierges des immeubles de rapport et les agents
   contractuels.
 
-  La grille des salaires est mensuelle et compte 21 échelles, réparties en cinq catégories depuis
-  1983 (I, cadres de direction, à V, agents de services et assimilés), et 12 échelons d'ancienneté
-  jusqu'en 1998, puis 14 depuis le 1er juin 1999. La durée du travail de référence est de
-  40 heures par semaine, soit 2 080 heures par an. Depuis l'avenant n° 4, agréé le 24 juillet
-  1996, les avenants et leurs grilles ne paraissent que dans l'édition arabe du journal.
+  La durée du travail de référence est de 40 heures par semaine, soit 2 080 heures par an. Depuis
+  l'avenant n° 4, agréé le 24 juillet 1996, les avenants et leurs grilles ne paraissent que dans
+  l'édition arabe du journal.

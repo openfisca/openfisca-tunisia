@@ -1,0 +1,29 @@
+description: "Textile - grille des agents payés à l'heure (personnel d'exécution)"
+metadata:
+  short_label: "Agents payés à l'heure"
+  order:
+  - categorie_1
+  - categorie_4_2
+documentation: |-
+  Structure de la grille : sept catégories — I, II, III-1, III-2, III-3, IV-1 et IV-2 — et, dans
+  chacune, des échelons numérotés à partir de 0, l'échelon 0 étant celui de la confirmation. Les
+  échelons vont de 0 à 16 dans la convention de 1974, et de 0 à 20 dans les grilles lues depuis
+  2011. La date à laquelle la grille passe de 16 à 20 échelons n'est pas relevée ici.
+
+  Identifiants : `categorie_1` pour la catégorie I, `categorie_4_2` pour la catégorie IV-2 ;
+  `echelon_0` pour l'échelon 0.
+
+  Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+  hebdomadaire du travail elle se rapporte.
+
+  Cases versées, du 1er mai 1994 (avenant n° 5) à l'avenant n° 18 :
+  - catégorie I, échelon 0 — le salaire le plus bas de la grille ;
+  - catégorie IV-2, échelon 0 — l'entrée de la catégorie la plus élevée, et non le sommet de la
+    grille, qui est le dernier échelon de cette catégorie.
+
+  Les autres cases de la grille restent à lire : aucune entrée ne les représente.
+
+  La série commence au 1er mai 1994. Les grilles de 1990 à 1992 ne comprennent pas l'indemnité
+  complémentaire provisoire et ne mesurent donc pas la même grandeur, et celle de 1993 n'est pas
+  relevée : rien d'antérieur n'est versé. De l'avenant n° 5 à l'avenant n° 18, tous les avenants
+  ont été lus, sans numéro manquant.

@@ -1,0 +1,227 @@
+description: "Textile - agents payés à l'heure - catégorie IV-2 : salaire horaire de base, par échelon"
+metadata:
+  short_label: "Catégorie IV-2"
+  order:
+  - echelon_0
+documentation: |-
+  Catégorie la plus élevée de la grille des agents payés à l'heure. Échelon versé : l'échelon 0. Les autres cases de la grille restent à lire : aucune entrée ne les représente.
+echelon_0:
+  description: "Textile - agents payés à l'heure - catégorie IV-2, échelon 0 (confirmation) : salaire horaire de base"
+  values:
+    1994-05-01:
+      value: 1.005
+    1995-05-01:
+      value: 1.053
+    1996-05-01:
+      value: 1.116
+    1997-05-01:
+      value: 1.179
+    1998-05-01:
+      value: 1.242
+    1999-05-01:
+      value: null
+    2000-05-01:
+      value: null
+    2001-05-01:
+      value: null
+    2002-05-01:
+      value: 1.494
+    2003-05-01:
+      value: null
+    2004-05-01:
+      value: null
+    2005-06-15:
+      value: null
+    2006-05-01:
+      value: null
+    2007-05-01:
+      value: null
+    2008-05-01:
+      value: 1.912
+    2009-05-01:
+      value: 1.998
+    2010-05-01:
+      value: 2.093
+    2011-05-01:
+      value: 2.192
+    2012-05-01:
+      value: 2.323
+    2014-05-01:
+      value: 2.462
+    2015-09-01:
+      value: null
+    2016-08-01:
+      value: 2.767
+    2018-01-01:
+      value: 2.933
+    2019-01-01:
+      value: 3.138
+    2020-01-01:
+      value: 3.358
+    2021-09-01:
+      value: 3.576
+    2022-05-01:
+      value: 3.826
+    2024-01-01:
+      value: 4.075
+    2025-01-01:
+      value: 4.34
+    2026-01-01:
+      value: 4.644
+    2027-01-01:
+      value: null
+  metadata:
+    short_label: "Échelon 0"
+    unit: currency/heure
+    reference:
+      1994-05-01:
+      - title: "Avenant n° 5 à la convention collective nationale du textile, agréé par arrêté du 22 septembre 1994"
+        href: https://www.pist.tn/jort/1994/1994F/Jo07894.pdf
+        note: "JORT n° 78 du 4 octobre 1994, édition française, p. 1638. La grille des agents payés à l'heure prend effet le 1er mai 1994 ; catégorie IV-2, échelon 0 : 1,005 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      1995-05-01:
+      - title: "Avenant n° 5 à la convention collective nationale du textile, agréé par arrêté du 22 septembre 1994"
+        href: https://www.pist.tn/jort/1994/1994F/Jo07894.pdf
+        note: "JORT n° 78 du 4 octobre 1994, édition française, p. 1640. La grille des agents payés à l'heure prend effet le 1er mai 1995 ; catégorie IV-2, échelon 0 : 1,053 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      1996-05-01:
+      - title: "Avenant n° 6 à la convention collective nationale du textile, agréé par arrêté du 24 juillet 1996"
+        href: https://www.pist.tn/jort/1996/1996A/Ja06096.pdf
+        note: "JORT n° 60 du 26 juillet 1996, édition arabe, p. 1841. La grille des agents payés à l'heure prend effet le 1er mai 1996 ; catégorie IV-2, échelon 0 : 1,116 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler. La sous-catégorie est lue sur la ligne « 2 » de la catégorie IV, sur un recadrage où l'en-tête de cette catégorie n'apparaît que pour la grille de 1997 : à contrôler."
+      1997-05-01:
+      - title: "Avenant n° 6 à la convention collective nationale du textile, agréé par arrêté du 24 juillet 1996"
+        href: https://www.pist.tn/jort/1996/1996A/Ja06096.pdf
+        note: "JORT n° 60 du 26 juillet 1996, édition arabe, p. 1843. La grille des agents payés à l'heure prend effet le 1er mai 1997 ; catégorie IV-2, échelon 0 : 1,179 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler. La sous-catégorie est lue sur la ligne « 2 » de la catégorie IV, sur un recadrage où l'en-tête de cette catégorie n'apparaît que pour la grille de 1997 : à contrôler."
+      1998-05-01:
+      - title: "Avenant n° 6 à la convention collective nationale du textile, agréé par arrêté du 24 juillet 1996"
+        href: https://www.pist.tn/jort/1996/1996A/Ja06096.pdf
+        note: "JORT n° 60 du 26 juillet 1996, édition arabe, p. 1845. La grille des agents payés à l'heure prend effet le 1er mai 1998 ; catégorie IV-2, échelon 0 : 1,242 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler. La sous-catégorie est lue sur la ligne « 2 » de la catégorie IV, sur un recadrage où l'en-tête de cette catégorie n'apparaît que pour la grille de 1997 : à contrôler."
+      1999-05-01:
+      - title: "Avenant n° 7 à la convention collective nationale du textile, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1110. La grille des agents payés à l'heure prend effet le 1er mai 1999 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      2000-05-01:
+      - title: "Avenant n° 7 à la convention collective nationale du textile, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1112. La grille des agents payés à l'heure prend effet le 1er mai 2000 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      2001-05-01:
+      - title: "Avenant n° 7 à la convention collective nationale du textile, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1114. La grille des agents payés à l'heure prend effet le 1er mai 2001 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      2002-05-01:
+      - title: "Avenant n° 8 à la convention collective nationale du textile, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0972002.pdf
+        note: "JORT n° 97 du 29 novembre 2002, édition arabe, p. 3009. La grille des agents payés à l'heure prend effet le 1er mai 2002 ; catégorie IV-2, échelon 0 : 1,494 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      2003-05-01:
+      - title: "Avenant n° 8 à la convention collective nationale du textile, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0972002.pdf
+        note: "JORT n° 97 du 29 novembre 2002, édition arabe, p. 3011. La grille des agents payés à l'heure prend effet le 1er mai 2003 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      2004-05-01:
+      - title: "Avenant n° 8 à la convention collective nationale du textile, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0972002.pdf
+        note: "JORT n° 97 du 29 novembre 2002, édition arabe, p. 3013. La grille des agents payés à l'heure prend effet le 1er mai 2004 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      2005-06-15:
+      - title: "Avenant n° 9 à la convention collective sectorielle du textile, agréé par arrêté du 17 janvier 2006"
+        href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+        note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 383. La grille des agents payés à l'heure prend effet le 15 juin 2005 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille. La grille fixe sa date d'effet au 15 juin 2005 « à titre exceptionnel »."
+      2006-05-01:
+      - title: "Avenant n° 9 à la convention collective sectorielle du textile, agréé par arrêté du 17 janvier 2006"
+        href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+        note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 385. La grille des agents payés à l'heure prend effet le 1er mai 2006 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille."
+      2007-05-01:
+      - title: "Avenant n° 9 à la convention collective sectorielle du textile, agréé par arrêté du 17 janvier 2006"
+        href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+        note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 387. La grille des agents payés à l'heure prend effet le 1er mai 2007 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille."
+      2008-05-01:
+      - title: "Avenant n° 10 à la convention collective sectorielle du textile, agréé par arrêté du 17 février 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+        note: "JORT n° 16 du 24 février 2009, édition arabe, p. 977. La grille des agents payés à l'heure prend effet le 1er mai 2008 ; catégorie IV-2, échelon 0 : 1,912 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2009-05-01:
+      - title: "Avenant n° 10 à la convention collective sectorielle du textile, agréé par arrêté du 17 février 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+        note: "JORT n° 16 du 24 février 2009, édition arabe, p. 979. La grille des agents payés à l'heure prend effet le 1er mai 2009 ; catégorie IV-2, échelon 0 : 1,998 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2010-05-01:
+      - title: "Avenant n° 10 à la convention collective sectorielle du textile, agréé par arrêté du 17 février 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+        note: "JORT n° 16 du 24 février 2009, édition arabe, p. 981. La grille des agents payés à l'heure prend effet le 1er mai 2010 ; catégorie IV-2, échelon 0 : 2,093 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2011-05-01:
+      - title: "Avenant n° 11 à la convention collective sectorielle du textile, agréé par arrêté du 11 octobre 2011"
+        href: https://www.pist.tn/jort/2011/2011A/Ja0782011.pdf
+        note: "JORT n° 78 du 14 octobre 2011, édition arabe, p. 2194. La grille des agents payés à l'heure prend effet le 1er mai 2011 ; catégorie IV-2, échelon 0 : 2,192 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue dans la couche texte du fascicule. Date d'effet lue à faible résolution : à confirmer ; elle concorde avec celle de l'avenant du bâtiment et des travaux publics de la même année."
+      2012-05-01:
+      - title: "Avenant n° 12 à la convention collective sectorielle du textile, agréé par arrêté du 19 février 2013"
+        href: https://www.pist.tn/jort/2013/2013A/Ja0162013.pdf
+        note: "JORT n° 16 du 22 février 2013, édition arabe, p. 845. La grille des agents payés à l'heure prend effet le 1er mai 2012 ; catégorie IV-2, échelon 0 : 2,323 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue dans la couche texte du fascicule."
+      2014-05-01:
+      - title: "Avenant n° 13 à la convention collective sectorielle du textile, agréé par arrêté du 17 octobre 2014"
+        href: https://www.pist.tn/jort/2014/2014A/Ja0902014.pdf
+        note: "JORT n° 90 du 7 novembre 2014, édition arabe, p. 3100. La grille des agents payés à l'heure prend effet le 1er mai 2014 ; catégorie IV-2, échelon 0 : 2,462 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue dans la couche texte du fascicule."
+      2015-09-01:
+      - title: "Avenant n° 14 à la convention collective sectorielle du textile, agréé par arrêté du 8 avril 2016"
+        href: https://www.pist.tn/jort/2016/2016A/Ja0302016.pdf
+        note: "JORT n° 30 du 12 avril 2016, édition arabe, p. 1320. La grille des agents payés à l'heure prend effet le 1er septembre 2015 ; le salaire de la position « catégorie IV-2, échelon 0 » n'y a pas été relevé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille."
+      2016-08-01:
+      - title: "Avenant n° 15 à la convention collective sectorielle du textile, agréé par arrêté du 14 août 2017"
+        href: https://www.pist.tn/jort/2017/2017A/Ja0662017.pdf
+        note: "JORT n° 66 du 18 août 2017, édition arabe, p. 2681. La grille des agents payés à l'heure prend effet le 1er août 2016 ; catégorie IV-2, échelon 0 : 2,767 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Lu à résolution réduite. Le numéro de page est déduit du pied de page de la dernière page de texte de l'avenant (p. 2680) : à contrôler."
+      2018-01-01:
+      - title: "Avenant n° 15 à la convention collective sectorielle du textile, agréé par arrêté du 14 août 2017"
+        href: https://www.pist.tn/jort/2017/2017A/Ja0662017.pdf
+        note: "JORT n° 66 du 18 août 2017, édition arabe, p. 2683. La grille des agents payés à l'heure prend effet le 1er janvier 2018 ; catégorie IV-2, échelon 0 : 2,933 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Lu à résolution réduite. Le numéro de page est déduit du pied de page de la dernière page de texte de l'avenant (p. 2680) : à contrôler."
+      2019-01-01:
+      - title: "Avenant n° 16 à la convention collective sectorielle du textile, agréé par arrêté du 21 janvier 2019"
+        href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 387. La grille des agents payés à l'heure prend effet le 1er janvier 2019 ; catégorie IV-2, échelon 0 : 3,138 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Lu à résolution réduite. Le numéro de page est déduit du pied de page de la dernière page de texte de l'avenant (p. 386) : à contrôler."
+      2020-01-01:
+      - title: "Avenant n° 16 à la convention collective sectorielle du textile, agréé par arrêté du 21 janvier 2019"
+        href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 389. La grille des agents payés à l'heure prend effet le 1er janvier 2020 ; catégorie IV-2, échelon 0 : 3,358 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Lu à résolution réduite. Le numéro de page est déduit du pied de page de la dernière page de texte de l'avenant (p. 386) : à contrôler."
+      2021-09-01:
+      - title: "Avenant n° 17 à la convention collective sectorielle du textile, agréé par arrêté du 23 juin 2022"
+        href: https://www.pist.tn/jort/2022/2022A/Ja0712022.pdf
+        note: "JORT n° 71 du 24 juin 2022, édition arabe, p. 2150. La grille des agents payés à l'heure prend effet le 1er septembre 2021 ; catégorie IV-2, échelon 0 : 3,576 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2022-05-01:
+      - title: "Avenant n° 17 à la convention collective sectorielle du textile, agréé par arrêté du 23 juin 2022"
+        href: https://www.pist.tn/jort/2022/2022A/Ja0712022.pdf
+        note: "JORT n° 71 du 24 juin 2022, édition arabe, p. 2152. La grille des agents payés à l'heure prend effet le 1er mai 2022 ; catégorie IV-2, échelon 0 : 3,826 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2024-01-01:
+      - title: "Avenant n° 18 à la convention collective sectorielle du textile, agréé par arrêté du 8 avril 2024"
+        href: https://www.pist.tn/jort/2024/2024A/Ja0492024.pdf
+        note: "JORT n° 49 du 16 avril 2024, édition arabe, p. 3507. La grille des agents payés à l'heure prend effet le 1er janvier 2024 ; catégorie IV-2, échelon 0 : 4,075 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2025-01-01:
+      - title: "Avenant n° 18 à la convention collective sectorielle du textile, agréé par arrêté du 8 avril 2024"
+        href: https://www.pist.tn/jort/2024/2024A/Ja0492024.pdf
+        note: "JORT n° 49 du 16 avril 2024, édition arabe, p. 3509. La grille des agents payés à l'heure prend effet le 1er janvier 2025 ; catégorie IV-2, échelon 0 : 4,340 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+      2026-01-01:
+      - title: "Avenant n° 18 à la convention collective sectorielle du textile, agréé par arrêté du 8 avril 2024"
+        href: https://www.pist.tn/jort/2024/2024A/Ja0492024.pdf
+        note: "JORT n° 49 du 16 avril 2024, édition arabe, p. 3511. La grille des agents payés à l'heure prend effet le 1er janvier 2026 ; catégorie IV-2, échelon 0 : 4,644 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le décret n° 2026-68 du 30 avril 2026 (JORT n° 44 du 30 avril 2026, pp. 838-839) relève de 5 %, à compter du 1er janvier 2026, les salaires de base des dernières grilles annexées aux conventions collectives sectorielles ; il ne dit pas comment cette hausse se combine avec une grille conventionnelle déjà fixée pour 2026. La valeur est celle de la grille de l'avenant, sans cette hausse."
+      2027-01-01:
+      - title: "Décret n° 2026-68 du 30 avril 2026, article premier"
+        href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+        note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse annuelle de 5 % des salaires de base au titre des années 2026, 2027 et 2028 ; pour 2027 et 2028, elle s'applique aux salaires majorés au titre de l'année qui précède. La dernière grille de l'avenant n° 18 est celle du 1er janvier 2026, et aucun texte ne publie de grille pour 2027 : sans valeur à compter de cette date, la grille de 2026 ne valant pas au-delà du 31 décembre 2026. La date du 1er janvier est retenue comme début de l'année 2027 ; la date d'effet que le décret donne à la hausse de 2027 n'est pas relevée ici : à confirmer."
+  documentation: |-
+    Salaire horaire de base de la catégorie IV-2, échelon 0 (confirmation), de la grille des
+    agents payés à l'heure (personnel d'exécution) annexée à la convention collective du textile.
+    C'est le salaire d'entrée de la catégorie la plus élevée de cette grille, et non son sommet, qui est le dernier échelon de cette catégorie.
+
+    Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+    hebdomadaire du travail elle se rapporte.
+
+    Ce que le salaire comprend : c'est un salaire de base. Il comprend l'indemnité complémentaire
+    provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982, que l'avenant n° 5
+    intègre aux salaires de base à compter du 1er mai 1994 (JORT n° 78 du 4 octobre 1994, p. 1637).
+    Il ne comprend pas les indemnités de la convention, qui s'y ajoutent.
+
+    La série commence au 1er mai 1994 : les grilles antérieures ne mesurent pas la même grandeur ou
+    ne sont pas relevées.
+
+    Ce salaire n'a pas été relevé dans les grilles à effet de 1999 à 2001, de 2003 à 2007 et du 1er septembre 2015 : la série est sans valeur sur ces périodes.
+
+    La série est sans valeur à compter du 1er janvier 2027 : la dernière grille de l'avenant n° 18
+    est celle du 1er janvier 2026, et le décret n° 2026-68 du 30 avril 2026 prévoit pour 2027 une
+    nouvelle hausse de 5 % dont aucun texte ne publie la grille.
+
+    Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
+    d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
+    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle une grille prend effet sans
+    que ce salaire ait été relevé, ou à laquelle le salaire change sans qu'aucun texte en publie le
+    montant : la valeur précédente n'y vaut plus.

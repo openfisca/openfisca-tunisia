@@ -1,8 +1,8 @@
 description: "Convention collective nationale, puis sectorielle, du textile"
 metadata:
+  short_label: "Textile"
   order:
-  - salaire_base_bas
-  - salaire_base_haut
+  - salaire_base
   reference:
   - title: "Arrêté du ministre des affaires sociales du 29 août 1974, portant agrément de la convention collective nationale du textile"
     href: https://www.pist.tn/jort/1974/1974F/Jo05574.pdf
@@ -16,10 +16,7 @@ documentation: |-
   paraît au JORT n° 76 des 10 et 12 décembre 1974, pp. 2715-2733. Les avenants l'intitulent
   « convention collective sectorielle du textile » à partir de l'avenant n° 9, agréé en 2006.
 
-  Chaque avenant de salaires porte deux grilles par date d'effet : celle des agents payés à l'heure
-  (personnel d'exécution : catégories I, II, III-1 à III-3, IV-1 et IV-2, avec des échelons
-  numérotés à partir de 0, l'échelon 0 étant celui de la confirmation) et celle des agents payés au
-  mois (catégories 1 à 17). Depuis l'avenant n° 6, agréé le 24 juillet 1996, les avenants et leurs
-  grilles ne paraissent que dans l'édition arabe du journal.
+  Depuis l'avenant n° 6, agréé le 24 juillet 1996, les avenants et leurs grilles ne paraissent que
+  dans l'édition arabe du journal.
 
   La date d'effet de la convention de 1974 n'est pas relevée ici.

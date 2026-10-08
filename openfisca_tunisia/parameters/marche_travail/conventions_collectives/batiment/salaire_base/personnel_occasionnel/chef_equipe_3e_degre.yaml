@@ -1,4 +1,4 @@
-description: "Bâtiment et travaux publics - salaire horaire de base du haut de la grille du personnel occasionnel (chef d'équipe du 3e degré)"
+description: "Bâtiment et travaux publics - personnel occasionnel - chef d'équipe du 3e degré : salaire horaire de base"
 values:
   1996-05-01:
     value: 1.285
@@ -55,6 +55,7 @@ values:
   2026-01-01:
     value: null
 metadata:
+  short_label: "Chef d'équipe du 3e degré"
   unit: currency/heure
   reference:
     1996-05-01:
@@ -164,23 +165,21 @@ metadata:
       note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse annuelle de 5 % des salaires de base, au titre des années 2026, 2027 et 2028, à compter du 1er janvier 2026 ; pour 2026, elle s'applique aux salaires de base de tous les échelons des dernières grilles annexées aux conventions collectives sectorielles. Aucun texte ne publie la grille qui en résulte pour cette branche : sans valeur à compter de cette date, la dernière grille conventionnelle ne valant pas au-delà du 31 décembre 2025."
 documentation: |-
   Salaire horaire de base de la catégorie « chef d'équipe du 3e degré » de la grille du personnel occasionnel
-  annexée à la convention collective du bâtiment et des travaux publics. C'est le salaire le plus élevé de cette grille.
+  annexée à la convention collective du bâtiment et des travaux publics. C'est le salaire le plus élevé de cette grille. Cette grille n'a
+  pas d'échelon.
 
-  Unité : dinars courants par heure de travail. La grille du personnel occasionnel ne dit pas à
-  quel régime de durée hebdomadaire du travail elle se rapporte ; la grille du personnel à
-  traitement mensuel de la même convention porte, en 1975, la mention « base : 48 heures/semaine ».
+  Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+  hebdomadaire du travail elle se rapporte.
 
   Ce que le salaire comprend : c'est un salaire de base. Il comprend l'indemnité complémentaire
   provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982, ce que chaque
   grille mentionne. Il ne comprend pas les indemnités de la convention (présence, transport), qui
   s'y ajoutent.
 
-  La série commence au 1er mai 1996, avec l'avenant n° 5. La grille de 1990 ne comprend pas
-  l'indemnité complémentaire provisoire et ne mesure donc pas la même grandeur, et les grilles de
-  1991 à 1993 ne sont pas relevées : rien d'antérieur n'est versé ici. De l'avenant n° 5 à l'avenant
-  n° 16, tous les avenants ont été lus, sans numéro manquant. Les trois grilles de l'avenant n° 16
-  (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont lues sur une reproduction du journal
-  par un site tiers.
+  La série commence au 1er mai 1996, avec l'avenant n° 5 : les grilles antérieures ne mesurent pas
+  la même grandeur ou ne sont pas relevées. Les trois grilles de l'avenant n° 16 (1er décembre
+  2021, 1er janvier 2023, 1er janvier 2024) sont lues sur une reproduction du journal par un site
+  tiers.
 
   Ce salaire n'a pas été relevé dans les grilles à effet de 2005 à 2007 : la série est sans valeur du 1er mai 2005 au 30 avril 2008.
 
