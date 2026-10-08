@@ -29,6 +29,7 @@ VALEURS = [
     ("textile", "salaire_base_bas", "2005-06-15", 1.178),
     ("textile", "salaire_base_bas", "2025-12-31", 3.035),
     ("textile", "salaire_base_bas", "2026-01-01", 3.248),
+    ("textile", "salaire_base_bas", "2026-12-31", 3.248),
     ("textile", "salaire_base_haut", "1998-05-01", 1.242),
     ("textile", "salaire_base_haut", "1999-04-30", 1.242),
     ("textile", "salaire_base_haut", "2002-05-01", 1.494),
@@ -88,6 +89,9 @@ SANS_VALEUR = [
     ("assurances", "salaire_base_haut", "2018-06-01"),
     ("assurances", "salaire_base_haut", "2019-06-01"),
     ("assurances", "salaire_base_haut", "2020-09-30"),
+    # Textile : l'avenant n° 18 ne fixe aucune grille pour 2027, que le décret n° 2026-68 relève
+    ("textile", "salaire_base_bas", "2027-01-01"),
+    ("textile", "salaire_base_haut", "2027-01-01"),
     # Décret n° 2026-68 : hausse de 5 % des dernières grilles au 1er janvier 2026, grilles non publiées
     ("batiment", "salaire_base_bas", "2026-01-01"),
     ("batiment", "salaire_base_haut", "2026-01-01"),
@@ -104,8 +108,8 @@ AVANT_LA_SERIE = [
 
 # Nombre de dates d'effet et, parmi elles, de dates sans valeur.
 DECOMPTE = [
-    ("textile", "salaire_base_bas", 30, 0),
-    ("textile", "salaire_base_haut", 30, 9),
+    ("textile", "salaire_base_bas", 31, 1),
+    ("textile", "salaire_base_haut", 31, 10),
     ("batiment", "salaire_base_bas", 27, 1),
     ("batiment", "salaire_base_haut", 27, 4),
     ("assurances", "salaire_base_bas", 29, 2),

@@ -60,6 +60,8 @@ values:
     value: 3.035
   2026-01-01:
     value: 3.248
+  2027-01-01:
+    value: null
 metadata:
   unit: currency/heure
   reference:
@@ -183,6 +185,10 @@ metadata:
     - title: "Avenant n° 18 à la convention collective sectorielle du textile, agréé par arrêté du 8 avril 2024"
       href: https://www.pist.tn/jort/2024/2024A/Ja0492024.pdf
       note: "JORT n° 49 du 16 avril 2024, édition arabe, p. 3511. La grille des agents payés à l'heure prend effet le 1er janvier 2026 ; catégorie I, échelon 0 : 3,248 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le décret n° 2026-68 du 30 avril 2026 (JORT n° 44 du 30 avril 2026, pp. 838-839) relève de 5 %, à compter du 1er janvier 2026, les salaires de base des dernières grilles annexées aux conventions collectives sectorielles ; il ne dit pas comment cette hausse se combine avec une grille conventionnelle déjà fixée pour 2026. La valeur est celle de la grille de l'avenant, sans cette hausse."
+    2027-01-01:
+    - title: "Décret n° 2026-68 du 30 avril 2026, article premier"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+      note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse annuelle de 5 % des salaires de base au titre des années 2026, 2027 et 2028 ; pour 2027 et 2028, elle s'applique aux salaires majorés au titre de l'année qui précède. La dernière grille de l'avenant n° 18 est celle du 1er janvier 2026, et aucun texte ne publie de grille pour 2027 : sans valeur à compter de cette date, la grille de 2026 ne valant pas au-delà du 31 décembre 2026. La date du 1er janvier est retenue comme début de l'année 2027 ; la date d'effet que le décret donne à la hausse de 2027 n'est pas relevée ici : à confirmer."
 documentation: |-
   Salaire horaire de base de la position « catégorie I, échelon 0 » de la grille des agents payés à l'heure
   (personnel d'exécution) annexée à la convention collective du textile. C'est le salaire le plus bas de cette grille : celui de la première catégorie, à l'échelon de la confirmation.
@@ -198,6 +204,10 @@ documentation: |-
   La série commence au 1er mai 1994. Les grilles de 1990 à 1992 ne comprennent pas l'indemnité
   complémentaire provisoire et ne mesurent donc pas la même grandeur, et celle de 1993 n'est pas
   relevée : rien d'antérieur n'est versé ici. De l'avenant n° 5 à l'avenant n° 18, tous les avenants ont été lus, sans numéro manquant.
+
+  La série est sans valeur à compter du 1er janvier 2027 : la dernière grille de l'avenant n° 18
+  est celle du 1er janvier 2026, et le décret n° 2026-68 du 30 avril 2026 prévoit pour 2027 une
+  nouvelle hausse de 5 % dont aucun texte ne publie la grille.
 
   Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
   d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
