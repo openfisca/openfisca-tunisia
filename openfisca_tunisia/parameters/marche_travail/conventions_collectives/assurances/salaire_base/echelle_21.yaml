@@ -3,11 +3,12 @@ metadata:
   short_label: "Échelle 21"
   order:
   - echelon_12
+  - echelon_13
   - echelon_14
 documentation: |-
   Dernière échelle de la grille. Échelons versés : le 12e, dernier de l'échelle jusqu'au 31 mai
-  1999, et le 14e, créé le 1er juin 1999 et dernier de l'échelle depuis. Le 13e échelon, créé à la
-  même date, n'est pas versé. Les autres cases de la grille restent à lire : aucune entrée ne les représente.
+  1999, depuis le 1er juin 1993 ; le 13e et le 14e, créés le 1er juin 1999, le 14e étant depuis le
+  dernier de l'échelle. Les échelons 1 à 11 ne sont pas versés. Les autres cases de la grille restent à lire : aucune entrée ne les représente.
 echelon_12:
   description: "Assurances - échelle 21, 12e échelon : salaire mensuel de base"
   values:
@@ -26,6 +27,48 @@ echelon_12:
     1999-06-01:
       value: 803.276
     2000-06-01:
+      value: 835.276
+    2001-06-01:
+      value: 867.276
+    2002-06-01:
+      value: 900.276
+    2003-06-01:
+      value: 933.276
+    2004-06-01:
+      value: 966.276
+    2005-06-01:
+      value: 1007.276
+    2006-06-01:
+      value: 1048.276
+    2007-06-01:
+      value: 1089.276
+    2008-06-01:
+      value: 1149.276
+    2009-06-01:
+      value: 1209.276
+    2010-06-01:
+      value: 1269.276
+    2011-06-01:
+      value: 1370.276
+    2012-06-01:
+      value: 1486.276
+    2014-06-01:
+      value: 1616.276
+    2015-06-01:
+      value: 1756.276
+    2016-06-01:
+      value: 1914.276
+    2017-06-01:
+      value: 2072.276
+    2018-06-01:
+      value: 2260.276
+    2019-06-01:
+      value: 2448.276
+    2020-10-01:
+      value: 2646.276
+    2021-06-01:
+      value: 2881.276
+    2026-01-01:
       value: null
   metadata:
     short_label: "Échelon 12"
@@ -58,11 +101,95 @@ echelon_12:
       1999-06-01:
       - title: "Avenant n° 5 à la convention collective nationale des assurances, agréé par arrêté du 9 juin 1999"
         href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
-        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1181. La grille prend effet le 1er juin 1999 ; échelle 21, 12e échelon : 803,276 dinars par mois. L'avenant n° 5 porte la grille de 12 à 14 échelons (article 19 nouveau) : le 12e échelon n'est plus le dernier, et la grille l'imprime encore. Le mode de lecture de cette valeur n'est pas consigné : à confirmer à l'image."
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1181. La grille prend effet le 1er juin 1999 ; échelle 21, 12e échelon : 803,276 dinars par mois. Valeur lue à l'image. L'avenant n° 5 porte la grille de 12 à 14 échelons (article 19 nouveau) : le 12e échelon n'est plus le dernier de l'échelle."
       2000-06-01:
       - title: "Avenant n° 5 à la convention collective nationale des assurances, agréé par arrêté du 9 juin 1999"
         href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
-        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1182. La grille prend effet le 1er juin 2000 ; le salaire de la position « échelle 21, 12e échelon » n'y a pas été relevé, ni dans les grilles suivantes. Sans valeur à compter de cette date : la valeur précédente ne vaut pas au-delà du 31 mai 2000."
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1182. La grille prend effet le 1er juin 2000 ; échelle 21, 12e échelon : 835,276 dinars par mois. Valeur lue à l'image."
+      2001-06-01:
+      - title: "Avenant n° 5 à la convention collective nationale des assurances, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1183. La grille prend effet le 1er juin 2001 ; échelle 21, 12e échelon : 867,276 dinars par mois. Valeur lue à l'image."
+      2002-06-01:
+      - title: "Avenant n° 6 à la convention collective nationale des assurances, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+        note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3075. La grille prend effet le 1er juin 2002 ; échelle 21, 12e échelon : 900,276 dinars par mois. Valeur lue à l'image."
+      2003-06-01:
+      - title: "Avenant n° 6 à la convention collective nationale des assurances, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+        note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3076. La grille prend effet le 1er juin 2003 ; échelle 21, 12e échelon : 933,276 dinars par mois. Valeur lue à l'image."
+      2004-06-01:
+      - title: "Avenant n° 6 à la convention collective nationale des assurances, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+        note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3077. La grille prend effet le 1er juin 2004 ; échelle 21, 12e échelon : 966,276 dinars par mois. Valeur lue à l'image."
+      2005-06-01:
+      - title: "Avenant n° 7 à la convention collective sectorielle des assurances, agréé par arrêté du 24 mai 2007"
+        href: https://www.pist.tn/jort/2007/2007A/Ja0442007.pdf
+        note: "JORT n° 44 du 1er juin 2007, édition arabe, p. 1923. La grille prend effet le 1er juin 2005 ; échelle 21, 12e échelon : 1 007,276 dinars par mois. Valeur lue à l'image."
+      2006-06-01:
+      - title: "Avenant n° 7 à la convention collective sectorielle des assurances, agréé par arrêté du 24 mai 2007"
+        href: https://www.pist.tn/jort/2007/2007A/Ja0442007.pdf
+        note: "JORT n° 44 du 1er juin 2007, édition arabe, p. 1924. La grille prend effet le 1er juin 2006 ; échelle 21, 12e échelon : 1 048,276 dinars par mois. Valeur lue à l'image."
+      2007-06-01:
+      - title: "Avenant n° 7 à la convention collective sectorielle des assurances, agréé par arrêté du 24 mai 2007"
+        href: https://www.pist.tn/jort/2007/2007A/Ja0442007.pdf
+        note: "JORT n° 44 du 1er juin 2007, édition arabe, p. 1925. La grille prend effet le 1er juin 2007 ; échelle 21, 12e échelon : 1 089,276 dinars par mois. Valeur lue à l'image."
+      2008-06-01:
+      - title: "Avenant n° 8 à la convention collective sectorielle des assurances, agréé par arrêté du 1er juin 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0452009.pdf
+        note: "JORT n° 45 du 5 juin 2009, édition arabe, p. 1966. La grille prend effet le 1er juin 2008 ; échelle 21, 12e échelon : 1 149,276 dinars par mois. Valeur lue à l'image."
+      2009-06-01:
+      - title: "Avenant n° 8 à la convention collective sectorielle des assurances, agréé par arrêté du 1er juin 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0452009.pdf
+        note: "JORT n° 45 du 5 juin 2009, édition arabe, p. 1967. La grille prend effet le 1er juin 2009 ; échelle 21, 12e échelon : 1 209,276 dinars par mois. Valeur lue à l'image."
+      2010-06-01:
+      - title: "Avenant n° 8 à la convention collective sectorielle des assurances, agréé par arrêté du 1er juin 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0452009.pdf
+        note: "JORT n° 45 du 5 juin 2009, édition arabe, p. 1968. La grille prend effet le 1er juin 2010 ; échelle 21, 12e échelon : 1 269,276 dinars par mois. Valeur lue à l'image."
+      2011-06-01:
+      - title: "Avenant n° 9 à la convention collective sectorielle des assurances, agréé par arrêté du 21 mars 2012"
+        href: https://www.pist.tn/jort/2012/2012A/Ja0232012.pdf
+        note: "JORT n° 23 du 23 mars 2012, édition arabe, p. 803. La grille prend effet le 1er juin 2011 ; échelle 21, 12e échelon : 1 370,276 dinars par mois. Valeur lue à l'image."
+      2012-06-01:
+      - title: "Avenant n° 10 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
+        href: https://www.pist.tn/jort/2015/2015A/Ja0032015.pdf
+        note: "JORT n° 3 du 9 janvier 2015, édition arabe, p. 91. La grille prend effet le 1er juin 2012 ; échelle 21, 12e échelon : 1 486,276 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule."
+      2014-06-01:
+      - title: "Grille des salaires de l'avenant n° 11 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
+        href: https://www.pist.tn/jort/2015/2015A/Ja0042015.pdf
+        note: "JORT n° 4 du 13 janvier 2015, édition arabe, p. 151. La grille prend effet le 1er juin 2014 ; échelle 21, 12e échelon : 1 616,276 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule. L'avenant n° 11 paraît au JORT n° 3 du 9 janvier 2015 sans sa grille ; celle-ci paraît à part, au numéro suivant, sous le titre de grille des salaires de l'avenant n° 11. Ce complément de publication n'est pas répertorié à l'index du journal."
+      2015-06-01:
+      - title: "Avenant n° 12 à la convention collective sectorielle des assurances, agréé par arrêté du 5 avril 2016"
+        href: https://www.pist.tn/jort/2016/2016A/Ja0292016.pdf
+        note: "JORT n° 29 du 8 avril 2016, édition arabe, p. 1240. La grille prend effet le 1er juin 2015 ; échelle 21, 12e échelon : 1 756,276 dinars par mois. Valeur lue à l'image."
+      2016-06-01:
+      - title: "Avenant n° 13 à la convention collective sectorielle des assurances, agréé par arrêté du 3 juillet 2017"
+        href: https://www.pist.tn/jort/2017/2017A/Ja0532017.pdf
+        note: "JORT n° 53 du 4 juillet 2017, édition arabe, p. 2251. La grille prend effet le 1er juin 2016 ; échelle 21, 12e échelon : 1 914,276 dinars par mois. Valeur lue à l'image."
+      2017-06-01:
+      - title: "Avenant n° 13 à la convention collective sectorielle des assurances, agréé par arrêté du 3 juillet 2017"
+        href: https://www.pist.tn/jort/2017/2017A/Ja0532017.pdf
+        note: "JORT n° 53 du 4 juillet 2017, édition arabe, p. 2252. La grille prend effet le 1er juin 2017 ; échelle 21, 12e échelon : 2 072,276 dinars par mois. Valeur lue à l'image."
+      2018-06-01:
+      - title: "Avenant n° 14 à la convention collective sectorielle des assurances, agréé par arrêté du 25 janvier 2019"
+        href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 400. La grille prend effet le 1er juin 2018 ; échelle 21, 12e échelon : 2 260,276 dinars par mois. Valeur lue à l'image."
+      2019-06-01:
+      - title: "Avenant n° 14 à la convention collective sectorielle des assurances, agréé par arrêté du 25 janvier 2019"
+        href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 401. La grille prend effet le 1er juin 2019 ; échelle 21, 12e échelon : 2 448,276 dinars par mois. Valeur lue à l'image."
+      2020-10-01:
+      - title: "Avenant n° 15 à la convention collective sectorielle des assurances, agréé par arrêté du 20 octobre 2022"
+        href: https://www.pist.tn/jort/2022/2022A/Ja1162022.pdf
+        note: "JORT n° 116 du 28 octobre 2022, édition arabe, p. 3172. La grille prend effet le 1er octobre 2020 ; échelle 21, 12e échelon : 2 646,276 dinars par mois. Valeur lue à l'image."
+      2021-06-01:
+      - title: "Avenant n° 15 à la convention collective sectorielle des assurances, agréé par arrêté du 20 octobre 2022"
+        href: https://www.pist.tn/jort/2022/2022A/Ja1162022.pdf
+        note: "JORT n° 116 du 28 octobre 2022, édition arabe, p. 3173. La grille prend effet le 1er juin 2021 ; échelle 21, 12e échelon : 2 881,276 dinars par mois. Valeur lue à l'image. L'avenant fixe cette date d'effet « à titre exceptionnel »."
+      2026-01-01:
+      - title: "Décret n° 2026-68 du 30 avril 2026, article premier"
+        href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+        note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse annuelle de 5 % des salaires de base, au titre des années 2026, 2027 et 2028, à compter du 1er janvier 2026 ; pour 2026, elle s'applique aux salaires de base de tous les échelons des dernières grilles annexées aux conventions collectives sectorielles. Aucun texte ne publie la grille qui en résulte pour cette branche : sans valeur à compter de cette date, la dernière grille conventionnelle ne valant pas au-delà du 31 décembre 2025. L'application de ce décret à la branche des assurances n'a pas été examinée, et aucun avenant postérieur à l'avenant n° 15 n'est identifié."
   documentation: |-
     Salaire mensuel de base de l'échelle 21, 12e échelon, de la grille annexée à la convention collective des
     assurances. C'est le salaire le plus élevé de la grille jusqu'au 31 mai 1999 : dernière échelle de la catégorie I, dernier des douze échelons. Le 1er juin 1999, la grille passe à 14 échelons : le 12e échelon demeure, mais n'est plus le dernier.
@@ -75,13 +202,189 @@ echelon_12:
     depuis la grille du 1er juin 1993 (avenant n° 3). Il ne comprend ni l'indemnité de transport, ni
     les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
 
-    La série commence au 1er juin 1993 : les grilles antérieures ne mesurent pas la même grandeur. Elle est sans valeur à compter du 1er juin 2000 : ce salaire figure encore dans la grille du 1er juin 1999, et n'a pas été relevé dans les grilles suivantes.
+    La série commence au 1er juin 1993 : les grilles antérieures ne mesurent pas la même grandeur.
+
+    La grille du 1er juin 2014 ne paraît pas avec l'avenant n° 11, mais à part, au JORT n° 4 du
+    13 janvier 2015.
+
+    La série est sans valeur à compter du 1er janvier 2026 : le décret n° 2026-68 du 30 avril 2026
+    relève alors de 5 % les salaires de base des dernières grilles annexées aux conventions
+    collectives sectorielles, et aucun texte ne publie la grille qui en résulte.
 
     Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
     d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
-    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle une grille prend effet sans
-    que ce salaire ait été relevé, ou à laquelle le salaire change sans qu'aucun texte en publie le
-    montant : la valeur précédente n'y vaut plus.
+    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle le salaire change sans qu'aucun
+    texte en publie le montant : la valeur précédente n'y vaut plus.
+echelon_13:
+  description: "Assurances - échelle 21, 13e échelon : salaire mensuel de base"
+  values:
+    1999-06-01:
+      value: 821.588
+    2000-06-01:
+      value: 853.588
+    2001-06-01:
+      value: 885.588
+    2002-06-01:
+      value: 918.588
+    2003-06-01:
+      value: 951.588
+    2004-06-01:
+      value: 984.588
+    2005-06-01:
+      value: 1025.588
+    2006-06-01:
+      value: 1066.588
+    2007-06-01:
+      value: 1107.588
+    2008-06-01:
+      value: 1167.588
+    2009-06-01:
+      value: 1227.588
+    2010-06-01:
+      value: 1287.588
+    2011-06-01:
+      value: 1388.588
+    2012-06-01:
+      value: 1504.588
+    2014-06-01:
+      value: 1634.588
+    2015-06-01:
+      value: 1774.588
+    2016-06-01:
+      value: 1932.588
+    2017-06-01:
+      value: 2090.588
+    2018-06-01:
+      value: 2278.588
+    2019-06-01:
+      value: 2466.588
+    2020-10-01:
+      value: 2664.588
+    2021-06-01:
+      value: 2899.588
+    2026-01-01:
+      value: null
+  metadata:
+    short_label: "Échelon 13"
+    unit: currency/mois
+    reference:
+      1999-06-01:
+      - title: "Avenant n° 5 à la convention collective nationale des assurances, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1181. La grille prend effet le 1er juin 1999 ; échelle 21, 13e échelon : 821,588 dinars par mois. Valeur lue à l'image. L'avenant n° 5 porte la grille de 12 à 14 échelons (article 19 nouveau) : le 13e échelon est créé à cette date."
+      2000-06-01:
+      - title: "Avenant n° 5 à la convention collective nationale des assurances, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1182. La grille prend effet le 1er juin 2000 ; échelle 21, 13e échelon : 853,588 dinars par mois. Valeur lue à l'image."
+      2001-06-01:
+      - title: "Avenant n° 5 à la convention collective nationale des assurances, agréé par arrêté du 9 juin 1999"
+        href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+        note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1183. La grille prend effet le 1er juin 2001 ; échelle 21, 13e échelon : 885,588 dinars par mois. Valeur lue à l'image."
+      2002-06-01:
+      - title: "Avenant n° 6 à la convention collective nationale des assurances, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+        note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3075. La grille prend effet le 1er juin 2002 ; échelle 21, 13e échelon : 918,588 dinars par mois. Valeur lue à l'image."
+      2003-06-01:
+      - title: "Avenant n° 6 à la convention collective nationale des assurances, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+        note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3076. La grille prend effet le 1er juin 2003 ; échelle 21, 13e échelon : 951,588 dinars par mois. Valeur lue à l'image."
+      2004-06-01:
+      - title: "Avenant n° 6 à la convention collective nationale des assurances, agréé par arrêté du 25 novembre 2002"
+        href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+        note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3077. La grille prend effet le 1er juin 2004 ; échelle 21, 13e échelon : 984,588 dinars par mois. Valeur lue à l'image."
+      2005-06-01:
+      - title: "Avenant n° 7 à la convention collective sectorielle des assurances, agréé par arrêté du 24 mai 2007"
+        href: https://www.pist.tn/jort/2007/2007A/Ja0442007.pdf
+        note: "JORT n° 44 du 1er juin 2007, édition arabe, p. 1923. La grille prend effet le 1er juin 2005 ; échelle 21, 13e échelon : 1 025,588 dinars par mois. Valeur lue à l'image."
+      2006-06-01:
+      - title: "Avenant n° 7 à la convention collective sectorielle des assurances, agréé par arrêté du 24 mai 2007"
+        href: https://www.pist.tn/jort/2007/2007A/Ja0442007.pdf
+        note: "JORT n° 44 du 1er juin 2007, édition arabe, p. 1924. La grille prend effet le 1er juin 2006 ; échelle 21, 13e échelon : 1 066,588 dinars par mois. Valeur lue à l'image."
+      2007-06-01:
+      - title: "Avenant n° 7 à la convention collective sectorielle des assurances, agréé par arrêté du 24 mai 2007"
+        href: https://www.pist.tn/jort/2007/2007A/Ja0442007.pdf
+        note: "JORT n° 44 du 1er juin 2007, édition arabe, p. 1925. La grille prend effet le 1er juin 2007 ; échelle 21, 13e échelon : 1 107,588 dinars par mois. Valeur lue à l'image."
+      2008-06-01:
+      - title: "Avenant n° 8 à la convention collective sectorielle des assurances, agréé par arrêté du 1er juin 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0452009.pdf
+        note: "JORT n° 45 du 5 juin 2009, édition arabe, p. 1966. La grille prend effet le 1er juin 2008 ; échelle 21, 13e échelon : 1 167,588 dinars par mois. Valeur lue à l'image."
+      2009-06-01:
+      - title: "Avenant n° 8 à la convention collective sectorielle des assurances, agréé par arrêté du 1er juin 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0452009.pdf
+        note: "JORT n° 45 du 5 juin 2009, édition arabe, p. 1967. La grille prend effet le 1er juin 2009 ; échelle 21, 13e échelon : 1 227,588 dinars par mois. Valeur lue à l'image."
+      2010-06-01:
+      - title: "Avenant n° 8 à la convention collective sectorielle des assurances, agréé par arrêté du 1er juin 2009"
+        href: https://www.pist.tn/jort/2009/2009A/Ja0452009.pdf
+        note: "JORT n° 45 du 5 juin 2009, édition arabe, p. 1968. La grille prend effet le 1er juin 2010 ; échelle 21, 13e échelon : 1 287,588 dinars par mois. Valeur lue à l'image."
+      2011-06-01:
+      - title: "Avenant n° 9 à la convention collective sectorielle des assurances, agréé par arrêté du 21 mars 2012"
+        href: https://www.pist.tn/jort/2012/2012A/Ja0232012.pdf
+        note: "JORT n° 23 du 23 mars 2012, édition arabe, p. 803. La grille prend effet le 1er juin 2011 ; échelle 21, 13e échelon : 1 388,588 dinars par mois. Valeur lue à l'image."
+      2012-06-01:
+      - title: "Avenant n° 10 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
+        href: https://www.pist.tn/jort/2015/2015A/Ja0032015.pdf
+        note: "JORT n° 3 du 9 janvier 2015, édition arabe, p. 91. La grille prend effet le 1er juin 2012 ; échelle 21, 13e échelon : 1 504,588 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule."
+      2014-06-01:
+      - title: "Grille des salaires de l'avenant n° 11 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
+        href: https://www.pist.tn/jort/2015/2015A/Ja0042015.pdf
+        note: "JORT n° 4 du 13 janvier 2015, édition arabe, p. 151. La grille prend effet le 1er juin 2014 ; échelle 21, 13e échelon : 1 634,588 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule. L'avenant n° 11 paraît au JORT n° 3 du 9 janvier 2015 sans sa grille ; celle-ci paraît à part, au numéro suivant, sous le titre de grille des salaires de l'avenant n° 11. Ce complément de publication n'est pas répertorié à l'index du journal."
+      2015-06-01:
+      - title: "Avenant n° 12 à la convention collective sectorielle des assurances, agréé par arrêté du 5 avril 2016"
+        href: https://www.pist.tn/jort/2016/2016A/Ja0292016.pdf
+        note: "JORT n° 29 du 8 avril 2016, édition arabe, p. 1240. La grille prend effet le 1er juin 2015 ; échelle 21, 13e échelon : 1 774,588 dinars par mois. Valeur lue à l'image."
+      2016-06-01:
+      - title: "Avenant n° 13 à la convention collective sectorielle des assurances, agréé par arrêté du 3 juillet 2017"
+        href: https://www.pist.tn/jort/2017/2017A/Ja0532017.pdf
+        note: "JORT n° 53 du 4 juillet 2017, édition arabe, p. 2251. La grille prend effet le 1er juin 2016 ; échelle 21, 13e échelon : 1 932,588 dinars par mois. Valeur lue à l'image."
+      2017-06-01:
+      - title: "Avenant n° 13 à la convention collective sectorielle des assurances, agréé par arrêté du 3 juillet 2017"
+        href: https://www.pist.tn/jort/2017/2017A/Ja0532017.pdf
+        note: "JORT n° 53 du 4 juillet 2017, édition arabe, p. 2252. La grille prend effet le 1er juin 2017 ; échelle 21, 13e échelon : 2 090,588 dinars par mois. Valeur lue à l'image."
+      2018-06-01:
+      - title: "Avenant n° 14 à la convention collective sectorielle des assurances, agréé par arrêté du 25 janvier 2019"
+        href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 400. La grille prend effet le 1er juin 2018 ; échelle 21, 13e échelon : 2 278,588 dinars par mois. Valeur lue à l'image."
+      2019-06-01:
+      - title: "Avenant n° 14 à la convention collective sectorielle des assurances, agréé par arrêté du 25 janvier 2019"
+        href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 401. La grille prend effet le 1er juin 2019 ; échelle 21, 13e échelon : 2 466,588 dinars par mois. Valeur lue à l'image."
+      2020-10-01:
+      - title: "Avenant n° 15 à la convention collective sectorielle des assurances, agréé par arrêté du 20 octobre 2022"
+        href: https://www.pist.tn/jort/2022/2022A/Ja1162022.pdf
+        note: "JORT n° 116 du 28 octobre 2022, édition arabe, p. 3172. La grille prend effet le 1er octobre 2020 ; échelle 21, 13e échelon : 2 664,588 dinars par mois. Valeur lue à l'image."
+      2021-06-01:
+      - title: "Avenant n° 15 à la convention collective sectorielle des assurances, agréé par arrêté du 20 octobre 2022"
+        href: https://www.pist.tn/jort/2022/2022A/Ja1162022.pdf
+        note: "JORT n° 116 du 28 octobre 2022, édition arabe, p. 3173. La grille prend effet le 1er juin 2021 ; échelle 21, 13e échelon : 2 899,588 dinars par mois. Valeur lue à l'image. L'avenant fixe cette date d'effet « à titre exceptionnel »."
+      2026-01-01:
+      - title: "Décret n° 2026-68 du 30 avril 2026, article premier"
+        href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+        note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse annuelle de 5 % des salaires de base, au titre des années 2026, 2027 et 2028, à compter du 1er janvier 2026 ; pour 2026, elle s'applique aux salaires de base de tous les échelons des dernières grilles annexées aux conventions collectives sectorielles. Aucun texte ne publie la grille qui en résulte pour cette branche : sans valeur à compter de cette date, la dernière grille conventionnelle ne valant pas au-delà du 31 décembre 2025. L'application de ce décret à la branche des assurances n'a pas été examinée, et aucun avenant postérieur à l'avenant n° 15 n'est identifié."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 21, 13e échelon, de la grille annexée à la convention collective des
+    assurances. C'est l'avant-dernier échelon de la dernière échelle de la grille, depuis le 1er juin 1999.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit
+    2 080 heures par an (article 30 de la convention révisée).
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille. Il comprend l'indemnité
+    complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982,
+    depuis la grille du 1er juin 1993 (avenant n° 3). Il ne comprend ni l'indemnité de transport, ni
+    les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
+
+    La série commence au 1er juin 1999, date à laquelle l'avenant n° 5 crée le 13e échelon.
+
+    La grille du 1er juin 2014 ne paraît pas avec l'avenant n° 11, mais à part, au JORT n° 4 du
+    13 janvier 2015.
+
+    La série est sans valeur à compter du 1er janvier 2026 : le décret n° 2026-68 du 30 avril 2026
+    relève alors de 5 % les salaires de base des dernières grilles annexées aux conventions
+    collectives sectorielles, et aucun texte ne publie la grille qui en résulte.
+
+    Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
+    d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
+    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle le salaire change sans qu'aucun
+    texte en publie le montant : la valeur précédente n'y vaut plus.
 echelon_14:
   description: "Assurances - échelle 21, 14e échelon : salaire mensuel de base"
   values:
@@ -114,7 +417,7 @@ echelon_14:
     2012-06-01:
       value: 1522.9
     2014-06-01:
-      value: null
+      value: 1652.9
     2015-06-01:
       value: 1792.9
     2016-06-01:
@@ -122,9 +425,9 @@ echelon_14:
     2017-06-01:
       value: 2108.9
     2018-06-01:
-      value: null
+      value: 2296.9
     2019-06-01:
-      value: null
+      value: 2484.9
     2020-10-01:
       value: 2682.9
     2021-06-01:
@@ -192,9 +495,9 @@ echelon_14:
         href: https://www.pist.tn/jort/2015/2015A/Ja0032015.pdf
         note: "JORT n° 3 du 9 janvier 2015, édition arabe, p. 91. La grille prend effet le 1er juin 2012 ; échelle 21, 14e échelon : 1 522,900 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule."
       2014-06-01:
-      - title: "Avenant n° 11 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
-        href: https://www.pist.tn/jort/2015/2015A/Ja0032015.pdf
-        note: "JORT n° 3 du 9 janvier 2015, édition arabe, pp. 89-90. L'avenant n° 11 annonce une grille applicable à compter du 1er juin 2014, mais le fascicule ne l'imprime pas : sa seule grille, p. 91, est celle du 1er juin 2012. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà du 31 mai 2014."
+      - title: "Grille des salaires de l'avenant n° 11 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
+        href: https://www.pist.tn/jort/2015/2015A/Ja0042015.pdf
+        note: "JORT n° 4 du 13 janvier 2015, édition arabe, p. 151. La grille prend effet le 1er juin 2014 ; échelle 21, 14e échelon : 1 652,900 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule. L'avenant n° 11 paraît au JORT n° 3 du 9 janvier 2015 sans sa grille ; celle-ci paraît à part, au numéro suivant, sous le titre de grille des salaires de l'avenant n° 11. Ce complément de publication n'est pas répertorié à l'index du journal."
       2015-06-01:
       - title: "Avenant n° 12 à la convention collective sectorielle des assurances, agréé par arrêté du 5 avril 2016"
         href: https://www.pist.tn/jort/2016/2016A/Ja0292016.pdf
@@ -210,11 +513,11 @@ echelon_14:
       2018-06-01:
       - title: "Avenant n° 14 à la convention collective sectorielle des assurances, agréé par arrêté du 25 janvier 2019"
         href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
-        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 400. La grille prend effet le 1er juin 2018 ; le salaire de la position « échelle 21, 14e échelon » n'y a pas été lu, sa ligne étant coupée sur l'image lue. L'avenant relève de 188 dinars par mois les salaires de la catégorie I, ce dont un montant se déduirait par addition ; un montant calculé n'est pas versé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille."
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 400. La grille prend effet le 1er juin 2018 ; échelle 21, 14e échelon : 2 296,900 dinars par mois. Valeur lue à l'image."
       2019-06-01:
       - title: "Avenant n° 14 à la convention collective sectorielle des assurances, agréé par arrêté du 25 janvier 2019"
         href: https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf
-        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 401. La grille prend effet le 1er juin 2019 ; le salaire de la position « échelle 21, 14e échelon » n'y a pas été lu, sa ligne étant coupée sur l'image lue. L'avenant relève de 188 dinars par mois les salaires de la catégorie I, ce dont un montant se déduirait par addition ; un montant calculé n'est pas versé. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà de la veille."
+        note: "JORT n° 11 du 5 février 2019, édition arabe, p. 401. La grille prend effet le 1er juin 2019 ; échelle 21, 14e échelon : 2 484,900 dinars par mois. Valeur lue à l'image."
       2020-10-01:
       - title: "Avenant n° 15 à la convention collective sectorielle des assurances, agréé par arrêté du 20 octobre 2022"
         href: https://www.pist.tn/jort/2022/2022A/Ja1162022.pdf
@@ -241,10 +544,8 @@ echelon_14:
 
     La série commence au 1er juin 1999, date à laquelle l'avenant n° 5 crée le 14e échelon.
 
-    La série est sans valeur du 1er juin 2014 au 31 mai 2015 : l'avenant n° 11 annonce une grille au
-    1er juin 2014 que le journal n'imprime pas.
-
-    Elle est aussi sans valeur du 1er juin 2018 au 30 septembre 2020 : ce salaire n'a pas été lu dans les grilles du 1er juin 2018 et du 1er juin 2019.
+    La grille du 1er juin 2014 ne paraît pas avec l'avenant n° 11, mais à part, au JORT n° 4 du
+    13 janvier 2015.
 
     La série est sans valeur à compter du 1er janvier 2026 : le décret n° 2026-68 du 30 avril 2026
     relève alors de 5 % les salaires de base des dernières grilles annexées aux conventions
@@ -252,6 +553,5 @@ echelon_14:
 
     Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
     d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
-    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle une grille prend effet sans
-    que ce salaire ait été relevé, ou à laquelle le salaire change sans qu'aucun texte en publie le
-    montant : la valeur précédente n'y vaut plus.
+    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle le salaire change sans qu'aucun
+    texte en publie le montant : la valeur précédente n'y vaut plus.

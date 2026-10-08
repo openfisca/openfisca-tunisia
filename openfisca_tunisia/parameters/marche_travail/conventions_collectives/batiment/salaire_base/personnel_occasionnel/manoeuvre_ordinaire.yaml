@@ -73,15 +73,15 @@ metadata:
     1999-05-01:
     - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
       href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
-      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1157. La grille du personnel occasionnel prend effet le 1er mai 1999 ; manœuvre ordinaire : 0,989 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1157. La grille du personnel occasionnel prend effet le 1er mai 1999 ; manœuvre ordinaire : 0,989 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
     2000-05-01:
     - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
       href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
-      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1158. La grille du personnel occasionnel prend effet le 1er mai 2000 ; manœuvre ordinaire : 1,028 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1158. La grille du personnel occasionnel prend effet le 1er mai 2000 ; manœuvre ordinaire : 1,028 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
     2001-05-01:
     - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
       href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
-      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1159. La grille du personnel occasionnel prend effet le 1er mai 2001 ; manœuvre ordinaire : 1,067 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. Le numéro de page est déduit d'un décalage constant avec la page du fichier, vérifié sur deux pieds de page du fascicule : à contrôler."
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1159. La grille du personnel occasionnel prend effet le 1er mai 2001 ; manœuvre ordinaire : 1,067 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
     2002-05-01:
     - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
       href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
@@ -187,6 +187,5 @@ documentation: |-
 
   Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
   d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
-  à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle une grille prend effet sans
-  que ce salaire ait été relevé, ou à laquelle le salaire change sans qu'aucun texte en publie le
-  montant : la valeur précédente n'y vaut plus.
+  à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle le salaire change sans qu'aucun
+  texte en publie le montant : la valeur précédente n'y vaut plus.

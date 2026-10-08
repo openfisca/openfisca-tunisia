@@ -49,7 +49,7 @@ echelon_1:
     2012-06-01:
       value: 670.617
     2014-06-01:
-      value: null
+      value: 749.617
     2015-06-01:
       value: 838.617
     2016-06-01:
@@ -151,9 +151,9 @@ echelon_1:
         href: https://www.pist.tn/jort/2015/2015A/Ja0032015.pdf
         note: "JORT n° 3 du 9 janvier 2015, édition arabe, p. 91. La grille prend effet le 1er juin 2012 ; échelle 1, échelon 1 : 670,617 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule."
       2014-06-01:
-      - title: "Avenant n° 11 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
-        href: https://www.pist.tn/jort/2015/2015A/Ja0032015.pdf
-        note: "JORT n° 3 du 9 janvier 2015, édition arabe, pp. 89-90. L'avenant n° 11 annonce une grille applicable à compter du 1er juin 2014, mais le fascicule ne l'imprime pas : sa seule grille, p. 91, est celle du 1er juin 2012. Sans valeur à cette date : la valeur précédente ne vaut pas au-delà du 31 mai 2014."
+      - title: "Grille des salaires de l'avenant n° 11 à la convention collective sectorielle des assurances, agréé par arrêté du 16 décembre 2014"
+        href: https://www.pist.tn/jort/2015/2015A/Ja0042015.pdf
+        note: "JORT n° 4 du 13 janvier 2015, édition arabe, p. 151. La grille prend effet le 1er juin 2014 ; échelle 1, échelon 1 : 749,617 dinars par mois. Valeur lue à l'image et dans la couche texte du fascicule. L'avenant n° 11 paraît au JORT n° 3 du 9 janvier 2015 sans sa grille ; celle-ci paraît à part, au numéro suivant, sous le titre de grille des salaires de l'avenant n° 11. Ce complément de publication n'est pas répertorié à l'index du journal."
       2015-06-01:
       - title: "Avenant n° 12 à la convention collective sectorielle des assurances, agréé par arrêté du 5 avril 2016"
         href: https://www.pist.tn/jort/2016/2016A/Ja0292016.pdf
@@ -200,8 +200,8 @@ echelon_1:
 
     La série commence au 1er juin 1993 : les grilles antérieures ne mesurent pas la même grandeur.
 
-    La série est sans valeur du 1er juin 2014 au 31 mai 2015 : l'avenant n° 11 annonce une grille au
-    1er juin 2014 que le journal n'imprime pas.
+    La grille du 1er juin 2014 ne paraît pas avec l'avenant n° 11, mais à part, au JORT n° 4 du
+    13 janvier 2015.
 
     La série est sans valeur à compter du 1er janvier 2026 : le décret n° 2026-68 du 30 avril 2026
     relève alors de 5 % les salaires de base des dernières grilles annexées aux conventions
@@ -209,6 +209,5 @@ echelon_1:
 
     Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
     d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
-    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle une grille prend effet sans
-    que ce salaire ait été relevé, ou à laquelle le salaire change sans qu'aucun texte en publie le
-    montant : la valeur précédente n'y vaut plus.
+    à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle le salaire change sans qu'aucun
+    texte en publie le montant : la valeur précédente n'y vaut plus.
