@@ -9,6 +9,16 @@
     one: Dinar
     other: Dinars
   short_label: DT
+- name: currency/heure
+  label:
+    one: Dinar par heure
+    other: Dinars par heure
+  short_label: DT/heure
+- name: currency/mois
+  label:
+    one: Dinar par mois
+    other: Dinars par mois
+  short_label: DT/mois
 - name: millimes
   label:
     one: Millime
