@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.122 - [#482](https://github.com/openfisca/openfisca-tunisia/pull/482)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (textile), du 01/05/1996 (bâtiment et travaux publics) et du 01/06/1993 (assurances) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives`, `units`.
+* Détails :
+  - **Verse les premières cases des grilles de salaires de trois conventions collectives sectorielles**, à chaque date d'effet énoncée par l'avenant, avec à chaque date l'avenant, le fascicule du *Journal officiel*, la page et l'édition lue. Sous-arbre nouveau `marche_travail/conventions_collectives/<branche>/salaire_base/`, qui reprend la structure de la grille : la grille quand la convention en a plusieurs, un fichier par catégorie ou par échelle, et ses échelons en enfants `echelon_N` — la forme de `fonction_publique/<corps>/<grade>/traitement_de_base.yaml`. Chaque grille est versée en partie : seules les cases lues ont une entrée, et l'index de chaque grille dit lesquelles ; demander une case non versée est une erreur.
+  - **`textile.salaire_base.agents_payes_a_l_heure`** (dinars par heure) : `categorie_1.echelon_0` (catégorie I, échelon 0, le salaire le plus bas de la grille) et `categorie_4_2.echelon_0` (catégorie IV-2, échelon 0, l'entrée de la catégorie la plus élevée). Du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18) : 30 dates d'effet, 30 valeurs dans chaque case. La grille du 1er janvier 2026 est la dernière valeur.
+  - **`batiment.salaire_base.personnel_occasionnel`** (dinars par heure, grille sans échelon) : `manoeuvre_ordinaire` et `chef_equipe_3e_degre`, le salaire le plus bas et le plus élevé de la grille. Du 1er mai 1996 (avenant n° 5) au 1er janvier 2024 (avenant n° 16) : 26 dates d'effet, 26 valeurs dans chaque case. Les trois grilles de l'avenant n° 16 sont lues sur une reproduction du journal par un site tiers, ce que leur note dit.
+  - **`assurances.salaire_base`** (dinars par mois, une seule grille de 21 échelles) : `echelle_1.echelon_1` et `echelle_21.echelon_12`, du 1er juin 1993 (avenant n° 3) au 1er juin 2021 (avenant n° 15), 28 valeurs chacun ; `echelle_21.echelon_13` et `echelon_14`, créés le 1er juin 1999, 22 valeurs chacun. La ligne des trois derniers échelons de l'échelle 21 est complète depuis 1999. La grille du 1er juin 2014 ne paraît pas avec l'avenant n° 11 mais à part, au JORT n° 4 du 13 janvier 2015 (édition arabe, p. 151).
+  - **Seules dates sans valeur : le 1er janvier 2026 pour le bâtiment et les assurances.** Le décret n° 2026-68 relève alors de 5 % les dernières grilles annexées aux conventions sectorielles, et aucun texte ne publie les grilles qui en résultent : une valeur vide y arrête la dernière grille conventionnelle, pour qu'elle ne se prolonge pas à tort. Le textile garde la grille de l'avenant n° 18, fixée pour le 1er janvier 2026.
+  - **Chaque série commence à la première grille de son segment continu.** Les conventions d'origine (1974, 1975) et les grilles de 1983 à 1992, qui ne comprennent pas l'indemnité complémentaire provisoire, ne sont pas versées : elles ne mesurent pas la même grandeur, ou rien ne les relie à la suite.
+  - **Deux unités nouvelles** dans `units.yaml` : `currency/heure` et `currency/mois`.
+  - **Effet sur les calculs.** Aucun résultat ne change et aucun test existant ne bouge. Le système des pensions, qui lit `marche_travail/` en entier, charge lui aussi le sous-arbre nouveau. Un test nouveau, `tests/test_conventions_collectives.py`, lit les paramètres : valeurs la veille et le jour d'une date d'effet, dates sans valeur, début de chaque série, référence à chaque date, cases présentes et erreur sur une case absente. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre existant ne change.
+
 ## 0.121 - [#480](https://github.com/openfisca/openfisca-tunisia/pull/480)
 
 * Évolution du système socio-fiscal.

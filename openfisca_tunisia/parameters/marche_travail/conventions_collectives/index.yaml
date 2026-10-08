@@ -1,0 +1,24 @@
+description: "Conventions collectives sectorielles"
+metadata:
+  short_label: "Conventions collectives"
+  order:
+  - assurances
+  - batiment
+  - textile
+documentation: |-
+  Salaires de base des grilles annexées aux conventions collectives sectorielles et à leurs
+  avenants, agréés par arrêté du ministre chargé des affaires sociales et publiés au Journal
+  officiel. Un sous-nœud par branche.
+
+  Sous chaque branche, le nœud `salaire_base` reprend la structure de la grille elle-même : la
+  grille quand la convention en a plusieurs, puis la catégorie ou l'échelle, puis l'échelon quand
+  la grille en a. Chaque paramètre est une case de la grille, nommée comme la convention la nomme.
+  Les grilles sont remplies en partie : seules les cases lues ont un fichier, et l'index de chaque
+  grille dit lesquelles.
+
+  Chaque date est la date d'effet que la grille énonce. Seules entrent les suites d'avenants
+  consécutifs, tous lus, dont les grilles ont le même périmètre au regard de l'indemnité
+  complémentaire provisoire ; une date d'effet à laquelle le salaire d'une case n'est pas établi
+  porte une valeur vide, pour que la valeur précédente ne se prolonge pas.
+
+  Ces salaires sont des salaires de base : les indemnités et primes conventionnelles s'y ajoutent.
