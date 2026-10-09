@@ -6,5 +6,6 @@ metadata:
     - marche_travail
     - prestations
     - fiscalite_indirecte
+    - fiscalite_locale
     - produits_subventionnes
     - energie

@@ -1,0 +1,21 @@
+description: "Taxe sur les immeubles bâtis"
+metadata:
+  short_label: "Taxe sur les immeubles bâtis"
+  order:
+  - taux_assiette
+  - taux
+  - seuils_superficie
+  - prix_reference
+documentation: |-
+  Taxe annuelle due au 1er janvier sur les immeubles bâtis situés dans les zones relevant des
+  collectivités locales (code de la fiscalité locale, chapitre premier, articles 1 à 29).
+
+  L'assiette est une fraction du prix de référence du mètre carré couvert, multipliée par la
+  superficie couverte de l'immeuble (article 4, paragraphe I). Les immeubles sont classés en quatre
+  catégories selon leur superficie couverte (article 4, paragraphe II). Un décret fixe pour chaque
+  catégorie le minimum et le maximum du prix de référence ; dans ces limites, la collectivité
+  locale arrête le prix par arrêté motivé (article 4, paragraphe IV). Le taux appliqué à l'assiette
+  dépend du nombre de services dont l'immeuble bénéficie (article 5).
+
+  L'assiette, les seuils de superficie et les taux sont ceux du code de 1997. Seuls les prix de
+  référence ont été relevés depuis, par décret, au 1er janvier 2008 et au 1er janvier 2017.

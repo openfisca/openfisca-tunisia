@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.125 - [#485](https://github.com/openfisca/openfisca-tunisia/pull/485)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1997 (assiette, taux et seuils fixés par le code de la fiscalité locale) et du 13/03/1997 (prix de référence et tarif par mètre carré fixés par décret) ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_locale`, `sous_ensembles`, `units`.
+* Détails :
+  - **Sous-arbre nouveau `fiscalite_locale/`, premier versement : les deux taxes sur les immeubles du code de la fiscalité locale** (loi n° 97-11 du 3 février 1997, JORT n° 11 du 7 février 1997, pp. 173 à 181). Vingt feuilles, chacune datée à l'entrée en vigueur et portant à chaque date sa référence : texte, article, fascicule du *Journal officiel*, page, lien vers l'édition française et vers l'édition arabe, et ce qui a été lu à l'image.
+  - **`taxe_immeubles_batis.taux_assiette`** : 2 % du prix de référence du mètre carré couvert, au 1er janvier 1997 (code, article 4, paragraphe I, p. 174).
+  - **`taxe_immeubles_batis.taux`** : quatre paliers selon le nombre de services dont l'immeuble bénéficie, au 1er janvier 1997 (code, article 5, paragraphe I, p. 174) — `un_ou_deux_services` 8 %, `trois_ou_quatre_services` 10 %, `plus_de_quatre_services` 12 %, `plus_de_quatre_services_et_autres_services` 14 %.
+  - **`taxe_immeubles_batis.seuils_superficie`** : `categorie_1` 100 m², `categorie_2` 200 m², `categorie_3` 400 m², au 1er janvier 1997 (code, article 4, paragraphe II, p. 174). Trois feuilles scalaires et non un barème : chaque seuil est le plafond de sa catégorie, borne comprise (« ne dépasse pas »), alors qu'un barème range la borne dans la tranche supérieure ; et le texte ne donne aucun montant par tranche.
+  - **`taxe_immeubles_batis.prix_reference.categorie_{1,2,3,4}.{minimum,maximum}`** (dinars par mètre carré couvert) : 100-150, 151-200, 201-250, 251-300 au 13 mars 1997 (décret n° 97-431, JORT n° 19 du 7 mars 1997, p. 389) ; 100-162, 163-216, 217-270, 271-324 au 1er janvier 2008 (décret n° 2007-1185, article 3, JORT n° 40 du 18 mai 2007, pp. 1646-1647) ; 100-178, 163-238, 217-297, 271-356 au 1er janvier 2017 (décret gouvernemental n° 2017-397, article 3, JORT n° 26 du 31 mars 2017, pp. 1191-1192).
+  - **`taxe_terrains_non_batis.taux_valeur_venale`** : 0,3 % de la valeur vénale réelle, au 1er janvier 1997 (code, article 33, premier paragraphe, p. 176).
+  - **`taxe_terrains_non_batis.tarif_m2.{haute_densite,moyenne_densite,basse_densite}`** (dinars par mètre carré) : 0,300, 0,090 et 0,030 au 13 mars 1997 (décret n° 97-432, JORT n° 19 de 1997, p. 389) ; 0,318, 0,095 et 0,032 au 1er janvier 2008 (décret n° 2007-1186, article 3, JORT n° 40 de 2007, p. 1647) ; 0,385, 0,115 et 0,040 au 1er janvier 2017 (décret gouvernemental n° 2017-396, article 3, JORT n° 26 de 2017, pp. 1190-1191).
+  - **Dates.** Le 1er janvier 1997 est la date énoncée par l'article 3 de la loi n° 97-11 ; le 1er janvier 2008 et le 1er janvier 2017, celles de l'article 3 de chaque décret, reprises telles quelles — la seconde est antérieure à la publication. Les deux décrets de 1997 n'ont pas de clause d'effet : fascicule déposé au gouvernorat de Tunis le 8 mars 1997, exécutoire cinq jours après, jour du dépôt non compté (loi n° 93-64, article 2), soit le 13 mars 1997. **Du 1er janvier au 12 mars 1997, les prix de référence et le tarif par mètre carré n'ont pas de valeur** : le code est en vigueur, aucun barème ne l'est encore.
+  - **Deux unités nouvelles** dans `units.yaml` : `m2` et `currency/m2`.
+  - **`sous_ensembles.py`** : `fiscalite_locale` est déclaré dans `SOUS_ARBRES_FISCAL`. Le système des pensions ne le lit pas. Le dossier est ajouté à l'ordre de `parameters/index.yaml`.
+  - **Effet sur les calculs.** Aucun résultat ne change et aucun test existant ne bouge : ces paramètres sont nouveaux. Un test nouveau, `tests/test_fiscalite_locale.py`, lit les paramètres : valeurs la veille et le jour de chaque date d'effet, absence de valeur avant la date d'effet, référence complète à chaque date, unités enregistrées, liste exacte des feuilles. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre existant ne change.
+
 ## 0.124 - [#484](https://github.com/openfisca/openfisca-tunisia/pull/484)
 
 * Évolution du système socio-fiscal.
