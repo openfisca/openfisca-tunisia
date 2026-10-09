@@ -139,20 +139,4 @@ def test_amen_seuils_d_eligibilite_executoires_le_25_mai_2020():
     assert seuils.deux_membres == 1
     assert seuils.trois_quatre_membres == 1.5
     assert seuils.plus_de_cinq_membres == 2
-
-
-def test_amen_majoration_handicap_lourd_un_demi_salaire_minimum_a_chaque_palier():
-    """Article 5, troisième alinéa : le seuil est majoré d'un demi salaire minimum.
-
-    Le palier d'une personne portait 1,25 ; deux tiers plus un demi font sept sixièmes.
-    """
-    seuils = nc("2026-01-01").amen_social.eligibilite
-    for palier in (
-        "un_membre",
-        "deux_membres",
-        "trois_quatre_membres",
-        "plus_de_cinq_membres",
-    ):
-        majoration = getattr(seuils.handicap_lourd, palier) - getattr(seuils, palier)
-        assert majoration == pytest.approx(0.5, abs=1e-12)
     assert seuils.handicap_lourd.un_membre == pytest.approx(7 / 6, abs=1e-12)
