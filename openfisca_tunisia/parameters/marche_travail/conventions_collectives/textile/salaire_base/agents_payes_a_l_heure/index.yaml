@@ -3,25 +3,41 @@ metadata:
   short_label: "Agents payés à l'heure"
   order:
   - categorie_1
+  - categorie_2
+  - categorie_3_1
+  - categorie_3_2
+  - categorie_3_3
+  - categorie_4_1
   - categorie_4_2
 documentation: |-
   Structure de la grille : sept catégories — I, II, III-1, III-2, III-3, IV-1 et IV-2 — et, dans
   chacune, des échelons numérotés à partir de 0, l'échelon 0 étant celui de la confirmation. Les
-  échelons vont de 0 à 16 dans la convention de 1974, et de 0 à 20 dans les grilles lues depuis
-  2011. La date à laquelle la grille passe de 16 à 20 échelons n'est pas relevée ici.
+  échelons vont de 0 à 16 dans la convention de 1974 et dans les grilles du 1er mai 1994 au
+  1er mai 1998 (avenants n° 5 et 6), et de 0 à 20 depuis la grille du 1er mai 1999 (avenant n° 7,
+  JORT n° 48 du 15 juin 1999, édition arabe, p. 1110), la première qui porte les échelons 17 à 20.
+  Les sept catégories sont les mêmes à toutes les dates.
 
-  Identifiants : `categorie_1` pour la catégorie I, `categorie_4_2` pour la catégorie IV-2 ;
-  `echelon_0` pour l'échelon 0.
+  En-tête des colonnes, tel que les grilles le portent : échelon 0, confirmation ; échelon 1,
+  deuxième année à compter du début du stage ; échelons 2 à 16, respectivement 2 et 3 ans
+  d'ancienneté, puis de deux ans en deux ans de 5 à 29 ans ; échelons 17 à 19, 31, 33 et 35 ans ;
+  l'échelon 20 n'a pas de mention d'ancienneté.
+
+  Identifiants : `categorie_1` pour la catégorie I, `categorie_2` pour la catégorie II,
+  `categorie_3_1`, `categorie_3_2` et `categorie_3_3` pour les catégories III-1, III-2 et III-3,
+  `categorie_4_1` et `categorie_4_2` pour les catégories IV-1 et IV-2 ; `echelon_0` à `echelon_20`
+  pour les échelons.
 
   Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
   hebdomadaire du travail elle se rapporte.
 
-  Cases versées, du 1er mai 1994 (avenant n° 5) à l'avenant n° 18 :
-  - catégorie I, échelon 0 — le salaire le plus bas de la grille ;
-  - catégorie IV-2, échelon 0 — l'entrée de la catégorie la plus élevée, et non le sommet de la
-    grille, qui est le dernier échelon de cette catégorie.
+  La grille est versée en entier, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant
+  n° 18) : trente dates d'effet, 119 cases par grille aux cinq premières (sept catégories,
+  échelons 0 à 16) et 147 aux vingt-cinq suivantes (échelons 0 à 20), soit 4 270 valeurs. Le
+  salaire le plus bas est celui de la catégorie I, échelon 0 ; le plus élevé, celui du dernier
+  échelon de la catégorie IV-2.
 
-  Les autres cases de la grille restent à lire : aucune entrée ne les représente.
+  Les grilles du 1er mai 1994 au 1er mai 1998 sont imprimées en millimes ; les valeurs en sont
+  portées ici en dinars, comme celles des grilles suivantes, imprimées en dinars à trois décimales.
 
   La série commence au 1er mai 1994. Les grilles de 1990 à 1992 ne comprennent pas l'indemnité
   complémentaire provisoire et ne mesurent donc pas la même grandeur, et celle de 1993 n'est pas

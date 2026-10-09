@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.123 - [#484](https://github.com/openfisca/openfisca-tunisia/pull/484)
+## 0.124 - [#484](https://github.com/openfisca/openfisca-tunisia/pull/484)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : du 20/05/2020 au 24/05/2020 (onze feuilles de l'Amen social n'ont plus de valeur) ; du 09/12/2022 au 13/12/2022 (les trois feuilles de l'appui d'urgence n'ont plus de valeur) ; à partir du 09/11/2025 (allocation familiale des 6 à 18 ans, paramètre nouveau) ; à partir du 01/01/2026 (montant de base du transfert monétaire permanent : 280 D au lieu de 260 D).
@@ -17,7 +17,7 @@
   - **Tests.** Aucun test YAML ne change de résultat. Dans `tests/test_prestations_assistance.py`, quatre tests Python lisaient les valeurs au jour de la publication et sont redatés, sans changement de valeur attendue : `test_amen_social_supplements` et `test_aides_ponctuelles_datees_de_2020_et_non_de_2019` (absence le 24 mai 2020, valeurs le 25), `test_amen_allocation_de_base_prend_effet_a_la_publication`, renommé `test_amen_allocation_de_base_executoire_le_25_mai_2020`, et `test_appui_urgence_est_un_intervalle_et_non_un_montant` (absence le 13 décembre 2022, valeur le 14). Deux tests nouveaux : les cinq paliers de la base, la veille et le jour de chaque date d'effet, jusqu'à 280 D au 1er janvier 2026 ; l'allocation des 6 à 18 ans, absente jusqu'au 8 novembre 2025 et valant 30 D le 9. Ils sont en Python, selon la convention de ce fichier, parce qu'ils lisent des paramètres qu'aucune formule ne lit et attendent des absences de valeur.
   - **Chemins.** Un chemin nouveau : `prestations.non_contributives.allocation_familiale_6_18`. Aucun chemin existant n'est déplacé ni renommé.
 
-### 0.122.1 - [#483](https://github.com/openfisca/openfisca-tunisia/pull/483)
+### 0.123.1 - [#483](https://github.com/openfisca/openfisca-tunisia/pull/483)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : du 01/01/2020 au 24/05/2020 (les huit seuils n'ont plus de valeur) ; à partir du 25/05/2020 (seuil majoré d'une personne seule lourdement handicapée).
@@ -32,6 +32,22 @@
   - **Effet sur les calculs.** `amen_social_eligible`, et ce qui en dépend, lève désormais une erreur de paramètre introuvable pour les mois de janvier à mai 2020 — mai compris, le paramètre étant lu au premier jour du mois —, au lieu de rendre un résultat sur un droit qui n'existait pas. À partir de juin 2020, un seul cas change : la personne seule lourdement handicapée dont le revenu est compris entre 7/6 et 1,25 fois le salaire minimum (entre 470,288 et 503,880 D en juin 2020) n'est plus éligible. Aucune formule n'est modifiée.
   - **Tests.** Aucun test existant ne change de résultat. Seize cas YAML nouveaux éprouvent les huit seuils en juin 2020, un dinar en dessous et un dinar au-dessus ; un seul échouait avant la correction, celui de la personne seule à 471,288 D. Dans les familles, le handicap lourd y est porté par un enfant à charge ; les deux cas de la personne seule reposent sur la lecture retenue. Un test Python lit les paramètres dans `tests/test_prestations_assistance.py`, selon la convention de ce fichier : absence de valeur la veille du 25 mai 2020, valeurs du texte le jour même — ce qu'un test YAML ne sait pas attendre.
   - Aucun chemin de paramètre ne change.
+
+## 0.123 - [#486](https://github.com/openfisca/openfisca-tunisia/pull/486)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (échelons 0 à 16) et du 01/05/1999 (échelons 17 à 20) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/textile`.
+* Détails :
+  - **Verse en entier la grille des salaires horaires de base de la convention collective du textile** (agents payés à l'heure), dont seules deux cases étaient versées (`categorie_1.echelon_0`, `categorie_4_2.echelon_0`). Sous `textile.salaire_base.agents_payes_a_l_heure` : sept catégories — `categorie_1`, `categorie_2`, `categorie_3_1`, `categorie_3_2`, `categorie_3_3`, `categorie_4_1`, `categorie_4_2` —, chacune avec ses échelons `echelon_0` à `echelon_20`, soit 147 cases et 4 270 valeurs, en dinars par heure. Cinq fichiers nouveaux ; les deux fichiers existants reçoivent leurs échelons 1 à 20.
+  - **Trente dates d'effet, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18)**, chacune étant la date que la grille énonce. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page et l'édition lue, comme les deux cases déjà versées.
+  - **Les échelons 17 à 20 commencent le 1er mai 1999**, date d'effet de la première grille qui les porte (avenant n° 7) : ils n'ont aucune valeur antérieure, et une lecture avant cette date ne rend rien. Les échelons 0 à 16 ont trente valeurs, les échelons 17 à 20 vingt-cinq.
+  - **Le 1er janvier 2026 porte la valeur de la grille de l'avenant n° 18**, comme pour les deux cases déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille du textile qui en résulte.
+  - **Les deux cases déjà versées ne changent pas** : leurs blocs sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds du textile dit désormais que la grille horaire est versée en entier, donne la date à laquelle elle passe de 17 à 21 échelons (1er mai 1999) et l'en-tête d'ancienneté des colonnes. La grille des agents payés au mois reste à lire.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py`, qui affirmait que seules deux cases du textile existaient, est mis à jour : il énumère les 147 cases, leur nombre de dates, leurs références et leur unité, compte 4 270 valeurs et vérifie que la grille est croissante par échelon et par catégorie à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
+
 
 ## 0.122 - [#482](https://github.com/openfisca/openfisca-tunisia/pull/482)
 
