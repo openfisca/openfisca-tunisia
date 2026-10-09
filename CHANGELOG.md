@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.126 - [#487](https://github.com/openfisca/openfisca-tunisia/pull/487)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/06/1993 (échelons 1 à 12) et du 01/06/1999 (échelons 13 et 14) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/assurances`.
+* Détails :
+  - **Verse en entier la grille des salaires mensuels de base de la convention collective des assurances**, dont seules quatre cases étaient versées (`echelle_1.echelon_1`, `echelle_21.echelon_12`, `echelon_13` et `echelon_14`). Sous `assurances.salaire_base` : vingt-deux lignes — `echelle_1` à `echelle_21`, et `echelle_exceptionnelle` pour la ligne que les grilles intitulent « Exceptionnel », rangée comme sur la grille entre `echelle_3` et `echelle_4` —, chacune avec ses échelons `echelon_1` à `echelon_14`, soit 308 cases et 8 359 valeurs, en dinars par mois. Vingt fichiers nouveaux ; les deux fichiers existants reçoivent leurs autres échelons.
+  - **Vingt-huit dates d'effet, du 1er juin 1993 (avenant n° 3) au 1er juin 2021 (avenant n° 15)**, chacune étant la date que la grille énonce. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page et l'édition lue, comme les quatre cases déjà versées.
+  - **La série commence au 1er juin 1993, comme les cases déjà versées.** Les grilles de 1983 à 1992 ne comprennent pas l'indemnité complémentaire provisoire, que les grilles comprennent depuis le 1er juin 1993 : elles ne mesurent pas la même grandeur, et ne sont pas versées, non plus que la grille de 1975. Les deux grilles du 1er juin 1990 restent donc hors du modèle.
+  - **Les échelons 13 et 14 commencent le 1er juin 1999**, date à laquelle l'avenant n° 5 les crée : ils n'ont aucune valeur antérieure. Les échelons 1 à 12 ont vingt-huit dates de grille, les échelons 13 et 14 vingt-deux.
+  - **Une case illisible n'a pas de valeur** : `echelle_4.echelon_1` porte une valeur vide au 1er juin 1996 (partie entière effacée sur la numérisation, JORT n° 60 du 26 juillet 1996, édition arabe, p. 1755). La note de la date en dit la raison ; aucune valeur n'est déduite ni reportée, une lecture entre le 1er juin 1996 et le 31 mai 1997 ne rend rien, et la valeur reprend à la grille du 1er juin 1997.
+  - **Chaque case porte une valeur vide au 1er janvier 2026**, comme les quatre cases déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille des assurances qui en résulte.
+  - **Les quatre cases déjà versées ne changent pas** : leurs blocs sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds des assurances dit désormais que la grille est versée en entier, décrit la ligne « Exceptionnel » et nomme la case illisible ; celle de `conventions_collectives` dit qu'une case illisible porte une valeur vide.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py`, qui affirmait que seules quatre cases des assurances existaient, est mis à jour : il énumère les 308 cases, leur nombre de dates, leurs références et leur unité, compte 8 359 valeurs, vérifie que la case illisible ne rend rien et dit sa raison, et que la grille est croissante par échelon et par ligne à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
+
 ## 0.125 - [#485](https://github.com/openfisca/openfisca-tunisia/pull/485)
 
 * Évolution du système socio-fiscal.

@@ -3,12 +3,34 @@ metadata:
   short_label: "Salaire de base"
   order:
   - echelle_1
+  - echelle_2
+  - echelle_3
+  - echelle_exceptionnelle
+  - echelle_4
+  - echelle_5
+  - echelle_6
+  - echelle_7
+  - echelle_8
+  - echelle_9
+  - echelle_10
+  - echelle_11
+  - echelle_12
+  - echelle_13
+  - echelle_14
+  - echelle_15
+  - echelle_16
+  - echelle_17
+  - echelle_18
+  - echelle_19
+  - echelle_20
   - echelle_21
 documentation: |-
   La convention n'a qu'une grille de salaires, mensuelle, par échelle et par échelon.
 
   Structure de la grille, et ses changements :
-  - 21 échelles, numérotées de 1 à 21, depuis la convention de 1975 ;
+  - 21 échelles, numérotées de 1 à 21, depuis la convention de 1975 ; à compter du 1er janvier
+    1983 les grilles portent en outre, entre l'échelle 3 et l'échelle 4, une ligne intitulée
+    « Exceptionnel », soit 22 lignes ;
   - les échelles sont regroupées en 7 catégories, de A à G, dans la convention de 1975, puis en
     5 catégories à compter du 1er janvier 1983 : V, agents de services et assimilés (échelles 1 à 3
     et hors classe) ; IV, agents d'exécution (4 à 9) ; III, personnel d'encadrement (10 à 12) ;
@@ -18,7 +40,9 @@ documentation: |-
     33 ans de service.
 
   Le numéro d'échelle suffit à désigner une ligne de la grille : la catégorie n'est pas un niveau
-  de l'arborescence. Identifiants : `echelle_1` à `echelle_21`, puis `echelon_1` à `echelon_14`.
+  de l'arborescence. Identifiants : `echelle_1` à `echelle_21`, et `echelle_exceptionnelle` pour
+  la ligne « Exceptionnel », rangée comme sur la grille entre `echelle_3` et `echelle_4` ; puis
+  `echelon_1` à `echelon_14`.
 
   Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit
   2 080 heures par an (article 30 de la convention révisée).
@@ -28,14 +52,19 @@ documentation: |-
   depuis la grille du 1er juin 1993 (avenant n° 3). Il ne comprend ni l'indemnité de transport, ni
   les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
 
-  Cases versées, du 1er juin 1993 (avenant n° 3) à l'avenant n° 15 :
-  - échelle 1, échelon 1 — le salaire le plus bas de la grille ;
-  - échelle 21, 12e échelon — le salaire le plus élevé de la grille jusqu'au 31 mai 1999 ;
-  - échelle 21, 13e et 14e échelons, créés le 1er juin 1999 — le 14e est depuis le salaire le plus
-    élevé de la grille. La ligne des trois derniers échelons de l'échelle 21 est ainsi complète
-    depuis le 1er juin 1999.
+  La grille est versée en entier, du 1er juin 1993 (avenant n° 3) au 1er juin 2021 (avenant
+  n° 15) : vingt-huit dates d'effet, 264 cases par grille aux six premières (22 lignes,
+  12 échelons) et 308 aux vingt-deux suivantes (14 échelons), soit 8 360 cases, dont 8 359 valeurs
+  et une case illisible. Le salaire le plus bas est celui de l'échelle 1, échelon 1 ; le plus
+  élevé, celui de l'échelle 21, 12e échelon jusqu'au 31 mai 1999, 14e échelon depuis.
 
-  Les autres cases de la grille restent à lire : aucune entrée ne les représente.
+  Case illisible : échelle 4, échelon 1, dans la grille du 1er juin 1996 (JORT n° 60 du 26 juillet
+  1996, édition arabe, p. 1755). Elle porte une valeur vide à cette date, sans valeur déduite ni
+  reportée, et la note de la date en dit la raison ; la valeur reprend à la grille suivante.
+
+  Chaque case porte en outre une valeur vide au 1er janvier 2026 : le décret n° 2026-68 du 30 avril
+  2026 relève alors les salaires de base des dernières grilles, et aucun texte ne publie la grille
+  qui en résulte.
 
   La série commence au 1er juin 1993. Les grilles de 1983 à 1992 ne comprennent pas l'indemnité
   complémentaire provisoire et ne mesurent donc pas la même grandeur, et rien ne relie la grille
