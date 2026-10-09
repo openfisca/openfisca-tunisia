@@ -1,17 +1,35 @@
 description: Montant maximal de l'appui pour dépenses exceptionnelles
 values:
-  2022-12-09:
+  2022-12-14:
     value: 200
 metadata:
   unit: currency
   reference:
-    2022-12-09:
-      title: Article 3 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 8 décembre 2022, JORT n° 136 du 9 décembre 2022, p. 3446-3447
+    2022-12-14:
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 8 décembre 2022, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité bénéficiant du programme Amen Social, article 4, dernier tiret"
       href: https://www.pist.tn/jort/2022/2022F/Jo1362022.pdf
+      note: "JORT n° 136 du 9 décembre 2022, pp. 3447-3448 ; article 4 p. 3448, dernier tiret : « - Le montant de l'appui financier occasionnel visé au 3ème tiret de l'article 3 du présent arrêté est compris entre 60 dinars au minimum et 200 dinars au maximum, selon la situation financière de la famille ; cet appui peut être versé au bénéficiaire 4 fois par an au maximum. Il est également possible, dans des cas exceptionnels, de dépasser le montant maximum de l'appui financier ou le seuil de 4 fois de bénéfice, après obtention d'une autorisation du comité générale de la promotion sociale. » L'arrêté ne porte pas de clause d'entrée en vigueur (son article 6 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 9 décembre 2022 » : exécutoire le 14 décembre 2022."
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 8 décembre 2022, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité bénéficiant du programme Amen Social, article 4, dernier tiret (édition arabe)"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1362022.pdf
+      note: "الرائد الرسمي عدد 136 بتاريخ 9 ديسمبر 2022، ص. 3789-3790 ؛ الفصل 4 ص. 3789 : « يتراوح مقدار الدعم المادي الظرفي المشار إليه بالمطة 3 من الفصل 3 من هذا القرار بين 60 دينار كحد أدنى و200 دينار كحد أقصى وذلك حسب الوضعية المادية للأسرة […] »"
+  official_journal_date:
+    2022-12-14: "2022-12-09"
 documentation: |
-  Paramètre ajouté. Borne haute de l'appui pour dépenses exceptionnelles, modulé entre 60 et
-  200 dinars selon la situation financière de la famille.
+  Borne haute de l'appui pour dépenses exceptionnelles, compris entre 60 et 200 dinars selon la
+  situation financière de la famille (article 4, dernier tiret, de l'arrêté du 8 décembre 2022).
 
-  Cette borne, comme le nombre maximal de versements annuels, peut être dépassée « dans des
-  cas exceptionnels » sur autorisation du comité général de la promotion sociale : c'est un
-  plafond de droit commun, non une limite absolue.
+  Cette borne, comme le nombre maximal de versements annuels, peut être dépassée « dans des cas
+  exceptionnels » sur autorisation du comité général de la promotion sociale : c'est un plafond de
+  droit commun, non une limite absolue.
+
+  Date corrigée. La valeur était datée du 9 décembre 2022, jour de la publication. L'arrêté ne porte
+  pas de clause d'effet : il devient exécutoire cinq jours après le dépôt du fascicule au siège du
+  gouvernorat de Tunis (9 décembre 2022), le jour du dépôt n'étant pas compté (loi n° 93-64,
+  article 2), soit le 14 décembre 2022.
+
+  Référence corrigée : les montants et le nombre de versements sont au dernier tiret de l'article 4,
+  et non à l'article 3, qui définit seulement le cas ; l'arrêté occupe les pp. 3447-3448 de
+  l'édition française, non 3446-3447.
+
+  Lu dans l'édition française (pp. 3447-3448) ; dans l'édition arabe (pp. 3789-3790), seule la
+  phrase des deux bornes a été relue.
