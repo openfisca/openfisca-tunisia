@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.127 - [#488](https://github.com/openfisca/openfisca-tunisia/pull/488)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1996 (grille mensuelle, et lignes de la grille horaire) et du 01/05/2008 (niveaux I et II de l'ouvrier hautement qualifié) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/batiment`.
+* Détails :
+  - **Verse en entier la grille des salaires horaires du personnel occasionnel de la convention collective du bâtiment et des travaux publics**, dont seules deux lignes étaient versées (`manoeuvre_ordinaire`, `chef_equipe_3e_degre`). Sous `batiment.salaire_base.personnel_occasionnel`, neuf lignes nouvelles : `manoeuvre_specialise`, `aide_ouvrier`, `ouvrier_qualifie_1re_categorie`, `ouvrier_qualifie_2e_categorie`, `ouvrier_hautement_qualifie`, `ouvrier_hautement_qualifie_1`, `ouvrier_hautement_qualifie_2`, `chef_equipe_1er_degre`, `chef_equipe_2e_degre`. Vingt-six dates d'effet, du 1er mai 1996 (avenant n° 5) au 1er janvier 2024 (avenant n° 16) ; 248 valeurs, en dinars par heure, aucune case illisible.
+  - **L'ouvrier hautement qualifié change de forme le 1er mai 2008** (avenant n° 9) : la ligne unique `ouvrier_hautement_qualifie` vaut du 1er mai 1996 au 30 avril 2008 et porte une valeur vide au 1er mai 2008 ; les niveaux I et II (`ouvrier_hautement_qualifie_1`, `ouvrier_hautement_qualifie_2`) commencent à cette date, sans valeur antérieure. La ligne unique ne se prolonge dans aucun des deux.
+  - **Verse en entier la grille des salaires mensuels du personnel administratif et technique**, nœud nouveau `batiment.salaire_base.personnel_administratif_technique` : dix-neuf catégories (`categorie_1` à `categorie_19`), onze échelons chacune (`echelon_1` à `echelon_11`), soit 209 cases aux mêmes vingt-six dates ; 5 418 valeurs, en dinars par mois, et seize cases illisibles.
+  - **Une case illisible n'a pas de valeur.** Seize cases de la grille mensuelle portent une valeur vide à leur date (sept au 1er mai 1996, cinq au 1er mai 1998, une à chacun des 1er mai 2001, 2002, 2003 et 2004) : la note de la date dit « case illisible sur le fascicule » et la cause ; aucune valeur n'est déduite ni reportée, la lecture ne rend rien jusqu'à la grille suivante.
+  - **Les trois grilles de l'avenant n° 16** (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont lues sur la reproduction d'un site tiers, le fascicule n° 132 de 2022 n'étant pas servi par pist.tn : la note de chaque valeur le dit et ne donne pas de lien, comme le faisaient déjà les deux lignes versées.
+  - **Chaque case en cours porte une valeur vide au 1er janvier 2026**, comme les deux lignes déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille du bâtiment qui en résulte.
+  - **Les deux lignes déjà versées ne changent pas** : leurs fichiers sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds du bâtiment dit désormais que les deux grilles sont versées en entier ; celle de la grille horaire dit que l'ouvrier hautement qualifié n'a qu'une ligne du 1er mai 1996 au 1er mai 2007 (elle disait « de 1999 à 2007 »).
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py` est étendu aux 220 cases du bâtiment : nombre de dates et de dates sans valeur par case, références, unité (par heure ou par mois selon la grille), 248 et 5 418 valeurs, cases illisibles et leur raison, reproduction de l'avenant n° 16, grilles croissantes à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
+
 ## 0.126 - [#487](https://github.com/openfisca/openfisca-tunisia/pull/487)
 
 * Évolution du système socio-fiscal.

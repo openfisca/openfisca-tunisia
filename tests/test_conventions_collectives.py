@@ -2,8 +2,8 @@
 
 Chaque branche porte, sous `salaire_base`, la structure de sa grille : la grille quand la
 convention en a plusieurs, la catégorie ou l'échelle, puis l'échelon. La grille horaire du textile
-et la grille des assurances sont versées en entier, celle du bâtiment en partie. Quatre choses sont
-éprouvées :
+la grille des assurances et les deux grilles du bâtiment sont versées en entier. Quatre choses
+sont éprouvées :
 
 - les valeurs, la veille et le jour d'une date d'effet ;
 - les dates sans valeur : une date à laquelle le salaire change sans que son montant soit publié
@@ -283,6 +283,121 @@ VALEURS = [
         "2007-05-01",
         2.077,
     ),
+    # Bâtiment, grille horaire entière : autres lignes, scission de l'ouvrier hautement qualifié
+    (
+        "batiment.salaire_base.personnel_occasionnel.manoeuvre_specialise",
+        "1996-05-01",
+        0.896,
+    ),
+    ("batiment.salaire_base.personnel_occasionnel.aide_ouvrier", "1999-04-30", 1.027),
+    ("batiment.salaire_base.personnel_occasionnel.aide_ouvrier", "1999-05-01", 1.07),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_qualifie_1re_categorie",
+        "2012-05-01",
+        1.942,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_qualifie_2e_categorie",
+        "2024-01-01",
+        3.536,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie",
+        "1996-05-01",
+        1.062,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie",
+        "2008-04-30",
+        1.626,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_1",
+        "2008-05-01",
+        1.722,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_2",
+        "2008-05-01",
+        1.856,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_2",
+        "2025-12-31",
+        4.007,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.chef_equipe_1er_degre",
+        "2021-12-01",
+        3.766,
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.chef_equipe_2e_degre",
+        "2023-01-01",
+        4.276,
+    ),
+    # Bâtiment, grille mensuelle : coins, veille et jour d'une date d'effet
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_1.echelon_1",
+        "1996-05-01",
+        174.032,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_1.echelon_11",
+        "1996-05-01",
+        185.395,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_19.echelon_1",
+        "1996-05-01",
+        506.97,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_19.echelon_11",
+        "2024-01-01",
+        2084.729,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_19.echelon_11",
+        "2025-12-31",
+        2084.729,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_10.echelon_6",
+        "2015-08-31",
+        656.058,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_10.echelon_6",
+        "2015-09-01",
+        694.195,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_7.echelon_3",
+        "2021-11-30",
+        747.911,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_7.echelon_3",
+        "2021-12-01",
+        796.107,
+    ),
+    # Bâtiment, catégorie 9, échelon 7 : illisible en 1996 et en 1998, lue en 1997 et en 1999
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_9.echelon_7",
+        "1997-05-01",
+        318.916,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_9.echelon_7",
+        "1998-04-30",
+        318.916,
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_9.echelon_7",
+        "1999-05-01",
+        347.916,
+    ),
     # Assurances, par mois : échelle 1 échelon 1 ; échelle 21, échelons 12, 13 et 14
     ("assurances.salaire_base.echelle_1.echelon_1", "1993-06-01", 181.137),
     ("assurances.salaire_base.echelle_1.echelon_1", "2002-05-31", 321.617),
@@ -344,6 +459,53 @@ SANS_VALEUR = [
     # Décret n° 2026-68 : hausse de 5 % des dernières grilles au 1er janvier 2026, grilles non publiées.
     ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", "2026-01-01"),
     ("batiment.salaire_base.personnel_occasionnel.chef_equipe_3e_degre", "2026-01-01"),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_1",
+        "2026-01-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_1.echelon_1",
+        "2026-01-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_19.echelon_11",
+        "2026-01-01",
+    ),
+    # La ligne unique de l'ouvrier hautement qualifié cesse le 1er mai 2008 : la grille la divise
+    # en deux niveaux, et elle ne se prolonge dans aucun.
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie",
+        "2008-05-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie",
+        "2024-01-01",
+    ),
+    # Cases illisibles de la grille mensuelle du bâtiment : rien jusqu'à la grille suivante.
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_9.echelon_7",
+        "1996-05-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_9.echelon_7",
+        "1997-04-30",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_9.echelon_7",
+        "1998-05-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_14.echelon_8",
+        "1996-05-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_18.echelon_5",
+        "2001-05-01",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_18.echelon_4",
+        "2005-04-30",
+    ),
     ("assurances.salaire_base.echelle_1.echelon_1", "2026-01-01"),
     ("assurances.salaire_base.echelle_21.echelon_12", "2026-01-01"),
     ("assurances.salaire_base.echelle_21.echelon_13", "2026-01-01"),
@@ -365,6 +527,31 @@ AVANT_LA_SERIE = [
     ),
     ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", "1996-04-30"),
     ("batiment.salaire_base.personnel_occasionnel.chef_equipe_3e_degre", "1996-04-30"),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie",
+        "1996-04-30",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_1.echelon_1",
+        "1996-04-30",
+    ),
+    (
+        "batiment.salaire_base.personnel_administratif_technique.categorie_19.echelon_11",
+        "1996-04-30",
+    ),
+    # Bâtiment : les niveaux I et II de l'ouvrier hautement qualifié naissent le 1er mai 2008
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_1",
+        "2008-04-30",
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_2",
+        "2008-04-30",
+    ),
+    (
+        "batiment.salaire_base.personnel_occasionnel.ouvrier_hautement_qualifie_2",
+        "1996-05-01",
+    ),
     ("assurances.salaire_base.echelle_1.echelon_1", "1993-05-31"),
     ("assurances.salaire_base.echelle_21.echelon_12", "1993-05-31"),
     # Textile : toutes les catégories commencent le 1er mai 1994
@@ -433,6 +620,45 @@ ASSURANCES_ECHELONS = [f"echelon_{n}" for n in range(1, 15)]
 # Cases illisibles sur le fascicule : une date sans valeur de plus.
 ASSURANCES_ILLISIBLES = {("echelle_4", 1): ["1996-06-01"]}
 
+# Bâtiment, personnel occasionnel : onze lignes dans l'ordre de la grille. Neuf valent aux
+# vingt-six dates d'effet et portent la date sans valeur du 1er janvier 2026 ; la ligne unique de
+# l'ouvrier hautement qualifié vaut aux douze premières et cesse le 1er mai 2008 ; ses niveaux I
+# et II valent aux quatorze suivantes.
+BATIMENT_LIGNES = {
+    "manoeuvre_ordinaire": 27,
+    "manoeuvre_specialise": 27,
+    "aide_ouvrier": 27,
+    "ouvrier_qualifie_1re_categorie": 27,
+    "ouvrier_qualifie_2e_categorie": 27,
+    "ouvrier_hautement_qualifie": 13,
+    "ouvrier_hautement_qualifie_1": 15,
+    "ouvrier_hautement_qualifie_2": 15,
+    "chef_equipe_1er_degre": 27,
+    "chef_equipe_2e_degre": 27,
+    "chef_equipe_3e_degre": 27,
+}
+# Bâtiment, personnel administratif et technique : 19 catégories, 11 échelons, vingt-six dates.
+BATIMENT_CATEGORIES = [f"categorie_{n}" for n in range(1, 20)]
+BATIMENT_ECHELONS = [f"echelon_{n}" for n in range(1, 12)]
+# Cases illisibles sur le fascicule, (catégorie, échelon) : dates.
+BATIMENT_ILLISIBLES = {
+    (9, 7): ["1996-05-01", "1998-05-01"],
+    (10, 7): ["1996-05-01", "1998-05-01"],
+    (11, 7): ["1996-05-01"],
+    (12, 7): ["1996-05-01"],
+    (13, 7): ["1996-05-01"],
+    (14, 7): ["1996-05-01"],
+    (14, 8): ["1996-05-01"],
+    (1, 7): ["1998-05-01"],
+    (2, 7): ["1998-05-01"],
+    (6, 7): ["1998-05-01"],
+    (18, 5): ["2001-05-01"],
+    (9, 4): ["2002-05-01"],
+    (9, 5): ["2003-05-01"],
+    (18, 4): ["2004-05-01"],
+}
+MENSUELLES = ("assurances.", "batiment.salaire_base.personnel_administratif_technique.")
+
 # Nombre de dates d'effet et, parmi elles, de dates sans valeur.
 DECOMPTE = [
     *(
@@ -444,8 +670,19 @@ DECOMPTE = [
         for categorie in TEXTILE_CATEGORIES
         for n in range(21)
     ),
-    ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", 27, 1),
-    ("batiment.salaire_base.personnel_occasionnel.chef_equipe_3e_degre", 27, 1),
+    *(
+        (f"batiment.salaire_base.personnel_occasionnel.{ligne}", dates, 1)
+        for ligne, dates in BATIMENT_LIGNES.items()
+    ),
+    *(
+        (
+            f"batiment.salaire_base.personnel_administratif_technique.categorie_{c}.echelon_{n}",
+            27,
+            1 + len(BATIMENT_ILLISIBLES.get((c, n), [])),
+        )
+        for c in range(1, 20)
+        for n in range(1, 12)
+    ),
     *(
         (
             f"assurances.salaire_base.{echelle}.echelon_{n}",
@@ -458,15 +695,15 @@ DECOMPTE = [
 ]
 
 
-# Seules ces cases existent : la grille horaire du textile et la grille des assurances en entier,
-# celle du bâtiment en partie.
+# Seules ces cases existent : la grille horaire du textile, la grille des assurances et les deux
+# grilles du bâtiment, en entier.
 CASES = {
     "textile.salaire_base.agents_payes_a_l_heure": {
         c: set(TEXTILE_ECHELONS) for c in TEXTILE_CATEGORIES
     },
-    "batiment.salaire_base.personnel_occasionnel": {
-        "manoeuvre_ordinaire": None,
-        "chef_equipe_3e_degre": None,
+    "batiment.salaire_base.personnel_occasionnel": dict.fromkeys(BATIMENT_LIGNES),
+    "batiment.salaire_base.personnel_administratif_technique": {
+        c: set(BATIMENT_ECHELONS) for c in BATIMENT_CATEGORIES
     },
     "assurances.salaire_base": {
         e: set(ASSURANCES_ECHELONS) for e in ASSURANCES_ECHELLES
@@ -518,7 +755,7 @@ def test_chaque_date_porte_sa_reference(chemin, dates, vides):
 
 @pytest.mark.parametrize(("chemin", "dates", "vides"), DECOMPTE)
 def test_unites(chemin, dates, vides):
-    attendu = "currency/mois" if chemin.startswith("assurances") else "currency/heure"
+    attendu = "currency/mois" if chemin.startswith(MENSUELLES) else "currency/heure"
     assert parametre(chemin).metadata["unit"] == attendu
 
 
@@ -635,6 +872,97 @@ def test_la_grille_des_assurances_est_croissante():
         table = [
             [grille.children[e].children[n](date) for n in echelons]
             for e in ASSURANCES_ECHELLES
+        ]
+        for ligne in table:
+            lues = [x for x in ligne if x is not None]
+            assert all(a < b for a, b in zip(lues, lues[1:])), date
+        for colonne in zip(*table):
+            lues = [x for x in colonne if x is not None]
+            assert all(a <= b for a, b in zip(lues, lues[1:])), date
+
+
+def test_les_grilles_du_batiment_comptent_248_et_5418_valeurs():
+    """Horaire : 9 cases aux douze premières dates, 10 aux quatorze suivantes. Mensuelle : 209 moins les illisibles."""
+    horaire, mensuelle, illisibles = {}, {}, {}
+    for chemin, _, _ in DECOMPTE:
+        if not chemin.startswith("batiment."):
+            continue
+        par_date = mensuelle if chemin.startswith(MENSUELLES) else horaire
+        for v in parametre(chemin).values_list:
+            if v.value is not None:
+                par_date[v.instant_str] = par_date.get(v.instant_str, 0) + 1
+            elif v.instant_str != "2026-01-01" and chemin.startswith(MENSUELLES):
+                _, c, n = chemin.rsplit("_", 2)
+                illisibles.setdefault((int(c.split(".")[0]), int(n)), []).append(
+                    v.instant_str
+                )
+    assert len(horaire) == len(mensuelle) == 26
+    assert sum(horaire.values()) == 248
+    assert {n for d, n in horaire.items() if d < "2008-05-01"} == {9}
+    assert {n for d, n in horaire.items() if d >= "2008-05-01"} == {10}
+    assert sum(mensuelle.values()) == 5418
+    assert {
+        case: sorted(dates) for case, dates in illisibles.items()
+    } == BATIMENT_ILLISIBLES
+    assert {d: 209 - n for d, n in mensuelle.items() if n != 209} == {
+        "1996-05-01": 7,
+        "1998-05-01": 5,
+        "2001-05-01": 1,
+        "2002-05-01": 1,
+        "2003-05-01": 1,
+        "2004-05-01": 1,
+    }
+
+
+def test_les_cases_illisibles_du_batiment_disent_leur_raison():
+    for (c, n), dates in BATIMENT_ILLISIBLES.items():
+        chemin = f"batiment.salaire_base.personnel_administratif_technique.categorie_{c}.echelon_{n}"
+        references = {
+            str(d): r for d, r in parametre(chemin).metadata["reference"].items()
+        }
+        for date in dates:
+            (reference,) = references[date]
+            assert "case illisible sur le fascicule" in reference["note"]
+            assert "dinars par mois" not in reference["note"]
+
+
+def test_l_avenant_16_du_batiment_est_lu_sur_une_reproduction():
+    """Aux trois dates de l'avenant n° 16, chaque note dit la reproduction, et aucun lien n'est donné."""
+    for chemin, _, _ in DECOMPTE:
+        if not chemin.startswith("batiment.") or chemin.endswith(
+            ".ouvrier_hautement_qualifie"
+        ):
+            continue
+        references = {
+            str(d): r for d, r in parametre(chemin).metadata["reference"].items()
+        }
+        for date in ("2021-12-01", "2023-01-01", "2024-01-01"):
+            (reference,) = references[date]
+            assert "reproduction" in reference["note"] and "href" not in reference
+
+
+def test_les_grilles_du_batiment_sont_croissantes():
+    """À chaque date : les lignes de la grille horaire croissent ; dans la grille mensuelle, le salaire croît
+    avec l'échelon dans une catégorie, et avec la catégorie à échelon égal. Les cases sans valeur sont sautées.
+    """
+    horaire = parametre("batiment.salaire_base.personnel_occasionnel")
+    mensuelle = parametre("batiment.salaire_base.personnel_administratif_technique")
+    dates = [
+        v.instant_str
+        for v in horaire.children["manoeuvre_ordinaire"].values_list
+        if v.value is not None
+    ]
+    for date in dates:
+        lignes = [
+            x
+            for x in (horaire.children[ligne](date) for ligne in BATIMENT_LIGNES)
+            if x is not None
+        ]
+        assert len(lignes) == (9 if date < "2008-05-01" else 10)
+        assert all(a < b for a, b in zip(lignes, lignes[1:])), date
+        table = [
+            [mensuelle.children[c].children[e](date) for e in BATIMENT_ECHELONS]
+            for c in BATIMENT_CATEGORIES
         ]
         for ligne in table:
             lues = [x for x in ligne if x is not None]
