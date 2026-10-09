@@ -46,12 +46,26 @@ def test_allocation_familiale_non_contributive_nexiste_pas_avant_2022():
 
 
 def test_amen_social_supplements():
-    """Limite d'âge de l'étudiant à 25 ans, et non 21 ; effet au 20 mai 2020."""
-    with pytest.raises(ParameterNotFoundError):
-        nc("2020-05-19").amen_social.supplements.enfant_a_charge
+    """Limite d'âge de l'étudiant à 25 ans, et non 21.
 
-    s = nc("2020-05-20").amen_social.supplements
+    Arrêté conjoint du 19 mai 2020, article 2 ; JORT n° 45 du 20 mai 2020, p. 1097. Sans
+    clause d'effet : exécutoire le 25 mai 2020, cinq jours après le dépôt du fascicule
+    (20 mai), jour du dépôt non compté — loi n° 93-64, article 2.
+    """
+    for feuille in (
+        "enfant_a_charge",
+        "handicap",
+        "age_min_enfant",
+        "limite_age_enfant",
+        "limite_age_etudiant",
+    ):
+        with pytest.raises(ParameterNotFoundError):
+            getattr(nc("2020-05-24").amen_social.supplements, feuille)
+
+    s = nc("2020-05-25").amen_social.supplements
     assert s.enfant_a_charge == 10
+    assert s.handicap == 2
+    assert s.age_min_enfant == 0
     assert s.limite_age_etudiant == 25
     assert s.limite_age_enfant == 18
 
@@ -64,8 +78,29 @@ def test_amen_social_allocation_de_base():
     assert base("2022-06-01") == 200
     assert base("2023-06-01") == 220
     assert base("2024-06-01") == 240
-    # Palier ajouté : arrêté du 29 août 2025, rétroactif au 1er janvier.
+    # Arrêté conjoint du 29 janvier 2025, article 2 : effet au 1er janvier 2025.
     assert base("2025-06-01") == 260
+
+
+def test_amen_allocation_de_base_dates_d_effet_enoncees():
+    """Chaque arrêté modificatif énonce sa date d'effet, au 1er janvier de son année.
+
+    Arrêtés des 1er avril 2022 (alinéa 1 nouveau), 3 avril 2023, 28 février 2024,
+    29 janvier 2025 et 21 avril 2026 (article 2 de chacun).
+    """
+
+    def base(date):
+        return nc(date).amen_social.allocation_base
+
+    for veille, jour, avant, apres in (
+        ("2021-12-31", "2022-01-01", 180, 200),
+        ("2022-12-31", "2023-01-01", 200, 220),
+        ("2023-12-31", "2024-01-01", 220, 240),
+        ("2024-12-31", "2025-01-01", 240, 260),
+        ("2025-12-31", "2026-01-01", 260, 280),
+    ):
+        assert base(veille) == avant
+        assert base(jour) == apres
 
 
 def test_amen_supplement_borne_basse_dage_et_non_cumul():
@@ -83,21 +118,30 @@ def test_amen_supplement_borne_basse_dage_et_non_cumul():
     assert nc("2022-01-31").amen_social.supplements.age_min_enfant == 0
 
 
-def test_amen_allocation_de_base_prend_effet_a_la_publication():
-    """L'arrêté conjoint du 19 mai 2020 est publié au JORT n° 45 du 20 mai 2020.
+def test_amen_allocation_de_base_executoire_le_25_mai_2020():
+    """L'arrêté conjoint du 19 mai 2020 est publié au JORT n° 45 du 20 mai 2020, p. 1097.
 
-    La série portait le 1er mai 2020, date qu'aucun texte n'énonce.
+    Sans clause d'effet : exécutoire cinq jours après le dépôt du fascicule au gouvernorat
+    de Tunis (20 mai 2020), jour du dépôt non compté — loi n° 93-64, article 2. La série
+    portait le 20 mai 2020, jour de la publication.
     """
     with pytest.raises(ParameterNotFoundError):
-        nc("2020-05-19").amen_social.allocation_base
-    assert nc("2020-05-20").amen_social.allocation_base == 180
+        nc("2020-05-24").amen_social.allocation_base
+    assert nc("2020-05-25").amen_social.allocation_base == 180
 
 
 def test_aides_ponctuelles_datees_de_2020_et_non_de_2019():
     """L'appui financier occasionnel est fixé par l'arrêté conjoint du 19 mai 2020,
     publié au JORT n° 45 du 20 mai 2020. L'année 2019 n'est la date d'aucun texte.
+
+    Sans clause d'effet : exécutoire le 25 mai 2020 (dépôt du 20 mai, plus cinq jours).
     """
-    aides = nc("2020-05-20").amen_social.aides_ponctuelles
+    with pytest.raises(ParameterNotFoundError):
+        nc("2020-05-24").amen_social.aides_ponctuelles.fetes_religieuses.ramadan
+    with pytest.raises(ParameterNotFoundError):
+        nc("2020-05-24").amen_social.aides_ponctuelles.scolarite.rentree_scolaire
+
+    aides = nc("2020-05-25").amen_social.aides_ponctuelles
     assert aides.fetes_religieuses.ramadan == 60
     assert aides.fetes_religieuses.aid_al_fitr == 60
     assert aides.fetes_religieuses.aid_al_adha == 60
@@ -118,8 +162,29 @@ def test_appui_urgence_est_un_intervalle_et_non_un_montant():
     assert urgence.nombre_max_par_an == 4
 
     # Un NŒUD de paramètres existe à toute date ; seule une feuille sans valeur lève.
-    with pytest.raises(ParameterNotFoundError):
-        nc("2022-12-08").amen_social.aides_ponctuelles.urgence.montant_min
+    # Arrêté sans clause d'effet, fascicule déposé le 9 décembre 2022 : exécutoire le 14.
+    for feuille in ("montant_min", "montant_max", "nombre_max_par_an"):
+        with pytest.raises(ParameterNotFoundError):
+            getattr(nc("2022-12-13").amen_social.aides_ponctuelles.urgence, feuille)
+    assert nc("2022-12-14").amen_social.aides_ponctuelles.urgence.montant_min == 60
+
+
+def test_allocation_familiale_6_18_montant_fixe_par_l_arrete_du_3_novembre_2025():
+    """Arrêté conjoint du 3 novembre 2025, article 2 ; JORT n° 132 du 4 novembre 2025, p. 2963.
+
+    Trente dinars par mois et par enfant à charge. L'arrêté n'a pas de clause d'effet :
+    exécutoire cinq jours après le dépôt du fascicule (4 novembre 2025), jour du dépôt non
+    compté — loi n° 93-64, article 2. Le décret n° 2025-426 institue l'allocation au
+    1er janvier 2025 sans en fixer le montant ; aucun texte publié ne fonde l'aide versée de
+    2022 à 2024.
+    """
+    for date in ("2022-07-01", "2023-02-01", "2025-01-01", "2025-11-08"):
+        with pytest.raises(ParameterNotFoundError):
+            nc(date).allocation_familiale_6_18
+    assert nc("2025-11-09").allocation_familiale_6_18 == 30
+    assert nc("2026-06-01").allocation_familiale_6_18 == 30
+    # La feuille des moins de six ans n'est ni déplacée ni modifiée.
+    assert nc("2022-04-08").allocation_familiale == 30
 
 
 def test_amen_seuils_d_eligibilite_executoires_le_25_mai_2020():
