@@ -4,5 +4,6 @@ metadata:
   order:
   - allocation_base
   - decile
+  - eligibilite
   - aides_ponctuelles
   - supplements
