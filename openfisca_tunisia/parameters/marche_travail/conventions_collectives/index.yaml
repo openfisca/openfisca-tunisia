@@ -14,7 +14,7 @@ documentation: |-
   grille quand la convention en a plusieurs, puis la catégorie ou l'échelle, puis l'échelon quand
   la grille en a. Chaque paramètre est une case de la grille, nommée comme la convention la nomme.
   Seules les cases lues ont une entrée, et l'index de chaque grille dit lesquelles : la grille des
-  assurances, les deux grilles du bâtiment et la grille horaire du textile sont versées en entier.
+  assurances, les deux grilles du bâtiment et les deux grilles du textile sont versées en entier.
 
   Chaque date est la date d'effet que la grille énonce. Seules entrent les suites d'avenants
   consécutifs, tous lus, dont les grilles ont le même périmètre au regard de l'indemnité

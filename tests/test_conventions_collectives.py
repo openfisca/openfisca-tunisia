@@ -1,9 +1,9 @@
 """Conventions collectives sectorielles : cases versées des grilles du textile, du bâtiment et des assurances.
 
 Chaque branche porte, sous `salaire_base`, la structure de sa grille : la grille quand la
-convention en a plusieurs, la catégorie ou l'échelle, puis l'échelon. La grille horaire du textile
-la grille des assurances et les deux grilles du bâtiment sont versées en entier. Quatre choses
-sont éprouvées :
+convention en a plusieurs, la catégorie ou l'échelle, puis l'échelon. Les cinq grilles — deux du
+textile, deux du bâtiment, une des assurances — sont versées en entier. Quatre choses sont
+éprouvées :
 
 - les valeurs, la veille et le jour d'une date d'effet ;
 - les dates sans valeur : une date à laquelle le salaire change sans que son montant soit publié
@@ -216,6 +216,105 @@ VALEURS = [
         "textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20",
         "2027-01-01",
         4.958,
+    ),
+    # Textile, agents payés au mois : coins, colonne de stage, veille et jour d'une date d'effet
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1a.stage",
+        "1994-05-01",
+        156.032,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1a.echelon_1",
+        "1994-05-01",
+        156.032,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1b.stage",
+        "1994-05-01",
+        166.362,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_16",
+        "1998-05-01",
+        511.921,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_16",
+        "1999-04-30",
+        511.921,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_16",
+        "1999-05-01",
+        524.921,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_20",
+        "1999-05-01",
+        551.225,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_20",
+        "2026-01-01",
+        1554.837,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_20",
+        "2027-01-01",
+        1554.837,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_9.echelon_7",
+        "2005-06-14",
+        405.159,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_9.echelon_7",
+        "2005-06-15",
+        418.159,
+    ),
+    # La colonne de stage vaut l'échelon 1 jusqu'à la grille de 2007, et moins depuis celle de 2008
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1a.stage",
+        "2007-05-01",
+        264.032,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1a.echelon_1",
+        "2007-05-01",
+        264.032,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1a.stage",
+        "2008-05-01",
+        277.234,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_1a.echelon_1",
+        "2008-05-01",
+        280.928,
+    ),
+    # Catégorie 2, échelon 18 : illisible en 1999 et 2000, lu en 2001, illisible de 2002 à 2004, lu en 2005
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18",
+        "2001-05-01",
+        250.847,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18",
+        "2002-04-30",
+        250.847,
+    ),
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18",
+        "2005-06-15",
+        284.847,
+    ),
+    # Catégorie 16, échelon 6 : illisible en 1994, lu en 1995
+    (
+        "textile.salaire_base.agents_payes_au_mois.categorie_16.echelon_6",
+        "1995-05-01",
+        374.2,
     ),
     # Bâtiment : personnel occasionnel, manœuvre ordinaire et chef d'équipe du 3e degré
     (
@@ -456,6 +555,17 @@ VALEURS = [
 # Dates auxquelles une grille prend effet sans que le salaire soit établi : la lecture rend None,
 # et non la valeur de la grille précédente.
 SANS_VALEUR = [
+    # Cases illisibles de la grille mensuelle du textile : rien jusqu'à la première grille où la case est lue.
+    ("textile.salaire_base.agents_payes_au_mois.categorie_16.echelon_6", "1994-05-01"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_16.echelon_6", "1995-04-30"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_2.stage", "1999-05-01"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_2.stage", "2001-04-30"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18", "1999-05-01"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18", "2000-05-01"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18", "2002-05-01"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_2.echelon_18", "2005-06-14"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_18", "2003-05-01"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_1a.echelon_18", "2004-05-01"),
     # Décret n° 2026-68 : hausse de 5 % des dernières grilles au 1er janvier 2026, grilles non publiées.
     ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", "2026-01-01"),
     ("batiment.salaire_base.personnel_occasionnel.chef_equipe_3e_degre", "2026-01-01"),
@@ -580,6 +690,12 @@ AVANT_LA_SERIE = [
         "textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20",
         "1994-05-01",
     ),
+    # Textile, agents payés au mois : tout commence le 1er mai 1994, les échelons 17 à 20 le 1er mai 1999
+    ("textile.salaire_base.agents_payes_au_mois.categorie_1a.stage", "1994-04-30"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_16", "1994-04-30"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_1a.echelon_17", "1999-04-30"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_20", "1999-04-30"),
+    ("textile.salaire_base.agents_payes_au_mois.categorie_17.echelon_20", "1994-05-01"),
     # Les 13e et 14e échelons naissent le 1er juin 1999
     ("assurances.salaire_base.echelle_21.echelon_13", "1999-05-31"),
     ("assurances.salaire_base.echelle_21.echelon_14", "1999-05-31"),
@@ -657,7 +773,88 @@ BATIMENT_ILLISIBLES = {
     (9, 5): ["2003-05-01"],
     (18, 4): ["2004-05-01"],
 }
-MENSUELLES = ("assurances.", "batiment.salaire_base.personnel_administratif_technique.")
+# Textile, agents payés au mois : dix-huit lignes ; colonne de stage et échelons 1 à 16 aux trente
+# dates d'effet, échelons 17 à 20 aux vingt-cinq dates qui commencent le 1er mai 1999. La colonne
+# de stage est nommée `stage` : l'échelon 0 de la grille horaire est celui de la confirmation.
+TEXTILE_MENSUEL_CATEGORIES = [
+    "categorie_1a",
+    "categorie_1b",
+    *(f"categorie_{n}" for n in range(2, 18)),
+]
+TEXTILE_MENSUEL_COLONNES = ["stage", *(f"echelon_{n}" for n in range(1, 21))]
+# Cases illisibles sur le fascicule, par date : catégorie → numéros de colonne (0 pour le stage).
+TEXTILE_ILLISIBLES = {
+    "1994-05-01": {
+        "categorie_16": [6],
+    },
+    "1999-05-01": {
+        "categorie_2": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+        ],
+        "categorie_3": [2, 3, 5, 6, 7, 11, 12, 13],
+        "categorie_4": [5, 6, 7, 8, 9, 10, 12, 13, 14],
+        "categorie_5": [5, 6, 7, 8],
+    },
+    "2000-05-01": {
+        "categorie_2": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+        ],
+        "categorie_3": [0, 1, 2, 4, 5, 17, 18],
+        "categorie_4": [0, 1, 4, 18],
+    },
+    "2002-05-01": {
+        **{c: [18] for c in TEXTILE_MENSUEL_CATEGORIES},
+    },
+    "2003-05-01": {
+        **{c: [18] for c in TEXTILE_MENSUEL_CATEGORIES},
+    },
+    "2004-05-01": {
+        **{c: [18] for c in TEXTILE_MENSUEL_CATEGORIES},
+    },
+}
+MENSUELLES = (
+    "assurances.",
+    "batiment.salaire_base.personnel_administratif_technique.",
+    "textile.salaire_base.agents_payes_au_mois.",
+)
 
 # Nombre de dates d'effet et, parmi elles, de dates sans valeur.
 DECOMPTE = [
@@ -669,6 +866,15 @@ DECOMPTE = [
         )
         for categorie in TEXTILE_CATEGORIES
         for n in range(21)
+    ),
+    *(
+        (
+            f"textile.salaire_base.agents_payes_au_mois.{categorie}.{colonne}",
+            30 if n <= 16 else 25,
+            sum(n in cases.get(categorie, []) for cases in TEXTILE_ILLISIBLES.values()),
+        )
+        for categorie in TEXTILE_MENSUEL_CATEGORIES
+        for n, colonne in enumerate(TEXTILE_MENSUEL_COLONNES)
     ),
     *(
         (f"batiment.salaire_base.personnel_occasionnel.{ligne}", dates, 1)
@@ -695,11 +901,13 @@ DECOMPTE = [
 ]
 
 
-# Seules ces cases existent : la grille horaire du textile, la grille des assurances et les deux
-# grilles du bâtiment, en entier.
+# Seules ces cases existent : les cinq grilles, en entier.
 CASES = {
     "textile.salaire_base.agents_payes_a_l_heure": {
         c: set(TEXTILE_ECHELONS) for c in TEXTILE_CATEGORIES
+    },
+    "textile.salaire_base.agents_payes_au_mois": {
+        c: set(TEXTILE_MENSUEL_COLONNES) for c in TEXTILE_MENSUEL_CATEGORIES
     },
     "batiment.salaire_base.personnel_occasionnel": dict.fromkeys(BATIMENT_LIGNES),
     "batiment.salaire_base.personnel_administratif_technique": {
@@ -781,7 +989,7 @@ def test_la_grille_horaire_du_textile_compte_4270_valeurs():
     """119 cases aux cinq premières dates, 147 aux vingt-cinq suivantes, aucune vide."""
     par_date = {}
     for chemin, _, _ in DECOMPTE:
-        if chemin.startswith("textile."):
+        if chemin.startswith("textile.salaire_base.agents_payes_a_l_heure."):
             for v in parametre(chemin).values_list:
                 assert v.value is not None
                 par_date[v.instant_str] = par_date.get(v.instant_str, 0) + 1
@@ -795,6 +1003,103 @@ def test_la_grille_horaire_du_textile_compte_4270_valeurs():
         "1998-05-01": 119,
     }
     assert {n for d, n in par_date.items() if d >= "1999-05-01"} == {147}
+
+
+def test_la_grille_mensuelle_du_textile_compte_10853_valeurs():
+    """306 cases aux cinq premières dates, 378 aux vingt-cinq suivantes ; 127 cases illisibles."""
+    grille = parametre("textile.salaire_base.agents_payes_au_mois")
+    lues, illisibles = {}, {}
+    for categorie in TEXTILE_MENSUEL_CATEGORIES:
+        for n, colonne in enumerate(TEXTILE_MENSUEL_COLONNES):
+            for v in grille.children[categorie].children[colonne].values_list:
+                if v.value is None:
+                    illisibles.setdefault(v.instant_str, {}).setdefault(
+                        categorie, []
+                    ).append(n)
+                else:
+                    lues[v.instant_str] = lues.get(v.instant_str, 0) + 1
+    assert illisibles == TEXTILE_ILLISIBLES
+    assert len(lues) == 30
+    assert sum(lues.values()) == 10853
+    vides = {d: sum(len(c) for c in cases.values()) for d, cases in illisibles.items()}
+    assert vides == {
+        "1994-05-01": 1,
+        "1999-05-01": 42,
+        "2000-05-01": 30,
+        "2002-05-01": 18,
+        "2003-05-01": 18,
+        "2004-05-01": 18,
+    }
+    for d, n in lues.items():
+        assert n + vides.get(d, 0) == (306 if d < "1999-05-01" else 378), d
+
+
+def test_les_cases_illisibles_du_textile_disent_leur_raison():
+    grille = parametre("textile.salaire_base.agents_payes_au_mois")
+    for date, cases in TEXTILE_ILLISIBLES.items():
+        for categorie, colonnes in cases.items():
+            for n in colonnes:
+                p = grille.children[categorie].children[TEXTILE_MENSUEL_COLONNES[n]]
+                (reference,) = {str(d): r for d, r in p.metadata["reference"].items()}[
+                    date
+                ]
+                assert "case illisible sur le fascicule" in reference["note"]
+                assert "dinars par mois" not in reference["note"]
+
+
+def test_les_cases_du_textile_lues_sans_controle_croise_le_disent():
+    """Six cases lues dont la voisine est illisible aux dates d'effet voisines : leur note le dit, et elles seules."""
+    grille = parametre("textile.salaire_base.agents_payes_au_mois")
+    trouvees = set()
+    for categorie in TEXTILE_MENSUEL_CATEGORIES:
+        for colonne in TEXTILE_MENSUEL_COLONNES:
+            for date, (reference,) in (
+                grille.children[categorie]
+                .children[colonne]
+                .metadata["reference"]
+                .items()
+            ):
+                if "sans contrôle croisé" in reference["note"]:
+                    trouvees.add((str(date), categorie, colonne))
+    assert trouvees == {
+        ("1999-05-01", "categorie_3", "echelon_17"),
+        ("1999-05-01", "categorie_3", "echelon_18"),
+        ("1999-05-01", "categorie_4", "echelon_18"),
+        ("2001-05-01", "categorie_2", "echelon_18"),
+        ("2001-05-01", "categorie_3", "echelon_18"),
+        ("2001-05-01", "categorie_4", "echelon_18"),
+    }
+
+
+def test_la_grille_mensuelle_du_textile_est_croissante():
+    """À chaque date, le salaire croît avec la colonne dans une ligne (le stage ne dépasse pas l'échelon 1), et
+    d'une ligne à la suivante à colonne égale. Les cases sans valeur sont sautées.
+    """
+    grille = parametre("textile.salaire_base.agents_payes_au_mois")
+    dates = [
+        v.instant_str
+        for v in grille.children["categorie_1a"].children["stage"].values_list
+    ]
+    assert len(dates) == 30
+    for date in dates:
+        colonnes = (
+            TEXTILE_MENSUEL_COLONNES
+            if date >= "1999-05-01"
+            else TEXTILE_MENSUEL_COLONNES[:17]
+        )
+        table = [
+            [grille.children[c].children[e](date) for e in colonnes]
+            for c in TEXTILE_MENSUEL_CATEGORIES
+        ]
+        for ligne in table:
+            if ligne[0] is not None and ligne[1] is not None:
+                assert ligne[0] <= ligne[1], date
+                assert (ligne[0] == ligne[1]) == (date < "2008-05-01"), date
+            lues = [x for x in ligne[1:] if x is not None]
+            assert all(a < b for a, b in zip(lues, lues[1:])), date
+        for colonne in zip(*table):
+            lues = [x for x in colonne if x is not None]
+            assert all(a <= b for a, b in zip(lues, lues[1:])), date
 
 
 def test_la_grille_horaire_du_textile_est_croissante():

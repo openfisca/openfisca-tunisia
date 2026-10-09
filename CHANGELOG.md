@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.128 - [#489](https://github.com/openfisca/openfisca-tunisia/pull/489)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (colonne de stage et échelons 1 à 16) et du 01/05/1999 (échelons 17 à 20) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/textile`.
+* Détails :
+  - **Verse en entier la grille des salaires mensuels de base de la convention collective du textile** (agents payés au mois), nœud nouveau `textile.salaire_base.agents_payes_au_mois` : dix-huit lignes — `categorie_1a`, `categorie_1b`, `categorie_2` à `categorie_17` —, chacune avec sa colonne de stage `stage` et ses échelons `echelon_1` à `echelon_20`, soit 378 cases ; 10 853 valeurs, en dinars par mois, et 127 cases illisibles.
+  - **Trente dates d'effet, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18)**, les mêmes que la grille horaire. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page de la grille mensuelle et l'édition lue.
+  - **La colonne de stage est nommée `stage`, et non `echelon_0`.** Dans cette grille la confirmation est l'échelon 1, et la colonne qui la précède est celle du stage ; dans la grille horaire, l'échelon 0 est celui de la confirmation. Le nom évite de confondre les deux.
+  - **Les échelons 17 à 20 commencent le 1er mai 1999**, date d'effet de la première grille qui les porte (avenant n° 7) : ils n'ont aucune valeur antérieure.
+  - **Une case illisible n'a pas de valeur.** 127 cases portent une valeur vide à leur date : une au 1er mai 1994, 42 au 1er mai 1999 et 30 au 1er mai 2000 (lignes imprimées pâles), 18 à chacun des 1er mai 2002, 2003 et 2004 (l'échelon 18 des dix-huit lignes, sous une bande blanche de la numérisation). La note de la date dit « case illisible sur le fascicule » et la cause ; aucune valeur n'est déduite ni reportée, et la lecture ne rend rien jusqu'à la première grille où la case est lue.
+  - **Six cases lues sans contrôle croisé** (la même case est illisible aux dates voisines) le disent dans leur note.
+  - **Le 1er janvier 2026 porte la valeur de la grille de l'avenant n° 18**, comme dans la grille horaire.
+  - **La grille horaire ne change pas** : ses sept fichiers sont intacts, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation de `textile.salaire_base` dit désormais que les deux grilles sont versées en entier et que leurs colonnes ne se numérotent pas de la même façon.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py` est étendu aux 378 cases : nombre de dates et de dates sans valeur par case, références, unité, 10 853 valeurs, liste exacte des 127 cases illisibles et leur raison, les six cases sans contrôle croisé, grille croissante à chaque date, colonne de stage égale à l'échelon 1 jusqu'en 2007 et inférieure depuis 2008.
+  - Aucun chemin de paramètre existant ne change : un nœud s'ajoute.
+
 ## 0.127 - [#488](https://github.com/openfisca/openfisca-tunisia/pull/488)
 
 * Évolution du système socio-fiscal.
