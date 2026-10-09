@@ -9,7 +9,7 @@ documentation: |-
     catégorie et par échelon ;
   - la grille des agents payés au mois, en dinars par mois, de 17 catégories.
 
-  Seule la grille des agents payés à l'heure est versée, en partie (`agents_payes_a_l_heure`). La
+  Seule la grille des agents payés à l'heure est versée, en entier (`agents_payes_a_l_heure`). La
   grille des agents payés au mois reste à lire.
 
   Ce sont des salaires de base. Ils comprennent l'indemnité complémentaire provisoire des décrets

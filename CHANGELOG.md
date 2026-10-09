@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.123 - [#485](https://github.com/openfisca/openfisca-tunisia/pull/485)
+## 0.125 - [#485](https://github.com/openfisca/openfisca-tunisia/pull/485)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : à partir du 01/01/1997 (assiette, taux et seuils fixés par le code de la fiscalité locale) et du 13/03/1997 (prix de référence et tarif par mètre carré fixés par décret) ; paramètres nouveaux.
@@ -18,6 +18,21 @@
   - **`sous_ensembles.py`** : `fiscalite_locale` est déclaré dans `SOUS_ARBRES_FISCAL`. Le système des pensions ne le lit pas. Le dossier est ajouté à l'ordre de `parameters/index.yaml`.
   - **Effet sur les calculs.** Aucun résultat ne change et aucun test existant ne bouge : ces paramètres sont nouveaux. Un test nouveau, `tests/test_fiscalite_locale.py`, lit les paramètres : valeurs la veille et le jour de chaque date d'effet, absence de valeur avant la date d'effet, référence complète à chaque date, unités enregistrées, liste exacte des feuilles. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
   - Aucun chemin de paramètre existant ne change.
+
+## 0.123 - [#486](https://github.com/openfisca/openfisca-tunisia/pull/486)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (échelons 0 à 16) et du 01/05/1999 (échelons 17 à 20) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/textile`.
+* Détails :
+  - **Verse en entier la grille des salaires horaires de base de la convention collective du textile** (agents payés à l'heure), dont seules deux cases étaient versées (`categorie_1.echelon_0`, `categorie_4_2.echelon_0`). Sous `textile.salaire_base.agents_payes_a_l_heure` : sept catégories — `categorie_1`, `categorie_2`, `categorie_3_1`, `categorie_3_2`, `categorie_3_3`, `categorie_4_1`, `categorie_4_2` —, chacune avec ses échelons `echelon_0` à `echelon_20`, soit 147 cases et 4 270 valeurs, en dinars par heure. Cinq fichiers nouveaux ; les deux fichiers existants reçoivent leurs échelons 1 à 20.
+  - **Trente dates d'effet, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18)**, chacune étant la date que la grille énonce. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page et l'édition lue, comme les deux cases déjà versées.
+  - **Les échelons 17 à 20 commencent le 1er mai 1999**, date d'effet de la première grille qui les porte (avenant n° 7) : ils n'ont aucune valeur antérieure, et une lecture avant cette date ne rend rien. Les échelons 0 à 16 ont trente valeurs, les échelons 17 à 20 vingt-cinq.
+  - **Le 1er janvier 2026 porte la valeur de la grille de l'avenant n° 18**, comme pour les deux cases déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille du textile qui en résulte.
+  - **Les deux cases déjà versées ne changent pas** : leurs blocs sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds du textile dit désormais que la grille horaire est versée en entier, donne la date à laquelle elle passe de 17 à 21 échelons (1er mai 1999) et l'en-tête d'ancienneté des colonnes. La grille des agents payés au mois reste à lire.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py`, qui affirmait que seules deux cases du textile existaient, est mis à jour : il énumère les 147 cases, leur nombre de dates, leurs références et leur unité, compte 4 270 valeurs et vérifie que la grille est croissante par échelon et par catégorie à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
 
 ## 0.122 - [#482](https://github.com/openfisca/openfisca-tunisia/pull/482)
 

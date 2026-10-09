@@ -1,8 +1,8 @@
 """Conventions collectives sectorielles : cases versées des grilles du textile, du bâtiment et des assurances.
 
 Chaque branche porte, sous `salaire_base`, la structure de sa grille : la grille quand la
-convention en a plusieurs, la catégorie ou l'échelle, puis l'échelon. Les grilles sont versées en
-partie. Quatre choses sont éprouvées :
+convention en a plusieurs, la catégorie ou l'échelle, puis l'échelon. La grille horaire du textile
+est versée en entier, celles du bâtiment et des assurances en partie. Quatre choses sont éprouvées :
 
 - les valeurs, la veille et le jour d'une date d'effet ;
 - les dates sans valeur : une date à laquelle le salaire change sans que son montant soit publié
@@ -47,6 +47,24 @@ VALEURS = [
     ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_0", "2015-09-01", 2.610),
     # Textile : la grille du 1er janvier 2026 est la dernière valeur
     ("textile.salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0", "2027-01-01", 3.248),
+    # Textile, grille entière : coins de la grille, veille et jour d'une date d'effet
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_2.echelon_0", "1994-05-01", 0.816),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_16", "1998-05-01", 1.135),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_16", "1999-04-30", 1.135),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_16", "1999-05-01", 1.188),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_16", "1998-05-01", 1.414),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_1.echelon_20", "1999-05-01", 1.031),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_17", "1999-05-01", 1.488),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_2.echelon_11", "2005-06-14", 1.237),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_2.echelon_11", "2005-06-15", 1.275),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_7", "2008-05-01", 2.0),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_5", "2009-05-01", 1.749),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_5", "2010-05-01", 1.841),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_1.echelon_1", "2023-12-31", 2.718),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_1.echelon_1", "2024-01-01", 2.895),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_20", "2026-01-01", 4.450),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20", "2026-01-01", 4.958),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20", "2027-01-01", 4.958),
     # Bâtiment : personnel occasionnel, manœuvre ordinaire et chef d'équipe du 3e degré
     ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", "1996-05-01", 0.862),
     ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", "1999-04-30", 0.950),
@@ -114,15 +132,39 @@ AVANT_LA_SERIE = [
     ("batiment.salaire_base.personnel_occasionnel.chef_equipe_3e_degre", "1996-04-30"),
     ("assurances.salaire_base.echelle_1.echelon_1", "1993-05-31"),
     ("assurances.salaire_base.echelle_21.echelon_12", "1993-05-31"),
+    # Textile : toutes les catégories commencent le 1er mai 1994
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_16", "1994-04-30"),
+    # Textile : les échelons 17 à 20 n'ont aucune valeur avant la grille du 1er mai 1999
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_1.echelon_17", "1999-04-30"),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_2.echelon_18", "1999-04-30"),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_19", "1999-04-30"),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20", "1999-04-30"),
+    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20", "1994-05-01"),
     # Les 13e et 14e échelons naissent le 1er juin 1999
     ("assurances.salaire_base.echelle_21.echelon_13", "1999-05-31"),
     ("assurances.salaire_base.echelle_21.echelon_14", "1999-05-31"),
 ]
 
+# Grille horaire du textile : sept catégories ; échelons 0 à 16 aux trente dates d'effet, échelons
+# 17 à 20 aux vingt-cinq dates qui commencent le 1er mai 1999.
+TEXTILE_CATEGORIES = [
+    "categorie_1",
+    "categorie_2",
+    "categorie_3_1",
+    "categorie_3_2",
+    "categorie_3_3",
+    "categorie_4_1",
+    "categorie_4_2",
+]
+TEXTILE_ECHELONS = [f"echelon_{n}" for n in range(21)]
+
 # Nombre de dates d'effet et, parmi elles, de dates sans valeur.
 DECOMPTE = [
-    ("textile.salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0", 30, 0),
-    ("textile.salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_0", 30, 0),
+    *(
+        (f"textile.salaire_base.agents_payes_a_l_heure.{categorie}.echelon_{n}", 30 if n <= 16 else 25, 0)
+        for categorie in TEXTILE_CATEGORIES
+        for n in range(21)
+    ),
     ("batiment.salaire_base.personnel_occasionnel.manoeuvre_ordinaire", 27, 1),
     ("batiment.salaire_base.personnel_occasionnel.chef_equipe_3e_degre", 27, 1),
     ("assurances.salaire_base.echelle_1.echelon_1", 29, 1),
@@ -132,9 +174,9 @@ DECOMPTE = [
 ]
 
 
-# Chaque grille est versée en partie : seules ces cases existent.
+# Seules ces cases existent : la grille horaire du textile en entier, les deux autres en partie.
 CASES = {
-    "textile.salaire_base.agents_payes_a_l_heure": {"categorie_1": {"echelon_0"}, "categorie_4_2": {"echelon_0"}},
+    "textile.salaire_base.agents_payes_a_l_heure": {c: set(TEXTILE_ECHELONS) for c in TEXTILE_CATEGORIES},
     "batiment.salaire_base.personnel_occasionnel": {"manoeuvre_ordinaire": None, "chef_equipe_3e_degre": None},
     "assurances.salaire_base": {"echelle_1": {"echelon_1"}, "echelle_21": {"echelon_12", "echelon_13", "echelon_14"}},
 }
@@ -202,6 +244,39 @@ def test_seules_les_cases_lues_existent(grille, cases):
     for categorie, echelons in cases.items():
         if echelons is not None:
             assert set(noeud.children[categorie].children) == echelons
+
+
+def test_la_grille_horaire_du_textile_compte_4270_valeurs():
+    """119 cases aux cinq premières dates, 147 aux vingt-cinq suivantes, aucune vide."""
+    par_date = {}
+    for chemin, _, _ in DECOMPTE:
+        if chemin.startswith("textile."):
+            for v in parametre(chemin).values_list:
+                assert v.value is not None
+                par_date[v.instant_str] = par_date.get(v.instant_str, 0) + 1
+    assert len(par_date) == 30
+    assert sum(par_date.values()) == 4270
+    assert {d: n for d, n in par_date.items() if d < "1999-05-01"} == {
+        "1994-05-01": 119,
+        "1995-05-01": 119,
+        "1996-05-01": 119,
+        "1997-05-01": 119,
+        "1998-05-01": 119,
+    }
+    assert {n for d, n in par_date.items() if d >= "1999-05-01"} == {147}
+
+
+def test_la_grille_horaire_du_textile_est_croissante():
+    """À chaque date, le salaire croît avec l'échelon dans une catégorie, et avec la catégorie à échelon égal."""
+    grille = parametre("textile.salaire_base.agents_payes_a_l_heure")
+    dates = [v.instant_str for v in grille.children["categorie_1"].children["echelon_0"].values_list]
+    for date in dates:
+        echelons = TEXTILE_ECHELONS if date >= "1999-05-01" else TEXTILE_ECHELONS[:17]
+        table = [[grille.children[c].children[e](date) for e in echelons] for c in TEXTILE_CATEGORIES]
+        for ligne in table:
+            assert all(a < b for a, b in zip(ligne, ligne[1:])), date
+        for bas, haut in zip(table, table[1:]):
+            assert all(a <= b for a, b in zip(bas, haut)), date
 
 
 def test_une_case_non_versee_est_une_erreur():
