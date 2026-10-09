@@ -1,16 +1,50 @@
 description: Âge maximal de l'enfant ouvrant droit au supplément
 values:
-  2020-05-20:
+  2020-05-25:
     value: 18
 metadata:
   unit: year
   reference:
-    2020-05-20:
-      title: Article 2 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, pris pour l'application du décret gouvernemental n° 2020-317
+    2020-05-25:
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article 2, deuxième tiret"
+      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+      note: "JORT n° 45 du 20 mai 2020, p. 1097 : « - Une allocation supplémentaire égale à 10 dinars par mois au titre de chaque enfant à charge âgé de moins de 18 ans sans condition, jusqu'à l'âge de 25 ans aux enfants à charge justifiant la poursuite d'études, d'apprentissage ou d'une formation. » L'arrêté ne porte pas de clause d'entrée en vigueur (son article 3 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 20 mai 2020 » : exécutoire le 25 mai 2020."
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article 2, deuxième tiret (édition arabe)"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0452020.pdf
+      note: "الرائد الرسمي عدد 45 بتاريخ 20 ماي 2020، ص. 1251 : « - منحة إضافية قدرها 10 دنانير شهريا لكل أسرة بعنوان كل ابن في الكفالة سنه دون 18 سنة دون أي شرط والى حدود سن 25 سنة بالنسبة للأبناء في الكفالة شرط مزاولتهم للتعليم أو التدريب أو التكوين. »"
+    2022-02-01:
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 1er avril 2022, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article premier (article 2, alinéa 2 nouveau)"
+      href: https://www.pist.tn/jort/2022/2022F/Jo0382022.pdf
+      note: "JORT n° 38 du 8 avril 2022, pp. 972-973 ; article premier p. 973 : « alinéa 2 (nouveau) : Une allocation supplémentaire égale à 10 dinars au titre de chaque enfant à charge âgé de 6 ans et ne dépassant pas l'âge de 18 ans sans condition, jusqu'à l'âge de 25 ans aux enfants à charge justifiant la poursuite d'études, d'apprentissage ou d'une formation professionnelle et ce à compter du 1er février 2022. » La date est celle que le texte énonce : « à compter du 1er février 2022 », antérieure à la publication (fascicule déposé au siège du gouvernorat de Tunis le 8 avril 2022)."
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 1er avril 2022, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article premier (article 2, alinéa 2 nouveau) (édition arabe)"
+      href: https://www.pist.tn/jort/2022/2022A/Ja0382022.pdf
+      note: "الرائد الرسمي عدد 38 بتاريخ 8 أفريل 2022، ص. 988-989 ؛ الفصل الأول ص. 989 : « مطة ثانية (جديدة) : منحة إضافية قدرها 10 دنانير شهريا لكل أسرة بعنوان كل ابن في الكفالة بلغ سن 6 سنوات ولم يتجاوز سن 18 سنة دون أي شرط وإلى حدود سن 25 سنة بالنسبة للأبناء في الكفالة شرط مزاولتهم للتعليم أو التدريب أو التكوين المهني، وذلك ابتداء من أول فيفري 2022. »"
+  official_journal_date:
+    2020-05-25: "2020-05-20"
+    2022-02-01: "2022-04-08"
 documentation: |
-  Date corrigée : 20 mai 2020 et non 1er janvier 2019.
+  Borne haute de l'âge de l'enfant à charge ouvrant droit, sans condition, au supplément du transfert
+  monétaire permanent.
 
-  Borne basse non modélisée : l'arrêté conjoint du 1er avril 2022 réserve le supplément aux
-  enfants de six à dix-huit ans, les moins de six ans relevant désormais de l'allocation
-  familiale non contributive. Encoder cette borne demanderait un paramètre distinct et une
-  formule qui le lise ; ni l'un ni l'autre n'existe.
+  Les deux textes citent dix-huit ans, mais pas dans les mêmes termes. L'arrêté du 19 mai 2020 vise
+  l'enfant « âgé de moins de 18 ans » (سنه دون 18 سنة). L'arrêté du 1er avril 2022, à compter du
+  1er février 2022, vise l'enfant « âgé de 6 ans et ne dépassant pas l'âge de 18 ans » (بلغ سن
+  6 سنوات ولم يتجاوز سن 18 سنة). La valeur portée est le nombre cité par les textes ; ils ne disent
+  pas si l'enfant qui a dix-huit ans révolus est compris, et la première rédaction, à la lettre,
+  l'exclut. La valeur ne change pas au 1er février 2022, sa rédaction, si : c'est pourquoi la date
+  figure dans les références.
+
+  La borne basse (six ans depuis le 1er février 2022) est dans `age_min_enfant`.
+
+  Date corrigée. La valeur était datée du 20 mai 2020, jour de la publication de l'arrêté. L'arrêté
+  conjoint du 19 mai 2020 ne porte pas de clause d'effet : il devient exécutoire cinq jours après le
+  dépôt du fascicule au siège du gouvernorat de Tunis (20 mai 2020), le jour du dépôt n'étant pas
+  compté (loi n° 93-64, article 2), soit le 25 mai 2020. Aucune valeur n'est portée avant cette
+  date.
+
+  Références complétées : le paramètre citait l'article 2 de l'arrêté sans fascicule, page ni lien.
+
+  Lu dans les deux éditions des deux fascicules : arrêté du 19 mai 2020, édition française p. 1097,
+  édition arabe p. 1251 ; arrêté du 1er avril 2022, édition française pp. 972-973 (article premier
+  p. 973), édition arabe pp. 988-989 (article premier p. 989). L'édition française du second parle
+  d'« alinéas » de l'article 2 là où l'édition arabe dit « tirets » (مطة).
