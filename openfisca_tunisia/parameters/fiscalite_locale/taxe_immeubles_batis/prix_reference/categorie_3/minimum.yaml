@@ -1,0 +1,26 @@
+description: "Minimum du prix de référence du mètre carré couvert des immeubles de la troisième catégorie"
+values:
+  1997-03-13:
+    value: 201
+  2008-01-01:
+    value: 217
+  2017-01-01:
+    value: 217
+metadata:
+  unit: currency/m2
+  short_label: "Minimum"
+  reference:
+    1997-03-13:
+    - title: "Décret n° 97-431 du 3 mars 1997, relatif à la détermination du minimum et du maximum du prix de référence du mètre carré couvert pour chacune des catégories d'immeubles assujettis à la taxe sur les immeubles bâtis, article premier"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01997.pdf
+      note: "JORT n° 19 du 7 mars 1997, p. 389. Article premier, tableau, ligne « Catégorie 3 — Surface supérieure à 200 m2 et inférieure à 400 m2 » : « de 201 à 250 » dinars. Le décret est pris en application de l'article 4, paragraphe IV, du code de la fiscalité locale. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 8 mars 1997, d'où le 13 mars 1997. Éditions française et arabe lues à l'image, même page ; édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01997.pdf"
+    2008-01-01:
+    - title: "Décret n° 2007-1185 du 14 mai 2007, relatif à la détermination du minimum et du maximum du prix de référence du mètre carré couvert pour chacune des catégories d'immeubles assujettis à la taxe sur les immeubles bâtis, articles premier et 3"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0402007.pdf
+      note: "JORT n° 40 du 18 mai 2007, pp. 1646-1647 ; le tableau et les articles 2 à 4 sont p. 1647. Article premier, tableau, ligne « Catégorie 3 — Surface supérieure à 200 m2 et inférieure à 400 m2 » : « de 217 à 270 » dinars. Article 2 : abrogation du décret n° 97-431 du 3 mars 1997. Article 3 : « Les dispositions du présent décret sont applicables à compter du 1er janvier 2008. » Édition française : tableau et articles 2 à 4 lus à l'image, p. 1647 ; édition arabe, pp. 1726-1727 : tableau et articles 2 à 4 lus à l'image, p. 1727 : https://www.pist.tn/jort/2007/2007A/Ja0402007.pdf"
+    2017-01-01:
+    - title: "Décret gouvernemental n° 2017-397 du 28 mars 2017, relatif à la détermination du minimum et du maximum du prix de référence du mètre carré couvert pour chacune des catégories d'immeubles assujettis à la taxe sur les immeubles bâtis, articles premier et 3"
+      href: https://www.pist.tn/jort/2017/2017F/Jo0262017.pdf
+      note: "JORT n° 26 du 31 mars 2017, pp. 1191-1192 ; le tableau et les articles 2 à 4 sont p. 1192. Article premier, tableau, ligne « Catégorie 3 — Surface supérieure à 200 m² et ne dépassant pas 400 m² » : « de 217 à 297 » dinars. Article 2 : abrogation des dispositions antérieures contraires, et notamment du décret n° 2007-1185 du 14 mai 2007. Article 3 : « Les dispositions du présent décret gouvernemental sont applicables, à compter du 1er janvier 2017 » ; le fascicule est du 31 mars 2017, la date énoncée par le décret est reprise telle quelle. Édition française : tableau et articles 2 et 3 lus à l'image, p. 1192 ; édition arabe : tableau lu à l'image, p. 1006 : https://www.pist.tn/jort/2017/2017A/Ja0262017.pdf"
+documentation: |-
+  Minimum du prix de référence du mètre carré couvert que la collectivité locale peut arrêter pour les immeubles de la troisième catégorie, en dinars par mètre carré couvert.

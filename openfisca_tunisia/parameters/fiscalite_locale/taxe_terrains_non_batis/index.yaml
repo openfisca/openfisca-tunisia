@@ -1,0 +1,17 @@
+description: "Taxe sur les terrains non bâtis"
+metadata:
+  short_label: "Taxe sur les terrains non bâtis"
+  order:
+  - taux_valeur_venale
+  - tarif_m2
+documentation: |-
+  Taxe annuelle due au 1er janvier sur les terrains non bâtis situés dans les zones relevant des
+  collectivités locales (code de la fiscalité locale, chapitre II, articles 30 à 34).
+
+  La taxe est due en proportion de la valeur vénale réelle du terrain (article 33, premier
+  paragraphe). À défaut de valeur vénale, elle est due par mètre carré, selon un tarif progressif
+  qui tient compte de la densité des zones urbaines délimitées par le plan d'aménagement urbain ;
+  ce tarif est fixé pour chaque zone par décret (article 33, deuxième paragraphe).
+
+  Le taux est celui du code de 1997. Seul le tarif par mètre carré a été relevé depuis, par
+  décret, au 1er janvier 2008 et au 1er janvier 2017.

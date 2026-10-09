@@ -54,6 +54,11 @@
     one: Dinar par mètre cube
     other: Dinars par mètre cube
   short_label: DT/m3
+- name: currency/m2
+  label:
+    one: Dinar par mètre carré
+    other: Dinars par mètre carré
+  short_label: DT/m2
 - name: currency/unit
   label:
     one: Dinar pour une unité
@@ -72,6 +77,11 @@
     one: mètre cube
     other: mètres cube
   short_label: m3
+- name: m2
+  label:
+    one: mètre carré
+    other: mètres carrés
+  short_label: m2
 - name: millimes/kWh
   label:
     one: Millime par kilowatt-heure

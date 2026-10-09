@@ -1,0 +1,14 @@
+description: "Taux de la taxe sur les immeubles bâtis pour un immeuble bénéficiant de plus de quatre services et d'autres services que ceux de la liste"
+values:
+  1997-01-01:
+    value: 0.14
+metadata:
+  unit: /1
+  short_label: "Plus de quatre services et d'autres services"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 5, paragraphe I ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 174 (article 5, paragraphe I du code) et p. 173 (article 3 de la loi). Article 5, paragraphe I : « 14 pour-cent pour les immeubles bénéficiant de plus de quatre services et de services autres que les services prévus au paragraphe II du présent article ». Édition arabe, en tête de la seconde colonne de la p. 174 : « 14 بالمائة بالنسبة للعقارات المنتفعة بأكثر من اربع خدمات وبخدمات أخرى غير الخدمات المبينة بالفقرة II من هذا الفصل ». Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule ; édition arabe lue à l'image, même page : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+documentation: |-
+  Quatrième palier : l'immeuble bénéficie de plus de quatre des six services énumérés à l'article 5, paragraphe II, et en outre de services qui ne figurent pas dans cette liste. Le texte ne dit pas quels sont ces autres services.

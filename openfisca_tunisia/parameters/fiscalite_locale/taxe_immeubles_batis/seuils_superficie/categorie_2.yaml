@@ -1,0 +1,14 @@
+description: "Superficie couverte maximale d'un immeuble de la deuxième catégorie de la taxe sur les immeubles bâtis"
+values:
+  1997-01-01:
+    value: 200
+metadata:
+  unit: m2
+  short_label: "Plafond de la catégorie 2"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 4, paragraphe II ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 174 (article 4, paragraphe II du code) et p. 173 (article 3 de la loi). Article 4, paragraphe II : « Deuxième catégorie : comprend les immeubles dont la superficie couverte excède 100 mètres carrés et ne dépasse pas 200 mètres carrés ». Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule ; édition arabe lue à l'image, même page : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+documentation: |-
+  Superficie couverte maximale de la deuxième catégorie, borne comprise. La catégorie commence au-delà du seuil de la première.

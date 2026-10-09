@@ -1,0 +1,26 @@
+description: "Tarif par mètre carré de la taxe sur les terrains non bâtis dans une zone à haute densité urbaine"
+values:
+  1997-03-13:
+    value: 0.300
+  2008-01-01:
+    value: 0.318
+  2017-01-01:
+    value: 0.385
+metadata:
+  unit: currency/m2
+  short_label: "Zone à haute densité urbaine"
+  reference:
+    1997-03-13:
+    - title: "Décret n° 97-432 du 3 mars 1997, relatif à la détermination du montant de la taxe par mètre carré des terrains non bâtis, article premier"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01997.pdf
+      note: "JORT n° 19 du 7 mars 1997, p. 389. Article premier, tableau, ligne « Zone à haute densité urbaine » : 0,300 dinar par mètre carré. Le décret est pris en application du deuxième paragraphe de l'article 33 du code de la fiscalité locale. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 8 mars 1997, d'où le 13 mars 1997. Éditions française et arabe lues à l'image, même page ; édition arabe (« منطقة ذات كثافة عمرانية مرتفعة ») : https://www.pist.tn/jort/1997/1997A/Ja01997.pdf"
+    2008-01-01:
+    - title: "Décret n° 2007-1186 du 14 mai 2007, relatif à la détermination du montant de la taxe par mètre carré des terrains non bâtis, articles premier et 3"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0402007.pdf
+      note: "JORT n° 40 du 18 mai 2007, p. 1647. Article premier, tableau, ligne « Zone à haute densité urbaine » : 0,318 dinar par mètre carré. Article 2 : abrogation du décret n° 97-432 du 3 mars 1997. Article 3 : « Les dispositions du présent décret sont applicables à compter du 1er janvier 2008. » Édition française lue à l'image, p. 1647 ; édition arabe, pp. 1727-1728 : tableau et articles 2 à 4 lus à l'image, p. 1728 : https://www.pist.tn/jort/2007/2007A/Ja0402007.pdf"
+    2017-01-01:
+    - title: "Décret gouvernemental n° 2017-396 du 28 mars 2017, relatif à la détermination du montant de la taxe par mètre carré des terrains non bâtis, articles premier et 3"
+      href: https://www.pist.tn/jort/2017/2017F/Jo0262017.pdf
+      note: "JORT n° 26 du 31 mars 2017, pp. 1190-1191 ; le tableau et les articles 2 à 4 sont p. 1191. Article premier, tableau, ligne « Zone à haute densité urbaine » : 0,385 dinar par mètre carré. Article 2 : abrogation des dispositions antérieures contraires, et notamment du décret n° 2007-1186 du 14 mai 2007. Article 3 : « Les dispositions du présent décret gouvernemental sont applicables, à compter du 1er janvier 2017 » ; le fascicule est du 31 mars 2017, la date énoncée par le décret est reprise telle quelle. Édition française : tableau et articles 2 à 4 lus à l'image, p. 1191 ; édition arabe, pp. 1005-1006 : tableau et articles 2 à 4 lus à l'image, p. 1006 : https://www.pist.tn/jort/2017/2017A/Ja0262017.pdf"
+documentation: |-
+  Montant de la taxe par mètre carré de terrain non bâti situé dans une zone à haute densité urbaine du plan d'aménagement urbain, en dinars, dû à défaut de valeur vénale.
