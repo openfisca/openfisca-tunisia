@@ -1,5 +1,20 @@
 # Changelog
 
+### 0.122.1 - [#483](https://github.com/openfisca/openfisca-tunisia/pull/483)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/2020 au 24/05/2020 (les huit seuils n'ont plus de valeur) ; à partir du 25/05/2020 (seuil majoré d'une personne seule lourdement handicapée).
+* Zones impactées : `parameters/prestations/non_contributives/amen_social/eligibilite`.
+* Détails :
+  - **Les huit seuils de revenu de l'Amen social commencent le 25 mai 2020, et non plus le 1er janvier 2020.** Ils portaient pour seule référence « Décret 2020-317 du 19 mai 2020 », sans article ni fascicule : un décret du 19 mai ne produit pas d'effet au 1er janvier. Le décret gouvernemental n° 2020-317 (JORT n° 45 du 20 mai 2020, pp. 1092-1096 de l'édition française, pp. 1247-1250 de l'édition arabe) ne porte pas de clause d'effet ; il devient exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64, article 2). Le fascicule porte un dépôt le 20 mai 2020 : exécutoire le 25 mai 2020. La valeur du 1er janvier 2020 disparaît, sans remplacement.
+  - **Le seuil majoré d'une personne seule passe de 1,25 à 7/6 du salaire minimum** (`handicap_lourd.un_membre`). L'article 5 ne donne pas de barème pour le handicap lourd : il majore le seuil « d'un demi salaire minimum ». Deux tiers plus un demi font sept sixièmes (1,1667) ; 1,25 ne se déduit d'aucune lecture du texte. Les trois autres seuils majorés (1,5 ; 2 ; 2,5) valaient déjà le seuil de droit commun plus un demi et ne changent pas.
+  - **La majoration est lue comme uniforme sur les quatre paliers**, et la documentation de chaque paramètre dit pourquoi : l'article 7 du même décret appelle « deuxième alinéa de l'article 5 » le paragraphe qui suit les quatre tirets, ce qui range les tirets dans le premier alinéa, celui que vise la majoration. Elle dit aussi ce que le texte ne règle pas : l'édition arabe, qui fait foi, vise un membre de la famille « à charge », mots absents de l'édition française, et ne dit pas si la majoration vaut pour la personne seule elle-même lourdement handicapée.
+  - Le seuil d'une personne est écrit avec toute la précision de deux tiers (0,6666666666666666 au lieu de 0,6666666) : l'écart est de trois cent-millièmes de dinar.
+  - Chaque paramètre porte l'article, le fascicule, les pages, la citation dans les deux éditions et le lien pist.tn. Les libellés de `plus_de_cinq_membres` disent « cinq personnes ou plus », comme le texte ; le chemin ne change pas. `eligibilite` entre dans l'ordre d'affichage de `amen_social`.
+  - **Effet sur les calculs.** `amen_social_eligible`, et ce qui en dépend, lève désormais une erreur de paramètre introuvable pour les mois de janvier à mai 2020 — mai compris, le paramètre étant lu au premier jour du mois —, au lieu de rendre un résultat sur un droit qui n'existait pas. À partir de juin 2020, un seul cas change : la personne seule lourdement handicapée dont le revenu est compris entre 7/6 et 1,25 fois le salaire minimum (entre 470,288 et 503,880 D en juin 2020) n'est plus éligible. Aucune formule n'est modifiée.
+  - **Tests.** Aucun test existant ne change de résultat. Seize cas YAML nouveaux éprouvent les huit seuils en juin 2020, un dinar en dessous et un dinar au-dessus ; un seul échouait avant la correction, celui de la personne seule à 471,288 D. Deux tests Python lisent les paramètres dans `tests/test_prestations_assistance.py`, selon la convention de ce fichier : absence de valeur la veille du 25 mai 2020, et majoration d'un demi à chaque palier.
+  - Aucun chemin de paramètre ne change.
+
 ## 0.122 - [#482](https://github.com/openfisca/openfisca-tunisia/pull/482)
 
 * Évolution du système socio-fiscal.

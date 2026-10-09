@@ -120,3 +120,39 @@ def test_appui_urgence_est_un_intervalle_et_non_un_montant():
     # Un NŒUD de paramètres existe à toute date ; seule une feuille sans valeur lève.
     with pytest.raises(ParameterNotFoundError):
         nc("2022-12-08").amen_social.aides_ponctuelles.urgence.montant_min
+
+
+def test_amen_seuils_d_eligibilite_executoires_le_25_mai_2020():
+    """Décret gouvernemental n° 2020-317 du 19 mai 2020, article 5 ; JORT n° 45 du 20 mai 2020.
+
+    Sans clause d'effet : exécutoire cinq jours après le dépôt du fascicule au gouvernorat de
+    Tunis (20 mai 2020), jour du dépôt non compté — loi n° 93-64, article 2. La série portait
+    le 1er janvier 2020, antérieur au décret.
+    """
+    with pytest.raises(ParameterNotFoundError):
+        nc("2020-05-24").amen_social.eligibilite.un_membre
+    with pytest.raises(ParameterNotFoundError):
+        nc("2020-05-24").amen_social.eligibilite.handicap_lourd.un_membre
+
+    seuils = nc("2020-05-25").amen_social.eligibilite
+    assert seuils.un_membre == pytest.approx(2 / 3, abs=1e-12)
+    assert seuils.deux_membres == 1
+    assert seuils.trois_quatre_membres == 1.5
+    assert seuils.plus_de_cinq_membres == 2
+
+
+def test_amen_majoration_handicap_lourd_un_demi_salaire_minimum_a_chaque_palier():
+    """Article 5, troisième alinéa : le seuil est majoré d'un demi salaire minimum.
+
+    Le palier d'une personne portait 1,25 ; deux tiers plus un demi font sept sixièmes.
+    """
+    seuils = nc("2026-01-01").amen_social.eligibilite
+    for palier in (
+        "un_membre",
+        "deux_membres",
+        "trois_quatre_membres",
+        "plus_de_cinq_membres",
+    ):
+        majoration = getattr(seuils.handicap_lourd, palier) - getattr(seuils, palier)
+        assert majoration == pytest.approx(0.5, abs=1e-12)
+    assert seuils.handicap_lourd.un_membre == pytest.approx(7 / 6, abs=1e-12)

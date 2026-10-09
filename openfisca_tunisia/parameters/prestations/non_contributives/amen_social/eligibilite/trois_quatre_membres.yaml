@@ -1,10 +1,40 @@
-description: Seuil de revenu d’exclusion du programme Amen social (en part de Smig) pour un ménage comprenant trois ou quatre personnes
+description: Seuil de revenu d'exclusion du programme Amen social (en part de Smig) pour un ménage de trois ou quatre personnes
 values:
-  2020-01-01:
+  2020-05-25:
     value: 1.5
 metadata:
   short_label: Trois ou quatre personnes
   unit: smig
   reference:
-    2020-01-01:
-      title: Décret 2020-317 du 19 mai 2020
+    2020-05-25:
+    - title: "Décret gouvernemental n° 2020-317 du 19 mai 2020, fixant les conditions et les procédures de bénéfice, de retrait et d'opposition au programme « AMEN SOCIAL », article 5, premier alinéa"
+      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+      note: "JORT n° 45 du 20 mai 2020, pp. 1092-1096 ; article 5 p. 1093 : « Le demandeur du bénéfice ne doit avoir aucun revenu ou la moyenne de son revenu mensuel ne doit dépasser un montant : […] - égal à une fois et demi du salaire minimum interprofessionnel des différentes professions pour les familles dont le nombre de leurs membres varie entre trois et quatre personnes, » Le décret ne porte pas de clause d'entrée en vigueur (son article 30 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 20 mai 2020 » : exécutoire le 25 mai 2020."
+    - title: "Décret gouvernemental n° 2020-317 du 19 mai 2020, fixant les conditions et les procédures de bénéfice, de retrait et d'opposition au programme « AMEN SOCIAL », article 5, premier alinéa (édition arabe, qui fait foi)"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0452020.pdf
+      note: "الرائد الرسمي عدد 45 بتاريخ 20 ماي 2020، ص. 1247-1250 ؛ الفصل 5 ص. 1248 : « يشترط أن يكون طالب الانتفاع عديم الدخل أو أن لا يتجاوز معدّل دخله الشهري مبلغا يعادل: […] - مرة ونصف الأجر الأدنى المضمون لمختلف المهن بالنسبة للأسر التي يتراوح عدد أفرادها بين ثلاثة وأربعة. »"
+  official_journal_date:
+    2020-05-25: "2020-05-20"
+documentation: |
+  Le texte fixe le seuil à une fois et demie le salaire minimum.
+
+  Le seuil s'exprime en multiple du « salaire minimum interprofessionnel garanti des différentes
+  professions » (الأجر الأدنى المضمون لمختلف المهن). L'article 5 ne dit pas lequel des deux régimes
+  du salaire minimum, 48 heures ou 40 heures par semaine, il vise.
+
+  Le revenu comparé au seuil est « la moyenne mensuelle de l'ensemble des revenus nets permanents
+  et non permanents des 12 derniers mois qui précèdent la date de dépôt de la demande » (dernier
+  alinéa). Les membres comptés sont « le mari et son conjoint ainsi que le nombre des enfants et
+  ascendants à charge vivant sous le même toit et partageant la nourriture » (deuxième alinéa).
+
+  Date corrigée. La valeur était datée du 1er janvier 2020, avec pour seule référence « Décret
+  2020-317 du 19 mai 2020 », sans article ni fascicule. Un décret du 19 mai 2020 ne produit pas
+  d'effet au 1er janvier 2020, et le texte ne prévoit aucune rétroactivité : la valeur du
+  1er janvier 2020 est supprimée, et le paramètre commence le 25 mai 2020, date à laquelle le
+  décret devient exécutoire — dépôt du fascicule au siège du gouvernorat de Tunis le 20 mai 2020,
+  plus cinq jours, le jour du dépôt n'étant pas compté (loi n° 93-64, article 2). Aucune valeur
+  n'est portée avant cette date : le décret est pris pour l'application de l'article 8 de la loi
+  organique n° 2019-10, et aucun état antérieur de ces seuils n'est établi ici.
+
+  Lu dans les deux éditions du fascicule : édition française, pp. 1092-1096 (article 5 p. 1093) ;
+  édition arabe, pp. 1247-1250 (article 5 p. 1248).
