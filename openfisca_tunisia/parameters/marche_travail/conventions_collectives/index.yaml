@@ -23,4 +23,9 @@ documentation: |-
   case que la grille publie mais qui est illisible sur le fascicule : elle porte une valeur vide à
   cette date, et la note de la date en dit la raison.
 
+  Exception, tenue à part : les grilles des assurances antérieures au 1er juin 1993, qui ne comprennent
+  pas l'indemnité complémentaire provisoire ou ne disent pas la comprendre, sont versées dans deux nœuds frères de `salaire_base`
+  (`salaire_base_avant_1993` et `salaire_base_avant_1993_grille_1_de_1990`). Elles ne
+  forment pas une suite continue de textes tous lus, et leur documentation dit ce qui manque.
+
   Ces salaires sont des salaires de base : les indemnités et primes conventionnelles s'y ajoutent.

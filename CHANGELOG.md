@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.129 - [#490](https://github.com/openfisca/openfisca-tunisia/pull/490)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1975 au 31/05/1993 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/assurances`.
+* Détails :
+  - **Verse, dans deux nœuds à part, les grilles de la convention collective des assurances antérieures au 1er juin 1993**, que la version 0.126 avait laissées dehors : 1 787 valeurs, en dinars par mois, sur sept grilles.
+  - **`assurances.salaire_base_avant_1993`**, frère de `salaire_base` et de même forme (`echelle_1` à `echelle_21` et `echelle_exceptionnelle`, puis `echelon_1` à `echelon_12`) : les grilles du 1er janvier 1975 (convention ; 21 échelles, 252 valeurs), du 1er janvier 1983 (convention révisée ; 263 valeurs), du 1er janvier 1989 (avenant n° 1 ; 216 valeurs), du 1er juin 1990 (avenant n° 2, grille n° 2 ; 264 valeurs), du 1er juin 1991 et du 1er juin 1992 (avenant n° 2 ; 264 valeurs chacune), soit 1 523 valeurs. La ligne « Exceptionnel » commence en 1983 : la grille de 1975 ne la porte pas.
+  - **Pourquoi à part.** Les grilles du 1er juin 1993 et suivantes comprennent l'indemnité complémentaire provisoire ; aucune des grilles antérieures ne dit la comprendre — celles de 1989 à 1992 portent une note de bas de grille qui l'exclut, celle de 1983 n'en porte aucune mention, celle de 1975 est antérieure aux décrets n° 81-437 et n° 82-501. Les deux séries ne mesurent pas la même grandeur : **chaque case de `salaire_base_avant_1993` porte une valeur vide au 1er juin 1993**, avec une note qui renvoie à `salaire_base`, et rien ne s'y lit au-delà du 31 mai 1993.
+  - **`assurances.salaire_base_avant_1993_grille_1_de_1990`** : l'avenant n° 2 publie deux grilles au 1er juin 1990, et un paramètre n'a qu'une valeur par date. La grille n° 2 (entreprises ayant servi les augmentations des circulaires du Premier ministre n° 31 et n° 84 de 1988 et du décret n° 88-1889), que prolongent les grilles de 1991 et de 1992, est la valeur du nœud principal ; la grille n° 1 (« entreprises ayant appliqué l'avenant n° 1 ») a son nœud, de même forme : 264 valeurs au 1er juin 1990, une valeur vide au 1er juin 1991, date à laquelle une seule grille s'applique à toutes les entreprises.
+  - **49 cases illisibles, sans valeur** : 48 dans la grille de 1989 (télécopie dégradée reproduite par les deux éditions), dont toute l'échelle 1, et l'échelle 6, échelon 5, dans celle de 1983. Elles portent une valeur vide à leur date, la note en dit la raison, rien n'est déduit ni reporté. 21 cases n'ont qu'une lecture, sans recoupement (8 de 1983, 13 de 1989) : leur note le dit.
+  - **Échelle 16, échelon 12, de 1990 à 1992** : les deux éditions du journal divergent ; la valeur de l'édition française est retenue (407,658 pour la grille n° 1 ; 422,393 ; 448,400 ; 474,407), et la note dit que l'édition arabe imprime 14,175 de moins. **1975, échelle 4 (IV, catégorie F), échelon 9** : valeur du rectificatif (103,680 ; JORT n° 80 du 21 décembre 1976, p. 3083), la note cite la valeur imprimée d'origine (109,680).
+  - **Ces grilles ne forment pas une suite continue** : aucune grille n'est lue entre 1975 et 1983, et un protocole du 8 juin 1984 sur les salaires, que vise l'avenant n° 1, n'est pas lu. La documentation des nœuds le dit ; une valeur s'y lit jusqu'à la veille de la date suivante sans qu'il soit établi qu'elle ait valu tout ce temps.
+  - **Aucune lecture de `salaire_base` ne change** : ses 308 cases rendent les mêmes valeurs à toutes leurs dates. La documentation des nœuds `conventions_collectives`, `assurances` et `assurances.salaire_base` renvoie aux deux nœuds nouveaux.
+  - **Effet sur les calculs.** Aucun : aucune formule ne lit ces paramètres. `tests/test_conventions_collectives.py` est étendu aux 528 cases nouvelles (forme, comptes par grille, clôtures de 1991 et 1993, les deux grilles de 1990, réserves dites dans les notes, grilles croissantes) ; le test qui affirmait que `assurances` n'a qu'un enfant, `salaire_base`, en attend trois.
+  - Aucun chemin de paramètre existant ne change : deux nœuds s'ajoutent.
+
 ## 0.128 - [#489](https://github.com/openfisca/openfisca-tunisia/pull/489)
 
 * Évolution du système socio-fiscal.

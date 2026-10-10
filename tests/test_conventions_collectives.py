@@ -2,7 +2,10 @@
 
 Chaque branche porte, sous `salaire_base`, la structure de sa grille : la grille quand la
 convention en a plusieurs, la catégorie ou l'échelle, puis l'échelon. Les cinq grilles — deux du
-textile, deux du bâtiment, une des assurances — sont versées en entier. Quatre choses sont
+textile, deux du bâtiment, une des assurances — sont versées en entier. Les assurances portent en
+outre deux nœuds frères, à part : `salaire_base_avant_1993`, les grilles de 1975 à 1992, hors
+indemnité complémentaire provisoire, qui cessent le 1er juin 1993 ; et
+`salaire_base_avant_1993_grille_1_de_1990`, la seconde grille du 1er juin 1990. Quatre choses sont
 éprouvées :
 
 - les valeurs, la veille et le jour d'une date d'effet ;
@@ -550,6 +553,50 @@ VALEURS = [
     # Assurances, échelle 4, échelon 1 : la valeur reprend après la case illisible du 1er juin 1996
     ("assurances.salaire_base.echelle_4.echelon_1", "1996-05-31", 246.578),
     ("assurances.salaire_base.echelle_4.echelon_1", "1997-06-01", 288.578),
+    # Assurances, grilles antérieures au 1er juin 1993 : bas et haut de chaque grille, veilles.
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1975-01-01", 37.8),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1982-12-31", 37.8),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1983-01-01", 64.547),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1988-12-31", 64.547),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1990-06-01", 111.494),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1991-06-01", 124.196),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1992-06-01", 136.897),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1993-05-31", 136.897),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1975-01-01", 386.1),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1983-01-01", 430.637),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1989-01-01", 470.529),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1990-05-31", 470.529),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1990-06-01", 526.157),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1991-06-01", 552.164),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1992-06-01", 578.171),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1993-05-31", 578.171),
+    (
+        "assurances.salaire_base_avant_1993.echelle_exceptionnelle.echelon_1",
+        "1983-01-01",
+        79.887,
+    ),
+    # 1975, échelle IV (catégorie F), échelon 9 : valeur du rectificatif, non l'imprimé (109,680).
+    ("assurances.salaire_base_avant_1993.echelle_4.echelon_9", "1975-01-01", 103.68),
+    # Échelle 16, échelon 12, 1990-1992 : valeur de l'édition française (l'arabe imprime 14,175 de moins).
+    ("assurances.salaire_base_avant_1993.echelle_16.echelon_12", "1990-06-01", 422.393),
+    ("assurances.salaire_base_avant_1993.echelle_16.echelon_12", "1991-06-01", 448.4),
+    ("assurances.salaire_base_avant_1993.echelle_16.echelon_12", "1992-06-01", 474.407),
+    # La grille n° 1 du 1er juin 1990, dans son nœud : une seule date.
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_1.echelon_1",
+        "1990-06-01",
+        108.488,
+    ),
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_21.echelon_12",
+        "1991-05-31",
+        507.735,
+    ),
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_16.echelon_12",
+        "1990-06-01",
+        407.658,
+    ),
 ]
 
 # Dates auxquelles une grille prend effet sans que le salaire soit établi : la lecture rend None,
@@ -626,6 +673,29 @@ SANS_VALEUR = [
     # de 1995 ni une valeur déduite : rien, jusqu'à la grille du 1er juin 1997.
     ("assurances.salaire_base.echelle_4.echelon_1", "1996-06-01"),
     ("assurances.salaire_base.echelle_4.echelon_1", "1997-05-31"),
+    # Les grilles antérieures cessent le 1er juin 1993 : la valeur de 1992 ne se lit pas au-delà.
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1993-06-01"),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1993-06-01"),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "2021-06-01"),
+    (
+        "assurances.salaire_base_avant_1993.echelle_exceptionnelle.echelon_7",
+        "1993-06-01",
+    ),
+    # La grille n° 1 de 1990 cesse le 1er juin 1991.
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_1.echelon_1",
+        "1991-06-01",
+    ),
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_21.echelon_12",
+        "1993-06-01",
+    ),
+    # Cases illisibles : toute l'échelle 1 en 1989, et l'échelle 6, échelon 5, en 1983.
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1989-01-01"),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1990-05-31"),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_12", "1989-01-01"),
+    ("assurances.salaire_base_avant_1993.echelle_6.echelon_5", "1983-01-01"),
+    ("assurances.salaire_base_avant_1993.echelle_6.echelon_5", "1990-05-31"),
 ]
 
 # Veille de la première grille du segment continu de chaque branche.
@@ -706,6 +776,21 @@ AVANT_LA_SERIE = [
     ("assurances.salaire_base.echelle_4.echelon_9", "1975-01-01"),
     ("assurances.salaire_base.echelle_1.echelon_13", "1999-05-31"),
     ("assurances.salaire_base.echelle_exceptionnelle.echelon_14", "1999-05-31"),
+    ("assurances.salaire_base_avant_1993.echelle_1.echelon_1", "1974-12-31"),
+    ("assurances.salaire_base_avant_1993.echelle_21.echelon_12", "1974-12-31"),
+    # La ligne « Exceptionnel » apparaît avec la grille de 1983 : rien en 1975.
+    (
+        "assurances.salaire_base_avant_1993.echelle_exceptionnelle.echelon_1",
+        "1982-12-31",
+    ),
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_1.echelon_1",
+        "1990-05-31",
+    ),
+    (
+        "assurances.salaire_base_avant_1993_grille_1_de_1990.echelle_21.echelon_12",
+        "1989-01-01",
+    ),
 ]
 
 # Grille horaire du textile : sept catégories ; échelons 0 à 16 aux trente dates d'effet, échelons
@@ -735,6 +820,56 @@ ASSURANCES_ECHELLES = [
 ASSURANCES_ECHELONS = [f"echelon_{n}" for n in range(1, 15)]
 # Cases illisibles sur le fascicule : une date sans valeur de plus.
 ASSURANCES_ILLISIBLES = {("echelle_4", 1): ["1996-06-01"]}
+
+# Assurances, grilles antérieures au 1er juin 1993 (nœud à part, hors indemnité complémentaire
+# provisoire) : six dates d'effet — cinq pour la ligne « Exceptionnel », absente de la grille de
+# 1975 —, douze échelons, et la date sans valeur du 1er juin 1993. Cases illisibles : toute
+# l'échelle 1 et 36 autres cases en 1989 (télécopie dégradée), une case en 1983.
+ASSURANCES_AVANT = "assurances.salaire_base_avant_1993"
+ASSURANCES_GRILLE_1 = "assurances.salaire_base_avant_1993_grille_1_de_1990"
+ASSURANCES_AVANT_ECHELONS = [f"echelon_{n}" for n in range(1, 13)]
+ASSURANCES_AVANT_DATES = {
+    "1975-01-01": (252, 0),
+    "1983-01-01": (263, 1),
+    "1989-01-01": (216, 48),
+    "1990-06-01": (264, 0),
+    "1991-06-01": (264, 0),
+    "1992-06-01": (264, 0),
+}
+ASSURANCES_AVANT_ILLISIBLES = {
+    "1983-01-01": {"echelle_6": [5]},
+    "1989-01-01": {
+        "echelle_1": list(range(1, 13)),
+        "echelle_2": list(range(1, 11)),
+        "echelle_3": [1, 2, 3, 4, 5, 6, 7, 9],
+        "echelle_exceptionnelle": [1, 2, 3, 4, 5],
+        "echelle_4": [1, 2, 3, 4, 12],
+        "echelle_5": [1, 2],
+        "echelle_6": [5],
+        "echelle_7": [4, 10],
+        "echelle_10": [11, 12],
+        "echelle_12": [2],
+    },
+}
+# Cases qui n'ont qu'une lecture, sans recoupement : la note de leur date le dit.
+ASSURANCES_AVANT_UNE_LECTURE = {
+    "1983-01-01": [(10, 12), (7, 4), (4, 12), (3, 9), (2, 7), (2, 1), (1, 1), (16, 12)],
+    "1989-01-01": [
+        (3, 11),
+        (5, 11),
+        (7, 6),
+        (8, 3),
+        (8, 7),
+        (10, 6),
+        (11, 8),
+        (12, 10),
+        (19, 9),
+        (19, 12),
+        (20, 10),
+        (21, 7),
+        (16, 12),
+    ],
+}
 
 # Bâtiment, personnel occasionnel : onze lignes dans l'ordre de la grille. Neuf valent aux
 # vingt-six dates d'effet et portent la date sans valeur du 1er janvier 2026 ; la ligne unique de
@@ -898,6 +1033,24 @@ DECOMPTE = [
         for echelle in ASSURANCES_ECHELLES
         for n in range(1, 15)
     ),
+    *(
+        (
+            f"{ASSURANCES_AVANT}.{echelle}.echelon_{n}",
+            6 if echelle == "echelle_exceptionnelle" else 7,
+            1
+            + sum(
+                n in cases.get(echelle, [])
+                for cases in ASSURANCES_AVANT_ILLISIBLES.values()
+            ),
+        )
+        for echelle in ASSURANCES_ECHELLES
+        for n in range(1, 13)
+    ),
+    *(
+        (f"{ASSURANCES_GRILLE_1}.{echelle}.echelon_{n}", 2, 1)
+        for echelle in ASSURANCES_ECHELLES
+        for n in range(1, 13)
+    ),
 ]
 
 
@@ -915,6 +1068,10 @@ CASES = {
     },
     "assurances.salaire_base": {
         e: set(ASSURANCES_ECHELONS) for e in ASSURANCES_ECHELLES
+    },
+    ASSURANCES_AVANT: {e: set(ASSURANCES_AVANT_ECHELONS) for e in ASSURANCES_ECHELLES},
+    ASSURANCES_GRILLE_1: {
+        e: set(ASSURANCES_AVANT_ECHELONS) for e in ASSURANCES_ECHELLES
     },
 }
 
@@ -956,9 +1113,9 @@ def test_chaque_date_porte_sa_reference(chemin, dates, vides):
     for date, liste in references.items():
         assert liste, f"{chemin} : aucune référence au {date}"
         for reference in liste:
-            assert (
-                "JORT n°" in reference["note"]
-            ), f"{chemin} au {date} : fascicule non cité"
+            assert "JORT n°" in reference["note"], (
+                f"{chemin} au {date} : fascicule non cité"
+            )
 
 
 @pytest.mark.parametrize(("chemin", "dates", "vides"), DECOMPTE)
@@ -967,11 +1124,28 @@ def test_unites(chemin, dates, vides):
     assert parametre(chemin).metadata["unit"] == attendu
 
 
-@pytest.mark.parametrize("branche", ["textile", "batiment", "assurances"])
-def test_les_anciens_chemins_n_existent_plus(branche):
-    """Le résumé « bas » et « haut » a cédé la place aux cases de la grille."""
+@pytest.mark.parametrize(
+    ("branche", "attendus"),
+    [
+        ("textile", {"salaire_base"}),
+        ("batiment", {"salaire_base"}),
+        (
+            "assurances",
+            {
+                "salaire_base",
+                "salaire_base_avant_1993",
+                "salaire_base_avant_1993_grille_1_de_1990",
+            },
+        ),
+    ],
+)
+def test_les_anciens_chemins_n_existent_plus(branche, attendus):
+    """Le résumé « bas » et « haut » a cédé la place aux cases de la grille.
+
+    Les assurances portent en outre, à part, leurs grilles antérieures au 1er juin 1993.
+    """
     enfants = set(CONVENTIONS.children[branche].children)
-    assert enfants == {"salaire_base"}
+    assert enfants == attendus
     assert not {"salaire_base_bas", "salaire_base_haut"} & enfants
 
 
@@ -1125,7 +1299,7 @@ def test_la_grille_des_assurances_compte_8359_valeurs():
     """264 cases aux six premières dates, 308 aux vingt-deux suivantes ; une seule case illisible."""
     par_date, illisibles = {}, []
     for chemin, _, _ in DECOMPTE:
-        if chemin.startswith("assurances."):
+        if chemin.startswith("assurances.salaire_base."):
             for v in parametre(chemin).values_list:
                 if v.instant_str == "2026-01-01":
                     assert v.value is None
@@ -1184,6 +1358,187 @@ def test_la_grille_des_assurances_est_croissante():
         for colonne in zip(*table):
             lues = [x for x in colonne if x is not None]
             assert all(a <= b for a, b in zip(lues, lues[1:])), date
+
+
+def test_les_grilles_des_assurances_avant_1993_comptent_1523_et_264_valeurs():
+    """Six grilles dans le nœud principal, une dans celui de la grille n° 1 de 1990 ; 49 cases illisibles."""
+    par_date, illisibles = {}, {}
+    for chemin, _, _ in DECOMPTE:
+        if chemin.startswith(ASSURANCES_AVANT + "."):
+            for v in parametre(chemin).values_list:
+                if v.instant_str == "1993-06-01":
+                    assert v.value is None
+                    continue
+                lues, vides = par_date.get(v.instant_str, (0, 0))
+                par_date[v.instant_str] = (
+                    lues + (v.value is not None),
+                    vides + (v.value is None),
+                )
+                if v.value is None:
+                    _, _, echelle, echelon = chemin.split(".")
+                    illisibles.setdefault(v.instant_str, {}).setdefault(
+                        echelle, []
+                    ).append(int(echelon.removeprefix("echelon_")))
+    assert par_date == ASSURANCES_AVANT_DATES
+    assert sum(lues for lues, _ in par_date.values()) == 1523
+    assert sum(vides for _, vides in par_date.values()) == 49
+    assert illisibles == ASSURANCES_AVANT_ILLISIBLES
+
+    grille_1 = {}
+    for chemin, _, _ in DECOMPTE:
+        if chemin.startswith(ASSURANCES_GRILLE_1 + "."):
+            for v in parametre(chemin).values_list:
+                grille_1.setdefault(v.instant_str, []).append(v.value)
+    assert set(grille_1) == {"1990-06-01", "1991-06-01"}
+    assert len(grille_1["1990-06-01"]) == 264
+    assert all(v is not None for v in grille_1["1990-06-01"])
+    assert grille_1["1991-06-01"] == [None] * 264
+
+
+def test_les_grilles_des_assurances_avant_1993_se_closent():
+    """Chaque case cesse le 1er juin 1993, et sa note renvoie à `salaire_base`, qui commence ce jour-là.
+
+    Les deux séries ne mesurent pas la même grandeur : aucune date ne porte les deux à la fois.
+    """
+    avant, apres = parametre(ASSURANCES_AVANT), parametre("assurances.salaire_base")
+    for echelle in ASSURANCES_ECHELLES:
+        for echelon in ASSURANCES_AVANT_ECHELONS:
+            p = avant.children[echelle].children[echelon]
+            assert p.values_list[0].instant_str == "1993-06-01"
+            assert p.values_list[0].value is None
+            assert p("1993-05-31") is not None
+            (reference,) = {str(d): r for d, r in p.metadata["reference"].items()}[
+                "1993-06-01"
+            ]
+            assert "`salaire_base`" in reference["note"]
+            assert "indemnité complémentaire provisoire" in reference["note"]
+            # L'intitulé n'affirme rien de l'indemnité : seules les grilles de 1989 à 1992 l'excluent.
+            assert "avant le 1er juin 1993" in p.description
+            suite = apres.children[echelle].children[echelon]
+            assert suite("1993-05-31") is None and suite("1993-06-01") is not None
+            for instant in ("1975-01-01", "1990-06-01", "1993-05-31", "1993-06-01"):
+                assert (p(instant) is None) or (suite(instant) is None)
+
+
+def test_les_deux_grilles_des_assurances_de_1990():
+    """La grille n° 2 est la valeur du nœud principal, que 1991 prolonge ; la n° 1 a son nœud, qui cesse en 1991."""
+    principal, grille_1 = parametre(ASSURANCES_AVANT), parametre(ASSURANCES_GRILLE_1)
+    for echelle in ASSURANCES_ECHELLES:
+        for echelon in ASSURANCES_AVANT_ECHELONS:
+            n2 = principal.children[echelle].children[echelon]
+            n1 = grille_1.children[echelle].children[echelon]
+            # La grille n° 1 est partout inférieure à la n° 2.
+            assert n1("1990-06-01") < n2("1990-06-01")
+            assert n1("1991-05-31") == n1("1990-06-01")
+            assert n1("1990-05-31") is None and n1("1991-06-01") is None
+            references = {str(d): r for d, r in n1.metadata["reference"].items()}
+            (reference,) = references["1990-06-01"]
+            assert "Grille n° 1 de l'avenant" in reference["note"]
+            assert "ayant appliqué l'avenant n° 1" in reference["note"]
+            assert "`salaire_base_avant_1993`" in reference["note"]
+            (reference,) = {str(d): r for d, r in n2.metadata["reference"].items()}[
+                "1990-06-01"
+            ]
+            assert "Grille n° 2 de l'avenant" in reference["note"]
+            assert "`salaire_base_avant_1993_grille_1_de_1990`" in reference["note"]
+    # De la grille n° 2 à 1991 puis à 1992, la hausse est la même pour toute une catégorie
+    # (ici la catégorie I, échelles 16 à 21 : 26,007) ; ce n'est pas le cas depuis la grille n° 1.
+    for echelle in ASSURANCES_ECHELLES[-6:]:
+        for echelon in ASSURANCES_AVANT_ECHELONS:
+            n2 = principal.children[echelle].children[echelon]
+            assert n2("1991-06-01") - n2("1990-06-01") == pytest.approx(26.007)
+            assert n2("1992-06-01") - n2("1991-06-01") == pytest.approx(26.007)
+
+
+def test_les_notes_des_grilles_des_assurances_avant_1993_disent_leurs_reserves():
+    """Cases illisibles, lectures sans recoupement, éditions divergentes, rectificatif de 1975."""
+    grille = parametre(ASSURANCES_AVANT)
+
+    def notes(echelle, n):
+        references = (
+            grille.children[echelle].children[f"echelon_{n}"].metadata["reference"]
+        )
+        return {str(d): [r["note"] for r in liste] for d, liste in references.items()}
+
+    for date, cases in ASSURANCES_AVANT_ILLISIBLES.items():
+        for echelle, echelons in cases.items():
+            for n in echelons:
+                (note,) = notes(echelle, n)[date]
+                assert "case illisible sur le fascicule" in note
+                assert "dinars par mois" not in note
+    une_lecture = 0
+    for echelle in ASSURANCES_ECHELLES:
+        for n in range(1, 13):
+            for date, liste in notes(echelle, n).items():
+                dit = any("Case lue sans recoupement" in note for note in liste)
+                numero = echelle.removeprefix("echelle_")
+                attendu = numero.isdigit() and (
+                    int(numero),
+                    n,
+                ) in ASSURANCES_AVANT_UNE_LECTURE.get(date, [])
+                assert dit == attendu, (echelle, n, date)
+                une_lecture += dit
+    assert une_lecture == 21
+    # Échelle 16, échelon 12 : l'édition française est retenue, l'arabe imprime 14,175 de moins.
+    for date, arabe in (
+        ("1990-06-01", "408,218"),
+        ("1991-06-01", "n'est pas relevée"),
+        ("1992-06-01", "460,232"),
+    ):
+        (note,) = notes("echelle_16", 12)[date]
+        assert "Les deux éditions divergent" in note and "14,175 de moins" in note
+        assert arabe in note
+    references = parametre(f"{ASSURANCES_GRILLE_1}.echelle_16.echelon_12").metadata[
+        "reference"
+    ]
+    (reference,) = {str(d): r for d, r in references.items()}["1990-06-01"]
+    note = reference["note"]
+    assert "Les deux éditions divergent" in note and "393,483" in note
+    # 1975, échelle IV, échelon 9 : rectificatif cité, avec la valeur imprimée d'origine.
+    note, rectificatif = notes("echelle_4", 9)["1975-01-01"]
+    assert "rectificatif" in note and "109,680" in note and "103,680" in note
+    assert "JORT n° 80 du 21 décembre 1976" in rectificatif
+    # Ce que les grilles disent de l'indemnité complémentaire provisoire, et pas plus.
+    toutes = notes("echelle_21", 12)
+    assert (
+        "antérieure à l'indemnité complémentaire provisoire" in toutes["1975-01-01"][0]
+    )
+    assert "ne porte aucune mention de l'indemnité" in toutes["1983-01-01"][0]
+    for date in ("1989-01-01", "1990-06-01", "1991-06-01", "1992-06-01"):
+        assert (
+            "Note de bas de grille : ces salaires ne comprennent pas" in toutes[date][0]
+        )
+
+
+def test_les_grilles_des_assurances_avant_1993_sont_croissantes():
+    """À chaque date, le salaire croît avec l'échelon dans une ligne, et d'une ligne à la suivante à échelon égal.
+
+    Les cases sans valeur sont sautées ; la ligne « Exceptionnel » n'entre pas dans la grille de 1975.
+    """
+    for chemin, dates in (
+        (ASSURANCES_AVANT, ASSURANCES_AVANT_DATES),
+        (ASSURANCES_GRILLE_1, ["1990-06-01"]),
+    ):
+        grille = parametre(chemin)
+        for date in dates:
+            lignes = [
+                e
+                for e in ASSURANCES_ECHELLES
+                if date > "1975-01-01" or e != "echelle_exceptionnelle"
+            ]
+            table = [
+                [
+                    grille.children[e].children[n](date)
+                    for n in ASSURANCES_AVANT_ECHELONS
+                ]
+                for e in lignes
+            ]
+            for ligne in table:
+                lues = [x for x in ligne if x is not None]
+                assert all(a < b for a, b in zip(lues, lues[1:])), date
+            for colonne in zip(*table):
+                lues = [x for x in colonne if x is not None]
+                assert all(a <= b for a, b in zip(lues, lues[1:])), date
 
 
 def test_les_grilles_du_batiment_comptent_248_et_5418_valeurs():

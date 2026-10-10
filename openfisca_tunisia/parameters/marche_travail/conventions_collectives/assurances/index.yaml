@@ -3,6 +3,8 @@ metadata:
   short_label: "Assurances"
   order:
   - salaire_base
+  - salaire_base_avant_1993
+  - salaire_base_avant_1993_grille_1_de_1990
   reference:
   - title: "Arrêté du ministre des affaires sociales du 24 décembre 1975, portant agrément de la convention collective nationale des assurances"
     href: https://www.pist.tn/jort/1975/1975F/Jo08775.pdf
@@ -30,3 +32,14 @@ documentation: |-
   La durée du travail de référence est de 40 heures par semaine, soit 2 080 heures par an. Depuis
   l'avenant n° 4, agréé le 24 juillet 1996, les avenants et leurs grilles ne paraissent que dans
   l'édition arabe du journal.
+
+  Trois nœuds, parce que les grilles ne mesurent pas toutes la même grandeur :
+  - `salaire_base` : les grilles du 1er juin 1993 au 1er juin 2021, qui comprennent l'indemnité
+    complémentaire provisoire ;
+  - `salaire_base_avant_1993` : les grilles de 1975, 1983, 1989, 1990 (grille n° 2), 1991 et 1992 :
+    celles de 1989 à 1992 excluent l'indemnité complémentaire provisoire, celles de 1975 et de
+    1983 ne la mentionnent pas ; la série cesse le 1er juin 1993 ;
+  - `salaire_base_avant_1993_grille_1_de_1990` : la grille n° 1 du 1er juin 1990, seconde
+    grille de même date d'effet, pour les entreprises ayant appliqué l'avenant n° 1.
+  Les deux derniers ne se prolongent pas dans le premier et ne se comparent pas à lui sans cette
+  réserve.

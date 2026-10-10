@@ -68,5 +68,6 @@ documentation: |-
 
   La série commence au 1er juin 1993. Les grilles de 1983 à 1992 ne comprennent pas l'indemnité
   complémentaire provisoire et ne mesurent donc pas la même grandeur, et rien ne relie la grille
-  de 1975 à la suite : elles ne sont pas versées. De l'avenant n° 3 à l'avenant n° 15, tous les
-  avenants ont été lus, sans numéro manquant.
+  de 1975 à la suite : elles ne sont pas versées ici, mais à part, dans `salaire_base_avant_1993`
+  et `salaire_base_avant_1993_grille_1_de_1990`, et ne se raccordent pas à cette série. De
+  l'avenant n° 3 à l'avenant n° 15, tous les avenants ont été lus, sans numéro manquant.
