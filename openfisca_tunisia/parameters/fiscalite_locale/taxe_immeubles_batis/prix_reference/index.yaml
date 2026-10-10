@@ -1,0 +1,26 @@
+description: "Minimum et maximum du prix de référence du mètre carré couvert, par catégorie d'immeubles"
+metadata:
+  short_label: "Prix de référence du mètre carré couvert"
+  order:
+  - categorie_1
+  - categorie_2
+  - categorie_3
+  - categorie_4
+documentation: |-
+  Limites, en dinars par mètre carré couvert, entre lesquelles la collectivité locale fixe par
+  arrêté motivé le prix de référence de chaque catégorie d'immeubles, « sur la base de la nature
+  des services rendus » (code de la fiscalité locale, article 4, paragraphe IV). Le code prévoit
+  qu'un décret fixe ces limites tous les trois ans. Trois décrets les ont fixées :
+
+  - décret n° 97-431 du 3 mars 1997 (JORT n° 19 du 7 mars 1997, p. 389), exécutoire le 13 mars
+    1997 ;
+  - décret n° 2007-1185 du 14 mai 2007 (JORT n° 40 du 18 mai 2007, pp. 1646-1647), applicable à
+    compter du 1er janvier 2008, qui abroge le précédent ;
+  - décret gouvernemental n° 2017-397 du 28 mars 2017 (JORT n° 26 du 31 mars 2017, pp. 1191-1192),
+    applicable à compter du 1er janvier 2017, qui abroge le précédent.
+
+  Le code entre en vigueur le 1er janvier 1997 et le premier décret n'est exécutoire que le
+  13 mars 1997 : aucun prix de référence n'est fixé entre ces deux dates.
+
+  Depuis 2017, les fourchettes se chevauchent : le maximum d'une catégorie dépasse le minimum de
+  la suivante. Les deux éditions du Journal officiel concordent sur ce point.

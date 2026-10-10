@@ -1,0 +1,8 @@
+description: Taux intermédiaire de la taxe sur la valeur ajoutée
+metadata:
+  short_label: Taux intermédiaire
+  order:
+  - taux
+documentation: |-
+  Taux situé entre le taux réduit et le taux normal. Les textes ne lui donnent pas de nom : ils le désignent par sa valeur.
+  Créé hors du code par la loi de finances pour la gestion 1995, il est incorporé à l'article 7 du code (numéro 3 du deuxième paragraphe, tableau « B bis ») au 1er janvier 2002.

@@ -17,10 +17,12 @@ from openfisca_core.parameters import ParameterNode
 
 RACINE_PARAMETRES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "parameters")
 
-# Le système socio-fiscal : impôts, cotisations, prestations, rémunérations publiques.
+# Le système socio-fiscal : impôts d'État et impôts locaux, cotisations, prestations,
+# rémunérations publiques.
 SOUS_ARBRES_FISCAL = (
     "energie",
     "fiscalite_indirecte",
+    "fiscalite_locale",
     "fonction_publique",
     "impot_revenu",
     "impot_societes",

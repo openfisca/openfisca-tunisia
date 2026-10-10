@@ -1,0 +1,6 @@
+description: "Industries chimiques (point 15)"
+metadata:
+  short_label: "Industries chimiques"
+  order:
+  - grandes_industries_chimiques
+  - autres_industries_chimiques

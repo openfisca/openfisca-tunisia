@@ -10,9 +10,15 @@ values:
     value: 1.12814
   2020-01-01:
     value: 1.06796
+  2019-01-01:
+    value: 1.00000
 metadata:
   unit: /1
   reference:
+    2019-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 5 mars 2019, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2019/2019A/Ja0212019.pdf"
+      note: "JORT n° 21 du 12 mars 2019, édition arabe, p. 783. Aucune édition française de ce numéro n'a été trouvée : l'adresse de l'édition française sur pist.tn sert le fascicule arabe. L'intitulé est traduit sur le modèle des arrêtés des autres années. Barème de l'article premier ; article 2 : « تنطبق الأحكام المنصوص عليها بالفصل الأول من هذا القرار بالنسبة للجرايات التي يفتتح الحق فيها ابتداء من أول جانفي 2019 », soit aux pensions dont le droit est ouvert à compter du 1er janvier 2019. Lu à l'image ; la couche texte concorde."
     2020-01-01:
     - title: "Arrêté du ministre des affaires sociales du 23 juin 2020, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
       href: "https://www.pist.tn/jort/2020/2020F/Jo0612020.pdf"

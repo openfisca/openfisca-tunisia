@@ -1,0 +1,108 @@
+description: "Bâtiment et travaux publics - personnel occasionnel - ouvrier hautement qualifié : salaire horaire de base"
+values:
+  1996-05-01:
+    value: 1.062
+  1997-05-01:
+    value: 1.115
+  1998-05-01:
+    value: 1.168
+  1999-05-01:
+    value: 1.218
+  2000-05-01:
+    value: 1.268
+  2001-05-01:
+    value: 1.318
+  2002-05-01:
+    value: 1.366
+  2003-05-01:
+    value: 1.416
+  2004-05-01:
+    value: 1.468
+  2005-05-01:
+    value: 1.52
+  2006-05-01:
+    value: 1.572
+  2007-05-01:
+    value: 1.626
+  2008-05-01:
+    value: null
+metadata:
+  short_label: "Ouvrier hautement qualifié"
+  unit: currency/heure
+  reference:
+    1996-05-01:
+    - title: "Avenant n° 5 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 16 octobre 1996"
+      href: https://www.pist.tn/jort/1996/1996F/Jo08696.pdf
+      note: "JORT n° 86 du 25 octobre 1996, édition française, p. 2150. La grille du personnel occasionnel prend effet le 1er mai 1996 ; ouvrier hautement qualifié : 1,062 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    1997-05-01:
+    - title: "Avenant n° 5 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 16 octobre 1996"
+      href: https://www.pist.tn/jort/1996/1996F/Jo08696.pdf
+      note: "JORT n° 86 du 25 octobre 1996, édition française, p. 2151. La grille du personnel occasionnel prend effet le 1er mai 1997 ; ouvrier hautement qualifié : 1,115 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    1998-05-01:
+    - title: "Avenant n° 5 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 16 octobre 1996"
+      href: https://www.pist.tn/jort/1996/1996F/Jo08696.pdf
+      note: "JORT n° 86 du 25 octobre 1996, édition française, p. 2152. La grille du personnel occasionnel prend effet le 1er mai 1998 ; ouvrier hautement qualifié : 1,168 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    1999-05-01:
+    - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
+      href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1157. La grille du personnel occasionnel prend effet le 1er mai 1999 ; ouvrier hautement qualifié : 1,218 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2000-05-01:
+    - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
+      href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1158. La grille du personnel occasionnel prend effet le 1er mai 2000 ; ouvrier hautement qualifié : 1,268 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2001-05-01:
+    - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
+      href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1159. La grille du personnel occasionnel prend effet le 1er mai 2001 ; ouvrier hautement qualifié : 1,318 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2002-05-01:
+    - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
+      href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+      note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3091. La grille du personnel occasionnel prend effet le 1er mai 2002 ; ouvrier hautement qualifié : 1,366 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2003-05-01:
+    - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
+      href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+      note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3092. La grille du personnel occasionnel prend effet le 1er mai 2003 ; ouvrier hautement qualifié : 1,416 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2004-05-01:
+    - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
+      href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+      note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3093. La grille du personnel occasionnel prend effet le 1er mai 2004 ; ouvrier hautement qualifié : 1,468 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2005-05-01:
+    - title: "Avenant n° 8 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 janvier 2006"
+      href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+      note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 362. La grille du personnel occasionnel prend effet le 1er mai 2005 ; ouvrier hautement qualifié : 1,520 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2006-05-01:
+    - title: "Avenant n° 8 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 janvier 2006"
+      href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+      note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 363. La grille du personnel occasionnel prend effet le 1er mai 2006 ; ouvrier hautement qualifié : 1,572 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2007-05-01:
+    - title: "Avenant n° 8 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 janvier 2006"
+      href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+      note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 364. La grille du personnel occasionnel prend effet le 1er mai 2007 ; ouvrier hautement qualifié : 1,626 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2008-05-01:
+    - title: "Avenant n° 9 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 février 2009"
+      href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+      note: "JORT n° 16 du 24 février 2009, édition arabe, p. 891. La grille du personnel occasionnel qui prend effet le 1er mai 2008 ne porte plus de ligne « ouvrier hautement qualifié » : elle la divise en deux niveaux, I et II, qui ont chacun leur salaire. Sans valeur à compter de cette date : la ligne unique ne se prolonge ni dans l'un ni dans l'autre."
+documentation: |-
+  Salaire horaire de base de la catégorie « ouvrier hautement qualifié » de la grille du personnel occasionnel
+  annexée à la convention collective du bâtiment et des travaux publics. Cette grille n'a
+  pas d'échelon.
+
+  Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+  hebdomadaire du travail elle se rapporte.
+
+  Ce que le salaire comprend : c'est un salaire de base. Il comprend l'indemnité complémentaire
+  provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982, ce que chaque
+  grille mentionne. Il ne comprend pas les indemnités de la convention (présence, transport), qui
+  s'y ajoutent.
+
+  La série commence au 1er mai 1996, avec l'avenant n° 5 : les grilles antérieures ne mesurent pas
+  la même grandeur ou ne sont pas relevées.
+
+  La série est sans valeur à compter du 1er mai 2008 : la grille qui prend effet à cette date
+  (avenant n° 9) divise l'ouvrier hautement qualifié en deux niveaux, I et II, versés chacun à
+  part. La ligne unique ne se prolonge ni dans l'un ni dans l'autre.
+
+  Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
+  d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
+  à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle la valeur précédente ne vaut
+  plus : ici, celle à laquelle la grille cesse de porter cette ligne.

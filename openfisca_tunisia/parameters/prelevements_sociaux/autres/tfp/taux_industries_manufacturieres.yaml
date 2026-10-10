@@ -1,0 +1,18 @@
+description: Taux de la taxe de formation professionnelle, industries manufacturières
+values:
+  1967-01-01:
+    value: 0.02
+  1989-01-01:
+    value: 0.01
+metadata:
+  unit: /1
+  short_label: Industries manufacturières
+  reference:
+    1967-01-01:
+    - title: "Décret n° 66-527 du 24 décembre 1966, modifiant le décret du 16 janvier 1957, fixant le taux, les modalités d'établissement, de recouvrement et de contrôle de la taxe de formation professionnelle et l'affectation de son produit, articles premier et 2"
+      href: https://www.pist.tn/jort/1966/1966F/Jo05566.pdf
+      note: "JORT n° 55 de décembre 1966, p. 1804, lu à l'image. Article premier : taux de 2 %, unique pour tous les redevables, sans distinction de secteur. Article 2 : effet au 1er janvier 1967. Édition arabe : https://www.pist.tn/jort/1966/1966A/Ja05566.pdf"
+    1989-01-01:
+    - title: "Loi n° 88-145 du 31 décembre 1988, portant loi de finances pour la gestion 1989, articles 29 et 30"
+      href: https://www.pist.tn/jort/1988/1988F/Jo08788.pdf
+      note: "JORT n° 87 de 1988, p. 1797 de l'édition française et pp. 1773-1774 de l'édition arabe, lues à l'image. Taux de 1 % pour les industries manufacturières, à compter des salaires de janvier 1989. La liste des industries manufacturières est celle du décret n° 94-492, dont seul l'intitulé est connu ici. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja08788.pdf"
