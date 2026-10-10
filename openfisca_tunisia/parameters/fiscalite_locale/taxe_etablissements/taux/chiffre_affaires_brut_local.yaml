@@ -1,0 +1,27 @@
+description: "Taux de la taxe sur les établissements, appliqué au chiffre d'affaires brut local"
+values:
+  1997-01-01:
+    value: 0.002
+  2014-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Chiffre d'affaires brut local"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 37, premier paragraphe, et article 38, paragraphe I ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 177 (articles 37 et 38 du code) et p. 173 (article 3 de la loi). Article 37, premier paragraphe : « la taxe sur les établissements à caractère industriel, commercial ou professionnel est calculée sur la base du chiffre d'affaires brut local réalisé par les établissements qui y sont soumis ». Article 38, paragraphe I : « Le taux de la taxe sur les établissements à caractère industriel, commercial ou professionnel est fixé à 0.2 pour-cent. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 177 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+    2014-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, article 49, paragraphe 1, et article 95"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, p. 3680 (article 49) et p. 3699 (article 95). Article 49, paragraphe 1, p. 3680, sous la rubrique « Soumission du chiffre d'affaires provenant de l'exportation à la TCL » : « Est supprimé des dispositions du paragraphe premier de l'article 37 et du paragraphe I de l'article 39 du code de la fiscalité locale le terme \"local\". » L'assiette du chiffre d'affaires brut local cesse d'exister à cette date : la valeur est vide. Le taux de 0,2 % de l'article 38, paragraphe I, n'est pas modifié ; il s'applique depuis lors au chiffre d'affaires brut. Date d'effet : article 95, p. 3699 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2014. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja1052013.pdf"
+documentation: |-
+  Taux de droit commun de la taxe, du 1er janvier 1997 au 31 décembre 2013, appliqué au chiffre
+  d'affaires brut local réalisé par l'établissement (code de la fiscalité locale, article 37,
+  premier paragraphe, et article 38, paragraphe I, dans leur rédaction de 1997). Le code ne
+  définit pas le mot « local ».
+
+  La loi de finances pour 2014 supprime ce mot de l'article 37 sous la rubrique « Soumission du
+  chiffre d'affaires provenant de l'exportation à la TCL ». Depuis le 1er janvier 2014, le taux
+  se lit dans `chiffre_affaires_brut`.

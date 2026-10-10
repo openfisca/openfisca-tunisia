@@ -1,0 +1,17 @@
+description: "Taux de la taxe hôtelière, appliqué au chiffre d'affaires brut global"
+values:
+  1997-01-01:
+    value: 0.02
+metadata:
+  unit: /1
+  short_label: "Taux"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, articles 42 et 43 ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 177 (article 42 du code), p. 178 (article 43) et p. 173 (article 3 de la loi). Article 42 : « La taxe hôtelière est calculée sur la base du chiffre d'affaires brut global réalisé par les personnes visées à l'article 41 du présent code ». Article 43 : « Le taux de la taxe hôtelière est fixé à 2 pour-cent ». Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173, 177 et 178 ; l'édition arabe n'est pas relue pour ces articles : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+documentation: |-
+  Taux appliqué au chiffre d'affaires brut global réalisé par les exploitants des établissements
+  touristiques (code de la fiscalité locale, articles 42 et 43).
+
+  Aucune modification des articles 41 à 45 du code n'est relevée depuis 1997.
