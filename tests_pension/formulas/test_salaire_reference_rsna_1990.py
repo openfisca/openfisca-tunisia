@@ -33,6 +33,14 @@ def test_la_redaction_de_1990_ne_rend_pas_de_valeur(annee):
         salaire_de_reference(annee)
 
 
-@pytest.mark.parametrize("annee", [1990, 1995])
-def test_les_exercices_voisins_rendent_une_valeur(annee):
-    assert salaire_de_reference(annee) == pytest.approx(12000.0)
+@pytest.mark.parametrize(
+    ("annee", "attendu"),
+    [
+        # 1990 : rédaction de 1974, salaires constants.
+        (1990, 12000.0),
+        # 1995 : rédaction de 1994, cinq années actualisées par l'arrêté du 16 mars 1995.
+        (1995, 12000.0 * (1.23839 + 1.14921 + 1.08854 + 1.04469 + 1) / 5),
+    ],
+)
+def test_les_exercices_voisins_rendent_une_valeur(annee, attendu):
+    assert salaire_de_reference(annee) == pytest.approx(attendu)
