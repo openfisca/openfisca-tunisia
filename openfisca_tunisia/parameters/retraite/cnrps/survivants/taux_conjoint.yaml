@@ -1,5 +1,7 @@
 description: Taux de la pension de réversion du conjoint survivant (part de la pension de l'agent)
 values:
+  1959-04-01:
+    value: 0.5
   1981-05-01:
     value: 0.75
   1985-09-12:
@@ -7,6 +9,13 @@ values:
 metadata:
   unit: /1
   reference:
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 31, § I, article 37 et article 52"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 97, lu à l'image. Article 31, § I : « Les veuves des fonctionnaires et militaires tributaires de la présente loi ont droit à une pension égale à 50 % de la pension d'ancienneté ou proportionnelle obtenue par le mari ou qu'il aurait pu obtenir le jour de son décès et augmentée, le cas échéant, de la moitié de la rente d'invalidité dont il bénéficiait ou aurait pu bénéficier. » Article 37 (p. 98) : le conjoint survivant d'une femme fonctionnaire peut prétendre à une pension égale à 50 % de la pension de celle-ci, s'il est atteint d'une infirmité ou maladie incurable le rendant définitivement incapable de travailler, et dans la limite du traitement afférent à l'indice 100. L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature."
+    - title: "Loi n° 59-100 du 20 août 1959, complétant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article premier (article 52, alinéa 1er nouveau)"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo04459.pdf"
+      note: "JORT n° 44, fascicule des 25-28 août 1959, p. 913. Les dispositions de la loi n° 59-18 sont applicables à compter du 1er avril 1959 aux fonctionnaires et à leurs ayants droit ; elles prennent effet au 3 mai 1956 pour les militaires et leurs ayants droit, date qui n'est pas versée ici."
     1981-05-01:
     - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 31, § I nouveau de la loi n° 59-18)"
       href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
@@ -16,5 +25,17 @@ metadata:
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
       note: "JORT n° 20 du 12 mars 1985, p. 362 : 75 % de la pension de retraite dont l'agent avait bénéficié ou aurait pu bénéficier ; même réduction de 5 % puis 10 % par orphelin, plancher de 50 % (alinéa 2). Valeur inchangée. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
 documentation: |-
-  Le texte antérieur au 1er mai 1981 n'a pas été lu. L'article 43 n'est modifié par aucun
-  texte de la chaîne modificative de la loi n° 85-12 lue jusqu'au 10 avril 2026.
+  De 1959 à 1981, le taux de 50 % est celui de la veuve (loi n° 59-18, article 31, § I). Le
+  veuf n'y a droit qu'à des conditions propres : infirmité ou maladie incurable le rendant
+  définitivement incapable de travailler, et pension limitée, avec ses ressources propres, au
+  traitement afférent à l'indice 100 (article 37) ; le décret-loi n° 70-1 porte cette limite
+  à 60 % des émoluments globaux afférents à l'indice 100 au 1er juillet 1970. Le taux de 50 %
+  n'est pas réduit en présence d'orphelins : en cas de dépassement du plafond de cumul, ce
+  sont les pensions d'orphelins qui sont temporairement réduites (article 31, § III). La
+  réduction de la part du conjoint au-delà du deuxième orphelin date de la loi n° 81-70.
+
+  Le décret-loi n° 70-1 du 14 septembre 1970 réécrit les paragraphes II et XI de l'article 31,
+  non son paragraphe I : le taux de 50 % court jusqu'au 30 avril 1981.
+
+  L'article 43 n'est modifié par aucun texte de la chaîne modificative de la loi n° 85-12
+  lue jusqu'au 10 avril 2026.

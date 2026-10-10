@@ -1,0 +1,1053 @@
+description: "Assurances - échelle 8 : salaire mensuel de base avant le 1er juin 1993, par échelon"
+metadata:
+  short_label: "Échelle 8"
+  order:
+  - echelon_1
+  - echelon_2
+  - echelon_3
+  - echelon_4
+  - echelon_5
+  - echelon_6
+  - echelon_7
+  - echelon_8
+  - echelon_9
+  - echelon_10
+  - echelon_11
+  - echelon_12
+documentation: |-
+  Échelle 8 de la grille. Échelons versés : les douze, aux six grilles antérieures au 1er juin 1993
+  — 1er janvier 1975, 1er janvier 1983, 1er janvier 1989, 1er juin 1990 (grille n° 2), 1er juin 1991
+  et 1er juin 1992. Dans la grille de 1975, c'est l'échelle VIII, de la catégorie E. La série cesse
+  le 1er juin 1993.
+echelon_1:
+  description: "Assurances - échelle 8, échelon 1 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 75.6
+    1983-01-01:
+      value: 104.362
+    1989-01-01:
+      value: 129.541
+    1990-06-01:
+      value: 161.527
+    1991-06-01:
+      value: 177.712
+    1992-06-01:
+      value: 193.897
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 1"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 1 : 75,600 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 1 : 104,362 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 1 : 129,541 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 1 : 161,527 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 1 : 177,712 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 1 : 193,897 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 1, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_2:
+  description: "Assurances - échelle 8, échelon 2 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 83.16
+    1983-01-01:
+      value: 112.3
+    1989-01-01:
+      value: 137.782
+    1990-06-01:
+      value: 170.071
+    1991-06-01:
+      value: 186.256
+    1992-06-01:
+      value: 202.441
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 2"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 2 : 83,160 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 2 : 112,300 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 2 : 137,782 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 2 : 170,071 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 2 : 186,256 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 2 : 202,441 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 2, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_3:
+  description: "Assurances - échelle 8, échelon 3 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 90.72
+    1983-01-01:
+      value: 120.362
+    1989-01-01:
+      value: 146.153
+    1990-06-01:
+      value: 178.551
+    1991-06-01:
+      value: 194.736
+    1992-06-01:
+      value: 210.921
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 3"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 3 : 90,720 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 3 : 120,362 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 3 : 146,153 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Case lue sans recoupement : vérifiée seulement par la relation approchée avec la grille de 1983. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 3 : 178,551 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 3 : 194,736 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 3 : 210,921 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 3, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_4:
+  description: "Assurances - échelle 8, échelon 4 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 98.28
+    1983-01-01:
+      value: 128.301
+    1989-01-01:
+      value: 154.396
+    1990-06-01:
+      value: 187.298
+    1991-06-01:
+      value: 203.483
+    1992-06-01:
+      value: 219.668
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 4"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 4 : 98,280 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 4 : 128,301 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 4 : 154,396 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 4 : 187,298 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 4 : 203,483 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 4 : 219,668 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 4, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_5:
+  description: "Assurances - échelle 8, échelon 5 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 105.84
+    1983-01-01:
+      value: 136.239
+    1989-01-01:
+      value: 162.637
+    1990-06-01:
+      value: 195.842
+    1991-06-01:
+      value: 212.027
+    1992-06-01:
+      value: 228.212
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 5"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 5 : 105,840 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 5 : 136,239 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 5 : 162,637 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 5 : 195,842 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 5 : 212,027 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 5 : 228,212 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 5, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_6:
+  description: "Assurances - échelle 8, échelon 6 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 113.4
+    1983-01-01:
+      value: 144.177
+    1989-01-01:
+      value: 170.879
+    1990-06-01:
+      value: 204.388
+    1991-06-01:
+      value: 220.573
+    1992-06-01:
+      value: 236.758
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 6"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 6 : 113,400 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 6 : 144,177 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 6 : 170,879 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 6 : 204,388 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 6 : 220,573 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 6 : 236,758 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 6, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_7:
+  description: "Assurances - échelle 8, échelon 7 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 120.96
+    1983-01-01:
+      value: 152.24
+    1989-01-01:
+      value: 179.25
+    1990-06-01:
+      value: 212.867
+    1991-06-01:
+      value: 229.052
+    1992-06-01:
+      value: 245.237
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 7"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 7 : 120,960 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 7 : 152,240 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 7 : 179,250 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Case lue sans recoupement : vérifiée seulement par la relation approchée avec la grille de 1983. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 7 : 212,867 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 7 : 229,052 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 7 : 245,237 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 7, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_8:
+  description: "Assurances - échelle 8, échelon 8 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 128.52
+    1983-01-01:
+      value: 160.178
+    1989-01-01:
+      value: 187.492
+    1990-06-01:
+      value: 221.613
+    1991-06-01:
+      value: 237.798
+    1992-06-01:
+      value: 253.983
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 8"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 8 : 128,520 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 8 : 160,178 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 8 : 187,492 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 8 : 221,613 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 8 : 237,798 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 8 : 253,983 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 8, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_9:
+  description: "Assurances - échelle 8, échelon 9 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 136.08
+    1983-01-01:
+      value: 168.116
+    1989-01-01:
+      value: 195.733
+    1990-06-01:
+      value: 230.157
+    1991-06-01:
+      value: 246.342
+    1992-06-01:
+      value: 262.527
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 9"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 9 : 136,080 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 9 : 168,116 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 9 : 195,733 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 9 : 230,157 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 9 : 246,342 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 9 : 262,527 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 9, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_10:
+  description: "Assurances - échelle 8, échelon 10 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 143.64
+    1983-01-01:
+      value: 176.054
+    1989-01-01:
+      value: 203.975
+    1990-06-01:
+      value: 238.703
+    1991-06-01:
+      value: 254.888
+    1992-06-01:
+      value: 271.073
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 10"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 10 : 143,640 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 10 : 176,054 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 10 : 203,975 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 10 : 238,703 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 10 : 254,888 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 10 : 271,073 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 10, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_11:
+  description: "Assurances - échelle 8, échelon 11 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 151.2
+    1983-01-01:
+      value: 183.992
+    1989-01-01:
+      value: 212.217
+    1990-06-01:
+      value: 247.249
+    1991-06-01:
+      value: 263.434
+    1992-06-01:
+      value: 279.619
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 11"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 11 : 151,200 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 11 : 183,992 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 11 : 212,217 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 11 : 247,249 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 11 : 263,434 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 11 : 279,619 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 11, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).
+echelon_12:
+  description: "Assurances - échelle 8, échelon 12 : salaire mensuel de base avant le 1er juin 1993"
+  values:
+    1975-01-01:
+      value: 158.76
+    1983-01-01:
+      value: 191.93
+    1989-01-01:
+      value: 220.458
+    1990-06-01:
+      value: 255.793
+    1991-06-01:
+      value: 271.978
+    1992-06-01:
+      value: 288.163
+    1993-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 12"
+    unit: currency/mois
+    reference:
+      1975-01-01:
+      - title: "Convention collective nationale du secteur « Assurance », signée le 24 juillet 1975, agréée par arrêté du 24 décembre 1975"
+        href: https://www.pist.tn/jort/1976/1976F/Jo00776.pdf
+        note: "JORT n° 7 du 30 janvier 1976, édition française, p. 279. La grille prend effet le 1er janvier 1975 ; échelle VIII (catégorie E), échelon 12 : 158,760 dinars par mois. Valeur lue à l'image. Article 70 de la convention : entrée en vigueur à compter du 1er janvier 1975. La grille est antérieure à l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982."
+      1983-01-01:
+      - title: "Convention collective nationale des assurances révisée, agréée par arrêté du 23 août 1983"
+        href: https://www.pist.tn/jort/1983/1983F/Jo07483.pdf
+        note: "JORT n° 74 des 15 et 18 novembre 1983, édition française, p. 2947. La grille prend effet le 1er janvier 1983 ; échelle 8, échelon 12 : 191,930 dinars par mois. Valeur lue à l'image. L'additif à la convention révisée fait prendre effet ses dispositions pécuniaires à compter du 1er janvier 1983 (p. 2946). La grille ne porte aucune mention de l'indemnité complémentaire provisoire."
+      1989-01-01:
+      - title: "Avenant n° 1 à la convention collective nationale des assurances, agréé par arrêté du 22 mars 1989"
+        href: https://www.pist.tn/jort/1989/1989F/Jo02189.pdf
+        note: "JORT n° 21 du 24 mars 1989, édition française, p. 570. La grille prend effet le 1er janvier 1989 ; échelle 8, échelon 12 : 220,458 dinars par mois. Valeur lue à l'image, sur une télécopie dégradée que les deux éditions reproduisent (édition arabe, p. 569). Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire). L'arrêté d'agrément (article 3) écarte de l'avenant les employeurs et travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 de 1988 et par le décret n° 88-1889."
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1730 (édition française, p. 1720). La grille prend effet le 1er juin 1990 ; échelle 8, échelon 12 : 255,793 dinars par mois. Valeur lue à l'image. Grille n° 2 de l'avenant, qui s'applique aux entreprises ayant servi à leur personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988 ; la grille n° 1, de même date, s'applique aux entreprises ayant appliqué l'avenant n° 1 : voir `salaire_base_avant_1993_grille_1_de_1990`. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille prend effet le 1er juin 1991 ; échelle 8, échelon 12 : 271,978 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 3 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1992-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1722. La grille prend effet le 1er juin 1992 ; échelle 8, échelon 12 : 288,163 dinars par mois. Valeur lue à l'image, recoupée par l'édition arabe. Grille n° 4 de l'avenant, qui s'applique à toutes les entreprises. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1993-06-01:
+      - title: "Avenant n° 3 à la convention collective nationale des assurances, agréé par arrêté du 7 septembre 1993"
+        href: https://www.pist.tn/jort/1993/1993F/Jo07293.pdf
+        note: "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. Sans valeur à compter du 1er juin 1993 : depuis cette date, la grille inclut l'indemnité complémentaire provisoire (avenant n° 3) : voir `salaire_base`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 8, échelon 12, des grilles annexées à la convention
+    collective des assurances et à ses avenants n° 1 et n° 2, avant le 1er juin 1993. Dans la grille
+    de 1975, l'échelle 8 est l'échelle VIII, de la catégorie E.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Aucune de ces grilles ne dit comprendre l'indemnité complémentaire provisoire
+    des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : celles de 1989, 1990, 1991
+    et 1992 portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces
+    décrets, n'en porte aucune mention ; celle de 1975 leur est antérieure.
+
+    La série s'arrête au 1er juin 1993 : à compter de cette date la grille comprend l'indemnité
+    complémentaire provisoire (avenant n° 3) et se lit dans `salaire_base`. Les deux séries ne
+    mesurent pas la même grandeur : celle-ci ne se prolonge pas dans `salaire_base`, et ne se
+    compare pas à elle sans cette réserve.
+
+    Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+    veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune
+    grille n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole
+    d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est
+    pas lu.
+
+    Entreprises visées. Au 1er janvier 1989 la grille est celle de l'avenant n° 1, dont l'arrêté
+    d'agrément écarte les employeurs et travailleurs visés par les circulaires du Premier ministre
+    n° 31 et n° 84 de 1988 et par le décret n° 88-1889. Au 1er juin 1990 l'avenant n° 2 publie deux
+    grilles : la valeur portée ici est celle de la grille n° 2, qui s'applique aux entreprises ayant
+    servi à leur personnel les augmentations de ces circulaires et de ce décret, et que prolongent
+    les grilles de 1991 et de 1992 ; la grille n° 1, pour les entreprises ayant appliqué l'avenant
+    n° 1, est dans `salaire_base_avant_1993_grille_1_de_1990`. Les grilles du 1er juin 1991 et du
+    1er juin 1992 s'appliquent à toutes les entreprises.
+
+    Chaque date est la date d'effet que la grille ou son texte énonce. Une date sans valeur est une
+    date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
+    (1er juin 1993).

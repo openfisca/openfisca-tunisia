@@ -1,0 +1,26 @@
+description: Pension minimale exprimée par référence à l'indice 100, du 1er avril 1959 au 30 avril 1981
+metadata:
+  order:
+  - part_indice_100
+  - annuites_pension_pleine
+  - taux_par_annuite_proportionnelle
+documentation: |-
+  La loi n° 59-18 du 5 février 1959 fixe le plancher de la pension par référence au
+  traitement afférent à l'indice 100 (article 22, § II) :
+  - la pension basée sur trente annuités ne peut être inférieure au traitement soumis à
+    retenue afférent à l'indice 100 ;
+  - la pension proportionnelle basée sur moins de trente annuités ne peut être inférieure au
+    montant calculé à raison de 4 % du traitement soumis à retenue par annuité liquidable,
+    sans pouvoir excéder le traitement soumis à retenue afférent à l'indice 100.
+
+  Le décret-loi n° 70-1 du 14 septembre 1970 remplace ces deux planchers par un plancher
+  unique, qui ne dépend plus du nombre d'annuités : 60 % des émoluments globaux indiciaires
+  afférents à l'indice 100, pour la pension d'ancienneté comme pour la pension
+  proportionnelle (article 22, § II nouveau). Les pensions sont liquidées à nouveau selon ces
+  modalités à compter du 1er juillet 1970 (article 2).
+
+  La loi n° 81-70 exprime le plancher en part du SMIG à compter du 1er mai 1981
+  (`minimum_garanti`) : les paramètres de ce nœud cessent à cette date.
+
+  Le montant de ces planchers dépend de la grille indiciaire des traitements de la fonction
+  publique, qui n'est pas versée ici.

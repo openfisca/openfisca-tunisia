@@ -1,0 +1,15 @@
+description: Revenus forfaitaires annuels des classes de revenus, secteur non agricole, du 1er juillet 1982 au 21 octobre 1989
+metadata:
+  order:
+  - classe_1
+  - classe_2
+  - classe_3
+  - classe_4
+  - classe_5
+  - classe_6
+documentation: |-
+  Six classes en dinars, au choix de l'assuré, servent d'assiette aux cotisations et, par leur
+  moyenne pondérée sur la carrière, de revenu de référence (articles 7 et 19 du décret
+  n° 82-1359). Le décret n° 89-1611 les remplace le 22 octobre 1989 par neuf classes en multiples
+  du SMIG (`classes_smig`), et convertit les cotisations versées de 1982 à 1988 en coefficients du
+  SMIG selon un tableau par année et par classe (article 3), qui n'est pas versé ici.

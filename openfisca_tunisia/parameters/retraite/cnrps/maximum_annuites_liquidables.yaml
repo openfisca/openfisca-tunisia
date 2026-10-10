@@ -1,0 +1,38 @@
+description: Maximum des annuités liquidables dans les pensions d'ancienneté ou proportionnelles
+values:
+  1959-04-01:
+    value: 40
+  1985-09-12:
+    value: null
+metadata:
+  unit: year
+  reference:
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 20, § III, et article 52"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 95, lu à l'image. Article 20, § III : « Le maximum des annuités liquidables dans les pensions d'ancienneté ou proportionnelle est fixé à 40 annuités. » L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature."
+    - title: "Loi n° 59-100 du 20 août 1959, complétant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article premier (article 52, alinéa 1er nouveau)"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo04459.pdf"
+      note: "JORT n° 44, fascicule des 25-28 août 1959, p. 913. Les dispositions de la loi n° 59-18 sont applicables à compter du 1er avril 1959 aux fonctionnaires et à leurs ayants droit ; elles prennent effet au 3 mai 1956 pour les militaires et leurs ayants droit, date qui n'est pas versée ici."
+    1985-09-12:
+    - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, articles 35, 38, 75 et 76"
+      href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
+      note: "JORT n° 20 du 12 mars 1985, pp. 361-362, lu à l'image. L'article 35 fonde la liquidation sur la durée des services, subdivisée en annuités et trimestres ; l'article 38 fixe le rendement des annuités — 2 % pour les dix premières années, 3 % pour les dix suivantes, 2 % « pour les autres années » — et limite la pension à 90 % de la rémunération de liquidation. Aucun des deux ne fixe de maximum d'annuités. L'article 76 abroge la loi n° 59-18, à l'exception des dispositions relatives à l'invalidité. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
+documentation: |-
+  Sous la loi n° 59-18, le maximum de quarante annuités et le plafond du taux sont deux règles
+  distinctes (articles 20, § III, et 22, § II). À 2 % par annuité, le plafond de 60 % est
+  atteint dès trente annuités ; celui de 80 %, fixé au 1er juillet 1970 par le décret-loi
+  n° 70-1, l'est à quarante, où les deux règles se rejoignent.
+
+  Le décret-loi n° 70-1 et la loi n° 81-70 ne touchent pas à l'article 20 ; la loi n° 73-71
+  lui ajoute un paragraphe I bis, et le décret-loi n° 74-9 en remplace le paragraphe I.
+  Aucun ne touche au paragraphe III : le maximum court jusqu'à l'abrogation de la loi par la
+  loi n° 85-12. Son maintien se déduit de ce silence, aucun texte ne le reprend.
+
+  Depuis le 12 septembre 1985, aucun maximum d'annuités n'est énoncé : la valeur est nulle à
+  cette date, faute de règle, et non parce qu'un maximum nul aurait été fixé. La pension
+  n'est plus bornée que par le plafond de 90 %, atteint au terme de quarante années.
+
+  Sous la loi n° 59-18, le décompte final des annuités se fait par semestre : la fraction de
+  semestre égale ou supérieure à trois mois compte pour six mois, la fraction inférieure est
+  négligée (article 20, § II).

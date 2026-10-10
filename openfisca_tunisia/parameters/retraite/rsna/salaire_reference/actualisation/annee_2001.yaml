@@ -10,8 +10,14 @@ values:
     value: 2.31475
   2020-01-01:
     value: 2.19128
+  2019-01-01:
+    value: 2.05183
   2018-01-01:
     value: 1.90948
+  2017-01-01:
+    value: 1.81301
+  2016-01-01:
+    value: 1.74727
   2015-01-01:
     value: 1.66850
   2014-01-01:
@@ -99,10 +105,22 @@ metadata:
     - title: "Arrêté du ministre des affaires sociales du 30 mars 2015, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
       href: "https://www.pist.tn/jort/2015/2015F/Jo0272015.pdf"
       note: "JORT n° 27 du 3 avril 2015, pp. 603-604. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2015."
+    2016-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 1er mars 2016, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2016/2016F/Jo0202016.pdf"
+      note: "JORT n° 20 du 8 mars 2016, p. 686. Barème de l'article premier ; article 2 : « Ces dispositions s'appliquent aux pensions pour lesquelles le droit est ouvert, à compter du 1er janvier 2016. » Lu à l'image ; la couche texte concorde."
+    2017-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 10 avril 2017, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2017/2017F/Jo0322017.pdf"
+      note: "JORT n° 32 du 21 avril 2017, pp. 1497-1498. Barème de l'article premier ; article 2 : « Ces dispositions s'appliquent aux pensions pour lesquelles le droit est ouvert, à compter du 1er janvier 2017. » Lu à l'image ; la couche texte concorde."
     2018-01-01:
     - title: "Arrêté du ministre des affaires sociales du 19 février 2018, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
       href: "https://www.pist.tn/jort/2018/2018F/Jo0162018.pdf"
       note: "JORT n° 16 du 23 février 2018, pp. 510-511. Barème de l'article premier ; l'article 2 l'applique aux pensions dont le droit est ouvert à compter du 1er janvier 2018."
+    2019-01-01:
+    - title: "Arrêté du ministre des affaires sociales du 5 mars 2019, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
+      href: "https://www.pist.tn/jort/2019/2019A/Ja0212019.pdf"
+      note: "JORT n° 21 du 12 mars 2019, édition arabe, p. 783. Aucune édition française de ce numéro n'a été trouvée : l'adresse de l'édition française sur pist.tn sert le fascicule arabe. L'intitulé est traduit sur le modèle des arrêtés des autres années. Barème de l'article premier ; article 2 : « تنطبق الأحكام المنصوص عليها بالفصل الأول من هذا القرار بالنسبة للجرايات التي يفتتح الحق فيها ابتداء من أول جانفي 2019 », soit aux pensions dont le droit est ouvert à compter du 1er janvier 2019. Lu à l'image ; la couche texte concorde."
     2020-01-01:
     - title: "Arrêté du ministre des affaires sociales du 23 juin 2020, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants, article premier"
       href: "https://www.pist.tn/jort/2020/2020F/Jo0612020.pdf"

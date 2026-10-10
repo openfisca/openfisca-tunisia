@@ -1,0 +1,13 @@
+description: Coefficients multiplicateurs du SMAG des trois catégories de revenus, secteur agricole, du 1er juillet 1982 au 18 juillet 1995
+metadata:
+  order:
+  - categorie_1
+  - categorie_2
+  - categorie_3
+documentation: |-
+  L'assuré choisit sa catégorie. Le coefficient affecte l'assiette des cotisations, le SMAG de
+  45 jours par trimestre (article 5), et sa moyenne sur la carrière affecte le salaire de
+  référence, le SMAG de 300 jours par an (article 8).
+
+  Le décret n° 95-1166 convertit ces catégories en coefficients de ses classes : 1,333, 2 et 2,666
+  pour les dix premières années, 1, 1,5 et 2 au-delà (article 38).

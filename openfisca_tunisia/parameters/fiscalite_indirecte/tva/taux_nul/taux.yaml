@@ -1,6 +1,15 @@
-description: Valeur du taux de TVA de 0%
+description: Taux nul de la taxe sur la valeur ajoutée (opérations exonérées)
 values:
-  '2021-01-01':
+  1988-07-01:
     value: 0.0
 metadata:
   unit: /1
+  short_label: Taux nul
+  reference:
+    1988-07-01:
+    - title: "Loi n° 88-61 du 2 juin 1988, portant promulgation du code de la taxe sur la valeur ajoutée, article 4 du code et tableau « A »"
+      href: https://www.pist.tn/jort/1988/1988F/Jo03988.pdf
+      note: "JORT n° 39 du 10 juin 1988, pp. 827 à 846 ; tableau « A » aux pp. 833 à 836, lu à l'image. Le code ne fixe aucun taux de 0 % : son article 7 ne connaît que le taux général et les taux des tableaux annexés. La valeur nulle tient lieu de l'exonération de l'article 4 — « Sont exonérées de la taxe sur la valeur ajoutée les opérations reprises au tableau A figurant en annexe » —, qui ne supporte aucune taxe au stade de l'opération exonérée. Elle ne dit rien de la taxe d'amont restée à la charge de l'opérateur exonéré. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja03988.pdf"
+    - title: "Décret n° 88-1109 du 11 juin 1988, fixant le calendrier d'application de la taxe sur la valeur ajoutée et du droit de consommation, article premier"
+      href: https://www.pist.tn/jort/1988/1988F/Jo04288.pdf
+      note: "JORT n° 42 du 21 juin 1988, p. 923, lu à l'image. Article premier : les dispositions du code sont applicables à compter du 1er juillet 1988, à l'exception de celles de l'article premier II-3 et des articles 16 et 17 I et II-1. L'article 6 de la loi n° 88-61 renvoyait la mise en application du code à un calendrier fixé par décret. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja04288.pdf"

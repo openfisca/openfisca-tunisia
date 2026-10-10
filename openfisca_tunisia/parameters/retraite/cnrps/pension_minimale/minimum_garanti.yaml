@@ -19,8 +19,11 @@ documentation: |-
   Pension minimale servie aux agents qui justifient de la durée de services requise.
 
   Le paramètre commence le 1er mai 1981, date d'effet de l'article 4 de la loi n° 81-70.
-  Le texte antérieur, la loi n° 59-18 du 5 février 1959, n'a pas été lu pour cette
-  période : aucune valeur n'est portée avant le 1er mai 1981.
+  Auparavant, le plancher ne s'exprime pas en part du SMIG, mais par référence à la
+  rémunération afférente à l'indice 100 : traitement de l'indice 100 pour une pension de
+  trente annuités dans la loi n° 59-18 (article 22, § II), puis 60 % des émoluments globaux
+  de l'indice 100 à compter du 1er juillet 1970 (décret-loi n° 70-1). Ces états sont portés
+  par `indice_100`.
 
   Aucun texte de la chaîne modificative de la loi n° 85-12 lue jusqu'au 10 avril 2026 ne
   modifie l'article 39.

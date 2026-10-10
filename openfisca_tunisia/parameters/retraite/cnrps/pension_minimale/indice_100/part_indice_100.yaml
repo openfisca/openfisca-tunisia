@@ -1,0 +1,40 @@
+description: Pension minimale, en part de la rémunération afférente à l'indice 100
+values:
+  1959-04-01:
+    value: 1
+  1970-07-01:
+    value: 0.6
+  1981-05-01:
+    value: null
+metadata:
+  unit: remuneration_indice_100
+  reference:
+    1959-04-01:
+    - title: "Loi n° 59-18 du 5 février 1959, fixant le régime des pensions civiles et militaires de retraite, article 22, § II, et article 52"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo00859.pdf"
+      note: "JORT n° 8, fascicule des 3-6 février 1959, p. 95, lu à l'image. Article 22, § II : la pension « ne peut être inférieure : a) Pour les pensions basées sur 30 annuités, au traitement soumis à retenue afférent à l'indice 100. b) Pour les pensions proportionnelles basées sur moins de 30 annuités, au montant de la pension calculée à raison de 4 % du traitement soumis à retenue par annuité liquidable des services et bonifications énumérés à l'article 11, sans pouvoir excéder le montant du traitement soumis à retenue afférent à l'indice 100. » L'article 52 rend la loi applicable aux fonctionnaires et à leurs ayants droit dont les droits à pension s'ouvrent à compter du 1er avril 1959 ; le 5 février 1959 est la date de signature."
+    - title: "Loi n° 59-100 du 20 août 1959, complétant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article premier (article 52, alinéa 1er nouveau)"
+      href: "https://www.pist.tn/jort/1959/1959F/Jo04459.pdf"
+      note: "JORT n° 44, fascicule des 25-28 août 1959, p. 913. Les dispositions de la loi n° 59-18 sont applicables à compter du 1er avril 1959 aux fonctionnaires et à leurs ayants droit ; elles prennent effet au 3 mai 1956 pour les militaires et leurs ayants droit, date qui n'est pas versée ici."
+    1970-07-01:
+    - title: "Décret-loi n° 70-1 du 14 septembre 1970, modifiant la loi n° 59-18 du 5 février 1959 fixant le régime des pensions civiles et militaires de retraite, article 1er (article 22, § II nouveau) et article 2"
+      href: "https://www.pist.tn/jort/1970/1970F/Jo04370.pdf"
+      note: "JORT n° 43, fascicule des 11-15-18 septembre 1970, p. 1186, lu à l'image. Article 22, § II nouveau : la pension « ne peut être inférieure pour la pension d'ancienneté ou proportionnelle à 60 % des émoluments globaux indiciaires afférents à l'indice 100 ». L'article 2 (p. 1187) fait procéder à une nouvelle liquidation des pensions « à compter du 1er juillet 1970, suivant les modalités de calcul prévues dans l'article 1er »."
+    1981-05-01:
+    - title: "Loi n° 81-70 du 1er août 1981, modifiant la loi de finances pour la gestion 1981, article 4 (article 22, § II nouveau de la loi n° 59-18)"
+      href: "https://www.pist.tn/jort/1981/1981F/Jo05181.pdf"
+      note: "JORT n° 51 du 7 août 1981, p. 1789 : la rémunération des annuités liquidées « ne peut être inférieure pour la pension d'ancienneté ou proportionnelle aux 2/3 du SMIG selon les conditions qui seront fixées par décret ». L'article 5 énonce : « L'article 4 de la présente loi prend effet à compter du 1er mai 1981 » (p. 1790)."
+documentation: |-
+  La rémunération de référence change avec le décret-loi n° 70-1 : le traitement soumis à
+  retenue afférent à l'indice 100 jusqu'au 30 juin 1970, les émoluments globaux indiciaires
+  afférents à l'indice 100 ensuite. La même unité couvre les deux, faute de pouvoir les
+  distinguer par la valeur.
+
+  Du 1er avril 1959 au 30 juin 1970, ce plancher vaut pour les pensions basées sur trente
+  annuités (`annuites_pension_pleine`) ; les pensions proportionnelles de moins de trente
+  annuités ont leur propre plancher (`taux_par_annuite_proportionnelle`), limité à ce même
+  montant. À compter du 1er juillet 1970, le plancher de 60 % vaut pour la pension
+  d'ancienneté comme pour la pension proportionnelle, quel que soit le nombre d'annuités.
+
+  Depuis le 1er mai 1981, la pension minimale s'exprime en part du SMIG
+  (`retraite.cnrps.pension_minimale.minimum_garanti`).

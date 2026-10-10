@@ -1,0 +1,17 @@
+description: Durée annuelle de travail à laquelle le SMAG est rapporté pour le salaire de référence, secteur agricole
+values:
+  1982-07-01:
+    value: 300
+  1995-07-19:
+    value: null
+metadata:
+  unit: day
+  reference:
+    1982-07-01:
+    - title: "Décret n° 82-1360 du 21 octobre 1982, relatif à la sécurité sociale des exploitants et travailleurs indépendants dans l'agriculture, article 8"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo06682.pdf"
+      note: "JORT n° 66 des 19-22 octobre 1982, p. 2196, lu à l'image. Article 8 : « L'âge d'admission à la retraite est fixé à 65 ans. Le salaire annuel moyen de référence est égal au salaire minimum agricole garanti rapporté à une durée de travail de 300 jours par an affecté d'un coefficient multiplicateur égal à la moyenne des coefficients ayant servi de base au calcul des cotisations au cours de l'ensemble de la carrière de l'assuré. » L'article 18 (p. 2197) énonce que le décret « prend effet à compter du 1er juillet 1982 »."
+    1995-07-19:
+    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 39"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
+      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Article 39 : « Sont abrogées toutes dispositions antérieures contraires et notamment les décrets susvisés n° 82-1359 et n° 82-1360 du 21 octobre 1982. » Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 14 juillet 1995."

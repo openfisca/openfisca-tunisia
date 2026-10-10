@@ -9,6 +9,9 @@ encodé. Une erreur de seuil ou de taux casse cette seconde vérification.
 """
 
 
+import pytest
+from openfisca_core.errors.parameter_not_found_error import ParameterNotFoundError
+
 from openfisca_tunisia import TunisiaTaxBenefitSystem
 
 tax_benefit_system = TunisiaTaxBenefitSystem()
@@ -123,5 +126,13 @@ def test_plafond_de_cotisation():
     assert plafond(1962) == 0.40
     assert plafond(1965) == 0.45
     assert plafond(1980) == 0.55
-    assert plafond(1983) == 0.60
+    assert plafond(1982) == 0.55
+    # Loi n° 82-91, art. 9 : l'article 8 nouveau ne comporte aucun plafond (revenus 1983-1985).
+    # La valeur nulle rend le paramètre introuvable à ces dates : une lecture échoue
+    # explicitement au lieu de rendre un plafond que le texte ne fixe pas.
+    for annee in (1983, 1985):
+        with pytest.raises(ParameterNotFoundError):
+            plafond(annee)
+    # Loi n° 85-109, art. 8, paragraphe 2 : 60 % du revenu global imposable.
+    assert plafond(1986) == 0.60
     assert plafond(1989) == 0.60

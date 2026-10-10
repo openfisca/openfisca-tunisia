@@ -1,0 +1,63 @@
+description: Allocation familiale au titre des enfants âgés de 6 à 18 ans, montant mensuel par enfant à charge
+values:
+  2025-11-09:
+    value: 30
+metadata:
+  unit: currency
+  reference:
+    2025-11-09:
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 3 novembre 2025, fixant les conditions d'octroi de l'allocation familiale au titre des enfants âgés de 6 à 18 ans et son montant, article 2"
+      href: https://www.pist.tn/jort/2025/2025F/Jo1322025.pdf
+      note: "JORT n° 132 du 4 novembre 2025, p. 2963 : « Art. 2 - Le montant de l'allocation familiale au titre des enfants âgés de 6 à 18 ans est fixé à trente (30) dinars par mois pour chaque enfant à charge. » L'arrêté ne porte pas de clause d'entrée en vigueur (son article 3 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 4 novembre 2025 » : exécutoire le 9 novembre 2025."
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 3 novembre 2025, fixant les conditions d'octroi de l'allocation familiale au titre des enfants âgés de 6 à 18 ans et son montant, article 2 (édition arabe)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja1322025.pdf
+      note: "الرائد الرسمي عدد 132 بتاريخ 4 نوفمبر 2025، ص. 3415 : « الفصل 2 - يحدد مقدار المنحة العائلية بعنوان الأطفال الذين تتراوح أعمارهم بين 6 سنوات و18 سنة بثلاثين (30) دينارا شهريا عن كل طفل في الكفالة. »"
+    - title: "Décret n° 2025-426 du 2 octobre 2025, portant institution d'une allocation familiale pour les enfants âgés de 6 à 18 ans, articles premier et 2"
+      href: https://www.pist.tn/jort/2025/2025F/Jo1212025.pdf
+      note: "JORT n° 121 du 3 octobre 2025, p. 2518. Le décret institue l'allocation et renvoie son montant à l'arrêté ; il ne fixe pas de montant. « Article premier - Il est institué une allocation familiale au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans. Les conditions d'attribution de la dite allocation familiale et son montant sont fixés par arrêté conjoint du ministre chargé des affaires sociales et du ministre chargé des finances. Art. 2 - Les dispositions de l'article premier du présent décret entrent en vigueur à compter du 1er janvier 2025. »"
+    - title: "Décret n° 2025-426 du 2 octobre 2025, portant institution d'une allocation familiale pour les enfants âgés de 6 à 18 ans, articles premier et 2 (édition arabe)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja1212025.pdf
+      note: "الرائد الرسمي عدد 121 بتاريخ 3 أكتوبر 2025، ص. 2944 : « الفصل الأول - تسند منحة عائلية لفائدة الأسر الفقيرة ومحدودة الدخل بعنوان الأطفال الذين تتراوح أعمارهم بين 6 سنوات و18 سنة. […] الفصل 2 - تدخل أحكام الفصل الأول من هذا الأمر حيز النفاذ بداية من 1 جانفي 2025. »"
+  official_journal_date:
+    2025-11-09: "2025-11-04"
+documentation: |
+  Allocation familiale servie aux familles pauvres et aux familles à revenu limité au titre des
+  enfants âgés de 6 à 18 ans : trente dinars par mois pour chaque enfant à charge.
+
+  Deux textes. Le décret n° 2025-426 du 2 octobre 2025 institue l'allocation et renvoie ses
+  conditions et son montant à un arrêté conjoint ; son article 2 fait entrer cette institution en
+  vigueur « à compter du 1er janvier 2025 ». L'arrêté conjoint du 3 novembre 2025 fixe le montant
+  (article 2) et les conditions (article premier) ; il ne porte aucune clause d'effet.
+
+  Date retenue : le 9 novembre 2025. Le montant est fixé par l'arrêté et par lui seul ; l'arrêté ne
+  dit pas depuis quand il s'applique ; il devient exécutoire cinq jours après le dépôt du fascicule
+  au siège du gouvernorat de Tunis (4 novembre 2025), le jour du dépôt n'étant pas compté (loi
+  n° 93-64, article 2). La date du 1er janvier 2025 est celle que le décret donne à l'institution de
+  l'allocation, non au montant : dater les trente dinars du 1er janvier 2025 combinerait deux textes
+  dont aucun ne le dit expressément. La lecture inverse se défend — l'arrêté est pris pour
+  l'application d'un article entré en vigueur le 1er janvier 2025 et fixe le seul montant que
+  l'allocation ait jamais eu —, et elle n'est pas écartée ici par un texte : entre le 1er janvier et
+  le 8 novembre 2025, l'allocation existe en droit et son montant n'est fixé par aucun texte publié.
+  Aucune valeur n'est portée avant le 9 novembre 2025.
+
+  Bornes d'âge. Les deux textes disent « âgés de 6 ans à 18 ans » (الذين تتراوح أعمارهم بين
+  6 سنوات و18 سنة) sans préciser si la dix-huitième année est comprise. Les enfants de moins de six
+  ans relèvent de l'allocation familiale de l'article 11 bis de la loi organique n° 2019-10
+  (`allocation_familiale`).
+
+  Conditions (arrêté, article premier) : les familles pauvres et les familles à revenu limité
+  doivent bénéficier des avantages sociaux « conformément au registre des données sociales » de la
+  loi organique n° 2019-10 ; « les familles à revenu limité affiliées à l'un des régimes de sécurité
+  sociale sont exclues ». L'édition française du décret écrit « à faible revenu » là où l'arrêté et
+  les textes de 2019 à 2022 disent « à revenu limité » ; l'arabe est constant (محدودة الدخل).
+
+  Ce que les textes ne disent pas : aucune majoration pour l'enfant handicapé, aucun plafond du
+  nombre d'enfants, aucune règle d'articulation avec le supplément de 10 dinars par enfant à charge
+  du transfert monétaire permanent (`amen_social.supplements.enfant_a_charge`), que les arrêtés
+  de 2023 à 2026 n'ont ni abrogé ni modifié.
+
+  Aucune valeur n'est portée pour 2022 à 2024 : aucun texte publié ne fonde alors une aide mensuelle
+  aux enfants de 6 à 18 ans.
+
+  Lu dans les deux éditions des deux fascicules : décret, édition française p. 2518, édition arabe
+  p. 2944 ; arrêté, édition française p. 2963, édition arabe p. 3415.

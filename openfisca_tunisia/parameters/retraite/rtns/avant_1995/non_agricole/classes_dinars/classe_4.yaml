@@ -1,0 +1,17 @@
+description: Revenu forfaitaire annuel de la classe 4, secteur non agricole, de 1982 à 1989
+values:
+  1982-07-01:
+    value: 6000
+  1989-10-22:
+    value: null
+metadata:
+  unit: currency
+  reference:
+    1982-07-01:
+    - title: "Décret n° 82-1359 du 21 octobre 1982, étendant le régime de sécurité sociale aux travailleurs indépendants dans le secteur non agricole, article 7"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo06682.pdf"
+      note: "JORT n° 66 des 19-22 octobre 1982, p. 2193, lu à l'image. Article 7 : les cotisations sont assises sur un revenu forfaitaire déterminé en fonction de la classe de revenus à laquelle appartient l'assuré ; assiette forfaitaire annuelle : classe 1 (revenu jusqu'à 1000 D), 660 D ; classe 2 (de 1001 à 3000 D), 2000 D ; classe 3 (de 3001 à 5000 D), 4000 D ; classe 4 (de 5001 à 7000 D), 6000 D ; classe 5 (de 7001 à 10000 D), 8500 D ; classe 6 (10001 D et plus), 15000 D. « L'assuré est placé selon son choix dans l'une de ces 6 classes. Le montant des revenus forfaitaires servant de base au calcul des cotisations et des prestations sera révisé en cas de hausse sensible du niveau de vie. » L'article 26 (p. 2195) énonce que le décret « prend effet à compter du 1er juillet 1982 »."
+    1989-10-22:
+    - title: "Décret n° 89-1611 du 10 octobre 1989, modifiant et complétant le décret n° 82-1359 du 21 octobre 1982, étendant le régime de sécurité sociale aux travailleurs indépendants dans le secteur non agricole, article premier (article 7 nouveau du décret n° 82-1359)"
+      href: "https://www.pist.tn/jort/1989/1989F/Jo07089.pdf"
+      note: "JORT n° 70 du 20 octobre 1989, p. 1653, lu à l'image. L'article premier abroge et remplace les articles 1er, 4 alinéa 4, 7, 17 alinéa 2, 19, 23 et 24 du décret n° 82-1359 ; les classes en dinars font place à neuf classes en multiples du SMIG. Le décret ne porte pas de clause d'entrée en vigueur : publié au Journal officiel du vendredi 20 octobre 1989, il devient exécutoire un jour franc après sa publication, soit le 22 octobre 1989 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Le décret n° 93-357 du 8 février 1993, qui proroge « à compter du 22 octobre 1992 » le délai de trois ans ouvert par l'article 24 nouveau, retient le même point de départ."

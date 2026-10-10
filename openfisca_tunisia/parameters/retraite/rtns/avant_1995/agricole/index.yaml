@@ -1,0 +1,17 @@
+description: Régime des exploitants et travailleurs indépendants du secteur agricole, du 1er juillet 1982 au 18 juillet 1995
+metadata:
+  order:
+  - age_legal
+  - jours_annuels_smag
+  - coefficients
+  - allocation_vieillesse_trimestres
+documentation: |-
+  Décret n° 82-1360 du 21 octobre 1982, effet au 1er juillet 1982 (article 18). Il étend aux
+  travailleurs indépendants, métayers et exploitants agricoles les régimes de la loi n° 81-6
+  (article 1er), « compte-tenu des particularités prévues au présent décret » (article 7).
+
+  Ne sont versées ici que les grandeurs que le décret énonce lui-même. Le taux de la pension, sa
+  majoration, son plafond et le stage ne sont pas énoncés par le décret : ils viennent de la loi
+  n° 81-6 par le renvoi des articles 1er et 7, et sont ceux du régime des salariés agricoles
+  (`retraite.rsa`). Le décret ne prévoit pas de pension minimale ; le décret n° 95-1166 en crée
+  une au 19 juillet 1995.

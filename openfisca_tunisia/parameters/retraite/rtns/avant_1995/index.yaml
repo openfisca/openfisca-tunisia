@@ -1,0 +1,18 @@
+description: Régimes des travailleurs non salariés antérieurs à la fusion de 1995, par secteur
+metadata:
+  order:
+  - non_agricole
+  - agricole
+documentation: |-
+  Du 1er juillet 1982 au 18 juillet 1995, les non-salariés relèvent de deux régimes distincts : le
+  décret n° 82-1359 pour le secteur non agricole, modifié par le décret n° 89-1611, et le décret
+  n° 82-1360 pour le secteur agricole. Tous deux prennent effet au 1er juillet 1982 (articles 26
+  et 18). Le décret n° 95-1166 les fusionne et les abroge (article 39) : leurs paramètres
+  prennent fin le 19 juillet 1995, date à laquelle commencent ceux du régime fusionné, un niveau
+  plus haut dans l'arbre.
+
+  Les deux régimes ne portent pas les mêmes grandeurs. Le décret non agricole fixe lui-même
+  l'âge, le taux, la majoration, le plafond et le minimum de la pension. Le décret agricole
+  étend aux exploitants la loi n° 81-6 (article 1er) « compte-tenu des particularités prévues au
+  présent décret » (article 7) : il ne fixe lui-même que l'âge, le salaire de référence et les
+  catégories de revenus, le reste venant du régime des salariés agricoles par ce renvoi.

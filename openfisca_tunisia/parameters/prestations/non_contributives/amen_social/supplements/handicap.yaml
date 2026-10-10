@@ -1,15 +1,34 @@
 description: Coefficient appliqué au supplément en cas de handicap
 values:
-  2020-05-20:
+  2020-05-25:
     value: 2
 metadata:
   unit: /1
   reference:
-    2020-05-20:
-      title: Dernier alinéa de l'article 2 de l'arrêté conjoint du 19 mai 2020
+    2020-05-25:
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article 2, dernier alinéa"
+      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+      note: "JORT n° 45 du 20 mai 2020, p. 1097 : « Le montant de l'allocation supplémentaire est doublé au titre de chaque enfant titulaire d'une carte de handicap. » L'arrêté ne porte pas de clause d'entrée en vigueur (son article 3 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 20 mai 2020 » : exécutoire le 25 mai 2020."
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article 2, dernier alinéa (édition arabe)"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0452020.pdf
+      note: "الرائد الرسمي عدد 45 بتاريخ 20 ماي 2020، ص. 1251 : « ويضاعف مقدار المنحة الإضافية مرة واحدة بعنوان كل طفل حامل لبطاقة إعاقة. »"
+  official_journal_date:
+    2020-05-25: "2020-05-20"
 documentation: |
-  Référence apocryphe corrigée. Le paramètre citait un « arrêté 931 du 20 mai 2020 » : cette
-  référence n'existe pas sous cette forme. La disposition figure au dernier alinéa de l'article 2
-  de l'arrêté conjoint du 19 mai 2020.
+  Le supplément par enfant à charge est doublé pour l'enfant titulaire d'une carte de handicap
+  (dernier alinéa de l'article 2 de l'arrêté conjoint du 19 mai 2020) : 20 dinars au lieu de 10.
 
-  Date corrigée : 20 mai 2020 et non 1er janvier 2020.
+  L'arrêté du 1er avril 2022 (JORT n° 38 du 8 avril 2022, p. 973 de l'édition française, p. 989 de
+  l'édition arabe) reproduit la même phrase à la suite du deuxième tiret qu'il remplace, sans la
+  modifier.
+
+  Date corrigée. La valeur était datée du 20 mai 2020, jour de la publication de l'arrêté. L'arrêté
+  conjoint du 19 mai 2020 ne porte pas de clause d'effet : il devient exécutoire cinq jours après le
+  dépôt du fascicule au siège du gouvernorat de Tunis (20 mai 2020), le jour du dépôt n'étant pas
+  compté (loi n° 93-64, article 2), soit le 25 mai 2020. Aucune valeur n'est portée avant cette
+  date.
+
+  Références complétées : le paramètre citait le dernier alinéa de l'article 2 sans fascicule, page
+  ni lien.
+
+  Lu dans les deux éditions du fascicule : édition française p. 1097, édition arabe p. 1251.

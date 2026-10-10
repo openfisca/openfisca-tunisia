@@ -1,0 +1,22 @@
+description: Coefficients multiplicateurs du SMIG des classes de revenus, secteur non agricole, du 22 octobre 1989 au 18 juillet 1995
+metadata:
+  order:
+  - classe_1
+  - classe_2
+  - classe_3
+  - classe_4
+  - classe_5
+  - classe_6
+  - classe_7
+  - classe_8
+  - classe_9
+documentation: |-
+  Le coefficient multiplie le SMIG du régime de 48 heures rapporté à 2 400 heures par an
+  (`heures_annuelles_smig`). Le revenu de référence est la moyenne pondérée des coefficients
+  des classes auxquelles l'assuré a adhéré, rapportée à la valeur du SMIG en vigueur au moment
+  de la liquidation (article 19 nouveau du décret n° 82-1359, rédaction du décret n° 89-1611).
+  Pour les assurés des classes 8 et 9, l'adhésion au régime des assurances sociales est
+  facultative (article 4, alinéa 4 nouveau).
+
+  Le décret n° 95-1166 les remplace le 19 juillet 1995 par dix classes, de 1 à 18 fois le salaire
+  minimum, communes aux deux secteurs (`retraite.rtns.revenu_reference.classes`).

@@ -1,0 +1,24 @@
+description: Plancher des pensions de vieillesse et d'invalidité, en part du SMIG annuel, secteur non agricole
+values:
+  1982-07-01:
+    value: 0.5
+  1995-07-19:
+    value: null
+metadata:
+  unit: /1
+  reference:
+    1982-07-01:
+    - title: "Décret n° 82-1359 du 21 octobre 1982, étendant le régime de sécurité sociale aux travailleurs indépendants dans le secteur non agricole, article 22"
+      href: "https://www.pist.tn/jort/1982/1982F/Jo06682.pdf"
+      note: "JORT n° 66 des 19-22 octobre 1982, p. 2195, lu à l'image. Article 22 : « Le montant annuel des pensions de vieillesse ou d'invalidité liquidées en application des articles 20 et 21 du présent décret ne peut être inférieur à la moitié du SMIG rapporté à une durée d'occupation annuel de 2400 heures. » L'article 26 (p. 2195) énonce que le décret « prend effet à compter du 1er juillet 1982 »."
+    1995-07-19:
+    - title: "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole, article 39"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf"
+      note: "JORT n° 55 du 11 juillet 1995, pp. 1486-1489. Article 39 : « Sont abrogées toutes dispositions antérieures contraires et notamment les décrets susvisés n° 82-1359 et n° 82-1360 du 21 octobre 1982. » Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 14 juillet 1995."
+documentation: |-
+  Le SMIG est celui du régime de 48 heures, rapporté à une durée d'occupation annuelle de
+  2 400 heures (`heures_annuelles_smig`). Pendant la période transitoire, lorsque le total des
+  trimestres cotisés et validés ne dépasse pas 40, la pension est servie au prorata et ce plancher
+  ne s'applique pas (article 24).
+
+  Le décret n° 95-1166 l'abaisse à 30 % au 19 juillet 1995 (`retraite.rtns.plancher_taux`).
