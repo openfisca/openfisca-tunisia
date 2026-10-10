@@ -1,0 +1,29 @@
+description: "Taxe sur les établissements à caractère industriel, commercial ou professionnel"
+metadata:
+  short_label: "Taxe sur les établissements"
+  order:
+  - taux
+  - minimum
+  - maximum
+  - seuil_affectation_excedent
+documentation: |-
+  Taxe due par les personnes physiques soumises à l'impôt sur le revenu au titre des bénéfices
+  industriels et commerciaux ou des bénéfices des professions non commerciales, et par les
+  personnes morales soumises à l'impôt sur les sociétés (code de la fiscalité locale, chapitre
+  III, articles 35 à 40).
+
+  La taxe est calculée sur le chiffre d'affaires brut ou, pour certains redevables, sur l'impôt
+  sur le revenu ou l'impôt sur les sociétés (article 37) ; son taux dépend de l'assiette (article
+  38, paragraphe I). Elle ne peut être inférieure à un minimum par mètre carré de superficie
+  couverte des immeubles exploités, dû même sans chiffre d'affaires (article 38, paragraphe II).
+  Jusqu'au 31 décembre 2011, elle ne pouvait excéder un maximum fixé par décret, le minimum
+  restant dû s'il le dépassait (article 38, paragraphe III, supprimé à partir du 1er janvier
+  2012).
+
+  Depuis le 1er janvier 2013, la part du produit de la taxe qui dépasse un seuil annuel par
+  établissement est affectée à un fonds, par une disposition de loi de finances extérieure au
+  code.
+
+  Le code entre en vigueur le 1er janvier 1997 ; les décrets qui fixent le minimum et le maximum
+  ne sont exécutoires que le 13 mars 1997 : ni l'un ni l'autre n'a de montant entre ces deux
+  dates.

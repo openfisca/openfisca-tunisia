@@ -1,0 +1,25 @@
+description: "Part du produit de la taxe hôtelière affectée au fonds de protection des zones touristiques"
+values:
+  1997-01-01:
+    value: 0.5
+metadata:
+  unit: /1
+  short_label: "Part affectée au fonds"
+  reference:
+    1997-01-01:
+    - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 53 et 54"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: "JORT n° 105 du 31 décembre 1996, p. 2583. Article 53, sous la rubrique « Modification de l'article 39 de la loi n° 92-122 du 29 décembre 1992 portant loi de finances pour la gestion 1993 » : « Les dispositions du premier tiret de l'article 39 de la loi n° 92-122 du 29 décembre 1992 portant loi de finances pour la gestion 1993 sont modifiées comme suit : \"cinquante pour cent du produit de la taxe hôtelière instituée au profit des collectivités locales en vertu de la législation en vigueur...................... le reste sans changement\". » Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997 ». Édition française lue sur la couche texte du fascicule, p. 2583 ; l'article 39 de la loi n° 92-122, qui institue le fonds et en énumère les ressources, n'est pas lu, ni l'édition arabe : https://www.pist.tn/jort/1996/1996A/Ja10596.pdf"
+documentation: |-
+  Fraction du produit de la taxe hôtelière qui ne revient pas aux collectivités locales mais à un
+  fonds spécial du Trésor, en vertu de l'article 39 de la loi n° 92-122 du 29 décembre 1992,
+  portant loi de finances pour la gestion 1993, dans la rédaction que lui donne la loi de
+  finances pour la gestion 1997. La disposition est extérieure au code de la fiscalité locale.
+
+  La série commence le 1er janvier 1997, date d'application de la loi de finances pour 1997 et
+  d'entrée en vigueur du code. L'article 39 de la loi n° 92-122 n'est pas lu dans sa rédaction
+  initiale : la part affectée au fonds avant 1997, sur la taxe hôtelière de la loi n° 75-34 du
+  14 mai 1975, n'est pas versée. Le nom du fonds — fonds de protection des zones touristiques —
+  n'est pas lu dans l'article 53, qui ne cite que le premier tiret modifié.
+
+  Aucune modification ultérieure de cette part n'est relevée.

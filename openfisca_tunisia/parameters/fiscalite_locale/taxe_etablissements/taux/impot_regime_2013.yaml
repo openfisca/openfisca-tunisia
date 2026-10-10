@@ -1,0 +1,28 @@
+description: "Taux de la taxe sur les établissements, appliqué à l'impôt sur le revenu ou à l'impôt sur les sociétés — redevables désignés par la loi de finances pour 2013"
+values:
+  2013-01-01:
+    value: 0.25
+metadata:
+  unit: /1
+  short_label: "Impôt (régime de 2013)"
+  reference:
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 23, 24 et 79 ; code de la fiscalité locale, article 38, paragraphe I"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 8 (articles 23 et 24) et p. 28 (article 79). Article 23, p. 8 : « Les dispositions du deuxième paragraphe de l'article 37 du code de la fiscalité locale, sont modifiées comme suit : La taxe est calculée sur la base de l'impôt sur le revenu ou de l'impôt sur les sociétés pour les personnes physiques visées à l'article 44 bis du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés ainsi que pour les établissements qui enregistrent une perte justifiée par une comptabilité conforme à la législation comptable des entreprises. » Le taux est celui de l'article 38, paragraphe I, du code, que la loi ne modifie pas : « Toutefois ce taux est fixé à 25 pour-cent en ce qui concerne les personnes visées au deuxième paragraphe de l'article 37 du présent code » (JORT n° 11 du 7 février 1997, p. 177 : https://www.pist.tn/jort/1997/1997F/Jo01197.pdf). Article 24, pour les établissements qui commercialisent des produits à prix homologués : « Lesdits établissements peuvent opter pour le paiement de la taxe sur les établissements sur la base de 25% de l'impôt sur le revenu ou de l'impôt sur les sociétés. » Date d'effet : article 79, p. 28 — « Sous réserve des dispositions de l'article 58 et des dispositions du numéro 3 de l'article 63 et des dispositions du premier tiret de l'article 64, les dispositions de la présente loi sont applicables à compter du 1er janvier 2013. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja0012013.pdf"
+documentation: |-
+  Taux appliqué à l'impôt sur le revenu ou à l'impôt sur les sociétés, depuis le 1er janvier 2013
+  (code de la fiscalité locale, article 37, deuxième paragraphe, dans sa rédaction issue de la
+  loi de finances pour 2013), pour :
+
+  - les personnes physiques visées à l'article 44 bis du code de l'impôt sur le revenu des
+    personnes physiques et de l'impôt sur les sociétés (régime forfaitaire) ;
+  - les établissements qui enregistrent une perte justifiée par une comptabilité conforme à la
+    législation comptable des entreprises.
+
+  Le même taux de 25 % de l'impôt est ouvert, sur option exercée en janvier, aux établissements
+  qui commercialisent des produits à prix homologués à faible marge
+  (`produits_prix_homologues`).
+
+  Les établissements à marge bénéficiaire brute réglementée d'au plus 4 %, taxés sur leur impôt
+  jusqu'au 31 décembre 2012 (`impot_regime_1997`), ne figurent plus dans la liste.

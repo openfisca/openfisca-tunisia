@@ -4,11 +4,18 @@ metadata:
   order:
   - taxe_immeubles_batis
   - taxe_terrains_non_batis
+  - taxe_etablissements
+  - taxe_hoteliere
 documentation: |-
   Impôts et taxes perçus au profit des collectivités locales, régis par le code de la fiscalité
   locale. Le code est promulgué par la loi n° 97-11 du 3 février 1997 (JORT n° 11 du 7 février
   1997, pp. 173 à 181) et entre en vigueur le 1er janvier 1997 (article 3 de la loi).
 
   Un sous-nœud par prélèvement, dans l'ordre des chapitres du code. Sont versés ici le chapitre
-  premier (taxe sur les immeubles bâtis, articles 1 à 29) et le chapitre II (taxe sur les terrains
-  non bâtis, articles 30 à 34).
+  premier (taxe sur les immeubles bâtis, articles 1 à 29), le chapitre II (taxe sur les terrains
+  non bâtis, articles 30 à 34), le chapitre III (taxe sur les établissements à caractère
+  industriel, commercial ou professionnel, articles 35 à 40) et le chapitre IV (taxe hôtelière,
+  articles 41 à 45).
+
+  Les deux taxes des chapitres III et IV ont été instituées par deux lois du 14 mai 1975, que la
+  loi n° 97-11 abroge : rien n'est versé ici pour la période antérieure au 1er janvier 1997.
