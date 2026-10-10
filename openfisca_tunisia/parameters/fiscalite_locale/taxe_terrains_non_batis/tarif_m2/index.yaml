@@ -1,0 +1,22 @@
+description: "Tarif par mètre carré de la taxe sur les terrains non bâtis, selon la densité de la zone"
+metadata:
+  short_label: "Tarif par mètre carré"
+  order:
+  - haute_densite
+  - moyenne_densite
+  - basse_densite
+documentation: |-
+  Montant de la taxe par mètre carré, en dinars, dû à défaut de valeur vénale du terrain, pour
+  chaque zone délimitée par le plan d'aménagement urbain (code de la fiscalité locale, article 33,
+  deuxième paragraphe). Le code prévoit que ce tarif est fixé par décret tous les trois ans.
+  Trois décrets l'ont fixé :
+
+  - décret n° 97-432 du 3 mars 1997 (JORT n° 19 du 7 mars 1997, p. 389), exécutoire le 13 mars
+    1997 ;
+  - décret n° 2007-1186 du 14 mai 2007 (JORT n° 40 du 18 mai 2007, p. 1647), applicable à compter
+    du 1er janvier 2008, qui abroge le précédent ;
+  - décret gouvernemental n° 2017-396 du 28 mars 2017 (JORT n° 26 du 31 mars 2017,
+    pp. 1190-1191), applicable à compter du 1er janvier 2017, qui abroge le précédent.
+
+  Le code entre en vigueur le 1er janvier 1997 et le premier décret n'est exécutoire que le
+  13 mars 1997 : aucun tarif n'est fixé entre ces deux dates.

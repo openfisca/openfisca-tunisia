@@ -1,0 +1,16 @@
+description: "Taux de la taxe sur les terrains non bâtis, appliqué à la valeur vénale réelle du terrain"
+values:
+  1997-01-01:
+    value: 0.003
+metadata:
+  unit: /1
+  short_label: "Taux sur la valeur vénale"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 33, premier paragraphe ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 176 (article 33, premier paragraphe du code) et p. 173 (article 3 de la loi). Article 33 : « La taxe est due au taux de 0.3 pour-cent de la valeur vénale réelle des terrains. » Édition arabe : « يوظف المعلوم بنسبة 0,3 بالمائة على القيمة التجارية الحقيقية للاراضي ». Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 176 ; édition arabe : article 33, premier paragraphe du code lu à l'image, p. 176 ; l'article 3 de la loi n'est lu que dans l'édition française. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+documentation: |-
+  Taux appliqué à la valeur vénale réelle du terrain (code de la fiscalité locale, article 33,
+  premier paragraphe). À défaut de valeur vénale, la taxe est due par mètre carré, selon le tarif
+  fixé par décret pour chaque zone (même article, deuxième paragraphe).

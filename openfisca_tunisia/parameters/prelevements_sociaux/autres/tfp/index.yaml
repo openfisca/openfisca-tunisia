@@ -1,0 +1,11 @@
+description: Taxe de formation professionnelle (TFP)
+metadata:
+  order:
+  - taux_industries_manufacturieres
+  - taux_autres_secteurs
+  - avance
+  short_label: TFP
+  label_en: Vocational training tax
+documentation: |-
+  Taxe due par l'employeur sur les salaires qu'il verse. Instituée par le décret du 12 janvier 1956 (articles 27 et 28, JORT n° 5 du 17 janvier 1956, p. 58), qui renvoie la fixation du taux à un décret ; le taux initial, fixé par le décret du 16 janvier 1957 (JORT n° 6 du 18 janvier 1957, p. 79, dont seul l'intitulé est connu ici), n'est pas établi. Aucune valeur n'est donc posée avant le 1er janvier 1967.
+  La règle est reprise par le code du travail (loi n° 66-27 du 30 avril 1966, articles 338, 364 et 365).

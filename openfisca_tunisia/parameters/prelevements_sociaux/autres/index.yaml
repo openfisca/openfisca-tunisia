@@ -1,0 +1,6 @@
+description: Autres prélèvements patronaux sur les salaires
+metadata:
+  order:
+  - tfp
+  - foprolos
+  short_label: Autres prélèvements sur les salaires

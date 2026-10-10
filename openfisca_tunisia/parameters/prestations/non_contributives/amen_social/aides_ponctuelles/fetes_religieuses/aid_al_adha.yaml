@@ -1,27 +1,44 @@
 description: Montant de l'aide ponctuelle du programme Amen social délivrée à l'occasion de l'Aïd Al Adha
 values:
-  2020-05-20:
+  2020-05-25:
     value: 60
 metadata:
   short_label: Aïd Al Adha
   unit: currency
   reference:
-    2020-05-20:
-      title: Article 4 de l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 19 mai 2020, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité, JORT n° 45 du 20 mai 2020, p. 1097
+    2020-05-25:
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité, article 4"
       href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
-    2022-12-09:
-      title: Article 4 de l'arrêté conjoint du 8 décembre 2022, JORT n° 136 du 9 décembre 2022, p. 3446-3447 ; son article 5 abroge l'arrêté du 19 mai 2020 et reprend les mêmes montants
+      note: "JORT n° 45 du 20 mai 2020, pp. 1097-1098 ; article 4 p. 1098, dernière page du fascicule, qui ne porte pas de numéro : « - 60 dinars à l'occasion de \"l'Aïd al-Idha” […] payé avant la date de l'Aïd, » L'arrêté ne porte pas de clause d'entrée en vigueur (son article 5 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 20 mai 2020 » : exécutoire le 25 mai 2020."
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité, article 4 (édition arabe)"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0452020.pdf
+      note: "الرائد الرسمي عدد 45 بتاريخ 20 ماي 2020، ص. 1252 (صفحة غير مرقمة) : « - 60 دينارا بمناسبة عيد الأضحى للفرد أو للأسرة الواحدة […] »"
+    2022-12-14:
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 8 décembre 2022, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité bénéficiant du programme Amen Social, article 4"
       href: https://www.pist.tn/jort/2022/2022F/Jo1362022.pdf
+      note: "JORT n° 136 du 9 décembre 2022, pp. 3447-3448 ; article 4 p. 3448 : « - 60 dinars à l'occasion de \"l'Aïd al-Idha\" […] payé avant la date de l'Aïd, » L'article 5 abroge l'arrêté du 19 mai 2020. L'arrêté ne porte pas de clause d'entrée en vigueur (son article 6 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 9 décembre 2022 » : exécutoire le 14 décembre 2022."
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 8 décembre 2022, fixant les cas de l'octroi et les montants de l'appui financier occasionnel au profit des catégories pauvres et des catégories à revenu limité bénéficiant du programme Amen Social, article 4 (édition arabe)"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1362022.pdf
+      note: "الرائد الرسمي عدد 136 بتاريخ 9 ديسمبر 2022، ص. 3789-3790 ؛ الفصل 4 ص. 3789 : « 60 دينارا بمناسبة عيد الأضحى للفرد أو للأسرة الواحدة […] »"
+  official_journal_date:
+    2020-05-25: "2020-05-20"
+    2022-12-14: "2022-12-09"
 documentation: |
-  Date corrigée. La valeur était datée du 1er janvier 2019 sans référence. Le montant est
-  exact, mais 2019 n'est la date d'aucun texte : l'appui financier occasionnel est fixé par
-  l'arrêté conjoint du 19 mai 2020, pris sur le fondement de l'article 12 de la loi organique
-  n° 2019-10, et publié au JORT n° 45 du 20 mai 2020.
+  Appui financier occasionnel de l'article 12 de la loi organique n° 2019-10, que visent les deux
+  arrêtés. Montant fixé par l'article 4 de l'arrêté conjoint du 19 mai 2020, puis par l'article 4 de
+  l'arrêté du 8 décembre 2022, qui abroge le premier (article 5) et reprend le même montant. La
+  valeur ne change donc pas en décembre 2022, mais son fondement, si : c'est pourquoi la date figure
+  dans les références.
 
-  L'arrêté conjoint du 8 décembre 2022 abroge celui de 2020 (art. 5) et reprend le même
-  montant. La valeur ne change donc pas au 9 décembre 2022, mais son fondement, si : c'est
-  pourquoi la date figure dans les références.
+  Champ : l'appui des fêtes religieuses est réservé aux catégories pauvres (article 2 des deux arrêtés) ; il est servi à la personne seule ou à la famille.
 
-  Champ d'application, non modélisé ici : l'appui des fêtes religieuses est réservé aux
-  catégories pauvres (art. 2), tandis que les aides de rentrée sont ouvertes aux catégories
-  pauvres et aux catégories à revenu limité (art. 3).
+  Dates corrigées. La valeur était datée du 20 mai 2020 et le second fondement du 9 décembre 2022,
+  jours de publication. Aucun des deux arrêtés ne porte de clause d'effet : chacun devient
+  exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du
+  dépôt n'étant pas compté (loi n° 93-64, article 2) — dépôts des 20 mai 2020 et 9 décembre 2022,
+  soit le 25 mai 2020 et le 14 décembre 2022. Aucune valeur n'est portée avant le 25 mai 2020.
+
+  Pages corrigées : l'article 4 de l'arrêté de 2020 est à la dernière page du fascicule (p. 1098,
+  non numérotée) et l'arrêté de 2022 occupe les pp. 3447-3448, non 3446-3447.
+
+  Lu dans les deux éditions des deux fascicules ; les pages sont dans les références.

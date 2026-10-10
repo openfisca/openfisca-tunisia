@@ -1,0 +1,54 @@
+description: "Bâtiment et travaux publics - grille du personnel occasionnel"
+metadata:
+  short_label: "Personnel occasionnel"
+  order:
+  - manoeuvre_ordinaire
+  - manoeuvre_specialise
+  - aide_ouvrier
+  - ouvrier_qualifie_1re_categorie
+  - ouvrier_qualifie_2e_categorie
+  - ouvrier_hautement_qualifie
+  - ouvrier_hautement_qualifie_1
+  - ouvrier_hautement_qualifie_2
+  - chef_equipe_1er_degre
+  - chef_equipe_2e_degre
+  - chef_equipe_3e_degre
+documentation: |-
+  Structure de la grille : un salaire horaire par catégorie, sans échelon. Les catégories sont le
+  manœuvre ordinaire, le manœuvre spécialisé, l'aide-ouvrier, l'ouvrier qualifié de 1re catégorie,
+  l'ouvrier qualifié de 2e catégorie, l'ouvrier hautement qualifié et le chef d'équipe, à trois
+  degrés. L'ouvrier hautement qualifié n'a qu'une ligne dans les grilles du 1er mai 1996 au 1er mai
+  2007 (avenants n° 5 à 8) ; la grille du 1er mai 2008 (avenant n° 9) le divise en deux niveaux, I
+  et II. La grille a donc neuf lignes jusqu'en 2007 et dix depuis 2008. Dans les avenants, cette
+  grille porte le numéro 1, 3 ou 5 selon la date d'effet.
+
+  Chaque catégorie est une case, nommée par son intitulé : `manoeuvre_ordinaire`,
+  `manoeuvre_specialise`, `aide_ouvrier`, `ouvrier_qualifie_1re_categorie`,
+  `ouvrier_qualifie_2e_categorie`, `ouvrier_hautement_qualifie` pour la ligne unique d'avant 2008,
+  `ouvrier_hautement_qualifie_1` et `ouvrier_hautement_qualifie_2` pour les niveaux I et II,
+  `chef_equipe_1er_degre`, `chef_equipe_2e_degre` et `chef_equipe_3e_degre`. Les intitulés français
+  des lignes sont une traduction de travail des grilles, publiées en arabe depuis 1999.
+
+  La ligne unique de l'ouvrier hautement qualifié porte une valeur vide au 1er mai 2008 : elle ne se
+  prolonge dans aucun des deux niveaux, dont les séries commencent à cette date.
+
+  Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+  hebdomadaire du travail elle se rapporte.
+
+  La grille est versée en entier, du 1er mai 1996 (avenant n° 5) au 1er janvier 2024 (avenant
+  n° 16) : vingt-six dates d'effet, neuf cases par grille aux douze premières et dix aux quatorze
+  suivantes, soit 248 valeurs, aucune case illisible. Le salaire le plus bas est celui du manœuvre
+  ordinaire ; le plus élevé, celui du chef d'équipe du 3e degré.
+
+  Les grilles du 1er mai 1996 au 1er mai 1998 sont imprimées en millimes ; les valeurs en sont
+  portées ici en dinars, comme celles des grilles suivantes.
+
+  Chaque case en cours porte en outre une valeur vide au 1er janvier 2026 : le décret n° 2026-68 du
+  30 avril 2026 relève alors les salaires de base des dernières grilles, et aucun texte ne publie
+  la grille qui en résulte.
+
+  La série commence au 1er mai 1996. La grille de 1990 ne comprend pas l'indemnité complémentaire
+  provisoire et ne mesure donc pas la même grandeur, et les grilles de 1991 à 1993 ne sont pas
+  relevées : rien d'antérieur n'est versé. De l'avenant n° 5 à l'avenant n° 16, tous les avenants
+  ont été lus, sans numéro manquant. Les trois grilles de l'avenant n° 16 (1er décembre 2021,
+  1er janvier 2023, 1er janvier 2024) sont lues sur une reproduction du journal par un site tiers.

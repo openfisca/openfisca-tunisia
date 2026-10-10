@@ -1,0 +1,191 @@
+description: "Bâtiment et travaux publics - personnel occasionnel - manœuvre ordinaire : salaire horaire de base"
+values:
+  1996-05-01:
+    value: 0.862
+  1997-05-01:
+    value: 0.906
+  1998-05-01:
+    value: 0.95
+  1999-05-01:
+    value: 0.989
+  2000-05-01:
+    value: 1.028
+  2001-05-01:
+    value: 1.067
+  2002-05-01:
+    value: 1.103
+  2003-05-01:
+    value: 1.141
+  2004-05-01:
+    value: 1.181
+  2005-05-01:
+    value: 1.221
+  2006-05-01:
+    value: 1.261
+  2007-05-01:
+    value: 1.303
+  2008-05-01:
+    value: 1.371
+  2009-05-01:
+    value: 1.439
+  2010-05-01:
+    value: 1.509
+  2011-05-01:
+    value: 1.588
+  2012-05-01:
+    value: 1.683
+  2014-05-01:
+    value: 1.784
+  2015-09-01:
+    value: 1.891
+  2016-08-01:
+    value: 2.004
+  2017-05-01:
+    value: 2.125
+  2018-05-01:
+    value: 2.263
+  2019-05-01:
+    value: 2.41
+  2021-12-01:
+    value: 2.567
+  2023-01-01:
+    value: 2.74
+  2024-01-01:
+    value: 2.925
+  2026-01-01:
+    value: null
+metadata:
+  short_label: "Manœuvre ordinaire"
+  unit: currency/heure
+  reference:
+    1996-05-01:
+    - title: "Avenant n° 5 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 16 octobre 1996"
+      href: https://www.pist.tn/jort/1996/1996F/Jo08696.pdf
+      note: "JORT n° 86 du 25 octobre 1996, édition française, p. 2150. La grille du personnel occasionnel prend effet le 1er mai 1996 ; manœuvre ordinaire : 0,862 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    1997-05-01:
+    - title: "Avenant n° 5 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 16 octobre 1996"
+      href: https://www.pist.tn/jort/1996/1996F/Jo08696.pdf
+      note: "JORT n° 86 du 25 octobre 1996, édition française, p. 2151. La grille du personnel occasionnel prend effet le 1er mai 1997 ; manœuvre ordinaire : 0,906 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    1998-05-01:
+    - title: "Avenant n° 5 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 16 octobre 1996"
+      href: https://www.pist.tn/jort/1996/1996F/Jo08696.pdf
+      note: "JORT n° 86 du 25 octobre 1996, édition française, p. 2152. La grille du personnel occasionnel prend effet le 1er mai 1998 ; manœuvre ordinaire : 0,950 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    1999-05-01:
+    - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
+      href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1157. La grille du personnel occasionnel prend effet le 1er mai 1999 ; manœuvre ordinaire : 0,989 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2000-05-01:
+    - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
+      href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1158. La grille du personnel occasionnel prend effet le 1er mai 2000 ; manœuvre ordinaire : 1,028 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2001-05-01:
+    - title: "Avenant n° 6 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 9 juin 1999"
+      href: https://www.pist.tn/jort/1999/1999A/Ja04899.pdf
+      note: "JORT n° 48 du 15 juin 1999, édition arabe, p. 1159. La grille du personnel occasionnel prend effet le 1er mai 2001 ; manœuvre ordinaire : 1,067 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2002-05-01:
+    - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
+      href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+      note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3091. La grille du personnel occasionnel prend effet le 1er mai 2002 ; manœuvre ordinaire : 1,103 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2003-05-01:
+    - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
+      href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+      note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3092. La grille du personnel occasionnel prend effet le 1er mai 2003 ; manœuvre ordinaire : 1,141 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2004-05-01:
+    - title: "Avenant n° 7 à la convention collective nationale du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2002"
+      href: https://www.pist.tn/jort/2002/2002A/Ja0982002.pdf
+      note: "JORT n° 98 du 3 décembre 2002, édition arabe, p. 3093. La grille du personnel occasionnel prend effet le 1er mai 2004 ; manœuvre ordinaire : 1,181 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2005-05-01:
+    - title: "Avenant n° 8 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 janvier 2006"
+      href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+      note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 362. La grille du personnel occasionnel prend effet le 1er mai 2005 ; manœuvre ordinaire : 1,221 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2006-05-01:
+    - title: "Avenant n° 8 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 janvier 2006"
+      href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+      note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 363. La grille du personnel occasionnel prend effet le 1er mai 2006 ; manœuvre ordinaire : 1,261 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2007-05-01:
+    - title: "Avenant n° 8 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 janvier 2006"
+      href: https://www.pist.tn/jort/2006/2006A/Ja0072006.pdf
+      note: "JORT n° 7 du 24 janvier 2006, édition arabe, p. 364. La grille du personnel occasionnel prend effet le 1er mai 2007 ; manœuvre ordinaire : 1,303 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2008-05-01:
+    - title: "Avenant n° 9 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 février 2009"
+      href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+      note: "JORT n° 16 du 24 février 2009, édition arabe, p. 891. La grille du personnel occasionnel prend effet le 1er mai 2008 ; manœuvre ordinaire : 1,371 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2009-05-01:
+    - title: "Avenant n° 9 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 février 2009"
+      href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+      note: "JORT n° 16 du 24 février 2009, édition arabe, p. 892. La grille du personnel occasionnel prend effet le 1er mai 2009 ; manœuvre ordinaire : 1,439 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2010-05-01:
+    - title: "Avenant n° 9 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 février 2009"
+      href: https://www.pist.tn/jort/2009/2009A/Ja0162009.pdf
+      note: "JORT n° 16 du 24 février 2009, édition arabe, p. 893. La grille du personnel occasionnel prend effet le 1er mai 2010 ; manœuvre ordinaire : 1,509 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2011-05-01:
+    - title: "Avenant n° 10 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 14 octobre 2011"
+      href: https://www.pist.tn/jort/2011/2011A/Ja0812011.pdf
+      note: "JORT n° 81 du 25 octobre 2011, édition arabe, p. 2442. La grille du personnel occasionnel prend effet le 1er mai 2011 ; manœuvre ordinaire : 1,588 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image. La date du fascicule est celle de sa notice."
+    2012-05-01:
+    - title: "Avenant n° 11 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 8 mars 2013"
+      href: https://www.pist.tn/jort/2013/2013A/Ja0222013.pdf
+      note: "JORT n° 22 du 15 mars 2013, édition arabe, p. 1043. La grille du personnel occasionnel prend effet le 1er mai 2012 ; manœuvre ordinaire : 1,683 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue dans la couche texte du fascicule."
+    2014-05-01:
+    - title: "Avenant n° 12 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 27 octobre 2014"
+      href: https://www.pist.tn/jort/2014/2014A/Ja0902014.pdf
+      note: "JORT n° 90 du 7 novembre 2014, édition arabe, p. 3120. La grille du personnel occasionnel prend effet le 1er mai 2014 ; manœuvre ordinaire : 1,784 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue dans la couche texte du fascicule."
+    2015-09-01:
+    - title: "Avenant n° 13 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 2 mai 2016"
+      href: https://www.pist.tn/jort/2016/2016A/Ja0372016.pdf
+      note: "JORT n° 37 du 6 mai 2016, édition arabe, p. 1703. La grille du personnel occasionnel prend effet le 1er septembre 2015 ; manœuvre ordinaire : 1,891 dinar par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2016-08-01:
+    - title: "Avenant n° 14 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 30 août 2017"
+      href: https://www.pist.tn/jort/2017/2017A/Ja0722017.pdf
+      note: "JORT n° 72 du 8 septembre 2017, édition arabe, p. 3034. La grille du personnel occasionnel prend effet le 1er août 2016 ; manœuvre ordinaire : 2,004 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2017-05-01:
+    - title: "Avenant n° 14 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 30 août 2017"
+      href: https://www.pist.tn/jort/2017/2017A/Ja0722017.pdf
+      note: "JORT n° 72 du 8 septembre 2017, édition arabe, p. 3035. La grille du personnel occasionnel prend effet le 1er mai 2017 ; manœuvre ordinaire : 2,125 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2018-05-01:
+    - title: "Avenant n° 15 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 décembre 2018"
+      href: https://www.pist.tn/jort/2019/2019A/Ja0042019.pdf
+      note: "JORT n° 4 du 11 janvier 2019, édition arabe, p. 121. La grille du personnel occasionnel prend effet le 1er mai 2018 ; manœuvre ordinaire : 2,263 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2019-05-01:
+    - title: "Avenant n° 15 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 17 décembre 2018"
+      href: https://www.pist.tn/jort/2019/2019A/Ja0042019.pdf
+      note: "JORT n° 4 du 11 janvier 2019, édition arabe, p. 122. La grille du personnel occasionnel prend effet le 1er mai 2019 ; manœuvre ordinaire : 2,410 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue à l'image."
+    2021-12-01:
+    - title: "Avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2022"
+      note: "JORT n° 132 du 2 décembre 2022, édition arabe, p. 3712. La grille du personnel occasionnel, établie au titre de l'année 2022, prend effet le 1er décembre 2021 ; manœuvre ordinaire : 2,567 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue sur une reproduction des pages 3709 à 3714 de ce fascicule par un site tiers (paie-tunisie.com, fichier arrete2022-3802arabe-63.pdf, empreinte SHA-256 fc6fe463685bf688b133285f1096266d2730a9ab2f90d5dc5cdf81dbf11bc7a7, consulté le 8 octobre 2026), qui porte les pieds de page du journal ; le fascicule lui-même n'est pas servi par pist.tn, et aucun second exemplaire n'a été obtenu : à confirmer sur le fascicule."
+    2023-01-01:
+    - title: "Avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2022"
+      note: "JORT n° 132 du 2 décembre 2022, édition arabe, p. 3713. La grille du personnel occasionnel prend effet le 1er janvier 2023 ; manœuvre ordinaire : 2,740 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue sur une reproduction des pages 3709 à 3714 de ce fascicule par un site tiers (paie-tunisie.com, fichier arrete2022-3802arabe-63.pdf, empreinte SHA-256 fc6fe463685bf688b133285f1096266d2730a9ab2f90d5dc5cdf81dbf11bc7a7, consulté le 8 octobre 2026), qui porte les pieds de page du journal ; le fascicule lui-même n'est pas servi par pist.tn, et aucun second exemplaire n'a été obtenu : à confirmer sur le fascicule."
+    2024-01-01:
+    - title: "Avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics, agréé par arrêté du 25 novembre 2022"
+      note: "JORT n° 132 du 2 décembre 2022, édition arabe, p. 3714. La grille du personnel occasionnel prend effet le 1er janvier 2024 ; manœuvre ordinaire : 2,925 dinars par heure. Les salaires de la grille comprennent l'indemnité complémentaire provisoire. Valeur lue sur une reproduction des pages 3709 à 3714 de ce fascicule par un site tiers (paie-tunisie.com, fichier arrete2022-3802arabe-63.pdf, empreinte SHA-256 fc6fe463685bf688b133285f1096266d2730a9ab2f90d5dc5cdf81dbf11bc7a7, consulté le 8 octobre 2026), qui porte les pieds de page du journal ; le fascicule lui-même n'est pas servi par pist.tn, et aucun second exemplaire n'a été obtenu : à confirmer sur le fascicule."
+    2026-01-01:
+    - title: "Décret n° 2026-68 du 30 avril 2026, article premier"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0442026.pdf
+      note: "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse annuelle de 5 % des salaires de base, au titre des années 2026, 2027 et 2028, à compter du 1er janvier 2026 ; pour 2026, elle s'applique aux salaires de base de tous les échelons des dernières grilles annexées aux conventions collectives sectorielles. Aucun texte ne publie la grille qui en résulte pour cette branche : sans valeur à compter de cette date, la dernière grille conventionnelle ne valant pas au-delà du 31 décembre 2025."
+documentation: |-
+  Salaire horaire de base de la catégorie « manœuvre ordinaire » de la grille du personnel occasionnel
+  annexée à la convention collective du bâtiment et des travaux publics. C'est le salaire le plus bas de cette grille. Cette grille n'a
+  pas d'échelon.
+
+  Unité : dinars courants par heure de travail. La grille ne dit pas à quel régime de durée
+  hebdomadaire du travail elle se rapporte.
+
+  Ce que le salaire comprend : c'est un salaire de base. Il comprend l'indemnité complémentaire
+  provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982, ce que chaque
+  grille mentionne. Il ne comprend pas les indemnités de la convention (présence, transport), qui
+  s'y ajoutent.
+
+  La série commence au 1er mai 1996, avec l'avenant n° 5 : les grilles antérieures ne mesurent pas
+  la même grandeur ou ne sont pas relevées. Les trois grilles de l'avenant n° 16 (1er décembre
+  2021, 1er janvier 2023, 1er janvier 2024) sont lues sur une reproduction du journal par un site
+  tiers.
+
+  La série est sans valeur à compter du 1er janvier 2026 : le décret n° 2026-68 du 30 avril 2026
+  relève alors de 5 % les salaires de base des dernières grilles annexées aux conventions
+  collectives sectorielles, et aucun texte ne publie la grille qui en résulte.
+
+  Une valeur vaut de sa date d'effet jusqu'à la veille de la date suivante. Chaque date est la date
+  d'effet que la grille énonce elle-même ; elle est souvent antérieure à la signature de l'avenant et
+  à l'arrêté qui l'agrée. Une date sans valeur est une date à laquelle le salaire change sans qu'aucun
+  texte en publie le montant : la valeur précédente n'y vaut plus.

@@ -1,0 +1,23 @@
+description: "Textile - salaires de base des grilles annexées à la convention"
+metadata:
+  short_label: "Salaire de base"
+  order:
+  - agents_payes_a_l_heure
+  - agents_payes_au_mois
+documentation: |-
+  Chaque avenant de salaires porte deux grilles par date d'effet :
+  - la grille des agents payés à l'heure (personnel d'exécution), en dinars par heure, par
+    catégorie et par échelon ;
+  - la grille des agents payés au mois, en dinars par mois, de 17 catégories sur dix-huit lignes,
+    par catégorie et par échelon.
+
+  Les deux grilles sont versées en entier, du 1er mai 1994 au 1er janvier 2026 : celle des agents
+  payés à l'heure (`agents_payes_a_l_heure`) et celle des agents payés au mois
+  (`agents_payes_au_mois`). Leurs colonnes ne se numérotent pas de la même façon : la confirmation
+  est l'échelon 0 de la grille horaire et l'échelon 1 de la grille mensuelle, que précède une
+  colonne de stage.
+
+  Ce sont des salaires de base. Ils comprennent l'indemnité complémentaire provisoire des décrets
+  n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982, que l'avenant n° 5 intègre aux salaires
+  de base à compter du 1er mai 1994 (JORT n° 78 du 4 octobre 1994, p. 1637). Les indemnités de la
+  convention s'y ajoutent.

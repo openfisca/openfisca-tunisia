@@ -1,0 +1,21 @@
+description: Taux majoré de la taxe sur la valeur ajoutée (tableau « C » annexé au code)
+values:
+  1988-07-01:
+    value: 0.29
+  2007-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: Taux majoré
+  reference:
+    1988-07-01:
+    - title: "Loi n° 88-61 du 2 juin 1988, portant promulgation du code de la taxe sur la valeur ajoutée, article 7 du code, deuxième paragraphe, numéro 2"
+      href: https://www.pist.tn/jort/1988/1988F/Jo03988.pdf
+      note: "JORT n° 39 du 10 juin 1988, p. 829, lu à l'image. Article 7 : « Sont soumis à la taxe sur la valeur ajoutée au taux de 17 %, les opérations portant sur les biens et les services non soumis à un autre taux. Toutefois sont soumis à la taxe sur la valeur ajoutée : 1) au taux de 6 %, les opérations portant sur les biens et les services repris au tableau B figurant en annexe. 2) au taux de 29 %, les opérations portant sur les biens repris au tableau C figurant en annexe. » Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja03988.pdf"
+    - title: "Décret n° 88-1109 du 11 juin 1988, fixant le calendrier d'application de la taxe sur la valeur ajoutée et du droit de consommation, article premier"
+      href: https://www.pist.tn/jort/1988/1988F/Jo04288.pdf
+      note: "JORT n° 42 du 21 juin 1988, p. 923, lu à l'image. Article premier : les dispositions du code sont applicables à compter du 1er juillet 1988, à l'exception de celles de l'article premier II-3 et des articles 16 et 17 I et II-1. L'article 6 de la loi n° 88-61 renvoyait la mise en application du code à un calendrier fixé par décret. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja04288.pdf"
+    2007-01-01:
+    - title: "Loi n° 2006-80 du 18 décembre 2006, relative à la réduction des taux de l'impôt et à l'allègement de la pression fiscale sur les entreprises, articles 13 et 19"
+      href: https://www.pist.tn/jort/2006/2006F/Jo1012006.pdf
+      note: "JORT n° 101 du 19 décembre 2006, pp. 4302 et 4303. Article 13, sous l'intitulé « Suppression du taux de 29 % de la TVA et imposition de certains produits au droit de consommation » : « Est supprimé le numéro 2 du deuxième paragraphe de l'article 7 du code de la TVA. » Le taux majoré s'applique donc jusqu'au 31 décembre 2006 ; l'article 14 de la même loi soumet les produits concernés au droit de consommation. Article 19, p. 4303 : sous réserve des articles 5 à 12, la loi s'applique à compter du 1er janvier 2007. Édition arabe : https://www.pist.tn/jort/2006/2006A/Ja1012006.pdf"

@@ -1,0 +1,21 @@
+description: Taux de la taxe de formation professionnelle, secteurs autres que les industries manufacturières
+values:
+  1967-01-01:
+    value: 0.02
+  1989-01-01:
+    value: 0.02
+metadata:
+  unit: /1
+  short_label: Autres secteurs
+  reference:
+    1967-01-01:
+    - title: "Décret n° 66-527 du 24 décembre 1966, modifiant le décret du 16 janvier 1957, fixant le taux, les modalités d'établissement, de recouvrement et de contrôle de la taxe de formation professionnelle et l'affectation de son produit, articles premier et 2"
+      href: https://www.pist.tn/jort/1966/1966F/Jo05566.pdf
+      note: "JORT n° 55 de décembre 1966, p. 1804, lu à l'image. Article premier : paragraphe II nouveau de l'article premier du décret du 16 janvier 1957, taux de 2 %, unique pour tous les redevables. Article 2 : effet au 1er janvier 1967. Édition arabe : https://www.pist.tn/jort/1966/1966A/Ja05566.pdf"
+    1989-01-01:
+    - title: "Loi n° 88-145 du 31 décembre 1988, portant loi de finances pour la gestion 1989, articles 29 et 30"
+      href: https://www.pist.tn/jort/1988/1988F/Jo08788.pdf
+      note: "JORT n° 87 de 1988, p. 1797 de l'édition française et pp. 1773-1774 de l'édition arabe, lues à l'image. Taux de 2 % maintenu pour les secteurs autres que les industries manufacturières ; liquidation mensuelle sur les salaires et rétributions, à compter des salaires de janvier 1989. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja08788.pdf"
+  notes:
+    1989-01-01:
+    - note: "Valeur inchangée ; la loi de finances pour 1989 crée un taux distinct pour les industries manufacturières."
