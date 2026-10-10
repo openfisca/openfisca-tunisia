@@ -1,4 +1,4 @@
-description: "Assurances - échelle 6 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire, par échelon"
+description: "Assurances - échelle 6 : salaire mensuel de base avant le 1er juin 1993, par échelon"
 metadata:
   short_label: "Échelle 6"
   order:
@@ -26,7 +26,7 @@ documentation: |-
   La case de l'échelon 5 est illisible sur le fascicule dans la grille du 1er janvier 1989 : valeur
   vide à cette date, sans valeur déduite ni reportée.
 echelon_1:
-  description: "Assurances - échelle 6, échelon 1 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 1 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 64.8
@@ -112,7 +112,7 @@ echelon_1:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_2:
-  description: "Assurances - échelle 6, échelon 2 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 2 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 71.01
@@ -198,7 +198,7 @@ echelon_2:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_3:
-  description: "Assurances - échelle 6, échelon 3 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 3 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 77.22
@@ -284,7 +284,7 @@ echelon_3:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_4:
-  description: "Assurances - échelle 6, échelon 4 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 4 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 83.43
@@ -370,7 +370,7 @@ echelon_4:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_5:
-  description: "Assurances - échelle 6, échelon 5 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 5 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 89.64
@@ -458,7 +458,7 @@ echelon_5:
     1er janvier 1989). Dans ce second cas la grille fixe bien un salaire, mais il n'a pas pu être lu
     : aucune valeur n'est déduite ni reportée.
 echelon_6:
-  description: "Assurances - échelle 6, échelon 6 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 6 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 95.85
@@ -544,7 +544,7 @@ echelon_6:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_7:
-  description: "Assurances - échelle 6, échelon 7 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 7 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 102.06
@@ -630,7 +630,7 @@ echelon_7:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_8:
-  description: "Assurances - échelle 6, échelon 8 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 8 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 108.27
@@ -716,7 +716,7 @@ echelon_8:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_9:
-  description: "Assurances - échelle 6, échelon 9 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 9 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 114.48
@@ -802,7 +802,7 @@ echelon_9:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_10:
-  description: "Assurances - échelle 6, échelon 10 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 10 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 120.69
@@ -888,7 +888,7 @@ echelon_10:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_11:
-  description: "Assurances - échelle 6, échelon 11 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 11 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 126.9
@@ -974,7 +974,7 @@ echelon_11:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_12:
-  description: "Assurances - échelle 6, échelon 12 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - échelle 6, échelon 12 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1975-01-01:
       value: 133.11

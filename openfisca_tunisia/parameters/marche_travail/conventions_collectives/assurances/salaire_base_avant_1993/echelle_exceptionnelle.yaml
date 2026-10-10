@@ -1,4 +1,4 @@
-description: "Assurances - ligne « Exceptionnel » : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire, par échelon"
+description: "Assurances - ligne « Exceptionnel » : salaire mensuel de base avant le 1er juin 1993, par échelon"
 metadata:
   short_label: "Exceptionnel"
   order:
@@ -23,7 +23,7 @@ documentation: |-
   Les cases des échelons 1, 2, 3, 4 et 5 sont illisibles sur le fascicule dans la grille du
   1er janvier 1989 : valeur vide à cette date, sans valeur déduite ni reportée.
 echelon_1:
-  description: "Assurances - ligne « Exceptionnel », échelon 1 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 1 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 79.887
@@ -106,7 +106,7 @@ echelon_1:
     second cas la grille fixe bien un salaire, mais il n'a pas pu être lu : aucune valeur n'est
     déduite ni reportée.
 echelon_2:
-  description: "Assurances - ligne « Exceptionnel », échelon 2 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 2 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 84.707
@@ -189,7 +189,7 @@ echelon_2:
     second cas la grille fixe bien un salaire, mais il n'a pas pu être lu : aucune valeur n'est
     déduite ni reportée.
 echelon_3:
-  description: "Assurances - ligne « Exceptionnel », échelon 3 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 3 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 91.096
@@ -272,7 +272,7 @@ echelon_3:
     second cas la grille fixe bien un salaire, mais il n'a pas pu être lu : aucune valeur n'est
     déduite ni reportée.
 echelon_4:
-  description: "Assurances - ligne « Exceptionnel », échelon 4 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 4 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 95.916
@@ -355,7 +355,7 @@ echelon_4:
     second cas la grille fixe bien un salaire, mais il n'a pas pu être lu : aucune valeur n'est
     déduite ni reportée.
 echelon_5:
-  description: "Assurances - ligne « Exceptionnel », échelon 5 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 5 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 100.735
@@ -438,7 +438,7 @@ echelon_5:
     second cas la grille fixe bien un salaire, mais il n'a pas pu être lu : aucune valeur n'est
     déduite ni reportée.
 echelon_6:
-  description: "Assurances - ligne « Exceptionnel », échelon 6 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 6 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 105.555
@@ -519,7 +519,7 @@ echelon_6:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_7:
-  description: "Assurances - ligne « Exceptionnel », échelon 7 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 7 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 110.374
@@ -600,7 +600,7 @@ echelon_7:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_8:
-  description: "Assurances - ligne « Exceptionnel », échelon 8 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 8 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 115.194
@@ -681,7 +681,7 @@ echelon_8:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_9:
-  description: "Assurances - ligne « Exceptionnel », échelon 9 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 9 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 120.013
@@ -762,7 +762,7 @@ echelon_9:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_10:
-  description: "Assurances - ligne « Exceptionnel », échelon 10 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 10 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 124.833
@@ -843,7 +843,7 @@ echelon_10:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_11:
-  description: "Assurances - ligne « Exceptionnel », échelon 11 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 11 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 129.652
@@ -924,7 +924,7 @@ echelon_11:
     date à laquelle la valeur précédente ne vaut plus : ici, celle à laquelle la série cesse
     (1er juin 1993).
 echelon_12:
-  description: "Assurances - ligne « Exceptionnel », échelon 12 : salaire mensuel de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  description: "Assurances - ligne « Exceptionnel », échelon 12 : salaire mensuel de base avant le 1er juin 1993"
   values:
     1983-01-01:
       value: 134.41

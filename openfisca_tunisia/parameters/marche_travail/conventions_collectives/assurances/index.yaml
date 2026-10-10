@@ -36,8 +36,9 @@ documentation: |-
   Trois nœuds, parce que les grilles ne mesurent pas toutes la même grandeur :
   - `salaire_base` : les grilles du 1er juin 1993 au 1er juin 2021, qui comprennent l'indemnité
     complémentaire provisoire ;
-  - `salaire_base_avant_1993` : les grilles de 1975, 1983, 1989, 1990 (grille n° 2), 1991 et 1992,
-    hors indemnité complémentaire provisoire ; la série cesse le 1er juin 1993 ;
+  - `salaire_base_avant_1993` : les grilles de 1975, 1983, 1989, 1990 (grille n° 2), 1991 et 1992 :
+    celles de 1989 à 1992 excluent l'indemnité complémentaire provisoire, celles de 1975 et de
+    1983 ne la mentionnent pas ; la série cesse le 1er juin 1993 ;
   - `salaire_base_avant_1993_grille_1_de_1990` : la grille n° 1 du 1er juin 1990, seconde
     grille de même date d'effet, pour les entreprises ayant appliqué l'avenant n° 1.
   Les deux derniers ne se prolongent pas dans le premier et ne se comparent pas à lui sans cette

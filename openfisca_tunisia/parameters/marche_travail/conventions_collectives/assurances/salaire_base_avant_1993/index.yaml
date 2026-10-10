@@ -1,6 +1,6 @@
-description: "Assurances - salaires mensuels de base des grilles antérieures au 1er juin 1993, hors indemnité complémentaire provisoire"
+description: "Assurances - salaires mensuels de base des grilles antérieures au 1er juin 1993"
 metadata:
-  short_label: "Salaire de base avant le 1er juin 1993, hors indemnité complémentaire provisoire"
+  short_label: "Salaire de base avant le 1er juin 1993"
   order:
   - echelle_1
   - echelle_2
