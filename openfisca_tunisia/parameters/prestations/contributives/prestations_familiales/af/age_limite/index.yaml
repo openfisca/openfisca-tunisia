@@ -1,0 +1,14 @@
+description: Limites d'âge des enfants ouvrant droit aux allocations familiales
+metadata:
+  order:
+  - sans_condition
+  - enseignement_primaire
+  - apprentissage
+  - etudes
+  - fille_au_foyer
+  - infirmite
+documentation: |-
+  Article 54 de la loi n° 60-30, dans sa rédaction d'origine (en vigueur le 1er avril 1961),
+  puis dans celle de la loi n° 96-65 (exécutoire le 4 août 1996). Les allocations familiales
+  sont maintenues pendant toutes les vacances scolaires, y compris celles qui suivent la fin
+  de l'année scolaire, dans les deux rédactions.

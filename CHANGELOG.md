@@ -18,6 +18,49 @@
   - **Effet sur les calculs.** Aucun : aucune formule ne lit ces paramètres. `tests/test_fiscalite_locale.py` est étendu aux 26 feuilles (forme et ordre des nœuds, comptes, lecture la veille et le jour de chaque date, les trois clôtures, références, unités, barèmes croissants d'un décret au suivant) ; le test qui énumérait les feuilles de `fiscalite_locale` les attend en plus des 20 existantes.
   - Aucun chemin de paramètre existant ne change, aucune unité nouvelle : deux nœuds s'ajoutent sous `fiscalite_locale`, dont l'`index.yaml` est mis à jour.
 
+## 0.132 - [#460](https://github.com/openfisca/openfisca-tunisia/pull/460)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : droits ouverts à partir du 01/07/1994.
+* Zones impactées : `openfisca_tunisia_pension/regimes/rsna`, `openfisca_tunisia_pension/variables/rsna`.
+* Détails :
+  - **Le salaire de référence du régime des salariés non agricoles est actualisé.** L'article 18 du décret n° 74-499, dans la rédaction du décret n° 94-1429 (JORT n° 52 du 5 juillet 1994, p. 1141), prévoit que les salaires « sont actualisés selon un barème fixé annuellement par arrêté du ministre des affaires sociales ». Chaque salaire est désormais multiplié par le coefficient de son année au barème applicable à la date d'ouverture du droit (`retraite/rsna/salaire_reference/actualisation`, versé par la 0.95 et la 0.112). Jusqu'ici, la moyenne portait sur les salaires nominaux.
+  - **La fenêtre monte de cinq à dix ans.** Cinq années pour les droits ouverts à compter du 1er juillet 1994, sept à compter du 1er juillet 1995, dix à compter du 1er juillet 1996 : ce sont les trois tirets de l'article 18 nouveau, déjà versés dans `retraite/rsna/salaire_reference/duree_mois`. La formule retenait dix années dès 1994.
+  - **Les dernières années, et non les meilleures.** L'article 18 nouveau retient « les cinq [sept, dix] dernières années », et l'article 19 nouveau les mois validés « dans leur ordre chronologique », sans compter les périodes sans activité assujettie. La formule prend donc, en remontant, les dernières années de salaire non nul, là où elle prenait les dix plus élevées des quarante dernières. Avec l'actualisation, l'ancienne règle aurait retenu, pour une carrière à salaire nominal constant, les années les plus anciennes, dont les coefficients sont les plus forts. Si l'assuré compte moins d'années que la fenêtre, la moyenne se fait sur celles-ci (article 18, alinéa 2). Cela règle, pour ce seul régime, une partie du ticket openfisca-tunisia-pension#24.
+  - **L'année d'ouverture du droit ne compte plus.** L'article 19 nouveau retient les mois « écoulés à la date du 1er janvier de l'année » d'ouverture du droit, et chaque barème donne le coefficient 1 aux salaires de l'année qui précède. La formule comptait l'année d'ouverture elle-même.
+  - **La date d'ouverture départage les semestres.** Les variables annuelles lisent leurs paramètres au 1er janvier : la fenêtre de sept ans aurait valu en 1996, celle de dix ans en 1997, et l'exercice 1994 relevait tout entier de la rédaction de 1990, qui s'arrête sur une erreur. La date retenue est désormais la date de liquidation (`rsna_liquidation_date`) quand elle tombe dans l'exercice, le 1er janvier de l'exercice sinon. Un droit ouvert entre le 1er juillet et le 31 décembre 1994 est calculé selon la rédaction de 1994 ; avant le 1er juillet, l'erreur explicite de la rédaction de 1990 demeure.
+  - **Pas de barème, pas de calcul.** Aucun arrêté d'actualisation n'est identifié pour 2025 ni pour 2026. Pour un droit ouvert à partir du 1er janvier 2025, le calcul s'arrête sur une `ParameterNotFoundError` qui nomme le coefficient manquant, plutôt que de réemployer le barème de 2024.
+  - **Résultats qui changent**, parce que la nouvelle valeur est celle du texte :
+    - `tests_pension/formulas/rsna/pension.yaml`, salaire constant de 12 000 D, droit ouvert en 2011 : le salaire de référence passe de 12 000 D à 12 000 × 11,88322 / 10 = 14 259,86 D (années 2001 à 2010, barème de 2011), et la pension de 5 400 D à 6 416,94 D (45 %) ;
+    - `tests_pension/formulas/rsna/salaire_de_reference.yaml`, les deux cas « résultat inchangé » de 1995 et de 2011 sont remplacés : le premier comptait l'année d'ouverture et dix années au lieu de cinq, le second ne connaissait pas l'actualisation ;
+    - `tests_pension/formulas/test_salaire_reference_rsna_1990.py`, exercice 1995 à salaire constant de 12 000 D : 13 249,99 D au lieu de 12 000 D (cinq années actualisées par le barème de 1995).
+  - **Tests nouveaux**, aux bornes : droit ouvert le 15 septembre 1994 (cinq ans, barème de 1994) ; les 30 juin et 1er juillet 1995 (cinq puis sept ans) ; les 30 juin et 1er juillet 1996 (sept puis dix ans) ; 1995 sans date de liquidation ; 2024 avec les coefficients de l'arrêté du 16 juillet 2024, une carrière avec deux années sans salaire, une carrière de trois ans, et une carrière dont les meilleurs salaires sont anciens. Les coefficients sont recopiés en clair dans les tests. Les erreurs attendues — droit ouvert le 30 juin 1994, droits ouverts en 2025 — sont testées en Python dans `tests_pension/formulas/test_salaire_reference_rsna_1994.py`, un test YAML ne sachant pas attendre une exception.
+  - Le plafonnement des salaires à six fois le SMIG, prévu par le même article, n'est toujours pas appliqué.
+  - Aucune variable ni aucun paramètre n'est ajouté, renommé ou déplacé.
+## 0.131 - [#455](https://github.com/openfisca/openfisca-tunisia/pull/455)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1981.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants`.
+* Détails :
+  - **Le système des pensions calcule les pensions de survivants du régime des salariés agricoles.** Les paramètres `retraite.rsa.survivants` (#446) n'étaient lus par aucune formule. Loi n° 81-6, articles 60 à 69, en vigueur le 1er janvier 1981 : conjoint à la moitié de la pension du défunt (article 62) ; orphelin au cinquième, aux trois dixièmes s'il est orphelin de père et de mère (article 65) ; total plafonné à la pension du défunt, les pensions d'orphelins étant réduites (article 69).
+  - **Remariage** (article 63) : jusqu'au 3 août 1996, il supprime la pension du conjoint ; depuis le 4 août 1996 (loi n° 96-66), il ne la suspend que s'il intervient avant 55 ans (`retraite.rsa.survivants.age_remariage_suspensif`, jusqu'ici lu par aucune formule).
+  - Nouvelles variables : `rsa_pension_reference_deces` (entrée), `conjoint_survivant_remarie` et `age_remariage_conjoint_survivant` (entrées, neutres par défaut), `rsa_taux_reversion`, `rsa_pension_de_reversion`, `rsa_pension_orphelins_totale`. La somme des taux d'orphelins est désormais commune au RSNA et au RSA ; le RSNA est inchangé.
+  - Tests : `tests_pension/formulas/rsa/survivants.yaml`, dix cas. Aucun test existant ne change.
+
+## 0.130 - [#454](https://github.com/openfisca/openfisca-tunisia/pull/454)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1961.
+* Zones impactées : `variables/prestations/contributives/prestations_familiales`, `parameters/prestations/contributives/prestations_familiales/af/age_limite`.
+* Détails :
+  - **Les allocations familiales se calculent.** La variable `af` ne se calculait pour aucune période : `prestations_familiales_enfant_a_charge` levait `NameError` (`age_individu`, `salaire_individu`, `smig_48h_mensuel` jamais définis), `af` lisait `parameters.af.taux` sans instant et par un chemin invalide, et `af_nbenf` appliquait un plancher de trois enfants (`max_(…, 3)`). La formule suit désormais les articles 52 à 65 de la loi n° 60-30 et leurs modificatifs.
+  - **Montant** (article 61) : pourcentage, par enfant, de la rémunération trimestrielle (assiette des cotisations, article 42) plafonnée ; 15 % pour chaque enfant et 52,500 D au 1er avril 1961 ; 18 / 16 / 14 / 12 % et 72 D au 1er janvier 1976 (loi n° 75-82) ; 122 D au 1er mai 1986 (loi n° 86-75) ; trois rangs au 1er janvier 1989 (loi n° 88-38). Le montant trimestriel est réparti par tiers entre les mois du trimestre, chacun au droit en vigueur le premier du mois (`af_mensuelle`) ; `af`, annuelle, additionne les douze tiers. Lorsque les deux parents ouvrent droit, l'allocation la plus élevée est servie (article 55). L'arrondi à deux décimales, sans texte, est retiré.
+  - **Enfants** : limites d'âge de l'article 54 versées comme paramètres datés sous `af/age_limite` (14, 16, 18 et 20 ans en 1961 ; 16, 18 et 21 ans depuis le 4 août 1996, loi n° 96-65, exécutoire cinq jours après le dépôt du 30 juillet 1996) ; rang dans l'ordre de primogéniture, calculé dans le ménage et saisissable (`af_rang_enfant`) ; nombre maximal de rangs utiles (article 52) ; enfant infirme ou handicapé servi quel que soit son rang depuis la loi n° 96-65.
+  - **Droits maintenus** : une entrée `af_droit_acquis` (par défaut faux) couvre les articles 127 et 128 de la loi n° 60-30 et l'article 5 de la loi n° 88-38 ; l'enfant servi au-delà du nombre maximal reçoit le taux du quatrième rang (au 31 décembre 1988 depuis 1989).
+  - **Régime agricole amélioré** : ses salariés ouvrent droit depuis le 1er octobre 1989 (loi n° 89-73, articles 91 et 92).
+  - Nouvelles variables : `af_scolarite_enfant`, `af_apprenti_remuneration_sous_plafond`, `af_fille_remplacant_mere`, `af_enfant_infirme`, `af_droit_acquis`, `af_rang_enfant`, `af_enfant_ouvrant_droit`, `af_remuneration_trimestrielle`, `af_mensuelle`. `af_nbenf` devient mensuelle et entière ; `majoration_salaire_unique` la lit au premier mois de l'année.
+  - Tests : `tests/formulas/prestations/contributives/allocations_familiales.yaml`, 25 cas aux bornes de 1961, 1975-1976, 1986, 1988-1989 et 1995-1997, valeurs écrites depuis les taux et les plafonds. Aucun test existant ne change.
 ## 0.129 - [#490](https://github.com/openfisca/openfisca-tunisia/pull/490)
 
 * Évolution du système socio-fiscal.
