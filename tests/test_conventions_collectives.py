@@ -1412,7 +1412,8 @@ def test_les_grilles_des_assurances_avant_1993_se_closent():
             ]
             assert "`salaire_base`" in reference["note"]
             assert "indemnité complémentaire provisoire" in reference["note"]
-            assert "indemnité complémentaire provisoire" in p.description
+            # L'intitulé n'affirme rien de l'indemnité : seules les grilles de 1989 à 1992 l'excluent.
+            assert "avant le 1er juin 1993" in p.description
             suite = apres.children[echelle].children[echelon]
             assert suite("1993-05-31") is None and suite("1993-06-01") is not None
             for instant in ("1975-01-01", "1990-06-01", "1993-05-31", "1993-06-01"):
