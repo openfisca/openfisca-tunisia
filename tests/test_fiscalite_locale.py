@@ -22,6 +22,7 @@ Un test YAML n'asserte que des variables : ce test lit donc les paramètres.
 
 # Standard Library
 import datetime
+import re
 
 # Third Party
 import pytest
@@ -288,7 +289,7 @@ def test_chaque_date_des_series_porte_sa_reference(chemin):
         assert reference["href"] == f"https://www.pist.tn/jort{lien}"
         assert fascicule in reference["note"], f"{chemin} au {date} : fascicule non cité"
         assert ", p. " in reference["note"] or ", pp. " in reference["note"]
-        assert "lu" in reference["note"], f"{chemin} au {date} : édition lue non dite"
+        assert re.search(r"\blue?s?\b", reference["note"]), f"{chemin} au {date} : édition lue non dite"
         if valeur is None:
             assert "la valeur est vide" in reference["note"], f"{chemin} : clôture sans raison"
 
