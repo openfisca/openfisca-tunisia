@@ -4,18 +4,38 @@ metadata:
   order:
   - taxe_immeubles_batis
   - taxe_terrains_non_batis
+  - contribution_fonds_amelioration_habitat
   - taxe_etablissements
   - taxe_hoteliere
+  - taxe_spectacles
+  - contribution_riverains
+  - droit_licence
+  - contribution_parkings
 documentation: |-
   Impôts et taxes perçus au profit des collectivités locales, régis par le code de la fiscalité
   locale. Le code est promulgué par la loi n° 97-11 du 3 février 1997 (JORT n° 11 du 7 février
   1997, pp. 173 à 181) et entre en vigueur le 1er janvier 1997 (article 3 de la loi).
 
   Un sous-nœud par prélèvement, dans l'ordre des chapitres du code. Sont versés ici le chapitre
-  premier (taxe sur les immeubles bâtis, articles 1 à 29), le chapitre II (taxe sur les terrains
-  non bâtis, articles 30 à 34), le chapitre III (taxe sur les établissements à caractère
-  industriel, commercial ou professionnel, articles 35 à 40) et le chapitre IV (taxe hôtelière,
-  articles 41 à 45).
+  premier (taxe sur les immeubles bâtis, articles 1 à 29, avec son dégrèvement partiel et sa
+  pénalité de retard), le chapitre II (taxe sur les terrains non bâtis, articles 30 à 34), le
+  chapitre III (taxe sur les établissements à caractère industriel, commercial ou professionnel,
+  articles 35 à 40), le chapitre IV (taxe hôtelière, articles 41 à 45), le chapitre V (taxe sur
+  les spectacles, articles 46 à 51), le chapitre VI (contribution des propriétaires riverains,
+  articles 52 à 60), le chapitre VII (droit de licence sur les débits de boissons, articles 61 à
+  63) et, du chapitre VIII, la seule contribution à la réalisation de parkings collectifs
+  (articles 89 et 90), dont la loi fixe elle-même le barème.
+
+  La contribution au profit du Fonds national d'amélioration de l'habitat, instituée hors du code
+  par la loi de finances pour 2005 sur l'assiette de la taxe sur les immeubles bâtis, suit les
+  deux taxes sur les immeubles.
+
+  Ne sont pas versés : les autres taxes et redevances du chapitre VIII (articles 64 à 88 et 91),
+  dont le tarif est renvoyé à un décret (article 92) ou à un arrêté de la collectivité locale
+  (article 93) — les décrets de tarifs n° 98-1428 du 13 juillet 1998 et n° 2016-805 du 13 juin
+  2016 ne sont pas transcrits ; les tarifs que chaque collectivité arrête elle-même, qui ne sont
+  pas des paramètres nationaux ; les pénalités autres que la pénalité de retard des taxes sur les
+  immeubles.
 
   Les deux taxes des chapitres III et IV ont été instituées par deux lois du 14 mai 1975, que la
   loi n° 97-11 abroge : rien n'est versé ici pour la période antérieure au 1er janvier 1997.

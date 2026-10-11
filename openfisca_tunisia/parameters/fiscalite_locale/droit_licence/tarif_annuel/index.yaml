@@ -1,0 +1,11 @@
+description: "Tarif annuel du droit de licence sur les débits de boissons, par catégorie d'établissement"
+metadata:
+  short_label: "Tarif annuel"
+  order:
+  - categorie_1
+  - categorie_2
+  - categorie_3
+documentation: |-
+  Tarif annuel du droit de licence, en dinars, fixé par décret pour chacune des trois catégories
+  d'établissements (code de la fiscalité locale, article 61 ; décret n° 97-434 du 3 mars 1997). Les
+  catégories sont celles de la législation des débits de boissons ; le décret ne les définit pas.

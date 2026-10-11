@@ -1,0 +1,24 @@
+description: "Tarif annuel du droit de licence sur les débits de boissons, établissement de la catégorie 2"
+values:
+  1997-03-13:
+    value: 150
+metadata:
+  unit: currency
+  short_label: "Catégorie 2"
+  reference:
+    1997-03-13:
+    - title: "Décret n° 97-434 du 3 mars 1997, relatif à la fixation du tarif du droit de licence sur les débits de boissons, article premier"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01997.pdf
+      note: "JORT n° 19 du 7 mars 1997, p. 390. Article premier : « Le tarif annuel du droit de licence sur les débits de boissons est fixé comme suit », suivi d'un tableau à deux colonnes, « Catégorie de l'établissement » et « Tarif (en dinars) » : établissement de la catégorie 1, 25 ; de la catégorie 2, 150 ; de la catégorie 3, 300. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte, en dernière page, un dépôt le 8 mars 1997, d'où le 13 mars 1997. Édition française : tableau lu à l'image, p. 390 ; mention de dépôt lue sur la couche texte ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/1997/1997A/Ja01997.pdf"
+documentation: |-
+  Montant annuel, en dinars, du droit de licence dû par l'exploitant d'un débit de boissons de la
+  catégorie 2. Le droit est dû pour l'année ; le code le fixe « selon un tarif qui tient compte des
+  catégories des établissements conformément à la législation en vigueur » (code de la fiscalité
+  locale, article 61). Le décret vise la loi n° 59-147 du 7 novembre 1959, portant réglementation
+  des débits de boissons et établissements similaires, sans définir lui-même les catégories.
+
+  Le code entre en vigueur le 1er janvier 1997 et le décret n'est exécutoire que le 13 mars 1997 :
+  aucun tarif n'est fixé entre ces deux dates.
+
+  Aucun décret postérieur n'est identifié dans les métadonnées du Journal officiel consultées le 11
+  octobre 2026 (recherche par l'intitulé, en français et en arabe).

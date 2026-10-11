@@ -14,5 +14,6 @@ documentation: |-
   Le recouvrement, le contrôle et le contentieux suivent les règles de la taxe sur les
   établissements (articles 44 et 45).
 
-  Une part du produit de la taxe est affectée à un fonds spécial du Trésor par une disposition
-  de loi de finances extérieure au code (`part_affectee_fonds`).
+  La moitié du produit de la taxe acquittée par les hôtels situés dans les zones touristiques
+  municipales est affectée à un fonds spécial du Trésor, par une disposition de loi de finances
+  extérieure au code (`part_affectee_fonds`).

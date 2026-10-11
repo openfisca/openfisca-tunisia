@@ -1,0 +1,20 @@
+description: "Taxe sur les spectacles"
+metadata:
+  short_label: "Taxe sur les spectacles"
+  order:
+  - part_recettes_previsionnelles
+  - taux
+  - prix_entree_exonere_maximum
+documentation: |-
+  Taxe due par les organisateurs de spectacles occasionnels, payée avant la délivrance de
+  l'autorisation des fêtes et spectacles (code de la fiscalité locale, chapitre V, articles 46 à
+  51). Elle est calculée sur la moitié des recettes prévisionnelles (article 48), au taux de
+  l'article 49. Sont exonérés les spectacles donnés au profit d'organisations de bienfaisance
+  subventionnées par l'État, ceux d'associations artistiques agréées sans artistes professionnels,
+  les foires et manifestations non payantes, et les spectacles dont le prix d'entrée n'excède pas un
+  montant fixé par décret (article 47).
+
+  Le code des collectivités locales (loi organique n° 2018-29 du 9 mai 2018, article 391) prévoit
+  que les articles 46 à 95 du code de la fiscalité locale cessent de s'appliquer, collectivité par
+  collectivité, à mesure qu'entrent en vigueur ses propres délibérations tarifaires. Cette cessation
+  n'a pas de date nationale : les valeurs versées ici ne sont pas closes.

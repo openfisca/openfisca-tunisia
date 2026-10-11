@@ -1,0 +1,12 @@
+description: "Contribution à la réalisation de parkings collectifs : barème de 1997, selon la population de la commune"
+metadata:
+  short_label: "Barème de 1997"
+  order:
+  - population_20000_a_50000
+  - population_50000_a_100000
+  - population_plus_de_100000
+documentation: |-
+  Barème de l'article 90 du code de la fiscalité locale dans sa rédaction de 1997, en vigueur du 1er
+  janvier 1997 au 31 décembre 2002 : un montant par place de stationnement, selon la population de
+  la commune. Trois tranches ; le texte n'énonce aucun montant pour une commune de 20 000 habitants
+  ou moins.

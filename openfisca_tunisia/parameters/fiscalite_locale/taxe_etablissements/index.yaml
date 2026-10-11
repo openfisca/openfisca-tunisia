@@ -6,6 +6,7 @@ metadata:
   - minimum
   - maximum
   - seuil_affectation_excedent
+  - part_impot_auto_entrepreneur
 documentation: |-
   Taxe due par les personnes physiques soumises à l'impôt sur le revenu au titre des bénéfices
   industriels et commerciaux ou des bénéfices des professions non commerciales, et par les
@@ -27,3 +28,7 @@ documentation: |-
   Le code entre en vigueur le 1er janvier 1997 ; les décrets qui fixent le minimum et le maximum
   ne sont exécutoires que le 13 mars 1997 : ni l'un ni l'autre n'a de montant entre ces deux
   dates.
+
+  Depuis le 1er janvier 2023, la taxe de l'auto-entrepreneur n'est pas calculée à part : elle est
+  une part de l'impôt sur le revenu compris dans sa contribution unique, sans égard au minimum,
+  par une disposition extérieure au code (`part_impot_auto_entrepreneur`).

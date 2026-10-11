@@ -1,0 +1,58 @@
+description: "Taux mensuel de la pénalité de retard de la taxe sur les immeubles bâtis"
+values:
+  1997-01-01:
+    value: 0.0125
+  2002-01-01:
+    value: 0.01
+  2007-01-01:
+    value: 0.0075
+  2023-01-01:
+    value: 0.0125
+metadata:
+  unit: /1
+  short_label: "Taux par mois de retard"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 19, paragraphe I ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 175 (article 19 du code) et p. 173 (article 3 de la loi). Article 19, paragraphe I : « Les sommes constatées auprès des receveurs des finances au titre de la taxe sur les immeubles bâtis donnent lieu à une pénalité égale à 1,25 pour-cent par mois ou fraction de mois de retard calculée à partir du premier jour du deuxième mois suivant celui au cours duquel un avis du receveur des finances a été notifié au contribuable selon les formes légales pour le paiement de la taxe à sa charge. La pénalité n'est pas appliquée en cas de paiement de la taxe durant l'année de sa constatation. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 175, le taux étant relu à l'image, p. 175 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+    2002-01-01:
+    - title: "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, articles 87 et 97"
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "JORT n° 104 du 28 décembre 2001, p. 4260 (article 87) et p. 4261 (article 97). Article 87, sous la rubrique « Harmonisation des taux des pénalités de retard prévus par le code de la fiscalité locale avec les dispositions du code des droits et procédures fiscaux » : « Le taux de 1.25% prévu par le paragraphe I de l'article 19 du code de la fiscalité locale est remplacé par le taux de 1%. » Date d'effet : article 97 — « Sans préjudice des dispositions des articles 39, 70, 76 et 77 les dispositions de la présente loi sont applicables à compter du 1er janvier 2002. » Édition française : article 87 lu à l'image, p. 4260 ; article 97 lu sur la couche texte ; la couche texte de ce fascicule est à encodage décalé et n'est lisible qu'une fois décodée. L'édition arabe n'est pas relue : https://www.pist.tn/jort/2001/2001A/Ja1042001.pdf"
+    2007-01-01:
+    - title: "Loi n° 2006-85 du 25 décembre 2006, portant loi de finances pour l'année 2007, articles 54 et 88"
+      href: https://www.pist.tn/jort/2006/2006F/Jo1032006.pdf
+      note: "JORT n° 103 du 26 décembre 2006, p. 4389 (article 54) et p. 4395 (article 88). Article 54 : « 1- Les dispositions du premier alinéa du paragraphe I de l'article 19 du code de la fiscalité locale sont modifiées comme suit : I. Les sommes constatées auprès des receveurs des finances au titre de la taxe sur les immeubles bâtis donnent lieu à une pénalité égale à 0,75% par mois ou fraction de mois de retard calculée à partir du premier janvier de l'année qui suit l'année au titre de laquelle la taxe est exigible. 2- Sont abrogées les dispositions du deuxième alinéa du paragraphe I de l'article 19 du code de la fiscalité locale. » Date d'effet : article 88 — « Les dispositions de la présente loi sont applicables à compter du premier janvier 2007 et ce, sous réserve des dispositions de son article 44. » Édition française lue sur la couche texte du fascicule, pp. 4389 et 4395, le paragraphe 1 de l'article 54 étant relu à l'image, p. 4389 ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2006/2006A/Ja1032006.pdf"
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 59, paragraphes 7 et 10, et article 76"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4076 (article 59, paragraphes 7 et 10) et p. 4082 (article 76). Article 59, paragraphe 7, deuxième phrase : « كما تعوض نسبة 0,75 % الواردة بالفقرة I من الفصل 19 من مجلة الجباية المحلية بنسبة 1,25 % » (le taux de 0,75 % du paragraphe I de l'article 19 du code de la fiscalité locale est remplacé par celui de 1,25 %). Paragraphe 10 : les dispositions de l'article 59 ne s'appliquent ni aux montants des déclarations déposées spontanément avant le 1er avril 2023, ni aux résultats de vérification fiscale notifiés avant cette date, ni aux arrêtés de taxation d'office notifiés avant cette date. Date d'effet : article 76, p. 4082 — « مع مراعاة الأحكام المخالفة الواردة بهذا المرسوم، تطبق أحكام هذا المرسوم بداية من غرة جانفي 2023 » (sous réserve des dispositions contraires du décret-loi, celui-ci s'applique à compter du 1er janvier 2023). Édition arabe lue sur la couche texte du fascicule, le paragraphe 7 étant relu à l'image, p. 4076. L'édition française de ce fascicule n'est pas en ligne (erreur 404 sur https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf le 11 octobre 2026) : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux, par mois ou fraction de mois de retard, de la pénalité due sur les sommes constatées auprès
+  des receveurs des finances au titre de la taxe sur les immeubles bâtis (code de la fiscalité
+  locale, article 19, paragraphe I). Le taux s'applique au montant de la taxe restée impayée. La
+  même pénalité vaut pour la taxe sur les terrains non bâtis : l'article 34 du code lui rend
+  applicables les articles 7 à 29, sanctions comprises.
+
+  Le point de départ du retard change avec le taux de 2007 :
+
+  - du 1er janvier 1997 au 31 décembre 2006, le premier jour du deuxième mois suivant celui de la
+    notification d'un avis du receveur des finances, la pénalité n'étant pas appliquée si la taxe
+    est payée dans l'année de sa constatation ;
+  - depuis le 1er janvier 2007, le 1er janvier de l'année qui suit celle au titre de laquelle la
+    taxe est exigible ; l'alinéa qui écartait la pénalité en cas de paiement dans l'année est abrogé
+    à la même date.
+
+  Depuis le 1er janvier 2022, le total des pénalités est plafonné au principal
+  (`plafond_part_principal`) : le texte qui pose ce plafond ne touche pas au taux, et aucune valeur
+  n'est donc portée ici à cette date.
+
+  Le relèvement de 2023 est écarté, par le paragraphe 10 du même article, pour les déclarations
+  déposées spontanément, les résultats de vérification et les taxations d'office antérieurs au 1er
+  avril 2023. La taxe sur les immeubles bâtis étant recouvrée par voie de rôle, il n'est pas établi
+  ici que cette réserve la concerne : la valeur est portée au 1er janvier 2023, date d'application
+  du décret-loi.
+
+  La pénalité fixe de 25 dinars pour défaut de déclaration (article 19, paragraphe II) et les
+  abandons de pénalités accordés par plusieurs lois de finances ne sont pas versés.
