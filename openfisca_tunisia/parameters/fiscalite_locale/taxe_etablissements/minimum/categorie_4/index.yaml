@@ -1,0 +1,15 @@
+description: "Taxe par mètre carré de référence du minimum de la taxe sur les établissements, immeubles de la quatrième catégorie"
+metadata:
+  short_label: "Catégorie 4 : usage industriel, plus de 5 000 m2"
+  order:
+  - taux_8
+  - taux_10
+  - taux_12
+  - taux_14
+documentation: |-
+  Quatrième catégorie : « immeuble dont la superficie couverte dépasse 5000 mètres carrés et destiné à l'exercice d'une activité industrielle » (code de la fiscalité locale, article 38,
+  paragraphe II). Les trois décrets la désignent, dans la colonne « Spécificité de l'immeuble »
+  de leur tableau, par : « Immeuble à usage industriel dont la superficie couverte dépasse 5000 m2 ».
+
+  Catégorie d'usage, sans rapport avec la catégorie de superficie de même numéro de la taxe sur
+  les immeubles bâtis.

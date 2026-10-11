@@ -1,0 +1,47 @@
+description: "Maximum annuel de la taxe sur les établissements à caractère industriel, commercial ou professionnel"
+values:
+  1997-03-13:
+    value: 50000
+  2003-06-26:
+    value: 60000
+  2007-01-01:
+    value: 100000
+  2012-01-01:
+    value: null
+metadata:
+  unit: currency
+  short_label: "Maximum annuel"
+  reference:
+    1997-03-13:
+    - title: "Décret n° 97-435 du 3 mars 1997, relatif à la détermination du montant maximum de la taxe sur les établissements à caractère industriel, commercial ou professionnel, article premier"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01997.pdf
+      note: "JORT n° 19 du 7 mars 1997, p. 390. Article premier : « Le maximum de la taxe sur les établissements à caractère industriel, commercial ou professionnel prévue par le paragraphe III de l'article 38 du code de la fiscalité locale est fixé à 50.000 dinars par année. » Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte, en dernière page, un dépôt le 8 mars 1997 (mention lue à l'image, édition française), d'où le 13 mars 1997. Édition française lue à l'image et sur la couche texte du fascicule, p. 390 ; édition arabe, p. 390 : seul l'intitulé du décret y est lu à l'image, l'article premier ne l'est pas : https://www.pist.tn/jort/1997/1997A/Ja01997.pdf"
+    2003-06-26:
+    - title: "Décret n° 2003-1345 du 16 juin 2003, relatif à la détermination du montant maximum annuel de la taxe sur les établissements à caractère industriel, commercial ou professionnel, articles premier et 2"
+      href: https://www.pist.tn/jort/2003/2003F/Jo0492003.pdf
+      note: "JORT n° 49 du 20 juin 2003, p. 1992. Article premier : « Le montant maximum annuel de la taxe sur les établissements à caractère industriel, commercial ou professionnel, prévu au paragraphe III de l'article 38 du code de la fiscalité locale, est fixé à soixante mille (60.000) dinars. » L'unité de temps est donnée par l'adjectif « annuel », dans l'intitulé et à l'article premier ; le décret n'écrit pas « par année ». Article 2 : « Sont abrogées, les dispositions du décret n° 97-435 du 3 mars 1997 susvisé. » Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte, en dernière page, un dépôt le 21 juin 2003 (mention lue à l'image dans les deux éditions) ; les cinq jours sont les 22, 23, 24, 25 et 26 juin, d'où le 26 juin 2003. Édition française lue à l'image, p. 1992 ; la couche texte de ce fascicule est codée et n'a servi qu'à repérer la page. Édition arabe : seule la mention de dépôt y est lue, le décret ne l'est pas : https://www.pist.tn/jort/2003/2003A/Ja0492003.pdf"
+    2007-01-01:
+    - title: "Décret n° 2006-3360 du 25 décembre 2006, relatif à la détermination du montant maximum annuel de la taxe sur les établissements à caractère industriel, commercial ou professionnel, articles premier, 2 et 3"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0022007.pdf
+      note: "JORT n° 2 du 5 janvier 2007, p. 29. Article premier : « Le montant maximum annuel de la taxe sur les établissements à caractère industriel, commercial ou professionnel prévu au paragraphe III de l'article 38 du code de la fiscalité locale est fixé à cent mille (100.000) dinars ». L'unité de temps est donnée par l'adjectif « annuel », dans l'intitulé et à l'article premier ; le décret n'écrit pas « par année ». Article 2 : « Les dispositions du présent décret entrent en vigueur à compter du premier janvier 2007. » ; le fascicule est du 5 janvier 2007, la date énoncée par le décret est reprise telle quelle. Article 3 : « Sont abrogées, les dispositions du décret n° 2003-1345 du 16 juin 2003 susvisé. » Édition française lue à l'image et sur la couche texte du fascicule, p. 29 ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2007/2007A/Ja0022007.pdf"
+    2012-01-01:
+    - title: "Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article 50"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: "JORT n° 39 du 18 mai 2012, p. 930. Article 50, sous la rubrique « Suppression de la limite maximale de la taxe sur les établissements à caractère industriel, commercial ou professionnel » : « Sont supprimées à partir du 1er janvier 2012 les dispositions du paragraphe III de l'article 38 du code de la fiscalité locale. » La taxe n'a plus de maximum : la valeur est vide. La date est celle que l'article énonce ; elle est antérieure au fascicule, du 18 mai 2012, et reprise telle quelle. Édition française lue sur la couche texte du fascicule, p. 930 ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2012/2012A/Ja0392012.pdf"
+documentation: |-
+  Montant, en dinars par année, que la taxe sur les établissements ne peut excéder (code de la
+  fiscalité locale, article 38, paragraphe III). Le code de 1997 énonce « un maximum qui sera
+  fixé par décret », sans dire à quelle période il se rapporte ; ce sont les décrets qui le
+  disent : « par année » dans celui de 1997, « montant maximum annuel » dans ceux de 2003 et de
+  2006. Aucun des trois ne dit si le maximum s'entend par redevable ou par établissement.
+
+  Si le minimum de la taxe dépasse ce maximum, « c'est le minimum qui sera recouvré » (même
+  paragraphe).
+
+  Trois décrets ont fixé le maximum, chacun abrogeant le précédent. Le code entre en vigueur le
+  1er janvier 1997 et le premier décret n'est exécutoire que le 13 mars 1997 : aucun maximum
+  n'est fixé entre ces deux dates.
+
+  La loi de finances complémentaire pour 2012 supprime le paragraphe III de l'article 38 à
+  partir du 1er janvier 2012 : depuis cette date, la taxe n'a plus de maximum, et la valeur est
+  vide.

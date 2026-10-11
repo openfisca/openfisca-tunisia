@@ -1,0 +1,26 @@
+description: "Taux de la taxe sur les établissements qui commercialisent des produits soumis au régime de l'homologation administrative des prix dont la marge bénéficiaire brute n'excède pas 6 %"
+values:
+  2013-01-01:
+    value: 0.001
+metadata:
+  unit: /1
+  short_label: "Produits à prix homologués, marge d'au plus 6 %"
+  reference:
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 24 et 79"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 8 (article 24) et p. 28 (article 79). Article 24, sous la rubrique « Réduction du taux de la taxe sur les établissements due par les entreprises qui commercialisent des produits soumis au régime de l'homologation administrative des prix » : « Est ajouté aux dispositions du paragraphe I de l'article 38 du code de la fiscalité locale, ce qui suit : Le taux de la taxe sur les établissements est réduit à 0,1% pour : - Les établissements qui commercialisent exclusivement des produits soumis au régime de l'homologation administrative des prix et dont la marge bénéficiaire brute de ces produits n'excède pas 6% [...], - Les établissements qui commercialisent des produits soumis au régime de l'homologation administrative des prix et dont la marge bénéficiaire brute de ces produits n'excède pas 6% [...] et d'autres produits à condition qu'ils justifient au titre de l'année précédente la réalisation d'un chiffre d'affaires provenant à raison de 80% ou plus de la commercialisation de produits dont la marge bénéficiaire brute n'excède pas 6%. Lesdits établissements peuvent opter pour le paiement de la taxe sur les établissements sur la base de 25% de l'impôt sur le revenu ou de l'impôt sur les sociétés. L'option s'effectue lors du dépôt de la déclaration mensuelle des impôts au titre du mois de janvier de chaque année. » Date d'effet : article 79, p. 28 — « Sous réserve des dispositions de l'article 58 et des dispositions du numéro 3 de l'article 63 et des dispositions du premier tiret de l'article 64, les dispositions de la présente loi sont applicables à compter du 1er janvier 2013. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja0012013.pdf"
+documentation: |-
+  Taux réduit appliqué, depuis le 1er janvier 2013, au chiffre d'affaires des établissements qui
+  commercialisent des produits soumis au régime de l'homologation administrative des prix dont la
+  marge bénéficiaire brute n'excède pas 6 % : soit exclusivement, soit avec d'autres produits,
+  s'ils justifient avoir réalisé l'année précédente 80 % ou plus de leur chiffre d'affaires avec
+  des produits dont la marge bénéficiaire brute n'excède pas 6 % (code de la fiscalité locale,
+  article 38, paragraphe I, complété par la loi de finances pour 2013).
+
+  Ces établissements peuvent opter pour une taxe égale à 25 % de leur impôt sur le revenu ou de
+  leur impôt sur les sociétés (`impot_regime_2013`) ; l'option s'exerce lors du dépôt de la
+  déclaration mensuelle du mois de janvier.
+
+  Jusqu'au 31 décembre 2012, les établissements dont la marge bénéficiaire brute n'excédait pas
+  4 % en vertu d'un texte réglementaire étaient taxés sur leur impôt (`impot_regime_1997`).

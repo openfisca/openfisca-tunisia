@@ -1,0 +1,32 @@
+description: "Taux de la taxe sur les établissements, appliqué à l'impôt sur le revenu ou à l'impôt sur les sociétés — redevables désignés par le code de 1997"
+values:
+  1997-01-01:
+    value: 0.25
+  2013-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Impôt (régime de 1997)"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 37, deuxième paragraphe, et article 38, paragraphe I ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 177 (articles 37 et 38 du code) et p. 173 (article 3 de la loi). Article 37, deuxième paragraphe : « La taxe est calculée sur la base de l'impôt sur le revenu ou de l'impôt sur les sociétés pour les personnes physiques visées au paragraphe IV de l'article 44 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés ainsi que pour les établissements dont la marge bénéficiaire brute n'excède pas 4 pourcent en vertu d'un texte réglementaire ou celles qui enregistrent une perte appuyée par une comptabilité conforme aux prescriptions du code de commerce. » Article 38, paragraphe I : « Toutefois ce taux est fixé à 25 pour-cent en ce qui concerne les personnes visées au deuxième paragraphe de l'article 37 du présent code. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 177 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 23 et 79"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 8 (article 23) et p. 28 (article 79). Article 23, p. 8 : « Les dispositions du deuxième paragraphe de l'article 37 du code de la fiscalité locale, sont modifiées comme suit : La taxe est calculée sur la base de l'impôt sur le revenu ou de l'impôt sur les sociétés pour les personnes physiques visées à l'article 44 bis du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés ainsi que pour les établissements qui enregistrent une perte justifiée par une comptabilité conforme à la législation comptable des entreprises. » La liste des redevables taxés sur leur impôt est remplacée à cette date : la valeur est vide. Le taux de 25 % de l'article 38, paragraphe I, n'est pas modifié ; il s'applique depuis lors aux redevables de la nouvelle rédaction. Date d'effet : article 79, p. 28 — « Sous réserve des dispositions de l'article 58 et des dispositions du numéro 3 de l'article 63 et des dispositions du premier tiret de l'article 64, les dispositions de la présente loi sont applicables à compter du 1er janvier 2013. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja0012013.pdf"
+documentation: |-
+  Taux appliqué à l'impôt sur le revenu ou à l'impôt sur les sociétés, du 1er janvier 1997 au
+  31 décembre 2012, pour trois catégories de redevables (code de la fiscalité locale, article 37,
+  deuxième paragraphe, dans sa rédaction de 1997) :
+
+  - les personnes physiques visées au paragraphe IV de l'article 44 du code de l'impôt sur le
+    revenu des personnes physiques et de l'impôt sur les sociétés (régime forfaitaire) ;
+  - les établissements dont la marge bénéficiaire brute n'excède pas 4 % en vertu d'un texte
+    réglementaire ;
+  - ceux qui enregistrent une perte appuyée par une comptabilité conforme aux prescriptions du
+    code de commerce.
+
+  La loi de finances pour 2013 remplace cette liste. Depuis le 1er janvier 2013, le taux se lit
+  dans `impot_regime_2013`.

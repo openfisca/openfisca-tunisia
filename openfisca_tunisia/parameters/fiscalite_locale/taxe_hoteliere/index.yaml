@@ -1,0 +1,18 @@
+description: "Taxe hôtelière"
+metadata:
+  short_label: "Taxe hôtelière"
+  order:
+  - taux
+  - part_affectee_fonds
+documentation: |-
+  Taxe due par « les exploitants des établissements touristiques tels que définis par la
+  législation en vigueur » (code de la fiscalité locale, chapitre IV, articles 41 à 45), calculée
+  sur leur chiffre d'affaires brut global (article 42). Les établissements qui y sont soumis sont
+  exonérés de la taxe sur les établissements à caractère industriel, commercial ou professionnel
+  (article 36).
+
+  Le recouvrement, le contrôle et le contentieux suivent les règles de la taxe sur les
+  établissements (articles 44 et 45).
+
+  Une part du produit de la taxe est affectée à un fonds spécial du Trésor par une disposition
+  de loi de finances extérieure au code (`part_affectee_fonds`).

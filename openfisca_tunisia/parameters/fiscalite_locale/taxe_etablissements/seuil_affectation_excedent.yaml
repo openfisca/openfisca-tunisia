@@ -1,0 +1,34 @@
+description: "Produit annuel de la taxe sur les établissements, par établissement, au-delà duquel l'excédent est affecté à un fonds"
+values:
+  2013-01-01:
+    value: 100000
+metadata:
+  unit: currency
+  short_label: "Seuil d'affectation de l'excédent à un fonds"
+  reference:
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 13, 14 et 79"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 5 (articles 13 et 14) et p. 28 (article 79). Rubrique « Création d'un fonds de coopération entre les collectivités locales ». Article 13 : « Est ouvert dans les écritures du Trésorier Général de la Tunisie un fonds spécial du Trésor intitulé \"fonds de coopération entre les collectivités locales\" destiné au développement des ressources financières des collectivités locales dont notamment les petites communes à ressources limitées. » Article 14 : le fonds est financé par « le produit de la taxe sur les établissements à caractère industriel, commercial ou professionnel qui dépasse au titre d'une année 100 000 dinars pour chaque établissement ». Date d'effet : article 79, p. 28 — « Sous réserve des dispositions de l'article 58 et des dispositions du numéro 3 de l'article 63 et des dispositions du premier tiret de l'article 64, les dispositions de la présente loi sont applicables à compter du 1er janvier 2013. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja0012013.pdf"
+documentation: |-
+  Montant, en dinars par année et par établissement, au-delà duquel le produit de la taxe sur les
+  établissements ne revient plus à la collectivité locale mais à un fonds. La disposition est
+  extérieure au code de la fiscalité locale.
+
+  Du 1er janvier 2013 au 31 décembre 2020, le fonds est le « fonds de coopération entre les
+  collectivités locales », fonds spécial du Trésor créé par la loi de finances pour 2013
+  (articles 13 et 14).
+
+  Depuis le 1er janvier 2021, le même excédent — le produit de la taxe « qui dépasse au cours de
+  l'année 100.000 dinars pour chaque établissement » — alimente le « fonds d'appui à la
+  décentralisation, de péréquation, de régularisation et de solidarité entre les collectivités
+  locales », et le fonds de coopération est supprimé (loi n° 2020-46 du 23 décembre 2020,
+  portant loi de finances pour l'année 2021, article 13, paragraphes 2 et 6 ; JORT n° 128 du
+  25 décembre 2020, pp. 3125-3127 ; date d'application : article 42, p. 3138 ;
+  https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf, édition française lue sur la couche texte). Le montant du seuil
+  ne change pas : le changement de fonds n'est pas une valeur.
+
+  Le seuil est égal au dernier maximum de la taxe, supprimé à partir du 1er janvier 2012
+  (`maximum`). Les deux grandeurs ne se confondent pas : le maximum plafonnait la taxe due ; le
+  seuil répartit un produit qui n'est plus plafonné, et il s'entend « pour chaque
+  établissement ». Aucun seuil n'existe en 2012.

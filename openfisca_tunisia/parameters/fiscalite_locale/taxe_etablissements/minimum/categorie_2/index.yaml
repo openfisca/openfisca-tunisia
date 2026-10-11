@@ -1,0 +1,15 @@
+description: "Taxe par mètre carré de référence du minimum de la taxe sur les établissements, immeubles de la deuxième catégorie"
+metadata:
+  short_label: "Catégorie 2 : structure légère à usage industriel"
+  order:
+  - taux_8
+  - taux_10
+  - taux_12
+  - taux_14
+documentation: |-
+  Deuxième catégorie : « immeuble en construction légère destiné à l'exercice d'une activité industrielle » (code de la fiscalité locale, article 38,
+  paragraphe II). Les trois décrets la désignent, dans la colonne « Spécificité de l'immeuble »
+  de leur tableau, par : « Immeuble à structure légère à usage industriel ».
+
+  Catégorie d'usage, sans rapport avec la catégorie de superficie de même numéro de la taxe sur
+  les immeubles bâtis.
