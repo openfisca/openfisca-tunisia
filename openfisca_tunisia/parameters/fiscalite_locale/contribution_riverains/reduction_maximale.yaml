@@ -1,0 +1,33 @@
+description: "Réduction maximale de la contribution des propriétaires riverains que la collectivité locale peut accorder pour les cas sociaux"
+values:
+  1997-01-01:
+    value: 0.5
+  2002-08-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Réduction maximale (cas sociaux)"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 53, troisième paragraphe ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 178 (article 53 du code) et p. 173 (article 3 de la loi). Article 53, troisième paragraphe : « Les collectivités locales peuvent réduire le taux de la contribution à concurrence de 50 pour-cent de son montant. Dans ce cas, la collectivité locale supporte le reliquat des dépenses, et ce, pour tenir compte des cas sociaux visés au paragraphe II de l'article 6 du présent code. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 178 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+    2002-08-01:
+    - title: "Loi n° 2002-76 du 23 juillet 2002, relative à l'institution de mesures d'allègement de la charge fiscale et d'amélioration des ressources des collectivités locales, article 3"
+      href: https://www.pist.tn/jort/2002/2002F/Jo0612002.pdf
+      note: "JORT n° 61 du 26 juillet 2002, p. 1715. Article 3 : « Le paragraphe 3 de l'article 53 du code de la fiscalité locale, promulgué par la loi n° 97-11 du 3 février 1997, est modifié comme suit : \"Sont dégrevés totalement de la contribution des propriétaires riverains par les collectivités locales, les contribuables à faible revenu et bénéficiant de l'aide de l'Etat ou des collectivités locales. Le dégrèvement prévu par le présent article est accordé par arrêté du président de la collectivité locale sur la base de la délibération du conseil de la collectivité locale, après avis de la commission de révision prévue à l'article 56 du présent code. Le dégrèvement s'effectue conformément aux conditions et modalités d'application du dégrèvement total de la taxe sur les immeubles bâtis prévues au paragraphe IV de l'article 6 du présent code. La contribution est liquidée au titre des travaux relatifs aux voies et trottoirs selon la longueur des façades des immeubles appartenant aux propriétaires riverains qui y sont soumis et à égalité entre les propriétaires riverains au titre des autres travaux\". » Le troisième paragraphe, qui portait la réduction de 50 pour-cent, est remplacé par un dégrèvement total : la valeur est vide. La loi ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte, en dernière page, un dépôt le 27 juillet 2002 ; les cinq jours sont les 28, 29, 30 et 31 juillet et le 1er août, d'où le 1er août 2002. Édition française : article 3 lu à l'image, p. 1715 ; mention de dépôt lue sur la couche texte ; la couche texte de ce fascicule est à encodage décalé et n'est lisible qu'une fois décodée. L'édition arabe n'est pas relue : https://www.pist.tn/jort/2002/2002A/Ja0612002.pdf"
+documentation: |-
+  Part de la contribution dont la collectivité locale peut décharger un propriétaire riverain pour
+  tenir compte des « cas sociaux » — les contribuables à faible revenu bénéficiant de l'aide de
+  l'État ou des collectivités locales, visés à l'article 6, paragraphe II, du code —, le reliquat
+  des dépenses restant à sa charge (code de la fiscalité locale, article 53, troisième paragraphe,
+  dans sa rédaction de 1997).
+
+  La loi n° 2002-76 remplace ce paragraphe : depuis le 1er août 2002, les mêmes contribuables sont «
+  dégrevés totalement » de la contribution, selon les conditions du dégrèvement total de la taxe sur
+  les immeubles bâtis. La faculté de réduire de moitié disparaît du texte, et la valeur est vide
+  depuis cette date. Le dégrèvement total n'a ni taux ni seuil énoncés : rien n'est versé pour lui.
+
+  La lecture retenue est que le « paragraphe 3 » visé par la loi de 2002 est le troisième alinéa de
+  l'article 53, celui de la réduction : le texte nouveau reprend à sa suite, mot pour mot, le
+  quatrième alinéa sur la liquidation de la contribution.

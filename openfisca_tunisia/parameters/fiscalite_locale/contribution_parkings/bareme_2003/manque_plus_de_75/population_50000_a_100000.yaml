@@ -1,0 +1,18 @@
+description: "Contribution à la réalisation de parkings collectifs, par place de stationnement, barème de 2003 — manque de places qui dépasse 75 % sans atteindre 100 % du nombre requis, commune de plus de 50 000 et au plus 100 000 habitants"
+values:
+  2003-01-01:
+    value: 1125
+metadata:
+  unit: currency
+  short_label: "50 000 à 100 000 hab."
+  reference:
+    2003-01-01:
+    - title: "Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles 79 et 87"
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: "JORT n° 102 du 17 décembre 2002, p. 2887 (article 79) et p. 2888 (article 87). Article 79 : « Les dispositions de l'article 90 du code de la fiscalité locale sont modifiées comme suit : Article 90 : La contribution prévue par l'article 89 susvisée est égale à : […] 3) Dans le cas où le manque de places de stationnement au parking dépasse 75% et sans atteindre 100% du nombre requis : […] - mille cent vingt cinq dinars par place de stationnement au parking pour les communes dont le nombre d'habitants dépasse cinquante mille habitants sans excéder cent mille habitants ». Dernier paragraphe : « Nonobstant les sanctions prévues par la législation en vigueur, le montant de la contribution prévu par les paragraphes 1, 2 et 3 du présent article est doublé en cas de manque de réalisation de toutes les places de parkings autorisées ou en cas de changement de leur affectation sans autorisation. » Date d'effet : article 87, p. 2888 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2003. » Édition française : article 79 lu à l'image, p. 2887, les neuf montants étant écrits en toutes lettres ; article 87 lu sur la couche texte ; la couche texte de ce fascicule est à encodage décalé et n'est lisible qu'une fois décodée. Édition arabe, p. 3510 : le troisième cas y est relu à l'image — « خمسمائة وخمسة وستين دينارا », « ألفا ومائة وخمسة وعشرين دينارا », « ألفين ومائتين وخمسين دينارا », soit 565, 1 125 et 2 250 dinars — ; les deux premiers cas y sont lus sur une océrisation de la page, non relue à l'image : https://www.pist.tn/jort/2002/2002A/Ja1022002.pdf"
+documentation: |-
+  Montant, en dinars par place de stationnement manquante, de la contribution due lorsque le manque
+  de places dépasse 75 % sans atteindre 100 % du nombre requis, dans une commune de plus de 50 000
+  et au plus 100 000 habitants (code de la fiscalité locale, article 90, dans la rédaction de la loi
+  de finances pour 2003). Le montant est doublé si aucune des places autorisées n'est réalisée, ou
+  si leur affectation est changée sans autorisation.

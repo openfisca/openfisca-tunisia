@@ -1,0 +1,25 @@
+description: "Plafond du total des pénalités de retard de la taxe sur les immeubles bâtis, en part du principal"
+values:
+  2022-01-01:
+    value: 1
+metadata:
+  unit: /1
+  short_label: "Plafond (part du principal)"
+  reference:
+    2022-01-01:
+    - title: "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022, article 68, paragraphe 3, et article 73"
+      href: https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf
+      note: "JORT n° 119 du 28 décembre 2021, p. 3106 (article 68) et p. 3107 (article 73). Article 68, sous la rubrique « Plafonnement des pénalités de retard dues sur les créances publiques constatées », paragraphe 3 : « Il est ajouté au paragraphe I de l'article 19 du code de la fiscalité locale ce qui suit : Les montants dus au titre des pénalités de retard ne doivent pas excéder le montant de la créance en principal. » Paragraphe 4 : « L'application des dispositions du présent article ne peut entrainer la restitution des montants payés au titre des pénalités de retard du recouvrement ou la révision de leur inscription comptable sauf en vertu d'un jugement passé en la force de la chose jugée. » Date d'effet : article 73, paragraphe 1 — « Sous réserve des dispositions contraires prévues par le présent décret-loi, les dispositions du présent décret-loi s'appliquent à compter du 1er janvier 2022. » Édition française lue sur la couche texte du fascicule, pp. 3106 et 3107 ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf"
+documentation: |-
+  Rapport maximal entre le total des pénalités de retard et le principal de la créance : depuis le
+  1er janvier 2022, les pénalités de retard de la taxe sur les immeubles bâtis « ne doivent pas
+  excéder le montant de la créance en principal » (code de la fiscalité locale, article 19,
+  paragraphe I, complété par la loi de finances pour 2022). La valeur 1 dit ce plafond : les
+  pénalités cessent de courir lorsqu'elles atteignent le montant de la taxe due.
+
+  Avant cette date, le code ne plafonne pas la pénalité : la série commence le 1er janvier 2022. La
+  mesure ne donne lieu ni à restitution des pénalités déjà payées ni à révision de leur inscription
+  comptable, sauf jugement.
+
+  Le plafond vaut aussi pour la taxe sur les terrains non bâtis, à laquelle l'article 34 du code
+  rend applicables les sanctions de la taxe sur les immeubles bâtis.

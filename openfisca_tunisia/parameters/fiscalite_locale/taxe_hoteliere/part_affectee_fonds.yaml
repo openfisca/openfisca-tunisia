@@ -1,4 +1,4 @@
-description: "Part du produit de la taxe hôtelière affectée au fonds de protection des zones touristiques"
+description: "Part affectée au fonds de protection des zones touristiques dans le produit de la taxe hôtelière acquittée par les hôtels des zones touristiques municipales"
 values:
   1997-01-01:
     value: 0.5
@@ -9,17 +9,26 @@ metadata:
     1997-01-01:
     - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 53 et 54"
       href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
-      note: "JORT n° 105 du 31 décembre 1996, p. 2583. Article 53, sous la rubrique « Modification de l'article 39 de la loi n° 92-122 du 29 décembre 1992 portant loi de finances pour la gestion 1993 » : « Les dispositions du premier tiret de l'article 39 de la loi n° 92-122 du 29 décembre 1992 portant loi de finances pour la gestion 1993 sont modifiées comme suit : \"cinquante pour cent du produit de la taxe hôtelière instituée au profit des collectivités locales en vertu de la législation en vigueur...................... le reste sans changement\". » Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997 ». Édition française lue sur la couche texte du fascicule, p. 2583 ; l'article 39 de la loi n° 92-122, qui institue le fonds et en énumère les ressources, n'est pas lu, ni l'édition arabe : https://www.pist.tn/jort/1996/1996A/Ja10596.pdf"
+      note: "JORT n° 105 du 31 décembre 1996, p. 2583. Article 53, sous la rubrique « Modification de l'article 39 de la loi n° 92-122 du 29 décembre 1992 portant loi de finances pour la gestion 1993 » : « Les dispositions du premier tiret de l'article 39 de la loi n° 92-122 du 29 décembre 1992 portant loi de finances pour la gestion 1993 sont modifiées comme suit : \"cinquante pour cent du produit de la taxe hôtelière instituée au profit des collectivités locales en vertu de la législation en vigueur...................... le reste sans changement\". » Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997 ». Édition française lue sur la couche texte du fascicule, p. 2583 ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/1996/1996A/Ja10596.pdf. Le texte modifié est lu à l'image dans l'édition française du JORT n° 88 du 31 décembre 1992, p. 1670 (fascicule sans couche texte : https://www.pist.tn/jort/1992/1992F/Jo08892.pdf), sous la rubrique « Institution d'un fonds spécial du trésor pour la protection des zones touristiques ». Article 38 : « Il est ouvert dans les écritures du Trésorier Général de Tunisie un fonds spécial du Trésor intitulé \"Fonds de Protection des zones touristiques\". » Article 39, premier tiret, rédaction de 1992 : « 50% du produit de la taxe hôtelière instituée par la loi n°75-34 du 14 Mai 1975 et acquittée par les exploitants des hôtels situés dans les zones touristiques municipales. La liste desdites zones est fixée par décret ». L'article 53 ne récrit que le début du tiret et laisse « le reste sans changement » : la part ne porte que sur la taxe acquittée par les hôtels de ces zones."
 documentation: |-
-  Fraction du produit de la taxe hôtelière qui ne revient pas aux collectivités locales mais à un
-  fonds spécial du Trésor, en vertu de l'article 39 de la loi n° 92-122 du 29 décembre 1992,
-  portant loi de finances pour la gestion 1993, dans la rédaction que lui donne la loi de
+  Fraction du produit de la taxe hôtelière qui ne revient pas aux collectivités locales mais au «
+  Fonds de Protection des zones touristiques », fonds spécial du Trésor ouvert par l'article 38 de
+  la loi n° 92-122 du 29 décembre 1992, portant loi de finances pour la gestion 1993. La part est
+  fixée par l'article 39, premier tiret, de la même loi, dans la rédaction que lui donne la loi de
   finances pour la gestion 1997. La disposition est extérieure au code de la fiscalité locale.
 
+  La part ne s'applique pas à tout le produit de la taxe : elle porte sur la taxe « acquittée par
+  les exploitants des hôtels situés dans les zones touristiques municipales », dont la liste est
+  fixée par décret. La loi de finances pour 1997 ne récrit que le début du tiret, pour y remplacer
+  la mention de la loi n° 75-34 du 14 mai 1975 par celle de la taxe hôtelière « instituée au
+  profit des collectivités locales en vertu de la législation en vigueur », et laisse « le reste
+  sans changement ». Les décrets qui fixent ces zones ne sont pas lus. Le fonds accorde des aides
+  aux communes où ces zones sont situées, pour la propreté et l'assainissement (article 40 de la
+  loi n° 92-122).
+
   La série commence le 1er janvier 1997, date d'application de la loi de finances pour 1997 et
-  d'entrée en vigueur du code. L'article 39 de la loi n° 92-122 n'est pas lu dans sa rédaction
-  initiale : la part affectée au fonds avant 1997, sur la taxe hôtelière de la loi n° 75-34 du
-  14 mai 1975, n'est pas versée. Le nom du fonds — fonds de protection des zones touristiques —
-  n'est pas lu dans l'article 53, qui ne cite que le premier tiret modifié.
+  d'entrée en vigueur du code. La rédaction de 1992 fixait déjà la part à 50 % du produit de la
+  taxe hôtelière de la loi n° 75-34 ; cet état antérieur, qui porte sur une taxe abrogée par la
+  loi n° 97-11, n'est pas versé.
 
   Aucune modification ultérieure de cette part n'est relevée.

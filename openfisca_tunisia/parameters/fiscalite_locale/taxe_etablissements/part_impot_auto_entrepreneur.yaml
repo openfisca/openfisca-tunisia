@@ -1,0 +1,30 @@
+description: "Part de l'impôt sur le revenu compris dans la contribution unique de l'auto-entrepreneur qui tient lieu de taxe sur les établissements"
+values:
+  2023-01-01:
+    value: 0.2
+metadata:
+  unit: /1
+  short_label: "Part de l'impôt de l'auto-entrepreneur"
+  reference:
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 52, paragraphe 3, et article 76"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4072 (article 52, paragraphe 3), p. 4073 (article 54, paragraphe 2) et p. 4082 (article 76). L'article 52, paragraphe 3, remplace l'article 7 du décret-loi du Chef du Gouvernement n° 2020-33 du 10 juin 2020, relatif au régime de l'auto-entrepreneur. Article 7 nouveau : la contribution unique comprend 200 dinars par an dans les zones communales, selon les limites des communes en vigueur avant le 1er janvier 2015, et 100 dinars dans les autres zones, au titre de l'impôt sur le revenu ; puis : « وتتضمن الضريبة المدفوعة المعلوم على المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية بنسبة 20% من الضريبة المذكورة وذلك بصرف النظر عن الحد الأدنى للمعلوم المذكور » (l'impôt payé comprend la taxe sur les établissements à caractère industriel, commercial ou professionnel à raison de 20 % dudit impôt, nonobstant le minimum de ladite taxe). L'article 54, paragraphe 2, abroge l'article 9 du même décret-loi, qui dispensait l'auto-entrepreneur du paiement de la taxe. Date d'effet : article 76, p. 4082 — « مع مراعاة الأحكام المخالفة الواردة بهذا المرسوم، تطبق أحكام هذا المرسوم بداية من غرة جانفي 2023 » (sous réserve des dispositions contraires du décret-loi, celui-ci s'applique à compter du 1er janvier 2023). Édition arabe lue sur la couche texte du fascicule, la phrase citée étant relue à l'image, p. 4072. L'édition française de ce fascicule n'est pas en ligne (erreur 404 sur https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf le 11 octobre 2026) : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Fraction de l'impôt sur le revenu payé par l'auto-entrepreneur dans sa contribution unique qui est
+  réputée taxe sur les établissements à caractère industriel, commercial ou professionnel, sans
+  égard au minimum de cette taxe (décret-loi n° 2020-33 du 10 juin 2020, article 7, dans la
+  rédaction de la loi de finances pour 2023). La disposition est extérieure au code de la fiscalité
+  locale.
+
+  La série commence le 1er janvier 2023. Dans sa rédaction initiale, lue sur la couche texte de
+  l'édition arabe (JORT n° 54 du 10 juin 2020, pp. 1417 à 1420), le décret-loi ne comprenait pas la
+  taxe dans la contribution unique — fixée alors à 0,5 % du chiffre d'affaires annuel au titre de
+  l'impôt sur le revenu (article 7) — et dispensait l'auto-entrepreneur de la payer (article 9).
+  Cette dispense n'est pas une part de l'impôt : aucune valeur n'est portée avant 2023.
+
+  Deux autres régimes « comprennent » la taxe dans un impôt ou une contribution sans en chiffrer la
+  part, et ne donnent donc lieu à aucune valeur : l'impôt forfaitaire de l'article 44 quater du code
+  de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (loi de finances
+  pour 2011) et la contribution unique de l'article 42 de la loi de finances pour 2019, que
+  l'article 54, paragraphe 3, de la loi de finances pour 2023 abroge.

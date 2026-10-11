@@ -1,0 +1,19 @@
+description: "Contribution à la réalisation de parkings collectifs : barème de 2003, selon la part des places manquantes et la population de la commune"
+metadata:
+  short_label: "Barème de 2003"
+  order:
+  - manque_jusqu_a_25
+  - manque_25_a_75
+  - manque_plus_de_75
+documentation: |-
+  Barème de l'article 90 du code de la fiscalité locale dans la rédaction que lui donne la loi de
+  finances pour 2003, en vigueur depuis le 1er janvier 2003 : un montant par place de stationnement,
+  selon la part des places manquantes dans le nombre requis (trois cas) et selon la population de la
+  commune (trois tranches). La première tranche n'a plus de plancher : elle couvre toutes les
+  communes d'au plus 50 000 habitants, alors que le barème de 1997 ne commençait qu'au-delà de 20
+  000 habitants.
+
+  Le troisième cas vise un manque qui dépasse 75 % « sans atteindre 100 % » ; lorsqu'aucune des
+  places autorisées n'est réalisée, le montant est doublé.
+
+  Aucune modification de l'article 90 n'est relevée depuis dans les lois de finances dépouillées.

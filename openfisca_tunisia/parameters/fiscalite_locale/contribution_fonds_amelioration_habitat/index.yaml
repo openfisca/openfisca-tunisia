@@ -1,0 +1,12 @@
+description: "Contribution au profit du Fonds national d'amélioration de l'habitat"
+metadata:
+  short_label: "Contribution au fonds de l'habitat"
+  order:
+  - taux
+documentation: |-
+  Prélèvement adossé à la taxe sur les immeubles bâtis : il en reprend l'assiette, le redevable et
+  les règles de recouvrement, de contrôle, de contentieux, de sanctions, de prescription et de
+  restitution, mais son produit va à un fonds spécial du Trésor, le Fonds national d'amélioration de
+  l'habitat, et non à la collectivité locale. Il est institué par la loi de finances pour 2005 (loi
+  n° 2004-90 du 31 décembre 2004, articles 11 à 16), hors du code de la fiscalité locale, et ne
+  frappe que les immeubles destinés à l'habitation.

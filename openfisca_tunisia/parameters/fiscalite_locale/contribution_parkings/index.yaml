@@ -1,0 +1,23 @@
+description: "Contribution à la réalisation de parkings collectifs pour les moyens de transport"
+metadata:
+  short_label: "Contribution aux parkings collectifs"
+  order:
+  - bareme_1997
+  - bareme_2003
+documentation: |-
+  Contribution due par les propriétaires des constructions nouvelles, ou de celles qui ont fait
+  l'objet d'une extension ou d'une transformation de leur usage, lorsqu'il leur est impossible, pour
+  des raisons techniques ou économiques, de satisfaire aux normes de stationnement (code de la
+  fiscalité locale, chapitre VIII, article 89). Les zones concernées sont fixées par arrêté conjoint
+  du ministre de l'intérieur et du ministre chargé de l'urbanisme ; leurs listes ne sont pas
+  versées.
+
+  C'est le seul prélèvement du chapitre VIII dont la loi fixe elle-même le montant (article 90) :
+  l'article 92 renvoie les autres tarifs à un décret. Deux barèmes se succèdent, chacun dans son
+  nœud : celui de 1997, selon la seule population de la commune, et celui de 2003, qui la croise
+  avec la part des places manquantes.
+
+  Le code des collectivités locales (loi organique n° 2018-29 du 9 mai 2018, article 391) prévoit
+  que les articles 46 à 95 du code de la fiscalité locale cessent de s'appliquer, collectivité par
+  collectivité, à mesure qu'entrent en vigueur ses propres délibérations tarifaires. Cette cessation
+  n'a pas de date nationale : le barème de 2003 n'est pas clos.

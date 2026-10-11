@@ -1,5 +1,7 @@
-"""Fiscalité locale : taxe sur les immeubles bâtis, taxe sur les terrains non bâtis, taxe sur
-les établissements à caractère industriel, commercial ou professionnel, et taxe hôtelière.
+"""Fiscalité locale : taxe sur les immeubles bâtis, taxe sur les terrains non bâtis,
+contribution au fonds de l'habitat, taxe sur les établissements à caractère industriel, commercial
+ou professionnel, taxe hôtelière, taxe sur les spectacles, contribution des propriétaires
+riverains, droit de licence et contribution aux parkings collectifs.
 
 Les valeurs attendues sont écrites en clair, tirées du code de la fiscalité locale (loi n° 97-11
 du 3 février 1997), des décrets des barèmes et des lois de finances. Pour les deux taxes sur les
@@ -12,8 +14,9 @@ immeubles, cinq choses sont éprouvées :
 - les unités, toutes enregistrées dans `units.yaml` ;
 - le système des pensions ne charge pas ce sous-arbre.
 
-Pour la taxe sur les établissements et la taxe hôtelière, la table `SERIES` donne, feuille par
-feuille, chaque date, sa valeur (ou la clôture, `None`) et le fascicule de sa référence ; sont
+Pour tout le reste — taxe sur les établissements, taxe hôtelière, pénalité de retard et
+dégrèvement partiel de la taxe sur les immeubles bâtis, contribution au fonds de l'habitat,
+chapitres V à VII du code, parkings —, la table `SERIES` donne, feuille par feuille, chaque date, sa valeur (ou la clôture, `None`) et le fascicule de sa référence ; sont
 éprouvés la forme de l'arbre, les comptes, les valeurs la veille et le jour de chaque date, les
 clôtures, les références, les unités, et la croissance des barèmes d'un décret au suivant.
 
@@ -117,6 +120,16 @@ LFC_2012 = ("JORT n° 39 du 18 mai 2012", "/2012/2012F/Jo0392012.pdf")
 LF_2013 = ("JORT n° 1 du 1er janvier 2013", "/2013/2013F/Jo0012013.pdf")
 LF_2014 = ("JORT n° 105 du 31 décembre 2013", "/2013/2013F/Jo1052013.pdf")
 DECRET_2017 = ("JORT n° 26 du 31 mars 2017", "/2017/2017F/Jo0262017.pdf")
+DECRET_SPECTACLES = ("JORT n° 26 du 1er avril 1997", "/1997/1997F/Jo02697.pdf")
+LF_2002 = ("JORT n° 104 du 28 décembre 2001", "/2001/2001F/Jo1042001.pdf")
+LOI_2002_76 = ("JORT n° 61 du 26 juillet 2002", "/2002/2002F/Jo0612002.pdf")
+LF_2003 = ("JORT n° 102 du 17 décembre 2002", "/2002/2002F/Jo1022002.pdf")
+LF_2005 = ("JORT n° 105 du 31 décembre 2004", "/2004/2004F/Jo1052004.pdf")
+LF_2007 = ("JORT n° 103 du 26 décembre 2006", "/2006/2006F/Jo1032006.pdf")
+LF_2021 = ("JORT n° 128 du 25 décembre 2020", "/2020/2020F/Jo1282020.pdf")
+LF_2022 = ("JORT n° 119 du 28 décembre 2021", "/2021/2021F/Jo1192021.pdf")
+# Édition arabe : l'édition française de ce fascicule n'est pas en ligne.
+LF_2023 = ("JORT n° 141 du 23 décembre 2022", "/2022/2022A/Ja1412022.pdf")
 
 # Minimum de la taxe sur les établissements, en dinars par mètre carré : pour chaque catégorie
 # d'usage, les colonnes « Taux 8 % », « 10 % », « 12 % » et « 14 % » des trois décrets.
@@ -141,7 +154,9 @@ SERIES = {
     f"{TCL}.maximum": (
         ("1997-03-13", 50000, DECRETS_1997), ("2003-06-26", 60000, DECRET_2003),
         ("2007-01-01", 100000, DECRET_2006), ("2012-01-01", None, LFC_2012)),
-    f"{TCL}.seuil_affectation_excedent": (("2013-01-01", 100000, LF_2013),),
+    f"{TCL}.seuil_affectation_excedent": (
+        ("2013-01-01", 100000, LF_2013), ("2021-01-01", 100000, LF_2021)),
+    f"{TCL}.part_impot_auto_entrepreneur": (("2023-01-01", 0.2, LF_2023),),
     f"{TH}.taux": (("1997-01-01", 0.02, CODE_1997),),
     f"{TH}.part_affectee_fonds": (("1997-01-01", 0.5, LF_1997),),
 }
@@ -154,6 +169,69 @@ SERIES.update({
     for n, bareme in MINIMUM.items()
     for i, t in enumerate(TAUX_TIB)
 })
+
+# --- Compléments : pénalité, dégrèvement, fonds de l'habitat, chapitres V à VII, parkings ---------
+
+FNAH = "contribution_fonds_amelioration_habitat"
+SPECTACLES = "taxe_spectacles"
+RIVERAINS = "contribution_riverains"
+LICENCE = "droit_licence"
+PARKINGS = "contribution_parkings"
+
+# Droit de licence, en dinars par an, par catégorie d'établissement (décret n° 97-434).
+TARIF_LICENCE = {1: 25, 2: 150, 3: 300}
+# Parkings, en dinars par place. 1997 : selon la population. 2003 : pour chaque part de places
+# manquantes, selon la population (au plus 50 000 ; 50 000 à 100 000 ; plus de 100 000).
+PARKINGS_1997 = {
+    "population_20000_a_50000": 100,
+    "population_50000_a_100000": 250,
+    "population_plus_de_100000": 500,
+}
+POPULATIONS_2003 = (
+    "population_jusqu_a_50000", "population_50000_a_100000", "population_plus_de_100000")
+PARKINGS_2003 = {
+    "manque_jusqu_a_25": (250, 500, 1000),
+    "manque_25_a_75": (375, 750, 1500),
+    "manque_plus_de_75": (565, 1125, 2250),
+}
+
+COMPLEMENTS = {
+    f"{TIB}.penalite_retard.taux_mensuel": (
+        ("1997-01-01", 0.0125, CODE_1997), ("2002-01-01", 0.01, LF_2002),
+        ("2007-01-01", 0.0075, LF_2007), ("2023-01-01", 0.0125, LF_2023)),
+    f"{TIB}.penalite_retard.plafond_part_principal": (("2022-01-01", 1, LF_2022),),
+    f"{TIB}.degrevement_partiel": (
+        ("1997-01-01", 0.25, CODE_1997), ("2003-01-01", None, LF_2003)),
+    f"{FNAH}.taux": (("2005-01-01", 0.04, LF_2005),),
+    f"{SPECTACLES}.part_recettes_previsionnelles": (("1997-01-01", 0.5, CODE_1997),),
+    f"{SPECTACLES}.taux": (("1997-01-01", 0.06, CODE_1997),),
+    f"{SPECTACLES}.prix_entree_exonere_maximum": (("1997-04-07", 5, DECRET_SPECTACLES),),
+    f"{RIVERAINS}.reduction_maximale": (
+        ("1997-01-01", 0.5, CODE_1997), ("2002-08-01", None, LOI_2002_76)),
+    f"{RIVERAINS}.avance.minimum": (("1997-01-01", 0.1, CODE_1997),),
+    f"{RIVERAINS}.avance.maximum": (("1997-01-01", 0.3, CODE_1997),),
+    f"{LICENCE}.retenue_budget_etat": (("1997-01-01", 0.1, CODE_1997),),
+}
+COMPLEMENTS.update({
+    f"{LICENCE}.tarif_annuel.categorie_{n}": (("1997-03-13", tarif, DECRETS_1997),)
+    for n, tarif in TARIF_LICENCE.items()
+})
+COMPLEMENTS.update({
+    f"{PARKINGS}.bareme_1997.{tranche}": (
+        ("1997-01-01", montant, CODE_1997), ("2003-01-01", None, LF_2003))
+    for tranche, montant in PARKINGS_1997.items()
+})
+COMPLEMENTS.update({
+    f"{PARKINGS}.bareme_2003.{manque}.{tranche}": (("2003-01-01", montant, LF_2003),)
+    for manque, montants in PARKINGS_2003.items()
+    for tranche, montant in zip(POPULATIONS_2003, montants)
+})
+SERIES.update(COMPLEMENTS)
+
+# Feuilles exprimées en dinars ; les autres séries sont des taux ou des parts.
+EN_DINARS = (
+    ".maximum", ".seuil_affectation_excedent", ".prix_entree_exonere_maximum")
+NOEUDS_EN_DINARS = (".tarif_annuel.", f"{PARKINGS}.")
 
 
 def veille(date):
@@ -237,13 +315,19 @@ def ordre(noeud):
     return noeud.metadata["order"]
 
 
-def test_la_fiscalite_locale_a_quatre_enfants_dans_l_ordre_du_code():
-    assert ordre(FISCALITE_LOCALE) == [TIB, TNB, TCL, TH]
+def test_la_fiscalite_locale_a_neuf_enfants_dans_l_ordre_du_code():
+    """Les chapitres du code dans leur ordre ; la contribution au fonds de l'habitat, hors
+    code, suit les deux taxes sur les immeubles dont elle reprend l'assiette."""
+    assert ordre(FISCALITE_LOCALE) == [
+        TIB, TNB, FNAH, TCL, TH, SPECTACLES, RIVERAINS, LICENCE, PARKINGS]
 
 
 def test_forme_de_la_taxe_sur_les_etablissements_et_de_la_taxe_hoteliere():
     tcl = FISCALITE_LOCALE.children[TCL]
-    assert ordre(tcl) == ["taux", "minimum", "maximum", "seuil_affectation_excedent"]
+    assert ordre(tcl) == [
+        "taux", "minimum", "maximum", "seuil_affectation_excedent",
+        "part_impot_auto_entrepreneur",
+    ]
     assert ordre(tcl.children["taux"]) == [
         "chiffre_affaires_brut_local", "chiffre_affaires_brut", "exportation_et_non_residents",
         "produits_prix_homologues", "impot_regime_1997", "impot_regime_2013",
@@ -255,12 +339,43 @@ def test_forme_de_la_taxe_sur_les_etablissements_et_de_la_taxe_hoteliere():
     assert ordre(FISCALITE_LOCALE.children[TH]) == ["taux", "part_affectee_fonds"]
 
 
+def test_forme_des_complements():
+    tib = FISCALITE_LOCALE.children[TIB]
+    assert ordre(tib) == [
+        "taux_assiette", "taux", "seuils_superficie", "prix_reference", "degrevement_partiel",
+        "penalite_retard",
+    ]
+    assert ordre(tib.children["penalite_retard"]) == ["taux_mensuel", "plafond_part_principal"]
+    assert ordre(FISCALITE_LOCALE.children[FNAH]) == ["taux"]
+    assert ordre(FISCALITE_LOCALE.children[SPECTACLES]) == [
+        "part_recettes_previsionnelles", "taux", "prix_entree_exonere_maximum"]
+    riverains = FISCALITE_LOCALE.children[RIVERAINS]
+    assert ordre(riverains) == ["reduction_maximale", "avance"]
+    assert ordre(riverains.children["avance"]) == ["minimum", "maximum"]
+    licence = FISCALITE_LOCALE.children[LICENCE]
+    assert ordre(licence) == ["tarif_annuel", "retenue_budget_etat"]
+    assert ordre(licence.children["tarif_annuel"]) == [f"categorie_{n}" for n in TARIF_LICENCE]
+    parkings = FISCALITE_LOCALE.children[PARKINGS]
+    assert ordre(parkings) == ["bareme_1997", "bareme_2003"]
+    assert ordre(parkings.children["bareme_1997"]) == list(PARKINGS_1997)
+    bareme_2003 = parkings.children["bareme_2003"]
+    assert ordre(bareme_2003) == list(PARKINGS_2003)
+    for manque in bareme_2003.children.values():
+        assert ordre(manque) == list(POPULATIONS_2003)
+
+
 def test_comptes():
-    """26 feuilles ; 60 valeurs et 3 clôtures, dont 48 montants du minimum."""
-    assert len(SERIES) == 10 + 16
+    """53 feuilles ; 91 valeurs et 8 clôtures. Dont, de la version 0.133 : 26 feuilles, 60
+    valeurs, 3 clôtures et les 48 montants du minimum ; s'y ajoutent une valeur du seuil
+    d'affectation (2021) et 27 feuilles, 30 valeurs et 5 clôtures de compléments."""
+    assert len(SERIES) == 10 + 16 + 27
     valeurs = [v for serie in SERIES.values() for _, v, _ in serie]
-    assert sum(v is not None for v in valeurs) == 60
-    assert sum(v is None for v in valeurs) == 3
+    assert sum(v is not None for v in valeurs) == 60 + 1 + 30
+    assert sum(v is None for v in valeurs) == 3 + 5
+    assert len(COMPLEMENTS) + 1 == 27
+    assert sum(len(serie) for serie in COMPLEMENTS.values()) == 29 + 5
+    parkings = [p for p in SERIES if p.startswith(f"{PARKINGS}.")]
+    assert len(parkings) == 3 + 9
     minimum = [p for p in SERIES if ".minimum." in p]
     assert len(minimum) == 16
     assert sum(len(SERIES[p]) for p in minimum) == 48
@@ -300,7 +415,8 @@ def test_unites_des_series(chemin):
         enregistrees = {unite["name"] for unite in yaml.safe_load(f)}
     if ".minimum." in chemin:
         attendue = "currency/m2"
-    elif chemin.endswith((".maximum", ".seuil_affectation_excedent")):
+    elif (chemin.endswith(EN_DINARS) and ".avance." not in chemin) or any(
+            n in chemin for n in NOEUDS_EN_DINARS):
         attendue = "currency"
     else:
         attendue = "/1"
@@ -324,6 +440,51 @@ def test_les_trois_clotures():
     assert parametre(f"{TCL}.maximum")("2012-01-01") is None
     # Aucun seuil en 2012 : le maximum est supprimé, l'affectation ne commence qu'en 2013.
     assert parametre(f"{TCL}.seuil_affectation_excedent")("2012-12-31") is None
+
+
+def test_les_cinq_clotures_des_complements():
+    """Le dégrèvement partiel en 2003, la réduction de moitié des riverains en 2002, et les trois
+    tranches du barème des parkings de 1997, que le barème de 2003 remplace à la même date."""
+    assert parametre(f"{TIB}.degrevement_partiel")("2002-12-31") == 0.25
+    assert parametre(f"{TIB}.degrevement_partiel")("2003-01-01") is None
+    assert parametre(f"{RIVERAINS}.reduction_maximale")("2002-07-31") == 0.5
+    assert parametre(f"{RIVERAINS}.reduction_maximale")("2002-08-01") is None
+    for tranche, montant in PARKINGS_1997.items():
+        assert parametre(f"{PARKINGS}.bareme_1997.{tranche}")("2002-12-31") == montant
+        assert parametre(f"{PARKINGS}.bareme_1997.{tranche}")("2003-01-01") is None
+    for manque, montants in PARKINGS_2003.items():
+        for tranche, montant in zip(POPULATIONS_2003, montants):
+            assert parametre(f"{PARKINGS}.bareme_2003.{manque}.{tranche}")("2002-12-31") is None
+            assert parametre(f"{PARKINGS}.bareme_2003.{manque}.{tranche}")("2003-01-01") == montant
+
+
+def test_penalite_de_retard():
+    """Quatre taux, 1,25 % puis 1 % puis 0,75 % puis de nouveau 1,25 % ; le texte de 2022 pose
+    le plafond sans toucher au taux."""
+    taux = parametre(f"{TIB}.penalite_retard.taux_mensuel")
+    plafond = parametre(f"{TIB}.penalite_retard.plafond_part_principal")
+    assert [taux(d) for d in ("1997-01-01", "2002-01-01", "2007-01-01", "2023-01-01")] == [
+        0.0125, 0.01, 0.0075, 0.0125]
+    assert taux("2021-12-31") == taux("2022-01-01") == 0.0075
+    assert plafond("2021-12-31") is None
+    assert plafond("2022-01-01") == 1
+    assert "2022-01-01" not in {v.instant_str for v in taux.values_list}
+
+
+def test_bareme_des_parkings():
+    """Chaque barème croît avec la population ; celui de 2003 croît avec la part des places
+    manquantes. D'un cas au suivant, le montant est multiplié par une fois et demie, sauf dans la
+    première tranche du troisième cas, où le texte porte 565 dinars et non 562,500."""
+    assert list(PARKINGS_1997.values()) == sorted(set(PARKINGS_1997.values()))
+    for montants in PARKINGS_2003.values():
+        assert list(montants) == sorted(set(montants))
+    bas, milieu, haut = PARKINGS_2003.values()
+    assert [m * 1.5 for m in bas] == list(milieu)
+    assert [m * 1.5 for m in milieu[1:]] == list(haut[1:])
+    assert haut[0] == 565 != milieu[0] * 1.5
+    # La première tranche de 2003 n'a plus de plancher ; celle de 1997 commençait à 20 000.
+    assert "population_jusqu_a_50000" in POPULATIONS_2003
+    assert "population_20000_a_50000" in PARKINGS_1997
 
 
 def test_baremes_croissants():
