@@ -1,0 +1,20 @@
+description: "Prix de cession à partir duquel la cession d'un local d'habitation n'est plus exclue de la plus-value immobilière"
+values:
+  2023-01-01:
+    value: 500000
+metadata:
+  unit: currency
+  short_label: "Prix de cession limite du local d'habitation exclu"
+  reference:
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 43"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4068. Rubrique « ترشيد الامتيازات الجبائية بعنوان القيمة الزائدة العقارية » (rationalisation des avantages fiscaux au titre de la plus-value immobilière). Article 43, paragraphe 2 : « يضاف إلى أحكام المطة الرابعة من الفقرة الثانية من الفقرة 2 من الفصل 27 من مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات ما يلي: شريطة أن يقلّ سعر التفويت المصرح به أو الذي تم الترفيع فيه إثر عمليات المراقبة الجبائية عن 500.000 دينار. » (est ajouté au quatrième tiret de l'alinéa 2 du paragraphe 2 de l'article 27 du code : à condition que le prix de cession déclaré, ou relevé à la suite d'opérations de contrôle fiscal, soit inférieur à 500 000 dinars). Paragraphe 3 : « تطبق أحكام هذا الفصل على عمليات التفويت المنجزة ابتداء من غرة جانفي 2023 » (les dispositions de cet article s'appliquent aux cessions réalisées à compter du 1er janvier 2023). Édition arabe lue à l'image, p. 4068. L'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  L'exclusion du local d'habitation (`superficie_maximum`) ne vaut que si le prix de cession est
+  strictement inférieur à ce montant. Le prix retenu est le prix déclaré ou, après contrôle
+  fiscal, le prix relevé. Au-delà, l'exclusion est perdue en entier : la plus-value est imposée
+  dans les conditions de droit commun.
+
+  Le même article 43 (paragraphe 1) fait entrer dans le champ tous les terrains, terres agricoles
+  comprises.
