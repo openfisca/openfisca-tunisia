@@ -1,0 +1,27 @@
+description: "Taux de l'impôt sur la plus-value immobilière, cession avant l'expiration de la durée de détention"
+values:
+  1998-08-17:
+    value: 0.10
+  2013-01-01:
+    value: 0.15
+metadata:
+  unit: /1
+  short_label: "Taux, cession avant le seuil de détention"
+  note: "Série incomplète : états antérieurs à 1998 non versés."
+  reference:
+    1998-08-17:
+    - title: "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt, article premier"
+      href: https://www.pist.tn/jort/1998/1998F/Jo06498.pdf
+      note: "JORT n° 64 du 11 août 1998, p. 1736. Rubrique « Réduction du taux de l'impôt ». Article premier, paragraphe III nouveau de l'article 44 du code : « 1 - La plus-value visée au paragraphe 2 de l'article 27 du présent code est soumise au taux de : - 10% lorsque la cession intervient au cours de la période de dix ans à compter de la date de possession. - 5% lorsque la cession intervient après dix ans à compter de la date de possession. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64 du 5 juillet 1993, article 2). La dernière page du fascicule porte : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 12 août 1998 » ; d'où le 17 août 1998. L'article 12 (p. 1737), intitulé « Date d'entrée en vigueur de la loi », ne fixe pas de date de début : il étend la loi aux cessions effectuées avant sa promulgation, à condition que l'impôt soit payé dans l'année qui suit la promulgation, sans restitution des sommes déjà acquittées. Édition française lue à l'image, pp. 1736-1737 ; l'édition arabe n'est pas relue."
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 47 et 79"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 13 (article 47) et p. 28 (article 79). Rubrique « Révision du taux de l'impôt sur le revenu au titre de la plus-value immobilière ». Article 47, paragraphe 2 : « Le taux de 10% prévu par l'alinéa 1 du paragraphe III de l'article 44 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés est relevé à 15%. » Date d'effet : article 79 — « Sous réserve des dispositions de l'article 58 et des dispositions du numéro 3 de l'article 63 et des dispositions du premier tiret de l'article 64, les dispositions de la présente loi sont applicables à compter du 1er janvier 2013. » Édition française lue à l'image, p. 13, et sur la couche texte, p. 28 ; l'édition arabe n'est pas relue."
+documentation: |-
+  Taux appliqué à la plus-value immobilière quand la cession intervient avant que la durée de
+  détention fixée par `duree_detention_seuil` soit écoulée, à compter de la date de possession.
+
+  Pour un bien reçu par donation familiale, la date de possession est celle du donateur depuis la
+  loi n° 2006-69 du 28 octobre 2006. Pour les biens hérités, la loi de finances pour 2005
+  (article 60, paragraphe 3) institue un taux de 5 % « quelle que soit la période de détention » ;
+  ce taux n'est pas versé ici.

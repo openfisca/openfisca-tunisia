@@ -1,0 +1,28 @@
+description: "Taux de l'impôt sur la plus-value immobilière, cession après l'expiration de la durée de détention"
+values:
+  1998-08-17:
+    value: 0.05
+  2013-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  short_label: "Taux, cession après le seuil de détention"
+  note: "Série incomplète : états antérieurs à 1998 non versés."
+  reference:
+    1998-08-17:
+    - title: "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt, article premier"
+      href: https://www.pist.tn/jort/1998/1998F/Jo06498.pdf
+      note: "JORT n° 64 du 11 août 1998, p. 1736. Article premier, paragraphe III nouveau de l'article 44 du code : « - 5% lorsque la cession intervient après dix ans à compter de la date de possession. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64 du 5 juillet 1993, article 2). Dépôt du 12 août 1998, lu en dernière page du fascicule ; d'où le 17 août 1998. L'article 12 (p. 1737) étend la loi, sous condition de paiement dans l'année, aux cessions antérieures à sa promulgation. Édition française lue à l'image, pp. 1736-1737 ; l'édition arabe n'est pas relue."
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 47 et 79"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 13 (article 47) et p. 28 (article 79). Article 47, paragraphe 3 : « Le taux de 5% prévu par l'alinéa 1 du paragraphe III de l'article 44 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés est relevé à 10%. » Date d'effet : article 79, à compter du 1er janvier 2013. Édition française lue à l'image, p. 13, et sur la couche texte, p. 28 ; l'édition arabe n'est pas relue."
+documentation: |-
+  Taux appliqué à la plus-value immobilière quand la cession intervient après que la durée de
+  détention fixée par `duree_detention_seuil` est écoulée, à compter de la date de possession.
+
+  Depuis la loi de finances pour 2005 (article 60, paragraphe 3), l'alinéa 1 du paragraphe III
+  de l'article 44 porte deux fois le taux de 5 % : pour la cession après la durée de détention, et
+  pour les biens hérités, « quelle que soit la période de détention ». L'article 47, paragraphe 3,
+  de la loi de finances pour 2013 relève « le taux de 5 % prévu par l'alinéa 1 » sans distinguer
+  ces deux emplois. Le taux des biens hérités n'est pas versé ici.
