@@ -1,0 +1,36 @@
+description: "Superficie globale maximale, dépendances bâties et non bâties comprises, du local d'habitation dont la cession est exclue de la plus-value immobilière"
+values:
+  1998-08-17:
+    value: 1000
+  2005-01-01:
+    value: 1000
+  2014-01-01:
+    value: 1000
+metadata:
+  unit: m2
+  short_label: "Superficie maximale du local d'habitation exclu"
+  reference:
+    1998-08-17:
+    - title: "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt, article 3"
+      href: https://www.pist.tn/jort/1998/1998F/Jo06498.pdf
+      note: "JORT n° 64 du 11 août 1998, p. 1736. Rubrique « Détermination du champ d'application de l'impôt sur la plus-value immobilière ». Article 3, paragraphe 2 nouveau de l'article 27 du code : la plus-value est imposable « sauf lorsque la cession est faite au conjoint, aux ascendants, aux descendants ou dans le cadre d'une expropriation pour cause d'utilité publique, ou en cas de cession de biens hérités ou de l'habitation principale dans la limite d'une superficie globale ne dépassant pas 1000 m2 y compris les dépendances bâties et non bâties ». Date d'effet : la loi n'en fixe pas ; elle est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64 du 5 juillet 1993, article 2). Dépôt du 12 août 1998, lu en dernière page du fascicule ; d'où le 17 août 1998. Édition française lue à l'image, p. 1736 ; l'édition arabe n'est pas relue."
+    2005-01-01:
+    - title: "Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, articles 60 et 89"
+      href: https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf
+      note: "JORT n° 105 du 31 décembre 2004, p. 3441 (article 60) et p. 3445 (article 89). Rubrique « Rationalisation des avantages fiscaux au titre de la plus-value immobilière ». Article 60, paragraphe 1 : est supprimée du paragraphe 2 de l'article 27 du code la phrase « ou de la cession de biens hérités ou de l'habitation principale dans la limite d'une superficie globale ne dépassant pas 1000 m² y compris les dépendances bâties et non bâties », « Et est remplacée par ce qui suit : ou de la cession d'un seul local à usage d'habitation dans la limite d'une superficie globale ne dépassant pas 1000 m2 y compris les dépendances bâties et non bâties et ce pour la première opération de cession. » La superficie ne change pas ; l'entrée porte le texte qui fonde l'exclusion depuis cette date. Date d'effet : article 89 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2005. » Édition française lue à l'image, pp. 3441 et 3445 ; l'édition arabe n'est pas relue."
+    2014-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, articles 47 et 95"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, p. 3678 (article 47) et p. 3699 (article 95). Rubrique « Elargissement du champ d'application de l'impôt sur le revenu au titre de la plus-value immobilière ». Article 47, paragraphe 1 : le paragraphe 2 de l'article 27 du code est récrit ; ses dispositions « ne sont pas applicables aux opérations de cession faites : […] - d'un seul local à usage d'habitation dans la limite d'une superficie globale ne dépassant pas 1000 m2 y compris les dépendances bâties et non bâties, et ce, pour la première opération de cession. » La superficie ne change pas ; l'entrée porte le texte qui fonde l'exclusion depuis cette date. Date d'effet : article 95 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2014. » Édition française lue sur la couche texte, pp. 3678 et 3699 ; l'édition arabe n'est pas relue."
+documentation: |-
+  La limite est une superficie globale « ne dépassant pas » ce montant : un local de cette
+  superficie exacte reste exclu.
+
+  Les conditions qui accompagnent la superficie changent : habitation principale du 17 août 1998
+  au 31 décembre 2004 ; un seul local à usage d'habitation, pour la première opération de cession,
+  depuis le 1er janvier 2005. Depuis le 1er janvier 2023, l'exclusion est en outre réservée aux
+  cessions dont le prix est inférieur à `prix_cession_seuil`.
+
+  Avant le 17 août 1998, l'habitation principale est exclue sans limite de superficie : le code de
+  l'impôt sur le revenu de 1990 (article 27, paragraphe 2) et la loi de finances pour 1993
+  (article 106) n'en fixent aucune.

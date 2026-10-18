@@ -1,0 +1,31 @@
+description: "Plus-value immobilière"
+metadata:
+  short_label: "Plus-value immobilière"
+  order:
+  - taux_avant_seuil
+  - taux_apres_seuil
+  - duree_detention_seuil
+  - taux_retenue_source
+  - exclusion_logement
+documentation: |-
+  Plus-value de cession des droits sociaux dans les sociétés immobilières, des immeubles bâtis et
+  des terrains, rangée parmi les revenus fonciers (code de l'impôt sur le revenu des personnes
+  physiques et de l'impôt sur les sociétés, article 27, paragraphe 2). Elle est imposée à un taux
+  propre, qui dépend de la durée écoulée entre la date de possession et celle de la cession
+  (article 44, paragraphe III, alinéa 1). La plus-value est égale au prix de cession déclaré, ou
+  révisé après vérification fiscale, diminué du prix de revient majoré des impenses et de 10 % par
+  année de détention (article 28, paragraphe IV).
+
+  Le champ change au fil des textes : terrains à bâtir des plans d'aménagement urbain et des
+  périmètres d'intervention foncière, et immeubles bâtis, à partir du 17 août 1998 (loi n° 98-73,
+  article 3) ; terrains des périmètres de réserves foncières à partir du 1er janvier 2002 (loi n° 2001-123,
+  article 74) ; tous
+  les terrains, sauf les terrains agricoles situés en zone agricole cédés sous engagement de ne
+  pas construire pendant quatre ans, à partir du 1er janvier 2014 (loi n° 2013-54, article 47) ;
+  terrains agricoles compris à partir du 1er janvier 2023 (décret-loi n° 2022-79, article 43).
+  Restent hors du champ les cessions au conjoint, aux ascendants et aux descendants, les cessions
+  au titre des réserves foncières, l'expropriation pour cause d'utilité publique et, sous
+  conditions, la cession d'un local d'habitation (`exclusion_logement`).
+
+  La plus-value de cession des lots issus de terres domaniales à vocation agricole (article 27,
+  paragraphe 3) a ses propres taux, de 25 % et 50 % ; ils ne sont pas versés ici.

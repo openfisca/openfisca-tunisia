@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.135 - [#493](https://github.com/openfisca/openfisca-tunisia/pull/493)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1995 ; paramètres nouveaux.
+* Zones impactées : `parameters/impot_revenu/foncier/plus_value_immobiliere`.
+* Détails :
+  - **Verse la plus-value immobilière** : 6 feuilles nouvelles, 13 valeurs. Paramètres seulement : aucune formule ne les lit.
+  - **`taux_avant_seuil`** et **`taux_apres_seuil`** : 10 % et 5 % au 17 août 1998 (loi n° 98-73, article premier, JORT n° 64 du 11 août 1998, p. 1736), 15 % et 10 % au 1er janvier 2013 (loi de finances pour 2013, article 47, paragraphes 2 et 3, p. 13 ; effet à l'article 79, p. 28). La loi n° 98-73 n'a pas de clause d'effet : elle est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 12 août 1998 (loi n° 93-64, article 2).
+  - **`duree_detention_seuil`** : 10 ans au 17 août 1998, 5 ans au 1er janvier 2013 (loi de finances pour 2013, article 47, paragraphe 1).
+  - **`taux_retenue_source`** : 2,5 % du prix de cession déclaré au 1er janvier 1995 (loi de finances pour 1995, article 55, p. 2047 ; article 100, p. 2051) ; valeur identique au 1er janvier 2013, avec la loi de finances pour 2013 (article 46), qui récrit l'alinéa et étend la retenue aux droits sociaux des sociétés immobilières et aux fonds de commerce.
+  - **`exclusion_logement.superficie_maximum`** : 1 000 m² au 17 août 1998 (loi n° 98-73, article 3, habitation principale) ; valeurs identiques au 1er janvier 2005 (loi de finances pour 2005, article 60 : un seul local, première cession) et au 1er janvier 2014 (loi de finances pour 2014, article 47), avec leur référence.
+  - **`exclusion_logement.prix_cession_seuil`** : 500 000 dinars au 1er janvier 2023 (décret-loi n° 2022-79, article 43, édition arabe, p. 4068). L'exclusion vaut pour un prix strictement inférieur.
+  - **Série à fenêtre.** Les deux taux et la durée portent la note « Série incomplète : états antérieurs à 1998 non versés. » : l'impôt de 1977, son barème de 1981, le taux unique de 15 % de 1990 et de 1993 ne sont pas versés. La retenue (instituée en 1995), la superficie (instituée en 1998) et le prix (institué en 2023) commencent à leur institution.
+  - **Ce qui n'est pas versé** : le taux des biens hérités (5 % au 1er janvier 2005) ; le minimum d'impôt de 2,5 % du prix (1995 à 1998) ; les taux de 25 % et 50 % des lots domaniaux.
+  - Un test nouveau, `tests/test_plus_value_immobiliere.py`, lit chaque feuille la veille et le jour de chaque date et contrôle références, notes et unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.134 - [#492](https://github.com/openfisca/openfisca-tunisia/pull/492)
 
 * Évolution du système socio-fiscal.

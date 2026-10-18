@@ -1,0 +1,17 @@
+description: "Exclusion de la cession d'un local d'habitation"
+metadata:
+  short_label: "Exclusion du local d'habitation"
+  order:
+  - superficie_maximum
+  - prix_cession_seuil
+documentation: |-
+  Conditions sous lesquelles la cession d'un local d'habitation échappe à l'impôt sur la
+  plus-value immobilière (code de l'impôt sur le revenu, article 27, paragraphe 2).
+
+  De 1990 au 16 août 1998, l'habitation principale est exclue sans limite de superficie. Du
+  17 août 1998 au 31 décembre 2004, l'exclusion vise l'habitation principale, dans la limite d'une
+  superficie globale (loi n° 98-73, article 3). Depuis le 1er janvier 2005, elle vise « un seul
+  local à usage d'habitation », dans la même limite, « pour la première opération de cession »
+  (loi de finances pour 2005, article 60) ; la loi de finances pour 2014 (article 47) reprend
+  cette condition. Depuis le 1er janvier 2023, elle est en outre réservée aux cessions dont le
+  prix est inférieur à un montant (décret-loi n° 2022-79, article 43).
