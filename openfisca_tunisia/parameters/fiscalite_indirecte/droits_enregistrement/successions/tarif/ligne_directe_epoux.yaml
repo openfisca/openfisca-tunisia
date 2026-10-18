@@ -1,0 +1,103 @@
+description: "Droit d'enregistrement sur les successions, en ligne directe et entre époux"
+brackets:
+- threshold:
+    1984-01-01:
+      value: 0
+  rate:
+    1984-01-01:
+      value: 0.06
+    1993-05-17:
+      value: 0.05
+    1998-08-17:
+      value: 0.025
+- threshold:
+    1984-01-01:
+      value: 5000
+    1993-05-17:
+      value: null
+  rate:
+    1984-01-01:
+      value: 0.08
+    1993-05-17:
+      value: null
+- threshold:
+    1984-01-01:
+      value: 10000
+    1993-05-17:
+      value: null
+  rate:
+    1984-01-01:
+      value: 0.1
+    1993-05-17:
+      value: null
+- threshold:
+    1984-01-01:
+      value: 15000
+    1993-05-17:
+      value: null
+  rate:
+    1984-01-01:
+      value: 0.13
+    1993-05-17:
+      value: null
+- threshold:
+    1984-01-01:
+      value: 45000
+    1993-05-17:
+      value: null
+  rate:
+    1984-01-01:
+      value: 0.18
+    1993-05-17:
+      value: null
+- threshold:
+    1984-01-01:
+      value: 90000
+    1993-05-17:
+      value: null
+  rate:
+    1984-01-01:
+      value: 0.25
+    1993-05-17:
+      value: null
+metadata:
+  threshold_unit: currency
+  rate_unit: /1
+  short_label: "Ligne directe et époux"
+  notes:
+    1984-01-01:
+    - note: "Série incomplète : états antérieurs à 1984 non versés."
+  reference:
+    1984-01-01:
+    - title: "Loi n° 83-113 du 30 décembre 1983, portant loi de finances pour la gestion 1984, article 12"
+      href: https://www.pist.tn/jort/1983/1983F/Jo08683.pdf
+      note: "JORT n° 86 du 30 décembre 1983, p. 3372. Article 12 : « Les droits de mutation par décès fixés par l'article 29 de la loi N° 74-101 du 25 décembre 1974 sont modifiés conformément au tableau ci-après ». Le tableau fixe six tranches de part nette : de 0,001 à 5 000 dinars, de 5 000,001 à 10 000, de 10 000,001 à 15 000, de 15 000,001 à 45 000, de 45 000,001 à 90 000, et au-delà de 90 000 dinars. Ligne « En ligne directe et entre époux » : 6 %, 8 %, 10 %, 13 %, 18 % et 25 %. Date d'effet : l'article n'en fixe pas ; la loi est exécutoire un jour franc après sa publication au Journal officiel (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Le fascicule est publié le vendredi 30 décembre 1983, d'où le 1er janvier 1984. Édition française lue à l'image ; l'édition arabe n'est pas relue."
+    1993-05-17:
+    - title: "Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et de timbre, article 2 ; code, article 20, numéro 16"
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: "JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et pp. 719-720 (code, article 20, numéro 16). Sous le titre « Mutations à titre gratuit de biens meubles et immeubles » : « 16) Les donations et les successions » ; ligne « En ligne directe, entre époux et entre frères et sœurs » : 5 %. Le taux est unique, sans tranche. Date d'effet : article 2, I de la loi, p. 715 : « Les dispositions du code sus visé s'appliquent aux jugements, actes, contrats et mutations établis ou intervenus à compter de la promulgation de la présente loi », soit le 17 mai 1993. Le second alinéa du même paragraphe étend le code aux mutations antérieures dont l'enregistrement intervient avant le 1er janvier 1994, ou avant l'expiration du délai légal lorsqu'elle se situe après le 31 décembre 1993 ; les trop perçus ne sont pas restitués (article 2, II). Édition française lue à l'image ; l'édition arabe n'est pas relue."
+    1998-08-17:
+    - title: "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt, article 8"
+      href: https://www.pist.tn/jort/1998/1998F/Jo06498.pdf
+      note: "JORT n° 64 du 11 août 1998, p. 1737. Rubrique « Réduction du tarif d'enregistrement des donations et des successions entre ascendants et descendants et entre époux ». Article 8 : « Les dispositions prévues par le premier tiret du n° 16 de l'article 20 du code des droits d'enregistrement et de timbre sont abrogées et remplacées par ce qui suit » ; ligne « Entre ascendants et descendants et entre époux » : 2,5 %. Date d'effet : la loi n'en fixe pas ; elle est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64 du 5 juillet 1993, article 2). La dernière page du fascicule porte : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 12 août 1998 » ; d'où le 17 août 1998. L'article 12 (p. 1737), sous la rubrique « Date d'entrée en vigueur de la loi », ne fixe pas de date de début : il étend la loi aux mutations effectuées avant sa promulgation dont l'enregistrement est effectué dans l'année qui suit, sans restitution des sommes acquittées. Édition française lue sur la couche texte, p. 1737 ; l'édition arabe n'est pas relue."
+documentation: |-
+  Taux du droit d'enregistrement sur la part nette recueillie par un héritier en ligne
+  directe — ascendant ou descendant — ou par le conjoint survivant.
+
+  Du 1er janvier 1984 au 16 mai 1993, le taux dépend de la tranche de part nette recueillie
+  par chaque ayant droit : six tranches, la même pour les quatre degrés de parenté. Le texte
+  fixe un taux par tranche ; la règle d'application — taux de chaque tranche à la fraction de
+  part qui y tombe, ou taux de la tranche atteinte à toute la part — n'est pas établie par les
+  textes lus : la loi de finances pour 1975 (article 29), que modifie celle de 1984, ne la
+  donne pas, et le décret du 28 décembre 1929 « substituant pour les droits de mutations par
+  décès le tarif progressif au tarif proportionnel » n'est pas lu.
+
+  Depuis le 17 mai 1993, le code des droits d'enregistrement et de timbre fixe un taux unique,
+  sans tranche (article 20, numéro 16) : les tranches 2 à 6 sont closes à cette date. Ce taux
+  vaut pour les donations comme pour les successions ; depuis la loi n° 2006-69 du 28 octobre
+  2006, les donations entre ascendants et descendants et entre époux sont enregistrées à un
+  droit fixe, qui n'est pas versé ici.
+
+  Le code mis à jour au 1er janvier 2025 publié par le ministère des Finances (p. 31) donne le
+  tarif de l'article 20, numéro 16, dans la rédaction de la loi n° 98-73, sans modification
+  ultérieure. C'est une compilation administrative, non une source de droit.

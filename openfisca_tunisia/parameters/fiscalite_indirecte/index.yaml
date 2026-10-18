@@ -4,5 +4,6 @@ metadata:
   order:
   - tva
   - accises
-documentation: Paramètres de la fiscalité indirecte en Tunisie.\nComprend la TVA et
-  les droits d'accise.
+  - droits_enregistrement
+documentation: Paramètres de la fiscalité indirecte en Tunisie.\nComprend la TVA, les
+  droits d'accise et les droits d'enregistrement.

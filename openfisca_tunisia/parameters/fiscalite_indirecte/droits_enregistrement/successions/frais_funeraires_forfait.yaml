@@ -1,0 +1,22 @@
+description: "Montant forfaitaire des frais funéraires déduits de l'actif successoral à défaut de justification"
+values:
+  1993-05-17:
+    value: 500
+metadata:
+  unit: currency
+  short_label: "Frais funéraires, forfait"
+  notes:
+    1993-05-17:
+    - note: "Série incomplète : états antérieurs à 1993 non versés."
+  reference:
+    1993-05-17:
+    - title: "Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et de timbre, article 2 ; code, article 49"
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: "JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et p. 725 (code, article 49). Les frais funéraires dûment justifiés sont déduits de l'actif successoral ; « à défaut de justification », ils le sont « pour une somme forfaitaire de cinq cents dinars ». Date d'effet : article 2, I de la loi, p. 715 : « Les dispositions du code sus visé s'appliquent aux jugements, actes, contrats et mutations établis ou intervenus à compter de la promulgation de la présente loi », soit le 17 mai 1993. Le second alinéa du même paragraphe étend le code aux mutations antérieures dont l'enregistrement intervient avant le 1er janvier 1994, ou avant l'expiration du délai légal lorsqu'elle se situe après le 31 décembre 1993 ; les trop perçus ne sont pas restitués (article 2, II). Édition française lue à l'image ; l'édition arabe n'est pas relue."
+documentation: |-
+  Somme déduite de l'actif successoral au titre des frais funéraires lorsqu'ils ne sont pas
+  justifiés ; les frais dûment justifiés sont déduits pour leur montant (code des droits
+  d'enregistrement et de timbre, article 49).
+
+  L'existence de ce forfait avant le code de 1993 n'a pas été recherchée.
+  Le code mis à jour au 1er janvier 2025 publié par le ministère des Finances donne cinq cents dinars (p. 55). C'est une compilation administrative, non une source de droit.

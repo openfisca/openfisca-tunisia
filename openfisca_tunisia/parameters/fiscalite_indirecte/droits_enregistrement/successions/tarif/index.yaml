@@ -1,0 +1,13 @@
+description: "Tarif du droit d'enregistrement sur les successions, selon le degré de parenté"
+metadata:
+  short_label: "Tarif"
+  order:
+  - ligne_directe_epoux
+  - freres_soeurs
+  - oncles_neveux_cousins
+  - au_dela_quatrieme_degre
+documentation: |-
+  Un barème par degré de parenté entre le défunt et l'ayant droit, appliqué à la part nette
+  recueillie par chacun. De la loi de finances pour 1984 au code de 1993, six tranches de part
+  nette ; depuis le code, un taux unique (code des droits d'enregistrement et de timbre, article
+  20, numéro 16).

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.136 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 02/01/1975.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_enregistrement/successions`.
+* Détails :
+  - **Verse le droit d'enregistrement sur les successions**, dans un nœud nouveau `fiscalite_indirecte/droits_enregistrement`, appelé à porter les autres droits d'enregistrement.
+  - **Tarif** (`successions/tarif`) : quatre barèmes, un par degré de parenté — ligne directe et époux, frères et sœurs, oncles à cousins, au-delà du quatrième degré et non-parents. Du 01/01/1984 au 16/05/1993, six tranches de part nette, de 6 % à 85 % (loi de finances pour 1984, article 12) ; à partir du 17/05/1993, un taux unique de 5 %, 5 %, 25 % et 35 % (code des droits d'enregistrement et de timbre, article 20, numéro 16), les tranches 2 à 6 étant closes ; à partir du 17/08/1998, 2,5 % en ligne directe et entre époux (loi n° 98-73, article 8). Série incomplète : le tarif de 1975 n'est pas versé.
+  - **Abattements** (`successions/abattement`) : 2 000 dinars par enfant, ascendant à charge ou conjoint, plafonnés à 12 000 dinars, à partir du 02/01/1975 (loi de finances pour 1975, article 30 ; repris par le code, article 51, I) ; 5 000 et 30 000 dinars à partir du 17/08/1998 (loi n° 98-73, article 9). Abattement supplémentaire par héritier handicapé : 4 000 dinars à partir du 17/05/1993 (code, article 51, II), 10 000 dinars à partir du 17/08/1998 (article 10).
+  - **Habitation principale du défunt** : exonérée dans la limite de 1 000 m2 à partir du 17/05/1993 (code, article 53). **Frais funéraires** : forfait de 500 dinars à défaut de justification, à partir du 17/05/1993 (code, article 49).
+  - **Dates.** Le code fixe sa date d'effet à sa promulgation (loi n° 93-53, article 2, I). Les lois de finances pour 1975 et 1984 sont exécutoires un jour franc après leur publication ; la loi n° 98-73, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 12 août 1998.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres. Un test nouveau, `tests/test_droits_succession.py`, lit les valeurs la veille et le jour de chaque date, les tranches du tarif, les références et les unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Numéro de version 0.136, la 0.135 étant prise par la #493.
+
 ## 0.134 - [#492](https://github.com/openfisca/openfisca-tunisia/pull/492)
 
 * Évolution du système socio-fiscal.
