@@ -1,0 +1,42 @@
+description: "Abattement sur les parts recueillies en ligne directe ou entre époux, par enfant, par ascendant à charge du défunt et par conjoint survivant"
+values:
+  1975-01-02:
+    value: 2000
+  1993-05-17:
+    value: 2000
+  1998-08-17:
+    value: 5000
+metadata:
+  unit: currency
+  short_label: "Abattement par enfant, ascendant à charge ou conjoint"
+  notes:
+    1975-01-02:
+    - note: "Série incomplète : états antérieurs à 1975 non versés."
+  reference:
+    1975-01-02:
+    - title: "Loi n° 74-101 du 25 décembre 1974, portant loi de finances pour la gestion 1975, article 30"
+      href: https://www.pist.tn/jort/1974/1974F/Jo08074.pdf
+      note: "JORT n° 80 du 31 décembre 1974, p. 2916. Rubrique « Majoration des abattements ». Article 30 : le premier alinéa de l'article 9 du décret du 23 juin 1930, tel que modifié par l'article 2 de la loi n° 62-81 du 31 décembre 1962 relative aux droits d'enregistrement, est remplacé par : « Pour la perception des droits de mutation par décès, il est effectué sur l'ensemble des parts recueillies en ligne directe ou entre époux un abattement calculé à raison de 2.000 dinars par enfant vivant ou représenté, 2.000 dinars par ascendant à charge du défunt et 2.000 dinars pour le ou les conjoints survivants » ; « L'abattement total résultant des dispositions ci-dessus ne peut excéder 12.000 dinars ». Date d'effet : l'article n'en fixe pas, et les derniers articles de la loi (70 à 85, pp. 2920-2921), lus à l'image, ne portent pas de clause générale ; les articles 31 à 69 ne sont pas relus. La loi est exécutoire un jour franc après sa publication au Journal officiel (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Le fascicule est publié le mardi 31 décembre 1974, d'où le 2 janvier 1975. Édition française lue à l'image, sur une impression tramée ; l'édition arabe (p. 3221) n'est pas relue."
+    1993-05-17:
+    - title: "Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et de timbre, article 2 ; code, article 51"
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: "JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et p. 725 (code, article 51). Sous le titre « Abattement sur l'actif des successions », article 51, I : « Pour la perception des droits d'enregistrement sur les successions il est effectué sur l'ensemble des parts recueillies en ligne directe ou entre époux un abattement calculé à raison de 2.000 dinars par enfant vivant, par ascendant à charge du défunt et par conjoint survivant. L'abattement total résultant des dispositions de l'alinéa précédent ne peut excéder 12.000 dinars, et doit être effectué, en premier lieu, sur la part revenant au conjoint survivant ; le surplus, s'il en existe, se divise entre les autres ayants droit d'après les règles de la dévolution légale. » Le code reprend les montants de 1975. Date d'effet : article 2, I de la loi, p. 715 : « Les dispositions du code sus visé s'appliquent aux jugements, actes, contrats et mutations établis ou intervenus à compter de la promulgation de la présente loi », soit le 17 mai 1993. Le second alinéa du même paragraphe étend le code aux mutations antérieures dont l'enregistrement intervient avant le 1er janvier 1994, ou avant l'expiration du délai légal lorsqu'elle se situe après le 31 décembre 1993 ; les trop perçus ne sont pas restitués (article 2, II). Édition française lue à l'image ; l'édition arabe n'est pas relue."
+    1998-08-17:
+    - title: "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt, article 9"
+      href: https://www.pist.tn/jort/1998/1998F/Jo06498.pdf
+      note: "JORT n° 64 du 11 août 1998, p. 1737. Rubrique « Relèvement du montant des abattements de l'actif successoral ». Article 9 : « Est relevé à 5000 dinars le montant de l'abattement prévu au paragraphe I de l'article 51 du code des droits d'enregistrement et de timbre et est relevé à 30 000 dinars le montant de l'abattement total prévu au même paragraphe. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64 du 5 juillet 1993, article 2). La dernière page du fascicule porte : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 12 août 1998 » ; d'où le 17 août 1998. L'article 12 (p. 1737), sous la rubrique « Date d'entrée en vigueur de la loi », ne fixe pas de date de début : il étend la loi aux mutations effectuées avant sa promulgation dont l'enregistrement est effectué dans l'année qui suit, sans restitution des sommes acquittées. Édition française lue sur la couche texte, p. 1737 ; l'édition arabe n'est pas relue."
+documentation: |-
+  Montant retranché, pour la perception du droit sur les successions, de l'ensemble des parts
+  recueillies en ligne directe ou entre époux, pour chaque enfant vivant, chaque ascendant à
+  charge du défunt et le conjoint survivant. Le total est borné par `plafond` ; il s'impute
+  d'abord sur la part du conjoint survivant, le surplus se divisant entre les autres ayants droit
+  selon les règles de la dévolution légale (code des droits d'enregistrement et de timbre, article
+  51, I).
+
+  La loi de finances pour 1975 compte l'enfant « vivant ou représenté », et un abattement « pour
+  le ou les conjoints survivants ». Le code de 1993 dit « par enfant vivant » et « par conjoint
+  survivant », et compte, pour le nombre d'enfants, l'enfant décédé laissant des enfants
+  bénéficiaires du legs obligatoire (article 51, III ; code du statut personnel, article 191).
+
+  Les lois de finances lues de 1984 à 1993 ne modifient pas ce montant.
+  Le code mis à jour au 1er janvier 2025 publié par le ministère des Finances donne 5 000 dinars, dans la rédaction de la loi n° 98-73 (p. 56). C'est une compilation administrative, non une source de droit.

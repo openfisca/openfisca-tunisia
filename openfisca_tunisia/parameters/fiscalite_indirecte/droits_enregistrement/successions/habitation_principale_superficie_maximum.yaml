@@ -1,0 +1,25 @@
+description: "Superficie maximale de l'habitation principale du défunt exonérée du droit sur les successions en ligne directe ou entre époux"
+values:
+  1993-05-17:
+    value: 1000
+metadata:
+  unit: m2
+  short_label: "Habitation principale exonérée, superficie maximale"
+  reference:
+    1993-05-17:
+    - title: "Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et de timbre, article 2 ; code, article 53"
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: "JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et p. 726 (code, article 53). Sous le titre de l'exonération de l'habitation principale du défunt : « La maison constituant l'habitation principale du défunt est exonérée du paiement du droit d'enregistrement sur les successions lors de sa mutation en ligne directe ou entre époux […]. Cette exonération est accordée dans la limite d'une superficie de 1.000 m2 y compris les dépendances bâties et non bâties. L'excédent est soumis au droit d'enregistrement sur les successions. » Date d'effet : article 2, I de la loi, p. 715 : « Les dispositions du code sus visé s'appliquent aux jugements, actes, contrats et mutations établis ou intervenus à compter de la promulgation de la présente loi », soit le 17 mai 1993. Le second alinéa du même paragraphe étend le code aux mutations antérieures dont l'enregistrement intervient avant le 1er janvier 1994, ou avant l'expiration du délai légal lorsqu'elle se situe après le 31 décembre 1993 ; les trop perçus ne sont pas restitués (article 2, II). Édition française lue à l'image ; l'édition arabe n'est pas relue."
+documentation: |-
+  Superficie, dépendances bâties et non bâties comprises, dans la limite de laquelle la maison
+  constituant l'habitation principale du défunt est exonérée du droit d'enregistrement lors de sa
+  mutation en ligne directe ou entre époux. L'excédent est soumis au droit (code des droits
+  d'enregistrement et de timbre, article 53).
+
+  De 1984 au code de 1993, l'exonération existe sans limite de superficie : l'article 12 de la loi
+  n° 83-113 du 30 décembre 1983, portant loi de finances pour la gestion 1984 (JORT n° 86, p. 3372),
+  exonère cette maison « quelle que soit l'importance de la succession », sur attestation du
+  gouverneur ou du président de la commune. Avant 1984, elle était passible d'un droit
+  proportionnel de 4,30 % en ligne directe ou entre époux (loi n° 74-101 du 25 décembre 1974,
+  article 29, JORT n° 80, p. 2916). La série commence donc avec la limite.
+  Le code mis à jour au 1er janvier 2025 publié par le ministère des Finances donne 1 000 m2 (p. 58). C'est une compilation administrative, non une source de droit.

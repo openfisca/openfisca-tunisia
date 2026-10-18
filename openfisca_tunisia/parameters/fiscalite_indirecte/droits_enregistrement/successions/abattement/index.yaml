@@ -1,0 +1,11 @@
+description: "Abattements sur l'actif des successions"
+metadata:
+  short_label: "Abattements"
+  order:
+  - par_enfant_ascendant_conjoint
+  - plafond
+  - supplement_heritier_handicape
+documentation: |-
+  Abattements effectués, pour la perception du droit d'enregistrement sur les successions, sur
+  les parts recueillies en ligne directe ou entre époux (code des droits d'enregistrement et de
+  timbre, article 51).
