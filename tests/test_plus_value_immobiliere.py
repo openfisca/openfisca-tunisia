@@ -145,11 +145,20 @@ def test_chaque_date_porte_sa_reference(chemin):
 
 @pytest.mark.parametrize("chemin", SERIES)
 def test_note_des_series_incompletes(chemin):
-    note = parametre(chemin).metadata.get("note")
+    """La note est portée à la première date de la série, seule date de `notes`."""
+    notes = {
+        str(d): liste
+        for d, liste in parametre(chemin).metadata.get("notes", {}).items()
+    }
     if chemin in INCOMPLETES:
-        assert note == "Série incomplète : états antérieurs à 1998 non versés."
+        premiere = SERIES[chemin][1][0][0]
+        assert notes == {
+            premiere: [
+                {"note": "Série incomplète : états antérieurs à 1998 non versés."}
+            ]
+        }
     else:
-        assert note is None
+        assert notes == {}
 
 
 @pytest.mark.parametrize("chemin", SERIES)

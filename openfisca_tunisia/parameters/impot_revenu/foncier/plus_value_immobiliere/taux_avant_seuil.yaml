@@ -7,7 +7,9 @@ values:
 metadata:
   unit: /1
   short_label: "Taux, cession avant le seuil de détention"
-  note: "Série incomplète : états antérieurs à 1998 non versés."
+  notes:
+    1998-08-17:
+    - note: "Série incomplète : états antérieurs à 1998 non versés."
   reference:
     1998-08-17:
     - title: "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt, article premier"
