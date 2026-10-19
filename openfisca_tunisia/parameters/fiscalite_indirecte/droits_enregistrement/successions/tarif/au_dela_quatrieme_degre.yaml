@@ -1,59 +1,107 @@
 description: "Droit d'enregistrement sur les successions, entre parents au-delà du quatrième degré et entre personnes non parentes"
 brackets:
 - threshold:
+    1969-01-02:
+      value: 0
+    1975-01-02:
+      value: 0
     1984-01-01:
       value: 0
   rate:
+    1969-01-02:
+      value: 0.62
+    1975-01-02:
+      value: 0.62
     1984-01-01:
       value: 0.35
     1993-05-17:
       value: 0.35
 - threshold:
+    1969-01-02:
+      value: 500
+    1975-01-02:
+      value: 1000
     1984-01-01:
       value: 5000
     1993-05-17:
       value: null
   rate:
+    1969-01-02:
+      value: 0.65
+    1975-01-02:
+      value: 0.65
     1984-01-01:
       value: 0.45
     1993-05-17:
       value: null
 - threshold:
+    1969-01-02:
+      value: 1000
+    1975-01-02:
+      value: 2000
     1984-01-01:
       value: 10000
     1993-05-17:
       value: null
   rate:
+    1969-01-02:
+      value: 0.72
+    1975-01-02:
+      value: 0.72
     1984-01-01:
       value: 0.55
     1993-05-17:
       value: null
 - threshold:
+    1969-01-02:
+      value: 2000
+    1975-01-02:
+      value: 3000
     1984-01-01:
       value: 15000
     1993-05-17:
       value: null
   rate:
+    1969-01-02:
+      value: 0.79
+    1975-01-02:
+      value: 0.79
     1984-01-01:
       value: 0.65
     1993-05-17:
       value: null
 - threshold:
+    1969-01-02:
+      value: 6000
+    1975-01-02:
+      value: 9000
     1984-01-01:
       value: 45000
     1993-05-17:
       value: null
   rate:
+    1969-01-02:
+      value: 0.87
+    1975-01-02:
+      value: 0.87
     1984-01-01:
       value: 0.75
     1993-05-17:
       value: null
 - threshold:
+    1969-01-02:
+      value: 12000
+    1975-01-02:
+      value: 18000
     1984-01-01:
       value: 90000
     1993-05-17:
       value: null
   rate:
+    1969-01-02:
+      value: 1
+    1975-01-02:
+      value: 1
     1984-01-01:
       value: 0.85
     1993-05-17:
@@ -63,9 +111,17 @@ metadata:
   rate_unit: /1
   short_label: "Au-delà du quatrième degré, non-parents"
   notes:
-    1984-01-01:
-    - note: "Série incomplète : états antérieurs à 1984 non versés."
+    1969-01-02:
+    - note: "Série incomplète : états antérieurs à 1969 non versés."
   reference:
+    1969-01-02:
+    - title: "Loi n° 68-41 du 31 décembre 1968, portant loi de finances pour la gestion 1969, article 14"
+      href: https://www.pist.tn/jort/1968/1968F/Jo05568.pdf
+      note: "JORT n° 55 du 31 décembre 1968, pp. 1371-1372. Article 14 : le tarif des droits d'enregistrement fixé par l'article 1er du décret n° 68-104 du 20 avril 1968 est modifié selon le tableau ; § II, 2°, « Mutations par décès de biens meubles et immeubles », ligne « Entre parents au delà du 4ème degré et entre personnes non parentes », six tranches de part nette, en dinars : de 0,001 à 500, de 500,001 à 1 000, de 1 000,001 à 2 000, de 2 000,001 à 6 000, de 6 000,001 à 12 000, au-delà de 12 000. Taux nouveaux : 62 %, 65 %, 72 %, 79 %, 87 %, 100 %. Les taux anciens du même tableau ne sont pas versés. Date d'effet : l'article n'en fixe pas ; la loi est exécutoire un jour franc après sa publication au Journal officiel (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Le fascicule est daté du 31 décembre 1968, d'où le 2 janvier 1969. Édition française lue à l'image."
+    1975-01-02:
+    - title: "Loi n° 74-101 du 25 décembre 1974, portant loi de finances pour la gestion 1975, article 29"
+      href: https://www.pist.tn/jort/1974/1974F/Jo08074.pdf
+      note: "JORT n° 80 du 31 décembre 1974, p. 2916 (édition arabe, p. 3221). Article 29, « Tarif des droits de mutation par décès, de biens meubles et immeubles » : « Les droits de mutation par décès sont fixés aux taux ci-après pour la part nette recueillie par chaque ayant-droit ». Six tranches, en dinars : de 0,001 à 1 000, de 1 000,001 à 2 000, de 2 000,001 à 3 000, de 3 000,001 à 9 000, de 9 000,001 à 18 000, au-delà de 18 000. Ligne « Entre parents au delà du 4ème degré et entre personnes non parentes » : 62 %, 65 %, 72 %, 79 %, 87 %, 100 %. L'impression de l'édition française est tramée et par endroits illisible ; les tranches et les taux sont lus sur l'édition arabe, p. 3221, nette. Date d'effet : l'article n'en fixe pas ; la loi est exécutoire un jour franc après sa publication au Journal officiel, le 31 décembre 1974, d'où le 2 janvier 1975."
     1984-01-01:
     - title: "Loi n° 83-113 du 30 décembre 1983, portant loi de finances pour la gestion 1984, article 12"
       href: https://www.pist.tn/jort/1983/1983F/Jo08683.pdf
@@ -78,8 +134,12 @@ documentation: |-
   Taux du droit d'enregistrement sur la part nette recueillie entre parents au-delà du
   quatrième degré ou entre personnes non parentes.
 
-  Du 1er janvier 1984 au 16 mai 1993, le taux dépend de la tranche de part nette recueillie
-  par chaque ayant droit : six tranches, la même pour les quatre degrés de parenté. Le texte
+  Du 2 janvier 1969 au 16 mai 1993, le taux dépend de la tranche de part nette recueillie
+  par chaque ayant droit : six tranches. Elles changent avec chaque texte — loi de finances
+  pour 1969, article 14 ; loi de finances pour 1975, article 29 ; loi de finances pour 1984,
+  article 12 — et, depuis 1975, sont les mêmes pour les quatre degrés de parenté ; en 1969, la
+  ligne directe et les époux ont des tranches propres (2 000 à 8 000 dinars, 8 000 à 12 000),
+  les trois autres degrés partageant les mêmes (2 000 à 6 000, 6 000 à 12 000). Le texte
   fixe un taux par tranche ; la règle d'application — taux de chaque tranche à la fraction de
   part qui y tombe, ou taux de la tranche atteinte à toute la part — n'est pas établie par les
   textes lus : la loi de finances pour 1975 (article 29), que modifie celle de 1984, ne la

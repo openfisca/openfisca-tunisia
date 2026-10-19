@@ -1,14 +1,14 @@
 """Droit d'enregistrement sur les successions : tarif par degré de parenté, abattements,
 superficie de l'habitation principale exonérée, forfait des frais funéraires.
 
-Les valeurs attendues sont écrites en clair, tirées de la loi de finances pour 1975 (article
-30), de celle pour 1984 (article 12), du code des droits d'enregistrement et de timbre de 1993
+Les valeurs attendues sont écrites en clair, tirées de la loi de finances pour 1969 (article
+14), de celle pour 1975 (articles 29 et 30), de celle pour 1984 (article 12), du code des droits d'enregistrement et de timbre de 1993
 (articles 20, 49, 51 et 53) et de la loi n° 98-73 du 4 août 1998 (articles 8 à 10). Sont
 éprouvés :
 
 - les valeurs, la veille et le jour de chaque date d'effet ;
 - le début de chaque série : rien n'est lu avant sa première date ;
-- les tranches du tarif : six de 1984 au 16 mai 1993, une seule depuis le 17 mai 1993 ;
+- les tranches du tarif : six de 1969 au 16 mai 1993 (bornes et taux de 1969, 1975 et 1984), une seule depuis le 17 mai 1993 ;
 - chaque date porte sa référence : texte, article, fascicule, page et lien ;
 - les unités, toutes enregistrées dans `units.yaml` ;
 - l'ordre déclaré de chaque nœud nomme tous ses enfants ;
@@ -28,6 +28,24 @@ from openfisca_tunisia.sous_ensembles import RACINE_PARAMETRES, SOUS_ARBRES_PENS
 SUCCESSIONS = TunisiaTaxBenefitSystem().parameters.fiscalite_indirecte.droits_enregistrement.successions
 
 SEUILS_1984 = [0, 5000, 10000, 15000, 45000, 90000]
+SEUILS_1975 = [0, 1000, 2000, 3000, 9000, 18000]
+SEUILS_1969 = [0, 500, 1000, 2000, 6000, 12000]
+SEUILS_1969_LIGNE_DIRECTE = [0, 500, 1000, 2000, 8000, 12000]
+
+# Taux par tranche de la loi de finances pour 1969, article 14 (JORT n° 55/1968, pp. 1371-1372),
+# et de celle pour 1975, article 29 (JORT n° 80/1974, p. 2916 ; éd. ar. p. 3221).
+TARIF_1969 = {
+    "ligne_directe_epoux": [0.07, 0.10, 0.115, 0.145, 0.18, 0.23],
+    "freres_soeurs": [0.23, 0.31, 0.36, 0.43, 0.50, 0.65],
+    "oncles_neveux_cousins": [0.47, 0.53, 0.58, 0.65, 0.72, 0.94],
+    "au_dela_quatrieme_degre": [0.62, 0.65, 0.72, 0.79, 0.87, 1.00],
+}
+TARIF_1975 = {
+    "ligne_directe_epoux": [0.06, 0.08, 0.09, 0.12, 0.15, 0.18],
+    "freres_soeurs": [0.23, 0.31, 0.36, 0.43, 0.50, 0.65],
+    "oncles_neveux_cousins": [0.47, 0.53, 0.58, 0.65, 0.72, 0.94],
+    "au_dela_quatrieme_degre": [0.62, 0.65, 0.72, 0.79, 0.87, 1.00],
+}
 
 # Taux par tranche de la loi de finances pour 1984, article 12 (JORT n° 86/1983, p. 3372),
 # puis taux unique du code (1993) et de la loi n° 98-73 (1998).
@@ -64,6 +82,7 @@ FEUILLES = {
 
 # Dates portant une référence, et le fascicule et le lien attendus.
 FASCICULES = {
+    "1969-01-02": ("JORT n° 55 du 31 décembre 1968", "/1968/1968F/Jo05568.pdf"),
     "1975-01-02": ("JORT n° 80 du 31 décembre 1974", "/1974/1974F/Jo08074.pdf"),
     "1984-01-01": ("JORT n° 86 du 30 décembre 1983", "/1983/1983F/Jo08683.pdf"),
     "1993-05-17": ("JORT n° 39 du 25 mai 1993", "/1993/1993F/Jo03993.pdf"),
@@ -72,7 +91,7 @@ FASCICULES = {
 
 DATES = {
     **{
-        f"tarif.{nom}": {"1984-01-01", "1993-05-17"} | ({"1998-08-17"} if nom in ("ligne_directe_epoux", "freres_soeurs") else set())
+        f"tarif.{nom}": {"1969-01-02", "1975-01-02", "1984-01-01", "1993-05-17"} | ({"1998-08-17"} if nom in ("ligne_directe_epoux", "freres_soeurs") else set())
         for nom in TARIF
     },
     "abattement.par_enfant_ascendant_conjoint": {"1975-01-02", "1993-05-17", "1998-08-17"},
@@ -99,10 +118,29 @@ def parametre(chemin):
 
 
 @pytest.mark.parametrize("nom", TARIF)
-def test_rien_avant_1984(nom):
-    bareme = parametre(f"tarif.{nom}")("1983-12-31")
+def test_rien_avant_1969(nom):
+    bareme = parametre(f"tarif.{nom}")("1969-01-01")
     assert bareme.thresholds == []
     assert bareme.rates == []
+
+
+@pytest.mark.parametrize("nom", TARIF)
+@pytest.mark.parametrize(
+    ("instant", "seuils", "taux"),
+    [
+        ("1969-01-02", None, TARIF_1969),
+        ("1974-12-31", None, TARIF_1969),
+        ("1975-01-01", None, TARIF_1969),
+        ("1975-01-02", SEUILS_1975, TARIF_1975),
+        ("1983-12-31", SEUILS_1975, TARIF_1975),
+    ],
+)
+def test_six_tranches_de_1969_et_de_1975(nom, instant, seuils, taux):
+    if seuils is None:
+        seuils = SEUILS_1969_LIGNE_DIRECTE if nom == "ligne_directe_epoux" else SEUILS_1969
+    bareme = parametre(f"tarif.{nom}")(instant)
+    assert bareme.thresholds == seuils
+    assert bareme.rates == pytest.approx(taux[nom])
 
 
 @pytest.mark.parametrize("nom", TARIF)
