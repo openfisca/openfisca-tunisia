@@ -1,5 +1,18 @@
 # Changelog
 
+### 0.136.1 - [#495](https://github.com/openfisca/openfisca-tunisia/pull/495)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 02/01/1969 au 31/12/1983 ; à partir du 01/01/1984, rien ne change.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif`.
+* Détails :
+  - **Verse les barèmes successoraux de 1969 et de 1975** dans les quatre barèmes par degré de parenté : six tranches de part nette et six taux chacun.
+  - **Du 02/01/1969 au 01/01/1975** (loi n° 68-41, loi de finances pour 1969, article 14, JORT n° 55 du 31 décembre 1968, pp. 1371-1372) : tranches de 0 à 500, 500 à 1 000, 1 000 à 2 000 dinars, puis 2 000 à 6 000 et 6 000 à 12 000 pour les trois derniers degrés, 2 000 à 8 000 et 8 000 à 12 000 pour la ligne directe et les époux, enfin au-delà de 12 000. Taux : 7, 10, 11,5, 14,5, 18 et 23 % en ligne directe et entre époux ; 23 à 65 % entre frères et sœurs ; 47 à 94 % entre oncles à cousins germains ; 62 à 100 % au-delà du quatrième degré et entre non-parents.
+  - **Du 02/01/1975 au 31/12/1983** (loi n° 74-101, loi de finances pour 1975, article 29, JORT n° 80 du 31 décembre 1974, p. 2916, édition arabe p. 3221) : tranches communes de 0 à 1 000, 1 000 à 2 000, 2 000 à 3 000, 3 000 à 9 000, 9 000 à 18 000 dinars et au-delà ; taux de 6, 8, 9, 12, 15 et 18 % en ligne directe et entre époux (le premier taux, illisible sur l'édition française tramée, est lu sur l'édition arabe) ; les trois autres barèmes inchangés par rapport à 1969.
+  - **Dates.** Ni l'une ni l'autre loi ne fixe de date d'effet : exécutoires un jour franc après leur publication, les 2 janvier 1969 et 1975 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956).
+  - **Série incomplète.** Les taux anciens du tableau de 1969 (décret n° 68-104 du 20 avril 1968) ne sont pas versés ; la note de chaque barème devient « états antérieurs à 1969 non versés ».
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres ; seules les valeurs antérieures au 01/01/1984, qui étaient absentes, existent désormais. Le test `tests/test_droits_succession.py` remplace « rien avant 1984 » par « rien avant 1969 » et ajoute une table de cas aux bornes (1969-01-02, 1975-01-01, 1975-01-02, 1983-12-31).
+
 ## 0.136 - [#494](https://github.com/openfisca/openfisca-tunisia/pull/494)
 
 * Évolution du système socio-fiscal.
