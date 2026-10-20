@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.137 - [#496](https://github.com/openfisca/openfisca-tunisia/pull/496)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux.
+* Zones impactées : `parameters/impot_revenu/capitaux_mobiliers`, `parameters/impot_revenu/valeurs_mobilieres`.
+* Détails :
+  - **Verse les taux qui frappent les revenus de l'épargne et du capital d'une personne physique résidente** : 12 feuilles nouvelles dans deux nœuds nouveaux, 19 valeurs et 8 clôtures. Paramètres seulement : rien ne les lit encore.
+  - **`capitaux_mobiliers.retenue_source`** (code, article 52) :
+    - `taux_imputable` : 15 % au 01/01/1990 (code annexé à la loi n° 89-114, article 52, JORT n° 1 des 2-5 janvier 1990, p. 11) ; 15 % au 02/01/1992 (loi de finances pour 1992, article 31, pp. 2084-2085) ; 20 % au 01/01/1997 (loi de finances pour 1997, articles 30-31, p. 2581, effet à l'article 54) ; vide au 01/01/2021 ; 20 % au 01/01/2022 (décret-loi n° 2021-21, article 38, p. 3090 ; note commune n° 1/2022).
+    - `taux_liberatoire` : 20 % du 01/01/2021 au 31/12/2021 (loi de finances pour 2021, article 17, p. 3130 : retenue « définitive et non restituable », que la note commune n° 1/2022 dit libératoire).
+    - `taux_comptes_speciaux_epargne` : 10 % au 01/01/1990, 15 % au 02/01/1992 (Caisse d'épargne nationale de Tunisie comprise), vide au 01/01/1997.
+    - `taux_obligations_porteur_anonymes` : 25 % libératoire du 02/01/1992 au 31/12/1996.
+    - `taux_titres_porteur_anonymes` : 35 % libératoire au 01/01/1990 (bons de caisse au porteur) et au 02/01/1992 (autres capitaux mobiliers au porteur anonymes), vide au 01/01/1997.
+    - `taux_depots_terme` et `depots_terme_ecart_taux_marche_monetaire` : 35 % libératoire sur les dépôts à terme rémunérés au-delà du taux du marché monétaire diminué d'un point, du 10/06/2020 au 31/12/2020 (décret-loi n° 2020-30, article 12, édition arabe, p. 1410 ; entrée en vigueur à la publication, article 17, p. 1414).
+  - **`valeurs_mobilieres.revenus_distribues`** : `taux_retenue_source`, 5 % au 01/01/2015 (loi de finances pour 2014, article 19, p. 3670), 10 % au 01/01/2018 (loi de finances pour 2018, article 46, p. 4286) ; `plafond_revenus_restitution`, 10 000 dinars au 01/01/2015 (article 19, paragraphe 6, p. 3671).
+  - **`valeurs_mobilieres.plus_value_cession_titres`** : `taux`, 10 % au 01/01/2004 (loi de finances pour 2004, articles 61-62, p. 3730) et au 01/01/2023 (décret-loi n° 2022-79, article 42, édition arabe, p. 4068) ; `taux_non_cotes_detention_courte`, 15 % au 01/01/2023 ; `franchise`, 10 000 dinars au 01/01/2004 (article 63), vide au 01/01/2023.
+  - **Dates.** La loi de finances pour 1992 n'a pas de clause d'effet : exécutoire un jour franc après sa publication du 31 décembre 1991, le 02/01/1992. Le taux de 5 % sur les revenus distribués est daté du 01/01/2015, date à laquelle l'exonération prend fin (article 19, paragraphe 3), et non du 01/01/2014 de la clause générale (article 95). Les autres dates sont énoncées par les textes.
+  - **Série à fenêtre.** `taux_imputable` et `taux_titres_porteur_anonymes` portent la note « Série incomplète : états antérieurs à 1990 non versés. » : les impôts cédulaires sur les revenus de valeurs mobilières et de créances (loi de finances pour 1968, article 13 ; loi de finances pour 1988, article 29) ne sont pas versés. Les autres feuilles commencent à leur institution.
+  - **Ce qui n'est pas versé** : les retenues sur les sommes servies aux non-résidents et la plus-value des non-résidents ; la retenue de 20 % définitive des personnes morales exonérées et des fonds ; les jetons de présence ; les comptes d'épargne-emprunts obligataires ; le taux de 25 % des États à régime fiscal privilégié ; les exonérations de la plus-value d'actions cotées.
+  - Un test nouveau, `tests/test_epargne_capital.py`, lit chaque feuille la veille et le jour de chaque date, et l'état du droit à onze dates repères ; il contrôle références, notes et unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ### 0.136.1 - [#495](https://github.com/openfisca/openfisca-tunisia/pull/495)
 
 * Évolution du système socio-fiscal.

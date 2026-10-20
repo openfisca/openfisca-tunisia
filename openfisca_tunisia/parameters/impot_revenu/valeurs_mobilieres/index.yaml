@@ -1,0 +1,12 @@
+description: "Revenus de valeurs mobilières"
+metadata:
+  short_label: "Revenus de valeurs mobilières"
+  order:
+  - revenus_distribues
+  - plus_value_cession_titres
+documentation: |-
+  Revenus de valeurs mobilières au sens des articles 29 à 33 du code de l'impôt sur le revenu
+  des personnes physiques et de l'impôt sur les sociétés : bénéfices et revenus distribués par
+  les sociétés et les fonds (article 29), jetons de présence et rémunérations des membres des
+  conseils (article 30), et, à partir du 1er janvier 2004, plus-value de cession d'actions et de
+  parts sociales (article 31 bis).

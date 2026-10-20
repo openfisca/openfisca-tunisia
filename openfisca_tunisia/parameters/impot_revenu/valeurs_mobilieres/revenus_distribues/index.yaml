@@ -1,0 +1,19 @@
+description: "Revenus distribués"
+metadata:
+  short_label: "Revenus distribués"
+  order:
+  - taux_retenue_source
+  - plafond_revenus_restitution
+documentation: |-
+  Bénéfices et revenus distribués au sens de l'article 29, paragraphe II, alinéa a, et
+  paragraphe II bis, du code : dividendes des sociétés résidentes et revenus des parts de fonds
+  communs de placement en valeurs mobilières et de fonds d'amorçage.
+
+  Du 1er janvier 1990 au 31 décembre 2014, les revenus distribués sont exonérés d'impôt sur le
+  revenu (code, article 38, point 10, qui vise les revenus de valeurs mobilières des articles 29,
+  30 et 31 ; JORT n° 1 des 2-5 janvier 1990, p. 8), et aucune retenue n'est opérée. La loi de finances pour 2014 (article 19)
+  abroge cette exonération pour les distributions réalisées à partir du 1er janvier 2015 et
+  institue la retenue.
+
+  Avant 1990, les revenus de valeurs mobilières supportaient un impôt distinct, au taux de 20 %
+  depuis la loi de finances pour 1988 (article 29) ; il n'est pas versé ici.

@@ -1,0 +1,22 @@
+description: "Écart retranché du taux du marché monétaire pour définir les dépôts à terme soumis à la retenue libératoire de 35 %"
+values:
+  2020-06-10:
+    value: 0.01
+  2021-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Dépôts à terme : écart au taux du marché monétaire"
+  reference:
+    2020-06-10:
+    - title: "Décret-loi du Chef du gouvernement n° 2020-30 du 10 juin 2020, articles 12 et 17"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0542020.pdf
+      note: "JORT n° 54 du 10 juin 2020, édition arabe, p. 1410 (article 12) et p. 1414 (article 17). Article 12, alinéa 2 bis ajouté au paragraphe II de l'article 52 du code : la retenue de 35 % frappe les dépôts à terme « والتي تفوق نسبة تأجيرها في غرة جانفي من سنة توظيف المداخيل المذكورة معدل نسبة الفائدة في السوق النقدية ناقص نقطة مائوية » (dont le taux de rémunération au 1er janvier de l'année d'imposition de ces revenus dépasse le taux du marché monétaire diminué d'un point de pourcentage). Date d'effet : article 17, entrée en vigueur à la date de publication, le 10 juin 2020. Édition arabe lue à l'image, pp. 1410 et 1414. L'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+    2021-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, articles 17 et 42"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3130 (article 17) et p. 3138 (article 42). Article 17, paragraphe 1 : abrogation des paragraphes 2 et 2 bis du paragraphe II de l'article 52 du code. Date d'effet : article 42, paragraphe 1, à compter du 1er janvier 2021. Édition française lue sur la couche texte."
+documentation: |-
+  Un dépôt à terme relève de `taux_depots_terme` quand son taux de rémunération au 1er janvier de
+  l'année est strictement supérieur au taux du marché monétaire diminué de cet écart, exprimé en
+  points de pourcentage (0,01 pour un point).

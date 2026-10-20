@@ -1,0 +1,32 @@
+description: "Taux de la retenue à la source libératoire sur les revenus distribués"
+values:
+  2015-01-01:
+    value: 0.05
+  2018-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  short_label: "Retenue libératoire, revenus distribués"
+  reference:
+    2015-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, articles 19 et 95"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, p. 3670 (article 19, paragraphes 1 à 5) et p. 3699 (article 95). Rubrique « Réduction du taux de l'impôt sur les sociétés et imposition des bénéfices distribués ». Article 19, paragraphe 2 : « Sont abrogées les dispositions du point 10 de l'article 38 du code […]. » Paragraphe 3 : « Sous réserve des dispositions du paragraphe 7 du présent article, les dispositions des paragraphes 1 et 2 s'appliquent aux opérations de distribution réalisées à compter du 1er janvier 2015. » Paragraphe 4 : « Est ajouté au paragraphe I de l'article 52 du code […] un alinéa « c bis » ainsi libellé : c bis. 5% au titre des revenus distribués au sens des dispositions de l'alinéa « a » du paragraphe II et du paragraphe II bis de l'article 29 du présent code. » Paragraphe 5 : l'alinéa c bis est ajouté aux sommes pour lesquelles la retenue est libératoire (article 52, paragraphe II, alinéa 1). Date d'effet : le paragraphe 4 n'a pas de clause propre, et l'article 95 rend la loi applicable à compter du 1er janvier 2014 ; mais les distributions restent exonérées jusqu'au 31 décembre 2014 (paragraphe 3). La note commune n° 3/2015 (numéro du recueil de l'administration) écrit que « les bénéfices ou revenus distribués à partir du 1er janvier 2015 par les sociétés résidentes en Tunisie, par les fonds communs de placement en valeurs mobilières […] et par les fonds d'amorçage sont soumis à une retenue à la source libératoire ». Le taux est daté du 1er janvier 2015. Édition française lue sur la couche texte."
+    2018-01-01:
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 46 et 67"
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: "JORT n° 101 du 19 décembre 2017, p. 4286 (article 46) et p. 4292 (article 67). Rubrique « Relèvement du taux d'imposition des bénéfices distribués ». Article 46 : « Le taux de 5% prévu au premier alinéa du paragraphe « c bis » du paragraphe I de l'article 52 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, est relevé à 10%. » Date d'effet : article 67, paragraphe 1 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2018. » La note commune de l'administration qui commente l'article 46 applique le taux de 10 % « aux bénéfices distribués à partir du 1er janvier 2018, même s'ils proviennent de bénéfices réalisés avant cette date ». Édition française lue sur la couche texte."
+documentation: |-
+  Retenue opérée sur les revenus distribués servis à une personne physique. Elle est libératoire
+  de l'impôt sur le revenu (article 52, paragraphe II, alinéa 1, du code). Une personne physique
+  dont les revenus distribués ne dépassent pas `plafond_revenus_restitution` par an peut
+  toutefois déduire la retenue de son impôt annuel ou en obtenir la restitution.
+
+  La retenue n'est pas due sur les bénéfices distribués aux personnes morales résidentes, ni sur
+  les distributions prélevées sur les fonds propres figurant au bilan du 31 décembre 2013, à
+  condition qu'ils soient mentionnés dans les notes aux états financiers déposés au titre de
+  l'année 2013 (loi de finances pour 2014, article 19, paragraphe 7).
+
+  Le taux de 25 % applicable aux bénéficiaires établis dans un État à régime fiscal privilégié
+  et l'impôt sur les bénéfices des établissements stables présumés distribués aux associés non
+  résidents ne sont pas versés ici.
