@@ -1,0 +1,33 @@
+description: "Taux de la retenue à la source libératoire sur les revenus des titres au porteur dont le bénéficiaire n'est pas révélé, hors obligations"
+values:
+  1990-01-01:
+    value: 0.35
+  1992-01-02:
+    value: 0.35
+  1997-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue libératoire, titres au porteur anonymes"
+  notes:
+    1990-01-01:
+    - note: "Série incomplète : états antérieurs à 1990 non versés."
+  reference:
+    1990-01-01:
+    - title: "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989, article 52"
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+      note: "JORT n° 1 des 2-5 janvier 1990, p. 11. Article 52, paragraphe I : « d. 35% pour les revenus des bons de caisse au porteur dont l'identité n'est pas révélée à l'administration ». Paragraphe II : « La retenue d'impôt est libératoire de l'impôt sur le revenu pour les bons de caisse aux porteurs ainsi que pour les revenus servis aux personnes non résidentes ou non établies en Tunisie. » Date d'effet : le code s'applique aux revenus réalisés à partir du 1er janvier 1990 (loi n° 89-114, article 3). Édition française lue à l'image, p. 11."
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 31"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, p. 2085. Rubrique « Dispositions relatives à la retenue à la source ». Article 31, paragraphe I nouveau de l'article 52 : « d) 35% au titre des différents revenus des autres capitaux mobiliers au porteur dont l'identité du bénéficiaire n'est pas révélée à l'administration. » Paragraphe II nouveau : la retenue est libératoire pour « les revenus de capitaux mobiliers au porteur dont l'identité du bénéficiaire n'est pas révélée à l'administration ». Le taux ne change pas ; le champ passe des seuls bons de caisse à tous les capitaux mobiliers au porteur anonymes autres que les obligations. Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 2 janvier 1992. Édition française lue à l'image, p. 2085."
+    1997-01-01:
+    - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 30, 32 et 54"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: "JORT n° 105 du 31 décembre 1996, p. 2581 (articles 30 et 32) et p. 2583 (article 54). Rubrique « Unification des taux de la retenue à la source sur les revenus de capitaux mobiliers ». Article 30 : abrogation de l'alinéa d du paragraphe I de l'article 52. Article 32 : suppression du premier tiret de l'alinéa 1 du paragraphe II, qui rendait la retenue libératoire pour les titres au porteur anonymes. Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux libératoire des revenus des titres au porteur dont l'identité du bénéficiaire n'est pas
+  révélée à l'administration : bons de caisse au porteur en 1990 et 1991, puis tous les capitaux
+  mobiliers au porteur anonymes autres que les obligations, qui ont leur propre taux du 2 janvier
+  1992 au 31 décembre 1996 (`taux_obligations_porteur_anonymes`). À partir du 1er janvier 1997,
+  ces revenus suivent le taux de droit commun, imputable (`taux_imputable`).

@@ -1,0 +1,32 @@
+description: "Retenue à la source sur les revenus de capitaux mobiliers"
+metadata:
+  short_label: "Retenue à la source"
+  order:
+  - taux_imputable
+  - taux_liberatoire
+  - taux_comptes_speciaux_epargne
+  - taux_obligations_porteur_anonymes
+  - taux_titres_porteur_anonymes
+  - taux_depots_terme
+  - depots_terme_ecart_taux_marche_monetaire
+documentation: |-
+  Retenue opérée par la personne qui paie les revenus de capitaux mobiliers (code de l'impôt sur
+  le revenu des personnes physiques et de l'impôt sur les sociétés, article 52). Les taux portés
+  ici sont ceux que subit une personne physique résidente. Selon les textes, la retenue est :
+
+  - imputable : le revenu reste dans le revenu global, et la retenue s'impute sur l'impôt dû,
+    l'excédent étant reporté ou restitué (article 54) ;
+  - libératoire : elle éteint l'impôt sur le revenu dû à raison de ce revenu, qui sort du revenu
+    soumis au barème.
+
+  Chaque feuille porte un seul de ces deux régimes ; son nom ou sa documentation le dit. Une
+  feuille close par une valeur vide cesse de s'appliquer à cette date : les revenus qu'elle visait
+  relèvent alors d'une autre feuille.
+
+  Ne sont pas versés ici : les retenues sur les sommes servies aux non-résidents ; la retenue de
+  20 % définitive et non restituable sur les revenus des personnes morales non soumises à l'impôt
+  sur les sociétés ou qui en sont totalement exonérées, et sur ceux des fonds communs de
+  placement (article 52, paragraphe II, alinéa 2) ; la retenue libératoire de 15 % des comptes
+  d'épargne-emprunts obligataires (loi de finances pour 1992, article 33, abrogé au 1er janvier
+  1997) ; le taux de 25 % applicable aux bénéficiaires établis dans un État à régime fiscal
+  privilégié.

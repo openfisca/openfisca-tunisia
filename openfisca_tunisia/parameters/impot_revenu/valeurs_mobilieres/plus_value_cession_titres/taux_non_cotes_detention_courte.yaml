@@ -1,0 +1,17 @@
+description: "Taux de l'impôt sur la plus-value de cession d'actions non cotées, de parts sociales et de parts de fonds, cédées avant l'expiration de l'année suivant celle de l'acquisition"
+values:
+  2023-01-01:
+    value: 0.15
+metadata:
+  unit: /1
+  short_label: "Taux, plus-value de titres non cotés, détention courte"
+  reference:
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 42"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4068. Rubrique « مراجعة النظام الجبائي للقيمة الزائدة المتأتية من التفويت في السندات » (révision du régime fiscal de la plus-value provenant de la cession des titres). Article 42, paragraphe 1, alinéa 3 nouveau du paragraphe III de l'article 44 du code : « - 15% من مبلغها بالنسبة إلى الأسهم غير المدرجة ببورصة الأوراق المالية بتونس والمنابات الاجتماعية وحصص الصناديق والحقوق المتعلقة بها إذا تم التفويت فيها أو إعادة إحالتها قبل انتهاء السنة الموالية لسنة الاكتتاب أو الاقتناء » (15 % de son montant pour les actions non cotées à la Bourse des valeurs mobilières de Tunis, les parts sociales, les parts de fonds et les droits y relatifs, cédés ou rétrocédés avant l'expiration de l'année suivant celle de la souscription ou de l'acquisition). Paragraphe 3 : le présent article s'applique aux cessions ou rétrocessions réalisées à compter du 1er janvier 2023. Édition arabe lue à l'image, p. 4068. L'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux majoré appliqué, à partir du 1er janvier 2023, à la plus-value de cession d'actions non
+  cotées à la Bourse des valeurs mobilières de Tunis, de parts sociales et de parts de fonds,
+  quand la cession intervient avant l'expiration de l'année qui suit celle de l'acquisition ou de
+  la souscription. Au-delà de cette échéance, ces titres relèvent de `taux`.

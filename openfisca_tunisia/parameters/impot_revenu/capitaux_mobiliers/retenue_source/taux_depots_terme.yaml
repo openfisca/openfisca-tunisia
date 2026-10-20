@@ -1,0 +1,28 @@
+description: "Taux de la retenue à la source libératoire sur les revenus des dépôts à terme rémunérés au-delà du taux du marché monétaire diminué d'un point"
+values:
+  2020-06-10:
+    value: 0.35
+  2021-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue libératoire, dépôts à terme à rémunération élevée"
+  reference:
+    2020-06-10:
+    - title: "Décret-loi du Chef du gouvernement n° 2020-30 du 10 juin 2020, articles 12 et 17"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0542020.pdf
+      note: "JORT n° 54 du 10 juin 2020, édition arabe, p. 1410 (article 12) et p. 1414 (article 17). Titre III « إجراءات لتمويل الاستثمار وإعادة تنشيط الاقتصاد » (mesures pour le financement de l'investissement et la relance de l'économie) ; rubrique de l'article 12 : « إخضاع مداخيل الإيداعات بأجل التي تفوق نسبة تأجيرها معدل نسبة الفائدة في السوق النقدية ناقص نقطة مائوية لخصم من المورد تحرري بنسبة 35% » (soumission des revenus des dépôts à terme dont le taux de rémunération dépasse le taux du marché monétaire diminué d'un point de pourcentage à une retenue à la source libératoire de 35 %). Article 12, alinéa 2 bis ajouté au paragraphe II de l'article 52 du code : « تخضع مداخيل رؤوس الأموال المنقولة المتأتية من الإيداعات بأجل في الحسابات المفتوحة لدى البنوك ومن كل منتج مالي مماثل لها […] والتي تفوق نسبة تأجيرها في غرة جانفي من سنة توظيف المداخيل المذكورة معدل نسبة الفائدة في السوق النقدية ناقص نقطة مائوية، لخصم من المورد نهائي وغير قابل للإرجاع بنسبة 35% وذلك بصرف النظر عن النظام الجبائي للمنتفع بالمداخيل المذكورة » (les revenus de capitaux mobiliers provenant des dépôts à terme dans les comptes ouverts auprès des banques et de tout produit financier similaire, dont le taux de rémunération au 1er janvier de l'année d'imposition de ces revenus dépasse le taux du marché monétaire diminué d'un point de pourcentage, sont soumis à une retenue à la source définitive et non restituable de 35 %, quel que soit le régime fiscal du bénéficiaire). Le dernier alinéa exclut les revenus de capitaux mobiliers en devises ou en dinars convertibles. Date d'effet : article 17 — « ينشر هذا المرسوم بالرائد الرسمي للجمهورية التونسية ويدخل حيز النفاذ من تاريخ نشره » (le présent décret-loi entre en vigueur à la date de sa publication), soit le 10 juin 2020. Édition arabe lue à l'image, pp. 1410 et 1414. L'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+    2021-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, articles 17 et 42"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3130 (article 17) et p. 3138 (article 42). Article 17, paragraphe 1 : « Sont abrogées les dispositions des paragraphes 2 et 2 bis du paragraphe II de l'article 52 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés. » Paragraphe 5 : « L'application des dispositions du paragraphe 1 du présent article ne peut entraîner la restitution des montants payés à ce titre avant l'entrée en vigueur de la présente loi. » Date d'effet : article 42, paragraphe 1, à compter du 1er janvier 2021. Édition française lue sur la couche texte."
+documentation: |-
+  Du 10 juin au 31 décembre 2020, les revenus des dépôts à terme et des produits financiers
+  similaires, dont le taux de rémunération au 1er janvier de l'année dépasse le taux du marché
+  monétaire diminué de l'écart fixé par `depots_terme_ecart_taux_marche_monetaire`, subissent
+  une retenue définitive et non restituable, quel que soit le régime fiscal du bénéficiaire. La
+  rubrique de l'article qui l'institue la dit libératoire : ces revenus sortent du revenu soumis
+  au barème. Les revenus en devises ou en dinars convertibles sont exclus.
+
+  Le texte ne dit pas le sort des intérêts courus avant le 10 juin 2020 et payés après cette
+  date.

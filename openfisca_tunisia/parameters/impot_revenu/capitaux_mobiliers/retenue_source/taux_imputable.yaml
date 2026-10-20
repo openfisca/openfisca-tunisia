@@ -1,0 +1,62 @@
+description: "Taux de la retenue à la source imputable sur les revenus de capitaux mobiliers"
+values:
+  1990-01-01:
+    value: 0.15
+  1992-01-02:
+    value: 0.15
+  1997-01-01:
+    value: 0.20
+  2021-01-01:
+    value: null
+  2022-01-01:
+    value: 0.20
+metadata:
+  unit: /1
+  short_label: "Retenue imputable, revenus de capitaux mobiliers"
+  notes:
+    1990-01-01:
+    - note: "Série incomplète : états antérieurs à 1990 non versés."
+  reference:
+    1990-01-01:
+    - title: "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989, articles 52 et 54"
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+      note: "JORT n° 1 des 2-5 janvier 1990, p. 11. Article 52, paragraphe I : « L'impôt sur le revenu et l'impôt sur les sociétés font l'objet d'une retenue à la source au taux de : […] c. 15% pour : - les revenus des capitaux mobiliers ; - les sommes servies à des personnes non domiciliées ni établies en Tunisie au titre des revenus visés à l'article 3-6e du présent code. » Le paragraphe II ne rend la retenue libératoire que pour les bons de caisse au porteur anonymes et les revenus servis aux non-résidents ; pour les autres, l'article 54, paragraphe I, dispose que les retenues « autres que libératoires […] sont imputables sur l'impôt sur le revenu ». Date d'effet : le code s'applique aux revenus réalisés à partir du 1er janvier 1990 (loi n° 89-114, article 3). Édition française lue à l'image, p. 11."
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 31"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, pp. 2084-2085. Titre III « Dispositions portant harmonisation du régime fiscal applicable aux différentes formes d'épargne », rubrique « Dispositions relatives à la retenue à la source ». Article 31 : les paragraphes I et II de l'article 52 du code sont abrogés et remplacés ; le paragraphe I nouveau soumet à une retenue de « b) 15% au titre : - Des intérêts des dépôts auprès de la Caisse d'Epargne Nationale de Tunisie ou dans des comptes spéciaux d'épargne ouverts auprès des banques ; - Des revenus des obligations et autres capitaux mobiliers ; - Des sommes servies à des personnes non domiciliées ni établies en Tunisie […] ». Le taux ne change pas ; l'entrée porte le texte qui fonde la retenue depuis cette date, désormais à l'alinéa b. Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 2 janvier 1992. Édition française lue à l'image, pp. 2084-2085."
+    1997-01-01:
+    - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 30, 31 et 54"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: "JORT n° 105 du 31 décembre 1996, p. 2581 (articles 30 et 31) et p. 2583 (article 54). Rubrique « Unification des taux de la retenue à la source sur les revenus de capitaux mobiliers ». Article 30 : « Les dispositions des premier et deuxième tirets de l'alinéa « b » et les dispositions de l'alinéa « d » du paragraphe I de l'article 52 du code […] sont abrogées. » Article 31 : « L'alinéa « c » du paragraphe I de l'article 52 […] est modifié comme suit : c - 20% au titre des revenus de capitaux mobiliers. » Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997. » Édition française lue sur la couche texte."
+    2021-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, articles 17 et 42"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3130 (article 17) et p. 3138 (article 42). Rubrique « Révision du régime fiscal des revenus de capitaux mobiliers ». Article 17, paragraphe 2 : « La retenue à la source prévue à l'alinéa « c » du paragraphe I du présent article au titre des revenus de capitaux mobiliers est définitive et non restituable, et ce, nonobstant le régime fiscal du bénéficiaire desdits revenus. » La retenue de 20 % cesse d'être imputable ; elle est portée par `taux_liberatoire`. Date d'effet : article 42, paragraphe 1 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2021. » Édition française lue sur la couche texte."
+    2022-01-01:
+    - title: "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022, articles 38 et 73"
+      href: https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf
+      note: "JORT n° 119 du 28 décembre 2021, p. 3090 (article 38) et p. 3107 (article 73). Rubrique « Réinstauration de la retenue à la source déductible due sur les revenus de capitaux mobiliers ». Article 38, paragraphe 2 : « Est abrogée la dernière phrase du premier paragraphe du paragraphe 1 du paragraphe II de l'article 52 du code […] telle qu'ajoutée par le paragraphe 2 de l'article 17 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021. » La note commune n° 1/2022 précise que « la réinstauration de la retenue à la source au taux de 20% déductible de l'impôt sur le revenu ou de l'impôt sur les sociétés » s'applique « aux revenus de capitaux mobiliers payés à partir du 1er janvier 2022 ». Date d'effet : article 73, paragraphe 1 — « Sous réserve des dispositions contraires prévues par le présent décret-loi, les dispositions du présent décret-loi s'appliquent à compter du 1er janvier 2022. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue opérée sur les intérêts des dépôts, des obligations, des bons du Trésor et
+  des autres revenus de capitaux mobiliers servis à une personne physique résidente, quand
+  cette retenue s'impute sur l'impôt dû : le revenu reste dans le revenu global et subit le
+  barème. La retenue figure à l'alinéa c du paragraphe I de l'article 52 du code, sauf du
+  2 janvier 1992 au 31 décembre 1996, où elle figure à l'alinéa b.
+
+  Du 1er janvier 1990 au 31 décembre 1996, les intérêts des comptes spéciaux d'épargne suivent
+  leur propre taux (`taux_comptes_speciaux_epargne`), et les titres au porteur dont le
+  bénéficiaire n'est pas révélé subissent un taux libératoire (`taux_obligations_porteur_anonymes`,
+  `taux_titres_porteur_anonymes`). À partir du 1er janvier 1997, tous relèvent du présent taux.
+
+  En 2021, la retenue de 20 % est définitive : la feuille est vide, et le taux est porté par
+  `taux_liberatoire`. Du 10 juin au 31 décembre 2020, les dépôts à terme rémunérés au-delà d'un
+  seuil subissent une retenue libératoire de 35 % (`taux_depots_terme`).
+
+  Loi de finances pour 2004. L'article 71 (JORT n° 104 du 30 décembre 2003, p. 3732) récrit
+  l'article 52, paragraphe II, alinéa 1 : à la lettre, la retenue de l'alinéa c devient
+  libératoire pour tous les bénéficiaires. La note commune n° 8/2004 la tient pour imputable
+  pour les résidents, qui restent tenus de déclarer ces revenus dans leur revenu global ; la loi
+  de finances pour 2005 (article 69) réserve le caractère libératoire aux revenus servis aux
+  non-résidents non établis. La série suit la note commune et ne porte pas d'état libératoire
+  en 2004.

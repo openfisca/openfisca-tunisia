@@ -1,0 +1,28 @@
+description: "Taux de la retenue à la source libératoire sur les revenus de capitaux mobiliers"
+values:
+  2021-01-01:
+    value: 0.20
+  2022-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue libératoire, revenus de capitaux mobiliers"
+  reference:
+    2021-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, articles 17 et 42"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3130 (article 17) et p. 3138 (article 42). Rubrique « Révision du régime fiscal des revenus de capitaux mobiliers ». Article 17, paragraphe 2 : « La retenue à la source prévue à l'alinéa « c » du paragraphe I du présent article au titre des revenus de capitaux mobiliers est définitive et non restituable, et ce, nonobstant le régime fiscal du bénéficiaire desdits revenus. » Le taux de l'alinéa c reste celui de 1997, 20 %. Le texte dit « définitive et non restituable » ; la note commune n° 1/2022 lit cette disposition comme « la généralisation de l'application de la retenue à la source libératoire au taux de 20% à tous les revenus de capitaux mobiliers », retenue « définitive et non susceptible de déduction ou de restitution ». Date d'effet : article 42, paragraphe 1 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2021. » Édition française lue sur la couche texte."
+    2022-01-01:
+    - title: "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022, articles 38 et 73"
+      href: https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf
+      note: "JORT n° 119 du 28 décembre 2021, p. 3090 (article 38) et p. 3107 (article 73). Rubrique « Réinstauration de la retenue à la source déductible due sur les revenus de capitaux mobiliers ». Article 38, paragraphe 2 : abrogation de la phrase ajoutée par la loi de finances pour 2021 ; paragraphe 5 : « L'application des dispositions du présent article ne peut entraîner la restitution des montants payés à ce titre avant l'entrée en vigueur du présent décret-loi. » La retenue de 20 % redevient imputable (`taux_imputable`). Date d'effet : article 73, paragraphe 1, à compter du 1er janvier 2022 ; la note commune n° 1/2022 vise les revenus « payés à partir du 1er janvier 2022 ». Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue sur les revenus de capitaux mobiliers d'une personne physique résidente,
+  quand cette retenue éteint l'impôt sur le revenu dû à raison de ces revenus : ils sortent du
+  revenu soumis au barème. Ce régime vaut pour tous les revenus de capitaux mobiliers du 1er
+  janvier au 31 décembre 2021 ; le reste du temps, la retenue de droit commun est imputable
+  (`taux_imputable`).
+
+  Les exonérations et la déduction des intérêts de l'épargne (articles 38 et 39, paragraphe II,
+  du code) ne sont pas modifiées en 2021. Les titres au porteur anonymes (1990-1996) et les
+  dépôts à terme du 10 juin au 31 décembre 2020 ont leurs propres taux libératoires.
