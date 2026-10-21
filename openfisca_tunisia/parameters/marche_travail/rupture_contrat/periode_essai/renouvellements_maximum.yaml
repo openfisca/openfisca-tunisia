@@ -1,0 +1,13 @@
+description: "Nombre maximal de renouvellements de la période d'essai du contrat de travail"
+values:
+  2025-05-24:
+    value: 1
+metadata:
+  short_label: "Période d'essai, renouvellements"
+  reference:
+    2025-05-24:
+    - title: "Loi n° 2025-9 du 21 mai 2025, portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre, article 1er (article 6-3 nouveau du code du travail)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja0612025.pdf
+      note: "JORT n° 61 du 23 mai 2025, édition arabe, p. 1675. Article 6-3 (nouveau), premier alinéa : « يجوز التنصيص في عقد الشغل على فترة تجربة لا تتجاوز مدتها ستة أشهر قابلة للتجديد مرة واحدة ولنفس المدة. » Traduction publiée pour information dans l'édition française (https://www.pist.tn/jort/2025/2025F/Jo0612025.pdf, p. 1296) : « […] renouvelable une seule fois pour la même durée. » Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire le lendemain de sa publication dans l'édition électronique du Journal officiel (décret-loi n° 2020-1 du 14 avril 2020, article 2, texte lu sur le miroir iort.tn, fascicule du JORT n° 32 du 14 avril 2020 non consulté) ; le fascicule est daté du 23 mai 2025 et porte un dépôt au gouvernorat de Tunis le même jour. Éditions arabe et française lues sur la couche texte."
+documentation: |-
+  Le renouvellement est d'une durée égale à celle de la période initiale.

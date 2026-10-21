@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.138 - [#497](https://github.com/openfisca/openfisca-tunisia/pull/497)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1966 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/rupture_contrat`, `units.yaml`.
+* Détails :
+  - **Verse les grandeurs chiffrées de la rupture du contrat de travail dans le secteur privé** : un nœud nouveau, six sous-nœuds, 14 feuilles, 20 valeurs dont 3 clôtures. Paramètres seulement : rien ne les lit encore.
+  - **`preavis`** : `duree`, 1 mois au 01/05/1966 pour les salariés payés au mois (code du travail, article 14, JORT n° 20 des 3-6 mai 1966, p. 718 ; entrée en vigueur au 1er mai 1966 fixée par l'article premier de la loi n° 66-27), 1 mois pour tous au 01/03/1994 (loi n° 94-29, article 14 bis, JORT n° 15 du 22 février 1994, p. 318) ; `duree_salaries_non_mensuels`, 8 jours au 01/05/1966, vide au 01/03/1994.
+  - **`gratification_fin_service`** (article 22, « indemnité de licenciement » jusqu'en 1994) : `jours_par_mois_service`, 1 jour de salaire par mois de service, et `plafond`, 3 mois de salaire, aux 01/05/1966 (p. 719) et 01/03/1994 (p. 319) ; `anciennete_minimale`, 6 mois de services au 01/05/1966, vide au 01/03/1994 (la gratification est due après la période d'essai).
+  - **`dommages_interets`** (article 23 bis, 01/03/1994, p. 319) : 1 à 2 mois de salaire par année d'ancienneté, plafond de 36 mois (« le salaire de trois années ») ; 1 à 4 mois pour un licenciement fondé sur une cause réelle et sérieuse mais irrégulier en la forme.
+  - **`contrat_duree_determinee.duree_maximale_hors_cas_recours`** : 48 mois au 31/07/1996 (loi n° 96-62, article 6-4, paragraphe 2, JORT n° 59 du 23 juillet 1996, p. 1579), vide au 24/05/2025 (loi n° 2025-9, articles 6-2 et 6-4 nouveaux, édition arabe, p. 1675).
+  - **`periode_essai`** : `duree_maximale`, 6 mois, et `renouvellements_maximum`, 1, au 24/05/2025 (article 6-3 nouveau).
+  - **`entreprises_prestataires.garantie_financiere`** : 20 % du montant du contrat au 24/09/2025 (arrêté du ministre des affaires sociales du 23 septembre 2025, article 2, JORT n° 117, édition arabe, p. 2836).
+  - **Dates.** 1966 : clause énoncée. 1994 et 1996 : cinq jours après le dépôt au gouvernorat de Tunis (24 février 1994, 26 juillet 1996), le jour du dépôt non compté (loi n° 93-64, article 2). 2025 : lendemain de la publication électronique (décret-loi n° 2020-1, article 2), fascicules des 23 mai et 23 septembre 2025. Pour les deux textes de 2025, l'édition arabe fait foi ; l'édition française, « traduction française pour information », est citée dans la note.
+  - **Série à fenêtre.** Les séries commencent à l'institution de la règle dans le code du travail (1966) ou à la loi qui l'introduit : aucune ne porte de note d'incomplétude.
+  - **Unités nouvelles** dans `units.yaml` : `day/month` (jours de salaire par mois de service) et `month/year` (mois de salaire par année d'ancienneté).
+  - **Ce qui n'est pas versé** : les clauses des conventions collectives, dont la convention collective cadre de 1973 (période d'essai de trois mois) ; la procédure du licenciement économique ; l'indemnité transitoire de deux mois par année d'ancienneté de la loi n° 2025-9 (article 9) ; les amendes.
+  - Un test nouveau, `tests/test_rupture_contrat.py`, lit chaque feuille la veille et le jour de chaque date, et l'état du droit à sept dates repères ; il contrôle références, notes et unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.137 - [#496](https://github.com/openfisca/openfisca-tunisia/pull/496)
 
 * Évolution du système socio-fiscal.
