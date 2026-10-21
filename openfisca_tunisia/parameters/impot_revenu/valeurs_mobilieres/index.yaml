@@ -3,6 +3,7 @@ metadata:
   short_label: "Revenus de valeurs mobilières"
   order:
   - revenus_distribues
+  - jetons_presence
   - plus_value_cession_titres
 documentation: |-
   Revenus de valeurs mobilières au sens des articles 29 à 33 du code de l'impôt sur le revenu

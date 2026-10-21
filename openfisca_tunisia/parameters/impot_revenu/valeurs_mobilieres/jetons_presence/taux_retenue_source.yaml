@@ -1,0 +1,35 @@
+description: "Taux de la retenue à la source sur les jetons de présence et les rémunérations des membres des conseils"
+values:
+  1995-01-01:
+    value: 0.15
+  2005-01-01:
+    value: 0.20
+  2017-01-01:
+    value: 0.20
+metadata:
+  unit: /1
+  short_label: "Retenue, jetons de présence"
+  reference:
+    1995-01-01:
+    - title: "Loi n° 94-127 du 26 décembre 1994, portant loi de finances pour la gestion 1995, articles 50, 52 et 100"
+      href: https://www.pist.tn/jort/1994/1994F/Jo10394.pdf
+      note: "JORT n° 103 des 30-31 décembre 1994, p. 2046 (articles 50 et 52) et p. 2051 (article 100). Rubrique « Imposition des jetons de présence ». Article 50 : le point 10 de l'article 38 du code exonère les revenus distribués « à l'exclusion des jetons de présence visés au paragraphe VI de l'article 48 du présent code ». Article 52 : « Il est ajouté à l'alinéa \"b\" du paragraphe I de l'article 52 du code […] ce qui suit : \"- les jetons de présence servis aux membres du conseil d'administration ou du conseil de surveillance dans les sociétés anonymes et les sociétés en commandite par actions\". » L'alinéa b soumet ses revenus à une retenue de 15 % (loi de finances pour 1992, article 31). Date d'effet : article 100 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1995. » Édition française lue sur la couche texte."
+    2005-01-01:
+    - title: "Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, articles 69 et 89"
+      href: https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf
+      note: "JORT n° 105 du 31 décembre 2004, pp. 3442-3443 (article 69) et p. 3445 (article 89). Article 69, paragraphe 3 : est ajouté à l'alinéa c du paragraphe I de l'article 52 du code, qui porte la retenue de 20 %, « et au titre des jetons de présence accordés aux membres du conseil d'administration ou du conseil de surveillance des sociétés anonymes et des sociétés en commandite par actions » ; paragraphe 4 : le quatrième tiret de l'alinéa b (15 %) est abrogé. Date d'effet : article 89 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2005. » La note commune n° 13/2005 applique le taux aux montants payés à partir de cette date. Édition française lue sur la couche texte décodée (police décalée)."
+    2017-01-01:
+    - title: "Loi n° 2016-78 du 17 décembre 2016, portant loi de finances pour l'année 2017, articles 30 et 79"
+      href: https://www.pist.tn/jort/2016/2016F/Jo1052016.pdf
+      note: "JORT n° 105 du 27 décembre 2016, p. 3837 (article 30) et p. 3851 (article 79). Rubrique « Clarification du régime fiscal des rémunérations accordées aux membres des conseils, des directoires et des comités des sociétés ». Article 30, paragraphe 2 : l'expression « et au titre des jetons de présence accordés aux membres du conseil d'administration ou du conseil de surveillance des sociétés anonymes et des sociétés en commandite par actions » de l'alinéa c du paragraphe I de l'article 52 est remplacée par « et au titre des rémunérations et des primes attribuées conformément à la législation et aux règlementations en vigueur aux membres des conseils, des directoires et des comités des sociétés anonymes et des sociétés en commandite par actions en leurdite qualité ». Le taux ne change pas ; l'entrée porte le texte qui en définit désormais l'assiette. Date d'effet : article 79 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2017. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue opérée sur les jetons de présence servis aux membres des conseils
+  d'administration et de surveillance des sociétés anonymes et des sociétés en commandite par
+  actions, puis, à partir du 1er janvier 2017, sur les rémunérations et primes des membres des
+  conseils, des directoires et des comités de ces sociétés. La retenue est imputable pour un
+  bénéficiaire résident (article 54 du code). La loi de finances pour 2021 (article 17) ne rend
+  définitive que la retenue de l'alinéa c « au titre des revenus de capitaux mobiliers » : elle
+  ne touche pas ces rémunérations.
+
+  La série commence au 1er janvier 1995 : de 1990 à 1994, les jetons de présence sont exonérés
+  avec les autres revenus distribués (article 38, point 10, du code).

@@ -1,0 +1,38 @@
+description: "Taux de la retenue à la source définitive sur les revenus de capitaux mobiliers des personnes morales exonérées et des fonds"
+values:
+  1992-01-02:
+    value: 0.20
+  2021-01-01:
+    value: null
+  2022-01-01:
+    value: 0.20
+metadata:
+  unit: /1
+  short_label: "Retenue définitive, organismes exonérés et fonds"
+  reference:
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 31"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, p. 2085. Article 31, paragraphe II nouveau de l'article 52 du code, alinéa 2 : « Les revenus de capitaux mobiliers réalisés par les personnes morales non soumises à l'impôt sur les sociétés ou qui en sont totalement exonérées en vertu de la législation en vigueur sont soumis à une retenue à la source définitive et non susceptible de restitution au taux de 20%. Cette retenue est opérée par la personne qui paie ces revenus. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 2 janvier 1992. Édition française lue à l'image, p. 2085."
+    2021-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, articles 17 et 42"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3130 (article 17) et p. 3138 (article 42). Article 17, paragraphe 1 : « Sont abrogées les dispositions des paragraphes 2 et 2 bis du paragraphe II de l'article 52 du code […]. » Le paragraphe 2 rend « définitive et non restituable, et ce, nonobstant le régime fiscal du bénéficiaire » la retenue de 20 % sur tous les revenus de capitaux mobiliers (feuille `taux_liberatoire`). Date d'effet : article 42, paragraphe 1, à compter du 1er janvier 2021. Édition française lue sur la couche texte."
+    2022-01-01:
+    - title: "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022, articles 38 et 73"
+      href: https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf
+      note: "JORT n° 119 du 28 décembre 2021, p. 3090 (article 38) et p. 3107 (article 73). Rubrique « Réinstauration de la retenue à la source déductible due sur les revenus de capitaux mobiliers ». Article 38, paragraphe 1, paragraphe 2 rétabli au paragraphe II de l'article 52 du code : « Les revenus de capitaux mobiliers réalisés par les personnes morales non soumises à l'impôt sur les sociétés ou qui en sont totalement exonérées en vertu de la législation en vigueur ainsi que les revenus de capitaux mobiliers réalisés par le fonds commun de placement en valeurs mobilières […] sont soumis à une retenue à la source définitive et non susceptible de restitution au taux de 20 %. » Il s'applique aussi aux fonds d'amorçage et aux fonds communs de placement à risque, et non aux revenus en devises ou en dinars convertibles. Date d'effet : article 73, paragraphe 1, à compter du 1er janvier 2022 ; la note commune n° 1/2022 : revenus « payés à partir du 1er janvier 2022 ». Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue opérée sur les revenus de capitaux mobiliers servis à une personne morale
+  qui n'est pas soumise à l'impôt sur les sociétés ou qui en est totalement exonérée (article 52,
+  paragraphe II, alinéa 2, du code). La retenue est définitive : elle n'est ni imputée ni
+  restituée. À partir du 1er janvier 2022, le texte vise aussi les fonds communs de placement en
+  valeurs mobilières, les fonds d'amorçage et les fonds communs de placement à risque.
+
+  Selon la note commune n° 45/2002, la loi de finances pour 2002 (articles 21 à 28) étend déjà la
+  retenue aux fonds communs de placement en valeurs mobilières ; ces articles ne sont pas relus
+  au fascicule, et la série n'en porte pas d'entrée. La loi de finances pour 1999 (article 43)
+  retire du même alinéa une mention des banques non résidentes, sans changer le taux.
+
+  En 2021, l'alinéa est abrogé : la feuille est vide, et ces revenus subissent, comme tous les
+  revenus de capitaux mobiliers, la retenue définitive de 20 % portée par `taux_liberatoire`.

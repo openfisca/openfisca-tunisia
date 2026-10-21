@@ -1,0 +1,32 @@
+description: "Taux de l'impôt sur la plus-value de cession d'actions cotées acquises depuis le 1er janvier 2011 et cédées avant l'expiration de l'année suivant leur acquisition"
+values:
+  2004-01-01:
+    value: 0
+  2011-01-01:
+    value: 0.10
+  2023-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  short_label: "Taux, actions cotées cédées avant la fin de l'année suivant l'achat"
+  reference:
+    2004-01-01:
+    - title: "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 61 et 63"
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: "JORT n° 104 du 30 décembre 2003, p. 3730. Article 63, point 17 nouveau de l'article 38 du code : la plus-value « provenant des opérations de cession des actions cotées à la Bourse des Valeurs Mobilières de Tunis » est exonérée, sans condition de durée de détention : le taux est nul pour toute cession d'actions cotées. Date d'effet : article 61, cessions effectuées à partir du 1er janvier 2004. Édition française lue sur la couche texte décodée (police décalée)."
+    2011-01-01:
+    - title: "Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 41"
+      href: https://www.pist.tn/jort/2010/2010F/Jo1022010.pdf
+      note: "JORT n° 102 du 21 décembre 2010, pp. 3474-3475. Article 41, paragraphes 2 et 3 : les actions cotées acquises ou souscrites à partir du 1er janvier 2011 ne sont exonérées que « lorsque leur cession a lieu après l'expiration de l'année suivant celle de leur acquisition ou de leur souscription ». Cédées avant, elles entrent dans la plus-value imposable de l'article 31 bis, au taux de 10 % de l'article 44, paragraphe III, alinéa 3 (loi de finances pour 2004, article 62, p. 3730 ; feuille `taux`). Date d'effet : la loi s'applique à compter du 1er janvier 2011 (article 50, p. 3477). Édition française lue sur la couche texte."
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 42"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4068. Article 42, paragraphe 1, alinéa 3 nouveau du paragraphe III de l'article 44 du code : « وتخضع القيمة الزائدة […] للضريبة على الدخل بنسبة: - 10% من مبلغها بالنسبة إلى الأسهم المدرجة ببورصة الأوراق المالية بتونس إذا تم التفويت فيها أو إعادة إحالتها قبل انتهاء السنة الموالية لسنة الاكتتاب أو الاقتناء […] » (la plus-value est soumise à l'impôt sur le revenu au taux de 10 % de son montant pour les actions cotées à la Bourse des valeurs mobilières de Tunis cédées ou rétrocédées avant l'expiration de l'année suivant celle de la souscription ou de l'acquisition). Le taux ne change pas ; le texte le fixe désormais expressément pour ces actions. Paragraphe 3 : cessions réalisées à compter du 1er janvier 2023. Édition arabe lue à l'image, p. 4068 ; l'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux appliqué à la plus-value de cession d'actions cotées qui ne bénéficie pas de
+  l'exonération du point 17 de l'article 38 du code : actions acquises ou souscrites à partir du
+  1er janvier 2011 et cédées avant l'expiration de l'année qui suit celle de leur acquisition
+  (`annees_detention`). De 2004 à 2010, aucune cession d'actions cotées n'est imposée : le taux
+  est nul. De 2011 à 2022, c'est le taux général de la plus-value de cession de titres
+  (`taux`), après la franchise annuelle (`franchise`) ; à partir de 2023, le taux est fixé
+  expressément pour ces actions, sans franchise.

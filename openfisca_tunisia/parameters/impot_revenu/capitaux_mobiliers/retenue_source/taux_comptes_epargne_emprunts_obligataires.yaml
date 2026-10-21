@@ -1,0 +1,26 @@
+description: "Taux de la retenue à la source libératoire sur les intérêts des comptes d'épargne-emprunts obligataires"
+values:
+  1992-01-02:
+    value: 0.15
+  1997-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue libératoire, comptes d'épargne-emprunts obligataires"
+  reference:
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 33"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, p. 2085. Rubrique « Comptes d'épargne-emprunts obligataires ». Article 33 : « Les personnes physiques peuvent ouvrir des comptes d'épargne […] intitulés \" Comptes d'épargne-emprunts obligataires\" ; les sommes qui y sont déposées servent uniquement à l'acquisition d'obligations pour le compte des déposants. Les intérêts produits par toute somme déposée dans les comptes sus-visés sont soumis à une retenue à la source libératoire de 15% à condition qu'aucune opération de retrait de la somme déposée, des échéances remboursées et des intérêts réalisés ne soit effectuée durant une période qui ne peut être inférieure à 5 ans à partir de la date de dépôt de cette somme. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 2 janvier 1992. Édition française lue à l'image, p. 2085."
+    1997-01-01:
+    - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 33 et 54"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: "JORT n° 105 du 31 décembre 1996, p. 2581 (article 33) et p. 2583 (article 54). Article 33 : « Les deuxième et troisième paragraphes de l'article 33 de la loi n° 91-98 du 31 décembre 1991 portant loi de finances pour la gestion 1992 sont abrogés. » Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue libératoire sur les intérêts des comptes d'épargne-emprunts obligataires,
+  ouverts par des personnes physiques auprès des banques et des intermédiaires en bourse pour
+  l'acquisition d'obligations, à condition qu'aucun retrait n'intervienne pendant cinq ans au
+  moins à compter du dépôt (loi de finances pour 1992, article 33, hors du code). En cas de
+  retrait pendant la période de blocage, les intérêts subissent une retenue complémentaire
+  (`taux_complementaire_retrait_epargne_emprunts_obligataires`). Le régime prend fin au
+  1er janvier 1997 : les intérêts de ces comptes relèvent alors de la retenue de droit commun.
