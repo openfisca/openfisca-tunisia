@@ -61,3 +61,52 @@
     prime_assurance_vie: 100000
   output:
     deduction_assurance_vie: 800 + 400 + 6 * 200
+
+
+# Plafond unique de 10 000 dinars, majorations supprimées : loi de finances complémentaire
+# pour 2012, article 42 (JORT n° 39 du 18 mai 2012, p. 929), appliquée aux revenus de 2011 par
+# la note commune n° 25/2012. Puis 100 000 dinars à partir des revenus 2020 (loi de finances
+# pour 2021, article 16 ; note commune n° 1/2021).
+
+- name: Deux enfants en 2010, dernière année du plafond majoré
+  period: 2010
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 2
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 1200 + 600 + 2 * 300
+
+
+- name: Deux enfants en 2011, plafond unique de 10 000 dinars
+  period: 2011
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 2
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 10000
+
+
+- name: Deux enfants en 2019, dernière année à 10 000 dinars
+  period: 2019
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 2
+    prime_assurance_vie: 100000
+  output:
+    deduction_assurance_vie: 10000
+
+
+- name: Revenus 2020, plafond de 100 000 dinars
+  period: 2020
+  absolute_error_margin: .1
+  input:
+    statut_marital: 1
+    nb_enf: 2
+    prime_assurance_vie: 150000
+  output:
+    deduction_assurance_vie: 100000

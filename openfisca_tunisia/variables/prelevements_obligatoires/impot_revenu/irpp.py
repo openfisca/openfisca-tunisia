@@ -289,12 +289,15 @@ class deduction_cea(Variable):
     label = "Déduction pour Compte Épargne en Actions (CEA)"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, parameters):
+    # Le compte épargne en actions est créé par la loi n° 99-92, exécutoire le 26 août 1999 :
+    # aucune déduction auparavant. Jusqu'aux revenus de 2002, seule la moitié des dépôts est
+    # déductible, dans la limite du plafond.
+    def formula_1999_08_26(foyer_fiscal, period, parameters):
         cea = foyer_fiscal.sum(
             foyer_fiscal.members("compte_epargne_en_actions", period=period)
         )
-        plafond = parameters(period.start).impot_revenu.deductions.cea_cei.cea
-        return min_(cea, plafond)
+        cea_cei = parameters(period.start).impot_revenu.deductions.cea_cei
+        return min_(cea_cei.cea_quote_part * cea, cea_cei.cea)
 
 
 class deduction_cei(Variable):
@@ -303,7 +306,8 @@ class deduction_cei(Variable):
     label = "Déduction pour Compte Épargne Investissement (CEI)"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, parameters):
+    # Le compte épargne pour l'investissement est créé par la loi de finances pour 2003.
+    def formula_2003_01_01(foyer_fiscal, period, parameters):
         cei = foyer_fiscal.sum(
             foyer_fiscal.members("compte_epargne_investissement", period=period)
         )
