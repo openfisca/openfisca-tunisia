@@ -1,0 +1,32 @@
+description: "Rupture du contrat de travail"
+metadata:
+  short_label: "Rupture du contrat de travail"
+  order:
+  - preavis
+  - gratification_fin_service
+  - dommages_interets
+  - contrat_duree_determinee
+  - periode_essai
+  - entreprises_prestataires
+documentation: |-
+  Grandeurs chiffrées de la fin du contrat de travail dans le secteur privé régi par le code du
+  travail promulgué par la loi n° 66-27 du 30 avril 1966, en vigueur le 1er mai 1966 : préavis
+  du contrat à durée indéterminée, gratification de fin de service (nommée « indemnité de
+  licenciement » jusqu'en 1994), dommages-intérêts du licenciement abusif, durée maximale du
+  contrat à durée déterminée conclu hors des cas de recours, durée de la période d'essai et
+  garantie financière des entreprises de prestation de services.
+
+  Trois lois récrivent ces règles après 1966 : la loi n° 94-29 du 21 février 1994 (préavis
+  unifié, cause réelle et sérieuse, barème des dommages-intérêts), la loi n° 96-62 du
+  15 juillet 1996 (cas de recours au contrat à durée déterminée, durée maximale de quatre ans
+  hors de ces cas) et la loi n° 2025-9 du 21 mai 2025 (contrat réputé conclu pour une durée
+  indéterminée, contrat à durée déterminée interdit hors de trois cas, sous-traitance de
+  main-d'œuvre interdite).
+
+  Ne sont pas versés ici : les clauses des conventions collectives, dont la convention collective
+  cadre rendue obligatoire au 1er juin 1973 (période d'essai, délai-congé, calcul de l'indemnité
+  de licenciement renvoyé aux conventions de branche) ; la procédure et les délais du licenciement
+  pour motif économique (articles 21 à 21-13) ; l'indemnité de rupture de « deux mois de salaire
+  par année d'ancienneté » ouverte aux salariés dont le contrat à durée déterminée ou de
+  sous-traitance a été rompu entre le 6 mars 2024 et l'entrée en vigueur de la loi n° 2025-9
+  (article 9 de cette loi) ; les amendes pénales.
