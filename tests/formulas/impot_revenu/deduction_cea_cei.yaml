@@ -1,0 +1,119 @@
+# Déduction des dépôts en compte épargne en actions (CEA, article 39 § VIII du code) et en
+# compte épargne pour l'investissement (CEI, article 39 bis).
+#
+# CEA : 50 % des dépôts dans la limite de 5 000 dinars (loi n° 99-92, article 4, exécutoire
+# le 26 août 1999) ; dépôts entiers dans la limite de 20 000 dinars à partir des revenus 2003
+# (loi de finances pour 2004, article 45 ; note commune n° 16/2004) ; 50 000 dinars au
+# 25 avril 2011 (décret-loi n° 2011-28, article 4) ; 100 000 dinars à partir des revenus 2020
+# (loi de finances pour 2021, article 16 ; note commune n° 1/2021).
+# CEI : 20 000 dinars à partir de 2003 (loi de finances pour 2003, article 21) ; 50 000 dinars
+# pour les dépôts à partir du 1er janvier 2017 (loi de finances pour 2018, article 27 ; note
+# commune n° 2/2018).
+#
+# Le calcul annuel lit les paramètres au 1er janvier : un texte exécutoire en cours d'année ne
+# joue qu'à partir de l'année suivante (1999, 2011).
+
+- name: CEA, 1999, la date d'exécution tombe en cours d'année
+  period: 1999
+  input:
+    compte_epargne_en_actions: 10_000
+  output:
+    deduction_cea: 0
+
+- name: CEA, 2000, moitié des dépôts sous le plafond
+  period: 2000
+  input:
+    compte_epargne_en_actions: 8_000
+  output:
+    deduction_cea: 4_000
+
+- name: CEA, 2000, moitié des dépôts au plafond
+  period: 2000
+  input:
+    compte_epargne_en_actions: 10_000
+  output:
+    deduction_cea: 5_000
+
+- name: CEA, 2002, moitié des dépôts au-delà du plafond
+  period: 2002
+  input:
+    compte_epargne_en_actions: 12_000
+  output:
+    deduction_cea: 5_000
+
+- name: CEA, revenus 2003, dépôts entiers sous le plafond de 20 000 dinars
+  period: 2003
+  input:
+    compte_epargne_en_actions: 12_000
+  output:
+    deduction_cea: 12_000
+
+- name: CEA, revenus 2003, plafond de 20 000 dinars
+  period: 2003
+  input:
+    compte_epargne_en_actions: 25_000
+  output:
+    deduction_cea: 20_000
+
+- name: CEA, 2011, plafond de 50 000 dinars exécutoire le 25 avril, lu au 1er janvier
+  period: 2011
+  input:
+    compte_epargne_en_actions: 60_000
+  output:
+    deduction_cea: 20_000
+
+- name: CEA, 2012, plafond de 50 000 dinars
+  period: 2012
+  input:
+    compte_epargne_en_actions: 60_000
+  output:
+    deduction_cea: 50_000
+
+- name: CEA, 2019, dernière année à 50 000 dinars
+  period: 2019
+  input:
+    compte_epargne_en_actions: 120_000
+  output:
+    deduction_cea: 50_000
+
+- name: CEA, revenus 2020, plafond de 100 000 dinars
+  period: 2020
+  input:
+    compte_epargne_en_actions: 120_000
+  output:
+    deduction_cea: 100_000
+
+- name: CEI, 2002, avant la création du compte
+  period: 2002
+  input:
+    compte_epargne_investissement: 30_000
+  output:
+    deduction_cei: 0
+
+- name: CEI, 2003, plafond de 20 000 dinars
+  period: 2003
+  input:
+    compte_epargne_investissement: 30_000
+  output:
+    deduction_cei: 20_000
+
+- name: CEI, 2016, dernière année à 20 000 dinars
+  period: 2016
+  input:
+    compte_epargne_investissement: 60_000
+  output:
+    deduction_cei: 20_000
+
+- name: CEI, 2017, plafond de 50 000 dinars
+  period: 2017
+  input:
+    compte_epargne_investissement: 60_000
+  output:
+    deduction_cei: 50_000
+
+- name: CEI, 2017, dépôts sous le plafond
+  period: 2017
+  input:
+    compte_epargne_investissement: 30_000
+  output:
+    deduction_cei: 30_000

@@ -1,6 +1,26 @@
-description: Plafond de la déduction
+description: Plafond annuel d'exonération des intérêts des comptes épargne pour l'investissement
 values:
-  1990-01-01:
+  2003-01-01:
     value: 2000
+  2017-01-01:
+    value: 4000
 metadata:
   unit: currency
+  short_label: "Intérêts exonérés, compte épargne pour l'investissement"
+  reference:
+    2003-01-01:
+    - title: "Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles 22 et 87"
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: "JORT n° 102 du 17 décembre 2002, p. 2878 (article 22) et p. 2888 (article 87). Article 22 : « Est ajouté à l'article 38 du code […] un n°15 ainsi libellé : 15. Les intérêts des comptes épargne pour l'investissement prévus par l'article 39 bis du présent code dans la limite de 2000 dinars par an. » Date d'effet : article 87 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2003. » Édition française lue sur la couche texte décodée (police décalée)."
+    2017-01-01:
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 27"
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: "JORT n° 101 du 19 décembre 2017, p. 4275. Article 27, paragraphe 2 : « Le montant de « 2.000 dinars » prévu au point 15 de l'article 38 du code […] est relevé à « 4.000 dinars ». » Le paragraphe 4 ajoute « ou bénéfices » après « les intérêts ». Date d'effet : la note commune n° 2/2018 écrit que les limites relevées « s'appliquent aux montants déposés et aux intérêts ou bénéfices réalisés à partir du 1er janvier 2017 ». Édition française lue sur la couche texte."
+documentation: |-
+  Plafond annuel de l'exonération des intérêts — et, à partir de 2017, des bénéfices — produits
+  par un compte épargne pour l'investissement (article 38, point 15, du code de l'impôt sur le
+  revenu des personnes physiques et de l'impôt sur les sociétés).
+
+  Correction. La série portait 2 000 dinars dès 1990, sans référence. L'exonération est créée
+  par la loi de finances pour 2003, en même temps que le compte, et portée à 4 000 dinars par la
+  loi de finances pour 2018. La série commence à sa création.

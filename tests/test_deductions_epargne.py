@@ -58,19 +58,24 @@ def test_assurance_vie_serie():
     assert deductions(1997).assurance_vie.enf_plaf == 200
 
     assert deductions(2007).assurance_vie.plaf == 1200
+    assert deductions(2010).assurance_vie.plaf == 1200
+    # Loi de finances complémentaire pour 2012, article 42 ; revenus de 2011 selon la note
+    # commune n° 25/2012.
+    assert deductions(2011).assurance_vie.plaf == 10000
     assert deductions(2013).assurance_vie.plaf == 10000
     # Rattaché aux revenus 2020 par la note commune n° 1/2021, et non à 2021.
     assert deductions(2020).assurance_vie.plaf == 100000
 
 
 def test_assurance_vie_majorations_cloturees_par_le_plafond_unique():
-    """L'article 24 de la loi de finances 2014 remplace le plafond majoré par un plafond unique.
+    """L'article 42 de la loi de finances complémentaire pour 2012 remplace le plafond majoré
+    par un plafond unique, à compter des revenus de 2011 (note commune n° 25/2012).
 
     La formule additionne plafond et majorations : laisser ces dernières à leur dernière valeur
     porterait le plafond effectif d'un couple avec enfants au-delà des 10 000 dinars du texte.
     """
-    assert deductions(2012).assurance_vie.conj_plaf == 600
-    assert deductions(2012).assurance_vie.enf_plaf == 300
-    for annee in range(2013, 2027):
+    assert deductions(2010).assurance_vie.conj_plaf == 600
+    assert deductions(2010).assurance_vie.enf_plaf == 300
+    for annee in range(2011, 2027):
         assert deductions(annee).assurance_vie.conj_plaf == 0, annee
         assert deductions(annee).assurance_vie.enf_plaf == 0, annee
