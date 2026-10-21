@@ -1,0 +1,14 @@
+description: "Nombre de jours de travail effectif sur lequel se répartit la durée annuelle du travail agricole"
+values:
+  1966-05-01:
+    value: 300
+metadata:
+  unit: day
+  short_label: "Jours de travail effectif par an, agriculture"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 88"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 761. Article 88 : « Dans les entreprises agricoles, la durée légale du travail est fixée à deux mille sept cents heures par an au maximum pour trois cents jours de travail effectif. » Le troisième alinéa écarte les gardiens et les bergers, dont la durée est renvoyée à un arrêté. L'article premier de la loi n° 96-62 du 15 juillet 1996, qui énumère les articles du code qu'elle modifie (JORT n° 59 du 23 juillet 1996, p. 1579), ne cite pas cet article. Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+documentation: |-
+  Nombre de jours de travail effectif par an pour lequel l'article 88 fixe la durée maximale du travail agricole.

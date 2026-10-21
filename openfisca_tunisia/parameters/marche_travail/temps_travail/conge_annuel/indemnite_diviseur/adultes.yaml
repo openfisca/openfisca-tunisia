@@ -1,0 +1,22 @@
+description: "Diviseur de la rémunération de la période de référence donnant l'indemnité de congé, salariés de 21 ans et plus"
+values:
+  1966-05-01:
+    value: 24
+  1996-07-31:
+    value: null
+metadata:
+  unit: diviseur
+  short_label: "Indemnité de congé, diviseur, adultes"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 119"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 764. Article 119, premier alinéa : « L'indemnité afférente au congé prévu à l'alinéa 1er de l'article 113 sera égale au vingt-quatrième de la rémunération totale perçue par le salarié au cours de la période prise en considération pour l'appréciation de son droit au congé […] » Troisième alinéa : « Toutefois, l'indemnité de congé ne peut en aucun cas, être inférieure au montant de la rémunération qui aurait été perçue pendant la période de congé si le salarié avait continué à travailler. » Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+    1996-07-31:
+    - title: "Loi n° 96-62 du 15 juillet 1996, portant modification de certaines dispositions du code du travail, article premier : article 119 (nouveau) du code"
+      href: https://www.pist.tn/jort/1996/1996F/Jo05996.pdf
+      note: "JORT n° 59 du 23 juillet 1996, p. 1584. Article 119 (nouveau) : « Le travailleur perçoit pendant son congé une indemnité calculée sur la base de la durée du congé à laquelle il a droit d'une part, et le salaire et indemnités qu'il percevait habituellement pendant l'exercice effectif du travail, d'autre part. » La fraction de la rémunération de la période de référence disparaît. Date d'effet : la loi n'en fixe pas ; le JORT n° 59 a été déposé au siège du gouvernorat de Tunis le 26 juillet 1996 (mention de la p. 1599) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 31 juillet 1996. Édition française lue sur la couche texte, mise en page contrôlée à l'image."
+documentation: |-
+  Nombre par lequel on divise la rémunération de la période de référence pour obtenir l'indemnité de congé, salariés de 21 ans et plus.
+  Le code garantit en outre au moins la rémunération qu'aurait perçue le salarié s'il avait travaillé. La série est
+  close au 31 juillet 1996 : l'indemnité est depuis égale au salaire et aux indemnités habituels.

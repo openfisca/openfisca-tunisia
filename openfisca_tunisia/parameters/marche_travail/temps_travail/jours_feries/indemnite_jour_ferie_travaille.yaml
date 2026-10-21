@@ -1,0 +1,15 @@
+description: "Indemnité due au salarié qui travaille un jour férié dans une activité qui ne peut être interrompue, en part du salaire de la journée"
+values:
+  1966-05-01:
+    value: 1
+metadata:
+  unit: /1
+  short_label: "Indemnité du jour férié travaillé"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 109"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 763. Chapitre VIII « Jours fériés chômés et payés ». Article 109 : « Dans les activités où le travail ne peut être interrompu, les salariés occupés pendant les journées fériées, chômées et payées ont droit, à la charge de leur employeur et en plus du salaire correspondant au travail effectué, à une indemnité égale au montant de ce salaire. » L'article premier de la loi n° 96-62 du 15 juillet 1996, qui énumère les articles du code qu'elle modifie (JORT n° 59 du 23 juillet 1996, p. 1579), ne cite pas cet article. Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+documentation: |-
+  L'indemnité s'ajoute au salaire du travail effectué ce jour-là : le salarié reçoit au total deux fois le salaire
+  de la journée. Elle est à la charge de l'employeur.
