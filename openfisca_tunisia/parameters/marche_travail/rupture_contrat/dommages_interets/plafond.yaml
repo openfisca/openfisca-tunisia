@@ -1,0 +1,16 @@
+description: "Plafond des dommages-intérêts du licenciement sans cause réelle et sérieuse, en mois de salaire"
+values:
+  1994-03-01:
+    value: 36
+metadata:
+  unit: month
+  short_label: "Licenciement abusif, plafond en mois de salaire"
+  reference:
+    1994-03-01:
+    - title: "Loi n° 94-29 du 21 février 1994, portant modification de certaines dispositions du code du travail, article 1er (article 23 bis du code)"
+      href: https://www.pist.tn/jort/1994/1994F/Jo01594.pdf
+      note: "JORT n° 15 du 22 février 1994, p. 319. Article 23 bis, premier alinéa : « En cas de licenciement abusif, le préjudice donne lieu à des dommages-intérêts dont le montant varie entre le salaire d'un mois et celui de deux mois pour chaque année d'ancienneté dans l'entreprise sans que ces dommages-intérêts ne dépassent dans tous les cas le salaire de trois années. » Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 24 février 1994 (mention de la dernière page, lue à l'image). Édition française lue sur la couche texte."
+documentation: |-
+  Le texte dit « le salaire de trois années », soit 36 mois de salaire : le plafond est exprimé en
+  mois pour se comparer aux bornes par année d'ancienneté (`minimum_par_annee_anciennete`,
+  `maximum_par_annee_anciennete`).

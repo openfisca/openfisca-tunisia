@@ -1,0 +1,22 @@
+description: "Durée du préavis de rupture du contrat de travail à durée indéterminée (salariés payés au mois jusqu'au 28 février 1994, tous les salariés ensuite)"
+values:
+  1966-05-01:
+    value: 1
+  1994-03-01:
+    value: 1
+metadata:
+  unit: month
+  short_label: "Préavis"
+  reference:
+    1966-05-01:
+    - title: "Loi n° 66-27 du 30 avril 1966, portant promulgation du code du travail, article 1er ; code du travail, article 14"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02066.pdf
+      note: "JORT n° 20 des 3-6 mai 1966, p. 716 (loi, article premier) et p. 718 (code, article 14). Article 14, deuxième alinéa : « Le contrat à durée indéterminée prend fin par le congé donné dans les délais fixés ci-après : a) un mois pour les travailleurs payés au mois ; b) huit jours pour les autres travailleurs. Le tout sans préjudice des dispositions plus avantageuses pour le salarié résultant d'une disposition réglementaire spéciale, de l'accord des parties, de la convention collective, ou des usages de la profession. » Date d'effet : article premier de la loi — le code « entrera en vigueur le 1er mai 1966 ». Fascicule sans couche texte, lu à l'image, pp. 716 et 718."
+    1994-03-01:
+    - title: "Loi n° 94-29 du 21 février 1994, portant modification de certaines dispositions du code du travail, article 1er (article 14 bis du code)"
+      href: https://www.pist.tn/jort/1994/1994F/Jo01594.pdf
+      note: "JORT n° 15 du 22 février 1994, p. 318. Article 14 bis : « Le préavis de rupture du contrat de travail à durée indéterminée est notifié par lettre recommandée adressée à l'autre partie un mois avant la rupture du contrat. Les travailleurs sont autorisés à s'absenter durant toute la deuxième moitié de la durée du préavis en vue de leur permettre de chercher un autre emploi. » Le délai ne distingue plus selon le mode de paie. Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 24 février 1994 (mention de la dernière page, lue à l'image). Édition française lue sur la couche texte."
+documentation: |-
+  Du 1er mai 1966 au 28 février 1994, ce délai est celui des salariés payés au mois ; les autres
+  salariés ont un préavis de huit jours (`duree_salaries_non_mensuels`). À partir du
+  1er mars 1994, il vaut pour tous les salariés.
