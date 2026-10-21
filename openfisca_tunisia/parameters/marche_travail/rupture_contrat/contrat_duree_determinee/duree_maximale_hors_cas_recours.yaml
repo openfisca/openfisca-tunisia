@@ -1,0 +1,23 @@
+description: "Durée maximale, renouvellements compris, du contrat de travail à durée déterminée conclu par accord des parties hors des cas de recours"
+values:
+  1996-07-31:
+    value: 48
+  2025-05-24:
+    value: null
+metadata:
+  unit: month
+  short_label: "Contrat à durée déterminée hors cas de recours, durée maximale"
+  reference:
+    1996-07-31:
+    - title: "Loi n° 96-62 du 15 juillet 1996, portant modification de certaines dispositions du code du travail, article 1er (article 6-4 du code)"
+      href: https://www.pist.tn/jort/1996/1996F/Jo05996.pdf
+      note: "JORT n° 59 du 23 juillet 1996, p. 1579. Article 6-4, paragraphe 2 : « Le contrat de travail à durée déterminée peut également être conclu, dans des cas autres que ceux indiqués au paragraphe précédent, sur accord entre l'employeur et le travailleur et à condition que la durée de ce contrat n'excède pas quatre ans y compris ses renouvellements ; tout recrutement du travailleur concerné après l'expiration de cette période sera effectué à titre permanent et sans période d'essai. » Quatre ans, soit 48 mois. Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte un dépôt le 26 juillet 1996 (mention de la dernière page). Édition française lue sur la couche texte."
+    2025-05-24:
+    - title: "Loi n° 2025-9 du 21 mai 2025, portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre, article 1er (articles 6-2 et 6-4 nouveaux du code)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja0612025.pdf
+      note: "JORT n° 61 du 23 mai 2025, édition arabe, p. 1675. L'article premier abroge et remplace les articles 6-2, 6-3, 6-4 et 17 du code. Article 6-2 (nouveau) : « يعتبر عقد الشغل مبرما لمدّة غير معيّنة » ; article 6-4 (nouveau), premier alinéa : « يمنع إبرام عقد شغل لمدة معينة في غير الحالات الاستثنائية […] ». Traduction publiée pour information dans l'édition française (https://www.pist.tn/jort/2025/2025F/Jo0612025.pdf, p. 1296) : « Le contrat de travail est réputé conclu pour une durée indéterminée. » ; « Il est interdit la conclusion d'un contrat de travail à durée déterminée, sauf dans les cas exceptionnels […] ». Le contrat conclu par accord hors des cas de recours, et sa durée maximale, disparaissent. Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire le lendemain de sa publication dans l'édition électronique du Journal officiel (décret-loi n° 2020-1 du 14 avril 2020, article 2, texte lu sur le miroir iort.tn, fascicule du JORT n° 32 du 14 avril 2020 non consulté) ; le fascicule est daté du 23 mai 2025 et porte un dépôt au gouvernorat de Tunis le même jour. Éditions arabe et française lues sur la couche texte."
+documentation: |-
+  La valeur vide du 24 mai 2025 marque la disparition du contrat à durée déterminée conclu par
+  accord hors des cas de recours, et non une durée illimitée. Les contrats en cours conclus hors
+  des trois cas de la loi n° 2025-9, et ceux rompus après le 14 mars 2025, sont transformés en
+  contrats à durée indéterminée (article 6 de cette loi).

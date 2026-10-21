@@ -116,6 +116,16 @@
   short_label:
     one: an
     other: ans
+- name: day/month
+  label:
+    one: jour par mois
+    other: jours par mois
+  short_label: j/mois
+- name: month/year
+  label:
+    one: mois par année
+    other: mois par année
+  short_label: mois/an
 - name: smig
   label:
     one: Smig
@@ -138,3 +148,11 @@
   label:
     one: décile
     other: déciles
+- name: diviseur
+  label:
+    one: diviseur
+    other: diviseurs
+- name: jour_ferie
+  label:
+    one: jour férié
+    other: jours fériés

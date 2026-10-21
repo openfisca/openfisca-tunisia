@@ -1,0 +1,22 @@
+description: "Durée du préavis de rupture du contrat de travail à durée indéterminée des salariés qui ne sont pas payés au mois"
+values:
+  1966-05-01:
+    value: 8
+  1994-03-01:
+    value: null
+metadata:
+  unit: day
+  short_label: "Préavis, salariés non payés au mois"
+  reference:
+    1966-05-01:
+    - title: "Loi n° 66-27 du 30 avril 1966, portant promulgation du code du travail, article 1er ; code du travail, article 14"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02066.pdf
+      note: "JORT n° 20 des 3-6 mai 1966, p. 716 (loi, article premier) et p. 718 (code, article 14). Article 14, deuxième alinéa : « Le contrat à durée indéterminée prend fin par le congé donné dans les délais fixés ci-après : a) un mois pour les travailleurs payés au mois ; b) huit jours pour les autres travailleurs. » Date d'effet : article premier de la loi — le code « entrera en vigueur le 1er mai 1966 ». Fascicule sans couche texte, lu à l'image, pp. 716 et 718."
+    1994-03-01:
+    - title: "Loi n° 94-29 du 21 février 1994, portant modification de certaines dispositions du code du travail, article 1er (articles 14 et 14 bis du code)"
+      href: https://www.pist.tn/jort/1994/1994F/Jo01594.pdf
+      note: "JORT n° 15 du 22 février 1994, p. 318. L'article 14 (nouveau) ne fixe plus de délai selon le mode de paie : « Le contrat à durée indéterminée prend fin par l'expiration du délai de préavis. » L'article 14 bis fixe un préavis unique d'« un mois avant la rupture du contrat ». Date d'effet : exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 24 février 1994, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Édition française lue sur la couche texte."
+documentation: |-
+  Le délai de huit jours disparaît le 1er mars 1994 : à partir de cette date, les salariés qui ne
+  sont pas payés au mois ont le préavis d'un mois commun à tous (`duree`). La valeur vide marque
+  la fin de ce délai propre, et non l'absence de préavis.

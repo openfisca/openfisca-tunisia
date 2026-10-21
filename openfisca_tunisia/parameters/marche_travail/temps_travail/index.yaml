@@ -1,0 +1,18 @@
+description: "Durée du travail, heures supplémentaires et congés"
+metadata:
+  short_label: "Temps de travail et congés"
+  order:
+  - duree
+  - heures_supplementaires
+  - conge_annuel
+  - jours_feries
+  - conge_paternite
+  - convention_cadre
+documentation: |-
+  Règles de durée du travail, de majoration des heures supplémentaires, de congé annuel payé, de jours fériés
+  payés et de congé de paternité du code du travail promulgué par la loi n° 66-27 du 30 avril 1966, en vigueur
+  le 1er mai 1966, et des textes qui l'ont modifié, pour les salariés qu'il régit. Les états antérieurs, issus de
+  textes que le code abroge (article 4 de la loi n° 66-27), ne sont pas versés.
+
+  Le nœud `convention_cadre` est tenu à part : il porte des avantages conventionnels, qui ne valent que pour les
+  salariés couverts par la convention collective cadre des activités non agricoles.
