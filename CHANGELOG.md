@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux.
+* Zones impactées : `parameters/impot_revenu/capitaux_mobiliers`, `parameters/impot_revenu/valeurs_mobilieres`.
+* Détails :
+  - **Complète les nœuds de la 0.137** : 16 feuilles nouvelles, dont trois sous `capitaux_mobiliers/retenue_source` et quatre nœuds nouveaux. Paramètres seulement : aucune formule ne les lit.
+  - **`capitaux_mobiliers.retenue_source`** :
+    - `taux_definitif_organismes_exoneres` (article 52, II-2, personnes morales exonérées, puis fonds) : 20 % au 02/01/1992 (loi de finances pour 1992, article 31, p. 2085), vide au 01/01/2021 (loi de finances pour 2021, article 17, p. 3130), 20 % au 01/01/2022 (décret-loi n° 2021-21, article 38, p. 3090).
+    - `taux_comptes_epargne_emprunts_obligataires` : 15 % libératoire, et `taux_complementaire_retrait_epargne_emprunts_obligataires` : 10 % en cas de retrait, du 02/01/1992 (loi de finances pour 1992, article 33, p. 2085) au 31/12/1996 (loi de finances pour 1997, article 33, p. 2581).
+  - **Nœud nouveau `capitaux_mobiliers.non_residents`** :
+    - `taux_revenus_capitaux_mobiliers`, libératoire : 15 % au 01/01/1990 (code, article 52, p. 11) et au 02/01/1992 (loi de finances pour 1992, article 31), 20 % au 01/01/1997 (loi de finances pour 1997, articles 31 et 32). Série incomplète : états antérieurs à 1990 non versés.
+    - `taux_interets_prets_banques_non_etablies` (alinéa e) : 2,5 % au 01/01/1995 (loi de finances pour 1995, article 54, p. 2046), 5 % au 01/01/2011 (loi de finances pour 2011, article 43, p. 3476), 10 % au 01/01/2018 (loi de finances pour 2018, article 47, p. 4286).
+    - `taux_etats_regime_fiscal_privilegie` : 25 % au 01/01/2014 (loi de finances pour 2014, article 44, p. 3677 : « paradis fiscaux », liste fixée par décret) et au 01/01/2019 (loi de finances pour 2019, article 35, édition arabe, pp. 5449-5450 : pays ou territoire à régime fiscal privilégié, impôt inférieur à 50 % de l'impôt tunisien, liste fixée par arrêté du ministre des finances).
+  - **Nœud nouveau `valeurs_mobilieres.jetons_presence`** : `taux_retenue_source`, 15 % au 01/01/1995 (loi de finances pour 1995, articles 50 et 52, p. 2046), 20 % au 01/01/2005 (loi de finances pour 2005, article 69, pp. 3442-3443), 20 % au 01/01/2017 (loi de finances pour 2017, article 30, p. 3837 : rémunérations des membres des conseils, directoires et comités).
+  - **Nœud nouveau `valeurs_mobilieres.plus_value_cession_titres.actions_cotees`** (article 38, point 17) : `taux_detention_longue`, 0 au 01/01/2004 (loi de finances pour 2004, article 63, p. 3730) et au 01/01/2011 (loi de finances pour 2011, article 41, pp. 3474-3475) ; `taux_detention_courte`, 0 au 01/01/2004, 10 % au 01/01/2011, 10 % au 01/01/2023 (décret-loi n° 2022-79, article 42, édition arabe, p. 4068) ; `annees_detention`, 1 année civile suivant celle de l'acquisition au 01/01/2011. Ces trois feuilles permettent d'engendrer le tableau des actions cotées du précis.
+  - **Nœud nouveau `valeurs_mobilieres.plus_value_cession_titres.non_residents`** : retenue sur le prix de cession en 2011, 5 % (personnes morales) et 2,5 % (personnes physiques) (loi de finances pour 2011, articles 41 et 43), closes au 01/01/2012 ; retenue sur la plus-value (alinéa e bis) à partir du 01/01/2012 (loi de finances pour 2012, article 15, p. 5) : personnes morales 30 %, 25 % au 01/01/2014 (loi de finances pour 2014, article 18, p. 3670), 15 % au 01/01/2021 (loi de finances pour 2021, article 14, p. 3127), 20 % au 01/01/2025 (loi de finances pour 2025, article 37, p. 3431) ; personnes physiques 10 % ; plafonds de 5 % et 2,5 % du prix au 25/05/2012 (loi de finances complémentaire pour 2012, article 12, p. 923).
+  - **Dates.** La loi de finances complémentaire pour 2012 n'a pas de clause d'effet ; le fascicule est déposé le 19 mai 2012 et les notes communes n° 14/2012, 16/2012 et 25/2012 fixent son entrée en vigueur au 25 mai 2012, date retenue. Les autres dates sont énoncées par les textes ; celles de la loi de finances pour 1992 suivent la 0.137.
+  - **Non versé** : la retenue de 15 % sur les rémunérations de l'article 3, point 6 (redevances) servies aux non-résidents, qui ne sont pas des revenus de capitaux mobiliers ; l'extension de la retenue définitive aux fonds communs de placement par la loi de finances pour 2002 (articles 21 à 28, connus par la note commune n° 45/2002, non relus au fascicule) ; les exonérations de plus-value des SICAV, des fonds et des SICAR.
+  - Le test `tests/test_epargne_capital.py` couvre les 16 feuilles nouvelles : valeur la veille et le jour de chaque date, référence, unité, forme des nœuds. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.140 - [#499](https://github.com/openfisca/openfisca-tunisia/pull/499)
 
 * Évolution du système socio-fiscal.
@@ -20,6 +41,8 @@
     - CEI, revenus 2003 à 2016 : plafond de 50 000 → 20 000 dinars.
     - Assurance-vie, revenus 2011 et 2012 : plafond majoré (1 200 dinars, plus 600 pour le conjoint et 300 par enfant) → plafond unique de 10 000 dinars.
   - **Tests.** `tests/formulas/impot_revenu/minimum_impot.yaml` (revenus 2020) : `deduction_cea` 50 000 → 100 000 et `revenu_net_imposable` 50 000 → 0, valeurs du texte (note commune n° 1/2021) ; l'impôt reste au minimum de 13 770 dinars. `tests/test_deductions_epargne.py` : les majorations d'assurance-vie sont closes dès 2011, et non 2013. Nouveaux cas : `tests/formulas/impot_revenu/deduction_cea_cei.yaml` (15 cas aux bornes de 1999, 2000, 2002, 2003, 2011, 2012, 2019, 2020 pour le CEA ; 2002, 2003, 2016, 2017 pour le CEI) et quatre cas d'assurance-vie (2010, 2011, 2019, 2020).
+
+
 
 ## 0.139 - [#498](https://github.com/openfisca/openfisca-tunisia/pull/498)
 

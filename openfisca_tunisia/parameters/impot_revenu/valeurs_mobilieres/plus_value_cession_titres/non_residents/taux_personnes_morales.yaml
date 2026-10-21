@@ -1,0 +1,36 @@
+description: "Taux de la retenue à la source sur la plus-value de cession de titres réalisée par les personnes morales non résidentes"
+values:
+  2012-01-01:
+    value: 0.30
+  2014-01-01:
+    value: 0.25
+  2021-01-01:
+    value: 0.15
+  2025-01-01:
+    value: 0.20
+metadata:
+  unit: /1
+  short_label: "Retenue sur la plus-value, personnes morales non résidentes"
+  reference:
+    2012-01-01:
+    - title: "Loi n° 2011-7 du 31 décembre 2011, portant loi de finances pour l'année 2012, articles 15 et 49"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0012012.pdf
+      note: "JORT n° 1 du 3 janvier 2012, p. 5 (article 15) et p. 11 (article 49). Article 15, paragraphe 2 : « Est ajouté après l'alinéa « e » du paragraphe I de l'article 52 du code […] un alinéa « e bis» ainsi libellé : e bis) 30% au titre de la plus-value réalisée de la cession ou de la rétrocession des titres ou des droits y relatifs prévue à l'alinéa premier du paragraphe III de l'article 45 du présent code. […] La plus-value soumise à la retenue à la source est égale à la différence entre le prix de cession des titres et leur prix d'acquisition. » Date d'effet : article 49 — « Sous réserve des dispositions de l'article 45 les dispositions de la présente loi sont applicables à compter du 1er janvier 2012. » Édition française lue sur la couche texte."
+    2014-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, article 18"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, p. 3670. Rubrique « Réduction du taux de l'impôt sur les sociétés et imposition des bénéfices distribués ». Article 18, paragraphe 2 : « Le taux de la retenue à la source fixé à 30%, là où il se trouve dans l'article 52 du code […], est réduit à 25%. Le taux de 25% prévu au présent paragraphe, s'applique aux montants payés en contrepartie des opérations de cession réalisées à compter du 1er janvier 2014. » Édition française lue sur la couche texte."
+    2021-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, article 14"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3127 (paragraphe 4) et p. 3128 (paragraphe 28). Rubrique « Révision des taux de l'impôt sur les sociétés et leur fixation au taux de 15% ». Article 14, paragraphe 4 : « Le taux de la retenue à la source fixé à 25%, prévu au premier alinéa de l'alinéa «e bis» du premier paragraphe du paragraphe I de l'article 52 du code […], est réduit à «15%». » Paragraphe 28 : les dispositions s'appliquent notamment « à la plus-value réalisée à partir du 1er janvier 2021 ». Édition française lue sur la couche texte."
+    2025-01-01:
+    - title: "Loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025, article 37"
+      href: https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf
+      note: "JORT n° 149 du 10 décembre 2024, p. 3431 (paragraphe 7) et p. 3432 (paragraphe 16) de l'édition française ; pp. 6430-6431 de l'édition arabe. Rubrique « Appui à l'équité fiscale par l'adoption de taux progressifs de l'impôt sur les sociétés ». Article 37, paragraphe 7 : « Le taux de « 15% » prévu à l'alinéa « e bis » du premier paragraphe du paragraphe I et au quatrième paragraphe du paragraphe 1 du paragraphe II de l'article 52 du code […] est remplacé par le taux de « 20% ». » Paragraphe 16 : les dispositions s'appliquent « à la plus-value réalisée par les non-résidents non établis en Tunisie de la cession des immeubles, des titres et des droits y relatifs à partir du 1er janvier 2025 ». Édition française lue sur la couche texte d'une copie locale du fascicule ; pist.tn ne sert que l'édition arabe, vers laquelle pointe le lien."
+documentation: |-
+  Taux de la retenue sur la plus-value de cession d'actions, de parts sociales et de parts de
+  fonds réalisée par une personne morale non résidente ni établie en Tunisie (article 52,
+  paragraphe I, alinéa e bis, premier alinéa, du code). Il suit le taux de droit commun de
+  l'impôt sur les sociétés. À partir du 25 mai 2012, le montant de la retenue est plafonné
+  (`plafond_prix_personnes_morales`).

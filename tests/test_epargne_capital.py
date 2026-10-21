@@ -4,7 +4,9 @@ mobiliers et sur les revenus distribués, taux et franchise de la plus-value de 
 Les valeurs attendues sont écrites en clair, tirées des textes lus au Journal officiel : code de
 1990 (article 52), lois de finances pour 1992 (article 31, exécutoire le 2 janvier 1992), 1997,
 2004, 2014, 2018, 2021 et 2022, décret-loi n° 2020-30 (article 12), loi de finances pour 2023
-(article 42). Sont éprouvés, feuille par feuille :
+(article 42) ; pour les non-résidents, les jetons de présence et les actions cotées, lois de
+finances pour 1995, 2005, 2011, 2012, 2017, 2019 et 2025 et loi de finances complémentaire pour
+2012. Sont éprouvés, feuille par feuille :
 
 - la valeur la veille et le jour de chaque date d'effet, clôtures comprises ;
 - le début de chaque série : rien n'est lu la veille de sa première date ;
@@ -45,10 +47,26 @@ LF_2023 = (
     "JORT n° 141 du 23 décembre 2022, édition arabe",
     "/2022/2022A/Ja1412022.pdf",
 )
+LF_1995 = ("JORT n° 103 des 30-31 décembre 1994", "/1994/1994F/Jo10394.pdf")
+LF_2005 = ("JORT n° 105 du 31 décembre 2004", "/2004/2004F/Jo1052004.pdf")
+LF_2011 = ("JORT n° 102 du 21 décembre 2010", "/2010/2010F/Jo1022010.pdf")
+LF_2012 = ("JORT n° 1 du 3 janvier 2012", "/2012/2012F/Jo0012012.pdf")
+LFC_2012 = ("JORT n° 39 du 18 mai 2012", "/2012/2012F/Jo0392012.pdf")
+LF_2017 = ("JORT n° 105 du 27 décembre 2016", "/2016/2016F/Jo1052016.pdf")
+LF_2019 = (
+    "JORT n° 104 du 28 décembre 2018, édition arabe",
+    "/2018/2018A/Ja1042018.pdf",
+)
+# Édition française lue sur une copie locale ; pist.tn ne sert que l'édition arabe.
+LF_2025 = ("JORT n° 149 du 10 décembre 2024", "/2024/2024A/Ja1492024.pdf")
 
 RETENUE = "capitaux_mobiliers.retenue_source"
+NON_RESIDENTS = "capitaux_mobiliers.non_residents"
 DISTRIBUES = "valeurs_mobilieres.revenus_distribues"
+JETONS = "valeurs_mobilieres.jetons_presence"
 PLUS_VALUE = "valeurs_mobilieres.plus_value_cession_titres"
+COTEES = f"{PLUS_VALUE}.actions_cotees"
+PV_NON_RESIDENTS = f"{PLUS_VALUE}.non_residents"
 
 # Chemin sous impot_revenu : unité, et suite des (date, valeur, texte). None : clôture.
 SERIES = {
@@ -139,12 +157,134 @@ SERIES = {
             ("2023-01-01", None, LF_2023),
         ],
     ),
+    # Retenue définitive des organismes exonérés et des fonds (article 52, II-2).
+    f"{RETENUE}.taux_definitif_organismes_exoneres": (
+        "/1",
+        [
+            ("1992-01-02", 0.20, LF_1992),
+            ("2021-01-01", None, LF_2021),
+            ("2022-01-01", 0.20, LF_2022),
+        ],
+    ),
+    # Comptes d'épargne-emprunts obligataires (loi de finances pour 1992, article 33).
+    f"{RETENUE}.taux_comptes_epargne_emprunts_obligataires": (
+        "/1",
+        [
+            ("1992-01-02", 0.15, LF_1992),
+            ("1997-01-01", None, LF_1997),
+        ],
+    ),
+    f"{RETENUE}.taux_complementaire_retrait_epargne_emprunts_obligataires": (
+        "/1",
+        [
+            ("1992-01-02", 0.10, LF_1992),
+            ("1997-01-01", None, LF_1997),
+        ],
+    ),
+    # Non-résidents : revenus de capitaux mobiliers, intérêts des prêts bancaires, paradis.
+    f"{NON_RESIDENTS}.taux_revenus_capitaux_mobiliers": (
+        "/1",
+        [
+            ("1990-01-01", 0.15, CODE_1990),
+            ("1992-01-02", 0.15, LF_1992),
+            ("1997-01-01", 0.20, LF_1997),
+        ],
+    ),
+    f"{NON_RESIDENTS}.taux_interets_prets_banques_non_etablies": (
+        "/1",
+        [
+            ("1995-01-01", 0.025, LF_1995),
+            ("2011-01-01", 0.05, LF_2011),
+            ("2018-01-01", 0.10, LF_2018),
+        ],
+    ),
+    f"{NON_RESIDENTS}.taux_etats_regime_fiscal_privilegie": (
+        "/1",
+        [
+            ("2014-01-01", 0.25, LF_2014),
+            ("2019-01-01", 0.25, LF_2019),
+        ],
+    ),
+    # Jetons de présence.
+    f"{JETONS}.taux_retenue_source": (
+        "/1",
+        [
+            ("1995-01-01", 0.15, LF_1995),
+            ("2005-01-01", 0.20, LF_2005),
+            ("2017-01-01", 0.20, LF_2017),
+        ],
+    ),
+    # Actions cotées : exonération et condition de détention (article 38, point 17).
+    f"{COTEES}.taux_detention_longue": (
+        "/1",
+        [
+            ("2004-01-01", 0, LF_2004),
+            ("2011-01-01", 0, LF_2011),
+        ],
+    ),
+    f"{COTEES}.taux_detention_courte": (
+        "/1",
+        [
+            ("2004-01-01", 0, LF_2004),
+            ("2011-01-01", 0.10, LF_2011),
+            ("2023-01-01", 0.10, LF_2023),
+        ],
+    ),
+    f"{COTEES}.annees_detention": (
+        "year",
+        [
+            ("2011-01-01", 1, LF_2011),
+        ],
+    ),
+    # Plus-value des non-résidents (article 52, I-e en 2011, I-e bis depuis 2012).
+    f"{PV_NON_RESIDENTS}.taux_retenue_prix_personnes_morales": (
+        "/1",
+        [
+            ("2011-01-01", 0.05, LF_2011),
+            ("2012-01-01", None, LF_2012),
+        ],
+    ),
+    f"{PV_NON_RESIDENTS}.taux_retenue_prix_personnes_physiques": (
+        "/1",
+        [
+            ("2011-01-01", 0.025, LF_2011),
+            ("2012-01-01", None, LF_2012),
+        ],
+    ),
+    f"{PV_NON_RESIDENTS}.taux_personnes_morales": (
+        "/1",
+        [
+            ("2012-01-01", 0.30, LF_2012),
+            ("2014-01-01", 0.25, LF_2014),
+            ("2021-01-01", 0.15, LF_2021),
+            ("2025-01-01", 0.20, LF_2025),
+        ],
+    ),
+    f"{PV_NON_RESIDENTS}.taux_personnes_physiques": (
+        "/1",
+        [
+            ("2012-01-01", 0.10, LF_2012),
+        ],
+    ),
+    f"{PV_NON_RESIDENTS}.plafond_prix_personnes_morales": (
+        "/1",
+        [
+            ("2012-05-25", 0.05, LFC_2012),
+        ],
+    ),
+    f"{PV_NON_RESIDENTS}.plafond_prix_personnes_physiques": (
+        "/1",
+        [
+            ("2012-05-25", 0.025, LFC_2012),
+        ],
+    ),
 }
 
 # Séries dont des états antérieurs à la première date existent et ne sont pas versés.
 INCOMPLETES = {
     f"{RETENUE}.taux_imputable",
     f"{RETENUE}.taux_titres_porteur_anonymes",
+    f"{NON_RESIDENTS}.taux_revenus_capitaux_mobiliers",
 }
 
 
@@ -249,9 +389,13 @@ def test_ordre_declare():
     noeuds = [
         IMPOT_REVENU.children["capitaux_mobiliers"],
         parametre(RETENUE),
+        parametre(NON_RESIDENTS),
         IMPOT_REVENU.children["valeurs_mobilieres"],
         parametre(DISTRIBUES),
+        parametre(JETONS),
         parametre(PLUS_VALUE),
+        parametre(COTEES),
+        parametre(PV_NON_RESIDENTS),
     ]
     for noeud in noeuds:
         assert set(noeud.children) == set(noeud.metadata["order"])

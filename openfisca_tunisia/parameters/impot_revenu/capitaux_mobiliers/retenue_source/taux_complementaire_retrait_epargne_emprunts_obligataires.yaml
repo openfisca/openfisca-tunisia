@@ -1,0 +1,22 @@
+description: "Taux de la retenue à la source complémentaire sur les intérêts des comptes d'épargne-emprunts obligataires en cas de retrait pendant la période de blocage"
+values:
+  1992-01-02:
+    value: 0.10
+  1997-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue complémentaire, retrait d'un compte d'épargne-emprunts obligataires"
+  reference:
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 33"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, p. 2085. Article 33, troisième paragraphe : « En cas de retrait durant la période de blocage des comptes, les intérêts réalisés font l'objet d'une retenue à la source complémentaire de 10%. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991, soit le 2 janvier 1992. Édition française lue à l'image, p. 2085."
+    1997-01-01:
+    - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 33 et 54"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: "JORT n° 105 du 31 décembre 1996, p. 2581 (article 33) et p. 2583 (article 54). Article 33 : les deuxième et troisième paragraphes de l'article 33 de la loi de finances pour 1992 sont abrogés. Date d'effet : article 54, à compter du 1er janvier 1997. Édition française lue sur la couche texte."
+documentation: |-
+  Retenue complémentaire due sur les intérêts d'un compte d'épargne-emprunts obligataires quand
+  un retrait intervient avant cinq ans, en sus de la retenue libératoire de 15 %
+  (`taux_comptes_epargne_emprunts_obligataires`).

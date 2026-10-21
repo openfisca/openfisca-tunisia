@@ -1,0 +1,26 @@
+description: "Retenue à la source sur la plus-value de cession de titres réalisée par les non-résidents"
+metadata:
+  short_label: "Non-résidents"
+  order:
+  - taux_retenue_prix_personnes_morales
+  - taux_retenue_prix_personnes_physiques
+  - taux_personnes_morales
+  - taux_personnes_physiques
+  - plafond_prix_personnes_morales
+  - plafond_prix_personnes_physiques
+documentation: |-
+  Imposition, par voie de retenue à la source, de la plus-value de cession d'actions, de parts
+  sociales et de parts de fonds réalisée par une personne qui n'est ni résidente ni établie en
+  Tunisie : personnes physiques (code de l'impôt sur le revenu des personnes physiques et de
+  l'impôt sur les sociétés, article 3, deuxième paragraphe) et personnes morales (article 45,
+  paragraphe III). Cette plus-value est imposable à partir du 1er janvier 2011.
+
+  - En 2011, la retenue porte sur le prix de cession (article 52, paragraphe I, alinéa e), avec
+    option pour l'imposition de la plus-value réelle.
+  - À partir du 1er janvier 2012, elle porte sur la plus-value (alinéa e bis), différence entre
+    le prix de cession et le prix d'acquisition, frais déduits.
+  - À partir du 25 mai 2012, le montant de la retenue est plafonné à un pourcentage du prix de
+    cession.
+
+  Les conventions de non double imposition peuvent en disposer autrement ; elles ne sont pas
+  versées ici.

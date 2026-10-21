@@ -1,0 +1,20 @@
+description: "Retenue à la source sur les revenus de capitaux mobiliers servis aux non-résidents"
+metadata:
+  short_label: "Non-résidents"
+  order:
+  - taux_revenus_capitaux_mobiliers
+  - taux_interets_prets_banques_non_etablies
+  - taux_etats_regime_fiscal_privilegie
+documentation: |-
+  Retenue opérée sur les revenus de capitaux mobiliers servis à une personne qui n'est ni
+  résidente ni établie en Tunisie (code de l'impôt sur le revenu des personnes physiques et de
+  l'impôt sur les sociétés, article 52). Pour ces bénéficiaires, la retenue est libératoire :
+  elle est le seul impôt dû en Tunisie sur ce revenu. Les conventions de non double imposition
+  peuvent fixer des taux plus bas ; elles ne sont pas versées ici.
+
+  Les revenus distribués servis aux non-résidents subissent la retenue de droit commun
+  (`valeurs_mobilieres/revenus_distribues/taux_retenue_source`). La plus-value de cession de
+  titres réalisée par les non-résidents est dans `valeurs_mobilieres/plus_value_cession_titres/
+  non_residents`. Les rémunérations de l'article 3, point 6, du code (droits d'auteur,
+  redevances, assistance technique) servies aux non-résidents, qui relèvent aussi de
+  l'article 52, ne sont pas des revenus de capitaux mobiliers et ne sont pas versées ici.
