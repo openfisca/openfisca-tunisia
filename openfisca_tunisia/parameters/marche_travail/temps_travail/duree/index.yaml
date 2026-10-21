@@ -1,0 +1,16 @@
+description: "Durée du travail"
+metadata:
+  short_label: "Durée du travail"
+  order:
+  - hebdomadaire_maximale
+  - hebdomadaire_plancher_reduction
+  - journaliere_maximale
+  - hebdomadaire_plafond_heures_supplementaires
+  - presence_hebdomadaire_maximale
+  - agriculture_annuelle_maximale
+  - agriculture_jours_travail_effectif
+  - temps_partiel_part_maximale
+documentation: |-
+  Durées légales du travail : régime normal des activités non agricoles (articles 79 à 89 du code), plafond des
+  heures supplémentaires (article 93), activités agricoles (article 88) et travail à temps partiel (article 94-2,
+  depuis le 31 juillet 1996).

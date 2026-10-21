@@ -1,0 +1,20 @@
+description: "Plafond du congé annuel en jours, salariés de 21 ans et plus"
+values:
+  1966-05-01:
+    value: 15
+  1996-07-31:
+    value: 15
+metadata:
+  unit: day
+  short_label: "Plafond en jours, adultes"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 113"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 763. Chapitre IX « Congés annuels payés », section I « Dans les activités non agricoles ». Article 113, premier alinéa : « Le salarié qui au cours de l'année de référence justifie avoir été occupé, chez le même employeur, pendant une période de temps équivalent à un minimum d'un mois de travail effectif a droit à un congé dont la durée est déterminée à raison d'un jour par mois de travail sans que la durée totale du congé exigible puisse excéder une période de quinze jours comprenant douze jours ouvrables. » Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+    1996-07-31:
+    - title: "Loi n° 96-62 du 15 juillet 1996, portant modification de certaines dispositions du code du travail, article premier : article 113 (nouveau) du code"
+      href: https://www.pist.tn/jort/1996/1996F/Jo05996.pdf
+      note: "JORT n° 59 du 23 juillet 1996, p. 1584. Article 113 (nouveau), premier alinéa : « Tout travailleur qui, au cours de l'année de référence, justifie avoir été occupé chez le même employeur pendant une période de temps équivalente à un minimum d'un mois de travail effectif a droit à un congé dont la durée est déterminée à raison d'un jour par mois de travail sans que la durée totale du congé exigible puisse excéder une période de quinze jours comprenant douze jours ouvrables. » Date d'effet : la loi n'en fixe pas ; le JORT n° 59 a été déposé au siège du gouvernorat de Tunis le 26 juillet 1996 (mention de la p. 1599) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 31 juillet 1996. Édition française lue sur la couche texte, mise en page contrôlée à l'image."
+documentation: |-
+  Durée totale maximale du congé annuel exigible, jours ouvrables et non ouvrables compris, salariés de 21 ans et plus.

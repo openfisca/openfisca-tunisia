@@ -1,0 +1,14 @@
+description: "Durée de la période de services ouvrant un jour de congé d'ancienneté"
+values:
+  1966-05-01:
+    value: 5
+metadata:
+  unit: year
+  short_label: "Congé d'ancienneté, durée de la période"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 115"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 763. Article 115, premier alinéa : « La durée du congé ainsi fixée est augmentée à raison d'un jour ouvrable par période entière, continue ou non de cinq ans de services chez le même employeur sans que cette augmentation puisse porter à plus de dix-huit jours ouvrables la durée considérée ou se cumuler avec l'augmentation résultant, soit des stipulations des conventions collectives ou des contrats individuels de travail, soit des usages. » L'article premier de la loi n° 96-62 du 15 juillet 1996, qui énumère les articles du code qu'elle modifie (JORT n° 59 du 23 juillet 1996, p. 1579), ne cite pas cet article. Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+documentation: |-
+  Durée de chaque période de services chez le même employeur qui ajoute un jour ouvrable au congé.

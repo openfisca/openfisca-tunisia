@@ -1,0 +1,14 @@
+description: "Durée du congé du père en cas de naissance d'un enfant mort-né"
+values:
+  2024-08-13:
+    value: 3
+metadata:
+  unit: day
+  short_label: "Congé du père, enfant mort-né"
+  reference:
+    2024-08-13:
+    - title: "Loi n° 2024-44 du 12 août 2024, relative à l'organisation des congés de maternité et de paternité dans la fonction publique et les secteurs public et privé, article 5"
+      href: https://www.pist.tn/jort/2024/2024F/Jo0992024.pdf
+      note: "JORT n° 99 du 12 août 2024, p. 2216. Article 5, deuxième alinéa : « Le père bénéficie également d'un congé de trois (3) jours à plein traitement en cas où la mère donne naissance à un enfant mort-né, et ce, sur production des pièces justificatives. » L'article premier étend la loi aux agents de la fonction publique et du secteur public affiliés à la Caisse nationale de retraite et de prévoyance sociale et aux salariés et non-salariés du secteur privé affiliés à la Caisse nationale de sécurité sociale (p. 2215) ; l'article 11 abroge « toutes les dispositions antérieures contraires ». Date d'effet : la loi n'en fixe pas ; publiée au Journal officiel du 12 août 2024, elle est exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1 du 14 avril 2020, article 2), soit le 13 août 2024. Édition française lue sur la couche texte."
+documentation: |-
+  Congé à plein traitement, sur pièces justificatives.

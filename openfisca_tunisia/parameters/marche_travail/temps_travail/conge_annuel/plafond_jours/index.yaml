@@ -1,0 +1,9 @@
+description: "Plafond du congé annuel en jours"
+metadata:
+  short_label: "Plafond en jours"
+  order:
+  - adultes
+  - moins_18_ans
+  - de_18_a_20_ans
+documentation: |-
+  Durée totale maximale du congé annuel, par tranche d'âge (article 113 du code).

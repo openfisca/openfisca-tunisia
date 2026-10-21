@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.139 - [#NUMERO](https://github.com/openfisca/openfisca-tunisia/pull/NUMERO)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1966 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/temps_travail`, `units.yaml`.
+* Détails :
+  - **Verse la durée du travail, la majoration des heures supplémentaires, le congé annuel payé, les jours fériés payés et le congé de paternité du code du travail**, avec les jours fériés de la convention collective cadre dans un nœud distinct : 42 feuilles dans 14 nœuds nouveaux. Paramètres seulement : rien ne les lit encore.
+  - **`duree`** : 48 heures par semaine au plus (article 79, 01/05/1966 ; article 79 nouveau, 31/07/1996) ; réduction jusqu'à 40 heures, par décret puis par convention ou texte réglementaire (article 80, puis article 79 nouveau) ; 9 heures par jour du 01/05/1966 au 30/07/1996, condition que l'article 79 nouveau ne reprend pas ; 60 heures par semaine, heures supplémentaires comprises (article 93) ; présence de 64 heures au plus (article 82 nouveau, 31/07/1996) ; agriculture, 2 700 heures par an pour 300 jours (article 88) ; temps partiel, 70 % de la durée normale au plus (article 94-2, 31/07/1996).
+  - **`heures_supplementaires`** : régime de 48 heures, 75 % (article 90, 1966 et 1996) ; régime de 40 heures, de 1966 au 30/07/1996, 25 % au moins pour les huit premières heures supplémentaires et 50 % au-delà ; régimes à plein temps inférieurs à 48 heures, depuis le 31/07/1996, 25 % jusqu'à 48 heures et 50 % au-delà ; temps partiel, 50 % (31/07/1996) ; agriculture, 25 % (article 94).
+  - **`conge_annuel`** : 1, 2 et 1,5 jour par mois pour les adultes, les moins de 18 ans et les 18-20 ans ; plafonds de 12, 24 et 18 jours ouvrables, et de 15, 30 et 22 jours (article 113 ; rectificatif du JORT n° 37 de 1966, p. 1298, pour la borne de 20 ans ; article 113 nouveau) ; un jour ouvrable par cinq ans de services, dans la limite de 18 jours ouvrables au total (article 115) ; mois de travail effectif de 24 jours, puis de 26 jours ouvrables (article 114 nouveau) ; indemnité égale au 1/24, au 1/12 et au 1/16 de la rémunération de la période jusqu'au 30/07/1996 (article 119), versée en diviseurs.
+  - **`jours_feries`** : nombre et liste des jours de l'article 445 — 4 au 01/05/1966, 5 au 05/06/1988 (loi n° 88-55), 6 depuis mars 1991 (loi n° 91-15), composition modifiée au 16/06/2011 (décret-loi n° 2011-51) et au 15/12/2021 (décret-loi n° 2021-11) ; indemnité du jour férié travaillé égale au salaire (article 109).
+  - **`conge_paternite`** : 1 jour, à prendre dans les 7 jours (article 122, 1966) ; 7 jours, 10 jours dans les cas majorés, 3 jours pour un enfant mort-né, à prendre dans les 30 jours (loi n° 2024-44, article 5, 13/08/2024).
+  - **`convention_cadre`** : 7 jours fériés au 01/06/1973 (article 29 ; entrée en vigueur à l'article 52), 9 au 17/11/1984 (avenant n° 1), 9, liste refondue, au 15/10/1992 (avenant n° 2) ; majoration de 100 % du jour férié travaillé.
+  - **Dates.** Le code entre en vigueur le 1er mai 1966 (loi n° 66-27, article premier). La loi n° 96-62 est exécutoire le 31/07/1996 : dépôt du JORT au gouvernorat de Tunis le 26 juillet 1996, plus cinq jours (loi n° 93-64, article 2). La loi n° 88-55 l'est un jour franc après sa publication du 3 juin 1988 ; le décret-loi n° 2011-51 cinq jours après le dépôt du 11 juin 2011 ; le décret-loi n° 2021-11 et la loi n° 2024-44 le lendemain de leur publication électronique (décret-loi n° 2020-1, article 2). Les avenants de la convention cadre sont datés de leur signature, date d'entrée en vigueur qu'ils énoncent.
+  - **Loi n° 91-15.** Le fascicule porte deux dates, « 1er et 5 mars 1991 » : la loi est exécutoire le 3 ou le 7 mars. Les jours fériés légaux sont vides du 03/03/1991 au 06/03/1991, et valent 6 à partir du 07/03/1991, premier jour où la loi est en vigueur dans les deux hypothèses.
+  - **Ce qui n'est pas versé** : le congé annuel des activités agricoles (articles 123 et 124) ; les dérogations de l'article 83 ; le repos hebdomadaire ; le travail domestique (loi n° 2021-37) ; les congés pour événements familiaux de la convention cadre ; le décret-loi n° 2020-2, qui suspend et remplace pendant le confinement les premiers alinéas des articles 92 et 117.
+  - Un test nouveau, `tests/test_temps_travail.py`, lit chaque feuille la veille et le jour de chaque date, et l'état du droit à onze dates repères ; il contrôle références, unités et forme du sous-arbre. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Deux unités nouvelles dans `units.yaml` : `diviseur` et `jour_ferie`.
+
 ## 0.137 - [#496](https://github.com/openfisca/openfisca-tunisia/pull/496)
 
 * Évolution du système socio-fiscal.
