@@ -1,0 +1,10 @@
+description: "Majoration des heures supplémentaires dans le régime de 40 heures, de 1966 à 1996"
+metadata:
+  short_label: "Régime de 40 heures"
+  order:
+  - taux_premieres_heures
+  - taux_heures_suivantes
+  - nombre_premieres_heures
+documentation: |-
+  Article 90, deuxième alinéa, du code de 1966 : un taux pour les premières heures supplémentaires de la semaine,
+  un autre pour les suivantes. Les deux taux sont des minimums. Les feuilles sont closes au 31 juillet 1996.

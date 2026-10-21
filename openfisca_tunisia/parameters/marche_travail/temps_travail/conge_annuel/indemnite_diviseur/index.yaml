@@ -1,0 +1,11 @@
+description: "Indemnité de congé, en fraction de la rémunération de la période de référence, de 1966 à 1996"
+metadata:
+  short_label: "Indemnité, diviseur"
+  order:
+  - adultes
+  - moins_18_ans
+  - de_18_a_20_ans
+documentation: |-
+  Article 119 du code de 1966 : l'indemnité de congé est une fraction de la rémunération perçue pendant la
+  période de référence, dont ce nœud porte le dénominateur. Depuis le 31 juillet 1996, elle est égale au salaire
+  et aux indemnités que le travailleur percevait habituellement (article 119 nouveau).

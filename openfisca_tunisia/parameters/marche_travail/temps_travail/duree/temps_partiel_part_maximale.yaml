@@ -1,0 +1,15 @@
+description: "Part maximale de la durée normale de travail de l'entreprise en deçà de laquelle le travail est à temps partiel"
+values:
+  1996-07-31:
+    value: 0.7
+metadata:
+  unit: /1
+  short_label: "Temps partiel, part maximale de la durée normale"
+  reference:
+    1996-07-31:
+    - title: "Loi n° 96-62 du 15 juillet 1996, portant modification de certaines dispositions du code du travail, article premier : article 94-2 du code"
+      href: https://www.pist.tn/jort/1996/1996F/Jo05996.pdf
+      note: "JORT n° 59 du 23 juillet 1996, p. 1583. Article 94-2 : « Est considéré comme travail à temps partiel le travail effectué selon une durée de travail ne dépassant pas 70% de la durée normale de travail applicable à l'entreprise. » La section « travail à temps partiel » (articles 94-2 à 94-14) est ajoutée au code par l'article 3 de la loi (p. 1588). Date d'effet : la loi n'en fixe pas ; le JORT n° 59 a été déposé au siège du gouvernorat de Tunis le 26 juillet 1996 (mention de la p. 1599) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 31 juillet 1996. Édition française lue sur la couche texte, mise en page contrôlée à l'image."
+documentation: |-
+  Est à temps partiel le travail dont la durée ne dépasse pas cette part de la durée normale de travail applicable
+  à l'entreprise.

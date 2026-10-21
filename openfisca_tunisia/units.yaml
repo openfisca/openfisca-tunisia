@@ -148,3 +148,11 @@
   label:
     one: décile
     other: déciles
+- name: diviseur
+  label:
+    one: diviseur
+    other: diviseurs
+- name: jour_ferie
+  label:
+    one: jour férié
+    other: jours fériés
