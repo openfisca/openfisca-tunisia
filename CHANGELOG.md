@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.142 - [#501](https://github.com/openfisca/openfisca-tunisia/pull/501)
+
+* Amélioration technique.
+* Zones impactées : `uv.lock`.
+* Détails :
+  - **`certifi` passe à 2026.10.19**, version qui retire la racine emSign de l'autorité eMudhra (incident de sécurité de 2026).
+  - Aucune valeur, aucune date, aucun résultat ne change.
+
 ## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
 
 * Évolution du système socio-fiscal.
