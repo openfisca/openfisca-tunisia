@@ -11,6 +11,14 @@
   - **Documentation** du nœud `periode_essai` et de `rupture_contrat` : la clause de 1973 n'est plus « non versée ». Le délai-congé et le calcul de l'indemnité de licenciement, que la convention renvoie aux conventions de branche, restent hors de l'arbre.
   - Aucune formule ne lit ces feuilles. `tests/test_rupture_contrat.py` les couvre : valeur la veille et le jour de chaque date, référence, unité, forme du nœud, et la période d'essai de la loi et de la convention à cinq dates repères.
 
+## 0.142 - [#501](https://github.com/openfisca/openfisca-tunisia/pull/501)
+
+* Amélioration technique.
+* Zones impactées : `uv.lock`.
+* Détails :
+  - **`certifi` passe à 2026.10.19**, version qui retire la racine emSign de l'autorité eMudhra (incident de sécurité de 2026).
+  - Aucune valeur, aucune date, aucun résultat ne change.
+
 ## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
 
 * Évolution du système socio-fiscal.
