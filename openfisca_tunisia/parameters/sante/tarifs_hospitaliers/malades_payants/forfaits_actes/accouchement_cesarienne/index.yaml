@@ -1,0 +1,6 @@
+description: "Forfait d'un accouchement par césarienne, malades payants"
+metadata:
+  short_label: "Césarienne"
+  order:
+  - universitaire
+  - hopital_regional

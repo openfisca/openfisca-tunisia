@@ -5,6 +5,7 @@ metadata:
     - prelevements_sociaux
     - marche_travail
     - prestations
+    - sante
     - fiscalite_indirecte
     - fiscalite_locale
     - produits_subventionnes

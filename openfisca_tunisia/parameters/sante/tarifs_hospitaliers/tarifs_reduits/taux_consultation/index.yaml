@@ -1,0 +1,12 @@
+description: "Tarif réduit d'une consultation, en part du tarif des malades payants, depuis le 8 mars 1998"
+metadata:
+  short_label: "Consultation, taux"
+  order:
+  - centre_sante_base
+  - hopital_circonscription
+  - hopital_regional
+  - universitaire
+documentation: |-
+  Article 17 du décret n° 98-409 : le tarif réduit d'une consultation est un pourcentage du tarif en
+  vigueur d'une consultation pour les malades payants, dont le texte désigne la ligne pour chaque
+  catégorie de structure. Le montant obtenu est arrondi à la tranche de 500 millimes (article 22).

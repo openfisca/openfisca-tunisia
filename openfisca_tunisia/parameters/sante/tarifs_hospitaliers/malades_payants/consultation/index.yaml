@@ -1,0 +1,9 @@
+description: "Tarif d'une consultation, malades payants"
+metadata:
+  short_label: "Consultation"
+  order:
+  - medecine_generale
+  - medecine_dentaire
+  - specialite_professeurs_agreges
+  - specialite_autres_specialistes
+  - majoration_choix_medecin

@@ -1,0 +1,33 @@
+description: "Valeur des lettres clés des actes professionnels accomplis dans les structures sanitaires publiques"
+metadata:
+  short_label: "Lettres clés"
+  order:
+  - chirurgie
+  - specialite
+  - radiodiagnostic
+  - radiologie_interventionnelle
+  - radiotherapie
+  - echographie
+  - biologie
+  - anatomie_cytologie_pathologiques
+  - prelevement_produits_biologiques
+  - medecin_dentiste
+  - sage_femme
+  - physiotherapeute
+  - orthophoniste
+  - orthoptiste
+  - infirmier
+  - scanographie
+  - imagerie_resonance_magnetique
+documentation: |-
+  Le tarif d'un acte professionnel est le produit de la valeur de la lettre clé de l'acte par son
+  coefficient dans la nomenclature générale des actes professionnels : celle de l'arrêté du 25 septembre
+  1990 jusqu'au 16 juillet 2008, celle de l'arrêté du ministre de la santé publique du 1er juin 2006
+  depuis le 17 juillet 2008 (article 10 de l'arrêté de 1996, puis article 10 nouveau).
+
+  Valeurs en dinars par unité de coefficient. La scanographie et l'imagerie par résonance magnétique
+  font exception depuis 2008 : chaque cotation a un prix propre, qui n'est pas proportionnel à son
+  indice.
+
+  L'arrêté de 1993 renvoie, pour les actes, à la nomenclature et aux tarifs en vigueur (article
+  premier), sans les fixer.

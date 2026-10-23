@@ -30,6 +30,7 @@ SOUS_ARBRES_FISCAL = (
     "prelevements_sociaux",
     "prestations",
     "produits_subventionnes",
+    "sante",
 )
 
 # Le système des pensions : ses propres paramètres, et le marché du travail pour le SMIG,

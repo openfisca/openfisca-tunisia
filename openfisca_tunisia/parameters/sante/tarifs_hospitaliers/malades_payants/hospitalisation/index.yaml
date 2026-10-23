@@ -1,0 +1,27 @@
+description: "Tarif normal d'une journée d'hospitalisation, malades payants"
+metadata:
+  short_label: "Journée d'hospitalisation"
+  order:
+  - hopital_circonscription
+  - hopital_regional_medecine
+  - hopital_regional_chirurgie
+  - universitaire_medecine
+  - universitaire_specialites_medicales
+  - universitaire_nephrologie
+  - universitaire_chirurgie
+  - universitaire_reanimation
+  - taux_hospitalisation_jour
+  - majoration_chambre_particuliere
+  - taux_accompagnant
+  - taux_accompagnant_indication_medicale
+documentation: |-
+  Forfait d'une journée d'hospitalisation, selon la catégorie de l'établissement et la spécialité du
+  service (article 4 des arrêtés de 1993 et de 1996). Depuis 1997, il englobe les soins médicaux et
+  infirmiers, les médicaments de la nomenclature hospitalière et les produits à usage médical, les gaz
+  médicaux, la nourriture et les frais généraux.
+
+  Les regroupements de spécialités diffèrent d'un arrêté à l'autre : en 1993, la néphrologie, la
+  radiothérapie et la réanimation médicale et les soins intensifs sont tarifées avec la chirurgie des
+  établissements à vocation universitaire ; en 1996, la néphrologie rejoint les spécialités médicales,
+  la radiothérapie reste avec la chirurgie et la réanimation reçoit un tarif propre. Chaque groupe qui
+  change de tarif a donc sa feuille.
