@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.142
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 04/08/1997 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/accises/bieres_vins_alcools`, `parameters/fiscalite_indirecte/accises/index.yaml`, `units.yaml`.
+* Détails :
+  - **Verse le tarif du droit de consommation sur les bières, vins, alcools et boissons alcoolisées (positions 22-03 à 22-08)** : 25 feuilles dans 6 nœuds nouveaux sous `accises/bieres_vins_alcools`. Paramètres seulement : rien ne les lit.
+  - **Textes et dates.** Annexes I à III du décret n° 97-1368 (JORT n° 59 de 1997, p. 1316), exécutoire le 04/08/1997 ; décret n° 2013-929 (pp. 674-675), le 21/02/2013 ; annexe unique du décret gouvernemental n° 2015-1768 (p. 2722), le 24/11/2015. Ces trois décrets n'ont pas de clause d'effet : ils sont exécutoires cinq jours après le dépôt du fascicule au gouvernorat de Tunis (loi n° 93-64, article 2) ; pour 1997, dépôt le 30 juillet selon l'édition arabe, l'édition française portant « 24 juillet ». Tableaux annexés à la loi n° 88-62 par les lois de finances pour 2016 (article 44, au 01/01/2016 selon l'article 92) et 2018 (article 45, au 01/01/2018 selon l'article 67) ; article 20 de la loi de finances pour 2021 (au 01/01/2021 selon l'article 42).
+  - **Bières (`bieres`)** : par récipient en 1997 et 2013, sept tranches de contenance (récipient de 0,661 à 1 litre : 1,200 puis 2,040 dinars), bière à pression (0,780 puis 1,330 D/l) et en vrac (0,610 puis 1,040 D/l), closes au 24/11/2015 ; `par_centilitre`, nouvelle unité `currency/cl` : 0,018 dinar au 24/11/2015, 0,024 au 01/01/2021.
+  - **Vins (`vins`)** : en vrac livrés aux embouteilleurs, 5 puis 7,5 D/hl ; mousseux, 16 puis 24 dinars la bouteille ; vins de liqueur, mistelles et moûts, 2,5 puis 3,75 dinars ; autres vins par bouteille en 1997 et 2013, quatre tranches (0,751 à 1 litre : 1,200 puis 1,800 dinars), closes au 24/11/2015 ; `autres_vins_par_litre` : 1,8 D/l au 24/11/2015, 2,4 au 01/01/2021.
+  - **Taux ad valorem** : vermouths, 200 % en 1997, 50 % en 2015, 100 % en 2018 ; autres boissons fermentées, 25 % ; eaux-de-vie, whiskies et spiritueux non classés, classés, pastis et anisette : 683, 648, 395 et 597 % en 1997, 50 % en 2015, 100 % en 2018. Le décret de 2013 laisse ces positions « sans modification » : pas d'état en 2013.
+  - **Alcool éthylique de bon goût destiné aux boissons alcoolisées** : 380 D/hl en 1997, 570 en 2013.
+  - **Vins mousseux, loi de finances pour 2016** : l'édition arabe porte 24,000 dinars (p. 3609), l'édition française 4,000 (p. 3150). La valeur versée est celle de l'édition arabe, seule officielle (loi n° 93-64, article premier) ; l'écart est consigné dans la note de la référence.
+  - **Série incomplète** : états antérieurs à 1997 non versés (loi n° 88-62, décret n° 91-551, décret n° 93-2090). Non versés non plus : les quatre autres lignes de la position 22-07 (récrites par le décret n° 2002-627), les préparations alcooliques (Ex 21-06, Ex 22-08, Ex 33-02), la capsule fiscale sur les vins.
+  - Le test `tests/test_droit_consommation_boissons_alcoolisees.py` couvre les 25 feuilles : valeur la veille et le jour de chaque date, référence, unité, forme du sous-arbre. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
 
 * Évolution du système socio-fiscal.

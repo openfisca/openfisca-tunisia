@@ -1,0 +1,13 @@
+description: Droit de consommation sur les autres vins classés, par bouteille
+metadata:
+  short_label: Autres vins classés, par bouteille
+  order:
+  - bouteille_jusqu_a_0_375_l
+  - bouteille_0_376_a_0_500_l
+  - bouteille_0_501_a_0_750_l
+  - bouteille_0_751_a_1_l
+documentation: |-
+  Annexe II du décret n° 97-1368, puis du décret n° 2013-929 : autres vins classés, provenant
+  exclusivement de la fermentation des raisins frais ou du jus de raisins frais, droit par bouteille
+  selon sa contenance. Close au 24 novembre 2015 : l'annexe unique du décret gouvernemental
+  n° 2015-1768 remplace le tarif par récipient par un tarif au volume.

@@ -1,0 +1,56 @@
+description: Droit de consommation sur les whiskies, cognac, vodka, gin et autres boissons spiritueuses
+  classés
+values:
+  '1997-08-04':
+    value: 3.95
+  '2015-11-24':
+    value: 0.5
+  '2016-01-01':
+    value: 0.5
+  '2018-01-01':
+    value: 1.0
+metadata:
+  unit: /1
+  short_label: Whiskies, cognac, vodka, gin, classés
+  reference:
+    '1997-08-04':
+    - title: Décret n° 97-1368 du 24 juillet 1997, relatif au régime fiscal des produits relevant des
+        numéros 22-03 à 22-08 du tarif des droits de douane, article 3 et annexes I à III
+      href: https://www.pist.tn/jort/1997/1997F/Jo05997.pdf
+      note: JORT n° 59 du 25 juillet 1997, p. 1316 (annexes I, II et III, lues à l'image). Pas de clause
+        d'effet générale. Fascicule déposé au siège du gouvernorat de Tunis le 30 juillet 1997 selon le
+        colophon de l'édition arabe ; le colophon de l'édition française porte « 24 juillet 1997 », date
+        antérieure à celle du fascicule. Exécutoire le 4 août 1997, cinq jours après le dépôt, jour du
+        dépôt non compté (loi n° 93-64, article 2).
+    '2015-11-24':
+    - title: Décret gouvernemental n° 2015-1768 du 10 novembre 2015, modifiant le décret n° 97-1368 du
+        24 juillet 1997, articles 1er et 2 et annexe
+      href: https://www.pist.tn/jort/2015/2015F/Jo0922015.pdf
+      note: JORT n° 92 du 17 novembre 2015, p. 2722 (annexe), couche texte. Les annexes I, II et III du
+        décret de 1997 sont abrogées et remplacées par une annexe unique. Pas de clause d'effet ; fascicule
+        déposé le 19 novembre 2015 ; exécutoire le 24 novembre 2015 (loi n° 93-64, article 2).
+    '2016-01-01':
+    - title: Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, articles 44
+        et 92
+      href: https://www.pist.tn/jort/2015/2015A/Ja1042015.pdf
+      note: 'JORT n° 104 du 29 décembre 2015. Article 44 : le tableau annexé à la loi n° 88-62 est abrogé
+        et remplacé ; édition arabe p. 3609 (lue à l''image), édition française pp. 3150-3151 (extrait
+        local du fascicule ; pist.tn ne sert que l''édition arabe). Article 92 (édition française p. 3165)
+        : application à compter du 1er janvier 2016.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 45
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017. Article 45, paragraphe 1 : le tableau annexé à la loi n°
+        88-62 est abrogé et remplacé ; positions 22-03 à 22-07 p. 4282, Ex 22-08 p. 4283. Article 67 (p.
+        4292), paragraphe 1 : application à compter du 1er janvier 2018 ; paragraphe 2 : les hausses de
+        l''article 45 ne s''appliquent pas aux marchandises importées dont le titre de transport, établi
+        avant cette date, justifie l''expédition directe vers la Tunisie, et qui sont déclarées pour la
+        mise à la consommation directe.'
+  notes:
+    '1997-08-04':
+    - note: 'Série incomplète : états antérieurs à 1997 non versés.'
+documentation: |-
+  Droit de consommation sur les whiskies, cognac, vodka, gin et autres boissons spiritueuses classés,
+  taux ad valorem. Depuis le 24 novembre 2015, la ligne « whiskies, cognac, vodka, gin et autres
+  boissons spiritueuses » ne distingue plus les produits classés et non classés.
