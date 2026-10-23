@@ -1,0 +1,14 @@
+description: "Congés de repos exceptionnels payés du travailleur domestique pour événements familiaux"
+metadata:
+  short_label: "Congés pour événements familiaux, travail domestique"
+  order:
+  - deces_conjoint_pere_mere_enfant
+  - deces_frere_soeur_petit_enfant_grand_parent
+  - mariage_travailleur
+  - circoncision_enfant
+  - mariage_enfant
+documentation: |-
+  Congés payés accordés au travailleur domestique qui travaille d'une manière continue auprès d'un seul employeur,
+  « sauf accord contraire des deux parties », sur production des justificatifs de l'événement (article 14).
+  Le congé de paternité est accordé « conformément à la législation en vigueur » (article 15) : il renvoie à
+  `conge_paternite/` et n'a pas de feuille ici.

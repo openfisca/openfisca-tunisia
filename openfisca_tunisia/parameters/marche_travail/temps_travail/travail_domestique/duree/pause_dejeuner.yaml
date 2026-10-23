@@ -1,0 +1,15 @@
+description: "Pause déjeuner du travailleur domestique, pendant laquelle il peut quitter le lieu du travail"
+values:
+  2022-01-30:
+    value: 1
+metadata:
+  unit: heure
+  short_label: "Pause déjeuner"
+  reference:
+    2022-01-30:
+    - title: "Loi n° 2021-37 du 16 juillet 2021, relative à la réglementation du travail domestique, article 13"
+      href: https://www.pist.tn/jort/2021/2021F/Jo0682021.pdf
+      note: "JORT n° 68 du 30 juillet 2021, p. 2007. Article 13 : « La durée du travail effectif dans les travaux domestiques auprès d’un seul employeur ne peut dépasser les quarante-huit (48) heures par semaine, réparties sur les jours de la semaine, d'un commun accord entre les deux parties et selon la spécificité du travail à accomplir. La durée du travail effectif et les heures supplémentaires ne peuvent dépasser les 10 heures par jour. La travailleuse ou le travailleur domestique bénéficie au cours de la durée du travail d’une pause déjeuner d’une heure, pendant laquelle ils peuvent quitter le lieu du travail. » Date d'effet : article 29, « Les dispositions de la présente loi entrent en vigueur dans un délai de six mois à compter de sa publication au Journal officiel de la République tunisienne » (p. 2010) ; le JORT n° 68 est daté du 30 juillet 2021 et déposé au siège du gouvernorat de Tunis le même jour ; six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue (le 31 janvier 2022 si le jour de la publication n'est pas compté). Édition française lue sur la couche texte."
+documentation: |-
+  La pause est la même chez un seul employeur (article 13) et chez des employeurs multiples (article 19) ;
+  la feuille cite l'article 13.
