@@ -4,11 +4,14 @@ metadata:
   order:
   - duree_maximale
   - renouvellements_maximum
+  - delai_notification_rupture
+  - convention_cadre
 documentation: |-
   Durée légale maximale de la période d'essai et nombre de renouvellements permis (code du
   travail, article 6-3 nouveau, rédaction de la loi n° 2025-9, en vigueur le 24 mai 2025). Chaque
   partie peut mettre fin au contrat avant l'expiration de la période d'essai en prévenant
-  l'autre, par tout moyen laissant une trace écrite, quinze jours avant cette expiration. Après
+  l'autre, par tout moyen laissant une trace écrite, quinze jours avant cette expiration
+  (`delai_notification_rupture`). Après
   une rupture pendant l'essai, un nouveau contrat entre les mêmes parties est à durée
   indéterminée et sans période d'essai. Le contrat à durée déterminée ne comporte pas de période
   d'essai (article 6-4 nouveau). La période d'essai stipulée dans un contrat conclu avant le
@@ -18,4 +21,4 @@ documentation: |-
   collectives, de l'usage ou de la loi (article 18 de 1966), puis des dispositions légales ou
   contractuelles applicables (article 6-3 de 1996). La convention collective cadre, rendue
   obligatoire au 1er juin 1973, la limite à trois mois, avec un second et dernier essai de même
-  durée (article 10) ; cette clause conventionnelle n'est pas versée ici.
+  durée (article 10) ; cette clause conventionnelle est versée sous `convention_cadre`.

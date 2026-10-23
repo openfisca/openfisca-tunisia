@@ -13,6 +13,42 @@
   - **Variables calculées nouvelles** : `menage_amen_social_pauvre_ou_revenu_limite` (carte AMG1 ou AMG2) ; `allocation_allergie_gluten` (à partir de janvier 2025) ; `allocation_xeroderma_pigmentosum` (à partir de janvier 2026, réservée à partir d'août 2026 aux personnes sans régime légal de couverture sociale, premier mois qui commence après le 19/07/2026). Aucun agrégat existant ne les additionne : aucun résultat existant ne change.
   - Tests : `tests/formulas/prestations/non_contributives/`, bornes 12/2024, 01/2025, 12/2025, 01/2026, 07/2026 et 08/2026.
 
+## 0.144 - [#503](https://github.com/openfisca/openfisca-tunisia/pull/503)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 30/01/2022 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/temps_travail/travail_domestique`.
+* Détails :
+  - **Verse le travail domestique de la loi n° 2021-37 du 16 juillet 2021** : nœud nouveau `temps_travail/travail_domestique`, 17 feuilles dans 4 sous-nœuds, au 30/01/2022 (JORT n° 68 du 30 juillet 2021, pp. 2007-2008).
+    - `duree` : 48 heures par semaine et 10 heures par jour, heures supplémentaires comprises, chez un seul employeur (article 13) ; 8 heures par jour, 10 avec les heures supplémentaires, chez des employeurs multiples (article 19), sans limite hebdomadaire que la loi fixe pour eux ; pause déjeuner d'une heure dans les deux cas.
+    - `conge_annuel` : 1 jour par mois de travail effectif, 15 jours au plus dont 12 ouvrés ; 1,5 jour par mois, 22 jours au plus dont 18 ouvrés, de 18 à 20 ans, âge apprécié au 31 décembre (article 14). La loi écrit « jours ouvrés », là où le code du travail écrit « jours ouvrables » : feuilles `plafond_jours_ouvres_*`, distinctes de `conge_annuel/plafond_jours_ouvrables`.
+    - `conges_evenements_familiaux` : décès du conjoint, du père, de la mère ou d'un enfant, 3 jours ; d'un frère, d'une sœur, d'un petit-enfant ou d'un grand-parent, 2 jours ; mariage du travailleur, 7 jours ; circoncision d'un enfant, 1 jour ; mariage d'un enfant, 2 jours (article 14). Le congé de paternité renvoie à la législation (article 15) : `conge_paternite/`.
+    - `regime_salaire_minimum` : le salaire ne peut être inférieur au salaire minimum garanti « au régime de 48 heures de travail par semaine » (article 11).
+  - **Date d'effet.** L'article 29 fait entrer la loi en vigueur « dans un délai de six mois à compter de sa publication » ; le JORT n° 68 est daté du 30 juillet 2021 et déposé le même jour. Six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue ; le 31 janvier 2022 si le jour de la publication n'est pas compté. Le calcul est écrit dans la note de chaque feuille.
+  - **Non versé** : la majoration des heures supplémentaires du travail domestique, que la loi ne fixe pas (le code du travail s'applique, article 4) ; le salaire minimum applicable, que l'article 11 renvoie aux secteurs ; les congés de maternité et d'allaitement (article 15), renvoyés à la législation.
+  - Aucune formule ne lit ces feuilles. Le test `tests/test_travail_domestique.py` les couvre : valeur la veille et le jour de la date d'effet, référence (article, page, calcul de la date), unité, forme du nœud ; `tests/test_temps_travail.py` laisse ce nœud à ce test.
+
+## 0.143 - [#502](https://github.com/openfisca/openfisca-tunisia/pull/502)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/06/1973 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/rupture_contrat/periode_essai`.
+* Détails :
+  - **Verse la période d'essai de la convention collective cadre** sous `periode_essai/convention_cadre/` : `duree_maximale`, 3 mois, et `renouvellements_maximum`, 1 (un « deuxième et dernier essai pour une même période »), au 01/06/1973 (convention du 20 mars 1973 agréée par l'arrêté du 29 mai 1973, article 10, JORT n° 21 des 25-29 mai-1er juin 1973, p. 854 ; entrée en vigueur à l'article 52, p. 859). Aucun texte lu ne clôt la clause : les avenants n° 1 à 3 ne touchent pas l'article 10. La clause n'est pas rangée sous `conventions_collectives/`, dont le générateur du précis lit chaque sous-nœud comme une branche à grilles de salaires : elle vit à côté de la règle légale qu'elle précède, comme `temps_travail/convention_cadre/`.
+  - **Feuille nouvelle `periode_essai/delai_notification_rupture`** : 15 jours au 24/05/2025 (loi n° 2025-9, article 1er, article 6-3 nouveau, deuxième alinéa, JORT n° 61 du 23 mai 2025, p. 1675 de l'édition arabe) ; le texte ne tranche pas entre un préavis dû à l'autre partie et un délai de notification avant le terme de l'essai, la documentation de la feuille le dit.
+  - **Documentation** du nœud `periode_essai` et de `rupture_contrat` : la clause de 1973 n'est plus « non versée ». Le délai-congé et le calcul de l'indemnité de licenciement, que la convention renvoie aux conventions de branche, restent hors de l'arbre.
+  - Aucune formule ne lit ces feuilles. `tests/test_rupture_contrat.py` les couvre : valeur la veille et le jour de chaque date, référence, unité, forme du nœud, et la période d'essai de la loi et de la convention à cinq dates repères.
+
+
+
+## 0.142 - [#501](https://github.com/openfisca/openfisca-tunisia/pull/501)
+
+* Amélioration technique.
+* Zones impactées : `uv.lock`.
+* Détails :
+  - **`certifi` passe à 2026.10.19**, version qui retire la racine emSign de l'autorité eMudhra (incident de sécurité de 2026).
+  - Aucune valeur, aucune date, aucun résultat ne change.
+
 ## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
 
 * Évolution du système socio-fiscal.

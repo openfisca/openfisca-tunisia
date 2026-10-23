@@ -1,0 +1,13 @@
+description: "Nombre maximal de renouvellements de la période d'essai de la convention collective cadre"
+values:
+  1973-06-01:
+    value: 1
+metadata:
+  short_label: "Convention cadre, période d'essai, renouvellements"
+  reference:
+    1973-06-01:
+    - title: "Convention collective cadre du 20 mars 1973, agréée par l'arrêté du ministre des affaires sociales du 29 mai 1973, article 10"
+      href: https://www.pist.tn/jort/1973/1973F/Jo02173.pdf
+      note: "JORT n° 21 des 25-29 mai-1er juin 1973, p. 854. Article 10, dernier alinéa : « Si l'essai n'est pas concluant, le candidat pourra être soumis à un deuxième et dernier essai pour une même période. » Le second essai, qui est le dernier, est de même durée que le premier. Date d'effet : article 52, « La présente Convention Collective entrera en vigueur le 1er juin 1973 » (p. 859). L'arrêté du 29 mai 1973, article 2, rend ses dispositions obligatoires pour tous les employeurs et travailleurs des activités non agricoles assujettis au code du travail (p. 852). Édition française lue à l'image."
+documentation: |-
+  Le renouvellement est d'une durée égale à celle de la période initiale.
