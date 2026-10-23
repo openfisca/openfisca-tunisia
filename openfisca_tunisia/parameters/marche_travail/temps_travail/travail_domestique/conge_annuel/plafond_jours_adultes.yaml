@@ -1,0 +1,12 @@
+description: "Plafond du repos annuel en jours, travailleur domestique de 21 ans et plus"
+values:
+  2022-01-30:
+    value: 15
+metadata:
+  unit: day
+  short_label: "Plafond du congé, travail domestique, adultes"
+  reference:
+    2022-01-30:
+    - title: "Loi n° 2021-37 du 16 juillet 2021, relative à la réglementation du travail domestique, article 14"
+      href: https://www.pist.tn/jort/2021/2021F/Jo0682021.pdf
+      note: "JORT n° 68 du 30 juillet 2021, p. 2007. Article 14, travailleuse ou travailleur domestique auprès d'un seul employeur, d'une manière continue : « un repos annuel dont la durée est fixée à raison d'un jour par mois de travail effectif sans que la durée totale du congé annuel excède quinze (15) jours dont douze (12) jours ouvrés. La durée de ce repos est d’un jour et demi par mois de travail effectif pour les travailleuses et travailleurs domestiques âgées entre dix-huit (18) et vingt (20) ans, au 31 décembre de chaque année, et ce, sans que la durée totale du repos annuel dû n’excède vingt-deux (22) jours dont dix-huit (18) jours ouvrés. » Date d'effet : article 29, « Les dispositions de la présente loi entrent en vigueur dans un délai de six mois à compter de sa publication au Journal officiel de la République tunisienne » (p. 2010) ; le JORT n° 68 est daté du 30 juillet 2021 et déposé au siège du gouvernorat de Tunis le même jour ; six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue (le 31 janvier 2022 si le jour de la publication n'est pas compté). Édition française lue sur la couche texte."

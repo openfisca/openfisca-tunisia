@@ -1,0 +1,15 @@
+description: Droit de consommation sur la bière classée en récipients, par unité
+metadata:
+  short_label: Bière classée, par récipient
+  order:
+  - boite_moins_0_250_l
+  - boite_0_250_a_0_320_l
+  - bouteille_jusqu_a_0_320_l
+  - recipient_0_321_a_0_400_l
+  - recipient_0_401_a_0_500_l
+  - recipient_0_501_a_0_660_l
+  - recipient_0_661_a_1_l
+documentation: |-
+  Annexe I du décret n° 97-1368, puis du décret n° 2013-929 : droit en dinars par récipient, selon sa
+  nature (boîte, bouteille) et sa contenance. Close au 24 novembre 2015 : l'annexe unique du décret
+  gouvernemental n° 2015-1768 remplace le tarif par récipient par un tarif au volume.

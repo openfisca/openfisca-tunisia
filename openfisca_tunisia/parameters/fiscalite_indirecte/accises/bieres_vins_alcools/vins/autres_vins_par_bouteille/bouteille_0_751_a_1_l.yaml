@@ -1,0 +1,44 @@
+description: Droit de consommation sur les autres vins classés, bouteille d'une contenance comprise entre
+  0,751 et 1 litre
+values:
+  '1997-08-04':
+    value: 1.2
+  '2013-02-21':
+    value: 1.8
+  '2015-11-24':
+    value: null
+metadata:
+  unit: currency/unit
+  short_label: Autres vins, bouteille d'une contenance comprise entre 0,751 et 1 litre
+  reference:
+    '1997-08-04':
+    - title: Décret n° 97-1368 du 24 juillet 1997, relatif au régime fiscal des produits relevant des
+        numéros 22-03 à 22-08 du tarif des droits de douane, article 3 et annexes I à III
+      href: https://www.pist.tn/jort/1997/1997F/Jo05997.pdf
+      note: JORT n° 59 du 25 juillet 1997, p. 1316 (annexes I, II et III, lues à l'image). Pas de clause
+        d'effet générale. Fascicule déposé au siège du gouvernorat de Tunis le 30 juillet 1997 selon le
+        colophon de l'édition arabe ; le colophon de l'édition française porte « 24 juillet 1997 », date
+        antérieure à celle du fascicule. Exécutoire le 4 août 1997, cinq jours après le dépôt, jour du
+        dépôt non compté (loi n° 93-64, article 2).
+    '2013-02-21':
+    - title: Décret n° 2013-929 du 4 février 2013, modifiant et complétant le décret n° 97-1368 du 24
+        juillet 1997, article premier et annexes I à III
+      href: https://www.pist.tn/jort/2013/2013F/Jo0142013.pdf
+      note: JORT n° 14 du 15 février 2013, p. 674 (annexes I et II) et p. 675 (annexe III), couche texte.
+        Les positions 22-05, 22-06 et Ex 22-08 portent la mention « (Sans modification) ». Pas de clause
+        d'effet ; fascicule déposé le 16 février 2013 ; exécutoire le 21 février 2013 (loi n° 93-64, article
+        2).
+    '2015-11-24':
+    - title: Décret gouvernemental n° 2015-1768 du 10 novembre 2015, modifiant le décret n° 97-1368 du
+        24 juillet 1997, articles 1er et 2 et annexe
+      href: https://www.pist.tn/jort/2015/2015F/Jo0922015.pdf
+      note: JORT n° 92 du 17 novembre 2015, p. 2722 (annexe), couche texte. Les annexes I, II et III du
+        décret de 1997 sont abrogées et remplacées par une annexe unique. Pas de clause d'effet ; fascicule
+        déposé le 19 novembre 2015 ; exécutoire le 24 novembre 2015 (loi n° 93-64, article 2).
+  notes:
+    '1997-08-04':
+    - note: 'Série incomplète : états antérieurs à 1997 non versés.'
+documentation: |-
+  Autres vins classés en bouteille d'une contenance comprise entre 0,751 et 1 litre, droit par unité.
+  Close au 24 novembre 2015 : l'annexe unique du décret gouvernemental n° 2015-1768 remplace le tarif
+  par récipient par un tarif au volume.

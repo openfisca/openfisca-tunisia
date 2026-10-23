@@ -1,0 +1,17 @@
+description: Droit de consommation sur la bière classée (position 22-03)
+metadata:
+  short_label: Bières
+  order:
+  - par_centilitre
+  - par_recipient
+  - pression
+  - vrac
+documentation: |-
+  Bière classée, position 22-03 du tarif des droits de douane. De 1997 à 2015, le droit est fixé par
+  récipient, selon sa nature et sa contenance, et par litre pour la bière à pression et en vrac.
+  Depuis le 24 novembre 2015, il est fixé au centilitre.
+
+  Article 4 du décret n° 97-1368 : pour la bière en récipients de plus d'un litre, le droit se liquide
+  par 10 centilitres ou fraction de 10 centilitres, au dixième du tarif applicable au litre. Article
+  5 : les tarifs sont doublés pour la bière non classée. Articles 4 et 5 lus dans l'édition arabe,
+  p. 1363.

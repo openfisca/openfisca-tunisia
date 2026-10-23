@@ -37,6 +37,7 @@ CODE_1966 = ("JORT n° 20 des 3-6 mai 1966", "/1966/1966F/Jo02066.pdf")
 LOI_1994 = ("JORT n° 15 du 22 février 1994", "/1994/1994F/Jo01594.pdf")
 LOI_1996 = ("JORT n° 59 du 23 juillet 1996", "/1996/1996F/Jo05996.pdf")
 LOI_2025 = ("JORT n° 61 du 23 mai 2025, édition arabe", "/2025/2025A/Ja0612025.pdf")
+CONVENTION_CADRE_1973 = ("JORT n° 21 des 25-29 mai-1er juin 1973", "/1973/1973F/Jo02173.pdf")
 ARRETE_2025 = (
     "JORT n° 117 du 23 septembre 2025, édition arabe",
     "/2025/2025A/Ja1172025.pdf",
@@ -95,6 +96,18 @@ SERIES = {
     "periode_essai.renouvellements_maximum": (
         None,
         [("2025-05-24", 1, LOI_2025)],
+    ),
+    "periode_essai.delai_notification_rupture": (
+        "day",
+        [("2025-05-24", 15, LOI_2025)],
+    ),
+    "periode_essai.convention_cadre.duree_maximale": (
+        "month",
+        [("1973-06-01", 3, CONVENTION_CADRE_1973)],
+    ),
+    "periode_essai.convention_cadre.renouvellements_maximum": (
+        None,
+        [("1973-06-01", 1, CONVENTION_CADRE_1973)],
     ),
     "entreprises_prestataires.garantie_financiere": (
         "/1",
@@ -220,6 +233,31 @@ CHEMINS_ETATS = [
 def test_etats_aux_dates_reperes(etat):
     instant, *attendus = etat
     lus = [parametre(chemin)(instant) for chemin in CHEMINS_ETATS]
+    for lu, attendu in zip(lus, attendus):
+        assert egal(lu, attendu), (instant, lus, attendus)
+
+
+# Période d'essai : (date, durée légale, durée de la convention cadre, second essai de la convention,
+# délai de notification de la rupture). Aucun texte lu ne clôt la clause de la convention cadre.
+ESSAI = [
+    ("1973-05-31", None, None, None, None),
+    ("1973-06-01", None, 3, 1, None),
+    ("2025-05-23", None, 3, 1, None),
+    ("2025-05-24", 6, 3, 1, 15),
+    ("2026-01-01", 6, 3, 1, 15),
+]
+
+
+@pytest.mark.parametrize("etat", ESSAI, ids=[etat[0] for etat in ESSAI])
+def test_periode_essai_de_la_loi_et_de_la_convention_cadre(etat):
+    instant, *attendus = etat
+    chemins = [
+        "periode_essai.duree_maximale",
+        "periode_essai.convention_cadre.duree_maximale",
+        "periode_essai.convention_cadre.renouvellements_maximum",
+        "periode_essai.delai_notification_rupture",
+    ]
+    lus = [parametre(chemin)(instant) for chemin in chemins]
     for lu, attendu in zip(lus, attendus):
         assert egal(lu, attendu), (instant, lus, attendus)
 
