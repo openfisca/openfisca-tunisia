@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.144 - [#503](https://github.com/openfisca/openfisca-tunisia/pull/503)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 30/01/2022 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/temps_travail/travail_domestique`.
+* Détails :
+  - **Verse le travail domestique de la loi n° 2021-37 du 16 juillet 2021** : nœud nouveau `temps_travail/travail_domestique`, 17 feuilles dans 4 sous-nœuds, au 30/01/2022 (JORT n° 68 du 30 juillet 2021, pp. 2007-2008).
+    - `duree` : 48 heures par semaine et 10 heures par jour, heures supplémentaires comprises, chez un seul employeur (article 13) ; 8 heures par jour, 10 avec les heures supplémentaires, chez des employeurs multiples (article 19), sans limite hebdomadaire que la loi fixe pour eux ; pause déjeuner d'une heure dans les deux cas.
+    - `conge_annuel` : 1 jour par mois de travail effectif, 15 jours au plus dont 12 ouvrés ; 1,5 jour par mois, 22 jours au plus dont 18 ouvrés, de 18 à 20 ans, âge apprécié au 31 décembre (article 14). La loi écrit « jours ouvrés », là où le code du travail écrit « jours ouvrables » : feuilles `plafond_jours_ouvres_*`, distinctes de `conge_annuel/plafond_jours_ouvrables`.
+    - `conges_evenements_familiaux` : décès du conjoint, du père, de la mère ou d'un enfant, 3 jours ; d'un frère, d'une sœur, d'un petit-enfant ou d'un grand-parent, 2 jours ; mariage du travailleur, 7 jours ; circoncision d'un enfant, 1 jour ; mariage d'un enfant, 2 jours (article 14). Le congé de paternité renvoie à la législation (article 15) : `conge_paternite/`.
+    - `regime_salaire_minimum` : le salaire ne peut être inférieur au salaire minimum garanti « au régime de 48 heures de travail par semaine » (article 11).
+  - **Date d'effet.** L'article 29 fait entrer la loi en vigueur « dans un délai de six mois à compter de sa publication » ; le JORT n° 68 est daté du 30 juillet 2021 et déposé le même jour. Six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue ; le 31 janvier 2022 si le jour de la publication n'est pas compté. Le calcul est écrit dans la note de chaque feuille.
+  - **Non versé** : la majoration des heures supplémentaires du travail domestique, que la loi ne fixe pas (le code du travail s'applique, article 4) ; le salaire minimum applicable, que l'article 11 renvoie aux secteurs ; les congés de maternité et d'allaitement (article 15), renvoyés à la législation.
+  - Aucune formule ne lit ces feuilles. Le test `tests/test_travail_domestique.py` les couvre : valeur la veille et le jour de la date d'effet, référence (article, page, calcul de la date), unité, forme du nœud ; `tests/test_temps_travail.py` laisse ce nœud à ce test.
+
 ## 0.143 - [#502](https://github.com/openfisca/openfisca-tunisia/pull/502)
 
 * Évolution du système socio-fiscal.

@@ -1,0 +1,14 @@
+description: "Durée du travail et pause du travail domestique"
+metadata:
+  short_label: "Durée du travail domestique"
+  order:
+  - hebdomadaire_maximale_employeur_unique
+  - journaliere_maximale_employeur_unique
+  - journaliere_maximale_employeurs_multiples
+  - journaliere_maximale_heures_supplementaires_comprises_employeurs_multiples
+  - pause_dejeuner
+documentation: |-
+  Durée du travail effectif du travail domestique. Chez un seul employeur, 48 heures par semaine au plus et
+  10 heures par jour, heures supplémentaires comprises (article 13) ; chez des employeurs multiples, 8 heures par
+  jour, 10 heures avec les heures supplémentaires, sans limite hebdomadaire fixée par la loi (article 19). Une pause
+  déjeuner d'une heure, pendant laquelle le travailleur peut quitter le lieu du travail, vaut dans les deux cas.

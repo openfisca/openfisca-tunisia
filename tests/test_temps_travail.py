@@ -296,9 +296,9 @@ def test_le_sous_arbre_ne_porte_que_les_feuilles_attendues():
     feuilles = {
         d.name.removeprefix(prefixe)
         for d in TEMPS_TRAVAIL.get_descendants()
-        if not hasattr(d, "children")
+        if not hasattr(d, "children") and ".travail_domestique." not in d.name
     }
-    assert feuilles == set(SERIES)
+    assert feuilles == set(SERIES)  # le travail domestique est éprouvé par test_travail_domestique.py
 
 
 def test_ordre_declare():
