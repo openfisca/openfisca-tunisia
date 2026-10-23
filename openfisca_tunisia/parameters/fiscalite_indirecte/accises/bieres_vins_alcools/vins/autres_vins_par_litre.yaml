@@ -1,0 +1,54 @@
+description: Droit de consommation sur les autres vins classés en bouteilles, par litre
+values:
+  '2015-11-24':
+    value: 1.8
+  '2016-01-01':
+    value: 1.8
+  '2018-01-01':
+    value: 1.8
+  '2021-01-01':
+    value: 2.4
+metadata:
+  unit: currency/l
+  short_label: Autres vins classés en bouteilles, par litre
+  reference:
+    '2015-11-24':
+    - title: Décret gouvernemental n° 2015-1768 du 10 novembre 2015, modifiant le décret n° 97-1368 du
+        24 juillet 1997, articles 1er et 2 et annexe
+      href: https://www.pist.tn/jort/2015/2015F/Jo0922015.pdf
+      note: JORT n° 92 du 17 novembre 2015, p. 2722 (annexe), couche texte. Les annexes I, II et III du
+        décret de 1997 sont abrogées et remplacées par une annexe unique. Pas de clause d'effet ; fascicule
+        déposé le 19 novembre 2015 ; exécutoire le 24 novembre 2015 (loi n° 93-64, article 2).
+    '2016-01-01':
+    - title: Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, articles 44
+        et 92
+      href: https://www.pist.tn/jort/2015/2015A/Ja1042015.pdf
+      note: 'JORT n° 104 du 29 décembre 2015. Article 44 : le tableau annexé à la loi n° 88-62 est abrogé
+        et remplacé ; édition arabe p. 3609 (lue à l''image), édition française pp. 3150-3151 (extrait
+        local du fascicule ; pist.tn ne sert que l''édition arabe). Article 92 (édition française p. 3165)
+        : application à compter du 1er janvier 2016.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 45
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017. Article 45, paragraphe 1 : le tableau annexé à la loi n°
+        88-62 est abrogé et remplacé ; positions 22-03 à 22-07 p. 4282, Ex 22-08 p. 4283. Article 67 (p.
+        4292), paragraphe 1 : application à compter du 1er janvier 2018 ; paragraphe 2 : les hausses de
+        l''article 45 ne s''appliquent pas aux marchandises importées dont le titre de transport, établi
+        avant cette date, justifie l''expédition directe vers la Tunisie, et qui sont déclarées pour la
+        mise à la consommation directe.'
+    '2021-01-01':
+    - title: Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, articles 20
+        et 42
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: 'JORT n° 128 du 25 décembre 2020. Article 20 (p. 3130), « Révision du droit de consommation
+        dû sur les bières et vins » : modifie les positions 22.03 et Ex 22.04 du tableau annexé à la loi
+        n° 88-62. Article 42 (p. 3138), paragraphe 1 : application à compter du 1er janvier 2021 ; paragraphe
+        2 : les hausses de l''article 20 ne s''appliquent pas aux marchandises importées dont le titre
+        de transport, établi avant cette date, justifie l''expédition directe vers la Tunisie, et qui
+        sont déclarées pour la mise à la consommation directe.'
+documentation: |-
+  Autres vins classés, provenant exclusivement de la fermentation des raisins frais ou du jus de
+  raisins frais, en bouteilles : droit par litre, institué par l'annexe du décret gouvernemental
+  n° 2015-1768. Porté à 2,4 dinars le 1er janvier 2021. Avant le 24 novembre 2015, le droit est fixé
+  par bouteille (`autres_vins_par_bouteille`).

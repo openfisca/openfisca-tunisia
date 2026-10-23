@@ -1,0 +1,29 @@
+description: Droit de consommation sur les bières, vins, alcools et boissons alcoolisées (positions 22-03
+  à 22-08)
+metadata:
+  short_label: Bières, vins et alcools
+  order:
+  - bieres
+  - vins
+  - vermouths
+  - autres_boissons_fermentees
+  - alcool_ethylique_boissons
+  - spiritueux
+documentation: |-
+  Tarif du droit de consommation sur les produits des positions 22-03 à 22-08 du tarif des droits de
+  douane. Il est fixé par les annexes I à III du décret n° 97-1368 du 24 juillet 1997, remplacées par
+  le décret n° 2013-929, puis par l'annexe unique du décret gouvernemental n° 2015-1768. Les lois de
+  finances pour 2016 et 2018 abrogent et remplacent en entier le tableau annexé à la loi n° 88-62,
+  dont les lignes 22-03 à 22-08 reprennent ce tarif ; celle pour 2018 porte les vermouths et les
+  spiritueux à 100 %, celle pour 2021 révise la bière et les autres vins en bouteilles.
+
+  Les tarifs en dinars par unité, par litre, par centilitre ou par hectolitre sont spécifiques ; les
+  taux en pourcentage s'appliquent à l'assiette de la loi n° 88-62.
+
+  Ne sont pas versés : les états antérieurs au décret de 1997 (loi n° 88-62, décret n° 91-551, décret
+  n° 93-2090) ; les quatre autres lignes de la position 22-07 et les préparations alcooliques des
+  positions Ex 21-06, Ex 22-08 et Ex 33-02 ; la capsule fiscale sur les vins (article 6 et annexe IV
+  du décret de 1997), qui est une imposition distincte.
+
+  Source amont : precis/fr/fiscalite/tarifs/tarifs-releves-droits-consommation.csv du précis de la
+  législation socio-fiscale, dont les valeurs sont vérifiées contre les fascicules.

@@ -39,6 +39,11 @@
     one: Dinar pour un hectolitre
     other: Dinars pour hectolitre
   short_label: DT/hl
+- name: currency/cl
+  label:
+    one: Dinar pour un centilitre
+    other: Dinars pour centilitre
+  short_label: DT/cl
 - name: currency/l
   label:
     one: Dinar pour un litre
