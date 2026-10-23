@@ -1,0 +1,97 @@
+# Allocation pour une partie des frais d'équipements de protection des personnes atteintes
+# de xeroderma pigmentosum.
+#
+# | Depuis          | Texte                                      | Montant | Condition                          |
+# |-----------------|--------------------------------------------|--------:|------------------------------------|
+# | 1er janv. 2026  | loi de finances pour 2026, art. 35 et 110  |   130 D | aucune                             |
+# | 19 juillet 2026 | arrêté conjoint du 14 juillet 2026, art. 1 |   130 D | aucun régime légal de couverture   |
+#
+# Calcul mensuel : un mois ne passe à la règle du 19 juillet 2026 que s'il commence à cette
+# date ou après ; juillet 2026 reste sous la règle de la loi seule, août 2026 passe à la
+# condition de l'arrêté.
+
+- name: Décembre 2025, avant la loi de finances pour 2026, aucune allocation
+  period: 2025-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        xeroderma_pigmentosum: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 0
+
+- name: Janvier 2026, personne atteinte, sans couverture sociale légale, 130 D
+  period: 2026-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        xeroderma_pigmentosum: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 130
+
+- name: Janvier 2026, personne atteinte et couverte, 130 D (la loi ne pose pas de condition)
+  period: 2026-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        xeroderma_pigmentosum: true
+        couverture_sociale_legale: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 130
+
+- name: Juillet 2026, personne atteinte et couverte, 130 D (mois commencé avant le 19 juillet)
+  period: 2026-07
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        xeroderma_pigmentosum: true
+        couverture_sociale_legale: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 130
+
+- name: Août 2026, personne atteinte et couverte, aucune allocation (arrêté du 14 juillet 2026)
+  period: 2026-08
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        xeroderma_pigmentosum: true
+        couverture_sociale_legale: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 0
+
+- name: Août 2026, personne atteinte, sans couverture sociale légale, 130 D
+  period: 2026-08
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        xeroderma_pigmentosum: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 130
+
+- name: Août 2026, personne non atteinte, aucune allocation
+  period: 2026-08
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1: {}
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_xeroderma_pigmentosum: 0

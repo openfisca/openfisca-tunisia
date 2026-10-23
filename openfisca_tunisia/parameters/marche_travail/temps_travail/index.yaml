@@ -8,6 +8,7 @@ metadata:
   - jours_feries
   - conge_paternite
   - convention_cadre
+  - travail_domestique
 documentation: |-
   Règles de durée du travail, de majoration des heures supplémentaires, de congé annuel payé, de jours fériés
   payés et de congé de paternité du code du travail promulgué par la loi n° 66-27 du 30 avril 1966, en vigueur
@@ -16,3 +17,7 @@ documentation: |-
 
   Le nœud `convention_cadre` est tenu à part : il porte des avantages conventionnels, qui ne valent que pour les
   salariés couverts par la convention collective cadre des activités non agricoles.
+
+  Le nœud `travail_domestique` porte les règles propres de la loi n° 2021-37 du 16 juillet 2021, en vigueur depuis
+  le 30 janvier 2022 : durée du travail, pause, congé annuel, congés pour événements familiaux. Il ne vaut que pour
+  les travailleurs domestiques ; les règles du code du travail qu'il ne contredit pas s'y appliquent.
