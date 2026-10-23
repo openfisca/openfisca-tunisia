@@ -1,0 +1,31 @@
+description: "Tarifs réduits de soins et d'hospitalisation dans les structures sanitaires publiques"
+metadata:
+  short_label: "Tarifs réduits"
+  order:
+  - consultation
+  - hospitalisation
+  - taux_consultation
+  - actes
+  - taux_accompagnant
+  - taux_accompagnant_prescription
+  - arrondi
+documentation: |-
+  Les redevables changent d'un texte à l'autre.
+
+  - Du 1er janvier 1993 (décret n° 93-529) : les bénéficiaires des livrets d'assistance médicale gratuite
+    de deuxième catégorie et des régimes de gratuité de soins légaux et conventionnels (article 3).
+  - Du 6 septembre 1994 (décret n° 94-1738) : aux mêmes montants, les tarifs réduits des bénéficiaires de
+    l'assistance médicale gratuite de deuxième catégorie et des régimes de gratuité légaux, et les
+    contributions directes des affiliés des caisses de sécurité et de prévoyance sociale ou de tout autre
+    organisme bénéficiaire d'un régime de soins conventionnel (article premier).
+  - Du 8 mars 1998 (décret n° 98-409) : les titulaires de la carte de soins à tarifs réduits ; les affiliés
+    des régimes conventionnels de sécurité sociale et de prévoyance sociale les paient en sus des montants
+    pris en charge par leur caisse, sous réserve des règles propres aux accidents du travail et aux maladies
+    professionnelles (article 23).
+
+  Jusqu'au 7 mars 1998, les tarifs réduits sont des montants en dinars : par consultation externe, et par
+  hospitalisation quelle que soit la durée du séjour. Depuis le 8 mars 1998, ce sont des parts des tarifs
+  des malades payants : la consultation, un pourcentage du tarif d'une consultation ; l'hospitalisation,
+  un forfait égal au tarif d'une journée d'hospitalisation, quelle que soit la durée du séjour (article
+  18) ; les actes, un pourcentage plafonné. Les montants qui en résultent sont arrondis à la tranche de
+  500 millimes (article 22).

@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.142 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1993 ; paramètres nouveaux.
+* Zones impactées : `parameters/sante/tarifs_hospitaliers` (nouveau sous-arbre `sante`), `sous_ensembles`.
+* Détails :
+  - **Nouveau sous-arbre `sante`**, lu par le système fiscal seul (`SOUS_ARBRES_FISCAL`). Il porte les tarifs des structures sanitaires publiques relevant du ministère de la santé publique : 84 feuilles. Paramètres seulement : aucune formule ne les lit.
+  - **`malades_payants`**, tarifs des malades que ne couvrent ni la gratuité, ni les tarifs réduits, ni une convention :
+    - consultations (médecine générale et dentaire, spécialité selon le grade) et journée d'hospitalisation par catégorie d'établissement et groupe de spécialités : arrêté du 25 janvier 1993 (articles 2 et 4, p. 201), au 07/02/1993 ; arrêté du 19 décembre 1996 (articles 2 et 4, pp. 2553-2554), au 04/01/1997. Par exemple, médecine générale 5 → 7 dinars, réanimation universitaire 30 → 60 dinars ;
+    - majorations (médecin choisi, chambre particulière : 50 %), accompagnant (2/3 ; 1/2 sur indication médicale depuis 1997), hospitalisation de jour (75 %, depuis 1997), réduction conventionnelle plafonnée à 15 % (article 14 de 1996) ;
+    - lettres clés : 15 valeurs de l'article 10 de 1996, au 04/01/1997, et de l'article 10 nouveau (arrêté du 7 juillet 2008, pp. 2077-2078), au 17/07/2008 : la lettre Ri disparaît, rattachée à KC, l'échographie (E, 3,600 dinars) entre, avec dix prix par cotation de scanographie (S 10 à S 40) et de résonance magnétique (I 3 à I 25) ;
+    - forfaits d'actes de l'article 11 : hémodialyse, lithotripsie, résonance magnétique (close au 17/07/2008 par l'article 2 de l'arrêté de 2008), accouchement normal et par césarienne, scanner, au 04/01/1997, repris par l'arrêté du 17 avril 1998 (p. 874), au 04/05/1998, qui ajoute la fécondation in vitro (250 dinars) et l'insémination (50 dinars) ; correction des troubles réfractifs au laser (arrêté du 29 janvier 2003, p. 331), au 10/02/2003.
+  - **`tarifs_reduits`** :
+    - montants par consultation externe et par hospitalisation : décret n° 93-529 (article premier, p. 362), au 01/01/1993, date énoncée par son article 5 ; décret n° 94-1738 (articles 2 à 4, p. 1385), au 06/09/1994 ; clos au 08/03/1998 ;
+    - depuis le 08/03/1998, décret n° 98-409 (articles 17, 18, 21 et 22, p. 407) : taux de la consultation (20 à 30 % du tarif des malades payants), actes à 20 % plafonnés à 30 dinars, hémodialyse à 1 dinar la séance, prothèses à 20 % plafonnées à 50 dinars, accompagnants (1/2 et 1/3), arrondi à la tranche de 500 millimes. Les montants en dinars de 1998 ne sont pas versés : le décret ne les écrit pas.
+  - **Dates.** Seul le décret n° 93-529 porte une clause d'effet. L'arrêté de 1993, antérieur à la loi n° 93-64, est exécutoire un jour franc après sa publication du 5 février 1993. Les autres textes le sont cinq jours après le dépôt du fascicule au gouvernorat de Tunis, dépôt lu sur chaque fascicule : 1er septembre 1994, 30 décembre 1996, 3 mars 1998, 29 avril 1998, 5 février 2003, 12 juillet 2008.
+  - **Séries incomplètes** : tarifs des malades payants avant 1993 (arrêté du 13 décembre 1990, que l'arrêté de 1993 abroge) ; tarifs réduits avant 1993, dont le texte antérieur n'est pas identifié ; lettres clés et forfaits avant 1997.
+  - Le test `tests/test_sante_tarifs_hospitaliers.py` couvre les 84 feuilles : valeur la veille et le jour de chaque date, référence, unité, note des séries incomplètes, forme du sous-arbre. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
 
 * Évolution du système socio-fiscal.

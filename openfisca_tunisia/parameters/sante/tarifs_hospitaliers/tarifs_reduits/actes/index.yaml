@@ -1,0 +1,11 @@
+description: "Examens complémentaires, interventions, actes de la nomenclature et prothèses, tarifs réduits"
+metadata:
+  short_label: "Actes et prothèses"
+  order:
+  - taux_maximal_conventionnels
+  - prothese_taux_maximal_conventionnels
+  - taux
+  - plafond
+  - hemodialyse_seance
+  - prothese_taux
+  - prothese_plafond

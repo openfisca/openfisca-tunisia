@@ -1,0 +1,19 @@
+description: "Tarifs de prise en charge des malades payants"
+metadata:
+  short_label: "Malades payants"
+  order:
+  - consultation
+  - hospitalisation
+  - reduction_conventionnelle_plafond
+  - lettres_cles
+  - forfaits_actes
+documentation: |-
+  Tarifs que paient les malades que ne couvrent ni la gratuité, ni les tarifs réduits, ni une prise en
+  charge conventionnelle : arrêté du 25 janvier 1993, puis arrêté du 19 décembre 1996, modifié par les
+  arrêtés du 17 avril 1998, du 29 janvier 2003 et du 7 juillet 2008. Les consultations se paient à
+  l'acte, l'hospitalisation à la journée ; les examens complémentaires, les interventions et les autres
+  actes de la nomenclature générale des actes professionnels se paient en sus (article premier).
+
+  Depuis 1997, ces tarifs ne sont pas opposables comme base de remboursement par les organismes
+  d'assurance et de prévoyance sociale (article 16 de l'arrêté de 1996), et les actes accomplis en
+  matière d'accidents du travail et de maladies professionnelles y sont soumis (article 15).

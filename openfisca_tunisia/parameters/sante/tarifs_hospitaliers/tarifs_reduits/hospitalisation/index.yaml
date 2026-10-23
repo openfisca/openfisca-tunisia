@@ -1,0 +1,17 @@
+description: "Tarif réduit d'une hospitalisation, quelle que soit la durée du séjour, en dinars, jusqu'au 7 mars 1998"
+metadata:
+  short_label: "Hospitalisation, montant"
+  order:
+  - hopital_circonscription_medecine
+  - hopital_regional_medecine
+  - universitaire_medecine
+  - hopital_circonscription_chirurgie
+  - hopital_regional_chirurgie
+  - universitaire_chirurgie
+  - universitaire_reanimation
+documentation: |-
+  Le décret n° 93-529 fixe ces tarifs « pour chaque hospitalisation » ; le décret n° 94-1738 les compte
+  « au forfait pour toute hospitalisation quelque soit la durée de séjour » pour les services de médecine
+  et de chirurgie (article 3, paragraphes a et b). Le tarif des services de réanimation et de soins
+  intensifs (paragraphe c) n'est pas compris dans cette phrase : le décret ne dit pas s'il est compté par
+  hospitalisation ou par journée.

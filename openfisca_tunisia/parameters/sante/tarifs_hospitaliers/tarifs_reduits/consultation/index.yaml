@@ -1,0 +1,8 @@
+description: "Tarif réduit d'une consultation externe, en dinars, jusqu'au 7 mars 1998"
+metadata:
+  short_label: "Consultation, montant"
+  order:
+  - centre_sante_base
+  - hopital_circonscription
+  - hopital_regional
+  - universitaire
