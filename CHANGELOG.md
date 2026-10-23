@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.143 - [#502](https://github.com/openfisca/openfisca-tunisia/pull/502)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/06/1973 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/rupture_contrat/periode_essai`.
+* Détails :
+  - **Verse la période d'essai de la convention collective cadre** sous `periode_essai/convention_cadre/` : `duree_maximale`, 3 mois, et `renouvellements_maximum`, 1 (un « deuxième et dernier essai pour une même période »), au 01/06/1973 (convention du 20 mars 1973 agréée par l'arrêté du 29 mai 1973, article 10, JORT n° 21 des 25-29 mai-1er juin 1973, p. 854 ; entrée en vigueur à l'article 52, p. 859). Aucun texte lu ne clôt la clause : les avenants n° 1 à 3 ne touchent pas l'article 10. La clause n'est pas rangée sous `conventions_collectives/`, dont le générateur du précis lit chaque sous-nœud comme une branche à grilles de salaires : elle vit à côté de la règle légale qu'elle précède, comme `temps_travail/convention_cadre/`.
+  - **Feuille nouvelle `periode_essai/delai_notification_rupture`** : 15 jours au 24/05/2025 (loi n° 2025-9, article 1er, article 6-3 nouveau, deuxième alinéa, JORT n° 61 du 23 mai 2025, p. 1675 de l'édition arabe) ; le texte ne tranche pas entre un préavis dû à l'autre partie et un délai de notification avant le terme de l'essai, la documentation de la feuille le dit.
+  - **Documentation** du nœud `periode_essai` et de `rupture_contrat` : la clause de 1973 n'est plus « non versée ». Le délai-congé et le calcul de l'indemnité de licenciement, que la convention renvoie aux conventions de branche, restent hors de l'arbre.
+  - Aucune formule ne lit ces feuilles. `tests/test_rupture_contrat.py` les couvre : valeur la veille et le jour de chaque date, référence, unité, forme du nœud, et la période d'essai de la loi et de la convention à cinq dates repères.
+
 ## 0.142 - [#501](https://github.com/openfisca/openfisca-tunisia/pull/501)
 
 * Amélioration technique.
