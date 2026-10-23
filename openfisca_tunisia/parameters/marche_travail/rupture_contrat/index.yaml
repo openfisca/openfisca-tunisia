@@ -23,9 +23,10 @@ documentation: |-
   indéterminée, contrat à durée déterminée interdit hors de trois cas, sous-traitance de
   main-d'œuvre interdite).
 
-  Ne sont pas versés ici : les clauses des conventions collectives, dont la convention collective
-  cadre rendue obligatoire au 1er juin 1973 (période d'essai, délai-congé, calcul de l'indemnité
-  de licenciement renvoyé aux conventions de branche) ; la procédure et les délais du licenciement
+  Ne sont pas versés ici : les clauses des conventions collectives, hors la période d'essai de la
+  convention collective cadre rendue obligatoire au 1er juin 1973 (`periode_essai/convention_cadre`) ;
+  le délai-congé et le calcul de l'indemnité de licenciement, que cette convention renvoie aux
+  conventions de branche ; la procédure et les délais du licenciement
   pour motif économique (articles 21 à 21-13) ; l'indemnité de rupture de « deux mois de salaire
   par année d'ancienneté » ouverte aux salariés dont le contrat à durée déterminée ou de
   sous-traitance a été rompu entre le 6 mars 2024 et l'entrée en vigueur de la loi n° 2025-9
