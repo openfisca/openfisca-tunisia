@@ -1,0 +1,69 @@
+description: Allocation mensuelle par personne pour les dépenses alimentaires des personnes allergiques au gluten des familles pauvres et à revenu limité inscrites au programme Amen social
+values:
+  2025-01-01:
+    value: 30
+  2026-01-01:
+    value: 130
+metadata:
+  unit: currency
+  short_label: Allocation gluten
+  reference:
+    2025-01-01:
+    - title: "Loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025, articles 26 et 84"
+      href: https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf
+      note: "JORT n° 149 du 10 décembre 2024, p. 3427 (article 26) et p. 3456 (article 84) de l'édition française ; p. 6425 (article 26) et p. 6453 (article 84) de l'édition arabe. Rubrique « Appui aux patients allergiques au gluten issus de familles pauvres et à faible revenu ». Article 26 : « Est octroyée aux patients allergiques au gluten issus de familles pauvres et à faible revenu inscrits au programme “AMEN SOCIAL”, une allocation financière mensuelle de 30 dinars par personne au titre de la prise en charge des dépenses alimentaires. Les modalités d'octroi de ladite allocation sont fixées par arrêté conjoint du ministre chargé des affaires sociales, du ministre chargé de la santé et du ministre chargé des finances. » Article 84, 1) : « Les dispositions de la présente loi s'appliquent à compter du 1er janvier 2025 […] ». Édition française lue sur la couche texte d'une copie locale du fascicule ; pist.tn ne sert que l'édition arabe, vers laquelle pointe le lien, et dont l'article 26 a été relu sur l'image de la page 6425."
+    - title: "Loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025, article 26 (édition arabe)"
+      href: https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf
+      note: "الرائد الرسمي عدد 149 بتاريخ 10 ديسمبر 2024، ص. 6425 : « الفصل 26 - تسند لمرضى حساسية دابوق القمح من العائلات الفقيرة ومحدودة الدخل المسجلة ببرنامج الأمان الاجتماعي منحة مالية شهرية تبلغ 30 دينار لكل فرد بعنوان مصاريف التكفل بنفقات الغذاء. »"
+    2026-01-01:
+    - title: "Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026, articles 35 et 110 (édition arabe)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf
+      note: "الرائد الرسمي عدد 148 بتاريخ 12 ديسمبر 2025، ص. 4238 : « الفصل 35 - […] كما تسند لمرضى حساسية دابوق القمح من العائلات الفقيرة ومحدودة الدخل المسجلة ببرنامج الأمان الاجتماعي منحة مالية شهرية بـ 130 دينار لكل فرد بعنوان التكفل بجزء من مصاريف اقتناء المستلزمات الغذائية. » ؛ ص. 4258 : « الفصل 110 - 1) تطبق أحكام هذا القانون بداية من غرة جانفي 2026 وذلك باستثناء الأحكام الواردة بالفصول 56 و60 و61 و62 من هذا القانون. » Traduction : article 35, deuxième alinéa, « Est également octroyée aux malades allergiques au gluten des familles pauvres et à revenu limité inscrites au programme Amen social une allocation financière mensuelle de 130 dinars par personne, au titre de la prise en charge d'une partie des dépenses d'acquisition des fournitures alimentaires » ; article 110 : application à compter du 1er janvier 2026, sauf les articles 56, 60, 61 et 62. Lu sur l'image des pages 4238 et 4258. Le fascicule n'a pas d'édition française : l'adresse de l'édition française sur pist.tn sert le fascicule arabe."
+  official_journal_date:
+    2025-01-01: "2024-12-10"
+    2026-01-01: "2025-12-12"
+documentation: |
+  Allocation financière mensuelle servie à chaque personne allergique au gluten d'une famille
+  pauvre ou à revenu limité inscrite au programme Amen social, pour ses dépenses alimentaires.
+
+  Deux lois, deux montants, deux dates énoncées et reprises telles quelles : 30 dinars par mois
+  et par personne au 1er janvier 2025 (loi de finances pour 2025, article 26, appliqué à
+  compter du 1er janvier 2025 par l'article 84) ; 130 dinars au 1er janvier 2026 (loi de
+  finances pour 2026, article 35, deuxième alinéa, appliqué à compter du 1er janvier 2026 par
+  l'article 110). L'allocation est créée par la loi de finances pour 2025 : il n'existe pas
+  d'état antérieur.
+
+  Articulation des deux articles. La loi de finances pour 2026 n'abroge pas expressément
+  l'article 26 de la loi de finances pour 2025. Aucun texte lu ne dit si les 130 dinars
+  remplacent les 30 dinars ou s'y ajoutent à partir du 1er janvier 2026. La valeur portée au
+  1er janvier 2026 est le montant de l'article 35.
+
+  Conditions et procédure, fixées par arrêté conjoint ; aucun des deux arrêtés ne fixe de
+  montant :
+  - arrêté conjoint du ministre des affaires sociales, du ministre de la santé et de la
+    ministre des finances du 30 juillet 2025, pris pour l'article 26 de la loi de finances
+    pour 2025 (JORT n° 99 du 7 août 2025, p. 1977 de l'édition française, p. 2359 de l'édition
+    arabe ; https://www.pist.tn/jort/2025/2025F/Jo0992025.pdf). Demande écrite accompagnée
+    d'un certificat médical d'un médecin de la santé publique selon un modèle annexé à la seule
+    édition arabe, déposée selon les articles 11 et 12 du décret gouvernemental n° 2020-317 du
+    19 mai 2020 (article premier) ; enregistrement au registre des données des catégories
+    pauvres et des catégories à faible revenu (article 2) ; « entrera en vigueur à compter du
+    1er janvier 2025 » (article 3) ;
+  - arrêté conjoint des mêmes ministres du 14 juillet 2026, pris pour l'article 35 de la loi
+    de finances pour 2026 (JORT n° 70 du 14 juillet 2026, pp. 1327-1328 de l'édition
+    française, pp. 1408-1411 de l'édition arabe ;
+    https://www.pist.tn/jort/2026/2026F/Jo0702026.pdf). L'allocation est accordée aux personnes
+    atteintes de l'allergie au gluten « appartenant à des familles pauvres et à revenu limité
+    inscrites au programme « Amen social » » (article premier) ; la preuve de la maladie est
+    examinée par une commission médicale de trois médecins — affaires sociales, santé, Caisse
+    nationale d'assurance maladie (article 2) ; les demandeurs sont enregistrés dans un
+    registre de données spécifique (article 3) ; l'arrêté du 30 juillet 2025 est abrogé
+    (article 4). Sans clause d'effet, l'arrêté est exécutoire le 19 juillet 2026, cinq jours
+    après le dépôt du fascicule au siège du gouvernorat de Tunis le 14 juillet 2026, le jour
+    du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2).
+
+  Entre le 1er janvier et le 18 juillet 2026, l'article 35 n'a pas d'arrêté d'application
+  publié, et l'arrêté de 2025 ne vise que l'article 26 de la loi de finances pour 2025.
+
+  Les éditions françaises disent « à faible revenu » là où l'arrêté de 2026 dit « à revenu
+  limité » ; l'arabe est constant (محدودة الدخل).

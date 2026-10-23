@@ -1,0 +1,35 @@
+description: Allocation mensuelle par personne pour une partie des frais d'acquisition des équipements de protection des personnes atteintes de xeroderma pigmentosum
+values:
+  2026-01-01:
+    value: 130
+metadata:
+  unit: currency
+  short_label: Allocation xeroderma pigmentosum
+  reference:
+    2026-01-01:
+    - title: "Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026, articles 35 et 110 (édition arabe)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf
+      note: "الرائد الرسمي عدد 148 بتاريخ 12 ديسمبر 2025، ص. 4238 : « الفصل 35 - تسند للأشخاص المصابين بمرض \"كزرودرم بقمنتوزم\" منحة مالية شهرية بـ 130 دينار لكل فرد بعنوان التكفل بجزء من مصاريف اقتناء المستلزمات الوقائية. » ؛ ص. 4258 : « الفصل 110 - 1) تطبق أحكام هذا القانون بداية من غرة جانفي 2026 […] » Traduction : article 35, premier alinéa, « Est octroyée aux personnes atteintes de la maladie « xeroderma pigmentosum » une allocation financière mensuelle de 130 dinars par personne au titre de la prise en charge d'une partie des dépenses d'acquisition des fournitures de protection » ; article 110 : application à compter du 1er janvier 2026, sauf les articles 56, 60, 61 et 62. Lu sur l'image des pages 4238 et 4258. Le fascicule n'a pas d'édition française : l'adresse de l'édition française sur pist.tn sert le fascicule arabe."
+  official_journal_date:
+    2026-01-01: "2025-12-12"
+documentation: |
+  Allocation financière mensuelle servie à chaque personne atteinte de xeroderma pigmentosum,
+  pour une partie de ses frais d'équipements de protection : 130 dinars par mois et par personne
+  au 1er janvier 2026 (loi de finances pour 2026, article 35, premier alinéa, appliqué à compter
+  du 1er janvier 2026 par l'article 110 ; date énoncée, reprise telle quelle). L'allocation est
+  créée par cette loi : il n'existe pas d'état antérieur.
+
+  La loi ne pose aucune condition de ressources. L'arrêté conjoint du ministre des affaires
+  sociales, du ministre de la santé et de la ministre des finances du 14 juillet 2026, pris pour
+  l'article 35 (JORT n° 70 du 14 juillet 2026, pp. 1327-1328 de l'édition française,
+  pp. 1408-1411 de l'édition arabe ; https://www.pist.tn/jort/2026/2026F/Jo0702026.pdf), réserve
+  l'allocation aux personnes atteintes « qui ne bénéficient d'aucun régime légal de couverture
+  sociale » (article premier ; arabe : غير المشمولين بنظام قانوني للتغطية الاجتماعية). Il ne fixe
+  aucun montant. La preuve de la maladie est examinée par une commission médicale de trois
+  médecins — affaires sociales, santé, Caisse nationale d'assurance maladie (article 2) ; les
+  demandeurs sont enregistrés dans un registre de données spécifique (article 3). Sans clause
+  d'effet, l'arrêté est exécutoire le 19 juillet 2026, cinq jours après le dépôt du fascicule au
+  siège du gouvernorat de Tunis le 14 juillet 2026, le jour du dépôt n'étant pas compté
+  (loi n° 93-64 du 5 juillet 1993, article 2).
+
+  Entre le 1er janvier et le 18 juillet 2026, l'article 35 n'a pas d'arrêté d'application publié.

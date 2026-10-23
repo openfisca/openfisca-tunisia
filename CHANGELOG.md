@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.142
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2025.
+* Zones impactées : `parameters/prestations/non_contributives/allergie_gluten`, `parameters/prestations/non_contributives/xeroderma_pigmentosum`, `variables/prestations/non_contributives/aides_categorielles`.
+* Détails :
+  - **Paramètre nouveau `allergie_gluten`** : allocation mensuelle par personne pour les dépenses alimentaires des personnes allergiques au gluten des familles pauvres et à revenu limité inscrites au programme Amen social. 30 dinars au 01/01/2025 (loi de finances pour 2025, articles 26 et 84, JORT n° 149 du 10 décembre 2024, p. 3427 et p. 3456 de l'édition française, p. 6425 et p. 6453 de l'édition arabe) ; 130 dinars au 01/01/2026 (loi de finances pour 2026, articles 35 et 110, JORT n° 148 du 12 décembre 2025, édition arabe seule, p. 4238 et p. 4258). Dates énoncées par les lois.
+  - **Paramètre nouveau `xeroderma_pigmentosum`** : allocation mensuelle par personne pour une partie des frais d'équipements de protection, 130 dinars au 01/01/2026 (loi de finances pour 2026, articles 35 et 110).
+  - Les arrêtés conjoints du 30 juillet 2025 (JORT n° 99, p. 1977) et du 14 juillet 2026 (JORT n° 70, pp. 1327-1328, exécutoire le 19/07/2026) fixent les conditions et la procédure, non les montants ; ils sont décrits dans la documentation des deux paramètres.
+  - **Variables d'entrée nouvelles** (individu, mensuelles, fausses par défaut) : `allergie_gluten`, `xeroderma_pigmentosum`, `couverture_sociale_legale`.
+  - **Variables calculées nouvelles** : `menage_amen_social_pauvre_ou_revenu_limite` (carte AMG1 ou AMG2) ; `allocation_allergie_gluten` (à partir de janvier 2025) ; `allocation_xeroderma_pigmentosum` (à partir de janvier 2026, réservée à partir d'août 2026 aux personnes sans régime légal de couverture sociale, premier mois qui commence après le 19/07/2026). Aucun agrégat existant ne les additionne : aucun résultat existant ne change.
+  - Tests : `tests/formulas/prestations/non_contributives/`, bornes 12/2024, 01/2025, 12/2025, 01/2026, 07/2026 et 08/2026.
+
 ## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
 
 * Évolution du système socio-fiscal.
