@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.148 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+## 0.148 - [#508](https://github.com/openfisca/openfisca-tunisia/pull/508)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux et une date ajoutée, sans changement de valeur.
