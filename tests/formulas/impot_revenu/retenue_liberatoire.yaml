@@ -1,0 +1,108 @@
+# Retenues à la source libératoires d'un foyer résident (code de l'IRPP et de l'IS, article 52).
+# Taux tirés des feuilles datées :
+# - titres au porteur anonymes : 35 % (code de 1990 ; loi de finances pour 1992, article 31) ;
+# - obligations au porteur anonymes : 25 % (loi de finances pour 1992, article 31) ;
+#   les deux supprimés au 1er janvier 1997 (loi de finances pour 1997, articles 30 et 32) ;
+# - revenus distribués : 5 % au 1er janvier 2015 (loi de finances pour 2014, article 19),
+#   10 % au 1er janvier 2018 (loi de finances pour 2018, article 46) ;
+# - revenus de capitaux mobiliers : 20 % libératoire en 2021 seulement (loi de finances pour
+#   2021, article 17 ; décret-loi n° 2021-21, article 38).
+# Chaque cas porte 1 000 dinars de chaque catégorie : une catégorie qui ne subit pas de retenue
+# libératoire l'année du cas ne compte pas.
+
+- name: Titres au porteur anonymes, 1991
+  period: 1991
+  input:
+    revenus_titres_porteur_anonymes: 1000
+  output:
+    impot_sur_retenue_liberatoire: 350
+
+- name: Titres et obligations au porteur anonymes, 1992 (loi exécutoire le 2 janvier 1992)
+  period: 1992
+  input:
+    revenus_titres_porteur_anonymes: 1000
+    revenus_obligations_porteur_anonymes: 1000
+  output:
+    impot_sur_retenue_liberatoire: 600
+
+- name: Titres et obligations au porteur anonymes, 1996, dernière année
+  period: 1996
+  input:
+    revenus_titres_porteur_anonymes: 1000
+    revenus_obligations_porteur_anonymes: 1000
+  output:
+    impot_sur_retenue_liberatoire: 600
+
+- name: Titres au porteur anonymes, 1997, retenue libératoire supprimée
+  period: 1997
+  input:
+    revenus_titres_porteur_anonymes: 1000
+    revenus_obligations_porteur_anonymes: 1000
+  output:
+    impot_sur_retenue_liberatoire: 0
+
+- name: Revenus distribués, 2014, exonérés
+  period: 2014
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 0
+
+- name: Revenus distribués, 2015, 5 %
+  period: 2015
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 50
+
+- name: Revenus distribués, 2017, 5 %
+  period: 2017
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 50
+
+- name: Revenus distribués, 2018, 10 %
+  period: 2018
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 100
+
+- name: Revenus distribués et de capitaux mobiliers, 2020, retenue des intérêts imputable
+  period: 2020
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+    revenus_capitaux_mobiliers_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 100
+
+- name: Revenus distribués et de capitaux mobiliers, 2021, retenue des intérêts libératoire
+  period: 2021
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+    revenus_capitaux_mobiliers_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 300
+
+- name: Revenus distribués et de capitaux mobiliers, 2022, retenue des intérêts de nouveau imputable
+  period: 2022
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+    revenus_capitaux_mobiliers_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 100
+
+- name: Revenus distribués, 2026
+  period: 2026
+  input:
+    revenus_distribues_retenue_liberatoire: 1000
+  output:
+    impot_sur_retenue_liberatoire: 100
+
+- name: Avant 1990, impôts cédulaires hors du champ de la variable
+  period: 1989
+  input:
+    revenus_titres_porteur_anonymes: 1000
+  output:
+    impot_sur_retenue_liberatoire: 0

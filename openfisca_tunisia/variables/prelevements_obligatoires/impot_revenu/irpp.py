@@ -531,14 +531,59 @@ class impot_regime_forfaitaire_du(Variable):
         return ca * taux
 
 
-class revenu_soumis_retenue_liberatoire(Variable):
+class revenus_titres_porteur_anonymes(Variable):
+    value_type = float
+    default_value = 0.0
+    entity = FoyerFiscal
+    label = "Revenus de capitaux mobiliers au porteur dont le bénéficiaire n'est pas révélé à l'administration, hors obligations (retenue libératoire, 1990-1996)"
+    definition_period = YEAR
+
+
+class revenus_obligations_porteur_anonymes(Variable):
+    value_type = float
+    default_value = 0.0
+    entity = FoyerFiscal
+    label = "Revenus des obligations au porteur dont le bénéficiaire n'est pas révélé à l'administration (retenue libératoire, 1992-1996)"
+    definition_period = YEAR
+
+
+class revenus_distribues_retenue_liberatoire(Variable):
     value_type = float
     default_value = 0.0
     entity = FoyerFiscal
     label = (
-        "Revenus soumis à retenue à la source libératoire (exclus de l'IRPP classique)"
+        "Revenus distribués soumis à la retenue à la source libératoire (depuis 2015)"
     )
     definition_period = YEAR
+
+
+class revenus_capitaux_mobiliers_retenue_liberatoire(Variable):
+    value_type = float
+    default_value = 0.0
+    entity = FoyerFiscal
+    label = "Revenus de capitaux mobiliers soumis à la retenue à la source libératoire (2021)"
+    definition_period = YEAR
+
+
+def _retenue_titres_anonymes(foyer_fiscal, period, retenue_source, obligations):
+    impot = (
+        foyer_fiscal("revenus_titres_porteur_anonymes", period)
+        * retenue_source.taux_titres_porteur_anonymes
+    )
+    if obligations:
+        impot = (
+            impot
+            + foyer_fiscal("revenus_obligations_porteur_anonymes", period)
+            * retenue_source.taux_obligations_porteur_anonymes
+        )
+    return impot
+
+
+def _retenue_revenus_distribues(foyer_fiscal, period, parameters):
+    taux = parameters(
+        period.start
+    ).impot_revenu.valeurs_mobilieres.revenus_distribues.taux_retenue_source
+    return foyer_fiscal("revenus_distribues_retenue_liberatoire", period) * taux
 
 
 class impot_sur_retenue_liberatoire(Variable):
@@ -546,13 +591,66 @@ class impot_sur_retenue_liberatoire(Variable):
     entity = FoyerFiscal
     label = "Impôt (Retenue) dû sur revenus libératoires"
     definition_period = YEAR
+    reference = "Code de l'IRPP et de l'IS, article 52"
+    documentation = """
+    Retenues à la source libératoires subies par un foyer résident : le revenu qui les
+    supporte sort du revenu soumis au barème. Chaque catégorie de revenu est une variable
+    d'entrée, et chaque taux une feuille datée de l'article 52 :
 
-    def formula(foyer_fiscal, period, parameters):
-        revenu = foyer_fiscal("revenu_soumis_retenue_liberatoire", period=period)
+    - 1990-1996 : titres au porteur anonymes (et obligations au porteur anonymes à partir de
+      1992) ;
+    - depuis 2015 : revenus distribués ;
+    - 2021 : revenus de capitaux mobiliers.
+
+    De 1997 à 2014, aucune retenue libératoire ne frappe ces revenus pour un résident. Ne sont
+    pas couverts : la retenue de 35 % sur les dépôts à terme (10 juin au 31 décembre 2020) et
+    l'impôt libératoire sur la plus-value de cession de titres.
+    """
+
+    def formula_1990_01_01(foyer_fiscal, period, parameters):
+        retenue_source = parameters(
+            period.start
+        ).impot_revenu.capitaux_mobiliers.retenue_source
+        return _retenue_titres_anonymes(
+            foyer_fiscal, period, retenue_source, obligations=False
+        )
+
+    def formula_1992_01_01(foyer_fiscal, period, parameters):
+        # La loi de finances pour 1992 est exécutoire le 2 janvier 1992 : ses taux sont lus à
+        # cette date pour les revenus de 1992.
+        retenue_source = parameters(
+            period.start.offset(1, "day")
+        ).impot_revenu.capitaux_mobiliers.retenue_source
+        return _retenue_titres_anonymes(
+            foyer_fiscal, period, retenue_source, obligations=True
+        )
+
+    def formula_1993_01_01(foyer_fiscal, period, parameters):
+        retenue_source = parameters(
+            period.start
+        ).impot_revenu.capitaux_mobiliers.retenue_source
+        return _retenue_titres_anonymes(
+            foyer_fiscal, period, retenue_source, obligations=True
+        )
+
+    def formula_1997_01_01(foyer_fiscal, period):
+        return foyer_fiscal.empty_array()
+
+    def formula_2015_01_01(foyer_fiscal, period, parameters):
+        return _retenue_revenus_distribues(foyer_fiscal, period, parameters)
+
+    def formula_2021_01_01(foyer_fiscal, period, parameters):
         taux = parameters(
             period.start
-        ).impot_revenu.regimes_speciaux.retenue_liberatoire.taux
-        return revenu * taux
+        ).impot_revenu.capitaux_mobiliers.retenue_source.taux_liberatoire
+        return _retenue_revenus_distribues(
+            foyer_fiscal, period, parameters
+        ) + taux * foyer_fiscal(
+            "revenus_capitaux_mobiliers_retenue_liberatoire", period
+        )
+
+    def formula_2022_01_01(foyer_fiscal, period, parameters):
+        return _retenue_revenus_distribues(foyer_fiscal, period, parameters)
 
 
 class impot_total_du(Variable):

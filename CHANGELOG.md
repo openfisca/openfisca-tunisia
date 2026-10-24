@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.149 - [#PRNUM](https://github.com/openfisca/openfisca-tunisia/pull/PRNUM)
+
+* Évolution du système socio-fiscal. **Rupture d'interface** : une variable d'entrée et une feuille sont supprimées.
+* Périodes concernées : à partir du 01/01/1990.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/irpp`, `parameters/impot_revenu/regimes_speciaux` (feuille `retenue_liberatoire/taux` supprimée).
+* Détails :
+  - **Défaut corrigé.** `impot_sur_retenue_liberatoire` multipliait une variable d'entrée indifférenciée, `revenu_soumis_retenue_liberatoire`, par une feuille unique, `regimes_speciaux/retenue_liberatoire/taux`, qui valait 20 % depuis le 01/01/1990 sans texte : le code de 1990 (article 52, p. 11) ne connaît pas de taux libératoire unique, mais 35 % sur les bons de caisse au porteur anonymes et 15 % sur les revenus des non-résidents. La feuille et la variable sont supprimées.
+  - **Une variable d'entrée par catégorie**, chacune lue avec la feuille datée de l'article 52 qui en porte le taux, par des formules datées qui ne lisent jamais une feuille hors de sa période :
+    - `revenus_titres_porteur_anonymes`, 1990-1996 : `capitaux_mobiliers/retenue_source/taux_titres_porteur_anonymes` (35 %) ;
+    - `revenus_obligations_porteur_anonymes`, 1992-1996 : `taux_obligations_porteur_anonymes` (25 %). La loi de finances pour 1992 étant exécutoire le 2 janvier 1992, les taux de 1992 sont lus à cette date ;
+    - `revenus_distribues_retenue_liberatoire`, depuis 2015 : `valeurs_mobilieres/revenus_distribues/taux_retenue_source` (5 %, puis 10 % depuis 2018) ;
+    - `revenus_capitaux_mobiliers_retenue_liberatoire`, 2021 : `capitaux_mobiliers/retenue_source/taux_liberatoire` (20 %).
+
+    De 1997 à 2014, la variable vaut 0. Avant 1990, elle n'a pas de formule.
+  - **Résultats.** Le test existant de 2021 (`tests/formulas/impot_revenu/regimes_speciaux.yaml`) ne change pas : 10 000 dinars de revenus de capitaux mobiliers donnent toujours 2 000 dinars, seule l'entrée change de nom. Hors de 2021, une simulation qui renseignait `revenu_soumis_retenue_liberatoire` doit choisir la catégorie : le résultat suit alors le taux du texte (par exemple 35 % et non 20 % sur des bons anonymes en 1995, 0 en 2010).
+  - Nouveau test `tests/formulas/impot_revenu/retenue_liberatoire.yaml` : une table de cas de 1989 à 2026, avec les bornes de chaque taux (1991-1992, 1996-1997, 2014-2015, 2017-2018, 2020-2021-2022).
+  - Non couverts : la retenue de 35 % sur les dépôts à terme (10/06/2020 au 31/12/2020), dont la date tombe en cours d'année, et l'impôt libératoire sur la plus-value de cession de titres.
+
 ## 0.148 - [#508](https://github.com/openfisca/openfisca-tunisia/pull/508)
 
 * Évolution du système socio-fiscal.
