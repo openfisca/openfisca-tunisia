@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.152 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+## 0.152 - [#513](https://github.com/openfisca/openfisca-tunisia/pull/513)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : à partir du 10/06/2020 ; paramètre nouveau.
