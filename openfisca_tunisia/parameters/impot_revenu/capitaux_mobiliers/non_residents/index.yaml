@@ -17,4 +17,6 @@ documentation: |-
   titres réalisée par les non-résidents est dans `valeurs_mobilieres/plus_value_cession_titres/
   non_residents`. Les rémunérations de l'article 3, point 6, du code (droits d'auteur,
   redevances, assistance technique) servies aux non-résidents, qui relèvent aussi de
-  l'article 52, ne sont pas des revenus de capitaux mobiliers et ne sont pas versées ici.
+  l'article 52, ne sont pas des revenus de capitaux mobiliers : elles sont dans
+  `retenue_source_non_residents`, avec la retenue des non-résidents établis qui n'ont pas déposé
+  la déclaration d'existence.
