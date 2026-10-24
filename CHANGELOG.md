@@ -14,6 +14,16 @@
   - **Listes des pays à régime fiscal privilégié.** La documentation de `capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie` date les deux listes : décret n° 2014-3833 (JORT n° 86 du 24 octobre 2014, pp. 2811-2812), exécutoire le 01/11/2014 ; arrêté du ministre des finances du 25 mars 2019 (JORT n° 27 du 2 avril 2019, pp. 867-869), exécutoire le 08/04/2019. Ces dates ne changent pas le taux et la série n'en porte pas d'entrée.
   - Paramètres seulement : aucune formule ne lit ces feuilles. Le test `tests/test_retenue_source_non_residents.py` couvre les trois feuilles nouvelles, et `tests/test_epargne_capital.py` la date de 2002. Ils sont écrits en Python, parce qu'un test YAML ne porte que sur des variables.
 
+### 0.147.1 - [#507](https://github.com/openfisca/openfisca-tunisia/pull/507)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 02/05/2019 au 04/05/2019.
+* Zones impactées : `parameters/retraite/cnrps/bonifications/cadre_actif/age_terme_article_32`.
+* Détails :
+  - **Date du passage de 60 à 62 ans du terme de la période bonifiable (article 32, paragraphes 2 et 3, de la loi n° 85-12) : 05/05/2019 au lieu du 02/05/2019.**
+  - La loi n° 2019-37 (article 2, JORT n° 35 du 30 avril 2019, p. 1313) n'a pas de clause d'effet. La note appliquait la règle d'avant 1993 (un jour franc après la publication). Depuis la loi n° 93-64 (article 2), une loi est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, jour du dépôt non compté : dépôt le 30 avril 2019 (dernière page du fascicule), effet le 5 mai 2019.
+  - Aucune formule ne lit ce paramètre : aucun résultat de calcul ne change.
+
 ## 0.147 - [#506](https://github.com/openfisca/openfisca-tunisia/pull/506)
 
 * Évolution du système socio-fiscal.
