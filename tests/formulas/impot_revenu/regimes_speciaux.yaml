@@ -17,8 +17,9 @@
   input:
     # Salaires normaux imposés au barème progressif
     salaire_imposable: 20000
-    # Revenu de la Bourse (par ex) soumis à une retenue libératoire (paramétrée à 20%)
-    revenu_soumis_retenue_liberatoire: 10000
+    # Revenus de capitaux mobiliers soumis en 2021 à la retenue libératoire de 20 %
+    # (loi de finances pour 2021, article 17)
+    revenus_capitaux_mobiliers_retenue_liberatoire: 10000
   output:
     # La Retenue Libératoire doit générer 10000 * 20% = 2000
     impot_sur_retenue_liberatoire: 2000
