@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.148 - [#510](https://github.com/openfisca/openfisca-tunisia/pull/510)
+## 0.150 - [#510](https://github.com/openfisca/openfisca-tunisia/pull/510)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : à partir du 17/05/1993 ; paramètres nouveaux.
@@ -14,6 +14,47 @@
   - **Séries incomplètes** : états antérieurs à 1993 (droit fixe, minimum de perception, fonds de commerce, taux des marchés, passeport) et à 1997 (taxe unique sur les assurances, qui existe depuis au moins le décret n° 69-114) non versés.
   - **Unités nouvelles** : `currency/page` et `currency/tranche`.
   - Le test `tests/test_droit_timbre_enregistrement.py` couvre les 26 feuilles : valeur la veille et le jour de chaque date, référence, unité, note des séries incomplètes, forme des sous-arbres. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+## 0.149 - [#509](https://github.com/openfisca/openfisca-tunisia/pull/509)
+
+* Évolution du système socio-fiscal. **Rupture d'interface** : une variable d'entrée et une feuille sont supprimées.
+* Périodes concernées : à partir du 01/01/1990.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/irpp`, `parameters/impot_revenu/regimes_speciaux` (feuille `retenue_liberatoire/taux` supprimée).
+* Détails :
+  - **Défaut corrigé.** `impot_sur_retenue_liberatoire` multipliait une variable d'entrée indifférenciée, `revenu_soumis_retenue_liberatoire`, par une feuille unique, `regimes_speciaux/retenue_liberatoire/taux`, qui valait 20 % depuis le 01/01/1990 sans texte : le code de 1990 (article 52, p. 11) ne connaît pas de taux libératoire unique, mais 35 % sur les bons de caisse au porteur anonymes et 15 % sur les revenus des non-résidents. La feuille et la variable sont supprimées.
+  - **Une variable d'entrée par catégorie**, chacune lue avec la feuille datée de l'article 52 qui en porte le taux, par des formules datées qui ne lisent jamais une feuille hors de sa période :
+    - `revenus_titres_porteur_anonymes`, 1990-1996 : `capitaux_mobiliers/retenue_source/taux_titres_porteur_anonymes` (35 %) ;
+    - `revenus_obligations_porteur_anonymes`, 1992-1996 : `taux_obligations_porteur_anonymes` (25 %). La loi de finances pour 1992 étant exécutoire le 2 janvier 1992, les taux de 1992 sont lus à cette date ;
+    - `revenus_distribues_retenue_liberatoire`, depuis 2015 : `valeurs_mobilieres/revenus_distribues/taux_retenue_source` (5 %, puis 10 % depuis 2018) ;
+    - `revenus_capitaux_mobiliers_retenue_liberatoire`, 2021 : `capitaux_mobiliers/retenue_source/taux_liberatoire` (20 %).
+
+    De 1997 à 2014, la variable vaut 0. Avant 1990, elle n'a pas de formule.
+  - **Résultats.** Le test existant de 2021 (`tests/formulas/impot_revenu/regimes_speciaux.yaml`) ne change pas : 10 000 dinars de revenus de capitaux mobiliers donnent toujours 2 000 dinars, seule l'entrée change de nom. Hors de 2021, une simulation qui renseignait `revenu_soumis_retenue_liberatoire` doit choisir la catégorie : le résultat suit alors le taux du texte (par exemple 35 % et non 20 % sur des bons anonymes en 1995, 0 en 2010).
+  - Nouveau test `tests/formulas/impot_revenu/retenue_liberatoire.yaml` : une table de cas de 1989 à 2026, avec les bornes de chaque taux (1991-1992, 1996-1997, 2014-2015, 2017-2018, 2020-2021-2022).
+  - Non couverts : la retenue de 35 % sur les dépôts à terme (10/06/2020 au 31/12/2020), dont la date tombe en cours d'année, et l'impôt libératoire sur la plus-value de cession de titres.
+
+## 0.148 - [#508](https://github.com/openfisca/openfisca-tunisia/pull/508)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux et une date ajoutée, sans changement de valeur.
+* Zones impactées : `parameters/impot_revenu/retenue_source_non_residents` (nouveau nœud), `parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_definitif_organismes_exoneres`, `parameters/impot_revenu/capitaux_mobiliers/non_residents`, `parameters/impot_revenu/index.yaml`.
+* Détails :
+  - **Fonds communs de placement en valeurs mobilières, 2002.** `taux_definitif_organismes_exoneres` reçoit une entrée au 01/01/2002, au même taux de 20 % : la loi de finances pour 2002 (article 21, JORT n° 104 du 28 décembre 2001, p. 4253 ; date d'effet de l'article 97, p. 4261) étend la retenue définitive aux revenus de capitaux mobiliers des fonds communs de placement en valeurs mobilières. L'article était connu par la seule note commune n° 45/2002 ; il est lu au fascicule. La documentation ne date plus de 2022 l'extension aux fonds d'amorçage et aux fonds communs de placement à risque : le code consolidé la rattache à la loi n° 2005-59 (article 5), non lue.
+  - **Nouveau nœud `retenue_source_non_residents`**, pour les retenues de l'article 52 sur des sommes servies aux non-résidents qui ne sont pas des revenus de l'épargne :
+    - `taux_remunerations` (alinéa b, troisième tiret ; alinéa c en 1990) : 15 % au 01/01/1990 (code, p. 11), au 02/01/1992 (loi de finances pour 1992, article 31, pp. 2084-2085, passage à l'alinéa b) et au 01/01/2003 (loi de finances pour 2003, article 47, p. 2881 : la retenue vise désormais toutes les rémunérations et revenus des non domiciliés ni établis, et non plus les seuls revenus de l'article 3, point 6). Série incomplète : états antérieurs à 1990 non versés ;
+    - `taux_etablis_sans_declaration_existence` (paragraphe II, alinéa 4) : 15 % au 01/01/2016 (loi de finances pour 2016, article 28, édition arabe, p. 3604) ;
+    - `taux_etablis_sans_declaration_existence_regime_fiscal_privilegie` : 25 % au 01/01/2019 (loi de finances pour 2019, article 50, édition arabe, p. 5456).
+  - **Listes des pays à régime fiscal privilégié.** La documentation de `capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie` date les deux listes : décret n° 2014-3833 (JORT n° 86 du 24 octobre 2014, pp. 2811-2812), exécutoire le 01/11/2014 ; arrêté du ministre des finances du 25 mars 2019 (JORT n° 27 du 2 avril 2019, pp. 867-869), exécutoire le 08/04/2019. Ces dates ne changent pas le taux et la série n'en porte pas d'entrée.
+  - Paramètres seulement : aucune formule ne lit ces feuilles. Le test `tests/test_retenue_source_non_residents.py` couvre les trois feuilles nouvelles, et `tests/test_epargne_capital.py` la date de 2002. Ils sont écrits en Python, parce qu'un test YAML ne porte que sur des variables.
+
+### 0.147.1 - [#507](https://github.com/openfisca/openfisca-tunisia/pull/507)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 02/05/2019 au 04/05/2019.
+* Zones impactées : `parameters/retraite/cnrps/bonifications/cadre_actif/age_terme_article_32`.
+* Détails :
+  - **Date du passage de 60 à 62 ans du terme de la période bonifiable (article 32, paragraphes 2 et 3, de la loi n° 85-12) : 05/05/2019 au lieu du 02/05/2019.**
+  - La loi n° 2019-37 (article 2, JORT n° 35 du 30 avril 2019, p. 1313) n'a pas de clause d'effet. La note appliquait la règle d'avant 1993 (un jour franc après la publication). Depuis la loi n° 93-64 (article 2), une loi est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, jour du dépôt non compté : dépôt le 30 avril 2019 (dernière page du fascicule), effet le 5 mai 2019.
+  - Aucune formule ne lit ce paramètre : aucun résultat de calcul ne change.
 
 ## 0.147 - [#506](https://github.com/openfisca/openfisca-tunisia/pull/506)
 
