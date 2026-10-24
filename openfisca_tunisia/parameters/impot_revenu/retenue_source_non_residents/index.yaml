@@ -1,0 +1,19 @@
+description: "Retenue à la source sur les sommes servies aux non-résidents, hors revenus de l'épargne"
+metadata:
+  short_label: "Non-résidents, hors revenus de l'épargne"
+  order:
+  - taux_remunerations
+  - taux_etablis_sans_declaration_existence
+  - taux_etablis_sans_declaration_existence_regime_fiscal_privilegie
+documentation: |-
+  Retenues de l'article 52 du code de l'impôt sur le revenu des personnes physiques et de l'impôt
+  sur les sociétés qui frappent des sommes servies à des non-résidents et qui ne sont ni des
+  revenus de capitaux mobiliers ni des revenus de valeurs mobilières : rémunérations des non
+  domiciliés ni établis (redevances, assistance technique, études), et sommes revenant aux non-
+  résidents établis en Tunisie qui n'ont pas déposé la déclaration d'existence.
+
+  Les retenues sur les revenus de capitaux mobiliers servis aux non-résidents, sur les intérêts
+  des prêts des banques non établies, et le taux de 25 % des bénéficiaires établis dans un pays à
+  régime fiscal privilégié qui s'applique aussi aux rémunérations, sont dans
+  `capitaux_mobiliers/non_residents`. La plus-value de cession de titres des non-résidents est
+  dans `valeurs_mobilieres/plus_value_cession_titres/non_residents`.

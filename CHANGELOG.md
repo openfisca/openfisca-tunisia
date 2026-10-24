@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.148 - [#508](https://github.com/openfisca/openfisca-tunisia/pull/508)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux et une date ajoutée, sans changement de valeur.
+* Zones impactées : `parameters/impot_revenu/retenue_source_non_residents` (nouveau nœud), `parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_definitif_organismes_exoneres`, `parameters/impot_revenu/capitaux_mobiliers/non_residents`, `parameters/impot_revenu/index.yaml`.
+* Détails :
+  - **Fonds communs de placement en valeurs mobilières, 2002.** `taux_definitif_organismes_exoneres` reçoit une entrée au 01/01/2002, au même taux de 20 % : la loi de finances pour 2002 (article 21, JORT n° 104 du 28 décembre 2001, p. 4253 ; date d'effet de l'article 97, p. 4261) étend la retenue définitive aux revenus de capitaux mobiliers des fonds communs de placement en valeurs mobilières. L'article était connu par la seule note commune n° 45/2002 ; il est lu au fascicule. La documentation ne date plus de 2022 l'extension aux fonds d'amorçage et aux fonds communs de placement à risque : le code consolidé la rattache à la loi n° 2005-59 (article 5), non lue.
+  - **Nouveau nœud `retenue_source_non_residents`**, pour les retenues de l'article 52 sur des sommes servies aux non-résidents qui ne sont pas des revenus de l'épargne :
+    - `taux_remunerations` (alinéa b, troisième tiret ; alinéa c en 1990) : 15 % au 01/01/1990 (code, p. 11), au 02/01/1992 (loi de finances pour 1992, article 31, pp. 2084-2085, passage à l'alinéa b) et au 01/01/2003 (loi de finances pour 2003, article 47, p. 2881 : la retenue vise désormais toutes les rémunérations et revenus des non domiciliés ni établis, et non plus les seuls revenus de l'article 3, point 6). Série incomplète : états antérieurs à 1990 non versés ;
+    - `taux_etablis_sans_declaration_existence` (paragraphe II, alinéa 4) : 15 % au 01/01/2016 (loi de finances pour 2016, article 28, édition arabe, p. 3604) ;
+    - `taux_etablis_sans_declaration_existence_regime_fiscal_privilegie` : 25 % au 01/01/2019 (loi de finances pour 2019, article 50, édition arabe, p. 5456).
+  - **Listes des pays à régime fiscal privilégié.** La documentation de `capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie` date les deux listes : décret n° 2014-3833 (JORT n° 86 du 24 octobre 2014, pp. 2811-2812), exécutoire le 01/11/2014 ; arrêté du ministre des finances du 25 mars 2019 (JORT n° 27 du 2 avril 2019, pp. 867-869), exécutoire le 08/04/2019. Ces dates ne changent pas le taux et la série n'en porte pas d'entrée.
+  - Paramètres seulement : aucune formule ne lit ces feuilles. Le test `tests/test_retenue_source_non_residents.py` couvre les trois feuilles nouvelles, et `tests/test_epargne_capital.py` la date de 2002. Ils sont écrits en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ### 0.147.1 - [#507](https://github.com/openfisca/openfisca-tunisia/pull/507)
 
 * Évolution du système socio-fiscal.
