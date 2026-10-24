@@ -1,6 +1,6 @@
 # Changelog
 
-### 0.147.1 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+### 0.147.1 - [#507](https://github.com/openfisca/openfisca-tunisia/pull/507)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : du 02/05/2019 au 04/05/2019.
