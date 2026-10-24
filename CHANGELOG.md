@@ -1,5 +1,15 @@
 # Changelog
 
+### 0.147.1 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 02/05/2019 au 04/05/2019.
+* Zones impactées : `parameters/retraite/cnrps/bonifications/cadre_actif/age_terme_article_32`.
+* Détails :
+  - **Date du passage de 60 à 62 ans du terme de la période bonifiable (article 32, paragraphes 2 et 3, de la loi n° 85-12) : 05/05/2019 au lieu du 02/05/2019.**
+  - La loi n° 2019-37 (article 2, JORT n° 35 du 30 avril 2019, p. 1313) n'a pas de clause d'effet. La note appliquait la règle d'avant 1993 (un jour franc après la publication). Depuis la loi n° 93-64 (article 2), une loi est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, jour du dépôt non compté : dépôt le 30 avril 2019 (dernière page du fascicule), effet le 5 mai 2019.
+  - Aucune formule ne lit ce paramètre : aucun résultat de calcul ne change.
+
 ## 0.147 - [#506](https://github.com/openfisca/openfisca-tunisia/pull/506)
 
 * Évolution du système socio-fiscal.
