@@ -3,7 +3,14 @@ metadata:
   short_label: "Droits d'enregistrement"
   order:
   - successions
+  - droit_fixe
+  - minimum_perception
+  - fonds_commerce
+  - marches
 documentation: |-
   Droits perçus lors de l'enregistrement des actes et des mutations, régis depuis le 17 mai 1993
   par le code des droits d'enregistrement et de timbre, promulgué par la loi n° 93-53 (JORT n° 39
   du 25 mai 1993, pp. 715-726).
+
+  Ne sont pas versés ici : les droits sur les mutations d'immeubles, les baux, les ventes publiques
+  de meubles, le taux des jugements, les actes de sociétés.

@@ -1,0 +1,13 @@
+description: Droit de timbre
+metadata:
+  short_label: Droit de timbre
+  order:
+  - factures
+  - telephonie
+  - passeport
+documentation: |
+  Droit dû sur les actes, écrits et formules administratives énumérés au tarif de l'article 117 du
+  code des droits d'enregistrement et de timbre (deuxième partie du code), et sur des opérations que
+  des lois de finances y soumettent hors du code. Ne sont pas versés ici : le timbre des actes et
+  répertoires par feuille, des effets de commerce et du titre de crédit, celui des tickets de vente
+  des grandes surfaces (depuis 2022), et les formules administratives autres que le passeport.

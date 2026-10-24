@@ -1,0 +1,75 @@
+description: Droit fixe d'enregistrement par page, tarif général de l'article 23 du code
+values:
+  '1993-05-17':
+    value: 10
+  '2005-01-01':
+    value: 15
+  '2012-05-25':
+    value: 20
+  '2018-01-01':
+    value: 25
+  '2022-01-01':
+    value: 30
+metadata:
+  unit: currency/page
+  short_label: Droit fixe par page
+  notes:
+    '1993-05-17':
+    - note: 'Série incomplète : états antérieurs à 1993 non versés.'
+  reference:
+    '1993-05-17':
+    - title: Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et
+        de timbre, article 2 ; code, article 23
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: 'JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et pp. 721-722 (code). Droit fixe de 10
+        dinars par page pour les actes des numéros 1 à 18, 24 et 25 du tarif de l''article 23. Date d''effet
+        : article 2, I de la loi, p. 715 : « Les dispositions du code sus visé s''appliquent aux jugements,
+        actes, contrats et mutations établis ou intervenus à compter de la promulgation de la présente
+        loi », soit le 17 mai 1993. Édition française sans couche texte, lue à l''image.'
+    '2005-01-01':
+    - title: Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, articles 57
+        et 89
+      href: https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf
+      note: 'JORT n° 105 du 31 décembre 2004, p. 3441. Rubrique « Actualisation du tarif du droit fixe
+        d''enregistrement ». Article 57 : le droit fixe des numéros 1 à 12 ter, 16 à 18, 22 à 25 et 28
+        de l''article 23 du code est porté de 10 à 15 dinars par page. Article 89 : application à compter
+        du 1er janvier 2005.'
+    '2012-05-25':
+    - title: Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article
+        43
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: 'JORT n° 39 du 18 mai 2012, p. 929. Rubrique « Mise à jour du tarif du droit fixe d''enregistrement
+        et du montant de la redevance de recherche ». Article 43 : « Est relevé de 15 dinars à 20 dinars,
+        le tarif du droit fixe d''enregistrement prévu par les numéros de 1 à 13, de 16 à 18 ter, de 22
+        à 25 et 28 du tarif annexé à l''article 23 du code des droits d''enregistrement et de timbre ».
+        Date d''effet : la loi n''en fixe pas. Le fascicule porte la mention « déposé au siège du gouvernorat
+        de Tunis le 19 mai 2012 » ; les notes communes n° 14/2012, 16/2012 et 25/2012 fixent l''entrée
+        en vigueur de la loi au 25 mai 2012, en application de la loi n° 93-64 (article 2). Compté cinq
+        jours après le dépôt, jour du dépôt non compté, le délai donnerait le 24 mai 2012 ; la date retenue
+        est celle de l''administration fiscale, déjà employée pour les autres articles de cette loi. Édition
+        française lue sur la couche texte.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 50
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017, p. 4286. Rubrique « Révision du tarif des droits fixes d''enregistrement
+        et des droits de timbre exigibles sur les services de téléphonie et sur certains actes et écrits
+        ». Article 50, paragraphe 1 : « Le tarif des droits fixes d''enregistrement prévus par les numéros
+        de 1 à 12 septies, de 16 à 18 quater, de 22 à 25, 27 ter et 28 du tarif prévu par l''article 23
+        du code des droits d''enregistrement et de timbre […] sont portés de 20 dinars à 25 dinars ».
+        Article 67 (p. 4292) : application à compter du 1er janvier 2018. Édition française lue sur la
+        couche texte.'
+    '2022-01-01':
+    - title: Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022, articles
+        53 et 73
+      href: https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf
+      note: 'JORT n° 119 du 28 décembre 2021, p. 3097. Rubrique « Actualisation du tarif du droit fixe
+        d''enregistrement ». Article 53 : « L''expression « 25 dinars » prévue à l''article 23 du code
+        des droits d''enregistrement et de timbre est remplacée par l''expression « 30 dinars » ». Article
+        73 (p. 3107) : application à compter du 1er janvier 2022. Édition française lue sur la couche
+        texte.'
+documentation: |
+  Droit fixe par page des actes civils, administratifs et judiciaires énumérés à l'article 23 du code
+  des droits d'enregistrement et de timbre. Les numéros couverts varient d'un texte à l'autre ; chaque
+  référence les cite. Avant 1993, les droits fixes sont fixés par acte, de 0,170 à 1,740 dinar au
+  tarif de 1969, de 1 à 10 dinars en 1977, 3 dinars pour la plupart des actes en 1983.

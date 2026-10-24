@@ -1,0 +1,23 @@
+description: Montant de recharge à partir duquel le supplément est dû
+values:
+  '2026-01-01':
+    value: 5
+metadata:
+  unit: currency
+  short_label: Seuil
+  reference:
+    '2026-01-01':
+    - title: Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026, article 20,
+        paragraphes 4 et 7, et article 110
+      href: https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf
+      note: 'JORT n° 148 du 12 décembre 2025, édition arabe, pp. 4233-4234. Rubrique « تعزيز موارد تمويل
+        الصناديق الاجتماعية » (renforcement des ressources de financement des caisses sociales). Article
+        20, paragraphe 4 (p. 4234) : « يوظف مبلغ إضافي قدره 0,100 دينار على كل عملية شحن لرصيد الهاتف
+        الجوال تساوي أو تفوق 5 دنانير » (un montant supplémentaire de 0,100 dinar est perçu sur chaque
+        opération de recharge du crédit de téléphone mobile égale ou supérieure à 5 dinars). Paragraphe
+        7 : son produit est affecté au compte de diversification des sources de la sécurité sociale. Article
+        110 (p. 4258) : application à compter du 1er janvier 2026, sauf les articles 56, 60, 61 et 62.
+        Édition arabe lue sur la couche texte et à l''image de la p. 4234 ; le fascicule n''a pas d''édition
+        française, la traduction donnée ici n''est pas officielle.'
+documentation: |
+  Montant de la recharge, 5 dinars inclus, à partir duquel le supplément est dû.

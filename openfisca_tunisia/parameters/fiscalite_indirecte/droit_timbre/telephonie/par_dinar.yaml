@@ -1,0 +1,62 @@
+description: Droit de timbre par dinar sur la téléphonie, en proportion du montant
+values:
+  '2012-05-25':
+    value: 0.08
+  '2014-08-27':
+    value: 0.1
+  '2018-01-01':
+    value: 0.14
+metadata:
+  unit: /1
+  short_label: Par dinar
+  reference:
+    '2012-05-25':
+    - title: Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article
+        48
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: 'JORT n° 39 du 18 mai 2012, p. 930. Rubrique « Mise à jour du tarif du droit de timbre exigible
+        sur les factures et sur les cartes et opérations de recharge du téléphone ». Article 48 : « 8)
+        Les cartes de recharge du téléphone dont le montant n''excède pas 5 dinars 0,080 sur chaque dinar
+        ; 8 bis) les cartes de recharge du téléphone dont le montant excède 5 dinars 0,400 sur chaque
+        5 dinars ou fraction de 5 dinars du montant de la carte ; 8 ter) les opérations de recharge du
+        téléphone non matérialisées par une carte quelqu''en soit le mode de recharge 0,400 sur chaque
+        5 dinars du chiffre d''affaires ». Article 49 : « 8 quater) les factures relatives aux lignes
+        de téléphone post payées 0,400 sur chaque 5 dinars ou fraction de 5 dinars du montant de la facture
+        ». Date d''effet : la loi n''en fixe pas. Le fascicule porte la mention « déposé au siège du gouvernorat
+        de Tunis le 19 mai 2012 » ; les notes communes n° 14/2012, 16/2012 et 25/2012 fixent l''entrée
+        en vigueur de la loi au 25 mai 2012, en application de la loi n° 93-64 (article 2). Compté cinq
+        jours après le dépôt, jour du dépôt non compté, le délai donnerait le 24 mai 2012 ; la date retenue
+        est celle de l''administration fiscale, déjà employée pour les autres articles de cette loi. Édition
+        française lue sur la couche texte.'
+    '2014-08-27':
+    - title: Loi n° 2014-54 du 19 août 2014, portant loi de finances complémentaire pour l'année 2014,
+        article 35
+      href: https://www.pist.tn/jort/2014/2014F/Jo0682014.pdf
+      note: 'JORT n° 68 du 22 août 2014, p. 2105. Rubrique « Actualisation du tarif des droits d''enregistrement
+        et institution d''autres droits ». Article 35, paragraphe 1 : « 8) Les cartes de recharge du téléphone
+        dont le montant n''excède pas 5 dinars 0,100 D sur chaque dinar ; 8 bis) les cartes de recharge
+        du téléphone dont le montant excède 5 dinars 0,500 D sur chaque 5 dinars ou fraction de 5 dinars
+        du montant de la carte ; 8 ter) les opérations de recharge du téléphone non matérialisées par
+        une carte […] 0,500 D sur chaque 5 dinars du chiffre d''affaires ; 8 quater) les factures relatives
+        aux lignes de téléphone post payées 0,500 D sur chaque 5 dinars ou fraction de 5 dinars du montant
+        de la facture ». Date d''effet : la loi n''en fixe pas. Le fascicule porte la mention « déposé
+        au siège du gouvernorat de Tunis le 22 août 2014 » ; exécutoire le 27 août 2014, cinq jours après
+        le dépôt, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche
+        texte.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 50
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017, p. 4287. Article 50, paragraphe 2 : les numéros 8 à 8 quater
+        du paragraphe I de l''article 117 du code sont abrogés et remplacés par : « 8° (nouveau)- Les
+        factures relatives aux services de téléphonie et aux services d''internet ainsi que les opérations
+        de recharge y afférentes à l''exception des services d''internet rendus aux personnes physiques
+        non destinés à un usage professionnel 0,140 sur chaque dinar ou fraction de dinar facturé ou payé
+        tous droits et taxes compris ». Article 67 (p. 4292) : application à compter du 1er janvier 2018.
+        Édition française lue sur la couche texte.'
+documentation: |
+  Droit dû sur chaque dinar, en dinars par dinar. Du 25 mai 2012 au 31 décembre 2017, il frappe les
+  cartes de recharge dont le montant n'excède pas 5 dinars. Depuis le 1er janvier 2018, il frappe
+  chaque dinar ou fraction de dinar facturé ou payé, tous droits et taxes compris, au titre des
+  services de téléphonie et d'internet et des recharges y afférentes, hors internet des particuliers
+  non destiné à un usage professionnel.

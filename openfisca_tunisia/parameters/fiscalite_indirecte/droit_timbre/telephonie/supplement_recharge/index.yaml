@@ -1,0 +1,11 @@
+description: Montant supplémentaire sur les recharges de téléphone mobile
+metadata:
+  short_label: Supplément sur les recharges
+  order:
+  - montant
+  - seuil
+documentation: |
+  Depuis le 1er janvier 2026, chaque opération de recharge du crédit de téléphone mobile égale ou
+  supérieure à 5 dinars supporte un montant supplémentaire, que la loi de finances n'insère pas à
+  l'article 117 du code. Son produit est affecté au compte de diversification des sources de la
+  sécurité sociale.
