@@ -1,0 +1,14 @@
+description: Taxe unique sur les assurances
+metadata:
+  short_label: Taxe unique sur les assurances
+  order:
+  - navigation_maritime_aerienne
+  - autres_risques
+documentation: |
+  Taxe due sur les contrats d'assurance ou de rente viagère conclus avec des entreprises d'assurance,
+  à proportion des primes ; elle forme, depuis le 1er janvier 1997, la troisième partie du code des
+  droits d'enregistrement et de timbre, « autres taxes » (articles 144 à 149). L'assurance-vie, la
+  capitalisation et les rentes viagères, la réassurance, les risques agricoles et de pêche (depuis
+  2008), l'exportation et l'assurance construction obligatoire en sont exonérées (article 145). Une
+  taxe unique sur les assurances existe avant 1997 (décret n° 69-114 du 29 mars 1969, loi de finances
+  pour 1974, article 29) ; ses taux ne sont pas versés.

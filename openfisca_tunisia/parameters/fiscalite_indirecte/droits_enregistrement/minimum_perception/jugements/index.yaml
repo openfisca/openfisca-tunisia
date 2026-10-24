@@ -1,0 +1,11 @@
+description: Minimum de perception des droits d'enregistrement sur les jugements et arrêts, selon la juridiction
+metadata:
+  short_label: Jugements et arrêts
+  order:
+  - tribunaux_cantonaux
+  - premiere_instance
+  - appel_cassation
+documentation: |
+  Minimum de perception des jugements et arrêts, fixé par juridiction (article 22, II du code)
+  jusqu'au 31 décembre 2016. Depuis le 1er janvier 2017, le minimum unique de 40 dinars s'applique
+  aussi aux jugements et arrêts : chaque feuille en porte la valeur.
