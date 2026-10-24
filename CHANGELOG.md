@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.152 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 10/06/2020 ; paramètre nouveau.
+* Zones impactées : `parameters/retraite/differentiel_petites_pensions` (nouveau nœud).
+* Détails :
+  - **Verse le seuil du différentiel complémentaire des petites pensions** du décret-loi n° 2020-30, article premier : 180 dinars de pension mensuelle nette, au 10/06/2020. Les titulaires de pensions de la CNSS et de la CNRPS (loi n° 85-12) dont le montant mensuel net, pension temporaire d'orphelin comprise, est au plus de 180 dinars reçoivent l'écart avec ce montant, à la charge du budget de l'État. Paramètre seulement : aucune formule ne le lit.
+  - **Texte et date.** JORT n° 54 du 10 juin 2020, édition arabe, p. 1408 (article premier) ; l'article 17 (p. 1413) fait entrer le décret-loi en vigueur à la date de sa publication, le 10/06/2020. L'édition française n'est pas sur pist.tn.
+  - Le décret-loi ne fixe pas de terme, et aucun texte prolongeant, relevant ou abrogeant le seuil n'est établi : la documentation du nœud le dit.
+  - Le test `tests_pension/formulas/test_differentiel_petites_pensions.py` éprouve la valeur le jour même, l'absence de valeur la veille, la référence et l'unité. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.151 - [#512](https://github.com/openfisca/openfisca-tunisia/pull/512)
 
 * Évolution du système socio-fiscal.
