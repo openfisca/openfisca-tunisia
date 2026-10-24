@@ -1,0 +1,63 @@
+description: Retenue pour pension sur les indemnités parlementaires permanentes des députés
+values:
+  1985-03-17:
+    value: 0.1
+  1994-07-01:
+    value: 0.11
+  2002-07-01:
+    value: 0.115
+  2003-07-01:
+    value: 0.1175
+  2004-07-01:
+    value: 0.12
+  2007-07-01:
+    value: 0.124
+  2008-07-01:
+    value: 0.128
+  2009-07-01:
+    value: 0.132
+  2023-03-13:
+    value: 0.1325
+metadata:
+  unit: /1
+  short_label: Retenue du député
+  notes:
+    1985-03-17:
+    - note: "Série incomplète : états antérieurs à 1985 non versés."
+  reference:
+    1985-03-17:
+    - title: "Loi n° 85-16 du 8 mars 1985, fixant le régime de retraite des députés, article 5"
+      href: https://www.pist.tn/jort/1985/1985F/Jo02185.pdf
+      note: "JORT n° 21 du 15 mars 1985, p. 376. Article 5 : les indemnités parlementaires permanentes sont soumises à une retenue de 10 % au profit de la Caisse nationale de retraite et de prévoyance sociale. La loi ne fixe pas de date d'effet ; publiée au Journal officiel du 15 mars 1985, elle devient exécutoire un jour franc après sa publication, soit le 17 mars 1985 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Elle abroge le décret-loi n° 74-22 du 2 novembre 1974 et la loi n° 77-57 du 3 août 1977 (article 14)."
+    1994-07-01:
+    - title: "Loi n° 94-71 du 27 juin 1994, relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public, article unique"
+      href: https://www.pist.tn/jort/1994/1994F/Jo05094.pdf
+      note: "JORT n° 50 du 28 juin 1994, p. 1086. Relèvement d'un point de la part de l'assuré social à partir du 1er juillet 1994, date énoncée par le texte ; l'article unique modifie en conséquence l'article 5 de la loi n° 85-16 : 10 % → 11 %."
+    2002-07-01:
+    - title: "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85"
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "JORT n° 104 du 28 décembre 2001, p. 4260. Les taux de contribution du régime des pensions civiles et militaires et des régimes de retraite des membres du gouvernement, des députés et des gouverneurs sont relevés d'un point à la charge de l'assuré social : 0,50 point à partir du 1er juillet 2002, 0,25 point à partir du 1er juillet 2003 et 0,25 point à partir du 1er juillet 2004, dates énoncées par le texte. 11 % → 11,5 %."
+    2003-07-01:
+    - title: "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85"
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "JORT n° 104 du 28 décembre 2001, p. 4260. Deuxième palier, 0,25 point au 1er juillet 2003 : 11,5 % → 11,75 %."
+    2004-07-01:
+    - title: "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85"
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "JORT n° 104 du 28 décembre 2001, p. 4260. Troisième palier, 0,25 point au 1er juillet 2004 : 11,75 % → 12 %."
+    2007-07-01:
+    - title: "Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux, article premier"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+      note: "JORT n° 51 du 26 juin 2007, p. 2198. Les taux de contribution du régime des pensions civiles et militaires et des régimes de retraite des membres du gouvernement, de la chambre des députés, de la chambre des conseillers et des gouverneurs sont relevés de 1,2 point à la charge de l'assuré social : 0,40 point à partir du 1er juillet 2007, du 1er juillet 2008 et du 1er juillet 2009, dates énoncées par le texte. 12 % → 12,4 %."
+    2008-07-01:
+    - title: "Loi n° 2007-43 du 25 juin 2007, article premier"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+      note: "JORT n° 51 du 26 juin 2007, p. 2198. Deuxième palier, 0,40 point au 1er juillet 2008 : 12,4 % → 12,8 %."
+    2009-07-01:
+    - title: "Loi n° 2007-43 du 25 juin 2007, article premier"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+      note: "JORT n° 51 du 26 juin 2007, p. 2198. Troisième palier, 0,40 point au 1er juillet 2009 : 12,8 % → 13,2 %."
+    2023-03-13:
+    - title: "Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026, articles 102 et 103 (article 5 nouveau de la loi n° 85-16)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf
+      note: "JORT n° 148 du 12 décembre 2025, p. 4257 de l'édition arabe, seule parue. L'article 102 abroge les articles 3 et 5 de la loi n° 85-16 et les remplace : la retenue sur les indemnités parlementaires est de 13,25 % au profit de la caisse. L'article 103 fixe l'effet de ces dispositions au 13 mars 2023, date énoncée par le texte, et exempte les députés concernés des montants qui leur sont imputés pour la période antérieure à leur entrée en vigueur. 13,2 % → 13,25 %."
