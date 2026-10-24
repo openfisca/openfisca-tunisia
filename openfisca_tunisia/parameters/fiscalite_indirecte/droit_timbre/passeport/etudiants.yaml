@@ -1,0 +1,54 @@
+description: Droit de timbre sur les passeports délivrés aux étudiants et élèves
+values:
+  '1993-05-17':
+    value: 7
+  '1999-01-01':
+    value: 10
+  '2006-01-01':
+    value: 20
+  '2013-01-01':
+    value: 25
+metadata:
+  unit: currency/unit
+  short_label: Passeport des étudiants
+  notes:
+    '1993-05-17':
+    - note: 'Série incomplète : états antérieurs à 1993 non versés.'
+  reference:
+    '1993-05-17':
+    - title: Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et
+        de timbre, article 2 ; code, article 117, paragraphe II, numéro 7
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: 'JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et p. 733 (code). Passeports délivrés
+        aux étudiants et aux enfants de moins de dix ans : 7 dinars. Date d''effet : article 2, I de la
+        loi, p. 715 : « Les dispositions du code sus visé s''appliquent aux jugements, actes, contrats
+        et mutations établis ou intervenus à compter de la promulgation de la présente loi », soit le
+        17 mai 1993. Édition française sans couche texte, lue à l''image.'
+    '1999-01-01':
+    - title: Loi n° 98-111 du 28 décembre 1998, portant loi de finances pour l'année 1999, articles 71
+        et 76
+      href: https://www.pist.tn/jort/1998/1998F/Jo10498.pdf
+      note: 'JORT n° 104 des 29-31 décembre 1998, p. 2509. Rubrique « Relèvement du droit de timbre dû
+        sur la carte d''identité nationale, la carte de séjour des étrangers et les passeports ». Article
+        71 : passeports des étudiants, 7 → 10 dinars. Article 76 (p. 2509) : application à compter du
+        1er janvier 1999.'
+    '2006-01-01':
+    - title: Loi n° 2005-106 du 19 décembre 2005, portant loi de finances pour l'année 2006, articles
+        45 et 62
+      href: https://www.pist.tn/jort/2005/2005F/Jo1012005.pdf
+      note: 'JORT n° 101 du 20 décembre 2005, p. 3602. Article 45 : « passeports délivrés aux étudiants
+        et élèves qui justifient de leur qualité par la présentation d''un certificat et aux enfants de
+        moins de sept ans ainsi que leur prorogation 20,000 ». Article 62 (p. 3604) : application à compter
+        du 1er janvier 2006.'
+    '2013-01-01':
+    - title: Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 49
+        et 79
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: 'JORT n° 1 du 1er janvier 2013, p. 14. Rubrique « Actualisation du tarif du droit de timbre
+        ». Article 49 : « passeports délivrés aux étudiants et élèves qui justifient de leur qualité 25,000
+        ». Article 79 (p. 28) : application à compter du 1er janvier 2013. Édition française lue sur la
+        couche texte.'
+documentation: |
+  Tarif réduit des étudiants et élèves qui justifient de leur qualité ; il vaut aussi pour les jeunes
+  enfants, de moins de dix ans au code de 1993, de moins de sept ans dans la rédaction de la loi de
+  finances pour 2006. La loi de finances pour 2004 ne le modifie pas. Inchangé au 1er janvier 2026.

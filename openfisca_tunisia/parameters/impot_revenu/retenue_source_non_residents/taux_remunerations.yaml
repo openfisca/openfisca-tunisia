@@ -1,0 +1,46 @@
+description: "Taux de la retenue à la source sur les rémunérations et revenus servis aux non domiciliés ni établis en Tunisie"
+values:
+  1990-01-01:
+    value: 0.15
+  1992-01-02:
+    value: 0.15
+  2003-01-01:
+    value: 0.15
+metadata:
+  unit: /1
+  short_label: "Retenue, rémunérations des non domiciliés ni établis"
+  notes:
+    1990-01-01:
+    - note: "Série incomplète : états antérieurs à 1990 non versés."
+  reference:
+    1990-01-01:
+    - title: "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989, article 52"
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+      note: "JORT n° 1 des 2-5 janvier 1990, p. 11. Article 52, paragraphe I : retenue « c. 15% pour : - les revenus des capitaux mobiliers ; - les sommes servies à des personnes non domiciliées ni établies en Tunisie au titre des revenus visés à l'article 3-6e du présent code. » Paragraphe II : « La retenue d'impôt est libératoire de l'impôt sur le revenu pour les bons de caisse aux porteurs ainsi que pour les revenus servis aux personnes non résidentes ou non établies en Tunisie. » Date d'effet : le code s'applique aux revenus réalisés à partir du 1er janvier 1990 (loi n° 89-114, article 3). Édition française lue sur l'océrisation du fascicule, chiffres relus à l'image, p. 11."
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 31"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, pp. 2084-2085. Rubrique « Dispositions relatives à la retenue à la source ». Article 31, paragraphe I nouveau de l'article 52 du code : « b) 15% au titre : […] - Des sommes servies à des personnes non domiciliées ni établies en Tunisie au titre des revenus visés au paragraphe 6 de l'article 3 du présent code. » ; paragraphe II nouveau : « 1) La retenue à la source est libératoire de l'impôt sur le revenu ou de l'impôt sur les sociétés pour : […] - Les revenus servis aux personnes non résidentes ou non établies en Tunisie. » Le taux ne change pas ; la retenue passe de l'alinéa c à l'alinéa b, dont elle forme le troisième tiret. Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 2 janvier 1992. Édition française lue sur l'océrisation des pages 2084-2085, taux relu à l'image, p. 2084."
+    2003-01-01:
+    - title: "Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles 47 et 87"
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: "JORT n° 102 du 17 décembre 2002, p. 2881 (article 47) et p. 2888 (article 87). Rubrique « Extension du champ d'application de l'impôt sur le revenu et de l'impôt sur les sociétés pour les personnes non résidentes et non établies en Tunisie et assouplissement de leurs obligations fiscales ». Article 47 : « Les dispositions du troisième tiret de l'alinéa « b » du paragraphe I de l'article 52 du code […] sont modifiées comme suit : - des rémunérations et revenus servis aux non domiciliés ni établis et non réalisés dans le cadre d'un établissement situé en Tunisie et ce, sous réserve des dispositions des alinéas « c » et « e » du présent paragraphe. » Le taux de 15 % de l'alinéa b ne change pas ; le champ de la retenue passe des seuls revenus de l'article 3, point 6, à toutes les rémunérations et à tous les revenus servis aux non domiciliés ni établis, hors revenus de capitaux mobiliers (alinéa c) et intérêts des prêts des banques non établies (alinéa e). Date d'effet : article 87 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2003. » Édition française lue sur la couche texte, à police décalée, décodée."
+documentation: |-
+  Taux de la retenue sur les sommes servies à une personne qui n'est ni domiciliée ni établie en
+  Tunisie, quand elles ne sont pas réalisées dans le cadre d'un établissement situé en Tunisie
+  (article 52, paragraphe I, alinéa b, troisième tiret, du code ; alinéa c, second tiret, en
+  1990). Jusqu'au 31 décembre 2002, la retenue vise les revenus de l'article 3, point 6, du
+  code : droits d'auteur, redevances pour l'usage de brevets, marques, procédés ou équipements,
+  informations sur une expérience acquise, études et assistance techniques. À partir du 1er
+  janvier 2003, elle vise toutes les rémunérations et tous les revenus servis à ces personnes,
+  hors revenus de capitaux mobiliers et intérêts des prêts des banques non établies, qui ont
+  leurs propres taux (`capitaux_mobiliers/non_residents`). La retenue est libératoire.
+
+  Le premier et le deuxième tiret de l'alinéa b (intérêts des comptes spéciaux d'épargne et
+  revenus des obligations) sont abrogés à partir du 1er janvier 1997 par la loi de finances pour
+  1997 (article 30) ; le troisième tiret, et son taux, demeurent.
+
+  Depuis le 1er janvier 2014, le taux est porté à 25 % quand le bénéficiaire réside ou est établi
+  dans un pays ou territoire à régime fiscal privilégié (`capitaux_mobiliers/non_residents/
+  taux_etats_regime_fiscal_privilegie`). Les conventions de non double imposition peuvent fixer
+  des taux plus bas ; elles ne sont pas versées ici.

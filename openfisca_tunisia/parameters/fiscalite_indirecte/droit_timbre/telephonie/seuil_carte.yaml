@@ -1,0 +1,36 @@
+description: Montant de carte de recharge en deçà duquel s'applique le tarif des petites cartes
+values:
+  '2007-01-01':
+    value: 5
+  '2018-01-01':
+    value: null
+metadata:
+  unit: currency
+  short_label: Seuil des petites cartes
+  reference:
+    '2007-01-01':
+    - title: Loi n° 2006-85 du 25 décembre 2006, portant loi de finances pour l'année 2007, articles 72
+        et 88
+      href: https://www.pist.tn/jort/2006/2006F/Jo1032006.pdf
+      note: 'JORT n° 103 du 26 décembre 2006, p. 4392. Rubrique « Fixation de l''assiette du droit de
+        timbre dû sur les opérations de recharge électronique du téléphone ». Article 72 : le numéro 8
+        est remplacé par les numéros 8, 8 bis et 8 ter : cartes de recharge dont le montant n''excède
+        pas 5 dinars, 0,300 dinar ; cartes de plus de 5 dinars et opérations de recharge non matérialisées
+        par une carte, 0,300 dinar par tranche de 5 dinars. Article 88 (p. 4395) : application à compter
+        du 1er janvier 2007.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 50
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017, p. 4287. Article 50, paragraphe 2 : les numéros 8 à 8 quater
+        du paragraphe I de l''article 117 du code sont abrogés et remplacés par : « 8° (nouveau)- Les
+        factures relatives aux services de téléphonie et aux services d''internet ainsi que les opérations
+        de recharge y afférentes à l''exception des services d''internet rendus aux personnes physiques
+        non destinés à un usage professionnel 0,140 sur chaque dinar ou fraction de dinar facturé ou payé
+        tous droits et taxes compris ». Article 67 (p. 4292) : application à compter du 1er janvier 2018.
+        Édition française lue sur la couche texte.'
+documentation: |
+  Montant de la carte, 5 dinars inclus, en deçà duquel s'applique le tarif des petites cartes : par
+  carte jusqu'au 24 mai 2012, par dinar du 25 mai 2012 au 31 décembre 2017. Au-delà, et pour les
+  recharges sans carte, le tarif par tranche de 5 dinars. Le tarif unique de 2018 supprime la
+  distinction.

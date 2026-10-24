@@ -1,0 +1,12 @@
+description: Minimum de perception des droits d'enregistrement
+metadata:
+  short_label: Minimum de perception
+  order:
+  - actes_mutations
+  - jugements
+documentation: |
+  Montant en deçà duquel aucun droit proportionnel ou progressif n'est perçu (code des droits
+  d'enregistrement et de timbre, article 22). Jusqu'au 31 décembre 2016, le code distingue le minimum
+  des actes et mutations de celui des jugements et arrêts, qui dépend de la juridiction ; depuis le
+  1er janvier 2017, un minimum unique de 40 dinars vaut pour les actes, les mutations, les jugements
+  et arrêts et les écrits soumis à un droit proportionnel ou progressif.

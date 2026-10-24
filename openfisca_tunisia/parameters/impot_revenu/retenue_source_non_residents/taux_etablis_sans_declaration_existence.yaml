@@ -1,0 +1,23 @@
+description: "Taux de la retenue à la source sur les sommes revenant aux non-résidents établis en Tunisie qui n'ont pas déposé la déclaration d'existence"
+values:
+  2016-01-01:
+    value: 0.15
+metadata:
+  unit: /1
+  short_label: "Retenue, non-résidents établis sans déclaration d'existence"
+  reference:
+    2016-01-01:
+    - title: "Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, articles 28 et 92"
+      href: https://www.pist.tn/jort/2015/2015A/Ja1042015.pdf
+      note: "JORT n° 104 du 29 décembre 2015, édition arabe, p. 3604 (article 28) et p. 3623 (article 92). Rubrique « إخضاع المنشآت الدائمة التونسية التابعة للمؤسسات الأجنبية التي لا تودع تصريحا في الوجود إلى خصم من المورد تحرري بنسبة 15% » (soumission des établissements stables tunisiens d'entreprises étrangères qui ne déposent pas de déclaration d'existence à une retenue à la source libératoire au taux de 15 %). Article 28 : un paragraphe 4 est ajouté au paragraphe II de l'article 52 du code : « يخضع غير المقيمين والمستقرين بالبلاد التونسية، الذين لم يتولوا التصريح في الوجود الذي اقتضاه الفصل 56 من هذه المجلة، للضريبة عن طريق خصم من المورد بنسبة 15% من المبالغ الخام الراجعة لهم. ويكون هذا الخصم محررا من الضريبة على دخل الأشخاص الطبيعيين أو من الضريبة على الشركات المستوجبة على نشاطهم بالبلاد التونسية. » (les non-résidents établis en Tunisie qui n'ont pas déposé la déclaration d'existence prévue par l'article 56 du code sont soumis à l'impôt par voie de retenue à la source au taux de 15 % des montants bruts leur revenant ; la retenue est libératoire de l'impôt sur le revenu ou de l'impôt sur les sociétés dû sur leur activité en Tunisie). Troisième alinéa : en cas de régularisation de leur situation fiscale, la retenue est déduite de l'impôt dû sur leur activité en Tunisie ou restituée. Date d'effet : article 92 — « مع مراعاة الأحكام المخالفة الواردة بهذا القانون، تطبق أحكام هذا القانون ابتداء من غرة جانفي 2016 » (sous réserve des dispositions contraires, à compter du 1er janvier 2016). Édition arabe lue sur la couche texte ; l'édition française de ce fascicule répond 404 sur pist.tn (24 octobre 2026) et manque au corpus local : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux de la retenue opérée sur les montants bruts revenant à une personne non résidente établie
+  en Tunisie, quand elle n'a pas déposé la déclaration d'existence prévue par l'article 56 du
+  code (article 52, paragraphe II, alinéa 4, premier sous-alinéa, du code). La retenue est
+  libératoire de l'impôt sur le revenu ou de l'impôt sur les sociétés dû sur l'activité en
+  Tunisie ; si la personne régularise sa situation fiscale, elle est déduite de cet impôt ou
+  restituée.
+
+  À partir du 1er janvier 2019, le taux est porté à 25 % quand la personne réside dans un pays
+  ou territoire à régime fiscal privilégié
+  (`taux_etablis_sans_declaration_existence_regime_fiscal_privilegie`).
