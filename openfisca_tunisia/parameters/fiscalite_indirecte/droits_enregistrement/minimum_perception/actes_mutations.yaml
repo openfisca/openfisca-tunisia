@@ -1,0 +1,73 @@
+description: Minimum de perception des droits d'enregistrement sur les actes et mutations
+values:
+  '1993-05-17':
+    value: 5
+  '2003-01-01':
+    value: 10
+  '2006-01-01':
+    value: 15
+  '2012-05-25':
+    value: 20
+  '2017-01-01':
+    value: 40
+metadata:
+  unit: currency
+  short_label: Actes et mutations
+  notes:
+    '1993-05-17':
+    - note: 'Série incomplète : états antérieurs à 1993 non versés.'
+  reference:
+    '1993-05-17':
+    - title: Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et
+        de timbre, article 2 ; code, article 22, I
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: 'JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et pp. 721-722 (code). Il ne peut être
+        perçu moins de 5 dinars pour l''enregistrement des actes et mutations. Date d''effet : article
+        2, I de la loi, p. 715 : « Les dispositions du code sus visé s''appliquent aux jugements, actes,
+        contrats et mutations établis ou intervenus à compter de la promulgation de la présente loi »,
+        soit le 17 mai 1993. Édition française sans couche texte, lue à l''image.'
+    '2003-01-01':
+    - title: Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles
+        64 et 87
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: 'JORT n° 102 du 17 décembre 2002, p. 2884. Rubrique « Révision du tarif du droit d''enregistrement
+        minimum ». Article 64, article 22 nouveau du code : « I. Il ne peut être perçu moins de 10 dinars
+        pour l''enregistrement des actes et des mutations dont les sommes et valeurs produiraient moins
+        de 10 dinars de droit proportionnel ou de droit progressif ». Article 87 : application à compter
+        du 1er janvier 2003. Article 64 lu à l''image.'
+    '2006-01-01':
+    - title: Loi n° 2005-106 du 19 décembre 2005, portant loi de finances pour l'année 2006, articles
+        48 et 62
+      href: https://www.pist.tn/jort/2005/2005F/Jo1012005.pdf
+      note: 'JORT n° 101 du 20 décembre 2005, p. 3602. Rubrique « Révision du tarif du droit d''enregistrement
+        minimum ». Article 48, article 22, I nouveau du code : « Il ne peut être perçu moins de 15 dinars
+        pour l''enregistrement des actes et mutations dont les sommes et valeurs produiraient moins de
+        15 dinars de droit proportionnel ou de droit progressif ». Article 62 (p. 3604) : application
+        à compter du 1er janvier 2006.'
+    '2012-05-25':
+    - title: Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article
+        44
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: 'JORT n° 39 du 18 mai 2012, p. 929. Rubrique « Mise à jour du tarif minimum d''enregistrement
+        ». Article 44, article 22, I nouveau du code : « Il ne peut être perçu moins de 20 dinars pour
+        l''enregistrement des actes et mutations dont les sommes et valeurs donnent lieu à moins de 20
+        dinars de droit proportionnel ou de droit progressif ». Date d''effet : la loi n''en fixe pas.
+        Le fascicule porte la mention « déposé au siège du gouvernorat de Tunis le 19 mai 2012 » ; les
+        notes communes n° 14/2012, 16/2012 et 25/2012 fixent l''entrée en vigueur de la loi au 25 mai
+        2012, en application de la loi n° 93-64 (article 2). Compté cinq jours après le dépôt, jour du
+        dépôt non compté, le délai donnerait le 24 mai 2012 ; la date retenue est celle de l''administration
+        fiscale, déjà employée pour les autres articles de cette loi. Édition française lue sur la couche
+        texte.'
+    '2017-01-01':
+    - title: Loi n° 2016-78 du 17 décembre 2016, portant loi de finances pour l'année 2017, articles 69
+        et 79
+      href: https://www.pist.tn/jort/2016/2016F/Jo1052016.pdf
+      note: 'JORT n° 105 du 27 décembre 2016, p. 3849. Article 69, paragraphe 3 : l''article 22 du code
+        est abrogé et remplacé : « Il ne peut être perçu moins de 40 dinars pour l''enregistrement des
+        actes, des mutations, des jugements et arrêts et des écrits soumis à un droit d''enregistrement
+        proportionnel ou progressif ». Article 79 (p. 3851) : application à compter du 1er janvier 2017.
+        Édition française lue sur la couche texte.'
+documentation: |
+  Minimum de perception des actes et mutations soumis à un droit proportionnel ou progressif, minimum
+  unique depuis le 1er janvier 2017. Avant le code, 0,140 dinar au tarif de 1969, 1 dinar en 1977, 3
+  dinars en 1983.

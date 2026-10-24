@@ -3,7 +3,7 @@ mobiliers et sur les revenus distribués, taux et franchise de la plus-value de 
 
 Les valeurs attendues sont écrites en clair, tirées des textes lus au Journal officiel : code de
 1990 (article 52), lois de finances pour 1992 (article 31, exécutoire le 2 janvier 1992), 1997,
-2004, 2014, 2018, 2021 et 2022, décret-loi n° 2020-30 (article 12), loi de finances pour 2023
+2002, 2004, 2014, 2018, 2021 et 2022, décret-loi n° 2020-30 (article 12), loi de finances pour 2023
 (article 42) ; pour les non-résidents, les jetons de présence et les actions cotées, lois de
 finances pour 1995, 2005, 2011, 2012, 2017, 2019 et 2025 et loi de finances complémentaire pour
 2012. Sont éprouvés, feuille par feuille :
@@ -34,6 +34,7 @@ IMPOT_REVENU = TunisiaTaxBenefitSystem().parameters.impot_revenu
 CODE_1990 = ("JORT n° 1 des 2-5 janvier 1990", "/1990/1990F/Jo00190.pdf")
 LF_1992 = ("JORT n° 90 du 31 décembre 1991", "/1991/1991F/Jo09091.pdf")
 LF_1997 = ("JORT n° 105 du 31 décembre 1996", "/1996/1996F/Jo10596.pdf")
+LF_2002 = ("JORT n° 104 du 28 décembre 2001", "/2001/2001F/Jo1042001.pdf")
 LF_2004 = ("JORT n° 104 du 30 décembre 2003", "/2003/2003F/Jo1042003.pdf")
 LF_2014 = ("JORT n° 105 du 31 décembre 2013", "/2013/2013F/Jo1052013.pdf")
 LF_2018 = ("JORT n° 101 du 19 décembre 2017", "/2017/2017F/Jo1012017.pdf")
@@ -162,6 +163,7 @@ SERIES = {
         "/1",
         [
             ("1992-01-02", 0.20, LF_1992),
+            ("2002-01-01", 0.20, LF_2002),
             ("2021-01-01", None, LF_2021),
             ("2022-01-01", 0.20, LF_2022),
         ],

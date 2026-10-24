@@ -1,0 +1,11 @@
+description: Droit fixe d'enregistrement
+metadata:
+  short_label: Droit fixe
+  order:
+  - par_page
+  - actes_sans_tarif
+documentation: |
+  Droit d'enregistrement dû, par page, sur les actes que le tarif ne soumet pas à un droit
+  proportionnel ou progressif (code des droits d'enregistrement et de timbre, article 23). Le droit
+  fixe des marchés et concessions, de 1994 à 2012, et le droit fixe par acte des actes de sociétés ne
+  sont pas dans ce nœud.

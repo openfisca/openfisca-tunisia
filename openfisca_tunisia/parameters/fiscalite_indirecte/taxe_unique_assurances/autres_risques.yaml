@@ -1,0 +1,34 @@
+description: Taux de la taxe unique sur les assurances, autres risques
+values:
+  '1997-01-01':
+    value: 0.1
+  '2018-01-01':
+    value: 0.12
+metadata:
+  unit: /1
+  short_label: Autres risques
+  notes:
+    '1997-01-01':
+    - note: 'Série incomplète : états antérieurs à 1997 non versés.'
+  reference:
+    '1997-01-01':
+    - title: Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles
+        34 et 54
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: 'JORT n° 105 du 31 décembre 1996, p. 2581. Rubrique « Révision de la fiscalité du secteur
+        des assurances ». Article 34 : une troisième partie intitulée « autres taxes » est ajoutée au
+        code ; article 147 : « 5 % pour les contrats d''assurance des risques de la navigation maritime
+        et aérienne ; 10 % pour les contrats d''assurance des autres risques ». Article 35 : les dispositions
+        du décret du 27 mars 1947 relatives au régime fiscal des assurances sont supprimées. Article 54
+        (p. 2583) : application à compter du 1er janvier 1997.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 48
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017, p. 4286. Rubrique « Actualisation du tarif de la taxe unique
+        sur les assurances ». Article 48 : « Sont relevés, les taux prévus par l''article 147 du code
+        des droits d''enregistrement et de timbre, de 5 % à 6 % et de 10 % à 12 % ». Article 67 (p. 4292)
+        : application à compter du 1er janvier 2018. Édition française lue sur la couche texte.'
+documentation: |
+  Taux du second tiret de l'article 147 du code, applicable aux contrats d'assurance des risques
+  autres que ceux de la navigation maritime et aérienne.
