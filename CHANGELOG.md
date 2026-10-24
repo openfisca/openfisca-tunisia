@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.151 - [#511](https://github.com/openfisca/openfisca-tunisia/pull/511)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 17/03/1985 ; paramètres nouveaux.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/regimes_speciaux/deputes` (nouveau nœud), `regimes_speciaux/index.yaml`.
+* Détails :
+  - **Verse la retenue pour pension des députés et la contribution de l'État** de l'article 5 de la loi n° 85-16, assises sur les indemnités parlementaires permanentes : deux feuilles, `retenue` et `contribution_etat`. Paramètres seulement : aucune formule ne les lit.
+  - **Textes et dates.** Loi n° 85-16 (JORT n° 21 du 15 mars 1985, p. 376), sans clause d'effet, exécutoire un jour franc après sa publication, le 17/03/1985 : 10 % et 15 %. Loi n° 94-71 (p. 1086) : retenue 11 % au 01/07/1994, contribution 16,2 % au 01/07/1995. Loi de finances pour 2002, article 85 (p. 4260) : retenue 11,5, 11,75 et 12 % aux 1ers juillet 2002 à 2004 ; contribution 16,7, 16,95, 17,2, 17,45 et 17,7 % aux 1ers juillet 2002 à 2006. Loi n° 2007-43, article premier (p. 2198) : contribution 18,3, 18,9 et 19,5 % aux 1ers janvier 2007 à 2009 ; retenue 12,4, 12,8 et 13,2 % aux 1ers juillet 2007 à 2009. Loi de finances pour 2026, articles 102 et 103 (édition arabe, p. 4257) : retenue 13,25 % et contribution 20,5 % au 13/03/2023, date énoncée par l'article 103. Toutes les dates postérieures à 1985 sont énoncées par les textes ; les taux intermédiaires sont le cumul des relèvements.
+  - **Écarts avec le nœud `gouvernement_deputes_gouverneurs`**, qui n'est pas chargé (fichiers sans extension, #473) et qui n'est pas modifié ici : la série des députés commence au 17/03/1985, non au 01/04/1985 ; les trois paliers employeur de la loi n° 2007-43 sont au 1er janvier (2007, 2008, 2009), non au 1er juillet, et le palier de 2007 y manquait ; elle ne porte ni le point du décret-loi n° 2011-48, qui ne nomme pas la loi n° 85-16, ni les relèvements de la loi n° 2019-37 ; elle porte l'état de 2023.
+  - **Série incomplète** : états antérieurs à 1985 non versés (décret-loi n° 74-22 du 2 novembre 1974 et loi n° 77-57 du 3 août 1977, abrogés par l'article 14 de la loi n° 85-16).
+  - Le test `tests/test_regime_retraite_deputes.py` couvre les deux feuilles : valeur la veille et le jour de chaque date, références, unité, note de série incomplète. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
 ## 0.150 - [#510](https://github.com/openfisca/openfisca-tunisia/pull/510)
 
 * Évolution du système socio-fiscal.
