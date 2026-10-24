@@ -1,0 +1,21 @@
+description: Limite d'âge des membres du Tribunal administratif
+values:
+  1973-10-07:
+    value: 65
+metadata:
+  unit: year
+  short_label: Tribunal administratif
+  reference:
+    1973-10-07:
+    - title: "Décret n° 73-459 du 3 octobre 1973, fixant les limites d'âge des magistrats du tribunal administratif, article premier"
+      href: https://www.pist.tn/jort/1973/1973F/Jo03773.pdf
+      note: "JORT n° 37, fascicule daté des 2 et 5 octobre 1973, p. 1532. Article premier, lu à l'image : par dérogation à l'article premier du décret n° 59-78 du 17 mars 1959, la limite d'âge est portée à soixante-cinq ans pour le premier président, les présidents de chambre, le commissaire d'État et les conseillers du Tribunal administratif. Le décret ne fixe pas de date d'effet ; le décret étant du 3 octobre, la publication retenue est celle du 5 octobre 1973, et il devient exécutoire un jour franc après, soit le 7 octobre 1973 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956)."
+documentation: |-
+  Avant le 7 octobre 1973, les membres du Tribunal administratif relèvent de la limite d'âge
+  commune des fonctionnaires civils, soixante ans (décret n° 59-78, article premier).
+
+  Le maintien de cette limite après la loi n° 85-12 et la loi n° 2019-37 n'est pas établi : la
+  loi organique n° 72-67 relative au Tribunal administratif et ses modificatifs ne sont pas lus
+  sur ce point. La loi organique n° 2016-34, article 78, maintient la loi organique n° 72-67 en
+  application ; son article 53, qui confie aux trois conseils de la magistrature les
+  demandes de mise à la retraite anticipée, ne fixe ni âge ni durée.

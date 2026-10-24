@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.151 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 07/10/1973 ; paramètres nouveaux.
+* Zones impactées : `parameters/retraite/cnrps/age_legal/civil` (deux feuilles nouvelles).
+* Détails :
+  - **Verse la limite d'âge des membres du Tribunal administratif et de la Cour des comptes**, 65 ans, par dérogation au décret n° 59-78 qui fixe 60 ans : `magistrats_tribunal_administratif` et `magistrats_cour_des_comptes`. Paramètres seulement : aucune formule ne les lit.
+  - **Textes et dates.** Décret n° 73-459 du 3 octobre 1973, article premier (JORT n° 37, fascicule des 2 et 5 octobre 1973, p. 1532) : premier président, présidents de chambre, commissaire d'État et conseillers du Tribunal administratif, au 07/10/1973. Décret n° 74-820 du 28 août 1974, article premier (JORT n° 55, fascicule du 30 août au 3 septembre 1974, p. 1919) : premier président, présidents de chambre, commissaire du gouvernement et conseillers de la Cour des comptes, au 01/09/1974. Aucun ne fixe de date d'effet : jour franc après la publication (le 5 octobre 1973, le décret étant du 3 ; le 30 août 1974, premier jour du fascicule).
+  - Pas de note de série incomplète : avant ces dates s'applique la limite commune du cadre civil, et non un état antérieur de ces paramètres. La survie de ces limites après les lois n° 85-12 et 2019-37 n'est pas établie ; la documentation de chaque feuille le dit.
+  - La loi organique n° 2016-34 (article 53) ne fixe ni âge ni durée de retraite anticipée : rien n'est versé à son titre.
+  - Le test `tests_pension/formulas/test_limite_age_magistrats.py` éprouve la valeur le jour même, l'absence de valeur la veille, la référence, l'unité et l'ordre du nœud. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.150 - [#511](https://github.com/openfisca/openfisca-tunisia/pull/511)
 
 * Évolution du système socio-fiscal.
