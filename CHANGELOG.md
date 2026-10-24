@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.150 - [#510](https://github.com/openfisca/openfisca-tunisia/pull/510)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 17/05/1993 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_enregistrement` (nœuds `droit_fixe`, `minimum_perception`, `fonds_commerce`, `marches`), `parameters/fiscalite_indirecte/droit_timbre` et `parameters/fiscalite_indirecte/taxe_unique_assurances` (nouveaux), `units.yaml`.
+* Détails :
+  - **Droit de timbre, droits d'enregistrement hors mutations et taxe unique sur les assurances** : 26 feuilles dans 12 nœuds. Paramètres seulement : rien ne les lit.
+  - **Enregistrement** : droit fixe par page (10 dinars au code de 1993, 15 au 01/01/2005, 20 au 25/05/2012, 25 au 01/01/2018, 30 au 01/01/2022) et droit des actes sans tarif (5 → 10 dinars au 01/01/2002, puis aligné) ; minimum de perception des actes et mutations (5, 10, 15, 20 dinars, puis 40, minimum unique, au 01/01/2017) et des jugements par juridiction (5/10/20 dinars en 1993 jusqu'à 20/40/75 au 25/05/2012) ; fonds de commerce, cession 2,5 % et location 1 % ; marchés et concessions, 2,7 % en 1993, droit fixe par page du 01/01/1994 au 31/12/2012 (10, 15, puis 20 dinars), plafonné à 2 % de leur valeur à partir de 2005, 0,5 % depuis le 01/01/2013.
+  - **Timbre** : factures (0,200 dinar au 01/01/2004 jusqu'à 1 dinar au 01/01/2023) et factures des grandes surfaces de 50 à 100 dinars et de plus de 100 dinars (1,500 et 2 dinars au 01/01/2026) ; téléphonie, par carte (2006-2012), par tranche de 5 dinars (2007-2017), par dinar (0,080 au 25/05/2012, 0,100 au 27/08/2014, 0,140 au 01/01/2018), supplément de 0,100 dinar par recharge de 5 dinars ou plus au 01/01/2026 ; passeport (21 dinars en 1993 jusqu'à 80 au 01/01/2013) et passeport des étudiants (7 → 25 dinars).
+  - **Taxe unique sur les assurances** : 5 % et 10 % au 01/01/1997, 6 % et 12 % au 01/01/2018.
+  - **Dates.** Code des droits d'enregistrement et de timbre applicable à compter de la promulgation de la loi n° 93-53, le 17/05/1993 (article 2). Lois de finances : 1er janvier, par leur article d'application. Loi de finances complémentaire pour 2012 : déposée le 19/05/2012, sans clause d'effet ; date retenue, le 25/05/2012, celle des notes communes n° 14/2012, 16/2012 et 25/2012, déjà employée par l'arbre pour d'autres articles de cette loi. Loi de finances complémentaire pour 2014 : déposée le 22/08/2014, exécutoire le 27/08/2014 (loi n° 93-64, article 2).
+  - **Séries incomplètes** : états antérieurs à 1993 (droit fixe, minimum de perception, fonds de commerce, taux des marchés, passeport) et à 1997 (taxe unique sur les assurances, qui existe depuis au moins le décret n° 69-114) non versés.
+  - **Unités nouvelles** : `currency/page` et `currency/tranche`.
+  - Le test `tests/test_droit_timbre_enregistrement.py` couvre les 26 feuilles : valeur la veille et le jour de chaque date, référence, unité, note des séries incomplètes, forme des sous-arbres. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
 ## 0.149 - [#509](https://github.com/openfisca/openfisca-tunisia/pull/509)
 
 * Évolution du système socio-fiscal. **Rupture d'interface** : une variable d'entrée et une feuille sont supprimées.

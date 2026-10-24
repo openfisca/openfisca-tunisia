@@ -1,0 +1,60 @@
+description: Droit fixe d'enregistrement par page des marchés et concessions
+values:
+  '1994-01-01':
+    value: 10
+  '2005-01-01':
+    value: 15
+  '2012-05-25':
+    value: 20
+  '2013-01-01':
+    value: null
+metadata:
+  unit: currency/page
+  short_label: Droit fixe par page
+  reference:
+    '1994-01-01':
+    - title: Loi n° 93-125 du 27 décembre 1993, portant loi de finances pour la gestion 1994, articles
+        57 et 77
+      href: https://www.pist.tn/jort/1993/1993F/Jo10093.pdf
+      note: 'JORT n° 100 du 31 décembre 1993, p. 2200. Rubrique « Enregistrement des marchés au droit
+        fixe ». Article 57 : « adjudications et marchés pour construction, réparation, entretien, approvisionnement,
+        fourniture et tous autres services » au droit fixe de 10 dinars par page (article 23, numéro 13
+        du code). Article 77 (p. 2202) : « Les dispositions de la présente loi sont applicables à compter
+        du 1er janvier 1994 ». Édition française sans couche texte, lue à l''image.'
+    '2005-01-01':
+    - title: Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, articles 54
+        et 89
+      href: https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf
+      note: 'JORT n° 105 du 31 décembre 2004, p. 3441. Article 54 : le numéro 13 de l''article 23 du code
+        est récrit : « Les concessions et marchés. 13- Les concessions et marchés 15 par page ». Article
+        89 : application à compter du 1er janvier 2005. Articles 54, 55 et 57 lus à l''image.'
+    '2012-05-25':
+    - title: Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article
+        43
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: 'JORT n° 39 du 18 mai 2012, p. 929. Rubrique « Mise à jour du tarif du droit fixe d''enregistrement
+        et du montant de la redevance de recherche ». Article 43 : « Est relevé de 15 dinars à 20 dinars,
+        le tarif du droit fixe d''enregistrement prévu par les numéros de 1 à 13, de 16 à 18 ter, de 22
+        à 25 et 28 du tarif annexé à l''article 23 du code des droits d''enregistrement et de timbre ».
+        Le numéro 13 est celui des marchés et concessions depuis la loi de finances pour 1994 (article
+        57). Date d''effet : la loi n''en fixe pas. Le fascicule porte la mention « déposé au siège du
+        gouvernorat de Tunis le 19 mai 2012 » ; les notes communes n° 14/2012, 16/2012 et 25/2012 fixent
+        l''entrée en vigueur de la loi au 25 mai 2012, en application de la loi n° 93-64 (article 2).
+        Compté cinq jours après le dépôt, jour du dépôt non compté, le délai donnerait le 24 mai 2012
+        ; la date retenue est celle de l''administration fiscale, déjà employée pour les autres articles
+        de cette loi. Édition française lue sur la couche texte.'
+    '2013-01-01':
+    - title: Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 54
+        et 79
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: 'JORT n° 1 du 1er janvier 2013, p. 16. Article 54 : « Sont abrogées : 1- les dispositions
+        du numéro 13 du tarif prévu par l''article 23 du code des droits d''enregistrement et de timbre
+        ». Article 79 (p. 28) : application à compter du 1er janvier 2013. Édition française lue sur la
+        couche texte.'
+documentation: |
+  Droit fixe des marchés et concessions, du 1er janvier 1994 au 31 décembre 2012. Au code de 1993, les
+  marchés passés par des assujettis à la taxe sur la valeur ajoutée, les marchés de sous-traitance et
+  ceux des collectivités locales sont déjà au droit fixe général (article 23, numéros 13 à 15) ; la
+  loi de finances pour 1994 y soumet tous les marchés. Les marchés relèvent alors du numéro 13 de
+  l'article 23 du code, que l'article 43 de la loi de finances complémentaire pour 2012 range parmi
+  les numéros portés à 20 dinars.

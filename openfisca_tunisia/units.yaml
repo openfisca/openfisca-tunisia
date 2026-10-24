@@ -69,6 +69,16 @@
     one: Dinar pour une unité
     other: Dinars pour une unité
   short_label: DT/unité
+- name: currency/page
+  label:
+    one: Dinar par page
+    other: Dinars par page
+  short_label: DT/page
+- name: currency/tranche
+  label:
+    one: Dinar par tranche
+    other: Dinars par tranche
+  short_label: DT/tranche
 - name: day
   label:
     one: jour
