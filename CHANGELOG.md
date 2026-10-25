@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.154 - [#514](https://github.com/openfisca/openfisca-tunisia/pull/514)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 23/09/1990 ; paramètre nouveau.
+* Zones impactées : `parameters/retraite/rsna/survivants/age_remariage_suspensif` (nouvelle feuille), `rsna/survivants/index.yaml`.
+* Détails :
+  - **Verse l'âge avant lequel le remariage suspend la pension du conjoint survivant du RSNA**, 55 ans, au 23/09/1990 : article 32 nouveau du décret n° 74-499, rédaction du décret n° 90-1455, article premier (JORT n° 60 du 21 septembre 1990, p. 1358, lu à l'image). Paramètre seulement : aucune formule ne le lit.
+  - **Date.** Le décret ne porte pas de date d'effet ; il devient exécutoire un jour franc après la publication, le 23/09/1990.
+  - **Avant 1990, pas d'âge.** L'article 32 d'origine (JORT n° 30 de 1974, p. 917, effet au 01/01/1974 par l'article 64) supprime la pension de réversion au premier jour du trimestre civil suivant le remariage, quel que soit l'âge : aucune valeur n'est versée pour cette période, qui est décrite dans la documentation, comme pour les feuilles voisines du RSA, du RACI et du régime complémentaire.
+  - **Corrige la documentation du nœud `rsna/survivants`**, qui résumait le décret n° 90-1455 par le seul rétablissement de la pension au décès du nouveau conjoint et omettait la suspension avant 55 ans ; le rétablissement revalorisé et l'interdiction du cumul de pensions de conjoint survivant au titre de mariages successifs y sont décrits.
+  - Le test `tests_pension/formulas/test_rsna_remariage.py` éprouve la valeur le jour même, l'absence de valeur la veille, la référence et l'unité. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
 ## 0.153 - [#513](https://github.com/openfisca/openfisca-tunisia/pull/513)
 
 * Évolution du système socio-fiscal.
