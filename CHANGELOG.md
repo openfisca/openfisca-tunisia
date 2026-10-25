@@ -1,5 +1,18 @@
 # Changelog
 
+### 0.154.1 - [#515](https://github.com/openfisca/openfisca-tunisia/pull/515)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974 ; seulement pour un conjoint survivant déclaré remarié.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants.py` (`rsna_taux_reversion`).
+* Détails :
+  - **Le remariage du conjoint survivant agit désormais sur la pension de réversion du RSNA**, comme sur celle du RSA. `rsna_taux_reversion` lit les entrées existantes `conjoint_survivant_remarie` et `age_remariage_conjoint_survivant` ; jusqu'ici, un conjoint remarié gardait sa pension.
+  - **Du 01/01/1974 au 22/09/1990**, le remariage supprime la pension, quel que soit l'âge : article 32 du décret n° 74-499 (JORT n° 30 de 1974, p. 917), en vigueur le 01/01/1974 par l'article 64 (p. 919). La formule du 01/01/1974 et celle du 19/02/1981 (majoration du décret n° 81-188) reçoivent cette condition ; la majoration suppose un conjoint admissible.
+  - **Depuis le 23/09/1990**, le remariage ne suspend la pension que s'il intervient avant 55 ans (`retraite.rsna.survivants.age_remariage_suspensif`) : article 32 nouveau, décret n° 90-1455, article premier (JORT n° 60 du 21 septembre 1990, p. 1358), exécutoire un jour franc après la publication. Nouvelle formule datée du 23/09/1990 ; la majoration jusqu'à 75 % y est reprise sans changement, par une fonction commune aux deux formules.
+  - Sans pension de conjoint, le plafond de l'article 38 ne réduit plus les pensions d'orphelins : un orphelin d'un conjoint remarié reçoit son taux entier.
+  - Aucun résultat ne change pour un conjoint non remarié, valeur par défaut. Aucun test existant ne change. La documentation de `conjoint_survivant_remarie` décrit désormais les deux régimes.
+  - Dix-neuf cas nouveaux dans `tests_pension/formulas/rsna/survivants.yaml` : non remarié, remarié avant 55 ans, à 55 ans exactement, après 55 ans, avec et sans orphelin, en décembre 1973, janvier 1974, février et mars 1981, septembre et octobre 1990, et 2024. Une période mensuelle se lit au premier du mois : la borne du 23/09/1990 s'éprouve entre septembre et octobre 1990.
+
 ## 0.154 - [#514](https://github.com/openfisca/openfisca-tunisia/pull/514)
 
 * Évolution du système socio-fiscal.
