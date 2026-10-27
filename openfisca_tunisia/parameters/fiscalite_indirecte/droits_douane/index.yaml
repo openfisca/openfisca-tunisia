@@ -1,0 +1,17 @@
+description: Droits de douane
+metadata:
+  short_label: Droits de douane
+  order:
+  - redevance_prestations_douanieres
+  - minimum_perception
+  - taxe_scanner
+documentation: 'Prélèvements perçus en douane dont le montant ou le taux est fixé par la loi de finances
+  et dont les états successifs sont établis : la redevance de prestations douanières, le minimum de perception
+  des droits de douane en tarif minimum ad valorem et la taxe de contrôle par scanner. Ne sont pas versés
+  ici : les taux des droits de douane par position du tarif, leurs tables de correspondance (1987, 1988,
+  1994), les bandes du tarif de 2004 à 2022 et le calendrier de l''accord d''association avec l''Union
+  européenne, qui restent au relevé du chapitre « Les droits de douane » du précis ; la TVA, le droit
+  de consommation et le FODEC perçus en douane, qui relèvent de leur propre nœud. Aucune variable ne calcule
+  encore ces droits : le nœud ne porte que les paramètres.
+
+  '

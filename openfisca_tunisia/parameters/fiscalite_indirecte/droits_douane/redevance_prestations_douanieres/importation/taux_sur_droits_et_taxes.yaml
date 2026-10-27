@@ -1,0 +1,50 @@
+description: Taux de la redevance de prestations douanières à l'importation, sur le montant des droits
+  et taxes liquidés en douane
+values:
+  '1988-01-02':
+    value: 0.015
+  '1994-01-01':
+    value: 0.02
+  '1998-01-01':
+    value: 0.03
+metadata:
+  unit: /1
+  short_label: Taux à l'importation
+  notes:
+    '1988-01-02':
+    - note: 'Dès 1988, l''article 51 retient pour l''importation le montant des droits et taxes liquidés
+        en douane, à 1,5 %, et la valeur en douane seulement pour les exportations visées. Le relevé du
+        précis décrivait l''état de 1988 comme un taux de 1,5 % sur la valeur en douane pour toutes les
+        déclarations : la lecture de l''article à l''image contredit cette description. Aucun texte postérieur
+        à 1998 ne modifie le taux de 3 % dans le relevé du précis.'
+  reference:
+    '1988-01-02':
+    - title: Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988, article 51
+      href: https://www.pist.tn/jort/1987/1987F/Jo09187.pdf
+      note: 'JORT n° 91 des 29-31 décembre 1987, p. 1632. Article 51 : « Une redevance de prestation douanière
+        est perçue sur toutes les déclarations en détail des marchandises quelque soient leur origine,
+        leur provenance et leur destination, au taux de 1,5 % : 1) de la valeur en douane [...] sur les
+        déclarations en détail d''exportation en simple sortie des produits repris au tableau ci-après
+        ; 2) du montant des droits et taxes liquidés en douane avec un minimum de perception de un dinar
+        (1d) par article de déclaration, sur toutes les autres déclarations. » Date d''effet : la loi
+        n''a pas de clause générale d''application ; avant 1993, elle devient exécutoire un jour franc
+        après la publication au Journal officiel, soit le 2 janvier 1988. Édition française sans couche
+        texte, lue à l''image.'
+    '1994-01-01':
+    - title: Loi n° 93-125 du 27 décembre 1993, portant loi de finances pour la gestion 1994, article
+        75
+      href: https://www.pist.tn/jort/1993/1993F/Jo10093.pdf
+      note: 'JORT n° 100 du 31 décembre 1993, p. 2202. Article 75 : « 2 % du montant des droits et taxes
+        liquidés en douane sur toutes les déclarations en douane à l''importation avec un minimum de perception
+        de cinq dinars par article » ; 10 % du produit affectés aux dépenses spécifiques des agents des
+        douanes. L''article 43 de la loi de finances pour 1998 (JORT n° 104, p. 2439) rappelle que le
+        taux a été modifié « notamment » par l''article 75 de cette loi. Date d''effet : clause de l''article
+        77, le 1er janvier 1994. Édition française sans couche texte, lue à l''image.'
+    '1998-01-01':
+    - title: Loi n° 97-88 du 29 décembre 1997, portant loi de finances pour la gestion 1998, article 43
+      href: https://www.pist.tn/jort/1997/1997F/Jo10497.pdf
+      note: 'JORT n° 104 des 30-31 décembre 1997, p. 2439. Article 43, « Relèvement du taux de la redevance
+        de prestations douanières à l''importation » : le taux est « relevé à 3 % du montant des droits
+        et taxes liquidés en douane sur toutes les déclarations en douane à l''importation avec un minimum
+        de perception de cinq dinars par article de déclaration ». Date d''effet : date d''application
+        de la loi de finances, le 1er janvier. Édition française lue sur la couche texte.'
