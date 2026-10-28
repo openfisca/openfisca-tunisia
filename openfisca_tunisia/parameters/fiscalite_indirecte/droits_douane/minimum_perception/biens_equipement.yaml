@@ -1,0 +1,36 @@
+description: Taux en tarif minimum applicable aux biens d'équipement sans similaire produit en Tunisie
+  (minimum de perception des biens d'équipement)
+values:
+  '1987-01-02':
+    value: 0.15
+  '1988-01-02':
+    value: 0.22
+metadata:
+  unit: /1
+  short_label: Biens d'équipement
+  notes:
+    '1987-01-02':
+    - note: 'Série incomplète : le relevé du précis ne porte aucun état après le 2 janvier 1988. En 1987
+        le texte fixe un plafond (« réduits à 15 % ») pour les biens d''équipement sans similaire local
+        ; en 1988 il parle d''un « minimum de perception » porté à 22 %. Le sens exact (plafond ou plancher,
+        liste des biens) reste à établir avant tout calcul.'
+  reference:
+    '1987-01-02':
+    - title: Loi n° 86-106 du 31 décembre 1986, portant loi de finances pour la gestion 1987, article
+        26
+      href: https://www.pist.tn/jort/1986/1986F/Jo07886.pdf
+      note: 'JORT n° 78 des 30-31 décembre 1986, p. 1612. Article 26 : « Les taux de droit de douane en
+        tarif minimum supérieurs à 15 % applicables aux biens d''équipement sont réduits à 15 % en tarif
+        minimum lorsque ces biens n''ont pas leurs similaires produits en Tunisie et figurent sur la liste
+        établie à cet effet par arrêté conjoint ». Le texte écrit un plafond de 15 %, non un plancher
+        ; il n''emploie pas l''expression « minimum de perception ». Date d''effet : la loi n''a pas de
+        clause générale d''application ; avant 1993, elle devient exécutoire un jour franc après la publication
+        au Journal officiel, soit le 2 janvier 1987. Édition française sans couche texte, lue à l''image.'
+    '1988-01-02':
+    - title: Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988, article 54
+      href: https://www.pist.tn/jort/1987/1987F/Jo09187.pdf
+      note: 'JORT n° 91 des 29-31 décembre 1987, p. 1633. Article 54 : « Est porté à 22 % le minimum de
+        perception des droits de douane en tarif-minimum ad-valorem à l''importation des biens d''équipement
+        fixé à 15 % par l''article 26 de la loi n° 86-106 ». Date d''effet : la loi n''a pas de clause
+        générale d''application ; avant 1993, elle devient exécutoire un jour franc après la publication
+        au Journal officiel, soit le 2 janvier 1988. Édition française sans couche texte, lue à l''image.'

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.156 - [#516](https://github.com/openfisca/openfisca-tunisia/pull/516)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 02/01/1987 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_douane` (nouveau nœud), `fiscalite_indirecte/index.yaml`.
+* Détails :
+  - **Verse la redevance de prestations douanières**, de l'article 51 de la loi n° 87-83 (loi de finances pour 1988) et de ses modifications de 1994, 1998, 1999, 2013, 2014 et 2024 : taux sur le montant des droits et taxes liquidés à l'importation (1,5 % au 02/01/1988, 2 % au 01/01/1994, 3 % au 01/01/1998), minimum par article de déclaration à l'importation (1, 5, 10, 20 dinars) et à l'exportation (1 dinar), taux à l'exportation (1,5 % de la valeur en douane), redevance de 100 dinars par déclaration de transit terrestre (01/01/2014).
+  - **Verse le minimum de perception en tarif minimum ad valorem** (10 % au 02/01/1987, 15 % au 02/01/1988) et le taux des biens d'équipement (15 % puis 22 %). Pour ces derniers, le texte de 1987 fixe un plafond et celui de 1988 un « minimum de perception » : la note de la feuille le dit, le sens est à établir avant tout calcul.
+  - **Verse la taxe de contrôle par scanner** de l'article 42 de la loi de finances pour 2018 : 100 dinars par conteneur de 20 pieds au plus, 200 dinars pour les autres unités de charge, au 01/01/2018.
+  - **Dates.** Les lois de finances de 1987 et de 1988 n'ont pas de clause générale d'application : exécutoires un jour franc après la publication du 31 décembre, soit le 02/01. Depuis 1994, la date d'application de la loi de finances est le 1er janvier.
+  - **Correction de lecture.** Dès 1988, l'article 51 assoit la redevance à l'importation sur le montant des droits et taxes liquidés (à 1,5 %), la valeur en douane ne valant que pour les exportations d'une liste de produits. La feuille `importation/taux_sur_droits_et_taxes` suit le fascicule lu à l'image.
+  - **Pas de calcul.** Aucune variable ne calcule les droits de douane : le nœud ne porte que les paramètres. Les taux par position du tarif, les tables de correspondance de 1987, 1988 et 1994, les bandes de 2004 à 2022 et le calendrier de l'accord d'association avec l'Union européenne restent au relevé du chapitre « Les droits de douane » du précis.
+  - Le test `tests/test_droits_douane.py` éprouve, feuille par feuille, la valeur la veille et le jour de chaque date, le début de série, la référence (article, fascicule, page, lien), les notes, les unités et la forme du sous-arbre.
+
 ## 0.154 - [#514](https://github.com/openfisca/openfisca-tunisia/pull/514)
 
 * Évolution du système socio-fiscal.

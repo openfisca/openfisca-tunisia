@@ -1,0 +1,36 @@
+description: Taux de la redevance de prestations douanières à l'exportation, sur la valeur en douane
+values:
+  '1988-01-02':
+    value: 0.015
+  '1999-01-01':
+    value: 0.015
+metadata:
+  unit: /1
+  short_label: Taux à l'exportation
+  notes:
+    '1988-01-02':
+    - note: 'Le champ des produits change le 1er janvier 1999 (une liste, puis le seul pétrole brut).
+        Le texte de 1994 (art. 75) ne vise que les déclarations d''importation et ne dit rien de l''exportation
+        ; l''intitulé de l''article 32 de la loi de finances pour 1999 (suppression pour « certains produits
+        à l''exportation ») suppose que la redevance à l''exportation ait subsisté de 1988 à 1998 : le
+        taux est donc tenu à 1,5 % sur la période, sans texte qui l''écrive en 1994.'
+  reference:
+    '1988-01-02':
+    - title: Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988, article 51
+      href: https://www.pist.tn/jort/1987/1987F/Jo09187.pdf
+      note: 'JORT n° 91 des 29-31 décembre 1987, p. 1632. Article 51, 1) : 1,5 % « de la valeur en douane
+        [...] sur les déclarations en détail d''exportation en simple sortie des produits repris au tableau
+        ci-après » (graisses et huiles, boissons, tabacs, phosphates, pétrole brut, cuirs, fonte, fer
+        et acier, cuivre, aluminium, matériels de forage). Date d''effet : la loi n''a pas de clause générale
+        d''application ; avant 1993, elle devient exécutoire un jour franc après la publication au Journal
+        officiel, soit le 2 janvier 1988.'
+    '1999-01-01':
+    - title: Loi n° 98-111 du 28 décembre 1998, portant loi de finances pour l'année 1999, article 32
+      href: https://www.pist.tn/jort/1998/1998F/Jo10498.pdf
+      note: 'JORT n° 104 des 29-31 décembre 1998, p. 2503. Article 32, « Suppression de la redevance de
+        prestations douanières applicable à certains produits à l''exportation » : article 51 (nouveau),
+        « 1,5 % de la valeur en douane à l''exportation sur les huiles brutes de pétrole ou de minéraux
+        bitumineux relevant du numéro de position 27-09 du tarif des droits de douane avec un minimum
+        de perception de un dinar par article de déclaration ». Le taux ne change pas ; seul le champ
+        se réduit au pétrole brut. Date d''effet : date d''application de la loi de finances, le 1er janvier.
+        Édition française lue sur la couche texte.'
