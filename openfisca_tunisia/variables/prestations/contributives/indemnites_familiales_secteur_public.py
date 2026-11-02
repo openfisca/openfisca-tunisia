@@ -1,10 +1,10 @@
 """Indemnité familiale et indemnité pour salaire unique du secteur public : qui est servi.
 
 Source : circulaire du Premier ministre n° 42 du 25 octobre 1996, « la gestion des indemnités
-à caractère familial dans le secteur public », JORT n° 89 du 5 novembre 1996 (p. 2349-2352) ;
+à caractère familial dans le secteur public », JORT n° 89 du 5 novembre 1996 (p. 2534-2552 de l'édition arabe, texte authentique) ;
 annexe 2, « Les indemnités familiales au titre des enfants de l'agent public, ou de ses
-enfants adoptés, et l'indemnité pour salaire unique », JORT n° 94 du 22 novembre 1996
-(p. 2353-2362, traduction française). La circulaire rappelle que le décret du 22 novembre 1918
+enfants adoptés, et l'indemnité pour salaire unique » (p. 2537-2550 de l'édition arabe ;
+JORT n° 94 du 22 novembre 1996, p. 2353-2362, traduction française). La circulaire rappelle que le décret du 22 novembre 1918
 règle l'indemnité familiale et le décret du 24 février 1944 l'indemnité pour salaire unique.
 
 L'annexe 2 range quatre-vingt-un cas, codés de 1 à 81, en sept situations : I parents en vie
@@ -23,13 +23,16 @@ Modèle. Les deux parents peuvent ne pas appartenir au même ménage que l'enfan
 décès, tutelle) : la situation se décrit donc sur l'enfant, entité `Individu`, par des entrées.
 Chaque enfant a son propre résultat, ce qui permet la garde partagée enfant par enfant.
 
-Cas que l'annexe ne tranche pas, laissés sans règle (le résultat est `hors_annexe`) :
+Cas lus dans l'édition arabe (JORT n° 89, p. 2540 et 2542), que la traduction française
+laissait ambigus :
 
-- cas 34 (II-A) : l'indemnité est « servie par la caisse de retraite » sans que le
-  bénéficiaire soit nommé ;
-- cas 42 et 43 (III-A et III-B) : les deux lignes ont la même description du père et de la
-  mère et des résultats différents pour l'indemnité pour salaire unique (servie au cas 42,
-  non servie au cas 43) ; la description de la mère y manque.
+- cas 42 et 43 (III-A et III-B) : le père, agent public non remarié, ne perçoit pas la pension
+  de réversion de la mère décédée au cas 42 (indemnité pour salaire unique servie au père) et
+  la perçoit au cas 43 (non servie) ; la traduction française disait « ne bénéficiant pas » aux
+  deux lignes. La mère y est seulement « décédée » : sa position est indifférente.
+- cas 34 (II-A) : l'indemnité est « servie par la caisse de retraite » dans les deux éditions,
+  sans nommer le bénéficiaire. Le modèle retient la mère (déduit : elle perçoit déjà la
+  pension de réversion et les indemnités familiales de la caisse) ; le texte ne le dit pas.
 
 Les combinaisons absentes de l'annexe donnent aussi `hors_annexe` : l'annexe ne dit rien
 des parents remariés dans les situations II à VI, ni des enfants d'un premier mariage hors
@@ -66,7 +69,7 @@ class FiliationEnfantSecteurPublic(Enum):
 class StatutParentSecteurPublic(Enum):
     """Position d'un parent dans l'annexe 2 (pour un parent décédé, sa position de son vivant)."""
 
-    __order__ = "non_renseigne agent_public activite_liberale salarie salarie_beneficiaire_indemnites_familiales salarie_non_beneficiaire_indemnites_familiales sans_activite retraite retraite_regime_ouvrant_droit retraite_regime_sans_droit agent_public_reversion_et_indemnites_familiales agent_public_reversion_sans_indemnites_familiales agent_public_sans_reversion_ni_indemnites_familiales"  # noqa: E501
+    __order__ = "non_renseigne agent_public activite_liberale salarie salarie_beneficiaire_indemnites_familiales salarie_non_beneficiaire_indemnites_familiales sans_activite retraite retraite_regime_ouvrant_droit retraite_regime_sans_droit agent_public_reversion_et_indemnites_familiales agent_public_reversion_sans_indemnites_familiales agent_public_sans_reversion_ni_indemnites_familiales agent_public_sans_reversion agent_public_avec_reversion"  # noqa: E501
     non_renseigne = "Non renseigné"
     agent_public = "Agent public"
     activite_liberale = "Exerce une activité professionnelle libérale"
@@ -80,6 +83,8 @@ class StatutParentSecteurPublic(Enum):
     agent_public_reversion_et_indemnites_familiales = "Agent public bénéficiant de la pension de réversion et des indemnités familiales"  # noqa: E501
     agent_public_reversion_sans_indemnites_familiales = "Agent public bénéficiant de la pension de réversion et non bénéficiaire des indemnités familiales"  # noqa: E501
     agent_public_sans_reversion_ni_indemnites_familiales = "Agent public ne bénéficiant ni des indemnités familiales ni de la pension de réversion"  # noqa: E501
+    agent_public_sans_reversion = "Agent public non remarié ne bénéficiant pas de la pension de réversion (mère décédée)"  # noqa: E501
+    agent_public_avec_reversion = "Agent public non remarié bénéficiant de la pension de réversion (mère décédée)"  # noqa: E501
 
 
 class StatutTuteurSecteurPublic(Enum):
@@ -142,7 +147,8 @@ _NOMS_PAYEURS = {
 }
 
 # (code, cas, situation, père, mère, filiation, tuteur, (IF, payeur), (SU, payeur))
-# Les cas 34, 42 et 43, ambigus, n'y figurent pas (voir la docstring du module).
+# Cas 34, 42 et 43 : lus dans l'édition arabe (voir la docstring du module). Une position de
+# parent à None vaut « quelle qu'elle soit » (mère décédée des cas 42 et 43).
 _I = "parents_en_vie_non_divorces"
 _II = "pere_decede"
 _III = "mere_decedee"
@@ -163,6 +169,8 @@ _retko = "retraite_regime_sans_droit"
 _rev_if = "agent_public_reversion_et_indemnites_familiales"
 _rev = "agent_public_reversion_sans_indemnites_familiales"
 _norev = "agent_public_sans_reversion_ni_indemnites_familiales"
+_pere_sans_rev = "agent_public_sans_reversion"
+_pere_avec_rev = "agent_public_avec_reversion"
 _N = ("N", None)
 _tut = {
     "celibataire": "celibataire",
@@ -205,7 +213,9 @@ CAS_ANNEXE_2 = [
     (31, "I-K", _I, _retko, _ap, _c, None, ("M", None), _N),
     (32, "I-K", _I, _retko, _ap, _p, None, _N, _N),
     (33, "I-K", _I, _retko, _ap, _m, None, ("A", None), _N),
-    # II. Père décédé, mère non remariée (p. 2355-2356) ; le cas 34 est ambigu
+    # II. Père décédé, mère non remariée (p. 2355-2356)
+    # Cas 34 : bénéficiaire non nommé, déduit : la mère (édition arabe, p. 2540).
+    (34, "II-A", _II, _ap, _rev_if, _c, None, ("M", "R"), _N),
     (35, "II-B", _II, _lib, _ap, _c, None, ("M", None), ("M", None)),
     (36, "II-C", _II, _sal, _rev_if, _c, None, ("M", "C"), _N),
     (37, "II-D", _II, _sal, _rev, _c, None, ("M", None), _N),
@@ -213,7 +223,9 @@ CAS_ANNEXE_2 = [
     (39, "II-F", _II, _sans, _ap, _c, None, ("M", None), ("M", None)),
     (40, "II-G", _II, _ret, _rev_if, _c, None, ("M", "R"), _N),
     (41, "II-H", _II, _ret, _rev, _c, None, ("M", None), _N),
-    # III. Mère décédée, père non remarié (p. 2356) ; les cas 42 et 43 sont ambigus
+    # III. Mère décédée, père non remarié (p. 2356)
+    (42, "III-A", _III, _pere_sans_rev, None, _c, None, ("P", None), ("P", None)),
+    (43, "III-B", _III, _pere_avec_rev, None, _c, None, ("P", None), _N),
     (44, "III-C", _III, _lib, _ap, _c, None, _N, _N),
     (45, "III-D", _III, _sal, _ap, _c, None, _N, _N),
     (46, "III-E", _III, _sans, _ap, _c, None, _N, _N),
@@ -373,12 +385,11 @@ class pf_public_cas_annexe_2(Variable):
         for numero, _cas, sit, st_pere, st_mere, fil, st_tuteur, _si, _su in CAS_ANNEXE_2:
             masque = situation == _S[sit]
             if st_tuteur is None:
-                masque = (
-                    masque
-                    * (pere == _P[st_pere])
-                    * (mere == _P[st_mere])
-                    * (filiation == _F[fil])
-                )
+                masque = masque * (filiation == _F[fil])
+                if st_pere is not None:
+                    masque = masque * (pere == _P[st_pere])
+                if st_mere is not None:
+                    masque = masque * (mere == _P[st_mere])
             else:
                 masque = masque * (tuteur == StatutTuteurSecteurPublic[st_tuteur])
             code = where(masque, numero, code)

@@ -1,15 +1,15 @@
 # Indemnité familiale et indemnité pour salaire unique du secteur public : qui est servi.
 #
 # Source : circulaire du Premier ministre n° 42 du 25 octobre 1996 (JORT n° 89 du
-# 5 novembre 1996, p. 2349-2352), annexe 2 « Les indemnités familiales au titre des enfants de
+# 5 novembre 1996, p. 2534-2552), annexe 2 « Les indemnités familiales au titre des enfants de
 # l'agent public, ou de ses enfants adoptés, et l'indemnité pour salaire unique » (JORT n° 94
 # du 22 novembre 1996, p. 2353-2362). Décret du 22 novembre 1918 (indemnité familiale) et décret
 # du 24 février 1944 (indemnité pour salaire unique).
 #
 # Un test par cas, nommé par son code de l'annexe (« I-A / cas 1 »). Le résultat attendu est lu
 # dans les tableaux du précis (« Circulaire n° 42, annexe 2, I à VII »), non dans le code. Les
-# cas 34, 42 et 43, que l'annexe ne tranche pas, sont dans
-# `tests/test_indemnites_familiales_public.py`, marqués `skip`.
+# cas 34, 42 et 43 se lisent dans l'édition arabe (JORT n° 89, p. 2540 et 2542) ; au cas 34 le
+# bénéficiaire (la mère) est déduit, le texte ne le nomme pas.
 #
 # `non_precise` : l'annexe ne nomme pas l'organisme payeur. Garde partagée (cas 68 à 78) : un
 # enfant par parent, le résultat se lit enfant par enfant.
@@ -608,6 +608,24 @@
     indemnite_salaire_unique_public_beneficiaire: non_servie
     indemnite_salaire_unique_public_payeur: non_precise
 
+- name: "II-A / cas 34 : enfants communs, bénéficiaire déduit (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2540)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_public_situation_parents: pere_decede
+        pf_public_statut_pere: agent_public
+        pf_public_statut_mere: agent_public_reversion_et_indemnites_familiales
+        pf_public_filiation: communs
+    menage:
+      enfants: [enfant]
+  output:
+    pf_public_cas_annexe_2: 34
+    indemnite_familiale_public_beneficiaire: mere
+    indemnite_familiale_public_payeur: caisse_de_retraite
+    indemnite_salaire_unique_public_beneficiaire: non_servie
+    indemnite_salaire_unique_public_payeur: non_precise
+
 - name: "II-B / cas 35 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
@@ -730,6 +748,58 @@
   output:
     pf_public_cas_annexe_2: 41
     indemnite_familiale_public_beneficiaire: mere
+    indemnite_familiale_public_payeur: non_precise
+    indemnite_salaire_unique_public_beneficiaire: non_servie
+    indemnite_salaire_unique_public_payeur: non_precise
+
+- name: "III-A / cas 42 : enfants communs, père sans pension de réversion (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2542)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_public_situation_parents: mere_decedee
+        pf_public_statut_pere: agent_public_sans_reversion
+        pf_public_filiation: communs
+    menage:
+      enfants: [enfant]
+  output:
+    pf_public_cas_annexe_2: 42
+    indemnite_familiale_public_beneficiaire: pere
+    indemnite_familiale_public_payeur: non_precise
+    indemnite_salaire_unique_public_beneficiaire: pere
+    indemnite_salaire_unique_public_payeur: non_precise
+
+- name: "III-A / cas 42 : la position de la mère décédée est indifférente (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2542)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_public_situation_parents: mere_decedee
+        pf_public_statut_pere: agent_public_sans_reversion
+        pf_public_statut_mere: agent_public
+        pf_public_filiation: communs
+    menage:
+      enfants: [enfant]
+  output:
+    pf_public_cas_annexe_2: 42
+    indemnite_familiale_public_beneficiaire: pere
+    indemnite_familiale_public_payeur: non_precise
+    indemnite_salaire_unique_public_beneficiaire: pere
+    indemnite_salaire_unique_public_payeur: non_precise
+
+- name: "III-B / cas 43 : enfants communs, père bénéficiant de la pension de réversion (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2542)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_public_situation_parents: mere_decedee
+        pf_public_statut_pere: agent_public_avec_reversion
+        pf_public_filiation: communs
+    menage:
+      enfants: [enfant]
+  output:
+    pf_public_cas_annexe_2: 43
+    indemnite_familiale_public_beneficiaire: pere
     indemnite_familiale_public_payeur: non_precise
     indemnite_salaire_unique_public_beneficiaire: non_servie
     indemnite_salaire_unique_public_payeur: non_precise
