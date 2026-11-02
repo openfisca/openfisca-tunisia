@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.157 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 22/11/1996 ; variables nouvelles.
+* Zones impactées : `variables/prestations/contributives/indemnites_familiales_secteur_public.py` (nouveau).
+* Détails :
+  - **Code les quatre-vingt-un cas d'octroi de l'indemnité familiale et de l'indemnité pour salaire unique du secteur public** : annexe 2 de la circulaire du Premier ministre n° 42 du 25 octobre 1996 (JORT n° 89 du 5 novembre 1996 ; annexes au JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui applique le décret du 22 novembre 1918 (indemnité familiale) et le décret du 24 février 1944 (indemnité pour salaire unique).
+  - **Variables d'entrée de l'enfant** (`Individu`, mensuelles) : `pf_public_situation_parents`, `pf_public_filiation`, `pf_public_statut_pere`, `pf_public_statut_mere`, `pf_public_statut_tuteur`, `pf_public_garde_enfant`. Les parents pouvant ne plus appartenir au ménage de l'enfant (divorce, décès, tutelle), leur position se saisit sur l'enfant.
+  - **Variables calculées** : `pf_public_cas_annexe_2` (code 1 à 81), `indemnite_familiale_public_beneficiaire` et `indemnite_salaire_unique_public_beneficiaire` (père, mère, tuteur, mère pour le montant antérieur au second mariage, non servie), `indemnite_familiale_public_payeur` et `indemnite_salaire_unique_public_payeur` (employeur du père, CNSS, caisse de retraite, quand l'annexe les nomme).
+  - **Trois cas non tranchés** : 34 (II-A, bénéficiaire non nommé), 42 et 43 (III-A et III-B, même description, résultats différents). Le modèle y répond `hors_annexe` ; les tests correspondants sont marqués `skip`.
+  - **Hors périmètre** : les montants (décret n° 96-1906, circulaire) et les conditions d'enfant (âge, rang, handicap) ; les variables du secteur privé (`salaire_unique`, `majoration_salaire_unique`, allocations familiales de la loi n° 60-30) sont inchangées.
+  - Tests : `tests/formulas/prestations/contributives/indemnites_familiales_secteur_public.yaml` (78 cas, un par code) et `tests/test_indemnites_familiales_public.py` (couverture des 81 codes, trois cas ambigus).
+
 ## 0.156 - [#516](https://github.com/openfisca/openfisca-tunisia/pull/516)
 
 * Évolution du système socio-fiscal.
