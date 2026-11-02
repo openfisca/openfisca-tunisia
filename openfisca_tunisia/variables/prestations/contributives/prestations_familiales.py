@@ -308,10 +308,14 @@ class af_mensuelle(Variable):
 def _af_mensuelle(menage, period, af, taux_au_dela):
     """Le tiers du montant trimestriel, au droit en vigueur le premier jour du mois.
 
-    Article 55 : lorsque le père et la mère ouvrent tous deux droit, l'allocation la plus
-    élevée est servie (en 1961, celle du père, la mère pouvant réclamer la différence ; depuis
-    la loi n° 96-65, celle de la personne qui a la garde, ou la plus élevée). L'allocation
-    étant proportionnelle à la rémunération, c'est celle de la rémunération la plus élevée.
+    Article 55, alinéa 3 : lorsque le père et la mère ouvrent tous deux droit, seule une
+    allocation est servie. De 1961 au 3 août 1996, c'est celle du père, la mère pouvant
+    réclamer la différence ; depuis la loi n° 96-65, celle de la personne qui a la garde,
+    sauf que « l'allocation la plus élevée » est servie si les montants diffèrent. La formule
+    retient, dans les deux périodes, l'allocation de la rémunération la plus élevée des deux
+    membres du ménage (l'allocation est proportionnelle à la rémunération, plafonnée) : avant
+    1996, le texte sert celle du père. À qui l'allocation est servie se lit dans
+    `pf_allocataire`.
     """
     remuneration = max_(
         menage.personne_de_reference("af_remuneration_trimestrielle", period),

@@ -1493,3 +1493,231 @@
     pf_allocataire: non_designe
     pf_payeur: cnss
     pf_salaire_unique_servi: false
+
+# ---------------------------------------------------------------------------------------------
+# Secteur privé : qui perçoit l'allocation (loi n° 60-30, articles 53, 55, 64 et 65 ; loi n° 96-65,
+# article 55, alinéa 3 nouveau ; loi n° 80-36, article 65 bis). Règle lue dans la section « Qui
+# perçoit l'allocation » du chapitre des prestations familiales du précis. La période 2000-01
+# est postérieure au 4 août 1996 (le mois d'août 1996 relève encore de l'ancienne règle : les formules
+# datées sont choisies au premier jour du mois), la période 1990-01 est comprise entre le 1er avril 1961 et
+# le 3 août 1996. Aucun cas de l'annexe 2 ne s'applique (pf_cas_circulaire_42 = 0). Les parents
+# d'un enfant en tutelle ne sont pas saisis ; pf_statut_tuteur reste non renseigné, sinon les
+# cas 79 à 81 de l'annexe, secteur public, s'appliquent.
+
+- name: "Secteur privé, 1961-1996 / art. 55 al. 3 : couple non séparé, père et mère salariés, allocation du père, la mère pouvant réclamer la différence"
+  period: 1990-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: pere_mere_pouvant_reclamer_difference
+    pf_payeur: cnss
+
+- name: "Secteur privé, depuis le 4 août 1996 / art. 55 al. 3 nouveau (loi n° 96-65) : couple non séparé, père et mère salariés, personne non désignée (garde non définie, montants non rattachables)"
+  period: 1996-09
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: non_designe
+    pf_payeur: cnss
+
+- name: "Secteur privé, veille de la loi n° 96-65 (juillet 1996) / art. 55 al. 3 : couple non séparé, allocation du père"
+  period: 1996-07
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: pere_mere_pouvant_reclamer_difference
+
+- name: "Secteur privé, couple non séparé, un seul parent salarié / art. 53 et 64 : personne non désignée (garde non définie), avant 1996"
+  period: 1990-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: non_designe
+    pf_payeur: cnss
+
+- name: "Secteur privé, divorcé, garde à la mère, seule la mère salariée, 1961-1996 / art. 64 : versée à la personne qui a la garde"
+  period: 1990-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: sans_activite
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: mere
+    pf_payeur: cnss
+
+- name: "Secteur privé, divorcé, garde à la mère, seul le père salarié, 1961-1996 / art. 53 4° et 64 : versée à la mère, qui a la garde"
+  period: 1990-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: mere
+
+- name: "Secteur privé, divorcé, garde au père, seule la mère salariée, depuis 1996 / art. 55 al. 3 nouveau et art. 64 : versée au père, qui a la garde"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: sans_activite
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: pere
+    pf_payeur: cnss
+
+- name: "Secteur privé, garde partagée, garde de l'enfant à la mère, un seul parent ayant droit, depuis 1996 / art. 64 : versée à la mère"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+        pf_garde_enfant: mere
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: mere
+
+- name: "Secteur privé, divorcé, père et mère salariés, 1961-1996 / art. 55 al. 3 face à l'art. 64 : non codé, personne non désignée (TODO 2)"
+  period: 1990-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: non_designe
+
+- name: "Secteur privé, divorcé, père et mère salariés, depuis 1996 / art. 55 al. 3 nouveau : la plus élevée si les montants diffèrent, non calculable, personne non désignée (TODO 4)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: non_designe
+
+- name: "Secteur privé, tutelle / art. 53 3° : non codé, personne non désignée (TODO 6)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: tutelle
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: non_designe
+    pf_payeur: cnss
+
+- name: "Secteur privé, parent décédé / art. 56 à 59 : non codé, personne non désignée"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: non_designe
+
+- name: "Secteur privé, salarié sans droit aux indemnités familiales / art. 53 : n'ouvre pas droit, personne non désignée"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_allocataire: non_designe
+
+- name: "Majoration pour salaire unique, secteur privé, divorcé, garde à la mère, depuis le 1er mai 1980 / art. 65 bis : versée à la personne qui a la garde"
+  period: 1985-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_majoration_salaire_unique_allocataire: mere
+
+- name: "Majoration pour salaire unique, secteur privé, veille du 1er mai 1980 / art. 65 bis : n'existe pas encore"
+  period: 1980-04
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_majoration_salaire_unique_allocataire: non_designe
+
+- name: "Majoration pour salaire unique, secteur privé, couple non séparé, depuis 1980 / art. 65 bis : garde non définie, personne non désignée"
+  period: 1985-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_majoration_salaire_unique_allocataire: non_designe

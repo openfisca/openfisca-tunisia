@@ -1,10 +1,26 @@
 """Prestations familiales : à qui elles sont servies et par quel organisme (`pf_allocataire`, `pf_payeur`).
 
 Le moteur vaut pour les deux secteurs. Secteur public : les 81 cas de la circulaire n° 42 (indemnité
-familiale et indemnité pour salaire unique). Secteur privé : la loi n° 60-30 énumère les allocataires
-possibles (art. 53) sans les ordonner et arbitre entre les parents par le montant (art. 55) ; elle
-ne désigne personne (`non_designe`) et la caisse nationale paie (art. 65). Le secteur est porté par
-la position des parents (`agent_public` ou non), comme dans l'annexe.
+familiale et indemnité pour salaire unique). Secteur privé : la loi n° 60-30 (JORT n° 57 des
+13-16 décembre 1960, p. 1602-1613, articles 51 à 67 ; loi n° 96-65, JORT n° 60 de 1996), lue
+dans la section « Qui perçoit l'allocation » du chapitre des prestations familiales du précis.
+Le secteur est porté par la position des parents (`agent_public` ou non), comme dans l'annexe :
+un enfant que l'annexe ne range dans aucun cas, dont un parent est salarié, relève du secteur privé.
+
+Règle du secteur privé, telle qu'elle est lue (voir `pf_allocataire`) :
+
+- du 1er avril 1961 au 3 août 1996, l'article 55, alinéa 3, quand le père et la mère ouvrent tous
+  deux droit, ne sert que l'allocation du père, la mère pouvant réclamer la différence ;
+  l'article 64 verse les allocations à la personne qui a la garde ; l'article 53 énumère les
+  personnes du chef desquelles elles sont dues (père ou mère, adoptant ou son conjoint, tuteur
+  officieux salarié, personne ayant la garde) ;
+- depuis le 4 août 1996 (loi n° 96-65), l'article 55, alinéa 3 nouveau, fait servir l'allocation à
+  la personne ayant la garde, et l'allocation la plus élevée si les montants diffèrent ;
+- le payeur est la caisse nationale de sécurité sociale (article 65).
+
+La garde est une entrée (`pf_garde_enfant`, ou `pf_situation_parents` pour les divorces avec
+garde au père ou à la mère). Dans un couple non séparé, la loi ne dit pas ce que « garde »
+veut dire : le modèle n'en parle pas et ne désigne personne quand l'article 55 ne suffit pas.
 
 Source : circulaire du Premier ministre n° 42 du 25 octobre 1996, « la gestion des indemnités
 à caractère familial dans le secteur public », JORT n° 89 du 5 novembre 1996 (p. 2534-2552 de l'édition arabe, texte authentique) ;
@@ -109,13 +125,18 @@ class GardeEnfant(Enum):
 
 
 class Allocataire(Enum):
-    __order__ = "non_designe non_servie pere mere tuteur mere_montant_anterieur_remariage"
-    non_designe = "Personne que le texte applicable ne désigne pas (cas hors annexe 2, ou secteur privé)"
+    __order__ = "non_designe non_servie pere mere tuteur mere_montant_anterieur_remariage pere_mere_pouvant_reclamer_difference"  # noqa: E501
+    non_designe = "Personne que le texte lu ne permet pas de désigner avec les données saisies (cas non codé)"  # noqa: E501
     non_servie = "Non servie"
     pere = "Servie au père"
     mere = "Servie à la mère"
     tuteur = "Servie au tuteur ou à la tutrice"
     mere_montant_anterieur_remariage = "Servie à la mère, pour le montant dont elle bénéficiait avant le second mariage"  # noqa: E501
+    # Secteur privé, du 1er avril 1961 au 3 août 1996 : loi n° 60-30, article 55, alinéa 3 (JORT
+    # n° 57 des 13-16 décembre 1960, p. 1602-1613) : quand le père et la mère ouvrent tous deux
+    # droit, « seule l'allocation due au père » est servie ; la mère peut demander à recevoir la
+    # différence entre les allocations qui pourraient lui être attribuées et celles du père.
+    pere_mere_pouvant_reclamer_difference = "Servie au père seul ; la mère peut réclamer la différence (loi n° 60-30, art. 55, al. 3, 1961-1996)"  # noqa: E501
 
 
 class Payeur(Enum):
@@ -365,8 +386,11 @@ class pf_garde_enfant(Variable):
     documentation = """
     Circulaire n° 42 de 1996, annexe 2, VI (JORT n° 94, p. 2360-2361) : l'indemnité est servie
     au père et à la mère « en fonction du nombre des enfants dont la garde est assurée ». La
-    garde se saisit donc enfant par enfant. Utilisée seulement avec la situation
-    `divorce_garde_partagee`.
+    garde se saisit donc enfant par enfant. Utilisée avec la situation `divorce_garde_partagee`,
+    pour le secteur public et pour le secteur privé (loi n° 60-30, article 64 : les allocations
+    sont versées à la personne qui a la garde de l'enfant). Dans les situations `divorce_garde_pere`
+    et `divorce_garde_mere` la garde est dite par la situation ; dans un couple non séparé elle
+    n'est pas saisie : le texte ne dit pas ce qu'elle y veut dire.
     """
 
 
@@ -411,7 +435,59 @@ def _est_salarie(statut):
     )
 
 
-def _indices_allocataire(individu, period):
+def _ouvre_droit(statut):
+    """Salarié qui ouvre droit aux allocations familiales du secteur privé.
+
+    `salarie` (« sans distinction de droit ») est compté : l'entrée ne dit pas le contraire.
+    `salarie_non_beneficiaire_indemnites_familiales` ne l'est pas, par définition."""
+    S = StatutParent
+    return (statut == S.salarie) + (statut == S.salarie_beneficiaire_indemnites_familiales)
+
+
+def _est_agent_public(statut):
+    S = StatutParent
+    return (
+        (statut == S.agent_public)
+        + (statut == S.agent_public_reversion_et_indemnites_familiales)
+        + (statut == S.agent_public_reversion_sans_indemnites_familiales)
+        + (statut == S.agent_public_sans_reversion_ni_indemnites_familiales)
+        + (statut == S.agent_public_sans_reversion)
+        + (statut == S.agent_public_avec_reversion)
+    )
+
+
+def _est_secteur_prive(individu, period):
+    """Aucun cas de l'annexe 2 ne s'applique, un parent au moins est salarié, aucun n'est agent public."""
+    code = individu("pf_cas_circulaire_42", period)
+    pere = individu("pf_statut_pere", period)
+    mere = individu("pf_statut_mere", period)
+    return (
+        (code == 0)
+        * (_est_salarie(pere) + _est_salarie(mere))
+        * (1 - _est_agent_public(pere))
+        * (1 - _est_agent_public(mere))
+    )
+
+
+def _garde(individu, period):
+    """Parent qui a la garde : (père, mère), deux indicatrices.
+
+    Les situations IV et V disent la garde ; la situation VI la renvoie à `pf_garde_enfant`.
+    Dans toute autre situation (couple non séparé, décès, tutelle), la garde n'est pas établie
+    et aucun des deux n'est retenu."""
+    situation = individu("pf_situation_parents", period)
+    garde = individu("pf_garde_enfant", period)
+    partagee = situation == SituationParents.divorce_garde_partagee
+    pere = (situation == SituationParents.divorce_garde_pere) + partagee * (
+        garde == GardeEnfant.pere
+    )
+    mere = (situation == SituationParents.divorce_garde_mere) + partagee * (
+        garde == GardeEnfant.mere
+    )
+    return pere, mere
+
+
+def _indices_allocataire_public(individu, period):
     """Applique à chaque enfant l'allocataire de la colonne « indemnité familiale » de la table."""
     code = individu("pf_cas_circulaire_42", period)
     garde = individu("pf_garde_enfant", period)
@@ -437,6 +513,49 @@ def _indices_allocataire(individu, period):
     return indices
 
 
+def _indices_allocataire(individu, period, avant_1996):
+    """Table de la circulaire pour le secteur public, loi n° 60-30 pour le secteur privé.
+
+    Secteur privé, seuls cas retenus (tout autre renvoie `non_designe`) :
+
+    - couple non séparé, père et mère ouvrant droit, avant le 4 août 1996 : article 55, alinéa 3,
+      allocation du père, la mère pouvant réclamer la différence ;
+    - parents séparés, garde connue, un seul des deux parents ouvrant droit : l'allocation est
+      versée à la personne qui a la garde (article 64 ; article 53, dernier alinéa pour la
+      personne qui n'a pas d'activité propre), avant comme après 1996.
+
+    Non codé, faute de texte qui tranche (points du précis, section « Qui perçoit
+    l'allocation ») :
+    TODO (1) ce que « garde » veut dire quand les parents vivent ensemble : couple non séparé
+    depuis le 4 août 1996, ou un seul parent ouvrant droit ;
+    TODO (2) avant 1996, parents séparés ouvrant droit tous deux : article 55, alinéa 3 (allocation
+    du père) face à l'article 64 (versement à la garde) ;
+    TODO (4) depuis 1996, parents séparés ouvrant droit tous deux : « l'allocation la plus élevée »
+    si les montants diffèrent ; les parents n'étant pas dans le ménage de l'enfant, leurs
+    montants ne sont pas calculables, et la rémunération et le sexe ne relient pas
+    `personne_de_reference` et `conjoint` au père et à la mère ;
+    TODO (6) tutelle : tuteur officieux salarié, article 53 3° ;
+    décès d'un parent (articles 56 à 59) : non codé.
+    """
+    indices = _indices_allocataire_public(individu, period)
+    prive = _est_secteur_prive(individu, period)
+    pere_droit = _ouvre_droit(individu("pf_statut_pere", period))
+    mere_droit = _ouvre_droit(individu("pf_statut_mere", period))
+    couple = individu("pf_situation_parents", period) == SituationParents.parents_en_vie_non_divorces
+    garde_pere, garde_mere = _garde(individu, period)
+    un_seul_droit = pere_droit != mere_droit
+    valeur = zeros(individu.count, dtype=int) + Allocataire.non_designe.index
+    if avant_1996:
+        valeur = where(
+            couple * pere_droit * mere_droit,
+            Allocataire.pere_mere_pouvant_reclamer_difference.index,
+            valeur,
+        )
+    valeur = where(garde_pere * un_seul_droit, Allocataire.pere.index, valeur)
+    valeur = where(garde_mere * un_seul_droit, Allocataire.mere.index, valeur)
+    return where(prive, valeur, indices)
+
+
 class pf_allocataire(Variable):
     value_type = Enum
     possible_values = Allocataire
@@ -447,16 +566,31 @@ class pf_allocataire(Variable):
     reference = REFERENCE_CIRCULAIRE
 
     def formula(individu, period):
+        """Avant le 1er avril 1961 : la table de la circulaire seulement (secteur public)."""
+        return EnumArray(_indices_allocataire_public(individu, period), Allocataire)
+
+    def formula_1961_04_01(individu, period):
         """Secteur public : circulaire du Premier ministre n° 42 du 25 octobre 1996, annexe 2,
         colonne « Indemnité familiale » (JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui
         applique le décret du 22 novembre 1918 ; voir `pf_cas_circulaire_42` pour le cas retenu.
 
-        Secteur privé : la loi n° 60-30 (art. 53) énumère les allocataires possibles (parent,
-        adoptant, tuteur officieux salarié, personne ayant la garde) sans les ordonner, et
-        l'article 55 arbitre entre les parents par le montant (le plus élevé est servi), non par
-        une désignation : la variable renvoie `non_designe` (le montant se calcule au niveau du
-        ménage, `af_mensuelle`)."""
-        return EnumArray(_indices_allocataire(individu, period), Allocataire)
+        Secteur privé, loi n° 60-30, dans sa rédaction d'origine (en vigueur le 1er avril 1961,
+        article 130) : l'article 53 énumère les personnes du chef desquelles les allocations
+        sont dues ; l'article 55, alinéa 3, ne sert, quand le père et la mère ouvrent tous deux
+        droit, que l'allocation du père, la mère pouvant réclamer la différence
+        (`pere_mere_pouvant_reclamer_difference`) ; l'article 64 verse les allocations à la
+        personne qui a la garde. Voir `_indices_allocataire` pour les cas retenus et les cas
+        non codés."""
+        return EnumArray(_indices_allocataire(individu, period, avant_1996=True), Allocataire)
+
+    def formula_1996_08_04(individu, period):
+        """Secteur public : comme avant. Secteur privé : loi n° 96-65, exécutoire le 4 août 1996,
+        article 55, alinéa 3 nouveau : l'allocation est servie à la personne ayant la garde et,
+        si les montants dus du chef de deux personnes diffèrent, l'allocation la plus élevée.
+        Dans un couple non séparé, la loi ne dit pas ce que « garde » veut dire et les montants
+        par personne ne sont pas rattachables au père et à la mère : `non_designe`. Seul est codé
+        le versement à la garde (article 64) quand un seul parent ouvre droit."""
+        return EnumArray(_indices_allocataire(individu, period, avant_1996=False), Allocataire)
 
 
 class pf_salaire_unique_servi(Variable):
@@ -486,6 +620,36 @@ class pf_salaire_unique_servi(Variable):
         return servie * personne_servie
 
 
+class pf_majoration_salaire_unique_allocataire(Variable):
+    value_type = Enum
+    possible_values = Allocataire
+    default_value = Allocataire.non_designe
+    entity = Individu
+    label = "À qui est versée la majoration pour salaire unique du secteur privé, au titre de l'enfant"  # noqa: E501
+    definition_period = MONTH
+    reference = "https://www.pist.tn/jort/1981/1981F/Jo03881.pdf"
+
+    def formula_1980_05_01(individu, period):
+        """Loi n° 80-36 du 28 mai 1980, article 65 bis, en vigueur le 1er mai 1980 : la
+        majoration est « versée à la personne qui a la garde des enfants ». Secteur privé seulement,
+        un parent au moins ouvrant droit aux allocations ; la garde est connue pour les parents
+        séparés (`pf_situation_parents`, `pf_garde_enfant`), sinon `non_designe`. Avant le
+        1er mai 1980 la majoration n'existe pas (valeur par défaut, `non_designe`).
+
+        Non codé : le maintien aux titulaires de pensions (décret n° 81-731, JORT n° 38 de 1981,
+        p. 1334-1335, effet au 1er mai 1981), faute d'une entrée distinguant les pensions du
+        régime des salariés ; le montant, au niveau du ménage (`majoration_salaire_unique`)."""
+        prive = _est_secteur_prive(individu, period)
+        ouvre_droit = _ouvre_droit(individu("pf_statut_pere", period)) + _ouvre_droit(
+            individu("pf_statut_mere", period)
+        )
+        garde_pere, garde_mere = _garde(individu, period)
+        indices = zeros(individu.count, dtype=int) + Allocataire.non_designe.index
+        indices = where(prive * ouvre_droit * garde_pere, Allocataire.pere.index, indices)
+        indices = where(prive * ouvre_droit * garde_mere, Allocataire.mere.index, indices)
+        return EnumArray(indices, Allocataire)
+
+
 class pf_payeur(Variable):
     value_type = Enum
     possible_values = Payeur
@@ -496,18 +660,29 @@ class pf_payeur(Variable):
     reference = REFERENCE_CIRCULAIRE
 
     def formula(individu, period):
+        """Avant le 1er avril 1961 : la table de la circulaire seulement."""
+        return EnumArray(_indices_payeur_public(individu, period), Payeur)
+
+    def formula_1961_04_01(individu, period):
         """Secteur public : circulaire n° 42 de 1996, annexe 2 : « par l'employeur du père »,
         « par la CNSS », « par la caisse de retraite » (JORT n° 94, p. 2353-2362).
 
-        Secteur privé (aucun cas de l'annexe, un parent salarié) : les allocations sont versées
-        par la caisse nationale (loi n° 60-30, art. 65)."""
-        code = individu("pf_cas_circulaire_42", period)
-        indices = zeros(individu.count, dtype=int)
-        for ligne in CAS_ANNEXE_2:
-            nom = _NOMS_PAYEURS[ligne[7][1]]
-            indices = where(code == ligne[0], Payeur[nom].index, indices)
-        pere = individu("pf_statut_pere", period)
-        mere = individu("pf_statut_mere", period)
-        prive = (code == 0) * (_est_salarie(pere) + _est_salarie(mere))
-        indices = where(prive, Payeur.cnss.index, indices)
+        Secteur privé : la caisse nationale de sécurité sociale verse les allocations aux ayants
+        droit (loi n° 60-30, article 65, en vigueur le 1er avril 1961).
+
+        Non codé : le dernier employeur, pour les allocations maintenues (articles 56 à 59)
+        quand il est dispensé d'affiliation ou ne s'est pas affilié (article 60), et le paiement
+        direct par les employeurs affiliés (article 48, 2°) ; le modèle n'a pas de variable
+        d'affiliation de l'employeur à la caisse. La caisse est retenue par défaut."""
+        indices = _indices_payeur_public(individu, period)
+        indices = where(_est_secteur_prive(individu, period), Payeur.cnss.index, indices)
         return EnumArray(indices, Payeur)
+
+
+def _indices_payeur_public(individu, period):
+    code = individu("pf_cas_circulaire_42", period)
+    indices = zeros(individu.count, dtype=int)
+    for ligne in CAS_ANNEXE_2:
+        nom = _NOMS_PAYEURS[ligne[7][1]]
+        indices = where(code == ligne[0], Payeur[nom].index, indices)
+    return indices
