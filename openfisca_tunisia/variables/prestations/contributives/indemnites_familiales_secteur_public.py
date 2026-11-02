@@ -1,4 +1,10 @@
-"""Indemnité familiale et indemnité pour salaire unique du secteur public : qui est servi.
+"""Prestations familiales : à qui elles sont servies et par quel organisme (`pf_allocataire`, `pf_payeur`).
+
+Le moteur vaut pour les deux secteurs. Secteur public : les 81 cas de la circulaire n° 42 (indemnité
+familiale et indemnité pour salaire unique). Secteur privé : la loi n° 60-30 énumère les allocataires
+possibles (art. 53) sans les ordonner et arbitre entre les parents par le montant (art. 55) ; elle
+ne désigne personne (`non_designe`) et la caisse nationale paie (art. 65). Le secteur est porté par
+la position des parents (`agent_public` ou non), comme dans l'annexe.
 
 Source : circulaire du Premier ministre n° 42 du 25 octobre 1996, « la gestion des indemnités
 à caractère familial dans le secteur public », JORT n° 89 du 5 novembre 1996 (p. 2534-2552 de l'édition arabe, texte authentique) ;
@@ -34,7 +40,7 @@ laissait ambigus :
   sans nommer le bénéficiaire. Le modèle retient la mère (déduit : elle perçoit déjà la
   pension de réversion et les indemnités familiales de la caisse) ; le texte ne le dit pas.
 
-Les combinaisons absentes de l'annexe donnent aussi `hors_annexe` : l'annexe ne dit rien
+Les combinaisons absentes de l'annexe donnent `non_designe` : l'annexe ne dit rien
 des parents remariés dans les situations II à VI, ni des enfants d'un premier mariage hors
 de la situation I.
 """
@@ -48,7 +54,7 @@ from openfisca_tunisia.variables.base import *  # noqa F401
 REFERENCE_CIRCULAIRE = "https://www.pist.tn/jort/1996/1996F/Jo09496.pdf"
 
 
-class SituationParentsSecteurPublic(Enum):
+class SituationParents(Enum):
     __order__ = "parents_en_vie_non_divorces pere_decede mere_decedee divorce_garde_pere divorce_garde_mere divorce_garde_partagee tutelle"  # noqa: E501
     parents_en_vie_non_divorces = "Père et mère en vie, non divorcés (I)"
     pere_decede = "Père décédé, mère non remariée (II)"
@@ -59,14 +65,14 @@ class SituationParentsSecteurPublic(Enum):
     tutelle = "Enfant sous la tutelle d'un tuteur ou d'une tutrice (VII)"
 
 
-class FiliationEnfantSecteurPublic(Enum):
+class FiliationEnfant(Enum):
     __order__ = "communs premier_mariage_pere premier_mariage_mere"
     communs = "Enfant commun du père et de la mère"
     premier_mariage_pere = "Enfant d'un premier mariage du père, à sa charge"
     premier_mariage_mere = "Enfant d'un premier mariage de la mère, à sa charge"
 
 
-class StatutParentSecteurPublic(Enum):
+class StatutParent(Enum):
     """Position d'un parent dans l'annexe 2 (pour un parent décédé, sa position de son vivant)."""
 
     __order__ = "non_renseigne agent_public activite_liberale salarie salarie_beneficiaire_indemnites_familiales salarie_non_beneficiaire_indemnites_familiales sans_activite retraite retraite_regime_ouvrant_droit retraite_regime_sans_droit agent_public_reversion_et_indemnites_familiales agent_public_reversion_sans_indemnites_familiales agent_public_sans_reversion_ni_indemnites_familiales agent_public_sans_reversion agent_public_avec_reversion"  # noqa: E501
@@ -87,7 +93,7 @@ class StatutParentSecteurPublic(Enum):
     agent_public_avec_reversion = "Agent public non remarié bénéficiant de la pension de réversion (mère décédée)"  # noqa: E501
 
 
-class StatutTuteurSecteurPublic(Enum):
+class StatutTuteur(Enum):
     __order__ = "non_renseigne celibataire marie_conjoint_sans_activite marie_conjoint_avec_revenu"
     non_renseigne = "Non renseigné"
     celibataire = "Le tuteur (la tutrice) est célibataire"
@@ -95,16 +101,16 @@ class StatutTuteurSecteurPublic(Enum):
     marie_conjoint_avec_revenu = "Marié(e) à un conjoint disposant d'un revenu professionnel ou d'une pension"  # noqa: E501
 
 
-class GardeEnfantSecteurPublic(Enum):
+class GardeEnfant(Enum):
     __order__ = "non_renseigne pere mere"
     non_renseigne = "Non renseigné"
     pere = "Garde assurée par le père"
     mere = "Garde assurée par la mère"
 
 
-class BeneficiaireIndemniteSecteurPublic(Enum):
-    __order__ = "hors_annexe non_servie pere mere tuteur mere_montant_anterieur_remariage"
-    hors_annexe = "Cas que l'annexe 2 ne prévoit pas ou ne tranche pas"
+class Allocataire(Enum):
+    __order__ = "non_designe non_servie pere mere tuteur mere_montant_anterieur_remariage"
+    non_designe = "Personne que le texte applicable ne désigne pas (cas hors annexe 2, ou secteur privé)"
     non_servie = "Non servie"
     pere = "Servie au père"
     mere = "Servie à la mère"
@@ -112,7 +118,7 @@ class BeneficiaireIndemniteSecteurPublic(Enum):
     mere_montant_anterieur_remariage = "Servie à la mère, pour le montant dont elle bénéficiait avant le second mariage"  # noqa: E501
 
 
-class PayeurIndemniteSecteurPublic(Enum):
+class Payeur(Enum):
     __order__ = "non_precise employeur_du_pere cnss caisse_de_retraite"
     non_precise = "L'annexe ne nomme pas l'organisme"
     employeur_du_pere = "Employeur du père"
@@ -128,9 +134,9 @@ class PayeurIndemniteSecteurPublic(Enum):
 # la garde, le père n'étant pas servi (cas 73, 75, 76, 78).
 # Organisme payeur : None si l'annexe ne le nomme pas, E employeur du père, C CNSS, R caisse
 # de retraite.
-_S = SituationParentsSecteurPublic
-_F = FiliationEnfantSecteurPublic
-_P = StatutParentSecteurPublic
+_S = SituationParents
+_F = FiliationEnfant
+_P = StatutParent
 
 _NOMS_BENEFICIAIRES = {
     "N": "non_servie",
@@ -271,10 +277,10 @@ CAS_ANNEXE_2 = [
 ]
 
 
-class pf_public_situation_parents(Variable):
+class pf_situation_parents(Variable):
     value_type = Enum
-    possible_values = SituationParentsSecteurPublic
-    default_value = SituationParentsSecteurPublic.parents_en_vie_non_divorces
+    possible_values = SituationParents
+    default_value = SituationParents.parents_en_vie_non_divorces
     entity = Individu
     label = "Situation des parents de l'enfant, au sens de l'annexe 2 de la circulaire n° 42 de 1996"  # noqa: E501
     definition_period = MONTH
@@ -287,10 +293,10 @@ class pf_public_situation_parents(Variable):
     """
 
 
-class pf_public_filiation(Variable):
+class pf_filiation(Variable):
     value_type = Enum
-    possible_values = FiliationEnfantSecteurPublic
-    default_value = FiliationEnfantSecteurPublic.communs
+    possible_values = FiliationEnfant
+    default_value = FiliationEnfant.communs
     entity = Individu
     label = "Filiation de l'enfant : commun, ou d'un premier mariage de l'un des parents, à sa charge"  # noqa: E501
     definition_period = MONTH
@@ -302,10 +308,10 @@ class pf_public_filiation(Variable):
     """
 
 
-class pf_public_statut_pere(Variable):
+class pf_statut_pere(Variable):
     value_type = Enum
-    possible_values = StatutParentSecteurPublic
-    default_value = StatutParentSecteurPublic.non_renseigne
+    possible_values = StatutParent
+    default_value = StatutParent.non_renseigne
     entity = Individu
     label = "Position du père de l'enfant, au sens de l'annexe 2 de la circulaire n° 42 de 1996"
     definition_period = MONTH
@@ -317,10 +323,10 @@ class pf_public_statut_pere(Variable):
     """
 
 
-class pf_public_statut_mere(Variable):
+class pf_statut_mere(Variable):
     value_type = Enum
-    possible_values = StatutParentSecteurPublic
-    default_value = StatutParentSecteurPublic.non_renseigne
+    possible_values = StatutParent
+    default_value = StatutParent.non_renseigne
     entity = Individu
     label = "Position de la mère de l'enfant, au sens de l'annexe 2 de la circulaire n° 42 de 1996"
     definition_period = MONTH
@@ -332,10 +338,10 @@ class pf_public_statut_mere(Variable):
     """
 
 
-class pf_public_statut_tuteur(Variable):
+class pf_statut_tuteur(Variable):
     value_type = Enum
-    possible_values = StatutTuteurSecteurPublic
-    default_value = StatutTuteurSecteurPublic.non_renseigne
+    possible_values = StatutTuteur
+    default_value = StatutTuteur.non_renseigne
     entity = Individu
     label = "Situation du tuteur ou de la tutrice de l'enfant, au sens de l'annexe 2 (VII)"
     definition_period = MONTH
@@ -347,10 +353,10 @@ class pf_public_statut_tuteur(Variable):
     """
 
 
-class pf_public_garde_enfant(Variable):
+class pf_garde_enfant(Variable):
     value_type = Enum
-    possible_values = GardeEnfantSecteurPublic
-    default_value = GardeEnfantSecteurPublic.non_renseigne
+    possible_values = GardeEnfant
+    default_value = GardeEnfant.non_renseigne
     entity = Individu
     label = "Parent qui assure la garde de l'enfant, en cas de garde partagée"
     definition_period = MONTH
@@ -364,7 +370,7 @@ class pf_public_garde_enfant(Variable):
     """
 
 
-class pf_public_cas_annexe_2(Variable):
+class pf_cas_circulaire_42(Variable):
     value_type = int
     default_value = 0
     entity = Individu
@@ -376,11 +382,11 @@ class pf_public_cas_annexe_2(Variable):
     def formula(individu, period):
         """Circulaire n° 42 du 25 octobre 1996, annexe 2 (JORT n° 94 du 22 novembre 1996,
         p. 2353-2362) : la table `CAS_ANNEXE_2` transcrit les quatre-vingt-un cas."""
-        situation = individu("pf_public_situation_parents", period)
-        pere = individu("pf_public_statut_pere", period)
-        mere = individu("pf_public_statut_mere", period)
-        filiation = individu("pf_public_filiation", period)
-        tuteur = individu("pf_public_statut_tuteur", period)
+        situation = individu("pf_situation_parents", period)
+        pere = individu("pf_statut_pere", period)
+        mere = individu("pf_statut_mere", period)
+        filiation = individu("pf_filiation", period)
+        tuteur = individu("pf_statut_tuteur", period)
         code = zeros(individu.count, dtype=int)
         for numero, _cas, sit, st_pere, st_mere, fil, st_tuteur, _si, _su in CAS_ANNEXE_2:
             masque = situation == _S[sit]
@@ -391,116 +397,117 @@ class pf_public_cas_annexe_2(Variable):
                 if st_mere is not None:
                     masque = masque * (mere == _P[st_mere])
             else:
-                masque = masque * (tuteur == StatutTuteurSecteurPublic[st_tuteur])
+                masque = masque * (tuteur == StatutTuteur[st_tuteur])
             code = where(masque, numero, code)
         return code
 
 
-def _resultat(individu, period, position, enum, noms):
-    """Applique à chaque enfant le bénéficiaire de la colonne `position` de la table (7 pour
-    l'indemnité familiale, 8 pour l'indemnité pour salaire unique)."""
-    code = individu("pf_public_cas_annexe_2", period)
-    garde = individu("pf_public_garde_enfant", period)
-    G = GardeEnfantSecteurPublic
-    indices = zeros(individu.count, dtype=int)
+def _est_salarie(statut):
+    S = StatutParent
+    return (
+        (statut == S.salarie)
+        + (statut == S.salarie_beneficiaire_indemnites_familiales)
+        + (statut == S.salarie_non_beneficiaire_indemnites_familiales)
+    )
+
+
+def _indices_allocataire(individu, period):
+    """Applique à chaque enfant l'allocataire de la colonne « indemnité familiale » de la table."""
+    code = individu("pf_cas_circulaire_42", period)
+    garde = individu("pf_garde_enfant", period)
+    G = GardeEnfant
+    indices = zeros(individu.count, dtype=int) + Allocataire.non_designe.index
     for ligne in CAS_ANNEXE_2:
-        beneficiaire, payeur = ligne[position]
-        masque = code == ligne[0]
+        beneficiaire = ligne[7][0]
         if beneficiaire == "G":
             valeur = where(
                 garde == G.pere,
-                enum.pere.index,
-                where(garde == G.mere, enum.mere.index, enum.hors_annexe.index),
+                Allocataire.pere.index,
+                where(garde == G.mere, Allocataire.mere.index, Allocataire.non_designe.index),
             )
         elif beneficiaire == "H":
             valeur = where(
                 garde == G.mere,
-                enum.mere.index,
-                where(garde == G.pere, enum.non_servie.index, enum.hors_annexe.index),
+                Allocataire.mere.index,
+                where(garde == G.pere, Allocataire.non_servie.index, Allocataire.non_designe.index),
             )
         else:
-            valeur = enum[noms[beneficiaire]].index
-        indices = where(masque, valeur, indices)
+            valeur = Allocataire[_NOMS_BENEFICIAIRES[beneficiaire]].index
+        indices = where(code == ligne[0], valeur, indices)
     return indices
 
 
-def _beneficiaire(individu, period, position):
-    indices = _resultat(
-        individu, period, position, BeneficiaireIndemniteSecteurPublic, _NOMS_BENEFICIAIRES
-    )
-    return EnumArray(indices, BeneficiaireIndemniteSecteurPublic)
-
-
-def _payeur(individu, period, position):
-    code = individu("pf_public_cas_annexe_2", period)
-    indices = zeros(individu.count, dtype=int)
-    for ligne in CAS_ANNEXE_2:
-        nom = _NOMS_PAYEURS[ligne[position][1]]
-        indices = where(code == ligne[0], PayeurIndemniteSecteurPublic[nom].index, indices)
-    return EnumArray(indices, PayeurIndemniteSecteurPublic)
-
-
-_POSITION_INDEMNITE_FAMILIALE = 7
-_POSITION_SALAIRE_UNIQUE = 8
-
-
-class indemnite_familiale_public_beneficiaire(Variable):
+class pf_allocataire(Variable):
     value_type = Enum
-    possible_values = BeneficiaireIndemniteSecteurPublic
-    default_value = BeneficiaireIndemniteSecteurPublic.hors_annexe
+    possible_values = Allocataire
+    default_value = Allocataire.non_designe
     entity = Individu
-    label = "À qui l'indemnité familiale du secteur public est servie, au titre de l'enfant"
+    label = "À qui sont servies les prestations familiales (indemnité familiale, allocations familiales), au titre de l'enfant"  # noqa: E501
     definition_period = MONTH
     reference = REFERENCE_CIRCULAIRE
 
     def formula(individu, period):
-        """Circulaire du Premier ministre n° 42 du 25 octobre 1996, annexe 2, colonne
-        « Indemnité familiale » (JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui applique le
-        décret du 22 novembre 1918 : voir `pf_public_cas_annexe_2` pour le cas retenu."""
-        return _beneficiaire(individu, period, _POSITION_INDEMNITE_FAMILIALE)
+        """Secteur public : circulaire du Premier ministre n° 42 du 25 octobre 1996, annexe 2,
+        colonne « Indemnité familiale » (JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui
+        applique le décret du 22 novembre 1918 ; voir `pf_cas_circulaire_42` pour le cas retenu.
+
+        Secteur privé : la loi n° 60-30 (art. 53) énumère les allocataires possibles (parent,
+        adoptant, tuteur officieux salarié, personne ayant la garde) sans les ordonner, et
+        l'article 55 arbitre entre les parents par le montant (le plus élevé est servi), non par
+        une désignation : la variable renvoie `non_designe` (le montant se calcule au niveau du
+        ménage, `af_mensuelle`)."""
+        return EnumArray(_indices_allocataire(individu, period), Allocataire)
 
 
-class indemnite_familiale_public_payeur(Variable):
-    value_type = Enum
-    possible_values = PayeurIndemniteSecteurPublic
-    default_value = PayeurIndemniteSecteurPublic.non_precise
+class pf_salaire_unique_servi(Variable):
+    value_type = bool
+    default_value = False
     entity = Individu
-    label = "Organisme qui sert l'indemnité familiale du secteur public, lorsque l'annexe le nomme"
+    label = "L'indemnité pour salaire unique est servie à l'allocataire de l'enfant (secteur public)"  # noqa: E501
     definition_period = MONTH
     reference = REFERENCE_CIRCULAIRE
 
     def formula(individu, period):
-        """Circulaire n° 42 de 1996, annexe 2, colonne « Indemnité familiale » : « par l'employeur
-        du père », « par la CNSS », « par la caisse de retraite » (JORT n° 94, p. 2353-2362)."""
-        return _payeur(individu, period, _POSITION_INDEMNITE_FAMILIALE)
+        """Circulaire n° 42 de 1996, annexe 2, colonne « Indemnité pour salaire unique » (JORT
+        n° 94, p. 2353-2362), qui applique le décret du 24 février 1944. Quand elle est servie,
+        elle l'est à l'allocataire de l'indemnité familiale, par le même organisme (vérifié sur
+        les 81 cas par `tests/test_indemnites_familiales_public.py`). Dans le secteur privé, la
+        majoration pour salaire unique (loi n° 80-36, art. 65 bis) se calcule au niveau du
+        ménage (`majoration_salaire_unique`)."""
+        code = individu("pf_cas_circulaire_42", period)
+        allocataire = individu("pf_allocataire", period)
+        servie = zeros(individu.count, dtype=bool)
+        for ligne in CAS_ANNEXE_2:
+            if ligne[8][0] != "N":
+                servie = servie + (code == ligne[0])
+        personne_servie = (allocataire != Allocataire.non_servie) * (
+            allocataire != Allocataire.non_designe
+        )
+        return servie * personne_servie
 
 
-class indemnite_salaire_unique_public_beneficiaire(Variable):
+class pf_payeur(Variable):
     value_type = Enum
-    possible_values = BeneficiaireIndemniteSecteurPublic
-    default_value = BeneficiaireIndemniteSecteurPublic.hors_annexe
+    possible_values = Payeur
+    default_value = Payeur.non_precise
     entity = Individu
-    label = "À qui l'indemnité pour salaire unique du secteur public est servie, au titre de l'enfant"  # noqa: E501
+    label = "Organisme qui sert les prestations familiales de l'enfant, lorsque le texte le nomme"
     definition_period = MONTH
     reference = REFERENCE_CIRCULAIRE
 
     def formula(individu, period):
-        """Circulaire du Premier ministre n° 42 du 25 octobre 1996, annexe 2, colonne
-        « Indemnité pour salaire unique » (JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui
-        applique le décret du 24 février 1944."""
-        return _beneficiaire(individu, period, _POSITION_SALAIRE_UNIQUE)
+        """Secteur public : circulaire n° 42 de 1996, annexe 2 : « par l'employeur du père »,
+        « par la CNSS », « par la caisse de retraite » (JORT n° 94, p. 2353-2362).
 
-
-class indemnite_salaire_unique_public_payeur(Variable):
-    value_type = Enum
-    possible_values = PayeurIndemniteSecteurPublic
-    default_value = PayeurIndemniteSecteurPublic.non_precise
-    entity = Individu
-    label = "Organisme qui sert l'indemnité pour salaire unique du secteur public, lorsque l'annexe le nomme"  # noqa: E501
-    definition_period = MONTH
-    reference = REFERENCE_CIRCULAIRE
-
-    def formula(individu, period):
-        """Circulaire n° 42 de 1996, annexe 2, colonne « Indemnité pour salaire unique »
-        (JORT n° 94, p. 2353-2362)."""
-        return _payeur(individu, period, _POSITION_SALAIRE_UNIQUE)
+        Secteur privé (aucun cas de l'annexe, un parent salarié) : les allocations sont versées
+        par la caisse nationale (loi n° 60-30, art. 65)."""
+        code = individu("pf_cas_circulaire_42", period)
+        indices = zeros(individu.count, dtype=int)
+        for ligne in CAS_ANNEXE_2:
+            nom = _NOMS_PAYEURS[ligne[7][1]]
+            indices = where(code == ligne[0], Payeur[nom].index, indices)
+        pere = individu("pf_statut_pere", period)
+        mere = individu("pf_statut_mere", period)
+        prive = (code == 0) * (_est_salarie(pere) + _est_salarie(mere))
+        indices = where(prive, Payeur.cnss.index, indices)
+        return EnumArray(indices, Payeur)

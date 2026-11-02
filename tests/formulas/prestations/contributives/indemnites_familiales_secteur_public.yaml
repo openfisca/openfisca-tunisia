@@ -19,1542 +19,1477 @@
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 1
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 1
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-A / cas 2 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 2
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 2
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-A / cas 3 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 3
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 3
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-B / cas 4 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 4
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 4
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-B / cas 5 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 5
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 5
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-B / cas 6 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 6
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 6
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-C / cas 7 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 7
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 7
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-C / cas 8 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 8
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 8
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-C / cas 9 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 9
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 9
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-D / cas 10 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 10
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 10
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "I-D / cas 11 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 11
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 11
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "I-D / cas 12 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 12
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 12
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-E / cas 13 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 13
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 13
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-E / cas 14 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 14
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 14
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-E / cas 15 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 15
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 15
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-F / cas 16 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 16
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 16
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-F / cas 17 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 17
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 17
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-F / cas 18 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 18
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 18
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-G / cas 19 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: salarie_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 19
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 19
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-G / cas 20 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: salarie_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 20
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: cnss
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 20
+    pf_allocataire: pere
+    pf_payeur: cnss
+    pf_salaire_unique_servi: false
 
 - name: "I-G / cas 21 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: salarie_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 21
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 21
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-H / cas 22 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: salarie_non_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 22
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 22
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-H / cas 23 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: salarie_non_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 23
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 23
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-H / cas 24 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: salarie_non_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 24
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 24
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-I / cas 25 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 25
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 25
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "I-I / cas 26 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 26
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 26
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-I / cas 27 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 27
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 27
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "I-J / cas 28 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: retraite_regime_ouvrant_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: retraite_regime_ouvrant_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 28
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 28
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-J / cas 29 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: retraite_regime_ouvrant_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: retraite_regime_ouvrant_droit
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 29
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: caisse_de_retraite
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 29
+    pf_allocataire: pere
+    pf_payeur: caisse_de_retraite
+    pf_salaire_unique_servi: false
 
 - name: "I-J / cas 30 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: retraite_regime_ouvrant_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: retraite_regime_ouvrant_droit
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 30
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 30
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-K / cas 31 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: retraite_regime_sans_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: retraite_regime_sans_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 31
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 31
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-K / cas 32 : enfants d'un premier mariage du père (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: retraite_regime_sans_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_pere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: retraite_regime_sans_droit
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_pere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 32
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 32
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "I-K / cas 33 : enfants d'un premier mariage de la mère (circulaire n° 42, annexe 2, JORT n° 94, p. 2353-2355)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: parents_en_vie_non_divorces
-        pf_public_statut_pere: retraite_regime_sans_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: premier_mariage_mere
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: retraite_regime_sans_droit
+        pf_statut_mere: agent_public
+        pf_filiation: premier_mariage_mere
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 33
-    indemnite_familiale_public_beneficiaire: mere_montant_anterieur_remariage
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 33
+    pf_allocataire: mere_montant_anterieur_remariage
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "II-A / cas 34 : enfants communs, bénéficiaire déduit (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2540)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public_reversion_et_indemnites_familiales
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public_reversion_et_indemnites_familiales
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 34
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: caisse_de_retraite
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 34
+    pf_allocataire: mere
+    pf_payeur: caisse_de_retraite
+    pf_salaire_unique_servi: false
 
 - name: "II-B / cas 35 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 35
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 35
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "II-C / cas 36 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: salarie
-        pf_public_statut_mere: agent_public_reversion_et_indemnites_familiales
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: salarie
+        pf_statut_mere: agent_public_reversion_et_indemnites_familiales
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 36
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: cnss
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 36
+    pf_allocataire: mere
+    pf_payeur: cnss
+    pf_salaire_unique_servi: false
 
 - name: "II-D / cas 37 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: salarie
-        pf_public_statut_mere: agent_public_reversion_sans_indemnites_familiales
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: salarie
+        pf_statut_mere: agent_public_reversion_sans_indemnites_familiales
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 37
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 37
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "II-E / cas 38 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: salarie
-        pf_public_statut_mere: agent_public_sans_reversion_ni_indemnites_familiales
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: salarie
+        pf_statut_mere: agent_public_sans_reversion_ni_indemnites_familiales
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 38
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 38
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "II-F / cas 39 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 39
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 39
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "II-G / cas 40 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: retraite
-        pf_public_statut_mere: agent_public_reversion_et_indemnites_familiales
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: retraite
+        pf_statut_mere: agent_public_reversion_et_indemnites_familiales
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 40
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: caisse_de_retraite
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 40
+    pf_allocataire: mere
+    pf_payeur: caisse_de_retraite
+    pf_salaire_unique_servi: false
 
 - name: "II-H / cas 41 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2355-2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: pere_decede
-        pf_public_statut_pere: retraite
-        pf_public_statut_mere: agent_public_reversion_sans_indemnites_familiales
-        pf_public_filiation: communs
+        pf_situation_parents: pere_decede
+        pf_statut_pere: retraite
+        pf_statut_mere: agent_public_reversion_sans_indemnites_familiales
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 41
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 41
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "III-A / cas 42 : enfants communs, père sans pension de réversion (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2542)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: agent_public_sans_reversion
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: agent_public_sans_reversion
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 42
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 42
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "III-A / cas 42 : la position de la mère décédée est indifférente (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2542)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: agent_public_sans_reversion
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: agent_public_sans_reversion
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 42
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 42
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "III-B / cas 43 : enfants communs, père bénéficiant de la pension de réversion (circulaire n° 42, annexe 2, JORT n° 89, édition arabe, p. 2542)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: agent_public_avec_reversion
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: agent_public_avec_reversion
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 43
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 43
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "III-C / cas 44 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 44
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 44
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "III-D / cas 45 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: salarie
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: salarie
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 45
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 45
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "III-E / cas 46 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 46
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 46
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "III-F / cas 47 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2356)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: mere_decedee
-        pf_public_statut_pere: retraite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: mere_decedee
+        pf_statut_pere: retraite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 47
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 47
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "IV-A / cas 48 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 48
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 48
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "IV-B / cas 49 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 49
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 49
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "IV-C / cas 50 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 50
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 50
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "IV-D / cas 51 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 51
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 51
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "IV-E / cas 52 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 52
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 52
+    pf_allocataire: pere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "IV-F / cas 53 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 53
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 53
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "IV-G / cas 54 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: salarie
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: salarie
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 54
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 54
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "IV-H / cas 55 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 55
-    indemnite_familiale_public_beneficiaire: non_servie
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 55
+    pf_allocataire: non_servie
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
 
 - name: "IV-I / cas 56 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2357)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_pere
-        pf_public_statut_pere: retraite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_pere
+        pf_statut_pere: retraite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 56
-    indemnite_familiale_public_beneficiaire: pere
-    indemnite_familiale_public_payeur: caisse_de_retraite
-    indemnite_salaire_unique_public_beneficiaire: pere
-    indemnite_salaire_unique_public_payeur: caisse_de_retraite
+    pf_cas_circulaire_42: 56
+    pf_allocataire: pere
+    pf_payeur: caisse_de_retraite
+    pf_salaire_unique_servi: true
 
 - name: "V-A / cas 57 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 57
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: employeur_du_pere
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: employeur_du_pere
+    pf_cas_circulaire_42: 57
+    pf_allocataire: mere
+    pf_payeur: employeur_du_pere
+    pf_salaire_unique_servi: true
 
 - name: "V-B / cas 58 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 58
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: employeur_du_pere
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: employeur_du_pere
+    pf_cas_circulaire_42: 58
+    pf_allocataire: mere
+    pf_payeur: employeur_du_pere
+    pf_salaire_unique_servi: true
 
 - name: "V-C / cas 59 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 59
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: employeur_du_pere
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: employeur_du_pere
+    pf_cas_circulaire_42: 59
+    pf_allocataire: mere
+    pf_payeur: employeur_du_pere
+    pf_salaire_unique_servi: true
 
 - name: "V-D / cas 60 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 60
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: employeur_du_pere
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: employeur_du_pere
+    pf_cas_circulaire_42: 60
+    pf_allocataire: mere
+    pf_payeur: employeur_du_pere
+    pf_salaire_unique_servi: true
 
 - name: "V-E / cas 61 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 61
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: employeur_du_pere
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: employeur_du_pere
+    pf_cas_circulaire_42: 61
+    pf_allocataire: mere
+    pf_payeur: employeur_du_pere
+    pf_salaire_unique_servi: true
 
 - name: "V-F / cas 62 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 62
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 62
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "V-G / cas 63 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: salarie_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 63
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: cnss
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: cnss
+    pf_cas_circulaire_42: 63
+    pf_allocataire: mere
+    pf_payeur: cnss
+    pf_salaire_unique_servi: true
 
 - name: "V-H / cas 64 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: salarie_non_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 64
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 64
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "V-I / cas 65 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 65
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 65
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "V-J / cas 66 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: retraite_regime_ouvrant_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: retraite_regime_ouvrant_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 66
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: caisse_de_retraite
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: caisse_de_retraite
+    pf_cas_circulaire_42: 66
+    pf_allocataire: mere
+    pf_payeur: caisse_de_retraite
+    pf_salaire_unique_servi: true
 
 - name: "V-K / cas 67 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2358-2359)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: divorce_garde_mere
-        pf_public_statut_pere: retraite_regime_sans_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
+        pf_situation_parents: divorce_garde_mere
+        pf_statut_pere: retraite_regime_sans_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 67
-    indemnite_familiale_public_beneficiaire: mere
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: mere
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 67
+    pf_allocataire: mere
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "VI-A / cas 68 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [68, 68]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [employeur_du_pere, employeur_du_pere]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_cas_circulaire_42: [68, 68]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-B / cas 69 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: activite_liberale
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: activite_liberale
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [69, 69]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [employeur_du_pere, employeur_du_pere]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_cas_circulaire_42: [69, 69]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-C / cas 70 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: salarie
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: salarie
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [70, 70]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [employeur_du_pere, employeur_du_pere]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_cas_circulaire_42: [70, 70]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-D / cas 71 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: sans_activite
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: sans_activite
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [71, 71]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [employeur_du_pere, employeur_du_pere]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_cas_circulaire_42: [71, 71]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-E / cas 72 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: agent_public
-        pf_public_statut_mere: retraite
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: agent_public
+        pf_statut_mere: retraite
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [72, 72]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [employeur_du_pere, employeur_du_pere]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_cas_circulaire_42: [72, 72]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [employeur_du_pere, employeur_du_pere]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-F / cas 73 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: activite_liberale
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: activite_liberale
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [73, 73]
-    indemnite_familiale_public_beneficiaire: [non_servie, mere]
-    indemnite_familiale_public_payeur: [non_precise, non_precise]
-    indemnite_salaire_unique_public_beneficiaire: [non_servie, mere]
-    indemnite_salaire_unique_public_payeur: [non_precise, non_precise]
+    pf_cas_circulaire_42: [73, 73]
+    pf_allocataire: [non_servie, mere]
+    pf_payeur: [non_precise, non_precise]
+    pf_salaire_unique_servi: [false, true]
 
 - name: "VI-G / cas 74 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: salarie_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: salarie_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: salarie_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: salarie_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [74, 74]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [cnss, cnss]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [cnss, cnss]
+    pf_cas_circulaire_42: [74, 74]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [cnss, cnss]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-H / cas 75 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: salarie_non_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: salarie_non_beneficiaire_indemnites_familiales
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: salarie_non_beneficiaire_indemnites_familiales
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [75, 75]
-    indemnite_familiale_public_beneficiaire: [non_servie, mere]
-    indemnite_familiale_public_payeur: [non_precise, non_precise]
-    indemnite_salaire_unique_public_beneficiaire: [non_servie, mere]
-    indemnite_salaire_unique_public_payeur: [non_precise, non_precise]
+    pf_cas_circulaire_42: [75, 75]
+    pf_allocataire: [non_servie, mere]
+    pf_payeur: [non_precise, non_precise]
+    pf_salaire_unique_servi: [false, true]
 
 - name: "VI-I / cas 76 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: sans_activite
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: sans_activite
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [76, 76]
-    indemnite_familiale_public_beneficiaire: [non_servie, mere]
-    indemnite_familiale_public_payeur: [non_precise, non_precise]
-    indemnite_salaire_unique_public_beneficiaire: [non_servie, mere]
-    indemnite_salaire_unique_public_payeur: [non_precise, non_precise]
+    pf_cas_circulaire_42: [76, 76]
+    pf_allocataire: [non_servie, mere]
+    pf_payeur: [non_precise, non_precise]
+    pf_salaire_unique_servi: [false, true]
 
 - name: "VI-J / cas 77 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: retraite_regime_ouvrant_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: retraite_regime_ouvrant_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: retraite_regime_ouvrant_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: retraite_regime_ouvrant_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [77, 77]
-    indemnite_familiale_public_beneficiaire: [pere, mere]
-    indemnite_familiale_public_payeur: [caisse_de_retraite, caisse_de_retraite]
-    indemnite_salaire_unique_public_beneficiaire: [pere, mere]
-    indemnite_salaire_unique_public_payeur: [caisse_de_retraite, caisse_de_retraite]
+    pf_cas_circulaire_42: [77, 77]
+    pf_allocataire: [pere, mere]
+    pf_payeur: [caisse_de_retraite, caisse_de_retraite]
+    pf_salaire_unique_servi: [true, true]
 
 - name: "VI-K / cas 78 : enfants communs (circulaire n° 42, annexe 2, JORT n° 94, p. 2360-2361)"
   period: 2000-01
   input:
     individus:
       enfant_garde_pere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: retraite_regime_sans_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: pere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: retraite_regime_sans_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: pere
       enfant_garde_mere:
-        pf_public_situation_parents: divorce_garde_partagee
-        pf_public_statut_pere: retraite_regime_sans_droit
-        pf_public_statut_mere: agent_public
-        pf_public_filiation: communs
-        pf_public_garde_enfant: mere
+        pf_situation_parents: divorce_garde_partagee
+        pf_statut_pere: retraite_regime_sans_droit
+        pf_statut_mere: agent_public
+        pf_filiation: communs
+        pf_garde_enfant: mere
     menage:
       enfants: [enfant_garde_pere, enfant_garde_mere]
   output:
-    pf_public_cas_annexe_2: [78, 78]
-    indemnite_familiale_public_beneficiaire: [non_servie, mere]
-    indemnite_familiale_public_payeur: [non_precise, non_precise]
-    indemnite_salaire_unique_public_beneficiaire: [non_servie, mere]
-    indemnite_salaire_unique_public_payeur: [non_precise, non_precise]
+    pf_cas_circulaire_42: [78, 78]
+    pf_allocataire: [non_servie, mere]
+    pf_payeur: [non_precise, non_precise]
+    pf_salaire_unique_servi: [false, true]
 
 - name: "VII-A / cas 79 : enfants à la charge du tuteur (circulaire n° 42, annexe 2, JORT n° 94, p. 2362)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: tutelle
-        pf_public_statut_tuteur: celibataire
+        pf_situation_parents: tutelle
+        pf_statut_tuteur: celibataire
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 79
-    indemnite_familiale_public_beneficiaire: tuteur
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: tuteur
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 79
+    pf_allocataire: tuteur
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "VII-B / cas 80 : enfants à la charge du tuteur (circulaire n° 42, annexe 2, JORT n° 94, p. 2362)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: tutelle
-        pf_public_statut_tuteur: marie_conjoint_sans_activite
+        pf_situation_parents: tutelle
+        pf_statut_tuteur: marie_conjoint_sans_activite
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 80
-    indemnite_familiale_public_beneficiaire: tuteur
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: tuteur
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 80
+    pf_allocataire: tuteur
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: true
 
 - name: "VII-C / cas 81 : enfants à la charge du tuteur (circulaire n° 42, annexe 2, JORT n° 94, p. 2362)"
   period: 2000-01
   input:
     individus:
       enfant:
-        pf_public_situation_parents: tutelle
-        pf_public_statut_tuteur: marie_conjoint_avec_revenu
+        pf_situation_parents: tutelle
+        pf_statut_tuteur: marie_conjoint_avec_revenu
     menage:
       enfants: [enfant]
   output:
-    pf_public_cas_annexe_2: 81
-    indemnite_familiale_public_beneficiaire: tuteur
-    indemnite_familiale_public_payeur: non_precise
-    indemnite_salaire_unique_public_beneficiaire: non_servie
-    indemnite_salaire_unique_public_payeur: non_precise
+    pf_cas_circulaire_42: 81
+    pf_allocataire: tuteur
+    pf_payeur: non_precise
+    pf_salaire_unique_servi: false
+
+- name: "Secteur privé : deux parents salariés, aucun cas de l'annexe 2 (loi n° 60-30, art. 53, 55 et 65)"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: salarie
+        pf_filiation: communs
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: non_designe
+    pf_payeur: cnss
+    pf_salaire_unique_servi: false
