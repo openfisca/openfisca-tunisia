@@ -1546,7 +1546,7 @@
   output:
     pf_allocataire: pere_mere_pouvant_reclamer_difference
 
-- name: "Secteur privé, couple non séparé, un seul parent salarié / art. 53 et 64 : personne non désignée (garde non définie), avant 1996"
+- name: "Secteur privé, 1961-1996 / art. 53 1° : couple non séparé, seul le père salarié, allocataire : le père"
   period: 1990-01
   input:
     individus:
@@ -1557,7 +1557,53 @@
     menage:
       enfants: [enfant]
   output:
-    pf_allocataire: non_designe
+    pf_cas_circulaire_42: 0
+    pf_allocataire: pere
+    pf_payeur: cnss
+
+- name: "Secteur privé, 1961-1996 / art. 53 1° : couple non séparé, seule la mère salariée, allocataire : la mère"
+  period: 1990-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: sans_activite
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: mere
+    pf_payeur: cnss
+
+- name: "Secteur privé, depuis le 4 août 1996 / art. 53 1° : couple non séparé, seul le père salarié, allocataire : le père"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: salarie
+        pf_statut_mere: sans_activite
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: pere
+    pf_payeur: cnss
+
+- name: "Secteur privé, depuis le 4 août 1996 / art. 53 1° : couple non séparé, seule la mère salariée, allocataire : la mère"
+  period: 2000-01
+  input:
+    individus:
+      enfant:
+        pf_situation_parents: parents_en_vie_non_divorces
+        pf_statut_pere: sans_activite
+        pf_statut_mere: salarie
+    menage:
+      enfants: [enfant]
+  output:
+    pf_cas_circulaire_42: 0
+    pf_allocataire: mere
     pf_payeur: cnss
 
 - name: "Secteur privé, divorcé, garde à la mère, seule la mère salariée, 1961-1996 / art. 64 : versée à la personne qui a la garde"

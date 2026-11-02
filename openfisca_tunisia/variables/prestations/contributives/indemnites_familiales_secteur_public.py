@@ -520,14 +520,17 @@ def _indices_allocataire(individu, period, avant_1996):
 
     - couple non séparé, père et mère ouvrant droit, avant le 4 août 1996 : article 55, alinéa 3,
       allocation du père, la mère pouvant réclamer la différence ;
+    - couple non séparé, un seul des deux parents ouvrant droit : ce parent (article 53, 1° : les
+      allocations sont dues au père ou à la mère du chef de leurs enfants ; l'article 55,
+      alinéa 3, suppose que les deux ouvrent droit), avant comme après 1996 ;
     - parents séparés, garde connue, un seul des deux parents ouvrant droit : l'allocation est
       versée à la personne qui a la garde (article 64 ; article 53, dernier alinéa pour la
       personne qui n'a pas d'activité propre), avant comme après 1996.
 
     Non codé, faute de texte qui tranche (points du précis, section « Qui perçoit
     l'allocation ») :
-    TODO (1) ce que « garde » veut dire quand les parents vivent ensemble : couple non séparé
-    depuis le 4 août 1996, ou un seul parent ouvrant droit ;
+    TODO (1) ce que « garde » veut dire quand les parents vivent ensemble : couple non séparé,
+    père et mère ouvrant droit, depuis le 4 août 1996 ;
     TODO (2) avant 1996, parents séparés ouvrant droit tous deux : article 55, alinéa 3 (allocation
     du père) face à l'article 64 (versement à la garde) ;
     TODO (4) depuis 1996, parents séparés ouvrant droit tous deux : « l'allocation la plus élevée »
@@ -551,6 +554,12 @@ def _indices_allocataire(individu, period, avant_1996):
             Allocataire.pere_mere_pouvant_reclamer_difference.index,
             valeur,
         )
+    # Article 53, 1° : les allocations sont dues au père ou à la mère du chef de leurs enfants ;
+    # l'article 55, alinéa 3, ne joue que si les deux ouvrent droit. Dans un couple non séparé, le
+    # seul parent ouvrant droit est l'allocataire, avant comme après 1996. Le père et la mère se
+    # distinguent par `pf_statut_pere` et `pf_statut_mere`, non par un sexe.
+    valeur = where(couple * pere_droit * (1 - mere_droit), Allocataire.pere.index, valeur)
+    valeur = where(couple * mere_droit * (1 - pere_droit), Allocataire.mere.index, valeur)
     valeur = where(garde_pere * un_seul_droit, Allocataire.pere.index, valeur)
     valeur = where(garde_mere * un_seul_droit, Allocataire.mere.index, valeur)
     return where(prive, valeur, indices)
