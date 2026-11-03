@@ -4,9 +4,10 @@
 
 * Amélioration technique.
 * Périodes concernées : à partir du 01/01/2010 ; paramètre complété.
-* Zones impactées : `parameters/produits_subventionnes/semoule.yaml`.
+* Zones impactées : `parameters/produits_subventionnes/` (semoule, gros pain, baguette, pâtes, couscous, sucre, laits, huile).
 * Détails :
   - **Sources de `semoule`** : le tableau « Évolution des prix de vente au public des produits subventionnés, 2010-2022 » du ministère du Commerce (commerce.gov.tn/storage/donwloads/fr2.pdf) donne les quatre valeurs du paramètre (0,48 ; 0,45 ; 0,64 ; 0,79 D/kg). Valeurs inchangées, avec références, étiquettes, documentation, dates ordonnées (comme le proposait la PR #212, qui est remplacée).
+  - **Autres produits subventionnés** (gros pain, baguette, pâtes, couscous, sucre, lait demi-écrémé en bouteille et UHT, huile) : même tableau en référence, étiquettes courtes, dates ordonnées. Valeurs inchangées sauf une date : les laits passent à 1,300 et 1,350 D/l en **2022** (tableau du ministère), non en 2025 comme dans les fichiers ; ils valent donc 1,300 et 1,350 en 2022-2024 au lieu de 1,200 et 1,250. La farine n'est pas dans le tableau (valeur 0 en 2025, « Indisponible ») : non touchée.
   - **Texte officiel** : l'arrêté du ministre de l'économie nationale du 15 août 1991 (JORT n° 61, p. 1546) est le dernier arrêté de prix de la semoule publié au JORT (205 millimes au détail en vrac). Il est cité, non porté comme valeur : les prix de 1991 à 2010 n'ont pas été retrouvés. Aucun texte publié ne fixe les prix de 2010 à 2022.
   - **Écarts de presse signalés** : un communiqué du ministère reproduit le 3 janvier 2018 donne encore 450 millimes ; un article du 11 décembre 2020 donne 790 millimes pour la semoule emballée. Le tableau du ministère est retenu.
 

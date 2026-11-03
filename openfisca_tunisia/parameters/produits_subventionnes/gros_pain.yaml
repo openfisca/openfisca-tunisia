@@ -1,9 +1,16 @@
 description: Prix subventionné du gros pain
 values:
-  2011-01-01:
-    value: 0.230
   2010-01-01:
-    value: 0.250
+    value: 0.25
+  2011-01-01:
+    value: 0.23
 metadata:
+  short_label: Gros pain
+  label_en: Subsidized large bread price
   unit: currency/unit
+  reference:
+    2010-01-01:
+    - title: "Évolution des prix de vente au public des produits subventionnés, 2010-2022 (ministère du Commerce)"
+      href: https://commerce.gov.tn/storage/donwloads/fr2.pdf
+      note: "Tableau annuel, sans texte ni date d'effet dans l'année ; chaque valeur est portée au 1er janvier. Gros pain (400 g) en dinars - 2010 0,250 ; 2011 à 2022 0,230."
 documentation: Le poids du gros pain subventionné est fixé à 400 grammes
