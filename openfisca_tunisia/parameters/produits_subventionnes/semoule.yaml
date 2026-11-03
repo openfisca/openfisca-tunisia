@@ -1,21 +1,35 @@
-description: Prix subventionné de la semoule en vrac
+description: Prix subventionné de la semoule
 values:
   2010-01-01:
     value: 0.48
   2011-01-01:
     value: 0.45
+  2016-01-01:
+    value: 0.64
+  2020-01-01:
+    value: 0.79
 metadata:
   short_label: Semoule
-  label_en: Subsidized semolina price (bulk)
+  label_en: Subsidized semolina price
   unit: currency/kg
   reference:
     2010-01-01:
-    - title: Prix de vente de la semoule en 2010, tels que les services du ministère du Commerce les ont communiqués à l'enquête nationale sur le budget, la consommation et le niveau de vie des ménages de 2010
-      note: Texte ni date de fixation retrouvés en ligne. Valeur reprise de la version d'origine du paramètre.
+    - title: "Évolution des prix de vente au public des produits subventionnés, 2010-2022 (ministère du Commerce)"
+      href: https://commerce.gov.tn/storage/donwloads/fr2.pdf
+      note: Tableau annuel, sans texte ni date d'effet dans l'année ; chaque valeur est portée au 1er janvier de l'année. Semoule (kg) en dinars - 2010 0,480 ; 2011 à 2015 0,450 ; 2016 à 2019 0,640 ; 2020 à 2022 0,790.
+    - title: Arrêté du ministre de l'économie nationale du 15 août 1991 portant fixation des prix de vente de la semoule PS-10
+      href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
+      note: JORT n° 61 du 3 septembre 1991, p. 1546. Dernier arrêté de prix de la semoule publié au JORT. À compter du 17 août 1991, semoule PS-10 en vrac, prix de détail au kilo 205 millimes (185 en gros, 180 au producteur). Non porté dans le paramètre, les prix de 1991 à 2010 n'ayant pas été retrouvés.
+    - title: قرار وزير الاقتصاد الوطني مؤرخ في 15 أوت 1991 يتعلق بضبط أسعار بيع السميد
+      href: https://www.pist.tn/jort/1991/1991A/Ja06191.pdf
     2011-01-01:
     - title: "Produits subventionnés : les prix restent inchangés (L'Économiste maghrébin, 3 janvier 2018)"
       href: https://www.leconomistemaghrebin.com//2018/01/03/produits-subventionnes-augmentation-prix/
-      note: Le communiqué du ministère du Commerce reproduit par l'article donne la semoule à 450 millimes le kilo, prix inchangé au 3 janvier 2018. Date de la baisse de 480 à 450 millimes non retrouvée en ligne ; 1er janvier 2011 retenu comme pour les pâtes, le couscous et le sucre.
+      note: Le communiqué du ministère du Commerce reproduit par l'article donne la semoule à 450 millimes le kilo au 3 janvier 2018, alors que le tableau du ministère donne 640 millimes dès 2016. Écart non expliqué ; le tableau est retenu.
+    2020-01-01:
+    - title: "Augmentation des prix de la farine et de la semoule (African Manager, 11 décembre 2020)"
+      href: https://africanmanager.com/augmentation-des-prix-de-la-farine-et-de-la-semoule/
+      note: Le kilo de semoule emballée passe de 700 à 790 millimes (annonce du 11 décembre 2020). Le tableau du ministère porte 790 millimes pour 2020 sans distinguer vrac et emballée ; on ne sait pas s'il s'agit du même prix.
 documentation: |-
-  Prix de vente de la semoule vendue en vrac au détail. La semoule vendue emballée est un autre prix, non subventionné : voir `semoule_emballee`.
-  Le prix de 450 millimes est resté inchangé jusqu'en janvier 2018 au moins ; le prix en vigueur après cette date n'a pas été retrouvé en ligne. La valeur est reportée sans date de fin.
+  Prix de vente au public de la semoule, d'après le tableau annuel du ministère du Commerce.
+  Aucun texte publié au JORT ne fixe ces prix : le dernier arrêté de prix de la semoule date du 15 août 1991.
