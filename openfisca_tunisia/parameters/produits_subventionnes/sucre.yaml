@@ -1,14 +1,21 @@
 description: Prix subventionné du sucre
 values:
-  2022-01-01:
-    value: 1.400
-  2021-01-01:
-    value: 1.150
-  2020-01-01:
-    value: 1.050
-  2011-01-01:
-    value: 0.970
   2010-01-01:
-    value: 1.020
+    value: 1.02
+  2011-01-01:
+    value: 0.97
+  2020-01-01:
+    value: 1.05
+  2021-01-01:
+    value: 1.15
+  2022-01-01:
+    value: 1.4
 metadata:
+  short_label: Sucre
+  label_en: Subsidized sugar price
   unit: currency/kg
+  reference:
+    2010-01-01:
+    - title: "Évolution des prix de vente au public des produits subventionnés, 2010-2022 (ministère du Commerce)"
+      href: https://commerce.gov.tn/storage/donwloads/fr2.pdf
+      note: "Tableau annuel, sans texte ni date d'effet dans l'année ; chaque valeur est portée au 1er janvier. Sucre (kg) en dinars - 2010 1,020 ; 2011 à 2019 0,970 ; 2020 1,050 ; 2021 1,150 ; 2022 1,400."

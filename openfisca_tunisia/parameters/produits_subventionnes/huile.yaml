@@ -1,6 +1,13 @@
 description: Prix subventionné de l'huile végétale en bouteille de verre
 values:
   2010-01-01:
-    value: 0.900
+    value: 0.9
 metadata:
+  short_label: Huile végétale
+  label_en: Subsidized vegetable oil price (glass bottle)
   unit: currency/l
+  reference:
+    2010-01-01:
+    - title: "Évolution des prix de vente au public des produits subventionnés, 2010-2022 (ministère du Commerce)"
+      href: https://commerce.gov.tn/storage/donwloads/fr2.pdf
+      note: "Tableau annuel, sans texte ni date d'effet dans l'année ; chaque valeur est portée au 1er janvier. Huile végétale en bouteille de verre (L) en dinars - 0,900 de 2010 à 2022."

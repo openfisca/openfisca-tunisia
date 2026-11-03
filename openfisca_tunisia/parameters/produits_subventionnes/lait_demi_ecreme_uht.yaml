@@ -1,16 +1,23 @@
 description: Prix subventionné du lait demi-écrémé UHT
 values:
-  2025-01-01:
-    value: 1.350
-  2020-01-01:
-    value: 1.250
-  2015-01-01:
-    value: 1.120
-  2012-01-01:
-    value: 1.060
-  2011-01-01:
-    value: 0.970
   2010-01-01:
-    value: 1.030
+    value: 1.03
+  2011-01-01:
+    value: 0.97
+  2012-01-01:
+    value: 1.06
+  2015-01-01:
+    value: 1.12
+  2020-01-01:
+    value: 1.25
+  2022-01-01:
+    value: 1.35
 metadata:
+  short_label: Lait UHT
+  label_en: Subsidized semi-skimmed milk price (UHT)
   unit: currency/l
+  reference:
+    2010-01-01:
+    - title: "Évolution des prix de vente au public des produits subventionnés, 2010-2022 (ministère du Commerce)"
+      href: https://commerce.gov.tn/storage/donwloads/fr2.pdf
+      note: "Tableau annuel, sans texte ni date d'effet dans l'année ; chaque valeur est portée au 1er janvier. Lait demi-écrémé UHT (L) en dinars - 2010 1,030 ; 2011 0,970 ; 2012 à 2014 1,060 ; 2015 à 2019 1,120 ; 2020 et 2021 1,250 ; 2022 1,350."
