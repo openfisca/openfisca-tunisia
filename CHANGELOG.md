@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.159 - [#521](https://github.com/openfisca/openfisca-tunisia/pull/521)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `pyproject.toml`, `uv.lock`.
+* Détails :
+  - **openfisca-core** : borne relevée à `>=44, <46` (PR #464 de dependabot) ; le verrou passe de 44.7.1 à 45.0.5. Les 7 756 tests Python et les 8 094 tests YAML passent avec la version 45.0.5.
+  - **Dépendances du verrou** : werkzeug 3.1.8 -> 3.1.9 (#481), urllib3 2.7.0 -> 2.8.0 (#467), tornado 6.5.8 -> 6.5.9 (#466). Ces trois mises à jour et la précédente remplacent les PR de dependabot, dont le contrôle de version et de CHANGELOG échouait.
+  - **ruff non relevé** : la PR #463 (`<0.17`) n'est pas reprise. Avec ruff 0.16.10, `ruff check .` signale 211 erreurs sur le code actuel (102 corrigeables automatiquement) ; la borne reste `<0.9`.
+
 ## 0.158 - [#520](https://github.com/openfisca/openfisca-tunisia/pull/520)
 
 * Amélioration technique.
