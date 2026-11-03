@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.158 - [#520](https://github.com/openfisca/openfisca-tunisia/pull/520)
+
+* Amélioration technique.
+* Périodes concernées : à partir du 01/01/2010 ; paramètres modifiés et nouveau.
+* Zones impactées : `parameters/produits_subventionnes/semoule.yaml`, `semoule_emballee.yaml` (nouveau), `index.yaml`.
+* Détails :
+  - **`semoule` ne porte plus que le prix de la semoule subventionnée en vrac** : 0,48 D/kg en 2010, 0,45 en 2011. Les valeurs de 2016 (0,64) et de 2020 (0,79) sont retirées : le prix de 790 millimes est celui de la semoule *emballée* à partir de décembre 2020 (de 700 à 790 millimes), non celui de la semoule subventionnée, restée à 450 millimes au moins jusqu'en janvier 2018. La valeur de 2016 n'a trouvé aucune source en ligne.
+  - **Nouveau `semoule_emballee`** : 0,79 D/kg à partir du 11 décembre 2020 (date de l'article qui rapporte la hausse ; ni texte ni date d'effet retrouvés).
+  - Références, étiquettes (`short_label`, `label_en`), documentation et valeurs ordonnées par date, comme le proposait la PR #212 (robot de l'éditeur de paramètres), qui est remplacée.
+  - Limites : le prix de la semoule subventionnée après janvier 2018 n'a pas été retrouvé en ligne ; la valeur de 2010 (0,48) vient de la version d'origine, sans texte retrouvé.
+
 ## 0.157 - [#518](https://github.com/openfisca/openfisca-tunisia/pull/518)
 
 * Évolution du système socio-fiscal.
