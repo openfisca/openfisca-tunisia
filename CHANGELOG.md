@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.160 - [#522](https://github.com/openfisca/openfisca-tunisia/pull/522)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `parameters/prestations/non_contributives/pnafn/allocation.yaml`.
+* Détails :
+  - Documentation du PNAFN enrichie : le cadre du programme (recensement, registre de la pauvreté, éligibilité) est posé par des circulaires administratives **non publiées au Journal officiel**, aujourd'hui archivées dans la base législative `tunisia-legislative-references` — circulaire du Premier ministre n° 18 du 4 juin 1986, n° 22 de 1993 (registre national de la pauvreté), n° 5 de 1998 (gestion déconcentrée), n° 11 de 2009, et circulaire conjointe du 27 mai 2011 fixant le seuil d'éligibilité à 585 dinars de revenu annuel moyen ajusté.
+  - Aucune ne fixe le montant mensuel de l'allocation : les onze paliers, leurs dates, la référence du palier de 180 dinars et la conclusion de la série sont **inchangés**.
+
 ## 0.159 - [#521](https://github.com/openfisca/openfisca-tunisia/pull/521)
 
 * Amélioration technique.
