@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.162 - [#524](https://github.com/openfisca/openfisca-tunisia/pull/524)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1973.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/pensionne_cnrps/prevoyance_sociale`.
+* Détails :
+  - **La prévoyance sociale sur pension des titulaires de la CNRPS commence au 1er avril 1973, à 2 %**, et non en 2007. Le décret n° 73-91 du 12 mars 1973 (JORT n° 10, p. 356, lu à l'image), article 15, dernier alinéa : « La cotisation due par le retraité et la veuve de retraité titulaire d'une pension directe ou de reversion est fixée à 2 % de leur pension en principal » ; l'article 18 fait prendre effet le décret au 1er avril 1973.
+  - La rampe de 1 % à 4 % de 2007 à 2010 que portait déjà ce fichier est le régime de base d'assurance maladie des titulaires de pension (décret n° 2007-1406, articles 12 et 13, JORT n° 49 du 19 juin 2007, p. 2162), qui succède à cette prévoyance. La référence et la note de 2007 sont complétées ; la note périmée invoquant une date de 1959 « sans appui textuel » est corrigée.
+  - Aucun texte modifiant le taux de 2 % entre 1973 et 2007 n'a été identifié. L'articulation entre la prévoyance de 2 % et le régime de base d'assurance maladie (succession ou cumul) reste à confirmer (cf. corps de PR). Dossier : `docs/notes/cnrps-prevoyance-73-91.md`.
+
 ## 0.161 - [#523](https://github.com/openfisca/openfisca-tunisia/pull/523)
 
 * Évolution du système socio-fiscal.

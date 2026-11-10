@@ -1,9 +1,11 @@
 description: Prévoyance sociale
 brackets:
 - threshold:
-    2007-07-01:
+    1973-04-01:
       value: 0
   rate:
+    1973-04-01:
+      value: 0.02
     2007-07-01:
       value: 0.01
     2008-07-01:
@@ -14,11 +16,17 @@ brackets:
       value: 0.04
 metadata:
   reference:
+    1973-04-01:
+    - title: "Décret n° 73-91 du 12 mars 1973 portant organisation des régimes de prévoyance sociale, article 15"
+      href: "https://www.pist.tn/jort/1973/1973F/Jo01073.pdf"
+      note: "JORT n° 10 des 9, 13 et 16 mars 1973, p. 356. L'article 15, dernier alinéa : « La cotisation due par le retraité et la veuve de retraité titulaire d'une pension directe ou de reversion est fixée à 2 % de leur pension en principal. » L'article 18 fait prendre effet le décret « à compter du 1er avril 1973 ». Aucun texte modifiant ce taux de 2 % avant 2007 n'a été identifié ; le décret du 12 avril 1951 prélevait auparavant 0,50 % sous plafond (non lu). La date de 1959 que portait ce fichier était sans appui textuel. Lu à l'image (édition française scannée). Édition arabe : https://www.pist.tn/jort/1973/1973A/Ja01073.pdf"
+    - title: "الأمر عدد 91 لسنة 1973 المؤرخ في 12 مارس 1973 المتعلق بضبط الأنظمة المتعلقة بالحيطة الاجتماعية، الفصل 15"
+      href: "https://www.pist.tn/jort/1973/1973A/Ja01073.pdf"
     2007-07-01:
-    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, articles 2 et 13"
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, articles 2, 12 et 13"
       href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
-      note: "JORT n° 49 du 19 juin 2007, article 2 p. 2156, article 13 p. 2162. L'assiette est le montant brut de la pension ; l'article 13 échelonne le taux des titulaires de pension affiliés à la CNRPS au titre du régime obligatoire : 1 % au 1er juillet 2007, 2 % en 2008, 3 % en 2009, 4 % en 2010. La date de 1959 que portait ce fichier était sans appui textuel — aucun texte antérieur établissant un prélèvement obligatoire sur la pension n'a pu être retrouvé."
-    - title: "أمر عدد 1406 لسنة 2007 مؤرخ في 18 جوان 2007 يتعلق بضبط قاعدة احتساب نسب الاشتراكات المستوجبة بعنوان النظام القاعدي للتأمين على المرض ومرحلية تطبيقها، الفصلان 2 و13"
+      note: "JORT n° 49 du 19 juin 2007, Titre III p. 2162. L'article 2 assied la cotisation sur le montant brut de la pension. L'article 13 échelonne le taux dû par les titulaires de pension affiliés à la CNRPS au titre du régime obligatoire de prévoyance sociale : 1 % au 1er juillet 2007, 2 % en 2008, 3 % en 2009, 4 % en 2010 — plafond de 4 % fixé par l'article 12. Ce régime de base d'assurance maladie succède à la prévoyance de 2 % du décret n° 73-91 ; l'articulation des deux prélèvements (succession ou cumul) reste à confirmer. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
+    - title: "أمر عدد 1406 لسنة 2007 مؤرخ في 18 جوان 2007 يتعلق بضبط قاعدة احتساب نسب الاشتراكات المستوجبة بعنوان النظام القاعدي للتأمين على المرض ومرحلية تطبيقها، الفصول 2 و12 و13"
       href: "https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
     2008-07-01:
     - title: Décret n° 2007-1406 du 18 juin 2007, fixant l’assiette de calcul des taux de cotisations dues au titre de régime de base d’assurance maladie et ses étapes d’application.
@@ -37,3 +45,9 @@ metadata:
       href: https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf
   rate_unit: /1
   threshold_unit: currency
+documentation: |-
+  Régime obligatoire de prévoyance sociale des titulaires de pension de la CNRPS. Le décret
+  n° 73-91 (article 15) fixe la cotisation du retraité et de la veuve de retraité à 2 % de la
+  pension en principal, au 1er avril 1973. Le décret n° 2007-1406 (articles 12 et 13) échelonne
+  ensuite, de 2007 à 2010, le taux du régime de base d'assurance maladie des titulaires de pension
+  affiliés à la CNRPS, de 1 % à 4 %. L'assiette est le montant brut de la pension (article 2).
