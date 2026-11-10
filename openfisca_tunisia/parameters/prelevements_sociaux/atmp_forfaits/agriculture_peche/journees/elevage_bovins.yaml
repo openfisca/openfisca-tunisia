@@ -1,0 +1,16 @@
+description: "Journées de travail — Élevage : bovins (1995) ; bovins, équins et camélidés (1999)"
+values:
+  1995-01-01:
+    value: 30
+metadata:
+  unit: day
+  short_label: "Élevage : bovins, équins et camélidés"
+  reference:
+    1995-01-01:
+    - title: "Décret n° 95-538 du 1er avril 1995, relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, article 4"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo03095.pdf"
+      note: "JORT n° 30 du 14 avril 1995, pp. 690-693 (éd. française), pp. 691-692 (éd. arabe) ; entrée en vigueur le 1er janvier 1995 (article 28). Tableau de l'article 4 : bovins, 30 jours par tête. L'édition arabe, lue à l'image, fait foi : https://www.pist.tn/jort/1995/1995A/Ja03095.pdf"
+    1999-04-01:
+    - title: "Décret n° 99-1010 du 10 mai 1999, modifiant et complétant le décret n° 95-538 du 1er avril 1995, article premier (article 4 paragraphe 2 nouveau du décret n° 95-538)"
+      href: "https://www.pist.tn/jort/1999/1999F/Jo04099.pdf"
+      note: "JORT n° 40 du 18 mai 1999, p. 734 (éd. française), p. 898 (éd. arabe) ; entrée en vigueur le 1er avril 1999 (article 2). Le décret n° 99-1010 étend la ligne des bovins aux équins et aux camélidés ; la valeur de 30 jours par tête est inchangée. Lu à l'image (la couche texte de l'édition française est en police chiffrée). Édition arabe : https://www.pist.tn/jort/1999/1999A/Ja04099.pdf"

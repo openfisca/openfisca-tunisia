@@ -1,0 +1,12 @@
+description: "Journées de travail — Céréales en irrigué"
+values:
+  1995-01-01:
+    value: 15
+metadata:
+  unit: day
+  short_label: "Céréales en irrigué"
+  reference:
+    1995-01-01:
+    - title: "Décret n° 95-538 du 1er avril 1995, relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, article 4"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo03095.pdf"
+      note: "JORT n° 30 du 14 avril 1995, pp. 690-693 (éd. française), pp. 691-692 (éd. arabe) ; entrée en vigueur le 1er janvier 1995 (article 28). Tableau de l'article 4 : céréales en irrigué, 15 jours par hectare. L'édition arabe, lue à l'image, fait foi : https://www.pist.tn/jort/1995/1995A/Ja03095.pdf"

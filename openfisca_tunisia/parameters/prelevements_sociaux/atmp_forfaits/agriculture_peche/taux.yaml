@@ -1,0 +1,18 @@
+description: "Taux de la cotisation forfaitaire annuelle du secteur agricole et de la pêche à la part"
+values:
+  1995-01-01:
+    value: 0.01
+  1999-04-01:
+    value: 0.008
+metadata:
+  unit: "/1"
+  short_label: "Taux forfait agricole"
+  reference:
+    1995-01-01:
+    - title: "Décret n° 95-538 du 1er avril 1995, relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, article 4"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo03095.pdf"
+      note: "JORT n° 30 du 14 avril 1995, pp. 690-693 (éd. française), pp. 691-692 (éd. arabe) ; entrée en vigueur le 1er janvier 1995 (article 28). « La cotisation annuelle exigible est calculée à raison de 1 % du salaire minimum journalier agricole garanti affecté d'un cœfficient multiplicateur égal à 1,5 et multiplié par le nombre de journées de travail. » L'édition arabe, lue à l'image, fait foi : https://www.pist.tn/jort/1995/1995A/Ja03095.pdf"
+    1999-04-01:
+    - title: "Décret n° 99-1010 du 10 mai 1999, modifiant et complétant le décret n° 95-538 du 1er avril 1995, article premier (article 4 paragraphe 2 nouveau du décret n° 95-538)"
+      href: "https://www.pist.tn/jort/1999/1999F/Jo04099.pdf"
+      note: "JORT n° 40 du 18 mai 1999, p. 734 (éd. française), p. 898 (éd. arabe) ; entrée en vigueur le 1er avril 1999 (article 2). « La cotisation annuelle exigible est calculée à raison de 0,80 % du salaire minimum journalier agricole garanti affecté d'un coefficient multiplicateur égal à 1,5 ». Seul le taux change ; coefficient, champ et base des réparations sont inchangés. Lu à l'image (la couche texte de l'édition française est en police chiffrée). Édition arabe : https://www.pist.tn/jort/1999/1999A/Ja04099.pdf"

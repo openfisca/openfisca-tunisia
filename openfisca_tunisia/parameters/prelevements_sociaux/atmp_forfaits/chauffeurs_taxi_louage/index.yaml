@@ -1,0 +1,7 @@
+description: "Forfait des chauffeurs de louage et de taxis (article 5), étendu au transport rural et modifié par le décret n° 2000-1439"
+documentation: |-
+  Assiette = SMIG régime 48 heures, horaire, × nombre d'heures annuel × coefficient. Au 1er juillet
+  2000, le décret n° 2000-1439 fixe pour le taxi, le louage et le transport rural le même forfait
+  sans coefficient (2 400 heures), valable aussi pour les régimes de sécurité sociale ; il abroge
+  « toutes dispositions antérieures contraires » sans nommer l'article 5. Les « masseurs » des bains
+  maures, que le décret de 2000 ne vise pas, restent régis par l'article 5 (`masseurs_bains_maures`).

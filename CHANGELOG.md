@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.161 - [#523](https://github.com/openfisca/openfisca-tunisia/pull/523)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1995 (forfaits et modulation) ; refontes au 01/04/1999 et au 01/07/2000 ; variable nouvelle.
+* Zones impactées : `parameters/prelevements_sociaux/atmp_forfaits/` (nouveau), `parameters/prelevements_sociaux/atmp_modulation/` (nouveau), `variables/prelevements_obligatoires/cotisations_forfaitaires_accidents_travail.py` (nouveau).
+* Détails :
+  - **Verse les salaires forfaitaires d'accidents du travail et de maladies professionnelles** des articles 4 à 7 du décret n° 95-538 du 1er avril 1995 (JORT n° 30 du 14 avril 1995, édition arabe pp. 691-692, qui fait foi, lue à l'image) : forfait du secteur agricole non régi par la loi n° 89-73 et des pêcheurs payés à la part (article 4 : taux de 1 %, coefficient 1,5, tableau des journées par type de culture ou d'activité, base des réparations SMAG × 300 jours × coefficient 1, 1,5 ou 2) ; chauffeurs de louage et de taxis et « masseurs » des bains maures (article 5 : SMIG 48 heures × 2 400 heures × 1,5) ; employés de maison (article 6 : 0,53 %, 0,75 % et 1 % du SMAG × 300 jours, coefficient 1,5 pour les conducteurs) ; travailleurs temporaires auprès des particuliers (article 7 : SMIG × 200 heures par mois × coefficient 1 ou 2).
+  - **Refonte du forfait agricole au 1er avril 1999** par le décret n° 99-1010 (JORT n° 40 du 18 mai 1999, p. 734) : le taux passe de 1 % à 0,80 %, le tableau des journées reçoit l'horticulture de plein champ (70) et la cuniculture (36 jours pour 1 000 lapins), et la ligne des bovins est étendue aux équins et aux camélidés ; les autres valeurs sont reprises à l'identique.
+  - **Forfait du transport public au 1er juillet 2000** par le décret n° 2000-1439 (JORT n° 52 du 30 juin 2000, p. 1541) : pour le taxi, le louage et le transport rural, l'assiette devient le SMIG 48 heures × 2 400 heures **sans coefficient**, valable aussi pour les régimes de sécurité sociale ; les « masseurs » des bains maures, hors de son champ, restent régis par l'article 5 (coefficient 1,5).
+  - **Modulation de la cotisation** (articles 10 à 27 du décret n° 95-538) : cotisation supplémentaire de 50 % des cotisations principales (article 17), portée à 100 % au plus (articles 17 et 18), réduction plafonnée à 25 % (article 24).
+  - **Nouvelle variable** `cotisation_accident_travail_forfaitaire_employe_maison` : seul forfait entièrement déterminé par le droit (taux propres à l'article 6 et assiette fixe), calculé à partir du SMAG journalier. Les autres forfaits sont versés en paramètres ; l'arborescence de leurs variables (option pour les salaires effectifs, surfaces par culture, nombre de têtes, qualification, taux de branche, intégration annuel/mensuel) reste à arbitrer (issue #471).
+  - Dossier de lecture : `docs/notes/atmp-forfaits-95-538.md`.
+
 ## 0.160 - [#522](https://github.com/openfisca/openfisca-tunisia/pull/522)
 
 * Amélioration technique.

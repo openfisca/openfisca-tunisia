@@ -1,0 +1,16 @@
+description: "Nombre d'heures annuel retenu pour l'assiette forfaitaire (SMIG horaire régime 48 heures)"
+values:
+  1995-01-01:
+    value: 2400
+metadata:
+  unit: "heure"
+  short_label: "Heures par an"
+  reference:
+    1995-01-01:
+    - title: "Décret n° 95-538 du 1er avril 1995, relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, article 5"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo03095.pdf"
+      note: "JORT n° 30 du 14 avril 1995, pp. 690-693 (éd. française), pp. 691-692 (éd. arabe) ; entrée en vigueur le 1er janvier 1995 (article 28). « … le salaire minimum interprofessionnel garanti, régime 48 heures, rapporté à une période de travail de 2400 heures par an … » L'édition arabe, lue à l'image, fait foi : https://www.pist.tn/jort/1995/1995A/Ja03095.pdf"
+    2000-07-01:
+    - title: "Décret n° 2000-1439 du 27 juin 2000, relatif à la détermination de l'assiette des cotisations aux régimes de sécurité sociale et au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles concernant les travailleurs du secteur de transport public des personnes par taxi, louage et transport rural, articles premier, 2 et 4"
+      href: "https://www.pist.tn/jort/2000/2000F/Jo0522000.pdf"
+      note: "JORT n° 52 du 30 juin 2000, p. 1541 ; entrée en vigueur le 1er juillet 2000 (article 4). « … le salaire minimum interprofessionnel garanti régime 48 heures rapporté à une durée d'occupation de 2400 heures par an. » Lu à l'image (couche texte en police chiffrée). Édition arabe : https://www.pist.tn/jort/2000/2000A/Ja05200.pdf"
