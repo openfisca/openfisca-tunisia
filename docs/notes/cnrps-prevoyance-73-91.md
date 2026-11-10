@@ -37,10 +37,15 @@ la rampe 1→4 % de 2007 est redocumentée comme le régime de base d'assurance 
   **intégré** au total maladie ; par analogie les pensionnés verraient la maladie absorber la
   prévoyance — mais l'art. 13 part de 1 %, sans reprendre le 2 %. Question posée à une spécialiste
   (fiche précis `r-cnrps-cotisation-retraites-1973-2007`).
-- **Sujet 2b — `salarie_cnrps` maladie** : les valeurs du modèle (employé 1 %/1,88 %/2,75 % ;
-  employeur 2 %/3 %/4 %) ne concordent proprement **ni** avec l'art. 4 (obligatoire : employé
-  2 %/2,88 %/3,75 %, employeur 1 %/2 %/3 %) **ni** avec l'art. 5 (facultatif : employé
-  3,75 %/3,25 %/2,75 %, employeur 3 %/3,5 %/4 %). Le 1,88 %/1,87 % du modèle paraît être le *taux de
-  cotisations supplémentaire* de l'art. 4 pris pour un niveau. Reconciliation à arbitrer (régime
-  obligatoire ou facultatif ?) avant de réécrire ces valeurs : non touché ici.
+- **Sujet 2b — `salarie_cnrps` maladie (traité, PR empilée distincte)** : après relecture, les
+  valeurs du modèle (salarié 1 %/1,88 %/2,75 % ; employeur 1 %→2 %/3 %/4 %) **correspondent bien à
+  l'art. 4** (régime obligatoire) : le « 2 % en application » de l'art. 4 est le total pré-2007
+  (1 % salarié art. 14 + 1 % employeur art. 16), et les 1,88 %/1,87 % sont les *relèvements* répartis
+  1 % employeur + 0,88 %/0,87 % salarié. Seul défaut corrigé : la part employeur partait d'un
+  1959-02-01 **non sourcé** → redatée au 1973-04-01 (décret 73-91, **art. 16** : contribution de
+  l'État de 1 %). Le propriétaire a retenu le régime **obligatoire** (art. 4) ; le régime facultatif
+  (art. 5) n'est pas modélisé. Reste ouvert : la date exacte où la part salariale « en application »
+  aurait atteint 2 % — l'art. 4 la suppose acquise en 2007, le modèle garde 1 % (art. 14) jusque-là.
+  Art. 16 lu : « La contribution de l'État aux régimes obligatoires des prestations en nature et de
+  Prévoyance Sociale est fixée à 1 % … » (p. 356).
 - Régime de 1951 (décret du 12 avril 1951, prévoyance à 0,50 % sous plafond) : non lu.
