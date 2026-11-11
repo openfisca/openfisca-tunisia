@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.163 - [#525](https://github.com/openfisca/openfisca-tunisia/pull/525)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1973 ; valeur non sourcée retirée du 01/02/1959 au 31/03/1973.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/salarie_cnrps/cotisations_employeur/maladie`, `.../cotisations_salarie/maladie`.
+* Détails :
+  - **La contribution employeur de prévoyance sociale des agents CNRPS en activité commence au 1er avril 1973, à 1 %**, et non en 1959. Le décret n° 73-91 (JORT n° 10, p. 356, lu à l'image), article 16 : « La contribution de l'Etat aux régimes obligatoires des prestations en nature et de Prévoyance Sociale est fixée à 1 % » ; article 18 : effet au 1er avril 1973. La date de 1959 que portait le fichier était sans appui textuel (part employeur nulle de 1959 à mars 1973).
+  - **Références précisées** pour les deux parts (salarié et employeur) : socle du décret n° 73-91 (article 14 pour le salarié, article 16 pour l'employeur) et montée en charge du régime de base d'assurance maladie par l'article 4 du décret n° 2007-1406 — total 3 % en 2007 (1 % salarié, 2 % employeur), 4,88 % en 2008 (1,88 % / 3 %), 6,75 % en 2009 (2,75 % / 4 %). La table représente le **régime obligatoire** (article 4) ; le **régime facultatif** d'assurance maladie de l'article 5 n'est pas modélisé.
+  - **Taux inchangés** à partir de 2007 : seule la date de départ de la part employeur et les références changent. Nouveau test `tests/formulas/cotisations/cnrps_maladie_salaries_2007_1406.yaml`. Dossier : `docs/notes/cnrps-prevoyance-73-91.md`.
+
 ## 0.162 - [#524](https://github.com/openfisca/openfisca-tunisia/pull/524)
 
 * Évolution du système socio-fiscal.
