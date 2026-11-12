@@ -61,7 +61,7 @@ class RegimeRSA(AbstractRegimeEnAnnuites):
             periode_remplacement_base = rsa.periode_remplacement_base
             plaf_taux_pension = rsa.plaf_taux_pension
             smag = parameters(period).marche_travail.smag * 25
-            duree_stage_validee = duree_assurance > 4 * duree_stage
+            duree_stage_validee = duree_assurance >= 4 * duree_stage  # stage atteint : >= (120 mois ouvrent le droit)
             pension_min = rsa.pension_min
             salaire_reference = individu("regime_name_salaire_reference", period)
 

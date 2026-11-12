@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.164 - [#527](https://github.com/openfisca/openfisca-tunisia/pull/527)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974 (ouverture du droit à pension RSNA et RSA).
+* Zones impactées : `openfisca_tunisia_pension/variables/rsna.py`, `openfisca_tunisia_pension/regimes/rsna.py`, `openfisca_tunisia_pension/variables/rsa.py`, `openfisca_tunisia_pension/regimes/rsa.py`.
+* Détails :
+  - **Le stage requis ouvre le droit à pension dès qu'il est atteint** (condition `>=`), et non strictement dépassé (`>`), pour les régimes RSNA et RSA. Décret n° 74-499, article 15 : le droit suppose de « justifier d'un stage de 120 mois » — les 120 mois (40 trimestres) exacts ouvrent donc le droit. Avant ce correctif, une carrière de 10 ans pile (120 mois) ne donnait aucune pension (éligibilité fausse) ; elle en donne désormais une (RSNA : taux de 40 % au terme du stage). Le régime CNRPS utilisait déjà `>=` (minimum de 15 ans, inchangé).
+  - Nouveau test de non-régression `tests_pension/formulas/rsna/eligible.yaml` (120 mois pile éligible ; 9 ans ou âge < 60 non éligible). Dossier confirmant la règle : `precis/fr/retraites/_secteur_prive.qmd` (décret 74-499, art. 15).
+
 ## 0.163 - [#525](https://github.com/openfisca/openfisca-tunisia/pull/525)
 
 * Évolution du système socio-fiscal.
