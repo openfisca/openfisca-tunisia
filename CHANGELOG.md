@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.166
+
+* Correction de calcul (programme Amen social, transfert monétaire permanent).
+* Périodes concernées : à partir du 25/05/2020 (ouverture du programme Amen social).
+* Zones impactées : `openfisca_tunisia/variables/prestations/non_contributives/amen_social.py`.
+* Détails :
+  - **Le transfert monétaire permanent (TMP) est de nouveau calculable.** Trois défauts le rendaient inexécutable : (1) la variable d'entrée `amen_social_score_decile`, lue par `transfert_monetaire_permanent_eligibilite_score`, n'était déclarée nulle part (`VariableNotFoundError`) ; (2) `transfert_monetaire_permanent` lisait le paramètre `supplements.amen_social_enfants_a_charge`, inexistant (le paramètre réel est `supplements.enfant_a_charge`) (`ParameterNotFoundError`) ; (3) `transfert_monetaire_permanent_eligibilite_score` n'avait qu'une `formula_2022_06`, si bien qu'aucun ménage n'était éligible au TMP avant juin 2022 alors que le programme verse des transferts depuis 2020.
+  - **Correctifs**, sans changement de barème : déclaration de `amen_social_score_decile` (décile 1 à 10 du score de ciblage de la circulaire n° 12 du 12 mai 2022 ; défaut 11 = ménage non classé, pour que la condition `<= decile` reste fausse hors ciblage) ; correction du nom de paramètre (`supplements.enfant_a_charge`) ; ajout d'une `formula_2020` à `transfert_monetaire_permanent_eligibilite_score` renvoyant `amen_social_eligible` (avant la circulaire de 2022, seuls les critères primaires du décret n° 2020-317 ouvrent le droit).
+  - Nouveau test `tests/formulas/amen_social/transfert_monetaire_permanent.yaml` (montant par année et par composition, voies d'éligibilité primaire et par décile, exclusions).
+
 ## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique (chargement du paquet des pensions).

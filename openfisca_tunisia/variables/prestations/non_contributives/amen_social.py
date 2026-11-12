@@ -118,11 +118,30 @@ class transfert_monetaire_permanent_eligible(Variable):
         ) + menage("transfert_monetaire_permanent_eligibilite_supplementaire", period)
 
 
+class amen_social_score_decile(Variable):
+    value_type = int
+    entity = Menage
+    default_value = 11
+    label = "Décile du score de ciblage Amen social (1 = ménage le plus pauvre)"
+    definition_period = MONTH
+    # Variable d'entrée : décile (1 à 10) issu du modèle de ciblage (proxy-means
+    # test) introduit par la circulaire n° 12 du 12 mai 2022. Valeur par défaut
+    # 11 = ménage non classé (hors ciblage), afin que la condition `<= decile`
+    # (seuil = 1) soit fausse en l'absence de score.
+
+
 class transfert_monetaire_permanent_eligibilite_score(Variable):
     value_type = bool
     entity = Menage
     label = "Ménage éligible au programme Amen social selon le modèle de ciblage"
     definition_period = MONTH
+
+    def formula_2020(menage, period, parameters):
+        # Avant la circulaire n° 12 de 2022 (modèle de ciblage par décile), seuls
+        # les critères primaires du décret 2020-317 ouvrent le droit. Sans cette
+        # formule, aucun ménage n'est éligible au TMP avant juin 2022, alors que
+        # le programme verse des transferts depuis 2020.
+        return menage("amen_social_eligible", period)
 
     def formula_2022_06(menage, period, parameters):
         decile = parameters(period).prestations.non_contributives.amen_social.decile
@@ -197,9 +216,9 @@ class transfert_monetaire_permanent(Variable):
         )
         tmp = eligible * (
             amen_social.allocation_base
-            + enfants_a_charge * supplements.amen_social_enfants_a_charge
+            + enfants_a_charge * supplements.enfant_a_charge
             + enfants_handicapes_a_charge
-            * supplements.amen_social_enfants_a_charge
+            * supplements.enfant_a_charge
             * supplements.handicap
         )
         return tmp

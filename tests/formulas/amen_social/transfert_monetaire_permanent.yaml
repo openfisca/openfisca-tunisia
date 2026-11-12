@@ -1,0 +1,89 @@
+# Montant du transfert monétaire permanent (TMP) du programme Amen social.
+# Barème : allocation de base + 10 DT/enfant à charge + 20 DT/enfant handicapé
+# à charge (supplément 10 DT × majoration 2). Allocation de base : 180 (2020),
+# 200 (2022), 220 (2023), 240 (2024), 260 (2025).
+
+- name: TMP 2024, ménage de 4 (2 enfants dont 1 lourdement handicapé), revenu bas - 240 + 2x10 + 1x20 = 280
+  period: 2024-01
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1984-01-01
+      parent2:
+        date_naissance: 1986-01-01
+      enfant1:
+        date_naissance: 2016-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+        handicap:
+          2024: 3
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - enfant1
+        - enfant2
+      amen_social_revenu: 150
+  output:
+    amen_social_enfants_a_charge: 2
+    amen_social_enfants_handicapes_a_charge: 1
+    transfert_monetaire_permanent_eligible: true
+    transfert_monetaire_permanent: 280
+
+- name: TMP juin 2020, personne seule pauvre - allocation de base seule = 180
+  period: 2020-06
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 100
+  output:
+    transfert_monetaire_permanent_eligible: true
+    transfert_monetaire_permanent: 180
+
+- name: TMP 2024, personne seule à revenu élevé non classée au ciblage - non éligible = 0
+  period: 2024-01
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 5000
+  output:
+    transfert_monetaire_permanent_eligible: false
+    transfert_monetaire_permanent: 0
+
+- name: TMP 2024, personne seule à revenu élevé mais décile de ciblage = 1 - éligible, base seule = 240
+  period: 2024-01
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 5000
+      amen_social_score_decile:
+        2024-01: 1
+  output:
+    transfert_monetaire_permanent_eligible: true
+    transfert_monetaire_permanent: 240
+
+- name: TMP 2023, personne seule pauvre - allocation de base = 220
+  period: 2023-01
+  absolute_error_margin: 0.01
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 100
+  output:
+    transfert_monetaire_permanent: 220
