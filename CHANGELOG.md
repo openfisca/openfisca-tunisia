@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.165 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+
+* Amélioration technique (chargement du paquet des pensions).
+* Zones impactées : `openfisca_tunisia_pension/scripts_ast/script_ast.py`.
+* Détails :
+  - **Le paquet des pensions s'importe désormais sur un système de fichiers en lecture seule.** À l'import, `script_ast` régénère les variables `rsna_*`, `rsa_*`, `cnrps_*` dans `openfisca_tunisia_pension/variables/` à partir des régimes. Quand le dossier d'installation n'est pas inscriptible (déploiements : shinyapps.io, environnements serverless, store Nix…), l'écriture échouait avec `PermissionError` et cassait l'import. Désormais : si le contenu généré est déjà à jour, aucune réécriture ; et si l'écriture échoue (lecture seule), un avertissement est émis et les variables **déjà livrées** dans le paquet sont utilisées. Aucun changement de comportement de calcul.
+
 ## 0.164 - [#527](https://github.com/openfisca/openfisca-tunisia/pull/527)
 
 * Évolution du système socio-fiscal.
