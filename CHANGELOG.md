@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.165 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique (chargement du paquet des pensions).
 * Zones impactées : `openfisca_tunisia_pension/scripts_ast/script_ast.py`.
@@ -1486,7 +1486,7 @@
   - Scripts CI (.github) mis à jour pour appeler `uv run` (openfisca, python) ; twine ajouté aux dépendances dev pour le déploiement.
   - Reformattage du code avec `ruff format`.
 
-## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique.
 * Périodes concernées : aucune.
