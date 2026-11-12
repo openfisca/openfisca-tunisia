@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.165
+## 0.166
 
 * Correction de calcul (programme Amen social, transfert monétaire permanent).
 * Périodes concernées : à partir du 25/05/2020 (ouverture du programme Amen social).
@@ -9,6 +9,13 @@
   - **Le transfert monétaire permanent (TMP) est de nouveau calculable.** Trois défauts le rendaient inexécutable : (1) la variable d'entrée `amen_social_score_decile`, lue par `transfert_monetaire_permanent_eligibilite_score`, n'était déclarée nulle part (`VariableNotFoundError`) ; (2) `transfert_monetaire_permanent` lisait le paramètre `supplements.amen_social_enfants_a_charge`, inexistant (le paramètre réel est `supplements.enfant_a_charge`) (`ParameterNotFoundError`) ; (3) `transfert_monetaire_permanent_eligibilite_score` n'avait qu'une `formula_2022_06`, si bien qu'aucun ménage n'était éligible au TMP avant juin 2022 alors que le programme verse des transferts depuis 2020.
   - **Correctifs**, sans changement de barème : déclaration de `amen_social_score_decile` (décile 1 à 10 du score de ciblage de la circulaire n° 12 du 12 mai 2022 ; défaut 11 = ménage non classé, pour que la condition `<= decile` reste fausse hors ciblage) ; correction du nom de paramètre (`supplements.enfant_a_charge`) ; ajout d'une `formula_2020` à `transfert_monetaire_permanent_eligibilite_score` renvoyant `amen_social_eligible` (avant la circulaire de 2022, seuls les critères primaires du décret n° 2020-317 ouvrent le droit).
   - Nouveau test `tests/formulas/amen_social/transfert_monetaire_permanent.yaml` (montant par année et par composition, voies d'éligibilité primaire et par décile, exclusions).
+
+## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
+
+* Amélioration technique (chargement du paquet des pensions).
+* Zones impactées : `openfisca_tunisia_pension/scripts_ast/script_ast.py`.
+* Détails :
+  - **Le paquet des pensions s'importe désormais sur un système de fichiers en lecture seule.** À l'import, `script_ast` régénère les variables `rsna_*`, `rsa_*`, `cnrps_*` dans `openfisca_tunisia_pension/variables/` à partir des régimes. Quand le dossier d'installation n'est pas inscriptible (déploiements : shinyapps.io, environnements serverless, store Nix…), l'écriture échouait avec `PermissionError` et cassait l'import. Désormais : si le contenu généré est déjà à jour, aucune réécriture ; et si l'écriture échoue (lecture seule), un avertissement est émis et les variables **déjà livrées** dans le paquet sont utilisées. Aucun changement de comportement de calcul.
 
 ## 0.164 - [#527](https://github.com/openfisca/openfisca-tunisia/pull/527)
 
@@ -1489,7 +1496,7 @@
   - Scripts CI (.github) mis à jour pour appeler `uv run` (openfisca, python) ; twine ajouté aux dépendances dev pour le déploiement.
   - Reformattage du code avec `ruff format`.
 
-## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique.
 * Périodes concernées : aucune.
