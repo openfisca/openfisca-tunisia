@@ -1,0 +1,6 @@
+description: Prix de base à la production des blés
+metadata:
+  short_label: Prix de base à la production
+  order:
+  - ble_dur
+  - ble_tendre
