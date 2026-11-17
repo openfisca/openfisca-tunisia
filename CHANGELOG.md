@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.166
+## 0.168 - [#529](https://github.com/openfisca/openfisca-tunisia/pull/529)
 
 * Correction de calcul (programme Amen social, transfert monétaire permanent).
 * Périodes concernées : à partir du 25/05/2020 (ouverture du programme Amen social).
@@ -9,6 +9,26 @@
   - **Le transfert monétaire permanent (TMP) est de nouveau calculable.** Trois défauts le rendaient inexécutable : (1) la variable d'entrée `amen_social_score_decile`, lue par `transfert_monetaire_permanent_eligibilite_score`, n'était déclarée nulle part (`VariableNotFoundError`) ; (2) `transfert_monetaire_permanent` lisait le paramètre `supplements.amen_social_enfants_a_charge`, inexistant (le paramètre réel est `supplements.enfant_a_charge`) (`ParameterNotFoundError`) ; (3) `transfert_monetaire_permanent_eligibilite_score` n'avait qu'une `formula_2022_06`, si bien qu'aucun ménage n'était éligible au TMP avant juin 2022 alors que le programme verse des transferts depuis 2020.
   - **Correctifs**, sans changement de barème : déclaration de `amen_social_score_decile` (décile 1 à 10 du score de ciblage de la circulaire n° 12 du 12 mai 2022 ; défaut 11 = ménage non classé, pour que la condition `<= decile` reste fausse hors ciblage) ; correction du nom de paramètre (`supplements.enfant_a_charge`) ; ajout d'une `formula_2020` à `transfert_monetaire_permanent_eligibilite_score` renvoyant `amen_social_eligible` (avant la circulaire de 2022, seuls les critères primaires du décret n° 2020-317 ouvrent le droit).
   - Nouveau test `tests/formulas/amen_social/transfert_monetaire_permanent.yaml` (montant par année et par composition, voies d'éligibilité primaire et par décile, exclusions).
+
+## 0.167 - [#531](https://github.com/openfisca/openfisca-tunisia/pull/531)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 06/07/1971.
+* Zones impactées : `parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees`.
+* Détails :
+  - **Taxe sur les agrumes et fruits exportés** au profit de la Caisse générale de compensation : 2 millimes par kilogramme net (loi n° 71-30 du 2 juillet 1971, article 5, JORT n° 29 des 2-6 juillet 1971, p. 848). Valeur portée au 06/07/1971, dernière date du numéro : la loi n'énonce pas de date d'effet et le jour de parution du numéro double n'est pas établi.
+  - **Taxes de péréquation de raffinage** sur le supercarburant, l'essence normale et le gas-oil : 0,350 dinar par hectolitre, versées au sous-compte de péréquation de raffinage de la Caisse (décret n° 72-400 du 16 décembre 1972, articles 1er à 3, JORT n° 51 des 19-22 décembre 1972, p. 1827), à compter du 01/07/1972, date d'effet énoncée à l'article 8.
+  - Évolution postérieure de ces taxes non établie (`metadata.notes`). Aucune variable ne lit ces paramètres.
+
+## 0.166 - [#530](https://github.com/openfisca/openfisca-tunisia/pull/530)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 04/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Nouveaux paramètres : prix des céréales fixés pour chaque campagne** par le texte de campagne de l'Office des céréales — prix de base à la production du blé dur et du blé tendre, prix d'intervention de l'orge, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, en dinars par quintal. Quinze textes, des récoltes 2010 à 2026 : décrets n° 2011-325 à 2025-344, puis arrêté conjoint du 24 juillet 2026 (JORT n° 75, p. 1440-1442). Chaque valeur prend effet à l'entrée en vigueur du texte (cinq jours après le dépôt au gouvernorat de Tunis jusqu'en 2019, lendemain de la publication électronique depuis 2020), avec numéro, date et pages du JORT dans les références.
+  - Les décrets n° 2022-580 (récolte 2021) et 2022-650 (récolte 2018), entrés en vigueur avec ou après celui de la récolte 2022, ne sont pas portés en valeur : ils auraient ramené la série à des prix antérieurs. Ils figurent dans les références au 13/07/2022.
+  - Série incomplète : états antérieurs à 2011 non versés. Aucune variable ne lit encore ces paramètres.
 
 ## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
