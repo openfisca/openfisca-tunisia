@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.168 - [#529](https://github.com/openfisca/openfisca-tunisia/pull/529)
+## 0.170 - [#529](https://github.com/openfisca/openfisca-tunisia/pull/529)
 
 * Correction de calcul (programme Amen social, transfert monétaire permanent).
 * Périodes concernées : à partir du 25/05/2020 (ouverture du programme Amen social).
@@ -9,6 +9,19 @@
   - **Le transfert monétaire permanent (TMP) est de nouveau calculable.** Trois défauts le rendaient inexécutable : (1) la variable d'entrée `amen_social_score_decile`, lue par `transfert_monetaire_permanent_eligibilite_score`, n'était déclarée nulle part (`VariableNotFoundError`) ; (2) `transfert_monetaire_permanent` lisait le paramètre `supplements.amen_social_enfants_a_charge`, inexistant (le paramètre réel est `supplements.enfant_a_charge`) (`ParameterNotFoundError`) ; (3) `transfert_monetaire_permanent_eligibilite_score` n'avait qu'une `formula_2022_06`, si bien qu'aucun ménage n'était éligible au TMP avant juin 2022 alors que le programme verse des transferts depuis 2020.
   - **Correctifs**, sans changement de barème : déclaration de `amen_social_score_decile` (décile 1 à 10 du score de ciblage de la circulaire n° 12 du 12 mai 2022 ; défaut 11 = ménage non classé, pour que la condition `<= decile` reste fausse hors ciblage) ; correction du nom de paramètre (`supplements.enfant_a_charge`) ; ajout d'une `formula_2020` à `transfert_monetaire_permanent_eligibilite_score` renvoyant `amen_social_eligible` (avant la circulaire de 2022, seuls les critères primaires du décret n° 2020-317 ouvrent le droit).
   - Nouveau test `tests/formulas/amen_social/transfert_monetaire_permanent.yaml` (montant par année et par composition, voies d'éligibilité primaire et par décile, exclusions).
+
+## 0.169 - [#532](https://github.com/openfisca/openfisca-tunisia/pull/532)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 04/08/1970 au 03/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Prix des céréales par campagne prolongés vers le passé, des récoltes 1970 à 2009** : prix de base à la production du blé dur et du blé tendre, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, prix d'intervention de l'orge. Vingt-neuf décrets de campagne, du décret n° 70-261 (JORT n° 37 de 1970) au décret n° 2009-1853 (JORT n° 47 de 2009), avec numéro, date et pages du JORT dans les références.
+  - **Nouveau paramètre `prix_base_production/orge`** (récoltes 1970 à 1991) : l'orge a un prix de base jusqu'à la récolte 1991 ; à partir de la récolte 1992, sa commercialisation est libre et le décret n° 93-1721 ne fixe plus qu'un prix d'intervention. Le prix de base s'arrête (`null`) et `prix_intervention_orge` commence le 06/09/1993.
+  - **Nouveau nœud `prix_reduit_retrocession`** (blé dur, blé tendre) : prix réduits de rétrocession du blé aux minoteries, fixés par les décrets des récoltes 1974 à 1989 et par les décrets modificatifs n° 75-352, 77-339, 79-413, 83-1274, 84-150 et 84-785. La série s'arrête (`null`) le 04/07/1991 : depuis le décret n° 91-943, le prix réduit est fixé par arrêté, puis par décision ministérielle, non publiés au Journal officiel.
+  - Dates d'effet : date énoncée par le texte quand il y en a une (31/05/1975, 01/11/1976, 03/05/1979, 28/12/1983) ; sinon un jour franc après la publication jusqu'en 1992 ; pour un numéro à plusieurs dates, la valeur est portée à la dernière date du numéro, retenue comme publication, sans calcul de jour franc (convention de la 0.167) ; cinq jours après le dépôt au gouvernorat de Tunis à partir de 1993.
+  - Les campagnes régies par reconduction (récoltes 1979, 1993-1994, 1997-1999, 2001-2004 et 2006 ; décrets n° 80-140, 96-2549 art. 14, 2001-864 art. 14, 2005-1983 art. 4, 2007-1402 art. 15) ne portent pas de valeur nouvelle ; le texte de reconduction figure dans les références de la valeur maintenue.
+  - Ruptures documentées en notes : composition du prix normal (récolte 1992 ; prime exceptionnelle de prompte livraison comprise à partir de la récolte 2008), orge (1992), payeur de l'écart (1988-1991). La note « série incomplète » passe de 2011 à 1970. Aucune variable ne lit ces paramètres.
 
 ## 0.167 - [#531](https://github.com/openfisca/openfisca-tunisia/pull/531)
 
