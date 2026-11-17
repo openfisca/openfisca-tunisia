@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.169 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+## 0.169 - [#532](https://github.com/openfisca/openfisca-tunisia/pull/532)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : du 04/08/1970 au 03/04/2011.
