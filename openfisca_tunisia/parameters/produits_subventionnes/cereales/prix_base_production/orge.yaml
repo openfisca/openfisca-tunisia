@@ -156,6 +156,7 @@ documentation: |-
   Chaque texte fixe les prix « de la récolte de l'année » qu'il vise ; la valeur prend effet à la
   date d'entrée en vigueur du texte, non au début de la récolte. Avant 1993, un texte est
   exécutoire un jour franc après sa publication ; quand le numéro du Journal officiel porte
-  plusieurs dates, la dernière est retenue comme date de publication. Une campagne régie par
+  plusieurs dates, la valeur est portée à la dernière,
+  retenue comme date de publication, sans calcul de jour franc. Une campagne régie par
   reconduction d'un texte antérieur ne porte pas de valeur nouvelle ; le texte qui reconduit
   figure dans les références, à la date de la valeur qu'il maintient.

@@ -169,5 +169,5 @@ documentation: |-
 
   Une date d'effet énoncée par le texte est reprise telle quelle, même antérieure à la
   publication. À défaut, le texte est exécutoire un jour franc après sa publication ; quand le
-  numéro du Journal officiel porte plusieurs dates, la dernière est retenue comme date de
-  publication.
+  numéro du Journal officiel porte plusieurs dates, la valeur est portée à la dernière,
+  retenue comme date de publication, sans calcul de jour franc.

@@ -98,7 +98,7 @@ metadata:
     1993-09-06:
     - note: "Rupture de composition. Jusqu'à la récolte 1991, le prix normal de rétrocession comprend le prix de base, la marge brute de rétrocession et la péréquation de transport. À partir de la récolte 1992 (décret n° 93-1721, article 6), il comprend le prix de base, une prime forfaitaire (marge nette et péréquation de transport), une somme de 0,100 D/ql au fonds d'équipement de l'Office des céréales et les primes de magasinage."
     2008-06-16:
-    - note: "Rupture de composition. Pour les récoltes 2008 et 2009, le prix normal de rétrocession comprend en outre la prime exceptionnelle de prompte livraison (décret n° 2008-2081, article 8 c) ; le saut par rapport à la récolte 2007 en vient pour l'essentiel."
+    - note: "Rupture de composition. À partir de la récolte 2008, le prix normal de rétrocession comprend en outre la prime exceptionnelle de prompte livraison (décret n° 2008-2081, article 8 c) ; le saut par rapport à la récolte 2007 en vient pour l'essentiel."
   reference:
     1970-08-04:
     - title: "Décret n° 70-261 du 30 juillet 1970, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales, fèves, féveroles et pois-chiches, pour la campagne 1970-1971"
@@ -312,7 +312,8 @@ documentation: |-
   Chaque texte fixe les prix « de la récolte de l'année » qu'il vise ; la valeur prend effet à la
   date d'entrée en vigueur du texte, non au début de la récolte. Avant 1993, un texte est
   exécutoire un jour franc après sa publication ; quand le numéro du Journal officiel porte
-  plusieurs dates, la dernière est retenue comme date de publication. Une campagne régie par
+  plusieurs dates, la valeur est portée à la dernière,
+  retenue comme date de publication, sans calcul de jour franc. Une campagne régie par
   reconduction d'un texte antérieur (récoltes 1979, 1993-1994, 1997-1999, 2001-2004 et 2006) ne
   porte pas de valeur nouvelle ; le texte qui reconduit figure dans les références, à la date de
   la valeur qu'il maintient. Deux décrets ne sont pas portés

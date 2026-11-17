@@ -101,7 +101,7 @@ metadata:
     1995-11-07:
     - note: "Le prix normal de l'orge de la récolte 1995 (23,950 D/ql) dépasse le prix d'intervention de 8,950 D/ql, contre 3,782 à 4,376 D/ql pour les autres céréales du même décret ; l'écart correspond à la prime de prompte livraison de 5,000 D/ql de l'article premier, que l'article 6 ne mentionne pas."
     2008-06-16:
-    - note: "Rupture de composition. Pour les récoltes 2008 et 2009, le prix normal de rétrocession comprend en outre la prime exceptionnelle de prompte livraison (décret n° 2008-2081, article 8 c) ; le saut par rapport à la récolte 2007 en vient pour l'essentiel."
+    - note: "Rupture de composition. À partir de la récolte 2008, le prix normal de rétrocession comprend en outre la prime exceptionnelle de prompte livraison (décret n° 2008-2081, article 8 c) ; le saut par rapport à la récolte 2007 en vient pour l'essentiel."
   reference:
     1970-08-04:
     - title: "Décret n° 70-261 du 30 juillet 1970, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales, fèves, féveroles et pois-chiches, pour la campagne 1970-1971"
@@ -316,7 +316,8 @@ documentation: |-
   Chaque texte fixe les prix « de la récolte de l'année » qu'il vise ; la valeur prend effet à la
   date d'entrée en vigueur du texte, non au début de la récolte. Avant 1993, un texte est
   exécutoire un jour franc après sa publication ; quand le numéro du Journal officiel porte
-  plusieurs dates, la dernière est retenue comme date de publication. Une campagne régie par
+  plusieurs dates, la valeur est portée à la dernière,
+  retenue comme date de publication, sans calcul de jour franc. Une campagne régie par
   reconduction d'un texte antérieur (récoltes 1979, 1993-1994, 1997-1999, 2001-2004 et 2006) ne
   porte pas de valeur nouvelle ; le texte qui reconduit figure dans les références, à la date de
   la valeur qu'il maintient. Deux décrets ne sont pas portés
