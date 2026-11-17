@@ -1,0 +1,173 @@
+description: "Prix réduit de rétrocession du blé dur aux minoteries et semouleries"
+values:
+  1974-06-27:
+    value: 5.271
+  1975-05-31:
+    value: 5.97
+  1975-08-12:
+    value: 5.97
+  1976-09-21:
+    value: 5.97
+  1976-11-01:
+    value: 5.67
+  1977-12-13:
+    value: 5.67
+  1979-04-08:
+    value: 5.67
+  1979-05-03:
+    value: 6.393
+  1980-10-09:
+    value: 8
+  1981-08-21:
+    value: 8
+  1982-09-28:
+    value: 8
+  1983-11-24:
+    value: 8
+  1983-12-28:
+    value: 15.6
+  1984-03-01:
+    value: 8
+  1984-07-20:
+    value: 8.8
+  1985-01-04:
+    value: 8.8
+  1985-10-17:
+    value: 8.8
+  1987-02-22:
+    value: 8.8
+  1988-04-10:
+    value: 8.8
+  1989-09-03:
+    value: 8.8
+  1990-05-11:
+    value: 8.8
+  1991-07-04:
+    value: null
+metadata:
+  short_label: "Blé dur"
+  label_en: "Durum wheat reduced resale price to mills"
+  unit: currency/100kg
+  notes:
+    1974-06-27:
+    - note: "Début de la série : le décret de la récolte 1974 est le premier décret de campagne qui fixe un prix réduit de rétrocession du blé ; ceux des récoltes 1970 à 1973 n'en fixent pas. L'écart entre le prix normal et le prix réduit est versé aux minoteries en indemnité compensatrice, imputée au compte « Soutien du Marché des Céréales » de l'Office des céréales."
+    1983-12-28:
+    - note: "Du 28 décembre 1983 au 29 février 1984, le prix de rétrocession du blé dur dépasse son prix normal : l'écart est perçu par une redevance compensatrice, et non versé en indemnité (décret n° 83-1274, article 22 nouveau)."
+    1989-09-03:
+    - note: "Pour les récoltes 1988 et 1989, l'indemnité reste imputée au compte « Soutien du Marché des Céréales », « dont le solde sera pris en charge par la caisse générale de compensation » (décret n° 89-1171, article 27 ; décret n° 90-671, article 26)."
+    1991-07-04:
+    - note: "Fin de la série publiée. Pour la récolte 1990, le prix réduit est « fixé par arrêté du ministre de l'économie nationale » (décret n° 91-943, article 8) ; cet arrêté n'est pas identifié au Journal officiel. Depuis la récolte 1991, il est fixé par décision du ministre chargé de l'économie, puis du commerce (décret n° 92-1657, article 8 ; décret n° 93-1721, articles 7 et 13), décision qui n'est pas publiée. La Caisse générale de compensation prend en charge la prime de compensation, différence entre le prix normal et le prix réduit."
+  reference:
+    1974-06-27:
+    - title: "Décret n° 74-649 du 22 juin 1974, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1974-1975"
+      href: https://www.pist.tn/jort/1974/1974F/Jo04474.pdf
+      note: "JORT n° 44 du 25 au 27 juin 1974, p. 1439-1445 (prix : p. 1443-1444), article 13. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1974 : blé dur : 5,271 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 25 au 27 juin 1974, jour de parution non établi : la date portée est la dernière date du numéro, le 27 juin 1974, retenue comme date de publication. Lu à l'image ; indemnités compensatrices de l'article 22 contrôlées par l'arithmétique (prix normal − prix réduit)."
+    1975-05-31:
+    - title: "Décret n° 75-352 du 3 juin 1975, fixant le prix des farines et semoules, du pain, des pâtes alimentaires et du couscous rapide"
+      href: https://www.pist.tn/jort/1975/1975F/Jo03875.pdf
+      note: "JORT n° 38 du 3 au 6 juin 1975, p. 1192, article 4, modifiant l'article 13 du décret n° 74-649. Prix de rétrocession réduits du blé aux minoteries : blé dur : 5,970 D/ql. Date d'effet énoncée par le texte : « à compter du 31 mai 1975 », antérieure à la publication. Lu à l'image."
+    1975-08-12:
+    - title: "Décret n° 75-542 du 4 août 1975, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1975-1976"
+      href: https://www.pist.tn/jort/1975/1975F/Jo05475.pdf
+      note: "JORT n° 54 du 8 au 12 août 1975, p. 1674-1680 (prix : p. 1678). Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1975 : blé dur : 5,970 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 8 au 12 août 1975, jour de parution non établi : la date portée est la dernière date du numéro, le 12 août 1975, retenue comme date de publication. Lu à l'image ; indemnités contrôlées par l'arithmétique."
+    1976-09-21:
+    - title: "Décret n° 76-812 du 13 septembre 1976, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1976-1977"
+      href: https://www.pist.tn/jort/1976/1976F/Jo05676.pdf
+      note: "JORT n° 56 des 17 et 21 septembre 1976, p. 2220-2225 (prix : p. 2224), article 13. Récolte 1976. Date d'effet : le texte n'en énonce pas ; numéro daté du 17 au 21 septembre 1976, jour de parution non établi : la date portée est la dernière date du numéro, le 21 septembre 1976, retenue comme date de publication. Lu à l'image."
+    - title: "Décret n° 77-339 du 1er avril 1977, modifiant le décret n° 76-812 du 13 septembre 1976, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1976-1977"
+      href: https://www.pist.tn/jort/1977/1977F/Jo02477.pdf
+      note: "JORT n° 24 du 8 au 12 avril 1977, p. 898-899, article premier : les prix de l'article 13 du décret n° 76-812 « sont applicables à partir du 1er novembre 1976 » ; « pour la période du 1er juin au 31 octobre 1976 » : blé dur 5,970 D/ql, blé tendre 4,930 D/ql. Valeur portée ici : blé dur : 5,970 D/ql, inchangée. Les indemnités de l'article 2 (1,490 et 1,820 D/ql pour cette période) confirment ces prix. Lu sur l'océrisation du fascicule."
+    1976-11-01:
+    - title: "Décret n° 77-339 du 1er avril 1977, modifiant le décret n° 76-812 du 13 septembre 1976, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1976-1977"
+      href: https://www.pist.tn/jort/1977/1977F/Jo02477.pdf
+      note: "JORT n° 24 du 8 au 12 avril 1977, p. 898-899, article premier. Prix de l'article 13 du décret n° 76-812, récolte 1976 : blé dur : 5,670 D/ql. Date d'effet énoncée par le texte : « à partir du 1er novembre 1976 », antérieure à la publication. Indemnités contrôlées par l'arithmétique (1,790 et 1,870 D/ql). Lu sur l'océrisation du fascicule."
+    - title: "Décret n° 76-812 du 13 septembre 1976, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1976-1977"
+      href: https://www.pist.tn/jort/1976/1976F/Jo05676.pdf
+      note: "JORT n° 56 des 17 et 21 septembre 1976, p. 2220-2225 (prix : p. 2224), article 13 : blé dur : 5,670 D/ql. Lu à l'image."
+    1977-12-13:
+    - title: "Décret n° 77-981 du 22 novembre 1977, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1977-1978"
+      href: https://www.pist.tn/jort/1977/1977F/Jo08177.pdf
+      note: "JORT n° 81 du 9 au 13 décembre 1977, p. 3384-3390. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1977 : blé dur : 5,670 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 9 au 13 décembre 1977, jour de parution non établi : la date portée est la dernière date du numéro, le 13 décembre 1977, retenue comme date de publication. Lu à l'image."
+    1979-04-08:
+    - title: "Décret n° 79-289 du 2 avril 1979, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1978-1979"
+      href: https://www.pist.tn/jort/1979/1979F/Jo02579.pdf
+      note: "JORT n° 25 du 6 avril 1979, p. 984-990. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1978 : blé dur : 5,670 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 6 avril 1979, exécutoire un jour franc après sa publication, soit le 8 avril 1979 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1979-05-03:
+    - title: "Décret n° 79-413 du 7 mai 1979, fixant le prix des farines et semoules, du pain, des pâtes alimentaires et du couscous"
+      href: https://www.pist.tn/jort/1979/1979F/Jo03279.pdf
+      note: "JORT n° 32 du 11 mai 1979, p. 1381-1382, article 4. Prix réduit de rétrocession du blé aux minoteries : blé dur : 6,393 D/ql. Date d'effet énoncée par le texte : 3 mai 1979, antérieure à la publication. Indemnités de l'article 5 (2,237 et 2,198 D/ql) contrôlées par l'arithmétique. Lu sur l'océrisation du fascicule."
+    - title: "Décret n° 80-140 du 11 février 1980, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1979-1980"
+      href: https://www.pist.tn/jort/1980/1980F/Jo01080.pdf
+      note: "JORT n° 10 du 19 février 1980, p. 455-456, article premier. Reconduit pour la campagne 1979-1980 (récolte 1979) le décret n° 79-289, tel que modifié par les articles 4 et 5 du décret n° 79-413 du 7 mai 1979 : aucun prix nouveau, la valeur reste en vigueur. Lu sur l'océrisation du fascicule."
+    1980-10-09:
+    - title: "Décret n° 80-1257 du 30 septembre 1980, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1980-1981"
+      href: https://www.pist.tn/jort/1980/1980F/Jo05780.pdf
+      note: "JORT n° 57 du 7 octobre 1980, p. 2534-2540. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1980 : blé dur : 8,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 7 octobre 1980, exécutoire un jour franc après sa publication, soit le 9 octobre 1980 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1981-08-21:
+    - title: "Décret n° 81-1069 du 15 août 1981, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1980-1981"
+      href: https://www.pist.tn/jort/1981/1981F/Jo05381.pdf
+      note: "JORT n° 53 du 18 au 21 août 1981, p. 1935-1941. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1981 : blé dur : 8,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 18 au 21 août 1981, jour de parution non établi : la date portée est la dernière date du numéro, le 21 août 1981, retenue comme date de publication. Le décret est intitulé « campagne 1980-1981 » mais son texte vise la récolte 1981 (articles 11 et 14). Lu à l'image."
+    1982-09-28:
+    - title: "Décret n° 82-1286 du 18 septembre 1982, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1982-1983"
+      href: https://www.pist.tn/jort/1982/1982F/Jo06182.pdf
+      note: "JORT n° 61 du 24 au 28 septembre 1982, p. 1998-2004. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1982 : blé dur : 8,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 24 au 28 septembre 1982, jour de parution non établi : la date portée est la dernière date du numéro, le 28 septembre 1982, retenue comme date de publication. Lu à l'image."
+    1983-11-24:
+    - title: "Décret n° 83-1075 du 17 novembre 1983, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1983-1984"
+      href: https://www.pist.tn/jort/1983/1983F/Jo07583.pdf
+      note: "JORT n° 75 du 22 novembre 1983, p. 2977-2984. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1983 : blé dur : 8,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 22 novembre 1983, exécutoire un jour franc après sa publication, soit le 24 novembre 1983 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1983-12-28:
+    - title: "Décret n° 83-1274 du 28 décembre 1983, portant modification du décret n° 83-1075 du 17 novembre 1983 fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1983-1984"
+      href: https://www.pist.tn/jort/1984/1984F/Jo00184.pdf
+      note: "JORT n° 1 du 3 janvier 1984, p. 5-6, article premier (article 14 nouveau du décret n° 83-1075). Prix de rétrocession : blé dur : 15,600 D/ql. Date d'effet énoncée par le texte : « à compter du 28 décembre 1983 ». Le prix du blé dur dépasse alors son prix normal (14,670 D/ql) : l'article 22 nouveau institue une redevance compensatrice de 0,930 D/ql de blé dur, versée au compte « Soutien du Marché des Céréales », et une indemnité de 0,536 D/ql de blé tendre. Lu à l'image. Le décret est daté du 23 décembre 1983 dans certains index ; le fascicule porte « Fait au Palais de Carthage le 28 décembre 1983 »."
+    1984-03-01:
+    - title: "Décret n° 84-150 du 17 février 1984, abrogeant le décret n° 83-1274 du 28 décembre 1983 portant modification du décret n° 83-1075 du 17 novembre 1983 fixant les prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1983-1984"
+      href: https://www.pist.tn/jort/1984/1984F/Jo01484.pdf
+      note: "JORT n° 14 du 28 février 1984, p. 451. Article premier : abrogation du décret n° 83-1274 ; article 2 : « Sont remises en vigueur les dispositions des articles 14, 15, 22, 23 et 25 » du décret n° 83-1075, soit blé dur : 8,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 28 février 1984, exécutoire un jour franc après sa publication, soit le 1er mars 1984 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu sur l'océrisation du fascicule."
+    1984-07-20:
+    - title: "Décret n° 84-785 du 10 juillet 1984, portant modification du décret n° 83-1075 du 17 novembre 1983 fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1983-1984"
+      href: https://www.pist.tn/jort/1984/1984F/Jo04384.pdf
+      note: "JORT n° 43 du 17 au 20 juillet 1984, p. 1594. Prix réduit de rétrocession : blé dur : 8,800 D/ql ; indemnités 5,870 et 6,286 D/ql, imputées au compte « Soutien du Marché des Céréales ». Date d'effet : le texte n'en énonce pas ; numéro daté du 17 au 20 juillet 1984, jour de parution non établi : la date portée est la dernière date du numéro, le 20 juillet 1984, retenue comme date de publication. Lu à l'image."
+    1985-01-04:
+    - title: "Décret n° 84-1520 du 25 décembre 1984, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1984-1985"
+      href: https://www.pist.tn/jort/1985/1985F/Jo00185.pdf
+      note: "JORT n° 1 du 1er au 4 janvier 1985, p. 11-17. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1984 : blé dur : 8,800 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 1er au 4 janvier 1985, jour de parution non établi : la date portée est la dernière date du numéro, le 4 janvier 1985, retenue comme date de publication. Lu à l'image ; indemnités (7,196 et 8,746 D/ql) contrôlées par l'arithmétique."
+    1985-10-17:
+    - title: "Décret n° 85-1242 du 7 octobre 1985, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1985-1986"
+      href: https://www.pist.tn/jort/1985/1985F/Jo07285.pdf
+      note: "JORT n° 72 du 15 octobre 1985, p. 1387-1393. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1985 : blé dur : 8,800 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 15 octobre 1985, exécutoire un jour franc après sa publication, soit le 17 octobre 1985 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1987-02-22:
+    - title: "Décret n° 87-129 du 11 février 1987, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1986-1987"
+      href: https://www.pist.tn/jort/1987/1987F/Jo01387.pdf
+      note: "JORT n° 13 du 20 février 1987, p. 252-258. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1986 : blé dur : 8,800 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 20 février 1987, exécutoire un jour franc après sa publication, soit le 22 février 1987 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1988-04-10:
+    - title: "Décret n° 88-707 du 25 mars 1988, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1987-1988"
+      href: https://www.pist.tn/jort/1988/1988F/Jo02388.pdf
+      note: "JORT n° 23 du 8 avril 1988, p. 533-538. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1987 : blé dur : 8,800 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 8 avril 1988, exécutoire un jour franc après sa publication, soit le 10 avril 1988 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1989-09-03:
+    - title: "Décret n° 89-1171 du 14 août 1989, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1988-1989"
+      href: https://www.pist.tn/jort/1989/1989F/Jo05989.pdf
+      note: "JORT n° 59 du 1er septembre 1989, p. 1323-1329. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1988 : blé dur : 8,800 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 1er septembre 1989, exécutoire un jour franc après sa publication, soit le 3 septembre 1989 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image (p. 1327-1328) ; indemnités (15,108 et 14,587 D/ql) contrôlées par l'arithmétique."
+    1990-05-11:
+    - title: "Décret n° 90-671 du 25 avril 1990, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1989-1990"
+      href: https://www.pist.tn/jort/1990/1990F/Jo03190.pdf
+      note: "JORT n° 31 du 8 au 11 mai 1990, p. 573-579. Prix réduit de rétrocession du blé destiné à la fabrication industrielle des semoules et farines, récolte 1989 : blé dur : 8,800 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 8 au 11 mai 1990, jour de parution non établi : la date portée est la dernière date du numéro, le 11 mai 1990, retenue comme date de publication. Lu à l'image."
+    1991-07-04:
+    - title: "Décret n° 91-943 du 17 juin 1991, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1990-1991"
+      href: https://www.pist.tn/jort/1991/1991F/Jo04791.pdf
+      note: "JORT n° 47 du 2 juillet 1991, p. 1236-1242, article 8 : le blé destiné aux semoules et farines est rétrocédé « à des prix réduits fixés par arrêté du ministre de l'économie nationale » ; le décret n'en fixe plus le montant. Date d'effet : le texte n'en énonce pas ; publié le 2 juillet 1991, exécutoire un jour franc après sa publication, soit le 4 juillet 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    - title: "Décret n° 92-1657 du 14 septembre 1992, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1991-1992"
+      href: https://www.pist.tn/jort/1992/1992F/Jo06692.pdf
+      note: "JORT n° 66 du 2 octobre 1992, p. 1310-1312, article 8 : prix réduits « fixés par décision du ministre de l'économie nationale ». Lu à l'image."
+documentation: |-
+  Prix, en dinars par quintal (100 kg), auquel l'Office des céréales rétrocède le blé dur destiné
+  à la fabrication industrielle des semoules et des farines, inférieur au prix normal de
+  rétrocession. Les décrets de campagne le fixent dans leur texte pour les récoltes 1974 à 1989,
+  et des décrets modificatifs le changent en cours de campagne (1975, 1976, 1979, 1983-1984).
+  À partir de la récolte 1990, le décret renvoie à un arrêté, puis à une décision du ministre,
+  dont le montant n'est pas publié au Journal officiel : la série s'arrête à l'entrée en vigueur
+  du décret n° 91-943.
+
+  Une date d'effet énoncée par le texte est reprise telle quelle, même antérieure à la
+  publication. À défaut, le texte est exécutoire un jour franc après sa publication ; quand le
+  numéro du Journal officiel porte plusieurs dates, la dernière est retenue comme date de
+  publication.
