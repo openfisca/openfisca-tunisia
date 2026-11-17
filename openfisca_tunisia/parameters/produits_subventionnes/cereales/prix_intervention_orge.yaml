@@ -1,5 +1,21 @@
 description: "Prix d'intervention à la production de l'orge"
 values:
+  1993-09-06:
+    value: 15
+  1995-11-07:
+    value: 15
+  1997-01-21:
+    value: 17
+  2001-04-30:
+    value: 17
+  2005-07-26:
+    value: 18
+  2007-06-25:
+    value: 20
+  2008-06-16:
+    value: 30
+  2009-06-18:
+    value: 30
   2011-04-04:
     value: 30
   2012-07-19:
@@ -35,9 +51,59 @@ metadata:
   label_en: "Barley intervention price"
   unit: currency/100kg
   notes:
-    2011-04-04:
-    - note: "Série incomplète : états antérieurs à 2011 non versés."
+    1993-09-06:
+    - note: "Début de la série : jusqu'à la récolte 1991, l'orge a un prix de base à la production (paramètre prix_base_production.orge). À partir de la récolte 1992, sa commercialisation est libre et le décret ne fixe plus qu'un prix d'intervention (décret n° 93-1721, article premier)."
+    1995-11-07:
+    - note: "Pour la récolte 1995, une prime spéciale de prompte livraison de 5,000 D/ql s'ajoute au prix d'intervention pour les livraisons du 1er juin au 31 juillet 1995 (décret n° 95-2021, article premier) ; elle n'est pas comprise dans la valeur."
+    2001-04-30:
+    - note: "Pour la récolte 2000, une prime de prompte livraison de 8,000 D/ql s'ajoute au prix d'intervention (décret n° 2001-864, article premier) ; elle n'est pas comprise dans la valeur."
+    2008-06-16:
+    - note: "Pour la récolte 2008, la prime exceptionnelle de prompte livraison du décret n° 2008-2081 (article 2) vise le blé dur, le blé tendre et le triticale, pas l'orge ; pour la récolte 2009, le décret n° 2009-1853 l'étend à l'orge (10 D/ql, livraisons avant le 31 août 2009). Elle n'est pas comprise dans la valeur."
   reference:
+    1993-09-06:
+    - title: "Décret n° 93-1721 du 16 août 1993, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1992-1993"
+      href: https://www.pist.tn/jort/1993/1993F/Jo06593.pdf
+      note: "JORT n° 65 du 31 août 1993, p. 1393-1399, article premier. Prix d'intervention, récolte 1992 : orge : 15,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 31 août 1993, dépôt au siège du gouvernorat de Tunis le 1er septembre 1993 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 6 septembre 1993. Lu à l'image."
+    - title: "Décret n° 96-2549 du 30 décembre 1996, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1996-1997"
+      href: https://www.pist.tn/jort/1997/1997F/Jo00497.pdf
+      note: "JORT n° 4 du 14 janvier 1997, p. 59, article 14 : « Sont applicables aux campagnes 1993-1994 et 1994-1995, les dispositions du décret n° 93-1721 du 16 octobre 1993 susvisé » (le visa date ce décret du 16 août 1993). Reconduction des prix du décret n° 93-1721 pour les récoltes 1993 et 1994 : aucun prix nouveau. Édition française lue sur la couche texte."
+    1995-11-07:
+    - title: "Décret n° 95-2021 du 16 octobre 1995, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1995-1996"
+      href: https://www.pist.tn/jort/1995/1995F/Jo08795.pdf
+      note: "JORT n° 87 du 31 octobre 1995, p. 2043-2048, article premier. Prix d'intervention, récolte 1995 : orge : 15,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 31 octobre 1995, dépôt au siège du gouvernorat de Tunis le 2 novembre 1995 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 7 novembre 1995. Édition française lue sur la couche texte."
+    1997-01-21:
+    - title: "Décret n° 96-2549 du 30 décembre 1996, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1996-1997"
+      href: https://www.pist.tn/jort/1997/1997F/Jo00497.pdf
+      note: "JORT n° 4 du 14 janvier 1997, p. 57-62. Prix d'intervention, récolte 1996 : orge : 17,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 14 janvier 1997, dépôt au siège du gouvernorat de Tunis le 16 janvier 1997 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 21 janvier 1997. Édition française lue sur la couche texte."
+    - title: "Décret n° 2001-864 du 18 avril 2001, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2000-2001"
+      href: https://www.pist.tn/jort/2001/2001F/Jo0332001.pdf
+      note: "JORT n° 33 du 24 avril 2001, p. 924, article 14. Reconduit les dispositions du décret n° 96-2549 pour les campagnes 1997-1998, 1998-1999 et 1999-2000 (récoltes 1997 à 1999) : aucun prix nouveau. Édition française lue sur la couche texte, décodée (police décalée)."
+    2001-04-30:
+    - title: "Décret n° 2001-864 du 18 avril 2001, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2000-2001"
+      href: https://www.pist.tn/jort/2001/2001F/Jo0332001.pdf
+      note: "JORT n° 33 du 24 avril 2001, p. 922-928, article premier. Prix d'intervention, récolte 2000 : orge : 17,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 24 avril 2001, dépôt au siège du gouvernorat de Tunis le 25 avril 2001 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 30 avril 2001. Édition française lue sur la couche texte, décodée (police décalée) ; article premier relu à l'image."
+    - title: "Décret n° 2005-1983 du 11 juillet 2005, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2005-2006"
+      href: https://www.pist.tn/jort/2005/2005F/Jo0572005.pdf
+      note: "JORT n° 57 du 19 juillet 2005, p. 1798, article 4 : « Sont appliquées pour les campagnes 2001-2002, 2002-2003 et 2003-2004 et 2004-2005, les dispositions du décret n° 2001-864 » (récoltes 2001 à 2004) : aucun prix nouveau. Édition française lue sur la couche texte, décodée (police décalée)."
+    2005-07-26:
+    - title: "Décret n° 2005-1983 du 11 juillet 2005, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2005-2006"
+      href: https://www.pist.tn/jort/2005/2005F/Jo0572005.pdf
+      note: "JORT n° 57 du 19 juillet 2005, p. 1797-1798. Prix d'intervention, récolte 2005 : orge : 18,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 19 juillet 2005, dépôt au siège du gouvernorat de Tunis le 21 juillet 2005 (mention portée au numéro, qui imprime « 21 juillet 2004 » dans un numéro daté du 19 juillet 2005 ; l'année est lue comme 2005), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 26 juillet 2005. Édition française lue sur la couche texte, décodée (police décalée)."
+    - title: "Décret n° 2007-1402 du 18 juin 2007, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2007-2008"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf
+      note: "JORT n° 49 du 19 juin 2007, p. 2091, article 15 : « Sont applicables à la campagne 2006/2007, les dispositions du décret n° 2005-1983 » (récolte 2006) : aucun prix nouveau. Lu sur l'océrisation du fascicule, visa relu à l'image."
+    2007-06-25:
+    - title: "Décret n° 2007-1402 du 18 juin 2007, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2007-2008"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf
+      note: "JORT n° 49 du 19 juin 2007, p. 2087-2093. Prix d'intervention, récolte 2007 : orge : 20,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 19 juin 2007, dépôt au siège du gouvernorat de Tunis le 20 juin 2007 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 25 juin 2007. Lu à l'image."
+    2008-06-16:
+    - title: "Décret n° 2008-2081 du 2 juin 2008, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2008-2009"
+      href: https://www.pist.tn/jort/2008/2008F/Jo0472008.pdf
+      note: "JORT n° 47 du 10 juin 2008, p. 1814-1819, article premier. Prix d'intervention, récolte 2008 : orge : 30,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 10 juin 2008, dépôt au siège du gouvernorat de Tunis le 11 juin 2008 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 16 juin 2008. Édition française lue sur la couche texte."
+    2009-06-18:
+    - title: "Décret n° 2009-1853 du 9 juin 2009, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2009/2010"
+      href: https://www.pist.tn/jort/2009/2009F/Jo0472009.pdf
+      note: "JORT n° 47 du 12 juin 2009, p. 1556-1559. Prix d'intervention, récolte 2009 : orge : 30,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 12 juin 2009, dépôt au siège du gouvernorat de Tunis le 13 juin 2009 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 18 juin 2009. Édition française lue sur la couche texte."
     2011-04-04:
     - title: "Décret n° 2011-325 du 23 mars 2011, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2010/2011"
       href: https://www.pist.tn/jort/2011/2011F/Jo0212011.pdf
@@ -105,13 +171,18 @@ metadata:
       href: https://www.pist.tn/jort/2026/2026F/Jo0752026.pdf
       note: "JORT n° 75 du 24 juillet 2026, p. 1440-1442, article premier. Prix d'intervention, récolte 2026 : 65,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 24 juillet 2026, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
 documentation: |-
-  La commercialisation de l'orge et du triticale est libre. Le texte de campagne fixe, à son
+  Depuis la récolte 1992 (décret n° 93-1721), la commercialisation de l'orge est libre ; jusqu'à
+  la récolte 1991, l'orge avait un prix de base à la production (prix_base_production.orge). Le
+  texte de campagne fixe, à son
   article premier, un prix d'intervention, en dinars par quintal (100 kg), « appliqué par les
   organismes collecteurs et stockeurs » aux acquisitions d'orge qui leur sont livrées par les
   producteurs.
 
   Chaque texte fixe les prix « de la récolte de l'année » qu'il vise ; la valeur prend effet à la
-  date d'entrée en vigueur du texte, non au début de la récolte. Deux décrets ne sont pas portés
+  date d'entrée en vigueur du texte, non au début de la récolte. Une campagne régie par
+  reconduction d'un texte antérieur (récoltes 1993-1994, 1997-1999, 2001-2004 et 2006) ne
+  porte pas de valeur nouvelle ; le texte qui reconduit figure dans les références, à la date de
+  la valeur qu'il maintient. Deux décrets ne sont pas portés
   en valeur : le décret n° 2022-580 (récolte 2021), entré en vigueur le même jour que celui de la
   récolte 2022, et le décret n° 2022-650 (récolte 2018), entré en vigueur après lui ; leurs prix,
   inférieurs à ceux de la récolte 2022, auraient fait revenir la série à des prix antérieurs. Ils
