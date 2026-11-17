@@ -141,7 +141,9 @@ class RegimeRSNA(AbstractRegimeEnAnnuites):
             )
             age = individu("age", period=period)
             rsna = parameters(period).retraite.regime_name
-            duree_stage_accomplie = duree_assurance > 4 * rsna.stage_requis
+            # 120 mois (= 4 x stage_requis trimestres) ouvrent le droit : >= et non >
+            # (decret 74-499, art. 15).
+            duree_stage_accomplie = duree_assurance >= 4 * rsna.stage_requis
             critere_age_verifie = age >= rsna.age_legal
             return (
                 duree_stage_accomplie * critere_age_verifie * (salaire_de_reference > 0)

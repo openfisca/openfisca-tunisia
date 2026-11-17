@@ -1,0 +1,44 @@
+description: Minimum de perception de la redevance de prestations douanières à l'importation, par article
+  de déclaration
+values:
+  '1988-01-02':
+    value: 1
+  '1994-01-01':
+    value: 5
+  '2013-01-01':
+    value: 10
+  '2024-01-01':
+    value: 20
+metadata:
+  unit: currency/unit
+  short_label: Minimum à l'importation
+  reference:
+    '1988-01-02':
+    - title: Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988, article 51
+      href: https://www.pist.tn/jort/1987/1987F/Jo09187.pdf
+      note: 'JORT n° 91 des 29-31 décembre 1987, p. 1632. Article 51, 2) : « un minimum de perception
+        de un dinar (1d) par article de déclaration » sur toutes les déclarations autres que celles d''exportation
+        visées au 1). Date d''effet : la loi n''a pas de clause générale d''application ; avant 1993,
+        elle devient exécutoire un jour franc après la publication au Journal officiel, soit le 2 janvier
+        1988.'
+    '1994-01-01':
+    - title: Loi n° 93-125 du 27 décembre 1993, portant loi de finances pour la gestion 1994, article
+        75
+      href: https://www.pist.tn/jort/1993/1993F/Jo10093.pdf
+      note: 'JORT n° 100 du 31 décembre 1993, p. 2202. Article 75 : « un minimum de perception de cinq
+        dinars par article ». Date d''effet : clause de l''article 77, le 1er janvier 1994.'
+    '2013-01-01':
+    - title: Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, article 57
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: 'JORT n° 1 du 1er janvier 2013, p. 17. Article 57, « Mise à jour du montant de la redevance
+        de prestations douanières à l''importation » : « Est abrogé le terme "cinq" mentionné au deuxième
+        tiret de l''article 51 de la loi n° 87-83 [...] et remplacé par le terme "dix" ». Date d''effet
+        : date d''application de la loi de finances, le 1er janvier.'
+    '2024-01-01':
+    - title: Loi n° 2023-13 du 11 décembre 2023, portant loi de finances pour l'année 2024, article 66
+      href: https://www.pist.tn/jort/2023/2023A/Ja1442023.pdf
+      note: 'JORT n° 144 du 12 décembre 2023, p. 3489 de l''extrait français de la loi (le lien est celui
+        de l''édition arabe, l''édition française du fascicule n''étant pas en ligne). Article 66, « Actualisation
+        du montant de la redevance sur les prestations douanières à l''importation » : l''expression «
+        dix dinars » du deuxième tiret de l''article 51 de la loi n° 87-83 est remplacée par « vingt dinars
+        ». Date d''effet : date d''application de la loi de finances, le 1er janvier.'

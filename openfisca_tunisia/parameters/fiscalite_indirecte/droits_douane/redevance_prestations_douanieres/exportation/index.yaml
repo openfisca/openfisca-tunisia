@@ -1,0 +1,6 @@
+description: Redevance de prestations douanières à l'exportation
+metadata:
+  short_label: Exportation
+  order:
+  - taux_sur_valeur_en_douane
+  - minimum_par_article

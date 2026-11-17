@@ -1,0 +1,18 @@
+description: "Salaires forfaitaires servant d'assiette à la cotisation d'accidents du travail et de maladies professionnelles, par catégorie de travailleurs"
+metadata:
+  order:
+  - agriculture_peche
+  - chauffeurs_taxi_louage
+  - masseurs_bains_maures
+  - employes_maison
+  - temporaires_particuliers
+  reference:
+    1995-01-01:
+    - title: "Décret n° 95-538 du 1er avril 1995, relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, articles 4 à 7"
+      href: "https://www.pist.tn/jort/1995/1995F/Jo03095.pdf"
+      note: "JORT n° 30 du 14 avril 1995, pp. 690-693 (éd. française), pp. 691-692 (éd. arabe) ; entrée en vigueur le 1er janvier 1995 (article 28). Les articles 4 à 7 fixent les assiettes forfaitaires par catégorie de travailleurs. L'édition arabe, lue à l'image, fait foi : https://www.pist.tn/jort/1995/1995A/Ja03095.pdf"
+documentation: |-
+  Le décret n° 95-538 (articles 4 à 7) fixe, pour des catégories dont le salaire effectif est
+  difficile à établir, une assiette forfaitaire de la cotisation d'accidents du travail et de
+  maladies professionnelles ; les réparations se calculent sur la même base. Les taux de branche
+  de l'échelle (`prelevements_sociaux/atmp`) ne s'y substituent que lorsque l'article le prévoit.

@@ -1,0 +1,13 @@
+description: Taxe de contrôle par scanner sur les unités de charge à l'importation
+metadata:
+  short_label: Taxe de contrôle par scanner
+  order:
+  - conteneur_20_pieds_au_plus
+  - autre_unite
+documentation: 'Taxe due sur le contrôle par scanner des unités de charge à l''admission temporaire, créée
+  par l''article 42 de la loi de finances pour 2018 : 100 dinars pour les conteneurs dont la capacité
+  ne dépasse pas 20 pieds, 200 dinars pour les autres unités de charge. Les règles de recouvrement, de
+  contrôle, de constatation des infractions, de sanctions, de contentieux et de prescription sont celles
+  des droits de douane.
+
+  '

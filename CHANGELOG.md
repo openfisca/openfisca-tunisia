@@ -1,6 +1,6 @@
 # Changelog
 
-### 0.154.1 - [#515](https://github.com/openfisca/openfisca-tunisia/pull/515)
+### 0.170.1 - [#515](https://github.com/openfisca/openfisca-tunisia/pull/515)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : à partir du 01/01/1974 ; seulement pour un conjoint survivant déclaré remarié.
@@ -12,6 +12,158 @@
   - Sans pension de conjoint, le plafond de l'article 38 ne réduit plus les pensions d'orphelins : un orphelin d'un conjoint remarié reçoit son taux entier.
   - Aucun résultat ne change pour un conjoint non remarié, valeur par défaut. Aucun test existant ne change. La documentation de `conjoint_survivant_remarie` décrit désormais les deux régimes.
   - Dix-neuf cas nouveaux dans `tests_pension/formulas/rsna/survivants.yaml` : non remarié, remarié avant 55 ans, à 55 ans exactement, après 55 ans, avec et sans orphelin, en décembre 1973, janvier 1974, février et mars 1981, septembre et octobre 1990, et 2024. Une période mensuelle se lit au premier du mois : la borne du 23/09/1990 s'éprouve entre septembre et octobre 1990.
+
+## 0.170 - [#529](https://github.com/openfisca/openfisca-tunisia/pull/529)
+
+* Correction de calcul (programme Amen social, transfert monétaire permanent).
+* Périodes concernées : à partir du 25/05/2020 (ouverture du programme Amen social).
+* Zones impactées : `openfisca_tunisia/variables/prestations/non_contributives/amen_social.py`.
+* Détails :
+  - **Le transfert monétaire permanent (TMP) est de nouveau calculable.** Trois défauts le rendaient inexécutable : (1) la variable d'entrée `amen_social_score_decile`, lue par `transfert_monetaire_permanent_eligibilite_score`, n'était déclarée nulle part (`VariableNotFoundError`) ; (2) `transfert_monetaire_permanent` lisait le paramètre `supplements.amen_social_enfants_a_charge`, inexistant (le paramètre réel est `supplements.enfant_a_charge`) (`ParameterNotFoundError`) ; (3) `transfert_monetaire_permanent_eligibilite_score` n'avait qu'une `formula_2022_06`, si bien qu'aucun ménage n'était éligible au TMP avant juin 2022 alors que le programme verse des transferts depuis 2020.
+  - **Correctifs**, sans changement de barème : déclaration de `amen_social_score_decile` (décile 1 à 10 du score de ciblage de la circulaire n° 12 du 12 mai 2022 ; défaut 11 = ménage non classé, pour que la condition `<= decile` reste fausse hors ciblage) ; correction du nom de paramètre (`supplements.enfant_a_charge`) ; ajout d'une `formula_2020` à `transfert_monetaire_permanent_eligibilite_score` renvoyant `amen_social_eligible` (avant la circulaire de 2022, seuls les critères primaires du décret n° 2020-317 ouvrent le droit).
+  - Nouveau test `tests/formulas/amen_social/transfert_monetaire_permanent.yaml` (montant par année et par composition, voies d'éligibilité primaire et par décile, exclusions).
+
+## 0.169 - [#532](https://github.com/openfisca/openfisca-tunisia/pull/532)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 04/08/1970 au 03/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Prix des céréales par campagne prolongés vers le passé, des récoltes 1970 à 2009** : prix de base à la production du blé dur et du blé tendre, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, prix d'intervention de l'orge. Vingt-neuf décrets de campagne, du décret n° 70-261 (JORT n° 37 de 1970) au décret n° 2009-1853 (JORT n° 47 de 2009), avec numéro, date et pages du JORT dans les références.
+  - **Nouveau paramètre `prix_base_production/orge`** (récoltes 1970 à 1991) : l'orge a un prix de base jusqu'à la récolte 1991 ; à partir de la récolte 1992, sa commercialisation est libre et le décret n° 93-1721 ne fixe plus qu'un prix d'intervention. Le prix de base s'arrête (`null`) et `prix_intervention_orge` commence le 06/09/1993.
+  - **Nouveau nœud `prix_reduit_retrocession`** (blé dur, blé tendre) : prix réduits de rétrocession du blé aux minoteries, fixés par les décrets des récoltes 1974 à 1989 et par les décrets modificatifs n° 75-352, 77-339, 79-413, 83-1274, 84-150 et 84-785. La série s'arrête (`null`) le 04/07/1991 : depuis le décret n° 91-943, le prix réduit est fixé par arrêté, puis par décision ministérielle, non publiés au Journal officiel.
+  - Dates d'effet : date énoncée par le texte quand il y en a une (31/05/1975, 01/11/1976, 03/05/1979, 28/12/1983) ; sinon un jour franc après la publication jusqu'en 1992 ; pour un numéro à plusieurs dates, la valeur est portée à la dernière date du numéro, retenue comme publication, sans calcul de jour franc (convention de la 0.167) ; cinq jours après le dépôt au gouvernorat de Tunis à partir de 1993.
+  - Les campagnes régies par reconduction (récoltes 1979, 1993-1994, 1997-1999, 2001-2004 et 2006 ; décrets n° 80-140, 96-2549 art. 14, 2001-864 art. 14, 2005-1983 art. 4, 2007-1402 art. 15) ne portent pas de valeur nouvelle ; le texte de reconduction figure dans les références de la valeur maintenue.
+  - Ruptures documentées en notes : composition du prix normal (récolte 1992 ; prime exceptionnelle de prompte livraison comprise à partir de la récolte 2008), orge (1992), payeur de l'écart (1988-1991). La note « série incomplète » passe de 2011 à 1970. Aucune variable ne lit ces paramètres.
+
+## 0.167 - [#531](https://github.com/openfisca/openfisca-tunisia/pull/531)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 06/07/1971.
+* Zones impactées : `parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees`.
+* Détails :
+  - **Taxe sur les agrumes et fruits exportés** au profit de la Caisse générale de compensation : 2 millimes par kilogramme net (loi n° 71-30 du 2 juillet 1971, article 5, JORT n° 29 des 2-6 juillet 1971, p. 848). Valeur portée au 06/07/1971, dernière date du numéro : la loi n'énonce pas de date d'effet et le jour de parution du numéro double n'est pas établi.
+  - **Taxes de péréquation de raffinage** sur le supercarburant, l'essence normale et le gas-oil : 0,350 dinar par hectolitre, versées au sous-compte de péréquation de raffinage de la Caisse (décret n° 72-400 du 16 décembre 1972, articles 1er à 3, JORT n° 51 des 19-22 décembre 1972, p. 1827), à compter du 01/07/1972, date d'effet énoncée à l'article 8.
+  - Évolution postérieure de ces taxes non établie (`metadata.notes`). Aucune variable ne lit ces paramètres.
+
+## 0.166 - [#530](https://github.com/openfisca/openfisca-tunisia/pull/530)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 04/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Nouveaux paramètres : prix des céréales fixés pour chaque campagne** par le texte de campagne de l'Office des céréales — prix de base à la production du blé dur et du blé tendre, prix d'intervention de l'orge, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, en dinars par quintal. Quinze textes, des récoltes 2010 à 2026 : décrets n° 2011-325 à 2025-344, puis arrêté conjoint du 24 juillet 2026 (JORT n° 75, p. 1440-1442). Chaque valeur prend effet à l'entrée en vigueur du texte (cinq jours après le dépôt au gouvernorat de Tunis jusqu'en 2019, lendemain de la publication électronique depuis 2020), avec numéro, date et pages du JORT dans les références.
+  - Les décrets n° 2022-580 (récolte 2021) et 2022-650 (récolte 2018), entrés en vigueur avec ou après celui de la récolte 2022, ne sont pas portés en valeur : ils auraient ramené la série à des prix antérieurs. Ils figurent dans les références au 13/07/2022.
+  - Série incomplète : états antérieurs à 2011 non versés. Aucune variable ne lit encore ces paramètres.
+
+## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
+
+* Amélioration technique (chargement du paquet des pensions).
+* Zones impactées : `openfisca_tunisia_pension/scripts_ast/script_ast.py`.
+* Détails :
+  - **Le paquet des pensions s'importe désormais sur un système de fichiers en lecture seule.** À l'import, `script_ast` régénère les variables `rsna_*`, `rsa_*`, `cnrps_*` dans `openfisca_tunisia_pension/variables/` à partir des régimes. Quand le dossier d'installation n'est pas inscriptible (déploiements : shinyapps.io, environnements serverless, store Nix…), l'écriture échouait avec `PermissionError` et cassait l'import. Désormais : si le contenu généré est déjà à jour, aucune réécriture ; et si l'écriture échoue (lecture seule), un avertissement est émis et les variables **déjà livrées** dans le paquet sont utilisées. Aucun changement de comportement de calcul.
+
+## 0.164 - [#527](https://github.com/openfisca/openfisca-tunisia/pull/527)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974 (ouverture du droit à pension RSNA et RSA).
+* Zones impactées : `openfisca_tunisia_pension/variables/rsna.py`, `openfisca_tunisia_pension/regimes/rsna.py`, `openfisca_tunisia_pension/variables/rsa.py`, `openfisca_tunisia_pension/regimes/rsa.py`.
+* Détails :
+  - **Le stage requis ouvre le droit à pension dès qu'il est atteint** (condition `>=`), et non strictement dépassé (`>`), pour les régimes RSNA et RSA. Décret n° 74-499, article 15 : le droit suppose de « justifier d'un stage de 120 mois » — les 120 mois (40 trimestres) exacts ouvrent donc le droit. Avant ce correctif, une carrière de 10 ans pile (120 mois) ne donnait aucune pension (éligibilité fausse) ; elle en donne désormais une (RSNA : taux de 40 % au terme du stage). Le régime CNRPS utilisait déjà `>=` (minimum de 15 ans, inchangé).
+  - Nouveau test de non-régression `tests_pension/formulas/rsna/eligible.yaml` (120 mois pile éligible ; 9 ans ou âge < 60 non éligible). Dossier confirmant la règle : `precis/fr/retraites/_secteur_prive.qmd` (décret 74-499, art. 15).
+
+## 0.163 - [#525](https://github.com/openfisca/openfisca-tunisia/pull/525)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1973 ; valeur non sourcée retirée du 01/02/1959 au 31/03/1973.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/salarie_cnrps/cotisations_employeur/maladie`, `.../cotisations_salarie/maladie`.
+* Détails :
+  - **La contribution employeur de prévoyance sociale des agents CNRPS en activité commence au 1er avril 1973, à 1 %**, et non en 1959. Le décret n° 73-91 (JORT n° 10, p. 356, lu à l'image), article 16 : « La contribution de l'Etat aux régimes obligatoires des prestations en nature et de Prévoyance Sociale est fixée à 1 % » ; article 18 : effet au 1er avril 1973. La date de 1959 que portait le fichier était sans appui textuel (part employeur nulle de 1959 à mars 1973).
+  - **Références précisées** pour les deux parts (salarié et employeur) : socle du décret n° 73-91 (article 14 pour le salarié, article 16 pour l'employeur) et montée en charge du régime de base d'assurance maladie par l'article 4 du décret n° 2007-1406 — total 3 % en 2007 (1 % salarié, 2 % employeur), 4,88 % en 2008 (1,88 % / 3 %), 6,75 % en 2009 (2,75 % / 4 %). La table représente le **régime obligatoire** (article 4) ; le **régime facultatif** d'assurance maladie de l'article 5 n'est pas modélisé.
+  - **Taux inchangés** à partir de 2007 : seule la date de départ de la part employeur et les références changent. Nouveau test `tests/formulas/cotisations/cnrps_maladie_salaries_2007_1406.yaml`. Dossier : `docs/notes/cnrps-prevoyance-73-91.md`.
+
+## 0.162 - [#524](https://github.com/openfisca/openfisca-tunisia/pull/524)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1973.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/pensionne_cnrps/prevoyance_sociale`.
+* Détails :
+  - **La prévoyance sociale sur pension des titulaires de la CNRPS commence au 1er avril 1973, à 2 %**, et non en 2007. Le décret n° 73-91 du 12 mars 1973 (JORT n° 10, p. 356, lu à l'image), article 15, dernier alinéa : « La cotisation due par le retraité et la veuve de retraité titulaire d'une pension directe ou de reversion est fixée à 2 % de leur pension en principal » ; l'article 18 fait prendre effet le décret au 1er avril 1973.
+  - La rampe de 1 % à 4 % de 2007 à 2010 que portait déjà ce fichier est le régime de base d'assurance maladie des titulaires de pension (décret n° 2007-1406, articles 12 et 13, JORT n° 49 du 19 juin 2007, p. 2162), qui succède à cette prévoyance. La référence et la note de 2007 sont complétées ; la note périmée invoquant une date de 1959 « sans appui textuel » est corrigée.
+  - Aucun texte modifiant le taux de 2 % entre 1973 et 2007 n'a été identifié. L'articulation entre la prévoyance de 2 % et le régime de base d'assurance maladie (succession ou cumul) reste à confirmer (cf. corps de PR). Dossier : `docs/notes/cnrps-prevoyance-73-91.md`.
+
+## 0.161 - [#523](https://github.com/openfisca/openfisca-tunisia/pull/523)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1995 (forfaits et modulation) ; refontes au 01/04/1999 et au 01/07/2000 ; variable nouvelle.
+* Zones impactées : `parameters/prelevements_sociaux/atmp_forfaits/` (nouveau), `parameters/prelevements_sociaux/atmp_modulation/` (nouveau), `variables/prelevements_obligatoires/cotisations_forfaitaires_accidents_travail.py` (nouveau).
+* Détails :
+  - **Verse les salaires forfaitaires d'accidents du travail et de maladies professionnelles** des articles 4 à 7 du décret n° 95-538 du 1er avril 1995 (JORT n° 30 du 14 avril 1995, édition arabe pp. 691-692, qui fait foi, lue à l'image) : forfait du secteur agricole non régi par la loi n° 89-73 et des pêcheurs payés à la part (article 4 : taux de 1 %, coefficient 1,5, tableau des journées par type de culture ou d'activité, base des réparations SMAG × 300 jours × coefficient 1, 1,5 ou 2) ; chauffeurs de louage et de taxis et « masseurs » des bains maures (article 5 : SMIG 48 heures × 2 400 heures × 1,5) ; employés de maison (article 6 : 0,53 %, 0,75 % et 1 % du SMAG × 300 jours, coefficient 1,5 pour les conducteurs) ; travailleurs temporaires auprès des particuliers (article 7 : SMIG × 200 heures par mois × coefficient 1 ou 2).
+  - **Refonte du forfait agricole au 1er avril 1999** par le décret n° 99-1010 (JORT n° 40 du 18 mai 1999, p. 734) : le taux passe de 1 % à 0,80 %, le tableau des journées reçoit l'horticulture de plein champ (70) et la cuniculture (36 jours pour 1 000 lapins), et la ligne des bovins est étendue aux équins et aux camélidés ; les autres valeurs sont reprises à l'identique.
+  - **Forfait du transport public au 1er juillet 2000** par le décret n° 2000-1439 (JORT n° 52 du 30 juin 2000, p. 1541) : pour le taxi, le louage et le transport rural, l'assiette devient le SMIG 48 heures × 2 400 heures **sans coefficient**, valable aussi pour les régimes de sécurité sociale ; les « masseurs » des bains maures, hors de son champ, restent régis par l'article 5 (coefficient 1,5).
+  - **Modulation de la cotisation** (articles 10 à 27 du décret n° 95-538) : cotisation supplémentaire de 50 % des cotisations principales (article 17), portée à 100 % au plus (articles 17 et 18), réduction plafonnée à 25 % (article 24).
+  - **Nouvelle variable** `cotisation_accident_travail_forfaitaire_employe_maison` : seul forfait entièrement déterminé par le droit (taux propres à l'article 6 et assiette fixe), calculé à partir du SMAG journalier. Les autres forfaits sont versés en paramètres ; l'arborescence de leurs variables (option pour les salaires effectifs, surfaces par culture, nombre de têtes, qualification, taux de branche, intégration annuel/mensuel) reste à arbitrer (issue #471).
+  - Dossier de lecture : `docs/notes/atmp-forfaits-95-538.md`.
+
+## 0.160 - [#522](https://github.com/openfisca/openfisca-tunisia/pull/522)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `parameters/prestations/non_contributives/pnafn/allocation.yaml`.
+* Détails :
+  - Documentation du PNAFN enrichie : le cadre du programme (recensement, registre de la pauvreté, éligibilité) est posé par des circulaires administratives **non publiées au Journal officiel**, aujourd'hui archivées dans la base législative `tunisia-legislative-references` — circulaire du Premier ministre n° 18 du 4 juin 1986, n° 22 de 1993 (registre national de la pauvreté), n° 5 de 1998 (gestion déconcentrée), n° 11 de 2009, et circulaire conjointe du 27 mai 2011 fixant le seuil d'éligibilité à 585 dinars de revenu annuel moyen ajusté.
+  - Aucune ne fixe le montant mensuel de l'allocation : les onze paliers, leurs dates, la référence du palier de 180 dinars et la conclusion de la série sont **inchangés**.
+
+## 0.159 - [#521](https://github.com/openfisca/openfisca-tunisia/pull/521)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `pyproject.toml`, `uv.lock`.
+* Détails :
+  - **openfisca-core** : borne relevée à `>=44, <46` (PR #464 de dependabot) ; le verrou passe de 44.7.1 à 45.0.5. Les 7 756 tests Python et les 8 094 tests YAML passent avec la version 45.0.5.
+  - **Dépendances du verrou** : werkzeug 3.1.8 -> 3.1.9 (#481), urllib3 2.7.0 -> 2.8.0 (#467), tornado 6.5.8 -> 6.5.9 (#466). Ces trois mises à jour et la précédente remplacent les PR de dependabot, dont le contrôle de version et de CHANGELOG échouait.
+  - **ruff non relevé** : la PR #463 (`<0.17`) n'est pas reprise. Avec ruff 0.16.10, `ruff check .` signale 211 erreurs sur le code actuel (102 corrigeables automatiquement) ; la borne reste `<0.9`.
+
+## 0.158 - [#520](https://github.com/openfisca/openfisca-tunisia/pull/520)
+
+* Amélioration technique.
+* Périodes concernées : à partir du 01/01/2010 ; paramètre complété.
+* Zones impactées : `parameters/produits_subventionnes/` (semoule, gros pain, baguette, pâtes, couscous, sucre, laits, huile).
+* Détails :
+  - **Sources de `semoule`** : le tableau « Évolution des prix de vente au public des produits subventionnés, 2010-2022 » du ministère du Commerce (commerce.gov.tn/storage/donwloads/fr2.pdf) donne les quatre valeurs du paramètre (0,48 ; 0,45 ; 0,64 ; 0,79 D/kg). Valeurs inchangées, avec références, étiquettes, documentation, dates ordonnées (comme le proposait la PR #212, qui est remplacée).
+  - **Autres produits subventionnés** (gros pain, baguette, pâtes, couscous, sucre, lait demi-écrémé en bouteille et UHT, huile) : même tableau en référence, étiquettes courtes, dates ordonnées. Valeurs inchangées sauf une date : les laits passent à 1,300 et 1,350 D/l en **2022** (tableau du ministère), non en 2025 comme dans les fichiers ; ils valent donc 1,300 et 1,350 en 2022-2024 au lieu de 1,200 et 1,250. La farine n'est pas dans le tableau (valeur 0 en 2025, « Indisponible ») : non touchée.
+  - **Texte officiel** : l'arrêté du ministre de l'économie nationale du 15 août 1991 (JORT n° 61, p. 1546) est le dernier arrêté de prix de la semoule publié au JORT (205 millimes au détail en vrac). Il est cité, non porté comme valeur : les prix de 1991 à 2010 n'ont pas été retrouvés. Aucun texte publié ne fixe les prix de 2010 à 2022.
+  - **Écarts de presse signalés** : un communiqué du ministère reproduit le 3 janvier 2018 donne encore 450 millimes ; un article du 11 décembre 2020 donne 790 millimes pour la semoule emballée. Le tableau du ministère est retenu.
+
+## 0.157 - [#518](https://github.com/openfisca/openfisca-tunisia/pull/518)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 22/11/1996 ; variables nouvelles.
+* Zones impactées : `variables/prestations/contributives/indemnites_familiales_secteur_public.py` (nouveau).
+* Détails :
+  - **Code les quatre-vingt-un cas d'octroi de l'indemnité familiale et de l'indemnité pour salaire unique du secteur public** : annexe 2 de la circulaire du Premier ministre n° 42 du 25 octobre 1996 (JORT n° 89 du 5 novembre 1996 ; annexes au JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui applique le décret du 22 novembre 1918 (indemnité familiale) et le décret du 24 février 1944 (indemnité pour salaire unique).
+  - **Un seul moteur pour les deux secteurs** : `pf_allocataire` (père, mère, tuteur, mère pour le montant antérieur au second mariage, père la mère pouvant réclamer la différence, non servie, non désigné) et `pf_payeur` (employeur du père, CNSS, caisse de retraite, non précisé) ; `pf_salaire_unique_servi` dit si l'indemnité pour salaire unique est servie au même allocataire, par le même organisme (vérifié sur les 81 cas). Secteur public : la table de la circulaire.
+  - **Secteur privé : qui perçoit** (loi n° 60-30, articles 53, 55, 64 et 65 ; loi n° 96-65 ; loi n° 80-36, article 65 bis), formules datées au 1er avril 1961 et au 4 août 1996. Du 1er avril 1961 au 3 août 1996, article 55, alinéa 3 : quand le père et la mère d'un couple non séparé ouvrent tous deux droit, seule l'allocation du père est servie, la mère pouvant réclamer la différence (nouvelle valeur `pere_mere_pouvant_reclamer_difference`). Avant comme après 1996, quand les parents sont séparés (situations IV à VI) et qu'un seul ouvre droit, l'allocation est versée à la personne qui a la garde (article 64). Dans un couple non séparé dont un seul parent ouvre droit, ce parent est l'allocataire (article 53, 1°), avant comme après 1996. Le payeur est la caisse (article 65). La garde est une entrée (`pf_garde_enfant`, ou la situation `divorce_garde_pere` / `divorce_garde_mere`) ; dans un couple non séparé elle n'est pas supposée.
+  - **Non codé, `non_designe`** : depuis le 4 août 1996, couple non séparé dont le père et la mère ouvrent droit (la loi ne dit pas ce que « garde » veut dire, et les montants par personne ne sont pas rattachables au père et à la mère) ; parents séparés ouvrant droit tous deux (articulation des articles 55 et 64 avant 1996, « l'allocation la plus élevée » depuis) ; tutelle (tuteur officieux salarié, article 53 3°) ; décès d'un parent (articles 56 à 59). Payeur : le dernier employeur (article 60) et le paiement direct par les employeurs (article 48, 2°) ne sont pas codés, le modèle n'ayant pas de variable d'affiliation de l'employeur.
+  - **Majoration pour salaire unique du secteur privé** : nouvelle variable `pf_majoration_salaire_unique_allocataire`, versée à la personne qui a la garde depuis le 1er mai 1980 (article 65 bis), `non_designe` si la garde n'est pas établie. Le maintien aux titulaires de pensions (décret n° 81-731, 1er mai 1981) n'est pas codé : aucune entrée ne distingue les pensions du régime des salariés. Les formules de montant (`af_mensuelle`, `majoration_salaire_unique`) sont inchangées.
+  - **Variables d'entrée de l'enfant** (`Individu`, mensuelles) : `pf_situation_parents`, `pf_filiation`, `pf_statut_pere`, `pf_statut_mere`, `pf_statut_tuteur`, `pf_garde_enfant`. Les parents pouvant ne plus appartenir au ménage de l'enfant (divorce, décès, tutelle), leur position se saisit sur l'enfant. Calculée : `pf_cas_circulaire_42` (code 1 à 81, 0 hors annexe).
+  - **Cas 34, 42 et 43**, ambigus dans la traduction française, lus dans l'édition arabe (JORT n° 89, p. 2540 et 2542) : au cas 42 le père n'a pas la pension de réversion (salaire unique servi au père), au cas 43 il l'a (non servi) ; la position de la mère décédée est indifférente. Au cas 34 l'indemnité est servie par la caisse de retraite sans bénéficiaire nommé : le modèle retient la mère (déduit).
+  - **Hors périmètre** : les montants (décret n° 96-1906, circulaire) et les conditions d'enfant (âge, rang, handicap) ; les formules de montant du secteur privé (`salaire_unique`, `majoration_salaire_unique`, `af_mensuelle`) sont inchangées. La docstring d'`_af_mensuelle` dit que la formule retient l'allocation la plus élevée dans les deux périodes, alors que le texte de 1961 sert celle du père : écart signalé, non corrigé.
+  - Tests : `tests/formulas/prestations/contributives/indemnites_familiales_secteur_public.yaml` (un test par code, plus les cas du secteur privé nommés par article et par période) et `tests/test_indemnites_familiales_public.py` (couverture des 81 codes, salaire unique servi à l'allocataire).
+
+## 0.156 - [#516](https://github.com/openfisca/openfisca-tunisia/pull/516)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 02/01/1987 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_douane` (nouveau nœud), `fiscalite_indirecte/index.yaml`.
+* Détails :
+  - **Verse la redevance de prestations douanières**, de l'article 51 de la loi n° 87-83 (loi de finances pour 1988) et de ses modifications de 1994, 1998, 1999, 2013, 2014 et 2024 : taux sur le montant des droits et taxes liquidés à l'importation (1,5 % au 02/01/1988, 2 % au 01/01/1994, 3 % au 01/01/1998), minimum par article de déclaration à l'importation (1, 5, 10, 20 dinars) et à l'exportation (1 dinar), taux à l'exportation (1,5 % de la valeur en douane), redevance de 100 dinars par déclaration de transit terrestre (01/01/2014).
+  - **Verse le minimum de perception en tarif minimum ad valorem** (10 % au 02/01/1987, 15 % au 02/01/1988) et le taux des biens d'équipement (15 % puis 22 %). Pour ces derniers, le texte de 1987 fixe un plafond et celui de 1988 un « minimum de perception » : la note de la feuille le dit, le sens est à établir avant tout calcul.
+  - **Verse la taxe de contrôle par scanner** de l'article 42 de la loi de finances pour 2018 : 100 dinars par conteneur de 20 pieds au plus, 200 dinars pour les autres unités de charge, au 01/01/2018.
+  - **Dates.** Les lois de finances de 1987 et de 1988 n'ont pas de clause générale d'application : exécutoires un jour franc après la publication du 31 décembre, soit le 02/01. Depuis 1994, la date d'application de la loi de finances est le 1er janvier.
+  - **Correction de lecture.** Dès 1988, l'article 51 assoit la redevance à l'importation sur le montant des droits et taxes liquidés (à 1,5 %), la valeur en douane ne valant que pour les exportations d'une liste de produits. La feuille `importation/taux_sur_droits_et_taxes` suit le fascicule lu à l'image.
+  - **Pas de calcul.** Aucune variable ne calcule les droits de douane : le nœud ne porte que les paramètres. Les taux par position du tarif, les tables de correspondance de 1987, 1988 et 1994, les bandes de 2004 à 2022 et le calendrier de l'accord d'association avec l'Union européenne restent au relevé du chapitre « Les droits de douane » du précis.
+  - Le test `tests/test_droits_douane.py` éprouve, feuille par feuille, la valeur la veille et le jour de chaque date, le début de série, la référence (article, fascicule, page, lien), les notes, les unités et la forme du sous-arbre.
 
 ## 0.154 - [#514](https://github.com/openfisca/openfisca-tunisia/pull/514)
 
@@ -1390,7 +1542,7 @@
   - Scripts CI (.github) mis à jour pour appeler `uv run` (openfisca, python) ; twine ajouté aux dépendances dev pour le déploiement.
   - Reformattage du code avec `ruff format`.
 
-## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique.
 * Périodes concernées : aucune.

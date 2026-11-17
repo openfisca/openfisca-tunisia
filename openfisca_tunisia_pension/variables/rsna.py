@@ -117,7 +117,7 @@ class rsna_eligible(Variable):
         salaire_de_reference = individu('rsna_salaire_de_reference', period=period)
         age = individu('age', period=period)
         rsna = parameters(period).retraite.rsna
-        duree_stage_accomplie = duree_assurance > 4 * rsna.stage_requis
+        duree_stage_accomplie = duree_assurance >= 4 * rsna.stage_requis
         critere_age_verifie = age >= rsna.age_legal
         return duree_stage_accomplie * critere_age_verifie * (salaire_de_reference > 0)
 
