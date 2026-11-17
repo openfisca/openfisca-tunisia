@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.167 - [#531](https://github.com/openfisca/openfisca-tunisia/pull/531)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 06/07/1971.
+* Zones impactées : `parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees`.
+* Détails :
+  - **Taxe sur les agrumes et fruits exportés** au profit de la Caisse générale de compensation : 2 millimes par kilogramme net (loi n° 71-30 du 2 juillet 1971, article 5, JORT n° 29 des 2-6 juillet 1971, p. 848). Valeur portée au 06/07/1971, dernière date du numéro : la loi n'énonce pas de date d'effet et le jour de parution du numéro double n'est pas établi.
+  - **Taxes de péréquation de raffinage** sur le supercarburant, l'essence normale et le gas-oil : 0,350 dinar par hectolitre, versées au sous-compte de péréquation de raffinage de la Caisse (décret n° 72-400 du 16 décembre 1972, articles 1er à 3, JORT n° 51 des 19-22 décembre 1972, p. 1827), à compter du 01/07/1972, date d'effet énoncée à l'article 8.
+  - Évolution postérieure de ces taxes non établie (`metadata.notes`). Aucune variable ne lit ces paramètres.
+
 ## 0.166 - [#530](https://github.com/openfisca/openfisca-tunisia/pull/530)
 
 * Évolution du système socio-fiscal.
