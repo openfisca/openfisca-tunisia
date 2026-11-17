@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.166 - [#PR](https://github.com/openfisca/openfisca-tunisia/pull/PR)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 04/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Nouveaux paramètres : prix des céréales fixés pour chaque campagne** par le texte de campagne de l'Office des céréales — prix de base à la production du blé dur et du blé tendre, prix d'intervention de l'orge, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, en dinars par quintal. Quinze textes, des récoltes 2010 à 2026 : décrets n° 2011-325 à 2025-344, puis arrêté conjoint du 24 juillet 2026 (JORT n° 75, p. 1440-1442). Chaque valeur prend effet à l'entrée en vigueur du texte (cinq jours après le dépôt au gouvernorat de Tunis jusqu'en 2019, lendemain de la publication électronique depuis 2020), avec numéro, date et pages du JORT dans les références.
+  - Les décrets n° 2022-580 (récolte 2021) et 2022-650 (récolte 2018), entrés en vigueur avec ou après celui de la récolte 2022, ne sont pas portés en valeur : ils auraient ramené la série à des prix antérieurs. Ils figurent dans les références au 13/07/2022.
+  - Série incomplète : états antérieurs à 2011 non versés. Aucune variable ne lit encore ces paramètres.
+
 ## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique (chargement du paquet des pensions).
