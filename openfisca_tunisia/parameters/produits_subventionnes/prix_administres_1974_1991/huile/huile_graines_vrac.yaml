@@ -9,9 +9,10 @@ metadata:
   notes:
     1991-08-17:
     - note: "Série incomplète : états antérieurs à 1991 non versés."
-    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la valeur reste ouverte."
+    - note: "Prix de 2010 à 2022 : paramètre produits_subventionnes/huile, d'après le tableau annuel du ministère du Commerce (0,900 D le litre en 2010). Produit défini autrement : huile végétale en bouteille de verre. Le raccord avec la présente série n'est pas établi."
   reference:
     1991-08-17:
     - title: "Arrêté du ministre de l'économie nationale du 15 août 1991 portant fixation des prix de vente de l'huile de graines en vrac"
       href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
-      note: "JORT n° 61 des 3-6 septembre 1991, p. 1546-1547, article premier. « Huile de graine en vrac » : 370 millimes le litre au détail ; 369 millimes le kilogramme au producteur, 380 en gros. Date d'effet énoncée par le texte : « à compter du 17 août 1991 », antérieure à la publication."
+      note: "JORT n° 61 des 3-6 septembre 1991, p. 1546-1547, article premier. « Huile de graine en vrac » : 370 millimes le litre au détail ; 369 millimes le kilogramme au producteur, 380 en gros. Date d'effet énoncée par le texte : 17 août 1991, antérieure à la publication."
