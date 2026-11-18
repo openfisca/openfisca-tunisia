@@ -2,6 +2,8 @@ description: "Prix de vente maximum au public du sucre brun"
 values:
   1991-06-17:
     value: 0.3
+  1992-01-01:
+    value: null
 metadata:
   short_label: "Sucre brun"
   label_en: "Brown sugar, maximum retail price"
@@ -9,9 +11,15 @@ metadata:
   notes:
     1991-06-17:
     - note: "Série incomplète : états antérieurs à 1991 non versés."
-    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la valeur reste ouverte."
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la série est close au 1er janvier 1992, date à partir de laquelle aucun prix au public n'est plus publié."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
   reference:
     1991-06-17:
     - title: "Arrêté du ministre de l'économie nationale du 25 juin 1991 portant fixation des prix de vente du sucre"
       href: https://www.pist.tn/jort/1991/1991F/Jo04891.pdf
       note: "JORT n° 48 du 5 juillet 1991, p. 1251, article premier. Sucre blanc en poudre : 430 millimes le kilogramme ; en morceaux : 620 ; sucre brun : 300. Date d'effet énoncée par le texte : 17 juin 1991 (article premier), antérieure à la signature ; l'article 2 imprime « 17 juin 1990 » pour la déclaration des stocks."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."

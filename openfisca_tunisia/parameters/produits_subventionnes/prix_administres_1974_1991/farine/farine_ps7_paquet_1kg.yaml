@@ -2,6 +2,8 @@ description: "Prix de vente au public de la farine extraite à PS-7 en paquet de
 values:
   1989-08-12:
     value: 0.29
+  1992-01-01:
+    value: null
 metadata:
   short_label: "Farine PS-7 paquet 1 kg"
   label_en: "PS-7 flour, 1 kg pack, retail price"
@@ -9,9 +11,15 @@ metadata:
   notes:
     1989-08-12:
     - note: "Série incomplète : états antérieurs à 1989 non versés."
-    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la valeur reste ouverte."
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la série est close au 1er janvier 1992, date à partir de laquelle aucun prix au public n'est plus publié."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
   reference:
     1989-08-12:
     - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989 portant fixation du prix de vente de la farine extraite à PS-7"
       href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
       note: "JORT n° 77 des 17-21 novembre 1989, p. 1821, article premier. Farine PS-7, paquet de 1 kg : 258 millimes rendu chef-lieu de délégation, 264 en gros, 290 au détail. Date d'effet énoncée par le texte : 12 août 1989, antérieure à la signature et à la publication."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."

@@ -12,6 +12,8 @@ values:
     value: 0.26
   1991-08-17:
     value: 0.3
+  1992-01-01:
+    value: null
 metadata:
   short_label: "Pâtes PS-10 vrac"
   label_en: "Pasta PS-10 in bulk, retail price per kg"
@@ -20,8 +22,10 @@ metadata:
     1983-12-28:
     - note: "Série incomplète : états antérieurs à 1983 non versés."
     1991-08-17:
-    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la valeur reste ouverte."
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la série est close au 1er janvier 1992, date à partir de laquelle aucun prix au public n'est plus publié."
     - note: "Prix de 2010 à 2022 : paramètre produits_subventionnes/pate, d'après le tableau annuel du ministère du Commerce (0,855 D le kilogramme en 2010). Variété et conditionnement non précisés par le tableau. Le raccord avec la présente série n'est pas établi."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
   reference:
     1983-12-28:
     - title: "Arrêté du ministre de l'économie nationale du 28 décembre 1983, fixant les prix de vente maxima des pâtes et couscous rapide"
@@ -47,3 +51,7 @@ metadata:
     - title: "Arrêté du 15 août 1991 fixant les prix des pâtes alimentaires et du couscous (intitulé non relevé)"
       href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
       note: "JORT n° 61 des 3-6 septembre 1991, p. 1545-1546. Pâtes PS-10, vrac : 300 millimes le kilogramme au détail. Date d'effet énoncée par le texte : 17 août 1991, antérieure à la publication."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."

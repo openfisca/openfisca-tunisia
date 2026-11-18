@@ -4,14 +4,18 @@ values:
     value: 0.1
   1991-08-17:
     value: 0.12
+  1992-01-01:
+    value: null
 metadata:
   short_label: "Gros pain de 500 g"
   label_en: "Large bread (500 g), maximum retail price"
   unit: currency/unit
   notes:
     1991-08-17:
-    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la valeur reste ouverte."
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la série est close au 1er janvier 1992, date à partir de laquelle aucun prix au public n'est plus publié."
     - note: "Prix de 2010 à 2022 : paramètre produits_subventionnes/gros_pain, d'après le tableau annuel du ministère du Commerce (0,250 D en 2010). Produit défini autrement : gros pain de 400 g. Le raccord avec la présente série n'est pas établi."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
   reference:
     1989-08-12:
     - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989, portant fixation du poids et du prix de vente du pain"
@@ -21,3 +25,7 @@ metadata:
     - title: "Arrêté du ministre de l'économie nationale du 15 août 1991, portant fixation des prix du pain"
       href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
       note: "JORT n° 61 des 3-6 septembre 1991, p. 1545. « Gros pain : 500 grammes : 120 millimes », tolérance de 30 g. Date d'effet énoncée par le texte : 17 août 1991, antérieure à la publication. Publié le 3 septembre 1991."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."
