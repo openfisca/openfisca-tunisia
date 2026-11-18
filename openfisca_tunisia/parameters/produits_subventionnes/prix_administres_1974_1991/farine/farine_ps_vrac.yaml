@@ -1,0 +1,17 @@
+description: "Prix de vente au public de la farine PS en vrac, au kilogramme"
+values:
+  1984-03-01:
+    value: 0.115
+metadata:
+  short_label: "Farine PS vrac"
+  label_en: "PS flour in bulk, retail price per kg"
+  unit: currency/kg
+  notes:
+    1984-03-01:
+    - note: "Le visa de l'arrêté du 11 novembre 1989 sur la farine PS-7 ne cite, pour les farines, que l'arrêté du 17 février 1984 : aucun arrêté des farines n'est relevé entre février 1984 et août 1989. Celui du 11 novembre 1989 ne fixe que la farine PS-7."
+    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+  reference:
+    1984-03-01:
+    - title: "Arrêté du 17 février 1984 fixant le prix des farines (intitulé repris du visa de l'arrêté du 11 novembre 1989)"
+      href: https://www.pist.tn/jort/1984/1984F/Jo01484.pdf
+      note: "JORT n° 14 du 28 février 1984, p. 454. Farine PS en vrac, 1 kg : 105 millimes à l'usine, 107 en gros, 115 au détail ; colonnes lues sur l'océrisation du fascicule. Le texte n'énonce pas de date d'effet. Règle d'avant 1993, un jour franc après la publication : publié le 28 février 1984 ; 1984 étant bissextile, le jour franc est le 29 février ; en vigueur le 1er mars 1984."

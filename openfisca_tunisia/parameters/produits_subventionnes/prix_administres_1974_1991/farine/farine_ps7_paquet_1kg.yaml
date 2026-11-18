@@ -1,0 +1,17 @@
+description: "Prix de vente au public de la farine extraite à PS-7 en paquet de 1 kilogramme"
+values:
+  1989-08-12:
+    value: 0.29
+metadata:
+  short_label: "Farine PS-7 paquet 1 kg"
+  label_en: "PS-7 flour, 1 kg pack, retail price"
+  unit: currency/unit
+  notes:
+    1989-08-12:
+    - note: "Série incomplète : états antérieurs à 1989 non versés."
+    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+  reference:
+    1989-08-12:
+    - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989 portant fixation du prix de vente de la farine extraite à PS-7"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1821, article premier. Farine PS-7, paquet de 1 kg : 258 millimes rendu chef-lieu de délégation, 264 en gros, 290 au détail. Date d'effet énoncée par le texte : « à compter du 12 août 1989 », antérieure à la signature et à la publication."

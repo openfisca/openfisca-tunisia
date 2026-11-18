@@ -1,0 +1,17 @@
+description: "Prix de vente maximum au public du sucre brun"
+values:
+  1991-06-17:
+    value: 0.3
+metadata:
+  short_label: "Sucre brun"
+  label_en: "Brown sugar, maximum retail price"
+  unit: currency/kg
+  notes:
+    1991-06-17:
+    - note: "Série incomplète : états antérieurs à 1991 non versés."
+    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+  reference:
+    1991-06-17:
+    - title: "Arrêté du ministre de l'économie nationale du 25 juin 1991 portant fixation des prix de vente du sucre"
+      href: https://www.pist.tn/jort/1991/1991F/Jo04891.pdf
+      note: "JORT n° 48 du 5 juillet 1991, p. 1251, article premier. Sucre blanc en poudre : 430 millimes le kilogramme ; en morceaux : 620 ; sucre brun : 300. Date d'effet énoncée par le texte : 17 juin 1991 (article premier), antérieure à la signature ; l'article 2 imprime « 17 juin 1990 » pour la déclaration des stocks."

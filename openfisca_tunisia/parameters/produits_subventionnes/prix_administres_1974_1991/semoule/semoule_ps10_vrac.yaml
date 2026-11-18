@@ -1,0 +1,32 @@
+description: "Prix de vente au public de la semoule PS-10 en vrac, au kilogramme"
+values:
+  1984-03-01:
+    value: 0.145
+  1984-07-10:
+    value: null
+  1991-08-17:
+    value: 0.205
+metadata:
+  short_label: "Semoule PS-10 vrac"
+  label_en: "PS-10 semolina in bulk, retail price per kg"
+  unit: currency/kg
+  notes:
+    1984-03-01:
+    - note: "Série incomplète : états antérieurs à 1984 non versés."
+    1984-07-10:
+    - note: "À compter du 10 juillet 1984, le texte fixe le prix de la semoule PS-10 au quintal (paramètre de la semoule PS-10 au quintal) ; aucun prix de ce produit-ci n'est relevé ensuite."
+    1991-08-17:
+    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+  reference:
+    1984-03-01:
+    - title: "Arrêté du 17 février 1984 fixant les prix des semoules (intitulé repris du visa de l'arrêté du 10 juillet 1984)"
+      href: https://www.pist.tn/jort/1984/1984F/Jo01484.pdf
+      note: "JORT n° 14 du 28 février 1984, p. 452, article premier. Semoule PS-10 vrac, 1 kg : 125,4 millimes rendu, 129 en gros, 145 au détail ; paquet de 1 kg : 185 au détail. Lu sur l'océrisation du fascicule. Le texte n'énonce pas de date d'effet. Règle d'avant 1993, un jour franc après la publication : publié le 28 février 1984 ; 1984 étant bissextile, le jour franc est le 29 février ; en vigueur le 1er mars 1984."
+    1984-07-10:
+    - title: "Arrêté du ministre de l'économie nationale du 10 juillet 1984 fixant les prix des semoules"
+      href: https://www.pist.tn/jort/1984/1984F/Jo04384.pdf
+      note: "JORT n° 43 des 17-20 juillet 1984, p. 1595, article premier. Prix fixé au quintal. Date d'effet énoncée par le texte : « à compter du 10 juillet 1984 », antérieure à la publication."
+    1991-08-17:
+    - title: "Arrêté du ministre de l'économie nationale du 15 août 1991 portant fixation des prix de vente de la semoule PS-10"
+      href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
+      note: "JORT n° 61 des 3-6 septembre 1991, p. 1546, article premier. Semoule PS-10, vrac, 1 kg : 180 millimes rendu chef-lieu de délégation, 185 en gros, 205 au détail. Date d'effet énoncée par le texte : « à compter du 17 août 1991 », antérieure à la publication."

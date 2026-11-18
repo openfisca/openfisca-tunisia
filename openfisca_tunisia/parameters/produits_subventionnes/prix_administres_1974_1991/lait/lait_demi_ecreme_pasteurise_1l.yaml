@@ -1,0 +1,24 @@
+description: "Prix de vente au public du lait régénéré demi-écrémé pasteurisé en brique d'un litre"
+values:
+  1989-08-12:
+    value: 0.31
+  1991-07-22:
+    value: 0.35
+metadata:
+  short_label: "Lait demi-écrémé pasteurisé 1 l"
+  label_en: "Semi-skimmed recombined milk (pasteurised), 1 l carton, retail price"
+  unit: currency/l
+  notes:
+    1989-08-12:
+    - note: "Série incomplète : états antérieurs à 1989 non versés."
+    1991-07-22:
+    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+  reference:
+    1989-08-12:
+    - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989, portant fixation du prix de vente du lait régénéré demi-écrémé"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1824. Lait régénéré demi-écrémé pasteurisé, brique de 1 l : 310 millimes. Date d'effet énoncée par le texte : « à compter du 12 août 1989 », antérieure à la signature et à la publication."
+    1991-07-22:
+    - title: "Arrêté du ministre de l'économie nationale du 30 juillet 1991, fixant les prix de vente du lait régénéré demi-écrémé"
+      href: https://www.pist.tn/jort/1991/1991F/Jo05791.pdf
+      note: "JORT n° 57 du 16 août 1991, p. 1451, articles 1er et 3. Lait régénéré demi-écrémé pasteurisé, brique de 1 l : 350 millimes. Date d'effet énoncée par le texte : « A compter du 22 juillet 1991 » (article premier), alors que l'article 3 dit l'arrêté « d'application immédiate » ; signé le 30 juillet, publié le 16 août 1991. La date de l'article premier est retenue."

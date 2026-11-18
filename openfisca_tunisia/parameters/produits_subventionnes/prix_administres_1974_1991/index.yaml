@@ -1,0 +1,18 @@
+description: "Prix administrés au public des produits de base, publiés au Journal officiel de 1974 à 1991"
+metadata:
+  short_label: "Prix administrés 1974-1991"
+  order:
+  - pain
+  - farine
+  - semoule
+  - pates
+  - couscous
+  - sucre
+  - huile
+  - lait
+  - cafe
+documentation: |-
+  Prix de vente au public fixés par décret ou par arrêté et publiés au Journal officiel, de 1974 à 1991.
+  Chaque paramètre vise un produit défini par sa variété, son conditionnement, son poids et l'unité de prix du texte ;
+  un produit défini autrement est un autre paramètre. Une valeur nulle marque une période où le prix n'est pas établi.
+  Aucun prix au public de ces produits n'est publié au Journal officiel après 1991.

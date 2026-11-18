@@ -1,0 +1,34 @@
+description: "Prix maximum de vente au public du petit pain, puis de la baguette, de 250 grammes"
+values:
+  1986-08-30:
+    value: 0.07
+  1989-08-12:
+    value: 0.08
+  1991-08-17:
+    value: 0.1
+metadata:
+  short_label: "Petit pain de 250 g"
+  label_en: "Small bread, then baguette (250 g), maximum retail price"
+  unit: currency/unit
+  notes:
+    1986-08-30:
+    - note: "Prix inchangé : l'arrêté du 29 août 1986 fixe le poids, non le prix ; le prix est celui de l'arrêté du 15 juillet 1985, que visent les arrêtés de 1986 et de 1989."
+    1991-08-17:
+    - note: "L'arrêté du 15 août 1991 nomme « baguette » la pièce de 250 grammes que les arrêtés de 1986 et de 1989 nomment « petit pain » ; même poids, raccordée ici."
+    - note: "Dernière valeur publiée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est publié ensuite au Journal officiel : la valeur reste ouverte."
+  reference:
+    1986-08-30:
+    - title: "Arrêté du ministre de l'industrie et du commerce du 29 août 1986, portant fixation du poids du pain"
+      href: https://www.pist.tn/jort/1986/1986F/Jo05086.pdf
+      note: "JORT n° 50 du 16 septembre 1986, p. 1020. « Petit pain : 250 grammes », tolérance de 10 g. Effet énoncé : « à compter du 30 août 1986 »."
+    - title: "Arrêté du ministre de l'économie nationale du 15 juillet 1985, portant fixation des prix de vente du pain"
+      href: https://www.pist.tn/jort/1985/1985F/Jo05585.pdf
+      note: "JORT n° 55 du 19 juillet 1985, p. 946. Pain de 300 g : 70 millimes. Prix maintenu par l'arrêté du 29 août 1986."
+    1989-08-12:
+    - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989, portant fixation du poids et du prix de vente du pain"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1823. Petit pain de 250 g : 80 millimes. Date d'effet énoncée par le texte : « à compter du 12 août 1989 », antérieure à la signature et à la publication."
+    1991-08-17:
+    - title: "Arrêté du ministre de l'économie nationale du 15 août 1991, portant fixation des prix du pain"
+      href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
+      note: "JORT n° 61 des 3-6 septembre 1991, p. 1545. « Baguette : 250 grammes : 100 millimes », tolérance de 10 g. Date d'effet énoncée par le texte : « à compter du 17 août 1991 », antérieure à la publication. Publié le 3 septembre 1991."

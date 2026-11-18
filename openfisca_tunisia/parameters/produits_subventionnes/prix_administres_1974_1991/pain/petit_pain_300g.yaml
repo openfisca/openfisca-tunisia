@@ -1,0 +1,58 @@
+description: "Prix maximum de vente au public du petit pain de 300 grammes"
+values:
+  1975-05-31:
+    value: 0.038
+  1979-05-03:
+    value: 0.045
+  1980-01-01:
+    value: null
+  1984-01-01:
+    value: 0.09
+  1984-03-01:
+    value: 0.05
+  1984-07-10:
+    value: 0.06
+  1985-07-15:
+    value: 0.07
+  1986-08-30:
+    value: null
+metadata:
+  short_label: "Petit pain de 300 g"
+  label_en: "Small bread (300 g), maximum retail price"
+  unit: currency/unit
+  notes:
+    1975-05-31:
+    - note: "Série incomplète : états antérieurs à 1975 non versés."
+    1980-01-01:
+    - note: "Valeur non établie à compter du 1er janvier 1980 : le prix du gros pain change en 1980 selon la Banque centrale de Tunisie, par un texte non identifié ; celui du petit pain n'est pas établi de 1980 à l'arrêté du 28 décembre 1983. Le 1er janvier 1980 n'est pas une date d'effet."
+    1986-08-30:
+    - note: "Le petit pain passe de 300 à 250 grammes : voir le paramètre du petit pain de 250 g."
+  reference:
+    1975-05-31:
+    - title: "Décret n° 75-352 du 3 juin 1975, fixant le prix des farines et semoules, du pain, des pâtes alimentaires et du couscous rapide"
+      href: https://www.pist.tn/jort/1975/1975F/Jo03875.pdf
+      note: "JORT n° 38 du 3 au 6 juin 1975, p. 1192, article premier. Pain de 300 g : 38 millimes. Date d'effet énoncée par le texte : « à compter du 31 mai 1975 », antérieure à la publication."
+    1979-05-03:
+    - title: "Décret n° 79-413 du 7 mai 1979, fixant le prix des farines et semoules, du pain, des pâtes alimentaires et du couscous"
+      href: https://www.pist.tn/jort/1979/1979F/Jo03279.pdf
+      note: "JORT n° 32 du 11 mai 1979, p. 1381-1382, article premier. Pain de 300 g : 45 millimes. Date d'effet énoncée par le texte : « à compter du 3 mai 1979 », antérieure à la publication."
+    1984-01-01:
+    - title: "Arrêté du ministre de l'économie nationale du 28 décembre 1983, relatif au prix maxima de la vente du pain"
+      href: https://www.pist.tn/jort/1984/1984F/Jo00184.pdf
+      note: "JORT n° 1 du 3 janvier 1984, p. 9, article premier. Pain de 300 g : 90 millimes. Date d'effet énoncée par le texte : à compter du 1er janvier 1984."
+    1984-03-01:
+    - title: "Arrêté du ministre de l'économie nationale du 17 février 1984, relatif aux prix maxima de la vente du pain"
+      href: https://www.pist.tn/jort/1984/1984F/Jo01484.pdf
+      note: "JORT n° 14 du 28 février 1984, p. 453, article premier. Pain de 300 g : 50 millimes. Le texte n'énonce pas de date d'effet. Règle d'avant 1993, un jour franc après la publication : publié le 28 février 1984 ; 1984 étant bissextile, le jour franc est le 29 février ; en vigueur le 1er mars 1984."
+    1984-07-10:
+    - title: "Arrêté du ministre de l'économie nationale du 10 juillet 1984, portant fixation des prix de vente du pain"
+      href: https://www.pist.tn/jort/1984/1984F/Jo04384.pdf
+      note: "JORT n° 43 des 17-20 juillet 1984, p. 1594-1595. Pain de 300 g : 60 millimes. Date d'effet énoncée par le texte : « à compter du 10 juillet 1984 », antérieure à la publication."
+    1985-07-15:
+    - title: "Arrêté du ministre de l'économie nationale du 15 juillet 1985, portant fixation des prix de vente du pain"
+      href: https://www.pist.tn/jort/1985/1985F/Jo05585.pdf
+      note: "JORT n° 55 du 19 juillet 1985, p. 946. Pain de 300 g : 70 millimes. Date d'effet énoncée par le texte : à compter du 15 juillet 1985, antérieure à la publication."
+    1986-08-30:
+    - title: "Arrêté du ministre de l'industrie et du commerce du 29 août 1986, portant fixation du poids du pain"
+      href: https://www.pist.tn/jort/1986/1986F/Jo05086.pdf
+      note: "JORT n° 50 du 16 septembre 1986, p. 1020. « Petit pain : 250 grammes ». Effet énoncé : « à compter du 30 août 1986 »."

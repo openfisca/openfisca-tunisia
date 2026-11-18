@@ -1,0 +1,27 @@
+description: "Prix maximum de vente au public du gros pain de 600 grammes"
+values:
+  1986-08-30:
+    value: 0.1
+  1989-08-12:
+    value: null
+metadata:
+  short_label: "Gros pain de 600 g"
+  label_en: "Large bread (600 g), maximum retail price"
+  unit: currency/unit
+  notes:
+    1986-08-30:
+    - note: "Prix inchangé : l'arrêté du 29 août 1986 fixe le poids, non le prix ; le prix est celui de l'arrêté du 15 juillet 1985, que visent les arrêtés de 1986 et de 1989."
+    1989-08-12:
+    - note: "Le gros pain passe de 600 à 500 grammes : voir le paramètre du gros pain de 500 g."
+  reference:
+    1986-08-30:
+    - title: "Arrêté du ministre de l'industrie et du commerce du 29 août 1986, portant fixation du poids du pain"
+      href: https://www.pist.tn/jort/1986/1986F/Jo05086.pdf
+      note: "JORT n° 50 du 16 septembre 1986, p. 1020. « Gros pain : 600 grammes », tolérance de 35 g. Effet énoncé : « à compter du 30 août 1986 »."
+    - title: "Arrêté du ministre de l'économie nationale du 15 juillet 1985, portant fixation des prix de vente du pain"
+      href: https://www.pist.tn/jort/1985/1985F/Jo05585.pdf
+      note: "JORT n° 55 du 19 juillet 1985, p. 946. Pain de 700 g : 100 millimes. Prix maintenu par l'arrêté du 29 août 1986."
+    1989-08-12:
+    - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989, portant fixation du poids et du prix de vente du pain"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1823. Gros pain de 500 g. Date d'effet énoncée par le texte : « à compter du 12 août 1989 », antérieure à la signature et à la publication."
