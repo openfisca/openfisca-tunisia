@@ -1,0 +1,8 @@
+description: "Prix de vente au public de l'huile de mélange, puis de l'huile de graines"
+metadata:
+  short_label: "Huile"
+  order:
+  - huile_melange
+  - huile_graines_vrac
+documentation: |-
+  Prix de vente maximum au public d'un litre d'huile.

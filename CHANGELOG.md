@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.171 - [#533](https://github.com/openfisca/openfisca-tunisia/pull/533)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 24/05/1974.
+* Zones impactées : `parameters/produits_subventionnes/prix_administres_1974_1991`.
+* Détails :
+  - **Nouveau nœud des prix administrés au public des produits de base publiés au JORT de 1974 à 1991** : pain, farines, semoule, pâtes alimentaires, couscous, sucre, huile, lait régénéré, café. Vingt-cinq paramètres, quatre-vingt-six valeurs datées, dont quatorze valeurs nulles, de l'arrêté du 24 mai 1974 sur le sucre à l'arrêté du 15 août 1991 sur le pain.
+  - **Un paramètre par produit défini** : poids du pain (700, 600, 500 g ; 300 et 250 g), variété (farine PS et PS-7 ; pâtes et couscous avant et après la variété PS-10), conditionnement (vrac, paquet), unité de prix (quintal ou kilogramme), présentation du sucre (poudre, morceaux, brun), huile de mélange et huile de graines, lait régénéré (1982) et lait régénéré demi-écrémé (1989, 1991). Les raccords retenus (petit pain et baguette de 250 g ; huile mélangée et huile de mélange vrac ; sucre en poudre et sucre blanc en poudre) sont dits en notes.
+  - Une valeur nulle marque une période où le prix n'est pas établi : pain de 1980 à 1983 (texte de 1980 non identifié), ou produit remplacé par un autre défini autrement.
+  - Dates d'effet : date énoncée par le texte, même antérieure à la signature ou à la publication ; arrêtés du 17 février 1984, un jour franc après la publication du 28 février 1984 (1er mars 1984). Numéro et date du fascicule dans chaque référence.
+  - Les séries sont closes au 1er janvier 1992 (valeur nulle) : la loi n° 91-64 entre alors en vigueur ; les produits de première nécessité restent à prix homologués, mais aucun prix au public n'est plus publié au JORT. La lacune 1992-2009 est dite en note, sans raccord aux paramètres 2010-2022 faute de texte publié entre les deux (le café n'a pas été recherché après 1980).
+  - Non versés : prix sans date des rapports de la Banque centrale ; prix des farines et semoules des décrets n° 75-352 et 79-413, qui ne sont pas des prix au public ; redevances différentielles sur les stocks déclarés à la Caisse générale de compensation (arrêté du 20 février 1980), qui ne sont pas des taux en vigueur sur une période.
+  - Les paramètres 2010-2022 du nœud `produits_subventionnes` ne changent pas. Aucun test ne change.
+
 ### 0.170.1 - [#515](https://github.com/openfisca/openfisca-tunisia/pull/515)
 
 * Évolution du système socio-fiscal.
