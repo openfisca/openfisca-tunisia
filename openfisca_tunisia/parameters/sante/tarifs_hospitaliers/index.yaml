@@ -1,0 +1,14 @@
+description: "Tarifs des structures sanitaires publiques relevant du ministère de la santé publique"
+metadata:
+  short_label: "Tarifs hospitaliers publics"
+  order:
+  - malades_payants
+  - tarifs_reduits
+documentation: |-
+  Tarifs que les structures sanitaires publiques relevant du ministère de la santé publique facturent
+  aux malades : tarifs des malades payants, fixés par arrêté des ministres des finances et de la santé
+  publique (article 38 de la loi n° 91-63 du 29 juillet 1991 relative à l'organisation sanitaire), et
+  tarifs réduits, fixés par décret, dus par les bénéficiaires de l'assistance médicale de deuxième
+  catégorie puis de la carte de soins à tarifs réduits, et par les affiliés des régimes conventionnels.
+
+  Montants en dinars courants.

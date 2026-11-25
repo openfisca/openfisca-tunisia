@@ -1,0 +1,64 @@
+# Ouverture du droit RSNA : le stage de 120 mois (40 trimestres) ouvre le droit
+# dès qu'il est ATTEINT (>=), et non strictement dépassé (décret 74-499, art. 15 :
+# « justifier d'un stage de 120 mois »). Régression du correctif de l'inégalité
+# stricte. Âge >= 60 et salaire de référence > 0 requis.
+
+- name: "RSNA éligible à 120 mois pile (40 trimestres), âge 60"
+  period: 2020
+  absolute_error_margin: 0
+  input:
+    age: 60
+    rsna_duree_assurance: 40
+    rsna_salaire_de_base:
+      2011: 24000
+      2012: 24000
+      2013: 24000
+      2014: 24000
+      2015: 24000
+      2016: 24000
+      2017: 24000
+      2018: 24000
+      2019: 24000
+      2020: 24000
+  output:
+    rsna_eligible: true
+
+- name: "RSNA non éligible à 9 ans (36 trimestres), âge 60"
+  period: 2020
+  absolute_error_margin: 0
+  input:
+    age: 60
+    rsna_duree_assurance: 36
+    rsna_salaire_de_base:
+      2011: 24000
+      2012: 24000
+      2013: 24000
+      2014: 24000
+      2015: 24000
+      2016: 24000
+      2017: 24000
+      2018: 24000
+      2019: 24000
+      2020: 24000
+  output:
+    rsna_eligible: false
+
+- name: "RSNA non éligible à 120 mois si âge < 60"
+  period: 2020
+  absolute_error_margin: 0
+  input:
+    age: 59
+    rsna_duree_assurance: 40
+    rsna_salaire_de_base:
+      2011: 24000
+      2012: 24000
+      2013: 24000
+      2014: 24000
+      2015: 24000
+      2016: 24000
+      2017: 24000
+      2018: 24000
+      2019: 24000
+      2020: 24000
+  output:
+    rsna_eligible: false

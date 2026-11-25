@@ -1,0 +1,7 @@
+description: "Forfait d'un accouchement normal, malades payants"
+metadata:
+  short_label: "Accouchement normal"
+  order:
+  - universitaire
+  - hopital_regional
+  - hopital_circonscription

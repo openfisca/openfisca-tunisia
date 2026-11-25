@@ -1,0 +1,11 @@
+description: "Contribution à la réalisation de parkings collectifs, barème de 2003 : manque de places qui ne dépasse pas 25 % du nombre requis"
+metadata:
+  short_label: "Manque d'au plus 25 %"
+  order:
+  - population_jusqu_a_50000
+  - population_50000_a_100000
+  - population_plus_de_100000
+documentation: |-
+  Montants par place de stationnement lorsque le manque de places ne dépasse pas 25 % du nombre
+  requis, selon la population de la commune (code de la fiscalité locale, article 90, dans la
+  rédaction de la loi de finances pour 2003).

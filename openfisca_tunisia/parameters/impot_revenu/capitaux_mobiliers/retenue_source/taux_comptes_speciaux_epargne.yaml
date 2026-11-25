@@ -1,0 +1,32 @@
+description: "Taux de la retenue à la source sur les intérêts des comptes spéciaux d'épargne"
+values:
+  1990-01-01:
+    value: 0.10
+  1992-01-02:
+    value: 0.15
+  1997-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue, comptes spéciaux d'épargne"
+  reference:
+    1990-01-01:
+    - title: "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexé à la loi n° 89-114 du 30 décembre 1989, articles 52 et 54"
+      href: https://www.pist.tn/jort/1990/1990F/Jo00190.pdf
+      note: "JORT n° 1 des 2-5 janvier 1990, p. 11. Article 52, paragraphe I : « b. 10% pour les intérêts des dépôts des comptes spéciaux d'épargne ouverts auprès des banques ». La retenue n'est pas libératoire (paragraphe II) : elle s'impute sur l'impôt dû (article 54, paragraphe I). Date d'effet : le code s'applique aux revenus réalisés à partir du 1er janvier 1990 (loi n° 89-114, article 3). Édition française lue à l'image, p. 11."
+    1992-01-02:
+    - title: "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992, article 31"
+      href: https://www.pist.tn/jort/1991/1991F/Jo09091.pdf
+      note: "JORT n° 90 du 31 décembre 1991, p. 2084. Rubrique « Dispositions relatives à la retenue à la source ». Article 31, paragraphe I nouveau de l'article 52 : « b) 15% au titre : - Des intérêts des dépôts auprès de la Caisse d'Epargne Nationale de Tunisie ou dans des comptes spéciaux d'épargne ouverts auprès des banques ; […] ». Les dépôts auprès de la Caisse d'épargne nationale de Tunisie entrent dans le champ du taux. Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 31 décembre 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 2 janvier 1992. Édition française lue à l'image, p. 2084."
+    1997-01-01:
+    - title: "Loi n° 96-113 du 30 décembre 1996, portant loi de finances pour la gestion 1997, articles 30, 31 et 54"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10596.pdf
+      note: "JORT n° 105 du 31 décembre 1996, p. 2581 (articles 30 et 31) et p. 2583 (article 54). Rubrique « Unification des taux de la retenue à la source sur les revenus de capitaux mobiliers ». Article 30 : « Les dispositions des premier et deuxième tirets de l'alinéa « b » et les dispositions de l'alinéa « d » du paragraphe I de l'article 52 du code […] sont abrogées. » Les intérêts des comptes spéciaux d'épargne relèvent dès lors de l'alinéa c, au taux de 20 % (`taux_imputable`). Date d'effet : article 54 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1997. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux propre aux intérêts des comptes spéciaux d'épargne ouverts auprès des banques, puis, à
+  partir du 2 janvier 1992, aux dépôts auprès de la Caisse d'épargne nationale de Tunisie. La
+  retenue s'impute sur l'impôt dû. La feuille est close au 1er janvier 1997 : ces intérêts
+  suivent ensuite le taux de droit commun (`taux_imputable`).
+
+  Les intérêts de ces comptes sont en outre déductibles du revenu imposable dans la limite d'un
+  plafond (article 39, paragraphe II).

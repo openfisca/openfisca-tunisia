@@ -1,0 +1,16 @@
+description: Minimum de perception des droits de douane en tarif minimum ad valorem
+metadata:
+  short_label: Minimum de perception
+  order:
+  - taux_general
+  - biens_equipement
+documentation: 'Taux au-dessous duquel les droits de douane en tarif minimum ad valorem ne peuvent descendre
+  à l''importation, nonobstant les suspensions et exonérations (sauf franchises totales ou partielles
+  de textes énumérés). Fixé à 10 % par l''article 27 de la loi de finances pour 1987, porté à 15 % par
+  l''article 53 de la loi de finances pour 1988. Les biens d''équipement ont leur propre taux : l''article
+  26 de la loi de finances pour 1987 ramène à 15 % les taux supérieurs en tarif minimum pour les biens
+  d''équipement sans similaire produit en Tunisie, inscrits sur une liste ; l''article 54 de la loi de
+  finances pour 1988 le porte à 22 % en l''appelant minimum de perception des biens d''équipement. Série
+  incomplète : le relevé du précis ne porte aucun état après 1988.
+
+  '

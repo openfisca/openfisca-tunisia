@@ -1,0 +1,73 @@
+description: "Assurances - salaires mensuels de base de la grille annexée à la convention"
+metadata:
+  short_label: "Salaire de base"
+  order:
+  - echelle_1
+  - echelle_2
+  - echelle_3
+  - echelle_exceptionnelle
+  - echelle_4
+  - echelle_5
+  - echelle_6
+  - echelle_7
+  - echelle_8
+  - echelle_9
+  - echelle_10
+  - echelle_11
+  - echelle_12
+  - echelle_13
+  - echelle_14
+  - echelle_15
+  - echelle_16
+  - echelle_17
+  - echelle_18
+  - echelle_19
+  - echelle_20
+  - echelle_21
+documentation: |-
+  La convention n'a qu'une grille de salaires, mensuelle, par échelle et par échelon.
+
+  Structure de la grille, et ses changements :
+  - 21 échelles, numérotées de 1 à 21, depuis la convention de 1975 ; à compter du 1er janvier
+    1983 les grilles portent en outre, entre l'échelle 3 et l'échelle 4, une ligne intitulée
+    « Exceptionnel », soit 22 lignes ;
+  - les échelles sont regroupées en 7 catégories, de A à G, dans la convention de 1975, puis en
+    5 catégories à compter du 1er janvier 1983 : V, agents de services et assimilés (échelles 1 à 3
+    et hors classe) ; IV, agents d'exécution (4 à 9) ; III, personnel d'encadrement (10 à 12) ;
+    II, cadres supérieurs (13 à 15) ; I, cadres de direction (16 à 21) ;
+  - 12 échelons d'ancienneté par échelle, numérotés de 1 à 12, jusqu'au 31 mai 1999 ; 14 échelons
+    à compter du 1er juin 1999 (avenant n° 5, article 19 nouveau), le 14e étant atteint au terme de
+    33 ans de service.
+
+  Le numéro d'échelle suffit à désigner une ligne de la grille : la catégorie n'est pas un niveau
+  de l'arborescence. Identifiants : `echelle_1` à `echelle_21`, et `echelle_exceptionnelle` pour
+  la ligne « Exceptionnel », rangée comme sur la grille entre `echelle_3` et `echelle_4` ; puis
+  `echelon_1` à `echelon_14`.
+
+  Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit
+  2 080 heures par an (article 30 de la convention révisée).
+
+  Ce que le salaire comprend : c'est le salaire mensuel de la grille. Il comprend l'indemnité
+  complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982,
+  depuis la grille du 1er juin 1993 (avenant n° 3). Il ne comprend ni l'indemnité de transport, ni
+  les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
+
+  La grille est versée en entier, du 1er juin 1993 (avenant n° 3) au 1er juin 2021 (avenant
+  n° 15) : vingt-huit dates d'effet, 264 cases par grille aux six premières (22 lignes,
+  12 échelons) et 308 aux vingt-deux suivantes (14 échelons), soit 8 360 cases, dont 8 359 valeurs
+  et une case illisible. Le salaire le plus bas est celui de l'échelle 1, échelon 1 ; le plus
+  élevé, celui de l'échelle 21, 12e échelon jusqu'au 31 mai 1999, 14e échelon depuis.
+
+  Case illisible : échelle 4, échelon 1, dans la grille du 1er juin 1996 (JORT n° 60 du 26 juillet
+  1996, édition arabe, p. 1755). Elle porte une valeur vide à cette date, sans valeur déduite ni
+  reportée, et la note de la date en dit la raison ; la valeur reprend à la grille suivante.
+
+  Chaque case porte en outre une valeur vide au 1er janvier 2026 : le décret n° 2026-68 du 30 avril
+  2026 relève alors les salaires de base des dernières grilles, et aucun texte ne publie la grille
+  qui en résulte.
+
+  La série commence au 1er juin 1993. Les grilles de 1983 à 1992 ne comprennent pas l'indemnité
+  complémentaire provisoire et ne mesurent donc pas la même grandeur, et rien ne relie la grille
+  de 1975 à la suite : elles ne sont pas versées ici, mais à part, dans `salaire_base_avant_1993`
+  et `salaire_base_avant_1993_grille_1_de_1990`, et ne se raccordent pas à cette série. De
+  l'avenant n° 3 à l'avenant n° 15, tous les avenants ont été lus, sans numéro manquant.

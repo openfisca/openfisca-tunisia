@@ -1,0 +1,12 @@
+description: "Congé pour le décès du conjoint, du père, de la mère ou d'un enfant du travailleur domestique"
+values:
+  2022-01-30:
+    value: 3
+metadata:
+  unit: day
+  short_label: "Décès du conjoint, du père, de la mère ou d'un enfant, travail domestique"
+  reference:
+    2022-01-30:
+    - title: "Loi n° 2021-37 du 16 juillet 2021, relative à la réglementation du travail domestique, article 14"
+      href: https://www.pist.tn/jort/2021/2021F/Jo0682021.pdf
+      note: "JORT n° 68 du 30 juillet 2021, p. 2007. Article 14, « des congés de repos exceptionnels payés, sauf accord contraire des deux parties, à condition que la travailleuse ou le travailleur domestique produise les justificatifs de la survenance de l’événement l’imposant. Leur durée est fixée comme suit : Décès d'un conjoint, du père, de la mère ou d'un enfant : trois (3) jours ; Décès d'un frère, d'une sœur, d'un petit-fils, d'une petite fille, d'un grand père ou d'une grande mère : deux (2) jours ; Mariage de la travailleuse ou du travailleur domestique : sept (7) jours ; Circoncision de l’un des enfants de la travailleuse ou du travailleur domestique : un (1) jour ; Mariage de l’un des enfants de la travailleuse ou du travailleur domestique : deux (2) jours. » Date d'effet : article 29, « Les dispositions de la présente loi entrent en vigueur dans un délai de six mois à compter de sa publication au Journal officiel de la République tunisienne » (p. 2010) ; le JORT n° 68 est daté du 30 juillet 2021 et déposé au siège du gouvernorat de Tunis le même jour ; six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue (le 31 janvier 2022 si le jour de la publication n'est pas compté). Édition française lue sur la couche texte."

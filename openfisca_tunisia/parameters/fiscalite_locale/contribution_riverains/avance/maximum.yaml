@@ -1,0 +1,19 @@
+description: "Taux maximal de l'avance sur la contribution des propriétaires riverains"
+values:
+  1997-01-01:
+    value: 0.3
+metadata:
+  unit: /1
+  short_label: "Maximum"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 59 ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, pp. 178 et 179 (article 59 du code) et p. 173 (article 3 de la loi). Article 59, premier paragraphe : « La contribution des propriétaires riverains donne lieu au paiement d'une avance variant de 10 pour-cent à 30 pour-cent du montant de la contribution. Les collectivités locales ont la faculté d'en fixer le taux dans ces limites, et ce en vertu d'un arrêté pris par le président de la collectivité locale. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173, 178 et 179, les deux bornes étant relues à l'image, p. 178 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+documentation: |-
+  Taux maximal de l'avance, en part du montant de la contribution, que le président de la
+  collectivité locale peut fixer par arrêté (code de la fiscalité locale, article 59, premier
+  paragraphe). Le taux effectivement appliqué est arrêté par chaque collectivité entre le minimum et
+  le maximum : il n'est pas un paramètre national.
+
+  Aucune modification de l'article 59 n'est relevée dans les lois de finances dépouillées.

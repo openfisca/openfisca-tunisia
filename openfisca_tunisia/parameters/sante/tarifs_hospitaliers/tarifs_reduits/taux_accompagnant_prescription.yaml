@@ -1,0 +1,12 @@
+description: "Tarif réduit dû par la personne qui accompagne un malade hospitalisé sur prescription médicale, en part du forfait appliqué au malade"
+values:
+  1998-03-08:
+    value: 0.3333333333333333
+metadata:
+  unit: /1
+  short_label: "Accompagnant sur prescription"
+  reference:
+    1998-03-08:
+    - title: "Décret n° 98-409 du 18 février 1998, fixant les catégories des bénéficiaires des tarifs réduits de soins et d'hospitalisation dans les structures sanitaires publiques relevant du ministère de la santé publique ainsi que les modalités de leur prise en charge et les tarifs auxquels ils sont assujettis, article 18"
+      href: https://www.pist.tn/jort/1998/1998F/Jo01798.pdf
+      note: "JORT n° 17 du 27 février 1998, p. 407. Article 18, troisième alinéa : « Toutefois les accompagnants des malades sur prescription médicale ne sont tenus qu'au paiement du tiers de ce tarif forfaitaire. » Date d'effet : le décret n'en fixe pas ; le JORT n° 17 a été déposé au siège du gouvernorat de Tunis le 3 mars 1998 (mention de la dernière page du fascicule) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 8 mars 1998. Édition française lue sur la couche texte."

@@ -1,14 +1,48 @@
 description: Plafond de déduction au titre du Compte Épargne en Actions
 values:
-  1990-01-01:
-    value: 0
-  2001-01-01:
+  1999-08-26:
+    value: 5000
+  2003-01-01:
+    value: 20000
+  2011-04-25:
     value: 50000
-  2021-01-01:
+  2020-01-01:
     value: 100000
 metadata:
   unit: currency
+  short_label: "Plafond annuel, compte épargne en actions"
   reference:
-    2021-01-01:
-      title: Loi n° 2020-46 du 28 décembre 2020, portant loi de finances pour l'année 2021 (Article 24)
-      href: https://www.finances.gov.tn/fr/les-lois-de-finances
+    1999-08-26:
+    - title: "Loi n° 99-92 du 17 août 1999, relative à la relance du marché financier, article 4"
+      href: https://www.pist.tn/jort/1999/1999F/Jo06799.pdf
+      note: "JORT n° 67 du 20 août 1999, p. 1463. Article 4 : il est ajouté à l'article 39 du code un paragraphe VIII : « sont déductibles du revenu imposable, les sommes déposées dans des comptes intitulés \"comptes épargne en action\" […] pour l'acquisition d'actions admises à la cote de la bourse et de bons du trésor assimilables, et ce, dans la limite de 50% du montant déposé au cours de l'exercice concerné par la réduction, sans que le montant déductible ne dépasse 5000 dinars par an. » Date d'effet : la loi n'en fixe pas ; elle est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64, article 2). Le fascicule porte, en dernière page, la mention « déposé au siège du gouvernorat de Tunis le 21 août 1999 » : exécutoire le 26 août 1999. Édition française lue sur la couche texte décodée (police décalée)."
+    2003-01-01:
+    - title: "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 45, 46 et 105"
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: "JORT n° 104 du 30 décembre 2003, p. 3727. Rubrique « Relèvement du montant déductible pour les comptes épargne en actions et assouplissement des conditions de déduction ». Article 45 : « Est abrogée, la dernière phrase du premier alinéa du paragraphe VIII de l'article 39 du code […] et remplacée par ce qui suit : « la déduction s'effectue dans la limite de 20.000 dinars par an ». » Article 46 : abrogation du premier tiret du deuxième alinéa (condition de comptabilité). Date d'effet : la note commune n° 16/2004 écrit que « les nouvelles mesures s'appliquent à partir des revenus de 2003 à déclarer en 2004 (article 105) ». Édition française lue sur la couche texte décodée (police décalée)."
+    2011-04-25:
+    - title: "Décret-loi n° 2011-28 du 18 avril 2011, portant des mesures fiscales et financières pour la relance de l'économie nationale, article 4"
+      href: https://www.pist.tn/jort/2011/2011F/Jo0272011.pdf
+      note: "JORT n° 27 du 19 avril 2011, p. 488. Article 4 : « Le montant de « 20.000 dinars » prévu par le paragraphe VIII de l'article 39 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés est relevé à 50.0000 dinars. » (sic : le Journal officiel imprime « 50.0000 »). Date d'effet : le décret-loi n'en fixe pas ; il est exécutoire cinq jours après le dépôt du Journal officiel au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64, article 2). Le fascicule porte, en dernière page, la mention « déposé au siège du gouvernorat de Tunis le 20 avril 2011 » : exécutoire le 25 avril 2011. Aucune note commune du corpus ne rattache la mesure à une année de revenus. Édition française lue sur la couche texte."
+    2020-01-01:
+    - title: "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021, article 16"
+      href: https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf
+      note: "JORT n° 128 du 25 décembre 2020, p. 3129. Rubrique « Encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats d'assurance-vie et de capitalisation ». Article 16, paragraphe 1 : « Le montant de «50.000 dinars» prévu au premier paragraphe du paragraphe VIII de l'article 39 du code […] est relevé à «100.000 dinars». » Date d'effet : la note commune n° 1/2021 (paragraphe II) écrit que les limites relevées « s'appliquent aux montants déductibles des revenus réalisés à partir de l'année 2020 et dont la date du dépôt de la déclaration intervient au cours de l'année 2021 et des années ultérieures ». Édition française lue sur la couche texte ; note commune lue à l'image."
+documentation: |-
+  Plafond annuel de la déduction, du revenu soumis à l'impôt, des sommes déposées dans un compte
+  épargne en actions (article 39, paragraphe VIII, du code de l'impôt sur le revenu des
+  personnes physiques et de l'impôt sur les sociétés), sous réserve du minimum d'impôt de
+  l'article 12 bis de la loi n° 89-114. Jusqu'aux revenus de 2002, seule une fraction des dépôts
+  est déductible (`cea_quote_part`) ; le plafond s'applique au montant ainsi réduit.
+
+  Deux dates suivent la règle d'exécution de la loi n° 93-64, faute d'année de revenus attestée :
+  le 26 août 1999 (création) et le 25 avril 2011 (50 000 dinars). Lue au 1er janvier, la série
+  ne donne donc le plafond de 5 000 dinars qu'à partir des revenus de 2000, et celui de
+  50 000 dinars qu'à partir des revenus de 2012. Une note commune qui rattacherait ces mesures
+  aux revenus de 1999 et de 2011 avancerait ces deux dates au 1er janvier.
+
+  Corrections. La série portait 0 dinar dès 1990, 50 000 dinars au 1er janvier 2001 et
+  100 000 dinars au 1er janvier 2021, sans référence pour les deux premières valeurs et avec
+  « article 24 » pour la troisième : le relèvement à 100 000 dinars est à l'article 16 de la loi
+  de finances pour 2021, et il vaut pour les revenus de 2020. Le compte n'existe pas avant 1999 :
+  la série commence à sa création.

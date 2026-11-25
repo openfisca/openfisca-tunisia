@@ -25,6 +25,6 @@ documentation: |
   hors de portée d'un foyer réel. Le point est signalé à la revue, qui peut lui préférer une
   autre forme.
 
-  La question devient sans objet à compter des revenus 2013 : l'article 24 § 1 de la loi de
-  finances pour 2014 remplace le plafond majoré par un plafond unique, et `enf_plaf` est
-  clôturé à zéro.
+  La question devient sans objet à compter des revenus 2011 : l'article 42 § 1 de la loi de
+  finances complémentaire pour 2012 remplace le plafond majoré par un plafond unique, et
+  `enf_plaf` est clôturé à zéro.

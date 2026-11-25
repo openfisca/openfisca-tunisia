@@ -1,0 +1,50 @@
+description: "Prix de vente maximum au public de l'huile mélangée, puis de l'huile de mélange en vrac, le litre"
+values:
+  1975-05-31:
+    value: 0.2
+  1979-05-03:
+    value: 0.25
+  1980-01-23:
+    value: 0.3
+  1986-12-07:
+    value: 0.32
+  1989-08-12:
+    value: 0.34
+  1991-08-17:
+    value: null
+metadata:
+  short_label: "Huile de mélange"
+  label_en: "Blended oil, maximum retail price per litre"
+  unit: currency/l
+  notes:
+    1975-05-31:
+    - note: "Série incomplète : états antérieurs à 1975 non versés. Le rapport annuel de la Banque centrale de Tunisie pour 1975 donne 180 millimes le litre avant le 31 mai 1975, sans date d'effet."
+    1986-12-07:
+    - note: "Les arrêtés de 1975 à 1980 disent « huile mélangée », sans conditionnement ; ceux de 1986 et de 1989, « huile de mélange vrac » : raccordés ici."
+    1991-08-17:
+    - note: "À compter du 17 août 1991, le texte fixe le prix de l'huile de graines en vrac (paramètre de l'huile de graines) ; aucun prix de ce produit-ci n'est relevé ensuite."
+  reference:
+    1975-05-31:
+    - title: "Arrêté du ministre de l'économie nationale du 3 juin 1975, portant fixation du prix de l'huile mélangée"
+      href: https://www.pist.tn/jort/1975/1975F/Jo03875.pdf
+      note: "JORT n° 38 du 3 au 6 juin 1975, p. 1189-1190. Huile mélangée : 200 millimes le litre au public ; 200 millimes le kilogramme rendu chef-lieu de délégation, 204 aux détaillants. Date d'effet énoncée par le texte : « à compter du 31 mai 1975 », antérieure à la publication."
+    1979-05-03:
+    - title: "Arrêté du ministre du commerce du 7 mai 1979 portant fixation du prix de l'huile mélangée"
+      href: https://www.pist.tn/jort/1979/1979F/Jo03279.pdf
+      note: "JORT n° 32 du 11 mai 1979, p. 1383, article premier. Huile mélangée : 250 millimes le litre au public ; 250 millimes le kilogramme rendue chef-lieu de délégation, 255,5 des grossistes aux détaillants. Date d'effet énoncée par le texte : « à compter du 3 mai 1979 », antérieure à la publication."
+    1980-01-23:
+    - title: "Arrêté du ministre du commerce du 21 janvier 1980 portant fixation du prix de l'huile mélangée"
+      href: https://www.pist.tn/jort/1980/1980F/Jo02180.pdf
+      note: "JORT n° 21 du 4 avril 1980, p. 1021, article premier. Huile mélangée : 0,300 D le litre au public ; 0,300 D le kilogramme rendu chef-lieu de délégation, 0,307 D aux détaillants. Date d'effet énoncée par le texte : « à compter du 23 janvier 1980 à zéro heure », antérieure à la signature et à la publication. Publié le 4 avril 1980."
+    1986-12-07:
+    - title: "Arrêté du ministre de l'industrie et du commerce du 29 décembre 1986 portant fixation du prix de vente maximum de l'huile de mélange vrac"
+      href: https://www.pist.tn/jort/1987/1987F/Jo00187.pdf
+      note: "JORT n° 1 des 2-6 janvier 1987, p. 14, article premier. Huile de mélange vrac : 320 millimes le litre au détail ; 319 millimes le kilogramme au producteur, 329 en gros. Date d'effet énoncée par le texte : « à compter du 7 décembre 1986 » (article premier) ; l'article 2 fixe la déclaration des stocks au 10 décembre 1986. La date de l'article premier est retenue."
+    1989-08-12:
+    - title: "Arrêté du 11 novembre 1989 fixant le prix de l'huile de mélange vrac (intitulé non relevé)"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1823, article premier. Huile de mélange vrac : 340 millimes le litre au détail ; 338 et 348 millimes le kilogramme au producteur et en gros. Date d'effet énoncée par le texte : 12 août 1989, antérieure à la signature et à la publication."
+    1991-08-17:
+    - title: "Arrêté du ministre de l'économie nationale du 15 août 1991 portant fixation des prix de vente de l'huile de graines en vrac"
+      href: https://www.pist.tn/jort/1991/1991F/Jo06191.pdf
+      note: "JORT n° 61 des 3-6 septembre 1991, p. 1546-1547, article premier. Prix fixé pour l'huile de graines en vrac. Date d'effet énoncée par le texte : 17 août 1991, antérieure à la publication."

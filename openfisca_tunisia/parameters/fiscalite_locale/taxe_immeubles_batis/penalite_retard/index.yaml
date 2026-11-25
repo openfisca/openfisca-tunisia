@@ -1,0 +1,13 @@
+description: "Pénalité de retard de la taxe sur les immeubles bâtis"
+metadata:
+  short_label: "Pénalité de retard"
+  order:
+  - taux_mensuel
+  - plafond_part_principal
+documentation: |-
+  Majoration, comptée par mois ou fraction de mois, que supporte le contribuable qui ne paie pas la
+  taxe sur les immeubles bâtis à l'échéance (code de la fiscalité locale, article 19, paragraphe I).
+  Elle s'applique aussi à la taxe sur les terrains non bâtis (article 34).
+
+  Deux grandeurs : le taux mensuel, modifié en 2002, 2007 et 2023, et le plafond du total des
+  pénalités, introduit en 2022.

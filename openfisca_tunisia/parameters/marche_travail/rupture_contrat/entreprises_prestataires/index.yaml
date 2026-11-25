@@ -1,0 +1,18 @@
+description: "Entreprises de prestation de services ou de fourniture de travaux"
+metadata:
+  short_label: "Entreprises prestataires"
+  order:
+  - garantie_financiere
+documentation: |-
+  La loi n° 2025-9 interdit la sous-traitance de main-d'œuvre (code du travail, article 28
+  nouveau) et ne permet la prestation de services ou la fourniture de travaux qu'en dehors de
+  l'activité principale et permanente de l'entreprise bénéficiaire (article 30 nouveau).
+  L'entreprise prestataire fournit une garantie financière dédiée au paiement des sommes dues à
+  ses salariés et de leurs cotisations de sécurité sociale (article 30 quater) ; si la garantie ne
+  suffit pas, l'entreprise bénéficiaire se substitue à elle.
+
+  L'arrêté du ministre des affaires sociales du 23 septembre 2025 fixe les modalités de la
+  garantie : souscription auprès d'une banque ou d'un établissement financier dans les trois
+  jours de la conclusion du contrat, validité pendant toute son exécution, montant égal à une
+  part du montant du contrat (`garantie_financiere`), affectation aux salaires et aux cotisations
+  de sécurité sociale impayés sept jours après leur échéance.

@@ -1,0 +1,9 @@
+description: Droit de timbre sur les passeports
+metadata:
+  short_label: Passeport
+  order:
+  - general
+  - etudiants
+documentation: |
+  Droit de timbre sur la délivrance et la prorogation des passeports (article 117, paragraphe II,
+  numéro 7 du code). Le renouvellement pour perte ou destruction a son propre tarif, non versé ici.

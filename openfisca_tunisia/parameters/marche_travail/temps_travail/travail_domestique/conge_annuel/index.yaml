@@ -1,0 +1,17 @@
+description: "Congé annuel du travailleur domestique auprès d'un seul employeur"
+metadata:
+  short_label: "Congé annuel du travail domestique"
+  order:
+  - jours_par_mois_adultes
+  - jours_par_mois_de_18_a_20_ans
+  - plafond_jours_adultes
+  - plafond_jours_de_18_a_20_ans
+  - plafond_jours_ouvres_adultes
+  - plafond_jours_ouvres_de_18_a_20_ans
+documentation: |-
+  Repos annuel du travailleur domestique qui travaille d'une manière continue auprès d'un seul employeur
+  (article 14) : un jour par mois de travail effectif, 15 jours au plus dont 12 ouvrés ; un jour et demi par mois, 22 jours
+  au plus dont 18 ouvrés, de 18 à 20 ans, âge apprécié au 31 décembre de chaque année. La durée du repos est fixée dans
+  le contrat. Le repos ne se déduit pas des jours fériés payés, dont la jouissance peut être reportée par accord.
+  La loi ne fixe pas de repos pour les moins de 18 ans : elle interdit l'emploi des enfants, sans en chiffrer l'âge
+  (article 5).

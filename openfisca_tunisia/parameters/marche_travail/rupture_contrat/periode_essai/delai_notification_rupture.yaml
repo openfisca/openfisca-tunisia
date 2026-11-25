@@ -1,0 +1,16 @@
+description: "Délai dans lequel une partie informe l'autre de la rupture du contrat avant l'expiration de la période d'essai"
+values:
+  2025-05-24:
+    value: 15
+metadata:
+  unit: day
+  short_label: "Période d'essai, délai de notification de la rupture"
+  reference:
+    2025-05-24:
+    - title: "Loi n° 2025-9 du 21 mai 2025, portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre, article 1er (article 6-3 nouveau du code du travail, deuxième alinéa)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja0612025.pdf
+      note: "JORT n° 61 du 23 mai 2025, édition arabe, p. 1675. Article 6-3 (nouveau), deuxième alinéa, traduction publiée pour information dans l'édition française (https://www.pist.tn/jort/2025/2025F/Jo0612025.pdf, p. 1296) : « L'une des parties au contrat peut y mettre fin avant l'expiration de la période d'essai, après en avoir informé l'autre partie par tout moyen laissant une trace écrite, et ce, quinze jours avant l'expiration de la période d'essai. » Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire le lendemain de sa publication dans l'édition électronique du Journal officiel (décret-loi n° 2020-1 du 14 avril 2020, article 2, texte lu sur le miroir iort.tn, fascicule du JORT n° 32 du 14 avril 2020 non consulté) ; le fascicule est daté du 23 mai 2025 et porte un dépôt au gouvernorat de Tunis le même jour. Éditions arabe et française lues sur la couche texte ; texte arabe : « يمكن لأحد طرفي العقد إنهاء العمل به قبل انقضاء فترة التجربة بعد إعلام الطرف الآخر بأي وسيلة تترك أثرا كتابيا وذلك قبل خمسة عشر يوما من إنهاء فترة التجربة. »"
+documentation: |-
+  Le texte ne dit pas si les quinze jours sont un préavis dû à l'autre partie avant la rupture ou le délai dans lequel la
+  rupture doit être notifiée avant le terme de l'essai ; la feuille reprend le nombre de jours qu'il énonce, sans
+  trancher entre ces deux lectures.

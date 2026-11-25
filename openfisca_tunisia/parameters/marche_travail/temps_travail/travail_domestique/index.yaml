@@ -1,0 +1,19 @@
+description: "Travail domestique : durée du travail, congé annuel et congés pour événements familiaux"
+metadata:
+  short_label: "Travail domestique"
+  order:
+  - duree
+  - conge_annuel
+  - conges_evenements_familiaux
+  - regime_salaire_minimum
+documentation: |-
+  Règles de la loi n° 2021-37 du 16 juillet 2021 relative à la réglementation du travail domestique, qui
+  s'appliquent à la personne qui accomplit, d'une manière continue et habituelle, des travaux liés au domicile
+  ou à la famille pour un ou plusieurs employeurs personnes physiques (article 3). Elles entrent en vigueur six mois
+  après la publication de la loi (article 29) ; le code du travail s'applique en tout ce que la loi ne contredit pas
+  (article 4).
+  
+  La durée et la pause sont fixées pour le travail auprès d'un seul employeur (article 13) et chez des employeurs
+  multiples (article 19) ; le congé annuel et les congés pour événements familiaux le sont pour le travail
+  continu auprès d'un seul employeur (article 14). Une feuille absente d'un cas signale une règle que la loi ne
+  fixe pas pour lui : le code du travail s'y applique.

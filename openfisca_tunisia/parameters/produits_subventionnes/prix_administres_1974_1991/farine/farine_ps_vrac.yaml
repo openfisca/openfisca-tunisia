@@ -1,0 +1,25 @@
+description: "Prix de vente au public de la farine PS en vrac, au kilogramme"
+values:
+  1984-03-01:
+    value: 0.115
+  1992-01-01:
+    value: null
+metadata:
+  short_label: "Farine PS vrac"
+  label_en: "PS flour in bulk, retail price per kg"
+  unit: currency/kg
+  notes:
+    1984-03-01:
+    - note: "Le visa de l'arrêté du 11 novembre 1989 sur la farine PS-7 ne cite, pour les farines, que l'arrêté du 17 février 1984 : aucun arrêté des farines n'est relevé entre février 1984 et août 1989. Celui du 11 novembre 1989 ne fixe que la farine PS-7."
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la série est close au 1er janvier 1992, date à partir de laquelle aucun prix au public n'est plus publié."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
+  reference:
+    1984-03-01:
+    - title: "Arrêté du 17 février 1984 fixant le prix des farines (intitulé repris du visa de l'arrêté du 11 novembre 1989)"
+      href: https://www.pist.tn/jort/1984/1984F/Jo01484.pdf
+      note: "JORT n° 14 du 28 février 1984, p. 454. Farine PS en vrac, 1 kg : 105 millimes à l'usine, 107 en gros, 115 au détail ; colonnes lues sur l'océrisation du fascicule. Le texte n'énonce pas de date d'effet. Règle d'avant 1993, un jour franc après la publication : publié le 28 février 1984 ; 1984 étant bissextile, le jour franc est le 29 février ; en vigueur le 1er mars 1984."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."

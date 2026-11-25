@@ -1,0 +1,18 @@
+description: "Jours de salaire de gratification de fin de service par mois de service effectif"
+values:
+  1966-05-01:
+    value: 1
+  1994-03-01:
+    value: 1
+metadata:
+  unit: day/month
+  short_label: "Gratification, jours de salaire par mois de service"
+  reference:
+    1966-05-01:
+    - title: "Loi n° 66-27 du 30 avril 1966, portant promulgation du code du travail, article 1er ; code du travail, article 22"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02066.pdf
+      note: "JORT n° 20 des 3-6 mai 1966, p. 716 (loi, article premier) et p. 719 (code, article 22). Article 22, premier alinéa : « Tout salarié lié par un contrat de travail à durée indéterminée, licencié après 6 mois de services effectifs bénéficie, hors le cas de faute lourde, d'une indemnité de licenciement calculée à raison de un jour de salaire par mois de services effectifs dans la même entreprise sur la base du salaire perçu lors du licenciement, compte tenu de tous les avantages n'ayant pas de caractère de remboursement de frais. » Date d'effet : article premier de la loi — le code « entrera en vigueur le 1er mai 1966 ». Fascicule sans couche texte, lu à l'image, pp. 716 et 719."
+    1994-03-01:
+    - title: "Loi n° 94-29 du 21 février 1994, portant modification de certaines dispositions du code du travail, articles 1er (article 22 du code) et 2"
+      href: https://www.pist.tn/jort/1994/1994F/Jo01594.pdf
+      note: "JORT n° 15 du 22 février 1994, p. 319 (article 22) et p. 325 (article 2). Article 22 (nouveau), premier alinéa : « Tout travailleur lié par un contrat à durée indéterminée, licencié après l'expiration de la période d'essai, bénéficie, sauf le cas de faute grave, d'une gratification de fin de service calculée à raison d'un jour de salaire par mois de service effectif dans la même entreprise, sur la base du salaire perçu par le travailleur au moment du licenciement, compte tenu de tous les avantages n'ayant pas le caractère de remboursement de frais. » Article 2 de la loi : « La dénomination \"indemnité de licenciement\" est remplacée par \"gratification de fin de service\" dans tous les articles du Code du travail et les textes pris pour son application. » Date d'effet : la loi ne porte pas de clause d'entrée en vigueur ; elle est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 24 février 1994, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Édition française lue sur la couche texte."

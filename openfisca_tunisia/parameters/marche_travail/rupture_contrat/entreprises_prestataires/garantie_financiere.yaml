@@ -1,0 +1,12 @@
+description: "Montant de la garantie financière de l'entreprise prestataire, en part du montant du contrat de prestation de services ou de fourniture de travaux"
+values:
+  2025-09-24:
+    value: 0.2
+metadata:
+  unit: /1
+  short_label: "Garantie financière de l'entreprise prestataire"
+  reference:
+    2025-09-24:
+    - title: "Arrêté du ministre des affaires sociales du 23 septembre 2025, fixant les conditions, modalités et procédures d'application de l'article 30 quater du code du travail, article 2"
+      href: https://www.pist.tn/jort/2025/2025A/Ja1172025.pdf
+      note: "JORT n° 117 du 23 septembre 2025, édition arabe, pp. 2835-2836 (article 2, p. 2836). Article 2 : « يقدر مبلغ الضمان المالي الواجب تأمينه بنسبة 20٪ من قيمة المبلغ المضمن بعقد إسداء الخدمات أو قيام بأشغال. » Traduction publiée pour information dans l'édition française (https://www.pist.tn/jort/2025/2025F/Jo1172025.pdf, p. 2410) : « Le montant de la garantie financière à souscrire est fixé à 20% de la valeur du montant prévu par le contrat de prestation de services ou de fourniture de travaux. » L'arrêté est pris pour l'application de l'article 30 quater du code, ajouté par la loi n° 2025-9 du 21 mai 2025 (article 2 de cette loi, JORT n° 61 du 23 mai 2025, édition française p. 1297). Date d'effet : l'arrêté ne porte pas de clause d'entrée en vigueur (article 7 : « Le présent arrêté sera publié au Journal officiel de la République tunisienne ») ; il est exécutoire le lendemain de sa publication dans l'édition électronique du Journal officiel (décret-loi n° 2020-1 du 14 avril 2020, article 2, texte lu sur le miroir iort.tn, fascicule du JORT n° 32 du 14 avril 2020 non consulté) ; le fascicule est daté du 23 septembre 2025 et porte un dépôt au gouvernorat de Tunis le même jour. Éditions arabe et française lues sur la couche texte."

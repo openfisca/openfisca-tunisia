@@ -1,0 +1,6 @@
+description: "Forfait du secteur agricole non régi par la loi n° 89-73 et des pêcheurs payés à la part (article 4)"
+documentation: |-
+  Champ : secteur agricole non régi par la loi n° 89-73 du 2 septembre 1989 et pêcheurs employés
+  sur des bateaux de moins de 30 tonnes (tonneaux de jauge dans l'édition arabe) payés à la part,
+  pour les travailleurs dont le salaire est inférieur ou égal à deux fois le SMAG
+  (`plafond_salaire_smag`). L'employeur peut opter, de façon irrévocable, pour les salaires effectifs.

@@ -1,0 +1,24 @@
+description: "Gratification de fin de service (indemnité de licenciement jusqu'au 28 février 1994)"
+metadata:
+  short_label: "Gratification de fin de service"
+  order:
+  - jours_par_mois_service
+  - plafond
+  - anciennete_minimale
+documentation: |-
+  Somme due par l'employeur au salarié en contrat à durée indéterminée qu'il licencie (code du
+  travail, article 22). Elle est égale à un nombre de jours de salaire par mois de service effectif
+  dans la même entreprise (`jours_par_mois_service`), dans la limite d'un nombre de mois de
+  salaire (`plafond`), quelle que soit la durée des services, sauf disposition plus favorable de
+  la loi ou d'une convention collective ou particulière. Le salaire retenu est celui perçu au
+  moment du licenciement, avec tous les avantages qui ne remboursent pas des frais.
+
+  Le taux et le plafond sont les mêmes dans la rédaction de 1966 et dans celle de la loi
+  n° 94-29, en vigueur le 1er mars 1994. Celle-ci change trois choses : le nom (« gratification
+  de fin de service » au lieu d'« indemnité de licenciement », article 2 de la loi, dans tout le
+  code) ; la condition d'ancienneté, six mois de services effectifs (`anciennete_minimale`)
+  remplacés par l'expiration de la période d'essai ; la faute qui prive de la somme, « faute
+  lourde » puis « faute grave ».
+
+  La gratification ne se confond pas avec les dommages-intérêts du licenciement abusif ni avec
+  l'indemnité due pour inobservation du préavis (article 23).

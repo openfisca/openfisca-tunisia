@@ -1,5 +1,753 @@
 # Changelog
 
+## 0.171 - [#533](https://github.com/openfisca/openfisca-tunisia/pull/533)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 24/05/1974.
+* Zones impactées : `parameters/produits_subventionnes/prix_administres_1974_1991`.
+* Détails :
+  - **Nouveau nœud des prix administrés au public des produits de base publiés au JORT de 1974 à 1991** : pain, farines, semoule, pâtes alimentaires, couscous, sucre, huile, lait régénéré, café. Vingt-cinq paramètres, quatre-vingt-six valeurs datées, dont quatorze valeurs nulles, de l'arrêté du 24 mai 1974 sur le sucre à l'arrêté du 15 août 1991 sur le pain.
+  - **Un paramètre par produit défini** : poids du pain (700, 600, 500 g ; 300 et 250 g), variété (farine PS et PS-7 ; pâtes et couscous avant et après la variété PS-10), conditionnement (vrac, paquet), unité de prix (quintal ou kilogramme), présentation du sucre (poudre, morceaux, brun), huile de mélange et huile de graines, lait régénéré (1982) et lait régénéré demi-écrémé (1989, 1991). Les raccords retenus (petit pain et baguette de 250 g ; huile mélangée et huile de mélange vrac ; sucre en poudre et sucre blanc en poudre) sont dits en notes.
+  - Une valeur nulle marque une période où le prix n'est pas établi : pain de 1980 à 1983 (texte de 1980 non identifié), ou produit remplacé par un autre défini autrement.
+  - Dates d'effet : date énoncée par le texte, même antérieure à la signature ou à la publication ; arrêtés du 17 février 1984, un jour franc après la publication du 28 février 1984 (1er mars 1984). Numéro et date du fascicule dans chaque référence.
+  - Les séries sont closes au 1er janvier 1992 (valeur nulle) : la loi n° 91-64 entre alors en vigueur ; les produits de première nécessité restent à prix homologués, mais aucun prix au public n'est plus publié au JORT. La lacune 1992-2009 est dite en note, sans raccord aux paramètres 2010-2022 faute de texte publié entre les deux (le café n'a pas été recherché après 1980).
+  - Non versés : prix sans date des rapports de la Banque centrale ; prix des farines et semoules des décrets n° 75-352 et 79-413, qui ne sont pas des prix au public ; redevances différentielles sur les stocks déclarés à la Caisse générale de compensation (arrêté du 20 février 1980), qui ne sont pas des taux en vigueur sur une période.
+  - Les paramètres 2010-2022 du nœud `produits_subventionnes` ne changent pas. Aucun test ne change.
+
+### 0.170.1 - [#515](https://github.com/openfisca/openfisca-tunisia/pull/515)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974 ; seulement pour un conjoint survivant déclaré remarié.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants.py` (`rsna_taux_reversion`).
+* Détails :
+  - **Le remariage du conjoint survivant agit désormais sur la pension de réversion du RSNA**, comme sur celle du RSA. `rsna_taux_reversion` lit les entrées existantes `conjoint_survivant_remarie` et `age_remariage_conjoint_survivant` ; jusqu'ici, un conjoint remarié gardait sa pension.
+  - **Du 01/01/1974 au 22/09/1990**, le remariage supprime la pension, quel que soit l'âge : article 32 du décret n° 74-499 (JORT n° 30 de 1974, p. 917), en vigueur le 01/01/1974 par l'article 64 (p. 919). La formule du 01/01/1974 et celle du 19/02/1981 (majoration du décret n° 81-188) reçoivent cette condition ; la majoration suppose un conjoint admissible.
+  - **Depuis le 23/09/1990**, le remariage ne suspend la pension que s'il intervient avant 55 ans (`retraite.rsna.survivants.age_remariage_suspensif`) : article 32 nouveau, décret n° 90-1455, article premier (JORT n° 60 du 21 septembre 1990, p. 1358), exécutoire un jour franc après la publication. Nouvelle formule datée du 23/09/1990 ; la majoration jusqu'à 75 % y est reprise sans changement, par une fonction commune aux deux formules.
+  - Sans pension de conjoint, le plafond de l'article 38 ne réduit plus les pensions d'orphelins : un orphelin d'un conjoint remarié reçoit son taux entier.
+  - Aucun résultat ne change pour un conjoint non remarié, valeur par défaut. Aucun test existant ne change. La documentation de `conjoint_survivant_remarie` décrit désormais les deux régimes.
+  - Dix-neuf cas nouveaux dans `tests_pension/formulas/rsna/survivants.yaml` : non remarié, remarié avant 55 ans, à 55 ans exactement, après 55 ans, avec et sans orphelin, en décembre 1973, janvier 1974, février et mars 1981, septembre et octobre 1990, et 2024. Une période mensuelle se lit au premier du mois : la borne du 23/09/1990 s'éprouve entre septembre et octobre 1990.
+
+## 0.170 - [#529](https://github.com/openfisca/openfisca-tunisia/pull/529)
+
+* Correction de calcul (programme Amen social, transfert monétaire permanent).
+* Périodes concernées : à partir du 25/05/2020 (ouverture du programme Amen social).
+* Zones impactées : `openfisca_tunisia/variables/prestations/non_contributives/amen_social.py`.
+* Détails :
+  - **Le transfert monétaire permanent (TMP) est de nouveau calculable.** Trois défauts le rendaient inexécutable : (1) la variable d'entrée `amen_social_score_decile`, lue par `transfert_monetaire_permanent_eligibilite_score`, n'était déclarée nulle part (`VariableNotFoundError`) ; (2) `transfert_monetaire_permanent` lisait le paramètre `supplements.amen_social_enfants_a_charge`, inexistant (le paramètre réel est `supplements.enfant_a_charge`) (`ParameterNotFoundError`) ; (3) `transfert_monetaire_permanent_eligibilite_score` n'avait qu'une `formula_2022_06`, si bien qu'aucun ménage n'était éligible au TMP avant juin 2022 alors que le programme verse des transferts depuis 2020.
+  - **Correctifs**, sans changement de barème : déclaration de `amen_social_score_decile` (décile 1 à 10 du score de ciblage de la circulaire n° 12 du 12 mai 2022 ; défaut 11 = ménage non classé, pour que la condition `<= decile` reste fausse hors ciblage) ; correction du nom de paramètre (`supplements.enfant_a_charge`) ; ajout d'une `formula_2020` à `transfert_monetaire_permanent_eligibilite_score` renvoyant `amen_social_eligible` (avant la circulaire de 2022, seuls les critères primaires du décret n° 2020-317 ouvrent le droit).
+  - Nouveau test `tests/formulas/amen_social/transfert_monetaire_permanent.yaml` (montant par année et par composition, voies d'éligibilité primaire et par décile, exclusions).
+
+## 0.169 - [#532](https://github.com/openfisca/openfisca-tunisia/pull/532)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 04/08/1970 au 03/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Prix des céréales par campagne prolongés vers le passé, des récoltes 1970 à 2009** : prix de base à la production du blé dur et du blé tendre, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, prix d'intervention de l'orge. Vingt-neuf décrets de campagne, du décret n° 70-261 (JORT n° 37 de 1970) au décret n° 2009-1853 (JORT n° 47 de 2009), avec numéro, date et pages du JORT dans les références.
+  - **Nouveau paramètre `prix_base_production/orge`** (récoltes 1970 à 1991) : l'orge a un prix de base jusqu'à la récolte 1991 ; à partir de la récolte 1992, sa commercialisation est libre et le décret n° 93-1721 ne fixe plus qu'un prix d'intervention. Le prix de base s'arrête (`null`) et `prix_intervention_orge` commence le 06/09/1993.
+  - **Nouveau nœud `prix_reduit_retrocession`** (blé dur, blé tendre) : prix réduits de rétrocession du blé aux minoteries, fixés par les décrets des récoltes 1974 à 1989 et par les décrets modificatifs n° 75-352, 77-339, 79-413, 83-1274, 84-150 et 84-785. La série s'arrête (`null`) le 04/07/1991 : depuis le décret n° 91-943, le prix réduit est fixé par arrêté, puis par décision ministérielle, non publiés au Journal officiel.
+  - Dates d'effet : date énoncée par le texte quand il y en a une (31/05/1975, 01/11/1976, 03/05/1979, 28/12/1983) ; sinon un jour franc après la publication jusqu'en 1992 ; pour un numéro à plusieurs dates, la valeur est portée à la dernière date du numéro, retenue comme publication, sans calcul de jour franc (convention de la 0.167) ; cinq jours après le dépôt au gouvernorat de Tunis à partir de 1993.
+  - Les campagnes régies par reconduction (récoltes 1979, 1993-1994, 1997-1999, 2001-2004 et 2006 ; décrets n° 80-140, 96-2549 art. 14, 2001-864 art. 14, 2005-1983 art. 4, 2007-1402 art. 15) ne portent pas de valeur nouvelle ; le texte de reconduction figure dans les références de la valeur maintenue.
+  - Ruptures documentées en notes : composition du prix normal (récolte 1992 ; prime exceptionnelle de prompte livraison comprise à partir de la récolte 2008), orge (1992), payeur de l'écart (1988-1991). La note « série incomplète » passe de 2011 à 1970. Aucune variable ne lit ces paramètres.
+
+## 0.167 - [#531](https://github.com/openfisca/openfisca-tunisia/pull/531)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 06/07/1971.
+* Zones impactées : `parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees`.
+* Détails :
+  - **Taxe sur les agrumes et fruits exportés** au profit de la Caisse générale de compensation : 2 millimes par kilogramme net (loi n° 71-30 du 2 juillet 1971, article 5, JORT n° 29 des 2-6 juillet 1971, p. 848). Valeur portée au 06/07/1971, dernière date du numéro : la loi n'énonce pas de date d'effet et le jour de parution du numéro double n'est pas établi.
+  - **Taxes de péréquation de raffinage** sur le supercarburant, l'essence normale et le gas-oil : 0,350 dinar par hectolitre, versées au sous-compte de péréquation de raffinage de la Caisse (décret n° 72-400 du 16 décembre 1972, articles 1er à 3, JORT n° 51 des 19-22 décembre 1972, p. 1827), à compter du 01/07/1972, date d'effet énoncée à l'article 8.
+  - Évolution postérieure de ces taxes non établie (`metadata.notes`). Aucune variable ne lit ces paramètres.
+
+## 0.166 - [#530](https://github.com/openfisca/openfisca-tunisia/pull/530)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 04/04/2011.
+* Zones impactées : `parameters/produits_subventionnes/cereales`.
+* Détails :
+  - **Nouveaux paramètres : prix des céréales fixés pour chaque campagne** par le texte de campagne de l'Office des céréales — prix de base à la production du blé dur et du blé tendre, prix d'intervention de l'orge, prix normaux de rétrocession du blé dur, du blé tendre et de l'orge, en dinars par quintal. Quinze textes, des récoltes 2010 à 2026 : décrets n° 2011-325 à 2025-344, puis arrêté conjoint du 24 juillet 2026 (JORT n° 75, p. 1440-1442). Chaque valeur prend effet à l'entrée en vigueur du texte (cinq jours après le dépôt au gouvernorat de Tunis jusqu'en 2019, lendemain de la publication électronique depuis 2020), avec numéro, date et pages du JORT dans les références.
+  - Les décrets n° 2022-580 (récolte 2021) et 2022-650 (récolte 2018), entrés en vigueur avec ou après celui de la récolte 2022, ne sont pas portés en valeur : ils auraient ramené la série à des prix antérieurs. Ils figurent dans les références au 13/07/2022.
+  - Série incomplète : états antérieurs à 2011 non versés. Aucune variable ne lit encore ces paramètres.
+
+## 0.165 - [#528](https://github.com/openfisca/openfisca-tunisia/pull/528)
+
+* Amélioration technique (chargement du paquet des pensions).
+* Zones impactées : `openfisca_tunisia_pension/scripts_ast/script_ast.py`.
+* Détails :
+  - **Le paquet des pensions s'importe désormais sur un système de fichiers en lecture seule.** À l'import, `script_ast` régénère les variables `rsna_*`, `rsa_*`, `cnrps_*` dans `openfisca_tunisia_pension/variables/` à partir des régimes. Quand le dossier d'installation n'est pas inscriptible (déploiements : shinyapps.io, environnements serverless, store Nix…), l'écriture échouait avec `PermissionError` et cassait l'import. Désormais : si le contenu généré est déjà à jour, aucune réécriture ; et si l'écriture échoue (lecture seule), un avertissement est émis et les variables **déjà livrées** dans le paquet sont utilisées. Aucun changement de comportement de calcul.
+
+## 0.164 - [#527](https://github.com/openfisca/openfisca-tunisia/pull/527)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1974 (ouverture du droit à pension RSNA et RSA).
+* Zones impactées : `openfisca_tunisia_pension/variables/rsna.py`, `openfisca_tunisia_pension/regimes/rsna.py`, `openfisca_tunisia_pension/variables/rsa.py`, `openfisca_tunisia_pension/regimes/rsa.py`.
+* Détails :
+  - **Le stage requis ouvre le droit à pension dès qu'il est atteint** (condition `>=`), et non strictement dépassé (`>`), pour les régimes RSNA et RSA. Décret n° 74-499, article 15 : le droit suppose de « justifier d'un stage de 120 mois » — les 120 mois (40 trimestres) exacts ouvrent donc le droit. Avant ce correctif, une carrière de 10 ans pile (120 mois) ne donnait aucune pension (éligibilité fausse) ; elle en donne désormais une (RSNA : taux de 40 % au terme du stage). Le régime CNRPS utilisait déjà `>=` (minimum de 15 ans, inchangé).
+  - Nouveau test de non-régression `tests_pension/formulas/rsna/eligible.yaml` (120 mois pile éligible ; 9 ans ou âge < 60 non éligible). Dossier confirmant la règle : `precis/fr/retraites/_secteur_prive.qmd` (décret 74-499, art. 15).
+
+## 0.163 - [#525](https://github.com/openfisca/openfisca-tunisia/pull/525)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1973 ; valeur non sourcée retirée du 01/02/1959 au 31/03/1973.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/salarie_cnrps/cotisations_employeur/maladie`, `.../cotisations_salarie/maladie`.
+* Détails :
+  - **La contribution employeur de prévoyance sociale des agents CNRPS en activité commence au 1er avril 1973, à 1 %**, et non en 1959. Le décret n° 73-91 (JORT n° 10, p. 356, lu à l'image), article 16 : « La contribution de l'Etat aux régimes obligatoires des prestations en nature et de Prévoyance Sociale est fixée à 1 % » ; article 18 : effet au 1er avril 1973. La date de 1959 que portait le fichier était sans appui textuel (part employeur nulle de 1959 à mars 1973).
+  - **Références précisées** pour les deux parts (salarié et employeur) : socle du décret n° 73-91 (article 14 pour le salarié, article 16 pour l'employeur) et montée en charge du régime de base d'assurance maladie par l'article 4 du décret n° 2007-1406 — total 3 % en 2007 (1 % salarié, 2 % employeur), 4,88 % en 2008 (1,88 % / 3 %), 6,75 % en 2009 (2,75 % / 4 %). La table représente le **régime obligatoire** (article 4) ; le **régime facultatif** d'assurance maladie de l'article 5 n'est pas modélisé.
+  - **Taux inchangés** à partir de 2007 : seule la date de départ de la part employeur et les références changent. Nouveau test `tests/formulas/cotisations/cnrps_maladie_salaries_2007_1406.yaml`. Dossier : `docs/notes/cnrps-prevoyance-73-91.md`.
+
+## 0.162 - [#524](https://github.com/openfisca/openfisca-tunisia/pull/524)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1973.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/pensionne_cnrps/prevoyance_sociale`.
+* Détails :
+  - **La prévoyance sociale sur pension des titulaires de la CNRPS commence au 1er avril 1973, à 2 %**, et non en 2007. Le décret n° 73-91 du 12 mars 1973 (JORT n° 10, p. 356, lu à l'image), article 15, dernier alinéa : « La cotisation due par le retraité et la veuve de retraité titulaire d'une pension directe ou de reversion est fixée à 2 % de leur pension en principal » ; l'article 18 fait prendre effet le décret au 1er avril 1973.
+  - La rampe de 1 % à 4 % de 2007 à 2010 que portait déjà ce fichier est le régime de base d'assurance maladie des titulaires de pension (décret n° 2007-1406, articles 12 et 13, JORT n° 49 du 19 juin 2007, p. 2162), qui succède à cette prévoyance. La référence et la note de 2007 sont complétées ; la note périmée invoquant une date de 1959 « sans appui textuel » est corrigée.
+  - Aucun texte modifiant le taux de 2 % entre 1973 et 2007 n'a été identifié. L'articulation entre la prévoyance de 2 % et le régime de base d'assurance maladie (succession ou cumul) reste à confirmer (cf. corps de PR). Dossier : `docs/notes/cnrps-prevoyance-73-91.md`.
+
+## 0.161 - [#523](https://github.com/openfisca/openfisca-tunisia/pull/523)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1995 (forfaits et modulation) ; refontes au 01/04/1999 et au 01/07/2000 ; variable nouvelle.
+* Zones impactées : `parameters/prelevements_sociaux/atmp_forfaits/` (nouveau), `parameters/prelevements_sociaux/atmp_modulation/` (nouveau), `variables/prelevements_obligatoires/cotisations_forfaitaires_accidents_travail.py` (nouveau).
+* Détails :
+  - **Verse les salaires forfaitaires d'accidents du travail et de maladies professionnelles** des articles 4 à 7 du décret n° 95-538 du 1er avril 1995 (JORT n° 30 du 14 avril 1995, édition arabe pp. 691-692, qui fait foi, lue à l'image) : forfait du secteur agricole non régi par la loi n° 89-73 et des pêcheurs payés à la part (article 4 : taux de 1 %, coefficient 1,5, tableau des journées par type de culture ou d'activité, base des réparations SMAG × 300 jours × coefficient 1, 1,5 ou 2) ; chauffeurs de louage et de taxis et « masseurs » des bains maures (article 5 : SMIG 48 heures × 2 400 heures × 1,5) ; employés de maison (article 6 : 0,53 %, 0,75 % et 1 % du SMAG × 300 jours, coefficient 1,5 pour les conducteurs) ; travailleurs temporaires auprès des particuliers (article 7 : SMIG × 200 heures par mois × coefficient 1 ou 2).
+  - **Refonte du forfait agricole au 1er avril 1999** par le décret n° 99-1010 (JORT n° 40 du 18 mai 1999, p. 734) : le taux passe de 1 % à 0,80 %, le tableau des journées reçoit l'horticulture de plein champ (70) et la cuniculture (36 jours pour 1 000 lapins), et la ligne des bovins est étendue aux équins et aux camélidés ; les autres valeurs sont reprises à l'identique.
+  - **Forfait du transport public au 1er juillet 2000** par le décret n° 2000-1439 (JORT n° 52 du 30 juin 2000, p. 1541) : pour le taxi, le louage et le transport rural, l'assiette devient le SMIG 48 heures × 2 400 heures **sans coefficient**, valable aussi pour les régimes de sécurité sociale ; les « masseurs » des bains maures, hors de son champ, restent régis par l'article 5 (coefficient 1,5).
+  - **Modulation de la cotisation** (articles 10 à 27 du décret n° 95-538) : cotisation supplémentaire de 50 % des cotisations principales (article 17), portée à 100 % au plus (articles 17 et 18), réduction plafonnée à 25 % (article 24).
+  - **Nouvelle variable** `cotisation_accident_travail_forfaitaire_employe_maison` : seul forfait entièrement déterminé par le droit (taux propres à l'article 6 et assiette fixe), calculé à partir du SMAG journalier. Les autres forfaits sont versés en paramètres ; l'arborescence de leurs variables (option pour les salaires effectifs, surfaces par culture, nombre de têtes, qualification, taux de branche, intégration annuel/mensuel) reste à arbitrer (issue #471).
+  - Dossier de lecture : `docs/notes/atmp-forfaits-95-538.md`.
+
+## 0.160 - [#522](https://github.com/openfisca/openfisca-tunisia/pull/522)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `parameters/prestations/non_contributives/pnafn/allocation.yaml`.
+* Détails :
+  - Documentation du PNAFN enrichie : le cadre du programme (recensement, registre de la pauvreté, éligibilité) est posé par des circulaires administratives **non publiées au Journal officiel**, aujourd'hui archivées dans la base législative `tunisia-legislative-references` — circulaire du Premier ministre n° 18 du 4 juin 1986, n° 22 de 1993 (registre national de la pauvreté), n° 5 de 1998 (gestion déconcentrée), n° 11 de 2009, et circulaire conjointe du 27 mai 2011 fixant le seuil d'éligibilité à 585 dinars de revenu annuel moyen ajusté.
+  - Aucune ne fixe le montant mensuel de l'allocation : les onze paliers, leurs dates, la référence du palier de 180 dinars et la conclusion de la série sont **inchangés**.
+
+## 0.159 - [#521](https://github.com/openfisca/openfisca-tunisia/pull/521)
+
+* Amélioration technique.
+* Périodes concernées : aucune.
+* Zones impactées : `pyproject.toml`, `uv.lock`.
+* Détails :
+  - **openfisca-core** : borne relevée à `>=44, <46` (PR #464 de dependabot) ; le verrou passe de 44.7.1 à 45.0.5. Les 7 756 tests Python et les 8 094 tests YAML passent avec la version 45.0.5.
+  - **Dépendances du verrou** : werkzeug 3.1.8 -> 3.1.9 (#481), urllib3 2.7.0 -> 2.8.0 (#467), tornado 6.5.8 -> 6.5.9 (#466). Ces trois mises à jour et la précédente remplacent les PR de dependabot, dont le contrôle de version et de CHANGELOG échouait.
+  - **ruff non relevé** : la PR #463 (`<0.17`) n'est pas reprise. Avec ruff 0.16.10, `ruff check .` signale 211 erreurs sur le code actuel (102 corrigeables automatiquement) ; la borne reste `<0.9`.
+
+## 0.158 - [#520](https://github.com/openfisca/openfisca-tunisia/pull/520)
+
+* Amélioration technique.
+* Périodes concernées : à partir du 01/01/2010 ; paramètre complété.
+* Zones impactées : `parameters/produits_subventionnes/` (semoule, gros pain, baguette, pâtes, couscous, sucre, laits, huile).
+* Détails :
+  - **Sources de `semoule`** : le tableau « Évolution des prix de vente au public des produits subventionnés, 2010-2022 » du ministère du Commerce (commerce.gov.tn/storage/donwloads/fr2.pdf) donne les quatre valeurs du paramètre (0,48 ; 0,45 ; 0,64 ; 0,79 D/kg). Valeurs inchangées, avec références, étiquettes, documentation, dates ordonnées (comme le proposait la PR #212, qui est remplacée).
+  - **Autres produits subventionnés** (gros pain, baguette, pâtes, couscous, sucre, lait demi-écrémé en bouteille et UHT, huile) : même tableau en référence, étiquettes courtes, dates ordonnées. Valeurs inchangées sauf une date : les laits passent à 1,300 et 1,350 D/l en **2022** (tableau du ministère), non en 2025 comme dans les fichiers ; ils valent donc 1,300 et 1,350 en 2022-2024 au lieu de 1,200 et 1,250. La farine n'est pas dans le tableau (valeur 0 en 2025, « Indisponible ») : non touchée.
+  - **Texte officiel** : l'arrêté du ministre de l'économie nationale du 15 août 1991 (JORT n° 61, p. 1546) est le dernier arrêté de prix de la semoule publié au JORT (205 millimes au détail en vrac). Il est cité, non porté comme valeur : les prix de 1991 à 2010 n'ont pas été retrouvés. Aucun texte publié ne fixe les prix de 2010 à 2022.
+  - **Écarts de presse signalés** : un communiqué du ministère reproduit le 3 janvier 2018 donne encore 450 millimes ; un article du 11 décembre 2020 donne 790 millimes pour la semoule emballée. Le tableau du ministère est retenu.
+
+## 0.157 - [#518](https://github.com/openfisca/openfisca-tunisia/pull/518)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 22/11/1996 ; variables nouvelles.
+* Zones impactées : `variables/prestations/contributives/indemnites_familiales_secteur_public.py` (nouveau).
+* Détails :
+  - **Code les quatre-vingt-un cas d'octroi de l'indemnité familiale et de l'indemnité pour salaire unique du secteur public** : annexe 2 de la circulaire du Premier ministre n° 42 du 25 octobre 1996 (JORT n° 89 du 5 novembre 1996 ; annexes au JORT n° 94 du 22 novembre 1996, p. 2353-2362), qui applique le décret du 22 novembre 1918 (indemnité familiale) et le décret du 24 février 1944 (indemnité pour salaire unique).
+  - **Un seul moteur pour les deux secteurs** : `pf_allocataire` (père, mère, tuteur, mère pour le montant antérieur au second mariage, père la mère pouvant réclamer la différence, non servie, non désigné) et `pf_payeur` (employeur du père, CNSS, caisse de retraite, non précisé) ; `pf_salaire_unique_servi` dit si l'indemnité pour salaire unique est servie au même allocataire, par le même organisme (vérifié sur les 81 cas). Secteur public : la table de la circulaire.
+  - **Secteur privé : qui perçoit** (loi n° 60-30, articles 53, 55, 64 et 65 ; loi n° 96-65 ; loi n° 80-36, article 65 bis), formules datées au 1er avril 1961 et au 4 août 1996. Du 1er avril 1961 au 3 août 1996, article 55, alinéa 3 : quand le père et la mère d'un couple non séparé ouvrent tous deux droit, seule l'allocation du père est servie, la mère pouvant réclamer la différence (nouvelle valeur `pere_mere_pouvant_reclamer_difference`). Avant comme après 1996, quand les parents sont séparés (situations IV à VI) et qu'un seul ouvre droit, l'allocation est versée à la personne qui a la garde (article 64). Dans un couple non séparé dont un seul parent ouvre droit, ce parent est l'allocataire (article 53, 1°), avant comme après 1996. Le payeur est la caisse (article 65). La garde est une entrée (`pf_garde_enfant`, ou la situation `divorce_garde_pere` / `divorce_garde_mere`) ; dans un couple non séparé elle n'est pas supposée.
+  - **Non codé, `non_designe`** : depuis le 4 août 1996, couple non séparé dont le père et la mère ouvrent droit (la loi ne dit pas ce que « garde » veut dire, et les montants par personne ne sont pas rattachables au père et à la mère) ; parents séparés ouvrant droit tous deux (articulation des articles 55 et 64 avant 1996, « l'allocation la plus élevée » depuis) ; tutelle (tuteur officieux salarié, article 53 3°) ; décès d'un parent (articles 56 à 59). Payeur : le dernier employeur (article 60) et le paiement direct par les employeurs (article 48, 2°) ne sont pas codés, le modèle n'ayant pas de variable d'affiliation de l'employeur.
+  - **Majoration pour salaire unique du secteur privé** : nouvelle variable `pf_majoration_salaire_unique_allocataire`, versée à la personne qui a la garde depuis le 1er mai 1980 (article 65 bis), `non_designe` si la garde n'est pas établie. Le maintien aux titulaires de pensions (décret n° 81-731, 1er mai 1981) n'est pas codé : aucune entrée ne distingue les pensions du régime des salariés. Les formules de montant (`af_mensuelle`, `majoration_salaire_unique`) sont inchangées.
+  - **Variables d'entrée de l'enfant** (`Individu`, mensuelles) : `pf_situation_parents`, `pf_filiation`, `pf_statut_pere`, `pf_statut_mere`, `pf_statut_tuteur`, `pf_garde_enfant`. Les parents pouvant ne plus appartenir au ménage de l'enfant (divorce, décès, tutelle), leur position se saisit sur l'enfant. Calculée : `pf_cas_circulaire_42` (code 1 à 81, 0 hors annexe).
+  - **Cas 34, 42 et 43**, ambigus dans la traduction française, lus dans l'édition arabe (JORT n° 89, p. 2540 et 2542) : au cas 42 le père n'a pas la pension de réversion (salaire unique servi au père), au cas 43 il l'a (non servi) ; la position de la mère décédée est indifférente. Au cas 34 l'indemnité est servie par la caisse de retraite sans bénéficiaire nommé : le modèle retient la mère (déduit).
+  - **Hors périmètre** : les montants (décret n° 96-1906, circulaire) et les conditions d'enfant (âge, rang, handicap) ; les formules de montant du secteur privé (`salaire_unique`, `majoration_salaire_unique`, `af_mensuelle`) sont inchangées. La docstring d'`_af_mensuelle` dit que la formule retient l'allocation la plus élevée dans les deux périodes, alors que le texte de 1961 sert celle du père : écart signalé, non corrigé.
+  - Tests : `tests/formulas/prestations/contributives/indemnites_familiales_secteur_public.yaml` (un test par code, plus les cas du secteur privé nommés par article et par période) et `tests/test_indemnites_familiales_public.py` (couverture des 81 codes, salaire unique servi à l'allocataire).
+
+## 0.156 - [#516](https://github.com/openfisca/openfisca-tunisia/pull/516)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 02/01/1987 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_douane` (nouveau nœud), `fiscalite_indirecte/index.yaml`.
+* Détails :
+  - **Verse la redevance de prestations douanières**, de l'article 51 de la loi n° 87-83 (loi de finances pour 1988) et de ses modifications de 1994, 1998, 1999, 2013, 2014 et 2024 : taux sur le montant des droits et taxes liquidés à l'importation (1,5 % au 02/01/1988, 2 % au 01/01/1994, 3 % au 01/01/1998), minimum par article de déclaration à l'importation (1, 5, 10, 20 dinars) et à l'exportation (1 dinar), taux à l'exportation (1,5 % de la valeur en douane), redevance de 100 dinars par déclaration de transit terrestre (01/01/2014).
+  - **Verse le minimum de perception en tarif minimum ad valorem** (10 % au 02/01/1987, 15 % au 02/01/1988) et le taux des biens d'équipement (15 % puis 22 %). Pour ces derniers, le texte de 1987 fixe un plafond et celui de 1988 un « minimum de perception » : la note de la feuille le dit, le sens est à établir avant tout calcul.
+  - **Verse la taxe de contrôle par scanner** de l'article 42 de la loi de finances pour 2018 : 100 dinars par conteneur de 20 pieds au plus, 200 dinars pour les autres unités de charge, au 01/01/2018.
+  - **Dates.** Les lois de finances de 1987 et de 1988 n'ont pas de clause générale d'application : exécutoires un jour franc après la publication du 31 décembre, soit le 02/01. Depuis 1994, la date d'application de la loi de finances est le 1er janvier.
+  - **Correction de lecture.** Dès 1988, l'article 51 assoit la redevance à l'importation sur le montant des droits et taxes liquidés (à 1,5 %), la valeur en douane ne valant que pour les exportations d'une liste de produits. La feuille `importation/taux_sur_droits_et_taxes` suit le fascicule lu à l'image.
+  - **Pas de calcul.** Aucune variable ne calcule les droits de douane : le nœud ne porte que les paramètres. Les taux par position du tarif, les tables de correspondance de 1987, 1988 et 1994, les bandes de 2004 à 2022 et le calendrier de l'accord d'association avec l'Union européenne restent au relevé du chapitre « Les droits de douane » du précis.
+  - Le test `tests/test_droits_douane.py` éprouve, feuille par feuille, la valeur la veille et le jour de chaque date, le début de série, la référence (article, fascicule, page, lien), les notes, les unités et la forme du sous-arbre.
+
+## 0.154 - [#514](https://github.com/openfisca/openfisca-tunisia/pull/514)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 23/09/1990 ; paramètre nouveau.
+* Zones impactées : `parameters/retraite/rsna/survivants/age_remariage_suspensif` (nouvelle feuille), `rsna/survivants/index.yaml`.
+* Détails :
+  - **Verse l'âge avant lequel le remariage suspend la pension du conjoint survivant du RSNA**, 55 ans, au 23/09/1990 : article 32 nouveau du décret n° 74-499, rédaction du décret n° 90-1455, article premier (JORT n° 60 du 21 septembre 1990, p. 1358, lu à l'image). Paramètre seulement : aucune formule ne le lit.
+  - **Date.** Le décret ne porte pas de date d'effet ; il devient exécutoire un jour franc après la publication, le 23/09/1990.
+  - **Avant 1990, pas d'âge.** L'article 32 d'origine (JORT n° 30 de 1974, p. 917, effet au 01/01/1974 par l'article 64) supprime la pension de réversion au premier jour du trimestre civil suivant le remariage, quel que soit l'âge : aucune valeur n'est versée pour cette période, qui est décrite dans la documentation, comme pour les feuilles voisines du RSA, du RACI et du régime complémentaire.
+  - **Corrige la documentation du nœud `rsna/survivants`**, qui résumait le décret n° 90-1455 par le seul rétablissement de la pension au décès du nouveau conjoint et omettait la suspension avant 55 ans ; le rétablissement revalorisé et l'interdiction du cumul de pensions de conjoint survivant au titre de mariages successifs y sont décrits.
+  - Le test `tests_pension/formulas/test_rsna_remariage.py` éprouve la valeur le jour même, l'absence de valeur la veille, la référence et l'unité. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.153 - [#513](https://github.com/openfisca/openfisca-tunisia/pull/513)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 10/06/2020 ; paramètre nouveau.
+* Zones impactées : `parameters/retraite/differentiel_petites_pensions` (nouveau nœud).
+* Détails :
+  - **Verse le seuil du différentiel complémentaire des petites pensions** du décret-loi n° 2020-30, article premier : 180 dinars de pension mensuelle nette, au 10/06/2020. Les titulaires de pensions de la CNSS et de la CNRPS (loi n° 85-12) dont le montant mensuel net, pension temporaire d'orphelin comprise, est au plus de 180 dinars reçoivent l'écart avec ce montant, à la charge du budget de l'État. Paramètre seulement : aucune formule ne le lit.
+  - **Texte et date.** JORT n° 54 du 10 juin 2020, édition arabe, p. 1408 (article premier) ; l'article 17 (p. 1413) fait entrer le décret-loi en vigueur à la date de sa publication, le 10/06/2020. L'édition française n'est pas sur pist.tn.
+  - Le décret-loi ne fixe pas de terme, et aucun texte prolongeant, relevant ou abrogeant le seuil n'est établi : la documentation du nœud le dit.
+  - Le test `tests_pension/formulas/test_differentiel_petites_pensions.py` éprouve la valeur le jour même, l'absence de valeur la veille, la référence et l'unité. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.152 - [#512](https://github.com/openfisca/openfisca-tunisia/pull/512)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 07/10/1973 ; paramètres nouveaux.
+* Zones impactées : `parameters/retraite/cnrps/age_legal/civil` (deux feuilles nouvelles).
+* Détails :
+  - **Verse la limite d'âge des membres du Tribunal administratif et de la Cour des comptes**, 65 ans, par dérogation au décret n° 59-78 qui fixe 60 ans : `magistrats_tribunal_administratif` et `magistrats_cour_des_comptes`. Paramètres seulement : aucune formule ne les lit.
+  - **Textes et dates.** Décret n° 73-459 du 3 octobre 1973, article premier (JORT n° 37, fascicule des 2 et 5 octobre 1973, p. 1532) : premier président, présidents de chambre, commissaire d'État et conseillers du Tribunal administratif, au 07/10/1973. Décret n° 74-820 du 28 août 1974, article premier (JORT n° 55, fascicule du 30 août au 3 septembre 1974, p. 1919) : premier président, présidents de chambre, commissaire du gouvernement et conseillers de la Cour des comptes, au 01/09/1974. Aucun ne fixe de date d'effet : jour franc après la publication (le 5 octobre 1973, le décret étant du 3 ; le 30 août 1974, premier jour du fascicule).
+  - Pas de note de série incomplète : avant ces dates s'applique la limite commune du cadre civil, et non un état antérieur de ces paramètres. La survie de ces limites après les lois n° 85-12 et 2019-37 n'est pas établie ; la documentation de chaque feuille le dit.
+  - La loi organique n° 2016-34 (article 53) ne fixe ni âge ni durée de retraite anticipée : rien n'est versé à son titre.
+  - Le test `tests_pension/formulas/test_limite_age_magistrats.py` éprouve la valeur le jour même, l'absence de valeur la veille, la référence, l'unité et l'ordre du nœud. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.151 - [#511](https://github.com/openfisca/openfisca-tunisia/pull/511)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 17/03/1985 ; paramètres nouveaux.
+* Zones impactées : `parameters/prelevements_sociaux/cotisations_sociales/secteur_public/regimes_speciaux/deputes` (nouveau nœud), `regimes_speciaux/index.yaml`.
+* Détails :
+  - **Verse la retenue pour pension des députés et la contribution de l'État** de l'article 5 de la loi n° 85-16, assises sur les indemnités parlementaires permanentes : deux feuilles, `retenue` et `contribution_etat`. Paramètres seulement : aucune formule ne les lit.
+  - **Textes et dates.** Loi n° 85-16 (JORT n° 21 du 15 mars 1985, p. 376), sans clause d'effet, exécutoire un jour franc après sa publication, le 17/03/1985 : 10 % et 15 %. Loi n° 94-71 (p. 1086) : retenue 11 % au 01/07/1994, contribution 16,2 % au 01/07/1995. Loi de finances pour 2002, article 85 (p. 4260) : retenue 11,5, 11,75 et 12 % aux 1ers juillet 2002 à 2004 ; contribution 16,7, 16,95, 17,2, 17,45 et 17,7 % aux 1ers juillet 2002 à 2006. Loi n° 2007-43, article premier (p. 2198) : contribution 18,3, 18,9 et 19,5 % aux 1ers janvier 2007 à 2009 ; retenue 12,4, 12,8 et 13,2 % aux 1ers juillet 2007 à 2009. Loi de finances pour 2026, articles 102 et 103 (édition arabe, p. 4257) : retenue 13,25 % et contribution 20,5 % au 13/03/2023, date énoncée par l'article 103. Toutes les dates postérieures à 1985 sont énoncées par les textes ; les taux intermédiaires sont le cumul des relèvements.
+  - **Écarts avec le nœud `gouvernement_deputes_gouverneurs`**, qui n'est pas chargé (fichiers sans extension, #473) et qui n'est pas modifié ici : la série des députés commence au 17/03/1985, non au 01/04/1985 ; les trois paliers employeur de la loi n° 2007-43 sont au 1er janvier (2007, 2008, 2009), non au 1er juillet, et le palier de 2007 y manquait ; elle ne porte ni le point du décret-loi n° 2011-48, qui ne nomme pas la loi n° 85-16, ni les relèvements de la loi n° 2019-37 ; elle porte l'état de 2023.
+  - **Série incomplète** : états antérieurs à 1985 non versés (décret-loi n° 74-22 du 2 novembre 1974 et loi n° 77-57 du 3 août 1977, abrogés par l'article 14 de la loi n° 85-16).
+  - Le test `tests/test_regime_retraite_deputes.py` couvre les deux feuilles : valeur la veille et le jour de chaque date, références, unité, note de série incomplète. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+## 0.150 - [#510](https://github.com/openfisca/openfisca-tunisia/pull/510)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 17/05/1993 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_enregistrement` (nœuds `droit_fixe`, `minimum_perception`, `fonds_commerce`, `marches`), `parameters/fiscalite_indirecte/droit_timbre` et `parameters/fiscalite_indirecte/taxe_unique_assurances` (nouveaux), `units.yaml`.
+* Détails :
+  - **Droit de timbre, droits d'enregistrement hors mutations et taxe unique sur les assurances** : 26 feuilles dans 12 nœuds. Paramètres seulement : rien ne les lit.
+  - **Enregistrement** : droit fixe par page (10 dinars au code de 1993, 15 au 01/01/2005, 20 au 25/05/2012, 25 au 01/01/2018, 30 au 01/01/2022) et droit des actes sans tarif (5 → 10 dinars au 01/01/2002, puis aligné) ; minimum de perception des actes et mutations (5, 10, 15, 20 dinars, puis 40, minimum unique, au 01/01/2017) et des jugements par juridiction (5/10/20 dinars en 1993 jusqu'à 20/40/75 au 25/05/2012) ; fonds de commerce, cession 2,5 % et location 1 % ; marchés et concessions, 2,7 % en 1993, droit fixe par page du 01/01/1994 au 31/12/2012 (10, 15, puis 20 dinars), plafonné à 2 % de leur valeur à partir de 2005, 0,5 % depuis le 01/01/2013.
+  - **Timbre** : factures (0,200 dinar au 01/01/2004 jusqu'à 1 dinar au 01/01/2023) et factures des grandes surfaces de 50 à 100 dinars et de plus de 100 dinars (1,500 et 2 dinars au 01/01/2026) ; téléphonie, par carte (2006-2012), par tranche de 5 dinars (2007-2017), par dinar (0,080 au 25/05/2012, 0,100 au 27/08/2014, 0,140 au 01/01/2018), supplément de 0,100 dinar par recharge de 5 dinars ou plus au 01/01/2026 ; passeport (21 dinars en 1993 jusqu'à 80 au 01/01/2013) et passeport des étudiants (7 → 25 dinars).
+  - **Taxe unique sur les assurances** : 5 % et 10 % au 01/01/1997, 6 % et 12 % au 01/01/2018.
+  - **Dates.** Code des droits d'enregistrement et de timbre applicable à compter de la promulgation de la loi n° 93-53, le 17/05/1993 (article 2). Lois de finances : 1er janvier, par leur article d'application. Loi de finances complémentaire pour 2012 : déposée le 19/05/2012, sans clause d'effet ; date retenue, le 25/05/2012, celle des notes communes n° 14/2012, 16/2012 et 25/2012, déjà employée par l'arbre pour d'autres articles de cette loi. Loi de finances complémentaire pour 2014 : déposée le 22/08/2014, exécutoire le 27/08/2014 (loi n° 93-64, article 2).
+  - **Séries incomplètes** : états antérieurs à 1993 (droit fixe, minimum de perception, fonds de commerce, taux des marchés, passeport) et à 1997 (taxe unique sur les assurances, qui existe depuis au moins le décret n° 69-114) non versés.
+  - **Unités nouvelles** : `currency/page` et `currency/tranche`.
+  - Le test `tests/test_droit_timbre_enregistrement.py` couvre les 26 feuilles : valeur la veille et le jour de chaque date, référence, unité, note des séries incomplètes, forme des sous-arbres. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+## 0.149 - [#509](https://github.com/openfisca/openfisca-tunisia/pull/509)
+
+* Évolution du système socio-fiscal. **Rupture d'interface** : une variable d'entrée et une feuille sont supprimées.
+* Périodes concernées : à partir du 01/01/1990.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/irpp`, `parameters/impot_revenu/regimes_speciaux` (feuille `retenue_liberatoire/taux` supprimée).
+* Détails :
+  - **Défaut corrigé.** `impot_sur_retenue_liberatoire` multipliait une variable d'entrée indifférenciée, `revenu_soumis_retenue_liberatoire`, par une feuille unique, `regimes_speciaux/retenue_liberatoire/taux`, qui valait 20 % depuis le 01/01/1990 sans texte : le code de 1990 (article 52, p. 11) ne connaît pas de taux libératoire unique, mais 35 % sur les bons de caisse au porteur anonymes et 15 % sur les revenus des non-résidents. La feuille et la variable sont supprimées.
+  - **Une variable d'entrée par catégorie**, chacune lue avec la feuille datée de l'article 52 qui en porte le taux, par des formules datées qui ne lisent jamais une feuille hors de sa période :
+    - `revenus_titres_porteur_anonymes`, 1990-1996 : `capitaux_mobiliers/retenue_source/taux_titres_porteur_anonymes` (35 %) ;
+    - `revenus_obligations_porteur_anonymes`, 1992-1996 : `taux_obligations_porteur_anonymes` (25 %). La loi de finances pour 1992 étant exécutoire le 2 janvier 1992, les taux de 1992 sont lus à cette date ;
+    - `revenus_distribues_retenue_liberatoire`, depuis 2015 : `valeurs_mobilieres/revenus_distribues/taux_retenue_source` (5 %, puis 10 % depuis 2018) ;
+    - `revenus_capitaux_mobiliers_retenue_liberatoire`, 2021 : `capitaux_mobiliers/retenue_source/taux_liberatoire` (20 %).
+
+    De 1997 à 2014, la variable vaut 0. Avant 1990, elle n'a pas de formule.
+  - **Résultats.** Le test existant de 2021 (`tests/formulas/impot_revenu/regimes_speciaux.yaml`) ne change pas : 10 000 dinars de revenus de capitaux mobiliers donnent toujours 2 000 dinars, seule l'entrée change de nom. Hors de 2021, une simulation qui renseignait `revenu_soumis_retenue_liberatoire` doit choisir la catégorie : le résultat suit alors le taux du texte (par exemple 35 % et non 20 % sur des bons anonymes en 1995, 0 en 2010).
+  - Nouveau test `tests/formulas/impot_revenu/retenue_liberatoire.yaml` : une table de cas de 1989 à 2026, avec les bornes de chaque taux (1991-1992, 1996-1997, 2014-2015, 2017-2018, 2020-2021-2022).
+  - Non couverts : la retenue de 35 % sur les dépôts à terme (10/06/2020 au 31/12/2020), dont la date tombe en cours d'année, et l'impôt libératoire sur la plus-value de cession de titres.
+
+## 0.148 - [#508](https://github.com/openfisca/openfisca-tunisia/pull/508)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux et une date ajoutée, sans changement de valeur.
+* Zones impactées : `parameters/impot_revenu/retenue_source_non_residents` (nouveau nœud), `parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_definitif_organismes_exoneres`, `parameters/impot_revenu/capitaux_mobiliers/non_residents`, `parameters/impot_revenu/index.yaml`.
+* Détails :
+  - **Fonds communs de placement en valeurs mobilières, 2002.** `taux_definitif_organismes_exoneres` reçoit une entrée au 01/01/2002, au même taux de 20 % : la loi de finances pour 2002 (article 21, JORT n° 104 du 28 décembre 2001, p. 4253 ; date d'effet de l'article 97, p. 4261) étend la retenue définitive aux revenus de capitaux mobiliers des fonds communs de placement en valeurs mobilières. L'article était connu par la seule note commune n° 45/2002 ; il est lu au fascicule. La documentation ne date plus de 2022 l'extension aux fonds d'amorçage et aux fonds communs de placement à risque : le code consolidé la rattache à la loi n° 2005-59 (article 5), non lue.
+  - **Nouveau nœud `retenue_source_non_residents`**, pour les retenues de l'article 52 sur des sommes servies aux non-résidents qui ne sont pas des revenus de l'épargne :
+    - `taux_remunerations` (alinéa b, troisième tiret ; alinéa c en 1990) : 15 % au 01/01/1990 (code, p. 11), au 02/01/1992 (loi de finances pour 1992, article 31, pp. 2084-2085, passage à l'alinéa b) et au 01/01/2003 (loi de finances pour 2003, article 47, p. 2881 : la retenue vise désormais toutes les rémunérations et revenus des non domiciliés ni établis, et non plus les seuls revenus de l'article 3, point 6). Série incomplète : états antérieurs à 1990 non versés ;
+    - `taux_etablis_sans_declaration_existence` (paragraphe II, alinéa 4) : 15 % au 01/01/2016 (loi de finances pour 2016, article 28, édition arabe, p. 3604) ;
+    - `taux_etablis_sans_declaration_existence_regime_fiscal_privilegie` : 25 % au 01/01/2019 (loi de finances pour 2019, article 50, édition arabe, p. 5456).
+  - **Listes des pays à régime fiscal privilégié.** La documentation de `capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie` date les deux listes : décret n° 2014-3833 (JORT n° 86 du 24 octobre 2014, pp. 2811-2812), exécutoire le 01/11/2014 ; arrêté du ministre des finances du 25 mars 2019 (JORT n° 27 du 2 avril 2019, pp. 867-869), exécutoire le 08/04/2019. Ces dates ne changent pas le taux et la série n'en porte pas d'entrée.
+  - Paramètres seulement : aucune formule ne lit ces feuilles. Le test `tests/test_retenue_source_non_residents.py` couvre les trois feuilles nouvelles, et `tests/test_epargne_capital.py` la date de 2002. Ils sont écrits en Python, parce qu'un test YAML ne porte que sur des variables.
+
+### 0.147.1 - [#507](https://github.com/openfisca/openfisca-tunisia/pull/507)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 02/05/2019 au 04/05/2019.
+* Zones impactées : `parameters/retraite/cnrps/bonifications/cadre_actif/age_terme_article_32`.
+* Détails :
+  - **Date du passage de 60 à 62 ans du terme de la période bonifiable (article 32, paragraphes 2 et 3, de la loi n° 85-12) : 05/05/2019 au lieu du 02/05/2019.**
+  - La loi n° 2019-37 (article 2, JORT n° 35 du 30 avril 2019, p. 1313) n'a pas de clause d'effet. La note appliquait la règle d'avant 1993 (un jour franc après la publication). Depuis la loi n° 93-64 (article 2), une loi est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, jour du dépôt non compté : dépôt le 30 avril 2019 (dernière page du fascicule), effet le 5 mai 2019.
+  - Aucune formule ne lit ce paramètre : aucun résultat de calcul ne change.
+
+## 0.147 - [#506](https://github.com/openfisca/openfisca-tunisia/pull/506)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1993 ; paramètres nouveaux.
+* Zones impactées : `parameters/sante/tarifs_hospitaliers` (nouveau sous-arbre `sante`), `sous_ensembles`.
+* Détails :
+  - **Nouveau sous-arbre `sante`**, lu par le système fiscal seul (`SOUS_ARBRES_FISCAL`). Il porte les tarifs des structures sanitaires publiques relevant du ministère de la santé publique : 84 feuilles. Paramètres seulement : aucune formule ne les lit.
+  - **`malades_payants`**, tarifs des malades que ne couvrent ni la gratuité, ni les tarifs réduits, ni une convention :
+    - consultations (médecine générale et dentaire, spécialité selon le grade) et journée d'hospitalisation par catégorie d'établissement et groupe de spécialités : arrêté du 25 janvier 1993 (articles 2 et 4, p. 201), au 07/02/1993 ; arrêté du 19 décembre 1996 (articles 2 et 4, pp. 2553-2554), au 04/01/1997. Par exemple, médecine générale 5 → 7 dinars, réanimation universitaire 30 → 60 dinars ;
+    - majorations (médecin choisi, chambre particulière : 50 %), accompagnant (2/3 ; 1/2 sur indication médicale depuis 1997), hospitalisation de jour (75 %, depuis 1997), réduction conventionnelle plafonnée à 15 % (article 14 de 1996) ;
+    - lettres clés : 15 valeurs de l'article 10 de 1996, au 04/01/1997, et de l'article 10 nouveau (arrêté du 7 juillet 2008, pp. 2077-2078), au 17/07/2008 : la lettre Ri disparaît, rattachée à KC, l'échographie (E, 3,600 dinars) entre, avec dix prix par cotation de scanographie (S 10 à S 40) et de résonance magnétique (I 3 à I 25) ;
+    - forfaits d'actes de l'article 11 : hémodialyse, lithotripsie, résonance magnétique (close au 17/07/2008 par l'article 2 de l'arrêté de 2008), accouchement normal et par césarienne, scanner, au 04/01/1997, repris par l'arrêté du 17 avril 1998 (p. 874), au 04/05/1998, qui ajoute la fécondation in vitro (250 dinars) et l'insémination (50 dinars) ; correction des troubles réfractifs au laser (arrêté du 29 janvier 2003, p. 331), au 10/02/2003.
+  - **`tarifs_reduits`** :
+    - montants par consultation externe et par hospitalisation : décret n° 93-529 (article premier, p. 362), au 01/01/1993, date énoncée par son article 5 ; décret n° 94-1738 (articles 2 à 4, p. 1385), au 06/09/1994 ; clos au 08/03/1998 ;
+    - depuis le 08/03/1998, décret n° 98-409 (articles 17, 18, 21 et 22, p. 407) : taux de la consultation (20 à 30 % du tarif des malades payants), actes à 20 % plafonnés à 30 dinars, hémodialyse à 1 dinar la séance, prothèses à 20 % plafonnées à 50 dinars, accompagnants (1/2 et 1/3), arrondi à la tranche de 500 millimes. Les montants en dinars de 1998 ne sont pas versés : le décret ne les écrit pas.
+  - **Dates.** Seul le décret n° 93-529 porte une clause d'effet. L'arrêté de 1993, antérieur à la loi n° 93-64, est exécutoire un jour franc après sa publication du 5 février 1993. Les autres textes le sont cinq jours après le dépôt du fascicule au gouvernorat de Tunis, dépôt lu sur chaque fascicule : 1er septembre 1994, 30 décembre 1996, 3 mars 1998, 29 avril 1998, 5 février 2003, 12 juillet 2008.
+  - **Séries incomplètes** : tarifs des malades payants avant 1993 (arrêté du 13 décembre 1990, que l'arrêté de 1993 abroge) ; tarifs réduits avant 1993, dont le texte antérieur n'est pas identifié ; lettres clés et forfaits avant 1997.
+  - Le test `tests/test_sante_tarifs_hospitaliers.py` couvre les 84 feuilles : valeur la veille et le jour de chaque date, référence, unité, note des séries incomplètes, forme du sous-arbre. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.146 - [#505](https://github.com/openfisca/openfisca-tunisia/pull/505)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 04/08/1997 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_indirecte/accises/bieres_vins_alcools`, `parameters/fiscalite_indirecte/accises/index.yaml`, `units.yaml`.
+* Détails :
+  - **Verse le tarif du droit de consommation sur les bières, vins, alcools et boissons alcoolisées (positions 22-03 à 22-08)** : 25 feuilles dans 6 nœuds nouveaux sous `accises/bieres_vins_alcools`. Paramètres seulement : rien ne les lit.
+  - **Textes et dates.** Annexes I à III du décret n° 97-1368 (JORT n° 59 de 1997, p. 1316), exécutoire le 04/08/1997 ; décret n° 2013-929 (pp. 674-675), le 21/02/2013 ; annexe unique du décret gouvernemental n° 2015-1768 (p. 2722), le 24/11/2015. Ces trois décrets n'ont pas de clause d'effet : ils sont exécutoires cinq jours après le dépôt du fascicule au gouvernorat de Tunis (loi n° 93-64, article 2) ; pour 1997, dépôt le 30 juillet selon l'édition arabe, l'édition française portant « 24 juillet ». Tableaux annexés à la loi n° 88-62 par les lois de finances pour 2016 (article 44, au 01/01/2016 selon l'article 92) et 2018 (article 45, au 01/01/2018 selon l'article 67) ; article 20 de la loi de finances pour 2021 (au 01/01/2021 selon l'article 42).
+  - **Bières (`bieres`)** : par récipient en 1997 et 2013, sept tranches de contenance (récipient de 0,661 à 1 litre : 1,200 puis 2,040 dinars), bière à pression (0,780 puis 1,330 D/l) et en vrac (0,610 puis 1,040 D/l), closes au 24/11/2015 ; `par_centilitre`, nouvelle unité `currency/cl` : 0,018 dinar au 24/11/2015, 0,024 au 01/01/2021.
+  - **Vins (`vins`)** : en vrac livrés aux embouteilleurs, 5 puis 7,5 D/hl ; mousseux, 16 puis 24 dinars la bouteille ; vins de liqueur, mistelles et moûts, 2,5 puis 3,75 dinars ; autres vins par bouteille en 1997 et 2013, quatre tranches (0,751 à 1 litre : 1,200 puis 1,800 dinars), closes au 24/11/2015 ; `autres_vins_par_litre` : 1,8 D/l au 24/11/2015, 2,4 au 01/01/2021.
+  - **Taux ad valorem** : vermouths, 200 % en 1997, 50 % en 2015, 100 % en 2018 ; autres boissons fermentées, 25 % ; eaux-de-vie, whiskies et spiritueux non classés, classés, pastis et anisette : 683, 648, 395 et 597 % en 1997, 50 % en 2015, 100 % en 2018. Le décret de 2013 laisse ces positions « sans modification » : pas d'état en 2013.
+  - **Alcool éthylique de bon goût destiné aux boissons alcoolisées** : 380 D/hl en 1997, 570 en 2013.
+  - **Vins mousseux, loi de finances pour 2016** : l'édition arabe porte 24,000 dinars (p. 3609), l'édition française 4,000 (p. 3150). La valeur versée est celle de l'édition arabe, seule officielle (loi n° 93-64, article premier) ; l'écart est consigné dans la note de la référence.
+  - **Série incomplète** : états antérieurs à 1997 non versés (loi n° 88-62, décret n° 91-551, décret n° 93-2090). Non versés non plus : les quatre autres lignes de la position 22-07 (récrites par le décret n° 2002-627), les préparations alcooliques (Ex 21-06, Ex 22-08, Ex 33-02), la capsule fiscale sur les vins.
+  - Le test `tests/test_droit_consommation_boissons_alcoolisees.py` couvre les 25 feuilles : valeur la veille et le jour de chaque date, référence, unité, forme du sous-arbre. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.145 - [#504](https://github.com/openfisca/openfisca-tunisia/pull/504)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2025.
+* Zones impactées : `parameters/prestations/non_contributives/allergie_gluten`, `parameters/prestations/non_contributives/xeroderma_pigmentosum`, `variables/prestations/non_contributives/aides_categorielles`.
+* Détails :
+  - **Paramètre nouveau `allergie_gluten`** : allocation mensuelle par personne pour les dépenses alimentaires des personnes allergiques au gluten des familles pauvres et à revenu limité inscrites au programme Amen social. 30 dinars au 01/01/2025 (loi de finances pour 2025, articles 26 et 84, JORT n° 149 du 10 décembre 2024, p. 3427 et p. 3456 de l'édition française, p. 6425 et p. 6453 de l'édition arabe) ; 130 dinars au 01/01/2026 (loi de finances pour 2026, articles 35 et 110, JORT n° 148 du 12 décembre 2025, édition arabe seule, p. 4238 et p. 4258). Dates énoncées par les lois.
+  - **Paramètre nouveau `xeroderma_pigmentosum`** : allocation mensuelle par personne pour une partie des frais d'équipements de protection, 130 dinars au 01/01/2026 (loi de finances pour 2026, articles 35 et 110).
+  - Les arrêtés conjoints du 30 juillet 2025 (JORT n° 99, p. 1977) et du 14 juillet 2026 (JORT n° 70, pp. 1327-1328, exécutoire le 19/07/2026) fixent les conditions et la procédure, non les montants ; ils sont décrits dans la documentation des deux paramètres.
+  - **Variables d'entrée nouvelles** (individu, mensuelles, fausses par défaut) : `allergie_gluten`, `xeroderma_pigmentosum`, `couverture_sociale_legale`.
+  - **Variables calculées nouvelles** : `menage_amen_social_pauvre_ou_revenu_limite` (carte AMG1 ou AMG2) ; `allocation_allergie_gluten` (à partir de janvier 2025) ; `allocation_xeroderma_pigmentosum` (à partir de janvier 2026, réservée à partir d'août 2026 aux personnes sans régime légal de couverture sociale, premier mois qui commence après le 19/07/2026). Aucun agrégat existant ne les additionne : aucun résultat existant ne change.
+  - Tests : `tests/formulas/prestations/non_contributives/`, bornes 12/2024, 01/2025, 12/2025, 01/2026, 07/2026 et 08/2026.
+
+## 0.144 - [#503](https://github.com/openfisca/openfisca-tunisia/pull/503)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 30/01/2022 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/temps_travail/travail_domestique`.
+* Détails :
+  - **Verse le travail domestique de la loi n° 2021-37 du 16 juillet 2021** : nœud nouveau `temps_travail/travail_domestique`, 17 feuilles dans 4 sous-nœuds, au 30/01/2022 (JORT n° 68 du 30 juillet 2021, pp. 2007-2008).
+    - `duree` : 48 heures par semaine et 10 heures par jour, heures supplémentaires comprises, chez un seul employeur (article 13) ; 8 heures par jour, 10 avec les heures supplémentaires, chez des employeurs multiples (article 19), sans limite hebdomadaire que la loi fixe pour eux ; pause déjeuner d'une heure dans les deux cas.
+    - `conge_annuel` : 1 jour par mois de travail effectif, 15 jours au plus dont 12 ouvrés ; 1,5 jour par mois, 22 jours au plus dont 18 ouvrés, de 18 à 20 ans, âge apprécié au 31 décembre (article 14). La loi écrit « jours ouvrés », là où le code du travail écrit « jours ouvrables » : feuilles `plafond_jours_ouvres_*`, distinctes de `conge_annuel/plafond_jours_ouvrables`.
+    - `conges_evenements_familiaux` : décès du conjoint, du père, de la mère ou d'un enfant, 3 jours ; d'un frère, d'une sœur, d'un petit-enfant ou d'un grand-parent, 2 jours ; mariage du travailleur, 7 jours ; circoncision d'un enfant, 1 jour ; mariage d'un enfant, 2 jours (article 14). Le congé de paternité renvoie à la législation (article 15) : `conge_paternite/`.
+    - `regime_salaire_minimum` : le salaire ne peut être inférieur au salaire minimum garanti « au régime de 48 heures de travail par semaine » (article 11).
+  - **Date d'effet.** L'article 29 fait entrer la loi en vigueur « dans un délai de six mois à compter de sa publication » ; le JORT n° 68 est daté du 30 juillet 2021 et déposé le même jour. Six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue ; le 31 janvier 2022 si le jour de la publication n'est pas compté. Le calcul est écrit dans la note de chaque feuille.
+  - **Non versé** : la majoration des heures supplémentaires du travail domestique, que la loi ne fixe pas (le code du travail s'applique, article 4) ; le salaire minimum applicable, que l'article 11 renvoie aux secteurs ; les congés de maternité et d'allaitement (article 15), renvoyés à la législation.
+  - Aucune formule ne lit ces feuilles. Le test `tests/test_travail_domestique.py` les couvre : valeur la veille et le jour de la date d'effet, référence (article, page, calcul de la date), unité, forme du nœud ; `tests/test_temps_travail.py` laisse ce nœud à ce test.
+
+## 0.143 - [#502](https://github.com/openfisca/openfisca-tunisia/pull/502)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/06/1973 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/rupture_contrat/periode_essai`.
+* Détails :
+  - **Verse la période d'essai de la convention collective cadre** sous `periode_essai/convention_cadre/` : `duree_maximale`, 3 mois, et `renouvellements_maximum`, 1 (un « deuxième et dernier essai pour une même période »), au 01/06/1973 (convention du 20 mars 1973 agréée par l'arrêté du 29 mai 1973, article 10, JORT n° 21 des 25-29 mai-1er juin 1973, p. 854 ; entrée en vigueur à l'article 52, p. 859). Aucun texte lu ne clôt la clause : les avenants n° 1 à 3 ne touchent pas l'article 10. La clause n'est pas rangée sous `conventions_collectives/`, dont le générateur du précis lit chaque sous-nœud comme une branche à grilles de salaires : elle vit à côté de la règle légale qu'elle précède, comme `temps_travail/convention_cadre/`.
+  - **Feuille nouvelle `periode_essai/delai_notification_rupture`** : 15 jours au 24/05/2025 (loi n° 2025-9, article 1er, article 6-3 nouveau, deuxième alinéa, JORT n° 61 du 23 mai 2025, p. 1675 de l'édition arabe) ; le texte ne tranche pas entre un préavis dû à l'autre partie et un délai de notification avant le terme de l'essai, la documentation de la feuille le dit.
+  - **Documentation** du nœud `periode_essai` et de `rupture_contrat` : la clause de 1973 n'est plus « non versée ». Le délai-congé et le calcul de l'indemnité de licenciement, que la convention renvoie aux conventions de branche, restent hors de l'arbre.
+  - Aucune formule ne lit ces feuilles. `tests/test_rupture_contrat.py` les couvre : valeur la veille et le jour de chaque date, référence, unité, forme du nœud, et la période d'essai de la loi et de la convention à cinq dates repères.
+
+
+
+## 0.142 - [#501](https://github.com/openfisca/openfisca-tunisia/pull/501)
+
+* Amélioration technique.
+* Zones impactées : `uv.lock`.
+* Détails :
+  - **`certifi` passe à 2026.10.19**, version qui retire la racine emSign de l'autorité eMudhra (incident de sécurité de 2026).
+  - Aucune valeur, aucune date, aucun résultat ne change.
+
+## 0.141 - [#500](https://github.com/openfisca/openfisca-tunisia/pull/500)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux.
+* Zones impactées : `parameters/impot_revenu/capitaux_mobiliers`, `parameters/impot_revenu/valeurs_mobilieres`.
+* Détails :
+  - **Complète les nœuds de la 0.137** : 16 feuilles nouvelles, dont trois sous `capitaux_mobiliers/retenue_source` et quatre nœuds nouveaux. Paramètres seulement : aucune formule ne les lit.
+  - **`capitaux_mobiliers.retenue_source`** :
+    - `taux_definitif_organismes_exoneres` (article 52, II-2, personnes morales exonérées, puis fonds) : 20 % au 02/01/1992 (loi de finances pour 1992, article 31, p. 2085), vide au 01/01/2021 (loi de finances pour 2021, article 17, p. 3130), 20 % au 01/01/2022 (décret-loi n° 2021-21, article 38, p. 3090).
+    - `taux_comptes_epargne_emprunts_obligataires` : 15 % libératoire, et `taux_complementaire_retrait_epargne_emprunts_obligataires` : 10 % en cas de retrait, du 02/01/1992 (loi de finances pour 1992, article 33, p. 2085) au 31/12/1996 (loi de finances pour 1997, article 33, p. 2581).
+  - **Nœud nouveau `capitaux_mobiliers.non_residents`** :
+    - `taux_revenus_capitaux_mobiliers`, libératoire : 15 % au 01/01/1990 (code, article 52, p. 11) et au 02/01/1992 (loi de finances pour 1992, article 31), 20 % au 01/01/1997 (loi de finances pour 1997, articles 31 et 32). Série incomplète : états antérieurs à 1990 non versés.
+    - `taux_interets_prets_banques_non_etablies` (alinéa e) : 2,5 % au 01/01/1995 (loi de finances pour 1995, article 54, p. 2046), 5 % au 01/01/2011 (loi de finances pour 2011, article 43, p. 3476), 10 % au 01/01/2018 (loi de finances pour 2018, article 47, p. 4286).
+    - `taux_etats_regime_fiscal_privilegie` : 25 % au 01/01/2014 (loi de finances pour 2014, article 44, p. 3677 : « paradis fiscaux », liste fixée par décret) et au 01/01/2019 (loi de finances pour 2019, article 35, édition arabe, pp. 5449-5450 : pays ou territoire à régime fiscal privilégié, impôt inférieur à 50 % de l'impôt tunisien, liste fixée par arrêté du ministre des finances).
+  - **Nœud nouveau `valeurs_mobilieres.jetons_presence`** : `taux_retenue_source`, 15 % au 01/01/1995 (loi de finances pour 1995, articles 50 et 52, p. 2046), 20 % au 01/01/2005 (loi de finances pour 2005, article 69, pp. 3442-3443), 20 % au 01/01/2017 (loi de finances pour 2017, article 30, p. 3837 : rémunérations des membres des conseils, directoires et comités).
+  - **Nœud nouveau `valeurs_mobilieres.plus_value_cession_titres.actions_cotees`** (article 38, point 17) : `taux_detention_longue`, 0 au 01/01/2004 (loi de finances pour 2004, article 63, p. 3730) et au 01/01/2011 (loi de finances pour 2011, article 41, pp. 3474-3475) ; `taux_detention_courte`, 0 au 01/01/2004, 10 % au 01/01/2011, 10 % au 01/01/2023 (décret-loi n° 2022-79, article 42, édition arabe, p. 4068) ; `annees_detention`, 1 année civile suivant celle de l'acquisition au 01/01/2011. Ces trois feuilles permettent d'engendrer le tableau des actions cotées du précis.
+  - **Nœud nouveau `valeurs_mobilieres.plus_value_cession_titres.non_residents`** : retenue sur le prix de cession en 2011, 5 % (personnes morales) et 2,5 % (personnes physiques) (loi de finances pour 2011, articles 41 et 43), closes au 01/01/2012 ; retenue sur la plus-value (alinéa e bis) à partir du 01/01/2012 (loi de finances pour 2012, article 15, p. 5) : personnes morales 30 %, 25 % au 01/01/2014 (loi de finances pour 2014, article 18, p. 3670), 15 % au 01/01/2021 (loi de finances pour 2021, article 14, p. 3127), 20 % au 01/01/2025 (loi de finances pour 2025, article 37, p. 3431) ; personnes physiques 10 % ; plafonds de 5 % et 2,5 % du prix au 25/05/2012 (loi de finances complémentaire pour 2012, article 12, p. 923).
+  - **Dates.** La loi de finances complémentaire pour 2012 n'a pas de clause d'effet ; le fascicule est déposé le 19 mai 2012 et les notes communes n° 14/2012, 16/2012 et 25/2012 fixent son entrée en vigueur au 25 mai 2012, date retenue. Les autres dates sont énoncées par les textes ; celles de la loi de finances pour 1992 suivent la 0.137.
+  - **Non versé** : la retenue de 15 % sur les rémunérations de l'article 3, point 6 (redevances) servies aux non-résidents, qui ne sont pas des revenus de capitaux mobiliers ; l'extension de la retenue définitive aux fonds communs de placement par la loi de finances pour 2002 (articles 21 à 28, connus par la note commune n° 45/2002, non relus au fascicule) ; les exonérations de plus-value des SICAV, des fonds et des SICAR.
+  - Le test `tests/test_epargne_capital.py` couvre les 16 feuilles nouvelles : valeur la veille et le jour de chaque date, référence, unité, forme des nœuds. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.140 - [#499](https://github.com/openfisca/openfisca-tunisia/pull/499)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : résultats du 01/01/2000 au 31/12/2016 et du 01/01/2020 au 31/12/2020 ; paramètres seuls à partir du 01/01/1990.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/irpp`, `parameters/impot_revenu/deductions/cea_cei`, `parameters/impot_revenu/deductions/assurance_vie`, `parameters/impot_revenu/deductions/interets_comptes_epargne_investissement`, `parameters/impot_revenu/deductions/interets_comptes_speciaux_epargne_cent` (supprimé), `parameters/impot_revenu/deductions/interets_comptes_speciaux_epargne_bancaires`, `parameters/impot_revenu/deductions/interets_emprunts_obligataires`.
+* Détails :
+  - **Compte épargne en actions (`cea_cei/cea`)** : 0 dinar en 1990, 50 000 au 01/01/2001 et 100 000 au 01/01/2021 → 5 000 dinars au 26/08/1999 (loi n° 99-92, article 4, JORT n° 67 du 20 août 1999, p. 1463 ; exécutoire cinq jours après le dépôt du 21 août 1999), 20 000 au 01/01/2003 (loi de finances pour 2004, article 45, p. 3727 ; revenus 2003 selon la note commune n° 16/2004), 50 000 au 25/04/2011 (décret-loi n° 2011-28, article 4, JORT n° 27 du 19 avril 2011, p. 488 ; dépôt le 20 avril), 100 000 au 01/01/2020 (loi de finances pour 2021, article **16** et non 24, p. 3129 ; revenus 2020 selon la note commune n° 1/2021).
+  - **Feuille nouvelle `cea_cei/cea_quote_part`** : la moitié des dépôts est déductible au 26/08/1999, la totalité au 01/01/2003 (loi de finances pour 2004, article 45, qui supprime la limite de 50 %). La déduction du CEA est désormais `min(quote-part × dépôts, plafond)` : un dépôt de 8 000 dinars en 2000 donne 4 000 dinars, et non 8 000 sous un plafond de 50 000.
+  - **Compte épargne pour l'investissement (`cea_cei/cei`)** : 0 dinar en 1990, 50 000 au 01/01/2003, sans référence → 20 000 dinars au 01/01/2003 (loi de finances pour 2003, article 21, pp. 2877-2878 ; article 87), 50 000 au 01/01/2017 (loi de finances pour 2018, article 27, p. 4275 ; note commune n° 2/2018).
+  - **Intérêts exonérés du CEI (`interets_comptes_epargne_investissement/plaf`)** : 2 000 dinars dès 1990, sans référence → 2 000 au 01/01/2003 (loi de finances pour 2003, article 22, p. 2878), 4 000 au 01/01/2017 (loi de finances pour 2018, article 27, paragraphe 2). Aucune formule ne lit ce paramètre.
+  - **Assurance-vie (`assurance_vie/plaf`, `conj_plaf`, `enf_plaf`)** : le plafond unique de 10 000 dinars, et la suppression des majorations pour conjoint et enfants, passent du 01/01/2013 (loi de finances pour 2014, article 24) au 01/01/2011 : ils viennent de la loi de finances complémentaire pour 2012, article 42 (JORT n° 39 du 18 mai 2012, p. 929), que la note commune n° 25/2012 applique aux déclarations échues à partir du 25 mai 2012, soit les revenus de 2011.
+  - **Supprime `interets_comptes_speciaux_epargne_cent`.** Sa seule valeur, 1 000 dinars dès 1990, n'avait pas de référence et ne peut pas en avoir : en 1990 et 1991, les intérêts des livrets de la Caisse d'épargne nationale sont exonérés (article 38, point 7, du code), et à partir de 1992 ils entrent dans le sous-plafond commun aux comptes des banques et de la Caisse (loi de finances pour 1992, article 30), porté par `interets_comptes_speciaux_epargne_bancaires`. Aucune formule ne le lisait. Même traitement que `af/plancher_trim` en 0.106.
+  - **Article 39, paragraphe II** : les références de 2016 et de 2021 des deux plafonds (`interets_comptes_speciaux_epargne_bancaires`, `interets_emprunts_obligataires`) reçoivent fascicule, page, extrait et lien (loi de finances pour 2017, article 13, JORT n° 105 du 27 décembre 2016, p. 3831 ; loi de finances pour 2022, article 24, JORT n° 119 du 28 décembre 2021, p. 3086), celle de 1992 son lien. Valeurs inchangées.
+  - **Formules datées.** `deduction_cea` commence au 26/08/1999 et `deduction_cei` au 01/01/2003 : avant, elles valent 0 sans lire de paramètre, ce qui permet aux séries de commencer à la création des comptes.
+  - **Résultats qui changent** :
+    - CEA, revenus 2000 : 0 → la moitié des dépôts dans la limite de 5 000 dinars ; revenus 2001 et 2002 : les dépôts dans la limite de 50 000 dinars → la moitié des dépôts dans la limite de 5 000 dinars.
+    - CEA, revenus 2003 à 2010 : plafond de 50 000 → 20 000 dinars ; revenus 2011 : 50 000 → 20 000 (le décret-loi est exécutoire le 25 avril, et le calcul annuel lit le paramètre au 1er janvier) ; revenus 2020 : 50 000 → 100 000.
+    - CEI, revenus 2003 à 2016 : plafond de 50 000 → 20 000 dinars.
+    - Assurance-vie, revenus 2011 et 2012 : plafond majoré (1 200 dinars, plus 600 pour le conjoint et 300 par enfant) → plafond unique de 10 000 dinars.
+  - **Tests.** `tests/formulas/impot_revenu/minimum_impot.yaml` (revenus 2020) : `deduction_cea` 50 000 → 100 000 et `revenu_net_imposable` 50 000 → 0, valeurs du texte (note commune n° 1/2021) ; l'impôt reste au minimum de 13 770 dinars. `tests/test_deductions_epargne.py` : les majorations d'assurance-vie sont closes dès 2011, et non 2013. Nouveaux cas : `tests/formulas/impot_revenu/deduction_cea_cei.yaml` (15 cas aux bornes de 1999, 2000, 2002, 2003, 2011, 2012, 2019, 2020 pour le CEA ; 2002, 2003, 2016, 2017 pour le CEI) et quatre cas d'assurance-vie (2010, 2011, 2019, 2020).
+
+
+
+## 0.139 - [#498](https://github.com/openfisca/openfisca-tunisia/pull/498)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1966 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/temps_travail`, `units.yaml`.
+* Détails :
+  - **Verse la durée du travail, la majoration des heures supplémentaires, le congé annuel payé, les jours fériés payés et le congé de paternité du code du travail**, avec les jours fériés de la convention collective cadre dans un nœud distinct : 42 feuilles dans 14 nœuds nouveaux. Paramètres seulement : rien ne les lit encore.
+  - **`duree`** : 48 heures par semaine au plus (article 79, 01/05/1966 ; article 79 nouveau, 31/07/1996) ; réduction jusqu'à 40 heures, par décret puis par convention ou texte réglementaire (article 80, puis article 79 nouveau) ; 9 heures par jour du 01/05/1966 au 30/07/1996, condition que l'article 79 nouveau ne reprend pas ; 60 heures par semaine, heures supplémentaires comprises (article 93) ; présence de 64 heures au plus (article 82 nouveau, 31/07/1996) ; agriculture, 2 700 heures par an pour 300 jours (article 88) ; temps partiel, 70 % de la durée normale au plus (article 94-2, 31/07/1996).
+  - **`heures_supplementaires`** : régime de 48 heures, 75 % (article 90, 1966 et 1996) ; régime de 40 heures, de 1966 au 30/07/1996, 25 % au moins pour les huit premières heures supplémentaires et 50 % au-delà ; régimes à plein temps inférieurs à 48 heures, depuis le 31/07/1996, 25 % jusqu'à 48 heures et 50 % au-delà ; temps partiel, 50 % (31/07/1996) ; agriculture, 25 % (article 94).
+  - **`conge_annuel`** : 1, 2 et 1,5 jour par mois pour les adultes, les moins de 18 ans et les 18-20 ans ; plafonds de 12, 24 et 18 jours ouvrables, et de 15, 30 et 22 jours (article 113 ; rectificatif du JORT n° 37 de 1966, p. 1298, pour la borne de 20 ans ; article 113 nouveau) ; un jour ouvrable par cinq ans de services, dans la limite de 18 jours ouvrables au total (article 115) ; mois de travail effectif de 24 jours, puis de 26 jours ouvrables (article 114 nouveau) ; indemnité égale au 1/24, au 1/12 et au 1/16 de la rémunération de la période jusqu'au 30/07/1996 (article 119), versée en diviseurs.
+  - **`jours_feries`** : nombre et liste des jours de l'article 445 — 4 au 01/05/1966, 5 au 05/06/1988 (loi n° 88-55), 6 depuis mars 1991 (loi n° 91-15), composition modifiée au 16/06/2011 (décret-loi n° 2011-51) et au 15/12/2021 (décret-loi n° 2021-11) ; indemnité du jour férié travaillé égale au salaire (article 109).
+  - **`conge_paternite`** : 1 jour, à prendre dans les 7 jours (article 122, 1966) ; 7 jours, 10 jours dans les cas majorés, 3 jours pour un enfant mort-né, à prendre dans les 30 jours (loi n° 2024-44, article 5, 13/08/2024).
+  - **`convention_cadre`** : 7 jours fériés au 01/06/1973 (article 29 ; entrée en vigueur à l'article 52), 9 au 17/11/1984 (avenant n° 1), 9, liste refondue, au 15/10/1992 (avenant n° 2) ; majoration de 100 % du jour férié travaillé.
+  - **Dates.** Le code entre en vigueur le 1er mai 1966 (loi n° 66-27, article premier). La loi n° 96-62 est exécutoire le 31/07/1996 : dépôt du JORT au gouvernorat de Tunis le 26 juillet 1996, plus cinq jours (loi n° 93-64, article 2). La loi n° 88-55 l'est un jour franc après sa publication du 3 juin 1988 ; le décret-loi n° 2011-51 cinq jours après le dépôt du 11 juin 2011 ; le décret-loi n° 2021-11 et la loi n° 2024-44 le lendemain de leur publication électronique (décret-loi n° 2020-1, article 2). Les avenants de la convention cadre sont datés de leur signature, date d'entrée en vigueur qu'ils énoncent.
+  - **Loi n° 91-15.** Le fascicule porte deux dates, « 1er et 5 mars 1991 » : la loi est exécutoire le 3 ou le 7 mars. Les jours fériés légaux sont vides du 03/03/1991 au 06/03/1991, et valent 6 à partir du 07/03/1991, premier jour où la loi est en vigueur dans les deux hypothèses.
+  - **Ce qui n'est pas versé** : le congé annuel des activités agricoles (articles 123 et 124) ; les dérogations de l'article 83 ; le repos hebdomadaire ; le travail domestique (loi n° 2021-37) ; les congés pour événements familiaux de la convention cadre ; le décret-loi n° 2020-2, qui suspend et remplace pendant le confinement les premiers alinéas des articles 92 et 117.
+  - Un test nouveau, `tests/test_temps_travail.py`, lit chaque feuille la veille et le jour de chaque date, et l'état du droit à onze dates repères ; il contrôle références, unités et forme du sous-arbre. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Deux unités nouvelles dans `units.yaml` : `diviseur` et `jour_ferie`.
+
+## 0.138 - [#497](https://github.com/openfisca/openfisca-tunisia/pull/497)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1966 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/rupture_contrat`, `units.yaml`.
+* Détails :
+  - **Verse les grandeurs chiffrées de la rupture du contrat de travail dans le secteur privé** : un nœud nouveau, six sous-nœuds, 14 feuilles, 20 valeurs dont 3 clôtures. Paramètres seulement : rien ne les lit encore.
+  - **`preavis`** : `duree`, 1 mois au 01/05/1966 pour les salariés payés au mois (code du travail, article 14, JORT n° 20 des 3-6 mai 1966, p. 718 ; entrée en vigueur au 1er mai 1966 fixée par l'article premier de la loi n° 66-27), 1 mois pour tous au 01/03/1994 (loi n° 94-29, article 14 bis, JORT n° 15 du 22 février 1994, p. 318) ; `duree_salaries_non_mensuels`, 8 jours au 01/05/1966, vide au 01/03/1994.
+  - **`gratification_fin_service`** (article 22, « indemnité de licenciement » jusqu'en 1994) : `jours_par_mois_service`, 1 jour de salaire par mois de service, et `plafond`, 3 mois de salaire, aux 01/05/1966 (p. 719) et 01/03/1994 (p. 319) ; `anciennete_minimale`, 6 mois de services au 01/05/1966, vide au 01/03/1994 (la gratification est due après la période d'essai).
+  - **`dommages_interets`** (article 23 bis, 01/03/1994, p. 319) : 1 à 2 mois de salaire par année d'ancienneté, plafond de 36 mois (« le salaire de trois années ») ; 1 à 4 mois pour un licenciement fondé sur une cause réelle et sérieuse mais irrégulier en la forme.
+  - **`contrat_duree_determinee.duree_maximale_hors_cas_recours`** : 48 mois au 31/07/1996 (loi n° 96-62, article 6-4, paragraphe 2, JORT n° 59 du 23 juillet 1996, p. 1579), vide au 24/05/2025 (loi n° 2025-9, articles 6-2 et 6-4 nouveaux, édition arabe, p. 1675).
+  - **`periode_essai`** : `duree_maximale`, 6 mois, et `renouvellements_maximum`, 1, au 24/05/2025 (article 6-3 nouveau).
+  - **`entreprises_prestataires.garantie_financiere`** : 20 % du montant du contrat au 24/09/2025 (arrêté du ministre des affaires sociales du 23 septembre 2025, article 2, JORT n° 117, édition arabe, p. 2836).
+  - **Dates.** 1966 : clause énoncée. 1994 et 1996 : cinq jours après le dépôt au gouvernorat de Tunis (24 février 1994, 26 juillet 1996), le jour du dépôt non compté (loi n° 93-64, article 2). 2025 : lendemain de la publication électronique (décret-loi n° 2020-1, article 2), fascicules des 23 mai et 23 septembre 2025. Pour les deux textes de 2025, l'édition arabe fait foi ; l'édition française, « traduction française pour information », est citée dans la note.
+  - **Série à fenêtre.** Les séries commencent à l'institution de la règle dans le code du travail (1966) ou à la loi qui l'introduit : aucune ne porte de note d'incomplétude.
+  - **Unités nouvelles** dans `units.yaml` : `day/month` (jours de salaire par mois de service) et `month/year` (mois de salaire par année d'ancienneté).
+  - **Ce qui n'est pas versé** : les clauses des conventions collectives, dont la convention collective cadre de 1973 (période d'essai de trois mois) ; la procédure du licenciement économique ; l'indemnité transitoire de deux mois par année d'ancienneté de la loi n° 2025-9 (article 9) ; les amendes.
+  - Un test nouveau, `tests/test_rupture_contrat.py`, lit chaque feuille la veille et le jour de chaque date, et l'état du droit à sept dates repères ; il contrôle références, notes et unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.137 - [#496](https://github.com/openfisca/openfisca-tunisia/pull/496)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990 ; paramètres nouveaux.
+* Zones impactées : `parameters/impot_revenu/capitaux_mobiliers`, `parameters/impot_revenu/valeurs_mobilieres`.
+* Détails :
+  - **Verse les taux qui frappent les revenus de l'épargne et du capital d'une personne physique résidente** : 12 feuilles nouvelles dans deux nœuds nouveaux, 19 valeurs et 8 clôtures. Paramètres seulement : rien ne les lit encore.
+  - **`capitaux_mobiliers.retenue_source`** (code, article 52) :
+    - `taux_imputable` : 15 % au 01/01/1990 (code annexé à la loi n° 89-114, article 52, JORT n° 1 des 2-5 janvier 1990, p. 11) ; 15 % au 02/01/1992 (loi de finances pour 1992, article 31, pp. 2084-2085) ; 20 % au 01/01/1997 (loi de finances pour 1997, articles 30-31, p. 2581, effet à l'article 54) ; vide au 01/01/2021 ; 20 % au 01/01/2022 (décret-loi n° 2021-21, article 38, p. 3090 ; note commune n° 1/2022).
+    - `taux_liberatoire` : 20 % du 01/01/2021 au 31/12/2021 (loi de finances pour 2021, article 17, p. 3130 : retenue « définitive et non restituable », que la note commune n° 1/2022 dit libératoire).
+    - `taux_comptes_speciaux_epargne` : 10 % au 01/01/1990, 15 % au 02/01/1992 (Caisse d'épargne nationale de Tunisie comprise), vide au 01/01/1997.
+    - `taux_obligations_porteur_anonymes` : 25 % libératoire du 02/01/1992 au 31/12/1996.
+    - `taux_titres_porteur_anonymes` : 35 % libératoire au 01/01/1990 (bons de caisse au porteur) et au 02/01/1992 (autres capitaux mobiliers au porteur anonymes), vide au 01/01/1997.
+    - `taux_depots_terme` et `depots_terme_ecart_taux_marche_monetaire` : 35 % libératoire sur les dépôts à terme rémunérés au-delà du taux du marché monétaire diminué d'un point, du 10/06/2020 au 31/12/2020 (décret-loi n° 2020-30, article 12, édition arabe, p. 1410 ; entrée en vigueur à la publication, article 17, p. 1414).
+  - **`valeurs_mobilieres.revenus_distribues`** : `taux_retenue_source`, 5 % au 01/01/2015 (loi de finances pour 2014, article 19, p. 3670), 10 % au 01/01/2018 (loi de finances pour 2018, article 46, p. 4286) ; `plafond_revenus_restitution`, 10 000 dinars au 01/01/2015 (article 19, paragraphe 6, p. 3671).
+  - **`valeurs_mobilieres.plus_value_cession_titres`** : `taux`, 10 % au 01/01/2004 (loi de finances pour 2004, articles 61-62, p. 3730) et au 01/01/2023 (décret-loi n° 2022-79, article 42, édition arabe, p. 4068) ; `taux_non_cotes_detention_courte`, 15 % au 01/01/2023 ; `franchise`, 10 000 dinars au 01/01/2004 (article 63), vide au 01/01/2023.
+  - **Dates.** La loi de finances pour 1992 n'a pas de clause d'effet : exécutoire un jour franc après sa publication du 31 décembre 1991, le 02/01/1992. Le taux de 5 % sur les revenus distribués est daté du 01/01/2015, date à laquelle l'exonération prend fin (article 19, paragraphe 3), et non du 01/01/2014 de la clause générale (article 95). Les autres dates sont énoncées par les textes.
+  - **Série à fenêtre.** `taux_imputable` et `taux_titres_porteur_anonymes` portent la note « Série incomplète : états antérieurs à 1990 non versés. » : les impôts cédulaires sur les revenus de valeurs mobilières et de créances (loi de finances pour 1968, article 13 ; loi de finances pour 1988, article 29) ne sont pas versés. Les autres feuilles commencent à leur institution.
+  - **Ce qui n'est pas versé** : les retenues sur les sommes servies aux non-résidents et la plus-value des non-résidents ; la retenue de 20 % définitive des personnes morales exonérées et des fonds ; les jetons de présence ; les comptes d'épargne-emprunts obligataires ; le taux de 25 % des États à régime fiscal privilégié ; les exonérations de la plus-value d'actions cotées.
+  - Un test nouveau, `tests/test_epargne_capital.py`, lit chaque feuille la veille et le jour de chaque date, et l'état du droit à onze dates repères ; il contrôle références, notes et unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+### 0.136.1 - [#495](https://github.com/openfisca/openfisca-tunisia/pull/495)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 02/01/1969 au 31/12/1983 ; à partir du 01/01/1984, rien ne change.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif`.
+* Détails :
+  - **Verse les barèmes successoraux de 1969 et de 1975** dans les quatre barèmes par degré de parenté : six tranches de part nette et six taux chacun.
+  - **Du 02/01/1969 au 01/01/1975** (loi n° 68-41, loi de finances pour 1969, article 14, JORT n° 55 du 31 décembre 1968, pp. 1371-1372) : tranches de 0 à 500, 500 à 1 000, 1 000 à 2 000 dinars, puis 2 000 à 6 000 et 6 000 à 12 000 pour les trois derniers degrés, 2 000 à 8 000 et 8 000 à 12 000 pour la ligne directe et les époux, enfin au-delà de 12 000. Taux : 7, 10, 11,5, 14,5, 18 et 23 % en ligne directe et entre époux ; 23 à 65 % entre frères et sœurs ; 47 à 94 % entre oncles à cousins germains ; 62 à 100 % au-delà du quatrième degré et entre non-parents.
+  - **Du 02/01/1975 au 31/12/1983** (loi n° 74-101, loi de finances pour 1975, article 29, JORT n° 80 du 31 décembre 1974, p. 2916, édition arabe p. 3221) : tranches communes de 0 à 1 000, 1 000 à 2 000, 2 000 à 3 000, 3 000 à 9 000, 9 000 à 18 000 dinars et au-delà ; taux de 6, 8, 9, 12, 15 et 18 % en ligne directe et entre époux (le premier taux, illisible sur l'édition française tramée, est lu sur l'édition arabe) ; les trois autres barèmes inchangés par rapport à 1969.
+  - **Dates.** Ni l'une ni l'autre loi ne fixe de date d'effet : exécutoires un jour franc après leur publication, les 2 janvier 1969 et 1975 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956).
+  - **Série incomplète.** Les taux anciens du tableau de 1969 (décret n° 68-104 du 20 avril 1968) ne sont pas versés ; la note de chaque barème devient « états antérieurs à 1969 non versés ».
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres ; seules les valeurs antérieures au 01/01/1984, qui étaient absentes, existent désormais. Le test `tests/test_droits_succession.py` remplace « rien avant 1984 » par « rien avant 1969 » et ajoute une table de cas aux bornes (1969-01-02, 1975-01-01, 1975-01-02, 1983-12-31).
+
+## 0.136 - [#494](https://github.com/openfisca/openfisca-tunisia/pull/494)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 02/01/1975.
+* Zones impactées : `parameters/fiscalite_indirecte/droits_enregistrement/successions`.
+* Détails :
+  - **Verse le droit d'enregistrement sur les successions**, dans un nœud nouveau `fiscalite_indirecte/droits_enregistrement`, appelé à porter les autres droits d'enregistrement.
+  - **Tarif** (`successions/tarif`) : quatre barèmes, un par degré de parenté — ligne directe et époux, frères et sœurs, oncles à cousins, au-delà du quatrième degré et non-parents. Du 01/01/1984 au 16/05/1993, six tranches de part nette, de 6 % à 85 % (loi de finances pour 1984, article 12) ; à partir du 17/05/1993, un taux unique de 5 %, 5 %, 25 % et 35 % (code des droits d'enregistrement et de timbre, article 20, numéro 16), les tranches 2 à 6 étant closes ; à partir du 17/08/1998, 2,5 % en ligne directe et entre époux (loi n° 98-73, article 8). Série incomplète : le tarif de 1975 n'est pas versé.
+  - **Abattements** (`successions/abattement`) : 2 000 dinars par enfant, ascendant à charge ou conjoint, plafonnés à 12 000 dinars, à partir du 02/01/1975 (loi de finances pour 1975, article 30 ; repris par le code, article 51, I) ; 5 000 et 30 000 dinars à partir du 17/08/1998 (loi n° 98-73, article 9). Abattement supplémentaire par héritier handicapé : 4 000 dinars à partir du 17/05/1993 (code, article 51, II), 10 000 dinars à partir du 17/08/1998 (article 10).
+  - **Habitation principale du défunt** : exonérée dans la limite de 1 000 m2 à partir du 17/05/1993 (code, article 53). **Frais funéraires** : forfait de 500 dinars à défaut de justification, à partir du 17/05/1993 (code, article 49).
+  - **Dates.** Le code fixe sa date d'effet à sa promulgation (loi n° 93-53, article 2, I). Les lois de finances pour 1975 et 1984 sont exécutoires un jour franc après leur publication ; la loi n° 98-73, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 12 août 1998.
+  - **Aucun résultat de calcul ne change.** Aucune formule ne lit ces paramètres. Un test nouveau, `tests/test_droits_succession.py`, lit les valeurs la veille et le jour de chaque date, les tranches du tarif, les références et les unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Numéro de version 0.136, la 0.135 étant prise par la #493.
+
+## 0.135 - [#493](https://github.com/openfisca/openfisca-tunisia/pull/493)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1995 ; paramètres nouveaux.
+* Zones impactées : `parameters/impot_revenu/foncier/plus_value_immobiliere`.
+* Détails :
+  - **Verse la plus-value immobilière** : 6 feuilles nouvelles, 13 valeurs. Paramètres seulement : aucune formule ne les lit.
+  - **`taux_avant_seuil`** et **`taux_apres_seuil`** : 10 % et 5 % au 17 août 1998 (loi n° 98-73, article premier, JORT n° 64 du 11 août 1998, p. 1736), 15 % et 10 % au 1er janvier 2013 (loi de finances pour 2013, article 47, paragraphes 2 et 3, p. 13 ; effet à l'article 79, p. 28). La loi n° 98-73 n'a pas de clause d'effet : elle est exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 12 août 1998 (loi n° 93-64, article 2).
+  - **`duree_detention_seuil`** : 10 ans au 17 août 1998, 5 ans au 1er janvier 2013 (loi de finances pour 2013, article 47, paragraphe 1).
+  - **`taux_retenue_source`** : 2,5 % du prix de cession déclaré au 1er janvier 1995 (loi de finances pour 1995, article 55, p. 2047 ; article 100, p. 2051) ; valeur identique au 1er janvier 2013, avec la loi de finances pour 2013 (article 46), qui récrit l'alinéa et étend la retenue aux droits sociaux des sociétés immobilières et aux fonds de commerce.
+  - **`exclusion_logement.superficie_maximum`** : 1 000 m² au 17 août 1998 (loi n° 98-73, article 3, habitation principale) ; valeurs identiques au 1er janvier 2005 (loi de finances pour 2005, article 60 : un seul local, première cession) et au 1er janvier 2014 (loi de finances pour 2014, article 47), avec leur référence.
+  - **`exclusion_logement.prix_cession_seuil`** : 500 000 dinars au 1er janvier 2023 (décret-loi n° 2022-79, article 43, édition arabe, p. 4068). L'exclusion vaut pour un prix strictement inférieur.
+  - **Série à fenêtre.** Les deux taux et la durée portent la note « Série incomplète : états antérieurs à 1998 non versés. » : l'impôt de 1977, son barème de 1981, le taux unique de 15 % de 1990 et de 1993 ne sont pas versés. La retenue (instituée en 1995), la superficie (instituée en 1998) et le prix (institué en 2023) commencent à leur institution.
+  - **Ce qui n'est pas versé** : le taux des biens hérités (5 % au 1er janvier 2005) ; le minimum d'impôt de 2,5 % du prix (1995 à 1998) ; les taux de 25 % et 50 % des lots domaniaux.
+  - Un test nouveau, `tests/test_plus_value_immobiliere.py`, lit chaque feuille la veille et le jour de chaque date et contrôle références, notes et unités. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+
+## 0.134 - [#492](https://github.com/openfisca/openfisca-tunisia/pull/492)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1997 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_locale`.
+* Détails :
+  - **Achève le versement de la fiscalité locale** : 27 feuilles nouvelles, 30 valeurs et 5 clôtures, plus une valeur ajoutée à une feuille existante. Paramètres seulement : aucune formule ne les lit.
+  - **`taxe_immeubles_batis.penalite_retard`** : `taux_mensuel`, 1,25 % par mois au 1er janvier 1997 (code, article 19), 1 % au 1er janvier 2002 (loi de finances pour 2002, article 87), 0,75 % au 1er janvier 2007 (loi de finances pour 2007, article 54), 1,25 % au 1er janvier 2023 (loi de finances pour 2023, article 59, paragraphe 7) ; `plafond_part_principal`, 1 depuis le 1er janvier 2022 (loi de finances pour 2022, article 68 : les pénalités « ne doivent pas excéder le montant de la créance en principal »). Le texte de 2022 ne touche pas au taux : aucune valeur n'est portée sur le taux à cette date. La pénalité vaut aussi pour la taxe sur les terrains non bâtis (article 34).
+  - **`taxe_immeubles_batis.degrevement_partiel`** : 25 % de la taxe pour un immeuble inoccupé une année, du 1er janvier 1997 au 31 décembre 2002 ; valeur vide au 1er janvier 2003 (loi de finances pour 2003, article 77). Le dégrèvement total, que le code énonce sans taux ni seuil, n'est pas versé.
+  - **`contribution_fonds_amelioration_habitat.taux`** : 4 % de l'assiette de la taxe sur les immeubles bâtis, immeubles d'habitation, depuis le 1er janvier 2005 (loi de finances pour 2005, article 13). Le prélèvement antérieur, régi par le décret beylical du 23 août 1956, n'est pas versé : son taux n'est pas établi.
+  - **`taxe_spectacles`** : `part_recettes_previsionnelles` (50 %, article 48) et `taux` (6 %, article 49) au 1er janvier 1997 ; `prix_entree_exonere_maximum`, 5 dinars au 7 avril 1997 (décret n° 97-530, exécutoire cinq jours après le dépôt du 2 avril 1997).
+  - **`contribution_riverains`** : `reduction_maximale`, 50 % du 1er janvier 1997 au 31 juillet 2002, valeur vide au 1er août 2002 — la loi n° 2002-76 (article 3, exécutoire cinq jours après le dépôt du 27 juillet 2002) remplace la réduction par un dégrèvement total ; `avance.minimum` et `avance.maximum`, 10 % et 30 % (article 59), bornes entre lesquelles la collectivité fixe le taux.
+  - **`droit_licence`** : `tarif_annuel.categorie_1` à `categorie_3`, 25, 150 et 300 dinars au 13 mars 1997 (décret n° 97-434) ; `retenue_budget_etat`, 10 % (article 62).
+  - **`contribution_parkings`** : `bareme_1997`, trois montants par place selon la population (100, 250, 500 dinars ; article 90 du code), clos au 1er janvier 2003 ; `bareme_2003`, neuf montants par place selon la part des places manquantes et la population (250 / 500 / 1 000 ; 375 / 750 / 1 500 ; 565 / 1 125 / 2 250 dinars ; loi de finances pour 2003, article 79). Le montant de 565 dinars, là où la progression des autres tranches donnerait 562,500, est celui des deux éditions du Journal officiel.
+  - **`taxe_etablissements.part_impot_auto_entrepreneur`** : 20 % de l'impôt sur le revenu compris dans la contribution unique de l'auto-entrepreneur, depuis le 1er janvier 2023 (loi de finances pour 2023, article 52, paragraphe 3). Avant 2023, le décret-loi n° 2020-33 dispensait l'auto-entrepreneur de la taxe (article 9 initial) : aucune valeur.
+  - **`taxe_etablissements.seuil_affectation_excedent`** : une valeur identique (100 000 dinars) est ajoutée au 1er janvier 2021, avec la référence de la loi de finances pour 2021 (article 13), qui affecte l'excédent au fonds d'appui à la décentralisation et supprime le fonds de coopération. La lecture du paramètre ne change à aucune date.
+  - **`taxe_hoteliere.part_affectee_fonds`** : valeur et date inchangées ; la description, la note et la documentation sont corrigées après lecture de la loi n° 92-122 (articles 38 et 39). Le fonds y est nommé « Fonds de Protection des zones touristiques », et la part de 50 % ne porte que sur la taxe acquittée par les hôtels des zones touristiques municipales, et non sur tout le produit de la taxe.
+  - **Ce qui n'est pas versé** : les taxes et redevances du chapitre VIII autres que les parkings, dont les tarifs sont fixés par décret (n° 98-1428, puis n° 2016-805) ou par arrêté de la collectivité ; les pénalités autres que la pénalité de retard ; les forfaits qui « comprennent » la taxe sur les établissements sans en chiffrer la part.
+  - **Dates.** Une date énoncée par le texte est reprise telle quelle. Les décrets n° 97-434 et n° 97-530 et la loi n° 2002-76 n'en énoncent pas : ils sont datés du jour où ils deviennent exécutoires, le calcul étant dans la note.
+  - **Ce qui a été lu.** À l'image, dans l'édition française : chaque taux et chaque montant versé du code de 1997 (articles 6, 19, 48, 49, 53, 59, 62 et 90), les articles 87 (2002), 77 et 79 (2003), 13 (2005) et 54 (2007) des lois de finances, le montant de 100 000 dinars de la loi de finances pour 2021, le tarif du droit de licence, le prix d'entrée du décret n° 97-530, l'article 3 de la loi n° 2002-76, les articles 38 et 39 de la loi n° 92-122 ; dans l'édition arabe : les deux passages de la loi de finances pour 2023 et le troisième cas du barème des parkings de 2003. Sur la couche texte seulement : l'article 68 de la loi de finances pour 2022, qui ne porte pas de nombre, et les clauses d'effet. Chaque note dit l'édition lue et ce qui ne l'a pas été.
+  - **Effet sur les calculs.** Aucun. `tests/test_fiscalite_locale.py` est étendu aux 27 feuilles nouvelles (forme et ordre des nœuds, comptes, lecture la veille et le jour de chaque date, les cinq clôtures, références, unités, pénalité de retard, barèmes des parkings).
+  - Aucun chemin de paramètre existant ne change, aucune unité nouvelle : cinq nœuds s'ajoutent sous `fiscalite_locale`, deux sous `taxe_immeubles_batis`, une feuille sous `taxe_etablissements`.
+
+## 0.133 - [#491](https://github.com/openfisca/openfisca-tunisia/pull/491)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1997 ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_locale/taxe_etablissements`, `parameters/fiscalite_locale/taxe_hoteliere`.
+* Détails :
+  - **Verse les chapitres III et IV du code de la fiscalité locale** — taxe sur les établissements à caractère industriel, commercial ou professionnel, et taxe hôtelière —, que la version 0.125 avait laissés dehors : 26 feuilles, 60 valeurs et 3 clôtures, toutes à partir du code de 1997. Rien n'est versé pour les lois du 14 mai 1975.
+  - **`taxe_etablissements.taux`**, une feuille par assiette : `chiffre_affaires_brut_local` (0,2 %, du 1er janvier 1997 au 31 décembre 2013), `chiffre_affaires_brut` (0,2 % depuis le 1er janvier 2014), `exportation_et_non_residents` (0,1 % depuis le 1er janvier 2014), `produits_prix_homologues` (0,1 % depuis le 1er janvier 2013, marge brute d'au plus 6 %), `impot_regime_1997` (25 % de l'impôt, du 1er janvier 1997 au 31 décembre 2012) et `impot_regime_2013` (25 % de l'impôt depuis le 1er janvier 2013).
+  - **Pourquoi deux feuilles pour un taux qui ne change pas.** Ni le 0,2 % ni le 25 % ne changent ; ce sont l'assiette (le mot « local », supprimé par la loi de finances pour 2014) et la liste des redevables taxés sur leur impôt (remplacée par la loi de finances pour 2013) qui changent. Chaque régime qui cesse est clos par une valeur vide à sa date de fin, avec la référence du texte qui y met fin ; la feuille suivante commence à cette date.
+  - **`taxe_etablissements.minimum`** : la « taxe par mètre carré de référence », en dinars par mètre carré couvert, `categorie_1` à `categorie_4` puis `taux_8`, `taux_10`, `taux_12`, `taux_14` — seize montants par décret, 48 valeurs : décret n° 97-433 (13 mars 1997), décret n° 2007-1187 (1er janvier 2008), décret gouvernemental n° 2017-395 (1er janvier 2017). Les catégories sont des catégories d'usage (administratif ou commercial, structure légère industrielle, béton industriel, industriel de plus de 5 000 m²), et non les catégories de superficie de la taxe sur les immeubles bâtis ; les colonnes sont les quatre taux de cette dernière. La documentation du nœud dit la correspondance.
+  - **`taxe_etablissements.maximum`**, en dinars par année : 50 000 (13 mars 1997, décret n° 97-435), 60 000 (26 juin 2003, décret n° 2003-1345), 100 000 (1er janvier 2007, décret n° 2006-3360), puis valeur vide au 1er janvier 2012 (loi de finances complémentaire pour 2012, article 50, qui supprime le paragraphe III de l'article 38). Le décret de 1997 écrit « par année », ceux de 2003 et de 2006 « montant maximum annuel » ; le code de 1997, lui, ne dit pas la période.
+  - **`taxe_etablissements.seuil_affectation_excedent`** : 100 000 dinars par année et par établissement depuis le 1er janvier 2013 (loi de finances pour 2013, article 14), au-delà desquels le produit va à un fonds. Le changement de fonds au 1er janvier 2021 (loi de finances pour 2021, article 13) est dit dans la documentation, sans valeur nouvelle.
+  - **`taxe_hoteliere.taux`** (2 % du chiffre d'affaires brut global, code, articles 42 et 43) et **`taxe_hoteliere.part_affectee_fonds`** (la moitié du produit, loi de finances pour 1997, article 53), tous deux au 1er janvier 1997. La part affectée au fonds avant 1997 n'est pas versée.
+  - **Dates.** Une date énoncée par le texte est reprise telle quelle. Les décrets n° 97-433, 97-435 et 2003-1345 n'en énoncent pas : ils sont datés du jour où ils deviennent exécutoires, cinq jours après le dépôt du fascicule (8 mars 1997, 21 juin 2003), le calcul étant dans la note. Entre le 1er janvier et le 12 mars 1997, le code est en vigueur sans minimum ni maximum fixés.
+  - **Ce qui a été lu.** Les 48 montants du minimum : à l'image dans les deux éditions, recoupés avec la couche texte française. Les trois décrets du maximum : édition française à l'image. Les lois (code, lois de finances) : couche texte de l'édition française. Chaque note dit l'édition lue et ce qui ne l'a pas été.
+  - **Effet sur les calculs.** Aucun : aucune formule ne lit ces paramètres. `tests/test_fiscalite_locale.py` est étendu aux 26 feuilles (forme et ordre des nœuds, comptes, lecture la veille et le jour de chaque date, les trois clôtures, références, unités, barèmes croissants d'un décret au suivant) ; le test qui énumérait les feuilles de `fiscalite_locale` les attend en plus des 20 existantes.
+  - Aucun chemin de paramètre existant ne change, aucune unité nouvelle : deux nœuds s'ajoutent sous `fiscalite_locale`, dont l'`index.yaml` est mis à jour.
+
+## 0.132 - [#460](https://github.com/openfisca/openfisca-tunisia/pull/460)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : droits ouverts à partir du 01/07/1994.
+* Zones impactées : `openfisca_tunisia_pension/regimes/rsna`, `openfisca_tunisia_pension/variables/rsna`.
+* Détails :
+  - **Le salaire de référence du régime des salariés non agricoles est actualisé.** L'article 18 du décret n° 74-499, dans la rédaction du décret n° 94-1429 (JORT n° 52 du 5 juillet 1994, p. 1141), prévoit que les salaires « sont actualisés selon un barème fixé annuellement par arrêté du ministre des affaires sociales ». Chaque salaire est désormais multiplié par le coefficient de son année au barème applicable à la date d'ouverture du droit (`retraite/rsna/salaire_reference/actualisation`, versé par la 0.95 et la 0.112). Jusqu'ici, la moyenne portait sur les salaires nominaux.
+  - **La fenêtre monte de cinq à dix ans.** Cinq années pour les droits ouverts à compter du 1er juillet 1994, sept à compter du 1er juillet 1995, dix à compter du 1er juillet 1996 : ce sont les trois tirets de l'article 18 nouveau, déjà versés dans `retraite/rsna/salaire_reference/duree_mois`. La formule retenait dix années dès 1994.
+  - **Les dernières années, et non les meilleures.** L'article 18 nouveau retient « les cinq [sept, dix] dernières années », et l'article 19 nouveau les mois validés « dans leur ordre chronologique », sans compter les périodes sans activité assujettie. La formule prend donc, en remontant, les dernières années de salaire non nul, là où elle prenait les dix plus élevées des quarante dernières. Avec l'actualisation, l'ancienne règle aurait retenu, pour une carrière à salaire nominal constant, les années les plus anciennes, dont les coefficients sont les plus forts. Si l'assuré compte moins d'années que la fenêtre, la moyenne se fait sur celles-ci (article 18, alinéa 2). Cela règle, pour ce seul régime, une partie du ticket openfisca-tunisia-pension#24.
+  - **L'année d'ouverture du droit ne compte plus.** L'article 19 nouveau retient les mois « écoulés à la date du 1er janvier de l'année » d'ouverture du droit, et chaque barème donne le coefficient 1 aux salaires de l'année qui précède. La formule comptait l'année d'ouverture elle-même.
+  - **La date d'ouverture départage les semestres.** Les variables annuelles lisent leurs paramètres au 1er janvier : la fenêtre de sept ans aurait valu en 1996, celle de dix ans en 1997, et l'exercice 1994 relevait tout entier de la rédaction de 1990, qui s'arrête sur une erreur. La date retenue est désormais la date de liquidation (`rsna_liquidation_date`) quand elle tombe dans l'exercice, le 1er janvier de l'exercice sinon. Un droit ouvert entre le 1er juillet et le 31 décembre 1994 est calculé selon la rédaction de 1994 ; avant le 1er juillet, l'erreur explicite de la rédaction de 1990 demeure.
+  - **Pas de barème, pas de calcul.** Aucun arrêté d'actualisation n'est identifié pour 2025 ni pour 2026. Pour un droit ouvert à partir du 1er janvier 2025, le calcul s'arrête sur une `ParameterNotFoundError` qui nomme le coefficient manquant, plutôt que de réemployer le barème de 2024.
+  - **Résultats qui changent**, parce que la nouvelle valeur est celle du texte :
+    - `tests_pension/formulas/rsna/pension.yaml`, salaire constant de 12 000 D, droit ouvert en 2011 : le salaire de référence passe de 12 000 D à 12 000 × 11,88322 / 10 = 14 259,86 D (années 2001 à 2010, barème de 2011), et la pension de 5 400 D à 6 416,94 D (45 %) ;
+    - `tests_pension/formulas/rsna/salaire_de_reference.yaml`, les deux cas « résultat inchangé » de 1995 et de 2011 sont remplacés : le premier comptait l'année d'ouverture et dix années au lieu de cinq, le second ne connaissait pas l'actualisation ;
+    - `tests_pension/formulas/test_salaire_reference_rsna_1990.py`, exercice 1995 à salaire constant de 12 000 D : 13 249,99 D au lieu de 12 000 D (cinq années actualisées par le barème de 1995).
+  - **Tests nouveaux**, aux bornes : droit ouvert le 15 septembre 1994 (cinq ans, barème de 1994) ; les 30 juin et 1er juillet 1995 (cinq puis sept ans) ; les 30 juin et 1er juillet 1996 (sept puis dix ans) ; 1995 sans date de liquidation ; 2024 avec les coefficients de l'arrêté du 16 juillet 2024, une carrière avec deux années sans salaire, une carrière de trois ans, et une carrière dont les meilleurs salaires sont anciens. Les coefficients sont recopiés en clair dans les tests. Les erreurs attendues — droit ouvert le 30 juin 1994, droits ouverts en 2025 — sont testées en Python dans `tests_pension/formulas/test_salaire_reference_rsna_1994.py`, un test YAML ne sachant pas attendre une exception.
+  - Le plafonnement des salaires à six fois le SMIG, prévu par le même article, n'est toujours pas appliqué.
+  - Aucune variable ni aucun paramètre n'est ajouté, renommé ou déplacé.
+## 0.131 - [#455](https://github.com/openfisca/openfisca-tunisia/pull/455)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1981.
+* Zones impactées : `openfisca_tunisia_pension/variables/survivants`.
+* Détails :
+  - **Le système des pensions calcule les pensions de survivants du régime des salariés agricoles.** Les paramètres `retraite.rsa.survivants` (#446) n'étaient lus par aucune formule. Loi n° 81-6, articles 60 à 69, en vigueur le 1er janvier 1981 : conjoint à la moitié de la pension du défunt (article 62) ; orphelin au cinquième, aux trois dixièmes s'il est orphelin de père et de mère (article 65) ; total plafonné à la pension du défunt, les pensions d'orphelins étant réduites (article 69).
+  - **Remariage** (article 63) : jusqu'au 3 août 1996, il supprime la pension du conjoint ; depuis le 4 août 1996 (loi n° 96-66), il ne la suspend que s'il intervient avant 55 ans (`retraite.rsa.survivants.age_remariage_suspensif`, jusqu'ici lu par aucune formule).
+  - Nouvelles variables : `rsa_pension_reference_deces` (entrée), `conjoint_survivant_remarie` et `age_remariage_conjoint_survivant` (entrées, neutres par défaut), `rsa_taux_reversion`, `rsa_pension_de_reversion`, `rsa_pension_orphelins_totale`. La somme des taux d'orphelins est désormais commune au RSNA et au RSA ; le RSNA est inchangé.
+  - Tests : `tests_pension/formulas/rsa/survivants.yaml`, dix cas. Aucun test existant ne change.
+
+## 0.130 - [#454](https://github.com/openfisca/openfisca-tunisia/pull/454)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/04/1961.
+* Zones impactées : `variables/prestations/contributives/prestations_familiales`, `parameters/prestations/contributives/prestations_familiales/af/age_limite`.
+* Détails :
+  - **Les allocations familiales se calculent.** La variable `af` ne se calculait pour aucune période : `prestations_familiales_enfant_a_charge` levait `NameError` (`age_individu`, `salaire_individu`, `smig_48h_mensuel` jamais définis), `af` lisait `parameters.af.taux` sans instant et par un chemin invalide, et `af_nbenf` appliquait un plancher de trois enfants (`max_(…, 3)`). La formule suit désormais les articles 52 à 65 de la loi n° 60-30 et leurs modificatifs.
+  - **Montant** (article 61) : pourcentage, par enfant, de la rémunération trimestrielle (assiette des cotisations, article 42) plafonnée ; 15 % pour chaque enfant et 52,500 D au 1er avril 1961 ; 18 / 16 / 14 / 12 % et 72 D au 1er janvier 1976 (loi n° 75-82) ; 122 D au 1er mai 1986 (loi n° 86-75) ; trois rangs au 1er janvier 1989 (loi n° 88-38). Le montant trimestriel est réparti par tiers entre les mois du trimestre, chacun au droit en vigueur le premier du mois (`af_mensuelle`) ; `af`, annuelle, additionne les douze tiers. Lorsque les deux parents ouvrent droit, l'allocation la plus élevée est servie (article 55). L'arrondi à deux décimales, sans texte, est retiré.
+  - **Enfants** : limites d'âge de l'article 54 versées comme paramètres datés sous `af/age_limite` (14, 16, 18 et 20 ans en 1961 ; 16, 18 et 21 ans depuis le 4 août 1996, loi n° 96-65, exécutoire cinq jours après le dépôt du 30 juillet 1996) ; rang dans l'ordre de primogéniture, calculé dans le ménage et saisissable (`af_rang_enfant`) ; nombre maximal de rangs utiles (article 52) ; enfant infirme ou handicapé servi quel que soit son rang depuis la loi n° 96-65.
+  - **Droits maintenus** : une entrée `af_droit_acquis` (par défaut faux) couvre les articles 127 et 128 de la loi n° 60-30 et l'article 5 de la loi n° 88-38 ; l'enfant servi au-delà du nombre maximal reçoit le taux du quatrième rang (au 31 décembre 1988 depuis 1989).
+  - **Régime agricole amélioré** : ses salariés ouvrent droit depuis le 1er octobre 1989 (loi n° 89-73, articles 91 et 92).
+  - Nouvelles variables : `af_scolarite_enfant`, `af_apprenti_remuneration_sous_plafond`, `af_fille_remplacant_mere`, `af_enfant_infirme`, `af_droit_acquis`, `af_rang_enfant`, `af_enfant_ouvrant_droit`, `af_remuneration_trimestrielle`, `af_mensuelle`. `af_nbenf` devient mensuelle et entière ; `majoration_salaire_unique` la lit au premier mois de l'année.
+  - Tests : `tests/formulas/prestations/contributives/allocations_familiales.yaml`, 25 cas aux bornes de 1961, 1975-1976, 1986, 1988-1989 et 1995-1997, valeurs écrites depuis les taux et les plafonds. Aucun test existant ne change.
+## 0.129 - [#490](https://github.com/openfisca/openfisca-tunisia/pull/490)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/1975 au 31/05/1993 ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/assurances`.
+* Détails :
+  - **Verse, dans deux nœuds à part, les grilles de la convention collective des assurances antérieures au 1er juin 1993**, que la version 0.126 avait laissées dehors : 1 787 valeurs, en dinars par mois, sur sept grilles.
+  - **`assurances.salaire_base_avant_1993`**, frère de `salaire_base` et de même forme (`echelle_1` à `echelle_21` et `echelle_exceptionnelle`, puis `echelon_1` à `echelon_12`) : les grilles du 1er janvier 1975 (convention ; 21 échelles, 252 valeurs), du 1er janvier 1983 (convention révisée ; 263 valeurs), du 1er janvier 1989 (avenant n° 1 ; 216 valeurs), du 1er juin 1990 (avenant n° 2, grille n° 2 ; 264 valeurs), du 1er juin 1991 et du 1er juin 1992 (avenant n° 2 ; 264 valeurs chacune), soit 1 523 valeurs. La ligne « Exceptionnel » commence en 1983 : la grille de 1975 ne la porte pas.
+  - **Pourquoi à part.** Les grilles du 1er juin 1993 et suivantes comprennent l'indemnité complémentaire provisoire ; aucune des grilles antérieures ne dit la comprendre — celles de 1989 à 1992 portent une note de bas de grille qui l'exclut, celle de 1983 n'en porte aucune mention, celle de 1975 est antérieure aux décrets n° 81-437 et n° 82-501. Les deux séries ne mesurent pas la même grandeur : **chaque case de `salaire_base_avant_1993` porte une valeur vide au 1er juin 1993**, avec une note qui renvoie à `salaire_base`, et rien ne s'y lit au-delà du 31 mai 1993.
+  - **`assurances.salaire_base_avant_1993_grille_1_de_1990`** : l'avenant n° 2 publie deux grilles au 1er juin 1990, et un paramètre n'a qu'une valeur par date. La grille n° 2 (entreprises ayant servi les augmentations des circulaires du Premier ministre n° 31 et n° 84 de 1988 et du décret n° 88-1889), que prolongent les grilles de 1991 et de 1992, est la valeur du nœud principal ; la grille n° 1 (« entreprises ayant appliqué l'avenant n° 1 ») a son nœud, de même forme : 264 valeurs au 1er juin 1990, une valeur vide au 1er juin 1991, date à laquelle une seule grille s'applique à toutes les entreprises.
+  - **49 cases illisibles, sans valeur** : 48 dans la grille de 1989 (télécopie dégradée reproduite par les deux éditions), dont toute l'échelle 1, et l'échelle 6, échelon 5, dans celle de 1983. Elles portent une valeur vide à leur date, la note en dit la raison, rien n'est déduit ni reporté. 21 cases n'ont qu'une lecture, sans recoupement (8 de 1983, 13 de 1989) : leur note le dit.
+  - **Échelle 16, échelon 12, de 1990 à 1992** : les deux éditions du journal divergent ; la valeur de l'édition française est retenue (407,658 pour la grille n° 1 ; 422,393 ; 448,400 ; 474,407), et la note dit que l'édition arabe imprime 14,175 de moins. **1975, échelle 4 (IV, catégorie F), échelon 9** : valeur du rectificatif (103,680 ; JORT n° 80 du 21 décembre 1976, p. 3083), la note cite la valeur imprimée d'origine (109,680).
+  - **Ces grilles ne forment pas une suite continue** : aucune grille n'est lue entre 1975 et 1983, et un protocole du 8 juin 1984 sur les salaires, que vise l'avenant n° 1, n'est pas lu. La documentation des nœuds le dit ; une valeur s'y lit jusqu'à la veille de la date suivante sans qu'il soit établi qu'elle ait valu tout ce temps.
+  - **Aucune lecture de `salaire_base` ne change** : ses 308 cases rendent les mêmes valeurs à toutes leurs dates. La documentation des nœuds `conventions_collectives`, `assurances` et `assurances.salaire_base` renvoie aux deux nœuds nouveaux.
+  - **Effet sur les calculs.** Aucun : aucune formule ne lit ces paramètres. `tests/test_conventions_collectives.py` est étendu aux 528 cases nouvelles (forme, comptes par grille, clôtures de 1991 et 1993, les deux grilles de 1990, réserves dites dans les notes, grilles croissantes) ; le test qui affirmait que `assurances` n'a qu'un enfant, `salaire_base`, en attend trois.
+  - Aucun chemin de paramètre existant ne change : deux nœuds s'ajoutent.
+
+## 0.128 - [#489](https://github.com/openfisca/openfisca-tunisia/pull/489)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (colonne de stage et échelons 1 à 16) et du 01/05/1999 (échelons 17 à 20) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/textile`.
+* Détails :
+  - **Verse en entier la grille des salaires mensuels de base de la convention collective du textile** (agents payés au mois), nœud nouveau `textile.salaire_base.agents_payes_au_mois` : dix-huit lignes — `categorie_1a`, `categorie_1b`, `categorie_2` à `categorie_17` —, chacune avec sa colonne de stage `stage` et ses échelons `echelon_1` à `echelon_20`, soit 378 cases ; 10 853 valeurs, en dinars par mois, et 127 cases illisibles.
+  - **Trente dates d'effet, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18)**, les mêmes que la grille horaire. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page de la grille mensuelle et l'édition lue.
+  - **La colonne de stage est nommée `stage`, et non `echelon_0`.** Dans cette grille la confirmation est l'échelon 1, et la colonne qui la précède est celle du stage ; dans la grille horaire, l'échelon 0 est celui de la confirmation. Le nom évite de confondre les deux.
+  - **Les échelons 17 à 20 commencent le 1er mai 1999**, date d'effet de la première grille qui les porte (avenant n° 7) : ils n'ont aucune valeur antérieure.
+  - **Une case illisible n'a pas de valeur.** 127 cases portent une valeur vide à leur date : une au 1er mai 1994, 42 au 1er mai 1999 et 30 au 1er mai 2000 (lignes imprimées pâles), 18 à chacun des 1er mai 2002, 2003 et 2004 (l'échelon 18 des dix-huit lignes, sous une bande blanche de la numérisation). La note de la date dit « case illisible sur le fascicule » et la cause ; aucune valeur n'est déduite ni reportée, et la lecture ne rend rien jusqu'à la première grille où la case est lue.
+  - **Six cases lues sans contrôle croisé** (la même case est illisible aux dates voisines) le disent dans leur note.
+  - **Le 1er janvier 2026 porte la valeur de la grille de l'avenant n° 18**, comme dans la grille horaire.
+  - **La grille horaire ne change pas** : ses sept fichiers sont intacts, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation de `textile.salaire_base` dit désormais que les deux grilles sont versées en entier et que leurs colonnes ne se numérotent pas de la même façon.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py` est étendu aux 378 cases : nombre de dates et de dates sans valeur par case, références, unité, 10 853 valeurs, liste exacte des 127 cases illisibles et leur raison, les six cases sans contrôle croisé, grille croissante à chaque date, colonne de stage égale à l'échelon 1 jusqu'en 2007 et inférieure depuis 2008.
+  - Aucun chemin de paramètre existant ne change : un nœud s'ajoute.
+
+## 0.127 - [#488](https://github.com/openfisca/openfisca-tunisia/pull/488)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1996 (grille mensuelle, et lignes de la grille horaire) et du 01/05/2008 (niveaux I et II de l'ouvrier hautement qualifié) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/batiment`.
+* Détails :
+  - **Verse en entier la grille des salaires horaires du personnel occasionnel de la convention collective du bâtiment et des travaux publics**, dont seules deux lignes étaient versées (`manoeuvre_ordinaire`, `chef_equipe_3e_degre`). Sous `batiment.salaire_base.personnel_occasionnel`, neuf lignes nouvelles : `manoeuvre_specialise`, `aide_ouvrier`, `ouvrier_qualifie_1re_categorie`, `ouvrier_qualifie_2e_categorie`, `ouvrier_hautement_qualifie`, `ouvrier_hautement_qualifie_1`, `ouvrier_hautement_qualifie_2`, `chef_equipe_1er_degre`, `chef_equipe_2e_degre`. Vingt-six dates d'effet, du 1er mai 1996 (avenant n° 5) au 1er janvier 2024 (avenant n° 16) ; 248 valeurs, en dinars par heure, aucune case illisible.
+  - **L'ouvrier hautement qualifié change de forme le 1er mai 2008** (avenant n° 9) : la ligne unique `ouvrier_hautement_qualifie` vaut du 1er mai 1996 au 30 avril 2008 et porte une valeur vide au 1er mai 2008 ; les niveaux I et II (`ouvrier_hautement_qualifie_1`, `ouvrier_hautement_qualifie_2`) commencent à cette date, sans valeur antérieure. La ligne unique ne se prolonge dans aucun des deux.
+  - **Verse en entier la grille des salaires mensuels du personnel administratif et technique**, nœud nouveau `batiment.salaire_base.personnel_administratif_technique` : dix-neuf catégories (`categorie_1` à `categorie_19`), onze échelons chacune (`echelon_1` à `echelon_11`), soit 209 cases aux mêmes vingt-six dates ; 5 418 valeurs, en dinars par mois, et seize cases illisibles.
+  - **Une case illisible n'a pas de valeur.** Seize cases de la grille mensuelle portent une valeur vide à leur date (sept au 1er mai 1996, cinq au 1er mai 1998, une à chacun des 1er mai 2001, 2002, 2003 et 2004) : la note de la date dit « case illisible sur le fascicule » et la cause ; aucune valeur n'est déduite ni reportée, la lecture ne rend rien jusqu'à la grille suivante.
+  - **Les trois grilles de l'avenant n° 16** (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont lues sur la reproduction d'un site tiers, le fascicule n° 132 de 2022 n'étant pas servi par pist.tn : la note de chaque valeur le dit et ne donne pas de lien, comme le faisaient déjà les deux lignes versées.
+  - **Chaque case en cours porte une valeur vide au 1er janvier 2026**, comme les deux lignes déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille du bâtiment qui en résulte.
+  - **Les deux lignes déjà versées ne changent pas** : leurs fichiers sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds du bâtiment dit désormais que les deux grilles sont versées en entier ; celle de la grille horaire dit que l'ouvrier hautement qualifié n'a qu'une ligne du 1er mai 1996 au 1er mai 2007 (elle disait « de 1999 à 2007 »).
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py` est étendu aux 220 cases du bâtiment : nombre de dates et de dates sans valeur par case, références, unité (par heure ou par mois selon la grille), 248 et 5 418 valeurs, cases illisibles et leur raison, reproduction de l'avenant n° 16, grilles croissantes à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
+
+## 0.126 - [#487](https://github.com/openfisca/openfisca-tunisia/pull/487)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/06/1993 (échelons 1 à 12) et du 01/06/1999 (échelons 13 et 14) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/assurances`.
+* Détails :
+  - **Verse en entier la grille des salaires mensuels de base de la convention collective des assurances**, dont seules quatre cases étaient versées (`echelle_1.echelon_1`, `echelle_21.echelon_12`, `echelon_13` et `echelon_14`). Sous `assurances.salaire_base` : vingt-deux lignes — `echelle_1` à `echelle_21`, et `echelle_exceptionnelle` pour la ligne que les grilles intitulent « Exceptionnel », rangée comme sur la grille entre `echelle_3` et `echelle_4` —, chacune avec ses échelons `echelon_1` à `echelon_14`, soit 308 cases et 8 359 valeurs, en dinars par mois. Vingt fichiers nouveaux ; les deux fichiers existants reçoivent leurs autres échelons.
+  - **Vingt-huit dates d'effet, du 1er juin 1993 (avenant n° 3) au 1er juin 2021 (avenant n° 15)**, chacune étant la date que la grille énonce. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page et l'édition lue, comme les quatre cases déjà versées.
+  - **La série commence au 1er juin 1993, comme les cases déjà versées.** Les grilles de 1983 à 1992 ne comprennent pas l'indemnité complémentaire provisoire, que les grilles comprennent depuis le 1er juin 1993 : elles ne mesurent pas la même grandeur, et ne sont pas versées, non plus que la grille de 1975. Les deux grilles du 1er juin 1990 restent donc hors du modèle.
+  - **Les échelons 13 et 14 commencent le 1er juin 1999**, date à laquelle l'avenant n° 5 les crée : ils n'ont aucune valeur antérieure. Les échelons 1 à 12 ont vingt-huit dates de grille, les échelons 13 et 14 vingt-deux.
+  - **Une case illisible n'a pas de valeur** : `echelle_4.echelon_1` porte une valeur vide au 1er juin 1996 (partie entière effacée sur la numérisation, JORT n° 60 du 26 juillet 1996, édition arabe, p. 1755). La note de la date en dit la raison ; aucune valeur n'est déduite ni reportée, une lecture entre le 1er juin 1996 et le 31 mai 1997 ne rend rien, et la valeur reprend à la grille du 1er juin 1997.
+  - **Chaque case porte une valeur vide au 1er janvier 2026**, comme les quatre cases déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille des assurances qui en résulte.
+  - **Les quatre cases déjà versées ne changent pas** : leurs blocs sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds des assurances dit désormais que la grille est versée en entier, décrit la ligne « Exceptionnel » et nomme la case illisible ; celle de `conventions_collectives` dit qu'une case illisible porte une valeur vide.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py`, qui affirmait que seules quatre cases des assurances existaient, est mis à jour : il énumère les 308 cases, leur nombre de dates, leurs références et leur unité, compte 8 359 valeurs, vérifie que la case illisible ne rend rien et dit sa raison, et que la grille est croissante par échelon et par ligne à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
+
+## 0.125 - [#485](https://github.com/openfisca/openfisca-tunisia/pull/485)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1997 (assiette, taux et seuils fixés par le code de la fiscalité locale) et du 13/03/1997 (prix de référence et tarif par mètre carré fixés par décret) ; paramètres nouveaux.
+* Zones impactées : `parameters/fiscalite_locale`, `sous_ensembles`, `units`.
+* Détails :
+  - **Sous-arbre nouveau `fiscalite_locale/`, premier versement : les deux taxes sur les immeubles du code de la fiscalité locale** (loi n° 97-11 du 3 février 1997, JORT n° 11 du 7 février 1997, pp. 173 à 181). Vingt feuilles, chacune datée à l'entrée en vigueur et portant à chaque date sa référence : texte, article, fascicule du *Journal officiel*, page, lien vers l'édition française et vers l'édition arabe, et ce qui a été lu à l'image.
+  - **`taxe_immeubles_batis.taux_assiette`** : 2 % du prix de référence du mètre carré couvert, au 1er janvier 1997 (code, article 4, paragraphe I, p. 174).
+  - **`taxe_immeubles_batis.taux`** : quatre paliers selon le nombre de services dont l'immeuble bénéficie, au 1er janvier 1997 (code, article 5, paragraphe I, p. 174) — `un_ou_deux_services` 8 %, `trois_ou_quatre_services` 10 %, `plus_de_quatre_services` 12 %, `plus_de_quatre_services_et_autres_services` 14 %.
+  - **`taxe_immeubles_batis.seuils_superficie`** : `categorie_1` 100 m², `categorie_2` 200 m², `categorie_3` 400 m², au 1er janvier 1997 (code, article 4, paragraphe II, p. 174). Trois feuilles scalaires et non un barème : chaque seuil est le plafond de sa catégorie, borne comprise (« ne dépasse pas »), alors qu'un barème range la borne dans la tranche supérieure ; et le texte ne donne aucun montant par tranche.
+  - **`taxe_immeubles_batis.prix_reference.categorie_{1,2,3,4}.{minimum,maximum}`** (dinars par mètre carré couvert) : 100-150, 151-200, 201-250, 251-300 au 13 mars 1997 (décret n° 97-431, JORT n° 19 du 7 mars 1997, p. 389) ; 100-162, 163-216, 217-270, 271-324 au 1er janvier 2008 (décret n° 2007-1185, article 3, JORT n° 40 du 18 mai 2007, pp. 1646-1647) ; 100-178, 163-238, 217-297, 271-356 au 1er janvier 2017 (décret gouvernemental n° 2017-397, article 3, JORT n° 26 du 31 mars 2017, pp. 1191-1192).
+  - **`taxe_terrains_non_batis.taux_valeur_venale`** : 0,3 % de la valeur vénale réelle, au 1er janvier 1997 (code, article 33, premier paragraphe, p. 176).
+  - **`taxe_terrains_non_batis.tarif_m2.{haute_densite,moyenne_densite,basse_densite}`** (dinars par mètre carré) : 0,300, 0,090 et 0,030 au 13 mars 1997 (décret n° 97-432, JORT n° 19 de 1997, p. 389) ; 0,318, 0,095 et 0,032 au 1er janvier 2008 (décret n° 2007-1186, article 3, JORT n° 40 de 2007, p. 1647) ; 0,385, 0,115 et 0,040 au 1er janvier 2017 (décret gouvernemental n° 2017-396, article 3, JORT n° 26 de 2017, pp. 1190-1191).
+  - **Dates.** Le 1er janvier 1997 est la date énoncée par l'article 3 de la loi n° 97-11 ; le 1er janvier 2008 et le 1er janvier 2017, celles de l'article 3 de chaque décret, reprises telles quelles — la seconde est antérieure à la publication. Les deux décrets de 1997 n'ont pas de clause d'effet : fascicule déposé au gouvernorat de Tunis le 8 mars 1997, exécutoire cinq jours après, jour du dépôt non compté (loi n° 93-64, article 2), soit le 13 mars 1997. **Du 1er janvier au 12 mars 1997, les prix de référence et le tarif par mètre carré n'ont pas de valeur** : le code est en vigueur, aucun barème ne l'est encore.
+  - **Deux unités nouvelles** dans `units.yaml` : `m2` et `currency/m2`.
+  - **`sous_ensembles.py`** : `fiscalite_locale` est déclaré dans `SOUS_ARBRES_FISCAL`. Le système des pensions ne le lit pas. Le dossier est ajouté à l'ordre de `parameters/index.yaml`.
+  - **Effet sur les calculs.** Aucun résultat ne change et aucun test existant ne bouge : ces paramètres sont nouveaux. Un test nouveau, `tests/test_fiscalite_locale.py`, lit les paramètres : valeurs la veille et le jour de chaque date d'effet, absence de valeur avant la date d'effet, référence complète à chaque date, unités enregistrées, liste exacte des feuilles. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre existant ne change.
+
+## 0.124 - [#484](https://github.com/openfisca/openfisca-tunisia/pull/484)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 20/05/2020 au 24/05/2020 (onze feuilles de l'Amen social n'ont plus de valeur) ; du 09/12/2022 au 13/12/2022 (les trois feuilles de l'appui d'urgence n'ont plus de valeur) ; à partir du 09/11/2025 (allocation familiale des 6 à 18 ans, paramètre nouveau) ; à partir du 01/01/2026 (montant de base du transfert monétaire permanent : 280 D au lieu de 260 D).
+* Zones impactées : `parameters/prestations/non_contributives/allocation_familiale_6_18`, `parameters/prestations/non_contributives/amen_social/allocation_base`, `parameters/prestations/non_contributives/amen_social/supplements`, `parameters/prestations/non_contributives/amen_social/aides_ponctuelles`.
+* Détails :
+  - **Paramètre nouveau : `prestations.non_contributives.allocation_familiale_6_18`**, 30 dinars par mois et par enfant à charge à partir du 9 novembre 2025. Le décret n° 2025-426 du 2 octobre 2025 (JORT n° 121 du 3 octobre 2025, p. 2518 ; édition arabe p. 2944) institue l'allocation « à compter du 1er janvier 2025 » (article 2) et renvoie son montant à un arrêté ; l'arrêté conjoint du 3 novembre 2025 (JORT n° 132 du 4 novembre 2025, p. 2963 ; édition arabe p. 3415) le fixe à son article 2, sans clause d'effet. La date retenue est celle où l'arrêté devient exécutoire : dépôt du fascicule le 4 novembre 2025, plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). La documentation du paramètre dit l'autre lecture (le 1er janvier 2025, en combinant les deux textes) et ce que les textes ne règlent pas : pas de majoration pour handicap, pas de plafond du nombre d'enfants, pas de règle de cumul avec le supplément de 10 dinars. Rien n'est versé pour 2022 à 2024, où aucun texte publié ne fonde l'aide alors servie. C'est une feuille sœur de `allocation_familiale` (moins de six ans), qui n'est ni déplacée ni modifiée.
+  - **`amen_social.allocation_base` : palier de 280 dinars au 1er janvier 2026**, par l'arrêté conjoint du 21 avril 2026, article 2 (JORT n° 40 du 21 avril 2026, p. 786 ; édition arabe p. 852). La série s'arrêtait à 260 dinars.
+  - **`amen_social.allocation_base` : le premier palier (180 dinars) commence le 25 mai 2020, et non plus le 20.** Le 20 mai est le jour de la publication de l'arrêté conjoint du 19 mai 2020, qui n'a pas de clause d'effet : dépôt le 20 mai 2020, exécutoire le 25. Les paliers de 2022 à 2025 gardent leur date, qui est celle que chaque arrêté énonce : 1er janvier 2022 (arrêté du 1er avril 2022, dans l'alinéa même), 1er janvier 2023 (arrêté du 3 avril 2023, article 2), 1er janvier 2024 (arrêté du 28 février 2024, article 2), 1er janvier 2025 (arrêté du 29 janvier 2025, article 2).
+  - **Références de `allocation_base` refaites, palier par palier** : texte, article, fascicule, pages des deux éditions, citation, lien pist.tn. Sont retirés un « arrêté conjoint 2020-931 » (l'arrêté ne porte pas de numéro), l'article 2 de la loi organique n° 2019-10 et le décret gouvernemental n° 2020-317, qui ne fixent pas ce montant. La documentation attribuait le palier de 2025 à un arrêté du « 29 août 2025 » : il est du 29 janvier 2025.
+  - **Les cinq feuilles de `amen_social/supplements/` commencent le 25 mai 2020**, pour le même motif (`enfant_a_charge` 10 D, `handicap` 2, `age_min_enfant` 0, `limite_age_enfant` 18, `limite_age_etudiant` 25 ; valeurs inchangées). Chacune porte l'article 2 de l'arrêté du 19 mai 2020 (JORT n° 45 du 20 mai 2020, p. 1097 ; édition arabe p. 1251) et, au 1er février 2022, l'alinéa 2 nouveau qu'y substitue l'arrêté du 1er avril 2022 (JORT n° 38 du 8 avril 2022, article premier p. 973 ; édition arabe p. 989). `age_min_enfant` citait la p. 972, où l'arrêté commence. La documentation de `limite_age_enfant`, qui disait la borne basse absente, est réécrite ; elle signale que la rédaction passe de « âgé de moins de 18 ans » (2020) à « ne dépassant pas l'âge de 18 ans » (2022), la valeur restant 18. `age_min_enfant` entre dans l'ordre d'affichage de `supplements`.
+  - **Les cinq aides ponctuelles de 2020 commencent le 25 mai 2020, et leur second fondement est daté du 14 décembre 2022** (au lieu des 20 mai 2020 et 9 décembre 2022, jours de publication) : ni l'arrêté conjoint du 19 mai 2020 ni celui du 8 décembre 2022 n'a de clause d'effet. Valeurs inchangées (60, 60, 60, 50, 120 D). Pages corrigées : l'article 4 de l'arrêté de 2020 est à la p. 1098, dernière page du fascicule ; l'arrêté de 2022 occupe les pp. 3447-3448 (édition arabe pp. 3789-3790), non 3446-3447.
+  - **Les trois feuilles de l'appui d'urgence commencent le 14 décembre 2022**, et non plus le 9 (`montant_min` 60 D, `montant_max` 200 D, `nombre_max_par_an` 4 ; valeurs inchangées). Leur référence citait l'article 3, qui définit le cas ; les montants et le nombre de versements sont au dernier tiret de l'article 4.
+  - **Effet sur les calculs.** `amen_social_enfants_a_charge` et `amen_social_enfants_handicapes_a_charge` lisent `limite_age_enfant` et `limite_age_etudiant` au premier jour du mois : le mois de mai 2020 n'était déjà pas calculable (valeur au 20), il ne l'est toujours pas ; juin 2020 reste le premier mois calculable. Aucun autre résultat ne change : aucune formule ne lit `allocation_familiale_6_18`, les aides ponctuelles ni l'appui d'urgence, et `transfert_monetaire_permanent`, seule formule à lire `allocation_base`, n'aboutit à aucune date (elle demande une feuille `supplements.amen_social_enfants_a_charge` qui n'existe pas) — défaut antérieur, laissé tel quel. Aucune formule n'est modifiée.
+  - **Tests.** Aucun test YAML ne change de résultat. Dans `tests/test_prestations_assistance.py`, quatre tests Python lisaient les valeurs au jour de la publication et sont redatés, sans changement de valeur attendue : `test_amen_social_supplements` et `test_aides_ponctuelles_datees_de_2020_et_non_de_2019` (absence le 24 mai 2020, valeurs le 25), `test_amen_allocation_de_base_prend_effet_a_la_publication`, renommé `test_amen_allocation_de_base_executoire_le_25_mai_2020`, et `test_appui_urgence_est_un_intervalle_et_non_un_montant` (absence le 13 décembre 2022, valeur le 14). Deux tests nouveaux : les cinq paliers de la base, la veille et le jour de chaque date d'effet, jusqu'à 280 D au 1er janvier 2026 ; l'allocation des 6 à 18 ans, absente jusqu'au 8 novembre 2025 et valant 30 D le 9. Ils sont en Python, selon la convention de ce fichier, parce qu'ils lisent des paramètres qu'aucune formule ne lit et attendent des absences de valeur.
+  - **Chemins.** Un chemin nouveau : `prestations.non_contributives.allocation_familiale_6_18`. Aucun chemin existant n'est déplacé ni renommé.
+
+### 0.123.1 - [#483](https://github.com/openfisca/openfisca-tunisia/pull/483)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : du 01/01/2020 au 24/05/2020 (les huit seuils n'ont plus de valeur) ; à partir du 25/05/2020 (seuil majoré d'une personne seule lourdement handicapée).
+* Zones impactées : `parameters/prestations/non_contributives/amen_social/eligibilite`.
+* Détails :
+  - **Les huit seuils de revenu de l'Amen social commencent le 25 mai 2020, et non plus le 1er janvier 2020.** Ils portaient pour seule référence « Décret 2020-317 du 19 mai 2020 », sans article ni fascicule : un décret du 19 mai ne produit pas d'effet au 1er janvier. Le décret gouvernemental n° 2020-317 (JORT n° 45 du 20 mai 2020, pp. 1092-1096 de l'édition française, pp. 1247-1250 de l'édition arabe) ne porte pas de clause d'effet ; il devient exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, jour du dépôt non compté (loi n° 93-64, article 2). Le fascicule porte un dépôt le 20 mai 2020 : exécutoire le 25 mai 2020. La valeur du 1er janvier 2020 disparaît, sans remplacement.
+  - **Le seuil majoré d'une personne seule passe de 1,25 à 7/6 du salaire minimum** (`handicap_lourd.un_membre`). L'article 5 ne donne pas de barème pour le handicap lourd : il majore le seuil « d'un demi salaire minimum ». Deux tiers plus un demi font sept sixièmes (1,1667) ; 1,25 ne se déduit d'aucune lecture du texte. Les trois autres seuils majorés (1,5 ; 2 ; 2,5) valaient déjà le seuil de droit commun plus un demi et ne changent pas.
+  - **La majoration est lue comme uniforme sur les quatre paliers**, et la documentation de chaque paramètre dit pourquoi : l'article 7 du même décret appelle « deuxième alinéa de l'article 5 » le paragraphe qui suit les quatre tirets, ce qui range les tirets dans le premier alinéa, celui que vise la majoration. Elle dit aussi ce que le texte ne règle pas : l'édition arabe, qui fait foi, vise un membre de la famille « à charge », mots absents de l'édition française, et ne dit pas si la majoration vaut pour la personne seule elle-même lourdement handicapée.
+  - **Avant le 25 mai 2020, ces seuils n'existent pas, et la documentation des paramètres le dit.** La loi organique n° 2019-10 (JORT n° 11 du 5 février 2019) crée le programme sans condition de ressources : elle renvoie les conditions de bénéfice à un décret gouvernemental (article 8) et maintient entre-temps les programmes d'aides sociales existants, « exécutoires jusqu'à leur adaptation » (article 23). Le décret du 19 mai 2020 n'est ni rétroactif ni assorti d'une disposition transitoire sur ces conditions. L'aide permanente relève jusque-là du programme national d'aide aux familles nécessiteuses, dont aucun texte publié ne fixe les conditions de ressources ; aucun document consulté n'atteste une application anticipée des seuils de l'article 5. La date du 1er janvier 2020 venait de la PR #174 de décembre 2024, qui a créé ces paramètres : un choix de modélisation, aligné sur les formules ouvertes en 2020, sans source.
+  - Le seuil d'une personne est écrit avec toute la précision de deux tiers (0,6666666666666666 au lieu de 0,6666666) : l'écart est de trois cent-millièmes de dinar.
+  - Chaque paramètre porte l'article, le fascicule, les pages, la citation dans les deux éditions et le lien pist.tn. Les libellés de `plus_de_cinq_membres` disent « cinq personnes ou plus », comme le texte ; le chemin ne change pas. `eligibilite` entre dans l'ordre d'affichage de `amen_social`.
+  - **Effet sur les calculs.** `amen_social_eligible`, et ce qui en dépend, lève désormais une erreur de paramètre introuvable pour les mois de janvier à mai 2020 — mai compris, le paramètre étant lu au premier jour du mois —, au lieu de rendre un résultat sur un droit qui n'existait pas. À partir de juin 2020, un seul cas change : la personne seule lourdement handicapée dont le revenu est compris entre 7/6 et 1,25 fois le salaire minimum (entre 470,288 et 503,880 D en juin 2020) n'est plus éligible. Aucune formule n'est modifiée.
+  - **Tests.** Aucun test existant ne change de résultat. Seize cas YAML nouveaux éprouvent les huit seuils en juin 2020, un dinar en dessous et un dinar au-dessus ; un seul échouait avant la correction, celui de la personne seule à 471,288 D. Dans les familles, le handicap lourd y est porté par un enfant à charge ; les deux cas de la personne seule reposent sur la lecture retenue. Un test Python lit les paramètres dans `tests/test_prestations_assistance.py`, selon la convention de ce fichier : absence de valeur la veille du 25 mai 2020, valeurs du texte le jour même — ce qu'un test YAML ne sait pas attendre.
+  - Aucun chemin de paramètre ne change.
+
+## 0.123 - [#486](https://github.com/openfisca/openfisca-tunisia/pull/486)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (échelons 0 à 16) et du 01/05/1999 (échelons 17 à 20) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives/textile`.
+* Détails :
+  - **Verse en entier la grille des salaires horaires de base de la convention collective du textile** (agents payés à l'heure), dont seules deux cases étaient versées (`categorie_1.echelon_0`, `categorie_4_2.echelon_0`). Sous `textile.salaire_base.agents_payes_a_l_heure` : sept catégories — `categorie_1`, `categorie_2`, `categorie_3_1`, `categorie_3_2`, `categorie_3_3`, `categorie_4_1`, `categorie_4_2` —, chacune avec ses échelons `echelon_0` à `echelon_20`, soit 147 cases et 4 270 valeurs, en dinars par heure. Cinq fichiers nouveaux ; les deux fichiers existants reçoivent leurs échelons 1 à 20.
+  - **Trente dates d'effet, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18)**, chacune étant la date que la grille énonce. Chaque valeur porte à sa date l'avenant et son arrêté d'agrément, le fascicule du *Journal officiel*, la page et l'édition lue, comme les deux cases déjà versées.
+  - **Les échelons 17 à 20 commencent le 1er mai 1999**, date d'effet de la première grille qui les porte (avenant n° 7) : ils n'ont aucune valeur antérieure, et une lecture avant cette date ne rend rien. Les échelons 0 à 16 ont trente valeurs, les échelons 17 à 20 vingt-cinq.
+  - **Le 1er janvier 2026 porte la valeur de la grille de l'avenant n° 18**, comme pour les deux cases déjà versées : le décret n° 2026-68 relève de 5 % les dernières grilles annexées, et aucun texte ne publie de grille du textile qui en résulte.
+  - **Les deux cases déjà versées ne changent pas** : leurs blocs sortent identiques, octet pour octet. Aucune valeur existante n'est modifiée.
+  - La documentation des nœuds du textile dit désormais que la grille horaire est versée en entier, donne la date à laquelle elle passe de 17 à 21 échelons (1er mai 1999) et l'en-tête d'ancienneté des colonnes. La grille des agents payés au mois reste à lire.
+  - **Effet sur les calculs.** Aucun résultat ne change. `tests/test_conventions_collectives.py`, qui affirmait que seules deux cases du textile existaient, est mis à jour : il énumère les 147 cases, leur nombre de dates, leurs références et leur unité, compte 4 270 valeurs et vérifie que la grille est croissante par échelon et par catégorie à chaque date.
+  - Aucun chemin de paramètre existant ne change : seuls des frères s'ajoutent.
+
+
+## 0.122 - [#482](https://github.com/openfisca/openfisca-tunisia/pull/482)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/05/1994 (textile), du 01/05/1996 (bâtiment et travaux publics) et du 01/06/1993 (assurances) ; paramètres nouveaux.
+* Zones impactées : `parameters/marche_travail/conventions_collectives`, `units`.
+* Détails :
+  - **Verse les premières cases des grilles de salaires de trois conventions collectives sectorielles**, à chaque date d'effet énoncée par l'avenant, avec à chaque date l'avenant, le fascicule du *Journal officiel*, la page et l'édition lue. Sous-arbre nouveau `marche_travail/conventions_collectives/<branche>/salaire_base/`, qui reprend la structure de la grille : la grille quand la convention en a plusieurs, un fichier par catégorie ou par échelle, et ses échelons en enfants `echelon_N` — la forme de `fonction_publique/<corps>/<grade>/traitement_de_base.yaml`. Chaque grille est versée en partie : seules les cases lues ont une entrée, et l'index de chaque grille dit lesquelles ; demander une case non versée est une erreur.
+  - **`textile.salaire_base.agents_payes_a_l_heure`** (dinars par heure) : `categorie_1.echelon_0` (catégorie I, échelon 0, le salaire le plus bas de la grille) et `categorie_4_2.echelon_0` (catégorie IV-2, échelon 0, l'entrée de la catégorie la plus élevée). Du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant n° 18) : 30 dates d'effet, 30 valeurs dans chaque case. La grille du 1er janvier 2026 est la dernière valeur.
+  - **`batiment.salaire_base.personnel_occasionnel`** (dinars par heure, grille sans échelon) : `manoeuvre_ordinaire` et `chef_equipe_3e_degre`, le salaire le plus bas et le plus élevé de la grille. Du 1er mai 1996 (avenant n° 5) au 1er janvier 2024 (avenant n° 16) : 26 dates d'effet, 26 valeurs dans chaque case. Les trois grilles de l'avenant n° 16 sont lues sur une reproduction du journal par un site tiers, ce que leur note dit.
+  - **`assurances.salaire_base`** (dinars par mois, une seule grille de 21 échelles) : `echelle_1.echelon_1` et `echelle_21.echelon_12`, du 1er juin 1993 (avenant n° 3) au 1er juin 2021 (avenant n° 15), 28 valeurs chacun ; `echelle_21.echelon_13` et `echelon_14`, créés le 1er juin 1999, 22 valeurs chacun. La ligne des trois derniers échelons de l'échelle 21 est complète depuis 1999. La grille du 1er juin 2014 ne paraît pas avec l'avenant n° 11 mais à part, au JORT n° 4 du 13 janvier 2015 (édition arabe, p. 151).
+  - **Seules dates sans valeur : le 1er janvier 2026 pour le bâtiment et les assurances.** Le décret n° 2026-68 relève alors de 5 % les dernières grilles annexées aux conventions sectorielles, et aucun texte ne publie les grilles qui en résultent : une valeur vide y arrête la dernière grille conventionnelle, pour qu'elle ne se prolonge pas à tort. Le textile garde la grille de l'avenant n° 18, fixée pour le 1er janvier 2026.
+  - **Chaque série commence à la première grille de son segment continu.** Les conventions d'origine (1974, 1975) et les grilles de 1983 à 1992, qui ne comprennent pas l'indemnité complémentaire provisoire, ne sont pas versées : elles ne mesurent pas la même grandeur, ou rien ne les relie à la suite.
+  - **Deux unités nouvelles** dans `units.yaml` : `currency/heure` et `currency/mois`.
+  - **Effet sur les calculs.** Aucun résultat ne change et aucun test existant ne bouge. Le système des pensions, qui lit `marche_travail/` en entier, charge lui aussi le sous-arbre nouveau. Un test nouveau, `tests/test_conventions_collectives.py`, lit les paramètres : valeurs la veille et le jour d'une date d'effet, dates sans valeur, début de chaque série, référence à chaque date, cases présentes et erreur sur une case absente. Il est écrit en Python, parce qu'un test YAML ne porte que sur des variables.
+  - Aucun chemin de paramètre existant ne change.
+
 ## 0.121 - [#480](https://github.com/openfisca/openfisca-tunisia/pull/480)
 
 * Évolution du système socio-fiscal.
@@ -808,7 +1556,7 @@
   - Scripts CI (.github) mis à jour pour appeler `uv run` (openfisca, python) ; twine ajouté aux dépendances dev pour le déploiement.
   - Reformattage du code avec `ruff format`.
 
-## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/XXX)
+## 0.59 - [#XXX](https://github.com/openfisca/openfisca-tunisia/pull/528)
 
 * Amélioration technique.
 * Périodes concernées : aucune.

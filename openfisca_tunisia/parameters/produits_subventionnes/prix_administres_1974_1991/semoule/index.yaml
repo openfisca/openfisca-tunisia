@@ -1,0 +1,9 @@
+description: "Prix de vente au public de la semoule de blé dur PS-10"
+metadata:
+  short_label: "Semoule"
+  order:
+  - semoule_ps10_quintal
+  - semoule_ps10_vrac
+documentation: |-
+  Un paramètre par unité de prix : le prix est fixé tantôt au quintal, tantôt au kilogramme en vrac.
+  Les prix des décrets n° 75-352 et 79-413, « rendu fabrique ou magasin » ou rendus au chef-lieu de la délégation, ne sont pas des prix au public et ne sont pas versés ici.

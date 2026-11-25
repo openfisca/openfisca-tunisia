@@ -1,0 +1,24 @@
+description: "Prix de vente au public du lait régénéré UHT en tétra-brik d'un litre (arrêté de 1982)"
+values:
+  1982-11-22:
+    value: 0.26
+  1989-08-12:
+    value: null
+metadata:
+  short_label: "Lait régénéré UHT 1 l"
+  label_en: "Recombined milk (UHT), 1 l carton, retail price"
+  unit: currency/l
+  notes:
+    1982-11-22:
+    - note: "Série incomplète : états antérieurs à 1982 non versés."
+    1989-08-12:
+    - note: "À compter du 12 août 1989, le texte fixe le prix du lait régénéré demi-écrémé (paramètre du lait demi-écrémé) ; aucun prix de ce produit-ci n'est relevé ensuite."
+  reference:
+    1982-11-22:
+    - title: "Arrêté du ministre de l'économie nationale du 21 novembre 1982 fixant le prix de vente public du lait régénéré"
+      href: https://www.pist.tn/jort/1982/1982F/Jo07682.pdf
+      note: "JORT n° 76 du 30 novembre 1982, p. 2581, article premier. Lait régénéré UHT en tétra-brik d'un litre : 260 millimes. Date d'effet énoncée par le texte : 22 novembre 1982, antérieure à la publication."
+    1989-08-12:
+    - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989, portant fixation du prix de vente du lait régénéré demi-écrémé"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1824. Prix fixés pour le lait régénéré demi-écrémé. Date d'effet énoncée par le texte : 12 août 1989, antérieure à la signature et à la publication."

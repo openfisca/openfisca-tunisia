@@ -1,0 +1,316 @@
+description: "Prix de base à la production du blé tendre"
+values:
+  1970-08-04:
+    value: 4.3
+  1971-07-13:
+    value: 4.3
+  1972-08-08:
+    value: 4.3
+  1973-07-27:
+    value: 4.3
+  1974-06-27:
+    value: 5.5
+  1975-08-12:
+    value: 6
+  1976-09-21:
+    value: 6
+  1977-12-13:
+    value: 6.535
+  1979-04-08:
+    value: 7
+  1980-10-09:
+    value: 7.7
+  1981-08-21:
+    value: 8.7
+  1982-09-28:
+    value: 10
+  1983-11-24:
+    value: 11.7
+  1985-01-04:
+    value: 14
+  1985-10-17:
+    value: 14.5
+  1987-02-22:
+    value: 16
+  1988-04-10:
+    value: 17
+  1989-09-03:
+    value: 19
+  1990-05-11:
+    value: 19
+  1991-07-04:
+    value: 20.9
+  1992-10-04:
+    value: 20.9
+  1993-09-06:
+    value: 22.5
+  1995-11-07:
+    value: 24
+  1997-01-21:
+    value: 25
+  2001-04-30:
+    value: 26
+  2005-07-26:
+    value: 27
+  2007-06-25:
+    value: 28.732
+  2008-06-16:
+    value: 35
+  2009-06-18:
+    value: 35
+  2011-04-04:
+    value: 35
+  2012-07-19:
+    value: 35
+  2013-08-03:
+    value: 35
+  2014-06-09:
+    value: 35
+  2015-11-10:
+    value: 38
+  2016-02-29:
+    value: 42
+  2017-04-13:
+    value: 42
+  2018-07-26:
+    value: 44
+  2019-12-31:
+    value: 47
+  2022-01-01:
+    value: 47
+  2022-07-13:
+    value: 70
+  2023-07-19:
+    value: 70
+  2024-11-09:
+    value: 70
+  2025-07-15:
+    value: 80
+  2026-07-25:
+    value: 80
+metadata:
+  short_label: "Blé tendre"
+  label_en: "Soft wheat basic producer price"
+  unit: currency/100kg
+  notes:
+    1970-08-04:
+    - note: "Série incomplète : états antérieurs à 1970 non versés."
+    2008-06-16:
+    - note: "À partir de la récolte 2008, une prime exceptionnelle de prompte livraison s'ajoute au prix de base (décret n° 2008-2081, article 2, et décret n° 2009-1853 : blé dur 15 D/ql, blé tendre 10 D/ql pour les récoltes 2008 et 2009) ; elle n'est pas comprise dans la valeur."
+  reference:
+    1970-08-04:
+    - title: "Décret n° 70-261 du 30 juillet 1970, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales, fèves, féveroles et pois-chiches, pour la campagne 1970-1971"
+      href: https://www.pist.tn/jort/1970/1970F/Jo03770.pdf
+      note: "JORT n° 37 du 31 juillet au 4 août 1970, p. 985-992 (prix : p. 990). Prix de base à la production, récolte 1970 : blé tendre : 4,300 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 31 juillet au 4 août 1970, jour de parution non établi : la date portée est la dernière date du numéro, le 4 août 1970, retenue comme date de publication. Lu à l'image."
+    1971-07-13:
+    - title: "Décret n° 71-253 du 8 juillet 1971, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1971-1972"
+      href: https://www.pist.tn/jort/1971/1971F/Jo03071.pdf
+      note: "JORT n° 30 du 9 au 13 juillet 1971, p. 909-915. Prix de base à la production, récolte 1971 : blé tendre : 4,300 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 9 au 13 juillet 1971, jour de parution non établi : la date portée est la dernière date du numéro, le 13 juillet 1971, retenue comme date de publication. Lu sur l'océrisation du fascicule, contrôlée par l'arithmétique du décret (prix normal = prix de base + marge)."
+    1972-08-08:
+    - title: "Décret n° 72-244 du 7 août 1972, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1972-1973"
+      href: https://www.pist.tn/jort/1972/1972F/Jo03272.pdf
+      note: "JORT n° 32 du 4 au 8 août 1972, p. 1097-1103. Prix de base à la production, récolte 1972 : blé tendre : 4,300 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 4 au 8 août 1972, jour de parution non établi : la date portée est la dernière date du numéro, le 8 août 1972, retenue comme date de publication. Le décret est signé le 7 août 1972 (« Fait à Tunis, le 7 août 1972 ») ; le sommaire du numéro le date du 3 août. Lu sur l'océrisation du fascicule."
+    1973-07-27:
+    - title: "Décret n° 73-346 du 14 juillet 1973, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1973-1974"
+      href: https://www.pist.tn/jort/1973/1973F/Jo02873.pdf
+      note: "JORT n° 28 des 20, 24 et 27 juillet 1973, p. 1139-1145 (prix : p. 1143). Prix de base à la production, récolte 1973 : blé tendre : 4,300 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 20 au 27 juillet 1973, jour de parution non établi : la date portée est la dernière date du numéro, le 27 juillet 1973, retenue comme date de publication. Lu à l'image."
+    1974-06-27:
+    - title: "Décret n° 74-649 du 22 juin 1974, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1974-1975"
+      href: https://www.pist.tn/jort/1974/1974F/Jo04474.pdf
+      note: "JORT n° 44 du 25 au 27 juin 1974, p. 1439-1445 (prix : p. 1443-1444). Prix de base à la production, récolte 1974 : blé tendre : 5,500 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 25 au 27 juin 1974, jour de parution non établi : la date portée est la dernière date du numéro, le 27 juin 1974, retenue comme date de publication. Lu à l'image ; indemnités compensatrices de l'article 22 contrôlées par l'arithmétique (prix normal − prix réduit)."
+    1975-08-12:
+    - title: "Décret n° 75-542 du 4 août 1975, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1975-1976"
+      href: https://www.pist.tn/jort/1975/1975F/Jo05475.pdf
+      note: "JORT n° 54 du 8 au 12 août 1975, p. 1674-1680 (prix : p. 1678). Prix de base à la production, récolte 1975 : blé tendre : 6,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 8 au 12 août 1975, jour de parution non établi : la date portée est la dernière date du numéro, le 12 août 1975, retenue comme date de publication. Lu à l'image ; indemnités contrôlées par l'arithmétique."
+    1976-09-21:
+    - title: "Décret n° 76-812 du 13 septembre 1976, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1976-1977"
+      href: https://www.pist.tn/jort/1976/1976F/Jo05676.pdf
+      note: "JORT n° 56 des 17 et 21 septembre 1976, p. 2220-2225 (prix : p. 2224). Prix de base à la production, récolte 1976 : blé tendre : 6,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 17 au 21 septembre 1976, jour de parution non établi : la date portée est la dernière date du numéro, le 21 septembre 1976, retenue comme date de publication. Lu à l'image."
+    1977-12-13:
+    - title: "Décret n° 77-981 du 22 novembre 1977, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1977-1978"
+      href: https://www.pist.tn/jort/1977/1977F/Jo08177.pdf
+      note: "JORT n° 81 du 9 au 13 décembre 1977, p. 3384-3390. Prix de base à la production, récolte 1977 : blé tendre : 6,535 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 9 au 13 décembre 1977, jour de parution non établi : la date portée est la dernière date du numéro, le 13 décembre 1977, retenue comme date de publication. Lu à l'image."
+    1979-04-08:
+    - title: "Décret n° 79-289 du 2 avril 1979, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1978-1979"
+      href: https://www.pist.tn/jort/1979/1979F/Jo02579.pdf
+      note: "JORT n° 25 du 6 avril 1979, p. 984-990. Prix de base à la production, récolte 1978 : blé tendre : 7,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 6 avril 1979, exécutoire un jour franc après sa publication, soit le 8 avril 1979 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    - title: "Décret n° 80-140 du 11 février 1980, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1979-1980"
+      href: https://www.pist.tn/jort/1980/1980F/Jo01080.pdf
+      note: "JORT n° 10 du 19 février 1980, p. 455-456, article premier. Reconduit pour la campagne 1979-1980 (récolte 1979) le décret n° 79-289, tel que modifié par les articles 4 et 5 du décret n° 79-413 du 7 mai 1979 : aucun prix nouveau, la valeur reste en vigueur. Lu sur l'océrisation du fascicule."
+    1980-10-09:
+    - title: "Décret n° 80-1257 du 30 septembre 1980, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1980-1981"
+      href: https://www.pist.tn/jort/1980/1980F/Jo05780.pdf
+      note: "JORT n° 57 du 7 octobre 1980, p. 2534-2540. Prix de base à la production, récolte 1980 : blé tendre : 7,700 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 7 octobre 1980, exécutoire un jour franc après sa publication, soit le 9 octobre 1980 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1981-08-21:
+    - title: "Décret n° 81-1069 du 15 août 1981, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1980-1981"
+      href: https://www.pist.tn/jort/1981/1981F/Jo05381.pdf
+      note: "JORT n° 53 du 18 au 21 août 1981, p. 1935-1941. Prix de base à la production, récolte 1981 : blé tendre : 8,700 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 18 au 21 août 1981, jour de parution non établi : la date portée est la dernière date du numéro, le 21 août 1981, retenue comme date de publication. Le décret est intitulé « campagne 1980-1981 » mais son texte vise la récolte 1981 (articles 11 et 14). Lu à l'image."
+    1982-09-28:
+    - title: "Décret n° 82-1286 du 18 septembre 1982, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1982-1983"
+      href: https://www.pist.tn/jort/1982/1982F/Jo06182.pdf
+      note: "JORT n° 61 du 24 au 28 septembre 1982, p. 1998-2004. Prix de base à la production, récolte 1982 : blé tendre : 10,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 24 au 28 septembre 1982, jour de parution non établi : la date portée est la dernière date du numéro, le 28 septembre 1982, retenue comme date de publication. Lu à l'image."
+    1983-11-24:
+    - title: "Décret n° 83-1075 du 17 novembre 1983, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1983-1984"
+      href: https://www.pist.tn/jort/1983/1983F/Jo07583.pdf
+      note: "JORT n° 75 du 22 novembre 1983, p. 2977-2984. Prix de base à la production, récolte 1983 : blé tendre : 11,700 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 22 novembre 1983, exécutoire un jour franc après sa publication, soit le 24 novembre 1983 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1985-01-04:
+    - title: "Décret n° 84-1520 du 25 décembre 1984, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1984-1985"
+      href: https://www.pist.tn/jort/1985/1985F/Jo00185.pdf
+      note: "JORT n° 1 du 1er au 4 janvier 1985, p. 11-17. Prix de base à la production, récolte 1984 : blé tendre : 14,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 1er au 4 janvier 1985, jour de parution non établi : la date portée est la dernière date du numéro, le 4 janvier 1985, retenue comme date de publication. Lu à l'image ; indemnités (7,196 et 8,746 D/ql) contrôlées par l'arithmétique."
+    1985-10-17:
+    - title: "Décret n° 85-1242 du 7 octobre 1985, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1985-1986"
+      href: https://www.pist.tn/jort/1985/1985F/Jo07285.pdf
+      note: "JORT n° 72 du 15 octobre 1985, p. 1387-1393. Prix de base à la production, récolte 1985 : blé tendre : 14,500 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 15 octobre 1985, exécutoire un jour franc après sa publication, soit le 17 octobre 1985 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1987-02-22:
+    - title: "Décret n° 87-129 du 11 février 1987, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1986-1987"
+      href: https://www.pist.tn/jort/1987/1987F/Jo01387.pdf
+      note: "JORT n° 13 du 20 février 1987, p. 252-258. Prix de base à la production, récolte 1986 : blé tendre : 16,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 20 février 1987, exécutoire un jour franc après sa publication, soit le 22 février 1987 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1988-04-10:
+    - title: "Décret n° 88-707 du 25 mars 1988, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1987-1988"
+      href: https://www.pist.tn/jort/1988/1988F/Jo02388.pdf
+      note: "JORT n° 23 du 8 avril 1988, p. 533-538. Prix de base à la production, récolte 1987 : blé tendre : 17,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 8 avril 1988, exécutoire un jour franc après sa publication, soit le 10 avril 1988 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1989-09-03:
+    - title: "Décret n° 89-1171 du 14 août 1989, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1988-1989"
+      href: https://www.pist.tn/jort/1989/1989F/Jo05989.pdf
+      note: "JORT n° 59 du 1er septembre 1989, p. 1323-1329. Prix de base à la production, récolte 1988 : blé tendre : 19,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 1er septembre 1989, exécutoire un jour franc après sa publication, soit le 3 septembre 1989 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image (p. 1327-1328) ; indemnités (15,108 et 14,587 D/ql) contrôlées par l'arithmétique."
+    1990-05-11:
+    - title: "Décret n° 90-671 du 25 avril 1990, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1989-1990"
+      href: https://www.pist.tn/jort/1990/1990F/Jo03190.pdf
+      note: "JORT n° 31 du 8 au 11 mai 1990, p. 573-579. Prix de base à la production, récolte 1989 : blé tendre : 19,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 8 au 11 mai 1990, jour de parution non établi : la date portée est la dernière date du numéro, le 11 mai 1990, retenue comme date de publication. Lu à l'image."
+    1991-07-04:
+    - title: "Décret n° 91-943 du 17 juin 1991, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1990-1991"
+      href: https://www.pist.tn/jort/1991/1991F/Jo04791.pdf
+      note: "JORT n° 47 du 2 juillet 1991, p. 1236-1242. Prix de base à la production, récolte 1990 : blé tendre : 20,900 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 2 juillet 1991, exécutoire un jour franc après sa publication, soit le 4 juillet 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1992-10-04:
+    - title: "Décret n° 92-1657 du 14 septembre 1992, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1991-1992"
+      href: https://www.pist.tn/jort/1992/1992F/Jo06692.pdf
+      note: "JORT n° 66 du 2 octobre 1992, p. 1310-1312. Prix de base à la production, récolte 1991 : blé tendre : 20,900 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 2 octobre 1992, exécutoire un jour franc après sa publication, soit le 4 octobre 1992 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1993-09-06:
+    - title: "Décret n° 93-1721 du 16 août 1993, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1992-1993"
+      href: https://www.pist.tn/jort/1993/1993F/Jo06593.pdf
+      note: "JORT n° 65 du 31 août 1993, p. 1393-1399, article premier. Prix de base à la production, récolte 1992 : blé tendre : 22,500 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 31 août 1993, dépôt au siège du gouvernorat de Tunis le 1er septembre 1993 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 6 septembre 1993. Lu à l'image."
+    - title: "Décret n° 96-2549 du 30 décembre 1996, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1996-1997"
+      href: https://www.pist.tn/jort/1997/1997F/Jo00497.pdf
+      note: "JORT n° 4 du 14 janvier 1997, p. 59, article 14 : « Sont applicables aux campagnes 1993-1994 et 1994-1995, les dispositions du décret n° 93-1721 du 16 octobre 1993 susvisé » (le visa date ce décret du 16 août 1993). Reconduction des prix du décret n° 93-1721 pour les récoltes 1993 et 1994 : aucun prix nouveau. Édition française lue sur la couche texte."
+    1995-11-07:
+    - title: "Décret n° 95-2021 du 16 octobre 1995, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1995-1996"
+      href: https://www.pist.tn/jort/1995/1995F/Jo08795.pdf
+      note: "JORT n° 87 du 31 octobre 1995, p. 2043-2048, article premier. Prix de base à la production, récolte 1995 : blé tendre : 24,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 31 octobre 1995, dépôt au siège du gouvernorat de Tunis le 2 novembre 1995 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 7 novembre 1995. Édition française lue sur la couche texte."
+    1997-01-21:
+    - title: "Décret n° 96-2549 du 30 décembre 1996, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1996-1997"
+      href: https://www.pist.tn/jort/1997/1997F/Jo00497.pdf
+      note: "JORT n° 4 du 14 janvier 1997, p. 57-62. Prix de base à la production, récolte 1996 : blé tendre : 25,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 14 janvier 1997, dépôt au siège du gouvernorat de Tunis le 16 janvier 1997 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 21 janvier 1997. Édition française lue sur la couche texte."
+    - title: "Décret n° 2001-864 du 18 avril 2001, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2000-2001"
+      href: https://www.pist.tn/jort/2001/2001F/Jo0332001.pdf
+      note: "JORT n° 33 du 24 avril 2001, p. 924, article 14. Reconduit les dispositions du décret n° 96-2549 pour les campagnes 1997-1998, 1998-1999 et 1999-2000 (récoltes 1997 à 1999) : aucun prix nouveau. Édition française lue sur la couche texte, décodée (police décalée)."
+    2001-04-30:
+    - title: "Décret n° 2001-864 du 18 avril 2001, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2000-2001"
+      href: https://www.pist.tn/jort/2001/2001F/Jo0332001.pdf
+      note: "JORT n° 33 du 24 avril 2001, p. 922-928, article premier. Prix de base à la production, récolte 2000 : blé tendre : 26,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 24 avril 2001, dépôt au siège du gouvernorat de Tunis le 25 avril 2001 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 30 avril 2001. Édition française lue sur la couche texte, décodée (police décalée) ; article premier relu à l'image."
+    - title: "Décret n° 2005-1983 du 11 juillet 2005, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2005-2006"
+      href: https://www.pist.tn/jort/2005/2005F/Jo0572005.pdf
+      note: "JORT n° 57 du 19 juillet 2005, p. 1798, article 4 : « Sont appliquées pour les campagnes 2001-2002, 2002-2003 et 2003-2004 et 2004-2005, les dispositions du décret n° 2001-864 » (récoltes 2001 à 2004) : aucun prix nouveau. Édition française lue sur la couche texte, décodée (police décalée)."
+    2005-07-26:
+    - title: "Décret n° 2005-1983 du 11 juillet 2005, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2005-2006"
+      href: https://www.pist.tn/jort/2005/2005F/Jo0572005.pdf
+      note: "JORT n° 57 du 19 juillet 2005, p. 1797-1798. Prix de base à la production, récolte 2005 : blé tendre : 27,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 19 juillet 2005, dépôt au siège du gouvernorat de Tunis le 21 juillet 2005 (mention portée au numéro, qui imprime « 21 juillet 2004 » dans un numéro daté du 19 juillet 2005 ; l'année est lue comme 2005), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 26 juillet 2005. Édition française lue sur la couche texte, décodée (police décalée)."
+    - title: "Décret n° 2007-1402 du 18 juin 2007, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2007-2008"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf
+      note: "JORT n° 49 du 19 juin 2007, p. 2091, article 15 : « Sont applicables à la campagne 2006/2007, les dispositions du décret n° 2005-1983 » (récolte 2006) : aucun prix nouveau. Lu sur l'océrisation du fascicule, visa relu à l'image."
+    2007-06-25:
+    - title: "Décret n° 2007-1402 du 18 juin 2007, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2007-2008"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf
+      note: "JORT n° 49 du 19 juin 2007, p. 2087-2093. Prix de base à la production, récolte 2007 : blé tendre : 28,732 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 19 juin 2007, dépôt au siège du gouvernorat de Tunis le 20 juin 2007 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 25 juin 2007. Lu à l'image."
+    2008-06-16:
+    - title: "Décret n° 2008-2081 du 2 juin 2008, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2008-2009"
+      href: https://www.pist.tn/jort/2008/2008F/Jo0472008.pdf
+      note: "JORT n° 47 du 10 juin 2008, p. 1814-1819, article premier. Prix de base à la production, récolte 2008 : blé tendre : 35,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 10 juin 2008, dépôt au siège du gouvernorat de Tunis le 11 juin 2008 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 16 juin 2008. Édition française lue sur la couche texte."
+    2009-06-18:
+    - title: "Décret n° 2009-1853 du 9 juin 2009, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2009/2010"
+      href: https://www.pist.tn/jort/2009/2009F/Jo0472009.pdf
+      note: "JORT n° 47 du 12 juin 2009, p. 1556-1559. Prix de base à la production, récolte 2009 : blé tendre : 35,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 12 juin 2009, dépôt au siège du gouvernorat de Tunis le 13 juin 2009 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 18 juin 2009. Édition française lue sur la couche texte."
+    2011-04-04:
+    - title: "Décret n° 2011-325 du 23 mars 2011, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2010/2011"
+      href: https://www.pist.tn/jort/2011/2011F/Jo0212011.pdf
+      note: "JORT n° 21 du 29 mars 2011, p. 391-393, article premier. Prix de base à la production, récolte 2010 : blé tendre : 35,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 29 mars 2011, dépôt au siège du gouvernorat de Tunis le 30 mars 2011 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2012-07-19:
+    - title: "Décret n° 2012-754 du 2 juillet 2012, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2011/2012"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0552012.pdf
+      note: "JORT n° 55 du 13 juillet 2012, p. 1640-1642, article premier. Prix de base à la production, récolte 2011 : blé tendre : 35,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 13 juillet 2012, dépôt au siège du gouvernorat de Tunis le 14 juillet 2012 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2013-08-03:
+    - title: "Décret n° 2013-3103 du 10 juillet 2013, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2012/2013"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0602013.pdf
+      note: "JORT n° 60 du 26 juillet 2013, p. 2267-2269, article premier. Prix de base à la production, récolte 2012 : blé tendre : 35,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 26 juillet 2013, dépôt au siège du gouvernorat de Tunis le 29 juillet 2013 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2014-06-09:
+    - title: "Décret n° 2014-1877 du 23 avril 2014, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2013/2014"
+      href: https://www.pist.tn/jort/2014/2014F/Jo0442014.pdf
+      note: "JORT n° 44 du 3 juin 2014, p. 1446-1448, article premier. Prix de base à la production, récolte 2013 : blé tendre : 35,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 3 juin 2014, dépôt au siège du gouvernorat de Tunis le 4 juin 2014 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2015-11-10:
+    - title: "Décret gouvernemental n° 2015-1622 du 30 octobre 2015, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2014/2015"
+      href: https://www.pist.tn/jort/2015/2015F/Jo0882015.pdf
+      note: "JORT n° 88 du 3 novembre 2015, p. 2646-2648, article premier. Prix de base à la production, récolte 2014 : blé tendre : 38,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 3 novembre 2015, dépôt au siège du gouvernorat de Tunis le 5 novembre 2015 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2016-02-29:
+    - title: "Décret gouvernemental n° 2016-253 du 11 janvier 2016, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2015/2016"
+      href: https://www.pist.tn/jort/2016/2016F/Jo0162016.pdf
+      note: "JORT n° 16 du 23 février 2016, p. 569-571, article premier. Prix de base à la production, récolte 2015 : blé tendre : 42,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 23 février 2016, dépôt au siège du gouvernorat de Tunis le 24 février 2016 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2017-04-13:
+    - title: "Décret gouvernemental n° 2017-416 du 7 avril 2017, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2016/2017"
+      href: https://www.pist.tn/jort/2017/2017F/Jo0282017.pdf
+      note: "JORT n° 28 du 7 avril 2017, p. 1255-1257, article premier. Prix de base à la production, récolte 2016 : blé tendre : 42,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 7 avril 2017, dépôt au siège du gouvernorat de Tunis le 8 avril 2017 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2018-07-26:
+    - title: "Décret gouvernemental n° 2018-602 du 11 juillet 2018, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2017-2018"
+      href: https://www.pist.tn/jort/2018/2018F/Jo0582018.pdf
+      note: "JORT n° 58 du 20 juillet 2018, p. 2470-2472, article premier. Prix de base à la production, récolte 2017 : blé tendre : 44,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 20 juillet 2018, dépôt au siège du gouvernorat de Tunis le 21 juillet 2018 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2019-12-31:
+    - title: "Décret gouvernemental n° 2019-1157 du 24 décembre 2019, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2019-2020"
+      href: https://www.pist.tn/jort/2019/2019F/Jo1032019.pdf
+      note: "JORT n° 103 du 24 décembre 2019, p. 4404-4406, article premier. Prix de base à la production, récolte 2019 : blé tendre : 47,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 24 décembre 2019, dépôt au siège du gouvernorat de Tunis le 26 décembre 2019 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte."
+    2022-01-01:
+    - title: "Décret présidentiel n° 2021-250 du 23 décembre 2021, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2020-2021"
+      href: https://www.pist.tn/jort/2021/2021F/Jo1202021.pdf
+      note: "JORT n° 120 du 31 décembre 2021, p. 3276-3278, article premier. Prix de base à la production, récolte 2020 : blé tendre : 47,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 31 décembre 2021, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
+    2022-07-13:
+    - title: "Décret présidentiel n° 2022-581 du 4 juillet 2022, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2022-2023"
+      href: https://www.pist.tn/jort/2022/2022F/Jo0782022.pdf
+      note: "JORT n° 78 du 12 juillet 2022, p. 2237-2239, article premier. Prix de base à la production, récolte 2022 : blé tendre : 70,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 12 juillet 2022, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
+    - title: "Décret présidentiel n° 2022-580 du 4 juillet 2022, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2021-2022"
+      href: https://www.pist.tn/jort/2022/2022F/Jo0782022.pdf
+      note: "JORT n° 78 du 12 juillet 2022, p. 2232-2234, article premier. Récolte 2021 : prix de base à la production 50,000 D/ql. Exécutoire le 13 juillet 2022, le même jour que le décret de la récolte 2022, publié dans le même numéro ; non porté en valeur, ses prix ne s'appliquant qu'à une récolte antérieure. Édition française lue sur la couche texte."
+    - title: "Décret présidentiel n° 2022-650 du 21 juillet 2022, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2018-2019"
+      href: https://www.pist.tn/jort/2022/2022F/Jo0812022.pdf
+      note: "JORT n° 81 du 22 juillet 2022, p. 2348-2350, article premier. Récolte 2018 : prix de base à la production 44,000 D/ql. Exécutoire le 23 juillet 2022, après le décret de la récolte 2022 ; non porté en valeur, ses prix ne s'appliquant qu'à une récolte antérieure. Édition française lue sur la couche texte."
+    2023-07-19:
+    - title: "Décret n° 2023-529 du 17 juillet 2023, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2023-2024"
+      href: https://www.pist.tn/jort/2023/2023F/Jo0732023.pdf
+      note: "JORT n° 73 du 18 juillet 2023, p. 1814-1816, article premier. Prix de base à la production, récolte 2023 : blé tendre : 70,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 18 juillet 2023, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
+    2024-11-09:
+    - title: "Décret n° 2024-545 du 7 novembre 2024, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2024-2025"
+      href: https://www.pist.tn/jort/2024/2024F/Jo1362024.pdf
+      note: "JORT n° 136 du 8 novembre 2024, p. 3019-3021, article premier. Prix de base à la production, récolte 2024 : blé tendre : 70,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 8 novembre 2024, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
+    2025-07-15:
+    - title: "Décret n° 2025-344 du 11 juillet 2025, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2025-2026"
+      href: https://www.pist.tn/jort/2025/2025F/Jo0892025.pdf
+      note: "JORT n° 89 du 14 juillet 2025, p. 1652-1654, article premier. Prix de base à la production, récolte 2025 : blé tendre : 80,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 14 juillet 2025, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
+    2026-07-25:
+    - title: "Arrêté conjoint du ministre de l'agriculture, des ressources hydrauliques et de la pêche maritime et de la ministre des finances du 24 juillet 2026, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 2026-2027"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0752026.pdf
+      note: "JORT n° 75 du 24 juillet 2026, p. 1440-1442, article premier. Prix de base à la production, récolte 2026 : blé tendre : 80,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 24 juillet 2026, exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1, JORT n° 32 de 2020, p. 767). Édition française lue sur la couche texte."
+documentation: |-
+  Prix fixé pour chaque récolte, en dinars par quintal (100 kg), auquel les céréales saines,
+  loyales et marchandes sont achetées à la production et auprès des collecteurs. Le texte de
+  campagne le fixe à son article premier.
+
+  Chaque texte fixe les prix « de la récolte de l'année » qu'il vise ; la valeur prend effet à la
+  date d'entrée en vigueur du texte, non au début de la récolte. Avant 1993, un texte est
+  exécutoire un jour franc après sa publication ; quand le numéro du Journal officiel porte
+  plusieurs dates, la valeur est portée à la dernière,
+  retenue comme date de publication, sans calcul de jour franc. Une campagne régie par
+  reconduction d'un texte antérieur (récoltes 1979, 1993-1994, 1997-1999, 2001-2004 et 2006) ne
+  porte pas de valeur nouvelle ; le texte qui reconduit figure dans les références, à la date de
+  la valeur qu'il maintient. Deux décrets ne sont pas portés
+  en valeur : le décret n° 2022-580 (récolte 2021), entré en vigueur le même jour que celui de la
+  récolte 2022, et le décret n° 2022-650 (récolte 2018), entré en vigueur après lui ; leurs prix,
+  inférieurs à ceux de la récolte 2022, auraient fait revenir la série à des prix antérieurs. Ils
+  figurent dans les références au 13 juillet 2022. Depuis le décret-loi n° 2025-2 du 24 septembre
+  2025 (JORT n° 118 du 25 septembre 2025, p. 2420), ces prix sont fixés par arrêté conjoint des
+  ministres chargés des finances et de l'agriculture, et non plus par décret.

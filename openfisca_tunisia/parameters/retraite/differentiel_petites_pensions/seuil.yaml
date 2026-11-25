@@ -1,0 +1,12 @@
+description: Seuil du différentiel complémentaire, montant mensuel net de pension
+values:
+  2020-06-10:
+    value: 180
+metadata:
+  unit: currency/mois
+  short_label: Seuil mensuel net
+  reference:
+    2020-06-10:
+    - title: "Décret-loi du Chef du gouvernement n° 2020-30 du 10 juin 2020, portant des mesures pour la consolidation des assises de la solidarité nationale et le soutien des personnes et des entreprises suite aux répercussions de la propagation du Coronavirus « Covid-19 », article premier"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0542020.pdf
+      note: "JORT n° 54 du 10 juin 2020, p. 1408 de l'édition arabe, l'édition française n'étant pas disponible sur pist.tn. Article premier : les titulaires de pensions dont le montant mensuel net est inférieur ou égal à 180 dinars reçoivent un différentiel complémentaire égal à l'écart entre ce montant et 180 dinars. L'article 17 (p. 1413) fait entrer le décret-loi en vigueur à la date de sa publication au Journal officiel, le 10 juin 2020, date énoncée par le texte."

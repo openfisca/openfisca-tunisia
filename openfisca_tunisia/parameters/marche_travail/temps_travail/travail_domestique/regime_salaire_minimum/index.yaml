@@ -1,0 +1,10 @@
+description: "Régime horaire du salaire minimum garanti applicable au travail domestique"
+metadata:
+  short_label: "Régime du salaire minimum, travail domestique"
+  order:
+  - heures_hebdomadaires
+documentation: |-
+  Le salaire du travailleur domestique ne peut être inférieur au salaire minimum garanti applicable dans les
+  différents secteurs, « au régime de 48 heures de travail par semaine, qu'il soit payé mensuellement ou à l'heure »
+  (article 11). La loi ne dit pas quel salaire minimum est applicable dans un secteur donné : la feuille ne porte que
+  le régime horaire.
