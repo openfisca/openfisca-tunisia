@@ -1,0 +1,51 @@
+description: Taux du droit d'enregistrement proportionnel sur les marchés et concessions
+values:
+  '1993-05-17':
+    value: 0.027
+  '1994-01-01':
+    value: null
+  '2013-01-01':
+    value: 0.005
+metadata:
+  unit: /1
+  short_label: Taux
+  notes:
+    '1993-05-17':
+    - note: 'Série incomplète : états antérieurs à 1993 non versés.'
+  reference:
+    '1993-05-17':
+    - title: Loi n° 93-53 du 17 mai 1993, portant promulgation du code des droits d'enregistrement et
+        de timbre, article 2 ; code, article 20, numéro 19
+      href: https://www.pist.tn/jort/1993/1993F/Jo03993.pdf
+      note: 'JORT n° 39 du 25 mai 1993, p. 715 (loi, article 2) et p. 720 (code). « 19) Les adjudications
+        et marchés pour construction, réparation, entretien, approvisionnement, fourniture et tous autres
+        services et objets mobiliers conclus en Tunisie ou conclus à l''étranger et appelés à être exécutés
+        en Tunisie 2,7 % ». Les marchés des numéros 13 à 15 de l''article 23 (marchés passés par des assujettis
+        à la taxe sur la valeur ajoutée, sous-traitance, collectivités locales) sont au droit fixe. Date
+        d''effet : article 2, I de la loi, p. 715 : « Les dispositions du code sus visé s''appliquent
+        aux jugements, actes, contrats et mutations établis ou intervenus à compter de la promulgation
+        de la présente loi », soit le 17 mai 1993. Édition française sans couche texte, lue à l''image.'
+    '1994-01-01':
+    - title: Loi n° 93-125 du 27 décembre 1993, portant loi de finances pour la gestion 1994, articles
+        57, 59 et 77
+      href: https://www.pist.tn/jort/1993/1993F/Jo10093.pdf
+      note: 'JORT n° 100 du 31 décembre 1993, p. 2200. Rubrique « Enregistrement des marchés au droit
+        fixe ». Article 59 : le numéro 19 de l''article 20 du code (2,7 %) est abrogé ; article 57 : les
+        marchés passent au droit fixe par page. Article 77 (p. 2202) : « Les dispositions de la présente
+        loi sont applicables à compter du 1er janvier 1994 ». Édition française sans couche texte, lue
+        à l''image.'
+    '2013-01-01':
+    - title: Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 50,
+        54 et 79
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: 'JORT n° 1 du 1er janvier 2013, p. 15. Rubrique « Révision du régime de l''enregistrement
+        des marchés et concessions ». Article 50 : « 19 (nouveau). Les marchés et concessions 0,5 % »
+        au tarif de l''article 20 du code ; article 54 (p. 16) : le numéro 13 de l''article 23 (droit
+        fixe des marchés) et le deuxième alinéa du paragraphe I de l''article 22 (maximum de perception)
+        sont abrogés. Article 79 (p. 28) : application à compter du 1er janvier 2013. Édition française
+        lue sur la couche texte.'
+documentation: |
+  Taux proportionnel des marchés et concessions. Sans objet du 1er janvier 1994 au 31 décembre 2012,
+  période du droit fixe par page. Avant le code, 2,20 % au tarif de 1969, 2,70 % depuis la loi de
+  finances pour 1985. La loi de finances pour 2018 (article 33) étend le numéro 19 à d'autres contrats
+  ; ce texte n'est pas relu ici.

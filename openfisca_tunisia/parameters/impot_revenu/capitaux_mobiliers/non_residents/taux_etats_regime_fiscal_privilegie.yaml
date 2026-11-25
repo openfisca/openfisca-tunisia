@@ -1,0 +1,49 @@
+description: "Taux de la retenue à la source sur les revenus servis aux personnes résidentes ou établies dans un pays ou territoire à régime fiscal privilégié"
+values:
+  2014-01-01:
+    value: 0.25
+  2019-01-01:
+    value: 0.25
+metadata:
+  unit: /1
+  short_label: "Retenue, bénéficiaires établis dans un pays à régime fiscal privilégié"
+  reference:
+    2014-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, articles 44 et 95"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, p. 3677 (article 44) et p. 3699 (article 95). Rubrique « Relèvement du taux de la retenue à la source sur les montants payés à des résidents dans des paradis fiscaux ». Article 44 : « Le taux de la retenue à la source prévu au troisième tiret de l'alinéa « b » et aux alinéas « c », « c bis » et « e » du paragraphe I du présent article est relevé à 25% lorsque il s'agit de rémunérations ou revenus servis à des personnes résidentes ou établies dans des paradis fiscaux. La liste des paradis fiscaux concernés par les dispositions du présent article est fixée par décret. » Date d'effet : article 95 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2014. » Édition française lue sur la couche texte."
+    2019-01-01:
+    - title: "Loi n° 2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019, articles 35 et 90"
+      href: https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf
+      note: "JORT n° 104 du 28 décembre 2018, édition arabe, pp. 5449-5450 (article 35) et p. 5469 (article 90). Article 35, paragraphe 2, deuxième alinéa ajouté au point 12 de l'article 14 du code : « ويعتبر أشخاص مقيمين أو مستقرين ببلد أو إقليم ذي نظام جبائي تفاضلي إذا كانت الضريبة المستوجبة عليهم بهذا البلد أو الإقليم تقل عن 50% من الضريبة على الدخل أو الضريبة على الشركات المستوجبة بالبلاد التونسية على نفس النشاط. وتضبط قائمة البلدان والأقاليم ذات نظام جبائي تفاضلي بمقتضى قرار من الوزير المكلّف بالمالية » (sont considérées comme résidentes ou établies dans un pays ou territoire à régime fiscal privilégié les personnes dont l'impôt dû dans ce pays ou territoire est inférieur à 50 % de l'impôt sur le revenu ou de l'impôt sur les sociétés dû en Tunisie sur la même activité ; la liste de ces pays et territoires est fixée par arrêté du ministre chargé des finances). Paragraphe 4 : l'expression « بملاذات جبائية » (dans des paradis fiscaux) de l'avant-dernier alinéa de l'article 52 est remplacée par « ببلد أو إقليم ذي نظام جبائي تفاضلي على معنى العدد 12 من الفصل 14 من هذه المجلة » (dans un pays ou territoire à régime fiscal privilégié au sens du point 12 de l'article 14) ; paragraphe 5 : le dernier alinéa de l'article 52 (liste fixée par décret) est abrogé. Le taux de 25 % ne change pas ; l'entrée porte le texte qui en définit désormais le champ. Date d'effet : article 90 — « مع مراعاة الأحكام المخالفة الواردة بهذا القانون، تطبق أحكام هذا القانون ابتداء من غرة جانفي 2019 » (sous réserve des dispositions contraires, à compter du 1er janvier 2019). Édition arabe lue sur la couche texte ; l'édition française de ce fascicule répond 404 sur pist.tn (21 octobre 2026) : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux de la retenue sur les rémunérations et revenus servis à des personnes résidentes ou
+  établies dans un pays ou territoire à régime fiscal privilégié (avant-dernier alinéa de
+  l'article 52 du code). Il remplace, pour ces bénéficiaires, le taux de la retenue sur les
+  redevances servies aux non-résidents (alinéa b, troisième tiret), sur les revenus de capitaux
+  mobiliers (alinéa c), sur les revenus distribués (alinéa c bis) et sur les intérêts des prêts
+  des banques non établies (alinéa e).
+
+  Le taux ne joue que pour les pays et territoires d'une liste :
+
+  - la première est annexée au décret n° 2014-3833 du 3 octobre 2014, portant fixation de la liste
+    des paradis fiscaux concernés par les dispositions de l'article 44 de la loi n° 2013-54 du 30
+    décembre 2013 (JORT n° 86 du 24 octobre 2014, pp. 2811-2812,
+    https://www.pist.tn/jort/2014/2014F/Jo0862014.pdf) : 35 pays et territoires, de Delaware
+    (États-Unis) à Djibouti. Le décret n'a pas de clause d'effet ; le fascicule est déposé au
+    siège du gouvernorat de Tunis le 27 octobre 2014 (mention des éditions française et arabe), et
+    le décret est exécutoire le 1er novembre 2014 (loi n° 93-64, article 2, jour du dépôt non
+    compté) ;
+  - la loi de finances pour 2019 (article 35) abroge, au 1er janvier 2019, l'alinéa qui renvoyait
+    à un décret, et confie la liste à un arrêté du ministre chargé des finances. L'arrêté du 25
+    mars 2019 portant fixation de la liste des États et territoires dont le régime fiscal est
+    privilégié (JORT n° 27 du 2 avril 2019, pp. 867-869,
+    https://www.pist.tn/jort/2019/2019F/Jo0272019.pdf) reprend le critère de la loi, un impôt
+    inférieur à 50 % de l'impôt dû en Tunisie pour la même activité, et le traduit en seuils :
+    taux d'impôt inférieur à 5 %, 12,5 % ou 17,5 % selon que l'activité est soumise en Tunisie à
+    l'impôt sur les sociétés au taux de 10 %, 25 % ou 35 %. L'arrêté n'a pas de clause d'effet ;
+    le fascicule est déposé au siège du gouvernorat de Tunis le 3 avril 2019 (mention des
+    éditions française et arabe), et l'arrêté est exécutoire le 8 avril 2019.
+
+  La série garde ses dates, celles des lois de finances qui fixent le taux et en définissent le
+  champ ; les dates des listes ne changent pas le taux.

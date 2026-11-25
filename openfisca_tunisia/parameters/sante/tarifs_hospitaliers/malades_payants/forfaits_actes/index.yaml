@@ -1,0 +1,31 @@
+description: "Actes comptés à l'acte global et honorés au forfait, quel que soit leur coefficient, malades payants"
+metadata:
+  short_label: "Forfaits d'actes"
+  order:
+  - hemodialyse_seance
+  - lithotripsie
+  - imagerie_resonance_magnetique
+  - accouchement_normal
+  - accouchement_cesarienne
+  - scanner_crane
+  - scanner_reste_corps
+  - fecondation_in_vitro
+  - insemination_sperme_conjoint
+  - photokeratectomie_laser
+  - photokeratectomie_laser_reprise
+  - keratomileusis_laser
+  - keratomileusis_laser_deux_yeux
+documentation: |-
+  Article 11 de l'arrêté du 19 décembre 1996, remplacé par l'arrêté du 17 avril 1998, complété par
+  l'arrêté du 29 janvier 2003 et modifié par l'arrêté du 7 juillet 2008. L'arrêté de 1998 réécrit
+  l'article entier : les forfaits qu'il reprend sans changement portent une valeur datée de 1998, avec
+  sa référence.
+
+  Le forfait d'accouchement couvre un séjour de trois jours ; chaque journée supplémentaire est comptée
+  au tarif normal de la journée d'hospitalisation de la structure.
+
+  L'arrêté de 2008 abroge « l'alinéa 3 » de l'article 11. Les arrêtés désignent par « alinéa » les points
+  numérotés de l'article (celui de 2003 ajoute « l'alinéa 7 suivant : 7. Correction des troubles
+  réfractifs ») : c'est le point 3, l'imagerie par résonance magnétique, dont le forfait est clos au
+  17 juillet 2008. Le même arrêté introduit des cotations de scanographie (lettre clé S) sans abroger les
+  forfaits de tomodensitométrie, qui restent ici ouverts.

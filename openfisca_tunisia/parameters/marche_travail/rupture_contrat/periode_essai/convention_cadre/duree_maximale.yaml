@@ -1,0 +1,18 @@
+description: "Durée maximale de la période d'essai de la convention collective cadre"
+values:
+  1973-06-01:
+    value: 3
+metadata:
+  unit: month
+  short_label: "Convention cadre, période d'essai, durée maximale"
+  reference:
+    1973-06-01:
+    - title: "Convention collective cadre du 20 mars 1973, agréée par l'arrêté du ministre des affaires sociales du 29 mai 1973, article 10"
+      href: https://www.pist.tn/jort/1973/1973F/Jo02173.pdf
+      note: "JORT n° 21 des 25-29 mai-1er juin 1973, p. 854. Article 10, « Période d'essai » : « La durée de la période d'essai n'excédera pas trois mois. Au cours de la période d'essai, le travailleur peut donner ou recevoir congé sans préavis, sur simple signification. A l'issue de la période d'essai, tout engagement est confirmé par une lettre précisant les fonctions du travailleur ainsi que sa rémunération. Si l'essai n'est pas concluant, le candidat pourra être soumis à un deuxième et dernier essai pour une même période. » Date d'effet : article 52, « La présente Convention Collective entrera en vigueur le 1er juin 1973 » (p. 859). L'arrêté du 29 mai 1973, article 2, rend ses dispositions obligatoires pour tous les employeurs et travailleurs des activités non agricoles assujettis au code du travail (p. 852). Édition française lue à l'image."
+documentation: |-
+  Durée de la période d'essai initiale ; le second essai est de même durée
+  (`renouvellements_maximum`). Aucun texte lu ne clôt la série : ni les avenants n° 1 (17 novembre 1984), n° 2
+  (15 octobre 1992) et n° 3 (20 avril 2004), qui ne touchent pas l'article 10, ni la loi n° 2025-9, dont
+  l'article 7 maintient seulement les périodes d'essai stipulées dans les contrats conclus avant son entrée en
+  vigueur si elles sont inférieures à six mois.

@@ -1,6 +1,6 @@
 description: Montant de l'allocation de base du transfert monétaire permanent du programme Amen social
 values:
-  2020-05-20:
+  2020-05-25:
     value: 180
   2022-01-01:
     value: 200
@@ -10,41 +10,90 @@ values:
     value: 240
   2025-01-01:
     value: 260
+  2026-01-01:
+    value: 280
 metadata:
   unit: currency
   reference:
-    2020-05-20:
-    - title: Loi organique 2019-10 du 30 janvier 2019 relative au programme AMEN social - Article 2 - Définition des allocations de base
-      href: https://www.pist.tn/jort/2019/2019F/Jo0112019.pdf
-    - title: Décret 2020-317 du 19 mai 2020 fixant les modalités d'application
+    2020-05-25:
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article 2, premier tiret"
       href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
-    - title: Arrêté conjoint 2020-931 du ministère des affaires sociales et du ministère de l’économie et des finances du 19 mai 2020
-      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+      note: "JORT n° 45 du 20 mai 2020, p. 1097 : « Art. 2 - Le montant mensuel de transfert direct pour les catégories pauvres bénéficiant du programme « AMEN SOCIAL » est calculé comme suit : - Un montant de base mensuel égal à 180 dinars […] », servi à la personne seule ou à la famille. L'arrêté ne porte pas de clause d'entrée en vigueur (son article 3 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 20 mai 2020 » : exécutoire le 25 mai 2020."
+    - title: "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020, fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article 2, premier tiret (édition arabe)"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0452020.pdf
+      note: "الرائد الرسمي عدد 45 بتاريخ 20 ماي 2020، ص. 1251 : « - مقدار أساسي للتحويل المالي بمبلغ قدره 180 دينار شهريا للفرد أو للأسرة الواحدة، »"
     2022-01-01:
-      title: JORT n° 38 et paru le 8 avril 2022
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 1er avril 2022, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article premier (article 2, alinéa 1 nouveau)"
       href: https://www.pist.tn/jort/2022/2022F/Jo0382022.pdf
+      note: "JORT n° 38 du 8 avril 2022, pp. 972-973 ; article premier p. 973 : « alinéa1 (nouveau) : Un montant de base mensuel égal à 200 dinars […] et ce à compter du 1er janvier 2022, ». La date est celle que le texte énonce, antérieure à la publication (fascicule déposé au siège du gouvernorat de Tunis le 8 avril 2022) ; l'arrêté n'a pas d'autre clause d'effet."
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 1er avril 2022, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », article premier (article 2, alinéa 1 nouveau) (édition arabe)"
+      href: https://www.pist.tn/jort/2022/2022A/Ja0382022.pdf
+      note: "الرائد الرسمي عدد 38 بتاريخ 8 أفريل 2022، ص. 988-989 ؛ الفصل الأول ص. 989 : « مطة أولى (جديدة) : مقدار أساسي للتحويل المالي بمبلغ قدره 200 دينار شهريا للفرد أو للأسرة الواحدة، وذلك ابتداء من أول جانفي 2022، »"
     2023-01-01:
-      title: JORT n° 34 et paru le 6 avril 2023
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 3 avril 2023, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2"
       href: https://www.pist.tn/jort/2023/2023F/Jo0342023.pdf
+      note: "JORT n° 34 du 6 avril 2023, pp. 809-810 ; articles premier et 2 p. 810. Article premier, qui remplace l'alinéa 1 de l'article 2 de l'arrêté du 19 mai 2020 : « Un montant de base mensuel égal à 220 dinars […] ». Article 2 : « Le présent arrêté prend effet à compter 1er janvier 2023. » La date est celle que le texte énonce, antérieure à la publication (fascicule déposé au siège du gouvernorat de Tunis le 6 avril 2023)."
+    - title: "Arrêté du ministre des affaires sociales et de la ministre des finances du 3 avril 2023, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2 (édition arabe)"
+      href: https://www.pist.tn/jort/2023/2023A/Ja0342023.pdf
+      note: "الرائد الرسمي عدد 34 بتاريخ 6 أفريل 2023، ص. 1034 : « الفصل 2 (مطة أولى جديدة) : مقدار أساسي للتحويل المالي بمبلغ قدره 220 دينار شهريا للفرد أو للأسرة الواحدة. » ؛ « الفصل 2 - يجري العمل بهذا القرار ابتداء من 1 جانفي 2023. »"
     2024-01-01:
-      title: JORT n° 33 et paru le 1er mars 2024
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 28 février 2024, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2"
       href: https://www.pist.tn/jort/2024/2024F/Jo0332024.pdf
+      note: "JORT n° 33 du 1er mars 2024, pp. 768-769 ; articles premier et 2 p. 769. Article premier, qui remplace l'alinéa 1 de l'article 2 de l'arrêté du 19 mai 2020 : « Un montant de base mensuel égal à 240 dinars […] ». Article 2 : « Le présent arrêté prend effet à compter du 1er janvier 2024. » La date est celle que le texte énonce, antérieure à la publication (fascicule déposé au siège du gouvernorat de Tunis le 1er mars 2024)."
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 28 février 2024, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2 (édition arabe)"
+      href: https://www.pist.tn/jort/2024/2024A/Ja0332024.pdf
+      note: "الرائد الرسمي عدد 33 بتاريخ 1 مارس 2024، ص. 2926 : « الفصل 2 (مطة أولى جديدة) : مقدار أساسي للتحويل المالي بمبلغ قدره 240 دينار شهريا للفرد أو للأسرة الواحدة. » ؛ « الفصل 2 - يجري العمل بهذا القرار ابتداء من 1 جانفي 2024. »"
     2025-01-01:
-      title: Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 29 janvier 2025, JORT n° 12 du 30 janvier 2025, p. 275 ; effet rétroactif au 1er janvier 2025
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 29 janvier 2025, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2"
       href: https://www.pist.tn/jort/2025/2025F/Jo0122025.pdf
+      note: "JORT n° 12 du 30 janvier 2025, pp. 275-276 ; articles premier et 2 p. 276, dernière page du fascicule, qui ne porte pas de numéro. Article premier, qui remplace l'alinéa 1 de l'article 2 de l'arrêté du 19 mai 2020 : « Un montant de base mensuel égal à 260 dinars […] ». Article 2 : « Le présent arrêté prend effet à compter du 1er janvier 2025. » La date est celle que le texte énonce, antérieure à la publication (fascicule déposé au siège du gouvernorat de Tunis le 30 janvier 2025)."
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 29 janvier 2025, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2 (édition arabe)"
+      href: https://www.pist.tn/jort/2025/2025A/Ja0122025.pdf
+      note: "الرائد الرسمي عدد 12 بتاريخ 30 جانفي 2025، ص. 280-281 ؛ الفصلان الأول و2 ص. 281 : « الفصل 2 (مطة أولى جديدة) : مقدار أساسي للتحويل المالي بمبلغ قدره 260 دينار شهريا للفرد أو للأسرة الواحدة. » ؛ « الفصل 2 - يجري العمل بهذا القرار ابتداء من 1 جانفي 2025. »"
+    2026-01-01:
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 21 avril 2026, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2"
+      href: https://www.pist.tn/jort/2026/2026F/Jo0402026.pdf
+      note: "JORT n° 40 du 21 avril 2026, p. 786. Article premier, qui remplace l'alinéa 1 de l'article 2 de l'arrêté du 19 mai 2020 : « Un montant de base mensuel égal à 280 dinars […] ». Article 2 : « Le présent arrêté prend effet à compter du 1er janvier 2026. » La date est celle que le texte énonce, antérieure à la publication (fascicule déposé au siège du gouvernorat de Tunis le 21 avril 2026)."
+    - title: "Arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 21 avril 2026, modifiant l'arrêté conjoint du 19 mai 2020 fixant le mode de calcul et le montant des transferts monétaires directs au profit des catégories pauvres bénéficiant du programme « AMEN SOCIAL », articles premier et 2 (édition arabe)"
+      href: https://www.pist.tn/jort/2026/2026A/Ja0402026.pdf
+      note: "الرائد الرسمي عدد 40 بتاريخ 21 أفريل 2026، ص. 852 : « الفصل 2 (مطة أولى جديدة) : مقدار أساسي للتحويل المالي بمبلغ قدره 280 دينارا شهريا للفرد أو للأسرة الواحدة. » ؛ « الفصل 2 - يجري العمل بهذا القرار ابتداء من 1 جانفي 2026. »"
   official_journal_date:
-    2020-05-20: "2020-05-20"
+    2020-05-25: "2020-05-20"
     2022-01-01: "2022-04-08"
     2023-01-01: "2023-04-06"
     2024-01-01: "2024-03-01"
     2025-01-01: "2025-01-30"
+    2026-01-01: "2026-04-21"
 documentation: |
-  Montant de base mensuel du transfert monétaire permanent du programme AMEN social.
+  Montant de base mensuel du transfert monétaire permanent, servi à la personne seule ou à la
+  famille des catégories pauvres (article 11 de la loi organique n° 2019-10, que vise l'arrêté du
+  19 mai 2020). Les suppléments par enfant à charge sont dans `supplements/`.
 
-  Palier 2025 ajouté : 260 dinars, par l'arrêté conjoint du 29 août 2025, rétroactif au
-  1er janvier 2025. La série s'arrêtait à 240 dinars.
+  Six textes, six paliers. L'arrêté conjoint du 19 mai 2020 fixe 180 dinars (article 2, premier
+  tiret). Cinq arrêtés remplacent ensuite ce seul premier tiret, chacun avec une date d'effet
+  énoncée, antérieure à sa publication : 200 dinars au 1er janvier 2022 (arrêté du 1er avril 2022,
+  qui date le montant dans l'alinéa même), 220 dinars au 1er janvier 2023 (arrêté du 3 avril 2023,
+  article 2), 240 dinars au 1er janvier 2024 (arrêté du 28 février 2024, article 2), 260 dinars au
+  1er janvier 2025 (arrêté du 29 janvier 2025, article 2), 280 dinars au 1er janvier 2026 (arrêté
+  du 21 avril 2026, article 2). Ces dates sont reprises telles quelles.
 
-  Avertissement sur les dates. Les clés `official_journal_date` portent les dates de
-  publication des arrêtés — avril 2022, avril 2023, mars 2024 — tandis que les dates d'effet
-  encodées sont au 1er janvier. Les deux séries de dates sont exactes mais ne décrivent pas la
-  même chose ; ne pas aligner les unes sur les autres sans lire l'article d'effet.
+  Palier 2026 ajouté : la série s'arrêtait à 260 dinars.
+
+  Date du premier palier corrigée. La valeur de 180 dinars était datée du 20 mai 2020, jour de la
+  publication. L'arrêté du 19 mai 2020 ne porte pas de clause d'effet : il devient exécutoire cinq
+  jours après le dépôt du fascicule au siège du gouvernorat de Tunis (20 mai 2020), le jour du
+  dépôt n'étant pas compté (loi n° 93-64, article 2), soit le 25 mai 2020. Aucune valeur n'est
+  portée avant cette date : aucun état antérieur de ce montant n'est établi ici.
+
+  Références corrigées. Le premier palier citait un « arrêté conjoint 2020-931 » : l'arrêté ne
+  porte pas de numéro au fascicule. Il citait aussi l'article 2 de la loi
+  organique n° 2019-10 et le décret gouvernemental n° 2020-317, qui ne fixent pas ce montant. Les
+  paliers de 2022 à 2024 ne citaient que le fascicule, sans texte ni article. La notice attribuait
+  le palier de 2025 à un arrêté du « 29 août 2025 » : il est du 29 janvier 2025.
+
+  Les clés `official_journal_date` portent la date du fascicule ; à partir de 2022 elle est
+  postérieure à la date d'effet, que chaque arrêté énonce.
+
+  Lu dans les deux éditions de chaque fascicule ; les pages sont dans les références. Les éditions
+  françaises des arrêtés modificatifs parlent de l'« alinéa 1 » de l'article 2 là où les éditions
+  arabes disent « premier tiret » (المطة الأولى).

@@ -9,6 +9,16 @@
     one: Dinar
     other: Dinars
   short_label: DT
+- name: currency/heure
+  label:
+    one: Dinar par heure
+    other: Dinars par heure
+  short_label: DT/heure
+- name: currency/mois
+  label:
+    one: Dinar par mois
+    other: Dinars par mois
+  short_label: DT/mois
 - name: millimes
   label:
     one: Millime
@@ -29,6 +39,11 @@
     one: Dinar pour un hectolitre
     other: Dinars pour hectolitre
   short_label: DT/hl
+- name: currency/cl
+  label:
+    one: Dinar pour un centilitre
+    other: Dinars pour centilitre
+  short_label: DT/cl
 - name: currency/l
   label:
     one: Dinar pour un litre
@@ -44,11 +59,26 @@
     one: Dinar par mètre cube
     other: Dinars par mètre cube
   short_label: DT/m3
+- name: currency/m2
+  label:
+    one: Dinar par mètre carré
+    other: Dinars par mètre carré
+  short_label: DT/m2
 - name: currency/unit
   label:
     one: Dinar pour une unité
     other: Dinars pour une unité
   short_label: DT/unité
+- name: currency/page
+  label:
+    one: Dinar par page
+    other: Dinars par page
+  short_label: DT/page
+- name: currency/tranche
+  label:
+    one: Dinar par tranche
+    other: Dinars par tranche
+  short_label: DT/tranche
 - name: day
   label:
     one: jour
@@ -62,6 +92,11 @@
     one: mètre cube
     other: mètres cube
   short_label: m3
+- name: m2
+  label:
+    one: mètre carré
+    other: mètres carrés
+  short_label: m2
 - name: millimes/kWh
   label:
     one: Millime par kilowatt-heure
@@ -96,6 +131,16 @@
   short_label:
     one: an
     other: ans
+- name: day/month
+  label:
+    one: jour par mois
+    other: jours par mois
+  short_label: j/mois
+- name: month/year
+  label:
+    one: mois par année
+    other: mois par année
+  short_label: mois/an
 - name: smig
   label:
     one: Smig
@@ -118,3 +163,11 @@
   label:
     one: décile
     other: déciles
+- name: diviseur
+  label:
+    one: diviseur
+    other: diviseurs
+- name: jour_ferie
+  label:
+    one: jour férié
+    other: jours fériés

@@ -1,0 +1,24 @@
+description: "Droit d'enregistrement sur les successions"
+metadata:
+  short_label: "Successions"
+  order:
+  - tarif
+  - abattement
+  - habitation_principale_superficie_maximum
+  - frais_funeraires_forfait
+documentation: |-
+  Droit d'enregistrement dû sur les mutations par décès de biens meubles et immeubles, liquidé
+  sur la part nette recueillie par chaque ayant droit, après déduction du passif, des frais
+  funéraires et des abattements. Le taux dépend du degré de parenté entre le défunt et l'ayant
+  droit.
+
+  Jusqu'au code des droits d'enregistrement et de timbre, promulgué par la loi n° 93-53 du 17 mai
+  1993, ce droit est appelé « droit de mutation par décès ». Le code le nomme « droit
+  d'enregistrement sur les successions » et soumet les donations au même tarif (article 20,
+  numéro 16).
+
+  Ne sont pas versées ici les exonérations sans montant : immeubles agricoles transmis en ligne
+  directe, entre époux ou entre frères et sœurs sous engagement d'indivision (loi de finances
+  pour 1988, article 32, repris par le code, article 52), capital décès et pensions (article
+  54), legs aux œuvres et à l'État (article 55), renonciation à l'héritage des ascendants au
+  profit des descendants (article 38 bis, ajouté par la loi n° 98-73).

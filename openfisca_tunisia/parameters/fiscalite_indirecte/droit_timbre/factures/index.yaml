@@ -1,0 +1,10 @@
+description: Droit de timbre sur les factures
+metadata:
+  short_label: Factures
+  order:
+  - par_facture
+  - grandes_surfaces
+documentation: |
+  Droit de timbre dû sur chaque facture, quel qu'en soit le montant (article 117, paragraphe I, numéro
+  6 du code), et, depuis 2026, tarif propre aux factures des grandes surfaces commerciales (numéro 6
+  bis).

@@ -1,0 +1,27 @@
+description: "Contribution à la réalisation de parkings collectifs, par place de stationnement, barème de 1997 — commune de plus de 100 000 habitants"
+values:
+  1997-01-01:
+    value: 500
+  2003-01-01:
+    value: null
+metadata:
+  unit: currency
+  short_label: "Plus de 100 000 hab."
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 90 ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 181 (article 90 du code) et p. 173 (article 3 de la loi). Article 90 : « La contribution prévue par l'article 89 du présent code est égale à : […] - cinq cents dinars par place de stationnement à l'intérieur du parking pour les municipalités dont le nombre d'habitants dépasse cent mille habitants ». Dernier paragraphe : « Sans préjudice des sanctions prévues par la législation en vigueur, le montant de la contribution est doublé pour les places de stationnement en défaut ou pour celles réaffectées à un autre usage sans autorisation. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française : article 90 lu à l'image et sur la couche texte du fascicule, p. 181 ; article 3 de la loi lu sur la couche texte ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+    2003-01-01:
+    - title: "Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles 79 et 87"
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: "JORT n° 102 du 17 décembre 2002, p. 2887 (article 79) et p. 2888 (article 87). Article 79, sous la rubrique « Rationalisation des règles de fixation de la contribution à la réalisation de parkings collectifs pour les moyens de transport et sa mise à jour » : « Les dispositions de l'article 90 du code de la fiscalité locale sont modifiées comme suit », suivi d'un barème qui croise la part des places manquantes et la population de la commune. Le barème de 1997, qui ne dépendait que de la population, est remplacé : la valeur est vide. Date d'effet : article 87, p. 2888 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2003. » Édition française : article 79 lu à l'image, p. 2887 ; article 87 lu sur la couche texte ; la couche texte de ce fascicule est à encodage décalé et n'est lisible qu'une fois décodée."
+documentation: |-
+  Montant, en dinars par place de stationnement, de la contribution due par le propriétaire d'une
+  construction nouvelle, agrandie ou transformée qui ne peut satisfaire aux normes de stationnement,
+  dans une commune de plus de 100 000 habitants (code de la fiscalité locale, article 90, dans sa
+  rédaction de 1997). Le montant est doublé pour les places en défaut ou réaffectées à un autre
+  usage sans autorisation.
+
+  Le barème de 1997 cesse le 1er janvier 2003, date à laquelle la loi de finances pour 2003 le
+  remplace par un barème à deux entrées (`bareme_2003`) : la valeur est vide depuis.

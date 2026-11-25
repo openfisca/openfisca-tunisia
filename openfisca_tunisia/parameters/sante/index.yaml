@@ -1,0 +1,5 @@
+description: "Santé"
+metadata:
+  short_label: "Santé"
+  order:
+  - tarifs_hospitaliers

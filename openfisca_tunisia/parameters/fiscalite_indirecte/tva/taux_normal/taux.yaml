@@ -1,6 +1,27 @@
-description: Valeur du taux de TVA de 19%
+description: Taux normal de la taxe sur la valeur ajoutée
 values:
-  '2021-01-01':
+  1988-07-01:
+    value: 0.17
+  1998-01-01:
+    value: 0.18
+  2018-01-01:
     value: 0.19
 metadata:
   unit: /1
+  short_label: Taux normal
+  reference:
+    1988-07-01:
+    - title: "Loi n° 88-61 du 2 juin 1988, portant promulgation du code de la taxe sur la valeur ajoutée, article 7 du code, premier paragraphe"
+      href: https://www.pist.tn/jort/1988/1988F/Jo03988.pdf
+      note: "JORT n° 39 du 10 juin 1988, p. 829, lu à l'image. Article 7 : « Sont soumis à la taxe sur la valeur ajoutée au taux de 17 %, les opérations portant sur les biens et les services non soumis à un autre taux. Toutefois sont soumis à la taxe sur la valeur ajoutée : 1) au taux de 6 %, les opérations portant sur les biens et les services repris au tableau B figurant en annexe. 2) au taux de 29 %, les opérations portant sur les biens repris au tableau C figurant en annexe. » Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja03988.pdf"
+    - title: "Décret n° 88-1109 du 11 juin 1988, fixant le calendrier d'application de la taxe sur la valeur ajoutée et du droit de consommation, article premier"
+      href: https://www.pist.tn/jort/1988/1988F/Jo04288.pdf
+      note: "JORT n° 42 du 21 juin 1988, p. 923, lu à l'image. Article premier : les dispositions du code sont applicables à compter du 1er juillet 1988, à l'exception de celles de l'article premier II-3 et des articles 16 et 17 I et II-1. L'article 6 de la loi n° 88-61 renvoyait la mise en application du code à un calendrier fixé par décret. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja04288.pdf"
+    1998-01-01:
+    - title: "Loi n° 97-88 du 29 décembre 1997, portant loi de finances pour la gestion 1998, articles 25 et 90"
+      href: https://www.pist.tn/jort/1997/1997F/Jo10497.pdf
+      note: "JORT n° 104 des 30-31 décembre 1997, pp. 2437 et 2443. Article 25 : le premier paragraphe de l'article 7 du code est remplacé — « Sont soumis à la taxe sur la valeur ajoutée au taux de 18 % les opérations portant sur les biens et les services non soumis à un autre taux ». Article 90 : dispositions applicables à compter du 1er janvier 1998, sans préjudice des articles 62 et 65. Édition arabe : https://www.pist.tn/jort/1997/1997A/Ja10497.pdf"
+    2018-01-01:
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 43 et 67"
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: "JORT n° 101 du 19 décembre 2017, pp. 4281 et 4292. Article 43 : « 1) Est remplacé le taux de 18 % prévu au premier paragraphe de l'article 7 du code de la taxe sur la valeur ajoutée par le taux de 19 % ». Article 67 : application à compter du 1er janvier 2018 (§ 1) ; le relèvement ne s'applique ni aux marchandises importées dont les titres de transport, établis avant l'entrée en vigueur de la loi, justifient l'expédition directe vers la Tunisie (§ 2), ni aux montants payés jusqu'au 31 décembre 2018 au titre des marchés publics conclus avant le 1er janvier 2018 (§ 3). Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf"

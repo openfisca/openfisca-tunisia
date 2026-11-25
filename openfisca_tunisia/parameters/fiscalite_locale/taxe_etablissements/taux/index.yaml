@@ -1,0 +1,32 @@
+description: "Taux de la taxe sur les établissements à caractère industriel, commercial ou professionnel, selon l'assiette"
+metadata:
+  short_label: "Taux"
+  order:
+  - chiffre_affaires_brut_local
+  - chiffre_affaires_brut
+  - exportation_et_non_residents
+  - produits_prix_homologues
+  - impot_regime_1997
+  - impot_regime_2013
+documentation: |-
+  Une feuille par assiette (code de la fiscalité locale, articles 37 et 38, paragraphe I). Un
+  taux se lit dans la feuille de l'assiette à laquelle il s'applique ; une assiette qui cesse
+  d'exister est close par une valeur vide à la date où elle cesse, avec la référence du texte
+  qui y met fin.
+
+  Deux assiettes changent sans que leur taux change, et ont chacune deux feuilles :
+
+  - le chiffre d'affaires brut : « local » du 1er janvier 1997 au 31 décembre 2013
+    (`chiffre_affaires_brut_local`), puis sans ce qualificatif depuis le 1er janvier 2014
+    (`chiffre_affaires_brut`). Le taux reste de 0,2 % ; c'est l'assiette qui s'étend, le chiffre
+    d'affaires provenant de l'exportation y entrant à un taux propre
+    (`exportation_et_non_residents`). Le code ne définit pas le mot « local » ;
+  - l'impôt sur le revenu ou l'impôt sur les sociétés : le taux reste de 25 %, mais les redevables
+    taxés sur cette base ne sont pas les mêmes avant (`impot_regime_1997`) et depuis
+    (`impot_regime_2013`) le 1er janvier 2013.
+
+  Une seule feuille par assiette aurait porté une date sans changement de valeur et laissé croire
+  à une règle inchangée depuis 1997.
+
+  Le taux réduit des produits à prix homologués (`produits_prix_homologues`) date du 1er janvier
+  2013.

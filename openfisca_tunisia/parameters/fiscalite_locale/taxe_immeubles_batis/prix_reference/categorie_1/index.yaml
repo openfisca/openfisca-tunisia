@@ -1,0 +1,9 @@
+description: "Limites du prix de référence du mètre carré couvert des immeubles de la première catégorie"
+metadata:
+  short_label: "Catégorie 1"
+  order:
+  - minimum
+  - maximum
+documentation: |-
+  Première catégorie : immeubles dont la superficie couverte ne dépasse pas 100 mètres carrés (code de la fiscalité locale,
+  article 4, paragraphe II).

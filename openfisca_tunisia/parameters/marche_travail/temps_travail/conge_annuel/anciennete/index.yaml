@@ -1,0 +1,9 @@
+description: "Congé supplémentaire d'ancienneté"
+metadata:
+  short_label: "Ancienneté"
+  order:
+  - jours_ouvrables_par_periode
+  - duree_periode
+  - plafond_total_jours_ouvrables
+documentation: |-
+  Supplément de congé selon les années de services chez le même employeur (article 115 du code).

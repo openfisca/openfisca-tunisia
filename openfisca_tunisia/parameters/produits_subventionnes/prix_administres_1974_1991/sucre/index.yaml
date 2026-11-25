@@ -1,0 +1,9 @@
+description: "Prix de vente au public du sucre"
+metadata:
+  short_label: "Sucre"
+  order:
+  - sucre_poudre
+  - sucre_morceaux
+  - sucre_brun
+documentation: |-
+  Prix de vente maximum au public d'un kilogramme de sucre, par présentation.

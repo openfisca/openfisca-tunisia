@@ -1,10 +1,85 @@
-description: Seuil de revenu d’exclusion du programme Amen social (en part de Smig) pour un ménage de deux personnes
+description: Seuil de revenu d'exclusion du programme Amen social (en part de Smig) pour un ménage de deux personnes dont un membre présente un handicap lourd
 values:
-  2020-01-01:
+  2020-05-25:
     value: 1.5
 metadata:
   short_label: Deux personnes
   unit: smig
   reference:
-    2020-01-01:
-      title: Décret 2020-317 du 19 mai 2020
+    2020-05-25:
+    - title: "Décret gouvernemental n° 2020-317 du 19 mai 2020, fixant les conditions et les procédures de bénéfice, de retrait et d'opposition au programme « AMEN SOCIAL », article 5, premier et troisième alinéas"
+      href: https://www.pist.tn/jort/2020/2020F/Jo0452020.pdf
+      note: "JORT n° 45 du 20 mai 2020, pp. 1092-1096 ; article 5 p. 1093 : « Le demandeur du bénéfice ne doit avoir aucun revenu ou la moyenne de son revenu mensuel ne doit dépasser un montant : […] - égal au salaire minimum interprofessionnel garanti des différentes professions pour les familles dont le nombre de leurs membres est égal à deux personnes, » Troisième alinéa : « La moyenne de revenu mensuel mentionnée au premier alinéa du présent article est majorée d'un demi salaire minimum interprofessionnel des différentes professions si un des membres de la famille est lourdement handicapé. » Le décret ne porte pas de clause d'entrée en vigueur (son article 30 n'ordonne que la publication) : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Le fascicule porte en dernière page : « Ce numéro du Journal Officiel de la République Tunisienne a été déposé au siège du gouvernorat de Tunis le 20 mai 2020 » : exécutoire le 25 mai 2020."
+    - title: "Décret gouvernemental n° 2020-317 du 19 mai 2020, fixant les conditions et les procédures de bénéfice, de retrait et d'opposition au programme « AMEN SOCIAL », article 5, premier et troisième alinéas (édition arabe, qui fait foi)"
+      href: https://www.pist.tn/jort/2020/2020A/Ja0452020.pdf
+      note: "الرائد الرسمي عدد 45 بتاريخ 20 ماي 2020، ص. 1247-1250 ؛ الفصل 5 ص. 1248 : « يشترط أن يكون طالب الانتفاع عديم الدخل أو أن لا يتجاوز معدّل دخله الشهري مبلغا يعادل: […] - الأجر الأدنى المضمون لمختلف المهن بالنسبة للأسر التي يساوي عدد أفرادها اثنين، » « ويرفّع معدّل الدخل الشهري المشار إليه بالفقرة الأولى من هذا الفصل بنصف الأجر الأدنى المضمون لمختلف المهن إذا كان أحد أفراد الأسرة في الكفالة من ذوي الإعاقة العميقة. »"
+  official_journal_date:
+    2020-05-25: "2020-05-20"
+documentation: |
+  Valeur déduite du texte, qui ne l'énonce pas : 1 + 1/2 = 1,5 fois le salaire minimum. L'article 5 ne donne
+  pas de barème propre au handicap lourd ; il majore d'un demi salaire minimum « la moyenne de
+  revenu mensuel mentionnée au premier alinéa ».
+
+  Lecture retenue, et ses trois appuis :
+
+  - La majoration vaut pour chacun des quatre paliers. Le premier alinéa de l'article 5 comprend
+    le chapeau et ses quatre tirets : l'article 7 du même décret désigne en effet comme
+    « deuxième alinéa de l'article 5 » (الفقرة الثانية من الفصل 5) celui qui définit les membres
+    de la famille, c'est-à-dire le paragraphe qui suit les quatre tirets. Les tirets ne sont donc
+    pas comptés comme des alinéas, et le renvoi au « premier alinéa » les vise tous.
+  - La majoration relève le plafond, non le revenu du demandeur. À la lettre, c'est « la moyenne
+    de revenu mensuel » qui est majorée ; mais la moyenne « mentionnée au premier alinéa » est
+    celle qui « ne doit [pas] dépasser un montant », et la disposition n'a d'objet que si elle
+    élargit l'accès de la famille concernée.
+  - Le membre lourdement handicapé est, dans l'édition arabe qui fait foi, un membre de la
+    famille « à charge » (أحد أفراد الأسرة في الكفالة) ; l'édition française omet ces mots.
+
+  Valeur inchangée (1,5) : elle coïncidait déjà avec cette lecture.
+
+  Le seuil s'exprime en multiple du « salaire minimum interprofessionnel garanti des différentes
+  professions » (الأجر الأدنى المضمون لمختلف المهن). L'article 5 ne dit pas lequel des deux régimes
+  du salaire minimum, 48 heures ou 40 heures par semaine, il vise.
+
+  Le revenu comparé au seuil est « la moyenne mensuelle de l'ensemble des revenus nets permanents
+  et non permanents des 12 derniers mois qui précèdent la date de dépôt de la demande » (dernier
+  alinéa). Les membres comptés sont « le mari et son conjoint ainsi que le nombre des enfants et
+  ascendants à charge vivant sous le même toit et partageant la nourriture » (deuxième alinéa).
+
+  Date corrigée. La valeur était datée du 1er janvier 2020, avec pour seule référence « Décret
+  2020-317 du 19 mai 2020 », sans article ni fascicule. Un décret du 19 mai 2020 ne produit pas
+  d'effet au 1er janvier 2020, et le texte ne prévoit aucune rétroactivité : la valeur du
+  1er janvier 2020 est supprimée, et le paramètre commence le 25 mai 2020, date à laquelle le
+  décret devient exécutoire — dépôt du fascicule au siège du gouvernorat de Tunis le 20 mai 2020,
+  plus cinq jours, le jour du dépôt n'étant pas compté (loi n° 93-64, article 2).
+
+  État antérieur au 25 mai 2020 : ces seuils n'existent pas. La loi organique n° 2019-10 du
+  30 janvier 2019 (JORT n° 11 du 5 février 2019, pp. 275-277 ; édition arabe pp. 307-308) crée
+  le programme sans fixer de condition de ressources : elle définit ses bénéficiaires par une
+  « privation multidimensionnelle » et un modèle de score à arrêter (article 2), et renvoie
+  « les conditions et les procédures pour bénéficier du programme » à un décret gouvernemental
+  (article 8). Ce décret est celui du 19 mai 2020 ; il ne comporte ni effet rétroactif ni
+  disposition transitoire sur les conditions de bénéfice. Entre-temps, l'article 23 de la loi
+  maintient le régime antérieur : « Les programmes d'aides sociales en vigueur à la date de
+  promulgation de la présente loi, demeurent exécutoires jusqu'à leur adaptation avec les
+  dispositions de la présente loi » (تبقى سارية المفعول برامج المساعدات الاجتماعية الجاري بها
+  العمل في تاريخ صدور هذا القانون إلى غاية ملاءمتها مع أحكامه). Avant le 25 mai 2020, l'aide
+  permanente relève donc du programme national d'aide aux familles nécessiteuses, dont aucun
+  texte publié au Journal officiel ne fixe les conditions de ressources.
+
+  Date d'effet juridique et pratique. La date portée ici est celle de l'effet juridique des
+  seuils, non celle de leur application aux dossiers. Le décret est signé le 19 mai 2020 et
+  publié le lendemain : il n'y a pas de retard de publication à rattraper. Aucun document
+  consulté n'atteste une application des seuils avant cette date ; les sources disponibles
+  situent au contraire leur mise en œuvre après. Les rapports annuels de performance du
+  ministère des affaires sociales pour 2019 et 2020 décrivent, pour cette période, l'inscription
+  des familles au registre et les enquêtes sociales. Le document d'évaluation du projet de la
+  Banque mondiale P176352 (mars 2021, paragraphes 19, 43 et 53, pp. 13, 22 et 25) date de mai
+  2020 l'adoption des textes d'application, et écrit qu'en 2021 les bénéficiaires du transfert
+  permanent avaient été sélectionnés selon les critères antérieurs — revenu déclaré, taille du
+  ménage, membres dans l'incapacité de travailler — le nouveau ciblage étant alors « prêt à être
+  déployé » pour les nouveaux bénéficiaires. Le décret lui-même ne vaut que pour l'avenir : le
+  transfert est dû « à compter du mois au cours duquel la demande » est enregistrée (article 24),
+  et la situation des bénéficiaires est revue par une mise à jour périodique (article 18).
+
+  Lu dans les deux éditions du fascicule : édition française, pp. 1092-1096 (article 5 p. 1093) ;
+  édition arabe, pp. 1247-1250 (article 5 p. 1248).

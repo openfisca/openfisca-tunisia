@@ -1,0 +1,13 @@
+description: "Congé du père à la naissance d'un enfant"
+metadata:
+  short_label: "Congé de paternité"
+  order:
+  - duree
+  - duree_majoree
+  - duree_enfant_mort_ne
+  - delai_prise
+documentation: |-
+  Congé du père à l'occasion d'une naissance : article 122 du code du travail, puis, depuis le 13 août 2024,
+  article 5 de la loi n° 2024-44 du 12 août 2024, qui vaut aussi pour les agents publics. La loi ne dit pas qui
+  supporte le congé de paternité dans le secteur privé ; le remboursement par la Caisse nationale de sécurité
+  sociale que prévoyait l'article 122 n'y est ni repris ni expressément abrogé.

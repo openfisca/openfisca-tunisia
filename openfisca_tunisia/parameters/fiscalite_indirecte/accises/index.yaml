@@ -4,6 +4,7 @@ metadata:
   order:
   - tabac
   - alcool
+  - bieres_vins_alcools
   - boissons
   - cafe_the
   - cosmetiques

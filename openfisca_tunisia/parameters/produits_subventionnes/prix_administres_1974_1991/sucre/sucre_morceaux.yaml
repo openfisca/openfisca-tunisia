@@ -1,0 +1,62 @@
+description: "Prix de vente maximum au public du sucre en morceaux"
+values:
+  1975-05-31:
+    value: 0.3
+  1980-01-23:
+    value: 0.34
+  1986-11-25:
+    value: 0.37
+  1988-07-01:
+    value: 0.4
+  1989-08-12:
+    value: 0.5
+  1990-07-13:
+    value: 0.56
+  1991-06-17:
+    value: 0.62
+  1992-01-01:
+    value: null
+metadata:
+  short_label: "Sucre en morceaux"
+  label_en: "Lump sugar, maximum retail price"
+  unit: currency/kg
+  notes:
+    1975-05-31:
+    - note: "Série incomplète : états antérieurs à 1975 non versés."
+    1991-06-17:
+    - note: "Dernière valeur relevée au Journal officiel. Au 1er janvier 1992, la loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix abroge la loi n° 70-26 (article 62, JORT n° 55 du 6 août 1991, p. 1398) ; son article 3 exclut de la liberté des prix les produits de première nécessité. Aucun texte lu ne met fin à cette valeur, et aucun prix au public de ce produit n'est relevé ensuite au Journal officiel : la série est close au 1er janvier 1992, date à partir de laquelle aucun prix au public n'est plus publié."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
+  reference:
+    1975-05-31:
+    - title: "Arrêté du ministre de l'économie nationale du 3 juin 1975, portant fixation des prix du sucre"
+      href: https://www.pist.tn/jort/1975/1975F/Jo03875.pdf
+      note: "JORT n° 38 du 3 au 6 juin 1975, p. 1191. Sucre en poudre : 200 millimes le kilogramme ; en morceaux : 300. Date d'effet énoncée par le texte : « à compter du 31 mai 1975 », antérieure à la publication."
+    1980-01-23:
+    - title: "Arrêté du ministre du commerce du 20 février 1980 portant fixation des prix de vente du sucre et du café"
+      href: https://www.pist.tn/jort/1980/1980F/Jo01280.pdf
+      note: "JORT n° 12 du 26 février 1980, p. 558, article premier. Sucre en poudre : 240 millimes le kilogramme ; en morceaux : 340. Date d'effet énoncée par le texte : « à compter du 23 janvier 1980 à zéro heure », antérieure à la signature et à la publication."
+    1986-11-25:
+    - title: "Arrêté du ministre de l'industrie et du commerce du 22 novembre 1986 portant fixation du prix de vente maximum du sucre"
+      href: https://www.pist.tn/jort/1986/1986F/Jo06886.pdf
+      note: "JORT n° 68 du 25 novembre 1986, p. 1337, article premier. Sucre en poudre : 246 millimes au producteur, 252 en gros, 270 au détail ; en morceaux : 370 au détail. Date d'effet énoncée par le texte : « à compter du 25 novembre 1986 », jour de la publication."
+    1988-07-01:
+    - title: "Arrêté du ministre de l'industrie et du commerce du 8 septembre 1988 portant fixation du prix de vente du sucre"
+      href: https://www.pist.tn/jort/1988/1988F/Jo06188.pdf
+      note: "JORT n° 61 du 16 septembre 1988, p. 1274, article premier. Sucre en poudre : 300 millimes le kilogramme ; en morceaux : 400. Date d'effet énoncée par le texte : 1er juillet 1988, antérieure de plus de deux mois à la signature."
+    1989-08-12:
+    - title: "Arrêté du ministre de l'économie nationale du 11 novembre 1989 portant fixation du prix de vente du sucre"
+      href: https://www.pist.tn/jort/1989/1989F/Jo07789.pdf
+      note: "JORT n° 77 des 17-21 novembre 1989, p. 1822, article premier. Sucre en poudre : 350 millimes le kilogramme ; en morceaux : 500. Date d'effet énoncée par le texte : 12 août 1989, antérieure à la signature et à la publication."
+    1990-07-13:
+    - title: "Arrêté du ministre de l'économie et des finances du 18 juillet 1990 portant fixation des prix de vente du sucre"
+      href: https://www.pist.tn/jort/1990/1990F/Jo04990.pdf
+      note: "JORT n° 49 du 24 juillet 1990, p. 982, article premier. Sucre blanc en poudre : 400 millimes le kilogramme ; en morceaux : 560. Date d'effet énoncée par le texte : 13 juillet 1990, antérieure à la signature et à la publication."
+    1991-06-17:
+    - title: "Arrêté du ministre de l'économie nationale du 25 juin 1991 portant fixation des prix de vente du sucre"
+      href: https://www.pist.tn/jort/1991/1991F/Jo04891.pdf
+      note: "JORT n° 48 du 5 juillet 1991, p. 1251, article premier. Sucre blanc en poudre : 430 millimes le kilogramme ; en morceaux : 620 ; sucre brun : 300. Date d'effet énoncée par le texte : 17 juin 1991 (article premier), antérieure à la signature ; l'article 2 imprime « 17 juin 1990 » pour la déclaration des stocks."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."

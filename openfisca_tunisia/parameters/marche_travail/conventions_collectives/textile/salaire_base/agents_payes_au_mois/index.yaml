@@ -1,0 +1,71 @@
+description: "Textile - grille des agents payés au mois"
+metadata:
+  short_label: "Agents payés au mois"
+  order:
+  - categorie_1a
+  - categorie_1b
+  - categorie_2
+  - categorie_3
+  - categorie_4
+  - categorie_5
+  - categorie_6
+  - categorie_7
+  - categorie_8
+  - categorie_9
+  - categorie_10
+  - categorie_11
+  - categorie_12
+  - categorie_13
+  - categorie_14
+  - categorie_15
+  - categorie_16
+  - categorie_17
+documentation: |-
+  Structure de la grille : dix-huit lignes — la catégorie 1 en deux lignes, 1A et 1B, puis les
+  catégories 2 à 17 —, les mêmes à toutes les dates versées, et, dans chacune, une colonne de stage
+  suivie d'échelons numérotés à partir de 1, l'échelon 1 étant celui de la confirmation. Les
+  échelons vont de 1 à 16 dans les grilles du 1er mai 1994 au 1er mai 1998 (avenants n° 5 et 6), et
+  de 1 à 20 depuis la grille du 1er mai 1999 (avenant n° 7, JORT n° 48 du 15 juin 1999, édition
+  arabe, p. 1111), la première qui porte les échelons 17 à 20. La classification qui range les
+  emplois dans les catégories n'est pas reprise ici.
+
+  La numérotation des colonnes n'est pas celle de la grille des agents payés à l'heure, où
+  l'échelon 0 est celui de la confirmation : la confirmation est ici l'échelon 1, et la colonne
+  qui la précède, celle du stage, n'a pas de numéro. Elle est nommée `stage`, et non `echelon_0`,
+  pour que les deux grilles ne se confondent pas.
+
+  En-tête des colonnes, tel que la transcription des grilles le rapporte : stage ; échelon 1,
+  confirmation ; puis une ancienneté de 1 et 2 ans, et de deux ans en deux ans jusqu'à 30 ans dans
+  les grilles à 16 échelons, jusqu'à 36 ans dans les grilles à 20 échelons ; l'échelon 20 n'a pas
+  de mention d'ancienneté. De 1994 à 2007 la colonne de stage est imprimée égale à l'échelon 1 ;
+  elle est plus basse depuis la grille du 1er mai 2008.
+
+  Identifiants : `categorie_1a` et `categorie_1b` pour les lignes 1A et 1B, `categorie_2` à
+  `categorie_17` ; `stage` pour la colonne de stage, `echelon_1` à `echelon_20` pour les échelons.
+
+  Unité : dinars courants par mois.
+
+  La grille est versée en entier, du 1er mai 1994 (avenant n° 5) au 1er janvier 2026 (avenant
+  n° 18) : trente dates d'effet, 306 cases par grille aux cinq premières (dix-huit lignes, stage
+  et échelons 1 à 16) et 378 aux vingt-cinq suivantes (échelons 1 à 20), soit 10 980 cases, dont
+  10 853 valeurs et 127 cases illisibles. Le salaire le plus bas est celui de la catégorie 1A,
+  colonne de stage ; le plus élevé, celui du dernier échelon de la catégorie 17.
+
+  Les grilles du 1er mai 1994 au 1er mai 1998 sont imprimées en millimes ; les valeurs en sont
+  portées ici en dinars, comme celles des grilles suivantes, imprimées en dinars à trois décimales.
+
+  Cases illisibles sur le fascicule : une dans la grille du 1er mai 1994 (catégorie 16,
+  échelon 6) ; 42 dans celle du 1er mai 1999 (toute la catégorie 2, et des cases des catégories 3,
+  4 et 5) et 30 dans celle du 1er mai 2000 (catégories 2, 3 et 4), dont quatre lignes sont
+  imprimées pâles ; 18 dans chacune des grilles du 1er mai 2002, 2003 et 2004 (l'échelon 18 des
+  dix-huit lignes, sous une bande blanche de la numérisation). Chacune porte une valeur vide à sa
+  date, sans valeur déduite ni reportée, et la note de la date en dit la raison ; la valeur reprend
+  à la première grille où la case est lue. L'index de chaque catégorie les énumère.
+
+  Six cases sont lues sans contrôle croisé, la même case étant illisible aux dates voisines, et
+  leur note le dit : catégorie 3, échelons 17 et 18, et catégorie 4, échelon 18, dans la grille du
+  1er mai 1999 ; catégories 2, 3 et 4, échelon 18, dans celle du 1er mai 2001.
+
+  La série commence au 1er mai 1994 : rien d'antérieur n'est versé. De l'avenant n° 5 à l'avenant
+  n° 18, tous les avenants ont été lus, sans numéro manquant. La dernière valeur est celle de la
+  grille du 1er janvier 2026, la dernière que porte l'avenant n° 18.

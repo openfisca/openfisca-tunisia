@@ -1,0 +1,16 @@
+description: Taxe de contrôle par scanner pour un conteneur dont la capacité ne dépasse pas 20 pieds
+values:
+  '2018-01-01':
+    value: 100
+metadata:
+  unit: currency/unit
+  short_label: Conteneur de 20 pieds au plus
+  reference:
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 42
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017, p. 4280. Article 42, « Institution d''une taxe de contrôle
+        par scanner sur les unités de charge à l''importation » : « Est fixé le montant de la taxe de
+        contrôle par scanner sur les unités de charge à 100 dinars pour les conteneurs dont la capacité
+        ne dépasse pas 20 pieds, et à 200 dinars pour les autres unités de charge. » Date d''effet : date
+        d''application de la loi de finances, le 1er janvier. Édition française lue sur la couche texte.'

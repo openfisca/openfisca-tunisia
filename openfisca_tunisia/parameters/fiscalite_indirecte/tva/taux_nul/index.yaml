@@ -1,7 +1,8 @@
-description: Taux de TVA nul (0%)
+description: Taux nul de la taxe sur la valeur ajoutée
 metadata:
-  short_label: Taux 0%
+  short_label: Taux nul
   order:
   - taux
   - produits
-documentation: Taux de TVA de 0% et liste des produits concernés en Tunisie.
+documentation: |-
+  Opérations qui ne supportent pas la taxe sur la valeur ajoutée — au premier chef les opérations exonérées de l'article 4 du code (tableau « A ») — et liste des produits concernés. Le code ne fixe aucun taux de 0 %.

@@ -1,0 +1,7 @@
+description: Taxes de péréquation de raffinage sur les produits pétroliers
+metadata:
+  short_label: Péréquation de raffinage
+  order:
+  - supercarburant
+  - essence_normale
+  - gasoil

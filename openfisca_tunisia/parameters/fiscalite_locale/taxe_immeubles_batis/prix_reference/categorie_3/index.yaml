@@ -1,0 +1,9 @@
+description: "Limites du prix de référence du mètre carré couvert des immeubles de la troisième catégorie"
+metadata:
+  short_label: "Catégorie 3"
+  order:
+  - minimum
+  - maximum
+documentation: |-
+  Troisième catégorie : immeubles dont la superficie couverte excède 200 mètres carrés et ne dépasse pas 400 mètres carrés (code de la fiscalité locale,
+  article 4, paragraphe II).

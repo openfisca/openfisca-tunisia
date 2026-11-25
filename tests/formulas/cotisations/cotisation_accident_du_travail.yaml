@@ -17,3 +17,41 @@
     salaire_de_base: 1000
     accident_du_travail_salarie: .002778 * 1000
     accident_du_travail_employeur: .007222 * 1000
+
+# Décret n° 95-538, article 2 : transfert d'un point du régime général, en vigueur
+# « à compter du 1er janvier 1995 » (article 28), et non au 1er avril 1995, date de signature.
+- name: Point AT/MP transféré - décembre 1994, avant le décret n° 95-538
+  period: 1994-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    accident_du_travail_salarie: 0
+    accident_du_travail_employeur: 0
+
+- name: Point AT/MP transféré - janvier 1995, entrée en vigueur du décret n° 95-538
+  period: 1995-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    accident_du_travail_salarie: .002778 * 1000
+    accident_du_travail_employeur: .007222 * 1000
+
+- name: Point AT/MP transféré - mars 1995, avant la signature du décret n° 95-538
+  period: 1995-03
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    accident_du_travail_salarie: .002778 * 1000
+    accident_du_travail_employeur: .007222 * 1000
+
+- name: Point AT/MP transféré - avril 1995
+  period: 1995-04
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    accident_du_travail_salarie: .002778 * 1000
+    accident_du_travail_employeur: .007222 * 1000

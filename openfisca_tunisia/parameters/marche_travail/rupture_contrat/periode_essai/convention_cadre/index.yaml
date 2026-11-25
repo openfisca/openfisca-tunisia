@@ -1,0 +1,20 @@
+description: "Période d'essai de la convention collective cadre des activités non agricoles"
+metadata:
+  short_label: "Convention cadre, période d'essai"
+  order:
+  - duree_maximale
+  - renouvellements_maximum
+documentation: |-
+  Clause de la convention collective cadre, signée le 20 mars 1973 et agréée par l'arrêté du ministre des
+  affaires sociales du 29 mai 1973, qui limite la période d'essai à trois mois et permet un second essai de même
+  durée (article 10). L'arrêté, article 2, rend ses dispositions obligatoires pour tous les employeurs et
+  travailleurs des activités non agricoles assujettis au code du travail ; la convention entre en vigueur le
+  1er juin 1973 (article 52).
+
+  Pendant l'essai, le travailleur peut donner ou recevoir congé sans préavis, sur simple signification
+  (article 10, deuxième alinéa). À l'issue d'un essai concluant, l'engagement est confirmé par une lettre précisant
+  les fonctions et la rémunération.
+
+  Ces valeurs ne valent que pour les employeurs et les salariés couverts par la convention ; une convention de
+  branche peut prévoir une autre durée. Le code du travail ne fixe aucune durée avant le 24 mai 2025
+  (`periode_essai/duree_maximale`).

@@ -164,11 +164,26 @@ def flatten_regimes(input_string, output_filename):
     # convertir la structure logique de l'arbre AST en code python formatté (type string)
     output_string = ast.unparse(output_node)
 
-    # sauvegarder
-    with open(output_filename, "w", encoding="utf-8") as file:
-        file.write(output_string)
-
-    log.info(f"Result saved as {output_filename}")
+    # Sauvegarder. Si le contenu généré est déjà à jour, ne rien réécrire.
+    # Et tolérer un système de fichiers en lecture seule (en déploiement, le
+    # site-packages n'est pas inscriptible : shinyapps.io, serverless, nix…) :
+    # les variables générées sont déjà livrées dans le paquet, on garde la
+    # version présente plutôt que de planter à l'import.
+    try:
+        with open(output_filename, encoding="utf-8") as file:
+            if file.read() == output_string:
+                return
+    except OSError:
+        pass
+    try:
+        with open(output_filename, "w", encoding="utf-8") as file:
+            file.write(output_string)
+        log.info(f"Result saved as {output_filename}")
+    except OSError as error:
+        log.warning(
+            f"Variables de pension non réécrites ({output_filename}) : {error}. "
+            "Utilisation des variables déjà présentes dans le paquet."
+        )
 
 
 def get_regime_attribute(regime_class_node, attribute):

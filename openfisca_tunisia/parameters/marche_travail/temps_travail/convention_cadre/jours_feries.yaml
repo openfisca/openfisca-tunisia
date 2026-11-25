@@ -1,0 +1,31 @@
+description: "Nombre de jours fériés chômés et payés accordés par la convention collective cadre"
+values:
+  1973-06-01:
+    value: 7
+  1984-11-17:
+    value: 9
+  1992-10-15:
+    value: 9
+metadata:
+  unit: day
+  short_label: "Jours fériés payés, convention cadre"
+  reference:
+    1973-06-01:
+    - title: "Convention collective cadre du 20 mars 1973, agréée par l'arrêté du ministre des affaires sociales du 29 mai 1973, article 29"
+      href: https://www.pist.tn/jort/1973/1973F/Jo02173.pdf
+      note: "JORT n° 21 des 25-29 mai-1er juin 1973, p. 855. Article 29 : « Les jours fériés considérés comme jour de congé chômés et payés sont ceux prévus par la législation en vigueur ainsi que le jour de l'Aid-Esseghir, de l'Aid-El-Kébir et du Mouled. Cependant les conventions collectives particulières pourront prévoir le paiement d'autres jours fériés chômés. Les travailleurs qui ne pourraient, du fait du service, bénéficier de ces congés, auront droit à une majoration de salaire de 100%. » Le nombre de sept jours s'obtient en ajoutant ces trois jours aux quatre jours de l'article 445 du code alors en vigueur. Date d'effet : article 52, « La présente Convention Collective entrera en vigueur le 1er juin 1973 » (p. 859). L'arrêté du 29 mai 1973, article 2, rend ses dispositions obligatoires pour tous les employeurs et travailleurs des activités non agricoles assujetties au code du travail (p. 852). Édition française lue à l'image."
+    1984-11-17:
+    - title: "Avenant n° 1 du 17 novembre 1984 à la convention collective cadre, agréé par l'arrêté du ministre des affaires sociales du 7 février 1985, article premier : article 29 (nouveau) de la convention"
+      href: https://www.pist.tn/jort/1985/1985F/Jo01385.pdf
+      note: "JORT n° 13 du 15 février 1985, pp. 254-255. Article 29 (nouveau) : « Les jours fériés considérés comme jours de congé chômés et payés, sont : le 1er mai, le 1er juin, le 25 juillet, le 15 octobre, le jour de l'Aid El Fitr, le jour de l'Aid El Idha et le jour du Mouled. Il est ajouté à cette liste deux jours supplémentaires de sorte que le nombre des jours chômés et payés sera au total 9 sauf dispositions conventionnelles plus favorables. » Les deux jours sont « le jour de l'an Héjire et le 20 mars à moins que les conventions collectives ne prévoient le paiement d'autres jours » parmi ceux du décret n° 78-954 du 2 novembre 1978. N'en bénéficient pas les entreprises dont la convention prévoit déjà neuf jours ou plus, les artisans de la loi n° 83-106 du 3 décembre 1983 et la boulangerie ; une convention qui en prévoit huit n'ouvre droit qu'à un jour supplémentaire (p. 255). Le jour férié travaillé reste majoré de 100 %. Date d'effet : article 3, « Le présent avenant à la convention collective cadre entre en vigueur à partir de sa signature » ; signé à Tunis le 17 novembre 1984 (p. 255). L'arrêté d'agrément, qui rend l'avenant obligatoire, est du 7 février 1985. Édition française lue à l'image."
+    1992-10-15:
+    - title: "Avenant n° 2 du 15 octobre 1992 à la convention collective cadre, agréé par l'arrêté du ministre des affaires sociales du 28 janvier 1993, article premier : article 29 (nouveau) de la convention"
+      href: https://www.pist.tn/jort/1993/1993F/Jo01293.pdf
+      note: "JORT n° 12 du 12 février 1993, p. 227. Article 29 (nouveau) : « Les jours fériés considérés comme jours de congé chômés et payés sont : le 20 mars, le 1er mai, le 25 juillet, le 7 novembre, le jour du mouled, le premier jour et le deuxième jour de l'aïd El fitr, le premier jour et le deuxième jour de l'aïd el idha. Les travailleurs qui ne pourraient du fait du service bénéficier de ces congés, auront droit à une majoration de salaire de 100%. » La liste compte neuf jours. Date d'effet : article 2, « Le présent avenant entre en vigueur à compter de la date de sa signature » ; signé à Tunis le 15 octobre 1992 (p. 229). L'arrêté d'agrément est du 28 janvier 1993. Édition française lue à l'image."
+documentation: |-
+  Jours fériés chômés et payés des salariés couverts par la convention collective cadre, jours légaux compris.
+  Chaque date est la date d'entrée en vigueur que la convention ou l'avenant énonce ; l'arrêté d'agrément qui rend
+  chaque avenant obligatoire pour tous les employeurs des activités non agricoles est postérieur.
+
+  Les listes de 1984 et 1992 nomment des fêtes que la liste légale a depuis remplacées (le 1er juin et le 15 octobre
+  en 1984 ; le 7 novembre en 1992). Le nombre est celui que la convention énonce ou énumère, à sa date.

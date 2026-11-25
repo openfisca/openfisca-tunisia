@@ -1,0 +1,19 @@
+description: "Préavis de rupture du contrat de travail à durée indéterminée"
+metadata:
+  short_label: "Préavis"
+  order:
+  - duree
+  - duree_salaries_non_mensuels
+documentation: |-
+  Délai qui sépare la notification de la rupture d'un contrat à durée indéterminée de la fin du
+  contrat (code du travail, article 14 jusqu'en 1994, article 14 bis ensuite). Il est dû à
+  l'autre partie, par l'employeur qui licencie comme par le salarié qui démissionne.
+
+  De 1966 à 1994, le délai dépend du mode de paie : un mois pour les salariés payés au mois
+  (`duree`), huit jours pour les autres (`duree_salaries_non_mensuels`). À partir du
+  1er mars 1994, le préavis est d'un mois pour tous les salariés (`duree`), notifié par lettre
+  recommandée ; le salarié peut s'absenter, sans perte de salaire, pendant toute la deuxième
+  moitié du préavis pour chercher un autre emploi.
+
+  Dans les deux rédactions, le délai légal cède devant une disposition plus avantageuse pour le
+  salarié : règlement spécial (1966), accord des parties, convention collective ou usage.

@@ -1,0 +1,18 @@
+description: "Majoration des heures supplémentaires"
+metadata:
+  short_label: "Heures supplémentaires"
+  order:
+  - regime_48h
+  - regime_40h
+  - regimes_inferieurs_48h
+  - temps_partiel
+  - agriculture
+documentation: |-
+  Taux de majoration des heures supplémentaires (article 90 du code pour les activités non agricoles, article 94
+  pour les activités agricoles).
+
+  Pour les régimes plus courts que 48 heures, deux règles se succèdent et sont tenues dans deux nœuds. Du 1er mai
+  1966 au 30 juillet 1996, le code ne vise que le régime de 40 heures, et le premier taux vaut pour les huit
+  premières heures supplémentaires de la semaine (`regime_40h`). Depuis le 31 juillet 1996, la règle vaut pour tous
+  les régimes à plein temps inférieurs à 48 heures, et le premier taux vaut jusqu'à 48 heures de travail dans la
+  semaine (`regimes_inferieurs_48h`).

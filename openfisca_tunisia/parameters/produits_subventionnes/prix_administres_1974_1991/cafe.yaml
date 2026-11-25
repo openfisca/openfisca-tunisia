@@ -1,0 +1,25 @@
+description: "Prix de vente au public du café, le kilogramme"
+values:
+  1980-01-23:
+    value: 3.0
+  1992-01-01:
+    value: null
+metadata:
+  short_label: "Café"
+  label_en: "Coffee, retail price per kg"
+  unit: currency/kg
+  notes:
+    1980-01-23:
+    - note: "Série incomplète : états antérieurs à 1980 non versés."
+    - note: "Dernière valeur relevée : les prix du café postérieurs au 23 janvier 1980 n'ont pas été recherchés au Journal officiel. La série est close au 1er janvier 1992."
+    1992-01-01:
+    - note: 'Lacune 1992-2009 : prix homologués non publiés ; les valeurs 2010-2022 sont portées par les paramètres voisins de produits_subventionnes, sans raccord faute de texte publié entre les deux.'
+  reference:
+    1980-01-23:
+    - title: "Arrêté du ministre du commerce du 20 février 1980 portant fixation des prix de vente du sucre et du café"
+      href: https://www.pist.tn/jort/1980/1980F/Jo01280.pdf
+      note: "JORT n° 12 du 26 février 1980, p. 558, article premier. Café, le kilogramme : 2,840 D aux grossistes, 2,890 D aux détaillants, 3,000 D au public. Date d'effet énoncée par le texte : « à compter du 23 janvier 1980 à zéro heure », antérieure à la signature et à la publication."
+    1992-01-01:
+    - title: Loi n° 91-64 du 29 juillet 1991 relative à la concurrence et aux prix
+      href: https://www.pist.tn/jort/1991/1991F/Jo05591.pdf
+      note: "JORT n° 55 du 6 août 1991, p. 1398, art. 62 : entrée en vigueur le 1er janvier 1992 et abrogation de la loi n° 70-26. Les produits de première nécessité (décret n° 91-1996, tableau A) restent à prix homologués, mais aucun prix au public n'est plus publié au Journal officiel : la valeur n'est pas établie à partir de cette date."

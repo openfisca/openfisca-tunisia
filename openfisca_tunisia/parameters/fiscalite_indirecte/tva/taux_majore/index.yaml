@@ -1,0 +1,7 @@
+description: Taux majoré de la taxe sur la valeur ajoutée
+metadata:
+  short_label: Taux majoré
+  order:
+  - taux
+documentation: |-
+  Taux du numéro 2 du deuxième paragraphe de l'article 7 du code de la taxe sur la valeur ajoutée, applicable aux biens du tableau « C » annexé au code. En vigueur du 1er juillet 1988 au 31 décembre 2006.

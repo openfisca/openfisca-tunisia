@@ -1,0 +1,47 @@
+# Décret n° 95-538 du 1er avril 1995, article 6 : cotisation forfaitaire annuelle des employés de
+# maison, assise sur le SMAG journalier rapporté à 300 jours. Aides de ménage : 0,53 % ; autres
+# employés (sauf chauffeurs) : 0,75 % ; conducteurs de voitures : 1 % avec un coefficient de 1,5.
+# Entrée en vigueur le 1er janvier 1995 (article 28). Valeurs du SMAG journalier au 1er janvier :
+# 4,461 D en 1995, 15,504 D en 2020.
+
+- name: Employé de maison - catégorie non renseignée, aucune cotisation forfaitaire
+  period: 1995
+  input:
+    employe_maison_accident_travail_categorie: non_concerne
+  output:
+    cotisation_accident_travail_forfaitaire_employe_maison: 0
+
+- name: Aide de ménage - 1995, 0,53 % du SMAG journalier rapporté à 300 jours
+  period: 1995
+  input:
+    employe_maison_accident_travail_categorie: aide_de_menage
+  output:
+    cotisation_accident_travail_forfaitaire_employe_maison: 0.0053 * 4.461 * 300
+
+- name: Autre employé de maison sauf chauffeur - 1995, 0,75 %
+  period: 1995
+  input:
+    employe_maison_accident_travail_categorie: autre_employe
+  output:
+    cotisation_accident_travail_forfaitaire_employe_maison: 0.0075 * 4.461 * 300
+
+- name: Conducteur de voiture - 1995, 1 % avec coefficient 1,5
+  period: 1995
+  input:
+    employe_maison_accident_travail_categorie: conducteur
+  output:
+    cotisation_accident_travail_forfaitaire_employe_maison: 0.01 * 4.461 * 300 * 1.5
+
+- name: Aide de ménage - 2020, mise à jour par le SMAG
+  period: 2020
+  input:
+    employe_maison_accident_travail_categorie: aide_de_menage
+  output:
+    cotisation_accident_travail_forfaitaire_employe_maison: 0.0053 * 15.504 * 300
+
+- name: Conducteur de voiture - 1994, avant l'entrée en vigueur du décret
+  period: 1994
+  input:
+    employe_maison_accident_travail_categorie: conducteur
+  output:
+    cotisation_accident_travail_forfaitaire_employe_maison: 0

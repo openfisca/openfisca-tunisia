@@ -1,12 +1,13 @@
 description: Majoration du salaire minimum interprofessionnel garanti (Smig) au régime de 40h dans les secteurs non agricoles - montant par mois
 values:
-  1982-03-16:
+  1982-02-01:
     value: 20
 metadata:
   unit: currency
   reference:
-    1982-03-16:
-    - title: Décret n° 82-501 du 16 mars 1982 Portant majoration du salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail
+    1982-02-01:
+    - title: "Décret n° 82-501 du 16 mars 1982, portant majoration du salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail, article 3"
       href: https://www.pist.tn/jort/1982/1982F/Jo01982.pdf
-    - title: أمر عدد 501 لسنة 1982 مؤرخ في 16 مارس 1982 يتعلق بالترفيع في الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية والخاضعة لمجلة الشغل
+      note: "JORT n° 19 du 19 mars 1982, pp. 668-669. Article 3 : au régime de 40 heures, le SMIG mensuel se compose de 45,586 dinars (SMIG du décret n° 80-609), de 10 dinars (indemnité complémentaire provisoire du décret n° 81-437) et de 20 dinars (la majoration) ; à l'heure, de 263, 58 et 115 millimes. Article 13 : effet à compter du 1er février 1982. La date du 16 mars 1982 portée auparavant était celle de la signature."
+    - title: "أمر عدد 501 لسنة 1982 مؤرخ في 16 مارس 1982 يتعلق بالترفيع في الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية والخاضعة لمجلة الشغل"
       href: https://www.pist.tn/jort/1982/1982A/Ja01982.pdf

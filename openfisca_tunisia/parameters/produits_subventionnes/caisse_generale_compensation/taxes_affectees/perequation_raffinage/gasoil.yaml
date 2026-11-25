@@ -1,0 +1,22 @@
+description: Taxe de péréquation de raffinage sur le gas-oil, au profit de la Caisse générale de compensation
+values:
+  1972-07-01:
+    value: 0.35
+metadata:
+  short_label: Gas-oil
+  label_en: Refining equalisation tax on diesel
+  unit: currency/hl
+  notes:
+    1972-07-01:
+    - note: "Évolution postérieure non établie : relèvements ou suppression éventuels non versés."
+  reference:
+    1972-07-01:
+    - title: "Décret n° 72-400 du 16 décembre 1972, instituant des taxes de péréquation de raffinage sur certains produits pétroliers, articles 1er à 3 et 8"
+      href: https://www.pist.tn/jort/1972/1972F/Jo05172.pdf
+      note: "JORT n° 51 des 19-22 décembre 1972, p. 1827. Article 2 : « A compter de la date d'effet du présent décret, les montants des taxes de péréquation de raffinage sont fixés, par hectolitre », à 0,350 dinar pour le supercarburant, l'essence normale et le gas-oil. Article 3 : « Il sera ouvert à cet effet, au sein de la Caisse Générale de Compensation, un sous-compte spécial dit « sous-compte de péréquation de raffinage » », alimenté par le produit de ces taxes. Date d'effet : article 8, le décret « prend effet à compter du 1er juillet 1972 ». Édition française lue à l'image."
+documentation: |-
+  Taxe par hectolitre sur le produit pétrolier sortant d'usines exercées et mis à la consommation
+  en Tunisie. Elle est incluse dans le prix de reprise en raffinerie, versée par la Société
+  tuniso-italienne de raffinage à la recette des douanes de Bizerte-Raffinerie et affectée au
+  sous-compte de péréquation de raffinage de la Caisse générale de compensation (articles 3 à 6
+  du décret n° 72-400).

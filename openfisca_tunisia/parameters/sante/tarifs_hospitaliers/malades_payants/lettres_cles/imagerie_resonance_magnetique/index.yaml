@@ -1,0 +1,9 @@
+description: "Prix d'un acte d'imagerie médicale par résonance magnétique, par cotation"
+metadata:
+  short_label: "Résonance magnétique (I)"
+  order:
+  - i3
+  - i10
+  - i15
+  - i20
+  - i25

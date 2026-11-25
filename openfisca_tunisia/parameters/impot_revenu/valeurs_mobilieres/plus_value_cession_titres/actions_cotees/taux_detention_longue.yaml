@@ -1,0 +1,25 @@
+description: "Taux de l'impôt sur la plus-value de cession d'actions cotées acquises avant le 1er janvier 2011 ou cédées après l'expiration de l'année suivant leur acquisition"
+values:
+  2004-01-01:
+    value: 0
+  2011-01-01:
+    value: 0
+metadata:
+  unit: /1
+  short_label: "Taux, actions cotées détenues au-delà de l'année suivant l'achat"
+  reference:
+    2004-01-01:
+    - title: "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 61 et 63"
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: "JORT n° 104 du 30 décembre 2003, p. 3730. Article 63 : « Il est ajouté à l'article 38 du code […] deux points 17 et 18 ainsi libellés : 17. La plus-value visée à l'article 31 bis du présent code : - provenant des opérations de cession des actions cotées à la Bourse des Valeurs Mobilières de Tunis et des opérations de cession des actions dans le cadre d'une opération d'introduction ; […] ». L'exonération ne dépend d'aucune durée de détention. Date d'effet : article 61, cessions effectuées à partir du 1er janvier 2004. Édition française lue sur la couche texte décodée (police décalée)."
+    2011-01-01:
+    - title: "Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 41"
+      href: https://www.pist.tn/jort/2010/2010F/Jo1022010.pdf
+      note: "JORT n° 102 du 21 décembre 2010, pp. 3474-3475. Rubrique « Rationalisation de l'exonération de la plus value provenant de la cession des titres ». Article 41, paragraphe 2, premier tiret du point 17 de l'article 38 : « - provenant de la cession des actions cotées à la Bourse des Valeurs Mobilières de Tunis acquises ou souscrites avant le 1er janvier 2011 ou provenant de la cession des actions dans le cadre d'une opération d'introduction à la bourse des valeurs mobilières de Tunis ; » paragraphe 3, tiret ajouté : « - provenant de la cession des actions cotées à la Bourse des Valeurs Mobilières de Tunis acquises ou souscrites à partir du 1er janvier 2011 et ce lorsque leur cession a lieu après l'expiration de l'année suivant celle de leur acquisition ou de leur souscription. » Le taux reste nul ; l'entrée porte le texte qui restreint l'exonération. Date d'effet : la loi s'applique à compter du 1er janvier 2011 (article 50, p. 3477), et l'article 41 fonde son critère sur la date d'acquisition, avant ou à partir du 1er janvier 2011. Édition française lue sur la couche texte."
+documentation: |-
+  Taux appliqué à la plus-value de cession d'actions cotées exonérée : de 2004 à 2010, toutes
+  les actions cotées ; à partir du 1er janvier 2011, les actions acquises ou souscrites avant
+  cette date, les cessions dans le cadre d'une introduction en bourse, et les actions acquises
+  depuis et cédées après l'expiration de l'année qui suit celle de leur acquisition
+  (`annees_detention`). Le taux est nul : la plus-value est exonérée (article 38, point 17, du
+  code).

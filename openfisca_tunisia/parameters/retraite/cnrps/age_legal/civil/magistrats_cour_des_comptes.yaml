@@ -1,0 +1,21 @@
+description: Limite d'âge des membres de la Cour des comptes
+values:
+  1974-09-01:
+    value: 65
+metadata:
+  unit: year
+  short_label: Cour des comptes
+  reference:
+    1974-09-01:
+    - title: "Décret n° 74-820 du 28 août 1974, fixant les limites d'âge des magistrats de la cour des comptes, article premier"
+      href: https://www.pist.tn/jort/1974/1974F/Jo05574.pdf
+      note: "JORT n° 55, fascicule daté du 30 août au 3 septembre 1974, p. 1919. Article premier, lu à l'image : par dérogation à l'article premier du décret n° 59-78 du 17 mars 1959, la limite d'âge est portée à soixante-cinq ans pour le premier président, les présidents de chambre, le commissaire du gouvernement et les conseillers de la Cour des comptes. Le décret ne fixe pas de date d'effet ; la publication retenue est celle du premier jour du fascicule, le 30 août 1974, et il devient exécutoire un jour franc après, soit le 1er septembre 1974 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956)."
+documentation: |-
+  Avant le 1er septembre 1974, les membres de la Cour des comptes relèvent de la limite d'âge
+  commune des fonctionnaires civils, soixante ans (décret n° 59-78, article premier).
+
+  Le maintien de cette limite après la loi n° 85-12 et la loi n° 2019-37 n'est pas établi : le
+  décret-loi n° 70-6 relatif au statut des membres de la Cour des comptes et ses modificatifs ne
+  sont pas lus sur ce point. La loi organique n° 2016-34, article 78, maintient le décret-loi
+  n° 70-6 en application ; son article 53, qui confie aux trois conseils de la magistrature les
+  demandes de mise à la retraite anticipée, ne fixe ni âge ni durée.

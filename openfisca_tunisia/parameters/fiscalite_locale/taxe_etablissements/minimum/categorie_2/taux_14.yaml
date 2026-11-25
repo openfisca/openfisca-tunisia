@@ -1,0 +1,29 @@
+description: "Taxe par mètre carré de référence du minimum de la taxe sur les établissements, immeubles de la deuxième catégorie, taux de 14 % de la taxe sur les immeubles bâtis"
+values:
+  1997-03-13:
+    value: 0.910
+  2008-01-01:
+    value: 0.975
+  2017-01-01:
+    value: 1.075
+metadata:
+  unit: currency/m2
+  short_label: "Taux de 14 %"
+  reference:
+    1997-03-13:
+    - title: "Décret n° 97-433 du 3 mars 1997, relatif à la détermination du montant de la taxe par mètre carré de référence pour chacune des catégories des immeubles à usage industriel, commercial ou professionnel, article premier"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01997.pdf
+      note: "JORT n° 19 du 7 mars 1997, pp. 389-390 ; le tableau est p. 390. Article premier, tableau « Taxe de référence par mètre carré (en dinars) », ligne « Catégorie 2 — Immeuble à structure légère à usage industriel », colonne « Taux 14 % » : 0,910 dinar par mètre carré. Le décret est pris en application de l'article 38, paragraphe II, du code de la fiscalité locale. Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte, en dernière page, un dépôt le 8 mars 1997 (mention lue à l'image, édition française), d'où le 13 mars 1997. Tableau lu à l'image dans les éditions française et arabe, et recoupé avec la couche texte de l'édition française ; édition arabe, p. 390 : https://www.pist.tn/jort/1997/1997A/Ja01997.pdf"
+    2008-01-01:
+    - title: "Décret n° 2007-1187 du 14 mai 2007, relatif à la détermination du montant de la taxe par mètre carré de référence pour chacune des catégories des immeubles à usage industriel, commercial ou professionnel, articles premier et 3"
+      href: https://www.pist.tn/jort/2007/2007F/Jo0402007.pdf
+      note: "JORT n° 40 du 18 mai 2007, p. 1648. Article premier, tableau « Taxe de référence par mètre carré (en dinars) », ligne « Catégorie 2 — Immeuble à structure légère à usage industriel », colonne « Taux 14 % » : 0,975 dinar par mètre carré. Article 2 : abrogation du décret n° 97-433 du 3 mars 1997. Article 3 : « Les dispositions du présent décret entrent en vigueur à compter du premier janvier 2008. » Tableau lu à l'image dans les éditions française et arabe, et recoupé avec la couche texte de l'édition française ; édition arabe, p. 1728 : https://www.pist.tn/jort/2007/2007A/Ja0402007.pdf"
+    2017-01-01:
+    - title: "Décret gouvernemental n° 2017-395 du 28 mars 2017, relatif à la détermination du montant de la taxe par mètre carré de référence pour chacune des catégories des immeubles à usages industriel, commercial ou professionnel, articles premier et 3"
+      href: https://www.pist.tn/jort/2017/2017F/Jo0262017.pdf
+      note: "JORT n° 26 du 31 mars 2017, pp. 1189-1190 ; le tableau et les articles 2 à 4 sont p. 1190. Article premier, tableau « Taxe de référence par mètre carré (en dinars) », ligne « Catégorie 2 — Immeuble à structure légère à usage industriel », colonne « Taux 14 % » : 1,075 dinar par mètre carré. Article 2 : abrogation des dispositions antérieures contraires, et notamment du décret n° 2007-1187 du 14 mai 2007. Article 3 : « Les dispositions du présent décret gouvernemental sont applicables, à compter du 1er janvier 2017 » ; le fascicule est du 31 mars 2017, la date énoncée par le décret est reprise telle quelle. Tableau lu à l'image dans les éditions française et arabe, et recoupé avec la couche texte de l'édition française ; édition arabe, p. 1005 : https://www.pist.tn/jort/2017/2017A/Ja0262017.pdf"
+documentation: |-
+  Montant par mètre carré de superficie couverte, en dinars, du minimum de la taxe sur les
+  établissements pour un immeuble de la deuxième catégorie d'usage (structure légère à usage industriel), dans la
+  colonne « Taux 14 % » du tableau du décret. Ce taux est celui de la taxe sur les immeubles
+  bâtis (`taxe_immeubles_batis.taux.plus_de_quatre_services_et_autres_services`).
