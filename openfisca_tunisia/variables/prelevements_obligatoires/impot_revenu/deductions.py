@@ -19,7 +19,7 @@ from openfisca_tunisia.variables.base import *
 
 
 class plus_value_cession_actifs_cotes_bourse(Variable):
-    value_type = int
+    value_type = float
     label = "Plus value provenant de la cession des actions cotées en bourse (pour déduction)"
     entity = Individu
     definition_period = YEAR
@@ -59,42 +59,42 @@ class plus_value_cession_actifs_cotes_bourse(Variable):
 
 
 class compte_epargne_en_actions(Variable):
-    value_type = int
+    value_type = float
     label = "Montants déposés dans les comptes épargne en actions (CEA)"
     entity = Individu
     definition_period = YEAR
 
 
 class compte_epargne_investissement(Variable):
-    value_type = int
+    value_type = float
     label = "Intérêts des comptes épargne pour l'investissement"
     entity = Individu
     definition_period = YEAR
 
 
 class compte_special_epargne_banque(Variable):
-    value_type = int
+    value_type = float
     label = "Intérêts des comptes spéciaux d'épargne ouverts auprès des banques"
     entity = Individu
     definition_period = YEAR
 
 
 class compte_special_epargne_cent(Variable):
-    value_type = int
+    value_type = float
     label = "Intérêts des comptes spéciaux d'épargne ouverts auprès de la CENT dans la limite"
     entity = Individu
     definition_period = YEAR
 
 
 class cotisations_non_affilie(Variable):
-    value_type = int
+    value_type = float
     label = "Cotisations payées par les travailleurs non salariés affiliés à l'un des régimes légaux de la sécurité sociale"
     entity = Individu
     definition_period = YEAR
 
 
 class cout_acquisition_logement(Variable):
-    value_type = int
+    value_type = float
     label = (
         "Coût d'acquisition ou de construction de l'habitation principale (Hors TVA)"
     )
@@ -103,42 +103,42 @@ class cout_acquisition_logement(Variable):
 
 
 class dons(Variable):
-    value_type = int
+    value_type = float
     label = "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21"
     entity = Individu
     definition_period = YEAR
 
 
 class emprunt_obligataire(Variable):
-    value_type = int
+    value_type = float
     label = "Intérêts des emprunts obligataires"
     entity = Individu
     definition_period = YEAR
 
 
 class interets_acquisition_logement(Variable):
-    value_type = int
+    value_type = float
     label = "Intérêts payés au titre des prêts relatifs à l'acquisition ou à la construction d’un logement social"
     entity = Individu
     definition_period = YEAR
 
 
 class prime_assurance_vie(Variable):
-    value_type = int
+    value_type = float
     label = "Prime d’assurance-vie"
     entity = Individu
     definition_period = YEAR
 
 
 class pret_universitaire(Variable):
-    value_type = int
+    value_type = float
     label = "Remboursement des prêts universitaires en principal et intérêts"
     entity = Individu
     definition_period = YEAR
 
 
 class rente(Variable):
-    value_type = int
+    value_type = float
     label = "Rentes payées obligatoirement et à titre gratuit"
     entity = Individu
     definition_period = YEAR
