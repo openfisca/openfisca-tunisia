@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.172 - [#538](https://github.com/openfisca/openfisca-tunisia/pull/538)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : toutes.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/deductions`, `variables/revenus/activite/non_salarie`, `variables/revenus/autres_revenus`, `variables/revenus/capital/foncier`, `variables/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers`, `variables/caracteristiques_socio_demographiques/logement`, `variables/mesures`.
+* Détails :
+  - **Les variables d'entrée de montants typées `int` passent en `float`** (issue #536) : 62 variables de revenus catégoriels (BIC, BNC, BEAP, fonciers, valeurs mobilières et capitaux mobiliers, revenus de source étrangère), de déductions (épargne, assurance-vie, dons, rentes…), ainsi que `loyer` et `prestations_sociales`. Tout montant décimal posé en entrée était **tronqué silencieusement** (15 000,75 D devenait 15 000 D), ce qui biaisait les calculs dès que les revenus provenaient de données d'enquête. Découvert en injectant les revenus de l'enquête ENBCV (analyse CEQ Tunisie, dépôt ceq-tunisie) dans le moteur.
+  - Restent typées `int` les vraies variables entières : âges, statuts codés, code postal, rangs, compteurs d'enfants, décile de score Amen social.
+  - Nouveau test de non-régression `tests/formulas/impot_revenu/montants_decimaux.yaml` (les décimales d'un résultat BIC, d'un résultat fiscal BNC, d'une prime d'assurance-vie et de recettes foncières sont conservées). Les 8 146 tests YAML passent.
+
 ## 0.171 - [#533](https://github.com/openfisca/openfisca-tunisia/pull/533)
 
 * Évolution du système socio-fiscal.

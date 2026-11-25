@@ -9,7 +9,7 @@ class code_postal(Variable):
 
 
 class loyer(Variable):
-    value_type = int
+    value_type = float
     entity = Menage
     label = "Loyer du logement"
     definition_period = YEAR
