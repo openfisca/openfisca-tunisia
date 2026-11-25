@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.172.1 - [#539](https://github.com/openfisca/openfisca-tunisia/pull/539)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990.
+* Zones impactées : `variables/prelevements_obligatoires/impot_revenu/irpp`.
+* Détails :
+  - **L'âge limite du supplément « enfant étudiant non boursier » est lu dans le paramètre `impot_revenu.deductions.famille.age_sup`** (25 ans, article 40 § III du code) au lieu d'être codé en dur dans la formule de `nb_enf_sup` (issue #537).
+  - **Tests de non-régression du supplément** dans `tests/formulas/impot_revenu/deduction_famille.yaml` : chef de famille avec un enfant étudiant non boursier en 2021 → déduction de 1 300 D (300 de chef + 1 000 de supplément substitué à la déduction de rang) ; enfant boursier → 400 D (déduction de rang seule) ; étudiant de 25 ans → 300 D (hors limite d'âge). Le supplément lui-même était déjà appliqué par `deduction_famille`, mais aucun test ne le couvrait. Découvert en portant l'analyse CEQ Tunisie (dépôt ceq-tunisie) sur le moteur.
+
 ## 0.172 - [#538](https://github.com/openfisca/openfisca-tunisia/pull/538)
 
 * Évolution du système socio-fiscal.

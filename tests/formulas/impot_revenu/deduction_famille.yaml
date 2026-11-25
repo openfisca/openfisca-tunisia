@@ -162,3 +162,77 @@
       chef_de_famille: true
       nb_enf: 1
       deduction_famille: 2300
+
+# Supplément « enfant étudiant non boursier » (article 40 § III du code, issue #537) :
+# 1 000 dinars depuis les revenus 2013 (paramètre `enf_sup`), substitué à la déduction
+# de rang, pour l'enfant de moins de 25 ans (paramètre `age_sup`) poursuivant des études
+# supérieures sans bourse.
+
+- name: Chef de famille + 1 enfant étudiant non boursier (supplément substitué au rang)
+  period: 2021
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2001-06-15
+        etudiant: true
+        boursier: false
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf_sup: 1
+      deduction_famille: 1300
+
+- name: Chef de famille + 1 enfant étudiant boursier (déduction de rang seulement)
+  period: 2021
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 2001-06-15
+        etudiant: true
+        boursier: true
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf_sup: 0
+      deduction_famille: 400
+
+- name: Chef de famille + 1 étudiant non boursier de 25 ans (hors limite d'âge)
+  period: 2021
+  absolute_error_margin: 0.5
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        marie: true
+        male: true
+      enfant1:
+        date_naissance: 1995-06-15
+        etudiant: true
+        boursier: false
+    foyer_fiscal:
+      declarants:
+      - parent1
+      personnes_a_charge: [enfant1]
+  output:
+    foyer_fiscal:
+      chef_de_famille: true
+      nb_enf_sup: 0
+      deduction_famille: 300
