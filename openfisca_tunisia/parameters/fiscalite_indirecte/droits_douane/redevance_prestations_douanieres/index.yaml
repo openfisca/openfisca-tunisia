@@ -1,0 +1,18 @@
+description: Redevance de prestations douanières
+metadata:
+  short_label: Redevance de prestations douanières
+  order:
+  - importation
+  - exportation
+  - transit_terrestre
+documentation: 'Redevance que la douane perçoit sur les déclarations en détail, instituée par l''article
+  51 de la loi n° 87-83 du 31 décembre 1987 (loi de finances pour 1988), qui supprime la taxe de formalités
+  douanières et la redevance compensatrice des déclarations détaillées. L''article 51 est modifié ou récrit
+  en 1994, 1998, 1999, 2013, 2014 et 2024. Depuis 1994, 10 % du produit sont affectés aux dépenses spécifiques
+  des services des douanes ; l''affectation prend fin le 1er janvier 2014 (tout le produit va au budget
+  de l''État) : elle n''est pas versée ici, n''étant pas un montant de redevance. Les exportations visées
+  changent : en 1988, une liste de produits (graisses et huiles, boissons, tabacs, phosphates, pétrole
+  brut, cuirs, fonte, fer et acier, cuivre, aluminium, matériels de forage) ; depuis 1999, le seul pétrole
+  brut (position 27-09).
+
+  '

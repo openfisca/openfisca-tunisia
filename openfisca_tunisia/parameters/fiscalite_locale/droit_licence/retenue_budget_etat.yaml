@@ -1,0 +1,21 @@
+description: "Retenue au profit du budget de l'État sur le droit de licence sur les débits de boissons"
+values:
+  1997-01-01:
+    value: 0.1
+metadata:
+  unit: /1
+  short_label: "Retenue au profit de l'État"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 62 ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 179 (article 62 du code) et p. 173 (article 3 de la loi). Article 62 : « Le droit de licence sur les débits de boissons à consommer sur place est perçu au vu d'une déclaration fournie par l'administration à déposer à la recette des finances moyennant une retenue de 10 pour-cent au profit du budget de l'Etat, pendant le mois de janvier de chaque année […] ». Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 179, le taux de la retenue étant relu à l'image, p. 179 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+documentation: |-
+  Part du droit de licence retenue au profit du budget de l'État lors de sa perception par la
+  recette des finances (code de la fiscalité locale, article 62) ; le reste revient à la
+  collectivité locale.
+
+  Le tarif n'étant fixé que le 13 mars 1997, la retenue n'a pas d'objet entre le 1er janvier et le
+  12 mars 1997.
+
+  Aucune modification de l'article 62 n'est relevée dans les lois de finances dépouillées.

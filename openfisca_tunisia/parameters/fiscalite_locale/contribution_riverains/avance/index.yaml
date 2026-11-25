@@ -1,0 +1,14 @@
+description: "Avance sur la contribution des propriétaires riverains : bornes du taux"
+metadata:
+  short_label: "Avance (bornes du taux)"
+  order:
+  - minimum
+  - maximum
+documentation: |-
+  La contribution des propriétaires riverains donne lieu au paiement d'une avance, dont le taux est
+  fixé par arrêté du président de la collectivité locale entre un minimum et un maximum énoncés par
+  le code (article 59). Le reliquat est acquitté sans intérêt en cinq fractions annuelles égales à
+  partir du mois suivant celui de l'achèvement des travaux ; le défaut de paiement donne lieu à une
+  pénalité annuelle de 10 pour-cent du montant dû, qui n'est pas versée. L'avance est restituée si
+  les travaux ne sont pas réalisés dans les deux années qui suivent le décret les déclarant
+  d'utilité publique (article 60).

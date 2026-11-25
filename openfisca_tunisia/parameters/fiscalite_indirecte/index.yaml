@@ -4,5 +4,11 @@ metadata:
   order:
   - tva
   - accises
-documentation: Paramètres de la fiscalité indirecte en Tunisie.\nComprend la TVA et
-  les droits d'accise.
+  - droits_enregistrement
+  - droit_timbre
+  - taxe_unique_assurances
+  - droits_douane
+documentation: Paramètres de la fiscalité indirecte en Tunisie.\nComprend la TVA, les
+  droits d'accise, les droits d'enregistrement, le droit de timbre, la taxe unique sur les
+  assurances et les prélèvements perçus en douane (redevance de prestations douanières, minimum
+  de perception, taxe de contrôle par scanner).

@@ -1,0 +1,23 @@
+description: Redevance de prestations douanières par déclaration en douane de transit terrestre de marchandises
+values:
+  '2014-01-01':
+    value: 100
+metadata:
+  unit: currency/unit
+  short_label: Par déclaration de transit
+  notes:
+    '2014-01-01':
+    - note: 'Série incomplète : états antérieurs à 2014 non versés. L''intitulé de l''article 16 parle
+        d''une « révision » du montant au titre du transit terrestre : le montant antérieur n''est pas
+        établi.'
+  reference:
+    '2014-01-01':
+    - title: Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, article 16
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: 'JORT n° 105 du 31 décembre 2013, p. 3669. Article 16, « Transfert du rendement total de la
+        redevance des prestations douanières au budget de l''État et révision de son montant au titre
+        des déclarations en douane relatives aux opérations de transit terrestre des marchandises » :
+        est ajouté à l''article 51 de la loi n° 87-83 un tiret : « cent dinars par déclaration en douane
+        de transit terrestre de marchandises » ; « sur toutes » devient « sur les autres » au deuxième
+        tiret. Date d''effet : date d''application de la loi de finances, le 1er janvier. Édition française
+        lue sur la couche texte.'

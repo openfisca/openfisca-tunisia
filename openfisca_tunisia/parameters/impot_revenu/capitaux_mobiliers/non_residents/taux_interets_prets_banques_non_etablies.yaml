@@ -1,0 +1,33 @@
+description: "Taux de la retenue à la source sur les intérêts des prêts payés aux établissements bancaires non établis en Tunisie"
+values:
+  1995-01-01:
+    value: 0.025
+  2011-01-01:
+    value: 0.05
+  2018-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  short_label: "Retenue, intérêts des prêts des banques non établies"
+  reference:
+    1995-01-01:
+    - title: "Loi n° 94-127 du 26 décembre 1994, portant loi de finances pour la gestion 1995, articles 54 et 100"
+      href: https://www.pist.tn/jort/1994/1994F/Jo10394.pdf
+      note: "JORT n° 103 des 30-31 décembre 1994, p. 2046 (article 54) et p. 2051 (article 100). Rubrique « Imposition des intérêts des prêts et des jetons de présence payés à des non résidents ». Article 54 : « Il est ajouté un alinéa \"e\" au paragraphe I de l'article 52 du code […] ainsi libellé : \"e) 2,5 % au titre des intérêts des prêts payés aux établissements bancaires non établis en Tunisie\". » Date d'effet : article 100 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1995. » Édition française lue sur la couche texte."
+    2011-01-01:
+    - title: "Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, articles 43 et 50"
+      href: https://www.pist.tn/jort/2010/2010F/Jo1022010.pdf
+      note: "JORT n° 102 du 21 décembre 2010, p. 3476 (article 43) et p. 3477 (article 50). Rubrique « Harmonisation du taux de la retenue à la source au titre des intérêts des prêts des banques étrangères avec les taux prévus par les conventions de non double imposition ». Article 43 : « Le taux de 2,5% prévu à l'alinéa « e » du paragraphe I de l'article 52 du code […] est remplacé par le taux de 5%. » Date d'effet : article 50 — « Sous réserve des dispositions des articles 18, 40 et 41, les dispositions de la présente loi sont applicables à compter du 1er janvier 2011. » Édition française lue sur la couche texte."
+    2018-01-01:
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 47 et 67"
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: "JORT n° 101 du 19 décembre 2017, p. 4286 (article 47) et p. 4292 (article 67). Rubrique « Relèvement du taux de la retenue à la source dû sur les intérêts des prêts payés aux établissements bancaires non résidents et non établis en Tunisie ». Article 47 : « Le taux de 5% prévu au paragraphe « e » du paragraphe I de l'article 52 du code […] est relevé à 10%. » Date d'effet : article 67, paragraphe 1 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2018. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue libératoire sur les intérêts des prêts payés aux établissements bancaires
+  non établis en Tunisie (article 52, paragraphe I, alinéa e, du code). Du 1er janvier 2011 au
+  31 décembre 2011, le même alinéa porte aussi la retenue sur le prix de cession de titres par les
+  personnes morales non résidentes (`valeurs_mobilieres/plus_value_cession_titres/non_residents/
+  taux_retenue_prix_personnes_morales`).
+
+  La série commence à la création de l'alinéa : auparavant, ces intérêts relèvent du régime des
+  revenus de capitaux mobiliers servis aux non-résidents (`taux_revenus_capitaux_mobiliers`).

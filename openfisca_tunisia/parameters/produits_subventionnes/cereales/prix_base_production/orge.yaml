@@ -1,0 +1,162 @@
+description: "Prix de base à la production de l'orge"
+values:
+  1970-08-04:
+    value: 2.8
+  1971-07-13:
+    value: 2.8
+  1972-08-08:
+    value: 2.8
+  1973-07-27:
+    value: 2.8
+  1974-06-27:
+    value: 4
+  1975-08-12:
+    value: 4.5
+  1976-09-21:
+    value: 4.5
+  1977-12-13:
+    value: 5.035
+  1979-04-08:
+    value: 5.5
+  1980-10-09:
+    value: 5.9
+  1981-08-21:
+    value: 6.9
+  1982-09-28:
+    value: 8
+  1983-11-24:
+    value: 9.5
+  1985-01-04:
+    value: 10
+  1985-10-17:
+    value: 10.5
+  1987-02-22:
+    value: 11
+  1988-04-10:
+    value: 12
+  1989-09-03:
+    value: 14
+  1990-05-11:
+    value: 14
+  1991-07-04:
+    value: 15
+  1992-10-04:
+    value: 15
+  1993-09-06:
+    value: null
+metadata:
+  short_label: "Orge"
+  label_en: "Barley basic producer price"
+  unit: currency/100kg
+  notes:
+    1970-08-04:
+    - note: "Série incomplète : états antérieurs à 1970 non versés."
+    1973-07-27:
+    - note: "Pour la récolte 1973, une prime de difficulté exceptionnelle de 0,200 D/ql s'ajoute au prix de base de l'orge (décret n° 73-346, article 10) ; elle n'est pas comprise dans la valeur."
+    1993-09-06:
+    - note: "Fin de la série : à partir de la récolte 1992, la commercialisation de l'orge est libre et le décret ne fixe plus qu'un prix d'intervention (paramètre prix_intervention_orge)."
+  reference:
+    1970-08-04:
+    - title: "Décret n° 70-261 du 30 juillet 1970, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales, fèves, féveroles et pois-chiches, pour la campagne 1970-1971"
+      href: https://www.pist.tn/jort/1970/1970F/Jo03770.pdf
+      note: "JORT n° 37 du 31 juillet au 4 août 1970, p. 985-992 (prix : p. 990). Prix de base à la production, récolte 1970 : orge : 2,800 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 31 juillet au 4 août 1970, jour de parution non établi : la date portée est la dernière date du numéro, le 4 août 1970, retenue comme date de publication. Lu à l'image."
+    1971-07-13:
+    - title: "Décret n° 71-253 du 8 juillet 1971, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1971-1972"
+      href: https://www.pist.tn/jort/1971/1971F/Jo03071.pdf
+      note: "JORT n° 30 du 9 au 13 juillet 1971, p. 909-915. Prix de base à la production, récolte 1971 : orge : 2,800 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 9 au 13 juillet 1971, jour de parution non établi : la date portée est la dernière date du numéro, le 13 juillet 1971, retenue comme date de publication. Lu sur l'océrisation du fascicule, contrôlée par l'arithmétique du décret (prix normal = prix de base + marge)."
+    1972-08-08:
+    - title: "Décret n° 72-244 du 7 août 1972, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1972-1973"
+      href: https://www.pist.tn/jort/1972/1972F/Jo03272.pdf
+      note: "JORT n° 32 du 4 au 8 août 1972, p. 1097-1103. Prix de base à la production, récolte 1972 : orge : 2,800 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 4 au 8 août 1972, jour de parution non établi : la date portée est la dernière date du numéro, le 8 août 1972, retenue comme date de publication. Le décret est signé le 7 août 1972 (« Fait à Tunis, le 7 août 1972 ») ; le sommaire du numéro le date du 3 août. Lu sur l'océrisation du fascicule."
+    1973-07-27:
+    - title: "Décret n° 73-346 du 14 juillet 1973, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1973-1974"
+      href: https://www.pist.tn/jort/1973/1973F/Jo02873.pdf
+      note: "JORT n° 28 des 20, 24 et 27 juillet 1973, p. 1139-1145 (prix : p. 1143). Prix de base à la production, récolte 1973 : orge : 2,800 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 20 au 27 juillet 1973, jour de parution non établi : la date portée est la dernière date du numéro, le 27 juillet 1973, retenue comme date de publication. Lu à l'image."
+    1974-06-27:
+    - title: "Décret n° 74-649 du 22 juin 1974, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1974-1975"
+      href: https://www.pist.tn/jort/1974/1974F/Jo04474.pdf
+      note: "JORT n° 44 du 25 au 27 juin 1974, p. 1439-1445 (prix : p. 1443-1444). Prix de base à la production, récolte 1974 : orge : 4,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 25 au 27 juin 1974, jour de parution non établi : la date portée est la dernière date du numéro, le 27 juin 1974, retenue comme date de publication. Lu à l'image ; indemnités compensatrices de l'article 22 contrôlées par l'arithmétique (prix normal − prix réduit)."
+    1975-08-12:
+    - title: "Décret n° 75-542 du 4 août 1975, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1975-1976"
+      href: https://www.pist.tn/jort/1975/1975F/Jo05475.pdf
+      note: "JORT n° 54 du 8 au 12 août 1975, p. 1674-1680 (prix : p. 1678). Prix de base à la production, récolte 1975 : orge : 4,500 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 8 au 12 août 1975, jour de parution non établi : la date portée est la dernière date du numéro, le 12 août 1975, retenue comme date de publication. Lu à l'image ; indemnités contrôlées par l'arithmétique."
+    1976-09-21:
+    - title: "Décret n° 76-812 du 13 septembre 1976, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1976-1977"
+      href: https://www.pist.tn/jort/1976/1976F/Jo05676.pdf
+      note: "JORT n° 56 des 17 et 21 septembre 1976, p. 2220-2225 (prix : p. 2224). Prix de base à la production, récolte 1976 : orge : 4,500 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 17 au 21 septembre 1976, jour de parution non établi : la date portée est la dernière date du numéro, le 21 septembre 1976, retenue comme date de publication. Lu à l'image."
+    1977-12-13:
+    - title: "Décret n° 77-981 du 22 novembre 1977, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1977-1978"
+      href: https://www.pist.tn/jort/1977/1977F/Jo08177.pdf
+      note: "JORT n° 81 du 9 au 13 décembre 1977, p. 3384-3390. Prix de base à la production, récolte 1977 : orge : 5,035 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 9 au 13 décembre 1977, jour de parution non établi : la date portée est la dernière date du numéro, le 13 décembre 1977, retenue comme date de publication. Lu à l'image."
+    1979-04-08:
+    - title: "Décret n° 79-289 du 2 avril 1979, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1978-1979"
+      href: https://www.pist.tn/jort/1979/1979F/Jo02579.pdf
+      note: "JORT n° 25 du 6 avril 1979, p. 984-990. Prix de base à la production, récolte 1978 : orge : 5,500 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 6 avril 1979, exécutoire un jour franc après sa publication, soit le 8 avril 1979 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    - title: "Décret n° 80-140 du 11 février 1980, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1979-1980"
+      href: https://www.pist.tn/jort/1980/1980F/Jo01080.pdf
+      note: "JORT n° 10 du 19 février 1980, p. 455-456, article premier. Reconduit pour la campagne 1979-1980 (récolte 1979) le décret n° 79-289, tel que modifié par les articles 4 et 5 du décret n° 79-413 du 7 mai 1979 : aucun prix nouveau, la valeur reste en vigueur. Lu sur l'océrisation du fascicule."
+    1980-10-09:
+    - title: "Décret n° 80-1257 du 30 septembre 1980, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1980-1981"
+      href: https://www.pist.tn/jort/1980/1980F/Jo05780.pdf
+      note: "JORT n° 57 du 7 octobre 1980, p. 2534-2540. Prix de base à la production, récolte 1980 : orge : 5,900 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 7 octobre 1980, exécutoire un jour franc après sa publication, soit le 9 octobre 1980 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1981-08-21:
+    - title: "Décret n° 81-1069 du 15 août 1981, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1980-1981"
+      href: https://www.pist.tn/jort/1981/1981F/Jo05381.pdf
+      note: "JORT n° 53 du 18 au 21 août 1981, p. 1935-1941. Prix de base à la production, récolte 1981 : orge : 6,900 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 18 au 21 août 1981, jour de parution non établi : la date portée est la dernière date du numéro, le 21 août 1981, retenue comme date de publication. Le décret est intitulé « campagne 1980-1981 » mais son texte vise la récolte 1981 (articles 11 et 14). Lu à l'image."
+    1982-09-28:
+    - title: "Décret n° 82-1286 du 18 septembre 1982, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1982-1983"
+      href: https://www.pist.tn/jort/1982/1982F/Jo06182.pdf
+      note: "JORT n° 61 du 24 au 28 septembre 1982, p. 1998-2004. Prix de base à la production, récolte 1982 : orge : 8,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 24 au 28 septembre 1982, jour de parution non établi : la date portée est la dernière date du numéro, le 28 septembre 1982, retenue comme date de publication. Lu à l'image."
+    1983-11-24:
+    - title: "Décret n° 83-1075 du 17 novembre 1983, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1983-1984"
+      href: https://www.pist.tn/jort/1983/1983F/Jo07583.pdf
+      note: "JORT n° 75 du 22 novembre 1983, p. 2977-2984. Prix de base à la production, récolte 1983 : orge : 9,500 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 22 novembre 1983, exécutoire un jour franc après sa publication, soit le 24 novembre 1983 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1985-01-04:
+    - title: "Décret n° 84-1520 du 25 décembre 1984, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1984-1985"
+      href: https://www.pist.tn/jort/1985/1985F/Jo00185.pdf
+      note: "JORT n° 1 du 1er au 4 janvier 1985, p. 11-17. Prix de base à la production, récolte 1984 : orge : 10,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 1er au 4 janvier 1985, jour de parution non établi : la date portée est la dernière date du numéro, le 4 janvier 1985, retenue comme date de publication. Lu à l'image ; indemnités (7,196 et 8,746 D/ql) contrôlées par l'arithmétique."
+    1985-10-17:
+    - title: "Décret n° 85-1242 du 7 octobre 1985, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1985-1986"
+      href: https://www.pist.tn/jort/1985/1985F/Jo07285.pdf
+      note: "JORT n° 72 du 15 octobre 1985, p. 1387-1393. Prix de base à la production, récolte 1985 : orge : 10,500 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 15 octobre 1985, exécutoire un jour franc après sa publication, soit le 17 octobre 1985 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1987-02-22:
+    - title: "Décret n° 87-129 du 11 février 1987, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1986-1987"
+      href: https://www.pist.tn/jort/1987/1987F/Jo01387.pdf
+      note: "JORT n° 13 du 20 février 1987, p. 252-258. Prix de base à la production, récolte 1986 : orge : 11,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 20 février 1987, exécutoire un jour franc après sa publication, soit le 22 février 1987 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1988-04-10:
+    - title: "Décret n° 88-707 du 25 mars 1988, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1987-1988"
+      href: https://www.pist.tn/jort/1988/1988F/Jo02388.pdf
+      note: "JORT n° 23 du 8 avril 1988, p. 533-538. Prix de base à la production, récolte 1987 : orge : 12,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 8 avril 1988, exécutoire un jour franc après sa publication, soit le 10 avril 1988 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1989-09-03:
+    - title: "Décret n° 89-1171 du 14 août 1989, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1988-1989"
+      href: https://www.pist.tn/jort/1989/1989F/Jo05989.pdf
+      note: "JORT n° 59 du 1er septembre 1989, p. 1323-1329. Prix de base à la production, récolte 1988 : orge : 14,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 1er septembre 1989, exécutoire un jour franc après sa publication, soit le 3 septembre 1989 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image (p. 1327-1328) ; indemnités (15,108 et 14,587 D/ql) contrôlées par l'arithmétique."
+    1990-05-11:
+    - title: "Décret n° 90-671 du 25 avril 1990, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1989-1990"
+      href: https://www.pist.tn/jort/1990/1990F/Jo03190.pdf
+      note: "JORT n° 31 du 8 au 11 mai 1990, p. 573-579. Prix de base à la production, récolte 1989 : orge : 14,000 D/ql. Date d'effet : le texte n'en énonce pas ; numéro daté du 8 au 11 mai 1990, jour de parution non établi : la date portée est la dernière date du numéro, le 11 mai 1990, retenue comme date de publication. Lu à l'image."
+    1991-07-04:
+    - title: "Décret n° 91-943 du 17 juin 1991, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1990-1991"
+      href: https://www.pist.tn/jort/1991/1991F/Jo04791.pdf
+      note: "JORT n° 47 du 2 juillet 1991, p. 1236-1242. Prix de base à la production, récolte 1990 : orge : 15,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 2 juillet 1991, exécutoire un jour franc après sa publication, soit le 4 juillet 1991 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1992-10-04:
+    - title: "Décret n° 92-1657 du 14 septembre 1992, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1991-1992"
+      href: https://www.pist.tn/jort/1992/1992F/Jo06692.pdf
+      note: "JORT n° 66 du 2 octobre 1992, p. 1310-1312. Prix de base à la production, récolte 1991 : orge : 15,000 D/ql. Date d'effet : le texte n'en énonce pas ; publié le 2 octobre 1992, exécutoire un jour franc après sa publication, soit le 4 octobre 1992 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). Lu à l'image."
+    1993-09-06:
+    - title: "Décret n° 93-1721 du 16 août 1993, fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour la campagne 1992-1993"
+      href: https://www.pist.tn/jort/1993/1993F/Jo06593.pdf
+      note: "JORT n° 65 du 31 août 1993, p. 1393-1399, article premier : « La commercialisation de l'orge est libre » ; le décret ne fixe plus qu'un prix d'intervention. Date d'effet : le texte n'en énonce pas ; publié le 31 août 1993, dépôt au siège du gouvernorat de Tunis le 1er septembre 1993 (mention portée au numéro), plus cinq jours, jour du dépôt non compté (loi n° 93-64, article 2) : 6 septembre 1993. Lu à l'image."
+documentation: |-
+  Prix fixé pour chaque récolte, en dinars par quintal (100 kg), auquel l'orge saine, loyale et
+  marchande est achetée à la production, des récoltes 1970 à 1991. À partir de la récolte 1992, la
+  commercialisation de l'orge est libre : le texte de campagne ne fixe plus qu'un prix
+  d'intervention, et la série s'arrête à l'entrée en vigueur du décret n° 93-1721.
+
+  Chaque texte fixe les prix « de la récolte de l'année » qu'il vise ; la valeur prend effet à la
+  date d'entrée en vigueur du texte, non au début de la récolte. Avant 1993, un texte est
+  exécutoire un jour franc après sa publication ; quand le numéro du Journal officiel porte
+  plusieurs dates, la valeur est portée à la dernière,
+  retenue comme date de publication, sans calcul de jour franc. Une campagne régie par
+  reconduction d'un texte antérieur ne porte pas de valeur nouvelle ; le texte qui reconduit
+  figure dans les références, à la date de la valeur qu'il maintient.

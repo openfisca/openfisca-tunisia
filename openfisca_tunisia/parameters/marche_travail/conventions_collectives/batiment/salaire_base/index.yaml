@@ -1,0 +1,20 @@
+description: "Bâtiment et travaux publics - salaires de base des grilles annexées à la convention"
+metadata:
+  short_label: "Salaire de base"
+  order:
+  - personnel_occasionnel
+  - personnel_administratif_technique
+documentation: |-
+  Chaque avenant de salaires porte, par date d'effet, deux grilles :
+  - la grille du personnel occasionnel, en dinars par heure, un salaire par catégorie, sans
+    échelon ;
+  - la grille du personnel administratif et technique à traitement mensuel, en dinars par mois, de
+    19 catégories et 11 échelons, qui porte en 1975 la mention « base : 48 heures/semaine ».
+
+  Les deux grilles sont versées en entier, du 1er mai 1996 au 1er janvier 2024 : celle du personnel
+  occasionnel (`personnel_occasionnel`) et celle du personnel administratif et technique à
+  traitement mensuel (`personnel_administratif_technique`).
+
+  Ce sont des salaires de base. Ils comprennent l'indemnité complémentaire provisoire des décrets
+  n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982, ce que chaque grille mentionne. Les
+  indemnités de la convention (présence, transport) s'y ajoutent.

@@ -1,6 +1,6 @@
 [project]
 name = "OpenFisca-Tunisia"
-version = "0.115"
+version = "0.172.1"
 description = "OpenFisca Rules as Code model for Tunisia."
 readme = "README.md"
 keywords = ["microsimulation", "tax", "benefit", "rac", "rules-as-code", "tunisia"]
@@ -20,7 +20,7 @@ classifiers = [
 requires-python = ">= 3.10"
 dependencies = [
     # "numpy >=1.24.3, <2", #TODO: Pour le CRES ?
-    "openfisca-core[web-api] >=44, <45",
+    "openfisca-core[web-api] >=44, <46",
 ]
 
 [project.urls]
@@ -36,7 +36,7 @@ build-backend = "setuptools.build_meta"
 
 [project.optional-dependencies]
 dev = [
-    "ruff >=0.6.9, <0.9",
+    "ruff >=0.6.9, <0.17",
     "pytest",  # Let OpenFisca-Core decide pytest version
     "scipy >=1.10.1, <2.0",
     "requests >=2.28.2, <3.0",

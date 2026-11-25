@@ -1,0 +1,24 @@
+description: "Nombre d'années civiles suivant celle de l'acquisition au terme desquelles la cession d'actions cotées est exonérée"
+values:
+  2011-01-01:
+    value: 1
+metadata:
+  unit: year
+  short_label: "Durée de détention, actions cotées"
+  reference:
+    2011-01-01:
+    - title: "Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 41"
+      href: https://www.pist.tn/jort/2010/2010F/Jo1022010.pdf
+      note: "JORT n° 102 du 21 décembre 2010, p. 3475. Article 41, paragraphe 3, tiret ajouté au point 17 de l'article 38 du code : « - provenant de la cession des actions cotées à la Bourse des Valeurs Mobilières de Tunis acquises ou souscrites à partir du 1er janvier 2011 et ce lorsque leur cession a lieu après l'expiration de l'année suivant celle de leur acquisition ou de leur souscription. » Date d'effet : la loi s'applique à compter du 1er janvier 2011 (article 50, p. 3477). Édition française lue sur la couche texte."
+documentation: |-
+  Condition de détention de l'exonération des actions cotées acquises ou souscrites à partir du
+  1er janvier 2011 (article 38, point 17, du code) : la cession doit intervenir après
+  l'expiration de l'année civile qui suit celle de l'acquisition ou de la souscription. Une
+  action achetée en N est exonérée si elle est cédée à partir du 1er janvier N + 2. La durée se
+  compte en années civiles, non de date à date.
+
+  Les actions acquises ou souscrites avant le 1er janvier 2011, et les cessions dans le cadre
+  d'une introduction en bourse, restent exonérées sans condition de durée. La loi de finances
+  pour 2023 (article 42) reprend la même échéance pour fixer les taux de la plus-value.
+
+  De 2004 à 2010, aucune condition de durée : la série commence en 2011.

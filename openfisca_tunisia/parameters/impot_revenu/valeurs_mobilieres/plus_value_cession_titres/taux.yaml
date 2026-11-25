@@ -1,0 +1,26 @@
+description: "Taux de l'impôt sur la plus-value de cession d'actions, de parts sociales et de parts de fonds"
+values:
+  2004-01-01:
+    value: 0.10
+  2023-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  short_label: "Taux, plus-value de cession de titres"
+  reference:
+    2004-01-01:
+    - title: "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 61, 62 et 105"
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: "JORT n° 104 du 30 décembre 2003, p. 3730 (articles 61 et 62) et p. 3736 (article 105). Rubrique « Soumission de la plus-value provenant de la cession des actions et des parts sociales à l'impôt sur le revenu ». Article 61, paragraphe 1, article 31 bis nouveau du code : « La catégorie des revenus des valeurs mobilières comprend également la plus-value de cession des actions et des parts sociales, et ce, pour les opérations de cession effectuées à partir du 1er janvier 2004. » Article 62, paragraphe 3 nouveau du paragraphe III de l'article 44 : « La plus-value visée au deuxième alinéa de l'article 33 du présent code est soumise à l'impôt sur le revenu au taux de 10% de son montant. » Date d'effet : article 61, cessions effectuées à partir du 1er janvier 2004 ; article 105 — « Sous réserve des dispositions de l'article 61 de la présente loi, les dispositions de la présente loi sont applicables à compter du 1er janvier 2004. » Édition française lue à l'image, pp. 3730 et 3736."
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 42"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4068. Rubrique « مراجعة النظام الجبائي للقيمة الزائدة المتأتية من التفويت في السندات » (révision du régime fiscal de la plus-value provenant de la cession des titres). Article 42, paragraphe 1, alinéa 3 nouveau du paragraphe III de l'article 44 du code : « وتخضع القيمة الزائدة المشار إليها بالفقرة الثانية من الفصل 33 من هذه المجلة للضريبة على الدخل بنسبة: - 10% من مبلغها بالنسبة إلى الأسهم المدرجة ببورصة الأوراق المالية بتونس إذا تم التفويت فيها أو إعادة إحالتها قبل انتهاء السنة الموالية لسنة الاكتتاب أو الاقتناء وكذلك بالنسبة إلى الأسهم الأخرى والمنابات الاجتماعية وحصص الصناديق والحقوق المتعلقة بها إذا تم التفويت فيها أو إعادة إحالتها بعد انتهاء السنة الموالية لسنة الاكتتاب أو الاقتناء » (la plus-value est soumise à l'impôt sur le revenu au taux de 10 % de son montant pour les actions cotées à la Bourse des valeurs mobilières de Tunis cédées ou rétrocédées avant l'expiration de l'année suivant celle de la souscription ou de l'acquisition, ainsi que pour les autres actions, les parts sociales, les parts de fonds et les droits y relatifs cédés ou rétrocédés après l'expiration de cette année). Le taux ne change pas ; l'entrée porte le texte qui fonde le taux depuis cette date, et qui en restreint le champ. Paragraphe 3 : « تطبق أحكام هذا الفصل على عمليات التفويت أو إعادة الإحالة المنجزة ابتداء من غرة جانفي 2023 » (le présent article s'applique aux cessions ou rétrocessions réalisées à compter du 1er janvier 2023). Édition arabe lue à l'image, p. 4068. L'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux appliqué à la plus-value de cession de titres, hors des cas exonérés (voir le nœud
+  parent). Du 1er janvier 2004 au 31 décembre 2022, il vaut pour toute plus-value imposable,
+  au-delà de la franchise (`franchise`). À partir du 1er janvier 2023, il vaut pour les actions
+  cotées cédées avant l'expiration de l'année qui suit celle de leur acquisition ou de leur
+  souscription, et pour les autres actions, les parts sociales et les parts de fonds cédées
+  après cette échéance ; les actions non cotées, parts sociales et parts de fonds cédées avant
+  l'échéance relèvent de `taux_non_cotes_detention_courte`.

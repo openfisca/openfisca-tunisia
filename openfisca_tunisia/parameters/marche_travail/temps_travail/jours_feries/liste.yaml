@@ -1,0 +1,71 @@
+description: "Jours fériés payés énumérés par l'article 445 du code du travail"
+values:
+  1966-05-01:
+    value:
+    - "1er mai"
+    - "1er juin"
+    - "25 juillet"
+    - "15 octobre"
+  1988-06-05:
+    value:
+    - "20 mars"
+    - "1er mai"
+    - "25 juillet"
+    - "Aïd El Fitr"
+    - "Aïd El Idha"
+  1991-03-03:
+    value: null
+  1991-03-07:
+    value:
+    - "20 mars"
+    - "1er mai"
+    - "25 juillet"
+    - "7 novembre"
+    - "Aïd El Fitr"
+    - "Aïd El Idha"
+  2011-06-16:
+    value:
+    - "14 janvier"
+    - "20 mars"
+    - "1er mai"
+    - "25 juillet"
+    - "Aïd El Fitr"
+    - "Aïd El Idha"
+  2021-12-15:
+    value:
+    - "17 décembre"
+    - "20 mars"
+    - "1er mai"
+    - "25 juillet"
+    - "Aïd El Fitr"
+    - "Aïd El Idha"
+metadata:
+  unit: jour_ferie
+  short_label: "Liste des jours fériés payés, loi"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 445"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02266.pdf
+      note: "JORT n° 22 des 17-20-24 mai 1966, p. 814. Livre VII, chapitre XX « Jours fériés chômés et payés ». Article 445 : « Le 1er Mai, le 1er Juin, le 25 Juillet et le 15 Octobre sont jours fériés, chômés et payés. » L'article 107 (p. 763) dispose : « Les jours fériés, chômés et payés sont fixés par la loi. » Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+    1988-06-05:
+    - title: "Loi n° 88-55 du 2 juin 1988, portant modification des dispositions du code du travail relatives aux jours fériés, chômés et payés, article unique : article 445 (nouveau) du code"
+      href: https://www.pist.tn/jort/1988/1988F/Jo03788.pdf
+      note: "JORT n° 37 du 3 juin 1988, p. 798. « Article 445 (nouveau). — Sont considérés jours fériés, chômés et payés, le 20 mars, le 1er mai, le 25 juillet, le jour de l'aïd El Fitr et le jour de l'aïd El Idha. » Le 1er juin et le 15 octobre sortent de la liste. Date d'effet : la loi n'en fixe pas ; elle est exécutoire un jour franc après sa publication au Journal officiel du 3 juin 1988 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 5 juin 1988. Édition française lue à l'image."
+    1991-03-03:
+    - title: "Loi n° 91-15 du 25 février 1991, portant modification du code du travail, article unique : article 445 (nouveau) du code"
+      href: https://www.pist.tn/jort/1991/1991F/Jo01791.pdf
+      note: "JORT n° 17 des 1er et 5 mars 1991, p. 377. « Art. 445 (nouveau). — Sont jours fériés payés, le 20 mars, le 1er mai, le 25 juillet, le 7 novembre, le jour de l'Aïd El Fitr et le jour de l'Aïd El Idha. » Date d'effet indéterminée entre le 3 et le 7 mars 1991 : la loi n'en fixe pas, et le fascicule, numéro double, porte deux dates, « Vendredi 14-Mardi 18 chaabane 1411 - 1er et 5 mars 1991 » sur la couverture et « 1er - 5 mars 1991 » au pied de la p. 377, dans l'édition arabe comme dans l'édition française. Exécutoire un jour franc après sa publication (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), elle l'est le 3 mars si elle a paru le 1er, le 7 mars si elle a paru le 5. La valeur est laissée vide à partir du 3 mars 1991, premier jour où la loi a pu entrer en vigueur, pour que la liste de 1988 ne se prolonge pas au-delà. Édition française lue à l'image."
+    1991-03-07:
+    - title: "Loi n° 91-15 du 25 février 1991, portant modification du code du travail, article unique : article 445 (nouveau) du code"
+      href: https://www.pist.tn/jort/1991/1991F/Jo01791.pdf
+      note: "JORT n° 17 des 1er et 5 mars 1991, p. 377. « Art. 445 (nouveau). — Sont jours fériés payés, le 20 mars, le 1er mai, le 25 juillet, le 7 novembre, le jour de l'Aïd El Fitr et le jour de l'Aïd El Idha. » Date d'effet indéterminée entre le 3 et le 7 mars 1991 : la loi n'en fixe pas, et le fascicule, numéro double, porte deux dates, « Vendredi 14-Mardi 18 chaabane 1411 - 1er et 5 mars 1991 » sur la couverture et « 1er - 5 mars 1991 » au pied de la p. 377, dans l'édition arabe comme dans l'édition française. Exécutoire un jour franc après sa publication (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), elle l'est le 3 mars si elle a paru le 1er, le 7 mars si elle a paru le 5. Le 7 mars 1991 n'est pas une date d'effet établie : c'est le premier jour où la loi est en vigueur dans les deux hypothèses. Édition française lue à l'image."
+    2011-06-16:
+    - title: "Décret-loi n° 2011-51 du 6 juin 2011, portant modification du code du travail, article premier"
+      href: https://www.pist.tn/jort/2011/2011F/Jo0422011.pdf
+      note: "JORT n° 42 du 10 juin 2011, p. 884. « Est abrogée l'expression « le 7 novembre » prévue à l'article 445 du code du travail - remplacée par l'expression « le 14 Janvier » et insérée directement avant l'expression « 20 mars ». » Le nombre de jours ne change pas. Date d'effet : le décret-loi n'en fixe pas ; le JORT n° 42 a été déposé au siège du gouvernorat de Tunis le 11 juin 2011 (mention de la dernière page de l'édition française) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 16 juin 2011. Édition française lue sur la couche texte."
+    2021-12-15:
+    - title: "Décret-loi n° 2021-11 du 13 décembre 2021, portant modification de l'article 445 du code du travail, article premier"
+      href: https://www.pist.tn/jort/2021/2021F/Jo1152021.pdf
+      note: "JORT n° 115 du 14 décembre 2021, p. 2951. « Est abrogée l'expression « le 14 janvier » prévue à l'article 445 du code du travail par l'expression « le 17 décembre ». » Le nombre de jours ne change pas. Date d'effet : le décret-loi n'en fixe pas ; publié au Journal officiel du 14 décembre 2021, il est exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1 du 14 avril 2020, article 2), soit le 15 décembre 2021. Édition française lue sur la couche texte."
+documentation: |-
+  Liste légale, dans l'ordre du texte. L'Aïd El Fitr et l'Aïd El Idha y comptent chacun pour un jour.

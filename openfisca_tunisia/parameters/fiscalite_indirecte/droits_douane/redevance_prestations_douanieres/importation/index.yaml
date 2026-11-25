@@ -1,0 +1,6 @@
+description: Redevance de prestations douanières à l'importation
+metadata:
+  short_label: Importation
+  order:
+  - taux_sur_droits_et_taxes
+  - minimum_par_article

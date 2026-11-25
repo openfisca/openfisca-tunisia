@@ -1,0 +1,22 @@
+description: "Plafond de la gratification de fin de service, en mois de salaire"
+values:
+  1966-05-01:
+    value: 3
+  1994-03-01:
+    value: 3
+metadata:
+  unit: month
+  short_label: "Gratification, plafond en mois de salaire"
+  reference:
+    1966-05-01:
+    - title: "Loi n° 66-27 du 30 avril 1966, portant promulgation du code du travail, article 1er ; code du travail, article 22"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02066.pdf
+      note: "JORT n° 20 des 3-6 mai 1966, p. 716 (loi, article premier) et p. 719 (code, article 22). Article 22, second alinéa : « Cette indemnité ne peut excéder trois mois de salaire quelle que soit la durée des services, le tout sauf dispositions plus favorables résultant de la loi, de conventions collectives ou particulières. » Date d'effet : article premier de la loi — le code « entrera en vigueur le 1er mai 1966 ». Fascicule sans couche texte, lu à l'image, pp. 716 et 719."
+    1994-03-01:
+    - title: "Loi n° 94-29 du 21 février 1994, portant modification de certaines dispositions du code du travail, article 1er (article 22 du code)"
+      href: https://www.pist.tn/jort/1994/1994F/Jo01594.pdf
+      note: "JORT n° 15 du 22 février 1994, p. 319. Article 22 (nouveau), second alinéa : « Cette gratification ne peut excéder le salaire de trois mois quelle que soit la durée du service effectif, sauf dispositions plus favorables prévues par la loi ou par les conventions collectives ou particulières. » Date d'effet : exécutoire cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le 24 février 1994, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2). Édition française lue sur la couche texte."
+documentation: |-
+  Le plafond s'exprime en mois de salaire, sur la base du salaire perçu au moment du licenciement.
+  Le texte ne dit pas combien de jours compte un mois de salaire : le nombre de mois de service à
+  partir duquel le plafond est atteint n'est pas énoncé.

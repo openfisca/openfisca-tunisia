@@ -76,7 +76,7 @@ class rsa_pension(Variable):
         periode_remplacement_base = rsa.periode_remplacement_base
         plaf_taux_pension = rsa.plaf_taux_pension
         smag = parameters(period).marche_travail.smag * 25
-        duree_stage_validee = duree_assurance > 4 * duree_stage
+        duree_stage_validee = duree_assurance >= 4 * duree_stage
         pension_min = rsa.pension_min
         salaire_reference = individu('rsa_salaire_reference', period)
         montant = pension_generique(duree_assurance, sal_ref, taux_annuite_base, taux_annuite_supplementaire, duree_stage, age_elig, periode_remplacement_base, plaf_taux_pension)

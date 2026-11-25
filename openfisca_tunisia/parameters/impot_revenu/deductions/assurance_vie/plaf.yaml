@@ -6,7 +6,7 @@ values:
     value: 800
   2007-01-01:
     value: 1200
-  2013-01-01:
+  2011-01-01:
     value: 10000
   2020-01-01:
     value: 100000
@@ -20,8 +20,9 @@ metadata:
       title: Article 52 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998, JORT n° 104 des 30-31 décembre 1997, p. 2439, sous l'intitulé « Encouragement de l'épargne dans le cadre des contrats d'assurance-vie »
     2007-01-01:
       title: Article 23 § 1 de la loi n° 2007-70 du 27 décembre 2007 portant loi de finances pour l'année 2008, intitulé « Relèvement du plafond déductible des primes d'assurance vie »
-    2013-01-01:
-      title: Article 24 § 1 de la loi n° 2013-54 du 30 décembre 2013 portant loi de finances pour l'année 2014, intitulé « Encouragement de l'épargne à long terme en matière d'assurance vie »
+    2011-01-01:
+      title: "Article 42 § 1 de la loi n° 2012-1 du 16 mai 2012 portant loi de finances complémentaire pour l'année 2012, JORT n° 39 du 18 mai 2012, p. 929, sous l'intitulé « Relèvement du plafond déductible des primes d'assurance vie et élargissement de leur champ d'application » : « Ces versements sont admis en déduction dans la limite de 10.000 dinars par an. » ; note commune n° 25/2012 rattachant la mesure aux déclarations dont le délai de dépôt intervient à partir du 25 mai 2012, soit les revenus de 2011"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
     2020-01-01:
       title: Article 16 § 2 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021, JORT n° 128 du 25 décembre 2020, p. 3129 ; note commune n° 1/2021 rattachant la mesure aux revenus réalisés à partir de l'année 2020
 documentation: |
@@ -36,10 +37,19 @@ documentation: |
   finances pour 1998, rattachées à la mauvaise date.
 
   Dates. Le rattachement du palier de 1997 est dérivé de la règle de conversion, l'article 52
-  n'énonçant pas de date d'effet propre — à la différence de l'article 62 de la même loi. Même
-  raisonnement pour 2007 et 2013. Le palier de 100 000 dinars, lui, est attesté aux revenus 2020
-  par la note commune n° 1/2021.
+  n'énonçant pas de date d'effet propre — à la différence de l'article 62 de la même loi. Le
+  palier de 2007 est attesté par la note commune n° 10/2008 (primes payées à partir du
+  1er janvier 2007), celui de 10 000 dinars par la note commune n° 25/2012, celui de
+  100 000 dinars par la note commune n° 1/2021 (revenus de 2020).
 
-  La loi de finances 2014 supprime les majorations pour conjoint et enfants au profit d'un
-  plafond unique ; la loi de finances 2021 soumet en outre cette déduction, pour la première
-  fois, au minimum d'impôt de l'article 12 bis de la loi n° 89-114.
+  Le plafond unique de 10 000 dinars vient de la loi de finances complémentaire pour 2012
+  (article 42), qui supprime les majorations pour conjoint et enfants. Il était daté du
+  1er janvier 2013 et rapporté à l'article 24 de la loi de finances pour 2014, qui le reprend
+  sans le changer en fixant une durée minimale de contrat. La note commune n° 25/2012 l'applique
+  aux déclarations dont le délai de dépôt intervient à partir du 25 mai 2012 : revenus de 2011
+  pour les bénéfices non commerciaux, artisanaux et agricoles et pour les salaires et pensions ;
+  pour les bénéfices industriels et commerciaux, dont la déclaration de 2011 était échue avant
+  cette date, revenus de 2012. La série retient les revenus de 2011.
+
+  La loi de finances 2021 soumet en outre cette déduction, pour la première fois, au minimum
+  d'impôt de l'article 12 bis de la loi n° 89-114.

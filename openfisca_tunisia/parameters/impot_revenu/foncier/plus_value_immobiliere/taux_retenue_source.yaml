@@ -1,0 +1,33 @@
+description: "Taux de la retenue à la source sur le prix de cession déclaré d'un immeuble"
+values:
+  1995-01-01:
+    value: 0.025
+  2013-01-01:
+    value: 0.025
+metadata:
+  unit: /1
+  short_label: "Retenue à la source, part du prix de cession"
+  reference:
+    1995-01-01:
+    - title: "Loi n° 94-127 du 26 décembre 1994, portant loi de finances pour la gestion 1995, articles 55 et 100"
+      href: https://www.pist.tn/jort/1994/1994F/Jo10394.pdf
+      note: "JORT n° 103 des 30-31 décembre 1994, p. 2047 (article 55) et p. 2051 (article 100). Rubrique « L'impôt sur le revenu au titre de la plus-value immobilière ». Article 55 : « Il est ajouté au paragraphe I de l'article 52 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, un alinéa \"f\" ainsi libellé : \"f) 2,5 % du prix de cession déclaré dans l'acte et payé par l'Etat, les collectivités locales, les personnes morales et les personnes physiques soumises à l'impôt sur le revenu selon le régime réel, au titre de la plus-value immobilière visée au paragraphe 2 de l'article 27 du présent code.\" Les sommes retenues à la source sont déductibles de l'impôt sur le revenu dû, au titre de la plus-value immobilière […]. » Date d'effet : article 100 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 1995. » Édition française lue à l'image, p. 2047, et sur la couche texte, p. 2051 ; l'édition arabe n'est pas relue."
+    2013-01-01:
+    - title: "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013, articles 46 et 79"
+      href: https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf
+      note: "JORT n° 1 du 1er janvier 2013, p. 13 (article 46) et p. 28 (article 79). Rubrique « Extension du champ d'application de la retenue à la source aux ventes des immeubles et des fonds de commerce ». Article 46 : « Sont abrogées les dispositions de l'alinéa \"f\" du paragraphe I de l'article 52 du code […] et remplacées par ce qui suit : f) 2,5% du prix de cession des immeubles, des droits sociaux dans les sociétés immobilières et des fonds de commerce déclaré dans l'acte, payé par l'Etat, les collectivités locales, les personnes morales et les personnes physiques soumises à l'impôt sur le revenu selon le régime réel et les personnes visées au paragraphe II de l'article 22 du présent code. » Le taux ne change pas ; l'entrée porte le texte qui fonde la retenue depuis cette date. Date d'effet : article 79, à compter du 1er janvier 2013. Édition française lue à l'image, p. 13, et sur la couche texte, p. 28 ; l'édition arabe n'est pas relue."
+documentation: |-
+  Retenue opérée par l'acquéreur sur le prix de cession déclaré dans l'acte. Elle s'impute sur
+  l'impôt dû au titre de la plus-value. Elle n'est due que si l'acquéreur est l'État, une
+  collectivité locale, une personne morale ou une personne physique soumise à l'impôt sur le
+  revenu selon le régime réel ; s'y ajoutent, depuis le 1er janvier 2013, les personnes visées
+  au paragraphe II de l'article 22 du code.
+
+  De 1995 à 2012, la retenue porte sur le prix des biens dont la plus-value relève du paragraphe 2
+  de l'article 27 du code. Depuis le 1er janvier 2013, elle porte sur le prix des immeubles, des
+  droits sociaux dans les sociétés immobilières et des fonds de commerce : la cession d'un fonds
+  de commerce ne relève pas de la plus-value immobilière, mais subit la même retenue.
+
+  Du 1er janvier 1995 au 16 août 1998, l'impôt dû au titre de la plus-value immobilière ne peut
+  être inférieur à 2,5 % du prix de cession déclaré (loi de finances pour 1995, article 55) ; la
+  loi n° 98-73 (article 2) supprime ce minimum. Il n'est pas versé ici.

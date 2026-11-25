@@ -1,0 +1,42 @@
+description: "Minimum de la taxe sur les établissements : taxe par mètre carré de référence, par catégorie d'immeubles et par taux de la taxe sur les immeubles bâtis"
+metadata:
+  short_label: "Minimum par mètre carré"
+  order:
+  - categorie_1
+  - categorie_2
+  - categorie_3
+  - categorie_4
+documentation: |-
+  La taxe sur les établissements « ne peut être inférieure à un minimum égal à la taxe sur les
+  immeubles bâtis due au titre des immeubles exploités dans le cadre de l'activité de
+  l'établissement calculée sur la base de 5 pour-cent du prix de référence par mètre carré
+  construit pour chaque catégorie d'immeubles, multiplié par la superficie couverte » ; ce
+  minimum « est applicable aux établissements qui ne réalisent pas de chiffre d'affaires » (code
+  de la fiscalité locale, article 38, paragraphe II). Le code prévoit qu'un décret fixe tous les
+  trois ans « le montant de la taxe par mètre carré de référence pour chacune des catégories des
+  immeubles ». Trois décrets l'ont fixé :
+
+  - décret n° 97-433 du 3 mars 1997 (JORT n° 19 du 7 mars 1997, pp. 389-390), exécutoire le
+    13 mars 1997 ;
+  - décret n° 2007-1187 du 14 mai 2007 (JORT n° 40 du 18 mai 2007, p. 1648), en vigueur à
+    compter du 1er janvier 2008, qui abroge le précédent ;
+  - décret gouvernemental n° 2017-395 du 28 mars 2017 (JORT n° 26 du 31 mars 2017,
+    pp. 1189-1190), applicable à compter du 1er janvier 2017, qui abroge le précédent.
+
+  Chaque décret donne seize montants, en dinars par mètre carré de superficie couverte : quatre
+  catégories d'immeubles en lignes, quatre taux en colonnes.
+
+  Les quatre catégories sont des catégories d'usage, propres à cette taxe (article 38,
+  paragraphe II) : usage administratif, commercial ou non commercial ; construction légère à
+  usage industriel ; béton à usage industriel ; usage industriel de plus de 5 000 mètres carrés
+  couverts. Elles ne sont pas les quatre catégories de superficie de la taxe sur les immeubles
+  bâtis (article 4, paragraphe II ; `taxe_immeubles_batis.seuils_superficie`), bien qu'elles
+  portent les mêmes numéros.
+
+  Les quatre colonnes sont les quatre taux de la taxe sur les immeubles bâtis (article 5,
+  paragraphe I ; `taxe_immeubles_batis.taux`) : 8 %, 10 %, 12 % et 14 %, selon le nombre de
+  services dont l'immeuble bénéficie. Les décrets les désignent par le taux, et non par le nombre
+  de services ; les feuilles sont nommées de même (`taux_8`, `taux_10`, `taux_12`, `taux_14`).
+
+  Le code entre en vigueur le 1er janvier 1997 et le premier décret n'est exécutoire que le
+  13 mars 1997 : aucun montant n'est fixé entre ces deux dates.

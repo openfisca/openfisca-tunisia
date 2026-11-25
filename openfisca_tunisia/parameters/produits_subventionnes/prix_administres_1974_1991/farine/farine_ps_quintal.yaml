@@ -1,0 +1,24 @@
+description: "Prix de vente au public de la farine PS, au quintal"
+values:
+  1983-12-28:
+    value: 19.5
+  1984-03-01:
+    value: null
+metadata:
+  short_label: "Farine PS (quintal)"
+  label_en: "PS flour, retail price per quintal"
+  unit: currency/100kg
+  notes:
+    1983-12-28:
+    - note: "Série incomplète : états antérieurs à 1983 non versés."
+    1984-03-01:
+    - note: "À compter du 1er mars 1984, le texte fixe le prix de la farine PS en vrac au kilogramme (paramètre de la farine PS en vrac) ; aucun prix de ce produit-ci n'est relevé ensuite."
+  reference:
+    1983-12-28:
+    - title: "Arrêté du ministre de l'économie nationale du 28 décembre 1983, fixant les prix des farines"
+      href: https://www.pist.tn/jort/1984/1984F/Jo00184.pdf
+      note: "JORT n° 1 du 3 janvier 1984, p. 8. Farine PS : 17,950 D le quintal rendu chef-lieu de délégation, 18,300 D en gros, 19,500 D au public. Date d'effet énoncée par le texte : « à compter du 28 décembre 1983 », antérieure à la publication."
+    1984-03-01:
+    - title: "Arrêté du 17 février 1984 fixant le prix des farines (intitulé repris du visa de l'arrêté du 11 novembre 1989)"
+      href: https://www.pist.tn/jort/1984/1984F/Jo01484.pdf
+      note: "JORT n° 14 du 28 février 1984, p. 454. Farine PS en vrac : prix fixé au kilogramme. Le texte n'énonce pas de date d'effet. Règle d'avant 1993, un jour franc après la publication : publié le 28 février 1984 ; 1984 étant bissextile, le jour franc est le 29 février ; en vigueur le 1er mars 1984."

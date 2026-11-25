@@ -7,6 +7,14 @@
 # Décret n° 81-188, exécutoire le 19 février 1981 : orphelin à trois dixièmes dans tous
 # les cas, et conjoint relevé « à concurrence de 75 % » tant que le total ne dépasse pas
 # la pension de l'assuré (article 31, alinéa 2).
+#
+# Remariage (article 32) : du 1er janvier 1974 au 22 septembre 1990, il supprime la
+# pension de la veuve, quel que soit son âge ; depuis le 23 septembre 1990 (décret
+# n° 90-1455), il ne la suspend que s'il intervient avant 55 ans. Sans pension de
+# conjoint, le plafond de l'article 38 ne réduit plus l'orphelin. Un mois se lit au
+# premier du mois : septembre 1990 relève encore de la rédaction de 1974, comme
+# février 1981 relève encore de la rédaction d'avant le décret n° 81-188 ; les bornes
+# du 22 et du 23 septembre 1990 s'éprouvent donc en septembre et en octobre 1990.
 
 - name: RSNA 1975, conjoint sans orphelin, la moitié
   period: 1975-06
@@ -117,3 +125,235 @@
   output:
     rsna_pension_de_reversion: 0
     rsna_pension_orphelins_totale: 0
+
+- name: RSNA décembre 1973, avant l'effet du décret n° 74-499, rien
+  period: 1973-12
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+  output:
+    rsna_pension_de_reversion: 0
+
+- name: RSNA janvier 1974, conjoint non remarié, la moitié
+  period: 1974-01
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsna_pension_de_reversion: 0.5 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA janvier 1974, conjoint remarié à 60 ans, pension supprimée (article 32)
+  period: 1974-01
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA janvier 1974, conjoint remarié à 40 ans et un orphelin, pension supprimée
+  period: 1974-01
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 40
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0.2 * 1000
+
+- name: RSNA février 1981, conjoint remarié à 60 ans, pension supprimée
+  period: 1981-02
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA mars 1981, conjoint remarié à 60 ans, ni pension ni majoration
+  period: 1981-03
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA mars 1981, conjoint remarié à 60 ans et un orphelin, orphelin entier
+  period: 1981-03
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA septembre 1990, conjoint non remarié, majoration jusqu'à 75 %
+  period: 1990-09
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsna_pension_de_reversion: 0.75 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA septembre 1990, conjoint remarié à 60 ans, pension encore supprimée (article 32 de 1974)
+  period: 1990-09
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA septembre 1990, conjoint remarié à 54 ans et un orphelin, pension encore supprimée
+  period: 1990-09
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 54
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA octobre 1990, conjoint non remarié, majoration jusqu'à 75 %
+  period: 1990-10
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+  output:
+    rsna_pension_de_reversion: 0.75 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA octobre 1990, conjoint non remarié et un orphelin, majoration bornée
+  period: 1990-10
+  absolute_error_margin: 0.001
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    nombre_orphelins_eligibles: 1
+  output:
+    # 1 - 0,3 = 0,7, entre 0,5 et 0,75.
+    rsna_pension_de_reversion: (1 - 0.3) * 1000
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA octobre 1990, conjoint remarié à 54 ans, pension suspendue (décret n° 90-1455)
+  period: 1990-10
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 54
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA octobre 1990, conjoint remarié à 54 ans et un orphelin, pension suspendue, orphelin entier
+  period: 1990-10
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 54
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA octobre 1990, conjoint remarié à 55 ans exactement, pension maintenue
+  period: 1990-10
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 55
+  output:
+    # La suspension ne joue que « sans avoir atteint l'âge de 55 ans ».
+    rsna_pension_de_reversion: 0.75 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA octobre 1990, conjoint remarié à 60 ans, pension maintenue avec sa majoration
+  period: 1990-10
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+  output:
+    rsna_pension_de_reversion: 0.75 * 1000
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA octobre 1990, conjoint remarié à 60 ans et un orphelin, majoration bornée
+  period: 1990-10
+  absolute_error_margin: 0.001
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 60
+    nombre_orphelins_eligibles: 1
+  output:
+    rsna_pension_de_reversion: (1 - 0.3) * 1000
+    rsna_pension_orphelins_totale: 0.3 * 1000
+
+- name: RSNA 2024, conjoint remarié à 50 ans, pension suspendue
+  period: 2024-01
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 50
+  output:
+    rsna_pension_de_reversion: 0
+    rsna_pension_orphelins_totale: 0
+
+- name: RSNA 2024, conjoint remarié à 58 ans et deux orphelins, pension maintenue, orphelins réduits
+  period: 2024-01
+  absolute_error_margin: 0.001
+  input:
+    age_deces: 55
+    rsna_pension_reference_deces: 1000
+    conjoint_survivant_eligible: true
+    conjoint_survivant_remarie: true
+    age_remariage_conjoint_survivant: 58
+    nombre_orphelins_eligibles: 2
+  output:
+    # 0,5 + 2 × 0,3 = 1,1 : la moitié sans majoration, orphelins ramenés à 0,5.
+    rsna_pension_de_reversion: 0.5 * 1000
+    rsna_pension_orphelins_totale: (1 - 0.5) * 1000

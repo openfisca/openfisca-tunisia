@@ -1,0 +1,18 @@
+description: "Tarif réduit d'une hospitalisation, établissement à vocation universitaire, réanimation et soins intensifs"
+values:
+  1994-09-06:
+    value: 30
+  1998-03-08:
+    value: null
+metadata:
+  unit: currency
+  short_label: "Universitaire, réanimation"
+  reference:
+    1994-09-06:
+    - title: "Décret n° 94-1738 du 22 août 1994, fixant les tarifs réduits et les contributions aux frais de soins et d'hospitalisation institués au profit des structures sanitaires publiques relevant du ministère de la santé publique, article 3"
+      href: https://www.pist.tn/jort/1994/1994F/Jo06894.pdf
+      note: "JORT n° 68 du 30 août 1994, p. 1385. Article 3, c) « dans les services de réanimation et de soins intensifs des établissements sanitaires à vocation universitaire : 30,000 D ». L'alinéa qui compte les tarifs au forfait pour toute hospitalisation ne vise que les paragraphes a et b. Le décret n° 93-529 ne fixe pas de tarif de réanimation. Date d'effet : le décret n'en fixe pas ; le JORT n° 68 a été déposé au siège du gouvernorat de Tunis le 1er septembre 1994 (mention de la dernière page du fascicule, lue à l'image) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 6 septembre 1994. Édition française lue sur la couche texte."
+    1998-03-08:
+    - title: "Décret n° 98-409 du 18 février 1998, fixant les catégories des bénéficiaires des tarifs réduits de soins et d'hospitalisation dans les structures sanitaires publiques relevant du ministère de la santé publique ainsi que les modalités de leur prise en charge et les tarifs auxquels ils sont assujettis, articles 18 et 25"
+      href: https://www.pist.tn/jort/1998/1998F/Jo01798.pdf
+      note: "JORT n° 17 du 27 février 1998, p. 407. Le décret n° 98-409 fixe désormais le tarif réduit d'hospitalisation à un forfait égal au tarif d'une journée d'hospitalisation des malades payants, quelle que soit la durée du séjour (article 18), et abroge le décret n° 94-1738 (article 25) : la série en dinars est close. Date d'effet : le décret n'en fixe pas ; le JORT n° 17 a été déposé au siège du gouvernorat de Tunis le 3 mars 1998 (mention de la dernière page du fascicule) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 8 mars 1998. Édition française lue sur la couche texte."

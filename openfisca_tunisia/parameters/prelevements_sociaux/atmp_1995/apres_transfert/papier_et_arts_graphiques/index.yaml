@@ -1,0 +1,6 @@
+description: "Industrie du papier et des arts graphiques (point 8)"
+metadata:
+  short_label: "Industrie du papier et des arts graphiques"
+  order:
+  - fabrication_papier_carton
+  - imprimerie_transformation_papier_carton

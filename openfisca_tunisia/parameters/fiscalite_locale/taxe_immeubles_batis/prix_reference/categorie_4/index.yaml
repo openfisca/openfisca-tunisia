@@ -1,0 +1,9 @@
+description: "Limites du prix de référence du mètre carré couvert des immeubles de la quatrième catégorie"
+metadata:
+  short_label: "Catégorie 4"
+  order:
+  - minimum
+  - maximum
+documentation: |-
+  Quatrième catégorie : immeubles dont la superficie couverte excède 400 mètres carrés (code de la fiscalité locale,
+  article 4, paragraphe II).

@@ -1,0 +1,33 @@
+description: "Dommages-intérêts du licenciement abusif"
+metadata:
+  short_label: "Dommages-intérêts du licenciement abusif"
+  order:
+  - minimum_par_annee_anciennete
+  - maximum_par_annee_anciennete
+  - plafond
+  - vice_procedure_minimum
+  - vice_procedure_maximum
+documentation: |-
+  Réparation du licenciement abusif d'un salarié en contrat à durée indéterminée (code du
+  travail, article 23 bis, ajouté par la loi n° 94-29, en vigueur le 1er mars 1994). Est abusif le
+  licenciement intervenu sans cause réelle et sérieuse, ou sans respect des procédures légales,
+  réglementaires ou conventionnelles (article 14 ter).
+
+  Sans cause réelle et sérieuse, les dommages-intérêts vont du salaire d'un mois
+  (`minimum_par_annee_anciennete`) à celui de deux mois (`maximum_par_annee_anciennete`) pour
+  chaque année d'ancienneté dans l'entreprise, sans dépasser le salaire de trois années
+  (`plafond`). Le juge apprécie le préjudice dans ces bornes, compte tenu notamment de la
+  qualification, de l'ancienneté, de l'âge, du salaire et de la situation familiale du salarié,
+  de l'effet du licenciement sur ses droits à la retraite, du respect des procédures et des
+  circonstances. Avec une cause réelle et sérieuse mais sans respect des procédures, ils vont du
+  salaire d'un mois (`vice_procedure_minimum`) à celui de quatre mois (`vice_procedure_maximum`).
+  Le salaire retenu est celui perçu au moment du licenciement, avec tous les avantages qui ne
+  remboursent pas des frais.
+
+  Ces dommages-intérêts ne se confondent ni avec l'indemnité due pour inobservation du préavis
+  ni avec la gratification de fin de service (article 23). L'action se forme, à peine de
+  déchéance, dans l'année qui suit la rupture.
+
+  Avant le 1er mars 1994, le code ne fixe aucun barème : l'article 23 de 1966 laisse au juge le
+  soin d'apprécier le dommage « d'après les usages, la nature et l'ancienneté des services »
+  (JORT n° 20 des 3-6 mai 1966, p. 719). Les séries commencent à l'institution du barème.

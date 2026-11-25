@@ -6,8 +6,14 @@
 # ou 60 mois, la période la plus avantageuse étant retenue. L'année d'ouverture du droit
 # n'est pas comptée : ses salaires sont renseignés à dessein, et ne doivent pas jouer.
 #
-# À partir du 1er juillet 1994, le calcul est inchangé par rapport aux versions
-# précédentes (cas de 1995 et de 2011).
+# Rédaction de 1994 (décret n° 94-1429, articles 18 et 19 nouveaux) : les cinq, sept puis
+# dix dernières années de salaire, aux 1er juillet 1994, 1995 et 1996, qui précèdent le
+# 1er janvier de l'année d'ouverture du droit ; si l'assuré en compte moins, la moyenne
+# se fait sur celles-ci. Chaque salaire est multiplié par le coefficient de son année au
+# barème d'actualisation applicable à la date d'ouverture du droit, recopié en clair
+# depuis `retraite/rsna/salaire_reference/actualisation`. La date d'ouverture est la
+# date de liquidation quand elle tombe dans l'exercice, le 1er janvier sinon. Les
+# salaires de l'année d'ouverture sont renseignés à dessein, et ne doivent pas jouer.
 
 - name: RSNA 1985, les trois dernières années sont plus avantageuses
   period: 1985
@@ -79,28 +85,132 @@
   output:
     rsna_salaire_de_reference: (10000 + 20000 + 20000) * 12 / 36
 
-- name: RSNA 1995, rédaction de 1994, résultat inchangé
+- name: RSNA 1994, droit ouvert le 15 septembre 1994, cinq années, barème de 1994
+  period: 1994
+  absolute_error_margin: 0.01
+  input:
+    rsna_liquidation_date: 1994-09-15
+    rsna_salaire_de_base:
+      1988: 10000
+      1989: 10000
+      1990: 10000
+      1991: 10000
+      1992: 10000
+      1993: 10000
+      1994: 99999
+  output:
+    # Arrêté du 17 novembre 1994 : 1989 1,26342 ; 1990 1,18541 ; 1991 1,10005 ;
+    # 1992 1,04197 ; 1993 1. L'année 1988 est la sixième : elle ne compte pas.
+    rsna_salaire_de_reference: 10000 * (1.26342 + 1.18541 + 1.10005 + 1.04197 + 1) / 5
+
+- name: RSNA 1995, droit ouvert le 30 juin 1995, encore cinq années
+  period: 1995
+  absolute_error_margin: 0.01
+  input:
+    rsna_liquidation_date: 1995-06-30
+    rsna_salaire_de_base:
+      1986: 10000
+      1987: 10000
+      1988: 10000
+      1989: 10000
+      1990: 10000
+      1991: 10000
+      1992: 10000
+      1993: 10000
+      1994: 10000
+      1995: 99999
+  output:
+    # Arrêté du 16 mars 1995 : 1990 1,23839 ; 1991 1,14921 ; 1992 1,08854 ;
+    # 1993 1,04469 ; 1994 1.
+    rsna_salaire_de_reference: 10000 * (1.23839 + 1.14921 + 1.08854 + 1.04469 + 1) / 5
+
+- name: RSNA 1995, droit ouvert le 1er juillet 1995, sept années
+  period: 1995
+  absolute_error_margin: 0.01
+  input:
+    rsna_liquidation_date: 1995-07-01
+    rsna_salaire_de_base:
+      1986: 10000
+      1987: 10000
+      1988: 10000
+      1989: 10000
+      1990: 10000
+      1991: 10000
+      1992: 10000
+      1993: 10000
+      1994: 10000
+      1995: 99999
+  output:
+    # Même barème, deux années de plus : 1988 1,42163 ; 1989 1,31988.
+    rsna_salaire_de_reference: 10000 * (1.42163 + 1.31988 + 1.23839 + 1.14921 + 1.08854 + 1.04469 + 1) / 7
+
+- name: RSNA 1995, sans date de liquidation, le 1er janvier fait foi, cinq années
   period: 1995
   absolute_error_margin: 0.01
   input:
     rsna_salaire_de_base:
-      1985: 12000
-      1986: 12000
-      1987: 12000
-      1988: 12000
-      1989: 12000
-      1990: 12000
-      1991: 12000
-      1992: 12000
-      1993: 30000
-      1994: 30000
-      1995: 12000
+      1986: 10000
+      1987: 10000
+      1988: 10000
+      1989: 10000
+      1990: 10000
+      1991: 10000
+      1992: 10000
+      1993: 10000
+      1994: 10000
+      1995: 99999
   output:
-    # Moyenne des dix plus élevées des années renseignées, année courante comprise :
-    # (2 × 30 000 + 8 × 12 000) / 10.
-    rsna_salaire_de_reference: (2 * 30000 + 8 * 12000) / 10
+    rsna_salaire_de_reference: 10000 * (1.23839 + 1.14921 + 1.08854 + 1.04469 + 1) / 5
 
-- name: RSNA 2011, rédaction de 1994, résultat inchangé
+- name: RSNA 1996, droit ouvert le 30 juin 1996, encore sept années
+  period: 1996
+  absolute_error_margin: 0.01
+  input:
+    rsna_liquidation_date: 1996-06-30
+    rsna_salaire_de_base:
+      1985: 10000
+      1986: 10000
+      1987: 10000
+      1988: 10000
+      1989: 10000
+      1990: 10000
+      1991: 10000
+      1992: 10000
+      1993: 10000
+      1994: 10000
+      1995: 10000
+      1996: 99999
+  output:
+    # Arrêté du 13 mars 1996 : 1989 1,40239 ; 1990 1,3158 ; 1991 1,22105 ;
+    # 1992 1,15658 ; 1993 1,10999 ; 1994 1,06251 ; 1995 1.
+    rsna_salaire_de_reference: 10000 * (1.40239 + 1.3158 + 1.22105 + 1.15658 + 1.10999 + 1.06251 + 1) / 7
+
+- name: RSNA 1996, droit ouvert le 1er juillet 1996, dix années
+  period: 1996
+  absolute_error_margin: 0.01
+  input:
+    rsna_liquidation_date: 1996-07-01
+    rsna_salaire_de_base:
+      1985: 10000
+      1986: 10000
+      1987: 10000
+      1988: 10000
+      1989: 10000
+      1990: 10000
+      1991: 10000
+      1992: 10000
+      1993: 10000
+      1994: 10000
+      1995: 10000
+      1996: 99999
+  output:
+    # Même barème, trois années de plus : 1986 1,75168 ; 1987 1,61975 ; 1988 1,51049.
+    # L'année 1985 est la onzième : elle ne compte pas.
+    rsna_salaire_de_reference: >-
+      10000 * (1.75168 + 1.61975 + 1.51049 + 1.40239 + 1.3158 + 1.22105 + 1.15658
+      + 1.10999 + 1.06251 + 1) / 10
+
+- name: RSNA 2011, dix dernières années, barème de 2011
   period: 2011
   absolute_error_margin: 0.01
   input:
@@ -118,4 +228,95 @@
       2010: 20000
       2011: 20000
   output:
-    rsna_salaire_de_reference: (7 * 20000 + 3 * 10000) / 10
+    # Arrêté du 23 février 2011 : 2001 1,36436 ; 2002 1,32686 ; 2003 1,29167 ;
+    # 2004 1,24653 ; 2005 1,22165 ; 2006 1,17305 ; 2007 1,13406 ; 2008 1,08095 ;
+    # 2009 1,04409 ; 2010 1. L'année 2011, celle de l'ouverture, ne compte pas.
+    rsna_salaire_de_reference: >-
+      (10000 * (1.36436 + 1.32686 + 1.29167 + 1.24653)
+      + 20000 * (1.22165 + 1.17305 + 1.13406 + 1.08095 + 1.04409 + 1)) / 10
+
+- name: RSNA 2011, les dernières années et non les meilleures
+  period: 2011
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      1995: 90000
+      1996: 90000
+      2001: 10000
+      2002: 10000
+      2003: 10000
+      2004: 10000
+      2005: 10000
+      2006: 10000
+      2007: 10000
+      2008: 10000
+      2009: 10000
+      2010: 10000
+  output:
+    # Les salaires élevés de 1995 et 1996 précèdent les dix dernières années.
+    rsna_salaire_de_reference: >-
+      10000 * (1.36436 + 1.32686 + 1.29167 + 1.24653 + 1.22165 + 1.17305 + 1.13406
+      + 1.08095 + 1.04409 + 1) / 10
+
+- name: RSNA 2024, dix années, barème de 2024
+  period: 2024
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      2013: 99999
+      2014: 20000
+      2015: 21000
+      2016: 22000
+      2017: 23000
+      2018: 24000
+      2019: 25000
+      2020: 26000
+      2021: 27000
+      2022: 28000
+      2023: 29000
+      2024: 99999
+  output:
+    # Arrêté du 16 juillet 2024 : 2014 1,73582 ; 2015 1,65758 ; 2016 1,59801 ;
+    # 2017 1,51728 ; 2018 1,41202 ; 2019 1,32216 ; 2020 1,25163 ; 2021 1,18406 ;
+    # 2022 1,09323 ; 2023 1.
+    rsna_salaire_de_reference: >-
+      (20000 * 1.73582 + 21000 * 1.65758 + 22000 * 1.59801 + 23000 * 1.51728
+      + 24000 * 1.41202 + 25000 * 1.32216 + 26000 * 1.25163 + 27000 * 1.18406
+      + 28000 * 1.09323 + 29000 * 1) / 10
+
+- name: RSNA 2024, les années sans activité sont sautées
+  period: 2024
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      2011: 99999
+      2012: 10000
+      2013: 10000
+      2014: 10000
+      2015: 10000
+      2016: 10000
+      2017: 10000
+      2018: 0
+      2019: 0
+      2020: 10000
+      2021: 10000
+      2022: 10000
+      2023: 10000
+  output:
+    # Dix années de salaire, de 2012 à 2023 sans 2018 ni 2019 (article 19, alinéa 2) :
+    # 2012 1,94286 ; 2013 1,83102 ; 2014 à 2017 et 2020 à 2023 comme ci-dessus.
+    rsna_salaire_de_reference: >-
+      10000 * (1.94286 + 1.83102 + 1.73582 + 1.65758 + 1.59801 + 1.51728 + 1.25163
+      + 1.18406 + 1.09323 + 1) / 10
+
+- name: RSNA 2024, carrière plus courte que la fenêtre
+  period: 2024
+  absolute_error_margin: 0.01
+  input:
+    rsna_salaire_de_base:
+      2021: 12000
+      2022: 12000
+      2023: 12000
+  output:
+    # Article 18, alinéa 2 : la moyenne se fait sur les trois années de la carrière.
+    rsna_salaire_de_reference: 12000 * (1.18406 + 1.09323 + 1) / 3

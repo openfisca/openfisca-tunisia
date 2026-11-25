@@ -1,0 +1,30 @@
+description: "Prix de vente au public du couscous rapide, au kilogramme en vrac, décrets de 1975 et 1979"
+values:
+  1975-05-31:
+    value: 0.12
+  1979-05-03:
+    value: 0.135
+  1983-12-28:
+    value: null
+metadata:
+  short_label: "Couscous vrac 1975-1979"
+  label_en: "Quick couscous in bulk, retail price per kg (1975-1979 decrees)"
+  unit: currency/kg
+  notes:
+    1975-05-31:
+    - note: "Série incomplète : états antérieurs à 1975 non versés."
+    1983-12-28:
+    - note: "À compter du 28 décembre 1983, le texte fixe le prix du couscous rapide PS-10 (paramètre PS-10 en vrac) ; aucun prix de ce produit-ci n'est relevé ensuite."
+  reference:
+    1975-05-31:
+    - title: "Décret n° 75-352 du 3 juin 1975, fixant le prix des farines et semoules, du pain, des pâtes alimentaires et du couscous rapide"
+      href: https://www.pist.tn/jort/1975/1975F/Jo03875.pdf
+      note: "JORT n° 38 du 3 au 6 juin 1975, p. 1192, article premier. « Au kg, en vrac », fabrication en semoule PS, « dans le périmètre communal de Tunis » : 112 millimes en gros, 120 au détail. Date d'effet énoncée par le texte : « à compter du 31 mai 1975 », antérieure à la publication."
+    1979-05-03:
+    - title: "Décret n° 79-413 du 7 mai 1979, fixant le prix des farines et semoules, du pain, des pâtes alimentaires et du couscous"
+      href: https://www.pist.tn/jort/1979/1979F/Jo03279.pdf
+      note: "JORT n° 32 du 11 mai 1979, p. 1381-1382, article premier. « Au kg, en vrac », semoule PS, « rendu au chef lieu de la délégation » : 0,123 D en gros, 0,135 D au détail. Date d'effet énoncée par le texte : « à compter du 3 mai 1979 », antérieure à la publication."
+    1983-12-28:
+    - title: "Arrêté du ministre de l'économie nationale du 28 décembre 1983, fixant les prix de vente maxima des pâtes et couscous rapide"
+      href: https://www.pist.tn/jort/1984/1984F/Jo00184.pdf
+      note: "JORT n° 1 du 3 janvier 1984, p. 7-8, article premier. Prix fixés pour la variété PS-10. Date d'effet énoncée par le texte : « à compter du 28 décembre 1983 », antérieure à la publication."

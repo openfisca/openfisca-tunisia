@@ -1,0 +1,22 @@
+description: "Prix d'entrée maximum des spectacles exonérés de la taxe sur les spectacles"
+values:
+  1997-04-07:
+    value: 5
+metadata:
+  unit: currency
+  short_label: "Prix d'entrée exonéré (maximum)"
+  reference:
+    1997-04-07:
+    - title: "Décret n° 97-530 du 22 mars 1997, relatif à la fixation du prix maximum pour l'exonération de la taxe sur les spectacles, article premier"
+      href: https://www.pist.tn/jort/1997/1997F/Jo02697.pdf
+      note: "JORT n° 26 du 1er avril 1997, p. 531. Article premier : « En application des dispositions de l'article 47 du code de la fiscalité locale, le prix maximum d'entrée aux spectacles à prendre en considération pour l'exonération de la taxe sur les spectacles est fixé à cinq dinars. » Le décret ne porte pas de clause d'entrée en vigueur : la date retenue est celle où il devient exécutoire, cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, le jour du dépôt n'étant pas compté (loi n° 93-64 du 5 juillet 1993, article 2) ; le fascicule porte, en dernière page, un dépôt le 2 avril 1997 ; les cinq jours sont les 3, 4, 5, 6 et 7 avril, d'où le 7 avril 1997. Édition française : article premier lu à l'image et sur la couche texte du fascicule, p. 531 ; mention de dépôt lue sur la couche texte ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/1997/1997A/Ja02697.pdf"
+documentation: |-
+  Prix d'entrée, en dinars, jusqu'auquel un spectacle est exonéré de la taxe : le code exonère « les
+  spectacles dont le prix d'entrée n'excède pas un montant fixé par décret » (code de la fiscalité
+  locale, article 47, quatrième tiret).
+
+  Le code entre en vigueur le 1er janvier 1997 et le décret n'est exécutoire que le 7 avril 1997 :
+  aucun montant n'est fixé entre ces deux dates.
+
+  Aucun décret postérieur n'est identifié dans les métadonnées du Journal officiel consultées le 11
+  octobre 2026 (recherche par l'intitulé, en français et en arabe).

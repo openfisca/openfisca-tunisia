@@ -1,0 +1,25 @@
+description: "Taux de la retenue à la source sur le prix de cession de titres par les personnes morales non résidentes"
+values:
+  2011-01-01:
+    value: 0.05
+  2012-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Retenue sur le prix de cession, personnes morales non résidentes"
+  reference:
+    2011-01-01:
+    - title: "Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, articles 41 et 43"
+      href: https://www.pist.tn/jort/2010/2010F/Jo1022010.pdf
+      note: "JORT n° 102 du 21 décembre 2010, pp. 3475-3476. Article 41, paragraphe 12 : est ajouté à l'alinéa e du paragraphe I de l'article 52 du code « ou du prix de cession des actions, des parts sociales ou des parts des fonds prévues par le paragraphe premier du paragraphe III de l'article 45 du présent code » ; le taux de l'alinéa e est porté de 2,5 % à 5 % par l'article 43 (p. 3476). Paragraphe 13 : les personnes soumises à cette retenue « peuvent opter pour […] le paiement de l'impôt sur les sociétés conformément au paragraphe premier du paragraphe III de l'article 45 », la retenue étant alors déductible. Paragraphe 5 : la plus-value est imposable pour les opérations de cession intervenant à partir du 1er janvier 2011. Édition française lue sur la couche texte."
+    2012-01-01:
+    - title: "Loi n° 2011-7 du 31 décembre 2011, portant loi de finances pour l'année 2012, articles 15 et 49"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0012012.pdf
+      note: "JORT n° 1 du 3 janvier 2012, p. 5 (article 15) et p. 11 (article 49). Rubrique « Assouplissement des modalités de paiement de l'impôt dû par les personnes non résidentes non établies en Tunisie ». Article 15, paragraphe 1 : sont abrogées de l'alinéa e du paragraphe I de l'article 52 les dispositions « ou du prix de cession ou de rétrocession des titres ou des droits y relatifs, prévus par le premier alinéa du paragraphe III de l'article 45 du présent code. Ce taux est fixé à 2,5% du prix de cession […] ». La retenue porte désormais sur la plus-value (`taux_personnes_morales`). Date d'effet : article 49 — « Sous réserve des dispositions de l'article 45 les dispositions de la présente loi sont applicables à compter du 1er janvier 2012. » Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue sur le prix de cession d'actions, de parts sociales et de parts de fonds
+  par une personne morale non résidente ni établie en Tunisie, en 2011 (article 52,
+  paragraphe I, alinéa e, du code). C'est le taux de l'alinéa e, celui des intérêts des prêts des
+  banques non établies. Le décret-loi n° 2011-100 du 21 octobre 2011 (article 12, JORT n° 81 du
+  25 octobre 2011, pp. 2306-2307) récrit l'alinéa sans changer ce taux. À partir de 2012, la retenue
+  porte sur la plus-value.

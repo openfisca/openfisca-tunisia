@@ -1,0 +1,23 @@
+description: Indemnité de cherté de vie dans l'industrie, le commerce et les professions libérales - montant par heure
+values:
+  1971-05-01:
+    value: 0.02
+  1974-01-01:
+    value: 0
+metadata:
+  unit: currency
+  reference:
+    1971-05-01:
+    - title: "Décret n° 71-164 du 3 mai 1971, instituant une indemnité de cherté de vie dans l'industrie, le commerce et les professions libérales, articles 2 et 5"
+      href: https://www.pist.tn/jort/1971/1971F/Jo02071.pdf
+      note: "JORT n° 20 du 30 avril-4 mai 1971, p. 536. Article 2 : à compter du 1er mai 1971, les travailleurs ont droit, « en sus du salaire minimum de leur catégorie » calculé selon le décret n° 65-561, à une indemnité de cherté de vie de 0,020 dinar par heure de travail effectif pour les ouvriers dont le salaire légal est fixé à l'heure, à la journée ou à la semaine, et de 0,010 dinar l'heure pour les apprentis. Article 5 : l'indemnité ne donne pas lieu à retenue pour les cotisations aux régimes de retraite, de prévoyance sociale ou de sécurité sociale et n'ouvre pas droit aux prestations afférentes à ces régimes. L'indemnité s'ajoute au salaire minimum sans le modifier."
+    - title: "أمر عدد 164 لسنة 1971 مؤرخ في 3 ماي 1971 يتعلق بإحداث منحة لغلو المعاش في الصناعة والتجارة والمهن الحرة"
+      href: https://www.pist.tn/jort/1971/1971A/Ja02071.pdf
+    1974-01-01:
+    - title: "Décret n° 74-63 du 31 janvier 1974, fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le code du travail, article premier"
+      href: https://www.pist.tn/jort/1974/1974F/Jo01074.pdf
+      note: "JORT n° 10 du 8 février 1974, p. 283. Article premier : « l'indemnité de vie chère de 0 D. 020 par heure de travail effectif est comprise dans le salaire minimum interprofessionnel garanti », fixé à 130 millimes l'heure. Article 5 : effet à compter du 1er janvier 1974. La valeur nulle traduit l'intégration de l'indemnité au SMIG, non sa suppression."
+    - title: "أمر عدد 63 لسنة 1974 مؤرخ في 31 جانفي 1974 يتعلق بضبط الأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
+      href: https://www.pist.tn/jort/1974/1974A/Ja01074.pdf
+documentation: |-
+  Indemnité de cherté de vie servie du 1er mai 1971 au 31 décembre 1973 en sus du salaire minimum des ouvriers payés à l'heure, à la journée ou à la semaine, hors de l'assiette des cotisations et des prestations de sécurité sociale. Montant pour un ouvrier adulte ; les apprentis perçoivent 0,010 dinar l'heure.

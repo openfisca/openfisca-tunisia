@@ -1,0 +1,10 @@
+description: "Majoration des heures supplémentaires dans les régimes à plein temps inférieurs à 48 heures"
+metadata:
+  short_label: "Régimes de moins de 48 heures"
+  order:
+  - taux_jusqu_au_seuil
+  - taux_au_dela_du_seuil
+  - seuil
+documentation: |-
+  Article 90 nouveau du code, depuis le 31 juillet 1996 : un taux pour les heures supplémentaires faites jusqu'à
+  48 heures dans la semaine, un autre au-delà, sur le salaire de base horaire.

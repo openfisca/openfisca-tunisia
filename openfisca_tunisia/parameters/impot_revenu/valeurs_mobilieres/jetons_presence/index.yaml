@@ -1,0 +1,14 @@
+description: "Jetons de présence et rémunérations des membres des conseils"
+metadata:
+  short_label: "Jetons de présence"
+  order:
+  - taux_retenue_source
+documentation: |-
+  Jetons de présence servis aux membres du conseil d'administration ou du conseil de
+  surveillance des sociétés anonymes et des sociétés en commandite par actions, devenus, à
+  partir du 1er janvier 2017, les rémunérations et primes attribuées aux membres des conseils,
+  des directoires et des comités de ces sociétés (code de l'impôt sur le revenu des personnes
+  physiques et de l'impôt sur les sociétés, article 30, paragraphe 3). Revenus de valeurs
+  mobilières, ils sont exonérés jusqu'au 31 décembre 1994 avec les autres revenus distribués
+  (article 38, point 10), puis soumis à une retenue à la source et déductibles de l'impôt sur
+  les sociétés (article 48, paragraphe VI).

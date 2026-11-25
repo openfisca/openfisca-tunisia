@@ -1,0 +1,30 @@
+description: "Nombre de journées de travail par type de culture ou d'activité, retenu pour l'assiette de la cotisation forfaitaire agricole"
+metadata:
+  order:
+  - cereales_sec
+  - cereales_irrigue
+  - legumineuses_grandes_cultures_sec
+  - cultures_industrielles
+  - maraicheres_solanacees
+  - maraicheres_pommes_de_terre
+  - horticulture_plein_champ
+  - oliviers_amandiers
+  - vigne_cuve
+  - vigne_table
+  - agrumes
+  - arboriculture_sec
+  - arboriculture_irrigue
+  - palmier_dattier
+  - cultures_sous_serres
+  - bananes_sous_serres
+  - elevage_bovins
+  - elevage_ovins
+  - aviculture
+  - cuniculture
+  - peche_cotiere
+  - peche_chalut
+documentation: |-
+  Tableau de l'article 4 du décret n° 95-538, refondu par l'article premier du décret n° 99-1010
+  au 1er avril 1999 : ajout de l'horticulture de plein champ (70) et de la cuniculture (36 jours
+  pour 1 000 lapins), extension de la ligne des bovins aux équins et camélidés ; les autres
+  valeurs sont reprises à l'identique.

@@ -1,0 +1,15 @@
+description: Droit de timbre sur les factures des grandes surfaces commerciales (article 117, paragraphe
+  I, numéro 6 bis du code)
+metadata:
+  short_label: Grandes surfaces
+  order:
+  - seuil_inferieur
+  - seuil_superieur
+  - de_50_a_100_dinars
+  - plus_de_100_dinars
+documentation: |
+  Depuis le 1er janvier 2026, les factures délivrées par les grandes surfaces commerciales au sens du
+  code de l'aménagement du territoire et de l'urbanisme supportent 1,500 dinar quand leur montant va
+  de 50 à 100 dinars, et 2 dinars quand il dépasse 100 dinars. Une facture de moins de 50 dinars reste
+  au tarif général. Le produit de la hausse est affecté au compte de diversification des sources de la
+  sécurité sociale.

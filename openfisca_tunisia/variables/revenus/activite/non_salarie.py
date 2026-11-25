@@ -67,21 +67,21 @@ class cadre_legal(Variable):
 
 
 class bic_reel_res(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Résultat comptable (BIC, régime réel)"
     definition_period = YEAR
 
 
 class bic_forfaitaire_resultat(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Résultat (BIC, régime forfaitaire, cession de fonds de commerce)"
     definition_period = YEAR
 
 
 class bic_societes_personnes_resultat(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = (
         "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées "
@@ -115,7 +115,7 @@ class structure_declaration_investissement(Variable):
 
 
 class bic_res_fiscal(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Résultat fiscal (BIC, régime réel)"
     definition_period = YEAR
@@ -125,28 +125,28 @@ class bic_res_fiscal(Variable):
 
 
 class bic_ca_revente(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Chiffre d'affaires global au titre des activités d'achat en vue de la revente et les activités de transformation (BIC, régime forfaitaire, cession de fonds de commerce)"
     definition_period = YEAR
 
 
 class bic_ca_autre(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Chiffre d’affaires global au titre d’autres activités (BIC, régime forfaitaire, cession de fonds de commerce)"
     definition_period = YEAR
 
 
 class bic_depenses(Variable):
-    value_type = int
+    value_type = float
     label = "Total des dépenses (BIC, cession de fonds de commerce)"
     entity = Individu
     definition_period = YEAR
 
 
 class bic_pv_cession(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Plue-value de cession du fond de commerce (BIC, régime forfaitaire, cession de fonds de commerce)"
     definition_period = YEAR
@@ -157,7 +157,7 @@ class bic_pv_cession(Variable):
 
 
 class bic_part_benef_sp(Variable):
-    value_type = int
+    value_type = float
     label = (
         "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant "
         "dans le secteur industriel et commercial"
@@ -179,7 +179,7 @@ class bic_part_benef_sp(Variable):
 
 
 class bnc_reel_res_fiscal(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Résultat fiscal (BNC, régime réel)"
     definition_period = YEAR
@@ -193,7 +193,7 @@ class bnc_reel_res_fiscal(Variable):
 
 
 class bnc_forfaitaire_recettes_brutes(Variable):
-    value_type = int
+    value_type = float
     label = "Recettes globales brutes TTC (BNC, assiette forfaitaire)"
     entity = Individu
     definition_period = YEAR
@@ -208,7 +208,7 @@ class bnc_forfaitaire_recettes_brutes(Variable):
 
 
 class bnc_part_benef_sp(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = (
         "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées"
@@ -230,7 +230,7 @@ class bnc_part_benef_sp(Variable):
 
 
 class beap_reel_res_fiscal(Variable):
-    value_type = int
+    value_type = float
     label = "Résultat fiscal (BEAP, régime réel)"
     entity = Individu
     definition_period = YEAR
@@ -243,14 +243,14 @@ class beap_reel_res_fiscal(Variable):
 
 
 class beap_reliq_rec(Variable):
-    value_type = int
+    value_type = float
     label = "Recettes brutes (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
     entity = Individu
     definition_period = YEAR
 
 
 class beap_reliq_stock(Variable):
-    value_type = int
+    value_type = float
     label = "Stocks (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
     entity = Individu
     definition_period = YEAR
@@ -261,7 +261,7 @@ class beap_reliq_stock(Variable):
 
 
 class beap_reliq_dep_ex(Variable):
-    value_type = int
+    value_type = float
     label = "Dépenses d'exploitation (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
     entity = Individu
     definition_period = YEAR
@@ -273,7 +273,7 @@ class beap_reliq_dep_ex(Variable):
 
 
 class beap_reliq_benef_fiscal(Variable):
-    value_type = int
+    value_type = float
     label = "Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
     entity = Individu
     definition_period = YEAR
@@ -284,7 +284,7 @@ class beap_reliq_benef_fiscal(Variable):
 
 
 class beap_monogr(Variable):
-    value_type = int
+    value_type = float
     label = "Bénéfice sur la base de monographies sectorielles (BEAP)"
     entity = Individu
     definition_period = YEAR
@@ -295,7 +295,7 @@ class beap_monogr(Variable):
 
 
 class beap_part_benef_sp(Variable):
-    value_type = int
+    value_type = float
     label = (
         "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées "
         "exerçant dans le secteur agricole et de pêche (BEAP)"

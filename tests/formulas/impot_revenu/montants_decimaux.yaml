@@ -1,0 +1,35 @@
+# Les variables de montants typées `int` tronquaient silencieusement les décimales des
+# entrées (issue #536) : 15 000,75 D devenait 15 000 D. Ces cas échouent tant que les
+# variables de revenus catégoriels et de déductions restent typées `int`.
+
+- name: Un résultat BIC au régime réel conserve ses décimales
+  period: 2021
+  absolute_error_margin: 0.001
+  input:
+    bic_reel_res: 15000.75
+  output:
+    bic_reel_res: 15000.75
+
+- name: Un résultat fiscal BNC au régime réel conserve ses décimales
+  period: 2021
+  absolute_error_margin: 0.001
+  input:
+    bnc_reel_res_fiscal: 1234.56
+  output:
+    bnc_reel_res_fiscal: 1234.56
+
+- name: Une prime d'assurance-vie conserve ses décimales
+  period: 2021
+  absolute_error_margin: 0.001
+  input:
+    prime_assurance_vie: 199.9
+  output:
+    prime_assurance_vie: 199.9
+
+- name: Des recettes foncières forfaitaires conservent leurs décimales
+  period: 2021
+  absolute_error_margin: 0.001
+  input:
+    foncier_forfaitaire_batis_recettes: 3600.5
+  output:
+    foncier_forfaitaire_batis_recettes: 3600.5

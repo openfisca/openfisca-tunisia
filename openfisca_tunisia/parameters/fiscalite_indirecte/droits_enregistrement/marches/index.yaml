@@ -1,0 +1,13 @@
+description: Droit d'enregistrement sur les marchés et concessions
+metadata:
+  short_label: Marchés et concessions
+  order:
+  - taux
+  - droit_fixe_par_page
+  - plafond
+documentation: |
+  Les marchés de travaux, de fournitures et de services, et les concessions, supportent un droit
+  proportionnel jusqu'au 31 décembre 1993, un droit fixe par page du 1er janvier 1994 au 31 décembre
+  2012, plafonné à 2 % de leur valeur à partir de 2005, et un droit proportionnel de 0,5 % de leur
+  valeur toutes taxes comprises depuis le 1er janvier 2013. Depuis 2013, le droit des marchés publics
+  est retenu par l'ordonnateur sur chaque paiement (article 68 bis du code).

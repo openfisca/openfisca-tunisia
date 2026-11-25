@@ -1,0 +1,23 @@
+description: "Superficie couverte maximale des trois premières catégories d'immeubles de la taxe sur les immeubles bâtis"
+metadata:
+  short_label: "Seuils de superficie couverte"
+  order:
+  - categorie_1
+  - categorie_2
+  - categorie_3
+documentation: |-
+  Les immeubles sont classés en quatre catégories selon leur superficie couverte (code de la
+  fiscalité locale, article 4, paragraphe II). Chaque seuil est la superficie maximale de sa
+  catégorie, borne comprise : un immeuble dont la superficie couverte est exactement égale au
+  seuil reste dans la catégorie. La quatrième catégorie, qui commence au-delà du troisième seuil,
+  n'a pas de maximum.
+
+  Est considérée comme superficie couverte la superficie construite à usage d'habitation, sans
+  les vérandas non couvertes, les garages, les caves non aménagées pour l'habitat ni les patios
+  (même paragraphe). À défaut d'éléments permettant de fixer la superficie, l'immeuble est classé
+  dans la catégorie supérieure jusqu'à preuve contraire (paragraphe III).
+
+  Les seuils viennent du code. Les décrets des prix de référence de 1997 et de 2007 reprennent
+  les catégories en écrivant, dans l'édition française, « inférieure à 200 m2 » et « inférieure à
+  400 m2 » ; leur édition arabe et le décret gouvernemental de 2017 écrivent, comme le code,
+  « ne dépassant pas ».

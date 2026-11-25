@@ -1,0 +1,21 @@
+description: "Délai, à compter de la naissance, dans lequel le congé du père doit être pris"
+values:
+  1966-05-01:
+    value: 7
+  2024-08-13:
+    value: 30
+metadata:
+  unit: day
+  short_label: "Congé de paternité, délai de prise"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 122"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 764. Article 122 : « L'époux salarié a droit à un congé supplémentaire d'un jour à l'occasion de chaque naissance. Ce congé doit être pris après entente entre l'employeur et le bénéficiaire soit le jour de la naissance soit au cours des 7 jours qui suivent. » L'indemnité, égale à la rémunération du jour, est avancée par l'employeur et remboursée par la Caisse nationale de sécurité sociale. L'article premier de la loi n° 96-62 du 15 juillet 1996, qui énumère les articles du code qu'elle modifie (JORT n° 59 du 23 juillet 1996, p. 1579), ne cite pas cet article. Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+    2024-08-13:
+    - title: "Loi n° 2024-44 du 12 août 2024, relative à l'organisation des congés de maternité et de paternité dans la fonction publique et les secteurs public et privé, article 5"
+      href: https://www.pist.tn/jort/2024/2024F/Jo0992024.pdf
+      note: "JORT n° 99 du 12 août 2024, p. 2216. Article 5, troisième alinéa : « Le congé de paternité est accordé dans les trente (30) jours à compter de la date de l'accouchement. » L'article premier étend la loi aux agents de la fonction publique et du secteur public affiliés à la Caisse nationale de retraite et de prévoyance sociale et aux salariés et non-salariés du secteur privé affiliés à la Caisse nationale de sécurité sociale (p. 2215) ; l'article 11 abroge « toutes les dispositions antérieures contraires ». Date d'effet : la loi n'en fixe pas ; publiée au Journal officiel du 12 août 2024, elle est exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1 du 14 avril 2020, article 2), soit le 13 août 2024. Édition française lue sur la couche texte."
+documentation: |-
+  En 1966, le congé se prend le jour de la naissance ou dans les sept jours qui suivent ; depuis le 13 août 2024,
+  dans les trente jours qui suivent l'accouchement.

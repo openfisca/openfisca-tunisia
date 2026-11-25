@@ -656,9 +656,8 @@ class salaire_super_brut(Variable):
         return (
             individu("salaire_de_base", period=period)
             + individu("primes", period=period)
-            + individu(
-                "cotisations_employeur", period=period
-            )  # Cotisations employeur sont négatives
+            + individu("cotisations_employeur", period=period)
+            + individu("autres_prelevements_employeur", period=period)
         )
 
 

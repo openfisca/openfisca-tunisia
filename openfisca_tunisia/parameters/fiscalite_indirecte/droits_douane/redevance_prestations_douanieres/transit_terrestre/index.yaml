@@ -1,0 +1,5 @@
+description: Redevance de prestations douanières sur les déclarations de transit terrestre
+metadata:
+  short_label: Transit terrestre
+  order:
+  - par_declaration

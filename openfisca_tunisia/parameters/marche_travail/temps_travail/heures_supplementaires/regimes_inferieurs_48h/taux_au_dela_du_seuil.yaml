@@ -1,0 +1,14 @@
+description: "Taux de majoration des heures supplémentaires faites au-delà de 48 heures par semaine dans un régime à plein temps inférieur à 48 heures"
+values:
+  1996-07-31:
+    value: 0.5
+metadata:
+  unit: /1
+  short_label: "Majoration, régimes de moins de 48 heures, au-delà de 48 heures"
+  reference:
+    1996-07-31:
+    - title: "Loi n° 96-62 du 15 juillet 1996, portant modification de certaines dispositions du code du travail, article premier : article 90 (nouveau) du code"
+      href: https://www.pist.tn/jort/1996/1996F/Jo05996.pdf
+      note: "JORT n° 59 du 23 juillet 1996, p. 1583. Article 90 (nouveau) : « Sont considérées comme heures supplémentaires les heures de travail effectuées au delà de la durée hebdomadaire normale. Ces heures sont rémunérées par référence au salaire de base horaire majoré selon les taux suivants : - Pour le régime de travail à plein temps de 48 heures par semaine: 75% - Pour les régimes de travail à plein temps inférieurs à 48 heures par semaine : 25% jusqu'à 48 heures et 50% au delà de cette durée. - Pour les régimes de travail à temps partiel : 50% » Date d'effet : la loi n'en fixe pas ; le JORT n° 59 a été déposé au siège du gouvernorat de Tunis le 26 juillet 1996 (mention de la p. 1599) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 31 juillet 1996. Édition française lue sur la couche texte, mise en page contrôlée à l'image."
+documentation: |-
+  Majoration des heures faites au-delà du seuil, sur le salaire de base horaire.
