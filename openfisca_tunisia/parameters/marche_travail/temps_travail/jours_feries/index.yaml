@@ -1,0 +1,11 @@
+description: "Jours fériés payés"
+metadata:
+  short_label: "Jours fériés"
+  order:
+  - nombre
+  - liste
+  - indemnite_jour_ferie_travaille
+documentation: |-
+  Jours fériés payés de l'article 445 du code (livre VII, chapitre XX) et règle de paiement du jour férié
+  travaillé (article 109). Le chômage d'un jour férié ne réduit pas le salaire mensuel, et les salariés payés à
+  l'heure ou à la tâche reçoivent une indemnité égale au salaire perdu (article 108).

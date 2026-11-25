@@ -1,0 +1,26 @@
+description: "Montant annuel de plus-value de cession de titres exonéré d'impôt sur le revenu"
+values:
+  2004-01-01:
+    value: 10000
+  2023-01-01:
+    value: null
+metadata:
+  unit: currency
+  short_label: "Franchise annuelle, plus-value de cession de titres"
+  reference:
+    2004-01-01:
+    - title: "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 63 et 105"
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: "JORT n° 104 du 30 décembre 2003, p. 3730 (article 63) et p. 3736 (article 105). Article 63, point 18 ajouté à l'article 38 du code (revenus non soumis à l'impôt) : « La plus-value prévue par l'article 31 bis du présent code dans la limite de 10.000 dinars par an. » Date d'effet : article 105 — « Sous réserve des dispositions de l'article 61 de la présente loi, les dispositions de la présente loi sont applicables à compter du 1er janvier 2004. » ; l'article 61 rattache la plus-value aux cessions effectuées à partir du 1er janvier 2004. Édition française lue à l'image, pp. 3730 et 3736."
+    2023-01-01:
+    - title: "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 42"
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: "JORT n° 141 du 23 décembre 2022, édition arabe, p. 4068. Article 42, paragraphe 2 : « تلغى النقطة 18 من الفصل 38 من مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات » (le point 18 de l'article 38 du code est abrogé). Paragraphe 3 : le présent article s'applique aux cessions ou rétrocessions réalisées à compter du 1er janvier 2023. Édition arabe lue à l'image, p. 4068. L'édition française de ce fascicule n'est pas en ligne sur pist.tn : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Part de la plus-value annuelle de cession de titres exonérée d'impôt sur le revenu : seule la
+  fraction qui excède ce montant est imposée au taux de `taux`. La franchise est supprimée pour
+  les cessions réalisées à partir du 1er janvier 2023.
+
+  À partir de la loi de finances pour 2011 (article 41, paragraphe 7), la franchise couvre aussi
+  la plus-value réalisée par les non-résidents au titre du deuxième paragraphe de l'article 3 du
+  code.

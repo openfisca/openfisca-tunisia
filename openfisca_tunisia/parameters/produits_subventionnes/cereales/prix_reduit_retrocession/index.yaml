@@ -1,0 +1,6 @@
+description: Prix réduits de rétrocession des blés aux minoteries et semouleries
+metadata:
+  short_label: Prix réduits de rétrocession
+  order:
+  - ble_dur
+  - ble_tendre

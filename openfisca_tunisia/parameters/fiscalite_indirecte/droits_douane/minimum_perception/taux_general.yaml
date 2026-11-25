@@ -1,0 +1,32 @@
+description: Minimum de perception des droits de douane en tarif minimum ad valorem à l'importation
+values:
+  '1987-01-02':
+    value: 0.1
+  '1988-01-02':
+    value: 0.15
+metadata:
+  unit: /1
+  short_label: Taux général
+  notes:
+    '1987-01-02':
+    - note: 'Série incomplète : le relevé du précis ne porte aucun état après le 2 janvier 1988 ; la série
+        n''est pas close.'
+  reference:
+    '1987-01-02':
+    - title: Loi n° 86-106 du 31 décembre 1986, portant loi de finances pour la gestion 1987, article
+        27
+      href: https://www.pist.tn/jort/1986/1986F/Jo07886.pdf
+      note: 'JORT n° 78 des 30-31 décembre 1986, p. 1612. Article 27 : « Le minimum de perception des
+        droits de douane en tarif minimum ad-valorem à l''importation est fixé à 10 % et ce nonobstant
+        tous les textes accordant une suspension ou une exonération totale ou partielle » à l''exception
+        de franchises énumérées. Date d''effet : la loi n''a pas de clause générale d''application ; avant
+        1993, elle devient exécutoire un jour franc après la publication au Journal officiel, soit le
+        2 janvier 1987. Édition française sans couche texte, lue à l''image.'
+    '1988-01-02':
+    - title: Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988, article 53
+      href: https://www.pist.tn/jort/1987/1987F/Jo09187.pdf
+      note: 'JORT n° 91 des 29-31 décembre 1987, p. 1633. Article 53 : « Est porté à 15 % le minimum de
+        perception des droits de douane en tarif minimum ad-valorem à l''importation fixé à 10 % par l''article
+        27 de la loi n° 86-106 du 31 décembre 1986 ». Date d''effet : la loi n''a pas de clause générale
+        d''application ; avant 1993, elle devient exécutoire un jour franc après la publication au Journal
+        officiel, soit le 2 janvier 1988. Édition française sans couche texte, lue à l''image.'

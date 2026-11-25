@@ -1,23 +1,19 @@
 description: Indemnité Complémentaire Provisoire (ICP) - montant par mois
 values:
-  1981-04-07:
+  1981-04-01:
     value: 10
-  1982-02-01:
-    value: 30
 metadata:
   short_label: ICP
   label_en: Provisional Supplementary Allowance (ICP) - amount per month
   short_label_en: ICP
   unit: currency
   reference:
-    1981-04-07:
-    - title: Décret n° 81-437 du 7 avril 1981
+    1981-04-01:
+    - title: "Décret n° 81-437 du 7 avril 1981, instituant une indemnité complémentaire provisoire dans les secteurs non agricoles régis par le code du travail, article premier"
       href: https://www.pist.tn/jort/1981/1981F/Jo02581.pdf
-    - title: امر عدد 437 لسنة 1981
+      note: "JORT n° 25 du 14 avril 1981, pp. 818-819. Article premier : le montant mensuel de l'indemnité suit un barème par tranche de salaire ; il est de 10 dinars pour les salaires jusqu'à 54,704 dinars, soit le SMIG du régime de 48 heures, puis de 12,500, 15, 17,500 et 20 dinars par tranche au-delà. Article 3 : pour les salariés payés à l'heure, 58 millimes au régime de 40 heures et 48 millimes au régime de 48 heures dans la première tranche. Article 7 : à titre exceptionnel, l'indemnité n'est pas prise en compte pour la détermination de l'assiette des cotisations et des prestations de sécurité sociale ; toutefois, pour l'application de l'article 115-1er de la loi n° 57-73 et des articles 45 et 53 du décret n° 74-499, elle est assimilée à une augmentation mensuelle du SMIG égale à 10 dinars. Article 10 : effet à compter du 1er avril 1981. La date du 7 avril 1981 portée auparavant était celle de la signature."
+    - title: "أمر عدد 437 لسنة 1981 مؤرخ في 7 أفريل 1981 يتعلق بإحداث منحة إضافية مؤقتة في القطاعات غير الفلاحية الخاضعة لمجلة الشغل"
       href: https://www.pist.tn/jort/1981/1981A/Ja02581.pdf
-    1982-02-01:
-    - title: Décret n° 82-501 du 16 mars 1982
-      href: https://www.pist.tn/jort/1982/1982F/Jo01982.pdf
-    - title: أمر عدد 501 لسنة 1982 يتعلق بالترفيع في الاجر الادنى المضمون لمختلف المهن في الثطاعات غير الفلاحية ةالخاضعى لمجلة الشغل
-      href: https://www.pist.tn/jort/1982/1982A/Ja01982.pdf
-documentation: Le Smic est composé du salaire de base et de cette indemnité complémentaire provisoire et de sa majoration
+documentation: |-
+  Indemnité complémentaire provisoire servie au niveau du SMIG, première tranche du barème du décret n° 81-437.
+  Le décret n° 82-501 du 16 mars 1982 ne la modifie pas : il décompose le SMIG du 1er février 1982 en SMIG du décret n° 80-609, indemnité complémentaire provisoire de 10 dinars et majoration de 20,368 dinars (48 heures) ou 20 dinars (40 heures), portée par majoration_smig_48h_mensuel et majoration_smig_40h_mensuel. Depuis le décret n° 92-1299, les décrets fixant le SMIG désignent la somme des deux, 30,368 dinars (48 heures) ou 30 dinars (40 heures), comme l'indemnité complémentaire provisoire « instituée par le décret n° 81-437 et majorée par le décret n° 82-501 », et le SMIG la comprend.

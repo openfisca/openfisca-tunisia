@@ -1,0 +1,23 @@
+description: Fraction déductible des sommes déposées dans un compte épargne en actions
+values:
+  1999-08-26:
+    value: 0.5
+  2003-01-01:
+    value: 1
+metadata:
+  unit: /1
+  short_label: "Fraction déductible des dépôts, compte épargne en actions"
+  reference:
+    1999-08-26:
+    - title: "Loi n° 99-92 du 17 août 1999, relative à la relance du marché financier, article 4"
+      href: https://www.pist.tn/jort/1999/1999F/Jo06799.pdf
+      note: "JORT n° 67 du 20 août 1999, p. 1463. Article 4, paragraphe VIII nouveau de l'article 39 du code : les sommes déposées sont déductibles « dans la limite de 50% du montant déposé au cours de l'exercice concerné par la réduction, sans que le montant déductible ne dépasse 5000 dinars par an ». Exécutoire le 26 août 1999 : fascicule déposé au siège du gouvernorat de Tunis le 21 août 1999, cinq jours après, jour du dépôt non compté (loi n° 93-64, article 2). Édition française lue sur la couche texte décodée (police décalée)."
+    2003-01-01:
+    - title: "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 45 et 105"
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: "JORT n° 104 du 30 décembre 2003, p. 3727. Article 45 : la dernière phrase du premier alinéa du paragraphe VIII de l'article 39, qui portait la limite de 50 %, est remplacée par « la déduction s'effectue dans la limite de 20.000 dinars par an ». La note commune n° 16/2004 : la loi a « supprimé la limite de déduction fixée à 50% des sommes déposées dans les comptes épargne en actions » ; « les nouvelles mesures s'appliquent à partir des revenus de 2003 à déclarer en 2004 (article 105) ». Édition française lue sur la couche texte décodée."
+documentation: |-
+  Fraction des sommes déposées au cours de l'année dans un compte épargne en actions qui entre
+  dans la déduction (article 39, paragraphe VIII, du code), avant application du plafond
+  annuel (`cea`). La moitié des dépôts de la création du compte aux revenus de 2002 ; la
+  totalité à partir des revenus de 2003.

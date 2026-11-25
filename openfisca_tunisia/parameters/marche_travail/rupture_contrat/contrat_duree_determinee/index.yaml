@@ -1,0 +1,25 @@
+description: "Contrat de travail à durée déterminée"
+metadata:
+  short_label: "Contrat à durée déterminée"
+  order:
+  - duree_maximale_hors_cas_recours
+documentation: |-
+  Le code de 1966 permet de conclure le contrat de travail « pour un temps déterminé ou
+  indéterminé, soit pour un travail déterminé » (article 6), sans cas de recours ni durée
+  maximale ; le contrat à durée déterminée qui se poursuit après son terme devient un contrat à
+  durée indéterminée (article 17).
+
+  Du 31 juillet 1996 au 23 mai 2025 (loi n° 96-62, article 6-4), le contrat à durée déterminée
+  se conclut dans cinq cas de recours — travaux de premier établissement ou travaux neufs,
+  surcroît extraordinaire de travail, remplacement provisoire d'un salarié permanent, travaux
+  urgents, travaux saisonniers ou activités où l'usage exclut le contrat à durée indéterminée —
+  ou, hors de ces cas, par accord des parties dans une limite de durée renouvellements compris
+  (`duree_maximale_hors_cas_recours`). Au-delà, le salarié est recruté à titre permanent et sans
+  période d'essai.
+
+  À partir du 24 mai 2025 (loi n° 2025-9, article 6-4 nouveau), le contrat est réputé conclu pour
+  une durée indéterminée ; le contrat à durée déterminée est interdit hors de trois cas
+  (surcroît extraordinaire du volume des services ou des travaux, remplacement provisoire d'un
+  salarié permanent, travaux saisonniers ou activités où l'usage exclut le contrat à durée
+  indéterminée), se conclut par écrit et ne comporte pas de période d'essai. Le texte n'énonce
+  pas de durée maximale pour ces trois cas.

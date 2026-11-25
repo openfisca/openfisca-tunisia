@@ -1,0 +1,6 @@
+description: Taxes affectées à la Caisse générale de compensation
+metadata:
+  short_label: Taxes affectées
+  order:
+  - agrumes_fruits_exportes
+  - perequation_raffinage

@@ -1,0 +1,22 @@
+description: "Taux des cotisations des employeurs affiliés à la Caisse nationale de sécurité sociale, une fois opéré le transfert d'un point des cotisations du régime général (décret n° 95-538, article 2)"
+metadata:
+  short_label: "Taux de l'article 2, après transfert du point"
+  order:
+  - services_de_bureaux
+  - autres_services
+  - commerce
+  - artisans
+  - agriculture_et_peche
+  - industries_agro_alimentaires
+  - industrie_du_froid
+  - papier_et_arts_graphiques
+  - mecaniques_fonderies_electriques
+  - textile_cuir_chaussures
+  - meuble
+  - materiaux_construction_ceramique_verrerie
+  - bois_liege
+  - autres_industries_manufacturieres
+  - industries_chimiques
+  - batiment_et_travaux_publics
+  - transport_et_manutention
+  - industries_extractives

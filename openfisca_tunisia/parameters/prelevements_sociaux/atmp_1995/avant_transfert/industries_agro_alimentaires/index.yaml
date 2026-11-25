@@ -1,0 +1,14 @@
+description: "Industries agro-alimentaires (point 6)"
+metadata:
+  short_label: "Industries agro-alimentaires"
+  order:
+  - lait_et_derives
+  - corps_gras
+  - travail_des_graines
+  - conserverie_semi_conserverie
+  - sechage_deshydratation
+  - sucre_chocolat_derives
+  - boissons_alcools_vinaigre
+  - alimentaires_diverses
+  - aliments_composes
+  - autres_agro_alimentaires

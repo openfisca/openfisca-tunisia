@@ -1,0 +1,9 @@
+description: "Jours de congé acquis par mois de travail"
+metadata:
+  short_label: "Jours par mois"
+  order:
+  - adultes
+  - moins_18_ans
+  - de_18_a_20_ans
+documentation: |-
+  Jours de congé acquis par mois de travail effectif, par tranche d'âge (article 113 du code).

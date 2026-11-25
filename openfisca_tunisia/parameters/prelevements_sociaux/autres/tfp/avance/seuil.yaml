@@ -1,0 +1,15 @@
+description: Montant annuel minimal de taxe de formation professionnelle ouvrant droit à l'avance
+values:
+  2009-01-01:
+    value: 1000
+metadata:
+  unit: currency
+  short_label: Seuil de taxe annuelle
+  reference:
+    2009-01-01:
+    - title: "Décret n° 2009-292 du 2 février 2009, fixant le domaine d'application de l'avance sur la taxe de formation professionnelle, son taux, les conditions et les modalités de son bénéfice, ainsi que le domaine d'application, les modalités et les conditions de bénéfice des droits de tirage, articles 2 et 3"
+      href: https://www.pist.tn/jort/2009/2009F/Jo0112009.pdf
+      note: "JORT n° 11 du 6 février 2009, pp. 424-425, lu sur la couche texte. Article 2 : l'avance est réservée aux entreprises dont la taxe annuelle atteint au moins 1 000 dinars. Article 3 : taux maximal de l'avance, 60 % de la taxe de l'année précédente. Le décret gouvernemental n° 2019-228 du 5 mars 2019 récrit d'autres articles et laisse l'article 3 inchangé. Édition arabe : https://www.pist.tn/jort/2009/2009A/Ja0112009.pdf"
+    - title: "Loi n° 2007-69 du 27 décembre 2007, relative à l'initiative économique, articles 27 et 31"
+      href: https://www.pist.tn/jort/2007/2007F/Jo1042007.pdf
+      note: "JORT n° 104 de décembre 2007, pp. 4344-4346, lu par OCR. Article 27 : l'avance sur la taxe de formation professionnelle, crédit d'impôt. Article 31 : effet au 1er janvier 2009. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja1042007.pdf"

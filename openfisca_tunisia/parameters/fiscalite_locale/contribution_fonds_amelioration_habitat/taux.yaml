@@ -1,0 +1,31 @@
+description: "Taux de la contribution au profit du Fonds national d'amélioration de l'habitat, appliqué à l'assiette de la taxe sur les immeubles bâtis"
+values:
+  2005-01-01:
+    value: 0.04
+metadata:
+  unit: /1
+  short_label: "Taux"
+  reference:
+    2005-01-01:
+    - title: "Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, articles 13 et 89"
+      href: https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf
+      note: "JORT n° 105 du 31 décembre 2004, p. 3433 (article 13) et p. 3445 (article 89). Article 13, sous la rubrique « Création du fonds national d'amélioration de l'habitat » : « Est créée au profit du fonds national d'amélioration de l'habitat une contribution due sur les immeubles bâtis destinés à l'habitation, supportée par les redevables de la taxe sur les immeubles bâtis prévue par l'article premier du code de la fiscalité locale, au taux de 4% de l'assiette de ladite taxe. Sont applicables à ladite contribution en matière de recouvrement, de contrôle, de contentieux, de sanctions, de prescription et de restitution les mêmes règles afférentes à la taxe sur les immeubles bâtis. » Date d'effet : article 89 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2005. » Édition française : article 13 lu à l'image, p. 3433 ; articles 11, 12, 14 à 16 et 89 lus sur la couche texte ; la couche texte de ce fascicule est à encodage décalé et n'est lisible qu'une fois décodée. L'édition arabe n'est pas relue : https://www.pist.tn/jort/2004/2004A/Ja1052004.pdf"
+documentation: |-
+  Taux appliqué à l'assiette de la taxe sur les immeubles bâtis — et non à la taxe elle-même — pour
+  les immeubles bâtis destinés à l'habitation (loi de finances pour 2005, article 13). L'assiette
+  est celle de l'article 4 du code de la fiscalité locale : une fraction du prix de référence du
+  mètre carré couvert, multipliée par la superficie couverte.
+
+  Sont exonérés les immeubles d'habitation exonérés de la taxe (article 3 du code) et les
+  bénéficiaires du dégrèvement total de l'article 6, paragraphe II (loi de finances pour 2005,
+  article 14, pp. 3433 et 3434).
+
+  La série commence le 1er janvier 2005. La loi de finances pour 2005 recrée le fonds comme fonds
+  spécial du Trésor (article 11), le subroge au fonds institué par le décret beylical du 23 août
+  1956 (article 15) et abroge ce décret (article 16). Le prélèvement perçu au profit de l'ancien
+  fonds avant 2005 n'est pas versé : ni le décret de 1956 ni ses modificatifs ne sont lus, et son
+  taux n'est pas établi.
+
+  Aucune modification du taux n'est relevée depuis 2005 dans les lois de finances dépouillées pour
+  la taxe sur les immeubles bâtis ; celles de 2012, 2019, 2024 et 2025 abandonnent des arriérés de
+  la contribution sans en changer le taux.

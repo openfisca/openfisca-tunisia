@@ -1,0 +1,23 @@
+description: "Taux de la taxe sur les établissements, appliqué au chiffre d'affaires brut"
+values:
+  2014-01-01:
+    value: 0.002
+metadata:
+  unit: /1
+  short_label: "Chiffre d'affaires brut"
+  reference:
+    2014-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, article 49, paragraphe 1, et article 95 ; code de la fiscalité locale, article 38, paragraphe I"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, p. 3680 (article 49) et p. 3699 (article 95). Article 49, paragraphe 1, p. 3680, sous la rubrique « Soumission du chiffre d'affaires provenant de l'exportation à la TCL » : « Est supprimé des dispositions du paragraphe premier de l'article 37 et du paragraphe I de l'article 39 du code de la fiscalité locale le terme \"local\". » Le taux est celui de l'article 38, paragraphe I, du code, que la loi ne modifie pas : « Le taux de la taxe sur les établissements à caractère industriel, commercial ou professionnel est fixé à 0.2 pour-cent » (JORT n° 11 du 7 février 1997, p. 177 : https://www.pist.tn/jort/1997/1997F/Jo01197.pdf). Date d'effet : article 95, p. 3699 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2014. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja1052013.pdf"
+documentation: |-
+  Taux de droit commun de la taxe depuis le 1er janvier 2014, appliqué au chiffre d'affaires brut
+  réalisé par l'établissement (code de la fiscalité locale, article 37, premier paragraphe, et
+  article 38, paragraphe I). Le taux est celui de 1997 ; l'assiette n'est plus le chiffre
+  d'affaires brut « local », qui se lit dans `chiffre_affaires_brut_local` jusqu'au 31 décembre
+  2013.
+
+  Le chiffre d'affaires provenant de l'exportation et celui que certains établissements réalisent
+  avec les non-résidents relèvent d'un taux propre (`exportation_et_non_residents`), de même que
+  celui des établissements qui commercialisent des produits à prix homologués à faible marge
+  (`produits_prix_homologues`).

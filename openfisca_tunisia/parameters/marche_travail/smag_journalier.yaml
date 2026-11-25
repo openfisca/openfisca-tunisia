@@ -6,7 +6,7 @@ values:
     value: 0.385
   1968-05-01:
     value: 0.5
-  1969-11-01:
+  1969-10-01:
     value: 0.55
   1971-05-01:
     value: 0.6
@@ -14,7 +14,7 @@ values:
     value: 0.8
   1975-06-01:
     value: 0.9
-  1977-05-01:
+  1977-02-01:
     value: 1.2
   1978-05-01:
     value: 1.332
@@ -134,10 +134,11 @@ metadata:
       href: https://www.pist.tn/jort/1968/1968F/Jo01868.pdf
     - title: امر عدد 344  لسنة   1968 مؤرخ في   30 افريل 1968 يتعلق بأجور العملة الفلاحيين
       href: https://www.pist.tn/jort/1968/1968A/Ja01868.pdf
-    1969-11-01:
-    - title: Décret n°69-344 du 27 septembre 1969 relatif à la rémunération des travailleurs agricoles
+    1969-10-01:
+    - title: "Décret n° 69-344 du 27 septembre 1969, relatif à la rémunération des travailleurs agricoles, article premier"
       href: https://www.pist.tn/jort/1969/1969F/Jo03869.pdf
-    - title: امر عدد 344  لسنة   1969 مؤرخ في   27 سبتمبر 1969 يتعلق بأجور العملة الفلاحيين
+      note: "JORT n° 38 des 26-30 septembre et 3 octobre 1969, p. 1162. Article premier : le salaire minimum journalier de l'ouvrier agricole ordinaire est fixé uniformément, sur l'ensemble du territoire, à 550 millimes. Article 8 : effet à compter du 1er octobre 1969. La date portée auparavant était le 1er novembre 1969."
+    - title: "أمر عدد 344 لسنة 1969 مؤرخ في 27 سبتمبر 1969 يتعلق بأجور العملة الفلاحيين"
       href: https://www.pist.tn/jort/1969/1969A/Ja03869.pdf
     1971-05-01:
     - title: Décret n°71-163 du 03 mai 1971  relatif à la rémunération des travailleurs agricoles
@@ -154,10 +155,11 @@ metadata:
       href: https://www.pist.tn/jort/1975/1975F/Jo03875.pdf
     - title: امر عدد  358  لسنة   1975  مؤرخ في 3 جوان 1975  يتعلق بضبط الأجر الأدنى المضمون في الفلاحة
       href: https://www.pist.tn/jort/1975/1975A/Ja03875.pdf
-    1977-05-01:
-    - title: Décret n°77-116 du 02 février 1977 fixant le salaire minimum agricole garanti
+    1977-02-01:
+    - title: "Décret n° 77-116 du 2 février 1977, fixant le salaire minimum agricole garanti, article premier"
       href: https://www.pist.tn/jort/1977/1977F/Jo00977.pdf
-    - title: امر عدد 116  لسنة  1977  مؤرخ في 2 فيفري 1977 يتعلق بضبط الأجر الأدنى المضمون في الفلاحة
+      note: "JORT n° 9 du 1er-4 février 1977, p. 294. Article premier : le SMAG est porté, sur l'ensemble du territoire, de 0,900 dinar à 1,200 dinar par journée de travail effectif pour les travailleurs des deux sexes âgés de 18 ans au moins. Article 6 : effet à compter du 1er février 1977. La date portée auparavant était le 1er mai 1977."
+    - title: "أمر عدد 116 لسنة 1977 مؤرخ في 2 فيفري 1977 يتعلق بضبط الأجر الأدنى المضمون في الفلاحة"
       href: https://www.pist.tn/jort/1977/1977A/Ja00977.pdf
     1978-05-01:
     - title: Décret n°78-442 du 26 avril 1978 fixant le salaire minimum agricole garanti
@@ -343,11 +345,16 @@ metadata:
     - title: امر عدد 681 لسنة 2011 مؤرخ في 9 جوان 2011 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://www.pist.tn/jort/2011/2011A/Ja0422011.pdf
     2012-07-01:
-      title: Décret n°2012-1982 du 20 septembre 2012
-    2012-12-01:
-    - title: Décret n°2012-1982 du 20 septembre 2012 fixant le salaire minimum agricole garanti.
+    - title: "Décret n° 2012-1982 du 20 septembre 2012, fixant le salaire minimum agricole garanti, article premier, premier tiret"
       href: https://www.pist.tn/jort/2012/2012F/Jo0772012.pdf
-    - title: امر عدد 1982 لسنة 2012 مؤرخ في 20 سبتمبر 2012 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
+      note: "JORT n° 77 du 28 septembre 2012, pp. 2272-2273. Article premier (p. 2273) : le SMAG est fixé à 10,608 dinars par journée de travail effectif à partir du 1er juillet 2012, et à 11,608 dinars à partir du 1er décembre 2012. Article 6 : effet à compter du 1er juillet 2012, sous réserve des dispositions de l'article premier."
+    - title: "أمر عدد 1982 لسنة 2012 مؤرخ في 20 سبتمبر 2012 يتعلق بضبط الأجر الأدنى الفلاحي المضمون"
+      href: https://www.pist.tn/jort/2012/2012A/Ja0772012.pdf
+    2012-12-01:
+    - title: "Décret n° 2012-1982 du 20 septembre 2012, fixant le salaire minimum agricole garanti, article premier, second tiret"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0772012.pdf
+      note: "JORT n° 77 du 28 septembre 2012, pp. 2272-2273. Article premier (p. 2273) : le SMAG est fixé à 10,608 dinars par journée de travail effectif à partir du 1er juillet 2012, et à 11,608 dinars à partir du 1er décembre 2012. Article 6 : effet à compter du 1er juillet 2012, sous réserve des dispositions de l'article premier."
+    - title: "أمر عدد 1982 لسنة 2012 مؤرخ في 20 سبتمبر 2012 يتعلق بضبط الأجر الأدنى الفلاحي المضمون"
       href: https://www.pist.tn/jort/2012/2012A/Ja0772012.pdf
     2014-05-01:
     - title: "Décret n° 2014-2908 du 11 août 2014, fixant le salaire minimum agricole garanti, article premier"
@@ -371,10 +378,11 @@ metadata:
     - title: أمر حكومي عدد 673 لسنة 2018 مؤرخ في 7 أوت 2018 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
       href: https://www.pist.tn/jort/2018/2018A/Ja0642018.pdf
     2019-05-01:
-    - title: Décret gouvernemental n° 2019-455 du 28 mai 2019 fixant le salaire minimum agricole garanti
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/Décret_2019_455_fr.pdf
-    - title: أمر حكومي عدد 455 لسنة 2019 مؤرخ في 28 ماي 2019 يتعلق بضبط الأجر الأدنى الفلاحي المضمون
-      href: https://gitlab.com/benjello/tunisia-legislative-references/-/blob/main/lois/2019/Décret_2019_455_ar.pdf
+    - title: "Décret gouvernemental n° 2019-455 du 28 mai 2019, fixant le salaire minimum agricole garanti, article premier"
+      href: https://www.pist.tn/jort/2019/2019F/Jo0432019.pdf
+      note: "JORT n° 43 du 28 mai 2019, pp. 1586-1587. Article premier (p. 1587) : le SMAG est fixé à 15,504 dinars par journée de travail effectif pour les travailleurs des deux sexes âgés de 18 ans au moins. Article 6 : effet à compter du 1er mai 2019."
+    - title: "أمر حكومي عدد 455 لسنة 2019 مؤرخ في 28 ماي 2019 يتعلق بضبط الأجر الأدنى الفلاحي المضمون"
+      href: https://www.pist.tn/jort/2019/2019A/Ja0432019.pdf
     2020-10-01:
     - title: "Décret gouvernemental n° 2020-1070 du 30 décembre 2020, fixant le salaire minimum agricole garanti, article premier"
       href: https://www.pist.tn/jort/2021/2021F/Jo0012021.pdf

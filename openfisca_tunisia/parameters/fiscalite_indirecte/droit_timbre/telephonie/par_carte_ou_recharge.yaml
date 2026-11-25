@@ -1,0 +1,53 @@
+description: Droit de timbre par carte ou opération de recharge du téléphone
+values:
+  '2006-01-01':
+    value: 0.3
+  '2007-01-01':
+    value: 0.3
+  '2012-05-25':
+    value: null
+metadata:
+  unit: currency/unit
+  short_label: Par carte ou recharge
+  reference:
+    '2006-01-01':
+    - title: Loi n° 2005-106 du 19 décembre 2005, portant loi de finances pour l'année 2006, articles
+        45 et 62
+      href: https://www.pist.tn/jort/2005/2005F/Jo1012005.pdf
+      note: 'JORT n° 101 du 20 décembre 2005, p. 3602. Rubrique « Mise à jour du tarif des droits de timbre
+        et soumission des cartes et opérations de recharge du téléphone au droit de timbre ». Article
+        45 : numéro 8 ajouté au paragraphe I de l''article 117 du code : « 8) Les cartes et les opérations
+        de recharge du téléphone 0,300 ». Article 62 (p. 3604) : application à compter du 1er janvier
+        2006.'
+    '2007-01-01':
+    - title: Loi n° 2006-85 du 25 décembre 2006, portant loi de finances pour l'année 2007, articles 72
+        et 88
+      href: https://www.pist.tn/jort/2006/2006F/Jo1032006.pdf
+      note: 'JORT n° 103 du 26 décembre 2006, p. 4392. Rubrique « Fixation de l''assiette du droit de
+        timbre dû sur les opérations de recharge électronique du téléphone ». Article 72 : le numéro 8
+        est remplacé par les numéros 8, 8 bis et 8 ter : cartes de recharge dont le montant n''excède
+        pas 5 dinars, 0,300 dinar ; cartes de plus de 5 dinars et opérations de recharge non matérialisées
+        par une carte, 0,300 dinar par tranche de 5 dinars. Article 88 (p. 4395) : application à compter
+        du 1er janvier 2007.'
+    '2012-05-25':
+    - title: Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article
+        48
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: 'JORT n° 39 du 18 mai 2012, p. 930. Rubrique « Mise à jour du tarif du droit de timbre exigible
+        sur les factures et sur les cartes et opérations de recharge du téléphone ». Article 48 : « 8)
+        Les cartes de recharge du téléphone dont le montant n''excède pas 5 dinars 0,080 sur chaque dinar
+        ; 8 bis) les cartes de recharge du téléphone dont le montant excède 5 dinars 0,400 sur chaque
+        5 dinars ou fraction de 5 dinars du montant de la carte ; 8 ter) les opérations de recharge du
+        téléphone non matérialisées par une carte quelqu''en soit le mode de recharge 0,400 sur chaque
+        5 dinars du chiffre d''affaires ». Article 49 : « 8 quater) les factures relatives aux lignes
+        de téléphone post payées 0,400 sur chaque 5 dinars ou fraction de 5 dinars du montant de la facture
+        ». Date d''effet : la loi n''en fixe pas. Le fascicule porte la mention « déposé au siège du gouvernorat
+        de Tunis le 19 mai 2012 » ; les notes communes n° 14/2012, 16/2012 et 25/2012 fixent l''entrée
+        en vigueur de la loi au 25 mai 2012, en application de la loi n° 93-64 (article 2). Compté cinq
+        jours après le dépôt, jour du dépôt non compté, le délai donnerait le 24 mai 2012 ; la date retenue
+        est celle de l''administration fiscale, déjà employée pour les autres articles de cette loi. Édition
+        française lue sur la couche texte.'
+documentation: |
+  Montant fixe par carte. En 2006, il frappe toutes les cartes et opérations de recharge ; du 1er
+  janvier 2007 au 24 mai 2012, les seules cartes dont le montant n'excède pas 5 dinars, les autres
+  relevant du tarif par tranche de 5 dinars. Le 25 mai 2012, ces cartes passent au tarif par dinar.

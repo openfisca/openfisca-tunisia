@@ -1,0 +1,12 @@
+description: "Prix maxima de vente du pain au public"
+metadata:
+  short_label: "Pain"
+  order:
+  - gros_pain_700g
+  - gros_pain_600g
+  - gros_pain_500g
+  - petit_pain_300g
+  - petit_pain_250g
+documentation: |-
+  Prix de vente au public d'une pièce de pain, fixés par décret, puis par arrêté du ministre chargé de l'économie.
+  Un paramètre par poids de la pièce : le poids change le 30 août 1986 et le 12 août 1989.

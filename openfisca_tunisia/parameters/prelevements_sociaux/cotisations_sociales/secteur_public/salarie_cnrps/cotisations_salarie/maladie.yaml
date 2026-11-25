@@ -13,20 +13,26 @@ brackets:
 metadata:
   reference:
     1973-04-01:
-    - title: décret 73-91 du 12 mars 1973 portant organisation des régimes de prévoyance sociale (article 14)
-      href: https://www.pist.tn/jort/1973/1973F/Jo01073.pdf
-      note: le décret du 12 avril 1951 a institué un régime de prévoyance sociale en faveur des personnels de l'Etat et des collectivités publiques
-    - title: الامر عدد 91 لسنة 1973 المؤرخ في 12  مارس 1973 بتعلق بضبط الانظمة المتعلقة بالحيطة الاجتماعية (الفصل 14)
-      href: https://www.pist.tn/jort/1973/1973A/Ja01073.pdf
+    - title: "Décret n° 73-91 du 12 mars 1973 portant organisation des régimes de prévoyance sociale, article 14"
+      href: "https://www.pist.tn/jort/1973/1973F/Jo01073.pdf"
+      note: "JORT n° 10 des 9, 13 et 16 mars 1973, p. 356. Article 14 : la cotisation de l'assuré en activité ayant opté pour le régime des prestations en nature, institué par le décret du 12 avril 1951, « est fixée à 1 % et assise sur les éléments de la rémunération soumise à retenues pour pensions ». L'article 18 fait prendre effet le décret au 1er avril 1973. Lu à l'image (édition française scannée). Édition arabe : https://www.pist.tn/jort/1973/1973A/Ja01073.pdf"
+    - title: "الأمر عدد 91 لسنة 1973 المؤرخ في 12 مارس 1973 المتعلق بضبط الأنظمة المتعلقة بالحيطة الاجتماعية، الفصل 14"
+      href: "https://www.pist.tn/jort/1973/1973A/Ja01073.pdf"
     2008-07-01:
-    - title: Décret n° 2007-1406 du 18 juin 2007, fixant l’assiette de calcul des taux de cotisations dues au titre de régime de base d’assurance maladie et ses étapes d’application.
-      href: https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf
-    - title: امر عدد 1406 لسنة 2007 مؤرخ في 18 جوان 2007 يتعلق بضبط قاعدة احتساب نسب الاشتراكات المستوجبة بعنوان النظام القاعدي للتأمين على المرض ومرحلية تطبيقها
-      href: https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf
+    - title: "Décret n° 2007-1406 du 18 juin 2007 fixant l'assiette de calcul des taux de cotisations dues au titre du régime de base d'assurance maladie et ses étapes d'application, article 4, 2)"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "JORT n° 49 du 19 juin 2007, p. 2157. Régime obligatoire de prévoyance des affiliés à la CNRPS en activité : au 1er juillet 2008, le taux global est relevé de 3 % à 4,88 % ; le relèvement de 1,88 % se répartit en 1 % à la charge de l'employeur et 0,88 % à la charge du salarié. La part salariale passe de 1 % à 1,88 %. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
+    - title: "أمر عدد 1406 لسنة 2007 مؤرخ في 18 جوان 2007 يتعلق بضبط قاعدة احتساب نسب الاشتراكات المستوجبة بعنوان النظام القاعدي للتأمين على المرض ومرحلية تطبيقها، الفصل 4"
+      href: "https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf"
     2009-07-01:
-    - title: Décret n° 2007-1406 du 18 juin 2007, fixant l’assiette de calcul des taux de cotisations dues au titre de régime de base d’assurance maladie et ses étapes d’application.
-      href: https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf
-    - title: امر عدد 1406 لسنة 2007 مؤرخ في 18 جوان 2007 يتعلق بضبط قاعدة احتساب نسب الاشتراكات المستوجبة بعنوان النظام القاعدي للتأمين على المرض ومرحلية تطبيقها
-      href: https://www.pist.tn/jort/2007/2007A/Ja0492007.pdf
+    - title: "Décret n° 2007-1406 du 18 juin 2007, article 4, 3)"
+      href: "https://www.pist.tn/jort/2007/2007F/Jo0492007.pdf"
+      note: "Au 1er juillet 2009, le taux global est relevé de 4,88 % à 6,75 % ; le relèvement de 1,87 % se répartit en 1 % à la charge de l'employeur et 0,87 % à la charge du salarié. La part salariale passe de 1,88 % à 2,75 %."
   rate_unit: /1
   threshold_unit: currency
+documentation: |-
+  Part salariale du régime obligatoire de prévoyance sociale puis du régime de base d'assurance
+  maladie des agents de la CNRPS en activité. Cotisation de 1 % au 1er avril 1973 (décret n° 73-91,
+  article 14), portée à 1,88 % puis 2,75 % par la montée en charge du régime de base d'assurance
+  maladie (décret n° 2007-1406, article 4). Le régime facultatif d'assurance maladie de l'article 5
+  du même décret (assurés ayant adhéré au régime de la loi n° 72-2) n'est pas modélisé.

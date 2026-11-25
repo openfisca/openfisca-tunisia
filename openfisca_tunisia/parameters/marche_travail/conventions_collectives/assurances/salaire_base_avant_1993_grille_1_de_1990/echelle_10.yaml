@@ -1,0 +1,511 @@
+description: "Assurances - échelle 10 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire, par échelon"
+metadata:
+  short_label: "Échelle 10"
+  order:
+  - echelon_1
+  - echelon_2
+  - echelon_3
+  - echelon_4
+  - echelon_5
+  - echelon_6
+  - echelon_7
+  - echelon_8
+  - echelon_9
+  - echelon_10
+  - echelon_11
+  - echelon_12
+documentation: |-
+  Échelle 10 de la grille. Échelons versés : les douze de la grille n° 1 du 1er juin 1990 (avenant
+  n° 2), seule date de cette série, qui cesse le 1er juin 1991.
+echelon_1:
+  description: "Assurances - échelle 10, échelon 1 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 177.884
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 1"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 1 : 177,884 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 1, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_2:
+  description: "Assurances - échelle 10, échelon 2 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 188.186
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 2"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 2 : 188,186 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 2, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_3:
+  description: "Assurances - échelle 10, échelon 3 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 198.696
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 3"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 3 : 198,696 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 3, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_4:
+  description: "Assurances - échelle 10, échelon 4 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 208.92
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 4"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 4 : 208,920 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 4, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_5:
+  description: "Assurances - échelle 10, échelon 5 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 219.222
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 5"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 5 : 219,222 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 5, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_6:
+  description: "Assurances - échelle 10, échelon 6 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 229.638
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 6"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 6 : 229,638 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 6, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_7:
+  description: "Assurances - échelle 10, échelon 7 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 239.826
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 7"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 7 : 239,826 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 7, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_8:
+  description: "Assurances - échelle 10, échelon 8 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 250.128
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 8"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 8 : 250,128 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 8, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_9:
+  description: "Assurances - échelle 10, échelon 9 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 260.43
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 9"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 9 : 260,430 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 9, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_10:
+  description: "Assurances - échelle 10, échelon 10 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 270.732
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 10"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 10 : 270,732 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 10, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_11:
+  description: "Assurances - échelle 10, échelon 11 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 281.034
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 11"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 11 : 281,034 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 11, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.
+echelon_12:
+  description: "Assurances - échelle 10, échelon 12 : salaire mensuel de base de la grille n° 1 du 1er juin 1990, hors indemnité complémentaire provisoire"
+  values:
+    1990-06-01:
+      value: 291.333
+    1991-06-01:
+      value: null
+  metadata:
+    short_label: "Échelon 12"
+    unit: currency/mois
+    reference:
+      1990-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990A/Ja07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition arabe, p. 1729 (édition française, p. 1719). La grille prend effet le 1er juin 1990 ; échelle 10, échelon 12 : 291,333 dinars par mois. Valeur lue à l'image. Grille n° 1 de l'avenant, qui « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 » ; la grille n° 2, de même date, s'applique aux autres entreprises : voir `salaire_base_avant_1993`. Le numéro de la page de l'édition arabe est déduit de l'ordre des pages du fascicule. Note de bas de grille : ces salaires ne comprennent pas les augmentations prévues par les décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire)."
+      1991-06-01:
+      - title: "Avenant n° 2 à la convention collective nationale des assurances, agréé par arrêté du 9 novembre 1990"
+        href: https://www.pist.tn/jort/1990/1990F/Jo07490.pdf
+        note: "JORT n° 74 du 16 novembre 1990, édition française, p. 1721. La grille n° 3 de l'avenant n° 2, qui prend effet le 1er juin 1991, s'applique à toutes les entreprises : la grille n° 1 cesse. Sans valeur à compter de cette date : voir `salaire_base_avant_1993`."
+  documentation: |-
+    Salaire mensuel de base de l'échelle 10, échelon 12, de la grille n° 1 que l'avenant n° 2 à la
+    convention collective des assurances fait entrer en vigueur le 1er juin 1990.
+
+    L'avenant n° 2 publie deux grilles à cette date. La grille n° 1 « entre en vigueur à compter du
+    1er juin 1990 et s'applique aux entreprises ayant appliqué l'avenant n° 1 signé le 9 mars 1989 »
+    ; la grille n° 2 s'applique aux entreprises ayant servi à leur personnel les augmentations
+    prévues par les circulaires du Premier ministre n° 31 et n° 84 des 1er avril et 9 octobre 1988
+    et par le décret n° 88-1889 du 10 novembre 1988, et se lit dans `salaire_base_avant_1993`.
+
+    Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+    heures par an.
+
+    Ce que le salaire comprend : c'est le salaire mensuel de la grille, hors indemnités et primes
+    servies en sus. Une note de bas de grille en exclut l'indemnité complémentaire provisoire des
+    décrets n° 81-437 du 7 avril 1981 et n° 82-501 du 16 mars 1982 : cette grille ne se compare pas,
+    sans cette réserve, à `salaire_base`, qui la comprend depuis le 1er juin 1993.
+
+    La série ne porte que cette date, et s'arrête au 1er juin 1991 : la grille n° 3 de l'avenant,
+    qui prend effet ce jour-là, s'applique à toutes les entreprises et se lit dans
+    `salaire_base_avant_1993`. La date sans valeur est celle à laquelle la valeur précédente ne vaut
+    plus.

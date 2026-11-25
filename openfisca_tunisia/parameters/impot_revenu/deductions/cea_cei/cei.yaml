@@ -1,7 +1,28 @@
 description: Plafond de déduction au titre du Compte Épargne pour l'Investissement
-unit: currency
 values:
-  1990-01-01:
-    value: 0
   2003-01-01:
+    value: 20000
+  2017-01-01:
     value: 50000
+metadata:
+  unit: currency
+  short_label: "Plafond annuel, compte épargne pour l'investissement"
+  reference:
+    2003-01-01:
+    - title: "Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles 21 et 87"
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: "JORT n° 102 du 17 décembre 2002, pp. 2877-2878 (article 21) et p. 2888 (article 87). Rubrique « Création de Comptes Epargne pour l'Investissement ». Article 21, article 39 bis nouveau du code : « les montants déposés par les personnes physiques dans des comptes-épargne pour l'investissement ouverts auprès de la Caisse d'Epargne Nationale de Tunisie ou auprès d'un établissement de crédit ayant la qualité de banque, sont déductibles de l'assiette de l'impôt sur le revenu au titre de l'année de dépôt dans la limite de 20000 dinars par an. » Date d'effet : article 87 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2003. » Édition française lue sur la couche texte décodée (police décalée)."
+    2017-01-01:
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 27"
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: "JORT n° 101 du 19 décembre 2017, p. 4275. Rubrique « Encouragement de l'épargne à long et moyen terme via les comptes épargne pour l'investissement et les contrats assurance-vie et les contrats de capitalisation ». Article 27, paragraphe 1 : « Le montant de « 20.000 dinars » prévu au premier paragraphe de l'article 39 bis du code […] est relevé à « 50.000 dinars ». » Date d'effet : la note commune n° 2/2018 écrit que les limites relevées « s'appliquent aux montants déposés et aux intérêts ou bénéfices réalisés à partir du 1er janvier 2017 déductibles des revenus réalisés au cours de l'année 2017 ». Édition française lue sur la couche texte."
+documentation: |-
+  Plafond annuel de la déduction, du revenu soumis à l'impôt, des sommes déposées dans un compte
+  épargne pour l'investissement (article 39 bis du code de l'impôt sur le revenu des personnes
+  physiques et de l'impôt sur les sociétés), sous réserve du minimum d'impôt de l'article 12 bis
+  de la loi n° 89-114.
+
+  Corrections. La série portait 0 dinar dès 1990 et 50 000 dinars au 1er janvier 2003, sans
+  référence. Le compte est créé par la loi de finances pour 2003, avec un plafond de
+  20 000 dinars ; les 50 000 dinars sont ceux de la loi de finances pour 2018, pour les montants
+  déposés à partir du 1er janvier 2017. La série commence à la création du compte.

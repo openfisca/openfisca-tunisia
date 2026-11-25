@@ -1,0 +1,5 @@
+description: Caisse générale de compensation
+metadata:
+  short_label: Caisse générale de compensation
+  order:
+  - taxes_affectees

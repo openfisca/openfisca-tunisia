@@ -1,0 +1,36 @@
+description: "Plus-value de cession d'actions, de parts sociales et de parts de fonds"
+metadata:
+  short_label: "Plus-value de cession de titres"
+  order:
+  - taux
+  - taux_non_cotes_detention_courte
+  - franchise
+  - actions_cotees
+  - non_residents
+documentation: |-
+  Plus-value réalisée par une personne physique, hors activité professionnelle, sur la cession
+  d'actions et de parts sociales, rangée parmi les revenus de valeurs mobilières pour les
+  cessions effectuées à partir du 1er janvier 2004 (code de l'impôt sur le revenu des personnes
+  physiques et de l'impôt sur les sociétés, article 31 bis). Elle est égale au prix de cession
+  diminué de la valeur d'acquisition, pour les cessions de l'année précédant celle de
+  l'imposition, après déduction des moins-values de ces cessions (article 33, deuxième alinéa).
+  Elle est imposée à un taux propre (article 44, paragraphe III, alinéa 3), hors du barème. Avant
+  2004, cette plus-value n'est rattachée à aucune catégorie de revenus.
+
+  Exonérations (article 38, point 17) :
+
+  - la plus-value de cession d'actions cotées à la Bourse des valeurs mobilières de Tunis et de
+    cession d'actions dans le cadre d'une introduction en bourse, dont le régime, soumis à une
+    durée de détention à partir de 2011, est dans le nœud `actions_cotees` ;
+  - à partir du 1er janvier 2004, la plus-value de cession d'actions de sociétés
+    d'investissement à capital variable, et des cessions réalisées pour le compte de personnes
+    physiques par les sociétés d'investissement à capital risque (loi de finances pour 2004,
+    article 63, JORT n° 104 du 30 décembre 2003, p. 3730), qui ne sont pas versées ici.
+
+  L'échéance qui conditionne l'exonération des actions cotées — l'expiration de l'année qui
+  suit celle de l'acquisition ou de la souscription — sépare aussi, à partir du 1er janvier
+  2023, les deux taux des actions non cotées, des parts sociales et des parts de fonds
+  (`taux_non_cotes_detention_courte`).
+
+  La plus-value réalisée par les non-résidents non établis, imposée par voie de retenue à la
+  source (article 52, paragraphe I, alinéas e et e bis), est dans le nœud `non_residents`.

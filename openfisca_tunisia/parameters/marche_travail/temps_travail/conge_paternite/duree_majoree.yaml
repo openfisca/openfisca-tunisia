@@ -1,0 +1,15 @@
+description: "Durée du congé de paternité en cas de naissances multiples ou d'enfant handicapé, prématuré ou malformé"
+values:
+  2024-08-13:
+    value: 10
+metadata:
+  unit: day
+  short_label: "Congé de paternité majoré"
+  reference:
+    2024-08-13:
+    - title: "Loi n° 2024-44 du 12 août 2024, relative à l'organisation des congés de maternité et de paternité dans la fonction publique et les secteurs public et privé, article 5"
+      href: https://www.pist.tn/jort/2024/2024F/Jo0992024.pdf
+      note: "JORT n° 99 du 12 août 2024, p. 2216. Article 5, premier alinéa : « Le père bénéficie d'un congé de paternité de sept (7) jours à plein traitement après production du justificatif de la naissance, et il est porté à dix (10) jours en cas des naissances gémellaires ou multiples, ainsi qu'en cas où l'enfant-né est porteur d'un handicap, prématuré ou présentant des malformations congénitales nécessitant des interventions et soins médicaux, sur la base d'un rapport médical. » L'article premier étend la loi aux agents de la fonction publique et du secteur public affiliés à la Caisse nationale de retraite et de prévoyance sociale et aux salariés et non-salariés du secteur privé affiliés à la Caisse nationale de sécurité sociale (p. 2215) ; l'article 11 abroge « toutes les dispositions antérieures contraires ». Date d'effet : la loi n'en fixe pas ; publiée au Journal officiel du 12 août 2024, elle est exécutoire le lendemain de sa publication dans l'édition électronique (décret-loi n° 2020-1 du 14 avril 2020, article 2), soit le 13 août 2024. Édition française lue sur la couche texte."
+documentation: |-
+  Durée portée à dix jours, sur rapport médical, en cas de naissances gémellaires ou multiples, ou d'enfant
+  porteur d'un handicap, prématuré ou présentant des malformations congénitales qui exigent des soins.

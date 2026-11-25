@@ -1,0 +1,11 @@
+description: "Prix de vente au public du lait régénéré"
+metadata:
+  short_label: "Lait"
+  order:
+  - lait_regenere_uht_1l
+  - lait_regenere_pasteurise_1l
+  - lait_demi_ecreme_uht_1l
+  - lait_demi_ecreme_pasteurise_1l
+documentation: |-
+  Prix de vente au public du litre de lait régénéré en brique.
+  L'arrêté du 21 novembre 1982 dit « lait régénéré », sans « demi-écrémé » ; ceux de 1989 et de 1991 disent « demi-écrémé » : paramètres distincts.

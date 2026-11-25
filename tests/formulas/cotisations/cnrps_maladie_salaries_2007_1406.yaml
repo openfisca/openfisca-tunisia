@@ -1,0 +1,50 @@
+# Régime obligatoire de prévoyance sociale puis régime de base d'assurance maladie des agents de la
+# CNRPS en activité. Part salariale : décret n° 73-91, article 14 (1 % au 1er avril 1973) ; part
+# employeur : décret n° 73-91, article 16 (contribution de l'État de 1 %). Montée en charge du
+# décret n° 2007-1406, article 4 : au 1er juillet 2007 le taux global passe à 3 % (salarié 1 %,
+# employeur 2 %), à 4,88 % en 2008 (1,88 % / 3 %) et à 6,75 % en 2009 (2,75 % / 4 %).
+
+- name: CNRPS actif - juin 1970, avant le décret n° 73-91 (aucune cotisation)
+  period: 1970-06
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    maladie_salarie: 0
+    maladie_employeur: 0
+
+- name: CNRPS actif - 1973, 1 % salarié (art. 14) et 1 % employeur (art. 16)
+  period: 1973-06
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    maladie_salarie: 0.01 * 1000
+    maladie_employeur: 0.01 * 1000
+
+- name: CNRPS actif - juillet 2007, part employeur portée à 2 % (total 3 %)
+  period: 2007-07
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    maladie_salarie: 0.01 * 1000
+    maladie_employeur: 0.02 * 1000
+
+- name: CNRPS actif - juillet 2008, total 4,88 % (salarié 1,88 %, employeur 3 %)
+  period: 2008-07
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    maladie_salarie: 0.0188 * 1000
+    maladie_employeur: 0.03 * 1000
+
+- name: CNRPS actif - juillet 2009, total 6,75 % (salarié 2,75 %, employeur 4 %)
+  period: 2009-07
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    maladie_salarie: 0.0275 * 1000
+    maladie_employeur: 0.04 * 1000

@@ -1,0 +1,10 @@
+description: Droit d'enregistrement sur les fonds de commerce
+metadata:
+  short_label: Fonds de commerce
+  order:
+  - cession
+  - location
+documentation: |
+  Droits proportionnels sur la mutation à titre onéreux d'un fonds de commerce ou d'une clientèle et
+  sur la location d'un fonds (code des droits d'enregistrement et de timbre, article 20, numéros 13 et
+  14).

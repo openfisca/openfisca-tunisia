@@ -1,0 +1,31 @@
+description: "Taux du dégrèvement partiel de la taxe sur les immeubles bâtis, pour un immeuble resté inoccupé pendant une année"
+values:
+  1997-01-01:
+    value: 0.25
+  2003-01-01:
+    value: null
+metadata:
+  unit: /1
+  short_label: "Dégrèvement partiel (inoccupation)"
+  reference:
+    1997-01-01:
+    - title: "Code de la fiscalité locale, article 6, paragraphe I ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3"
+      href: https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+      note: "JORT n° 11 du 7 février 1997, p. 174 (article 6 du code) et p. 173 (article 3 de la loi). Article 6, paragraphe I : « Si un immeuble bâti est resté inoccupé pendant une année, le propriétaire peut obtenir, pour l'année suivante et après vérification par la collectivité locale concernée, un dégrèvement de 25 pour-cent du montant de la taxe sur l'immeuble au titre de l'année d'inoccupation. A cet effet, le propriétaire doit informer la collectivité locale concernée de l'inoccupation au moyen de déclarations à déposer dans les 15 premiers jours du premier, quatrième, septième et dixième mois de l'année de l'inoccupation. » Date d'effet : article 3 de la loi de promulgation, p. 173 — « Les dispositions du présent code entrent en vigueur à compter du premier janvier 1997 » ; le fascicule est du 7 février 1997, la date énoncée par la loi est reprise telle quelle. Édition française lue sur la couche texte du fascicule, pp. 173 et 174, le taux étant relu à l'image, p. 174 ; l'édition arabe n'est pas relue pour cet article : https://www.pist.tn/jort/1997/1997A/Ja01197.pdf"
+    2003-01-01:
+    - title: "Loi n° 2002-101 du 17 décembre 2002, portant loi de finances pour l'année 2003, articles 77 et 87"
+      href: https://www.pist.tn/jort/2002/2002F/Jo1022002.pdf
+      note: "JORT n° 102 du 17 décembre 2002, p. 2887 (article 77) et p. 2888 (article 87). Article 77, sous la rubrique « Suppression du dégrèvement partiel de la taxe sur les immeubles bâtis » : « Sont abrogées les dispositions du paragraphe I de l'article 6 du code de la fiscalité locale. » Le dégrèvement partiel n'existe plus : la valeur est vide. Date d'effet : article 87, p. 2888 — « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2003. » Édition française : article 77 lu à l'image, p. 2887 ; article 87 lu sur la couche texte ; la couche texte de ce fascicule est à encodage décalé et n'est lisible qu'une fois décodée. L'édition arabe n'est pas relue pour ces articles : https://www.pist.tn/jort/2002/2002A/Ja1022002.pdf"
+documentation: |-
+  Part de la taxe sur les immeubles bâtis dont le propriétaire d'un immeuble resté inoccupé pendant
+  une année peut obtenir la remise, l'année suivante, au titre de l'année d'inoccupation (code de la
+  fiscalité locale, article 6, paragraphe I, dans sa rédaction de 1997). Le dégrèvement suppose des
+  déclarations trimestrielles d'inoccupation et le paiement des taxes dues ; il est accordé par
+  arrêté du président de la collectivité locale (paragraphe III).
+
+  La loi de finances pour 2003 abroge le paragraphe I : le dégrèvement partiel cesse le 1er janvier
+  2003, et la valeur est vide depuis cette date.
+
+  Le dégrèvement total des contribuables à faible revenu qui bénéficient de l'aide de l'État ou des
+  collectivités locales (article 6, paragraphe II) subsiste. Le code dit qu'ils sont « dégrevés
+  totalement », sans énoncer de taux ni de seuil de revenu : rien n'est versé pour lui.

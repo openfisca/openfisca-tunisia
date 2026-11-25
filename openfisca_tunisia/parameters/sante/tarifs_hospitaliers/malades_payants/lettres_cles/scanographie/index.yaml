@@ -1,0 +1,9 @@
+description: "Prix d'un acte de scanographie, par cotation"
+metadata:
+  short_label: "Scanographie (S)"
+  order:
+  - s10
+  - s20
+  - s30
+  - s35
+  - s40

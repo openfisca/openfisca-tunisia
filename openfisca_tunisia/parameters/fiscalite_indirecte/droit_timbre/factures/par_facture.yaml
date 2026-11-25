@@ -1,0 +1,86 @@
+description: Droit de timbre par facture
+values:
+  '2004-01-01':
+    value: 0.2
+  '2006-01-01':
+    value: 0.3
+  '2012-05-25':
+    value: 0.4
+  '2014-08-27':
+    value: 0.5
+  '2018-01-01':
+    value: 0.6
+  '2023-01-01':
+    value: 1.0
+metadata:
+  unit: currency/unit
+  short_label: Par facture
+  reference:
+    '2004-01-01':
+    - title: Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004, articles 76,
+        77 et 105
+      href: https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf
+      note: 'JORT n° 104 du 30 décembre 2003, p. 3733. Rubrique « Exonération des quittances du droit
+        de timbre ». Article 76 : le numéro 6 de l''article 117 du code est récrit, « 6- Les factures
+        0,200 par facture », au lieu des effets et actes constatant décharge, reçu ou quittance de sommes
+        ; article 77 : plusieurs exonérations de l''article 118 sont abrogées. Article 105 : application
+        à compter du 1er janvier 2004.'
+    '2006-01-01':
+    - title: Loi n° 2005-106 du 19 décembre 2005, portant loi de finances pour l'année 2006, articles
+        45 et 62
+      href: https://www.pist.tn/jort/2005/2005F/Jo1012005.pdf
+      note: 'JORT n° 101 du 20 décembre 2005, p. 3602. Rubrique « Mise à jour du tarif des droits de timbre
+        et soumission des cartes et opérations de recharge du téléphone au droit de timbre ». Article
+        45 : « 6) Les factures 0,300 par facture ». Article 62 (p. 3604) : application à compter du 1er
+        janvier 2006.'
+    '2012-05-25':
+    - title: Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012, article
+        47
+      href: https://www.pist.tn/jort/2012/2012F/Jo0392012.pdf
+      note: 'JORT n° 39 du 18 mai 2012, p. 930. Rubrique « Mise à jour du tarif du droit de timbre exigible
+        sur les factures et sur les cartes et opérations de recharge du téléphone ». Article 47 : « 6)
+        Les factures à l''exception des factures objet du numéro 8 quater du présent article 0,400 par
+        facture ». Date d''effet : la loi n''en fixe pas. Le fascicule porte la mention « déposé au siège
+        du gouvernorat de Tunis le 19 mai 2012 » ; les notes communes n° 14/2012, 16/2012 et 25/2012 fixent
+        l''entrée en vigueur de la loi au 25 mai 2012, en application de la loi n° 93-64 (article 2).
+        Compté cinq jours après le dépôt, jour du dépôt non compté, le délai donnerait le 24 mai 2012
+        ; la date retenue est celle de l''administration fiscale, déjà employée pour les autres articles
+        de cette loi. Édition française lue sur la couche texte.'
+    '2014-08-27':
+    - title: Loi n° 2014-54 du 19 août 2014, portant loi de finances complémentaire pour l'année 2014,
+        article 35
+      href: https://www.pist.tn/jort/2014/2014F/Jo0682014.pdf
+      note: 'JORT n° 68 du 22 août 2014, p. 2105. Rubrique « Actualisation du tarif des droits d''enregistrement
+        et institution d''autres droits ». Article 35, paragraphe 1 : « 6) Les factures sauf les factures
+        objet du numéro 8 quater de cet article 0,500 D par facture ». Date d''effet : la loi n''en fixe
+        pas. Le fascicule porte la mention « déposé au siège du gouvernorat de Tunis le 22 août 2014 »
+        ; exécutoire le 27 août 2014, cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64,
+        article 2). Édition française lue sur la couche texte.'
+    '2018-01-01':
+    - title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 50
+        et 67
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: 'JORT n° 101 du 19 décembre 2017, p. 4287. Article 50, paragraphe 3 : « 6°) Les factures à
+        l''exception des factures objet du numéro 8 (nouveau) du présent article 0,600 par facture ».
+        Article 67 (p. 4292) : application à compter du 1er janvier 2018. Édition française lue sur la
+        couche texte.'
+    '2023-01-01':
+    - title: Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, articles
+        69 et 76
+      href: https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf
+      note: 'JORT n° 141 du 23 décembre 2022, édition arabe, p. 4079. Rubrique « تحيين تعريفة معلوم الطابع
+        الجبائي الموظف على الفواتير وإخضاع بعض الوثائق الإدارية للمعلوم » (actualisation du tarif du droit
+        de timbre sur les factures et soumission de certains documents administratifs au droit). Article
+        69, paragraphe 1 : « تعوض عبارة " 0,600 دينارا " الواردة بالعدد 6 من الفقرة I من الفصل 117 من
+        مجلة معاليم التسجيل والطابع الجبائي بعبارة "1,000 دينارا" » (l''expression « 0,600 dinar » du
+        numéro 6 du paragraphe I de l''article 117 est remplacée par « 1,000 dinar »). Article 76 (p.
+        4082) : « مع مراعاة الأحكام المخالفة الواردة بهذا المرسوم، تطبق أحكام هذا المرسوم بداية من غرة
+        جانفي 2023 » (sous réserve des dispositions contraires, application à compter du 1er janvier 2023).
+        Édition arabe lue sur la couche texte ; l''édition française n''est pas en ligne, la traduction
+        donnée ici n''est pas officielle.'
+documentation: |
+  Montant dû sur chaque facture. Jusqu'au 31 décembre 2003, le numéro 6 de l'article 117 vise les
+  effets et actes constatant décharge, reçu ou quittance de sommes (0,200 dinar au code de 1993) ; la
+  loi de finances pour 2004 le remplace par les factures. Du 25 mai 2012 au 31 décembre 2017, les
+  factures de téléphonie post-payée en sont exclues ; depuis 2018, les factures de téléphonie et
+  d'internet, soumises au tarif par dinar.

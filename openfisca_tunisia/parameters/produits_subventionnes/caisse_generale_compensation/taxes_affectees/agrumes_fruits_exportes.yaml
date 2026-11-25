@@ -1,0 +1,22 @@
+description: Taxe sur les agrumes et fruits exportés, au profit de la Caisse générale de compensation
+values:
+  1971-07-06:
+    value: 0.002
+metadata:
+  short_label: Agrumes et fruits exportés
+  label_en: Tax on exported citrus and fruit, earmarked for the general compensation fund
+  unit: currency/kg
+  notes:
+    1971-07-06:
+    - note: "Date de publication, non date d'effet : le numéro du Journal officiel porte deux dates (2-6 juillet 1971) et le jour de sa parution n'est pas établi, ce qui empêche le calcul du jour franc."
+    - note: "Évolution postérieure non établie : relèvements ou suppression éventuels non versés."
+  reference:
+    1971-07-06:
+    - title: "Loi n° 71-30 du 2 juillet 1971, portant institution d'un Groupement interprofessionnel des agrumes et des fruits, article 5"
+      href: https://www.pist.tn/jort/1971/1971F/Jo02971.pdf
+      note: "JORT n° 29 des 2-6 juillet 1971, p. 848. Article 5 : « Il est institué au profit de la Caisse Générale de Compensation, une taxe sur les agrumes et fruits visés à l'article 2 ci-dessus exportés de Tunisie. Cette taxe, dont le taux est de deux millimes par kilogramme net, est assise, liquidée et recouvrée […] comme en matière d'impôt de douane. » La loi n'énonce pas de date d'effet ; publiée au Journal officiel des 2-6 juillet 1971, elle est exécutoire un jour franc après sa publication (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956), soit le 4 ou le 8 juillet 1971 selon le jour de parution ; la valeur est portée à la dernière date du numéro. Édition française lue à l'image."
+documentation: |-
+  Taxe perçue par kilogramme net sur les agrumes et les fruits exportés dont la liste relève du
+  Groupement interprofessionnel des agrumes et des fruits (article 2 de la loi n° 71-30, liste
+  définie par décret). Elle est assise, liquidée et recouvrée comme un droit de douane, et son
+  produit revient à la Caisse générale de compensation.

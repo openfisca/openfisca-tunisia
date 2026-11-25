@@ -1,8 +1,15 @@
 description: Prix subventionné du couscous
 values:
-  2011-01-01:
-    value: 0.795
   2010-01-01:
     value: 0.845
+  2011-01-01:
+    value: 0.795
 metadata:
+  short_label: Couscous
+  label_en: Subsidized couscous price
   unit: currency/kg
+  reference:
+    2010-01-01:
+    - title: "Évolution des prix de vente au public des produits subventionnés, 2010-2022 (ministère du Commerce)"
+      href: https://commerce.gov.tn/storage/donwloads/fr2.pdf
+      note: "Tableau annuel, sans texte ni date d'effet dans l'année ; chaque valeur est portée au 1er janvier. Couscous (kg) en dinars - 2010 0,845 ; 2011 à 2022 0,795."
