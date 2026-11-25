@@ -24,14 +24,15 @@ class nb_enf_sup(Variable):
     label = "Nombre d'enfants étudiants du supérieur non boursiers"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period):
+    def formula(foyer_fiscal, period, parameters):
         age = foyer_fiscal.members("age", period=period.this_year.first_month)
         etudiant = foyer_fiscal.members("etudiant", period=period.this_year)
         boursier = foyer_fiscal.members("boursier", period=period.this_year)
+        age_sup = parameters(period.start).impot_revenu.deductions.famille.age_sup
 
-        # Article 40 III: Enfant poursuivant des études supérieures sans bénéfice de bourse
-        # et âgé de moins de 25 ans au 1er janvier de l'année d'imposition
-        est_etudiant_eligible = etudiant * not_(boursier) * (age < 25)
+        # Article 40 § III : enfant poursuivant des études supérieures sans bénéfice de bourse
+        # et âgé de moins de 25 ans (paramètre `age_sup`) au 1er janvier de l'année d'imposition.
+        est_etudiant_eligible = etudiant * not_(boursier) * (age < age_sup)
         return foyer_fiscal.sum(
             est_etudiant_eligible, role=FoyerFiscal.PERSONNE_A_CHARGE
         )
