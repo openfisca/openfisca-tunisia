@@ -1,0 +1,30 @@
+description: Taux intermédiaire de la taxe sur la valeur ajoutée, entre le taux réduit et le taux normal
+values:
+  1995-01-01:
+    value: 0.10
+  2002-01-01:
+    value: 0.10
+  2007-01-01:
+    value: 0.12
+  2018-01-01:
+    value: 0.13
+metadata:
+  unit: /1
+  short_label: Taux intermédiaire
+  reference:
+    1995-01-01:
+    - title: "Loi n° 94-127 du 26 décembre 1994, portant loi de finances pour la gestion 1995, articles 56 à 58 et 100"
+      href: https://www.pist.tn/jort/1994/1994F/Jo10394.pdf
+      note: "JORT n° 103 des 30-31 décembre 1994, pp. 2047 et 2051. Article 56 : « Sont soumis à la taxe sur la valeur ajoutée au taux de 10 %, les produits et activités désignés ci-après » — machines pour le traitement de l'information et services informatiques, récepteurs de télévision, transport de marchandises à l'exclusion des produits agricoles et de pêche. Le taux est posé par la loi de finances elle-même, hors du code, dont l'article 7 n'est pas modifié. Articles 57 et 58 : retraits et modification corrélatifs au tableau « B ». Article 100 : dispositions applicables à compter du 1er janvier 1995. Édition arabe : https://www.pist.tn/jort/1994/1994A/Ja10394.pdf"
+    2002-01-01:
+    - title: "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, articles 82 à 84 et 97"
+      href: https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+      note: "JORT n° 104 du 28 décembre 2001, pp. 4260 et 4261, lu à l'image. Le taux ne change pas : il entre dans le code. Article 82 : un numéro 3 est ajouté à l'article 7 — « au taux de 10 %, les opérations portant sur les produits, activités et services repris au tableau « B bis » figurant en annexe ». Article 83 : contenu du tableau « B bis ». Article 84 : abrogation de dispositions antérieures, énumérées au texte. Article 97 : dispositions applicables à compter du 1er janvier 2002. Édition arabe : https://www.pist.tn/jort/2001/2001A/Ja1042001.pdf"
+    2007-01-01:
+    - title: "Loi n° 2006-80 du 18 décembre 2006, relative à la réduction des taux de l'impôt et à l'allègement de la pression fiscale sur les entreprises, articles 17 et 19"
+      href: https://www.pist.tn/jort/2006/2006F/Jo1012006.pdf
+      note: "JORT n° 101 du 19 décembre 2006, p. 4303. Article 17 : « 1) Est remplacé par le taux de 12 %, le taux de 10 % prévu par le numéro 3 du deuxième paragraphe de l'article 7 du code de la taxe sur la valeur ajoutée. 2) Est remplacé par le taux de 12 % le taux de la taxe sur la valeur ajoutée de 10 % partout où il est prévu par les textes législatifs et réglementaires en vigueur. » Article 19, p. 4303 : sous réserve des articles 5 à 12, la loi s'applique à compter du 1er janvier 2007. Édition arabe : https://www.pist.tn/jort/2006/2006A/Ja1012006.pdf"
+    2018-01-01:
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, articles 43 et 67"
+      href: https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf
+      note: "JORT n° 101 du 19 décembre 2017, pp. 4281 et 4292. Article 43 : « 3) Est remplacé le taux de 12 % de la taxe sur la valeur ajoutée par le taux de 13 %, là où il est prévu aux textes législatifs et règlementaires en vigueur ». Article 67 : application à compter du 1er janvier 2018 (§ 1) ; le relèvement ne s'applique ni aux marchandises importées dont les titres de transport, établis avant l'entrée en vigueur de la loi, justifient l'expédition directe vers la Tunisie (§ 2), ni aux montants payés jusqu'au 31 décembre 2018 au titre des marchés publics conclus avant le 1er janvier 2018 (§ 3). Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf"

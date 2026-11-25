@@ -1,0 +1,11 @@
+description: "Prix de vente au public des farines de blé tendre"
+metadata:
+  short_label: "Farines"
+  order:
+  - farine_ps_quintal
+  - farine_ps_vrac
+  - farine_ps7_vrac
+  - farine_ps7_paquet_1kg
+documentation: |-
+  Un paramètre par farine, par conditionnement et par unité de prix.
+  Les prix des décrets n° 75-352 et 79-413 sont « au quintal net, nu, rendu au chef lieu de la délégation » : ce ne sont pas des prix au public, ils ne sont pas versés ici.

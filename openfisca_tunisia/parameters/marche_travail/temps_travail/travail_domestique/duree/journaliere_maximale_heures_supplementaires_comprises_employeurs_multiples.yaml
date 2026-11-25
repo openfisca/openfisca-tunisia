@@ -1,0 +1,12 @@
+description: "Durée journalière maximale du travail effectif domestique chez des employeurs multiples, heures supplémentaires comprises"
+values:
+  2022-01-30:
+    value: 10
+metadata:
+  unit: heure
+  short_label: "Durée journalière maximale, employeurs multiples, heures supplémentaires comprises"
+  reference:
+    2022-01-30:
+    - title: "Loi n° 2021-37 du 16 juillet 2021, relative à la réglementation du travail domestique, article 19"
+      href: https://www.pist.tn/jort/2021/2021F/Jo0682021.pdf
+      note: "JORT n° 68 du 30 juillet 2021, p. 2008. Article 19 : « Aucun employeur ne peut faire travailler une travailleuse ou un travailleur domestique pendant une durée de travail effectif excédant huit (8) heures par jour, sans que la durée de travail effectif, y compris les heures supplémentaires, dépasse dix (10) heures par jour. La travailleuse ou le travailleur domestique bénéficie durant la durée du travail d’une pause déjeuner d’une heure pendant laquelle ils peuvent quitter le lieu du travail. » Date d'effet : article 29, « Les dispositions de la présente loi entrent en vigueur dans un délai de six mois à compter de sa publication au Journal officiel de la République tunisienne » (p. 2010) ; le JORT n° 68 est daté du 30 juillet 2021 et déposé au siège du gouvernorat de Tunis le même jour ; six mois à compter du 30 juillet 2021 : 30 janvier 2022, date retenue (le 31 janvier 2022 si le jour de la publication n'est pas compté). Édition française lue sur la couche texte."

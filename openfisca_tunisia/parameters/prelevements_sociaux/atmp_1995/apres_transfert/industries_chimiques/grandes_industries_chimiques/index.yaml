@@ -1,0 +1,14 @@
+description: "Grandes industries chimiques (point 15-1)"
+metadata:
+  short_label: "Grandes industries chimiques"
+  order:
+  - chimiques_minerales
+  - produits_mineraux_divers
+  - engrais_azote
+  - synthese_organique
+  - explosifs_mises_a_feu_artifices
+  - produits_pharmaceutiques
+  - peintures_vernis_pigments
+  - insecticides_anticryptogamiques
+  - raffineries_petrole
+  - derives_petrole_charbon_caoutchouc_plastique

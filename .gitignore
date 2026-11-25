@@ -12,3 +12,6 @@ dist/
 .settings/
 .spyproject
 tags
+
+# Artefacts locaux de harnais d'agents (pi)
+.pi/

@@ -1,0 +1,17 @@
+description: "Taux de la taxe sur les immeubles bâtis, selon le nombre de services dont l'immeuble bénéficie"
+metadata:
+  short_label: "Taux"
+  order:
+  - un_ou_deux_services
+  - trois_ou_quatre_services
+  - plus_de_quatre_services
+  - plus_de_quatre_services_et_autres_services
+documentation: |-
+  Le taux de la taxe, appliqué à l'assiette, est fixé « sur la base du niveau des services » dont
+  l'immeuble bénéficie (code de la fiscalité locale, article 5, paragraphe I). Quatre paliers.
+
+  Les services comptés sont au nombre de six (article 5, paragraphe II) : le nettoiement,
+  l'éclairage public, les chaussées goudronnées, le dallage des trottoirs, les réseaux
+  d'évacuation des eaux usées, les réseaux d'évacuation des eaux pluviales.
+
+  Le texte n'énonce pas de taux pour un immeuble qui ne bénéficie d'aucun de ces services.

@@ -1,0 +1,14 @@
+description: Droit de consommation sur les vins classés (position Ex 22-04)
+metadata:
+  short_label: Vins
+  order:
+  - vrac_livre_aux_embouteilleurs
+  - mousseux
+  - liqueur_mistelles_mouts
+  - autres_vins_par_litre
+  - autres_vins_par_bouteille
+documentation: |-
+  Vins classés, position Ex 22-04 du tarif des droits de douane. Article 4 du décret n° 97-1368 : pour
+  le vin en bouteilles de plus d'un litre, le droit se liquide par 10 centilitres ou fraction de 10
+  centilitres, au dixième du tarif applicable au litre. Article 5 : les tarifs sont doublés pour les
+  vins non classés. Articles 4 et 5 lus dans l'édition arabe, p. 1363.

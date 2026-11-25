@@ -1,0 +1,23 @@
+description: "Durée journalière maximale du travail effectif à laquelle l'article 79 du code subordonne la limitation hebdomadaire"
+values:
+  1966-05-01:
+    value: 9
+  1996-07-31:
+    value: null
+metadata:
+  unit: heure
+  short_label: "Durée journalière maximale"
+  reference:
+    1966-05-01:
+    - title: "Code du travail promulgué par la loi n° 66-27 du 30 avril 1966, article 79"
+      href: https://www.pist.tn/jort/1966/1966F/Jo02166.pdf
+      note: "JORT n° 21 des 10-13 mai 1966, p. 760. Section I « Régime normal » du chapitre VI « Durée du travail ». Article 79 : « Dans toutes les activités non agricoles, la durée du travail effectif des ouvriers et employés ne peut excéder quarante-huit heures par semaine, ou une limitation équivalente établie sur une période de temps autre que la semaine sans toutefois que la durée de cette période puisse être supérieure à une année et à condition que la durée journalière n'excède pas neuf heures. » Date d'effet : « Ce dernier entrera en vigueur le 1er mai 1966 » (loi n° 66-27, article premier, JORT n° 20 des 3-6 mai 1966, p. 716) ; la date, antérieure à la publication du code, est reprise telle quelle. Édition française lue à l'image."
+    1996-07-31:
+    - title: "Loi n° 96-62 du 15 juillet 1996, portant modification de certaines dispositions du code du travail, article premier : article 79 (nouveau) du code"
+      href: https://www.pist.tn/jort/1996/1996F/Jo05996.pdf
+      note: "JORT n° 59 du 23 juillet 1996, p. 1582. Article 79 (nouveau) : « La durée du travail effectif ne peut excéder 48 heures par semaine ou une limitation équivalente établie sur une période de temps autre que la semaine sans que la durée de cette période ne puisse être supérieure à une année. Cette durée peut être réduite sans qu'elle puisse être inférieure à 40 heures par semaine ou une limitation équivalente établie sur une période de temps autre que la semaine et ne dépassant pas une année et ce par les conventions collectives ou par des textes réglementaires, pris après consultation des organisations syndicales des employeurs et des travailleurs. » L'article 79 nouveau ne reprend pas la condition de neuf heures par jour. Qu'une limite journalière de droit commun subsiste ailleurs dans le code n'est pas établi ici ; l'article 83 nouveau plafonne à dix heures la durée journalière dans les prolongations et dérogations qu'il autorise (p. 1583). Date d'effet : la loi n'en fixe pas ; le JORT n° 59 a été déposé au siège du gouvernorat de Tunis le 26 juillet 1996 (mention de la p. 1599) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 31 juillet 1996. Édition française lue sur la couche texte, mise en page contrôlée à l'image."
+documentation: |-
+  En 1966, la phrase de l'article 79 qui fixe la durée hebdomadaire se termine par la condition « que la durée
+  journalière n'excède pas neuf heures ». Le texte ne dit pas si la condition vaut pour la seule limitation établie
+  sur une autre période que la semaine ou pour toutes les semaines. La série est close au 31 juillet 1996, date à
+  laquelle l'article 79 est récrit sans cette condition.

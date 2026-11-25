@@ -228,3 +228,346 @@
   output:
     amen_social_presence_handicap_lourd: true
     amen_social_eligible: false
+
+
+# Bornes des huit seuils de l'article 5 du décret gouvernemental n° 2020-317, en juin 2020.
+# Salaire minimum (48 heures) : 403,104 D par mois. Chaque seuil est éprouvé un dinar en dessous
+# (éligible) et un dinar au-dessus (non éligible).
+# Dans les familles, le handicap lourd est porté par un enfant à charge, seul cas que l'édition
+# arabe vise sans conteste. Les deux cas de la personne seule lourdement handicapée reposent sur
+# la lecture retenue dans la documentation du paramètre (majoration uniforme), que le texte
+# n'établit pas.
+
+
+- name: Amen social, juin 2020, une personne - seuil 2/3 Smig = 268,736 D - revenu 267,736 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 267.736
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, une personne - seuil 2/3 Smig = 268,736 D - revenu 269,736 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 269.736
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, deux personnes - seuil 1 Smig = 403,104 D - revenu 402,104 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      parent2:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      amen_social_revenu: 402.104
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, deux personnes - seuil 1 Smig = 403,104 D - revenu 404,104 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      parent2:
+        date_naissance: 1980-01-01
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      amen_social_revenu: 404.104
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, trois personnes - seuil 1,5 Smig = 604,656 D - revenu 603,656 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+      amen_social_revenu: 603.656
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, trois personnes - seuil 1,5 Smig = 604,656 D - revenu 605,656 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+      amen_social_revenu: 605.656
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, cinq personnes - seuil 2 Smig = 806,208 D - revenu 805,208 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      parent2:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - enfant1
+        - enfant2
+        - enfant3
+      amen_social_revenu: 805.208
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, cinq personnes - seuil 2 Smig = 806,208 D - revenu 807,208 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      parent2:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - enfant1
+        - enfant2
+        - enfant3
+      amen_social_revenu: 807.208
+  output:
+    amen_social_presence_handicap_lourd: false
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, une personne lourdement handicapée - seuil 2/3 + 1/2 = 7/6 Smig = 470,288 D - revenu 469,288 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 469.288
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, une personne lourdement handicapée - seuil 2/3 + 1/2 = 7/6 Smig = 470,288 D - revenu 471,288 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      amen_social_revenu: 471.288
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, deux personnes dont un enfant lourdement handicapé - seuil 1 + 1/2 Smig = 604,656 D - revenu 603,656 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+      amen_social_revenu: 603.656
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, deux personnes dont un enfant lourdement handicapé - seuil 1 + 1/2 Smig = 604,656 D - revenu 605,656 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+      amen_social_revenu: 605.656
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, trois personnes dont un enfant lourdement handicapé - seuil 1,5 + 1/2 Smig = 806,208 D - revenu 805,208 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+      amen_social_revenu: 805.208
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, trois personnes dont un enfant lourdement handicapé - seuil 1,5 + 1/2 Smig = 806,208 D - revenu 807,208 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+      amen_social_revenu: 807.208
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: false
+
+
+- name: Amen social, juin 2020, cinq personnes dont un enfant lourdement handicapé - seuil 2 + 1/2 Smig = 1007,760 D - revenu 1006,760 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      parent2:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - enfant1
+        - enfant2
+        - enfant3
+      amen_social_revenu: 1006.760
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: true
+
+
+- name: Amen social, juin 2020, cinq personnes dont un enfant lourdement handicapé - seuil 2 + 1/2 Smig = 1007,760 D - revenu 1008,760 D
+  period: 2020-06
+  input:
+    individus:
+      parent1:
+        date_naissance: 1980-01-01
+      parent2:
+        date_naissance: 1980-01-01
+      enfant1:
+        date_naissance: 2012-01-01
+      enfant2:
+        date_naissance: 2012-01-01
+      enfant3:
+        date_naissance: 2012-01-01
+        handicap:
+          2020: 3
+    menage:
+      personne_de_reference: parent1
+      conjoint: parent2
+      enfants:
+        - enfant1
+        - enfant2
+        - enfant3
+      amen_social_revenu: 1008.760
+  output:
+    amen_social_presence_handicap_lourd: true
+    amen_social_eligible: false

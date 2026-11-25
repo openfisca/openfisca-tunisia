@@ -4,6 +4,7 @@ from openfisca_core.model_api import (
     Variable,
     max_,
     min_,
+    not_,
     set_input_dispatch_by_period,
     where,
 )
@@ -218,13 +219,12 @@ class nombre_orphelins_pere_et_mere_eligibles(Variable):
     set_input = set_input_dispatch_by_period
 
 
-def _rsna_taux_orphelins(individu, period, parameters):
-    """Somme des taux d'orphelins avant tout plafonnement (article 34).
+def _taux_orphelins(individu, period, survivants):
+    """Somme des taux d'orphelins avant tout plafonnement.
 
-    De 1974 à 1981, l'orphelin de père et de mère a un taux propre ; depuis le décret
-    n° 81-188, les deux taux sont égaux et la distinction ne change plus rien.
+    Commune aux régimes dont l'orphelin de père et de mère a un taux propre : le nœud
+    `survivants` du régime porte `taux_orphelin` et `taux_orphelin_pere_et_mere`.
     """
-    survivants = parameters(period).retraite.rsna.survivants
     nb_orphelins = individu("nombre_orphelins_eligibles", period)
     nb_pere_et_mere = min_(
         individu("nombre_orphelins_pere_et_mere_eligibles", period), nb_orphelins
@@ -235,6 +235,40 @@ def _rsna_taux_orphelins(individu, period, parameters):
     )
 
 
+def _rsna_taux_orphelins(individu, period, parameters):
+    """Somme des taux d'orphelins du RSNA avant tout plafonnement (article 34).
+
+    De 1974 à 1981, l'orphelin de père et de mère a un taux propre ; depuis le décret
+    n° 81-188, les deux taux sont égaux et la distinction ne change plus rien.
+    """
+    return _taux_orphelins(
+        individu, period, parameters(period).retraite.rsna.survivants
+    )
+
+
+def _rsna_taux_conjoint_majore(individu, period, parameters):
+    """Taux du conjoint survivant après le décret n° 81-188 (article 31, alinéa 2).
+
+    « Ce taux est majoré à concurrence de 75 % de la pension de vieillesse ou d'invalidité
+    dont bénéficiait ou aurait dû bénéficier le défunt au moment de son décès, à condition
+    qu'il n'y ait pas d'enfant bénéficiaire, ou que le total de la pension de veuve et
+    d'orphelin ne dépasse pas le montant de la pension de l'assuré. En cas de dépassement la
+    pension d'orphelin est réduite d'autant. »
+
+    Lecture retenue : « à concurrence de » fixe un plafond. Le taux de la moitié est relevé
+    jusqu'à 75 % tant que la pension du conjoint et celles des orphelins, additionnées, ne
+    dépassent pas la pension de l'assuré. Sans orphelin, 75 % ; avec un orphelin à 30 %,
+    70 % ; dès que la moitié et les orphelins atteignent la pension de l'assuré, la moitié
+    sans majoration.
+    """
+    survivants = parameters(period).retraite.rsna.survivants
+    taux_orphelins = _rsna_taux_orphelins(individu, period, parameters)
+    return max_(
+        survivants.taux_conjoint,
+        min_(survivants.taux_conjoint_majore, 1 - taux_orphelins),
+    )
+
+
 class rsna_taux_reversion(Variable):
     value_type = float
     entity = Individu
@@ -242,34 +276,47 @@ class rsna_taux_reversion(Variable):
     definition_period = MONTH
 
     def formula_1974_01_01(individu, period, parameters):
-        """Article 31 du décret n° 74-499 : la moitié de la pension de l'assuré."""
+        """Articles 31 et 32 du décret n° 74-499, en vigueur le 1er janvier 1974 (article 64).
+
+        Le conjoint survivant reçoit la moitié de la pension de l'assuré (article 31). « Le
+        remariage de la veuve entraîne suppression de la pension de réversion à partir du
+        1er jour du trimestre civil qui suit cet événement » (article 32, JORT n° 30 de 1974,
+        p. 917) : la suppression vaut quel que soit l'âge, et la dissolution du nouveau
+        mariage ne rétablit pas la pension.
+        """
         survivants = parameters(period).retraite.rsna.survivants
         eligible = individu("conjoint_survivant_eligible", period)
-        return survivants.taux_conjoint * eligible
+        remarie = individu("conjoint_survivant_remarie", period)
+        return survivants.taux_conjoint * eligible * not_(remarie)
 
     def formula_1981_02_19(individu, period, parameters):
         """Article 31, alinéa 2, ajouté par le décret n° 81-188, article 2.
 
-        « Ce taux est majoré à concurrence de 75 % de la pension de vieillesse ou
-        d'invalidité dont bénéficiait ou aurait dû bénéficier le défunt au moment de son
-        décès, à condition qu'il n'y ait pas d'enfant bénéficiaire, ou que le total de la
-        pension de veuve et d'orphelin ne dépasse pas le montant de la pension de l'assuré.
-        En cas de dépassement la pension d'orphelin est réduite d'autant. »
+        Le taux de la moitié est relevé jusqu'à 75 % sous la condition du total des pensions
+        (voir `_rsna_taux_conjoint_majore`). La majoration suppose un conjoint admissible :
+        le remariage, qui supprime toujours la pension (article 32 de 1974), la coupe aussi.
+        """
+        eligible = individu("conjoint_survivant_eligible", period)
+        remarie = individu("conjoint_survivant_remarie", period)
+        taux = _rsna_taux_conjoint_majore(individu, period, parameters)
+        return taux * eligible * not_(remarie)
 
-        Lecture retenue : « à concurrence de » fixe un plafond. Le taux de la moitié est
-        relevé jusqu'à 75 % tant que la pension du conjoint et celles des orphelins,
-        additionnées, ne dépassent pas la pension de l'assuré. Sans orphelin, 75 % ; avec
-        un orphelin à 30 %, 70 % ; dès que la moitié et les orphelins atteignent la
-        pension de l'assuré, la moitié sans majoration.
+    def formula_1990_09_23(individu, period, parameters):
+        """Article 32 nouveau, décret n° 90-1455, article premier, exécutoire le 23 septembre 1990.
+
+        Le paiement de la pension est suspendu si le conjoint survivant se remarie avant
+        55 ans ; il est rétabli au décès du nouveau conjoint ou à la dissolution du mariage.
+        Un remariage à 55 ans ou plus laisse la pension servie. Le taux de l'article 31 et
+        sa majoration ne changent pas.
         """
         survivants = parameters(period).retraite.rsna.survivants
         eligible = individu("conjoint_survivant_eligible", period)
-        taux_orphelins = _rsna_taux_orphelins(individu, period, parameters)
-        taux = max_(
-            survivants.taux_conjoint,
-            min_(survivants.taux_conjoint_majore, 1 - taux_orphelins),
+        suspendu = individu("conjoint_survivant_remarie", period) * (
+            individu("age_remariage_conjoint_survivant", period)
+            < survivants.age_remariage_suspensif
         )
-        return taux * eligible
+        taux = _rsna_taux_conjoint_majore(individu, period, parameters)
+        return taux * eligible * not_(suspendu)
 
 
 class rsna_pension_de_reversion(Variable):
@@ -301,6 +348,126 @@ class rsna_pension_orphelins_totale(Variable):
         pension_reference = individu("rsna_pension_reference_deces", period)
         taux_conjoint = individu("rsna_taux_reversion", period)
         taux_orphelins = _rsna_taux_orphelins(individu, period, parameters)
+        decede = individu("age_deces", period) >= 0
+        taux = min_(taux_orphelins, max_(1 - taux_conjoint, 0))
+        return pension_reference * taux * decede
+
+
+# Régime des salariés agricoles (loi n° 81-6, titre II, section III, articles 60 à 69).
+
+
+class rsa_pension_reference_deces(Variable):
+    value_type = float
+    entity = Individu
+    default_value = 0.0
+    definition_period = MONTH
+    label = "Pension de vieillesse ou d'invalidité dont le défunt bénéficiait ou aurait dû bénéficier (RSA)"
+    set_input = set_input_dispatch_by_period
+
+
+class conjoint_survivant_remarie(Variable):
+    value_type = bool
+    entity = Individu
+    default_value = False
+    definition_period = MONTH
+    label = "Le conjoint survivant s'est remarié après le décès, et ce mariage n'est pas dissous"
+    set_input = set_input_dispatch_by_period
+    documentation = """
+    Lu par deux régimes, selon le même schéma : le remariage supprime d'abord la pension, puis
+    ne la suspend plus que s'il intervient avant un âge donné.
+
+    Régime des salariés agricoles (loi n° 81-6, article 63). Jusqu'au 3 août 1996, le
+    remariage de la veuve supprime sa pension : la dissolution du nouveau mariage ne la
+    rétablit pas, et l'entrée reste alors vraie. Depuis le 4 août 1996 (loi n° 96-66), il la
+    suspend seulement, s'il intervient avant l'âge fixé par
+    `retraite.rsa.survivants.age_remariage_suspensif` ; la pension est rétablie au décès du
+    nouveau conjoint ou à la dissolution du mariage.
+
+    Régime des salariés non agricoles (décret n° 74-499, article 32). Du 1er janvier 1974 au
+    22 septembre 1990, le remariage de la veuve supprime sa pension, de la même manière.
+    Depuis le 23 septembre 1990 (décret n° 90-1455), il la suspend seulement, s'il intervient
+    avant l'âge fixé par `retraite.rsna.survivants.age_remariage_suspensif` ; la pension est
+    rétablie au décès du nouveau conjoint ou à la dissolution du mariage.
+
+    Faux par défaut : sans déclaration, le conjoint n'est pas remarié.
+    """
+
+
+class age_remariage_conjoint_survivant(Variable):
+    value_type = int
+    entity = Individu
+    default_value = 0
+    definition_period = MONTH
+    label = "Âge du conjoint survivant à son remariage"
+    set_input = set_input_dispatch_by_period
+
+
+class rsa_taux_reversion(Variable):
+    value_type = float
+    entity = Individu
+    label = "Taux de la pension du conjoint survivant, en part de la pension de l'assuré (RSA)"
+    definition_period = MONTH
+
+    def formula_1981_01_01(individu, period, parameters):
+        """Articles 60 à 63 de la loi n° 81-6, en vigueur le 1er janvier 1981 (article 88).
+
+        La veuve, ou le veuf invalide, reçoit la moitié de la pension du défunt (article
+        62). Le remariage supprime la pension (article 63).
+        """
+        survivants = parameters(period).retraite.rsa.survivants
+        eligible = individu("conjoint_survivant_eligible", period)
+        remarie = individu("conjoint_survivant_remarie", period)
+        return survivants.taux_conjoint * eligible * not_(remarie)
+
+    def formula_1996_08_04(individu, period, parameters):
+        """Article 63 nouveau, loi n° 96-66, exécutoire le 4 août 1996.
+
+        Le remariage ne suspend plus la pension que s'il intervient avant 55 ans ; la
+        pension est rétablie au décès du nouveau conjoint ou à la dissolution du mariage.
+        Le taux de l'article 62 ne change pas.
+        """
+        survivants = parameters(period).retraite.rsa.survivants
+        eligible = individu("conjoint_survivant_eligible", period)
+        suspendu = individu("conjoint_survivant_remarie", period) * (
+            individu("age_remariage_conjoint_survivant", period)
+            < survivants.age_remariage_suspensif
+        )
+        return survivants.taux_conjoint * eligible * not_(suspendu)
+
+
+class rsa_pension_de_reversion(Variable):
+    value_type = float
+    entity = Individu
+    label = "Pension de réversion servie au conjoint survivant (RSA)"
+    definition_period = MONTH
+
+    def formula(individu, period):
+        pension_reference = individu("rsa_pension_reference_deces", period)
+        taux = individu("rsa_taux_reversion", period)
+        decede = individu("age_deces", period) >= 0
+        return pension_reference * taux * decede
+
+
+class rsa_pension_orphelins_totale(Variable):
+    value_type = float
+    entity = Individu
+    label = "Montant total des pensions d'orphelins servies (RSA)"
+    definition_period = MONTH
+
+    def formula_1981_01_01(individu, period, parameters):
+        """Articles 65, 66 et 69 de la loi n° 81-6.
+
+        L'orphelin reçoit le cinquième de la pension du défunt, les trois dixièmes s'il est
+        orphelin de père et de mère (article 65). Le total des pensions du conjoint et des
+        orphelins ne dépasse pas la pension du défunt — la « pension de référence du mari »
+        en 1981, la pension dont bénéficiait ou aurait pu bénéficier le défunt depuis la loi
+        n° 96-66 (article 69) : les pensions d'orphelins sont réduites.
+        """
+        pension_reference = individu("rsa_pension_reference_deces", period)
+        taux_conjoint = individu("rsa_taux_reversion", period)
+        taux_orphelins = _taux_orphelins(
+            individu, period, parameters(period).retraite.rsa.survivants
+        )
         decede = individu("age_deces", period) >= 0
         taux = min_(taux_orphelins, max_(1 - taux_conjoint, 0))
         return pension_reference * taux * decede

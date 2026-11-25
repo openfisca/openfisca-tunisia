@@ -2,7 +2,7 @@ description: Âge jusqu'auquel court la période bonifiable des cadres actifs et
 values:
   1985-09-12:
     value: 60
-  2019-05-02:
+  2019-05-05:
     value: 62
 metadata:
   unit: year
@@ -11,10 +11,10 @@ metadata:
     - title: "Loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 32"
       href: "https://www.pist.tn/jort/1985/1985F/Jo02085.pdf"
       note: "JORT n° 20 du 12 mars 1985, p. 361. Les paragraphes 2 et 3 de l'article 32 accordent aux cadres actifs et aux agents des fonctions astreignantes une bonification égale à la période restant à courir jusqu'à soixante ans. Entrée en vigueur : l'article 75 (p. 365) la fixe « à l'expiration d'un délai de six (6) mois à compter de la date de sa publication au Journal officiel », publication faite le 12 mars 1985, soit le 12 septembre 1985 — date déduite de la clause, non énoncée telle quelle."
-    2019-05-02:
+    2019-05-05:
     - title: "Loi n° 2019-37 du 30 avril 2019, modifiant et complétant la loi n° 85-12 du 5 mars 1985, relative au régime des pensions civiles et militaires de retraite et des survivants dans le secteur public, article 2"
       href: "https://www.pist.tn/jort/2019/2019F/Jo0352019.pdf"
-      note: "JORT n° 35 du 30 avril 2019, p. 1313. L'article 2 remplace « l'âge de soixante ans » par « l'âge de soixante-deux ans » aux paragraphes 2 et 3 de l'article 32. La loi ne porte pas de clause d'entrée en vigueur propre : la date est déduite de la règle générale, un jour franc après la publication du 30 avril 2019, non énoncée. Elle est corroborée par l'article 4 de la même loi, qui fait courir la hausse des cotisations « à partir du premier jour du mois qui suit la date d'entrée en vigueur » et que le modèle date au 1er juin 2019 : l'entrée en vigueur tombe donc en mai, et non le jour même de la publication."
+      note: "JORT n° 35 du 30 avril 2019, p. 1313. L'article 2 remplace « l'âge de soixante ans » par « l'âge de soixante-deux ans » aux paragraphes 2 et 3 de l'article 32. La loi ne porte pas de clause d'entrée en vigueur propre, et son article 5, qui échelonne les âges de départ, ne vise pas l'article 32. Date d'effet : le fascicule a été déposé au siège du gouvernorat de Tunis le 30 avril 2019 (mention de la dernière page) ; la loi est exécutoire cinq jours après ce dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 5 mai 2019."
 documentation: |-
   Ce paramètre porte le terme de la période bonifiable, non la bonification elle-même. Pour
   les cadres actifs, la période restant à courir jusqu'à cet âge est plafonnée par le barème

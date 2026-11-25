@@ -1,10 +1,12 @@
-description: Taxe sur la Valeur Ajoutée (TVA)
+description: Taxe sur la valeur ajoutée (TVA)
 metadata:
   short_label: TVA
   order:
   - taux_nul
   - taux_reduit
+  - taux_intermediaire
   - taux_normal
-documentation: 'Paramètres de la TVA en Tunisie.\nLes produits sont organisés par
-  taux applicable:\n- 0%: Produits de première nécessité\n- 7%: Taux réduit\n- 19%:
-  Taux normal'
+  - taux_majore
+documentation: |-
+  Taux de la taxe sur la valeur ajoutée, instituée par le code promulgué par la loi n° 88-61 du 2 juin 1988 et applicable à compter du 1er juillet 1988, et classement des produits par taux.
+  La grille compte trois taux en 1988 (réduit, normal, majoré), un quatrième de 1995 à 2006 (intermédiaire), puis trois à nouveau depuis la suppression du taux majoré au 1er janvier 2007 (réduit, intermédiaire, normal).

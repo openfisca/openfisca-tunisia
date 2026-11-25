@@ -1,0 +1,21 @@
+description: "Congé annuel payé"
+metadata:
+  short_label: "Congé annuel"
+  order:
+  - jours_par_mois
+  - plafond_jours_ouvrables
+  - plafond_jours
+  - anciennete
+  - mois_travail_effectif
+  - indemnite_diviseur
+documentation: |-
+  Congé annuel payé des activités non agricoles (articles 112 à 122 du code). Le droit s'ouvre après un mois de
+  travail effectif chez le même employeur dans l'année de référence ; il s'acquiert par mois de travail, dans la
+  limite d'un plafond, selon l'âge du salarié.
+
+  L'âge s'apprécie au 31 mai jusqu'au 30 juillet 1996, au 31 décembre depuis le 31 juillet 1996 (article 113
+  nouveau). L'année de référence part du 1er juin jusqu'au 30 juillet 1996 (1er avril dans les professions
+  affiliées à la Caisse nationale de sécurité sociale pour le service des indemnités de congé), du 1er janvier
+  depuis le 31 juillet 1996 (article 116).
+
+  Le congé des activités agricoles (articles 123 et 124) n'est pas versé ici.

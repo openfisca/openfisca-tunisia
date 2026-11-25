@@ -1,0 +1,105 @@
+# Allocation pour les dépenses alimentaires des personnes allergiques au gluten des familles
+# pauvres et à revenu limité inscrites au programme Amen social.
+#
+# | Depuis         | Texte                                         | Montant mensuel par personne |
+# |----------------|-----------------------------------------------|-----------------------------:|
+# | 1er janv. 2025 | loi de finances pour 2025, art. 26 et 84      |                         30 D |
+# | 1er janv. 2026 | loi de finances pour 2026, art. 35 et 110     |                        130 D |
+#
+# Famille pauvre ou à revenu limité : carte AMG1 ou AMG2.
+
+- name: Décembre 2024, avant la loi de finances pour 2025, aucune allocation
+  period: 2024-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        allergie_gluten: true
+    menage:
+      personne_de_reference: parent1
+      amg_1: true
+  output:
+    allocation_allergie_gluten: 0
+
+- name: Janvier 2025, famille pauvre (AMG1), une personne allergique, 30 D
+  period: 2025-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        allergie_gluten: true
+    menage:
+      personne_de_reference: parent1
+      amg_1: true
+  output:
+    allocation_allergie_gluten: 30
+
+- name: Décembre 2025, famille à revenu limité (AMG2), une personne allergique, 30 D
+  period: 2025-12
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        allergie_gluten: true
+    menage:
+      personne_de_reference: parent1
+      amg_2: true
+  output:
+    allocation_allergie_gluten: 30
+
+- name: Janvier 2026, famille pauvre (AMG1), une personne allergique, 130 D
+  period: 2026-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        allergie_gluten: true
+    menage:
+      personne_de_reference: parent1
+      amg_1: true
+  output:
+    allocation_allergie_gluten: 130
+
+- name: Janvier 2026, deux membres allergiques sur trois, 130 D chacun
+  period: 2026-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        allergie_gluten: false
+      enfant1:
+        allergie_gluten: true
+      enfant2:
+        allergie_gluten: true
+    menage:
+      personne_de_reference: parent1
+      enfants:
+        - enfant1
+        - enfant2
+      amg_2: true
+  output:
+    allocation_allergie_gluten: [0, 130, 130]
+
+- name: Janvier 2026, personne allergique hors Amen social (ni AMG1 ni AMG2), aucune allocation
+  period: 2026-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1:
+        allergie_gluten: true
+    menage:
+      personne_de_reference: parent1
+  output:
+    allocation_allergie_gluten: 0
+
+- name: Janvier 2025, famille pauvre (AMG1) sans personne allergique, aucune allocation
+  period: 2025-01
+  absolute_error_margin: 0.001
+  input:
+    individus:
+      parent1: {}
+    menage:
+      personne_de_reference: parent1
+      amg_1: true
+  output:
+    allocation_allergie_gluten: 0

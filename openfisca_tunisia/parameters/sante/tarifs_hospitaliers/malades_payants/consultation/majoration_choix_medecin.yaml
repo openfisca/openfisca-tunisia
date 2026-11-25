@@ -1,0 +1,21 @@
+description: "Majoration du tarif de la consultation donnée dans une séance où le malade choisit son médecin, malades payants"
+values:
+  1993-02-07:
+    value: 0.5
+  1997-01-04:
+    value: 0.5
+metadata:
+  unit: /1
+  short_label: "Majoration, médecin choisi"
+  notes:
+    1993-02-07:
+    - note: "Série incomplète : états antérieurs à 1993 non versés."
+  reference:
+    1993-02-07:
+    - title: "Arrêté des ministres des finances et de la santé publique du 25 janvier 1993, fixant les tarifs des consultations et des hospitalisations dans les établissements sanitaires publics relevant du ministère de la santé publique, article 3"
+      href: https://www.pist.tn/jort/1993/1993F/Jo01093.pdf
+      note: "JORT n° 10 du 5 février 1993, p. 201. Article 3 : l'établissement peut organiser des séances de consultations pour chaque spécialiste, où le malade qui le demande est examiné par le médecin de son choix ; « le tarif de la consultation est majoré de cinquante pour cent (50%) ». Date d'effet : l'arrêté n'en fixe pas ; publié au Journal officiel du vendredi 5 février 1993, il devient exécutoire un jour franc après sa publication, soit le 7 février 1993 (article 3 nouveau du décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956). L'arrêté abroge celui du 13 décembre 1990 (article 8). Édition française lue à l'image, le fascicule n'ayant pas de couche texte."
+    1997-01-04:
+    - title: "Arrêté des ministres des finances et de la santé publique du 19 décembre 1996, fixant les tarifs de prise en charge des malades payants dans les structures sanitaires publiques relevant du ministère de la santé publique, article 3"
+      href: https://www.pist.tn/jort/1996/1996F/Jo10496.pdf
+      note: "JORT n° 104 du 27 décembre 1996, p. 2553. Article 3 : même règle, majoration de cinquante pour cent (50 %). Date d'effet : l'arrêté n'en fixe pas ; le JORT n° 104 a été déposé au siège du gouvernorat de Tunis le 30 décembre 1996 (mention de la dernière page du fascicule, lue à l'image) ; exécutoire cinq jours après le dépôt, jour du dépôt non compté (loi n° 93-64, article 2), soit le 4 janvier 1997. Édition française lue sur la couche texte."

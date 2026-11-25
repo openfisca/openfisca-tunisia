@@ -1,0 +1,97 @@
+description: "Assurances - salaires mensuels de base des grilles antérieures au 1er juin 1993"
+metadata:
+  short_label: "Salaire de base avant le 1er juin 1993"
+  order:
+  - echelle_1
+  - echelle_2
+  - echelle_3
+  - echelle_exceptionnelle
+  - echelle_4
+  - echelle_5
+  - echelle_6
+  - echelle_7
+  - echelle_8
+  - echelle_9
+  - echelle_10
+  - echelle_11
+  - echelle_12
+  - echelle_13
+  - echelle_14
+  - echelle_15
+  - echelle_16
+  - echelle_17
+  - echelle_18
+  - echelle_19
+  - echelle_20
+  - echelle_21
+documentation: |-
+  Salaires mensuels de base des grilles annexées à la convention collective nationale des assurances
+  de 1975, à la convention révisée de 1983 et aux avenants n° 1 et n° 2, par échelle et par échelon.
+  Ce nœud est à part de `salaire_base`, qui commence le 1er juin 1993 : les deux ne mesurent pas la
+  même grandeur.
+
+  Ce qui les sépare : l'indemnité complémentaire provisoire des décrets n° 81-437 du 7 avril 1981 et
+  n° 82-501 du 16 mars 1982. Les grilles du 1er juin 1993 et suivantes la comprennent (avenant
+  n° 3). Aucune des grilles versées ici ne dit la comprendre : celles de 1989, 1990, 1991 et 1992
+  portent une note de bas de grille qui l'exclut ; celle de 1983, postérieure à ces décrets, n'en
+  porte aucune mention ; celle de 1975 leur est antérieure. Ces grilles ne se prolongent pas dans
+  `salaire_base` et ne se comparent pas à lui sans cette réserve ; chaque case porte une valeur vide
+  au 1er juin 1993, pour que la valeur de 1992 ne se lise pas au-delà.
+
+  Grilles versées, chacune à la date d'effet que la grille ou son texte énonce :
+  - 1er janvier 1975 : convention du 24 juillet 1975 (article 70), JORT n° 7 du 30 janvier 1976,
+    édition française, p. 279 — 21 échelles, 12 échelons, 252 cases, toutes lues ;
+  - 1er janvier 1983 : convention révisée, JORT n° 74 des 15 et 18 novembre 1983, édition française,
+    p. 2947 — 22 lignes, 264 cases, dont 263 lues et une illisible (échelle 6, échelon 5) ;
+  - 1er janvier 1989 : avenant n° 1, JORT n° 21 du 24 mars 1989, édition française, p. 570 —
+    264 cases, dont 216 lues et 48 illisibles ;
+  - 1er juin 1990 : avenant n° 2, grille n° 2, JORT n° 74 du 16 novembre 1990, édition arabe,
+    p. 1730 — 264 cases, toutes lues ;
+  - 1er juin 1991 et 1er juin 1992 : avenant n° 2, grilles n° 3 et n° 4, même fascicule, édition
+    française, p. 1721 et 1722 — 264 cases chacune, toutes lues.
+
+  Soit 1 572 cases datées, dont 1 523 valeurs et 49 cases illisibles. Une case illisible porte une
+  valeur vide à sa date, et la note de la date en dit la raison : rien n'est déduit ni reporté. Les
+  48 cases illisibles de 1989 tiennent à la télécopie dégradée que reproduisent les deux éditions :
+  toute l'échelle 1 ; échelle 2, échelons 1 à 10 ; échelle 3, échelons 1 à 7 et 9 ; ligne
+  « Exceptionnel », échelons 1 à 5 ; échelle 4, échelons 1 à 4 et 12 ; échelle 5, échelons 1 et 2 ;
+  échelle 6, échelon 5 ; échelle 7, échelons 4 et 10 ; échelle 10, échelons 11 et 12 ; échelle 12,
+  échelon 2. Vingt et une cases n'ont qu'une lecture, sans recoupement (8 de 1983, 13 de 1989) : la
+  note de leur date le dit.
+
+  Structure : 21 échelles, numérotées de 1 à 21, et 12 échelons d'ancienneté. La grille de 1975
+  numérote ses échelles en chiffres romains, de I à XXI, et les regroupe en 7 catégories, de G
+  (échelles I à III) à A (échelles XIX à XXI), trois échelles par catégorie ; `echelle_1` à
+  `echelle_21` y sont les échelles I à XXI. À compter du 1er janvier 1983 les grilles portent en
+  outre, entre l'échelle 3 et l'échelle 4, une ligne intitulée « Exceptionnel »,
+  `echelle_exceptionnelle`, qui n'a donc pas de valeur en 1975 ; les échelles sont alors regroupées
+  en 5 catégories, de V à I. Identifiants : les mêmes que dans `salaire_base`, `echelon_1` à
+  `echelon_12`.
+
+  Unité : dinars courants par mois, pour une durée du travail de 40 heures par semaine, soit 2 080
+  heures par an.
+
+  Ces grilles ne forment pas une suite continue. Une valeur se lit de sa date d'effet jusqu'à la
+  veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune grille
+  n'est lue entre celle du 1er janvier 1975 et celle du 1er janvier 1983, et un protocole d'accord
+  du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1, n'est pas lu.
+
+  Les deux grilles du 1er juin 1990. L'avenant n° 2 publie à cette date deux grilles : la
+  n° 1 « entre en vigueur à compter du 1er juin 1990 et s'applique aux entreprises ayant appliqué
+  l'avenant n° 1 signé le 9 mars 1989 » ; la n° 2 s'applique aux entreprises ayant servi à leur
+  personnel les augmentations prévues par les circulaires du Premier ministre n° 31 et n° 84 des
+  1er avril et 9 octobre 1988 et par le décret n° 88-1889 du 10 novembre 1988. Un paramètre n'a
+  qu'une valeur par date : la valeur portée ici au 1er juin 1990 est celle de la grille n° 2, que
+  prolongent les grilles de 1991 et de 1992 — de l'une à l'autre, toutes les cases d'une catégorie
+  prennent le même montant en dinars —, et la grille n° 1 est versée dans
+  `salaire_base_avant_1993_grille_1_de_1990`. Les grilles n° 3 (1er juin 1991) et n° 4 (1er juin
+  1992) s'appliquent à toutes les entreprises. La grille du 1er janvier 1989, elle, est celle de
+  l'avenant n° 1, dont l'arrêté d'agrément (article 3) écarte les employeurs et travailleurs visés
+  par ces circulaires et ce décret : entre le 1er janvier 1989 et le 1er juin 1990, la série passe
+  donc des entreprises qui appliquent l'avenant n° 1 à celles qui ne l'appliquent pas.
+
+  Deux cases appellent une réserve, dite dans la note de leur date. Échelle 16, échelon 12, aux
+  grilles de 1990, 1991 et 1992 : les deux éditions du journal divergent ; la valeur de l'édition
+  française, manuscrite par-dessus l'imprimé, est retenue, et l'édition arabe imprime 14,175 de
+  moins. Échelle 4, échelon 9, en 1975 : la valeur est celle du rectificatif paru au JORT n° 80 du
+  21 décembre 1976, p. 3083 (103,680 au lieu de 109,680).

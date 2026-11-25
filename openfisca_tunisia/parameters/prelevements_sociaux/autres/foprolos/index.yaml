@@ -1,0 +1,8 @@
+description: Contribution au fonds de promotion du logement pour les salariés (FOPROLOS)
+metadata:
+  order:
+  - taux
+  short_label: FOPROLOS
+  label_en: Contribution to the housing promotion fund for employees
+documentation: |-
+  Contribution due par tout employeur, public ou privé, à l'exception des exploitants agricoles privés (loi n° 77-54 du 3 août 1977, article premier).

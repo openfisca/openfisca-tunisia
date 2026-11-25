@@ -1,0 +1,8 @@
+description: "Prix de vente au public du couscous rapide"
+metadata:
+  short_label: "Couscous"
+  order:
+  - couscous_vrac_1975_1979
+  - couscous_ps10_vrac
+documentation: |-
+  Un paramètre par variété : à compter du 28 décembre 1983, les prix sont fixés pour la variété fabriquée en semoule PS-10.

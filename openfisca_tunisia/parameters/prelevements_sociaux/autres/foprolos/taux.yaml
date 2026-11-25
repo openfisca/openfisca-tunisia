@@ -1,0 +1,18 @@
+description: Taux de la contribution au fonds de promotion du logement pour les salariés (FOPROLOS)
+values:
+  1977-08-01:
+    value: 0.02
+  1989-01-01:
+    value: 0.01
+metadata:
+  unit: /1
+  short_label: Taux FOPROLOS
+  reference:
+    1977-08-01:
+    - title: "Loi n° 77-54 du 3 août 1977, portant institution d'un fonds de promotion du logement pour les salariés, articles premier, 2 et 10"
+      href: https://www.pist.tn/jort/1977/1977F/Jo05377.pdf
+      note: "JORT n° 53 d'août 1977, pp. 2098-2099, lu à l'image. Article premier : contribution due par tout employeur public ou privé, à l'exception des exploitants agricoles privés. Article 2 : 2 % des salaires soumis à cotisation à la CNRPS, à la CNSS ou à la CRPSPEGT. Article 10 : contribution exigible à compter du 1er août 1977, date antérieure à la publication. Édition arabe : https://www.pist.tn/jort/1977/1977A/Ja05377.pdf"
+    1989-01-01:
+    - title: "Loi n° 88-145 du 31 décembre 1988, portant loi de finances pour la gestion 1989, articles 35 à 38"
+      href: https://www.pist.tn/jort/1988/1988F/Jo08788.pdf
+      note: "JORT n° 87 de 1988, p. 1797 de l'édition française et p. 1774 de l'édition arabe, lues à l'image. Article 35 : taux ramené à 1 %, assis sur les salaires et rétributions, à compter des salaires de janvier 1989 ; recouvrement par la recette des finances et non plus par les caisses. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja08788.pdf"

@@ -1,0 +1,23 @@
+description: "Taux de la retenue à la source sur les sommes revenant aux non-résidents établis en Tunisie sans déclaration d'existence et résidents d'un pays à régime fiscal privilégié"
+values:
+  2019-01-01:
+    value: 0.25
+metadata:
+  unit: /1
+  short_label: "Retenue, établis sans déclaration d'existence, pays à régime fiscal privilégié"
+  reference:
+    2019-01-01:
+    - title: "Loi n° 2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019, articles 50 et 90"
+      href: https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf
+      note: "JORT n° 104 du 28 décembre 2018, édition arabe, p. 5456 (article 50) et p. 5469 (article 90). Rubrique « إخضاع المنشآت الدائمة التونسية التابعة لمؤسسات مقيمة بملاذات جبائية والتي لا تودع التصريح في الوجود للخصم من المورد بنسبة 25% » (soumission des établissements stables tunisiens d'entreprises résidentes de paradis fiscaux qui ne déposent pas la déclaration d'existence à la retenue à la source au taux de 25 %). Article 50 : est ajouté, après le premier sous-alinéa de l'alinéa 4 du paragraphe II de l'article 52 du code : « وترفّع هذه النسبة إلى 25% إذا تعلق الأمر بمستقرين بالبلاد التونسية ومقيمين ببلد أو إقليم ذي نظام جبائي تفاضلي على معنى العدد 12 من الفصل 14 من هذه المجلة » (ce taux est relevé à 25 % s'il s'agit de personnes établies en Tunisie et résidentes dans un pays ou territoire à régime fiscal privilégié au sens du point 12 de l'article 14 du code). Date d'effet : article 90 — « مع مراعاة الأحكام المخالفة الواردة بهذا القانون، تطبق أحكام هذا القانون ابتداء من غرة جانفي 2019 » (sous réserve des dispositions contraires, à compter du 1er janvier 2019). Édition arabe lue sur la couche texte, dont la police rend mal certaines lettres (ت, ج), restituées dans les citations ; l'édition française de ce fascicule répond 404 sur pist.tn (24 octobre 2026) : la traduction donnée ici n'est pas officielle."
+documentation: |-
+  Taux de la retenue sur les montants bruts revenant à une personne non résidente établie en
+  Tunisie qui n'a pas déposé la déclaration d'existence (`taux_etablis_sans_declaration_existence`),
+  quand elle réside dans un pays ou territoire à régime fiscal privilégié (article 52, paragraphe
+  II, alinéa 4, deuxième sous-alinéa, du code).
+
+  Le régime fiscal privilégié s'entend au sens de l'article 14, point 12, du code, dans sa
+  rédaction de la loi de finances pour 2019 (article 35) : un impôt dû dans ce pays ou
+  territoire inférieur à 50 % de l'impôt dû en Tunisie sur la même activité. La liste est fixée
+  par arrêté du ministre chargé des finances ; celle de l'arrêté du 25 mars 2019 est exécutoire
+  le 8 avril 2019 (voir `capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie`).

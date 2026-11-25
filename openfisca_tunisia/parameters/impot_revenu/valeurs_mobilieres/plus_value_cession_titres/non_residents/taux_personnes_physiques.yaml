@@ -1,0 +1,18 @@
+description: "Taux de la retenue à la source sur la plus-value de cession de titres réalisée par les personnes physiques non résidentes"
+values:
+  2012-01-01:
+    value: 0.10
+metadata:
+  unit: /1
+  short_label: "Retenue sur la plus-value, personnes physiques non résidentes"
+  reference:
+    2012-01-01:
+    - title: "Loi n° 2011-7 du 31 décembre 2011, portant loi de finances pour l'année 2012, articles 15 et 49"
+      href: https://www.pist.tn/jort/2012/2012F/Jo0012012.pdf
+      note: "JORT n° 1 du 3 janvier 2012, p. 5 (article 15) et p. 11 (article 49). Article 15, paragraphe 2, alinéa e bis ajouté au paragraphe I de l'article 52 du code, deuxième alinéa : « Ce taux est fixé à 10% pour la plus-value prévue au deuxième paragraphe de l'article 3 du présent code. » Date d'effet : article 49, à compter du 1er janvier 2012. Édition française lue sur la couche texte."
+documentation: |-
+  Taux de la retenue sur la plus-value de cession d'actions, de parts sociales et de parts de
+  fonds réalisée par une personne physique non résidente (article 52, paragraphe I, alinéa
+  e bis, deuxième alinéa, du code). Les lois de finances pour 2014, 2021 et 2025 ne modifient
+  que le taux des personnes morales ; le code consolidé de 2025 porte toujours 10 %. À partir du
+  25 mai 2012, le montant de la retenue est plafonné (`plafond_prix_personnes_physiques`).

@@ -14,7 +14,7 @@ class impots_directs(Variable):
 
 
 class prestations_sociales(Variable):
-    value_type = int
+    value_type = float
     entity = Individu
     label = "Prestations sociales"
     definition_period = YEAR

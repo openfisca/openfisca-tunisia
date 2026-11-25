@@ -1,0 +1,148 @@
+# Taxe de formation professionnelle (TFP) et contribution au FOPROLOS.
+# TFP : 2 % au 1er janvier 1967 (décret n° 66-527), tous secteurs ; à compter des salaires de
+# janvier 1989, 1 % pour les industries manufacturières et 2 % pour les autres secteurs
+# (loi n° 88-145, art. 30).
+# FOPROLOS : 2 % au 1er août 1977 (loi n° 77-54, art. 2 et 10) ; 1 % à compter des salaires de
+# janvier 1989 (loi n° 88-145, art. 35).
+
+- name: TFP - décembre 1966, taux non établi
+  period: 1966-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: 0
+
+- name: TFP - janvier 1967, taux unique de 2 %
+  period: 1967-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: .02 * 1000
+    contribution_foprolos: 0
+
+- name: TFP - décembre 1988, industrie manufacturière au taux unique
+  period: 1988-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    employeur_industrie_manufacturiere: true
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: .02 * 1000
+
+- name: TFP - janvier 1989, industrie manufacturière
+  period: 1989-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    employeur_industrie_manufacturiere: true
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: .01 * 1000
+
+- name: TFP - janvier 1989, autres secteurs
+  period: 1989-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: .02 * 1000
+
+- name: TFP - assiette salaire de base et primes
+  period: 2020-06
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 800
+    primes: 200
+  output:
+    taxe_formation_professionnelle: .02 * 1000
+
+- name: FOPROLOS - juillet 1977, avant l'institution
+  period: 1977-07
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    contribution_foprolos: 0
+
+- name: FOPROLOS - août 1977, 2 %
+  period: 1977-08
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    contribution_foprolos: .02 * 1000
+
+- name: FOPROLOS - décembre 1988, 2 %
+  period: 1988-12
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    contribution_foprolos: .02 * 1000
+
+- name: FOPROLOS - janvier 1989, 1 %
+  period: 1989-01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    contribution_foprolos: .01 * 1000
+
+- name: Agent public affilié à la CNRPS - FOPROLOS seul
+  period: 2020-06
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    employeur_redevable_tfp: false
+    employeur_redevable_foprolos: true
+    taxe_formation_professionnelle: 0
+    contribution_foprolos: .01 * 1000
+
+- name: Salarié agricole - ni TFP ni FOPROLOS
+  period: 2020-06
+  input:
+    regime_securite_sociale_cotisant: rsa
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: 0
+    contribution_foprolos: 0
+
+- name: Aucun régime renseigné - aucun prélèvement
+  period: 2020-06
+  input:
+    salaire_de_base: 1000
+  output:
+    autres_prelevements_employeur: 0
+
+- name: Employeur exonéré de la TFP par saisie
+  period: 2020-06
+  input:
+    regime_securite_sociale_cotisant: rsna
+    employeur_redevable_tfp: false
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: 0
+    contribution_foprolos: .01 * 1000
+
+- name: Entreprise publique affiliée à la CNRPS redevable de la TFP par saisie
+  period: 2020-06
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    employeur_redevable_tfp: true
+    salaire_de_base: 1000
+  output:
+    taxe_formation_professionnelle: .02 * 1000
+
+- name: Coût du travail - cotisations patronales et autres prélèvements
+  period: 2016-01
+  absolute_error_margin: .001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    employeur_industrie_manufacturiere: true
+    salaire_de_base: 1000
+  output:
+    cotisations_employeur: .1657 * 1000
+    autres_prelevements_employeur: (.01 + .01) * 1000
+    salaire_super_brut: (1 + .1657 + .01 + .01) * 1000

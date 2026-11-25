@@ -1,12 +1,17 @@
 description: Cotisation pour les accidents du travail et les maladie professionelles pour le secteur de l'hôtellerie
 brackets:
 - rate:
-    2004-08-01:
+    1999-04-01:
       value: 0.005
   threshold:
-    2004-08-01:
+    1999-04-01:
       value: 0
 metadata:
   rate_unit: /1
   threshold_unit: currency
   short_label: Hôtellerie
+  reference:
+    1999-04-01:
+    - title: "Décret n° 99-1010 du 10 mai 1999, modifiant et complétant le décret n° 95-538 du 1er avril 1995 relatif à la fixation des taux de cotisations au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, article premier (article 2 nouveau du décret n° 95-538), point 33"
+      href: "https://www.pist.tn/jort/1999/1999F/Jo04099.pdf"
+      note: "JORT n° 40 du 18 mai 1999, pp. 733-734 de l'édition française, pp. 897-898 de l'édition arabe ; lu à l'image dans les deux éditions, dont les taux concordent. L'article 2 nouveau fixe les taux de cotisation des employeurs affiliés à la CNSS une fois opéré le transfert d'un point des cotisations du régime général au régime de réparation des accidents du travail ; point 33 : 0,50 %. Entrée en vigueur le 1er avril 1999 (article 2 du décret n° 99-1010). Édition arabe : https://www.pist.tn/jort/1999/1999A/Ja04099.pdf"

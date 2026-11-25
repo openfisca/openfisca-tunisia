@@ -1,0 +1,59 @@
+description: "Bâtiment et travaux publics - grille du personnel administratif et technique à traitement mensuel"
+metadata:
+  short_label: "Personnel administratif et technique"
+  order:
+  - categorie_1
+  - categorie_2
+  - categorie_3
+  - categorie_4
+  - categorie_5
+  - categorie_6
+  - categorie_7
+  - categorie_8
+  - categorie_9
+  - categorie_10
+  - categorie_11
+  - categorie_12
+  - categorie_13
+  - categorie_14
+  - categorie_15
+  - categorie_16
+  - categorie_17
+  - categorie_18
+  - categorie_19
+documentation: |-
+  Structure de la grille : dix-neuf catégories, numérotées de 1 à 19 et sans intitulé sur la
+  grille, et onze échelons d'ancienneté dans chacune. La forme est la même à toutes les dates
+  versées. La classification qui range les emplois dans les catégories est dans le corps de la
+  convention ; elle n'est pas reprise ici. Dans les avenants, cette grille paraît sur la même page
+  que celle du personnel occasionnel de même date d'effet.
+
+  En-tête des colonnes, tel que la transcription des grilles le rapporte : l'échelon 1 répond à une
+  ancienneté de 0 à 2 ans, l'échelon 11 à 24 ans et plus.
+
+  Identifiants : `categorie_1` à `categorie_19`, puis `echelon_1` à `echelon_11`.
+
+  Unité : dinars courants par mois.
+
+  La grille est versée en entier, du 1er mai 1996 (avenant n° 5) au 1er janvier 2024 (avenant
+  n° 16) : vingt-six dates d'effet, 209 cases par grille, soit 5 434 cases, dont 5 418 valeurs et
+  seize cases illisibles. Le salaire le plus bas est celui de la catégorie 1, échelon 1 ; le plus
+  élevé, celui de la catégorie 19, échelon 11.
+
+  Les grilles du 1er mai 1996 au 1er mai 1998 sont imprimées en millimes ; les valeurs en sont
+  portées ici en dinars, comme celles des grilles suivantes.
+
+  Cases illisibles sur le fascicule (catégorie-échelon) : 9-7, 10-7, 11-7, 12-7, 13-7, 14-7 et 14-8
+  dans la grille du 1er mai 1996 ; 1-7, 2-7, 6-7, 9-7 et 10-7 dans celle du 1er mai 1998 ; 18-5 dans
+  celle du 1er mai 2001 ; 9-4 dans celle du 1er mai 2002 ; 9-5 dans celle du 1er mai 2003 ; 18-4 dans
+  celle du 1er mai 2004. Chacune porte une valeur vide à sa date, sans valeur déduite ni reportée,
+  et la note de la date en dit la raison ; la valeur reprend à la grille suivante.
+
+  Chaque case porte en outre une valeur vide au 1er janvier 2026 : le décret n° 2026-68 du 30 avril
+  2026 relève alors les salaires de base des dernières grilles, et aucun texte ne publie la grille
+  qui en résulte.
+
+  La série commence au 1er mai 1996 : rien d'antérieur n'est versé. De l'avenant n° 5 à l'avenant
+  n° 16, tous les avenants ont été lus, sans numéro manquant. Les trois grilles de l'avenant n° 16
+  (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont lues sur une reproduction du journal
+  par un site tiers.

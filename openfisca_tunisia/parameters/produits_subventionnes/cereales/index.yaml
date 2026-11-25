@@ -1,0 +1,12 @@
+description: Prix des céréales fixés pour chaque campagne
+metadata:
+  short_label: Céréales
+  order:
+  - prix_base_production
+  - prix_intervention_orge
+  - prix_normal_retrocession
+  - prix_reduit_retrocession
+documentation: |-
+  Prix fixés pour chaque récolte par le texte de campagne de l'Office des céréales, depuis la
+  récolte 1970 : décret jusqu'à la récolte 2025, arrêté conjoint des ministres chargés des finances et de l'agriculture
+  depuis la récolte 2026. Montants en dinars par quintal (100 kg).

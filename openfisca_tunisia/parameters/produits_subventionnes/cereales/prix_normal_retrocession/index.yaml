@@ -1,0 +1,7 @@
+description: Prix normaux de rétrocession des céréales par l'Office des céréales
+metadata:
+  short_label: Prix normaux de rétrocession
+  order:
+  - ble_dur
+  - ble_tendre
+  - orge

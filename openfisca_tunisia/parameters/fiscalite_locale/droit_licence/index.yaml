@@ -1,0 +1,18 @@
+description: "Droit de licence sur les débits de boissons"
+metadata:
+  short_label: "Droit de licence"
+  order:
+  - tarif_annuel
+  - retenue_budget_etat
+documentation: |-
+  Droit annuel dû par les exploitants de cafés, de bars, de salons de thé et, d'une façon générale,
+  de tous les établissements vendant des boissons à consommer sur place (code de la fiscalité
+  locale, chapitre VII, articles 61 à 63). Son tarif, fixé par décret, dépend de la catégorie de
+  l'établissement ; il est perçu sur déclaration, moyennant une retenue au profit du budget de
+  l'État.
+
+  Le code des collectivités locales (loi organique n° 2018-29 du 9 mai 2018, article 391) prévoit
+  que les articles 46 à 95 du code de la fiscalité locale cessent de s'appliquer, collectivité par
+  collectivité, à mesure qu'entrent en vigueur ses propres délibérations tarifaires, et réserve à
+  des décrets gouvernementaux, pendant une période transitoire, la fixation du droit de licence.
+  Aucun de ces décrets n'est identifié ; les valeurs versées ici ne sont pas closes.

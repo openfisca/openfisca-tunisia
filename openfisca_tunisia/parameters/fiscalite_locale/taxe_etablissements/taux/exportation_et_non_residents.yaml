@@ -1,0 +1,26 @@
+description: "Taux de la taxe sur les établissements, appliqué au chiffre d'affaires provenant de l'exportation et au chiffre d'affaires réalisé avec les non-résidents par certains établissements"
+values:
+  2014-01-01:
+    value: 0.001
+metadata:
+  unit: /1
+  short_label: "Exportation et services aux non-résidents"
+  reference:
+    2014-01-01:
+    - title: "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, article 49, paragraphe 2, et article 95"
+      href: https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf
+      note: "JORT n° 105 du 31 décembre 2013, pp. 3680-3681 (article 49) et p. 3699 (article 95). Article 49, paragraphe 2 : « Est ajouté au paragraphe I de l'article 38 du code de la fiscalité locale ce qui suit : Le taux de 0,1% susvisé est appliqué au : - Chiffre d'affaires provenant de l'exportation, - Chiffre d'affaires réalisé par les établissements de santé prêtant la totalité de leurs services au profit des non résidents et provenant de leur activité avec les non résidents, - Chiffre d'affaires réalisé par les prestataires des services financiers non résidents et provenant de leurs prestations avec les non résidents, - Chiffre d'affaires réalisé par les sociétés d'investissement à capital variable à règles d'investissement allégées et provenant de l'utilisation de leurs actifs avec les non résidents. » Les trois premiers tirets sont p. 3680, le quatrième p. 3681. Date d'effet : article 95, p. 3699 — « Sous réserve des dispositions contraires prévues par la présente loi, les dispositions de la présente loi s'appliquent à compter du 1er janvier 2014. » Édition française lue sur la couche texte du fascicule ; l'édition arabe n'est pas relue : https://www.pist.tn/jort/2013/2013A/Ja1052013.pdf"
+documentation: |-
+  Taux appliqué, depuis le 1er janvier 2014, à quatre chiffres d'affaires (code de la fiscalité
+  locale, article 38, paragraphe I, complété par la loi de finances pour 2014) :
+
+  - le chiffre d'affaires provenant de l'exportation ;
+  - celui des établissements de santé prêtant la totalité de leurs services au profit des
+    non-résidents, provenant de leur activité avec les non-résidents ;
+  - celui des prestataires des services financiers non résidents, provenant de leurs prestations
+    avec les non-résidents ;
+  - celui des sociétés d'investissement à capital variable à règles d'investissement allégées,
+    provenant de l'utilisation de leurs actifs avec les non-résidents.
+
+  Avant cette date, l'assiette de la taxe était le chiffre d'affaires brut « local » : aucun taux
+  n'est énoncé pour le chiffre d'affaires provenant de l'exportation.
