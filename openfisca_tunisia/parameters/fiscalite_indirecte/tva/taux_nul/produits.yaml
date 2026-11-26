@@ -183,6 +183,7 @@ values:
     - main_d_uvre_pour_installation_et_branchement_electrique
     - maquereau
     - medicament_de_maladie_longue_duree
+    - medicaments
     - melange_de_legumineuses_seches
     - melange_farine_et_semoule
     - melon
@@ -215,12 +216,14 @@ values:
     - petit_pois_vers
     - pignon_pistache_noisette_noix
     - piment_sec_en_gousse
+    - piments_frais
     - poire
     - poireaux
     - pois_chiche_sec
     - pois_chiche_vert
     - poivre
     - pomme
+    - pomme_de_terre_fraiche
     - poulet_eplume
     - poulet_vif
     - poulpe_frais
@@ -274,6 +277,7 @@ values:
     - viande_bovine_sans_os
     - viande_chevaline
     - viande_d_autruche
+    - viande_de_caprin
     - viande_de_mouton
     - viande_de_porc
     - viande_de_poulet_en_detail

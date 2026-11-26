@@ -2136,7 +2136,7 @@ web-api = [
 
 [[package]]
 name = "openfisca-tunisia"
-version = "0.171.0"
+version = "0.173.0"
 source = { editable = "." }
 dependencies = [
     { name = "openfisca-core", extra = ["web-api"] },
@@ -2177,7 +2177,7 @@ requires-dist = [
     { name = "pandas", marker = "extra == 'notebook'", specifier = ">=0.22.0" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "requests", marker = "extra == 'dev'", specifier = ">=2.28.2,<3.0" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.6.9,<0.9" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.6.9,<0.17" },
     { name = "scipy", marker = "extra == 'dev'", specifier = ">=1.10.1,<2.0" },
     { name = "twine", marker = "extra == 'dev'", specifier = ">=6.0.0" },
     { name = "yamllint", marker = "extra == 'dev'", specifier = ">=1.30.0,<2.0" },
