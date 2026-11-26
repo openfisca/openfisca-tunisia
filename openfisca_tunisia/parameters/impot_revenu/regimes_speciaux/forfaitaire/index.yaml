@@ -1,4 +1,24 @@
-description: Régime Forfaitaire (Article 44 bis)
+description: Régime forfaitaire d'imposition des bénéfices industriels et commerciaux (articles 44 bis à 44 sexies du code de l'IRPP et de l'IS, créés par la loi de finances pour 2011)
+documentation: |
+  DATATION (période du revenu) : les dates de valeur portent sur l'année de
+  RÉALISATION du chiffre d'affaires (CA de l'année N pour la LF « pour
+  l'année N », déclaré en N+1) — principe d'annualité de l'IRPP (art. 1 du
+  code), aucune clause transitoire contraire trouvée dans les textes.
+  RÉSERVE : les notes communes DGI fixant le champ d'application dans le
+  temps n'ont pas pu toutes être consultées (NC 27/2016 et NC 15/2018
+  inaccessibles/illisibles en ligne ; NC séries 2014 et 2023 non localisées) ;
+  à réviser si une NC révélait une application aux déclarations déposées
+  (donc au CA de l'année précédente). Les valeurs 2021 (minimums 200/100,
+  3 %, seuils 10 000/100 000) sont insensibles à cette réserve (stables de
+  2018 à 2022 inclus dans les deux lectures).
+  Avant 2011 : ancien forfait de l'article 44 § IV (1990-2010), tarifé par
+  barème par tranches de chiffre d'affaires — non paramétré ici.
 metadata:
   order:
+  - seuil_eligibilite_achat_revente
+  - seuil_eligibilite_services
+  - franchise_chiffre_affaires
   - taux_imposition
+  - taux_imposition_services
+  - minimum_zone_communale
+  - minimum_hors_zone_communale

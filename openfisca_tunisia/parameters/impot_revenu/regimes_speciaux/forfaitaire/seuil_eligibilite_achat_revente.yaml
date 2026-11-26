@@ -1,0 +1,13 @@
+description: Chiffre d'affaires annuel maximal ouvrant droit au régime forfaitaire — activités d'achat en vue de la revente et de production (articles 44 bis à 44 sexies du code de l'IRPP et de l'IS)
+documentation: |
+  Avant 2011, l'ancien forfait de l'article 44 § IV plafonnait l'éligibilité à
+  30 000 DT (depuis la LF 1999) — hors du champ de ce paramètre.
+  2011-2015 : 100 000 DT pour les activités d'achat en vue de la revente, de
+  production et de consommation sur place. Depuis 2016 : seuil unique de
+  100 000 DT toutes activités (voir seuil_eligibilite_services).
+unit: currency
+reference:
+  2011-01-01:
+    title: Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 32 (JORT n° 102 du 21/12/2010, p. 3471)
+values:
+  2011-01-01: 100000

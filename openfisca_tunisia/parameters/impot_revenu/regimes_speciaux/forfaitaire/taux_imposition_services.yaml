@@ -1,0 +1,16 @@
+description: Taux d'imposition forfaitaire sur le chiffre d'affaires — activités de services (régime forfaitaire BIC, articles 44 bis à 44 sexies du code de l'IRPP et de l'IS)
+documentation: |
+  2011-2015 : 2,5 % du chiffre d'affaires total des activités de services
+  (contre 2 % pour les achats en vue de la revente et la production).
+  Depuis 2016 : taux unifié à 3 % de la fraction du chiffre d'affaires
+  excédant franchise_chiffre_affaires, toutes activités confondues
+  (voir taux_imposition).
+unit: /1
+reference:
+  2011-01-01:
+    title: Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 32 (JORT n° 102 du 21/12/2010, p. 3471)
+  2016-01-01:
+    title: Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, article 17 (JORT n° 104 du 29/12/2015, p. 3141)
+values:
+  2011-01-01: 0.025
+  2016-01-01: 0.03

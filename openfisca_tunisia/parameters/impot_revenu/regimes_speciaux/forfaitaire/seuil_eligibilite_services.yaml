@@ -1,0 +1,13 @@
+description: Chiffre d'affaires annuel maximal ouvrant droit au régime forfaitaire — activités de services (articles 44 bis à 44 sexies du code de l'IRPP et de l'IS)
+documentation: |
+  2011-2015 : 50 000 DT pour les activités de services.
+  Depuis 2016 (LF 2016, art. 17) : seuil unifié à 100 000 DT toutes activités.
+unit: currency
+reference:
+  2011-01-01:
+    title: Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 32 (JORT n° 102 du 21/12/2010, p. 3471)
+  2016-01-01:
+    title: Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, article 17 (JORT n° 104 du 29/12/2015, p. 3141)
+values:
+  2011-01-01: 50000
+  2016-01-01: 100000
