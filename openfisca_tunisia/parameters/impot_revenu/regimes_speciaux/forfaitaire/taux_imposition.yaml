@@ -2,7 +2,7 @@ description: Taux d'imposition forfaitaire sur le chiffre d'affaires — activit
 documentation: |
   Régime forfaitaire créé par la loi de finances pour 2011 (transfert et refonte
   de l'ancien forfait de l'article 44 § IV, en vigueur 1990-2010, tarifé par
-  BARÈME PAR TRANCHES de chiffre d'affaires — non couvert par ce paramètre).
+  barème par tranches de chiffre d'affaires — non couvert par ce paramètre).
 
   - 2011-2015 : impôt = taux x chiffre d'affaires TOTAL (2 % achats en vue de
     revente et production, 2,5 % services — voir taux_imposition_services),
