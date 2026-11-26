@@ -30,6 +30,14 @@ SOUS_ARBRES_FISCAL = (
     "prelevements_sociaux",
     "prestations",
     "produits_subventionnes",
+    # Les cotisations du système fiscal lisent deux concepts du sous-arbre des
+    # pensions : les classes de revenu forfaitaire des travailleurs non salariés
+    # (retraite.rtns.revenu_reference — l'article 7 du décret n° 95-1166 assoit
+    # les COTISATIONS sur ces mêmes classes) et le plafond de l'assiette du
+    # régime de base (retraite.rsna.salaire_reference.limite_multiple_smig,
+    # article 18 du décret n° 74-499), au-delà duquel cotise le régime
+    # complémentaire.
+    "retraite",
     "sante",
 )
 

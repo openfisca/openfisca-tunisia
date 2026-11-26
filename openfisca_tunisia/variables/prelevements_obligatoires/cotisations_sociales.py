@@ -117,6 +117,30 @@ def compute_cotisation(
     return cotisation
 
 
+class classe_cotisation_tns(Variable):
+    value_type = int
+    default_value = 0
+    entity = Individu
+    label = (
+        "Classe de revenu forfaitaire du travailleur non salarié (1 à 10, art. 7 "
+        "du décret n° 95-1166 : coefficients 1 à 18 x SMIG/SMAG) ; 0 = non "
+        "renseignée, l'assiette retombe sur le salaire déclaré (approximation)"
+    )
+    definition_period = MONTH
+
+
+class tns_secteur_agricole(Variable):
+    value_type = bool
+    default_value = False
+    entity = Individu
+    label = (
+        "Le travailleur non salarié relève du secteur agricole (revenu "
+        "forfaitaire assis sur le SMAG rapporté à jours_annuels_smag, au lieu "
+        "du SMIG 48 h — art. 7, al. 3 du décret n° 95-1166)"
+    )
+    definition_period = MONTH
+
+
 class assiette_cotisations_sociales(Variable):
     value_type = float
     entity = Individu
@@ -125,6 +149,41 @@ class assiette_cotisations_sociales(Variable):
 
     def formula(individu, period):
         return individu("salaire_de_base", period) + individu("primes", period)
+
+    def formula_1995_07_19(individu, period, parameters):
+        # Travailleurs non salariés (RTNS) : l'assiette légale n'est pas le
+        # revenu réel mais un revenu FORFAITAIRE par classes (art. 7 du décret
+        # n° 95-1166) — coefficient de la classe choisie x SMIG 48 h mensuel
+        # (non agricole) ou x SMAG journalier rapporté à jours_annuels_smag
+        # (agricole). Si la classe n'est pas renseignée (0, défaut), l'assiette
+        # retombe sur le salaire déclaré — approximation documentée, inchangée
+        # pour les utilisateurs existants.
+        salaire = individu("salaire_de_base", period) + individu("primes", period)
+        regime = individu("regime_securite_sociale_cotisant", period)
+        classe = individu("classe_cotisation_tns", period)
+        agricole = individu("tns_secteur_agricole", period)
+
+        p = parameters(period.start)
+        classes = p.retraite.rtns.revenu_reference.classes
+        coefficient = select(
+            [classe == i for i in range(1, 11)],
+            [getattr(classes, f"classe_{i}") for i in range(1, 11)],
+            default=0.0,
+        )
+        base_non_agricole = p.marche_travail.smig_48h_mensuel
+        base_agricole = (
+            p.marche_travail.smag_journalier
+            * p.retraite.rtns.revenu_reference.jours_annuels_smag
+            / 12
+        )
+        assiette_forfaitaire = coefficient * where(
+            agricole, base_agricole, base_non_agricole
+        )
+
+        utiliser_classes = (
+            regime == TypesRegimeSecuriteSocialeCotisant.rtns
+        ) * (classe >= 1)
+        return where(utiliser_classes, assiette_forfaitaire, salaire)
 
 
 class regime_securite_sociale_cotisant(Variable):
@@ -539,13 +598,21 @@ class perte_d_emploi_salarie(Variable):
 class retraite_complementaire_employeur(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation au régime complémentaire de retraite (employeur)"
+    label = (
+        "Cotisation au régime complémentaire de retraite (employeur) — régime "
+        "conventionnel à adhésion d'ENTREPRISE (arrêté du 18 novembre 1978, "
+        "règlement art. 3-4), assis sur la fraction du salaire excédant le "
+        "plafond du régime de base (art. 18 du décret n° 74-499 : "
+        "limite_multiple_smig x SMIG 48 h)"
+    )
     definition_period = MONTH
 
     def formula(individu, period, parameters):
-        smig = parameters(period.start).marche_travail.smig_48h_mensuel
+        p = parameters(period.start)
+        smig = p.marche_travail.smig_48h_mensuel
+        limite = p.retraite.rsna.salaire_reference.limite_multiple_smig
         assiette = individu("assiette_cotisations_sociales", period)
-        assiette_complementaire = max_(0, assiette - 6 * smig)
+        assiette_complementaire = max_(0, assiette - limite * smig)
         regime = individu("regime_securite_sociale_cotisant", period)
         adhesion = individu("adhesion_cnss_regime_complementaire", period)
 
@@ -561,13 +628,21 @@ class retraite_complementaire_employeur(Variable):
 class retraite_complementaire_salarie(Variable):
     value_type = float
     entity = Individu
-    label = "Cotisation au régime complémentaire de retraite (salarié)"
+    label = (
+        "Cotisation au régime complémentaire de retraite (salarié) — régime "
+        "conventionnel à adhésion d'ENTREPRISE (arrêté du 18 novembre 1978, "
+        "règlement art. 3-4), assis sur la fraction du salaire excédant le "
+        "plafond du régime de base (art. 18 du décret n° 74-499 : "
+        "limite_multiple_smig x SMIG 48 h)"
+    )
     definition_period = MONTH
 
     def formula(individu, period, parameters):
-        smig = parameters(period.start).marche_travail.smig_48h_mensuel
+        p = parameters(period.start)
+        smig = p.marche_travail.smig_48h_mensuel
+        limite = p.retraite.rsna.salaire_reference.limite_multiple_smig
         assiette = individu("assiette_cotisations_sociales", period)
-        assiette_complementaire = max_(0, assiette - 6 * smig)
+        assiette_complementaire = max_(0, assiette - limite * smig)
         regime = individu("regime_securite_sociale_cotisant", period)
         adhesion = individu("adhesion_cnss_regime_complementaire", period)
 
