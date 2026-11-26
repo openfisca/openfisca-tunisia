@@ -1,0 +1,23 @@
+description: Minimum d'impôt forfaitaire annuel pour les établissements implantés hors des zones communales (régime forfaitaire BIC, articles 44 bis à 44 sexies du code de l'IRPP et de l'IS)
+documentation: |
+  2011-2013 : minimums de 100 et 50 DT SANS critère de zone (par convention,
+  ce paramètre porte la valeur basse sur cette période). La différenciation
+  zone communale / hors zone date de la LF 2014 (art. 45) ; le minimum hors
+  zone vaut la moitié du minimum en zone communale sur toute la période.
+  Depuis 2016, le minimum est dû dès le premier dinar et s'ajoute au taux sur
+  la fraction du chiffre d'affaires excédant franchise_chiffre_affaires.
+unit: currency
+reference:
+  2011-01-01:
+    title: Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 32 (JORT n° 102 du 21/12/2010, p. 3471)
+  2014-01-01:
+    title: Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014, article 45 (JORT n° 105 du 31/12/2013, p. 3678)
+  2018-01-01:
+    title: Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 16 (JORT n° 101 du 19/12/2017, p. 4271)
+  2023-01-01:
+    title: Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 55 (JORT n° 141 du 23/12/2022, p. 4073, édition arabe)
+values:
+  2011-01-01: 50
+  2014-01-01: 75
+  2018-01-01: 100
+  2023-01-01: 200

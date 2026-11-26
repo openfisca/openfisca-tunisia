@@ -1,9 +1,25 @@
-description: Taux libératoire d'imposition sur le Chiffre d'Affaires
+description: Taux d'imposition forfaitaire sur le chiffre d'affaires — activités d'achat en vue de la revente et de production (régime forfaitaire BIC, articles 44 bis à 44 sexies du code de l'IRPP et de l'IS)
+documentation: |
+  Régime forfaitaire créé par la loi de finances pour 2011 (transfert et refonte
+  de l'ancien forfait de l'article 44 § IV, en vigueur 1990-2010, tarifé par
+  barème par tranches de chiffre d'affaires — non couvert par ce paramètre).
+
+  - 2011-2015 : impôt = taux x chiffre d'affaires TOTAL (2 % achats en vue de
+    revente et production, 2,5 % services — voir taux_imposition_services),
+    avec plancher (minimum_zone_communale / minimum_hors_zone_communale).
+  - Depuis 2016 (LF 2016, art. 17 ; note commune DGI n° 27/2016) : impôt =
+    minimum (selon zone) + taux x la FRACTION du chiffre d'affaires excédant
+    franchise_chiffre_affaires (10 000 DT), taux unifié à 3 % pour toutes les
+    activités.
+
+  L'ancienne valeur 0,10 « à titre d'exemple » ne correspondait à aucune
+  période de l'historique.
 unit: /1
 reference:
-  1989-12-30:
-    title: Code de l'IRPP et de l'IS, Article 44 bis
+  2011-01-01:
+    title: Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 32 (JORT n° 102 du 21/12/2010, p. 3471)
+  2016-01-01:
+    title: Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, article 17 (JORT n° 104 du 29/12/2015, p. 3141) ; note commune DGI n° 27/2016
 values:
-  # Valeur par défaut basique à titre d'exemple
-  # (Souvent exprimé en barème par pallier ou par activité)
-  2014-01-01: 0.10
+  2011-01-01: 0.02
+  2016-01-01: 0.03

@@ -518,18 +518,50 @@ class chiffre_affaires_soumis_au_forfait(Variable):
     definition_period = YEAR
 
 
+class etablissement_zone_communale(Variable):
+    value_type = bool
+    default_value = False
+    entity = FoyerFiscal
+    label = (
+        "L'établissement soumis au régime forfaitaire est implanté dans une zone "
+        "communale (minimum d'impôt majoré, art. 44 bis-sexies du CIRPPIS — "
+        "distinction instaurée par la LF 2014)"
+    )
+    definition_period = YEAR
+
+
 class impot_regime_forfaitaire_du(Variable):
     value_type = float
     entity = FoyerFiscal
     label = "Impôt dû au titre du Régime Forfaitaire"
     definition_period = YEAR
 
-    def formula(foyer_fiscal, period, parameters):
+    def formula_2011_01_01(foyer_fiscal, period, parameters):
+        # LF 2011 (loi 2010-58, art. 32) : taux proportionnel sur le chiffre
+        # d'affaires TOTAL, avec minimum en plancher. Limite assumée : taux
+        # « achat-revente/production » (2 %) pour tous — pas d'input distinguant
+        # les activités de services (2,5 %, paramètre taux_imposition_services).
         ca = foyer_fiscal("chiffre_affaires_soumis_au_forfait", period=period)
-        taux = parameters(
-            period.start
-        ).impot_revenu.regimes_speciaux.forfaitaire.taux_imposition
-        return ca * taux
+        f = parameters(period.start).impot_revenu.regimes_speciaux.forfaitaire
+        zone_communale = foyer_fiscal("etablissement_zone_communale", period=period)
+        minimum = where(
+            zone_communale, f.minimum_zone_communale, f.minimum_hors_zone_communale
+        )
+        return (ca > 0) * max_(ca * f.taux_imposition, minimum)
+
+    def formula_2016_01_01(foyer_fiscal, period, parameters):
+        # LF 2016 (loi 2015-53, art. 17 ; NC DGI n° 27/2016) : minimum selon la
+        # zone + taux unifié (3 %) sur la FRACTION du chiffre d'affaires
+        # excédant la franchise (10 000 DT).
+        ca = foyer_fiscal("chiffre_affaires_soumis_au_forfait", period=period)
+        f = parameters(period.start).impot_revenu.regimes_speciaux.forfaitaire
+        zone_communale = foyer_fiscal("etablissement_zone_communale", period=period)
+        minimum = where(
+            zone_communale, f.minimum_zone_communale, f.minimum_hors_zone_communale
+        )
+        return (ca > 0) * (
+            minimum + f.taux_imposition * max_(ca - f.franchise_chiffre_affaires, 0)
+        )
 
 
 class revenus_titres_porteur_anonymes(Variable):

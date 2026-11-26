@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.174.0 - [#541](https://github.com/openfisca/openfisca-tunisia/pull/541)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2011.
+* Zones impactées : `parameters/impot_revenu/regimes_speciaux/forfaitaire`.
+* Détails :
+  - **Régime forfaitaire BIC (articles 44 bis à 44 sexies du CIRPPIS) : arbre paramétrique daté et sourcé au JORT, 2011 → aujourd'hui**, en remplacement du `taux_imposition` = 0,10 marqué « à titre d'exemple » (valeur ne correspondant à aucune période de l'historique).
+  - `taux_imposition` (achat-revente/production) : 2 % (LF 2011, loi 2010-58 art. 32) puis **3 % dès 2016 sur la fraction du CA excédant 10 000 DT** (LF 2016, loi 2015-53 art. 17 ; note commune DGI n° 27/2016) ; nouveau `taux_imposition_services` : 2,5 % (2011-2015) puis 3 % unifié.
+  - Nouveaux paramètres : `franchise_chiffre_affaires` (0 puis 10 000 DT dès 2016), `minimum_zone_communale` (100 → 150 en 2014 → 200 en 2018 → 400 en 2023) et `minimum_hors_zone_communale` (50 → 75 → 100 → 200) — LF 2014 (loi 2013-54 art. 45), LF 2018 (loi 2017-66 art. 16), LF 2023 (décret-loi 2022-79 art. 55) ; `seuil_eligibilite_achat_revente` (100 000 DT) et `seuil_eligibilite_services` (50 000 puis 100 000 DT dès 2016).
+  - **Datation sur la période du revenu** (CA de l'année N pour la LF « pour l'année N », déclaré en N+1) — principe d'annualité (art. 1 CIRPPIS), aucune clause transitoire contraire trouvée ; RÉSERVE documentée dans `index.yaml` : notes communes DGI partiellement inaccessibles (NC 27/2016, NC 15/2018 illisibles en ligne ; NC séries 2014/2023 non localisées). Les valeurs 2018-2022 (dont 2021 : minimums 200/100, 3 %, seuils 10 000/100 000) sont insensibles à cette réserve.
+  - **Formule `impot_regime_forfaitaire_du` corrigée** (elle appliquait le taux placeholder au CA total) : `formula_2011_01_01` = max(taux x CA, minimum) — plancher 2011-2015, limite assumée : taux achat-revente pour tous ; `formula_2016_01_01` = minimum (selon zone) + taux x fraction du CA excédant la franchise. Nouvel input `etablissement_zone_communale` (FoyerFiscal, défaut False = minimum hors zone). Avant 2011 : plus de formule (0 par défaut, l'ancien forfait art. 44 § IV par tranches n'est pas modélisé).
+  - Tests `tests/formulas/impot_revenu/regimes_speciaux.yaml` réécrits : CA 5 000 (2021, hors zone) → 100 DT (minimum seul) ; CA 50 000 (2021, zone communale) → 1 400 DT ; CA 30 000 (2012) → 600 DT ; cas mixte retenue libératoire inchangé.
+  - Besoin repéré en portant l'analyse CEQ Tunisie (dépôt ceq-tunisie) sur le moteur (cf. issue #476).
+
 ## 0.173.0 - [#540](https://github.com/openfisca/openfisca-tunisia/pull/540)
 
 * Évolution du système socio-fiscal.

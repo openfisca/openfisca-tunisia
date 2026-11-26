@@ -1,0 +1,18 @@
+description: Chiffre d'affaires annuel en deçà duquel seul le minimum d'impôt forfaitaire est dû ; au-delà, le taux s'applique à la fraction excédentaire (régime forfaitaire BIC)
+documentation: |
+  Introduit par la LF 2016 (art. 17) : pour un chiffre d'affaires inférieur ou
+  égal à 10 000 DT, l'impôt forfaitaire se réduit au minimum selon la zone
+  (minimum_zone_communale / minimum_hors_zone_communale) ; au-delà, impôt =
+  minimum + taux_imposition x (CA - 10 000) — calcul sur la FRACTION confirmé
+  par la note commune DGI n° 27/2016.
+  2011-2015 : pas de franchise (taux appliqué au chiffre d'affaires total,
+  le minimum jouant comme plancher) — valeur 0.
+unit: currency
+reference:
+  2011-01-01:
+    title: Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011, article 32 (JORT n° 102 du 21/12/2010, p. 3471)
+  2016-01-01:
+    title: Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016, article 17 (JORT n° 104 du 29/12/2015, p. 3141) ; note commune DGI n° 27/2016
+values:
+  2011-01-01: 0
+  2016-01-01: 10000
