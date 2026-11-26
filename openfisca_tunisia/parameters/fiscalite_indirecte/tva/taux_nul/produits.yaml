@@ -39,6 +39,7 @@ values:
     - autres_fruits_secs
     - autres_graines_et_noix
     - autres_huiles
+    - autres_legumes
     - autres_legumes_a_bulbe_et_tubercules
     - autres_legumes_a_feuilles_vertes
     - autres_legumineuses_seches
@@ -52,6 +53,8 @@ values:
     - banane
     - bateau
     - betterave
+    - ble_dur_en_grain
+    - ble_tendre_en_grain
     - blette
     - bois
     - cahier_et_autres_fournitures_scolaires_pour_rentree_scolaire
@@ -169,6 +172,7 @@ values:
     - lait_regenere_sterilise
     - lapin
     - lentilles_seches
+    - livres_non_scolaires
     - livres_pour_rentree_scolaire
     - loup_de_mer
     - loyer_annuel
@@ -199,6 +203,7 @@ values:
     - oignon_verte
     - olives_vertes
     - orange
+    - orge_en_grain
     - os_de_b_uf
     - pageau
     - pain_a_base_de_semoule
@@ -242,6 +247,7 @@ values:
     - sardine
     - sbares
     - seiche
+    - sel
     - semoule_d_orge_en_paquet
     - semoule_d_orge_en_vrac
     - semoule_industrielle
@@ -272,17 +278,20 @@ values:
     - tripes_de_mouton
     - vaccins
     - veau_ou_b_uf_vivant
+    - viande_bovine
     - viande_bovine_avec_os
     - viande_bovine_sans_indication
     - viande_bovine_sans_os
     - viande_chevaline
     - viande_d_autruche
     - viande_de_caprin
+    - viande_de_chameau
     - viande_de_mouton
     - viande_de_porc
     - viande_de_poulet_en_detail
     - viande_de_tete_de_chameau
     - viande_de_tete_et_pattes_de_bovin
+    - viande_ovine
     - vignette_et_taxe
     - zaket_el_fitr
     - zgougou

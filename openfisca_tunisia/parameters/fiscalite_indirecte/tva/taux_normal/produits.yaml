@@ -24,8 +24,10 @@ values:
     - achat_d_accessoires_pour_telephone_portable
     - achat_d_appareil_telephone_fixe
     - achat_d_appareil_telephone_portable
+    - achat_de_bijoux
     - achat_de_cd_dvd
     - achat_de_jeux_d_echec_de_scrabble_et_autre_jeux_similaires
+    - achat_de_laine
     - achat_de_laine_de_mousse_ou_de_crin
     - achat_de_laine_pour_couverture
     - achat_de_piece_de_rechange
@@ -49,25 +51,34 @@ values:
     - articles_de_sport_de_peche_de_chasse_et_articles_de_plage
     - articles_sanitaires
     - aspirateur_electrique_de_cuisine
+    - autre_couvre_tete
     - autre_depense_d_entretien
     - autre_tabac
     - autre_viande_de_dinde
     - autres_accessoires_electriques
     - autres_appareils_d_eclairage
     - autres_appareils_electromenagers
+    - autres_articles_d_habillement_et_depense_d_habillement_non_ventiles
     - autres_articles_de_chauffage_et_de_climatisation_bouillotte_eventail_en
     - autres_articles_de_loisirs
     - autres_articles_et_frais_de_soins_corporels_service_de_toilette_et_sante
+    - autres_biens_durables
     - autres_boissons
     - autres_cafe
     - autres_cereales_transformees
     - autres_charges
     - autres_de_depenses_liees_aux_articles_de_loisirs
+    - autres_depenses_culturelles
+    - autres_depenses_de_loisirs
     - autres_depenses_liees_aux_combustibles
+    - autres_depenses_non_alimentaires
     - autres_desinfectant
+    - autres_effets_personnels
     - autres_frais_de_vacances
+    - autres_frais_lies_a_l_habillement
     - autres_frais_lies_a_la_ceremonie
     - autres_legumineuses_en_conserve
+    - autres_linges_de_corps_et_linges_de_corps_sans_indications
     - autres_matieres_liees_a_la_peinture_au_badigeonnage_et_d_etancheite
     - autres_mobiliers_complets
     - autres_mobiliers_separes
@@ -76,18 +87,25 @@ values:
     - autres_produits_a_base_d_orge
     - autres_produits_a_base_de_ble_dur
     - autres_produits_a_base_de_ble_tendre
+    - autres_produits_a_base_de_cereales
     - autres_produits_d_entretien
     - autres_produits_d_hygiene
     - autres_produits_de_beaute
     - autres_produits_de_maroquinerie
     - autres_produits_en_conserve
+    - autres_produits_laitiers
     - autres_produits_pharmaceutiques_non_indiques_ailleurs
     - autres_produits_sucres
     - autres_produits_sucres_non_indiques_ailleurs
     - autres_service_d_entretien_des_chaussures_des_tapis_tapisseries
     - autres_services
+    - autres_services_lies_a_l_habitation
+    - autres_sous_vetement_et_sous_vetement_sans_indications
     - autres_types_de_yaourt
     - autres_ustensiles_de_cuisine
+    - autres_vetements_principaux_modernes
+    - autres_vetements_traditionnels
+    - babouche_belgha_affase_kontra
     - bain_douche
     - banc
     - batteur_electrique_yaourtiere_presse_fruits_et_legumes_hachoir_de_viande
@@ -97,6 +115,7 @@ values:
     - beurre_vegetale_goldina_jedida
     - bibliotheque
     - biblots
+    - bichkir_pour_couver_tete
     - biere
     - biere_au_bar
     - biscuit_simple_biscuit_fourre_gaufrettes
@@ -108,15 +127,18 @@ values:
     - boissons_alcoolisees_sans_indications_au_bar
     - bonbon
     - borghol
+    - bottes
     - bougie
     - bouquets_de_fleurs
     - bsissa
     - buffet_argentiere
+    - burnous
     - cafe
     - cafe_nature_melange
     - cafe_nature_pur
     - cafetiere_electrique
     - cake
+    - calecon_en_forme_de_pantalon_pour_femme
     - camera_video
     - capre_en_conserve
     - capsule_cafe
@@ -124,29 +146,40 @@ values:
     - cartable_pour_rentree_scolaire
     - carte_de_recharge_pour_telephone_fixe
     - carte_de_recharge_pour_telephone_portable
+    - ceinture_hzem
     - chaise_chaise_longue
     - chaise_pour_bebe_parc_et_autres_articles
     - chambre_a_coucher
+    - chamla_lahfa_kachta
     - champignons_en_conserve
     - charbon_de_bois
     - charges_communes
     - charges_communes_annuelles
     - chauffe_bain_chauffe_eau
     - chauffe_eau
+    - chaussettes_bas_collant
     - chaux
+    - chechia
+    - chemise_ou_chemisier
+    - chlaka
     - chocolat
     - cigarette
     - climatiseur
     - club_de_loisirs
     - cocotte_minute
     - coiffure
+    - combinaison_de_femme_chemise_de_nuit
+    - condiments_sans_autres_indications
     - confiture_et_compote_de_fruits
     - consultation_d_un_voyant
+    - costume
     - couche_adulte
     - couche_bebe
+    - couche_en_linge_pour_bebe
     - couche_periodique
     - couverte_lit_et_couvre_matelas
     - couvertures
+    - cravate_cache_col
     - creme_a_raser
     - creme_chantilly
     - creme_en_poudre_pour_fabrication
@@ -182,28 +215,39 @@ values:
     - depenses_alimentaires_exceptionelles_non_ventilees_evenement_familial_fete
     - depenses_de_rentree_scolaire_non_ventilees
     - depenses_de_reparation_et_d_entretien_d_articles_de_loisirs
+    - depenses_de_telephone_public
     - depenses_exceptionnelles_de_transport_non_ventilees
     - detergent
     - drap_et_taie
     - eau_de_cologne_eau_de_toilette_parfum_after_shave
     - eau_de_javel
     - eau_minerale
+    - espadrilles
     - essence_melangee_pour_cyclomoteur
     - essence_pour_vehicule
     - facture_telephone_fixe
     - facture_telephone_portable
+    - farmela_sidria_bidia_mintene
     - fauteuil_canape_divan
+    - faux_bijoux_et_autres_effets_similaires
     - fer_a_repasser
     - fer_forge
+    - foulard_echarpe_takrita_assaba
     - foureau
     - fourrage_pour_monture_animale
+    - fouta
+    - fouta_et_blousa
     - frais_d_entretien_et_de_reparation_de_mobilier_complet
     - frais_d_installation_telephone_fixe
     - frais_de_ceremonie_funebre
     - frais_de_chirurgie_esthetique_lifting_liposuccion_et_autres_operations_esthetiques
+    - frais_de_couture
+    - frais_de_couture_et_mercerie_sans_indications_de_detail
     - frais_de_location_d_articles_pour_ceremonie_camera_video
+    - frais_de_location_d_habillement
     - frais_de_location_de_salle
     - frais_de_parution_d_annonce_et_de_publicite_dans_la_presse
+    - frais_de_reparation_de_telephone
     - frais_de_reparation_non_ventiles
     - frais_de_troupe_musicale_orchestre_troupe_soulamia
     - frais_de_vacances_non_ventiles
@@ -216,6 +260,7 @@ values:
     - fromage_type_gruyere
     - fromage_type_nestle
     - fromage_type_rouge
+    - fruits_en_conserve
     - gel_douche_apres_shampoing
     - glace_thelja_gervais
     - glaciere
@@ -225,6 +270,7 @@ values:
     - halwa_chamia
     - haricot_en_conserve
     - insecticides
+    - jebba
     - jebna_frais
     - jeljlan
     - jeux_de_cartes
@@ -232,14 +278,17 @@ values:
     - jeux_de_loisirs_dans_les_salles_de_jeux_jeux_de_carte_a_cafe
     - jild
     - jouet_pour_enfant_de_tout_type
+    - jupe_jupe_short
     - jus_de_fruits
     - jus_de_legumes
+    - kachabia_gadroun
     - kaki_mais_grille_pop_corn
     - ketchup
     - klim_et_margoum
     - knor_poisson
     - knor_viandes
     - knor_volailles
+    - koftane
     - lait_aromatise_sterilise
     - lait_caille_en_berlingot
     - lait_concentre_non_sucre
@@ -263,6 +312,7 @@ values:
     - lit_sommier
     - location_de_motocyclette
     - location_de_voiture
+    - lunette_solaire
     - m_hames_industrielle
     - maassel_chicha
     - machine_a_coudre_a_tricoter_a_broder_coffre_fort
@@ -270,13 +320,17 @@ values:
     - main_d_uvre
     - mais_en_conserve
     - malsouka
+    - manteau_impermeable_cape_parkas
     - matelas
     - matieres_premiere_de_maconnerie_et_de_marbririe
+    - melia
+    - mercerie
     - merguez
     - merguez_chevaline
     - micro_onde_four_electrique
     - mloukhia_en_poudre
     - montant_de_loyer
+    - montre
     - moquette
     - mousse_pour_revetement_du_sol
     - natte
@@ -285,10 +339,14 @@ values:
     - noix_noisettes_pistache_pignon
     - onchoua
     - oreiller_cousins_traversin
+    - pantalon_en_autre_tissu_pantacour
+    - pantalon_jean
+    - pantoufles
     - papier_mouchoir_papier_toilette_lingette
     - papier_peint
     - paquet_de_cigarette
     - parabole
+    - parapluie
     - patisserie_souk
     - peinture_a_l_eau
     - peinture_a_l_huile
@@ -313,45 +371,67 @@ values:
     - produit_pour_bebe
     - produits_a_base_d_ufs
     - produits_de_maquillage
+    - pull_over_gilet
+    - pyjama_robe_de_chambre
     - radio_transistor_radio_reveil
     - recepteur
     - recharge_telephone_fixe
     - recharge_telephone_portable
     - rechaud_electrique_de_cuisine_rechaud_a_gaz
     - refrigerateur_congelateur
+    - reparation_d_effets_personnels
     - reparation_de_bijoux
+    - reparation_et_entretien_des_chaussures
     - reveils_pendule
     - rideaux
     - rigouta
+    - robe_tailleur_ensemble
+    - sabot_kobkab
+    - sac_a_main_sacoche_porte_feuille_pochette
     - saccharine
+    - safsari_haik_hrem
     - salade_michwia_en_boite
     - salami_de_b_uf
     - salle_a_manger
     - salon
+    - sandales
     - sechoir_babilisse
+    - seroual_traditionnel
     - service_a_cafe
     - service_a_eau
     - service_d_ustensile_en_metal
     - service_de_table
     - serviette_de_table_nappe
+    - serviette_de_toilette_bichkir_cap_de_bain
     - shampooing_tfal
+    - short
     - shwing_gum
+    - slip_culotte_maillot_de_bain
     - smen
+    - souliers
+    - soutien_gorge_gaine_justaucorps_body
     - spectacle_sportif
     - sucre_glace
     - sucre_vanille
+    - survetement_jogging
     - t_ablette
     - table_maida
     - tableau_de_decor
+    - tablier
     - tapis
+    - tee_shirt_sweat_shirts
     - televiseur
     - the_infusion
     - the_noir
     - the_verte
     - thon_en_conserve
     - tissus_d_ameublement
+    - tissus_pour_habillement
+    - tmak
     - tomates_seches
     - transfert_en_especes_a_l_interieur_de_pays
+    - tricots_de_corps
+    - tricots_et_pantalons_en_coton_pour_hommes
     - ustensiles_de_cuisine_en_plastique
     - ustensiles_de_cuisine_sans_specification_de_matiere_premiere
     - ustensiles_en_faience_et_en_porcelaine
@@ -362,10 +442,12 @@ values:
     - valise_sac_mallette_cabas
     - vape_recharge
     - ventilateur
+    - veste_blouson_veste_fourrure
     - viande_hachee_bovine
     - vidange_lavage_et_graissage_de_voiture
     - vin
     - vin_au_bar
+    - vinaigre
     - yaourt_a_boire
     - yaourt_aromatise
     - yaourt_aux_fruits
