@@ -93,6 +93,7 @@ values:
     - pois_chiche_moulu
     - pois_chiche_trempe
     - poulet_a_emporter
+    - repas_dans_restaurant
     - sardine_en_conserve
     - savon_de_menage
     - savon_de_toilette
@@ -102,6 +103,7 @@ values:
     - soins_dentaires_sans_autre_indication
     - sucre_cristallise_ou_en_poudre
     - sucre_en_morceau
+    - sucre_roux
     - the_et_cafe_prepares_non_ventiles
     - the_prepare
     - theatre

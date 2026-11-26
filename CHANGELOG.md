@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.173.0 - [#540](https://github.com/openfisca/openfisca-tunisia/pull/540)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2021 (médicaments au détail) ; classements plus anciens portés au bloc 2021 des listes (LF 1996, LF 2017, LF 2018).
+* Zones impactées : `parameters/fiscalite_indirecte/tva/taux_nul/produits.yaml`, `parameters/fiscalite_indirecte/tva/taux_reduit/produits.yaml`, `parameters/fiscalite_indirecte/tva/taux_normal/produits.yaml`.
+* Détails :
+  - **Six classements TVA complétés ou corrigés au 1er janvier 2021**, tranchés au JORT (produits ENBCV absents des listes — donc au taux normal par défaut — ou mal classés) :
+    - `medicaments` → **taux_nul** : loi de finances 2021, article 25 — exonération de la vente au détail des médicaments, effet au 1/1/2021 (JORT n° 95 du 24/12/2020, p. 3132). Complète `medicament_de_maladie_longue_duree`, `autres_medicaments`, analgésiques et antibiotiques déjà classés.
+    - `pomme_de_terre_fraiche`, `piments_frais` → **taux_nul** : loi de finances pour 1996, article 46 — produits alimentaires exonérés au détail (JORT n° 103 du 31/12/1995, p. 2373).
+    - `viande_de_caprin` → **taux_nul** : même base (LF 1996 art. 46), cohérent avec les viandes ovine et bovines déjà classées `taux_nul`.
+    - `repas_dans_restaurant` → **taux_reduit** : LF 2017 art. 27 (tableau B n° 4, restauration classée — 6 %) puis LF 2018 art. 43 (7 %) (JORT n° 101 du 24/12/2016, p. 3833 ; n° 103 du 25/12/2017, p. 4281).
+    - `sucre_roux` **migré de taux_normal vers taux_reduit** : LF 2017 art. 19 (tableau B n° 9bis) — « sucre non additionné d'aromatisants ou de colorants » à 7 % ; `sucre_vanille` et `sucre_glace` (aromatisés) restent au taux normal.
+  - **Chiffrage sur l'ENBCV 2021** (dépense pondérée, TVA incluse `dep × r/(1+r)`) : médicaments 1 365 M DT de dépense → −218 M DT de TVA ; piments frais 321 M DT → −51 M DT ; viande de caprin 60 M DT → −9,5 M DT ; sucre roux 0,2 M DT (micro). Total : ≈ −279 M DT/an par rapport au classement par défaut.
+  - Aucun doublon inter-listes au 2021-01-01 (un slug = une liste) ; comptages après modification : taux_nul 284, taux_reduit 111, taux_normal 370.
+  - `uv.lock` resynchronisé avec `pyproject.toml` (le verrou committé était resté à 0.171.0 / ancienne borne ruff).
+
 ### 0.172.1 - [#539](https://github.com/openfisca/openfisca-tunisia/pull/539)
 
 * Évolution du système socio-fiscal.
