@@ -1,0 +1,31 @@
+description: Retenue syndicale mensuelle à la source au profit de l'UGTT sur le salaire des agents publics adhérents (système du check-off)
+values:
+  1990-01-01:
+    value: 3
+metadata:
+  unit: currency
+  short_label: Retenue syndicale UGTT
+  label_en: Monthly trade-union dues withheld at source for the UGTT (public-sector members)
+  reference:
+    1990-01-01:
+    - title: "Circulaire n° 37 de la présidence du gouvernement du 26 décembre 2023, relative à la retenue à la source de la cotisation syndicale au profit de l'UGTT au titre de l'année 2024"
+      href: https://lepointtn.com/%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%AA%D8%A3%D9%85%D8%B1-%D8%A8%D8%B3%D8%AF%D8%A7%D8%AF-%D9%85%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%A7%D9%86%D8%AE%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA-%D9%84/
+      note: "Circulaire (منشور) non publiée au JORT ; contenu connu par la presse (lepointtn.com, 27 décembre 2023) : retenue de 3 dinars par mois pendant un an sur la rémunération de chaque agent public adhérent à l'UGTT, sur la base des listes d'adhérents et d'un formulaire d'adhésion signé (système dit du check-off). En cas de désaffiliation en cours d'année, la retenue se poursuit six mois."
+documentation: |-
+  Montant mensuel, en dinars, de la cotisation syndicale retenue à la source sur le salaire
+  des agents publics adhérents à l'UGTT (Union générale tunisienne du travail), dans le cadre
+  du système dit du check-off organisé par des circulaires annuelles de la présidence du
+  gouvernement.
+
+  Limites de la source — à réviser :
+  - le montant de 3 dinars par mois n'est attesté que pour l'année 2024 (circulaire n° 37 du
+    26 décembre 2023, connue par la presse) ; ces circulaires ne sont pas publiées au JORT et
+    aucun texte n'a pu être consulté directement ;
+  - l'historique des montants antérieurs n'a pas pu être retracé (circulaires annuelles non
+    publiées) : la valeur est maintenue constante depuis 1990 faute de source, par convention ;
+  - le prélèvement a été suspendu début 2026, la circulaire annuelle n'ayant pas été émise
+    (presse : BusinessNews, 6 février 2026).
+
+  Périmètre : la retenue ne vise que les agents publics adhérents à l'UGTT ayant signé le
+  formulaire d'adhésion, et non l'ensemble des affiliés à la CNRPS ; aucun dispositif
+  équivalent n'est documenté pour le secteur privé.

@@ -1,0 +1,36 @@
+- name: Agent public CNRPS, salaire 1 000 — retenue syndicale de 3 DT (défaut adhérent)
+  period: 2021-01
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+  output:
+    ugtt: 3
+
+- name: Agent public CNRPS non adhérent à l'UGTT — pas de retenue
+  period: 2021-01
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 1000
+    adherent_ugtt: false
+  output:
+    ugtt: 0
+
+- name: Agent public CNRPS sans salaire — pas de retenue (une retenue sur salaire suppose un salaire)
+  period: 2021-01
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: salarie_cnrps
+    salaire_de_base: 0
+  output:
+    ugtt: 0
+
+- name: Salarié RSNA (secteur privé), salaire 1 000 — hors périmètre, pas de retenue
+  period: 2021-01
+  absolute_error_margin: 0.001
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 1000
+  output:
+    ugtt: 0

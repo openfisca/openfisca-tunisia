@@ -1,6 +1,7 @@
-description: Autres prélèvements patronaux sur les salaires
+description: Autres prélèvements sur les salaires
 metadata:
   order:
   - tfp
   - foprolos
+  - retenue_syndicale_ugtt
   short_label: Autres prélèvements sur les salaires

@@ -736,15 +736,37 @@ class salaire_super_brut(Variable):
         )
 
 
+class adherent_ugtt(Variable):
+    value_type = bool
+    entity = Individu
+    label = (
+        "Adhérent de l'UGTT (retenue syndicale à la source — système du check-off, "
+        "circulaires annuelles de la présidence du gouvernement) ; défaut True = "
+        "comportement historique du modèle, le périmètre légal étant les seuls "
+        "adhérents ayant signé"
+    )
+    definition_period = MONTH
+    default_value = True
+    set_input = set_input_dispatch_by_period
+
+
 class ugtt(Variable):
     value_type = float
     entity = Individu
     label = "Cotisation syndicale UGTT"
     definition_period = MONTH
 
-    def formula(individu, period):
-        # TODO put this value (3) in parameters
-        return 3 * (
-            individu("regime_securite_sociale_cotisant", period)
-            == TypesRegimeSecuriteSocialeCotisant.salarie_cnrps
+    def formula(individu, period, parameters):
+        montant = parameters(period).prelevements_sociaux.autres.retenue_syndicale_ugtt
+        # La retenue n'est opérée que si l'assiette des cotisations est strictement
+        # positive : une retenue à la source sur le salaire suppose un salaire versé
+        # (le système du check-off prélève sur la paie de l'agent public adhérent).
+        return (
+            montant
+            * (
+                individu("regime_securite_sociale_cotisant", period)
+                == TypesRegimeSecuriteSocialeCotisant.salarie_cnrps
+            )
+            * individu("adherent_ugtt", period)
+            * (individu("assiette_cotisations_sociales", period) > 0)
         )
