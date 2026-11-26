@@ -1,0 +1,23 @@
+description: Liste des produits soumis au taux de TVA de 13%
+values:
+  '2021-01-01':
+    value:
+    - achat_de_logement
+    - autres_frais_de_tribunaux
+    - depense_annuelle_d_electricite_et_de_gaz_naturel_steg
+    - depense_annuelle_d_electricite_steg
+    - depense_annuelle_de_gaz_naturel_steg
+    - depense_d_electricite_et_de_gaz_de_ville_steg
+    - depense_d_electricite_steg
+    - depense_de_gaz_de_ville_steg
+    - frais_d_avocat_huissier_notaire_ecrivain_public
+    - frais_de_notaire
+    - gasoil_pour_vehicule
+    - gaz_en_bouteille
+    - gaz_oil_fuel_lourd
+    - gaz_pour_vehicule
+    - petrole
+metadata:
+  unit: list
+documentation: Liste exhaustive des produits et services soumis au taux de TVA de
+  13% en Tunisie. Les produits sont identifiés par leur nom de variable OpenFisca.

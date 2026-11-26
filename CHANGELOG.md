@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.177.0 - [#544](https://github.com/openfisca/openfisca-tunisia/pull/544)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/2021.
+* Zones impactées : `parameters/fiscalite_indirecte/tva/taux_nul/produits.yaml`, `parameters/fiscalite_indirecte/tva/taux_reduit/produits.yaml`, `parameters/fiscalite_indirecte/tva/taux_intermediaire/produits.yaml` (créé), `parameters/fiscalite_indirecte/tva/taux_normal/produits.yaml`.
+* Détails :
+  - **108 classements TVA ajoutés au bloc 2021 des listes de produits** (chantier B2 du dépôt ceq-tunisie : produits ENBCV non classés, arbitrés en droit par lots), et **création de la liste `taux_intermediaire/produits.yaml`** (13 %) qui n'existait pas encore. Répartition : 82 → taux_normal, 15 → taux_intermediaire, 9 → taux_nul, 2 → taux_reduit.
+  - **Habillement, chaussures et effets personnels (69 slugs) → taux_normal** : article 7, alinéa 1er du code TVA (taux normal par défaut) ; le tableau C est abrogé au 1/1/2007 (loi 2006-80, art. 13, JORT n° 102, p. 4302).
+  - **Produits pétroliers, électricité/gaz STEG, logement neuf et professions juridiques (15 slugs) → taux_intermediaire (13 %)** : article 7, numéro 3 du code (LF 2017 art. 27 et LF 2018 art. 43) — produits pétroliers (1er tiret), électricité et gaz (2e tiret, 13 % de 2018 à 2024), logements des promoteurs (4e tiret), professions libérales juridiques (3e tiret, borné à 2022).
+  - **Formation professionnelle et chicha au café (2 slugs) → taux_reduit** : tableau B — II-6 pour la formation professionnelle (LF 2016 art. 30, en vigueur au 1/9/2016) et II-4 pour la restauration/cafés de 1re catégorie (LF 2017 art. 27 ; LF 2018 art. 43).
+  - **Céréales en grain et livres non scolaires (4 slugs) → taux_nul** : blé dur, blé tendre et orge en grain hors champ côté producteur (art. 1er I) et tableau A I-1/I-2 ; livres et brochures au tableau A I-18.
+  - **Viandes fraîches (chameau, ovine, bovine), autres légumes frais et sel (5 slugs) → taux_nul** : exonération du commerce de détail des produits alimentaires (LF 1996 art. 44, JORT n° 104 des 29-31/12/1995, p. 2372, effet 1/7/1996) ; alignement sur les viandes ovine/bovine/caprine déjà classées (PR #540).
+  - **Divers non alimentaires (8 slugs : bijoux, réparation et cabines téléphoniques, autres dépenses de loisirs/culturelles/biens durables/non alimentaires, autres services liés à l'habitation) → taux_normal** : article 7, alinéa 1er (taux normal par défaut).
+  - **Produits alimentaires industriels (5 slugs : autres produits à base de céréales, fruits en conserve, condiments, vinaigre, autres produits laitiers) → taux_normal** : TVA d'amont au taux normal, seule la marge de détail est exonérée — cohérence avec l'arbitrage leben/sucres aromatisés de la PR #540.
+  - **Classements à confirmer** : `sel` (classé taux_nul comme aliment de base non transformé, note de doute) ; `burnous`, `kachabia_gadroun`, `fouta`, `safsari_haik_hrem` (lacune sur le décret artisanat local du tableau B III-2, classés taux_normal par défaut).
+  - Contrôles : zéro doublon à l'intérieur de chaque liste, zéro slug présent dans deux listes ; comptages avant → après : taux_nul 284 → 293, taux_reduit 111 → 113, taux_intermediaire 0 → 15, taux_normal 370 → 452.
+  - `index.yaml` de `taux_intermediaire` : `produits` ajouté à l'ordre des enfants.
+
 ## 0.176.0 - [#543](https://github.com/openfisca/openfisca-tunisia/pull/543)
 
 * Évolution du système socio-fiscal.
