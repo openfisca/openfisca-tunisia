@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.176.0 - [#543](https://github.com/openfisca/openfisca-tunisia/pull/543)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 01/01/1990.
+* Zones impactées : `variables/prelevements_obligatoires/cotisations_sociales`, `parameters/prelevements_sociaux/autres`.
+* Détails :
+  - **Retenue syndicale UGTT paramétrée** : la formule de `ugtt` lit le nouveau paramètre `prelevements_sociaux.autres.retenue_syndicale_ugtt` (3 DT/mois) au lieu du montant codé en dur (le « TODO put this value (3) in parameters » est soldé).
+  - **Sources et limites documentées dans le paramètre** : montant attesté seulement pour 2024 (circulaire n° 37 de la présidence du gouvernement du 26/12/2023, système du check-off — connue par la presse, lepointtn.com 27/12/2023, aucune publication au JORT) ; historique antérieur non traçable (circulaires annuelles non publiées), valeur maintenue constante depuis 1990 par convention, à réviser ; prélèvement suspendu début 2026 faute de circulaire (BusinessNews 06/02/2026).
+  - **Nouvel input `adherent_ugtt`** (booléen, défaut True = comportement historique du modèle) : le périmètre légal de la retenue est celui des seuls agents publics adhérents ayant signé le formulaire, pas tous les affiliés CNRPS — le défaut True est assumé et documenté dans le label.
+  - **Condition d'assiette** : la retenue n'est opérée que si `assiette_cotisations_sociales` > 0 (une retenue à la source sur le salaire suppose un salaire versé) ; auparavant les 3 DT étaient prélevés même à assiette nulle.
+  - Tests `tests/formulas/cotisations/ugtt.yaml` : CNRPS salaire 1 000 → 3 ; non-adhérent → 0 ; salaire nul → 0 ; RSNA → 0. Les fiches de paie existantes (`enseignant.yaml`, `salarie_fictif.yaml`) passent inchangées.
+
 ## 0.175.0 - [#542](https://github.com/openfisca/openfisca-tunisia/pull/542)
 
 * Évolution du système socio-fiscal.
