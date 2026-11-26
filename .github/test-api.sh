@@ -1,8 +1,14 @@
 #! /usr/bin/env bash
 # Démarre l'API web de chacun des deux systèmes et vérifie qu'elle répond.
 #
-# Chaque système ne lit qu'une partie de l'arbre de paramètres : l'API du système fiscal ne
-# doit pas exposer `retraite`, celle de la pension doit l'exposer.
+# Chaque système ne lit qu'une partie de l'arbre de paramètres, déclarée dans
+# `sous_ensembles.py`. Depuis la 0.175.0, le système fiscal lit AUSSI `retraite` :
+# l'assiette des cotisations des travailleurs non salariés est le barème de classes du
+# revenu de référence des pensions (art. 7 du décret n° 95-1166) et l'assiette du régime
+# complémentaire est bornée par le plafond du régime de base (art. 18 du décret
+# n° 74-499). Les deux API exposent donc `retraite` ; la vérification garde la forme
+# « valeur attendue explicite » pour que tout changement de périmètre reste un choix
+# délibéré.
 #
 # Ce script se terminait autrefois par `exit $?` juste après `kill` : il renvoyait donc le
 # code de `kill`, et le test ne pouvait jamais échouer. Il renvoie désormais le nombre de
@@ -39,7 +45,7 @@ verifier() {
     wait "$pid" 2> /dev/null
 }
 
-verifier openfisca_tunisia 5000 False
+verifier openfisca_tunisia 5000 True
 verifier openfisca_tunisia_pension 5001 True
 
 exit $echecs

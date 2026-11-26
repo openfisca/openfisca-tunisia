@@ -8,6 +8,10 @@ sous-arbre déclaré qui n'existe pas.
 POURQUOI UNE LISTE, ET NON LE RÉPERTOIRE ENTIER. `load_parameters` charge tout ce qu'il
 trouve. Dès qu'un sous-arbre propre à un autre système entre dans l'arbre commun, un
 chargement du répertoire entier le lirait aussi, sans que rien ne le signale.
+
+NB : depuis la 0.175.0, le système fiscal lit aussi `retraite` (dépendance légale des
+cotisations — voir le commentaire dans la liste) : les deux systèmes exposent le
+sous-arbre, la séparation reste déclarée ici et vérifiée par `.github/test-api.sh`.
 """
 
 import os
