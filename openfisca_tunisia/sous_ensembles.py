@@ -8,6 +8,10 @@ sous-arbre déclaré qui n'existe pas.
 POURQUOI UNE LISTE, ET NON LE RÉPERTOIRE ENTIER. `load_parameters` charge tout ce qu'il
 trouve. Dès qu'un sous-arbre propre à un autre système entre dans l'arbre commun, un
 chargement du répertoire entier le lirait aussi, sans que rien ne le signale.
+
+NB : depuis la 0.175.0, le système fiscal lit aussi `retraite` (dépendance légale des
+cotisations — voir le commentaire dans la liste) : les deux systèmes exposent le
+sous-arbre, la séparation reste déclarée ici et vérifiée par `.github/test-api.sh`.
 """
 
 import os
@@ -30,6 +34,14 @@ SOUS_ARBRES_FISCAL = (
     "prelevements_sociaux",
     "prestations",
     "produits_subventionnes",
+    # Les cotisations du système fiscal lisent deux concepts du sous-arbre des
+    # pensions : les classes de revenu forfaitaire des travailleurs non salariés
+    # (retraite.rtns.revenu_reference — l'article 7 du décret n° 95-1166 assoit
+    # les COTISATIONS sur ces mêmes classes) et le plafond de l'assiette du
+    # régime de base (retraite.rsna.salaire_reference.limite_multiple_smig,
+    # article 18 du décret n° 74-499), au-delà duquel cotise le régime
+    # complémentaire.
+    "retraite",
     "sante",
 )
 

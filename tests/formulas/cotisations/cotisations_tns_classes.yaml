@@ -1,0 +1,63 @@
+- name: TNS non agricole, classe 1 — assiette forfaitaire 1 x SMIG 48 h (art. 7, décret 95-1166)
+  period: 2021-01
+  absolute_error_margin: 0.01
+  input:
+    regime_securite_sociale_cotisant: rtns
+    classe_cotisation_tns: 1
+  output:
+    assiette_cotisations_sociales: 429.312
+    # 14,71 % (retraite 7 % + maladie 6,75 % + maternité + décès) x 429,312
+    cotisations_salarie: 63.152
+
+- name: TNS non agricole, classe 10 — coefficient 18 x SMIG 48 h
+  period: 2021-01
+  absolute_error_margin: 0.01
+  input:
+    regime_securite_sociale_cotisant: rtns
+    classe_cotisation_tns: 10
+  output:
+    assiette_cotisations_sociales: 7727.616
+    cotisations_salarie: 1136.732
+
+- name: TNS agricole, classe 1 — assiette SMAG journalier x 300 jours / 12 (art. 7, al. 3)
+  period: 2021-01
+  absolute_error_margin: 0.01
+  input:
+    regime_securite_sociale_cotisant: rtns
+    classe_cotisation_tns: 1
+    tns_secteur_agricole: true
+  output:
+    assiette_cotisations_sociales: 412.80
+    cotisations_salarie: 60.723
+
+- name: TNS sans classe renseignée — approximation sur le salaire déclaré (comportement historique)
+  period: 2021-01
+  absolute_error_margin: 0.01
+  input:
+    regime_securite_sociale_cotisant: rtns
+    salaire_de_base: 1000
+  output:
+    assiette_cotisations_sociales: 1000
+    cotisations_salarie: 147.10
+
+- name: Retraite complémentaire RSNA — fraction du salaire au-delà de limite_multiple_smig x SMIG (art. 18, décret 74-499)
+  period: 2021-01
+  absolute_error_margin: 0.01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 3000
+    adhesion_cnss_regime_complementaire: true
+  output:
+    # assiette complémentaire = 3 000 - 6 x 429,312 = 424,128
+    retraite_complementaire_salarie: 12.724   # 3 %
+    retraite_complementaire_employeur: 25.448  # 6 %
+
+- name: Retraite complémentaire — entreprise non adhérente, aucune cotisation (règlement de 1978, art. 3-4)
+  period: 2021-01
+  absolute_error_margin: 0.01
+  input:
+    regime_securite_sociale_cotisant: rsna
+    salaire_de_base: 3000
+  output:
+    retraite_complementaire_salarie: 0
+    retraite_complementaire_employeur: 0

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.175.0 - [#542](https://github.com/openfisca/openfisca-tunisia/pull/542)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : à partir du 19/07/1995 (classes TNS) et du 01/01/1974 (plafond du régime complémentaire).
+* Zones impactées : `variables/prelevements_obligatoires/cotisations_sociales`, `sous_ensembles` (le système fiscal lit désormais le sous-arbre `retraite`).
+* Détails :
+  - **Assiette légale des cotisations des travailleurs non salariés (RTNS) : classes de revenu forfaitaire** (art. 7 du décret n° 95-1166 — le même barème de classes que le revenu de référence des pensions, déjà paramétré sous `retraite.rtns.revenu_reference.classes`). Nouveaux inputs `classe_cotisation_tns` (1 à 10, coefficients 1 à 18) et `tns_secteur_agricole` (assiette SMAG x jours_annuels_smag au lieu du SMIG 48 h) ; `assiette_cotisations_sociales` reçoit une `formula_1995_07_19` qui applique le forfait quand la classe est renseignée. **Classe non renseignée (défaut) : comportement inchangé** (assiette = salaire déclaré, approximation documentée — les tests existants, dont CRES, passent à l'identique).
+  - **Plafond de l'assiette du régime complémentaire paramétré** : `retraite_complementaire_salarie`/`_employeur` lisent `retraite.rsna.salaire_reference.limite_multiple_smig` (6, art. 18 du décret n° 74-499, rédactions 1974/1990/1994) au lieu du facteur 6 codé en dur ; labels précisés (adhésion d'ENTREPRISE, conventionnelle — arrêté du 18 novembre 1978, règlement art. 3-4 et 6).
+  - `sous_ensembles.SOUS_ARBRES_FISCAL` : ajout de `retraite` (un sous-arbre peut être lu par plusieurs systèmes — même principe que `marche_travail`).
+  - Tests `tests/formulas/cotisations/cotisations_tns_classes.yaml` : classes 1 et 10 non agricoles (63,15 / 1 136,73 DT/mois en 2021), classe 1 agricole (60,72), fallback sans classe (147,10 sur 1 000), complémentaire avec et sans adhésion (12,72 / 25,45 ; 0).
+  - Besoin repéré en portant l'analyse CEQ Tunisie sur le moteur (P4 — cotisations par le moteur) ; sources : rapports juridiques CEQ (décret 95-1166, décret 2007-1406, arrêté du 18/11/1978, décret 74-499).
+
 ## 0.174.0 - [#541](https://github.com/openfisca/openfisca-tunisia/pull/541)
 
 * Évolution du système socio-fiscal.
