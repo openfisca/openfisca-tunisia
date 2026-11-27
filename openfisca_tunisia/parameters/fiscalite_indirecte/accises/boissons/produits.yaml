@@ -1,6 +1,6 @@
 description: Liste des boissons non alcoolisées soumis aux accises
 values:
-  '2024-01-01':
+  '2018-01-01':
     value:
     - autres_boissons
     - boisson_energitique

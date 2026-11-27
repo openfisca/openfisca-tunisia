@@ -1,6 +1,6 @@
 description: Autres produits soumis aux accises soumis au taux d'accise de 10%
 values:
-  '2024-01-01':
+  '2018-01-01':
     value:
     - autres_produits_sucres
     - autres_produits_sucres_non_indiques_ailleurs
