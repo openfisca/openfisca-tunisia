@@ -1,6 +1,11 @@
 description: Taux d'accise de 25%
 values:
-  '2024-01-01':
+  '2018-01-01':
     value: 0.25
 metadata:
   unit: /1
+  reference:
+    '2018-01-01':
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 45"
+      href: "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf"
+      note: "JORT n° 101 du 19 décembre 2017, pp. 4282-4284. L'article 45 abroge le tableau annexé à la loi n° 88-62 du 2 juin 1988, portant refonte de la réglementation relative au droit de consommation, et le remplace : position tarifaire 21.01 (extraits, essences et concentrés de café, de thé ou de maté et préparations à base de ces produits, chicorée torréfiée et autres succédanés torréfiés du café et leurs extraits, essences et concentrés), droit de consommation de 25 %. Le tableau 2018 n'inscrit plus le café ni le thé bruts (positions 09.01 et 09.02), qui figuraient au tableau de 1988. Vérification 2019-2021 : la loi n° 2018-56 du 27 décembre 2018 (JORT n° 104 du 28 décembre 2018, article 69) supprime la position 19.05 du tableau et restreint Ex 33.02, sans toucher à la position 21.01 ; la loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020, ne modifie aucune position du tableau 88-62 ; la loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021 (JORT n° 128 du 28 décembre 2020, article 20), ne modifie que les bières et les vins (positions 22.03 et Ex 22.04)."

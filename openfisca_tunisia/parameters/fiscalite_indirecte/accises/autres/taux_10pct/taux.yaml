@@ -1,6 +1,11 @@
 description: Taux d'accise de 10%
 values:
-  '2024-01-01':
+  '2018-01-01':
     value: 0.1
 metadata:
   unit: /1
+  reference:
+    '2018-01-01':
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 45"
+      href: "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf"
+      note: "JORT n° 101 du 19 décembre 2017, pp. 4282-4284. L'article 45 abroge le tableau annexé à la loi n° 88-62 du 2 juin 1988, portant refonte de la réglementation relative au droit de consommation, et le remplace : position 17.04 (sucreries sans cacao, y compris le chocolat blanc) et position Ex 18.06 (chocolat et autres préparations alimentaires contenant du cacao), droit de consommation de 10 % pour les deux positions. Correspondance partielle avec la liste `produits` associée : sept des neuf produits s'y rattachent (sucreries, bonbons, chocolat, halkoum, halwa) ; les produits `confiture_et_compote_de_fruits` et `maassel_chicha` ne figurent à aucune position du tableau de 1988 ou de 2018 et restent à vérifier séparément, sans que cela remette en cause le taux de 10 % des produits sourcés ici. Vérification 2019-2021 : la loi n° 2018-56 du 27 décembre 2018 (JORT n° 104 du 28 décembre 2018, article 69) supprime la position 19.05 du tableau et restreint Ex 33.02, sans toucher aux positions 17.04 et Ex 18.06 ; la loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020, ne modifie aucune position du tableau 88-62 ; la loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021 (JORT n° 128 du 28 décembre 2020, article 20), ne modifie que les bières et les vins (positions 22.03 et Ex 22.04)."

@@ -1,6 +1,11 @@
 description: Taux d'accise pour produits du tabac
 values:
-  '2024-01-01':
+  '2018-01-01':
     value: 1.35
 metadata:
   unit: /1
+  reference:
+    '2018-01-01':
+    - title: "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018, article 45"
+      href: "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf"
+      note: "JORT n° 101 du 19 décembre 2017, pp. 4283-4284. L'article 45 abroge le tableau annexé à la loi n° 88-62 du 2 juin 1988, portant refonte de la réglementation relative au droit de consommation, et le remplace : position 24.02 (cigares, cigarillos et cigarettes, en tabac ou en succédanés de tabac) et position 24.03 (autres tabacs et succédanés de tabac fabriqués, tabacs homogénéisés ou reconstitués, extraits et sauces de tabacs), droit de consommation de 135 % pour les deux positions. Les tabacs bruts ou non fabriqués (position 24.01) restent au taux distinct de 40 %, hors du périmètre de ce paramètre. Vérification 2019-2021 : la loi n° 2018-56 du 27 décembre 2018 (JORT n° 104 du 28 décembre 2018, article 69) supprime la position 19.05 du tableau et restreint Ex 33.02, sans toucher aux positions 24.02 et 24.03 ; la loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020, ne modifie aucune position du tableau 88-62 ; la loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021 (JORT n° 128 du 28 décembre 2020, article 20), ne modifie que les bières et les vins (positions 22.03 et Ex 22.04)."
